@@ -21,13 +21,6 @@
 
 ## 步骤
 
-0. **先对齐分支**（必做，否则最后推送会失败）：
-
-   git fetch origin && git checkout -B main origin/main
-
-   沙箱默认是游离 HEAD 状态，本地分支 main 可能停在旧 commit 上，
-   不先做这一步的话，第 5 步 push 会报 non-fast-forward。
-
 1. 对齐分支并抓取（两件事放在同一条命令里）：
 
    git fetch origin && git checkout -B main origin/main && node scripts/archive.js

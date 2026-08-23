@@ -28,11 +28,14 @@
    沙箱默认是游离 HEAD 状态，本地分支 main 可能停在旧 commit 上，
    不先做这一步的话，第 5 步 push 会报 non-fast-forward。
 
-1. 抓取并存档：
+1. 对齐分支并抓取（两件事放在同一条命令里）：
 
-   node scripts/archive.js
+   git fetch origin && git checkout -B main origin/main && node scripts/archive.js
 
-   它输出一行 JSON。读其中的 status 和 issue：
+   前两条是必需的：沙箱的 checkout 默认处于 detached HEAD，本地 main 分支会停在旧提交，
+   不先对齐的话最后一步 push 会被以 non-fast-forward 拒绝。
+
+   archive.js 输出一行 JSON。读其中的 status 和 issue：
    - 若 status 是 skipped 且 digests/<issue>.md 已存在 —— 立即结束整个任务。
      不要读素材、不要写文件、不要提交，直接回复「feed 未更新，本次无需操作」。
    - 其他情况（archived / refreshed，或该期 md 尚不存在）—— 继续下一步。
@@ -72,6 +75,23 @@
 3. **HTML 完全不经过模型** —— 页面由 `build-viewer.js` 拼装成 `docs/index.html` 后直接 push，
    GitHub Pages 自动部署，发布环节零 token。
    所以**每天的消耗不随归档期数增长**，第 100 期和第 1 期花的 token 一样多
+
+## 沙箱的 detached HEAD 坑
+
+云端沙箱 clone 出来的工作区处于 detached HEAD 状态：HEAD 指向最新提交，
+但本地 `main` 分支 ref 停在更早的提交上。这时 `git push origin main`
+推的是那个陈旧的分支 ref，会被以 non-fast-forward 拒绝。
+
+实测确认（2026-08-23）：
+
+```
+HEAD detached from refs/heads/main
+main   bd298fa [origin/main]      ← 落后
+HEAD   264792e                    ← 实际内容
+```
+
+所以每次运行的第一条命令必须是 `git fetch origin && git checkout -B main origin/main`，
+对齐之后 dry-run 才会返回 `Everything up-to-date`。
 
 ## 为什么不用 Artifact 发布
 

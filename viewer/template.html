@@ -283,6 +283,20 @@ a { color: var(--accent); }
 
 .empty { color: var(--ink-2); padding: 4rem 0; }
 
+/* 上游 feed 停更时的提示 —— 出现在报头下方，通栏 */
+.stale-banner {
+  background: var(--warn-bg);
+  border-bottom: 1px solid var(--mark);
+  color: var(--mark);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  padding: 0.6rem clamp(1rem, 3vw, 2rem);
+  text-align: center;
+}
+.stale-banner b { font-weight: 500; }
+
 /* ── 窄屏：索引变成顶部横滑 ────────────────────────────────────── */
 @media (max-width: 860px) {
   .shell { grid-template-columns: minmax(0, 1fr); gap: 0; }
@@ -572,12 +586,32 @@ a { color: var(--accent); }
     try { localStorage.setItem('digest-theme', next); } catch (e) {}
   });
 
+  // ── 上游停更检测 ──────────────────────────────────────────────
+  // feed 由第三方仓库每天生成。它一旦停更，本站会静默停在最后一期，
+  // 页面看上去毫无异常 —— 所以这里显式把陈旧程度摆出来。
+  var STALE_DAYS = 3;
+  function checkStale() {
+    if (!issues.length) return;
+    var newest = issues[0];
+    if (!newest.feedGeneratedAt) return;
+    var ageMs = Date.now() - new Date(newest.feedGeneratedAt).getTime();
+    var days = Math.floor(ageMs / 86400000);
+    if (days < STALE_DAYS) return;
+
+    var bar = document.createElement('div');
+    bar.className = 'stale-banner';
+    bar.textContent = '⚠ 最新一期的上游 feed 已是 ' + days + ' 天前（' +
+      newest.issue + '）。上游数据源可能已停止更新，或抓取任务出了问题。';
+    document.querySelector('.masthead').insertAdjacentElement('afterend', bar);
+  }
+
   // ── 启动 ──────────────────────────────────────────────────────
   if (!issues.length) {
     readerEl.innerHTML = '<p class="empty">还没有任何存档。运行 <code>node scripts/daily.js</code> 抓取第一期。</p>';
   } else {
     var want = decodeURIComponent(location.hash.replace(/^#/, ''));
     show(issues.some(function (x) { return x.issue === want; }) ? want : issues[0].issue, false);
+    checkStale();
   }
 })();
 </script>

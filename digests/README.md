@@ -10,7 +10,7 @@
 | 跑在哪 | 你的 Mac | Anthropic 云端沙箱 |
 | 前提 | Mac 开机 + `claude` 已登录 | 无（GitHub 仓库可达即可） |
 | 时间 | 每天 15:30 | 每天 05:30（UTC 21:30） |
-| 产出 | 本地 `digests/` + `viewer/index.html` | 仓库提交 + 更新 Artifact |
+| 产出 | 本地 `digests/` + `docs/index.html` | 仓库提交 → GitHub Pages 自动部署 |
 
 ## 目录
 
@@ -19,10 +19,12 @@ digests/
 ├── 2026-08-22.md          每期简报（带 frontmatter 元信息）
 ├── raw/2026-08-22.json    当期完整原始数据，期号 = feed 生成日
 └── daily.log              本地运行日志（不入库）
+docs/
+└── index.html             构建产物：完整 HTML。GitHub Pages 的站点根目录，
+                           也可以直接双击打开
 viewer/
 ├── template.html          页面模板，唯一的样式真相源
-├── index.html             构建产物：完整 HTML，双击即可打开
-└── artifact.html          构建产物：去掉外层骨架，供 Artifact 发布
+└── artifact.html          构建产物：去掉外层骨架，留作手动发 Artifact 用
 scripts/
 ├── daily.js               本地每日流程入口
 ├── archive.js             抓取并存档原始数据
@@ -30,7 +32,7 @@ scripts/
 ├── build-viewer.js        扫描 digests/*.md 生成两份 HTML
 ├── digest-style.md        简报写作规范（改风格改这里）
 └── routine.md             云端 Routine 的完整配置与 prompt
-.artifact-url              Artifact 地址，Routine 靠它更新同一个页面
+.artifact-url              私有 Artifact 快照地址（手动发布时用，Routine 不碰）
 ```
 
 ## 日常使用
@@ -43,9 +45,9 @@ node scripts/daily.js --no-llm  # 只抓取存档，不调用 Claude
 
 看简报，三选一：
 
-- 打开 Artifact 页面（云端每天自动更新，手机上也能看）
-- 双击 `viewer/index.html`（本地版，单文件，不需要服务器）
-- `python3 -m http.server 8770 --directory viewer`
+- 打开 GitHub Pages 站点（云端每天自动更新，手机上也能看，不需要登录）
+- 双击 `docs/index.html`（同一份文件，单文件，不需要服务器）
+- `python3 -m http.server 8770 --directory docs`
 
 阅读器支持 `j`/`k` 或方向键切换期号，右上角切换明暗主题。
 
@@ -61,9 +63,14 @@ node scripts/daily.js --no-llm  # 只抓取存档，不调用 Claude
 
 1. **feed 没更新就早退** —— 第一步就结束，几乎零消耗
 2. **素材预压缩** —— `extract.js` 把 80KB 原始 JSON 压到 31KB，播客转录只按比例采样几段
-3. **HTML 不经过模型** —— 页面由脚本拼装，Artifact 工具直接读文件发布
+3. **HTML 完全不经过模型** —— 页面由脚本拼装后直接 push，GitHub Pages 自动部署，
+   发布环节零 token
 
 第 3 条最关键：**每天的消耗不随归档期数增长**，第 100 期和第 1 期花的 token 一样多。
+
+> 早期方案用 Artifact 发布，但它有一道「未查看过线上版本就不许覆盖」的保护（这个保护是合理的）。
+> 云端每天都是全新会话，必然撞上，只能先把线上副本整份读回来才能发布 ——
+> 而那份 HTML 内嵌了所有期内容，会越读越大。改用 Pages 就完全绕开了这个问题。
 
 ## 本地定时任务
 

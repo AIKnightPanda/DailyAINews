@@ -1,11 +1,13 @@
 # 云端 Routine 配置
 
-每天在 Anthropic 云端跑一次，产出简报并更新 Artifact。与本地 launchd 那套共用同一份代码和写作规范。
+每天在 Anthropic 云端跑一次，产出简报并推送到仓库，由 GitHub Pages 自动部署。
+与本地 launchd 那套共用同一份代码和写作规范。
 
 - **调度**：`30 21 * * *`（UTC）= 北京时间每天 05:30
 - **模型**：claude-sonnet-5
 - **环境**：Default (`env_01U3tQcAWVYktAGcs5cijp6h`)
-- **工具**：Bash, Read, Write, Edit, Glob, Grep, Artifact
+- **工具**：Bash, Read, Write, Edit, Glob, Grep
+- **发布**：`git push` → GitHub Pages 自动部署（不经过 Artifact）
 - **仓库**：本仓库
 
 管理入口：https://claude.ai/code/routines
@@ -42,20 +44,17 @@
 
    node scripts/build-viewer.js
 
-5. 更新 Artifact：先 cat .artifact-url 取出 URL，然后调用 Artifact 工具：
-   - file_path: viewer/artifact.html
-   - url: 刚才 cat 出来的那个 URL（必须传，否则会新建一个 artifact 而不是更新现有的）
-   - favicon: 🗞️
-
-6. 提交：
+5. 提交并推送：
 
    git add -A && git commit -m "digest: <issue>" && git push
 
-   push 失败最多重试一次，仍失败就如实报告，不要反复尝试。
+   推送成功后 GitHub Pages 会自动部署，不需要你再做别的发布动作。
+   如果 push 报 403 或 "Claude doesn't have GitHub access"，说明 Claude GitHub App
+   还没装到这个仓库上 —— 不要反复重试，直接在最后如实报告。
 
 ## 结束时
 
-用两三句话报告：期号、本期条目数、Artifact 是否更新成功、git 是否推送成功。
+用两三句话报告：期号、本期条目数、git 是否推送成功。
 任何一步失败都要明说，不要粉饰。
 ```
 
@@ -63,5 +62,14 @@
 
 1. **feed 没更新就早退** —— 第 1 步就结束，几乎零消耗
 2. **素材预压缩** —— `extract.js` 把 80KB 原始 JSON 压到 31KB（播客转录只采样几段），模型读的是它而不是原文
-3. **HTML 不经过模型** —— 页面由 `build-viewer.js` 拼装，Artifact 工具直接读文件发布。
+3. **HTML 完全不经过模型** —— 页面由 `build-viewer.js` 拼装成 `docs/index.html` 后直接 push，
+   GitHub Pages 自动部署，发布环节零 token。
    所以**每天的消耗不随归档期数增长**，第 100 期和第 1 期花的 token 一样多
+
+## 为什么不用 Artifact 发布
+
+Artifact 有一道「未查看过当前线上版本就不许覆盖」的保护，这个保护是合理的 ——
+它防止一个没看过线上内容的会话盲目覆盖别人的东西。但云端 Routine 每天都是全新会话，
+必然撞上，按官方流程只能先把线上副本整份读回来再发布，而那份 HTML 内嵌了所有期内容，
+会越读越大（今天 71KB，几十期后是几百 KB）。改用 Pages 就完全绕开了这个矛盾。
+`viewer/artifact.html` 仍会生成，留作需要时手动发布私有快照用。

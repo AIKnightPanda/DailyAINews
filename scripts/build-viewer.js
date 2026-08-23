@@ -5,8 +5,9 @@
 // ============================================================================
 // 扫描 digests/*.md，把数据注入 viewer/template.html，产出两个自包含文件：
 //
-//   viewer/index.html     完整 HTML，双击即可打开
-//   viewer/artifact.html  去掉外层骨架，供 Artifact 发布（发布时平台会自己包骨架）
+//   docs/index.html       完整 HTML。GitHub Pages 以 /docs 为站点根目录提供服务，
+//                         同时也能双击直接打开
+//   viewer/artifact.html  去掉外层骨架，留作手动发布 Artifact 用（平台会自己包骨架）
 //
 // 两份都把数据内联在 <script> 里 —— 不依赖同目录的 .js，file:// 下也不受 CORS 限制。
 // 关键：HTML 由脚本拼装，不经过模型输出，所以 Routine 的 token 消耗不随期数增长。
@@ -23,6 +24,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DIGEST_DIR = join(ROOT, 'digests');
 const RAW_DIR = join(DIGEST_DIR, 'raw');
 const VIEWER_DIR = join(ROOT, 'viewer');
+const DOCS_DIR = join(ROOT, 'docs');
 const TEMPLATE = join(VIEWER_DIR, 'template.html');
 
 const DATA_SLOT = /\/\*__DIGEST_DATA__\*\/[\s\S]*?\/\*__END__\*\//;
@@ -101,11 +103,12 @@ async function main() {
   const filled = template.replace(DATA_SLOT, () => payload);
 
   await mkdir(VIEWER_DIR, { recursive: true });
+  await mkdir(DOCS_DIR, { recursive: true });
 
   // Artifact 版：平台发布时自带 doctype/head/body，这里只留内容
   await writeFile(join(VIEWER_DIR, 'artifact.html'), filled.replace(HEAD_END, ''));
 
-  // 本地版：补回外层骨架，双击就能看
+  // 站点版：补回外层骨架，Pages 和本地双击共用这一份
   const idx = filled.indexOf(HEAD_END);
   if (idx === -1) {
     console.error(`模板里找不到分隔标记 ${HEAD_END}`);
@@ -117,11 +120,13 @@ async function main() {
     '<meta charset="utf-8">\n' +
     '<meta name="viewport" content="width=device-width, initial-scale=1">\n' +
     head + '</head>\n<body>' + bodyPart + '\n</body>\n</html>\n';
-  await writeFile(join(VIEWER_DIR, 'index.html'), local);
+  await writeFile(join(DOCS_DIR, 'index.html'), local);
+  // 关掉 Jekyll，避免它对站点文件做多余处理
+  await writeFile(join(DOCS_DIR, '.nojekyll'), '');
 
   const archived = issues.filter(i => !i.rawMissing).length;
   const kb = n => (n / 1024).toFixed(0) + 'KB';
-  console.log(`已生成 viewer/index.html (${kb(local.length)}) 与 viewer/artifact.html (${kb(filled.length)})：${issues.length} 期，其中 ${archived} 期含原始数据`);
+  console.log(`已生成 docs/index.html (${kb(local.length)}) 与 viewer/artifact.html (${kb(filled.length)})：${issues.length} 期，其中 ${archived} 期含原始数据`);
   for (const i of issues) {
     console.log(`  ${i.issue}  ${i.rawMissing ? '无 raw' : kb(i.rawBytes)}\t${i.headline.slice(0, 40)}`);
   }

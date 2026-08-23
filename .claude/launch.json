@@ -4,7 +4,13 @@
     {
       "name": "digest-viewer",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8770", "--directory", "viewer"],
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8770",
+        "--directory",
+        "docs"
+      ],
       "port": 8770
     }
   ]

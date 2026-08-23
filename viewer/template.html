@@ -1,0 +1,583 @@
+<title>建造者档案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Noto+Serif+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* ── 令牌：浅色为基准，两处深色块只重定义令牌 ───────────────────── */
+:root {
+  --paper:   #E9EDEB;
+  --surface: #F8FAF9;
+  --sunk:    #DFE5E2;
+  --ink:     #141C1A;
+  --ink-2:   #5A6764;
+  --ink-3:   #869591;
+  --rule:    #CFD8D4;
+  --rule-2:  #E0E6E3;
+  --accent:  #0D6B5C;
+  --accent-wash: rgba(13, 107, 92, 0.09);
+  --mark:    #8F6210;
+  --warn-bg: rgba(143, 98, 16, 0.10);
+  --shadow:  rgba(20, 28, 26, 0.08);
+
+  --font-display: 'Fraunces', Georgia, 'Songti SC', serif;
+  --font-body: 'Newsreader', 'Noto Serif SC', 'Songti SC', 'Source Han Serif SC', Georgia, serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --sidebar-w: 19rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:   #0E1211;
+    --surface: #161C1A;
+    --sunk:    #101615;
+    --ink:     #E4E9E6;
+    --ink-2:   #8D9C97;
+    --ink-3:   #6B7A76;
+    --rule:    #26302D;
+    --rule-2:  #1E2724;
+    --accent:  #4CC3A9;
+    --accent-wash: rgba(76, 195, 169, 0.12);
+    --mark:    #C9A24A;
+    --warn-bg: rgba(201, 162, 74, 0.12);
+    --shadow:  rgba(0, 0, 0, 0.4);
+  }
+}
+:root[data-theme="dark"] {
+  --paper:   #0E1211;
+  --surface: #161C1A;
+  --sunk:    #101615;
+  --ink:     #E4E9E6;
+  --ink-2:   #8D9C97;
+  --ink-3:   #6B7A76;
+  --rule:    #26302D;
+  --rule-2:  #1E2724;
+  --accent:  #4CC3A9;
+  --accent-wash: rgba(76, 195, 169, 0.12);
+  --mark:    #C9A24A;
+  --warn-bg: rgba(201, 162, 74, 0.12);
+  --shadow:  rgba(0, 0, 0, 0.4);
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.5;
+  font-optical-sizing: auto;
+}
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+/* ── 报头 ─────────────────────────────────────────────────────── */
+.masthead {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; align-items: baseline; gap: 1rem;
+  padding: 0.85rem clamp(1rem, 3vw, 2rem);
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--rule);
+}
+.masthead h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
+  font-variation-settings: 'SOFT' 0, 'WONK' 1;
+  white-space: nowrap;
+}
+.masthead .tagline {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-3);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.masthead .spacer { flex: 1; }
+.theme-toggle {
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  color: var(--ink-2);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  cursor: pointer;
+  align-self: center;
+  white-space: nowrap;
+}
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+
+/* ── 骨架 ─────────────────────────────────────────────────────── */
+.shell {
+  display: grid;
+  grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  max-width: 78rem;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 3vw, 2rem) 5rem;
+}
+
+/* ── 侧栏：期号索引 ────────────────────────────────────────────── */
+.index {
+  position: sticky;
+  top: 3.6rem;
+  align-self: start;
+  max-height: calc(100vh - 4.5rem);
+  overflow-y: auto;
+  padding: 1.5rem 0 2rem;
+  display: flex; flex-direction: column; gap: 0.5rem;
+}
+.index-head {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 0.3rem;
+}
+.issue-card {
+  display: block; width: 100%; text-align: left;
+  border: 0; border-left: 2px solid transparent;
+  background: transparent;
+  color: inherit; font: inherit;
+  padding: 0.7rem 0.75rem;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: background 0.14s ease, border-color 0.14s ease;
+}
+.issue-card:hover { background: var(--sunk); }
+.issue-card[aria-current="true"] {
+  background: var(--accent-wash);
+  border-left-color: var(--accent);
+}
+.issue-card .date {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.02rem;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+  display: flex; align-items: baseline; gap: 0.45rem;
+}
+.issue-card .dow {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--ink-3);
+  letter-spacing: 0.08em;
+}
+.issue-card[aria-current="true"] .date { color: var(--accent); }
+.issue-card .head {
+  margin-top: 0.2rem;
+  font-size: 0.83rem;
+  line-height: 1.45;
+  color: var(--ink-2);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.issue-card .tally {
+  margin-top: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.63rem;
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+  display: flex; gap: 0.55rem; flex-wrap: wrap;
+}
+.issue-card .tally .nb { color: var(--mark); }
+
+/* ── 阅读区 ───────────────────────────────────────────────────── */
+.reader { padding: 2.5rem 0 0; min-width: 0; }
+.issue-head { border-bottom: 2px solid var(--ink); padding-bottom: 1rem; margin-bottom: 0.9rem; }
+.issue-head .kicker {
+  font-family: var(--font-mono);
+  font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent);
+}
+.issue-head h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 2.9rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  margin: 0.35rem 0 0.5rem;
+  font-variant-numeric: tabular-nums;
+  font-variation-settings: 'SOFT' 0, 'WONK' 1;
+  text-wrap: balance;
+}
+.issue-head .headline {
+  font-size: 1.06rem; line-height: 1.55; color: var(--ink-2); margin: 0;
+  max-width: 46ch; text-wrap: pretty;
+}
+.meta-strip {
+  display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem;
+  font-family: var(--font-mono); font-size: 0.68rem;
+  color: var(--ink-3); letter-spacing: 0.03em;
+  margin-bottom: 2.2rem;
+  font-variant-numeric: tabular-nums;
+}
+.meta-strip b { color: var(--ink-2); font-weight: 500; }
+.meta-strip .warn { color: var(--mark); background: var(--warn-bg); padding: 0.1rem 0.45rem; border-radius: 3px; }
+
+/* 正文排版 */
+.body { max-width: 40rem; }
+.body h2 {
+  font-family: var(--font-display);
+  font-weight: 600; font-size: 1.02rem;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin: 3.2rem 0 1.4rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+  font-variation-settings: 'SOFT' 0, 'WONK' 0;
+}
+.body h2:first-child { margin-top: 0; }
+.body h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.33rem;
+  line-height: 1.28;
+  letter-spacing: -0.015em;
+  margin: 2.4rem 0 0.75rem;
+  text-wrap: balance;
+  font-variation-settings: 'SOFT' 0, 'WONK' 1;
+}
+.body p { margin: 0 0 1.05rem; line-height: 1.78; text-wrap: pretty; }
+.body strong { font-weight: 600; color: var(--ink); }
+.body code {
+  font-family: var(--font-mono); font-size: 0.86em;
+  background: var(--sunk); padding: 0.1em 0.35em; border-radius: 3px;
+}
+.body ul, .body ol { margin: 0 0 1.15rem; padding-left: 1.3rem; display: flex; flex-direction: column; gap: 0.55rem; }
+.body li { line-height: 1.72; padding-left: 0.2rem; }
+.body li::marker { color: var(--accent); font-family: var(--font-mono); font-size: 0.85em; }
+.body blockquote {
+  margin: 0 0 1.3rem; padding: 0.85rem 1.1rem;
+  background: var(--sunk);
+  border-left: 2px solid var(--mark);
+  border-radius: 0 4px 4px 0;
+  color: var(--ink-2); font-size: 0.94rem; line-height: 1.65;
+}
+.body blockquote p:last-child { margin-bottom: 0; }
+
+/* 来源链接组 */
+.sources { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 2rem; }
+.sources a {
+  font-family: var(--font-mono); font-size: 0.7rem;
+  text-decoration: none; color: var(--ink-2);
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  padding: 0.28rem 0.6rem; border-radius: 999px;
+  transition: color 0.14s ease, border-color 0.14s ease;
+  white-space: nowrap; max-width: 100%; overflow: hidden; text-overflow: ellipsis;
+}
+.sources a:hover { color: var(--accent); border-color: var(--accent); }
+.sources a::before { content: "↗ "; color: var(--ink-3); }
+.sources a:hover::before { color: var(--accent); }
+
+.empty { color: var(--ink-2); padding: 4rem 0; }
+
+/* ── 窄屏：索引变成顶部横滑 ────────────────────────────────────── */
+@media (max-width: 860px) {
+  .shell { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .index {
+    position: static; max-height: none; overflow: visible;
+    flex-direction: row; gap: 0.5rem;
+    padding: 1rem 0 0.9rem;
+    overflow-x: auto; scrollbar-width: thin;
+    border-bottom: 1px solid var(--rule);
+  }
+  .index-head { display: none; }
+  .issue-card {
+    flex: 0 0 auto; width: 13.5rem;
+    border-left: 0; border-bottom: 2px solid var(--rule-2);
+    border-radius: 4px 4px 0 0;
+  }
+  .issue-card[aria-current="true"] { border-left: 0; border-bottom-color: var(--accent); }
+  .issue-card .head { -webkit-line-clamp: 1; }
+  .reader { padding-top: 1.8rem; }
+  body { font-size: 16px; }
+}
+
+/* 窄到放不下副标题时，先舍弃副标题而不是让报头折行 */
+@media (max-width: 560px) {
+  .masthead .tagline { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+</style>
+<!--__HEAD_END__-->
+
+<header class="masthead">
+  <h1>建造者档案</h1>
+  <span class="tagline">Follow Builders · 本地存档</span>
+  <span class="spacer"></span>
+  <button class="theme-toggle" id="theme-toggle" type="button">主题</button>
+</header>
+
+<div class="shell">
+  <nav class="index" id="index" aria-label="期号索引">
+    <div class="index-head">
+      <span>全部期号</span>
+      <span id="index-count"></span>
+    </div>
+  </nav>
+  <main class="reader" id="reader"></main>
+</div>
+
+<script>window.__DIGESTS__ = /*__DIGEST_DATA__*/{"issues":[]}/*__END__*/;</script>
+<script>
+(function () {
+  'use strict';
+
+  var DATA = (window.__DIGESTS__ || { issues: [] });
+  var issues = DATA.issues || [];
+
+  // ── Markdown 渲染（只覆盖简报实际用到的语法子集）─────────────
+  function esc(s) {
+    return s.replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  // 链接文字显示成可读的短形式，而不是几十字符的原始 URL
+  function prettyUrl(u) {
+    var raw = u.replace(/&amp;/g, '&');
+    try {
+      var url = new URL(raw);
+      var host = url.hostname.replace(/^www\./, '');
+      var seg = url.pathname.split('/').filter(Boolean);
+      if (host === 'x.com' || host === 'twitter.com') {
+        return seg.length ? host + '/' + seg[0] : host;
+      }
+      if (host.indexOf('youtube.com') !== -1) {
+        return seg[0] === 'watch' ? 'youtube.com · 视频' : 'youtube.com/' + (seg[0] || '');
+      }
+      if (!seg.length) return host;
+      var tail = seg[seg.length - 1];
+      return host + '/' + (tail.length > 26 ? tail.slice(0, 26) + '…' : tail);
+    } catch (e) {
+      return raw;
+    }
+  }
+
+  var URL_RE = /(https?:\/\/[^\s<)（）]+)/g;
+
+  function inline(raw) {
+    return esc(raw).split(/(`[^`]+`)/g).map(function (part) {
+      if (part.length > 1 && part.charAt(0) === '`' && part.charAt(part.length - 1) === '`') {
+        return '<code>' + part.slice(1, -1) + '</code>';
+      }
+      return part
+        .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+        .replace(URL_RE, function (m) {
+          return '<a href="' + m + '" target="_blank" rel="noopener">' + esc(prettyUrl(m)) + '</a>';
+        });
+    }).join('');
+  }
+
+  // 以 🔗 开头的段落是来源行 —— 抽出所有 URL 渲染成链接组
+  function renderSources(text) {
+    var found = text.match(URL_RE) || [];
+    if (!found.length) return '<p>' + inline(text) + '</p>';
+    return '<div class="sources">' + found.map(function (u) {
+      return '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(prettyUrl(esc(u))) + '</a>';
+    }).join('') + '</div>';
+  }
+
+  function render(md) {
+    var lines = md.split(/\r?\n/);
+    var out = [];
+    var para = [];
+    var quote = [];
+    var list = null; // {tag:'ul'|'ol', items:[]}
+
+    function flushPara() {
+      if (!para.length) return;
+      var text = para.join(' ');
+      out.push(/^🔗/.test(text) ? renderSources(text) : '<p>' + inline(text) + '</p>');
+      para = [];
+    }
+    function flushQuote() {
+      if (!quote.length) return;
+      out.push('<blockquote><p>' + quote.map(inline).join('<br>') + '</p></blockquote>');
+      quote = [];
+    }
+    function flushList() {
+      if (!list) return;
+      out.push('<' + list.tag + '>' + list.items.map(function (i) {
+        return '<li>' + inline(i) + '</li>';
+      }).join('') + '</' + list.tag + '>');
+      list = null;
+    }
+    function flushAll() { flushPara(); flushQuote(); flushList(); }
+
+    lines.forEach(function (line) {
+      var t = line.trim();
+
+      if (t === '') { flushAll(); return; }
+
+      var h = /^(#{2,4})\s+(.*)$/.exec(t);
+      if (h) {
+        flushAll();
+        var level = Math.min(h[1].length, 3);
+        out.push('<h' + level + '>' + inline(h[2]) + '</h' + level + '>');
+        return;
+      }
+
+      if (t.indexOf('> ') === 0 || t === '>') {
+        flushPara(); flushList();
+        quote.push(t.replace(/^>\s?/, ''));
+        return;
+      }
+
+      var ul = /^[-*]\s+(.*)$/.exec(t);
+      if (ul) {
+        flushPara(); flushQuote();
+        if (!list || list.tag !== 'ul') { flushList(); list = { tag: 'ul', items: [] }; }
+        list.items.push(ul[1]);
+        return;
+      }
+
+      var ol = /^\d+\.\s+(.*)$/.exec(t);
+      if (ol) {
+        flushPara(); flushQuote();
+        if (!list || list.tag !== 'ol') { flushList(); list = { tag: 'ol', items: [] }; }
+        list.items.push(ol[1]);
+        return;
+      }
+
+      flushQuote(); flushList();
+      para.push(t);
+    });
+
+    flushAll();
+    return out.join('\n');
+  }
+
+  // ── 日期工具（按本地日期解析，避免 UTC 偏移串期）──────────────
+  var DOW = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
+  function issueDate(s) {
+    var p = s.split('-').map(Number);
+    return new Date(p[0], p[1] - 1, p[2]);
+  }
+  function longDate(s) {
+    var d = issueDate(s);
+    return d.getFullYear() + ' 年 ' + (d.getMonth() + 1) + ' 月 ' + d.getDate() + ' 日';
+  }
+  function stamp(iso) {
+    if (!iso) return '未知';
+    var d = new Date(iso);
+    var pad = function (n) { return n < 10 ? '0' + n : '' + n; };
+    return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()) +
+      ' ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
+  }
+
+  // ── 索引栏 ────────────────────────────────────────────────────
+  var indexEl = document.getElementById('index');
+  var readerEl = document.getElementById('reader');
+  var current = null;
+
+  document.getElementById('index-count').textContent = issues.length + ' 期';
+
+  issues.forEach(function (it) {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'issue-card';
+    btn.dataset.issue = it.issue;
+    btn.innerHTML =
+      '<div class="date">' + it.issue + '<span class="dow">' + DOW[issueDate(it.issue).getDay()] + '</span></div>' +
+      '<div class="head">' + esc(it.headline || '（未填写摘要）') + '</div>' +
+      '<div class="tally">' +
+        '<span>' + it.stats.tweets + ' 推文</span>' +
+        '<span>' + it.stats.blogs + ' 博客</span>' +
+        '<span>' + it.stats.podcasts + ' 播客</span>' +
+        (it.rawMissing ? '<span class="nb">无 raw</span>' : '') +
+      '</div>';
+    btn.addEventListener('click', function () { show(it.issue, true); });
+    indexEl.appendChild(btn);
+  });
+
+  function show(id, push) {
+    var it = issues.filter(function (x) { return x.issue === id; })[0];
+    if (!it) return;
+    current = id;
+
+    Array.prototype.forEach.call(indexEl.querySelectorAll('.issue-card'), function (c) {
+      c.setAttribute('aria-current', c.dataset.issue === id ? 'true' : 'false');
+    });
+
+    var meta = [
+      '<span>存档期号 <b>' + it.issue + '</b></span>',
+      '<span>feed 生成于 <b>' + stamp(it.feedGeneratedAt) + '</b></span>',
+      '<span>追踪 <b>' + it.stats.builders + '</b> 位建造者</span>',
+      it.rawMissing
+        ? '<span class="warn">原始数据未存档</span>'
+        : '<span>原始数据 <b>' + (it.rawBytes / 1024).toFixed(0) + ' KB</b> · raw/' + it.issue + '.json</span>'
+    ].join('');
+
+    readerEl.innerHTML =
+      '<div class="issue-head">' +
+        '<div class="kicker">AI Builders 简报 · ' + DOW[issueDate(it.issue).getDay()] + '</div>' +
+        '<h2>' + longDate(it.issue) + '</h2>' +
+        (it.headline ? '<p class="headline">' + esc(it.headline) + '</p>' : '') +
+      '</div>' +
+      '<div class="meta-strip">' + meta + '</div>' +
+      '<article class="body">' + render(it.body) + '</article>';
+
+    if (push && history.replaceState) history.replaceState(null, '', '#' + id);
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }
+
+  // j / k 与上下键在期号间跳转
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var tag = (e.target.tagName || '').toLowerCase();
+    if (tag === 'input' || tag === 'textarea') return;
+
+    var dir = 0;
+    if (e.key === 'j' || e.key === 'ArrowDown') dir = 1;
+    else if (e.key === 'k' || e.key === 'ArrowUp') dir = -1;
+    else return;
+
+    var idx = issues.findIndex(function (x) { return x.issue === current; });
+    var next = idx + dir;
+    if (next < 0 || next >= issues.length) return;
+    e.preventDefault();
+    show(issues[next].issue, true);
+  });
+
+  // ── 主题：跟随系统，可手动覆盖 ────────────────────────────────
+  var saved = null;
+  try { saved = localStorage.getItem('digest-theme'); } catch (e) {}
+  if (saved === 'dark' || saved === 'light') {
+    document.documentElement.setAttribute('data-theme', saved);
+  }
+  document.getElementById('theme-toggle').addEventListener('click', function () {
+    var root = document.documentElement;
+    var now = root.getAttribute('data-theme');
+    if (!now) {
+      now = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    var next = now === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('digest-theme', next); } catch (e) {}
+  });
+
+  // ── 启动 ──────────────────────────────────────────────────────
+  if (!issues.length) {
+    readerEl.innerHTML = '<p class="empty">还没有任何存档。运行 <code>node scripts/daily.js</code> 抓取第一期。</p>';
+  } else {
+    var want = decodeURIComponent(location.hash.replace(/^#/, ''));
+    show(issues.some(function (x) { return x.issue === want; }) ? want : issues[0].issue, false);
+  }
+})();
+</script>

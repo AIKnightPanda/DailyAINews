@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.pandax.daily-ai-digest</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/node</string>
+        <string>/Users/pandax/Coding/20260626_DailyAI/scripts/daily.js</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/pandax/Coding/20260626_DailyAI</string>
+
+    <!-- 上游 feed 每天约 UTC 06:30（北京时间 14:30）更新，15:30 跑能拿到当天的 -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>15</integer>
+        <key>Minute</key>
+        <integer>30</integer>
+    </dict>
+
+    <!-- 到点时如果 Mac 正在睡眠，launchd 会在唤醒后补跑（cron 不会） -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/pandax/Coding/20260626_DailyAI/digests/launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/pandax/Coding/20260626_DailyAI/digests/launchd.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <!-- launchd 的默认 PATH 里没有 claude，必须显式给出 -->
+        <key>PATH</key>
+        <string>/Users/pandax/.npm-global/bin:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>HOME</key>
+        <string>/Users/pandax</string>
+    </dict>
+</dict>
+</plist>

@@ -1,0 +1,64 @@
+{
+  "_说明": "这是 DailyAI 简报的信息源控制台。增删改这里即可，每天的定时任务会读取本文件，只使用 enabled=true 的来源。禁用某条把 enabled 改成 false 即可，无需删除。",
+
+  "primary_source": {
+    "name": "AINews",
+    "method": "public_web",
+    "public_url": "https://news.smol.ai/issues/",
+    "author": "swyx / smol.ai",
+    "note": "主来源。每次直接抓当日公开那一期，逐条拆开（聚合了 X/Twitter+Reddit+Discord，单期 8-15 条）。无需经 Gmail。",
+    "enabled": true
+  },
+
+  "gmail_newsletters": [
+    { "name": "AI Valley", "sender": "aivalley@mail.beehiiv.com", "public_url": "https://www.theaivalley.com/", "author": "Barsee", "enabled": true }
+  ],
+
+  "newsletters": [
+    { "name": "The Batch", "url": "https://www.deeplearning.ai/the-batch/", "author": "Andrew Ng", "enabled": true },
+    { "name": "Import AI", "url": "https://jack-clark.net/", "author": "Jack Clark (Anthropic 联合创始人)", "enabled": true },
+    { "name": "Ben's Bites", "url": "https://www.bensbites.com/", "enabled": true },
+    { "name": "The Rundown AI", "url": "https://www.therundown.ai/", "enabled": true },
+    { "name": "Lenny's Newsletter", "url": "https://www.lennysnewsletter.com/", "enabled": true }
+  ],
+
+  "x_accounts": [
+    { "handle": "@karpathy", "name": "Andrej Karpathy", "enabled": true },
+    { "handle": "@sama", "name": "Sam Altman", "enabled": true },
+    { "handle": "@demishassabis", "name": "Demis Hassabis", "enabled": true },
+    { "handle": "@ylecun", "name": "Yann LeCun", "enabled": true },
+    { "handle": "@ilyasut", "name": "Ilya Sutskever", "enabled": true },
+    { "handle": "@drfeifei", "name": "Fei-Fei Li", "enabled": true },
+    { "handle": "@goodfellow_ian", "name": "Ian Goodfellow", "enabled": true },
+    { "handle": "@emostaque", "name": "Emad Mostaque", "enabled": true },
+    { "handle": "@gdb", "name": "Greg Brockman", "enabled": true },
+    { "handle": "@miramurati", "name": "Mira Murati", "enabled": true },
+    { "handle": "@fchollet", "name": "François Chollet", "enabled": true },
+    { "handle": "@hardmaru", "name": "David Ha", "enabled": true },
+    { "handle": "@pirroh", "name": "Pietro Schirano", "enabled": true },
+    { "handle": "@swyx", "name": "swyx", "enabled": true },
+    { "handle": "@amasad", "name": "Amjad Masad", "enabled": true },
+    { "handle": "@tobi", "name": "Tobi Lutke", "enabled": true },
+    { "handle": "@paulg", "name": "Paul Graham", "enabled": true },
+    { "handle": "@benedictevans", "name": "Benedict Evans", "enabled": true },
+    { "handle": "@zebulgar", "name": "Zeb Eckert", "enabled": true },
+    { "handle": "@venturetwins", "name": "Venture Twins", "enabled": true }
+  ],
+
+  "official_blogs": [
+    { "name": "Anthropic Engineering", "url": "https://www.anthropic.com/engineering", "enabled": true },
+    { "name": "OpenAI Research", "url": "https://openai.com/news/research", "enabled": true },
+    { "name": "Google DeepMind Blog", "url": "https://deepmind.google/discover/blog/", "enabled": true },
+    { "name": "Meta AI Blog", "url": "https://ai.meta.com/blog/", "enabled": true }
+  ],
+
+  "output": {
+    "type": "feishu_docx",
+    "mode": "new_doc_per_day",
+    "file_name_pattern": "AI 简报 YYYY-MM-DD",
+    "wiki_space_id": "7497428922469957636",
+    "wiki_parent_node": "NGXFwi9GdiIvxgkcHdNcRHT5nbg",
+    "wiki_url": "https://my.feishu.cn/wiki/NGXFwi9GdiIvxgkcHdNcRHT5nbg",
+    "note": "每天新建一篇 docx，自动移动到 DailyAI 知识库节点下，文件名带日期以便按日期排序"
+  }
+}

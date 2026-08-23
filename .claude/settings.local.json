@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(mkdir -p /Users/pandax/Coding/20260626_DailyAI/follow-builders)",
+      "Bash(git clone *)",
+      "Bash(npm -v)",
+      "Bash(npm install *)",
+      "Bash(node prepare-digest.js)",
+      "Bash(echo \"exit=$?\")",
+      "Bash(node -e \"const d=require\\('/private/tmp/claude-502/-Users-pandax-Coding-20260626-DailyAI/c5c5a932-b339-4cf4-bcf0-852d464b12ee/scratchpad/digest.json'\\); console.log\\('status:',d.status\\); console.log\\('stats:',JSON.stringify\\(d.stats,null,2\\)\\); console.log\\('prompts keys:',Object.keys\\(d.prompts\\)\\); console.log\\('errors:',JSON.stringify\\(d.errors\\)\\);\")",
+      "Bash(ls -la ~/.follow-builders 2>&1 | head -5; echo \"---skills dir---\"; ls ~/.claude/skills/ 2>&1 | head -20)",
+      "Bash(mkdir -p /Users/pandax/Coding/20260626_DailyAI/.claude/skills)",
+      "Bash(mv /Users/pandax/Coding/20260626_DailyAI/follow-builders /Users/pandax/Coding/20260626_DailyAI/.claude/skills/follow-builders)",
+      "Bash(node -e ' *)",
+      "Bash(node -e *)",
+      "Bash(rm -rf /Users/pandax/Coding/20260626_DailyAI/.claude/skills/follow-builders/.git)",
+      "Bash(claude --version)",
+      "Bash(mkdir -p /Users/pandax/Coding/20260626_DailyAI/digests/raw)",
+      "Bash(mv 2026-08-08.json 2026-08-22.json)",
+      "Bash(cp /private/tmp/claude-502/-Users-pandax-Coding-20260626-DailyAI/c5c5a932-b339-4cf4-bcf0-852d464b12ee/scratchpad/d.json 2026-08-07.json)",
+      "Bash(node scripts/build-viewer.js)",
+      "Bash(node scripts/daily.js --no-llm)",
+      "Bash(node scripts/daily.js --force)",
+      "Bash(echo \"realnode: $\\(node -e 'console.log\\(process.execPath\\)'\\)\")"
+    ]
+  }
+}

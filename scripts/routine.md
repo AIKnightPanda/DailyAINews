@@ -21,6 +21,13 @@
 
 ## 步骤
 
+0. **先对齐分支**（必做，否则最后推送会失败）：
+
+   git fetch origin && git checkout -B main origin/main
+
+   沙箱默认是游离 HEAD 状态，本地分支 main 可能停在旧 commit 上，
+   不先做这一步的话，第 5 步 push 会报 non-fast-forward。
+
 1. 抓取并存档：
 
    node scripts/archive.js
@@ -44,9 +51,9 @@
 
    node scripts/build-viewer.js
 
-5. 提交并推送：
+5. 提交并推送（注意要写明 refspec）：
 
-   git add -A && git commit -m "digest: <issue>" && git push
+   git add -A && git commit -m "digest: <issue>" && git push origin main
 
    推送成功后 GitHub Pages 会自动部署，不需要你再做别的发布动作。
    如果 push 报 403 或 "Claude doesn't have GitHub access"，说明 Claude GitHub App
@@ -73,3 +80,17 @@ Artifact 有一道「未查看过当前线上版本就不许覆盖」的保护�
 必然撞上，按官方流程只能先把线上副本整份读回来再发布，而那份 HTML 内嵌了所有期内容，
 会越读越大（今天 71KB，几十期后是几百 KB）。改用 Pages 就完全绕开了这个矛盾。
 `viewer/artifact.html` 仍会生成，留作需要时手动发布私有快照用。
+
+## 沙箱的 git 状态（踩过的坑）
+
+云端沙箱把目标 commit 检出成**游离 HEAD**，而本地分支 `main` 停在缓存克隆时的旧位置：
+
+```
+HEAD detached from refs/heads/main
+HEAD            = <最新 commit>
+refs/heads/main = <旧 commit>
+```
+
+直接 `git push origin main` 推的是那个陈旧的分支引用，会被判 non-fast-forward 而拒绝。
+所以 prompt 第 0 步必须先 `git fetch origin && git checkout -B main origin/main`，
+实测之后 `git push --dry-run origin main` 返回 `Everything up-to-date`。

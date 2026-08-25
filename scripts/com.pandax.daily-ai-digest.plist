@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
+<!--
+  本地 launchd 定时任务 —— 当前【未安装】，仅作为后备保留。
+  日常运行已移到云端 Routine（见 scripts/routine.md），不依赖本机开机。
+  需要装回来时：cp 到 ~/Library/LaunchAgents/ 后 launchctl load。
+  注意：装之前先把云端 Routine 停掉，否则两边会互相覆盖提交。
+-->
 <dict>
     <key>Label</key>
     <string>com.pandax.daily-ai-digest</string>

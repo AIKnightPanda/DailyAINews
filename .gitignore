@@ -7,3 +7,6 @@ digests/launchd.log
 
 # 上游 skill 的下载包，内容已解包在 .claude/skills/follow-builders/ 下
 *.zip
+
+# 构建产物：Artifact 路线已弃用，仍生成留作备用，但不入库（每次构建都会变，白占 diff）
+viewer/artifact.html

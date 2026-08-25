@@ -20,7 +20,7 @@ digests/
 ├── 2026-08-22.md          每期简报（带 frontmatter 元信息）
 ├── raw/2026-08-22.json    当期完整原始数据（含补充源链接），期号 = feed 生成日
 ├── summaries/<期号>.json  Haiku 通读播客全文后的要点缓存
-├── extra-zh/<期号>.json   Haiku 翻译的补充源标题（按编号索引）
+├── extra-zh/<期号>.json   Haiku 对补充源的筛选与译文（按编号索引）
 ├── extra-seen.json        已收过的补充链接 URL，用于跨期去重
 └── daily.log              本地运行日志（不入库）
 docs/

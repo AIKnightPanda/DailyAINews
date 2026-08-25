@@ -281,7 +281,61 @@ a { color: var(--accent); }
 .sources a::before { content: "↗ "; color: var(--ink-3); }
 .sources a:hover::before { color: var(--accent); }
 
-.empty { color: var(--ink-2); padding: 4rem 0; }
+.empty { color: var(--ink-2); padding: 4rem 0; line-height: 1.7; }
+
+/* ── 中/EN 切换 ────────────────────────────────────────────────── */
+.lang-toggle {
+  display: inline-flex;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  overflow: hidden;
+  align-self: center;
+}
+.lang-toggle button {
+  border: 0; background: var(--surface); color: var(--ink-2);
+  font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.06em;
+  padding: 0.3rem 0.7rem; cursor: pointer; white-space: nowrap;
+}
+.lang-toggle button + button { border-left: 1px solid var(--rule); }
+.lang-toggle button[aria-pressed="true"] { background: var(--accent); color: var(--paper); }
+.lang-toggle button:not([aria-pressed="true"]):hover { color: var(--accent); }
+
+/* ── 英文原文视图 ──────────────────────────────────────────────── */
+.src-author {
+  margin: 2rem 0 0.7rem; padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--font-display); font-size: 1.1rem; font-weight: 600;
+  display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap;
+}
+.src-author span {
+  font-family: var(--font-mono); font-size: 0.68rem;
+  font-weight: 400; color: var(--ink-3);
+}
+.src-tweet {
+  padding: 0.7rem 0 0.7rem 0.9rem;
+  border-left: 2px solid var(--rule-2);
+  margin-bottom: 0.5rem;
+}
+.src-tweet p { margin: 0 0 0.4rem; line-height: 1.65; }
+.src-meta {
+  font-family: var(--font-mono); font-size: 0.64rem; color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}
+.src-meta a { color: var(--ink-3); text-decoration: none; }
+.src-meta a:hover { color: var(--accent); }
+.transcript {
+  white-space: pre-wrap; word-break: break-word;
+  font-family: var(--font-body); font-size: 0.9rem; line-height: 1.7;
+  background: var(--sunk); border-radius: 4px;
+  padding: 1rem; max-height: 32rem; overflow-y: auto;
+  margin: 0 0 1.5rem;
+}
+.src-note {
+  font-family: var(--font-mono); font-size: 0.68rem; color: var(--ink-3);
+  background: var(--sunk); border-left: 2px solid var(--accent);
+  padding: 0.55rem 0.8rem; border-radius: 0 4px 4px 0; margin: 0 0 1.4rem;
+  line-height: 1.6;
+}
 
 /* 上游 feed 停更时的提示 —— 出现在报头下方，通栏 */
 .stale-banner {
@@ -334,6 +388,10 @@ a { color: var(--accent); }
   <h1>建造者档案</h1>
   <span class="tagline">Follow Builders · 本地存档</span>
   <span class="spacer"></span>
+  <div class="lang-toggle" id="lang-toggle" role="group" aria-label="语言切换">
+    <button type="button" data-mode="zh" aria-pressed="true">中文</button>
+    <button type="button" data-mode="en" aria-pressed="false">EN</button>
+  </div>
   <button class="theme-toggle" id="theme-toggle" type="button">主题</button>
 </header>
 
@@ -545,11 +603,129 @@ a { color: var(--accent); }
         (it.headline ? '<p class="headline">' + esc(it.headline) + '</p>' : '') +
       '</div>' +
       '<div class="meta-strip">' + meta + '</div>' +
-      '<article class="body">' + render(it.body) + '</article>';
+      '<div id="pane"></div>';
+
+    renderPane(it);
 
     if (push && history.replaceState) history.replaceState(null, '', '#' + id);
     window.scrollTo({ top: 0, behavior: 'auto' });
   }
+
+  // ── 中文简报 / 英文原文 两个视图 ──────────────────────────────
+  // 中文是模型提炼过的；英文是 feed 里的原始内容，一字未改。
+  // 原文按期单独存在 source/<期号>.json，点开才加载 —— 页面体积才不会随期数膨胀。
+  var mode = 'zh';
+  var sourceCache = {};
+
+  function renderPane(it) {
+    var pane = document.getElementById('pane');
+    if (!pane) return;
+
+    if (mode === 'zh') {
+      pane.innerHTML = '<article class="body">' + render(it.body) + '</article>';
+      return;
+    }
+
+    if (it.rawMissing) {
+      pane.innerHTML = '<p class="empty">这一期建立在归档机制之前，没有保存原始数据，' +
+        '因此无法显示英文原文。<br>从 2026-08-22 期开始每期都有。</p>';
+      return;
+    }
+
+    if (sourceCache[it.issue]) {
+      pane.innerHTML = renderSource(sourceCache[it.issue]);
+      return;
+    }
+
+    pane.innerHTML = '<p class="empty">正在加载英文原文…</p>';
+    fetch('source/' + it.issue + '.json')
+      .then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .then(function (json) {
+        sourceCache[it.issue] = json;
+        if (current === it.issue && mode === 'en') pane.innerHTML = renderSource(json);
+      })
+      .catch(function (err) {
+        pane.innerHTML = '<p class="empty">英文原文加载失败：' + esc(err.message) + '。<br>' +
+          '如果你是双击本地 HTML 文件打开的，浏览器会禁止它读取同目录文件 —— 请改用站点地址访问。</p>';
+      });
+  }
+
+  function shortStamp(iso) {
+    if (!iso) return '';
+    var d = new Date(iso);
+    if (isNaN(d.getTime())) return '';
+    var pad = function (n) { return n < 10 ? '0' + n : '' + n; };
+    return (d.getMonth() + 1) + '-' + pad(d.getDate()) + ' ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
+  }
+
+  function renderSource(src) {
+    var out = [];
+    var note = src.podcasts && src.podcasts.some(function (p) { return (p.transcript || '').length; });
+
+    out.push('<div class="src-note">下面是 feed 中的英文原文，未经改写或删减。' +
+      (note ? '播客转录为完整全文 —— 中文简报只采样了其中一部分。' : '') + '</div>');
+
+    if (src.x && src.x.length) {
+      out.push('<h2>X / Twitter</h2>');
+      src.x.forEach(function (a) {
+        if (!a.tweets || !a.tweets.length) return;
+        out.push('<div class="src-author">' + esc(a.name || '') +
+          '<span>@' + esc(a.handle || '') + '</span></div>');
+        a.tweets.forEach(function (t) {
+          out.push('<div class="src-tweet"><p>' +
+            esc(t.text || '').replace(/\n/g, '<br>') + '</p><div class="src-meta">' +
+            (t.createdAt ? esc(shortStamp(t.createdAt)) + ' · ' : '') +
+            '<a href="' + esc(t.url || '#') + '" target="_blank" rel="noopener">view on X ↗</a>' +
+            '</div></div>');
+        });
+      });
+    }
+
+    if (src.blogs && src.blogs.length) {
+      out.push('<h2>Official blogs</h2>');
+      src.blogs.forEach(function (b) {
+        out.push('<h3>' + esc(b.name || '') + '：' + esc(b.title || '') + '</h3>');
+        out.push('<div class="src-meta">' + (b.publishedAt ? esc(b.publishedAt) + ' · ' : '') +
+          '<a href="' + esc(b.url || '#') + '" target="_blank" rel="noopener">read original ↗</a></div>');
+        out.push('<div class="transcript">' + esc(b.content || '（无正文）') + '</div>');
+      });
+    }
+
+    if (src.podcasts && src.podcasts.length) {
+      out.push('<h2>Podcasts</h2>');
+      src.podcasts.forEach(function (p) {
+        out.push('<h3>' + esc(p.name || '') + '：' + esc(p.title || '') + '</h3>');
+        out.push('<div class="src-meta">' + (p.publishedAt ? esc(shortStamp(p.publishedAt)) + ' · ' : '') +
+          '<a href="' + esc(p.url || '#') + '" target="_blank" rel="noopener">open ↗</a> · ' +
+          (p.transcript || '').length.toLocaleString() + ' 字符</div>');
+        out.push('<div class="transcript">' + esc(p.transcript || '（无转录）') + '</div>');
+      });
+    }
+
+    if (out.length === 1) out.push('<p class="empty">这一期的 feed 没有任何内容。</p>');
+    return '<article class="body">' + out.join('') + '</article>';
+  }
+
+  // 切换按钮
+  Array.prototype.forEach.call(
+    document.getElementById('lang-toggle').querySelectorAll('button'),
+    function (btn) {
+      btn.addEventListener('click', function () {
+        var want = btn.dataset.mode;
+        if (want === mode) return;
+        mode = want;
+        Array.prototype.forEach.call(
+          document.getElementById('lang-toggle').querySelectorAll('button'),
+          function (b) { b.setAttribute('aria-pressed', b.dataset.mode === mode ? 'true' : 'false'); }
+        );
+        var it = issues.filter(function (x) { return x.issue === current; })[0];
+        if (it) renderPane(it);
+      });
+    }
+  );
 
   // j / k 与上下键在期号间跳转
   document.addEventListener('keydown', function (e) {

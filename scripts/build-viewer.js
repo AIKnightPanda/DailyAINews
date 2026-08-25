@@ -7,6 +7,8 @@
 //
 //   docs/index.html       完整 HTML。GitHub Pages 以 /docs 为站点根目录提供服务，
 //                         同时也能双击直接打开
+//   docs/source/<期号>.json  该期的英文原文（推文/博客/播客转录全量），
+//                         供页面的「EN 原文」视图按需加载 —— 不内联，页面体积才不会随期数膨胀
 //   viewer/artifact.html  去掉外层骨架，留作手动发布 Artifact 用（平台会自己包骨架）
 //
 // 两份都把数据内联在 <script> 里 —— 不依赖同目录的 .js，file:// 下也不受 CORS 限制。
@@ -25,6 +27,7 @@ const DIGEST_DIR = join(ROOT, 'digests');
 const RAW_DIR = join(DIGEST_DIR, 'raw');
 const VIEWER_DIR = join(ROOT, 'viewer');
 const DOCS_DIR = join(ROOT, 'docs');
+const SOURCE_DIR = join(DOCS_DIR, 'source');
 const TEMPLATE = join(VIEWER_DIR, 'template.html');
 
 const DATA_SLOT = /\/\*__DIGEST_DATA__\*\/[\s\S]*?\/\*__END__\*\//;
@@ -124,9 +127,29 @@ async function main() {
   // 关掉 Jekyll，避免它对站点文件做多余处理
   await writeFile(join(DOCS_DIR, '.nojekyll'), '');
 
+  // 英文原文：每期单独一个文件，页面点「EN」时才去取。
+  // 丢掉 prompts 字段 —— 那是给模型的指令，不是内容。
+  await mkdir(SOURCE_DIR, { recursive: true });
+  let sourceCount = 0;
+  for (const it of issues) {
+    const rawPath = join(RAW_DIR, `${it.issue}.json`);
+    if (!existsSync(rawPath)) continue;
+    const raw = JSON.parse(await readFile(rawPath, 'utf-8'));
+    await writeFile(join(SOURCE_DIR, `${it.issue}.json`), JSON.stringify({
+      issue: it.issue,
+      generatedAt: raw.stats?.feedGeneratedAt || null,
+      stats: raw.stats || {},
+      x: raw.x || [],
+      blogs: raw.blogs || [],
+      podcasts: raw.podcasts || []
+    }));
+    sourceCount++;
+  }
+
   const archived = issues.filter(i => !i.rawMissing).length;
   const kb = n => (n / 1024).toFixed(0) + 'KB';
   console.log(`已生成 docs/index.html (${kb(local.length)}) 与 viewer/artifact.html (${kb(filled.length)})：${issues.length} 期，其中 ${archived} 期含原始数据`);
+  console.log(`英文原文导出 docs/source/：${sourceCount} 期`);
   for (const i of issues) {
     console.log(`  ${i.issue}  ${i.rawMissing ? '无 raw' : kb(i.rawBytes)}\t${i.headline.slice(0, 40)}`);
   }

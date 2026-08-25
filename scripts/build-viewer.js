@@ -18,7 +18,7 @@
 // ============================================================================
 
 import { readdir, readFile, writeFile, mkdir, stat } from 'fs/promises';
-import { existsSync, readFileSync } from 'fs';
+import { existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -52,16 +52,6 @@ function parseFrontmatter(text) {
   return { meta, body: text.slice(match[0].length) };
 }
 
-// 只为拿一个条数就整份解析 raw 有点重，但一天就跑一次，够用了
-function extraLinkCount(rawPath) {
-  if (!existsSync(rawPath)) return 0;
-  try {
-    return (JSON.parse(readFileSync(rawPath, 'utf-8')).extra?.items || []).length;
-  } catch {
-    return 0;
-  }
-}
-
 async function collectIssues() {
   const files = (await readdir(DIGEST_DIR))
     .filter(f => f.endsWith('.md') && f !== 'README.md')
@@ -90,7 +80,6 @@ async function collectIssues() {
       },
       rawBytes,
       rawMissing: rawBytes === 0,
-      extraLinks: extraLinkCount(rawPath),
       body: body.trim()
     });
   }
@@ -104,6 +93,7 @@ async function main() {
   }
 
   const issues = await collectIssues();
+
   const template = await readFile(TEMPLATE, 'utf-8');
 
   // 转义 < 防止正文里的 </script> 提前闭合标签（< 在 JSON 里等价于 <）

@@ -23,7 +23,8 @@
   --font-body: 'Newsreader', 'Noto Serif SC', 'Songti SC', 'Source Han Serif SC', Georgia, serif;
   --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  --sidebar-w: 19rem;
+  --sidebar-w: 18rem;
+  --outline-w: 17rem;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -114,11 +115,48 @@ a { color: var(--accent); }
 .theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
 
 /* ── 骨架 ─────────────────────────────────────────────────────── */
+.outline {
+  position: sticky; top: 4.2rem; align-self: start;
+  max-height: calc(100vh - 5.5rem); overflow-y: auto;
+  padding: 0.4rem 0 2rem 1rem; scrollbar-width: thin;
+  border-left: 1px solid var(--rule-2);
+}
+.outline-head {
+  font: 600 0.68rem/1 var(--font-mono); letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--ink-3); margin: 0 0 0.8rem;
+}
+.outline a {
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;
+  overflow: hidden;                     /* 长标题最多三行，否则大纲会被拉得很长 */
+  text-decoration: none; color: var(--ink-2);
+  font-size: 0.79rem; line-height: 1.45;
+  padding: 0.28rem 0 0.28rem 0.62rem;
+  border-left: 2px solid transparent; margin-left: -0.62rem;
+  transition: color .12s, border-color .12s;
+}
+.outline a:hover { color: var(--accent); }
+.outline a.lv2 {
+  font-weight: 600; color: var(--ink); margin-top: 0.9rem;
+  font-size: 0.82rem; -webkit-line-clamp: 2;
+}
+.outline a.lv2:first-of-type { margin-top: 0; }
+.outline a.lv3 { padding-left: 1.15rem; }
+.outline a.lv4 {
+  padding-left: 1.15rem; margin-top: 0.45rem;
+  font-weight: 600; color: var(--ink); -webkit-line-clamp: 2;
+}
+.outline a.lv5 { padding-left: 1.9rem; font-size: 0.75rem; -webkit-line-clamp: 2; }
+.outline a.lv6 {
+  padding-left: 2.5rem; font-size: 0.72rem; color: var(--ink-3);
+  -webkit-line-clamp: 2;
+}
+.outline a.here { color: var(--accent); border-left-color: var(--accent); }
+
 .shell {
   display: grid;
-  grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
+  grid-template-columns: var(--sidebar-w) var(--outline-w) minmax(0, 1fr);
   gap: clamp(1.5rem, 4vw, 3.5rem);
-  max-width: 78rem;
+  max-width: 92rem;
   margin: 0 auto;
   padding: 0 clamp(1rem, 3vw, 2rem) 5rem;
 }
@@ -249,6 +287,88 @@ a { color: var(--accent); }
   font-variation-settings: 'SOFT' 0, 'WONK' 1;
 }
 .body p { margin: 0 0 1.05rem; line-height: 1.78; text-wrap: pretty; }
+
+/* h4 = 延伸阅读的来源分组。要明显低于 h3（条目标题），又高于正文 */
+.body h4 {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: 0.98rem; line-height: 1.3; color: var(--ink);
+  margin: 2.4rem 0 0.9rem; padding-top: 0.85rem;
+  border-top: 1px solid var(--rule);
+  display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap;
+}
+.body h4 .n {
+  font: 400 0.72rem/1 var(--font-mono); color: var(--ink-3);
+  letter-spacing: 0.04em;
+}
+.body h4 a {
+  font: 400 0.72rem/1 var(--font-mono); color: var(--accent);
+  text-decoration: none; border-bottom: 1px solid var(--rule);
+}
+.body h4 a:hover { border-bottom-color: var(--accent); }
+
+/* 延伸阅读的链接清单：不用 bullet + 下划线，改成整行可读的条目。
+   标题是主体，出处收成小号 mono 标签，背景说明缩进弱化。 */
+.body ul.links {
+  list-style: none; padding: 0; margin: 0 0 1.1rem;
+  display: block;
+}
+.body ul.links > li {
+  padding: 0.55rem 0.7rem 0.55rem 0.75rem;
+  margin: 0; line-height: 1.55;
+  border-left: 2px solid transparent;
+  border-radius: 3px;
+  transition: background .12s, border-color .12s;
+}
+.body ul.links > li + li { margin-top: 0.1rem; }
+.body ul.links > li:hover {
+  background: var(--accent-wash); border-left-color: var(--accent);
+}
+.body ul.links > li::marker { content: none; }
+/* 第一个链接是标题，后面的是出处标签 */
+.body ul.links > li > a:first-child {
+  color: var(--ink); text-decoration: none;
+  font-weight: 500; border-bottom: 1px solid transparent;
+}
+.body ul.links > li:hover > a:first-child {
+  color: var(--accent); border-bottom-color: var(--rule);
+}
+.body ul.links > li { cursor: pointer; }
+.body ul.links > li .d {
+  display: block; margin-top: 0.22rem;
+  font-size: 0.86rem; line-height: 1.62; color: var(--ink-2);
+}
+.body ul.links > li > a:not(:first-child) {
+  display: inline-block; font: 400 0.7rem/1.5 var(--font-mono);
+  color: var(--ink-2); text-decoration: none;
+  padding: 0.05rem 0.4rem; margin-left: 0.15rem;
+  border: 1px solid var(--rule-2); border-radius: 2px;
+  vertical-align: 0.05em;
+}
+.body ul.links > li > a:not(:first-child):hover {
+  color: var(--accent); border-color: var(--accent);
+}
+/* 链接清单里的背景说明：不要引用块那套边框，缩进弱化即可 */
+.body ul.links + blockquote,
+.body ul.links > li + blockquote { border-left: 0; }
+
+/* h6 = AINews 自己的主题层（子版块 · 主题）*/
+.body h6 {
+  font: 500 0.76rem/1.45 var(--font-mono); color: var(--ink-2);
+  letter-spacing: 0.01em; margin: 1.1rem 0 0.45rem;
+  padding-left: 0.7rem; border-left: 2px solid var(--rule-2);
+}
+
+/* h5 = 分组内部的板块（AINews 的 Twitter / Reddit 分区）*/
+.body h5 {
+  font-family: var(--font-display); font-weight: 600; font-size: 0.92rem;
+  color: var(--ink); margin: 1.5rem 0 0.55rem;
+  display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap;
+}
+.body h5 a, .body h4 a {
+  font: 400 0.7rem/1 var(--font-mono); color: var(--ink-2);
+  text-decoration: none; border-bottom: 1px solid var(--rule);
+}
+.body h5 a:hover, .body h4 a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .body strong { font-weight: 600; color: var(--ink); }
 .body code {
   font-family: var(--font-mono); font-size: 0.86em;
@@ -257,7 +377,15 @@ a { color: var(--accent); }
 .body ul, .body ol { margin: 0 0 1.15rem; padding-left: 1.3rem; display: flex; flex-direction: column; gap: 0.55rem; }
 .body li { line-height: 1.72; padding-left: 0.2rem; }
 .body li::marker { color: var(--accent); font-family: var(--font-mono); font-size: 0.85em; }
+/* 中性背景说明：细线 + 无底色，不抢戏 */
 .body blockquote {
+  margin: 0.15rem 0 0.9rem; padding: 0 0 0 0.9rem;
+  border-left: 2px solid var(--rule); background: none;
+  font-size: 0.92rem; line-height: 1.7; color: var(--ink-2);
+}
+.body blockquote p { margin: 0; }
+/* 警告保留原来的醒目样式 */
+.body blockquote.warn {
   margin: 0 0 1.3rem; padding: 0.85rem 1.1rem;
   background: var(--sunk);
   border-left: 2px solid var(--mark);
@@ -318,11 +446,48 @@ a { color: var(--accent); }
 }
 .lk-item:hover { border-left-color: var(--accent); background: var(--accent-wash); }
 .lk-item .t { font-size: .95rem; line-height: 1.45; }
+.lk-item .s {
+  display: block; font-size: .82rem; line-height: 1.5;
+  color: var(--ink-2); margin-top: .12rem;
+}
 .lk-item .u {
   display: block; font: 400 .7rem/1.5 var(--font-mono);
   color: var(--ink-3); word-break: break-all; margin-top: .1rem;
 }
 .lk-item:hover .u { color: var(--accent); }
+.lk-sub {
+  font: 600 0.8rem/1.45 var(--font-body); color: var(--ink);
+  margin: .95rem 0 .35rem;
+}
+.lk-topic {
+  font: 500 0.74rem/1.45 var(--font-mono); color: var(--ink-2);
+  margin: .9rem 0 .35rem; padding-left: .7rem;
+  border-left: 2px solid var(--rule-2);
+}
+h3.lk-src {
+  display: flex; align-items: baseline; gap: .5rem; flex-wrap: wrap;
+  font-family: var(--font-display); font-weight: 600; font-size: 1rem;
+  color: var(--ink); margin: 2.2rem 0 .8rem; padding-top: .8rem;
+  border-top: 1px solid var(--rule); letter-spacing: 0;
+  text-transform: none;
+}
+h3.lk-src .n { font: 400 .72rem/1 var(--font-mono); color: var(--ink-3); }
+h3.lk-src a {
+  font: 400 .7rem/1 var(--font-mono); color: var(--ink-2);
+  text-decoration: none; border-bottom: 1px solid var(--rule);
+}
+h3.lk-src a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+h4.lk-sec {
+  font-family: var(--font-display); font-weight: 600; font-size: .88rem;
+  color: var(--ink); margin: 1.3rem 0 .5rem; letter-spacing: 0;
+}
+.lk-more {
+  display: inline-block; font: 400 .7rem/1.5 var(--font-mono);
+  color: var(--ink-2); text-decoration: none;
+  padding: .05rem .4rem; margin: 0 0 .4rem .85rem;
+  border: 1px solid var(--rule-2); border-radius: 2px;
+}
+.lk-more:hover { color: var(--accent); border-color: var(--accent); }
 .lk-fail {
   font: .8rem/1.5 var(--font-body); color: var(--mark);
   background: var(--warn-bg); padding: .5rem .7rem; border-radius: 3px; margin-top: 1rem;
@@ -382,6 +547,12 @@ a { color: var(--accent); }
 .stale-banner b { font-weight: 500; }
 
 /* ── 窄屏：索引变成顶部横滑 ────────────────────────────────────── */
+/* 中等宽度先牺牲大纲，正文优先 */
+@media (max-width: 1180px) {
+  .shell { grid-template-columns: var(--sidebar-w) minmax(0, 1fr); }
+  .outline { display: none; }
+}
+
 @media (max-width: 860px) {
   .shell { grid-template-columns: minmax(0, 1fr); gap: 0; }
   .index {
@@ -421,7 +592,6 @@ a { color: var(--accent); }
   <div class="lang-toggle" id="lang-toggle" role="group" aria-label="语言切换">
     <button type="button" data-mode="zh" aria-pressed="true">中文</button>
     <button type="button" data-mode="en" aria-pressed="false">EN</button>
-    <button type="button" data-mode="links" aria-pressed="false">链接</button>
   </div>
   <button class="theme-toggle" id="theme-toggle" type="button">主题</button>
 </header>
@@ -433,6 +603,7 @@ a { color: var(--accent); }
       <span id="index-count"></span>
     </div>
   </nav>
+  <nav class="outline" id="outline" aria-label="本期大纲"></nav>
   <main class="reader" id="reader"></main>
 </div>
 
@@ -479,11 +650,23 @@ a { color: var(--accent); }
       if (part.length > 1 && part.charAt(0) === '`' && part.charAt(part.length - 1) === '`') {
         return '<code>' + part.slice(1, -1) + '</code>';
       }
-      return part
-        .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-        .replace(URL_RE, function (m) {
-          return '<a href="' + m + '" target="_blank" rel="noopener">' + esc(prettyUrl(m)) + '</a>';
-        });
+      // 先切出 markdown 链接 [文字](地址)：里面的地址不能再被裸 URL 规则二次处理，
+      // 否则会在已经生成的 <a href> 里再插一个 <a>
+      return part.split(/(\[[^\]\[]+\]\(https?:\/\/[^)\s]+\))/g).map(function (seg) {
+        var md = /^\[([^\]\[]+)\]\((https?:\/\/[^)\s]+)\)$/.exec(seg);
+        if (md) {
+          return '<a href="' + md[2] + '" target="_blank" rel="noopener">' +
+            md[1].replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>') + '</a>';
+        }
+        return seg
+          .replace(/⟨([^⟩]+)⟩/g, '<span class="n">$1</span>')
+          .replace(/⟪([^⟫]+)⟫/g, '<span class="d">$1</span>')
+          .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+          .replace(/(^|[^*])\*([^*\n]+)\*(?!\*)/g, '$1<em>$2</em>')
+          .replace(URL_RE, function (m) {
+            return '<a href="' + m + '" target="_blank" rel="noopener">' + esc(prettyUrl(m)) + '</a>';
+          });
+      }).join('');
     }).join('');
   }
 
@@ -497,6 +680,9 @@ a { color: var(--accent); }
   }
 
   function render(md) {
+    // 去掉 <!-- EXTRA:START/END --> 这类标记 —— 它们是给脚本用的，不该显示
+    md = md.replace(/<!--[\s\S]*?-->/g, '');
+    var inExtra = false;
     var lines = md.split(/\r?\n/);
     var out = [];
     var para = [];
@@ -511,12 +697,17 @@ a { color: var(--accent); }
     }
     function flushQuote() {
       if (!quote.length) return;
-      out.push('<blockquote><p>' + quote.map(inline).join('<br>') + '</p></blockquote>');
+      // ⚠️ 开头的是数据缺口警告，其余是中性背景说明 —— 两者不该长得一样
+      var isWarn = /^\s*(⚠️|注意|警告)/.test(quote[0] || '');
+      out.push('<blockquote' + (isWarn ? ' class="warn"' : '') + '><p>' +
+        quote.map(inline).join('<br>') + '</p></blockquote>');
       quote = [];
     }
     function flushList() {
       if (!list) return;
-      out.push('<' + list.tag + '>' + list.items.map(function (i) {
+      // 延伸阅读是「链接清单」，和正文的说理列表用途不同，样式也该不同
+      var cls = inExtra && list.tag === 'ul' ? ' class="links"' : '';
+      out.push('<' + list.tag + cls + '>' + list.items.map(function (i) {
         return '<li>' + inline(i) + '</li>';
       }).join('') + '</' + list.tag + '>');
       list = null;
@@ -528,10 +719,13 @@ a { color: var(--accent); }
 
       if (t === '') { flushAll(); return; }
 
-      var h = /^(#{2,4})\s+(.*)$/.exec(t);
+      // h4/h5 是「延伸阅读」用的分组层级 —— 以前被压成 h3，
+      // 导致分组标签和新闻大标题一样大，层级整个塌掉
+      var h = /^(#{2,6})\s+(.*)$/.exec(t);
       if (h) {
         flushAll();
-        var level = Math.min(h[1].length, 3);
+        var level = h[1].length;
+        if (level === 2) inExtra = /延伸阅读/.test(h[2]);
         out.push('<h' + level + '>' + inline(h[2]) + '</h' + level + '>');
         return;
       }
@@ -648,30 +842,75 @@ a { color: var(--accent); }
   var mode = 'zh';
   var sourceCache = {};
 
+  // 大纲：从已渲染的 h2/h3/h4 现扒，不额外维护一份数据
+  var spy = null;
+  function buildOutline() {
+    var nav = document.getElementById('outline');
+    var pane = document.getElementById('pane');
+    if (!nav || !pane) return;
+    if (spy) { window.removeEventListener('scroll', spy); spy = null; }
+
+    // h5/h6 也要进大纲 —— 官方博客要能看到 OpenAI / DeepMind 这层，
+    // AINews 的板块和主题分类同理，否则等于在大纲里把结构又压平了
+    var heads = [].slice.call(pane.querySelectorAll('h2, h3, h4, h5, h6'));
+    if (heads.length < 3) { nav.innerHTML = ''; return; }
+
+    var html = ['<div class="outline-head">本期大纲</div>'];
+    var links = [];
+    heads.forEach(function (h, i) {
+      var id = 'sec-' + i;
+      h.id = id;
+      // 计数标记（⟨3 条⟩）在大纲里是噪声，去掉
+      // 计数、出处链接文字在大纲里都是噪声
+      var label = h.textContent
+        .replace(/\s*\d+\s*条\s*/g, ' ')
+        .replace(/看当期汇总\s*↗/, '')
+        .replace(/[\w.-]+\.(com|net|org|ai|io|google)\s*↗/g, '')
+        .replace(/\s+/g, ' ').trim();
+      if (!label) return;
+      html.push('<a href="#' + id + '" class="lv' + h.tagName.charAt(1) + '">' + esc(label) + '</a>');
+      links.push(id);
+    });
+    nav.innerHTML = html.join('');
+
+    // 滚动时高亮当前所在小节
+    var as = [].slice.call(nav.querySelectorAll('a'));
+    spy = function () {
+      var best = 0;
+      for (var i = 0; i < links.length; i++) {
+        var el = document.getElementById(links[i]);
+        if (el && el.getBoundingClientRect().top <= 120) best = i;
+      }
+      as.forEach(function (a, i) { a.classList.toggle('here', i === best); });
+    };
+    window.addEventListener('scroll', spy, { passive: true });
+    spy();
+  }
+
   function renderPane(it) {
     var pane = document.getElementById('pane');
     if (!pane) return;
 
     if (mode === 'zh') {
       pane.innerHTML = '<article class="body">' + render(it.body) + '</article>';
+      buildOutline();
       return;
     }
 
-    // EN 和「链接」用同一份 source/<期号>.json，共享缓存，只 fetch 一次
-    var draw = function (json) { return mode === 'en' ? renderSource(json) : renderLinks(json); };
-
     if (it.rawMissing) {
       pane.innerHTML = '<p class="empty">这一期建立在归档机制之前，没有保存原始数据，' +
-        '因此无法显示' + (mode === 'en' ? '英文原文' : '链接') + '。<br>从 2026-08-22 期开始每期都有。</p>';
+        '因此无法显示英文原文。<br>从 2026-08-22 期开始每期都有。</p>';
+      buildOutline();
       return;
     }
 
     if (sourceCache[it.issue]) {
-      pane.innerHTML = draw(sourceCache[it.issue]);
+      pane.innerHTML = renderSource(sourceCache[it.issue]);
+      buildOutline();
       return;
     }
 
-    pane.innerHTML = '<p class="empty">正在加载…</p>';
+    pane.innerHTML = '<p class="empty">正在加载英文原文…</p>';
     fetch('source/' + it.issue + '.json')
       .then(function (r) {
         if (!r.ok) throw new Error('HTTP ' + r.status);
@@ -679,8 +918,7 @@ a { color: var(--accent); }
       })
       .then(function (json) {
         sourceCache[it.issue] = json;
-        // 加载期间可能已经切走了，回来时按当时的模式重画
-        if (current === it.issue && mode !== 'zh') pane.innerHTML = draw(json);
+        if (current === it.issue && mode === 'en') { pane.innerHTML = renderSource(json); buildOutline(); }
       })
       .catch(function (err) {
         pane.innerHTML = '<p class="empty">加载失败：' + esc(err.message) + '。<br>' +
@@ -696,50 +934,23 @@ a { color: var(--accent); }
     return (d.getMonth() + 1) + '-' + pad(d.getDate()) + ' ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
   }
 
-  // 链接墙。标题和 URL 全程由脚本从原文提取，没有经过任何模型改写，
-  // 所以这里显示的链接就是原文里的链接。
-  function renderLinks(src) {
-    var extra = src.extra || {};
-    var items = extra.items || [];
-    var out = [];
-
-    out.push('<div class="src-note">来自 AINews、Import AI 和各家官方博客的当期条目，' +
-      '只有标题和链接，点开即到原文。这些源不在中文简报的改写范围内。</div>');
-
-    if (!items.length) {
-      out.push('<p class="empty">这一期没有抓到补充链接。</p>');
-    } else {
-      // 按来源分组，组内再按小节分（AINews 有 Twitter/Reddit 板块之分）
-      var order = [], byS = {};
-      items.forEach(function (i) {
-        var k = i.source || '其他';
-        if (!byS[k]) { byS[k] = []; order.push(k); }
-        byS[k].push(i);
-      });
-
-      order.forEach(function (srcName) {
-        out.push('<div class="lk-src">' + esc(srcName) + ' · ' + byS[srcName].length + ' 条</div>');
-        var lastSec = null;
-        byS[srcName].forEach(function (i) {
-          if (i.section && i.section !== lastSec) {
-            out.push('<div class="lk-sec">' + esc(i.section) + '</div>');
-            lastSec = i.section;
-          }
-          out.push('<a class="lk-item" href="' + esc(i.url) + '" target="_blank" rel="noopener">' +
-            '<span class="t">' + esc(i.title) + '</span>' +
-            '<span class="u">' + esc(i.url) + '</span></a>');
-        });
-      });
-    }
-
-    // 某个源抓失败时明说，而不是静悄悄少一块
-    var failed = (extra.sources || []).filter(function (x) { return x.status === 'error'; });
-    if (failed.length) {
-      out.push('<div class="lk-fail">以下信息源本期抓取失败：' +
-        esc(failed.map(function (x) { return x.name + '（' + x.error + '）'; }).join('；')) + '</div>');
-    }
-
-    return '<article class="body">' + out.join('') + '</article>';
+  function hostOf(u) {
+    try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return u; }
+  }
+  // 和 link-digest.js 里同名函数保持一致：让人点之前就知道去哪
+  function linkLabel(url) {
+    try {
+      var u = new URL(url), h = u.hostname.replace(/^www\./, '');
+      if (/^(x|twitter)\.com$/.test(h)) {
+        var seg = u.pathname.split('/').filter(Boolean)[0];
+        return seg && seg !== 'i' ? '@' + seg : 'x.com';
+      }
+      if (h === 'github.com') {
+        var p = u.pathname.split('/').filter(Boolean);
+        return p.length >= 2 ? 'GitHub/' + p[1] : 'GitHub';
+      }
+      return h;
+    } catch (e) { return '原文'; }
   }
 
   function renderSource(src) {
@@ -747,7 +958,7 @@ a { color: var(--accent); }
     var note = src.podcasts && src.podcasts.some(function (p) { return (p.transcript || '').length; });
 
     out.push('<div class="src-note">下面是 feed 中的英文原文，未经改写或删减。' +
-      (note ? '播客转录为完整全文 —— 中文简报只采样了其中一部分。' : '') + '</div>');
+      (note ? '播客转录为完整全文。' : '') + '</div>');
 
     if (src.x && src.x.length) {
       out.push('<h2>X / Twitter</h2>');
@@ -786,9 +997,79 @@ a { color: var(--accent); }
       });
     }
 
+    // 补充源：AINews / Import AI / 官方博客的当期条目，英文原标题 + 原文链接。
+    // 标题和 URL 全程由脚本从原文提取，没有经过任何模型。
+    var extra = src.extra || {};
+    var items = extra.items || [];
+    if (items.length) {
+      out.push('<h2>Aggregators &amp; official blogs</h2>');
+      var order = ['OpenAI', 'Google DeepMind', 'Import AI', 'The Rundown AI', 'AINews'];
+      var byS = {}, names = [];
+      items.forEach(function (i) {
+        var k = i.source || 'Other';
+        if (!byS[k]) { byS[k] = []; names.push(k); }
+        byS[k].push(i);
+      });
+      names.sort(function (a, b) {
+        var ia = order.indexOf(a), ib = order.indexOf(b);
+        return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+      });
+      names.forEach(function (name) {
+        var g = byS[name];
+        // 出处：官方站点地址一直存在数据里，这里挂到组标题上
+        var home = (g.find(function (x) { return x.sourceHome; }) || {}).sourceHome;
+        var issue = (g.find(function (x) { return x.issueUrl; }) || {}).issueUrl;
+        out.push('<h3 class="lk-src">' + esc(name) + ' <span class="n">' + g.length + '</span>' +
+          (issue ? ' <a href="' + esc(issue) + '" target="_blank" rel="noopener">this issue ↗</a>' : '') +
+          (home ? ' <a href="' + esc(home) + '" target="_blank" rel="noopener">' + esc(hostOf(home)) + ' ↗</a>' : '') +
+          '</h3>');
+        // 层级和中文版一一对应：板块 → 子版块 → 主题 → 条目
+        var lastSec = null, lastSub = null, lastTopic = null;
+        g.forEach(function (i) {
+          if (i.section && i.section !== lastSec) {
+            out.push('<h4 class="lk-sec">' + esc(i.section) + '</h4>');
+            lastSec = i.section; lastSub = null; lastTopic = null;
+          }
+          if (i.subsection && i.subsection !== lastSub) {
+            out.push('<div class="lk-topic">' + esc(i.subsection) + '</div>');
+            lastSub = i.subsection; lastTopic = null;
+          }
+          if (i.topic && i.topic !== lastTopic) {
+            out.push('<div class="lk-sub">' + esc(i.topic) + '</div>');
+            lastTopic = i.topic;
+          }
+          // 标题、描述、出处同属一个 <a>，整块可点 —— 和中文版一致
+          out.push('<a class="lk-item" href="' + esc(i.url) + '" target="_blank" rel="noopener">' +
+            '<span class="t">' + esc(i.title) + '</span>' +
+            (i.summary ? '<span class="s">' + esc(i.summary.replace(/^PLUS:\s*/i, 'Also: ')) + '</span>' : '') +
+            '<span class="u">' + esc(hostOf(i.url)) + ' ↗' +
+            (i.links || []).map(function (l) { return ' · ' + esc(linkLabel(l.url)); }).join('') +
+            '</span></a>');
+          (i.links || []).forEach(function (l) {
+            out.push('<a class="lk-more" href="' + esc(l.url) + '" target="_blank" rel="noopener">' +
+              esc(linkLabel(l.url)) + ' ↗</a>');
+          });
+        });
+      });
+      var failed = (extra.sources || []).filter(function (x) { return x.status === 'error'; });
+      if (failed.length) {
+        out.push('<div class="lk-fail">Failed to fetch: ' +
+          esc(failed.map(function (x) { return x.name + ' (' + x.error + ')'; }).join('; ')) + '</div>');
+      }
+    }
+
     if (out.length === 1) out.push('<p class="empty">这一期的 feed 没有任何内容。</p>');
     return '<article class="body">' + out.join('') + '</article>';
   }
+
+  // 条目的标题和描述属于同一块，点这一块的任何地方都跳到标题那个链接
+  document.addEventListener('click', function (e) {
+    if (e.target.closest('a')) return;
+    var li = e.target.closest('.body ul.links > li');
+    if (!li) return;
+    var a = li.querySelector('a[href^="http"]');
+    if (a) window.open(a.href, '_blank', 'noopener');
+  });
 
   // 切换按钮
   Array.prototype.forEach.call(

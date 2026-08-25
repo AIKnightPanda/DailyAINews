@@ -9,9 +9,9 @@
 //
 // 输出纯文本到 stdout。这是写简报的模型唯一需要读的东西。
 //
-// 补充源的链接墙（AINews / Import AI / 官方博客）**不经过这里** ——
-// 它由 build-viewer.js 直接从归档渲染到页面上，零 token，
-// URL 也就不可能被模型改写或编造。
+// 补充源（AINews / Import AI / 官方博客）以 [E<n>] 编号列表的形式进入素材，
+// **只给编号和标题，不给 URL**。模型可以在正文里用 [E12] 引用，
+// 之后由 link-digest.js 换成真链接 —— URL 全程不经过模型，编不出来。
 //
 // 用法:
 //   node scripts/extract.js <期号>                 写简报用的素材
@@ -136,6 +136,28 @@ if (data.podcasts?.length) {
       }
     }
   }
+}
+
+// ── 补充源条目 ──────────────────────────────────────────────────
+// 只给编号和标题。URL 一律不给 —— 模型没见过就编不出来。
+const extraItems = data.extra?.items || [];
+if (extraItems.length) {
+  out.push('\n## 补充源条目（可在正文中用 [E<编号>] 引用）');
+  out.push('这些是 AINews、Import AI 和各家官方博客当期的条目。');
+  out.push('**没有给你 URL，也不需要你写 URL** —— 你只要写 [E12] 这样的编号，');
+  out.push('脚本会自动替换成真链接。全部条目都会由脚本列在简报末尾，');
+  out.push('所以你不必逐条罗列，只在正文确实用得上时引用。');
+  out.push('');
+  let lastKey = null;
+  extraItems.forEach((it, i) => {
+    const path = [it.section, it.subsection, it.topic].filter(Boolean).join(' › ');
+    const key = it.source + (path ? ' 【' + path + '】' : '');
+    if (key !== lastKey) {
+      out.push(`\n**${key}**`);
+      lastKey = key;
+    }
+    out.push(`[E${i + 1}] <${it.source}> ${it.title}` + (it.summary ? ` —— ${it.summary}` : ''));
+  });
 }
 
 // ── 官方改写指令 ────────────────────────────────────────────────

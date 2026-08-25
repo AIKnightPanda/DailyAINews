@@ -47,7 +47,9 @@ async function main() {
   // 它是加分项不是必需品：抓不到就带着空清单继续，绝不让当期简报出不来。
   let extra = { items: [], sources: [] };
   try {
-    const r = await execFileAsync('node', [FETCH_EXTRA], { maxBuffer: 32 * 1024 * 1024, timeout: 90_000 });
+    // 传期号日期，让补充源的时间窗口和这一期对齐（否则会混进次日的文章）
+    const r = await execFileAsync('node', [FETCH_EXTRA, `--until=${issue}`],
+      { maxBuffer: 32 * 1024 * 1024, timeout: 90_000 });
     extra = JSON.parse(r.stdout);
   } catch (err) {
     extra = { items: [], sources: [], error: err.message };

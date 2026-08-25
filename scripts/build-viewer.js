@@ -18,7 +18,7 @@
 // ============================================================================
 
 import { readdir, readFile, writeFile, mkdir, stat } from 'fs/promises';
-import { existsSync } from 'fs';
+import { existsSync, readFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -52,6 +52,16 @@ function parseFrontmatter(text) {
   return { meta, body: text.slice(match[0].length) };
 }
 
+// 只为拿一个条数就整份解析 raw 有点重，但一天就跑一次，够用了
+function extraLinkCount(rawPath) {
+  if (!existsSync(rawPath)) return 0;
+  try {
+    return (JSON.parse(readFileSync(rawPath, 'utf-8')).extra?.items || []).length;
+  } catch {
+    return 0;
+  }
+}
+
 async function collectIssues() {
   const files = (await readdir(DIGEST_DIR))
     .filter(f => f.endsWith('.md') && f !== 'README.md')
@@ -80,6 +90,7 @@ async function collectIssues() {
       },
       rawBytes,
       rawMissing: rawBytes === 0,
+      extraLinks: extraLinkCount(rawPath),
       body: body.trim()
     });
   }
@@ -131,6 +142,7 @@ async function main() {
   // 丢掉 prompts 字段 —— 那是给模型的指令，不是内容。
   await mkdir(SOURCE_DIR, { recursive: true });
   let sourceCount = 0;
+  let extraCount = 0;
   for (const it of issues) {
     const rawPath = join(RAW_DIR, `${it.issue}.json`);
     if (!existsSync(rawPath)) continue;
@@ -141,15 +153,18 @@ async function main() {
       stats: raw.stats || {},
       x: raw.x || [],
       blogs: raw.blogs || [],
-      podcasts: raw.podcasts || []
+      podcasts: raw.podcasts || [],
+      // 补充源的链接墙。URL 从抓取到渲染全程由脚本传递，不经过任何模型。
+      extra: raw.extra || { items: [], sources: [] }
     }));
     sourceCount++;
+    extraCount += (raw.extra?.items || []).length;
   }
 
   const archived = issues.filter(i => !i.rawMissing).length;
   const kb = n => (n / 1024).toFixed(0) + 'KB';
   console.log(`已生成 docs/index.html (${kb(local.length)}) 与 viewer/artifact.html (${kb(filled.length)})：${issues.length} 期，其中 ${archived} 期含原始数据`);
-  console.log(`英文原文导出 docs/source/：${sourceCount} 期`);
+  console.log(`英文原文导出 docs/source/：${sourceCount} 期，含补充链接 ${extraCount} 条`);
   for (const i of issues) {
     console.log(`  ${i.issue}  ${i.rawMissing ? '无 raw' : kb(i.rawBytes)}\t${i.headline.slice(0, 40)}`);
   }

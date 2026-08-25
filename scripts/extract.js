@@ -5,12 +5,17 @@
 // ============================================================================
 // raw JSON 里播客转录动辄五万字符，整份读进去很浪费。这里做两件事：
 //   1. 推文/博客按需截断
-//   2. 转录只按比例采样几段（开头 + 中后段），保留足够写出 200-400 字的密度
+//   2. 转录用 Haiku 预压缩过的摘要；没有摘要时退回按比例采样
 //
-// 输出纯文本到 stdout。这是 Routine 里唯一喂给模型的东西，
-// 体积大致是原始 JSON 的三分之一。
+// 输出纯文本到 stdout。这是写简报的模型唯一需要读的东西。
 //
-// 用法: node scripts/extract.js <期号>
+// 补充源的链接墙（AINews / Import AI / 官方博客）**不经过这里** ——
+// 它由 build-viewer.js 直接从归档渲染到页面上，零 token，
+// URL 也就不可能被模型改写或编造。
+//
+// 用法:
+//   node scripts/extract.js <期号>                 写简报用的素材
+//   node scripts/extract.js <期号> --transcripts   播客转录全文，喂给 Haiku 压缩
 // ============================================================================
 
 import { readFile } from 'fs/promises';
@@ -21,9 +26,10 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
 const issue = process.argv[2];
 if (!issue) {
-  console.error('用法: node scripts/extract.js <期号，如 2026-08-22>');
+  console.error('用法: node scripts/extract.js <期号，如 2026-08-22> [--transcripts]');
   process.exit(1);
 }
+const transcriptMode = process.argv.includes('--transcripts');
 
 const BLOG_CHARS = 3500;        // 博客正文上限
 const POD_HEAD = 4000;          // 转录开头
@@ -33,6 +39,40 @@ const POD_SAMPLE_CHARS = 3000;
 const clean = s => (s || '').replace(/\r?\n/g, ' ⏎ ');
 
 const data = JSON.parse(await readFile(join(ROOT, 'digests/raw', `${issue}.json`), 'utf-8'));
+
+// ── 转录全文模式：给 Haiku 子代理读 ──────────────────────────────
+// 单独走一条路，因为这里要的恰恰是「不压缩」。
+if (transcriptMode) {
+  const pods = data.podcasts || [];
+  if (!pods.length) {
+    console.error(`[extract] ${issue}：本期无播客`);
+    console.log('（本期无播客）');
+    process.exit(0);
+  }
+  const parts = pods.map((p, i) => [
+    `## 第 ${i + 1} 期播客`,
+    `节目：${p.name}`,
+    `标题：${p.title}`,
+    `链接：${p.url}`,
+    '',
+    '--- 转录全文开始 ---',
+    p.transcript || '（无转录）',
+    '--- 转录全文结束 ---'
+  ].join('\n'));
+  const text = parts.join('\n\n');
+  console.error(`[extract] ${issue}：转录全文 ${(text.length / 1024).toFixed(0)}KB（${pods.length} 期）`);
+  console.log(text);
+  process.exit(0);
+}
+
+// Haiku 预压缩的摘要，有就用，没有就退回采样
+let summaries = null;
+try {
+  summaries = JSON.parse(await readFile(join(ROOT, 'digests/summaries', `${issue}.json`), 'utf-8'));
+} catch {
+  summaries = null;
+}
+
 const out = [];
 
 out.push(`# 第 ${issue} 期素材`);
@@ -70,7 +110,7 @@ if (data.blogs?.length) {
 // ── 播客 ────────────────────────────────────────────────────────
 if (data.podcasts?.length) {
   out.push('\n## 播客');
-  for (const p of data.podcasts) {
+  for (const [i, p] of data.podcasts.entries()) {
     out.push(`\n### ${p.name}：${p.title}`);
     out.push(`发布：${p.publishedAt}`);
     out.push(`链接：${p.url}`);
@@ -79,12 +119,21 @@ if (data.podcasts?.length) {
       out.push('⚠️ 注意：feed 只给了频道页链接，没有具体视频 URL —— 简报里要如实标注这个数据缺口。');
     }
     const t = p.transcript || '';
-    out.push(`转录全长 ${t.length} 字符，以下为采样片段：`);
-    out.push(`\n--- 开头 ---\n${t.slice(0, POD_HEAD)}`);
-    for (const at of POD_SAMPLES) {
-      const start = Math.floor(t.length * at);
-      if (start >= t.length) continue;
-      out.push(`\n--- ${Math.round(at * 100)}% 处 ---\n${t.slice(start, start + POD_SAMPLE_CHARS)}`);
+    const pre = summaries?.podcasts?.[i];
+
+    if (pre) {
+      // Haiku 读完整份转录后的产出 —— 是「先理解再取舍」，
+      // 不是下面那种碰运气的定点采样
+      out.push(`转录全长 ${t.length} 字符。以下是通读全文后提炼的要点（非采样，覆盖整期）：`);
+      out.push(pre);
+    } else {
+      out.push(`转录全长 ${t.length} 字符，以下为采样片段（⚠️ 只覆盖约 ${Math.round((POD_HEAD + POD_SAMPLES.length * POD_SAMPLE_CHARS) / Math.max(t.length, 1) * 100)}%，未见部分不要臆测）：`);
+      out.push(`\n--- 开头 ---\n${t.slice(0, POD_HEAD)}`);
+      for (const at of POD_SAMPLES) {
+        const start = Math.floor(t.length * at);
+        if (start >= t.length) continue;
+        out.push(`\n--- ${Math.round(at * 100)}% 处 ---\n${t.slice(start, start + POD_SAMPLE_CHARS)}`);
+      }
     }
   }
 }

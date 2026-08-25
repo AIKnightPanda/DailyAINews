@@ -97,7 +97,10 @@ async function main() {
   } else if (!needDigest) {
     await log(`${issue} 的简报已存在，跳过生成`);
   } else {
-    // 素材由 extract.js 压缩后再喂给模型，写作规范和云端 Routine 共用一份
+    // 素材由 extract.js 压缩后再喂给模型，写作规范和云端 Routine 共用一份。
+    // 注意：本地这条路径**不做** Haiku 播客预压缩（那步在云端 Routine 里用子代理跑）。
+    // 所以本地生成的简报，播客那节走的是定点采样，覆盖率会低一些 ——
+    // extract.js 会在素材里如实标注覆盖率百分比。
     const prompt = [
       `你在为本地归档生成第 ${issue} 期 AI Builders 中文简报。无人值守，直接执行，不要提问。`,
       '',

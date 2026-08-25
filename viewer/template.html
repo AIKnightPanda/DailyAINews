@@ -297,6 +297,36 @@ a { color: var(--accent); }
   padding: 0.3rem 0.7rem; cursor: pointer; white-space: nowrap;
 }
 .lang-toggle button + button { border-left: 1px solid var(--rule); }
+
+/* 链接墙：一行一条，扫读为主，点击为目的 */
+.lk-group { margin: 1.6rem 0 0; }
+.lk-group > h2 { margin-bottom: .2rem; }
+.lk-src {
+  font: 600 .72rem/1 var(--font-mono);
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--ink-3); margin: 1.4rem 0 .5rem;
+}
+.lk-sec {
+  font: 500 .78rem/1.4 var(--font-body);
+  color: var(--ink-3); margin: .9rem 0 .35rem; font-style: italic;
+}
+.lk-item {
+  display: block; padding: .42rem 0 .42rem .85rem;
+  border-left: 2px solid var(--rule-2);
+  color: var(--ink); text-decoration: none;
+  transition: border-color .12s, background .12s;
+}
+.lk-item:hover { border-left-color: var(--accent); background: var(--accent-wash); }
+.lk-item .t { font-size: .95rem; line-height: 1.45; }
+.lk-item .u {
+  display: block; font: 400 .7rem/1.5 var(--font-mono);
+  color: var(--ink-3); word-break: break-all; margin-top: .1rem;
+}
+.lk-item:hover .u { color: var(--accent); }
+.lk-fail {
+  font: .8rem/1.5 var(--font-body); color: var(--mark);
+  background: var(--warn-bg); padding: .5rem .7rem; border-radius: 3px; margin-top: 1rem;
+}
 .lang-toggle button[aria-pressed="true"] { background: var(--accent); color: var(--paper); }
 .lang-toggle button:not([aria-pressed="true"]):hover { color: var(--accent); }
 
@@ -391,6 +421,7 @@ a { color: var(--accent); }
   <div class="lang-toggle" id="lang-toggle" role="group" aria-label="语言切换">
     <button type="button" data-mode="zh" aria-pressed="true">中文</button>
     <button type="button" data-mode="en" aria-pressed="false">EN</button>
+    <button type="button" data-mode="links" aria-pressed="false">链接</button>
   </div>
   <button class="theme-toggle" id="theme-toggle" type="button">主题</button>
 </header>
@@ -626,18 +657,21 @@ a { color: var(--accent); }
       return;
     }
 
+    // EN 和「链接」用同一份 source/<期号>.json，共享缓存，只 fetch 一次
+    var draw = function (json) { return mode === 'en' ? renderSource(json) : renderLinks(json); };
+
     if (it.rawMissing) {
       pane.innerHTML = '<p class="empty">这一期建立在归档机制之前，没有保存原始数据，' +
-        '因此无法显示英文原文。<br>从 2026-08-22 期开始每期都有。</p>';
+        '因此无法显示' + (mode === 'en' ? '英文原文' : '链接') + '。<br>从 2026-08-22 期开始每期都有。</p>';
       return;
     }
 
     if (sourceCache[it.issue]) {
-      pane.innerHTML = renderSource(sourceCache[it.issue]);
+      pane.innerHTML = draw(sourceCache[it.issue]);
       return;
     }
 
-    pane.innerHTML = '<p class="empty">正在加载英文原文…</p>';
+    pane.innerHTML = '<p class="empty">正在加载…</p>';
     fetch('source/' + it.issue + '.json')
       .then(function (r) {
         if (!r.ok) throw new Error('HTTP ' + r.status);
@@ -645,10 +679,11 @@ a { color: var(--accent); }
       })
       .then(function (json) {
         sourceCache[it.issue] = json;
-        if (current === it.issue && mode === 'en') pane.innerHTML = renderSource(json);
+        // 加载期间可能已经切走了，回来时按当时的模式重画
+        if (current === it.issue && mode !== 'zh') pane.innerHTML = draw(json);
       })
       .catch(function (err) {
-        pane.innerHTML = '<p class="empty">英文原文加载失败：' + esc(err.message) + '。<br>' +
+        pane.innerHTML = '<p class="empty">加载失败：' + esc(err.message) + '。<br>' +
           '如果你是双击本地 HTML 文件打开的，浏览器会禁止它读取同目录文件 —— 请改用站点地址访问。</p>';
       });
   }
@@ -659,6 +694,52 @@ a { color: var(--accent); }
     if (isNaN(d.getTime())) return '';
     var pad = function (n) { return n < 10 ? '0' + n : '' + n; };
     return (d.getMonth() + 1) + '-' + pad(d.getDate()) + ' ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
+  }
+
+  // 链接墙。标题和 URL 全程由脚本从原文提取，没有经过任何模型改写，
+  // 所以这里显示的链接就是原文里的链接。
+  function renderLinks(src) {
+    var extra = src.extra || {};
+    var items = extra.items || [];
+    var out = [];
+
+    out.push('<div class="src-note">来自 AINews、Import AI 和各家官方博客的当期条目，' +
+      '只有标题和链接，点开即到原文。这些源不在中文简报的改写范围内。</div>');
+
+    if (!items.length) {
+      out.push('<p class="empty">这一期没有抓到补充链接。</p>');
+    } else {
+      // 按来源分组，组内再按小节分（AINews 有 Twitter/Reddit 板块之分）
+      var order = [], byS = {};
+      items.forEach(function (i) {
+        var k = i.source || '其他';
+        if (!byS[k]) { byS[k] = []; order.push(k); }
+        byS[k].push(i);
+      });
+
+      order.forEach(function (srcName) {
+        out.push('<div class="lk-src">' + esc(srcName) + ' · ' + byS[srcName].length + ' 条</div>');
+        var lastSec = null;
+        byS[srcName].forEach(function (i) {
+          if (i.section && i.section !== lastSec) {
+            out.push('<div class="lk-sec">' + esc(i.section) + '</div>');
+            lastSec = i.section;
+          }
+          out.push('<a class="lk-item" href="' + esc(i.url) + '" target="_blank" rel="noopener">' +
+            '<span class="t">' + esc(i.title) + '</span>' +
+            '<span class="u">' + esc(i.url) + '</span></a>');
+        });
+      });
+    }
+
+    // 某个源抓失败时明说，而不是静悄悄少一块
+    var failed = (extra.sources || []).filter(function (x) { return x.status === 'error'; });
+    if (failed.length) {
+      out.push('<div class="lk-fail">以下信息源本期抓取失败：' +
+        esc(failed.map(function (x) { return x.name + '（' + x.error + '）'; }).join('；')) + '</div>');
+    }
+
+    return '<article class="body">' + out.join('') + '</article>';
   }
 
   function renderSource(src) {

@@ -205,10 +205,11 @@ for (const g of GROUPS) {
   if (g.name === 'Import AI') {
     const issueItem = group.find(x => x.item.isIssue);
     const refs = group.filter(x => !x.item.isIssue);
-    // 本期是这一组里最重要的东西，给它一个标题层级，大纲里才看得到
+    // 本期标题只出现一次，permalink 内联收在标题后面。
+    // 用普通段落而不是标题层级 —— 它是这一组的题头，不该在大纲里再占一行。
     if (issueItem) {
-      lines.push(`##### 本期：${esc(localized(issueItem.item, issueItem.n).title)}`, '',
-        `- [读全文](${escUrl(issueItem.item.url)})`, '');
+      lines.push(`**本期：${esc(localized(issueItem.item, issueItem.n).title)}** ` +
+        `[读全文 ↗](${escUrl(issueItem.item.url)})`, '');
     }
     if (refs.length) {
       // 这是一句说明不是一个章节，用普通段落，免得占据大纲一行

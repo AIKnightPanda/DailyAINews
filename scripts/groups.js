@@ -12,8 +12,8 @@
 export const GROUPS = [
   { name: '官方博客',      sources: ['OpenAI', 'Google DeepMind'], context: true,  subBySource: true },
   { name: 'Import AI',     sources: ['Import AI'],                 context: true  },
-  { name: 'AINews',        sources: ['AINews'],                    context: false, subBySection: true },
-  { name: 'The Rundown AI',sources: ['The Rundown AI'],            context: false }
+  { name: 'The Rundown AI',sources: ['The Rundown AI'],            context: false },
+  { name: 'AINews',        sources: ['AINews'],                    context: false, subBySection: true }
 ];
 
 // EN 视图不合并官方博客，按来源平铺，但先后次序跟着组走

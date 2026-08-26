@@ -197,6 +197,23 @@ function parseAiNews(items, source) {
     for (const m of html.matchAll(/<h([1-3])[^>]*>([\s\S]*?)<\/h\1>/g)) {
       heads.push({ level: Number(m[1]), name: stripTags(m[2]), at: m.index });
     }
+
+    // Twitter Recap 不用 h2，它的分组标签是夹在各个 <ul> 之间的独立段落
+    //（整段就是一个 <strong>），例如「Agent Harnesses, Persistent Agents, and
+    // Enterprise MCP」。层级上它和 Reddit 的 h2 子版块是同一级，按 level 2 收。
+    // 条目自己的 <p><strong>标题</strong>：正文</p> 段里 strong 后面还有内容，
+    // 不会被下面这个「整段仅一个 strong」的判定命中。
+    for (const m of html.matchAll(/<p>([\s\S]*?)<\/p>/g)) {
+      const solo = /^<strong>((?:(?!<\/strong>)[\s\S])*)<\/strong>$/.exec(m[1].trim());
+      if (!solo) continue;
+      const name = stripTags(solo[1]);
+      // 必须已经进了某个板块，否则会把开头那句「a quiet day.」当成分组；
+      // 带句号的更像一句话而不是标签，也排除掉。
+      if (!heads.some(h => h.level === 1 && h.at < m.index)) continue;
+      if (name.length < 4 || name.length > 120 || /[.。]$/.test(name)) continue;
+      heads.push({ level: 2, name, at: m.index });
+    }
+    heads.sort((a, b) => a.at - b.at);
     const pathAt = i => {
       const path = [];
       for (const h of heads) {

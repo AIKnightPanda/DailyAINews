@@ -1,221 +1,227 @@
 {
- "drop": [
-  29,
-  34,
-  48
- ],
- "1": [
-  "Harness design is ",
-  "Harness 设计正成为首要的优化面"
- ],
- "2": [
-  "Persistent and sel",
-  "持久化与自我修改的 agent 正从概念走向开源实现"
- ],
- "3": [
-  "MCP is maturing in",
-  "MCP 正在成熟为企业级基础设施"
- ],
- "4": [
-  "Qwen3.8-27B contin",
-  "Qwen3.8-27B 持续越级发挥"
- ],
- "5": [
-  "Rumor cycle around",
-  "未发布前沿模型的传闻密集起来"
- ],
- "6": [
-  "OpenAI and Anthrop",
-  "OpenAI 与 Anthropic 的态势仍在变化"
- ],
- "7": [
-  "Tool latency overl",
-  "工具延迟重叠正成为 harness 层的关键提速手段"
- ],
- "8": [
-  "Token accounting a",
-  "token 计数与基准测试的规范仍然混乱"
- ],
- "9": [
-  "Cost-normalized ag",
-  "按成本归一的 agent 基准正在改变模型选择"
- ],
- "10": [
-  "Liquid AI + Artifi",
-  "Liquid AI 与 Artificial Analysis 推出了认真的端侧评测栈"
- ],
- "11": [
-  "Inference vendors ",
-  "推理厂商开始比拼 agent 专用吞吐，而非单纯的 TPS"
- ],
- "12": [
-  "RL for LLMs and ha",
-  "面向 LLM 的强化学习与 harness 原生训练仍是热点"
- ],
- "13": [
-  "Other notable rese",
-  "其他值得注意的研究线索"
- ],
- "14": [
-  "Educational conten",
-  "值得收藏的教学内容"
- ],
- "15": [
-  "Hands-on product/U",
-  "产品与界面的实测性能"
- ],
- "16": [
-  "Fast image generat",
-  "图像生成的速度体验"
- ],
- "17": [
-  "OpenAI research cu",
-  "OpenAI 的研究文化"
- ],
- "18": [
-  "\"Qwen 3.8 isn't Op",
-  "「Qwen 3.8 达不到 Opus 水平」：我重新跑了一遍测试"
- ],
- "19": [
-  "VS Code + BYOM tal",
-  "VS Code + BYOM 接 llama.cpp"
- ],
- "20": [
-  "New qwen3.8:27b on",
-  "用新版 qwen3.8:27b 把 3.9 万行 C 代码移植成单文件 HTML / three.js"
- ],
- "21": [
-  "We quantized Qwen ",
-  "我们量化了 Qwen 3.8 27B，并在 RTX 6000 上对比各量化版本"
- ],
- "22": [
-  "I Unlocked a $800 ",
-  "我把一张 800 美元的矿卡解锁成了 64GB、256K 上下文的无审查 AI 编码服务器，全上下文长度下 84 tok/s"
- ],
- "23": [
-  "I hosted Kimi K3 (",
-  "我用 8 张 B300 跑起了 Kimi K3（2.8T 参数）：92 tok/s，每百万 token 190 美元"
- ],
- "24": [
-  "“The All Spark” Cl",
-  "「All Spark」集群：从 16 台 DGX Spark 扩到 36 台"
- ],
- "25": [
-  "Xiaomi AI Cube ann",
-  "小米发布 AI Cube，内存带宽 1.2TB/s"
- ],
- "26": [
-  "[Paper] ToMoE: Con",
-  "（论文）ToMoE：用动态结构剪枝把稠密大模型转成 MoE"
- ],
- "27": [
-  "I developed my own",
-  "我从零训了一个量化 LLM，用 30B token 训练，部署只要 60 MB"
- ],
- "28": [
-  "Indeed laid off my",
-  "Indeed 裁掉了我怀孕的妻子，于是我用 Claude 做了个竞品。它刚帮头三个人找到工作"
- ],
- "29": [
-  "What I Built with ",
-  "我用 Claude 种出了什么 —— 红薯"
- ],
- "30": [
-  "Yeah, feels like s",
-  "确实感觉哪里不对劲"
- ],
- "31": [
-  "I gave Qwen 3.8 27",
-  "我给 Qwen 3.8 27B 派了个我以为需要前沿模型的逆向工程任务，它 30 分钟就做完了"
- ],
- "32": [
-  "Fixed my trauma wi",
-  "用本地 Minimax h3 治好了我的心理阴影"
- ],
- "33": [
-  "Robot plays ping p",
-  "机器人与丁宁（2016 奥运冠军）打乒乓球"
- ],
- "34": [
-  "An unusual parade ",
-  "基辅举行了一场不寻常的阅兵，展示地面机器人、海上无人艇与空中无人机"
- ],
- "35": [
-  "Import AI 470: No ",
-  "Import AI 470：不给机器权利；用 SPADE 自动生成环境；用 Hawkeye 写更好的 GPU 内核"
- ],
- "36": [
-  "Research note: Hav",
-  "研究简报：我们真的看到「发现」在加速吗？（METR）",
-  "分化式加速：这篇论文指出 AI 确实在推动部分科技领域的进展，但效果并不均匀——有些领域出现块状加速（如网络安全），另一些则进展平缓（数学、AI 本身）。"
- ],
- "37": [
-  "SPADE: Self-Play i",
-  "SPADE：在自适应合成可执行环境中自博弈（arXiv）",
-  "属于递归自我改进的一环：这本质上是一种高级的合成数据生成——用手头任何强模型去生成更多样的训练环境，供另一个模型在其中训练。"
- ],
- "38": [
-  "Hawkeye: Hardware-",
-  "Hawkeye：以极少监督实现硬件感知的 GPU 内核优化（alphaxiv）",
-  "稍加引导，AI 就能超越最强的人类：这类论文说明，只需少量人工挑选的知识，AI 系统就能学会匹敌甚至超越高度优化、极其复杂的人类工作，比如 GPU 内核。"
- ],
- "39": [
-  "“Technological Opt",
-  "《技术乐观主义与恰当的恐惧》（Import AI #431）",
-  "AI 是一项影响整个世界的社会政治技术：Togelius 并不孤单——许多 AI 研究者都在与类似问题搏斗，最著名的是图灵奖得主 Hinton 和 Bengio，两人近年都把重心从研究转向了公共政策。"
- ],
- "40": [
-  "AI Rights for Huma",
-  "《为人类繁荣而设的 AI 权利》",
-  "该不该给 AI 权利？这位 AI 研究者认为绝对不该：AI 系统有朝一日是否该被赋予权利？这是研究者们开始认真面对的问题。"
- ],
- "41": [
-  "AIs are not people",
-  "《AI 不是人》（Taylor Belrose, Substack）",
-  "我们所有人最后的工作是哲学：我对 AI 意识和 AI 权利这些问题深感困惑，我猜很多人也一样。读到这样一篇文章有种特别的愉悦——你看到一个人类同样为这个问题挣扎过、广泛而深入地读过。"
- ],
- "42": [
-  "Import AI #413",
-  "Import AI #413",
-  "DeepMind 用 AlphaEvolve 推进了矩阵乘法的前沿：来自 Google DeepMind、卡内基梅隆、哥伦比亚与 MIT 的研究者，通过人类创新加上 AlphaEvolve 改进了矩阵乘法的指数。"
- ],
- "43": [
-  "Improving the matr",
-  "用现代优化方法与 AlphaEvolve 改进矩阵乘法指数（arXiv）",
-  "一项与 AI 训练无关的科学进展：AI 训练确实用到某些矩阵乘法，但不是这里讨论的这一类。它更像一个佐证——AI 系统如今已能实质性地帮助研究者解决前沿科学问题。"
- ],
- "44": [
-  "Advancing price-pe",
-  "GPT-5.6 登陆 Kiro，性价比再进一步",
-  "GPT-5.6 现已在 Kiro 上线，帮助开发者规划、构建、审查和测试软件，性价比更好。"
- ],
- "46": [
-  "Humanoids beat Usa",
-  "人形机器人打破博尔特的百米纪录"
- ],
- "47": [
-  "A mystery challeng",
-  "AI 前沿出现一位神秘挑战者"
- ],
- "45": [
-  "From Atari to EVE ",
-  "从 Atari 到 EVE Online：15 年游戏 AI 研究的积累",
-  "Google DeepMind 与游戏开发者合作，构建 SIMA 2 这类通用 agent，在持久世界里做出突破性的玩法体验。"
- ],
- "49": [
-  "Slack turns coding",
-  "Slack 把写代码变成了集体项目"
- ],
- "sections": {
-  "AI Twitter Recap": "X / Twitter 汇总",
-  "AI Reddit Recap": "Reddit 汇总",
-  "/r/LocalLlama + /r/localLLM Recap": "/r/LocalLlama + /r/localLLM",
-  "Less Technical AI Subreddit Recap": "偏应用向的 AI 版块",
-  "1. Qwen 3.8 27B Coding and Quantization Benchmarks": "1. Qwen 3.8 27B 的编码与量化基准",
-  "2. High-Memory AI Hardware and Inference Economics": "2. 大显存 AI 硬件与推理经济性",
-  "3. Efficient LLM Architectures and Tiny Runtimes": "3. 高效 LLM 架构与微型运行时",
-  "1. Claude Code Builds and Usage Limits": "1. 用 Claude Code 做的东西与用量限制",
-  "2. Qwen and MiniMax Hands-On Capability Tests": "2. Qwen 与 MiniMax 的实测能力",
-  "3. Embodied Robotics: Ping-Pong and Drone Systems": "3. 具身机器人：乒乓球与无人机系统"
- }
+  "1": [
+    "Harness design is ",
+    "Harness 设计正成为首要的优化面"
+  ],
+  "2": [
+    "Persistent and sel",
+    "持久化与自我修改的 agent 正从概念走向开源实现"
+  ],
+  "3": [
+    "MCP is maturing in",
+    "MCP 正在成熟为企业级基础设施"
+  ],
+  "4": [
+    "Qwen3.8-27B contin",
+    "Qwen3.8-27B 持续越级发挥"
+  ],
+  "5": [
+    "Rumor cycle around",
+    "未发布前沿模型的传闻密集起来"
+  ],
+  "6": [
+    "OpenAI and Anthrop",
+    "OpenAI 与 Anthropic 的态势仍在变化"
+  ],
+  "7": [
+    "Tool latency overl",
+    "工具延迟重叠正成为 harness 层的关键提速手段"
+  ],
+  "8": [
+    "Token accounting a",
+    "token 计数与基准测试的规范仍然混乱"
+  ],
+  "9": [
+    "Cost-normalized ag",
+    "按成本归一的 agent 基准正在改变模型选择"
+  ],
+  "10": [
+    "Liquid AI + Artifi",
+    "Liquid AI 与 Artificial Analysis 推出了认真的端侧评测栈"
+  ],
+  "11": [
+    "Inference vendors ",
+    "推理厂商开始比拼 agent 专用吞吐，而非单纯的 TPS"
+  ],
+  "12": [
+    "RL for LLMs and ha",
+    "面向 LLM 的强化学习与 harness 原生训练仍是热点"
+  ],
+  "13": [
+    "Other notable rese",
+    "其他值得注意的研究线索"
+  ],
+  "14": [
+    "Educational conten",
+    "值得收藏的教学内容"
+  ],
+  "15": [
+    "Hands-on product/U",
+    "产品与界面的实测性能"
+  ],
+  "16": [
+    "Fast image generat",
+    "图像生成的速度体验"
+  ],
+  "17": [
+    "OpenAI research cu",
+    "OpenAI 的研究文化"
+  ],
+  "18": [
+    "\"Qwen 3.8 isn't Op",
+    "「Qwen 3.8 达不到 Opus 水平」：我重新跑了一遍测试"
+  ],
+  "19": [
+    "VS Code + BYOM tal",
+    "VS Code + BYOM 接 llama.cpp"
+  ],
+  "20": [
+    "New qwen3.8:27b on",
+    "用新版 qwen3.8:27b 把 3.9 万行 C 代码移植成单文件 HTML / three.js"
+  ],
+  "21": [
+    "We quantized Qwen ",
+    "我们量化了 Qwen 3.8 27B，并在 RTX 6000 上对比各量化版本"
+  ],
+  "22": [
+    "I Unlocked a $800 ",
+    "我把一张 800 美元的矿卡解锁成了 64GB、256K 上下文的无审查 AI 编码服务器，全上下文长度下 84 tok/s"
+  ],
+  "23": [
+    "I hosted Kimi K3 (",
+    "我用 8 张 B300 跑起了 Kimi K3（2.8T 参数）：92 tok/s，每百万 token 190 美元"
+  ],
+  "24": [
+    "“The All Spark” Cl",
+    "「All Spark」集群：从 16 台 DGX Spark 扩到 36 台"
+  ],
+  "25": [
+    "Xiaomi AI Cube ann",
+    "小米发布 AI Cube，内存带宽 1.2TB/s"
+  ],
+  "26": [
+    "[Paper] ToMoE: Con",
+    "（论文）ToMoE：用动态结构剪枝把稠密大模型转成 MoE"
+  ],
+  "27": [
+    "I developed my own",
+    "我从零训了一个量化 LLM，用 30B token 训练，部署只要 60 MB"
+  ],
+  "28": [
+    "Indeed laid off my",
+    "Indeed 裁掉了我怀孕的妻子，于是我用 Claude 做了个竞品。它刚帮头三个人找到工作"
+  ],
+  "29": [
+    "What I Built with ",
+    "我用 Claude 种出了什么 —— 红薯"
+  ],
+  "30": [
+    "Yeah, feels like s",
+    "确实感觉哪里不对劲"
+  ],
+  "31": [
+    "I gave Qwen 3.8 27",
+    "我给 Qwen 3.8 27B 派了个我以为需要前沿模型的逆向工程任务，它 30 分钟就做完了"
+  ],
+  "32": [
+    "Fixed my trauma wi",
+    "用本地 Minimax h3 治好了我的心理阴影"
+  ],
+  "33": [
+    "Robot plays ping p",
+    "机器人与丁宁（2016 奥运冠军）打乒乓球"
+  ],
+  "34": [
+    "An unusual parade ",
+    "基辅举行了一场不寻常的阅兵，展示地面机器人、海上无人艇与空中无人机"
+  ],
+  "35": [
+    "Import AI 470: No ",
+    "Import AI 470：不给机器权利；用 SPADE 自动生成环境；用 Hawkeye 写更好的 GPU 内核"
+  ],
+  "36": [
+    "Research note: Hav",
+    "研究简报：我们真的看到「发现」在加速吗？（METR）",
+    "分化式加速：这篇论文指出 AI 确实在推动部分科技领域的进展，但效果并不均匀——有些领域出现块状加速（如网络安全），另一些则进展平缓（数学、AI 本身）。"
+  ],
+  "37": [
+    "SPADE: Self-Play i",
+    "SPADE：在自适应合成可执行环境中自博弈（arXiv）",
+    "属于递归自我改进的一环：这本质上是一种高级的合成数据生成——用手头任何强模型去生成更多样的训练环境，供另一个模型在其中训练。"
+  ],
+  "38": [
+    "Hawkeye: Hardware-",
+    "Hawkeye：以极少监督实现硬件感知的 GPU 内核优化（alphaxiv）",
+    "稍加引导，AI 就能超越最强的人类：这类论文说明，只需少量人工挑选的知识，AI 系统就能学会匹敌甚至超越高度优化、极其复杂的人类工作，比如 GPU 内核。"
+  ],
+  "39": [
+    "“Technological Opt",
+    "《技术乐观主义与恰当的恐惧》（Import AI #431）",
+    "AI 是一项影响整个世界的社会政治技术：Togelius 并不孤单——许多 AI 研究者都在与类似问题搏斗，最著名的是图灵奖得主 Hinton 和 Bengio，两人近年都把重心从研究转向了公共政策。"
+  ],
+  "40": [
+    "AI Rights for Huma",
+    "《为人类繁荣而设的 AI 权利》",
+    "该不该给 AI 权利？这位 AI 研究者认为绝对不该：AI 系统有朝一日是否该被赋予权利？这是研究者们开始认真面对的问题。"
+  ],
+  "41": [
+    "AIs are not people",
+    "《AI 不是人》（Taylor Belrose, Substack）",
+    "我们所有人最后的工作是哲学：我对 AI 意识和 AI 权利这些问题深感困惑，我猜很多人也一样。读到这样一篇文章有种特别的愉悦——你看到一个人类同样为这个问题挣扎过、广泛而深入地读过。"
+  ],
+  "42": [
+    "Import AI #413",
+    "Import AI #413",
+    "DeepMind 用 AlphaEvolve 推进了矩阵乘法的前沿：来自 Google DeepMind、卡内基梅隆、哥伦比亚与 MIT 的研究者，通过人类创新加上 AlphaEvolve 改进了矩阵乘法的指数。"
+  ],
+  "43": [
+    "Improving the matr",
+    "用现代优化方法与 AlphaEvolve 改进矩阵乘法指数（arXiv）",
+    "一项与 AI 训练无关的科学进展：AI 训练确实用到某些矩阵乘法，但不是这里讨论的这一类。它更像一个佐证——AI 系统如今已能实质性地帮助研究者解决前沿科学问题。"
+  ],
+  "44": [
+    "Advancing price-pe",
+    "GPT-5.6 登陆 Kiro，性价比再进一步",
+    "GPT-5.6 现已在 Kiro 上线，帮助开发者规划、构建、审查和测试软件，性价比更好。"
+  ],
+  "45": [
+    "From Atari to EVE ",
+    "从 Atari 到 EVE Online：15 年游戏 AI 研究的积累",
+    "Google DeepMind 与游戏开发者合作，构建 SIMA 2 这类通用 agent，在持久世界里做出突破性的玩法体验。"
+  ],
+  "46": [
+    "Humanoids beat Usa",
+    "人形机器人打破博尔特的百米纪录"
+  ],
+  "47": [
+    "A mystery challeng",
+    "AI 前沿出现一位神秘挑战者"
+  ],
+  "49": [
+    "Slack turns coding",
+    "Slack 把写代码变成了集体项目"
+  ],
+  "drop": [
+    29,
+    34,
+    48
+  ],
+  "sections": {
+    "AI Twitter Recap": "X / Twitter 汇总",
+    "AI Reddit Recap": "Reddit 汇总",
+    "/r/LocalLlama + /r/localLLM Recap": "/r/LocalLlama + /r/localLLM",
+    "Less Technical AI Subreddit Recap": "偏应用向的 AI 版块",
+    "1. Qwen 3.8 27B Coding and Quantization Benchmarks": "1. Qwen 3.8 27B 的编码与量化基准",
+    "2. High-Memory AI Hardware and Inference Economics": "2. 大显存 AI 硬件与推理经济性",
+    "3. Efficient LLM Architectures and Tiny Runtimes": "3. 高效 LLM 架构与微型运行时",
+    "1. Claude Code Builds and Usage Limits": "1. 用 Claude Code 做的东西与用量限制",
+    "2. Qwen and MiniMax Hands-On Capability Tests": "2. Qwen 与 MiniMax 的实测能力",
+    "3. Embodied Robotics: Ping-Pong and Drone Systems": "3. 具身机器人：乒乓球与无人机系统",
+    "Agent Harnesses, Persistent Agents, and Enterprise MCP": "Agent Harness、常驻 Agent 与企业级 MCP",
+    "Model Releases, Leaks, and Competitive Positioning": "模型发布、泄露与竞争格局",
+    "Inference, Benchmarking, and Cost-Efficiency": "推理、基准测试与成本效率",
+    "On-Device AI and Inference Systems": "端侧 AI 与推理系统",
+    "Research, Papers, and Technical Education": "研究、论文与技术科普",
+    "Top tweets (by engagement)": "高互动推文"
+  }
 }

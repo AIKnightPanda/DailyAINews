@@ -137,18 +137,17 @@ a { color: var(--accent); }
 .outline a:hover { color: var(--accent); }
 .outline a.lv2 {
   font-weight: 600; color: var(--ink); margin-top: 0.9rem;
-  font-size: 0.82rem; -webkit-line-clamp: 2;
+  font-size: 0.82rem;
 }
 .outline a.lv2:first-of-type { margin-top: 0; }
 .outline a.lv3 { padding-left: 1.15rem; }
 .outline a.lv4 {
   padding-left: 1.15rem; margin-top: 0.45rem;
-  font-weight: 600; color: var(--ink); -webkit-line-clamp: 2;
+  font-weight: 600; color: var(--ink);
 }
-.outline a.lv5 { padding-left: 1.9rem; font-size: 0.75rem; -webkit-line-clamp: 2; }
+.outline a.lv5 { padding-left: 1.9rem; font-size: 0.75rem; }
 .outline a.lv6 {
   padding-left: 2.5rem; font-size: 0.72rem; color: var(--ink-3);
-  -webkit-line-clamp: 2;
 }
 .outline a.here { color: var(--accent); border-left-color: var(--accent); }
 
@@ -844,6 +843,56 @@ h4.lk-sec {
 
   // 大纲：从已渲染的 h2/h3/h4 现扒，不额外维护一份数据
   var spy = null;
+
+  // 简报标题是「前缀：主句；次句；次句」的写法。大纲是导航，不是正文 ——
+  // 与其让 CSS 拦腰截断，不如切在分句边界上，留一个完整的意思。
+  // 全文放进 title，鼠标悬停仍能看到。
+  // 宽度按「中日韩算 2、其余算 1」估，因为 34 个汉字的实际宽度是 34 个字母的两倍 ——
+  // 只数字符个数会把英文标题误判成过长，切在列举逗号上（Agent Harnesses, …）。
+  function vw(s) {
+    var n = 0;
+    for (var i = 0; i < s.length; i++) n += /[\u2e80-\u9fff\uff00-\uff60\u3000-\u303f]/.test(s.charAt(i)) ? 2 : 1;
+    return n;
+  }
+  function cutAt(s, limit) {          // 累计宽度达到 limit 的字符下标
+    var n = 0;
+    for (var i = 0; i < s.length; i++) {
+      n += /[\u2e80-\u9fff\uff00-\uff60\u3000-\u303f]/.test(s.charAt(i)) ? 2 : 1;
+      if (n > limit) return i;
+    }
+    return s.length;
+  }
+
+  function shortenLabel(s) {
+    if (vw(s) <= 68) return s;
+    var inRange = function (at) { return at >= 0 && vw(s.slice(0, at)) >= 28 && vw(s.slice(0, at)) <= 96; };
+    var first = function (list) {
+      for (var k = 0; k < list.length; k++) {
+        var at = s.indexOf(list[k]);
+        if (inRange(at)) return at;
+      }
+      return -1;
+    };
+    // 先找强分句（分号、破折号），再找括号（整块补充说明，切在它前面最干净），
+    // 最后才退到中文逗号 —— 英文逗号多半是列举，不是分句，不作为切点。
+    var cut = first(['；', ';', '——']);
+    if (cut < 0) cut = first(['（', '(']);
+    if (cut < 0) cut = first(['，']);
+    // 都没有就按宽度硬截，但别把一个英文单词劈成两半
+    if (cut < 0) {
+      cut = cutAt(s, 68);
+      while (cut > 8 && /[A-Za-z0-9]/.test(s.charAt(cut - 1)) && /[A-Za-z0-9]/.test(s.charAt(cut))) cut--;
+    }
+    return s.slice(0, cut).replace(/[\s、，,；;：:（(—]+$/, '') + '…';
+  }
+
+  // EN 视图的子版块是 div.lk-topic（样式自成一套，不便改成真标题标签），
+  // 但它在结构上就是一级标题，大纲里不该缺席。
+  function lvOf(h) {
+    if (h.classList && h.classList.contains('lk-topic')) return 5;
+    return h.tagName.charAt(1);
+  }
+
   function buildOutline() {
     var nav = document.getElementById('outline');
     var pane = document.getElementById('pane');
@@ -852,7 +901,7 @@ h4.lk-sec {
 
     // h5/h6 也要进大纲 —— 官方博客要能看到 OpenAI / DeepMind 这层，
     // AINews 的板块和主题分类同理，否则等于在大纲里把结构又压平了
-    var heads = [].slice.call(pane.querySelectorAll('h2, h3, h4, h5, h6'));
+    var heads = [].slice.call(pane.querySelectorAll('h2, h3, h4, h5, h6, .lk-topic'));
     if (heads.length < 3) { nav.innerHTML = ''; return; }
 
     var html = ['<div class="outline-head">本期大纲</div>'];
@@ -862,13 +911,20 @@ h4.lk-sec {
       h.id = id;
       // 计数标记（⟨3 条⟩）在大纲里是噪声，去掉
       // 计数、出处链接文字在大纲里都是噪声
-      var label = h.textContent
-        .replace(/\s*\d+\s*条\s*/g, ' ')
-        .replace(/看当期汇总\s*↗/, '')
-        .replace(/[\w.-]+\.(com|net|org|ai|io|google)\s*↗/g, '')
-        .replace(/\s+/g, ' ').trim();
+      // 计数（span.n）和出处角标（文字以 ↗ 结尾的链接）在大纲里都是噪声。
+      // 按结构剥离而不是按文案写正则 —— 中文版和 EN 版的文案不一样，
+      // 之前只写了中文的，EN 大纲就留下了「AINews 34 this issue ↗」。
+      var clone = h.cloneNode(true);
+      [].slice.call(clone.querySelectorAll('span.n')).forEach(function (x) { x.remove(); });
+      [].slice.call(clone.querySelectorAll('a')).forEach(function (x) {
+        if (/↗\s*$/.test(x.textContent)) x.remove();
+      });
+      var label = clone.textContent.replace(/\s+/g, ' ').trim();
       if (!label) return;
-      html.push('<a href="#' + id + '" class="lv' + h.tagName.charAt(1) + '">' + esc(label) + '</a>');
+      var full = label;
+      label = shortenLabel(label);
+      var t = label === full ? '' : ' title="' + esc(full) + '"';
+      html.push('<a href="#' + id + '" class="lv' + lvOf(h) + '"' + t + '>' + esc(label) + '</a>');
       links.push(id);
     });
     nav.innerHTML = html.join('');

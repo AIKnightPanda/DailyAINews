@@ -9,14 +9,16 @@
 // 要改分组或顺序，只改这个文件。
 // ============================================================================
 
+// 一个来源就是一组，不再把 OpenAI / DeepMind 合并成「官方博客」——
+// 拢共两三条，多一层分类只是多一层缩进，平铺读起来更快，也和 EN 版天然一致。
 export const GROUPS = [
-  { name: '官方博客',      sources: ['OpenAI', 'Google DeepMind'], context: true,  subBySource: true },
-  { name: 'Import AI',     sources: ['Import AI'],                 context: true  },
-  { name: 'The Rundown AI',sources: ['The Rundown AI'],            context: false },
-  { name: 'AINews',        sources: ['AINews'],                    context: false, subBySection: true }
+  { name: 'OpenAI',         sources: ['OpenAI'],          context: true  },
+  { name: 'Google DeepMind',sources: ['Google DeepMind'], context: true  },
+  { name: 'Import AI',      sources: ['Import AI'],       context: true  },
+  { name: 'The Rundown AI', sources: ['The Rundown AI'],  context: false },
+  { name: 'AINews',         sources: ['AINews'],          context: false, subBySection: true }
 ];
 
-// EN 视图不合并官方博客，按来源平铺，但先后次序跟着组走
 export const SOURCE_ORDER = GROUPS.flatMap(g => g.sources);
 
 export const groupOf = src =>

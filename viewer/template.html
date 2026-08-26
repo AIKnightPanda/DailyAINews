@@ -370,7 +370,6 @@ a { color: var(--accent); }
 .body h6 {
   font: 500 0.76rem/1.45 var(--font-mono); color: var(--ink-2);
   letter-spacing: 0.01em; margin: 1.1rem 0 0.45rem;
-  padding-left: 0.7rem; border-left: 2px solid var(--rule-2);
 }
 
 /* h5 = 分组内部的板块（AINews 的 Twitter / Reddit 分区）*/
@@ -457,15 +456,7 @@ a { color: var(--accent); }
 .body [data-d="2"], .body ul.links[data-d="2"] { margin-left: 2.3rem; }
 .body [data-d="3"], .body ul.links[data-d="3"] { margin-left: 3.45rem; }
 
-.lk-issue {
-  font: 600 0.85rem/1.5 var(--font-body); color: var(--ink);
-  margin: .9rem 0 .5rem;
-}
-.lk-issue a {
-  font: 400 .7rem/1 var(--font-mono); color: var(--ink-3);
-  text-decoration: none; white-space: nowrap;
-}
-.lk-issue a:hover { color: var(--accent); }
+.lk-item.lk-lead .t { font-weight: 700; }
 .lk-sec {
   font: 500 .78rem/1.4 var(--font-body);
   color: var(--ink-3); margin: .9rem 0 .35rem; font-style: italic;
@@ -493,8 +484,7 @@ a { color: var(--accent); }
 }
 .lk-topic {
   font: 500 0.74rem/1.45 var(--font-mono); color: var(--ink-2);
-  margin: .9rem 0 .35rem; padding-left: .55rem;
-  border-left: 2px solid var(--rule-2);
+  margin: .9rem 0 .35rem;
 }
 h3.lk-src {
   display: flex; align-items: baseline; gap: .5rem; flex-wrap: wrap;
@@ -1094,6 +1084,13 @@ h4.lk-sec {
         var ia = order.indexOf(a), ib = order.indexOf(b);
         return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
       });
+
+      // 和中文版同款的统计条。EN 是全量，不做剔除，所以只有一个数。
+      out.push('<p class="tally-strip" data-d="0">' +
+        '<span class="n">' + items.length + '</span> items: ' +
+        names.map(function (k) {
+          return esc(k) + ' <span class="n">' + byS[k].length + '</span>';
+        }).join(' · ') + '</p>');
       names.forEach(function (name) {
         var g = byS[name];
         // 出处：官方站点地址一直存在数据里，这里挂到组标题上
@@ -1106,11 +1103,6 @@ h4.lk-sec {
         // Import AI：期刊本身单独一行（标题 + Read more），它引用的一手来源
         // 都带着同一个 section = 期刊标题，会让标题重复出现，所以下面跳过。
         var issueItem = g.filter(function (x) { return x.isIssue; })[0];
-        if (issueItem) {
-          g = g.filter(function (x) { return !x.isIssue; });
-          out.push('<div class="lk-issue" data-d="1"><span class="t">' + esc(issueItem.title) + '</span> ' +
-            '<a href="' + esc(issueItem.url) + '" target="_blank" rel="noopener">Read more ↗</a></div>');
-        }
 
         // 层级和中文版一一对应：板块 → 子版块 → 主题 → 条目
         var lastSec = null, lastSub = null, lastTopic = null;
@@ -1131,8 +1123,10 @@ h4.lk-sec {
           // 条目的缩进比它头上那层标题深一级。按条目自身算，不靠循环里的状态，
           // 免得某条缺 subsection 时沿用上一条的深度。
           var d = i.subsection ? 3 : (sec ? 2 : (lastSec ? 2 : 1));
-          // 标题、描述、出处同属一个 <a>，整块可点 —— 和中文版一致
-          out.push('<a class="lk-item" data-d="' + d + '" href="' + esc(i.url) + '" target="_blank" rel="noopener">' +
+          // 标题、描述、出处同属一个 <a>，整块可点 —— 和中文版一致。
+          // 期刊本身加粗排在最前，不额外挂按钮。
+          out.push('<a class="lk-item' + (i.isIssue ? ' lk-lead' : '') + '" data-d="' + d +
+            '" href="' + esc(i.url) + '" target="_blank" rel="noopener">' +
             '<span class="t">' + esc(i.title) + '</span>' +
             (i.summary ? '<span class="s">' + esc(i.summary.replace(/^PLUS:\s*/i, 'Also: ')) + '</span>' : '') +
             '<span class="u">' + esc(hostOf(i.url)) + ' ↗' +

@@ -198,38 +198,28 @@ for (const g of GROUPS) {
   const issueUrl = group.find(x => x.item.issueUrl)?.item.issueUrl;
   let head = `#### ${g.name} ⟨${group.length} 条⟩`;
   if (issueUrl) head += ` [看当期汇总 ↗](${escUrl(issueUrl)})`;
-  else if (!g.subBySource && home.length === 1) head += ` [${esc(hostOf(home[0]))} ↗](${escUrl(home[0])})`;
+  else if (home.length === 1) head += ` [${esc(hostOf(home[0]))} ↗](${escUrl(home[0])})`;
   lines.push('', head, '');
 
   // Import AI：期刊本身和它引用的一手来源性质不同，分开排
   if (g.name === 'Import AI') {
     const issueItem = group.find(x => x.item.isIssue);
     const refs = group.filter(x => !x.item.isIssue);
-    // 本期标题只出现一次，permalink 内联收在标题后面。
-    // 用普通段落而不是标题层级 —— 它是这一组的题头，不该在大纲里再占一行。
+    // 期刊本身排在最前，加粗以示它是这一期的正主；下面是它引用的一手来源。
+    // 和其他条目同款的整行可点，不额外挂「读全文」按钮，也不写一句说明 ——
+    // 排在开头又是加粗的，本来就看得出来。
+    const rows = [];
     if (issueItem) {
-      lines.push(`**本期：${esc(localized(issueItem.item, issueItem.n).title)}** ` +
-        `[读全文 ↗](${escUrl(issueItem.item.url)})`, '');
+      const t = esc(localized(issueItem.item, issueItem.n).title);
+      rows.push(`- [**${t}**](${escUrl(issueItem.item.url)})`);
     }
-    if (refs.length) {
-      // 这是一句说明不是一个章节，用普通段落，免得占据大纲一行
-      lines.push('**其中引用的一手来源：**', '');
-      refs.forEach(({ item, n }) => lines.push(itemLine(item, n)));
-      lines.push('');
-    }
+    refs.forEach(({ item, n }) => rows.push(itemLine(item, n)));
+    if (rows.length) lines.push(...rows, '');
     continue;
   }
 
   let lastSub = null, lastSec = null, lastTopic = null;
   for (const { item, n } of group) {
-    // 组内细分。官方博客按博客名分，并把该博客的官网挂在小标题上 ——
-    // 每篇都是精挑的，出处应当一眼可见。
-    if (g.subBySource && item.source !== lastSub) {
-      const link = item.sourceHome
-        ? ` [${esc(hostOf(item.sourceHome))} ↗](${escUrl(item.sourceHome)})` : '';
-      lines.push('', `##### ${item.source}${link}`, '');
-      lastSub = item.source;
-    }
     // AINews 是三层：板块 → 子版块 → 主题。早先把后两层拼成一个字符串，
     // 结果子版块名在每个主题里重复一遍。现在各占各的层级。
     if (g.subBySection) {

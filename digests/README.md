@@ -104,6 +104,7 @@ DeepMind 抓下来的 15KB 文本大半是导航栏。
 **OpenAI 文章页返回 403**，补不了。让模型写长只能是编造，所以没有这么做。
 
 官方博客和 Import AI 每条带背景说明；AINews 和 The Rundown 条目多，只给标题和链接。
+Import AI 里回指自家往期的链接（如 Import AI #413）会被剔除 —— 那是行文引用，不是一手来源。
 AINews 每条常有 2 个来源链接，附加链接跟在标题后面。
 
 条目最终出现在两个地方，不设独立标签页：
@@ -112,7 +113,11 @@ AINews 每条常有 2 个来源链接，附加链接跟在标题后面。
   所以 md 文件自包含，GitHub 上直接看也完整
 - **EN 视图末尾的 Aggregators & official blogs** —— 英文原标题
 
-分四组：官方博客（OpenAI + DeepMind）→ Import AI → AINews → The Rundown AI。
+一个来源一组：OpenAI → Google DeepMind → Import AI → The Rundown AI → AINews。
+分组和顺序定义在 `scripts/groups.js`，**中英两个视图共用这一份** ——
+中文由 `link-digest.js` 构建时排版，EN 由前端运行时排版，顺序经 `build-viewer.js`
+注入页面，页面不自带副本。
+
 每组标题旁都挂着**出处链接**（官方站点地址存在数据层的 `sourceHome` 字段），
 AINews 另挂当期汇总的原文地址。中英两个视图都一样。
 

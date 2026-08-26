@@ -258,6 +258,15 @@ function parseAiNews(items, source) {
 }
 
 // Import AI：一期是一篇长文，正文里的 <a> 就是它引用的论文和项目
+// 同一个站点？用于剔除回指自家往期的引用
+function sameHost(a, b) {
+  if (!a || !b) return false;
+  try {
+    const h = u => new URL(u).hostname.replace(/^www\./, '');
+    return h(a) === h(b);
+  } catch { return false; }
+}
+
 function parseArticle(items, source) {
   const out = [];
   for (const it of items) {
@@ -284,6 +293,10 @@ function parseArticle(items, source) {
         const text = stripTags(m[2]);
         if (!/^https?:/.test(url) || JUNK.test(url) || seen.has(url)) continue;
         if (text.length < 12) continue;   // "here"、"link" 这种没信息量
+        // 回指自家往期的链接不是「一手来源」。Jack Clark 常在正文里引用
+        // 自己以前那几期（Import AI #413、#431），它们是行文引用，
+        // 不是这一期要推荐的东西。
+        if (sameHost(url, source.home)) continue;
         seen.add(url);
         found.push({ url, text });
       }

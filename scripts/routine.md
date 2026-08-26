@@ -178,13 +178,13 @@ DeepMind 抓下来的 15KB 文本大半是导航栏。RSS 是这几家唯一稳�
   所以 md 文件本身是自包含的，在 GitHub 上直接看也完整
 - **EN 视图末尾的 Aggregators & official blogs 一节** —— 英文原标题
 
-中文那节按**读者怎么用**分三组，不是按抓取来源：
+一个来源就是一组，分组和顺序都在 `scripts/groups.js`，中英两个视图共用这一份：
 
-| 组 | 包含 | 版面 |
-|---|---|---|
-| 官方博客 | OpenAI + Google DeepMind | 标题 + 官方摘要 |
-| Import AI | Import AI 及其引用的一手来源 | 标题 + Jack Clark 的点评 |
-| 每日聚合 | AINews + The Rundown AI | **只有标题和链接** —— 条目多，加背景会把版面压垮 |
+| 组 | 版面 |
+|---|---|
+| OpenAI / Google DeepMind | 标题 + 官方摘要 |
+| Import AI | 期刊本身加粗排在最前，其后是它引用的一手来源 + Jack Clark 的点评 |
+| The Rundown AI / AINews | **只有标题和链接** —— 条目多，加背景会把版面压垮 |
 
 与 AI 无关的条目由 Haiku 在第 2 步筛掉（`drop` 数组）。
 

@@ -21,6 +21,7 @@ import { readdir, readFile, writeFile, mkdir, stat } from 'fs/promises';
 import { existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { SOURCE_ORDER } from './groups.js';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DIGEST_DIR = join(ROOT, 'digests');
@@ -97,7 +98,7 @@ async function main() {
   const template = await readFile(TEMPLATE, 'utf-8');
 
   // 转义 < 防止正文里的 </script> 提前闭合标签（< 在 JSON 里等价于 <）
-  const payload = JSON.stringify({ builtAt: new Date().toISOString(), issues })
+  const payload = JSON.stringify({ builtAt: new Date().toISOString(), sourceOrder: SOURCE_ORDER, issues })
     .replace(/</g, '\\u003c');
 
   if (!DATA_SLOT.test(template)) {

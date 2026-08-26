@@ -35,6 +35,7 @@ scripts/
 ├── archive.js             抓取并存档原始数据
 ├── fetch-extra.js         抓补充源的「标题 + 链接」
 ├── link-digest.js         把补充源并进简报（换引用编号 + 追加延伸阅读）
+├── groups.js              补充源的分组与顺序，中英两个渲染器共用这一份
 ├── extract.js             把原始数据压成模型可读的素材
 ├── build-viewer.js        扫描 digests/*.md 生成两份 HTML
 ├── digest-style.md        简报写作规范（改风格改这里）

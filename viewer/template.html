@@ -126,13 +126,18 @@ a { color: var(--accent); }
   text-transform: uppercase; color: var(--ink-3); margin: 0 0 0.8rem;
 }
 .outline a {
-  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
-  overflow: hidden;                     /* 长标题最多两行，超出部分由浏览器补省略号 */
+  display: block;
   text-decoration: none; color: var(--ink-2);
   font-size: 0.79rem; line-height: 1.45;
   padding: 0.28rem 0 0.28rem 0.62rem;
   border-left: 2px solid transparent; margin-left: -0.62rem;
   transition: color .12s, border-color .12s;
+}
+/* 夹行必须放在没有内边距的元素上：overflow:hidden 裁的是 padding box，
+   直接夹在 <a> 上会让 padding-bottom 把第三行的顶端露出来（实测 2.27 行）。 */
+.outline a > .t {
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
+  overflow: hidden;                     /* 超出两行由浏览器补省略号 */
 }
 .outline a:hover { color: var(--accent); }
 .outline a.lv2 {
@@ -898,14 +903,15 @@ h4.lk-sec {
       });
       var label = clone.textContent.replace(/\s+/g, ' ').trim();
       if (!label) return;
-      html.push('<a href="#' + id + '" class="lv' + lvOf(h) + '">' + esc(label) + '</a>');
+      html.push('<a href="#' + id + '" class="lv' + lvOf(h) + '"><span class="t">' +
+        esc(label) + '</span></a>');
       links.push(id);
     });
     nav.innerHTML = html.join('');
 
     // 两行放不下的才挂 title —— 实测比按字数猜准，也不会给短条目乱加提示
-    [].slice.call(nav.querySelectorAll('a')).forEach(function (a) {
-      if (a.scrollHeight > a.clientHeight + 1) a.title = a.textContent;
+    [].slice.call(nav.querySelectorAll('a > .t')).forEach(function (t) {
+      if (t.scrollHeight > t.clientHeight + 1) t.parentNode.title = t.textContent;
     });
 
     // 滚动时高亮当前所在小节
@@ -1038,9 +1044,9 @@ h4.lk-sec {
     var items = extra.items || [];
     if (items.length) {
       out.push('<h2>Aggregators &amp; official blogs</h2>');
-      // 顺序必须和 scripts/link-digest.js 里的 GROUPS 一致 —— 两边各存一份，
-      // 之前就漂移过：中文是 AINews 在前，EN 是 Rundown 在前。改一边记得改另一边。
-      var order = ['OpenAI', 'Google DeepMind', 'Import AI', 'AINews', 'The Rundown AI'];
+      // 顺序由 scripts/groups.js 定义，构建时注入 —— 页面不自带副本，
+      // 中文版和 EN 版读的是同一份定义，不会再各自漂移。
+      var order = (window.__DIGESTS__ && window.__DIGESTS__.sourceOrder) || [];
       var byS = {}, names = [];
       items.forEach(function (i) {
         var k = i.source || 'Other';

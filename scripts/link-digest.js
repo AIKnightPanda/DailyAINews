@@ -18,6 +18,7 @@
 import { readFile, writeFile } from 'fs/promises';
 import { existsSync } from 'fs';
 import { join, dirname } from 'path';
+import { GROUPS, groupOf } from './groups.js';
 import { fileURLToPath } from 'url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -31,15 +32,6 @@ if (!issue) {
 const START = '<!-- EXTRA:START -->';
 const END = '<!-- EXTRA:END -->';
 
-// 分组：h4 = 来源组，h5 = 组内细分。官方博客合成一组，组内再按博客分。
-// 顺序必须和 viewer/template.html 里 EN 视图的 order 数组一致（两边各存一份）
-const GROUPS = [
-  { name: '官方博客',      sources: ['OpenAI', 'Google DeepMind'], context: true,  subBySource: true },
-  { name: 'Import AI',     sources: ['Import AI'],                 context: true  },
-  { name: 'AINews',        sources: ['AINews'],                    context: false, subBySection: true },
-  { name: 'The Rundown AI',sources: ['The Rundown AI'],            context: false }
-];
-const groupOf = src => (GROUPS.find(g => g.sources.includes(src)) || GROUPS[GROUPS.length - 1]);
 
 // 域名去掉 www，用作「出处」标签
 const hostOf = u => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } };
@@ -190,11 +182,10 @@ for (const item of items) {
 }
 const parts = GROUPS
   .filter(g => collected.get(g.name) > 0)
-  .map(g => `${esc(g.name)} ⟨${collected.get(g.name)} → ${byGroup.get(g.name).length}⟩`);
+  .map(g => `${esc(g.name)} ⟨${byGroup.get(g.name).length} / ${collected.get(g.name)}⟩`);
 if (parts.length) {
-  // ⟦ 开头：渲染器会把这一行排成统计条
-  lines.push(`⟦采集 ⟨${items.length}⟩ 篇，中文展示 ⟨${kept.length}⟩ 篇（采集 → 展示）：` +
-    parts.join(' · '), '');
+  // ⟦ 开头：渲染器会把这一行排成统计条。一律「展示 / 采集」，不再加图例。
+  lines.push(`⟦中文展示 ⟨${kept.length} / ${items.length}⟩ 篇：` + parts.join(' · '), '');
 }
 
 for (const g of GROUPS) {

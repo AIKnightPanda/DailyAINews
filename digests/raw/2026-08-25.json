@@ -450,8 +450,87 @@
     "translate": "# Translation Prompt\n\nYou are translating an AI industry digest from English to Chinese.\n\n## Instructions\n\n- Translate the full digest into natural, fluent Mandarin Chinese (simplified characters). The translated version must sound like it was originally written in Chinese, instead of translated\n- Keep technical terms in English where Chinese professionals typically use them:\n  AI, LLM, GPU, API, fine-tuning, RAG, token, prompt, agent, transformer, etc.\n- Keep all proper nouns in English: names of people, companies, products, tools\n- Keep all URLs unchanged\n- Maintain the same structure and formatting as the English version\n- The tone should be professional but conversational — 像是一位懂行的朋友在跟你聊天\n- For bilingual mode: interleave English and Chinese paragraph by paragraph.\n  After each builder's English summary, place the Chinese translation directly below\n  (separated by a blank line), then move to the next builder. Same for podcasts.\n  Do NOT output all English first then all Chinese.\n- Never use em-dashes\n"
   },
   "extra": {
-    "items": [],
-    "sources": [],
-    "error": "Cannot access 'issue' before initialization"
+    "fetchedAt": "2026-08-26T00:44:47.679Z",
+    "windowDays": 3,
+    "windowUntil": "2026-08-25T23:59:59.000Z",
+    "sources": [
+      {
+        "id": "ainews",
+        "name": "AINews",
+        "status": "ok",
+        "issues": 1,
+        "items": 0
+      },
+      {
+        "id": "importai",
+        "name": "Import AI",
+        "status": "ok",
+        "issues": 1,
+        "items": 0
+      },
+      {
+        "id": "openai",
+        "name": "OpenAI",
+        "status": "ok",
+        "issues": 5,
+        "items": 4
+      },
+      {
+        "id": "deepmind",
+        "name": "Google DeepMind",
+        "status": "ok",
+        "issues": 0,
+        "items": 0
+      },
+      {
+        "id": "rundown",
+        "name": "The Rundown AI",
+        "status": "ok",
+        "issues": 3,
+        "items": 1
+      }
+    ],
+    "items": [
+      {
+        "source": "OpenAI",
+        "sourceHome": "https://openai.com/news/",
+        "title": "The full stack behind abundant intelligence",
+        "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
+        "summary": "OpenAI CFO Sarah Friar explains how advances across chips, compute, models, and products compound to deliver more useful intelligence at greater scale and lower cost.",
+        "publishedAt": "2026-08-25T07:05:00.000Z"
+      },
+      {
+        "source": "OpenAI",
+        "sourceHome": "https://openai.com/news/",
+        "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
+        "url": "https://openai.com/index/jalapeno-first-results",
+        "summary": "Jalapeño is a custom inference chip from OpenAI that delivers faster, more power-efficient AI inference, with higher throughput and lower latency for modern models.",
+        "publishedAt": "2026-08-25T07:00:00.000Z"
+      },
+      {
+        "source": "OpenAI",
+        "sourceHome": "https://openai.com/news/",
+        "title": "Disrupting a new covert influence campaign from Russia",
+        "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+        "summary": "OpenAI banned Russia-origin accounts using AI to promote a fake Israel-based think tank and a “sovereignty” index praising Russia and criticizing the West.",
+        "publishedAt": "2026-08-25T00:00:00.000Z"
+      },
+      {
+        "source": "OpenAI",
+        "sourceHome": "https://openai.com/news/",
+        "title": "Introducing the Admin plugin for ChatGPT Work and Codex",
+        "url": "https://openai.com/index/introducing-admin-plugin",
+        "summary": "Use the Admin plugin for ChatGPT Work and Codex to analyze workspace usage, manage members and permissions, adjust limits, and act on admin requests.",
+        "publishedAt": "2026-08-25T00:00:00.000Z"
+      },
+      {
+        "source": "The Rundown AI",
+        "sourceHome": "https://www.therundown.ai/",
+        "title": "The SpaceX-Nvidia partnership heads for orbit",
+        "url": "https://www.therundown.ai/articles/the-spacex-nvidia-partnership-heads-for-orbit",
+        "summary": "PLUS: Build a reusable AI design system with Open Design",
+        "publishedAt": "2026-08-25T10:00:00.000Z"
+      }
+    ]
   }
 }

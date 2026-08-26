@@ -21,7 +21,7 @@ import { readdir, readFile, writeFile, mkdir, stat } from 'fs/promises';
 import { existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { SOURCE_ORDER } from './groups.js';
+import { SOURCE_ORDER, SOURCES } from './groups.js';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DIGEST_DIR = join(ROOT, 'digests');
@@ -87,6 +87,37 @@ async function collectIssues() {
   return issues;
 }
 
+// 页面右上角「信息源」面板的数据。
+// 上游那半边从各期存档里汇总 —— feed 每天只报当天有内容的人，
+// 单看一期会漏掉大半，扫全部存档才是完整名单。
+// 补充源那半边直接来自 scripts/groups.js 的注册表，和实际抓取的是同一份。
+async function collectSourceManifest() {
+  const builders = new Map(), blogs = new Map(), podcasts = new Map();
+  const files = (await readdir(RAW_DIR).catch(() => []))
+    .filter(f => f.endsWith('.json'));
+
+  for (const f of files) {
+    let raw;
+    try { raw = JSON.parse(await readFile(join(RAW_DIR, f), 'utf-8')); } catch { continue; }
+    for (const b of raw.x || []) {
+      if (b.handle && !builders.has(b.handle)) {
+        builders.set(b.handle, { name: b.name || b.handle, handle: b.handle, bio: b.bio || '' });
+      }
+    }
+    for (const b of raw.blogs || []) if (b.name && !blogs.has(b.name)) blogs.set(b.name, { name: b.name });
+    for (const p of raw.podcasts || []) if (p.name && !podcasts.has(p.name)) podcasts.set(p.name, { name: p.name });
+  }
+
+  const byName = (a, b) => a.name.localeCompare(b.name, 'en');
+  return {
+    builders: [...builders.values()].sort(byName),
+    blogs: [...blogs.values()].sort(byName),
+    podcasts: [...podcasts.values()].sort(byName),
+    extra: SOURCES.map(s => ({ name: s.name, home: s.home, note: s.note || '' }))
+      .sort((a, b) => SOURCE_ORDER.indexOf(a.name) - SOURCE_ORDER.indexOf(b.name))
+  };
+}
+
 async function main() {
   if (!existsSync(TEMPLATE)) {
     console.error(`找不到模板: ${TEMPLATE}`);
@@ -94,11 +125,12 @@ async function main() {
   }
 
   const issues = await collectIssues();
+  const sourceManifest = await collectSourceManifest();
 
   const template = await readFile(TEMPLATE, 'utf-8');
 
   // 转义 < 防止正文里的 </script> 提前闭合标签（< 在 JSON 里等价于 <）
-  const payload = JSON.stringify({ builtAt: new Date().toISOString(), sourceOrder: SOURCE_ORDER, issues })
+  const payload = JSON.stringify({ builtAt: new Date().toISOString(), sourceOrder: SOURCE_ORDER, sourceManifest, issues })
     .replace(/</g, '\\u003c');
 
   if (!DATA_SLOT.test(template)) {

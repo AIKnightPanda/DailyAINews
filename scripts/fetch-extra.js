@@ -16,6 +16,7 @@
 import { readFile, writeFile } from 'fs/promises';
 import { existsSync } from 'fs';
 import { join, dirname } from 'path';
+import { SOURCES } from './groups.js';
 import { fileURLToPath } from 'url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -63,20 +64,6 @@ async function enrichFromJsonLd(url) {
   }
 }
 
-const SOURCES = [
-  // AINews 自己就是日报，一个窗口里可能套进好几期。只取期号当天那一期，
-  // 否则「看当期汇总」指向哪一期就说不清了。
-  { id: 'ainews',   name: 'AINews',         kind: 'ainews',  url: 'https://news.smol.ai/rss.xml',
-    home: 'https://news.smol.ai/', latestOnly: true },
-  { id: 'importai', name: 'Import AI',      kind: 'article', url: 'https://jack-clark.net/feed/',
-    home: 'https://jack-clark.net/' },
-  { id: 'openai',   name: 'OpenAI',         kind: 'simple',  url: 'https://openai.com/news/rss.xml',
-    home: 'https://openai.com/news/', enrich: true },
-  { id: 'deepmind', name: 'Google DeepMind',kind: 'simple',  url: 'https://deepmind.google/blog/rss.xml',
-    home: 'https://deepmind.google/blog/', enrich: true },
-  { id: 'rundown',  name: 'The Rundown AI', kind: 'simple',  url: 'https://www.therundown.ai/feed',
-    home: 'https://www.therundown.ai/' }
-];
 
 // 订阅、登录、分享这类功能性链接不是内容，过滤掉
 const JUNK = /\/(subscribe|unsubscribe|login|signup|account|privacy|terms|cdn-cgi)\b|utm_|\/feed\/?$|substack\.com\/(subscribe|app)|support\./i;
@@ -258,15 +245,6 @@ function parseAiNews(items, source) {
 }
 
 // Import AI：一期是一篇长文，正文里的 <a> 就是它引用的论文和项目
-// 同一个站点？用于剔除回指自家往期的引用
-function sameHost(a, b) {
-  if (!a || !b) return false;
-  try {
-    const h = u => new URL(u).hostname.replace(/^www\./, '');
-    return h(a) === h(b);
-  } catch { return false; }
-}
-
 function parseArticle(items, source) {
   const out = [];
   for (const it of items) {
@@ -287,25 +265,30 @@ function parseArticle(items, source) {
     for (const pm of html.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/g)) {
       const para = pm[1];
       const paraText = stripTags(para);
+
+      // Jack Clark 的固定写法：一段「Why this matters」点评，末尾用
+      // 「Read more:」引出这一节真正推荐的东西。段落里出现在标记之前的链接
+      // 都是行文引用（往期期号、顺带提到的论文），不是他要推的。
+      // 早先按「是不是 jack-clark.net」判断，既会误伤他新发的文章，
+      // 也修不了 p23 那种「自引用排在前面、真链接排在后面」的情况。
+      const mark = paraText.search(/Read more\s*[:：]/i);
+      if (mark < 0) continue;
+
       const found = [];
       for (const m of para.matchAll(/<a[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)) {
         const url = unescape(m[1]);
         const text = stripTags(m[2]);
         if (!/^https?:/.test(url) || JUNK.test(url) || seen.has(url)) continue;
         if (text.length < 12) continue;   // "here"、"link" 这种没信息量
-        // 回指自家往期的链接不是「一手来源」。Jack Clark 常在正文里引用
-        // 自己以前那几期（Import AI #413、#431），它们是行文引用，
-        // 不是这一期要推荐的东西。
-        if (sameHost(url, source.home)) continue;
+        const at = paraText.indexOf(text.slice(0, 25));
+        if (at < 0 || at < mark) continue;          // 必须落在标记之后
         seen.add(url);
         found.push({ url, text });
       }
       if (!found.length) continue;
 
-      // 段落去掉所有链接文字，剩下的才是点评
-      let ctx = paraText;
-      found.forEach(f => { ctx = ctx.replace(f.text, ' '); });
-      ctx = ctx.replace(/\s+/g, ' ').trim()
+      // 标记之前的那段就是点评
+      let ctx = paraText.slice(0, mark).replace(/\s+/g, ' ').trim()
         .replace(/^Why this matters[\s:：—–-]*/i, '').replace(/^[\s:：—–-]+/, '');
 
       out.push({

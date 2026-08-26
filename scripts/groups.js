@@ -23,3 +23,22 @@ export const SOURCE_ORDER = GROUPS.flatMap(g => g.sources);
 
 export const groupOf = src =>
   GROUPS.find(g => g.sources.includes(src)) || GROUPS[GROUPS.length - 1];
+
+// 补充源的抓取参数与展示信息。fetch-extra.js 按它抓，build-viewer.js 按它
+// 生成页面上的「信息源」清单 —— 同一份定义，不会出现清单和实际抓的对不上。
+export const SOURCES = [
+  // AINews 自己就是日报，一个窗口里可能套进好几期。只取期号当天那一期，
+  // 否则「看当期汇总」指向哪一期就说不清了。
+  { id: 'ainews',   name: 'AINews',         kind: 'ainews',  url: 'https://news.smol.ai/rss.xml',
+    home: 'https://news.smol.ai/', latestOnly: true,
+    note: 'smol.ai 的每日聚合，把 X、Reddit、Discord 的讨论汇成一期' },
+  { id: 'importai', name: 'Import AI',      kind: 'article', url: 'https://jack-clark.net/feed/',
+    home: 'https://jack-clark.net/',
+    note: 'Anthropic 联合创始人 Jack Clark 的周刊，取他用「Read more:」标出的一手来源' },
+  { id: 'openai',   name: 'OpenAI',         kind: 'simple',  url: 'https://openai.com/news/rss.xml',
+    home: 'https://openai.com/news/', enrich: true, note: '官方博客 RSS' },
+  { id: 'deepmind', name: 'Google DeepMind',kind: 'simple',  url: 'https://deepmind.google/blog/rss.xml',
+    home: 'https://deepmind.google/blog/', enrich: true, note: '官方博客 RSS' },
+  { id: 'rundown',  name: 'The Rundown AI', kind: 'simple',  url: 'https://www.therundown.ai/feed',
+    home: 'https://www.therundown.ai/', note: '每日 AI 快讯，只取标题和链接' }
+];

@@ -43,6 +43,12 @@ async function main() {
   const feed = JSON.parse(stdout);
   if (feed.status !== 'ok') fail(`feed 状态异常: ${feed.status}`);
 
+  // 期号取 feed 生成日；缺失时退回今天
+  const generatedAt = feed.stats?.feedGeneratedAt;
+  const issue = (generatedAt ? new Date(generatedAt) : new Date())
+    .toISOString()
+    .slice(0, 10);
+
   // 补充信息源（AINews / Import AI / 官方博客）—— 纯链接墙，不抓正文。
   // 它是加分项不是必需品：抓不到就带着空清单继续，绝不让当期简报出不来。
   let extra = { items: [], sources: [] };
@@ -56,11 +62,11 @@ async function main() {
   }
   feed.extra = extra;
 
-  // 期号取 feed 生成日；缺失时退回今天
-  const generatedAt = feed.stats?.feedGeneratedAt;
-  const issue = (generatedAt ? new Date(generatedAt) : new Date())
-    .toISOString()
-    .slice(0, 10);
+  // 抓取整体崩掉（脚本报错、超时、输出不是 JSON）和「源就是没新内容」是两回事：
+  // 前者是 bug，必须喊出来，否则一次静默失败会被当成平静的一天糊弄过去。
+  if (extra.error) {
+    console.error(`[archive] 补充源抓取失败：${extra.error}`);
+  }
 
   await mkdir(RAW_DIR, { recursive: true });
   const rawPath = join(RAW_DIR, `${issue}.json`);
@@ -97,6 +103,7 @@ async function main() {
     stats: feed.stats,
     extra: {
       items: extra.items?.length ?? 0,
+      error: extra.error || null,
       failed: (extra.sources || []).filter(x => x.status === 'error').map(x => x.name)
     },
     digestExists: existsSync(join(ROOT, 'digests', `${issue}.md`))

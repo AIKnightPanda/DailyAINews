@@ -88,33 +88,30 @@ async function collectIssues() {
 }
 
 // 页面右上角「信息源」面板的数据。
-// 上游那半边从各期存档里汇总 —— feed 每天只报当天有内容的人，
-// 单看一期会漏掉大半，扫全部存档才是完整名单。
-// 补充源那半边直接来自 scripts/groups.js 的注册表，和实际抓取的是同一份。
+// **照配置念，不做统计。** 上游那半边直接读 follow-builders 的源清单，
+// 补充源那半边读 scripts/groups.js 的注册表 —— 两份都是实际抓取用的配置本身。
+// 早先是扫各期存档反推的，那只能得到「最近露过面的」：feed 每天只报当天有
+// 内容的人，26 个 X 账号里只汇总出 18 个，说是「信息源」其实名不副实。
 async function collectSourceManifest() {
-  const builders = new Map(), blogs = new Map(), podcasts = new Map();
-  const files = (await readdir(RAW_DIR).catch(() => []))
-    .filter(f => f.endsWith('.json'));
+  const FEED_SOURCES = join(ROOT, '.claude', 'skills', 'follow-builders',
+    'config', 'default-sources.json');
 
-  for (const f of files) {
-    let raw;
-    try { raw = JSON.parse(await readFile(join(RAW_DIR, f), 'utf-8')); } catch { continue; }
-    for (const b of raw.x || []) {
-      if (b.handle && !builders.has(b.handle)) {
-        builders.set(b.handle, { name: b.name || b.handle, handle: b.handle, bio: b.bio || '' });
-      }
-    }
-    for (const b of raw.blogs || []) if (b.name && !blogs.has(b.name)) blogs.set(b.name, { name: b.name });
-    for (const p of raw.podcasts || []) if (p.name && !podcasts.has(p.name)) podcasts.set(p.name, { name: p.name });
+  let upstream = { x_accounts: [], blogs: [], podcasts: [] };
+  if (existsSync(FEED_SOURCES)) {
+    try { upstream = JSON.parse(await readFile(FEED_SOURCES, 'utf-8')); }
+    catch { /* 读不到就只展示补充源，不让页面出不来 */ }
+  } else {
+    console.warn('[build-viewer] 找不到上游源清单，信息源面板只列补充源');
   }
 
-  const byName = (a, b) => a.name.localeCompare(b.name, 'en');
   return {
-    builders: [...builders.values()].sort(byName),
-    blogs: [...blogs.values()].sort(byName),
-    podcasts: [...podcasts.values()].sort(byName),
-    extra: SOURCES.map(s => ({ name: s.name, home: s.home, note: s.note || '' }))
-      .sort((a, b) => SOURCE_ORDER.indexOf(a.name) - SOURCE_ORDER.indexOf(b.name))
+    builders: (upstream.x_accounts || []).map(a => ({ name: a.name, handle: a.handle })),
+    blogs: (upstream.blogs || []).map(b => ({ name: b.name, url: b.indexUrl || null })),
+    podcasts: (upstream.podcasts || []).map(p => ({ name: p.name, url: p.url || p.rssUrl || null })),
+    extra: SOURCE_ORDER
+      .map(n => SOURCES.find(s => s.name === n))
+      .filter(Boolean)
+      .map(s => ({ name: s.name, home: s.home, note: s.note || '' }))
   };
 }
 

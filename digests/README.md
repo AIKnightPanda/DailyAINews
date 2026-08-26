@@ -228,3 +228,14 @@ claude -p "ok"    # 报 OAuth session expired 就在交互式终端跑一次 cla
 原始数据只从 `raw.githubusercontent.com` 单向拉取，不上传任何本地数据，feed 本身不需要 API key。
 
 注意仓库是**公开**的：`digests/` 和 `docs/` 里的内容任何人都能看到。
+
+## 页面上的「信息源」面板
+
+报头右上角的「信息源」按钮列出**配置里的完整清单**，不是当期出现过的统计：
+
+- **上游** 读 `.claude/skills/follow-builders/config/default-sources.json`
+  （26 个 X 账号 / 2 个博客 / 6 个播客）
+- **补充源** 读 `scripts/groups.js` 的 `SOURCES` —— 和 `fetch-extra.js` 实际抓取用的是同一份
+
+两边都是配置本身，所以面板上写着什么，抓的就是什么。
+清单在 `build-viewer.js` 构建时注入页面，运行时不再读文件。

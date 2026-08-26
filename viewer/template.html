@@ -178,25 +178,55 @@ a { color: var(--accent); }
 }
 .modal-x:hover { color: var(--accent); }
 .modal-body { overflow-y: auto; padding: 0.4rem 1.2rem 1.3rem; }
-.srcpanel-note { font: 400 0.74rem/1.6 var(--font-mono); color: var(--ink-2); margin: 0.8rem 0 0; }
-.src-group { margin-top: 1.2rem; }
-.src-group > h3 {
-  font: 600 0.68rem/1 var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--ink-2); margin: 0 0 0.6rem;
-  display: flex; align-items: baseline; gap: 0.5rem;
+.sp-note {
+  font: 400 0.74rem/1.6 var(--font-mono); color: var(--ink-2);
+  margin: 0.9rem 0 0.2rem;
 }
-.src-group > h3 .n { font-weight: 400; letter-spacing: 0; text-transform: none; }
-.src-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.15rem; }
-.src-list.cols { grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); }
-.src-list li { padding: 0.3rem 0; line-height: 1.5; }
-.src-list .nm { font-size: 0.9rem; }
-.src-list .hd, .src-list .bio, .src-list .note {
-  /* 等宽小字在深色下用 --ink-3 只有 3.84，低于 AA 的 4.5 —— 提一档 */
-  font: 400 0.72rem/1.5 var(--font-mono); color: var(--ink-2);
+
+/* 两层：上游 / 补充源。层与层之间用一条横线和一个题头分开， */
+/* 免得二十多个账号和五个补充源糊成一片。 */
+.sp-tier { margin-top: 1.6rem; }
+.sp-tier-head {
+  display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap;
+  font-family: var(--font-display); font-weight: 600; font-size: 0.95rem;
+  color: var(--ink); padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
 }
-.src-list .bio, .src-list .note { display: block; }
-.src-list a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--rule); }
-.src-list a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.sp-tier-sub {
+  font: 400 0.7rem/1 var(--font-mono); color: var(--ink-2);
+  letter-spacing: 0.02em;
+}
+
+.sp-group { margin-top: 1rem; }
+.sp-group > h3 {
+  font: 600 0.66rem/1 var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--ink-2); margin: 0 0 0.5rem;
+  display: flex; align-items: baseline; gap: 0.45rem;
+}
+.sp-group > h3 .n {
+  font-weight: 400; letter-spacing: 0; color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}
+.sp-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.1rem; }
+.sp-list.cols { grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: 0.1rem 1.2rem; }
+.sp-list li {
+  display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap;
+  padding: 0.32rem 0.4rem; margin-left: -0.4rem;
+  border-radius: 3px; line-height: 1.5;
+}
+.sp-list li:hover { background: var(--sunk); }
+.sp-list li.wide { display: block; padding-top: 0.45rem; padding-bottom: 0.45rem; }
+.sp-list li.wide .sp-meta { margin-left: 0.5rem; }
+.sp-list .sp-nm { font-size: 0.88rem; color: var(--ink); }
+.sp-meta {
+  font: 400 0.71rem/1.5 var(--font-mono); color: var(--ink-2);
+  text-decoration: none; white-space: nowrap;
+}
+a.sp-meta:hover { color: var(--accent); }
+.sp-desc {
+  display: block; margin-top: 0.15rem;
+  font: 400 0.73rem/1.55 var(--font-body); color: var(--ink-2);
+}
 
 .shell {
   display: grid;
@@ -1273,37 +1303,54 @@ h4.lk-sec {
       if (built) return;
       var m = (window.__DIGESTS__ || {}).sourceManifest || {};
       var out = [];
-      out.push('<p class="srcpanel-note">上游内容来自 Follow Builders 的公共 feed；' +
-        '下面这份是各期存档里出现过的完整名单，不只是今天有更新的那些。</p>');
 
+      function esc2(x) { return esc(String(x == null ? '' : x)); }
+      function host(u) { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return u; } }
+
+      // 一组：小标题 + 条数 + 列表
       function group(title, list, render, cols) {
-        if (!list || !list.length) return;
-        out.push('<section class="src-group"><h3>' + esc(title) +
-          ' <span class="n">' + list.length + '</span></h3><ul class="src-list' +
-          (cols ? ' cols' : '') + '">' + list.map(render).join('') + '</ul></section>');
+        if (!list || !list.length) return '';
+        return '<section class="sp-group"><h3>' + esc2(title) +
+          '<span class="n">' + list.length + '</span></h3>' +
+          '<ul class="sp-list' + (cols ? ' cols' : '') + '">' +
+          list.map(render).join('') + '</ul></section>';
       }
 
-      group('X / Twitter', m.builders, function (b) {
-        return '<li><span class="nm">' + esc(b.name) + '</span> ' +
-          '<a class="hd" href="https://x.com/' + esc(b.handle) + '" target="_blank" rel="noopener">@' +
-          esc(b.handle) + '</a>' +
-          (b.bio ? '<span class="bio">' + esc(b.bio) + '</span>' : '') + '</li>';
-      }, true);
+      function link(url, text) {
+        if (!url) return '<span class="sp-meta">' + esc2(text) + '</span>';
+        return '<a class="sp-meta" href="' + esc2(url) + '" target="_blank" rel="noopener">' +
+          esc2(text) + ' ↗</a>';
+      }
 
-      group('博客', m.blogs, function (b) {
-        return '<li><span class="nm">' + esc(b.name) + '</span></li>';
-      }, true);
+      out.push('<p class="sp-note">这是配置里的完整清单，不是当期出现过的统计。' +
+        '上游由 Follow Builders 抓取，补充源由本仓库抓取。</p>');
 
-      group('播客', m.podcasts, function (b) {
-        return '<li><span class="nm">' + esc(b.name) + '</span></li>';
-      }, true);
+      // ── 上游 ──
+      out.push('<div class="sp-tier"><div class="sp-tier-head">上游 · Follow Builders' +
+        '<span class="sp-tier-sub">建造者的 X、博客、播客</span></div>' +
+        group('X / Twitter', m.builders, function (b) {
+          return '<li><span class="sp-nm">' + esc2(b.name) + '</span>' +
+            link('https://x.com/' + b.handle, '@' + b.handle) + '</li>';
+        }, true) +
+        group('博客', m.blogs, function (b) {
+          return '<li><span class="sp-nm">' + esc2(b.name) + '</span>' +
+            link(b.url, host(b.url)) + '</li>';
+        }, true) +
+        group('播客', m.podcasts, function (b) {
+          return '<li><span class="sp-nm">' + esc2(b.name) + '</span>' +
+            link(b.url, host(b.url)) + '</li>';
+        }, true) +
+        '</div>');
 
-      group('补充源（延伸阅读）', m.extra, function (x) {
-        return '<li><span class="nm">' +
-          (x.home ? '<a href="' + esc(x.home) + '" target="_blank" rel="noopener">' + esc(x.name) + '</a>'
-                  : esc(x.name)) + '</span>' +
-          (x.note ? '<span class="note">' + esc(x.note) + '</span>' : '') + '</li>';
-      });
+      // ── 补充源 ──
+      out.push('<div class="sp-tier"><div class="sp-tier-head">补充源 · 延伸阅读' +
+        '<span class="sp-tier-sub">每期末尾那一节的来源</span></div>' +
+        group('聚合与官方博客', m.extra, function (x) {
+          return '<li class="wide"><span class="sp-nm">' + esc2(x.name) + '</span>' +
+            link(x.home, host(x.home)) +
+            (x.note ? '<span class="sp-desc">' + esc2(x.note) + '</span>' : '') + '</li>';
+        }) +
+        '</div>');
 
       bodyEl.innerHTML = out.join('');
       built = true;

@@ -32,6 +32,7 @@ const START = '<!-- EXTRA:START -->';
 const END = '<!-- EXTRA:END -->';
 
 // 分组：h4 = 来源组，h5 = 组内细分。官方博客合成一组，组内再按博客分。
+// 顺序必须和 viewer/template.html 里 EN 视图的 order 数组一致（两边各存一份）
 const GROUPS = [
   { name: '官方博客',      sources: ['OpenAI', 'Google DeepMind'], context: true,  subBySource: true },
   { name: 'Import AI',     sources: ['Import AI'],                 context: true  },
@@ -179,6 +180,22 @@ for (const x of kept) byGroup.get(groupOf(x.item.source).name).push(x);
 const lines = [START, '', `## ${numeral}、延伸阅读`, '',
   '> 标题、链接和描述均由脚本直接从原文提取，非改写；中文为译文。',
   '> 整条可点击跳转。与 AI 无关的条目已剔除。', ''];
+
+// 采集了多少、中文留下多少，按组摊开 —— 剔除是模型做的判断，
+// 数字摆在最显眼处才知道它剔了多少、剔在哪一组。
+const collected = new Map(GROUPS.map(g => [g.name, 0]));
+for (const item of items) {
+  const k = groupOf(item.source).name;
+  collected.set(k, collected.get(k) + 1);
+}
+const parts = GROUPS
+  .filter(g => collected.get(g.name) > 0)
+  .map(g => `${esc(g.name)} ⟨${collected.get(g.name)} → ${byGroup.get(g.name).length}⟩`);
+if (parts.length) {
+  // ⟦ 开头：渲染器会把这一行排成统计条
+  lines.push(`⟦采集 ⟨${items.length}⟩ 篇，中文展示 ⟨${kept.length}⟩ 篇（采集 → 展示）：` +
+    parts.join(' · '), '');
+}
 
 for (const g of GROUPS) {
   const group = byGroup.get(g.name);

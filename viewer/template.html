@@ -126,8 +126,8 @@ a { color: var(--accent); }
   text-transform: uppercase; color: var(--ink-3); margin: 0 0 0.8rem;
 }
 .outline a {
-  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;
-  overflow: hidden;                     /* 长标题最多三行，否则大纲会被拉得很长 */
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
+  overflow: hidden;                     /* 长标题最多两行，超出部分由浏览器补省略号 */
   text-decoration: none; color: var(--ink-2);
   font-size: 0.79rem; line-height: 1.45;
   padding: 0.28rem 0 0.28rem 0.62rem;
@@ -295,6 +295,17 @@ a { color: var(--accent); }
   border-top: 1px solid var(--rule);
   display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap;
 }
+.body .tally-strip {
+  font: 400 0.74rem/1.7 var(--font-mono);
+  color: var(--ink-2);
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+  margin: -0.2rem 0 1.4rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--sunk);
+  border-radius: 4px;
+}
+.body .tally-strip .n { color: var(--ink); font-weight: 500; }
 .body h4 .n {
   font: 400 0.72rem/1 var(--font-mono); color: var(--ink-3);
   letter-spacing: 0.04em;
@@ -691,7 +702,12 @@ h4.lk-sec {
     function flushPara() {
       if (!para.length) return;
       var text = para.join(' ');
-      out.push(/^🔗/.test(text) ? renderSources(text) : '<p>' + inline(text) + '</p>');
+      if (/^⟦/.test(text)) {
+        // 统计条：数字密集，用等宽小字排，别混进正文的衬线体
+        out.push('<p class="tally-strip">' + inline(text.replace(/^⟦/, '')) + '</p>');
+      } else {
+        out.push(/^🔗/.test(text) ? renderSources(text) : '<p>' + inline(text) + '</p>');
+      }
       para = [];
     }
     function flushQuote() {
@@ -847,45 +863,6 @@ h4.lk-sec {
   // 简报标题是「前缀：主句；次句；次句」的写法。大纲是导航，不是正文 ——
   // 与其让 CSS 拦腰截断，不如切在分句边界上，留一个完整的意思。
   // 全文放进 title，鼠标悬停仍能看到。
-  // 宽度按「中日韩算 2、其余算 1」估，因为 34 个汉字的实际宽度是 34 个字母的两倍 ——
-  // 只数字符个数会把英文标题误判成过长，切在列举逗号上（Agent Harnesses, …）。
-  function vw(s) {
-    var n = 0;
-    for (var i = 0; i < s.length; i++) n += /[\u2e80-\u9fff\uff00-\uff60\u3000-\u303f]/.test(s.charAt(i)) ? 2 : 1;
-    return n;
-  }
-  function cutAt(s, limit) {          // 累计宽度达到 limit 的字符下标
-    var n = 0;
-    for (var i = 0; i < s.length; i++) {
-      n += /[\u2e80-\u9fff\uff00-\uff60\u3000-\u303f]/.test(s.charAt(i)) ? 2 : 1;
-      if (n > limit) return i;
-    }
-    return s.length;
-  }
-
-  function shortenLabel(s) {
-    if (vw(s) <= 68) return s;
-    var inRange = function (at) { return at >= 0 && vw(s.slice(0, at)) >= 28 && vw(s.slice(0, at)) <= 96; };
-    var first = function (list) {
-      for (var k = 0; k < list.length; k++) {
-        var at = s.indexOf(list[k]);
-        if (inRange(at)) return at;
-      }
-      return -1;
-    };
-    // 先找强分句（分号、破折号），再找括号（整块补充说明，切在它前面最干净），
-    // 最后才退到中文逗号 —— 英文逗号多半是列举，不是分句，不作为切点。
-    var cut = first(['；', ';', '——']);
-    if (cut < 0) cut = first(['（', '(']);
-    if (cut < 0) cut = first(['，']);
-    // 都没有就按宽度硬截，但别把一个英文单词劈成两半
-    if (cut < 0) {
-      cut = cutAt(s, 68);
-      while (cut > 8 && /[A-Za-z0-9]/.test(s.charAt(cut - 1)) && /[A-Za-z0-9]/.test(s.charAt(cut))) cut--;
-    }
-    return s.slice(0, cut).replace(/[\s、，,；;：:（(—]+$/, '') + '…';
-  }
-
   // EN 视图的子版块是 div.lk-topic（样式自成一套，不便改成真标题标签），
   // 但它在结构上就是一级标题，大纲里不该缺席。
   function lvOf(h) {
@@ -921,13 +898,15 @@ h4.lk-sec {
       });
       var label = clone.textContent.replace(/\s+/g, ' ').trim();
       if (!label) return;
-      var full = label;
-      label = shortenLabel(label);
-      var t = label === full ? '' : ' title="' + esc(full) + '"';
-      html.push('<a href="#' + id + '" class="lv' + lvOf(h) + '"' + t + '>' + esc(label) + '</a>');
+      html.push('<a href="#' + id + '" class="lv' + lvOf(h) + '">' + esc(label) + '</a>');
       links.push(id);
     });
     nav.innerHTML = html.join('');
+
+    // 两行放不下的才挂 title —— 实测比按字数猜准，也不会给短条目乱加提示
+    [].slice.call(nav.querySelectorAll('a')).forEach(function (a) {
+      if (a.scrollHeight > a.clientHeight + 1) a.title = a.textContent;
+    });
 
     // 滚动时高亮当前所在小节
     var as = [].slice.call(nav.querySelectorAll('a'));
@@ -1059,7 +1038,9 @@ h4.lk-sec {
     var items = extra.items || [];
     if (items.length) {
       out.push('<h2>Aggregators &amp; official blogs</h2>');
-      var order = ['OpenAI', 'Google DeepMind', 'Import AI', 'The Rundown AI', 'AINews'];
+      // 顺序必须和 scripts/link-digest.js 里的 GROUPS 一致 —— 两边各存一份，
+      // 之前就漂移过：中文是 AINews 在前，EN 是 Rundown 在前。改一边记得改另一边。
+      var order = ['OpenAI', 'Google DeepMind', 'Import AI', 'AINews', 'The Rundown AI'];
       var byS = {}, names = [];
       items.forEach(function (i) {
         var k = i.source || 'Other';

@@ -1,5 +1,5 @@
 {
-  "_说明": "这是 DailyAI 简报的信息源控制台。增删改这里即可，每天的定时任务会读取本文件，只使用 enabled=true 的来源。禁用某条把 enabled 改成 false 即可，无需删除。",
+  "_说明": "飞书时期的信息源清单，仅作参考留存 —— 当前没有任何代码读取本文件，实际生效的补充源写在 scripts/fetch-extra.js 里。原本的飞书投递配置（知识库地址与节点 token）已移除。",
 
   "primary_source": {
     "name": "AINews",
@@ -50,15 +50,5 @@
     { "name": "OpenAI Research", "url": "https://openai.com/news/research", "enabled": true },
     { "name": "Google DeepMind Blog", "url": "https://deepmind.google/discover/blog/", "enabled": true },
     { "name": "Meta AI Blog", "url": "https://ai.meta.com/blog/", "enabled": true }
-  ],
-
-  "output": {
-    "type": "feishu_docx",
-    "mode": "new_doc_per_day",
-    "file_name_pattern": "AI 简报 YYYY-MM-DD",
-    "wiki_space_id": "7497428922469957636",
-    "wiki_parent_node": "NGXFwi9GdiIvxgkcHdNcRHT5nbg",
-    "wiki_url": "https://my.feishu.cn/wiki/NGXFwi9GdiIvxgkcHdNcRHT5nbg",
-    "note": "每天新建一篇 docx，自动移动到 DailyAI 知识库节点下，文件名带日期以便按日期排序"
-  }
+  ]
 }

@@ -239,3 +239,25 @@ claude -p "ok"    # 报 OAuth session expired 就在交互式终端跑一次 cla
 
 两边都是配置本身，所以面板上写着什么，抓的就是什么。
 清单在 `build-viewer.js` 构建时注入页面，运行时不再读文件。
+
+## 补充源为什么要走 GitHub Actions
+
+云端 Routine 的沙箱**只放行 GitHub**：上游 feed 走 `raw.githubusercontent.com` 能抓到，
+`git push` 也正常，但 AINews / Import AI / OpenAI / DeepMind / The Rundown
+一律返回 HTTP 403。2026-08-26 那期实测 5/5 全挂，而同一份代码在本地 3/5 正常 ——
+五个不相干的域名同时 403，是出网白名单的签名，不是站点各自封禁。
+
+所以抓取这一步挪到了 `.github/workflows/fetch-extra.yml`：
+
+```
+21:10 UTC  Actions runner 抓五个源 → 提交 digests/extra-pending.json
+21:30 UTC  Routine 起来，archive.js 读这份现成的
+```
+
+`archive.js` 只在 `windowUntil` 的日期和本期期号对得上时才用预抓结果，
+隔夜的旧文件宁可重抓。**本地跑完全不受影响** —— 没有预抓文件就照旧自己抓。
+
+输出的 JSON 里 `extra.source` 会写明这一期用的是 `prefetched` 还是 `live`。
+
+> 若哪天沙箱放开了出网（环境设置里允许这几个域名），删掉这个工作流即可，
+> `archive.js` 会自动回落到实时抓取。

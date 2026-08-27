@@ -160,11 +160,14 @@ if (extraItems.length) {
   });
 }
 
-// ── 官方改写指令 ────────────────────────────────────────────────
-out.push('\n## 上游官方改写指令（请遵循）');
-for (const key of ['summarize_tweets', 'summarize_blogs', 'summarize_podcast', 'digest_intro']) {
-  if (data.prompts?.[key]) out.push(`\n### ${key}\n${data.prompts[key]}`);
-}
+// 上游那四段改写指令（summarize_tweets / summarize_blogs / summarize_podcast /
+// digest_intro）曾经原样拼在这里，占素材的 19%（6280 字符），而且逐日一字不变。
+// 它们是为「英文 digest 发到 Telegram」写的，和本项目的 digest-style.md 正面冲突：
+// 要求开头写 "AI Builders Digest — [Date]"（我们要 frontmatter）、每人 2-4 句
+// （我们要 ### 标题 + 段落）、还让模型在末尾加一行英文出处 —— 那行确实漏进了
+// 08-23 到 08-26 每一期的正文。
+// 其中真正有用的几条（署名规则、必引原话、无链接不收录、不臆测）已经并进
+// digest-style.md，此后不再每天重发。
 
 const text = out.join('\n');
 console.error(`[extract] ${issue}：原始 JSON ${(JSON.stringify(data).length / 1024).toFixed(0)}KB → 素材 ${(text.length / 1024).toFixed(0)}KB`);

@@ -1,0 +1,66 @@
+# 补充源抓取
+# ============================================================================
+# 云端 Routine 的沙箱只放行 GitHub（feed 走 raw.githubusercontent.com 能成，
+# 五个补充源一律 403）。GitHub Actions 的 runner 出网不受限，所以把「抓取」
+# 这一步挪到这里，抓完提交进仓库，Routine 起来时直接读现成的。
+#
+# 时间上要排在 Routine（21:30 UTC）前面，留出富余。
+# 抓不到不算失败 —— 补充源是加分项，不该让工作流报红。
+name: fetch-extra
+
+on:
+  schedule:
+    - cron: '10 21 * * *'   # 21:10 UTC，Routine 前 20 分钟
+  workflow_dispatch:         # 也可手动触发，用来验证
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-extra
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: 抓取补充源
+        id: fetch
+        run: |
+          set -o pipefail
+          ISSUE=$(date -u +%F)
+          echo "窗口截至 $ISSUE"
+          # 抓不到也要继续：写出的 JSON 里带着每个源的 status，下游据此提示
+          node scripts/fetch-extra.js --until="$ISSUE" > digests/extra-pending.json || true
+          node -e '
+            const fs = require("fs");
+            let j;
+            try { j = JSON.parse(fs.readFileSync("digests/extra-pending.json", "utf8")); }
+            catch { console.log("输出不是合法 JSON，丢弃"); fs.rmSync("digests/extra-pending.json", { force: true }); process.exit(0); }
+            const ok = (j.sources || []).filter(s => s.status === "ok").length;
+            console.log(`条目 ${(j.items || []).length} 条，成功源 ${ok}/${(j.sources || []).length}`);
+            for (const s of j.sources || []) console.log(`  ${s.status.padEnd(6)} ${s.name} ${s.error || ""}`);
+          '
+
+      - name: 提交
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add digests/extra-pending.json digests/extra-seen.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "无变化，不提交"
+          else
+            git commit -m "chore: 预抓补充源 $(date -u +%F)"
+            # Routine 也往 main 推，中间隔 20 分钟；万一撞上就 rebase 重试
+            for i in 1 2 3; do
+              git push origin main && break
+              echo "推送失败，rebase 后重试 ($i/3)"
+              git pull --rebase origin main || exit 1
+            done
+          fi

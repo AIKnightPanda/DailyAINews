@@ -118,7 +118,18 @@ async function fetchOnce(url) {
       redirect: 'follow',
       headers: { 'user-agent': UA }
     });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    if (!res.ok) {
+      // 把响应正文的开头带上 —— 站点自己返回的 403 和被网关/代理拦下的 403
+      // 长得一样，只看状态码分不清。2026-08-26 云端五个源全 403，就是靠
+      // 「feed 走 raw.githubusercontent.com 却成功了」才反推出是出网白名单。
+      // 下次直接从这句话就能看出来是谁拦的。
+      let hint = '';
+      try {
+        const body = (await res.text()).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+        if (body) hint = `：${body.slice(0, 120)}`;
+      } catch { /* 读不出正文就算了 */ }
+      throw new Error(`HTTP ${res.status}${hint}`);
+    }
     return await res.text();
   } finally {
     clearTimeout(timer);

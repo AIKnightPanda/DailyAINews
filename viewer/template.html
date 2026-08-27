@@ -968,6 +968,11 @@ h4.lk-sec {
       if (t === 'H4' || t === 'H5' || t === 'H6') {
         depth = { H4: 0, H5: 1, H6: 2 }[t];
         el.setAttribute('data-d', depth);
+      } else if (t === 'BLOCKQUOTE') {
+        // 这一节里的引用块只有两种：开头的取舍说明和末尾的抓取失败提示，
+        // 都是整节级的话。它们排在最后一个 h6 之后，按「跟随上一个标题」
+        // 算会被推到 d3，缩在子版块底下 —— 明明说的是整节的事。
+        el.setAttribute('data-d', 0);
       } else {
         el.setAttribute('data-d', Math.min(depth + 1, 3));
       }

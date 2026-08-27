@@ -125,8 +125,16 @@ async function fetchOnce(url) {
       // 下次直接从这句话就能看出来是谁拦的。
       let hint = '';
       try {
-        const body = (await res.text()).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
-        if (body) hint = `：${body.slice(0, 120)}`;
+        // 只留开头那段人话。拦截页往往是「一句说明 + 一大坨 JS」，
+        // 从第一个括号截断就把代码甩掉了 —— 这行会显示给读者看。
+        const body = (await res.text())
+          .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+          .replace(/<[^>]+>/g, ' ')
+          .replace(/\s+/g, ' ')
+          .trim()
+          .split(/[({]/)[0]
+          .trim();
+        if (body) hint = `：${body.slice(0, 70)}`;
       } catch { /* 读不出正文就算了 */ }
       throw new Error(`HTTP ${res.status}${hint}`);
     }

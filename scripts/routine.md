@@ -123,7 +123,7 @@
 
    link-digest.js 会把正文里的 [E<n>] 换成真链接，并在简报末尾追加「延伸阅读」。
    它是幂等的，重复跑不会重复追加。看它的输出：若报告「译文与原标题对不上」，
-   说明上一步的编号错位了，在最后如实报告。
+   说明上一步的编号错位了，在最后如实报告；若报告「N 个源抓取失败」，同样如实报告。
 
 6. 提交并推送（注意要写明 refspec）：
 
@@ -135,8 +135,9 @@
 
 ## 结束时
 
-用两三句话报告：期号、本期条目数、补充链接条数与剔除条数、播客是否走了 Haiku 压缩、
-译文是否生效、git 是否推送成功。任何一步失败都要明说，不要粉饰。
+用两三句话报告：期号、本期条目数、补充链接条数与剔除条数、有没有源抓取失败、
+播客是否走了 Haiku 压缩、译文是否生效、git 是否推送成功。
+任何一步失败都要明说，不要粉饰。
 ```
 
 ## ⚠️ 需要在 Routines 界面上改的配置
@@ -158,7 +159,9 @@
 
 ## 补充信息源
 
-`archive.js` 会自动调 `fetch-extra.js`，抓这五个源的当期「标题 + 链接」：
+`archive.js` 优先读 GitHub Actions 预抓好的 `digests/extra-pending.json`
+（云端沙箱只放行 GitHub，自己抓这五个源一律 403，详见 digests/README.md）；
+没有预抓文件或日期对不上时才自己调 `fetch-extra.js`。抓的都是当期「标题 + 链接」：
 
 | 源 | 抓法 | 典型条数 |
 |---|---|---|
@@ -172,7 +175,7 @@
 DeepMind 抓下来的 15KB 文本大半是导航栏。RSS 是这几家唯一稳定的入口。
 
 任何一个源失败只会让那一块缺失，不影响其他源，更不影响简报生成。
-失败情况会显示在页面的「链接」视图底部，不会静悄悄消失。
+失败情况会写在「延伸阅读」一节末尾（中文）和 EN 视图底部，不会静悄悄消失。
 
 `digests/extra-seen.json` 记录已收过的 URL，避免同一条链接连着几天重复出现。
 
@@ -216,17 +219,3 @@ Artifact 有一道「未查看过当前线上版本就不许覆盖」的保护�
 必然撞上，按官方流程只能先把线上副本整份读回来再发布，而那份 HTML 内嵌了所有期内容，
 会越读越大（今天 71KB，几十期后是几百 KB）。改用 Pages 就完全绕开了这个矛盾。
 `viewer/artifact.html` 仍会生成，留作需要时手动发布私有快照用。
-
-## 沙箱的 git 状态（踩过的坑）
-
-云端沙箱把目标 commit 检出成**游离 HEAD**，而本地分支 `main` 停在缓存克隆时的旧位置：
-
-```
-HEAD detached from refs/heads/main
-HEAD            = <最新 commit>
-refs/heads/main = <旧 commit>
-```
-
-直接 `git push origin main` 推的是那个陈旧的分支引用，会被判 non-fast-forward 而拒绝。
-所以 prompt 第 0 步必须先 `git fetch origin && git checkout -B main origin/main`，
-实测之后 `git push --dry-run origin main` 返回 `Everything up-to-date`。

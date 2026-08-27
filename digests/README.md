@@ -250,9 +250,14 @@ claude -p "ok"    # 报 OAuth session expired 就在交互式终端跑一次 cla
 所以抓取这一步挪到了 `.github/workflows/fetch-extra.yml`：
 
 ```
-21:10 UTC  Actions runner 抓五个源 → 提交 digests/extra-pending.json
+20:20 UTC  Actions runner 抓五个源 → 提交 digests/extra-pending.json
 21:30 UTC  Routine 起来，archive.js 读这份现成的
 ```
+
+两者隔 70 分钟：GitHub 的定时工作流在高峰期会被推迟，余量留窄了一旦排队
+就赶不上 Routine，那一期会退回实时抓取 —— 而云端实时抓取必然 403。
+
+2026-08-27 实测通路成立，云端日志：`[archive] 补充源来自 GitHub Actions 预抓，39 条`。
 
 `archive.js` 只在 `windowUntil` 的日期和本期期号对得上时才用预抓结果，
 隔夜的旧文件宁可重抓。**本地跑完全不受影响** —— 没有预抓文件就照旧自己抓。

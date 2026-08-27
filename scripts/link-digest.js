@@ -127,7 +127,12 @@ function localized(item, n) {
   return { title: title || item.title, summary: summary || item.summary };
 }
 
-if (!items.length) {
+// 一条都没有，且没有源报错 —— 那就是真的没新内容，什么都不写。
+// 但**有源报错时不能就这么退**：以前退在这里，末尾那句失败提示就永远走不到，
+// 读者只会看到「延伸阅读」整节凭空消失，分不清是今天没内容还是抓挂了。
+// 2026-08-26 那期五个源全 403，页面上就是这么静悄悄少了一块。
+const failedSources = (extra.sources || []).filter(s => s.status === 'error');
+if (!items.length && !failedSources.length) {
   console.log(`[link-digest] ${issue}：本期无补充条目`);
   process.exit(0);
 }
@@ -169,9 +174,13 @@ const kept = items.map((item, i) => ({ item, n: i + 1 })).filter(x => !dropped.h
 const byGroup = new Map(GROUPS.map(g => [g.name, []]));
 for (const x of kept) byGroup.get(groupOf(x.item.source).name).push(x);
 
-const lines = [START, '', `## ${numeral}、延伸阅读`, '',
-  '> 标题、链接和描述均由脚本直接从原文提取，非改写；中文为译文。',
-  '> 整条可点击跳转。与 AI 无关的条目已剔除。', ''];
+const lines = [START, '', `## ${numeral}、延伸阅读`, ''];
+
+// 一条都没有时（全员抓取失败）不写这段说明 —— 没有条目，说明取舍规则纯属废话
+if (kept.length) {
+  lines.push('> 标题、链接和描述均由脚本直接从原文提取，非改写；中文为译文。',
+    '> 整条可点击跳转。与 AI 无关的条目已剔除。', '');
+}
 
 // 采集了多少、中文留下多少，按组摊开 —— 剔除是模型做的判断，
 // 数字摆在最显眼处才知道它剔了多少、剔在哪一组。
@@ -245,9 +254,13 @@ for (const g of GROUPS) {
 }
 
 // 抓失败的源要明说，不能静悄悄少一块
-const failed = (extra.sources || []).filter(s => s.status === 'error');
-if (failed.length) {
-  lines.push(`> ⚠️ 本期以下信息源抓取失败：${failed.map(f => `${f.name}（${f.error}）`).join('；')}`, '');
+if (failedSources.length) {
+  const all = failedSources.length === (extra.sources || []).length;
+  lines.push(all
+    ? `> ⚠️ 本期补充源**全部抓取失败**（${failedSources.length}/${failedSources.length}），` +
+      `所以没有延伸阅读。这是抓取层的问题，不是当天没有内容：` +
+      failedSources.map(f => `${f.name}（${f.error}）`).join('；')
+    : `> ⚠️ 本期以下信息源抓取失败：${failedSources.map(f => `${f.name}（${f.error}）`).join('；')}`, '');
 }
 
 lines.push(END, '');
@@ -258,6 +271,7 @@ const out = body.replace(/\n+$/, '\n') + '\n' + lines.join('\n');
 await writeFile(mdPath, out);
 
 console.log(`[link-digest] ${issue}：${items.length} 条补充条目` +
+  (failedSources.length ? `，⚠️ ${failedSources.length}/${(extra.sources || []).length} 个源抓取失败` : '') +
   (dropped.size ? `（剔除无关 ${dropped.size} 条，保留 ${kept.length}）` : '') +
   `，正文引用 ${cited} 处` +
   (bogus.length ? `，⚠️ 无效编号 ${bogus.length} 个已移除：${bogus.join(' ')}` : '') +

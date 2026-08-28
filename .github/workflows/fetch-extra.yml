@@ -42,8 +42,13 @@ jobs:
 
       # 三枪里第一枪成功后，后两枪必须什么都不做 —— fetch-extra.js 会把抓到的
       # URL 记进 extra-seen.json，第二次跑同样的源只会返回 0 条，直接覆盖掉
-      # 第一枪的成果。所以先看今天是不是已经抓好了。
-      - name: 今天抓过了吗
+      # 第一枪的成果。所以先看这一轮是不是已经抓过了。
+      #
+      # 判据是「窗口是今天，且抓取时间在 4 小时内」，不是单纯的「今天抓过」——
+      # 三枪跨度 2 小时（18:20→20:20），4 小时够覆盖；而清早手动 dispatch 的那种
+      # 试跑（比如 00:28）到了 18:20 已经 18 小时前，不会把当晚正经的三枪堵掉。
+      # 早上抓的东西本来也没用：当天的内容那时候还没发。
+      - name: 这一轮抓过了吗
         id: guard
         run: |
           node -e '
@@ -52,11 +57,12 @@ jobs:
             let done = false;
             try {
               const j = JSON.parse(fs.readFileSync("digests/extra-pending.json", "utf8"));
+              const hours = (Date.now() - Date.parse(j.fetchedAt || 0)) / 36e5;
               done = String(j.windowUntil || "").slice(0, 10) === today
-                  && String(j.fetchedAt   || "").slice(0, 10) === today
-                  && Array.isArray(j.items);
+                  && Array.isArray(j.items)
+                  && hours >= 0 && hours < 4;
             } catch {}
-            console.log(done ? "今天已抓，跳过" : "今天还没抓，继续");
+            console.log(done ? "本轮已抓，跳过" : "本轮还没抓，继续");
             fs.appendFileSync(process.env.GITHUB_OUTPUT, `done=${done}\n`);
           '
 

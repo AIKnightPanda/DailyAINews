@@ -55,7 +55,11 @@ function inlineToText(frag, base) {
       const label = decode(inner.replace(/<[^>]+>/g, '')).replace(/\s+/g, ' ').trim();
       if (!label) return '';
       let abs;
-      // 原文里偶尔会写成 href=" /blog/xxx"，不剪空白会被编码成 %20 变成死链
+      // 只剪首尾空白。**不改 URL 本身** —— 原文的链接原样搬运，哪怕它是坏的。
+      // （08-27 那篇里 Anthropic 自己写了 href="http://claude.com/blog/%20claude-in-
+      // chrome-generally-available"，那个 %20 是他们 markup 里的笔误，会 404；
+      // 但同一批链接里 "Claude%20Opus%205%20System%20Card.pdf" 的 %20 是合法的。
+      // 分不开，也不该由我们分 —— 猜着改第三方 URL 比照搬一条坏链更危险。）
       try { abs = new URL(href.trim(), base).href; } catch { return label; }
       if (!/^https?:/i.test(abs)) return label;            // mailto:、锚点、js: 都只留文字
       if (abs.replace(/#.*$/, '') === base.replace(/#.*$/, '')) return label;  // 自指链接没意义

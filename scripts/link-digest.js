@@ -157,12 +157,6 @@ if (oldStart !== -1) {
          (oldEnd !== -1 ? body.slice(oldEnd + END.length) : '');
 }
 
-// 上游 digest-intro.md 曾要求在末尾写一行英文出处。那份指令早就不进模型上下文了，
-// 但模型每天会读上一期当范例，这行就靠「抄前一期」一路传了下来（08-23 到 08-27 每期都有）。
-// 上游署名在页头 tagline 和信息源面板里都已经有，正文里这行是多余的。
-// 用脚本剔而不是靠提示词约束 —— 提示词管不住「照着范例抄」这种行为。
-body = body.replace(/^.*Generated through the Follow Builders skill.*$\n?/gm, '');
-
 body = body.replace(/\[E(\d+)\]/g, (whole, n) => {
   const item = items[Number(n) - 1];
   if (!item) {

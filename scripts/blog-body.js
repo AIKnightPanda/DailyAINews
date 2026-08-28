@@ -55,7 +55,8 @@ function inlineToText(frag, base) {
       const label = decode(inner.replace(/<[^>]+>/g, '')).replace(/\s+/g, ' ').trim();
       if (!label) return '';
       let abs;
-      try { abs = new URL(href, base).href; } catch { return label; }
+      // 原文里偶尔会写成 href=" /blog/xxx"，不剪空白会被编码成 %20 变成死链
+      try { abs = new URL(href.trim(), base).href; } catch { return label; }
       if (!/^https?:/i.test(abs)) return label;            // mailto:、锚点、js: 都只留文字
       if (abs.replace(/#.*$/, '') === base.replace(/#.*$/, '')) return label;  // 自指链接没意义
       return `[${label}](${abs})`;

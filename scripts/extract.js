@@ -10,8 +10,9 @@
 // 输出纯文本到 stdout。这是写简报的模型唯一需要读的东西。
 //
 // 补充源（AINews / Import AI / 官方博客）以 [E<n>] 编号列表的形式进入素材，
-// **只给编号和标题，不给 URL**。模型可以在正文里用 [E12] 引用，
-// 之后由 link-digest.js 换成真链接 —— URL 全程不经过模型，编不出来。
+// **只给编号和标题，不给 URL**：一天几十条，条数一多模型容易把标题和链接配错，
+// 改由 link-digest.js 按编号配回就错不了。这道隔离只针对补充源那一节 ——
+// 推文、博客原文、博客正文里的链接都照常进素材，那些是内容。
 //
 // 用法:
 //   node scripts/extract.js <期号>                 写简报用的素材
@@ -21,6 +22,7 @@
 import { readFile } from 'fs/promises';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { bodyToMarkdown } from './blog-body.js';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -31,12 +33,28 @@ if (!issue) {
 }
 const transcriptMode = process.argv.includes('--transcripts');
 
-const BLOG_CHARS = 3500;        // 博客正文上限
+const BLOG_CHARS = 6000;        // 博客正文上限。还原分段后原来的 3500 会砍掉大半篇
+                                //（08-27 那篇 6900 字符），而博客一天只有 1-3 篇，
+                                // 放宽的这点额度换来的是简报里博客那节写得准
 const POD_HEAD = 4000;          // 转录开头
 const POD_SAMPLES = [0.3, 0.55, 0.8]; // 中后段采样点
 const POD_SAMPLE_CHARS = 3000;
 
 const clean = s => (s || '').replace(/\r?\n/g, ' ⏎ ');
+
+// 超额时按段落边界截断，不要把一段话砍在半句上
+function clip(text, limit) {
+  if (text.length <= limit) return text;
+  const paras = text.split('\n\n');
+  const out = [];
+  let n = 0;
+  for (const p of paras) {
+    if (n + p.length > limit && out.length) break;
+    out.push(p);
+    n += p.length + 2;
+  }
+  return out.join('\n\n') + '\n\n[正文已截断]';
+}
 
 const data = JSON.parse(await readFile(join(ROOT, 'digests/raw', `${issue}.json`), 'utf-8'));
 
@@ -100,8 +118,12 @@ if (data.blogs?.length) {
     if (b.author) out.push(`作者：${b.author}`);
     if (b.publishedAt) out.push(`发布：${b.publishedAt}`);
     out.push(`链接：${b.url}`);
-    const body = (b.content || '').trim();
-    out.push(body.slice(0, BLOG_CHARS) + (body.length > BLOG_CHARS ? '\n[正文已截断]' : ''));
+    // 用还原后的分段正文（带小标题和正文内链接）；没还原成功时退回扁平正文。
+    // 正文里的 [文字](URL) 是**文章自己引用的链接**，属于内容的一部分，
+    // 写简报时该带就带 —— 和末尾「补充源条目」那套编号引用是两码事。
+    const body = bodyToMarkdown(b).trim();
+    if (!b.body?.length) out.push('⚠️ 本篇未能还原分段，下面是扁平正文。');
+    out.push(clip(body, BLOG_CHARS));
   }
 } else {
   out.push('\n## 官方博客\n（本期无新增博客，简报里跳过该板块）');
@@ -139,14 +161,18 @@ if (data.podcasts?.length) {
 }
 
 // ── 补充源条目 ──────────────────────────────────────────────────
-// 只给编号和标题。URL 一律不给 —— 模型没见过就编不出来。
+// 只给编号和标题，URL 不给。这一节一天几十条，条数一多模型很容易把标题和
+// 链接配错；改成编号引用后由 link-digest.js 按编号配回，错不了。
+// 注意这道隔离**只针对这一节** —— 推文、博客、播客的链接都照常给模型。
 const extraItems = data.extra?.items || [];
 if (extraItems.length) {
   out.push('\n## 补充源条目（可在正文中用 [E<编号>] 引用）');
-  out.push('这些是 AINews、Import AI 和各家官方博客当期的条目。');
-  out.push('**没有给你 URL，也不需要你写 URL** —— 你只要写 [E12] 这样的编号，');
-  out.push('脚本会自动替换成真链接。全部条目都会由脚本列在简报末尾，');
-  out.push('所以你不必逐条罗列，只在正文确实用得上时引用。');
+  out.push('这些是 AINews、Import AI 和各家官方博客当期的条目 —— 一天几十条，');
+  out.push('**只给编号和标题，故意不给 URL**：条数一多，模型很容易把标题和链接配错。');
+  out.push('你只要写 [E12] 这样的编号，脚本会按编号配回真链接。全部条目都会由脚本');
+  out.push('列在简报末尾，所以不必逐条罗列，只在正文确实用得上时引用。');
+  out.push('（**这条只管这一节。**上面推文、博客、播客里给出的链接都是内容，照抄照用；');
+  out.push('博客正文里的 [文字](URL) 尤其别丢，那是文章自己引用的东西。）');
   out.push('');
   let lastKey = null;
   extraItems.forEach((it, i) => {

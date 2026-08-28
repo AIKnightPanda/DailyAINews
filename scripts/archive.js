@@ -16,6 +16,7 @@ import { writeFile, readFile, mkdir } from 'fs/promises';
 import { existsSync, readFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { restoreBody } from './blog-body.js';
 
 const execFileAsync = promisify(execFile);
 
@@ -124,6 +125,19 @@ async function main() {
   }
   console.error(`[archive] 补充源来自${extraFrom === 'prefetched' ? ' GitHub Actions 预抓' : '本次实时抓取'}` +
     `，${extra.items?.length ?? 0} 条`);
+
+  // 博客正文：feed 给的是一堵没有分段、没有小标题、没有任何链接的墙 ——
+  // 文章里引用的 YouTube 演示、文档页、评测报告那些**属于内容本身**的链接全丢了。
+  // 回原文页把结构取回来；抓不到就留着扁平正文，不影响出刊。
+  if (Array.isArray(feed.blogs) && feed.blogs.length) {
+    await Promise.all(feed.blogs.map(b => restoreBody(b)));
+    const done = feed.blogs.filter(b => b.body?.length).length;
+    const links = feed.blogs.reduce((n, b) => n + (b.bodyLinks || 0), 0);
+    const bad = feed.blogs.filter(b => b.bodyError)
+      .map(b => '；' + b.name + '「' + String(b.title).trim() + '」未还原：' + b.bodyError)
+      .join('');
+    console.error(`[archive] 博客正文还原 ${done}/${feed.blogs.length} 篇，找回正文链接 ${links} 个${bad}`);
+  }
 
   await mkdir(RAW_DIR, { recursive: true });
   const rawPath = join(RAW_DIR, `${issue}.json`);

@@ -612,6 +612,27 @@ h4.lk-sec {
 }
 .src-meta a { color: var(--ink-3); text-decoration: none; }
 .src-meta a:hover { color: var(--accent); }
+/* 还原了分段的博客正文。转录那种一堵墙用 .transcript，这里要的是能读的排版 */
+.article {
+  font-family: var(--font-body); font-size: 0.92rem; line-height: 1.8;
+  background: var(--sunk); border-radius: 4px;
+  padding: 1.1rem 1.2rem; margin: 0 0 1.5rem;
+  word-break: break-word;
+}
+.article > :first-child { margin-top: 0; }
+.article > :last-child { margin-bottom: 0; }
+.article p { margin: 0 0 0.95rem; }
+.article h4 { font-size: 0.98rem; font-weight: 700; margin: 1.6rem 0 0.7rem; }
+.article h5 { font-size: 0.9rem; font-weight: 700; margin: 1.3rem 0 0.6rem; }
+.article ul { margin: 0 0 0.95rem; padding-left: 1.3rem; }
+.article li { margin: 0 0 0.35rem; }
+.article blockquote {
+  margin: 0 0 0.95rem; padding-left: 0.9rem;
+  border-left: 2px solid var(--rule); color: var(--ink-2);
+}
+.article a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--rule); }
+.article a:hover { border-bottom-color: var(--accent); }
+
 .transcript {
   white-space: pre-wrap; word-break: break-word;
   font-family: var(--font-body); font-size: 0.9rem; line-height: 1.7;
@@ -1005,7 +1026,10 @@ h4.lk-sec {
 
     // h5/h6 也要进大纲 —— 官方博客要能看到 OpenAI / DeepMind 这层，
     // AINews 的板块和主题分类同理，否则等于在大纲里把结构又压平了
-    var heads = [].slice.call(pane.querySelectorAll('h2, h3, h4, h5, h6, .lk-topic'));
+    // 但博客正文**内部**的小标题不进大纲 —— 那是文章自己的结构，不是本期的导航。
+    // 混进来既撑爆大纲，层级也会倒挂：文章的小节看上去比它所属的那篇博客还突出。
+    var heads = [].slice.call(pane.querySelectorAll('h2, h3, h4, h5, h6, .lk-topic'))
+      .filter(function (h) { return !h.closest('.article'); });
     if (heads.length < 3) { nav.innerHTML = ''; return; }
 
     var html = ['<div class="outline-head">本期大纲</div>'];
@@ -1146,7 +1170,24 @@ h4.lk-sec {
         out.push('<h3>' + esc(b.name || '') + '：' + esc(b.title || '') + '</h3>');
         out.push('<div class="src-meta">' + (b.publishedAt ? esc(b.publishedAt) + ' · ' : '') +
           '<a href="' + esc(b.url || '#') + '" target="_blank" rel="noopener">read original ↗</a></div>');
-        out.push('<div class="transcript">' + esc(b.content || '（无正文）') + '</div>');
+        // feed 给的正文是一整坨扁平文本，读起来是一堵墙。blog-body.js 回原文页
+        // 把分段、小标题和正文内链接取了回来，有 body 就按结构渲染。
+        if (b.body && b.body.length) {
+          var html = '', open = false;
+          b.body.forEach(function (blk) {
+            var t = inline(blk.text);
+            if (blk.tag === 'li') { if (!open) { html += '<ul>'; open = true; } html += '<li>' + t + '</li>'; return; }
+            if (open) { html += '</ul>'; open = false; }
+            if (blk.tag === 'h2') html += '<h4>' + t + '</h4>';
+            else if (blk.tag === 'h3' || blk.tag === 'h4') html += '<h5>' + t + '</h5>';
+            else if (blk.tag === 'quote') html += '<blockquote>' + t + '</blockquote>';
+            else html += '<p>' + t + '</p>';
+          });
+          if (open) html += '</ul>';
+          out.push('<div class="article">' + html + '</div>');
+        } else {
+          out.push('<div class="transcript">' + esc(b.content || '（无正文）') + '</div>');
+        }
       });
     }
 

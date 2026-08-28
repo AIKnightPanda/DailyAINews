@@ -172,7 +172,11 @@ async function main() {
       generatedAt: raw.stats?.feedGeneratedAt || null,
       stats: raw.stats || {},
       x: raw.x || [],
-      blogs: raw.blogs || [],
+      // 博客还原成功时只发结构化的 body，扁平的 content 就不再重复带一份 ——
+      // 两者内容一样，都带上等于把这一节的体积翻倍。
+      blogs: (raw.blogs || []).map(b => b.body?.length
+        ? { ...b, content: undefined }
+        : b),
       podcasts: raw.podcasts || [],
       // 补充源的链接墙。URL 从抓取到渲染全程由脚本传递，不经过任何模型。
       extra: raw.extra || { items: [], sources: [] }

@@ -240,29 +240,30 @@ claude -p "ok"    # 报 OAuth session expired 就在交互式终端跑一次 cla
 两边都是配置本身，所以面板上写着什么，抓的就是什么。
 清单在 `build-viewer.js` 构建时注入页面，运行时不再读文件。
 
-## 补充源为什么要走 GitHub Actions
+## 补充源的两条抓取路径
 
-云端 Routine 的沙箱**只放行 GitHub**：上游 feed 走 `raw.githubusercontent.com` 能抓到，
-`git push` 也正常，但 AINews / Import AI / OpenAI / DeepMind / The Rundown
-一律返回 HTTP 403。2026-08-26 那期实测 5/5 全挂，而同一份代码在本地 3/5 正常 ——
-五个不相干的域名同时 403，是出网白名单的签名，不是站点各自封禁。
-
-所以抓取这一步挪到了 `.github/workflows/fetch-extra.yml`：
+抓取有两条路，互为备份：
 
 ```
-20:20 UTC  Actions runner 抓五个源 → 提交 digests/extra-pending.json
-21:30 UTC  Routine 起来，archive.js 读这份现成的
+21:00 UTC  Actions runner 抓五个源 → 提交 digests/extra-pending.json   （预抓）
+21:30 UTC  Routine 起来，archive.js 读这份现成的；读不到就自己实时抓   （回落）
 ```
 
-两者隔 70 分钟：GitHub 的定时工作流在高峰期会被推迟，余量留窄了一旦排队
-就赶不上 Routine，那一期会退回实时抓取 —— 而云端实时抓取必然 403。
+预抓一天只跑一次 —— `fetch-extra.js` 抓完会把 URL 记进 `extra-seen.json`，
+同一天再跑只会返回 0 条，把上一次的成果覆盖掉。
 
-2026-08-27 实测通路成立，云端日志：`[archive] 补充源来自 GitHub Actions 预抓，39 条`。
+**这两条路是 2026-08 那次事故留下的。** 当时云端 Routine 的沙箱只放行 GitHub：
+上游 feed 走 `raw.githubusercontent.com` 能抓到、`git push` 也正常，但五个补充源
+一律 HTTP 403（08-26 实测 5/5 全挂，同一份代码在本地 3/5 正常 —— 五个不相干的域名
+同时 403，是出网白名单的签名，不是站点各自封禁）。当时只能把抓取整个挪到 Actions。
 
-`archive.js` 只在 `windowUntil` 的日期和本期期号对得上时才用预抓结果，
-隔夜的旧文件宁可重抓。**本地跑完全不受影响** —— 没有预抓文件就照旧自己抓。
+后来在云端环境的 **Network access → Custom** 里放行了这五个域名，实时抓取那条路
+就通了（08-28 实测 5/5）。预抓因此从「唯一出路」降级成「备份」：它抓失败、跑晚了、
+甚至没触发，都只是回落到实时抓取，当期简报照出。
 
-输出的 JSON 里 `extra.source` 会写明这一期用的是 `prefetched` 还是 `live`。
+`archive.js` 对预抓文件设了三道关（日期对得上本期、抓取时间在 24 小时内、
+`items` 条数和 `sources` 自报的对得上），任何一道不过就退回实时抓取。
+输出的 JSON 里 `extra.source` 写明这一期用的是 `prefetched` 还是 `live`。
 
-> 若哪天沙箱放开了出网（环境设置里允许这几个域名），删掉这个工作流即可，
-> `archive.js` 会自动回落到实时抓取。
+> 观察一段时间若实时抓取一直稳定，可以直接删掉 `.github/workflows/fetch-extra.yml`，
+> 不需要改任何脚本。

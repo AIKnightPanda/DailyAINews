@@ -1,27 +1,16 @@
-# 补充源抓取
+# 补充源预抓
 # ============================================================================
-# 云端 Routine 的沙箱只放行 GitHub（feed 走 raw.githubusercontent.com 能成，
-# 五个补充源一律 403）。GitHub Actions 的 runner 出网不受限，所以把「抓取」
-# 这一步挪到这里，抓完提交进仓库，Routine 起来时直接读现成的。
+# 在 Routine（21:30 UTC）前半小时把五个补充源抓好，提交进仓库，Routine 起来直接读。
 #
-# 时间上要排在 Routine（21:30 UTC）前面，留出富余，并且不能只排一次 —— 见下面 cron 那段。
-# 抓不到不算失败 —— 补充源是加分项，不该让工作流报红。
+# 这一步是**备份，不是必需**：Routine 所在的云端环境已放行这五个域名，
+# 没有预抓文件时 archive.js 会自己实时抓。所以这里抓失败、跑晚了、甚至没触发，
+# 都只是回落到实时抓取，当期简报照出。
 name: fetch-extra
 
 on:
   schedule:
-    # 打三枪：18:20 / 19:20 / 20:20 UTC，分别比 Routine（21:30）早 3h10 / 2h10 / 1h10。
-    #
-    # 为什么不是一枪：GitHub 的 schedule 是尽力而为，没有 SLA —— 高负载时会被
-    # 推迟几十分钟，也可能整次丢掉。2026-08-27 那天设的单枪 20:20 就没触发
-    # （工作流 state=active、文件在 main 上、权限也对，运行记录里根本没有这一条），
-    # 结果当晚的 Routine 读到的是前一天凌晨那份预抓文件，08-27 期少了 5 条。
-    #
-    # 三枪是幂等的：下面第一步会检查「今天是否已经抓好」，抓好了就整个跳过，
-    # 所以后两枪在正常日子里只是空转 13 秒。抓取时间早两小时对新鲜度几乎没影响
-    # （源都是当天早些时候发的），换来的是三次独立的触发机会。
-    - cron: '20 18,19,20 * * *'
-  workflow_dispatch:         # 也可手动触发，用来验证
+    - cron: '0 21 * * *'     # 比 Routine 早 30 分钟
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -40,35 +29,9 @@ jobs:
         with:
           node-version: '22'
 
-      # 三枪里第一枪成功后，后两枪必须什么都不做 —— fetch-extra.js 会把抓到的
-      # URL 记进 extra-seen.json，第二次跑同样的源只会返回 0 条，直接覆盖掉
-      # 第一枪的成果。所以先看这一轮是不是已经抓过了。
-      #
-      # 判据是「窗口是今天，且抓取时间在 4 小时内」，不是单纯的「今天抓过」——
-      # 三枪跨度 2 小时（18:20→20:20），4 小时够覆盖；而清早手动 dispatch 的那种
-      # 试跑（比如 00:28）到了 18:20 已经 18 小时前，不会把当晚正经的三枪堵掉。
-      # 早上抓的东西本来也没用：当天的内容那时候还没发。
-      - name: 这一轮抓过了吗
-        id: guard
-        run: |
-          node -e '
-            const fs = require("fs");
-            const today = new Date().toISOString().slice(0, 10);
-            let done = false;
-            try {
-              const j = JSON.parse(fs.readFileSync("digests/extra-pending.json", "utf8"));
-              const hours = (Date.now() - Date.parse(j.fetchedAt || 0)) / 36e5;
-              done = String(j.windowUntil || "").slice(0, 10) === today
-                  && Array.isArray(j.items)
-                  && hours >= 0 && hours < 4;
-            } catch {}
-            console.log(done ? "本轮已抓，跳过" : "本轮还没抓，继续");
-            fs.appendFileSync(process.env.GITHUB_OUTPUT, `done=${done}\n`);
-          '
-
+      # 一天只该跑这一次。fetch-extra.js 抓完会把 URL 记进 extra-seen.json，
+      # 同一天再跑一次只会返回 0 条，把上一次的成果覆盖掉。
       - name: 抓取补充源
-        id: fetch
-        if: steps.guard.outputs.done != 'true'
         run: |
           set -o pipefail
           ISSUE=$(date -u +%F)
@@ -86,7 +49,6 @@ jobs:
           '
 
       - name: 提交
-        if: steps.guard.outputs.done != 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

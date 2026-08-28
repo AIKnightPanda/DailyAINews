@@ -31,12 +31,9 @@ function fail(message) {
   process.exit(1);
 }
 
-// GitHub Actions 预抓的那份。要过三关才敢用：
-//   1. 窗口日期对得上本期 —— 隔夜的旧文件宁可不要
-//   2. 抓取时间在 24 小时内 —— 光看日期不够：08-27 那份是当天凌晨抓的，
-//      日期和当晚的期号恰好一样，于是隔了 17 小时照样被当成新鲜货用了
-//   3. items 条数和 sources 自报的对得上 —— 那份文件被手工掏空过，
-//      items 是空的、sources 却还写着 AINews 32 条，一路静默到页面上少一块
+// GitHub Actions 预抓的那份。要过三关才敢用：窗口日期对得上本期、抓取时间在
+// 24 小时内、items 条数和 sources 自报的对得上。三关都是 2026-08-27 那次事故
+// 换来的 —— 一份隔夜的、被手工掏空的文件日期恰好对上，就这么被当成新鲜货用了。
 // 前两关不算故障（本来就该退回实时抓取），第三关是文件坏了，要喊出来。
 function readPending(issue) {
   const p = join(ROOT, 'digests/extra-pending.json');
@@ -94,10 +91,8 @@ async function main() {
   // 补充信息源（AINews / Import AI / 官方博客）—— 纯链接墙，不抓正文。
   // 它是加分项不是必需品：抓不到就带着空清单继续，绝不让当期简报出不来。
   //
-  // 优先用 GitHub Actions 预抓好的那份：云端 Routine 的沙箱只放行 GitHub，
-  // 自己抓这五个源一律 403（2026-08-26 实测 5/5）。Actions 的 runner 没这个限制，
-  // 它在 21:10 UTC 抓完提交进仓库，这里直接取用。
-  // 本地跑不受影响 —— 没有预抓文件（或日期对不上）就照旧自己抓。
+  // 优先用 GitHub Actions 在 21:00 UTC 预抓好的那份，没有或日期对不上就自己实时抓。
+  // 两条路都通：云端环境已放行这五个域名（2026-08-28 实测 5/5）。
   let extra = { items: [], sources: [] };
   let extraFrom = 'live';
   const pending = readPending(issue);
@@ -114,8 +109,8 @@ async function main() {
     } catch (err) {
       extra = { items: [], sources: [], error: err.message };
     }
-    // 云端沙箱实时抓必然 403。预抓文件被拒 + 实时又失败 = 这一期彻底没补充源，
-    // 两个原因都得留在档里，否则事后只看得到「403」，查不出预抓那步为什么没顶上。
+    // 预抓文件被拒 + 实时又失败 = 这一期彻底没补充源。两个原因都得留在档里，
+    // 否则事后只看得到实时抓取那条报错，查不出预抓那步为什么没顶上。
     if (pending?.reject) {
       extra.error = extra.error ? `${pending.reject}；实时抓取也失败：${extra.error}` : pending.reject;
     }

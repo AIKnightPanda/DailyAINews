@@ -159,9 +159,8 @@
 
 ## 补充信息源
 
-`archive.js` 优先读 GitHub Actions 预抓好的 `digests/extra-pending.json`
-（云端沙箱只放行 GitHub，自己抓这五个源一律 403，详见 digests/README.md）；
-没有预抓文件或日期对不上时才自己调 `fetch-extra.js`。抓的都是当期「标题 + 链接」：
+`archive.js` 优先读 GitHub Actions 预抓好的 `digests/extra-pending.json`，
+没有或日期对不上时自己调 `fetch-extra.js` 实时抓。抓的都是当期「标题 + 链接」：
 
 | 源 | 抓法 | 典型条数 |
 |---|---|---|
@@ -181,19 +180,17 @@ DeepMind 抓下来的 15KB 文本大半是导航栏。RSS 是这几家唯一稳�
 
 `digests/extra-seen.json` 记录已收过的 URL，避免同一条链接连着几天重复出现。
 
-### 预抓这条链路为什么要打三枪
+### 预抓与实时抓取
 
-`.github/workflows/fetch-extra.yml` 的 cron 是 `20 18,19,20 * * *`（UTC），
-分别比 Routine 早 3h10 / 2h10 / 1h10。**GitHub 的 schedule 是尽力而为，没有 SLA。**
-2026-08-27 设的单枪 `20 20 * * *` 就整个没触发 —— 工作流 state=active、文件在 main 上、
-权限也对，运行记录里根本没有这一条。当晚 Routine 因此读到前一天的旧预抓文件，
-08-27 期少了 5 条。三枪彼此独立，任何一枪成了就行。
+抓取有两条路，互为备份：
 
-三枪必须幂等，因为 `fetch-extra.js` 会把抓到的 URL 记进 `extra-seen.json` ——
-第二次跑同样的源只会返回 0 条，会把第一枪的成果覆盖成空。所以工作流第一步先看
-「今天是否已抓好」（`windowUntil` 和 `fetchedAt` 都是今天），抓好了整个 job 跳过。
+- **预抓** —— `.github/workflows/fetch-extra.yml`，cron `0 21 * * *`（UTC），
+  比 Routine 早 30 分钟，抓完提交进仓库。一天只跑一次：`fetch-extra.js` 抓完会把
+  URL 记进 `extra-seen.json`，同一天再跑只会返回 0 条，把上一次的成果覆盖掉。
+- **实时抓取** —— 没有预抓文件、日期对不上、或文件没通过 `archive.js` 的三道关时，
+  由 `archive.js` 自己抓。云端环境已放行这五个域名，这条路是通的。
 
-`archive.js` 这一侧对预抓文件设了三道关，任何一道不过就退回实时抓取：
+`archive.js` 对预抓文件设了三道关，任何一道不过就退回实时抓取：
 
 | 关 | 判据 | 不过怎么办 |
 |---|---|---|
@@ -201,9 +198,9 @@ DeepMind 抓下来的 15KB 文本大半是导航栏。RSS 是这几家唯一稳�
 | 新鲜度 | `fetchedAt` 在 24 小时内 | 记进 `extra.error` 并喊出来 |
 | 自洽 | `items` 条数 == `sources` 里各 ok 源自报之和 | 同上 |
 
-第三道是 08-27 那次的直接教训：那份文件被手工掏空过，`items` 是空的、
+第三道是 2026-08-27 那次的教训：预抓文件被手工掏空过，`items` 是空的、
 `sources` 却还写着「AINews 32 条」，日期又恰好对得上，于是一路静默到页面上少一块。
-**别再手工编辑 `extra-pending.json`。** 要挪条目就改 `digests/raw/<期号>.json` 里的 `extra`。
+**别手工编辑 `extra-pending.json`。** 要挪条目就改 `digests/raw/<期号>.json` 里的 `extra`。
 
 条目最终出现在两个地方，都不是独立的标签页：
 

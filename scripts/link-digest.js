@@ -127,15 +127,11 @@ function localized(item, n) {
   return { title: title || item.title, summary: summary || item.summary };
 }
 
-// 一条都没有，且没有源报错 —— 那就是真的没新内容，什么都不写。
-// 但**有源报错时不能就这么退**：以前退在这里，末尾那句失败提示就永远走不到，
-// 读者只会看到「延伸阅读」整节凭空消失，分不清是今天没内容还是抓挂了。
-// 2026-08-26 那期五个源全 403，页面上就是这么静悄悄少了一块。
+// 这里以前有个「一条都没有就直接 exit」的早退。它出过两次事：
+// 2026-08-26 五个源全 403，2026-08-27 预抓文件是空的 —— 两次都是整节凭空消失，
+// 页面上和「今天真的没新内容」长得一模一样。现在不退了，一条都没有也把这一节
+// 写出来，让它自己说清楚是哪种情况（下面「一条都没有时」那段）。
 const failedSources = (extra.sources || []).filter(s => s.status === 'error');
-if (!items.length && !failedSources.length) {
-  console.log(`[link-digest] ${issue}：本期无补充条目`);
-  process.exit(0);
-}
 
 // ── 1. 替换正文里的引用编号 ────────────────────────────────────────────────
 
@@ -251,6 +247,21 @@ for (const g of GROUPS) {
     }));
   }
   lines.push('');
+}
+
+// 一条都没有时，也得说一句「今天确实没有」。空着不写的话，「安静的一天」和
+// 「管道断了」在页面上长得一模一样 —— 08-27 那期就是这样：预抓文件是空的，
+// 五个源全报 ok，于是整节凭空消失，谁也看不出出了事。
+if (!items.length) {
+  const total = (extra.sources || []).length;
+  lines.push(
+    !total
+      ? '> ⚠️ 本期**没有执行**补充源抓取' + (extra.error ? `：${extra.error}` : '，原因未记录。')
+      : failedSources.length === total
+        ? ''   // 全失败的情况下面那段会说，这里不重复
+        : `> 本期补充源均正常（${total - failedSources.length}/${total} 个源），但没有新增条目 —— ` +
+          '各源当天没发新内容，或发的内容此前已收录。',
+    '');
 }
 
 // 抓失败的源要明说，不能静悄悄少一块

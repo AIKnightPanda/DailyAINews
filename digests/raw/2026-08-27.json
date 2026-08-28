@@ -534,7 +534,7 @@
     "Podcast feed problem: Podcast: Transcript error for \"🔬“We have foundation models for language, not for physics” — Anima Anandkumar, Bren Professor of Computing\": HTTP 404: {\"status\":\"error\",\"message\":\"Episode not found\"}"
   ],
   "extra": {
-    "fetchedAt": "2026-08-27T04:08:59.549Z",
+    "fetchedAt": "2026-08-28T00:24:48.550Z",
     "windowDays": 3,
     "windowUntil": "2026-08-27T23:59:59.000Z",
     "sources": [
@@ -543,7 +543,7 @@
         "name": "AINews",
         "status": "ok",
         "issues": 1,
-        "items": 32
+        "items": 0
       },
       {
         "id": "importai",
@@ -556,24 +556,67 @@
         "id": "openai",
         "name": "OpenAI",
         "status": "ok",
-        "issues": 8,
-        "items": 4
+        "issues": 10,
+        "items": 2
       },
       {
         "id": "deepmind",
         "name": "Google DeepMind",
         "status": "ok",
-        "issues": 1,
-        "items": 1
+        "issues": 3,
+        "items": 2
       },
       {
         "id": "rundown",
         "name": "The Rundown AI",
         "status": "ok",
-        "issues": 3,
-        "items": 2
+        "issues": 4,
+        "items": 1
       }
     ],
-    "items": []
+    "items": [
+      {
+        "source": "OpenAI",
+        "sourceHome": "https://openai.com/news/",
+        "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
+        "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+        "summary": "A randomized study of more than 1,000 students examines ChatGPT, critical thinking, originality, and student performance on a real-world university assignment.",
+        "publishedAt": "2026-08-27T09:00:00.000Z"
+      },
+      {
+        "source": "OpenAI",
+        "sourceHome": "https://openai.com/news/",
+        "title": "Expanding OpenAI’s presence in Brazil",
+        "url": "https://openai.com/index/expanding-our-presence-in-brazil",
+        "summary": "OpenAI is expanding its presence in Brazil, deepening engagement with developers, businesses, and communities to support AI adoption across the country.",
+        "publishedAt": "2026-08-27T03:00:00.000Z"
+      },
+      {
+        "source": "Google DeepMind",
+        "sourceHome": "https://deepmind.google/blog/",
+        "title": "Gemini Omni 1.1 Flash lets you build with more control",
+        "url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/",
+        "summary": "Gemini Omni 1.1 Flash brings a new suite of creative controls and generative video capabilities to developers.",
+        "publishedAt": "2026-08-27T16:11:32.000Z",
+        "enriched": true
+      },
+      {
+        "source": "Google DeepMind",
+        "sourceHome": "https://deepmind.google/blog/",
+        "title": "Piloting the world's first double-blind AI evaluations",
+        "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+        "summary": "Building trust in proprietary model benchmarks using cryptographically secure environments",
+        "publishedAt": "2026-08-27T12:59:16.000Z",
+        "enriched": true
+      },
+      {
+        "source": "The Rundown AI",
+        "sourceHome": "https://www.therundown.ai/",
+        "title": "The Ox Alpha mystery ends with Z.ai",
+        "url": "https://www.therundown.ai/articles/the-ox-alpha-mystery-ends-with-z-ai",
+        "summary": "PLUS: A beginner’s guide to ChatGPT Work",
+        "publishedAt": "2026-08-27T10:00:00.000Z"
+      }
+    ]
   }
 }

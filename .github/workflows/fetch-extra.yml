@@ -4,18 +4,23 @@
 # 五个补充源一律 403）。GitHub Actions 的 runner 出网不受限，所以把「抓取」
 # 这一步挪到这里，抓完提交进仓库，Routine 起来时直接读现成的。
 #
-# 时间上要排在 Routine（21:30 UTC）前面，留出富余。
+# 时间上要排在 Routine（21:30 UTC）前面，留出富余，并且不能只排一次 —— 见下面 cron 那段。
 # 抓不到不算失败 —— 补充源是加分项，不该让工作流报红。
 name: fetch-extra
 
 on:
   schedule:
-    # 20:20 UTC，比 Routine（21:30）早 70 分钟。
-    # 留这么宽是因为 GitHub 的定时工作流在高峰期会被推迟，官方明确说过可能
-    # 延迟若干分钟到几十分钟。只留 20 分钟余量的话，一旦排队就赶不上 Routine，
-    # 那一期会退回实时抓取 —— 而云端实时抓取必然 403。
-    # 抓取时间早一点对内容新鲜度几乎没影响（源都是当天早些时候发的）。
-    - cron: '20 20 * * *'
+    # 打三枪：18:20 / 19:20 / 20:20 UTC，分别比 Routine（21:30）早 3h10 / 2h10 / 1h10。
+    #
+    # 为什么不是一枪：GitHub 的 schedule 是尽力而为，没有 SLA —— 高负载时会被
+    # 推迟几十分钟，也可能整次丢掉。2026-08-27 那天设的单枪 20:20 就没触发
+    # （工作流 state=active、文件在 main 上、权限也对，运行记录里根本没有这一条），
+    # 结果当晚的 Routine 读到的是前一天凌晨那份预抓文件，08-27 期少了 5 条。
+    #
+    # 三枪是幂等的：下面第一步会检查「今天是否已经抓好」，抓好了就整个跳过，
+    # 所以后两枪在正常日子里只是空转 13 秒。抓取时间早两小时对新鲜度几乎没影响
+    # （源都是当天早些时候发的），换来的是三次独立的触发机会。
+    - cron: '20 18,19,20 * * *'
   workflow_dispatch:         # 也可手动触发，用来验证
 
 permissions:
@@ -35,8 +40,29 @@ jobs:
         with:
           node-version: '22'
 
+      # 三枪里第一枪成功后，后两枪必须什么都不做 —— fetch-extra.js 会把抓到的
+      # URL 记进 extra-seen.json，第二次跑同样的源只会返回 0 条，直接覆盖掉
+      # 第一枪的成果。所以先看今天是不是已经抓好了。
+      - name: 今天抓过了吗
+        id: guard
+        run: |
+          node -e '
+            const fs = require("fs");
+            const today = new Date().toISOString().slice(0, 10);
+            let done = false;
+            try {
+              const j = JSON.parse(fs.readFileSync("digests/extra-pending.json", "utf8"));
+              done = String(j.windowUntil || "").slice(0, 10) === today
+                  && String(j.fetchedAt   || "").slice(0, 10) === today
+                  && Array.isArray(j.items);
+            } catch {}
+            console.log(done ? "今天已抓，跳过" : "今天还没抓，继续");
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, `done=${done}\n`);
+          '
+
       - name: 抓取补充源
         id: fetch
+        if: steps.guard.outputs.done != 'true'
         run: |
           set -o pipefail
           ISSUE=$(date -u +%F)
@@ -54,6 +80,7 @@ jobs:
           '
 
       - name: 提交
+        if: steps.guard.outputs.done != 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -62,7 +89,7 @@ jobs:
             echo "无变化，不提交"
           else
             git commit -m "chore: 预抓补充源 $(date -u +%F)"
-            # Routine 也往 main 推，中间隔 20 分钟；万一撞上就 rebase 重试
+            # Routine 也往 main 推（21:30 UTC）；万一撞上就 rebase 重试
             for i in 1 2 3; do
               git push origin main && break
               echo "推送失败，rebase 后重试 ($i/3)"

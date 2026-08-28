@@ -31,19 +31,42 @@ function fail(message) {
   process.exit(1);
 }
 
-// GitHub Actions 预抓的那份，只在窗口日期和本期对得上时才用 ——
-// 隔夜的旧文件宁可不要，重抓一次也比配错一期强。
+// GitHub Actions 预抓的那份。要过三关才敢用：
+//   1. 窗口日期对得上本期 —— 隔夜的旧文件宁可不要
+//   2. 抓取时间在 24 小时内 —— 光看日期不够：08-27 那份是当天凌晨抓的，
+//      日期和当晚的期号恰好一样，于是隔了 17 小时照样被当成新鲜货用了
+//   3. items 条数和 sources 自报的对得上 —— 那份文件被手工掏空过，
+//      items 是空的、sources 却还写着 AINews 32 条，一路静默到页面上少一块
+// 前两关不算故障（本来就该退回实时抓取），第三关是文件坏了，要喊出来。
 function readPending(issue) {
   const p = join(ROOT, 'digests/extra-pending.json');
   if (!existsSync(p)) return null;
+
+  let j;
   try {
-    const j = JSON.parse(readFileSync(p, 'utf-8'));
-    if (String(j.windowUntil || '').slice(0, 10) !== issue) return null;
-    if (!Array.isArray(j.items) || !Array.isArray(j.sources)) return null;
-    return j;
+    j = JSON.parse(readFileSync(p, 'utf-8'));
   } catch {
-    return null;   // 文件坏了当没有，走实时抓取
+    return { reject: '预抓文件不是合法 JSON' };
   }
+
+  if (String(j.windowUntil || '').slice(0, 10) !== issue) return null;
+  if (!Array.isArray(j.items) || !Array.isArray(j.sources)) {
+    return { reject: '预抓文件结构不对（缺 items 或 sources）' };
+  }
+
+  const hours = (Date.now() - Date.parse(j.fetchedAt || 0)) / 36e5;
+  if (!(hours >= -1 && hours < 24)) {
+    return { reject: `预抓文件是 ${Number.isFinite(hours) ? Math.round(hours) + ' 小时前' : '不明时间'}抓的，太旧` };
+  }
+
+  const claimed = j.sources
+    .filter(s => s.status === 'ok')
+    .reduce((n, s) => n + (Number(s.items) || 0), 0);
+  if (claimed !== j.items.length) {
+    return { reject: `预抓文件自相矛盾：sources 报 ${claimed} 条，items 里只有 ${j.items.length} 条` };
+  }
+
+  return j;
 }
 
 async function main() {
@@ -78,10 +101,11 @@ async function main() {
   let extra = { items: [], sources: [] };
   let extraFrom = 'live';
   const pending = readPending(issue);
-  if (pending) {
+  if (pending && !pending.reject) {
     extra = pending;
     extraFrom = 'prefetched';
   } else {
+    if (pending?.reject) console.error(`[archive] ${pending.reject}，改为实时抓取`);
     try {
       // 传期号日期，让补充源的时间窗口和这一期对齐（否则会混进次日的文章）
       const r = await execFileAsync('node', [FETCH_EXTRA, `--until=${issue}`],
@@ -89,6 +113,11 @@ async function main() {
       extra = JSON.parse(r.stdout);
     } catch (err) {
       extra = { items: [], sources: [], error: err.message };
+    }
+    // 云端沙箱实时抓必然 403。预抓文件被拒 + 实时又失败 = 这一期彻底没补充源，
+    // 两个原因都得留在档里，否则事后只看得到「403」，查不出预抓那步为什么没顶上。
+    if (pending?.reject) {
+      extra.error = extra.error ? `${pending.reject}；实时抓取也失败：${extra.error}` : pending.reject;
     }
   }
   feed.extra = extra;

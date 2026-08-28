@@ -112,6 +112,16 @@ let mismatched = 0;
 // 层级标题也该是中文；查不到就用原文，不猜。
 const sectionZh = name => (zh.sections && zh.sections[name]) || name;
 
+// 模型照抄前缀时，弯引号 ’ 常被抄成直引号 '，破折号和省略号同理。
+// 这类字形差异不代表编号错位，不该触发退回英文 —— 比对前先抹平。
+// （2026-08-27 那期 "Expanding OpenAI’s presence in Brazil" 就是这么退回英文的。）
+const flat = s => String(s)
+  .replace(/[\u2018\u2019\u02BC]/g, "'")
+  .replace(/[\u201C\u201D]/g, '"')
+  .replace(/[\u2013\u2014]/g, '-')
+  .replace(/\u2026/g, '...')
+  .replace(/\u00A0/g, ' ');
+
 // 返回 { title, summary } —— 校验不过就整条退回英文，绝不半中半英
 function localized(item, n) {
   const en = { title: item.title, summary: item.summary };
@@ -120,7 +130,7 @@ function localized(item, n) {
   if (typeof v === 'string') return { title: v, summary: item.summary };  // 老格式
   if (!Array.isArray(v) || v.length < 2) return en;
   const [prefix, title, summary] = v;
-  if (!prefix || !item.title.startsWith(String(prefix).slice(0, 18))) {
+  if (!prefix || !flat(item.title).startsWith(flat(prefix).slice(0, 18))) {
     mismatched++;
     return en;
   }

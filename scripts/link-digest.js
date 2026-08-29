@@ -164,7 +164,7 @@ body = body.replace(/\[E(\d+)\]/g, (whole, n) => {
     return '';   // 编号不存在：整个标记去掉，不留死链也不留噪声
   }
   cited++;
-  return `（[${esc(titleOf(item, Number(n)))}](${escUrl(item.url)})）`;
+  return `（[${esc(localized(item, Number(n)).title)}](${escUrl(item.url)})）`;
 });
 
 // ── 2. 生成延伸阅读一节 ────────────────────────────────────────────────────

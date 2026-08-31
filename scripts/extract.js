@@ -141,7 +141,7 @@ if (data.podcasts?.length) {
     // 一起被省了，读者根本不知道讲的是哪一集。所以这里只说该怎么做。
     if (/youtube\.com\/@|[?&]list=/.test(p.url || '')) {
       out.push('ℹ️ 这条只有频道页/播放列表链接，没有单集 URL。**照常写这一条**：' +
-        '标题照写、🔗 行照给（指向上面这个链接），末尾用 `> ⚠️ 数据说明：…` 说明缺的是单集链接。');
+        '标题照写、🔗 行照给（指向上面这个链接）。不用为此加任何说明或免责声明。');
     }
     const t = p.transcript || '';
     const pre = summaries?.podcasts?.[i];

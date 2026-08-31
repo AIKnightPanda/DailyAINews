@@ -31,8 +31,6 @@ if (!issue) {
 
 const START = '<!-- EXTRA:START -->';
 const END = '<!-- EXTRA:END -->';
-const SKIP_START = '<!-- SKIPPED:START -->';
-const SKIP_END = '<!-- SKIPPED:END -->';
 
 
 // 域名去掉 www，用作「出处」标签
@@ -289,44 +287,7 @@ if (failedSources.length) {
 
 lines.push(END, '');
 
-// ── 3. X / Twitter 板块末尾补一行「本期跳过了谁」 ─────────────────────────
-// 取舍是模型做的，但**跳过名单不能问模型要** —— 十几位建造者，让它回忆自己
-// 略过了哪几个，记不准也容易编。这里改成对账：素材里有推文的人，减去正文
-// 引用过其推文链接的人，差集就是跳过的。全程不经过模型，不会错也不会漏。
-const citedHandles = new Set(
-  [...body.matchAll(/(?:x|twitter)\.com\/([A-Za-z0-9_]+)\/status\//gi)].map(m => m[1].toLowerCase())
-);
-const skipped = (raw.x || [])
-  .filter(a => a.tweets?.length && a.handle && !citedHandles.has(String(a.handle).toLowerCase()));
-
-// 先剥掉上一次写的，保证幂等
-const sOld = body.indexOf(SKIP_START);
-if (sOld !== -1) {
-  const sEnd = body.indexOf(SKIP_END);
-  body = body.slice(0, sOld) + (sEnd !== -1 ? body.slice(sEnd + SKIP_END.length) : '');
-}
-
-if (skipped.length) {
-  // ⟨N 条⟩ 用的是和延伸阅读一致的计数标记，渲染器会排成徽章。
-  // 名字挂原账号链接 —— 这一节的用处就是「或许我想去看看」，点得进去才有意义。
-  const names = skipped.map(a =>
-    `[${esc(a.name || a.handle)}](${escUrl('https://x.com/' + a.handle)}) ⟨${a.tweets.length} 条⟩`
-  ).join(' · ');
-  const block = `\n${SKIP_START}\n\n> **本期跳过 ${skipped.length} 位**（发言无实质内容，或与 AI / 构建无关）：` +
-    `${names}\n\n${SKIP_END}\n`;
-
-  // 插在 X / Twitter 板块末尾 —— 也就是它后面第一个 `## ` 标题之前。
-  // 找不到下一个板块（当期只有推文）就放在正文最后。
-  const head = /^##\s.*X\s*\/\s*Twitter.*$/m.exec(body);
-  if (head) {
-    const after = head.index + head[0].length;
-    const next = /^##\s/m.exec(body.slice(after));
-    const at = next ? after + next.index : body.replace(/\n+$/, '\n').length;
-    body = body.slice(0, at).replace(/\n+$/, '\n') + block + '\n' + body.slice(at);
-  }
-}
-
-// ── 4. 结构体检（只报警，不改正文）─────────────────────────────────────────
+// ── 3. 结构体检（只报警，不改正文）─────────────────────────────────────────
 // 2026-08-29、08-30 两期的播客板块整块没有 `###` 标题，读者不知道在讲哪一集，
 // 隔了两天才被发现。这里不替模型补写 —— 补出来的东西未必对；只是喊一声，
 // 让 Routine 在汇报里带出去。
@@ -339,7 +300,7 @@ const emptySections = [];
   });
 }
 
-// ── 5. 写回 ───────────────────────────────────────────────────────────────
+// ── 4. 写回 ───────────────────────────────────────────────────────────────
 
 const out = body.replace(/\n+$/, '\n') + '\n' + lines.join('\n');
 await writeFile(mdPath, out);
@@ -350,6 +311,5 @@ console.log(`[link-digest] ${issue}：${items.length} 条补充条目` +
   `，正文引用 ${cited} 处` +
   (bogus.length ? `，⚠️ 无效编号 ${bogus.length} 个已移除：${bogus.join(' ')}` : '') +
   (Object.keys(zh).length ? '，标题用中文译名' : '，标题用英文原文') +
-  (skipped.length ? `，X 板块标注跳过 ${skipped.length} 位` : '') +
   (mismatched ? `，⚠️ ${mismatched} 条译文与原标题对不上，已退回英文` : '') +
   (emptySections.length ? `，⚠️ 这些板块下没有任何 ### 条目：${emptySections.join('、')}` : ''));

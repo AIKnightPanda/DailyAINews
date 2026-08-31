@@ -136,9 +136,12 @@ if (data.podcasts?.length) {
     out.push(`\n### ${p.name}：${p.title}`);
     out.push(`发布：${p.publishedAt}`);
     out.push(`链接：${p.url}`);
-    // 频道页链接不是具体某期，简报里要如实标注这个缺口
-    if (/youtube\.com\/@/.test(p.url || '')) {
-      out.push('⚠️ 注意：feed 只给了频道页链接，没有具体视频 URL —— 简报里要如实标注这个数据缺口。');
+    // 频道页/播放列表链接不是具体某期。这条提示写得越像「警告」，模型越容易
+    // 把整条当成残缺品处理 —— 2026-08-29、08-30 两期就是这样：标题和 🔗 行
+    // 一起被省了，读者根本不知道讲的是哪一集。所以这里只说该怎么做。
+    if (/youtube\.com\/@|[?&]list=/.test(p.url || '')) {
+      out.push('ℹ️ 这条只有频道页/播放列表链接，没有单集 URL。**照常写这一条**：' +
+        '标题照写、🔗 行照给（指向上面这个链接），末尾用 `> ⚠️ 数据说明：…` 说明缺的是单集链接。');
     }
     const t = p.transcript || '';
     const pre = summaries?.podcasts?.[i];

@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-08-30T23:11:09.728Z",
+  "fetchedAt": "2026-09-01T00:23:18.350Z",
   "windowDays": 3,
-  "windowUntil": "2026-08-30T23:59:59.000Z",
+  "windowUntil": "2026-09-01T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
@@ -14,7 +14,7 @@
       "id": "importai",
       "name": "Import AI",
       "status": "ok",
-      "issues": 0,
+      "issues": 1,
       "items": 0
     },
     {
@@ -22,7 +22,7 @@
       "name": "OpenAI",
       "status": "ok",
       "issues": 2,
-      "items": 0
+      "items": 1
     },
     {
       "id": "deepmind",
@@ -35,9 +35,18 @@
       "id": "rundown",
       "name": "The Rundown AI",
       "status": "ok",
-      "issues": 2,
+      "issues": 1,
       "items": 0
     }
   ],
-  "items": []
+  "items": [
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Polimill builds Japan's next-generation public AI infrastructure",
+      "url": "https://openai.com/index/polimill",
+      "summary": "Polimill uses OpenAI GPT models and Codex to help municipalities search and use administrative knowledge while accelerating development.",
+      "publishedAt": "2026-08-31T07:00:00.000Z"
+    }
+  ]
 }

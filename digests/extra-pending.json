@@ -1,62 +1,42 @@
 {
-  "fetchedAt": "2026-09-02T22:58:20.927Z",
+  "fetchedAt": "2026-09-03T22:58:30.195Z",
   "windowDays": 3,
-  "windowUntil": "2026-09-02T23:59:59.000Z",
+  "windowUntil": "2026-09-03T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
-      "status": "ok",
-      "issues": 1,
-      "items": 1
+      "status": "error",
+      "error": "HTTP 402：Payment required DEPLOYMENT_DISABLED sfo1::4f49r-1788476309794-3ae250f"
     },
     {
       "id": "importai",
       "name": "Import AI",
       "status": "ok",
-      "issues": 1,
+      "issues": 0,
       "items": 0
     },
     {
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
-      "issues": 7,
+      "issues": 9,
       "items": 0
     },
     {
       "id": "deepmind",
       "name": "Google DeepMind",
       "status": "ok",
-      "issues": 3,
+      "issues": 4,
       "items": 0
     },
     {
       "id": "rundown",
       "name": "The Rundown AI",
       "status": "ok",
-      "issues": 5,
+      "issues": 4,
       "items": 0
     }
   ],
-  "items": [
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "2. Anthropic Max Plan Usage-Limit Controversy",
-      "title": "This should not be an exclusive and super premium feature",
-      "url": "https://www.reddit.com/r/ClaudeCode/comments/1w4jsjt/this_should_not_be_an_exclusive_and_super_premium/",
-      "links": [
-        {
-          "url": "https://i.redd.it/k9ix3mtq7ymh1.png",
-          "text": "image"
-        }
-      ],
-      "summary": "(Activity: 1242): The image is a Claude announcement pop-up for “Claude Fable 5.1” , stating that Fable models require usage credits on Pro plans; the highlighted feature is “Writes in plain language and sticks to what you asked for.” The post frames this as a…",
-      "publishedAt": "2026-09-01T05:44:39.000Z",
-      "issueUrl": "https://news.smol.ai/issues/26-09-01-claude-mythos-51/"
-    }
-  ]
+  "items": []
 }

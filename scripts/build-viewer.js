@@ -133,6 +133,7 @@ async function main() {
     title: '建造者档案',
     tagline: 'Follow Builders · 本地存档',
     hasEn: true,
+    self: '简报',                                    // 页面切换 toggle 上，本页那颗按钮的文案
     sibling: { href: 'ideas.html', label: '灵感' }
   };
   const payload = JSON.stringify({ builtAt: new Date().toISOString(), site, sourceOrder: SOURCE_ORDER, sourceManifest, issues })

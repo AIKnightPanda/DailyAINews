@@ -19,7 +19,7 @@ import { readdir, readFile, writeFile, mkdir, stat } from 'fs/promises';
 import { existsSync, readFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { BOARDS, NEWSLETTERS } from './idea-sources.js';
+import { BOARDS, NEWSLETTERS, sourceById } from './idea-sources.js';
 import { renderRunnerUps, restRows, renderFailures, textOf, resolvePicks, stripPicks, KIND } from './lib/ideas-render.js';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -102,15 +102,25 @@ async function collectIssues() {
         kind: KIND[p.kind] || '',
         score: p.score ?? null,
         how: p.how || '',
+        featured: !!sourceById(it.sourceId)?.featured,
         // 六栏，顺序有讲究：「钱在哪里」紧跟在「谁在要」后面 ——
         // 判断一条需求先找钱，找不到钱就不该出现在这一节里。
         fields: [
           ['是什么', p.what], ['谁在要', p.who], ['钱在哪里', p.paying],
           ['已有方案', p.state], ['怎么找到人', p.reach], ['判断', p.verdict]
         ].filter(([, v]) => v)
-      }));
+      }))
+        // IdeaBrowser 是人工深挖过的成品点子，排到精选卡片最前面，不跟自动抓来的帖子抢排序
+        .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
     }
     const cardsCount = cards.length;
+
+    const rest = raw ? restRows(raw, zh, picks, 'zh') : [];
+    const restEn = raw ? restRows(raw, zh, picks, 'en') : [];
+    // 展示了多少条 = 精选卡片 + 分组列表里实际出行的条目；
+    // 隐藏了多少条 = 池子里进过深挖但没能落地展示的（没描述、或排名靠后没读过）。
+    // 三个数字都写在标题下面，安静的一天和管道断了不该长得一样。
+    const displayed = cardsCount + rest.reduce((n, g) => n + g.subs.reduce((m, s) => m + s.rows.length, 0), 0);
 
     issues.push({
       issue,
@@ -122,13 +132,15 @@ async function collectIssues() {
         builders: cardsCount, tweets: counts.pool,
         blogs: counts.candidates, podcasts: cardsCount
       },
+      // 标题下方那行「共 X 条 · 展示 Y 条 · 隐藏 Z 条」专用，和上面的 stats
+      // 分开是因为语义不同：stats.tweets 是「池」，counts.total 是全部抓到的原始条目数
+      counts: { total: counts.total, pool: counts.pool, displayed, hidden: Math.max(0, counts.pool - displayed) },
       rawBytes,
       rawMissing: rawBytes === 0,
       picks: cards,
       // 其余候选走结构化数据，不走 markdown —— 标题、说明、来源、信号
       // 四样东西塞进一个列表项里怎么排都别扭，交给 CSS 才排得开
-      rest: raw ? restRows(raw, zh, picks, 'zh') : [],
-      restEn: raw ? restRows(raw, zh, picks, 'en') : [],
+      rest, restEn,
       hidden: raw ? raw.items.filter(x => x.pool && !x.candidate).length : 0,
       body: '',
       _raw: raw, _zh: zh, _picks: picks     // 只在本进程里用来拼 EN 正文，不进页面
@@ -168,6 +180,7 @@ async function main() {
       return `每天从 ${d} 个需求源和 ${u} 个上新榜里找值得做的`;
     })(),
     hasEn: true,                                    // 英文原文视图：同结构、换语言
+    self: '灵感',                                    // 页面切换 toggle 上，本页那颗按钮的文案
     sibling: { href: 'index.html', label: '简报' },
     // 版式和简报页完全一样，只有这些字串不同
     text: {

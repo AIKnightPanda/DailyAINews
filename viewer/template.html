@@ -512,6 +512,26 @@ a.sp-meta:hover { color: var(--accent); }
 }
 .lang-toggle button + button { border-left: 1px solid var(--rule); }
 
+/* ── 简报/灵感 切换：和 .lang-toggle 同一套视觉语言，两个按钮一个 pill ──
+   以前是一个孤零零的「灵感」链接，点了就跳走，看不出「这是切换」；
+   现在两个页面都摆出来，当前页高亮、不可点，另一页可点，读法和中/EN 一致 */
+.site-toggle {
+  display: inline-flex;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  overflow: hidden;
+  align-self: center;
+}
+.site-toggle a, .site-toggle span {
+  border: 0; background: var(--surface); color: var(--ink-2);
+  font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.06em;
+  padding: 0.3rem 0.7rem; white-space: nowrap; text-decoration: none;
+  display: inline-block;
+}
+.site-toggle a + a, .site-toggle span + a, .site-toggle a + span { border-left: 1px solid var(--rule); }
+.site-toggle [aria-current="page"] { background: var(--accent); color: var(--paper); }
+.site-toggle a:not([aria-current="page"]):hover { color: var(--accent); }
+
 /* 链接墙：一行一条，扫读为主，点击为目的 */
 .lk-group { margin: 1.6rem 0 0; }
 .lk-group > h2 { margin-bottom: .2rem; }
@@ -694,6 +714,17 @@ h4.lk-sec {
   .masthead .tagline { display: none; }
 }
 
+/* 更窄的手机屏：光舍弃副标题还不够 —— 语言切换 + 页面切换 + 信息源 + 主题
+   四组控件加起来放不进一行，flex 默认会去挤压 .lang-toggle / .site-toggle，
+   而它们自己又 overflow:hidden，挤到最后是「EN」「简报」这类第二个按钮被
+   悄悄裁掉、看不见但摸不着。改成允许折行，挤不下就自己换到第二行，
+   不牺牲任何一个按钮。 */
+@media (max-width: 480px) {
+  .masthead { flex-wrap: wrap; row-gap: .5rem; }
+  .masthead .spacer { flex-basis: 100%; height: 0; }
+  .lang-toggle, .site-toggle, .theme-toggle { flex-shrink: 0; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }
@@ -781,19 +812,37 @@ h4.lk-sec {
   .pick-lv { margin-left: 0; }
 }
 
-/* 其余读过的：一行一条，标题、说明、来源各归各位（灵感页） */
+/* 其余读过的：两层缩进 —— 视角（用户/产品/风向）在外层，需求/供给在内层，
+   一行一条，标题、说明、来源各归各位（灵感页）。
+   2026-09-04 之前只有一层「需求/上新/风向」平铺，看不出「这是谁的视角」；
+   现在的层级和缩进抄的是简报页「延伸阅读」那套 h3→h4→内容 的写法。 */
 .rest { margin: 2.4rem 0 1rem; }
-.rest-g { margin: 0 0 1.6rem; }
-.rest-g h4 {
-  display: flex; align-items: baseline; gap: .5rem;
+.rest-g { margin: 0 0 2rem; }
+.rest-g > h3 {
+  font-family: var(--font-display); font-size: 1.02rem; font-weight: 600;
+  color: var(--ink); margin: 0 0 .9rem; padding-top: .7rem;
+  border-top: 1px solid var(--rule);
+}
+.rest-g:first-child > h3 { padding-top: 0; border-top: 0; }
+.rest-sub { margin: 0 0 1.4rem; margin-left: 1.15rem; }
+.rest-sub:last-child { margin-bottom: 0; }
+.rest-sub h4 {
+  display: flex; align-items: baseline; gap: .5rem; flex-wrap: wrap;
   margin: 0 0 .5rem; padding-bottom: .35rem;
   border-bottom: 1px solid var(--rule-2);
-  font-family: var(--font-display); font-size: .95rem; font-weight: 600; color: var(--ink);
+  font-family: var(--font-display); font-size: .92rem; font-weight: 600; color: var(--ink);
 }
-.rest-g h4 span { font-family: var(--font-mono); font-size: .72rem; font-weight: 400; color: var(--ink-3); }
+.rest-sub h4 .n { font-family: var(--font-mono); font-size: .72rem; font-weight: 400; color: var(--ink-3); }
+.rest-src {
+  font-family: var(--font-mono); font-size: .68rem; font-weight: 400;
+  color: var(--ink-3); flex-basis: 100%; order: 3;
+}
 .rest-l { list-style: none; margin: 0; padding: 0; }
 .rest-l li { padding: .62rem 0; border-bottom: 1px solid var(--rule-2); }
 .rest-l li:last-child { border-bottom: 0; }
+/* featured（如 IdeaBrowser）排在子节最前，左边一道强调色竖线，和普通条目区分开 */
+.rest-l li.rest-featured { padding-left: .6rem; border-left: 2px solid var(--accent); }
+.rest-star { color: var(--accent); margin-right: .3rem; }
 .rest-t {
   display: block; font-family: var(--font-display);
   font-size: .97rem; font-weight: 600; line-height: 1.4;
@@ -811,6 +860,16 @@ h4.lk-sec {
   margin: 1.2rem 0 0; padding-top: .7rem; border-top: 1px dashed var(--rule-2);
   font-family: var(--font-mono); font-size: .72rem; line-height: 1.6; color: var(--ink-3);
 }
+@media (max-width: 620px) {
+  .rest-sub { margin-left: .7rem; }
+}
+
+/* 期号标题下方那行「共 X 条 · 展示 Y 条 · 隐藏 Z 条」（灵感页） */
+.idea-stats {
+  margin: .3rem 0 0; font-family: var(--font-mono); font-size: .74rem;
+  color: var(--ink-3); letter-spacing: .01em;
+}
+.idea-stats b { color: var(--ink-2); font-weight: 600; }
 </style>
 <!--__HEAD_END__-->
 
@@ -822,7 +881,7 @@ h4.lk-sec {
     <button type="button" data-mode="zh" aria-pressed="true">中文</button>
     <button type="button" data-mode="en" aria-pressed="false">EN</button>
   </div>
-  <a class="theme-toggle" id="sibling-link" hidden></a>
+  <div class="site-toggle" id="site-toggle" role="group" aria-label="页面切换" hidden></div>
   <button class="theme-toggle" id="sources-btn" type="button">信息源</button>
   <button class="theme-toggle" id="theme-toggle" type="button">主题</button>
 </header>
@@ -891,11 +950,14 @@ h4.lk-sec {
       // .lang-toggle 的 display:flex 会盖掉 [hidden]，得直接改 style
       if (lt) lt.style.display = 'none';
     }
-    var sib = document.getElementById('sibling-link');
-    if (sib && SITE.sibling) {
-      sib.href = SITE.sibling.href;
-      sib.textContent = SITE.sibling.label;
-      sib.hidden = false;
+    // 简报/灵感 切换：一个 pill 里两颗按钮，当前页高亮不可点，另一页是链接。
+    // 以前是孤零零一个「灵感」链接，点了就跳走，不像是「切换」而像是「离开」。
+    var tog = document.getElementById('site-toggle');
+    if (tog && SITE.sibling && SITE.self) {
+      tog.innerHTML =
+        '<span aria-current="page">' + esc(SITE.self) + '</span>' +
+        '<a href="' + esc(SITE.sibling.href) + '">' + esc(SITE.sibling.label) + '</a>';
+      tog.hidden = false;
     }
   })();
 
@@ -1111,11 +1173,19 @@ h4.lk-sec {
         : '<span>原始数据 <b>' + (it.rawBytes / 1024).toFixed(0) + ' KB</b> · ' + TEXT.rawPath + it.issue + '.json</span>'
     ].join('');
 
+    // 「共 X 条 · 展示 Y 条 · 隐藏 Z 条」—— 只有灵感页的数据带 it.counts，
+    // 简报页没有这个字段就什么都不渲染，模板两边共用不用分叉
+    var countsLine = it.counts
+      ? '<p class="idea-stats">本期候选 <b>' + it.counts.pool + '</b> 条 · 展示 <b>' +
+        it.counts.displayed + '</b> 条 · 隐藏 <b>' + it.counts.hidden + '</b> 条</p>'
+      : '';
+
     readerEl.innerHTML =
       '<div class="issue-head">' +
         '<div class="kicker">' + TEXT.kicker + ' · ' + DOW[issueDate(it.issue).getDay()] + '</div>' +
         '<h2>' + longDate(it.issue) + '</h2>' +
         (it.headline ? '<p class="headline">' + esc(it.headline) + '</p>' : '') +
+        countsLine +
       '</div>' +
       '<div class="meta-strip">' + meta + '</div>' +
       '<div id="pane"></div>';
@@ -1254,12 +1324,13 @@ h4.lk-sec {
 
     var rows = picks.map(function (p, i) {
       var title = (mode === 'en' ? (p.titleEn || p.title) : (p.title || p.titleEn)) || '';
+      var star = p.featured ? '<span class="rest-star" title="来自 IdeaBrowser，人工深挖过">★</span>' : '';
       var head =
         '<div class="pick-top">' +
           '<span class="pick-n">' + (i + 1) + '</span>' +
           (p.url
-            ? '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(title) + '</a>'
-            : '<span class="pick-t">' + esc(title) + '</span>') +
+            ? '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + star + esc(title) + '</a>'
+            : '<span class="pick-t">' + star + esc(title) + '</span>') +
           (p.score != null && mode !== 'en'
             ? '<span class="pick-lv lv-worth">值得做' + dots(p.score) + '</span>'
             : '') +
@@ -1288,26 +1359,37 @@ h4.lk-sec {
       rows + '</section>';
   }
 
-  // 其余读过的：标题 + 一句话说明 + 来源。
-  // 走结构化数据而不是 markdown 列表 —— 四样东西塞进一个 li 里怎么排都别扭。
-  // 这一节存在的意义是「读者能自己翻」，所以说明必须在，来源必须小而清楚。
+  // 其余读过的：先按视角分栏（用户视角＝来自社区／产品视角＝来自 Product Hunt
+  // 这类目录站／风向另算一栏），栏内再按需求/供给拆两个子节，子节标题上顺带
+  // 报一下这一节实际用到了哪些来源。走结构化数据而不是 markdown 列表 ——
+  // 「标题 + 说明 + 来源 + 信号」四样东西塞进一个 li 里怎么排都别扭。
   function renderRest(it) {
     var groups = (mode === 'en' ? it.restEn : it.rest) || [];
     if (!groups.length) return '';
 
+    function rowHtml(r) {
+      var star = r.featured ? '<span class="rest-star" title="来自 IdeaBrowser，人工深挖过">★</span>' : '';
+      return '<li' + (r.featured ? ' class="rest-featured"' : '') + '>' +
+        '<a class="rest-t" href="' + esc(r.url) + '" target="_blank" rel="noopener">' +
+          star + esc(r.title) + '</a>' +
+        '<p class="rest-d">' + esc(r.desc) + '</p>' +
+        '<div class="rest-m"><span>' + esc(r.source) + '</span>' +
+          (r.signal ? '<span>' + esc(r.signal) + '</span>' : '') + '</div>' +
+      '</li>';
+    }
+
     var body = groups.map(function (g) {
-      var rows = g.rows.map(function (r) {
-        return '<li>' +
-          '<a class="rest-t" href="' + esc(r.url) + '" target="_blank" rel="noopener">' +
-            esc(r.title) + '</a>' +
-          '<p class="rest-d">' + esc(r.desc) + '</p>' +
-          '<div class="rest-m"><span>' + esc(r.source) + '</span>' +
-            (r.signal ? '<span>' + esc(r.signal) + '</span>' : '') + '</div>' +
-        '</li>';
+      var subsHtml = g.subs.map(function (sub) {
+        var rows = sub.rows.map(rowHtml).join('');
+        var srcLabel = mode === 'en' ? 'Sources: ' : '来源：';
+        var head = sub.label
+          ? '<h4>' + esc(sub.label) + '<span class="n">' + sub.rows.length + '</span>' +
+            (sub.sources.length ? '<span class="rest-src">' + srcLabel + esc(sub.sources.join(' · ')) + '</span>' : '') +
+            '</h4>'
+          : '';
+        return '<div class="rest-sub">' + head + '<ul class="rest-l">' + rows + '</ul></div>';
       }).join('');
-      return '<section class="rest-g" id="rest-' + esc(g.key) + '">' +
-        '<h4>' + esc(g.label) + '<span>' + g.rows.length + '</span></h4>' +
-        '<ul class="rest-l">' + rows + '</ul></section>';
+      return '<section class="rest-g" id="rest-' + esc(g.key) + '"><h3>' + esc(g.label) + '</h3>' + subsHtml + '</section>';
     }).join('');
 
     var tail = it.hidden

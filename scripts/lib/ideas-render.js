@@ -9,9 +9,18 @@
 // 不会产生死链；而错位本身由探针挡住。
 // ============================================================================
 
-import { SIDE_ORDER, SIDE_LABEL, ALL_SOURCES } from '../idea-sources.js';
+import { SIDE_ORDER, SIDE_LABEL, ALL_SOURCES, sourceById, PERSPECTIVE_LABEL, PERSPECTIVE_LABEL_EN } from '../idea-sources.js';
 
 const SIDE_LABEL_EN = { demand: 'Wanted', supply: 'Shipped', trend: 'Signals' };
+const NEED_LABEL = { zh: '需求', en: 'Wanted' };
+const SUPPLY_LABEL = { zh: '供给', en: 'Shipped' };
+
+// perspective/featured 都是注册表里的静态属性，按 sourceId 现查，
+// 不落进 raw JSON —— 这样旧期号加新维度不用回填数据，直接重新渲染就对齐了
+const perspectiveOf = it => sourceById(it.sourceId)?.perspective || 'user';
+const isFeatured = it => !!sourceById(it.sourceId)?.featured;
+// featured 排最前，其余保持原有相对顺序（Array#sort 在现代引擎里是稳定排序）
+const featuredFirst = list => list.slice().sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
 
 export const esc = s => String(s || '').replace(/([[\]])/g, '\\$1');
 export const escUrl = u => String(u || '').replace(/[()\s]/g, encodeURIComponent);
@@ -192,37 +201,68 @@ export function renderPicks(data, zh, picks, lang) {
 // 规矩：**页面上不出现没被读懂的条目。**
 // 只列有一句话说明的（模型在任务 A 里写的）。一条叫「Doop」或「Hey guys」的标题
 // 读者看了等于没看。池子里剩下多少条会在末尾报个数字，不会静悄悄消失。
+//
+// 2026-09-04 改版：原来是「需求／上新／风向」三个并排的平级分组，摊平列会
+// 把「这条是谁的视角」这件事丢掉。现在先按 perspective 分两栏
+// （用户视角＝来自社区，产品视角＝来自 Product Hunt 这类目录站），
+// 栏内再按 side 拆「需求」「供给」两个子节 —— 风向不属于这两个视角中任何一个，
+// 单独留一栏在最后，结构不拆（拆了也没有「谁的视角」这个问题要解决）。
 
-const GROUPS_OF = (data, picked) => ([
-  { key: 'need', zh: '还有人在要', en: 'Also wanted',
-    items: data.items.filter(x => x.candidate && x.side !== 'supply' && !picked.has(x.ref)) },
-  { key: 'new', zh: '今天上新', en: 'Shipped today',
-    items: data.items.filter(x => x.candidate && x.side === 'supply' && !picked.has(x.ref)) },
-  { key: 'trend', zh: '风向', en: 'Signals',
-    items: data.items.filter(x => !x.pool && x.summary && !picked.has(x.ref)) }
-]);
+function restRowOf(it, zh, lang) {
+  const t = textOf(it, zh, lang);
+  const desc = lang === 'en' ? it.summary : t.summary;
+  if (!desc || String(desc).trim().length <= 8) return null;   // 说不出来就不展示
+  return {
+    title: String(t.title).slice(0, 90),
+    desc: String(desc).slice(0, 220),
+    url: it.url,
+    source: it.source,
+    signal: signalText(it),
+    featured: isFeatured(it)
+  };
+}
+
+// 一个子节：给定这一节里的原始条目，出行 + 报这一节实际用到了哪些来源
+// （不是查注册表里配了什么，是这一期真的出现过谁 —— 没出现的源不该被点名）
+function subOf(key, label, items, zh, lang) {
+  const rows = featuredFirst(items.map(it => restRowOf(it, zh, lang)).filter(Boolean));
+  if (!rows.length) return null;
+  const sources = [...new Set(items.map(x => x.source).filter(Boolean))];
+  return { key, label, sources, rows };
+}
 
 // 页面用：结构化的行，由 template.html 排版。
 // 走结构化而不是 markdown bullet，是因为「标题 + 说明 + 来源 + 信号」四样东西
 // 塞进一个 li 里怎么排都别扭，交给 CSS 才排得开。
 export function restRows(data, zh, picks, lang) {
   const picked = new Set(resolvePicks(data, picks).list.map(x => x.it.ref));
-  return GROUPS_OF(data, picked).map(g => ({
-    key: g.key,
-    label: lang === 'en' ? g.en : g.zh,
-    rows: g.items.map(it => {
-      const t = textOf(it, zh, lang);
-      const desc = lang === 'en' ? it.summary : t.summary;
-      if (!desc || String(desc).trim().length <= 8) return null;   // 说不出来就不展示
-      return {
-        title: String(t.title).slice(0, 90),
-        desc: String(desc).slice(0, 220),
-        url: it.url,
-        source: it.source,
-        signal: signalText(it)
-      };
-    }).filter(Boolean)
-  })).filter(g => g.rows.length);
+  const PL = lang === 'en' ? PERSPECTIVE_LABEL_EN : PERSPECTIVE_LABEL;
+  const NL = lang === 'en' ? NEED_LABEL.en : NEED_LABEL.zh;
+  const SL = lang === 'en' ? SUPPLY_LABEL.en : SUPPLY_LABEL.zh;
+
+  const pool = data.items.filter(x => x.candidate && !picked.has(x.ref));
+  const trend = data.items.filter(x => !x.pool && x.summary && !picked.has(x.ref));
+  const bucket = (persp, side) => pool.filter(x =>
+    perspectiveOf(x) === persp && (side === 'demand' ? x.side !== 'supply' : x.side === 'supply'));
+
+  const groups = [];
+
+  const userSubs = [
+    subOf('need', NL, bucket('user', 'demand'), zh, lang),
+    subOf('supply', SL, bucket('user', 'supply'), zh, lang)
+  ].filter(Boolean);
+  if (userSubs.length) groups.push({ key: 'user', label: PL.user, subs: userSubs });
+
+  const productSubs = [
+    subOf('need', NL, bucket('product', 'demand'), zh, lang),
+    subOf('supply', SL, bucket('product', 'supply'), zh, lang)
+  ].filter(Boolean);
+  if (productSubs.length) groups.push({ key: 'product', label: PL.product, subs: productSubs });
+
+  const trendSub = subOf('trend', '', trend, zh, lang);
+  if (trendSub) groups.push({ key: 'trend', label: PL.trend, subs: [trendSub] });
+
+  return groups;
 }
 
 function signalText(it) {
@@ -234,7 +274,9 @@ function signalText(it) {
   return bits.join(' · ');
 }
 
-// md 用：同一份数据排成 markdown，让 ideas/<期号>.md 在 GitHub 上自包含
+// md 用：同一份数据排成 markdown，让 ideas/<期号>.md 在 GitHub 上自包含。
+// 层级和页面一致：视角（用户/产品/风向）在 h3，需求/供给子节在 h4 ——
+// 页面上对应 h4/h5，两边差一级是因为 md 顶上还有「## 其余读过的」这层。
 export function renderRunnerUps(data, zh, picks, lang) {
   const groups = restRows(data, zh, picks, lang);
   if (!groups.length) return [];
@@ -245,13 +287,19 @@ export function renderRunnerUps(data, zh, picks, lang) {
     : '> 都读过，但没过「值得做」的门槛。每条带一句说明 —— 只有标题的条目不会出现在这里。', '');
 
   for (const g of groups) {
-    out.push(`#### ${g.label}（${g.rows.length}）`, '');
-    for (const r of g.rows) {
-      out.push(`- **[${esc(r.title)}](${escUrl(r.url)})**` +
-        `　<sub>${esc(r.source)}${r.signal ? ' · ' + esc(r.signal) : ''}</sub>`);
-      out.push(`  ${esc(r.desc)}`);
+    out.push(`### ${g.label}`, '');
+    for (const sub of g.subs) {
+      const tag = sub.label
+        ? `#### ${sub.label}（${sub.rows.length}）` + (sub.sources.length ? ` · ${sub.sources.join(' · ')}` : '')
+        : '';
+      if (tag) out.push(tag, '');
+      for (const r of sub.rows) {
+        out.push(`- **[${esc(r.title)}](${escUrl(r.url)})**` + (r.featured ? ' 🔹' : '') +
+          `　<sub>${esc(r.source)}${r.signal ? ' · ' + esc(r.signal) : ''}</sub>`);
+        out.push(`  ${esc(r.desc)}`);
+      }
+      out.push('');
     }
-    out.push('');
   }
 
   const hidden = data.items.filter(x => x.pool && !x.candidate).length;

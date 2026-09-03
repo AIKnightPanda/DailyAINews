@@ -1,0 +1,3465 @@
+{
+  "issue": "2026-09-03",
+  "builtAt": "2026-09-03T08:21:44.405Z",
+  "from": {
+    "boards": "live",
+    "inbox": "live"
+  },
+  "counts": {
+    "fetched": 147,
+    "added": 94,
+    "kept": 94,
+    "dropped": 53,
+    "pool": 93,
+    "screened": 74,
+    "candidates": 31,
+    "demandCandidates": 18,
+    "supplyCandidates": 13
+  },
+  "errors": [
+    "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
+  ],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "ok",
+      "items": 18,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "partial",
+      "items": 4,
+      "pool": true,
+      "error": "is there an app that（HTTP 429）；someone should build（fetch failed）",
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 4,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "partial",
+      "items": 18,
+      "pool": true,
+      "error": "we currently pay（fetch failed）；per seat per month（HTTP 429）",
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "ok",
+      "items": 7,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "error",
+      "pool": true,
+      "error": "fetch failed",
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 2,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 3,
+      "pool": true,
+      "group": "board"
+    }
+  ],
+  "items": [
+    {
+      "id": "25f741455a",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1w5xl1b/a_nextdoor_alternative_that_wont_charge_local",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "A Nextdoor alternative that won't charge local small business people/entrepreneurs",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1w5xl1b/a_nextdoor_alternative_that_wont_charge_local/",
+      "summary": "Nextdoor's new pay to play policy is hurting neighborhood entrepreneurs who use it to network and find customers. People are hopping mad about it. Sounds like an opportunity for someone to step in and design an alternative. Although it's just the handymen, lawn services, and so on that are mad - the general users probably less so, although I've seen some people comment that they are frustrated they cannot recommend someone without getting flagged. (seems like others can though). So maybe casual users would need an incentive or reason to switch.",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1w5xl1b",
+      "via": null,
+      "publishedAt": "2026-09-03T04:49:25.000Z",
+      "ref": "I1",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "有具体人群"
+        ],
+        "detail": {
+          "signal": 3,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Nextdoor's new pay to play policy is hurting neighborhood entrepreneurs who use it to network and find customers. People are hopping mad about it. Sounds like an opportunity for someone to step in and design an alternative. Although it's just the handymen, lawn services, and so on that are mad - the general users probably less so, although I've seen some people comment that they are frustrated they cannot recommend someone without getting flagged. (seems like others can though). So maybe casual users would need an incentive or reason to switch. Would be great to see someone step with an alternative that lets people promote and recommend services for free again.",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:29:20.326Z"
+      }
+    },
+    {
+      "id": "a9a9c04cec",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1w5nidm/what_would_actually_make_you_switch_your_teams",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "What would actually make you switch your team's workspace?",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1w5nidm/what_would_actually_make_you_switch_your_teams/",
+      "summary": "I've been building Lark and have been thinking about what actually makes a company change its core productivity stack. On paper, switching sounds simple. Pick a new platform. Move the data. Train everyone. Done. In reality, I suspect the switching cost is much higher. People already know where their files are. Everyone has their existing workflows. There are integrations to worry about. There are years of accumulated information. And nobody wants to spend weeks learning a new system just because it has a few extra features.",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1w5nidm",
+      "via": null,
+      "publishedAt": "2026-09-02T21:17:15.000Z",
+      "ref": "I2",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "470aa01ab0",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1w5m1sh/hot_take_on_tools",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "Hot take on tools",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1w5m1sh/hot_take_on_tools/",
+      "summary": "I think most developers don't actually need more AI tools. They need fewer tools that they actually use. My bookmarks are full of AI websites I tried once and never opened again.",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1w5m1sh",
+      "via": null,
+      "publishedAt": "2026-09-02T20:24:46.000Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4affc424a0",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1w5ic52/would_you_sacrifice_some_features_to_use_fewer",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "Would you sacrifice some features to use fewer work apps?",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1w5ic52/would_you_sacrifice_some_features_to_use_fewer/",
+      "summary": "One of the hardest product decisions I've been thinking about while building Lark is the tradeoff between specialized tools and an all-in-one platform. Specialized software usually wins at a particular job. A dedicated project-management tool can be incredibly powerful. A dedicated chat app can be excellent. A dedicated document platform can be excellent too. But the downside is that your team's workflow becomes distributed across all of them. An all-in-one workspace takes the opposite approach.",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1w5ic52",
+      "via": null,
+      "publishedAt": "2026-09-02T18:15:48.000Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "One of the hardest product decisions I've been thinking about while building Lark is the tradeoff between specialized tools and an all-in-one platform. Specialized software usually wins at a particular job. A dedicated project-management tool can be incredibly powerful. A dedicated chat app can be excellent. A dedicated document platform can be excellent too. But the downside is that your team's workflow becomes distributed across all of them. An all-in-one workspace takes the opposite approach. You may not get the absolute best tool for every individual task, but you get more consistency and less switching. That's essentially the problem we're trying to solve with Lark. I'm curious where other people land on this: Would you rather have the best possible tool for every task, or a good-enough tool that covers most of your workflow in one place?",
+        "comments": [
+          {
+            "text": "Are there any other functions?"
+          },
+          {
+            "text": "I’d rather use specialized tools, especially when it’s prudent to my role. It doesn’t cost much to switch tabs or applications to the tool so i wouldn’t wouldn’t choose less functionality to minimize this already minimal friction"
+          },
+          {
+            "text": "I’d rather have individual tools that are fully functional. The real pain point for me is having multiple tools that do the same thing! We have docs in share point, NAS’s, self-hosted wikis, azure wiki, teams chats, git repos. It’s a mess"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Launch HN: Nullstone (YC W22) – An easier way to deploy and manage cloud apps",
+            "points": 105,
+            "url": "https://news.ycombinator.com/item?id=37391272"
+          },
+          {
+            "title": "Show HN: Nori CLI, a better interface for Claude Code (no flicker)",
+            "points": 37,
+            "url": "https://news.ycombinator.com/item?id=46616562"
+          }
+        ],
+        "fetchedAt": "2026-09-03T08:36:03.878Z"
+      }
+    },
+    {
+      "id": "2c50dd3806",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1w5hnfi/18_months_ago_i_pulled_an_idea_from_this",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "18 months ago I pulled an idea from this community. Today we are in conversations with some of the largest financial institutions in the world.",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1w5hnfi/18_months_ago_i_pulled_an_idea_from_this/",
+      "summary": "I wanted to come back and give this community some credit. About 18 months ago, I was scrolling through ideas here looking for something interesting to build. One of the conversations got me thinking about a problem I had myself. I have several credit cards, all with different rewards, categories and offers, and I was constantly trying to figure out which card I should actually use when I was standing somewhere ready to pay. The idea was simple.What if your phone already knew where you were and could just surface the best card from the cards you already have including Apple Wallet.",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1w5hnfi",
+      "via": null,
+      "publishedAt": "2026-09-02T17:51:35.000Z",
+      "ref": "I5",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I wanted to come back and give this community some credit. About 18 months ago, I was scrolling through ideas here looking for something interesting to build. One of the conversations got me thinking about a problem I had myself. I have several credit cards, all with different rewards, categories and offers, and I was constantly trying to figure out which card I should actually use when I was standing somewhere ready to pay. The idea was simple.What if your phone already knew where you were and could just surface the best card from the cards you already have including Apple Wallet. Walk into a restaurant, Costco, a hotel, a gas station, wherever. Instead of remembering categories or opening different websites and apps, it doesn't just tells you: but surfaces the right card from your mobile wallet to pay. That idea turned into a much bigger project than I expected. We first started with physical card but realized mobile wallets in the future of in person payments. We quickly shifted in which Payelle is today. 18 months later, we have built the technology, filed the IP, launched the product, and are now having conversations with some of the largest companies and financial institutions in the space. There is still a long way to go, but I wanted to come back here because communities like this genuinely matter. Sometimes somebody posts an idea in passing and another person actually goes and builds it. This community helped push me down that road. So thank you. And if anyone remembers conversations here around automatically figuring out the best credit card to use at checkout, there is a decent chance I read your comment along the way. Still building. Still learning. But this one actually became real. Cheers",
+        "comments": [
+          {
+            "text": "Really cool idea and huge congrats!"
+          },
+          {
+            "text": "Much appreciated, long ways to go! Hope to provide more insights down the road"
+          },
+          {
+            "text": "Awesome post! Thanks for returning to share your story. I wish I could claim that was my original idea. Best of luck with the rest of your project. Thanks for remembering where you came from. Don’t be a stranger."
+          },
+          {
+            "text": "Its okay im giving credit to you too :)"
+          },
+          {
+            "text": "thank you, it was definitely not original - although the solution to get here I believe was innovative. Thank you for the encouragement though"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Failed for the past 12 years as an tech entrepreneur",
+            "points": 257,
+            "url": "https://news.ycombinator.com/item?id=29624502"
+          },
+          {
+            "title": "What I learned about the iPhone AppStore over the last 2 months",
+            "points": 16,
+            "url": "https://news.ycombinator.com/item?id=951360"
+          },
+          {
+            "title": "Ask HN: I have a startup idea! What do I do next?",
+            "points": 12,
+            "url": "https://news.ycombinator.com/item?id=2453037"
+          }
+        ],
+        "fetchedAt": "2026-09-03T08:25:02.957Z"
+      }
+    },
+    {
+      "id": "d21ea5e5b0",
+      "normUrl": "https://reddit.com/r/Bogleheads/comments/1w5s87o/look_through_funds_to_see_true_asset_allocation",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Look through funds to see true asset allocation",
+      "url": "https://www.reddit.com/r/Bogleheads/comments/1w5s87o/look_through_funds_to_see_true_asset_allocation/",
+      "summary": "I am an institutional investor by trade New money in my personal accounts goes into ultra low cost index funds — most of my money at this point But I do have some chunky legacy holdings with high cost basis in pretty good funds (Bogel himself helped create Windsor and Primecap) something of a mess of funds too — some S&P some extended market — a few international indexes Is there a tool that can aggregate all this stuff and tell me how far I really am from the index? Like the net difference between this complicated mess that I own and the index constituents?",
+      "deepenKey": "/r/Bogleheads/comments/1w5s87o",
+      "via": "is there a tool that",
+      "publishedAt": "2026-09-03T00:30:37.000Z",
+      "ref": "I6",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [
+          "在找但没找到"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "I am an institutional investor by trade New money in my personal accounts goes into ultra low cost index funds — most of my money at this point But I do have some chunky legacy holdings with high cost basis in pretty good funds (Bogel himself helped create Windsor and Primecap) something of a mess of funds too — some S&P some extended market — a few international indexes Is there a tool that can aggregate all this stuff and tell me how far I really am from the index? Like the net difference between this complicated mess that I own and the index constituents?",
+        "comments": [
+          {
+            "text": "Not sure exactly what you are looking for, but maybe Morningstar X-ray? Not free though, but I think you can get it with a free trial."
+          },
+          {
+            "text": "That’s the only tool I’m aware of. Might be worth it for a season to get a handle on things."
+          },
+          {
+            "text": "Thank you - will look into it Just trying to see if I’m taking an unintended tilt away from the index To me the big Bogel unlock is hyper low fees + diversity —- a lot of the rest of this is navel gazing But that said, don’t want to have a ton of drift vs index for no reason And I don’t really know where I land on that"
+          },
+          {
+            "text": "I might be missing something here, but what it seems like you’re looking for is just a simple portfolio management tool. Most of the brokers have them built into their portals at this point, and many of them will allow you to connect held-away accounts or to enter the positions manually. If you want something third-party, then Portfolio Visualizer, etc. would work."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:28:38.300Z"
+      }
+    },
+    {
+      "id": "6d13733622",
+      "normUrl": "https://reddit.com/r/AskMarketing/comments/1w57lgs/what_is_the_best_tool_to_track_brand_mentions_in",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "What is the best tool to track brand mentions in AI search engines?",
+      "url": "https://www.reddit.com/r/AskMarketing/comments/1w57lgs/what_is_the_best_tool_to_track_brand_mentions_in/",
+      "summary": "I've trying to understand how my brand appears is AI platforms like ChatGPT, Google AI overviews, Gemini, perplexity and copilot. Traditional SEO tools only show keyword ranking, but they don't tell me whether AI is actually mentioning my brand or recommending it to users. Is there a tool that can: Track brand mentions across multiple AI platforms? Compare visibility with competitors? Show the exact AI responses users see? help identify content gaps and improve AI visibility? would love to hear what marketers and business owners are using.",
+      "deepenKey": "/r/AskMarketing/comments/1w57lgs",
+      "via": "is there a tool that",
+      "publishedAt": "2026-09-02T11:25:12.000Z",
+      "ref": "I7",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "口味投票",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "bd4e521c4c",
+      "normUrl": "https://reddit.com/r/RPI/comments/1w4wyeh/forward_prerequisite_checking_tool",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Forward prerequisite checking tool",
+      "url": "https://www.reddit.com/r/RPI/comments/1w4wyeh/forward_prerequisite_checking_tool/",
+      "summary": "Is there a tool that exists to check all the courses that require a specific input course? Say I input PHYS-1200, this hypothetical tool would show me all of the courses that has PHYS-1200 as a prerequisite.",
+      "deepenKey": "/r/RPI/comments/1w4wyeh",
+      "via": "is there a tool that",
+      "publishedAt": "2026-09-02T01:59:59.000Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "在找但没找到"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Is there a tool that exists to check all the courses that require a specific input course? Say I input PHYS-1200, this hypothetical tool would show me all of the courses that has PHYS-1200 as a prerequisite.",
+        "comments": [
+          {
+            "text": "Not that I know of. A friend and I wanted to build such a tool as an addition to Quacks, but we haven't done so yet. I have a workaround spreadsheet which contains a table with all the courses in the catalog (obtained from the Quacks data catalog) and lists the prerequisites for each. Using Excel column filtering, it is possible to quickly filter for courses that have PHYS-1200 as a prereq. I can share a link to the spreadsheet over DM if you would like."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:24:04.765Z"
+      }
+    },
+    {
+      "id": "5679689889",
+      "normUrl": "https://reddit.com/r/ClaudeAI/comments/1w44iqn/how_are_you_optimising_your_project_for_ux",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "How are you optimising your project for UX?",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1w44iqn/how_are_you_optimising_your_project_for_ux/",
+      "summary": "I’ve been using Claude Code to build a complex web app, it did great at a version 1, branding worked well and it even looked on point from afar. However as I put my user hat on I realised that there were a LOT of bugs or weird UX experiences. Furthermore UX experiences get more nuanced when considering different devices (phone, tablet, desktop). To create a really smooth experience requires a lot of iteration to the website. So naturally I’m taking screenshots of the app from mobile, tablet and desktop, adding feedback and Claude code does a great job at rectifying the issues.",
+      "deepenKey": "/r/ClaudeAI/comments/1w44iqn",
+      "via": "is there a tool that",
+      "publishedAt": "2026-09-01T07:13:08.000Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "I’ve been using Claude Code to build a complex web app, it did great at a version 1, branding worked well and it even looked on point from afar. However as I put my user hat on I realised that there were a LOT of bugs or weird UX experiences. Furthermore UX experiences get more nuanced when considering different devices (phone, tablet, desktop). To create a really smooth experience requires a lot of iteration to the website. So naturally I’m taking screenshots of the app from mobile, tablet and desktop, adding feedback and Claude code does a great job at rectifying the issues. However this process is really slow, especially across devices. Is there a tool that helps do this at scale across all major device types and quickly and easily consolidate the images with markups and feedback? I’ve started building one and wonder if it already exists (a quick search via Google / Claude surfaced nothing noteworthy)",
+        "comments": [
+          {
+            "text": "Use Claude’s inbuilt browser, you can annotate on it. You can ask Claude to change it to be responsive or whatever you need. You can add annotations directly to chat."
+          },
+          {
+            "text": "This is fine but it doesn’t work for multiple device types. Often a page / feature behaves great on desktop browser and weird on phone browser"
+          },
+          {
+            "text": "Claude design is pretty sick, and once you have the general structure you want I find the impeccable skill works great for polishing"
+          },
+          {
+            "text": "Agreed, it looks great and help keep consistent design experience across a project but it still doesn’t address UX"
+          },
+          {
+            "text": "Impeccable is pretty good for UX but at the end of the day the only way to get good UX is to test your app and find the issues yourself. Always has been, (probably) always will be"
+          },
+          {
+            "text": "I would not relay on Claude itself to test itself. You should search some tools to do it to integrate in your CI. My app is mainly a backend with a simple frontend run in browser, mainly desktop but adapt also to mobile. So I didn't find any tools for testing UX but: - I reuse page template and widget, most of the page have the same design so the risk of broke just another similar page is low; - I test in my browesr resizing the windows and look if the page properly resize; - I also do a test on…"
+          },
+          {
+            "text": "Nice, this is more or less what I have been doing until recently, but I found that as I obsess more and more on the fine tuning of the user experience, it just is too slow of a process. Almost every widget / feature that matters needs cross device review in my opinion. But maybe I’m a perfectionist"
+          },
+          {
+            "text": "It depends what you’re doing. My app is a machine learning backend, it analyze song and return list of similar one. It is designed to be integrated in other music server. Because this integrarion is taking time, and most of this music server don’t cover all the functionality, I also develop a simple frontend. For me the frontend don’t have wow effect, it’s the more standard possible, the wow is in the result that is able to return."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Optimising the T9 Keyboard",
+            "points": 45,
+            "url": "https://news.ycombinator.com/item?id=28663723"
+          },
+          {
+            "title": "Launch HN: Hoplite (YC S26) – Effortlessly deploy cloud coding agents",
+            "points": 81,
+            "url": "https://news.ycombinator.com/item?id=49157997"
+          }
+        ],
+        "fetchedAt": "2026-09-03T08:31:41.203Z"
+      }
+    },
+    {
+      "id": "0e4803a22e",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/57983/linux-audio-player-that-can-filter-songs-per-year",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Linux audio player that can filter songs per year",
+      "url": "https://softwarerecs.stackexchange.com/questions/57983/linux-audio-player-that-can-filter-songs-per-year",
+      "summary": "Sometimes I want to play only 90s songs, and sometimes only songs that have been released this year. Is there a Linux audio player with that feature? That can be a plugin of an existing player. Bonus if it is an Audacious plugin, as I currently use Audacious. Gratis, ideally open source.",
+      "deepenKey": "57983",
+      "signal": {
+        "score": 0,
+        "views": 100,
+        "answers": 2,
+        "unanswered": true
+      },
+      "publishedAt": "2019-04-10T09:24:59.000Z",
+      "ref": "I10",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "faa13d9713",
+      "normUrl": "https://news.ycombinator.com/item?id=49546847",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Reticulum Is Not a Democracy",
+      "url": "https://news.ycombinator.com/item?id=49546847",
+      "externalUrl": null,
+      "summary": "Founder closing down reddit community without consulting community: https://www.reddit.com/r/reticulum/s/PpVsEkC3Nq Founder changing license of reticulum without consulting contributors: https://github.com/markqvist/Reticulum/commit/e7daceec820850d397e6bf9aa585ef7222977891 Founder making repo a \"stale public mirror\" while still continuing development all without consulting contributors and community: https://github.com/markqvist/Reticulum/discussions/1069 With these events i think its clear that reticulum controlled by the founder is not usable for anyone as the founder can declare your usage…",
+      "deepenKey": "49546847",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-03T07:10:37Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2813dbea43",
+      "normUrl": "https://news.ycombinator.com/item?id=49546432",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Advice on Migrating from 1Password?",
+      "url": "https://news.ycombinator.com/item?id=49546432",
+      "externalUrl": null,
+      "summary": "I just found out that 1Password is donating $300,000 to a project founded by a very controversial person, and I'm looking to move to a different password manager. Has anyone migrated from 1Password recently to another tool/platform? Have you had a good experience with any tools in particular? Any advice, tips? I'm also interested in the corporate-use context; if I can convince my company to switch to an alternative with business controls, I'll surely try.",
+      "deepenKey": "49546432",
+      "via": null,
+      "signal": {
+        "points": 44,
+        "comments": 55
+      },
+      "publishedAt": "2026-09-03T06:01:43Z",
+      "ref": "I12",
+      "screen": {
+        "keep": true,
+        "score": 14,
+        "hits": [
+          "在换掉现有方案"
+        ],
+        "detail": {
+          "signal": 3,
+          "engagement": 8,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I just found out that 1Password is donating $300,000 to a project founded by a very controversial person, and I'm looking to move to a different password manager. Has anyone migrated from 1Password recently to another tool/platform? Have you had a good experience with any tools in particular? Any advice, tips? I'm also interested in the corporate-use context; if I can convince my company to switch to an alternative with business controls, I'll surely try.",
+        "comments": [
+          {
+            "text": "Here is the migration guide for 1Password. [0] The CEO of Stripe also donated $1M to Omarchy. Do we need another migration guide for Stripe since the CEO personally donated to Omarchy and then tell everyone to stop using Stripe and all of their services? [0] https://www.patreon.com/violetblue/posts/how-to-migrate-1684..."
+          },
+          {
+            "text": "I migrated from an older 1password to self hosted bitwarden (vaultwarden) using premade configurations which are available for Portman and Docker in the usual places. Mine uses caddy for the Web front, which automates letsencrypt certification. All the client app which talk to bitwarden talk to vaultwarden, but there's no guarantee into the future I guess. I just like self hosted. The export is through CSV in clear."
+          },
+          {
+            "text": "Oh, I was only storing and using it in AWS KMS because of the pricing issue, but thanks for the comment. I’ll look into it a bit more."
+          },
+          {
+            "text": "Are people in your company moderately technical? If so, I highly recommend https://www.passwordstore.org/ coupled with a PGP key storage dongle (I personally use NitroKey). Then hosting is just a matter of hosting a minuscule git repo per user. I imagine that a technical company can easily whip up a bespoke simplified interface for its non-technical staff too. I've used it for about a decade at this point, and it's just perfect."
+          },
+          {
+            "text": "There's a bit of a jump here from something appearing good to rapidly becoming very very bad. Here's what I read: > 1Password has pledged $300,000 over three years in support of David Heinemeier Hansson's Linux distribution known as Omarchy, and is now a “distinguished corporate patron” of Omacom. What a nice brand partnership. Supporting a Linux distribution sounds nice; I hadn't heard of that one."
+          },
+          {
+            "text": "I moved to self hosted Vaultwarden (Bitwarden server reimplementation that's client-compatible). You can also directly run Bitwarden, but Vaultwarden is easier to self-host, especially OIDCwarden is nice if SSO is your cup of tea. I don't like Bitwarden's UI as much as 1Password's, but at least it feels faster."
+          },
+          {
+            "text": "Here you go, I made a quite wide-ranging set of notes here when I switched: https://taoofmac.com/space/apps/1password"
+          },
+          {
+            "text": "I really enjoy Proton Pass (but I have a paid subscription so I have passmail aliasses as well). I've been going full passkeys recently, no issues yet. Before this I used Vaultwarden, but I was always a bit afraid of the self-hosting (of something this critical), and I really didn't like how you share credentials in BitWarden (through organizations), Proton Pass is much more intuitive with just straight up sharing of credentials or sharing whole Vaults."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Ask HN: Advice on Migrating from 1Password?",
+            "points": 48,
+            "url": "https://news.ycombinator.com/item?id=49546432"
+          }
+        ],
+        "fetchedAt": "2026-09-03T08:22:34.180Z"
+      }
+    },
+    {
+      "id": "d4cd3457ec",
+      "normUrl": "https://news.ycombinator.com/item?id=49545260",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Looking for an Invite for Lobster.rs",
+      "url": "https://news.ycombinator.com/item?id=49545260",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "49545260",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-03T02:29:24Z",
+      "ref": "I13",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "81399a472a",
+      "normUrl": "https://news.ycombinator.com/item?id=49545206",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Does anyone know if something happened to stallman.org?",
+      "url": "https://news.ycombinator.com/item?id=49545206",
+      "externalUrl": null,
+      "summary": "I have attempted to access it many times today and it seems to be down, at least from where I live, in Central America. Given his health state and his activism, I am curious if something happened that I am not aware of.",
+      "deepenKey": "49545206",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 3
+      },
+      "publishedAt": "2026-09-03T02:19:08Z",
+      "ref": "I14",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "82fe2b1c34",
+      "normUrl": "https://news.ycombinator.com/item?id=49543858",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Omarchy Histerya",
+      "url": "https://news.ycombinator.com/item?id=49543858",
+      "externalUrl": null,
+      "summary": "Is it just me or that thing seems extremely annoying and disrespectful? It seems there is a flood of \"influencers\" spamming about how amazing it is, while it has 0 improvements over a normal modern distro (like fedora kde, I use it and it just works and has everything I might need). It is also extremely disrespectful watching how those aforementioned influencers claims that Omarchy \"fixed Linux\", \"just works\" and has amazing features like plugins (like kde widget or gnome extensions) and basic features linux DE have had for years or decades.",
+      "deepenKey": "49543858",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 8
+      },
+      "publishedAt": "2026-09-02T23:10:24Z",
+      "ref": "I15",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Is it just me or that thing seems extremely annoying and disrespectful? It seems there is a flood of \"influencers\" spamming about how amazing it is, while it has 0 improvements over a normal modern distro (like fedora kde, I use it and it just works and has everything I might need). It is also extremely disrespectful watching how those aforementioned influencers claims that Omarchy \"fixed Linux\", \"just works\" and has amazing features like plugins (like kde widget or gnome extensions) and basic features linux DE have had for years or decades. The AI integration thing I think is incredible useless, and surely any good-for-all-distro AI integration could organize files or do whatever it is supposed to do in that. Is there any valid point on all this hype? Or is it just a bunch of people who never touched a Linux distro discovering freedom and open source potential just today?",
+        "comments": [
+          {
+            "text": "The creator of Omarchy is a pretty controversial figure because of culture war stuff and also a prominent software industry entrepreneur, so it intersects those two other spheres to give it more prominence than it would have otherwise. Personally I think it's a bit pointless, but you seem to be taking it personally somehow. Can you simply choose to ignore it and not get annoyed? It's just water under the bridge and won't matter at all in the big scheme of things."
+          },
+          {
+            "text": "There are two groups of people who are really loud about DHH projects. The first is ones who are really on board with his racism https://web.archive.org/web/20260721200429/https://world.hey... And the second is people who liked some of his earlier software, aren't overly bothered by the racism, and are worried that the anti-racists will get DHH cancelled and then the good software will stop. They feel like they have to loudly hype the project just to offset the negativity."
+          },
+          {
+            "text": "DHH is marketing his Linux distro. He was willing to help the Arch Linux community and reached out to the AUR maintainers who were struggling. They said no. So they are building their own distro, package repositories and now everyone is upset about that, even with the funding? I don't really care about Omarchy, but if you think it is worth getting annoyed about it, maybe you should ignore it? It's just a distro. What is disrespectful about the freedom to build your own distro?"
+          },
+          {
+            "text": "I think there's been dramatically more disrespect on DHH and the omarchy maintainers. Straight up calling these people \"fascists\", quite sickening behavior. I've been using Linux on and off since Ubuntu 7.10 gutsy gibbon, then moved to linux mint, then arch, then random distros to try, this is the first linux os that stuck with me. I've been using it as my primary driver for months now. Don't miss windows or mac. There is merit to the os."
+          },
+          {
+            "text": "It’s a new distro that’s putting effort into marketing. The last time I saw a distro really market was Ubuntu, nearly 20 years ago. Anything that gets people in the door is a good thing. I ran Omarchy for a few days, but switched over to Fedora after a few security incidents were announced. A vibe coded system made me nervous, but I was trying to put my vibe coding prejudices aside."
+          },
+          {
+            "text": "Why don't you install it in a VM and try it instead of embracing biased presuppositions that may or may not be correct? Also, I disagree that it has 0 improvements. For example: 1. Defaulting to the Windows key instead of Control for cut, copy, and paste out of the box is a nice touch that brings keybinding consistency across the terminal and other apps and makes transitioning over to Linux easier for Mac users. 2."
+          },
+          {
+            "text": "Influencers job is all about creating hype, that's how they make money so if you find them annoying just ignore them. AFAIK Omarchy is created for a specific audience i.e tech enthusiast and people who are just getting into Linux will surely find it amazing. We all have been through these phases: New to Linux -> start on standard Gnome or KDE (or Unity back in the day) -> get to know about ricing/customization/window managers -> get bored and go back to standard Gnome or KDE."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:25:32.747Z"
+      }
+    },
+    {
+      "id": "f2d57e6155",
+      "normUrl": "https://news.ycombinator.com/item?id=49543253",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How to get taken seriously while using AI?",
+      "url": "https://news.ycombinator.com/item?id=49543253",
+      "externalUrl": null,
+      "summary": "I have been reading lobste.rs on and off for a few months, and the anti-AI vibes have always stood out. I don’t jump in to provide a counterpoint in any of the anti-AI threads because my account there is associated with my real name, and I don’t want to grief anyone who is particularly passionate about the anti-AI rhetoric. I understand and appreciate the concerns people have about irresponsible code, or unexamined AI use, so I don’t disagree with any reasonable stances.",
+      "deepenKey": "49543253",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 4
+      },
+      "publishedAt": "2026-09-02T22:08:18Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "18c86090d2",
+      "normUrl": "https://news.ycombinator.com/item?id=49542597",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "If you could set a maximum net worth for a person, what would it be?",
+      "url": "https://news.ycombinator.com/item?id=49542597",
+      "externalUrl": null,
+      "summary": "If we had some magical way to enforce a net worth ceiling, what would you set it to?",
+      "deepenKey": "49542597",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 7
+      },
+      "publishedAt": "2026-09-02T21:09:09Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "319f4e40a1",
+      "normUrl": "https://news.ycombinator.com/item?id=49539315",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Kimi K3 and GLM-5.3 are better than Gemini 3.8 Flash",
+      "url": "https://news.ycombinator.com/item?id=49539315",
+      "externalUrl": null,
+      "summary": "Based on artificialanalysis.ai, Kimi K3 and GLM-5.3 are more intelligent than the new Gemini 3.8 Flash[1][2]. Gemini 3.8 Flash comes in eighth place with a score of 59, just after Kimi K3 and GLM-5.3, with scores of 60 for both of them. Gemini 3.8 Flash was better in terms of Cost per task, with $0.58 spent to finish the task, $0.68 for GLM-5.3, and 0.84 for Kimi K3[3][4]. Because results may change over time, I included screenshots taken at the time of writing this post.",
+      "deepenKey": "49539315",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 2
+      },
+      "publishedAt": "2026-09-02T17:11:49Z",
+      "ref": "I18",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "b5941d353f",
+      "normUrl": "https://news.ycombinator.com/item?id=49538588",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What kind of tools do you use for manage job search and apply flow?",
+      "url": "https://news.ycombinator.com/item?id=49538588",
+      "externalUrl": null,
+      "summary": "I like to get your experiences about job search tools. Which tools or platforms did you get experience? Did you use any end to end platform that helps you from cv building to job finding, scoring to autoa application and tracking application replies?",
+      "deepenKey": "49538588",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-02T16:22:18Z",
+      "ref": "I19",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "186254789d",
+      "normUrl": "https://news.ycombinator.com/item?id=49537706",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How to ask questions in Ask HN",
+      "url": "https://news.ycombinator.com/item?id=49537706",
+      "externalUrl": null,
+      "summary": "Hi, Yesterday I tried to ask a genuine question in AskHN. It was my first question here, so I may have made a mistake somewhere. I genuinely wanted to get feedback from fellow founders and hackers. So I described the problem and then I asked a questions related to it. But within seconds it was marked [flagged] and I have no idea why. I checked the FAQ it says it may be off-topic but the purpose of the question was to seek advice and feedback from HN community, so I am not sure whether it was evaluated as off-topic or if so why.",
+      "deepenKey": "49537706",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 12
+      },
+      "publishedAt": "2026-09-02T15:24:05Z",
+      "ref": "I20",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hi, Yesterday I tried to ask a genuine question in AskHN. It was my first question here, so I may have made a mistake somewhere. I genuinely wanted to get feedback from fellow founders and hackers. So I described the problem and then I asked a questions related to it. But within seconds it was marked [flagged] and I have no idea why. I checked the FAQ it says it may be off-topic but the purpose of the question was to seek advice and feedback from HN community, so I am not sure whether it was evaluated as off-topic or if so why. I am not a native speaker so I used AI to fix the text and help me concisely express it since I sometime delve into details that confuses people. Was this the issue? In short. What is the proper way to ask for advice from HN?",
+        "comments": [
+          {
+            "text": "I dunno, whether or not it is true, my first impression of your first question is \"this is a phony question asked by somebody who is selling the answer.\""
+          },
+          {
+            "text": "I had a similar situation: I created my first comment on Hacker News on a post, and it was almost immediately marked as \"dead\" (I saw this status when I requested comment data via the Hacker News API). I suspect this is spam/bot protection (blocking the first post/comment from a new user). In your case, the AI text is added as a separate trigger, but the main reason is most likely the blocking of the first post from a new user."
+          },
+          {
+            "text": "Launching something that implements your idea a good way to get meaningful feedback on something you have made. ShowHN is a means of showing something you have implemented. Read the ShowHN guidelines. Keep in mind tha HN is a community. Communities don’t like selfish behaviors. They have norms of participation. They have expectations of reciprocation. Your original question is trying to receive without giving. As is this one."
+          },
+          {
+            "text": "1. make your question attractive 2. don't make your question unattractive"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:25:33.237Z"
+      }
+    },
+    {
+      "id": "9e68dc2e23",
+      "normUrl": "https://news.ycombinator.com/item?id=49536264",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Knowledge Graph Engine for Codebases",
+      "url": "https://news.ycombinator.com/item?id=49536264",
+      "externalUrl": null,
+      "summary": "Hi HN , I built a knowledge graph engine for codebase that is accessible through API . Maintaining codebase , flagging and blocking the stale files along with 78% to 99.74% token savings are some of the main features . I will be happy to talk about the graph schema, how we stay in sync with git, and overall philosophy of me on the product ? visit trynovaya.com to use the product !",
+      "deepenKey": "49536264",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 11
+      },
+      "publishedAt": "2026-09-02T13:53:17Z",
+      "ref": "I21",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "03a9c10dcc",
+      "normUrl": "https://news.ycombinator.com/item?id=49535402",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "ChatGPT Linux GUI version updates redownload all files, require 1.4GB download",
+      "url": "https://news.ycombinator.com/item?id=49535402",
+      "externalUrl": null,
+      "summary": "Not limited to this update (26.825.31414 to 26.831.21537). Every update seems to redownload all files. The program is 1.4GB large and a version update requires a 1.4GB download. It really stands out among the Linux upgrade experience. Had to remove the program because I regularly install updates from shitty wifi and this just means I would not install updates anymore. Not even Flatpaks have that much bloat. Yes, it does more under the hood, but still I want to shout \"It's 1.4GB for a text interface!\" Everyone else is capable of optimizing.",
+      "deepenKey": "49535402",
+      "via": null,
+      "signal": {
+        "points": 9,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-02T12:42:29Z",
+      "ref": "I22",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "89a3bd9407",
+      "normUrl": "https://news.ycombinator.com/item?id=49535272",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Where do you get your AI (technology) news?",
+      "url": "https://news.ycombinator.com/item?id=49535272",
+      "externalUrl": null,
+      "summary": "Business/company/product wise is readily available. I'm curious where HN gets their news for (new) AI technology. It feels like every day every concept is already old, so would be nice to have 1 or a few sites with emerging tech. thanks",
+      "deepenKey": "49535272",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-02T12:29:45Z",
+      "ref": "I23",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "c5a4d3822f",
+      "normUrl": "https://news.ycombinator.com/item?id=49535020",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "My local model setup on an M4 Pro Mac Mini",
+      "url": "https://news.ycombinator.com/item?id=49535020",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "49535020",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-02T12:04:52Z",
+      "ref": "I24",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "9ba643b7f7",
+      "normUrl": "https://news.ycombinator.com/item?id=49534574",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How do you debug production bugs when you can't access customer data?",
+      "url": "https://news.ycombinator.com/item?id=49534574",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "49534574",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 2
+      },
+      "publishedAt": "2026-09-02T11:06:11Z",
+      "ref": "I25",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8d4a3ca5aa",
+      "normUrl": "https://news.ycombinator.com/item?id=49534377",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Whose interview process has caught up to the new way of working?",
+      "url": "https://news.ycombinator.com/item?id=49534377",
+      "externalUrl": null,
+      "summary": "Writing code isn't part of the job now, so it shouldn't be part of the interview either. Who's found a better way?",
+      "deepenKey": "49534377",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 6
+      },
+      "publishedAt": "2026-09-02T10:36:04Z",
+      "ref": "I26",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6bf9ae1f3c",
+      "normUrl": "https://news.ycombinator.com/item?id=49533840",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Resources to Get Good at Soldering?",
+      "url": "https://news.ycombinator.com/item?id=49533840",
+      "externalUrl": null,
+      "summary": "Hello. I've recently started soldering, specifically wanting to repair the joysticks on several Playstation 4 controllers I have, but I also want to get good at electronic repair in general. Right now I've busted a board, and managed to desolder and resolder a stick but the controller doesn't turn on anymore. I'm doing this all by myself, and I think I'm following good advice (ventilation, good iron tip, using flux etc...). But there are many variables, and a lot of experts have different opinions on stuff.",
+      "deepenKey": "49533840",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 4
+      },
+      "publishedAt": "2026-09-02T09:24:11Z",
+      "ref": "I27",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "86f2a1385b",
+      "normUrl": "https://github.com/openai/codex/issues/41622",
+      "sourceId": "gh-requests",
+      "source": "GitHub 高赞功能请求",
+      "sourceHome": "https://github.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Add a setting to disable automatic conversation recaps in Codex CLI",
+      "url": "https://github.com/openai/codex/issues/41622",
+      "summary": "### What variant of Codex are you using? CLI (codex-cli 0.151.0) ### What feature would you like to see? Please add a documented `config.toml` setting that disables automatic conversation recap generation. ### Additional information For users who already understand the conversation, automatic recaps are unsolicited and distracting; when a recap is wanted, the user can explicitly request one.",
+      "signal": {
+        "thumbsUp": 41,
+        "comments": 15,
+        "repo": "openai/codex"
+      },
+      "publishedAt": "2026-08-30T06:29:30Z",
+      "ref": "I28",
+      "screen": {
+        "keep": true,
+        "score": 8,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 5,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "### What variant of Codex are you using? CLI (codex-cli 0.151.0) ### What feature would you like to see? Please add a documented `config.toml` setting that disables automatic conversation recap generation. ### Additional information For users who already understand the conversation, automatic recaps are unsolicited and distracting; when a recap is wanted, the user can explicitly request one.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:24:06.165Z"
+      }
+    },
+    {
+      "id": "a2c6066328",
+      "normUrl": "https://github.com/hashicorp/terraform-provider-google/issues/29171",
+      "sourceId": "gh-requests",
+      "source": "GitHub 高赞功能请求",
+      "sourceHome": "https://github.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Performance: add skip_node_pool_refresh option to google_container_cluster data source",
+      "url": "https://github.com/hashicorp/terraform-provider-google/issues/29171",
+      "summary": "### Community Note * Please vote on this issue by adding a 👍 [reaction](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/) to the original issue to help the community and maintainers prioritize this request. * Please do not leave _+1_ or _me too_ comments, they generate extra noise for issue followers and do not help prioritize the request. * If you are interested in working on this issue or have submitted a pull request, please leave a comment. * If an issue is assigned to a user, that user is claiming responsibility for the issue.",
+      "signal": {
+        "thumbsUp": 44,
+        "comments": 0,
+        "repo": "hashicorp/terraform-provider-google"
+      },
+      "publishedAt": "2026-09-02T15:16:53Z",
+      "ref": "I29",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 6,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "### Community Note * Please vote on this issue by adding a 👍 [reaction](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/) to the original issue to help the community and maintainers prioritize this request. * Please do not leave _+1_ or _me too_ comments, they generate extra noise for issue followers and do not help prioritize the request. * If you are interested in working on this issue or have submitted a pull request, please leave a comment. * If an issue is assigned to a user, that user is claiming responsibility for the issue.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:24:05.758Z"
+      }
+    },
+    {
+      "id": "fcdee7ef8e",
+      "normUrl": "https://reddit.com/r/Watches/comments/1w5n171/discussion_how_much_is_the_mark_up_on_watches",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "[Discussion] How much is the mark up on watches?",
+      "url": "https://www.reddit.com/r/Watches/comments/1w5n171/discussion_how_much_is_the_mark_up_on_watches/",
+      "summary": "Does anyone have any information on this? When we see automatic watches ranging from $500 to $50K (and more), the obvious question is how much profit is being made at the various price points. Obviously, a Rolex will cost more to produce per watch than, say, a Vaer, and it is a much better product as a result, but does the Vaer have something like a 50% markup and Rolex a 500% markup? (entirely made up numbers, but you get the idea). A lot goes into pricing, including total cost of production (including marketing, R&D, overhead, etc), demand, scarcity, etc.",
+      "deepenKey": "/r/Watches/comments/1w5n171",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-02T20:59:53.000Z",
+      "ref": "I30",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "消费/家庭话题，不是软件需求",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "5a43c2dc31",
+      "normUrl": "https://reddit.com/r/VictoriaBC/comments/1w5j80l/does_anyone_have_tips_on_negotiating_rent",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Does anyone have tips on negotiating rent?",
+      "url": "https://www.reddit.com/r/VictoriaBC/comments/1w5j80l/does_anyone_have_tips_on_negotiating_rent/",
+      "summary": "Unfortunately, our building has no vacancies and when there is one it’s taken within the month. I can’t lie, it’s beautiful, and as a whole we’ve had few problems. Prices all around us are dropping for the same amount of space though. And we’ve had major construction the last two years that have actually made entry and exit inaccessible. I know we are paying for view and location, but we received notice that they are actually increasing our rent. Do we have any chance of negotiating? And if so, do you have any tips? I’ve never done it before. Thanks so much!",
+      "deepenKey": "/r/VictoriaBC/comments/1w5j80l",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-02T18:46:26.000Z",
+      "ref": "I31",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "消费/家庭话题，不是软件需求",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "e5a94220b0",
+      "normUrl": "https://reddit.com/r/RealEstateAdvice/comments/1w5gjyz/invest_in_current_house_or_move_on_to_a_nicer",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Invest in current house or move on to a nicer house?",
+      "url": "https://www.reddit.com/r/RealEstateAdvice/comments/1w5gjyz/invest_in_current_house_or_move_on_to_a_nicer/",
+      "summary": "Hello, as title says trying to figure out whether to stay in current starter house or to sell and upgrade to a nicer house. We bought our house in March 2025 and knew it would need some work (furnace and AC were 30 years old type stuff). Since moving in, we have replaced:water heater, AC and Furnace. We had a bug and bat problem we paid to fix. This all adds to 20k expenses. I feel these were reasonable maintenance. Now. The issue. We found water damage and mold in 3 places in the house.",
+      "deepenKey": "/r/RealEstateAdvice/comments/1w5gjyz",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-02T17:13:37.000Z",
+      "ref": "I32",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "a733772f36",
+      "normUrl": "https://reddit.com/r/FortCollins/comments/1w5gb7a/formal_complaint_regarding_repeated_republic",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Formal Complaint Regarding Repeated Republic Services Collection Failures and City Oversight",
+      "url": "https://www.reddit.com/r/FortCollins/comments/1w5gb7a/formal_complaint_regarding_repeated_republic/",
+      "summary": "I encourage everyone who has experienced repeated missed pickup with no resolution from Republic Service to copy this text and send it to the following recipients: next step, class action lawsuits [ contractfortrash@fcgov.com ](mailto: contractfortrash@fcgov.com ) [ kdimartino@fcgov.com ](mailto: kdimartino@fcgov.com ) [ cityleaders@fcgov.com ](mailto: cityleaders@fcgov.com ) [ kstein@fcgov.com ](mailto: kstein@fcgov.com ) Dear City Manager DiMartino, I am writing to formally complain about the ongoing and unacceptable failure of Republic Services to provide the residential trash collection se…",
+      "deepenKey": "/r/FortCollins/comments/1w5gb7a",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-02T17:05:26.000Z",
+      "ref": "I33",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I encourage everyone who has experienced repeated missed pickup with no resolution from Republic Service to copy this text and send it to the following recipients: next step, class action lawsuits [ contractfortrash@fcgov.com ](mailto: contractfortrash@fcgov.com ) [ kdimartino@fcgov.com ](mailto: kdimartino@fcgov.com ) [ cityleaders@fcgov.com ](mailto: cityleaders@fcgov.com ) [ kstein@fcgov.com ](mailto: kstein@fcgov.com ) Dear City Manager DiMartino, I am writing to formally complain about the ongoing and unacceptable failure of Republic Services to provide the residential trash collection service that Fort Collins residents are required to pay for under the City’s single-hauler program. This is no longer an occasional missed pickup or an isolated customer-service issue. It is a systemic and recurring failure. We are paying for weekly trash collection, yet our actual service has repeatedly amounted to approximately two pickups per month. When Republic fails to collect our trash, the company does not reliably send a truck back to complete the missed collection, nor does it provide an appropriate credit or adjustment for the service we paid for but did not receive. Instead, residents are left with overflowing trash carts and accumulated waste sitting outside their homes for weeks. That is particularly unacceptable during the summer months. I currently have an overflowing trash cart that has not been properly serviced, with trash accumulating around it and flies and other pests gathering around the waste. What makes this situation even more troubling is that Fort Collins residents did not voluntarily choose a single hauler in a competitive marketplace. The City established the single-hauler system and contracted with Republic Services. Residents in the program are required to use or pay for the municipal service, including an opt-out fee if they choose not to participate. In other words, the City has substantially restricted our ability to take our business elsewhere while simultaneously placing Republic Services in the position of being our required provider.",
+        "comments": [
+          {
+            "text": "https://www.fortcollins.gov/Services/Trash-and-Recycling/Curbside-Trash-and-Recycling Under FAQs - What is the City's role? \"The City can exit the contract for persistent issues.\" The current contract goes through Sept 2029."
+          },
+          {
+            "text": "I see them most days of the week in my neighborhood on days when they shouldn't. It's almost like they are intentionally missing sections of neighborhoods, so they can come back. It seems like a cash grab to me. They've already raised rates once since being awarded the contract."
+          },
+          {
+            "text": "How is it even possibly/remotely a cash grab when well over 90% of city resident's had their rates go down? Like, on what planet is that a cash grab?"
+          },
+          {
+            "text": "Step 1. Intentionally skip full streets in neighborhoods on required days Step 2. Come back multiple days later and complete said neighborhoods. Step 3. ???? Step 4. Profit!"
+          },
+          {
+            "text": "We often have to hold our recycling in our garage because of missed pickups causing our recycling to back up to the point of not being able to fit in the bin. We should not have to do that when we pay for weekly pick ups. I don't even understand how its legal for republic services to have a monopoly over the entire city, where residents are penalized for not using that service, especially when those same residents never had any say in forming this contract to begin with, no vote, nothing."
+          },
+          {
+            "text": "Has anyone tried reaching out to the reporters at the Coloradoan? Maybe running a story in the local newspaper about Republic's repeated failures to provide service would put more pressure on them and City Council to start fixing things."
+          },
+          {
+            "text": "Coloradoan article from 5 days ago. There was also an article back in January regarding fines for missed pickups."
+          },
+          {
+            "text": "Done and done. Republic is a waste."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:38:05.564Z"
+      }
+    },
+    {
+      "id": "c20ec1d995",
+      "normUrl": "https://reddit.com/r/Fire/comments/1w5e35d/gut_check_before_pulling_trigger_18m_family_of_3",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Gut Check Before Pulling Trigger - $1.8M, Family of 3",
+      "url": "https://www.reddit.com/r/Fire/comments/1w5e35d/gut_check_before_pulling_trigger_18m_family_of_3/",
+      "summary": "Long-time lurker, first time posting. My spouse and I are both in our early 40s with a toddler. We think we are pretty close to the point where my spouse can step back from work within the next few months, while I keep my W-2 job for another 1-2 years (at most) for health insurance. Our details: Invested: ~$1.85M Taxable brokerage: ~$800k 401k / IRA / Roth / HSA: ~$1.0M Cash: building toward ~2 years of expenses House paid off, MCOL city Small multi-unit rental with a low mortgage, nets ~$24-33k/yr (varies depending on repairs/renovations) No other debt Spend is ~$60k/yr before travel, and tha…",
+      "deepenKey": "/r/Fire/comments/1w5e35d",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-02T15:46:05.000Z",
+      "ref": "I34",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "消费/家庭话题，不是软件需求",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "61e010dc27",
+      "normUrl": "https://reddit.com/r/chulavista/comments/1w4tl4r/average_utility_cost",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Average utility cost?",
+      "url": "https://www.reddit.com/r/chulavista/comments/1w4tl4r/average_utility_cost/",
+      "summary": "Hi! So I am currently renting a 1bd apartment, in Chula Vista, my husband and I. Our water/sewage/trash are all looped in with our rent payment. Our gas/electric are separate. I know CA is pricey, but when I looked at the cost breakdown, it seemed excessive? Water: $100 Sewage: $40 Trash: $89 I believe we are paying for the previous month, so this would have been for July. Regardless, does this seem like a lot?? I don’t really feel as if we use THAT much water. And I can’t comprehend paying $89 for trash? Please help lol",
+      "deepenKey": "/r/chulavista/comments/1w4tl4r",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-01T23:32:18.000Z",
+      "ref": "I35",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "消费/家庭话题，不是软件需求",
+        "hits": []
+      },
+      "candidate": false,
+      "deepError": "HTTP 429"
+    },
+    {
+      "id": "55a01e885f",
+      "normUrl": "https://reddit.com/r/CATHELP/comments/1w5qpnk/i_dont_know_if_im_making_the_right_choice",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "I don’t know if I’m making the right choice",
+      "url": "https://www.reddit.com/r/CATHELP/comments/1w5qpnk/i_dont_know_if_im_making_the_right_choice/",
+      "summary": "Hi, I genuinely don’t know if I’m making the right choice. I’m an adult in Australia and the vet is accessible but financially we can’t afford to keep going. My cat, Sassy, has eosinophilic granuloma complex. We found out about a month ago after she jumped down from her cat tree and puss started coming from her backside. An anal gland had ruptured and we took her to the emergency vet, who let us know there was a much more serious problem on our hands. She has a whole palate sized ulcer in her mouth.",
+      "deepenKey": "/r/CATHELP/comments/1w5qpnk",
+      "via": "quoted us",
+      "publishedAt": "2026-09-02T23:25:09.000Z",
+      "ref": "I36",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "537c82187d",
+      "normUrl": "https://reddit.com/r/SaaSSales/comments/1w5ka8v/how_much_does_zoominfo_cost_got_quotes_from_3",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "how much does zoominfo cost? got quotes from 3 reps, none of them matched",
+      "url": "https://www.reddit.com/r/SaaSSales/comments/1w5ka8v/how_much_does_zoominfo_cost_got_quotes_from_3/",
+      "summary": "im trying to figure out zoominfo pricing for our team and its been a complete circus. first rep quoted us $15k/yr for 3 seats. second one said $22k for the same thing. third guy came in at $18k but with diffrent features that i swear the first rep said were included. how much does zoominfo cost for real? every quote feels like theyre just making numbers up based on how desperate they think we are. the \"contact our sales team\" pricing model is exhausting.",
+      "deepenKey": "/r/SaaSSales/comments/1w5ka8v",
+      "via": "quoted us",
+      "publishedAt": "2026-09-02T19:23:07.000Z",
+      "ref": "I37",
+      "screen": {
+        "keep": true,
+        "score": 22,
+        "hits": [
+          "已经在花钱",
+          "提到了具体金额",
+          "有具体人群"
+        ],
+        "detail": {
+          "signal": 16,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "im trying to figure out zoominfo pricing for our team and its been a complete circus. first rep quoted us $15k/yr for 3 seats. second one said $22k for the same thing. third guy came in at $18k but with diffrent features that i swear the first rep said were included. how much does zoominfo cost for real? every quote feels like theyre just making numbers up based on how desperate they think we are. the \"contact our sales team\" pricing model is exhausting. my boss keeps asking me for a number and i literally dont have one becuase it changes every conversation lol we're a 25 person SaaS startup doing ABM campaigns into enterprise accounts. need good mobile numbers and technographics data. also looked at Apollo but thier mobile data seems weaker from what ive seen. someone on another thread mentioned Prospeo too but havent dug into it yet. anyone know what zoominfo cost actually looks like these days? or have experience with sales intelligence alternatives that dont require a PhD in negotiation just to get a straight answer?",
+        "comments": [
+          {
+            "text": "Prices depend upon the number of seats, features offered, AND the number of contacts. PLUS, Zoom reps are paid based commissions. So…. Ask for a spreadsheet of features and number of contacts to accompany each quote. Caveat: Zoom is VERY aggressive in enforcing the usage of their data, AFTER your contract expires. They seed their lists with email addresses actually owned by Zoom itself."
+          },
+          {
+            "text": "the reason you cant get a straight number is zoominfo (like most \"contact sales\" data vendors) prices on a value-extraction model, the price is basically f(seats, credits, which data modules, contract length, and how much budget they think you have). your quotes differ mostly because the PACKAGE differs, mobile dials, technographics and intent are expensive add-on modules that arent always bundled, so \"different features\" is exactly where the price is hiding."
+          },
+          {
+            "text": "Pay me $5k, and I’ll slip you my signin?!?!"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:22:06.448Z"
+      }
+    },
+    {
+      "id": "3adb7277bb",
+      "normUrl": "https://reddit.com/r/kitchenremodel/comments/1w5f6sf/help_problems_with_international_kitchen_project",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Help - Problems with International kitchen project manager",
+      "url": "https://www.reddit.com/r/kitchenremodel/comments/1w5f6sf/help_problems_with_international_kitchen_project/",
+      "summary": "Hi all, I am in a little bit of a pickle and I would really like your help. We are currently based in the Netherlands and are in the process of buying a house. As with most Dutch homes, we also have a very small and narrow kitchen and as such we really wanted to renovate it. We went to Ikea as well as kvik in the Netherlands but as my family is from Poland, I got recommended a Polish kitchen designer who makes all the kitchens custom made. I had my first meeting with her face to face in July and since then we have come up with a design that I truly love.",
+      "deepenKey": "/r/kitchenremodel/comments/1w5f6sf",
+      "via": "quoted us",
+      "publishedAt": "2026-09-02T16:25:52.000Z",
+      "ref": "I38",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "25f126aa4e",
+      "normUrl": "https://reddit.com/r/StupidCarQuestions/comments/1w5dvs4/quick_oil_change_place_screwed_me",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Quick oil change place screwed me",
+      "url": "https://www.reddit.com/r/StupidCarQuestions/comments/1w5dvs4/quick_oil_change_place_screwed_me/",
+      "summary": "Hi all - I need advice. I got a coupon from a quick-change oil place (the kind where you stay in your car), so I went there (ya girl's broke). almost immediately one of the techs came around the side to try check my cabin air filter. Well, my car's (2013 Mazda 3) cabin air filter is notoriously hard to find, so she was having a tough time. She ended up getting a drill with a phillips head on it and removed some screws, after removing the panel, to see if she could find it. She couldn't. While she was poking around she said, \"oh, that's hot!\" and pulled her hand away from something.",
+      "deepenKey": "/r/StupidCarQuestions/comments/1w5dvs4",
+      "via": "quoted us",
+      "publishedAt": "2026-09-02T15:38:41.000Z",
+      "ref": "I39",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "个人设备问题",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "fc3bf2e7d0",
+      "normUrl": "https://reddit.com/r/crvhybrid/comments/1w5bmme/steering_issue",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Steering issue",
+      "url": "https://www.reddit.com/r/crvhybrid/comments/1w5bmme/steering_issue/",
+      "summary": "We have a 2019 Honda CRV with just under 100,000 miles on it. We are having trouble with the seemingly common steering problem. We took it into Honda to be looked at and our advisor said to call Honda for assistance with the Goodwill program. Our service advisor said it’s a common problem and he has seen Honda to give anywhere from 25% to 90% towards fixing the problem.",
+      "deepenKey": "/r/crvhybrid/comments/1w5bmme",
+      "via": "quoted us",
+      "publishedAt": "2026-09-02T14:15:54.000Z",
+      "alsoFrom": [
+        {
+          "source": "Reddit 付费信号",
+          "url": "https://www.reddit.com/r/crv/comments/1w4ws78/steering_issue/"
+        }
+      ],
+      "ref": "I40",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "ef3e517474",
+      "normUrl": "https://reddit.com/r/FirstTimeHomeBuyer/comments/1w59w1y/profit_and_loss_statement",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Profit and Loss statement",
+      "url": "https://www.reddit.com/r/FirstTimeHomeBuyer/comments/1w59w1y/profit_and_loss_statement/",
+      "summary": "My husband and I have been looking for our first house and have reached out to 3 loan companies. We got pre approved for 2 out of 3 (first 230k and the other 250k) and the third wants a profit and loss sheet from my husband and will only quote us a possibility of a 100k loan. My husband has been doing contracted delivery driving for the last year and a half but got a new contracted job at a farm at the beginning of summer, which we will pay taxes on in Jan. The third company wants the P&L form for this year since Jan 1.",
+      "deepenKey": "/r/FirstTimeHomeBuyer/comments/1w59w1y",
+      "via": "quoted us",
+      "publishedAt": "2026-09-02T13:08:35.000Z",
+      "ref": "I41",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "cafac14f85",
+      "normUrl": "https://reddit.com/r/travel/comments/1w57jrd/montenegro_going_to_stari_bar",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Montenegro- going to Stari Bar",
+      "url": "https://www.reddit.com/r/travel/comments/1w57jrd/montenegro_going_to_stari_bar/",
+      "summary": "Hi! My boyfriend and I are currently in Bar, we both can’t drive but we want to go up to Stari bar and to Turčini waterfall we are considering doing it across two days and grabbing dinner in Stari bar both nights. What would be the best way to get up there? We contacted taxi driver given to us by our host but he quoted us €15 for one way just into the old town not including going up to the waterfall. Any advice much appreciated!",
+      "deepenKey": "/r/travel/comments/1w57jrd",
+      "via": "quoted us",
+      "publishedAt": "2026-09-02T11:22:46.000Z",
+      "ref": "I42",
+      "screen": {
+        "keep": true,
+        "score": 14,
+        "hits": [
+          "已经在花钱"
+        ],
+        "detail": {
+          "signal": 8,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hi! My boyfriend and I are currently in Bar, we both can’t drive but we want to go up to Stari bar and to Turčini waterfall we are considering doing it across two days and grabbing dinner in Stari bar both nights. What would be the best way to get up there? We contacted taxi driver given to us by our host but he quoted us €15 for one way just into the old town not including going up to the waterfall. Any advice much appreciated!",
+        "comments": [
+          {
+            "text": "15€ is a good price for Montenegro... There's a bus going to Stari Bar, don't know details as it didn't arrive in the hour I was waiting and I didn't want to wait longer, but locals claim it does come (usually). I don't think there is any way to get to the waterfall without a car. Montenegro's public transport isn't the best - your best bet would be to skip the waterfall and go by bus to Stari Bar only, or use the taxi you were offered. Or possibly walk to the waterfall from Stari Bar."
+          },
+          {
+            "text": "Go to the city center, where T-Com is, and wait for the bus there. It should arrive between 12:15 and 12:35(the same time every hour). Then just stay on until you reach the last stop. The ticket is 1 euro.Taxi drivers will rip you off. You can wait for the bus to take you to the Old Town on several other locations, but I don't know where you are. For the return trip, just wait at the bus stop in the Old Town and get off wherever you want. And just walk to the waterfall. Not that far"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:23:01.660Z"
+      }
+    },
+    {
+      "id": "06d1ca2c36",
+      "normUrl": "https://reddit.com/r/nova/comments/1w4vcwl/looking_for_fairlypriced_hvac_tech_quoted_18k_for",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Looking for fairly-priced HVAC tech. Quoted $1.8k for a circuit board replacement.",
+      "url": "https://www.reddit.com/r/nova/comments/1w4vcwl/looking_for_fairlypriced_hvac_tech_quoted_18k_for/",
+      "summary": "Hi all, I’m looking for recommendations for a reliable, fairly-priced HVAC technician or independent company. The situation: Our carbon monoxide alarm’s batteries leaked acid fluid into our thermostat, which completely severed the connection for both our HVAC and heating. 🙃 Since Snell installed our AC system just a year ago, we called them out first to diagnose it. The tech told us the main circuit board needs to be replaced and quoted us $1,800 for the repair. Based on initial research, that quote seems high (?). I’ve seen posts on here mentioning that Snell marks up their labor and parts.",
+      "deepenKey": "/r/nova/comments/1w4vcwl",
+      "via": "quoted us",
+      "publishedAt": "2026-09-02T00:47:46.000Z",
+      "ref": "I43",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "消费/家庭话题，不是软件需求",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "931a8aa09e",
+      "normUrl": "https://reddit.com/r/DiscoverSkardu/comments/1w4tz8j/7_day_family_trip_to_skardu_in_september_need",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "7 day family trip to Skardu in September, need some advice",
+      "url": "https://www.reddit.com/r/DiscoverSkardu/comments/1w4tz8j/7_day_family_trip_to_skardu_in_september_need/",
+      "summary": "Planning a 7 day / 6 night Skardu trip (4 adults + 2 year old) this week A private tour company quoted us around 433k for land package + 169k flights , so roughly 602k before meals/personal expenses . Their current hotel plan is: 3 nights Khoj Resort Family Villa 2 nights Rivage interconnected rooms 1 night Serena Khaplu private Prado/fuel/driver + sightseeing + 4x4 where needed I am thinking of changing it to 3 nights Khoj then 3 nights in a good Skardu city hotel , mainly because from Monday onwards I need stable internet around 6pm for a work meeting.",
+      "deepenKey": "/r/DiscoverSkardu/comments/1w4tz8j",
+      "via": "quoted us",
+      "publishedAt": "2026-09-01T23:48:34.000Z",
+      "ref": "I44",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "消费/家庭话题，不是软件需求",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "72d54f6ace",
+      "normUrl": "https://reddit.com/r/landscaping/comments/1w4sjr3/reasonable",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Reasonable?",
+      "url": "https://www.reddit.com/r/landscaping/comments/1w4sjr3/reasonable/",
+      "summary": "We our adding fill to our front yard, replacing our old concrete walkway, and adding a french drain. Ive had a few contractors quote us out for this project. Here is one of the more competitive estimates. What do you all think? Does this seem reasonable? Location: Northern Virginia",
+      "deepenKey": "/r/landscaping/comments/1w4sjr3",
+      "via": "quoted us",
+      "publishedAt": "2026-09-01T22:49:59.000Z",
+      "ref": "I45",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5a314f2c32",
+      "normUrl": "https://reddit.com/r/Albuquerque/comments/1w4d1yc/whole_home_water_softening_system_recommendations",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Whole home water softening system recommendations?",
+      "url": "https://www.reddit.com/r/Albuquerque/comments/1w4d1yc/whole_home_water_softening_system_recommendations/",
+      "summary": "Hi everyone! We had a company come out yesterday (Universal Water Systems) and we are interested in getting a whole home filter to help with hard water. They quoted us $6500 for the basic option or about $160/mo. Does anyone have any recommendations for companies to check out? TYIA!",
+      "deepenKey": "/r/Albuquerque/comments/1w4d1yc",
+      "via": "quoted us",
+      "publishedAt": "2026-09-01T14:08:21.000Z",
+      "ref": "I46",
+      "screen": {
+        "keep": true,
+        "score": 17,
+        "hits": [
+          "已经在花钱",
+          "提到了具体金额"
+        ],
+        "detail": {
+          "signal": 13,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Hi everyone! We had a company come out yesterday (Universal Water Systems) and we are interested in getting a whole home filter to help with hard water. They quoted us $6500 for the basic option or about $160/mo. Does anyone have any recommendations for companies to check out? TYIA!",
+        "comments": [
+          {
+            "text": "Call a plumber and have them install a whole house filter (with bypass ) available at Lowe’s or HD. Much cheaper and the pre and post filters are homeowner changeable. The tanks have a lifespan and you’ll know when to change by looking at your water bill."
+          },
+          {
+            "text": "Yep, and if you don't already have one, have the plumber install a ball valve so you can shut the water off to the house in case of problems so you don't have to dig around in your water cut-off at the curb. Whatever they charge is worth the convenience, but it shouldn't be much more."
+          },
+          {
+            "text": "To tack onto this. You'll want a blow down filter and a three-valve bypass, not just the junk ass plastic one that is integrated in the softener. Depending on where your water service enters the home, this can be a real pain in the ass. Also keep in mind that this setup can take up a fair amount of real estate and the discharge will need to go somewhere. If your home is newer, there is a good chance that it was built with a softener loop, usually in the garage."
+          },
+          {
+            "text": "Why does the water bill (presumably water usage) indicate when the filter needs to be changed?"
+          },
+          {
+            "text": "Yes, exactly. Edit: The pre and post filters have a relatively short lifespan maybe 100,000 gallons while the softening tanks claim (in my case) to have a 10 year / million gallon lifetime."
+          },
+          {
+            "text": "I didn't ask a yes/no question. Exactly how or why does your water usage indicate when the filter needs to be changed?"
+          },
+          {
+            "text": "Try MicroPure Water Systems - 505 792 1226. We had them set up our house few years back. Great results."
+          },
+          {
+            "text": "Agreed. Great system, doesn’t use much potassium. Very professional installation, even added a pressure regulator (our municipal system is much too high)."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:27:01.992Z"
+      }
+    },
+    {
+      "id": "9ad370ad93",
+      "normUrl": "https://reddit.com/r/msp/comments/1w5ubg0/how_are_you_managing_local_admin_accounts",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "How are you managing local admin accounts?",
+      "url": "https://www.reddit.com/r/msp/comments/1w5ubg0/how_are_you_managing_local_admin_accounts/",
+      "summary": "Hello, We've implemented LAPS for our managed clients, and it has worked well for us. We occasionally have users who want local admin access to install applications or make changes to their computers, but we usually address that through a discussion and explain why it's generally not the best approach. I'd like to know what you guys are using, along with any recommendations and things to watch out for. What about application allow-listing? Are any of you implementing it?",
+      "deepenKey": "/r/msp/comments/1w5ubg0",
+      "via": null,
+      "publishedAt": "2026-09-03T02:06:15.000Z",
+      "ref": "I47",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Hello, We've implemented LAPS for our managed clients, and it has worked well for us. We occasionally have users who want local admin access to install applications or make changes to their computers, but we usually address that through a discussion and explain why it's generally not the best approach. I'd like to know what you guys are using, along with any recommendations and things to watch out for. What about application allow-listing? Are any of you implementing it?",
+        "comments": [
+          {
+            "text": "We've been running AutoElevate for a couple years now and it solves that exact \"I need to install my weird printer driver\" headache without handing over the keys to the kingdom. The elevation requests come through to our techs' phones, they can approve or deny in seconds, and you can set rules so common stuff auto-approves after a while."
+          },
+          {
+            "text": "Well you can approve after you spend 5m logging into their app each time lol"
+          },
+          {
+            "text": "This is fixed now. You can also increase the auto logout time to 30 days and enable biometric ID. This was a nightmare before and totally fine now."
+          },
+          {
+            "text": "Oh nice! Thanks for the heads up, I'll have to check my settings. It is painful"
+          },
+          {
+            "text": "I’d recommend deploying AE in audit mode to get a feel for what’s going on, create policies that become obviously needed then flip to live"
+          },
+          {
+            "text": "Threatlocker. Policies give applications elevation at the kernel level, not the user."
+          },
+          {
+            "text": "Auto elevate or Threatlockers PAM."
+          },
+          {
+            "text": "Beyond Trust EPM. No users need admin any more."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Launch HN: OneCLI (YC S26) – OSS sandboxed agent harness for teams",
+            "points": 88,
+            "url": "https://news.ycombinator.com/item?id=49363710"
+          }
+        ],
+        "fetchedAt": "2026-09-03T08:32:25.124Z"
+      }
+    },
+    {
+      "id": "9b82ffbbee",
+      "normUrl": "https://reddit.com/r/msp/comments/1w5n5un/need_some_advice_dealing_with_misaligned",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Need some advice dealing with misaligned expectations",
+      "url": "https://www.reddit.com/r/msp/comments/1w5n5un/need_some_advice_dealing_with_misaligned/",
+      "summary": "We have a client we took on 2 months ago. Three year contract. Heavily discounted onboarding because that's what we generally do for people because we're in it for the long game and we like to start with a really solid foundation. It has been an absolute shit show. But we knew that going in. They said they had so many problems and been neglected for a decade and wanted us to just clean everything up for them. There were three sales meetings to win this so not too bad but expectations were set up front many times verbally and in writing in plain English.",
+      "deepenKey": "/r/msp/comments/1w5n5un",
+      "via": null,
+      "publishedAt": "2026-09-02T21:04:26.000Z",
+      "ref": "I48",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "We have a client we took on 2 months ago. Three year contract. Heavily discounted onboarding because that's what we generally do for people because we're in it for the long game and we like to start with a really solid foundation. It has been an absolute shit show. But we knew that going in. They said they had so many problems and been neglected for a decade and wanted us to just clean everything up for them. There were three sales meetings to win this so not too bad but expectations were set up front many times verbally and in writing in plain English. They signed a contract with us, we were to do onboarding, stabilization, and then ongoing remote and on-site support when remote support cannot assist. We have this in plain English on our contracts too. As we have continued to answer their calls and fix any little BS edge case issues like a printer we didn't know about, tablet in the warehouse that's used once a month, a network line issue between buildings, their internet went out, there was the Microsoft outage, there was a problem where their old provider didn't release their domain from proof point, we figured out very quickly and opened tickets with them. Just non-stop going above and beyond for this client. The long and the short of it is they are frustrated because they need to call us every time there's a problem. They're frustrated that we never show up despite resolving it quickly remotely. The only one we couldn't was when we had to wait for proof point and then they said it was fixed, and then a day later it wasn't fixed and the client followed up again saying it wasn't fixed, and we got on proof point again until it was. The long and the short of this is he's complaining about the couple hours of time he's needed to spend on the phone with us the past 2 months \"and all of the problems he's been having\" because we're supposed to be doing it all. He complains that he never sees us which has been a lie because he's seen us at least seven times in the last 2 months including two full days of onboarding with two people.",
+        "comments": [
+          {
+            "text": "Are you one of the decision makers? If yes - dump the client. If no - ask the decision makers to dump the client. Low paying clients that are low maintenance > higher paying clients that are this high of a maintenance. Hope that helps."
+          },
+          {
+            "text": "A ton of legacy technical debt -Red flag. Discounted onboarding - Red flag. Refuses to pay for additional users? Red flag. Hindsight is a wonderful thing, however - this one should have been filtered out in the sales process. Even if you have a rock solid 36 month agreement it’s likely to be a rough marriage. Explain to them that your two companies cultures do not seem to align. And allow them to leave - I assume your agreement has language that affords that. Your team will thank you I am sure!"
+          },
+          {
+            "text": "This. When you walk in to an environment that is poorly managed for a decade you have to ask why it got the way it is. If there is not a major staffing change, you are going to run in to the same problems as the last guy. If their existing situation is bador shows neglect, bid up not down."
+          },
+          {
+            "text": "Definitely should have been identified in presales."
+          },
+          {
+            "text": "Even if you have a rock solid 36 month agreement it’s likely to be a rough marriage It's like marrying the 5 who is sane, stable and loves you vs marrying the 9 who is bi-polar with a drinking problem and has had you locked up twice over domestic violence that never actually took place."
+          },
+          {
+            "text": "I mean, your contract should be doing the talking at this point. That said, whenever clients get bitchy like this. I sit them down and explain that I'm providing them with managed IT services for 3rd party products and services on their behalf. I don't write the software, I don't host it, I'm not the ISP and I don't warranty those things. IT is hard - and especially when you've cleaned up a mess and fix years of neglect, layout all everything that's done. I'm not the owner of the business."
+          },
+          {
+            "text": "In addition to what everyone else has already said, take the time to improve your discovery process. Some of these red flags should have been caught earlier. Also, WTF are you discounting onboarding? If a client doesn't want to pay you for your time to bring their environment into your standards, they're already not a good fit."
+          },
+          {
+            "text": "What a nightmare! It sounds like it would take considerable effort to turn this around. This is the downside of a 3-year contract and discounted onboarding. You took all the upfront risk and now you're stuck with a client who may simply be a bad fit. For this client, stop debating. Document the conversations in which they were told how work is delivered/by whom/when, what's been done so far including onsite visits, and issues resolved."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:26:06.710Z"
+      }
+    },
+    {
+      "id": "86ad7dd6d3",
+      "normUrl": "https://reddit.com/r/msp/comments/1w5ll2c/hosting_for_clients",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Hosting for clients",
+      "url": "https://www.reddit.com/r/msp/comments/1w5ll2c/hosting_for_clients/",
+      "summary": "Curious if anyone is looking at internally hosting services such as PBX, Nextcloud, ONLYOFFICE, and mail servers for clients as more people are starting to push back on prices and large datacenter type services? Essentially building your own small datacenter? I come from large corporate IT background and am used to hosting for multi-tenant or business divisions (not necessarily these software titles). Ive been designing it in my mind and it seems feasible but that doesn't make it a good idea. Do a co-location to a different city and ISP.",
+      "deepenKey": "/r/msp/comments/1w5ll2c",
+      "via": null,
+      "publishedAt": "2026-09-02T20:08:23.000Z",
+      "ref": "I49",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false,
+      "deep": {
+        "body": "Curious if anyone is looking at internally hosting services such as PBX, Nextcloud, ONLYOFFICE, and mail servers for clients as more people are starting to push back on prices and large datacenter type services? Essentially building your own small datacenter? I come from large corporate IT background and am used to hosting for multi-tenant or business divisions (not necessarily these software titles). Ive been designing it in my mind and it seems feasible but that doesn't make it a good idea. Do a co-location to a different city and ISP.",
+        "comments": [
+          {
+            "text": "You cannot compete with the pricing of most VPS hosts out there like digital ocean, vultr, etc. You surely can't beat their automation/redundancy/on-hand support, etc. I would deploy somewhere like that first and, if you get scaled up, then move in-house."
+          },
+          {
+            "text": "We have been in the self hosted/platform game (VDI, IaaS, Exchange) for more than 15 years, and are almost done killing off our exchange cluster after moving everyone to 365. VDI went from self-hosted Citrix to Citrix Cloud and now to AVD. Hosted VMs are simply just in Azure now. Ticket count is down, performance is better, risk is better managed for clients. Even with some repatriation going on, I don't think the headache of hosting mail, etc. is worth it any more."
+          },
+          {
+            "text": "What MS cloud are you on? Exactly inverse, the more MS cloud used the tickets increase. Nothing absolutely nothing is just within 10% of speed of onprem when hosted by MS."
+          },
+          {
+            "text": "mail I can agree with...its a hard market for that."
+          },
+          {
+            "text": "As much as possible I want someone else to have the headaches of providing the hosting. SOC-2 compliance, 24/7/365 staffing, dealing with the city permits and required testing of fire control systems, the whole thing is a can of worms I'm just not set up to manage."
+          },
+          {
+            "text": "City permits to have your own server room? No offense but where are you located? Our municipality gives zero F's about what happens in our building (the way it should be). The only thing we would need is a building permit if we are changing anything structurally with the building."
+          },
+          {
+            "text": "Why? This problem has already been solved. These solutions are a scale game, and you are not going to achieve global scale building the capability internally. There's a reason why Azure, Amazon, and Google cloud exist and cost what they do.... Ask anyone who spent the last decade or two running hosted or colo environments."
+          },
+          {
+            "text": "Because more conversations are starting to happen surrounding the thought of getting back out of the cloud and hosting their stuff internally again. My thought is here is a middle ground. We already include PCs and laptops as part of one of our tiers, why not add virtual datacenter. The win for them is they dont have to have it on-site but we still get the manage the environment, they feel like they are winning."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:34:04.314Z"
+      }
+    },
+    {
+      "id": "9fbc4995f6",
+      "normUrl": "https://reddit.com/r/msp/comments/1w5iyfk/scan_to_email_is_on_borrowed_time_and_every",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Scan to email is on borrowed time and every alternative has a catch. What's working for you?",
+      "url": "https://www.reddit.com/r/msp/comments/1w5iyfk/scan_to_email_is_on_borrowed_time_and_every/",
+      "summary": null,
+      "deepenKey": "/r/msp/comments/1w5iyfk",
+      "via": null,
+      "publishedAt": "2026-09-02T18:37:20.000Z",
+      "ref": "I50",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "dc8371362d",
+      "normUrl": "https://reddit.com/r/msp/comments/1w5hgzj/hudu_cloud_hosted_down",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Hudu cloud hosted down?",
+      "url": "https://www.reddit.com/r/msp/comments/1w5hgzj/hudu_cloud_hosted_down/",
+      "summary": "Can't reach our instance right now, wondering if anyone else has the same problem. Update: I can reach Hudu via 5G on my phone, but not our office ISP which uses a Cogent backbone. u/thisisnotmyssn pointed out there's a Cogent issue today. Update 2: It's up now at our office.",
+      "deepenKey": "/r/msp/comments/1w5hgzj",
+      "via": null,
+      "publishedAt": "2026-09-02T17:45:16.000Z",
+      "ref": "I51",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "个人设备问题",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "a302cee67d",
+      "normUrl": "https://reddit.com/r/msp/comments/1w5dbwp/cmmc_compliant_backup",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "CMMC compliant backup",
+      "url": "https://www.reddit.com/r/msp/comments/1w5dbwp/cmmc_compliant_backup/",
+      "summary": "Good morning! I've a client who is CMMC L2 compliant. We backup their server using Veeam. 3TB of data that replicates to their GCC-H tenant. So far, so good. Now they need 10TB of storage. We're going the server route. Server has about 10TB of storage with a couple of extra empty bays. Yes, we could use the same model again but to be honest, I'd be more comfortable if someone else was handling the backups. Anyone have a VSP or other solution they'd recommend?",
+      "deepenKey": "/r/msp/comments/1w5dbwp",
+      "via": null,
+      "publishedAt": "2026-09-02T15:18:48.000Z",
+      "ref": "I52",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false,
+      "deepError": "fetch failed"
+    },
+    {
+      "id": "ddf13e30c3",
+      "normUrl": "https://reddit.com/r/msp/comments/1w5amjp/eset_protect_huge_price_increase",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Eset Protect Huge Price Increase?",
+      "url": "https://www.reddit.com/r/msp/comments/1w5amjp/eset_protect_huge_price_increase/",
+      "summary": "I'm curious if anyone else has experienced this this month? We just got our bill from Eset Protect MSP and it has increased overall 31% from last month. The same exact number of seat days, no added licenses. Pure increase. I don't recall getting any notification from them about this and I'm curious if anyone else has seen that or got a notification email prior to this month?",
+      "deepenKey": "/r/msp/comments/1w5amjp",
+      "via": null,
+      "publishedAt": "2026-09-02T13:37:45.000Z",
+      "ref": "I53",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "0b4eb074de",
+      "normUrl": "https://reddit.com/r/msp/comments/1w5888o/msp_centric_acronyms",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "MSP Centric Acronyms",
+      "url": "https://www.reddit.com/r/msp/comments/1w5888o/msp_centric_acronyms/",
+      "summary": "I've got a new hire coming onboard who doesn't come from the MSP or IT space. I used MDR with them the other day and they had a look of sheer confusion on their face. Figured it would be nice to have a list of common MSP acronyms we can hand to new hires as a reference. Here's my list so far, what am I missing?",
+      "deepenKey": "/r/msp/comments/1w5888o",
+      "via": null,
+      "publishedAt": "2026-09-02T11:56:37.000Z",
+      "ref": "I54",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "fc47fb1ada",
+      "normUrl": "https://reddit.com/r/msp/comments/1w57pns/small_home_accounts_takeover",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Small Home Accounts Takeover",
+      "url": "https://www.reddit.com/r/msp/comments/1w57pns/small_home_accounts_takeover/",
+      "summary": "Hello, I'm looking for someone in the New York City area to take over a handful of 1 seat accounts and provide a few things in return: 10% of the revenue from these accounts Referrals for any new large accounts you can't handle. We'll provide 10% labor revenue from these accounts for a year. edit: don't care much about the revenue but would still like to verbally agree to trade referrals",
+      "deepenKey": "/r/msp/comments/1w57pns",
+      "via": null,
+      "publishedAt": "2026-09-02T11:31:04.000Z",
+      "ref": "I55",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "36807922a6",
+      "normUrl": "https://reddit.com/r/msp/comments/1w5707u/any_netherlands_msps_that_deal_with_ziggo_on_here",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Any Netherlands MSP's that deal with Ziggo on here? I need some advice!",
+      "url": "https://www.reddit.com/r/msp/comments/1w5707u/any_netherlands_msps_that_deal_with_ziggo_on_here/",
+      "summary": "Would be very grateful for a quick chat",
+      "deepenKey": "/r/msp/comments/1w5707u",
+      "via": null,
+      "publishedAt": "2026-09-02T10:54:43.000Z",
+      "ref": "I56",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "935e9e2f8c",
+      "normUrl": "https://reddit.com/r/msp/comments/1w4w0pd/a_user_that_was_termed_and_got_walked_out_of_the",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "A user that was termed and got walked out of the office is playing Afroman on office speakers that his personal Spotify is still linked to. And how was your Tuesday?",
+      "url": "https://www.reddit.com/r/msp/comments/1w4w0pd/a_user_that_was_termed_and_got_walked_out_of_the/",
+      "summary": "I was laughing too hard to ask which songs specifically he was playing.",
+      "deepenKey": "/r/msp/comments/1w4w0pd",
+      "via": null,
+      "publishedAt": "2026-09-02T01:17:17.000Z",
+      "ref": "I57",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "55c30475be",
+      "normUrl": "https://reddit.com/r/msp/comments/1w4vjb4/lenovo_warranty_service_rant",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Lenovo Warranty Service Rant",
+      "url": "https://www.reddit.com/r/msp/comments/1w4vjb4/lenovo_warranty_service_rant/",
+      "summary": "I have had some bad experiences with the techs from World Wide Tech Services and Unisys over the years with Dell and Lenovo. However now Lenovo is using Hemmersbach, and they are apparently worse; they can't even manage to get a tech onsite. Luckily it is just an audio issue on a laptop, and the end user is being way more patient than I would be. Friday the tech assigned never showed and wouldn't answer his phone for Hemmersbach dispatcher or me, finally late in the day he did answer my call and simply said he \"couldn't do the job\".",
+      "deepenKey": "/r/msp/comments/1w4vjb4",
+      "via": null,
+      "publishedAt": "2026-09-02T00:55:54.000Z",
+      "ref": "I58",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "个人故障求助",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "eaf6a8da53",
+      "normUrl": "https://reddit.com/r/msp/comments/1w4snly/how_do_you_deal_with_clients_asking_for_things",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "How do you deal with clients asking for things outside the scope of our agreement?",
+      "url": "https://www.reddit.com/r/msp/comments/1w4snly/how_do_you_deal_with_clients_asking_for_things/",
+      "summary": "Hello, I have a client where the scope of our agreement is limited to IT support, security services, managing their network/infrastructure, and backups. Data analysis, business automation (Power Apps, for example), etc., are outside the scope and are clearly excluded from the contract. To be clear, we can manage the Microsoft 365 infrastructure, but we don’t design or maintain Power Automate flows, for example. Have you dealt with any clients like this? I’m happy to answer any questions if anything isn’t clear.",
+      "deepenKey": "/r/msp/comments/1w4snly",
+      "via": null,
+      "publishedAt": "2026-09-01T22:54:22.000Z",
+      "ref": "I59",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "心理求助",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "ef61488ff7",
+      "normUrl": "https://reddit.com/r/msp/comments/1w4rrh3/halo_outage_today",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Halo outage today",
+      "url": "https://www.reddit.com/r/msp/comments/1w4rrh3/halo_outage_today/",
+      "summary": "I’m surprised to see no mention here of the Halo USA region outage that started about six hours ago, and that seems to have no new info or end in sight. The outage info posted on their status page states the cause is “believed to be around the generation of a new data protection key,” and then adds minutes later that “the issue is fixed for the majority of customers, with the last few being brought back now.” But more than three hours after that note, the app is still offline.",
+      "deepenKey": "/r/msp/comments/1w4rrh3",
+      "via": null,
+      "publishedAt": "2026-09-01T22:19:38.000Z",
+      "ref": "I60",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8625a94e68",
+      "normUrl": "https://reddit.com/r/msp/comments/1w4qgb8/intermedia_fax_upload_update",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Intermedia fax upload update.",
+      "url": "https://www.reddit.com/r/msp/comments/1w4qgb8/intermedia_fax_upload_update/",
+      "summary": "Question for those who also resell intermedia's web faxing. What are y'all doing to help with the application updates of the \"fax upload\" client? Support claims there isn't a way to push the new client out. Certainly someone has figured this out? I've seen a few scripts, but they seem to be a bit dated and don't work in my testing.",
+      "deepenKey": "/r/msp/comments/1w4qgb8",
+      "via": null,
+      "publishedAt": "2026-09-01T21:31:24.000Z",
+      "ref": "I61",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "c7e9f13633",
+      "normUrl": "https://reddit.com/r/msp/comments/1w4psma/lpl_financial_security_team_borderline_retarded",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "LPL Financial Security Team - Borderline Retarded",
+      "url": "https://www.reddit.com/r/msp/comments/1w4psma/lpl_financial_security_team_borderline_retarded/",
+      "summary": "Sharing this because I am fairly confident I am correct and they are not. Last night we uninstalled our SentinelOne and installed their CrowdStrike. We still have our NinjaOne there. This occurred at 1:49AM. Around 2:00AM, their team deemed the computer compromised. We run scripts in the background causing this and I am pretty sure it's NinjaOne and our scripts tripping a false positive but they don't want to provide us any logs.",
+      "deepenKey": "/r/msp/comments/1w4psma",
+      "via": null,
+      "publishedAt": "2026-09-01T21:12:56.000Z",
+      "ref": "I62",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3114554d29",
+      "normUrl": "https://reddit.com/r/msp/comments/1w4g184/upcoming_pricing_changes_updated_information_from",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Upcoming Pricing Changes - Updated Information from PAX8",
+      "url": "https://www.reddit.com/r/msp/comments/1w4g184/upcoming_pricing_changes_updated_information_from/",
+      "summary": "This post came out a couple of days ago: https://www.reddit.com/r/msp/comments/1w3izyk/for_the_second_year_in_a_row_microsoft_is/ and I think it was missing some information. I contacted my (fantastic) PAX8 rep, and got the below response. The \"Change #2\" section was, I think, absent from the above post and I suspect it will the larger impact for most people on this sub: The TL;DR seems to be a margin cut to 12% on \"less-favored\" M365 SKUs Starting 10/1. No change to MSRP, so it isn't being framed as a \"price increase\" just a multi-point hit to margin.",
+      "deepenKey": "/r/msp/comments/1w4g184",
+      "via": null,
+      "publishedAt": "2026-09-01T15:55:40.000Z",
+      "ref": "I63",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "元讨论",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "b9ab40c846",
+      "normUrl": "https://reddit.com/r/msp/comments/1w3xg40/threatdown_90_day_cancellation_fee",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "ThreatDown - 90 day cancellation Fee",
+      "url": "https://www.reddit.com/r/msp/comments/1w3xg40/threatdown_90_day_cancellation_fee/",
+      "summary": "I really liked using MalwareBytes Threatdown security software. It worked great for 2 years with one of my school district customers that purchased 500 licenses under their MSP program. A lot less money than the previous security software and I still made great commissions. I discovered a surprise with the cancellation of their MSP program. They want me to take money out of my pockets for cancelling my participation in their MSP program with 3 months of $100.00 payments. That's free money for them. I look at contracts very closely and would not have missed that small requirement.",
+      "deepenKey": "/r/msp/comments/1w3xg40",
+      "via": null,
+      "publishedAt": "2026-09-01T01:18:07.000Z",
+      "ref": "I64",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4e9a4fde24",
+      "normUrl": "https://reddit.com/r/msp/comments/1w3vc79/microsoft_partner_benefits_3_months_5_support",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Microsoft Partner Benefits - 3 months, 5 support tickets, no resolution. Need help finding an escalation path.",
+      "url": "https://www.reddit.com/r/msp/comments/1w3vc79/microsoft_partner_benefits_3_months_5_support/",
+      "summary": null,
+      "deepenKey": "/r/msp/comments/1w3vc79",
+      "via": null,
+      "publishedAt": "2026-08-31T23:48:59.000Z",
+      "ref": "I65",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6f7c6c4a99",
+      "normUrl": "https://reddit.com/r/msp/comments/1w3suqj/ninja_comanagement_at_scale_problems",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Ninja co-management at scale- problems?",
+      "url": "https://www.reddit.com/r/msp/comments/1w3suqj/ninja_comanagement_at_scale_problems/",
+      "summary": "I've got some familiarity with Ninja so this isn't a \"can we\", more of a \"should we\". I have an opportunity to sell Ninja to a fairly large but very immature org (5,000-10,000 seats). The catch is, I've only managed Ninja for internal clients, never co-managed. They would be using it specifically for windows server & endpoint patching, remote access and management. No Macs, ticketing, or MDM. We're not displacing an existing solution, this would be net-new to them. My question is: what pitfalls are there with co-management at scale?",
+      "deepenKey": "/r/msp/comments/1w3suqj",
+      "via": null,
+      "publishedAt": "2026-08-31T22:12:28.000Z",
+      "ref": "I66",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4a6def7977",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1w58hv8/midlife_it_crisis",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "Midlife IT Crisis",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1w58hv8/midlife_it_crisis/",
+      "summary": "I think I’m having a mid-life IT guy crisis. 😂 I’m 47, 20+ years into IT, swamped with projects, emails, upgrades, security issues, and Microsoft changing something every 12 minutes. Lately I look at my workload and my brain just throws a 404 The weird part is I still love IT and I love the company I work for. I just can’t seem to care about any of it right now, and that’s not like me. I even started working out to help, so now I’m unmotivated AND sore. 😂 Has anyone else hit this wall after 20+ years in IT? What helped reignite the spark in your brain and stopped the procrasanation monster.",
+      "deepenKey": "/r/sysadmin/comments/1w58hv8",
+      "via": null,
+      "publishedAt": "2026-09-02T12:08:40.000Z",
+      "ref": "I67",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false,
+      "deepError": "fetch failed"
+    },
+    {
+      "id": "bc29135a69",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1w5a9u5/so_burned_out",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "So burned out",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1w5a9u5/so_burned_out/",
+      "summary": "Another burnout post incoming. Turn away and avert your eyes because I don't even know why I'm writing it, so it'll probably be a waste of your time. I'm so fucking burned out of IT. It only took 5 years. I hate that everyone's fucking problem is my problem. It's just problem after problem after problem. FUCK these problems. Why are we fucking doing this? Why are we looking at a screen every day and acting like this is important. Literally absolutely nothing done on the internet is important. This is all so pointless. It's literally all words.",
+      "deepenKey": "/r/sysadmin/comments/1w5a9u5",
+      "via": null,
+      "publishedAt": "2026-09-02T13:23:56.000Z",
+      "ref": "I68",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "心理求助",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "6fdc990c94",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1w56pfv/35_microsoft_365_changes_coming_in_september_2026",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "35+ Microsoft 365 Changes Coming in September 2026",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1w56pfv/35_microsoft_365_changes_coming_in_september_2026/",
+      "summary": "Stay ahead this September with 35+ Microsoft 365 changes , including feature rollouts, retirements, functionality changes, and other key updates for IT admins. In the Spotlight: Entra Moves Toward Passkeys: Starting September 1, passkeys become the default authentication experience, signaling Microsoft’s shift away from SMS/voice MFA toward phishing-resistant authentication. SharePoint Introduces a New Hero Link: A new file and folder sharing experience lets users use one link to share files and folders.",
+      "deepenKey": "/r/sysadmin/comments/1w56pfv",
+      "via": null,
+      "publishedAt": "2026-09-02T10:38:44.000Z",
+      "ref": "I69",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false,
+      "deep": {
+        "body": "Stay ahead this September with 35+ Microsoft 365 changes , including feature rollouts, retirements, functionality changes, and other key updates for IT admins. In the Spotlight: Entra Moves Toward Passkeys: Starting September 1, passkeys become the default authentication experience, signaling Microsoft’s shift away from SMS/voice MFA toward phishing-resistant authentication. SharePoint Introduces a New Hero Link: A new file and folder sharing experience lets users use one link to share files and folders. Users can update the existing link when access requirements change instead of creating and sharing a new link. Defender Gets Prompt Injection Protection: Defender for Office 365 will detect malicious emails designed to manipulate AI assistants and agents, classify them as High Confidence Phish, and quarantine them automatically. SharePoint Storage Moves to Pay-As-You-Go: Pay-as-you-go billing for extra SharePoint storage becomes generally available worldwide, allowing organizations to pay based on actual storage consumption instead of purchasing fixed capacity. Beyond these highlights, here’s a quick look at what else is coming this September: Retirements: 7 New Features: 7 Enhancements: 7 Functionality Changes: 6 Action Required: 4 Live Now: 3 Retirements: Starting September 2, Microsoft Power Automate will retire the legacy chatbot experience . Microsoft Teams will retire Android device management capabilities from the Teams admin center as management moves to the Teams Rooms Pro Management portal. The Exchange admin center will retire the Other Features page. Microsoft Education will retire legacy LTI tools , including Teams Assignments, OneDrive, OneNote Class Notebook, and Reflect, in favor of the unified Microsoft 365 LTI tool. Microsoft Edge will retire support for Windows Information Protection and Microsoft Defender Application Guard . Microsoft Defender for Cloud Apps will retire App Governance support for the Cloud Application Administrator role when Unified RBAC is enabled. Microsoft Entra ID will retire Conditional Access Custom Controls , with External MFA becoming the replacement for third-party MFA integrations.",
+        "comments": [
+          {
+            "text": "Thank you for sharing! I love these kinds of posts, super useful summary."
+          },
+          {
+            "text": "u/Different_Coffee_161 Great to hear the roundup helped."
+          },
+          {
+            "text": "Absolutely love the post! Would you mind sharing where I can find this list of changes? Whenever I read the “whats new” its always feels very bloated and disorganised."
+          },
+          {
+            "text": "Thank you! You can find the complete list here: https://blog.admindroid.com/microsoft-365-end-of-support-milestones/"
+          },
+          {
+            "text": "I am so not looking forward to Passkeys being the norm. I understand why they want to push them but...yeah. all I'll say is that quite a few orgs I manage have very colorfully expressed their disdain for it."
+          },
+          {
+            "text": "I like passkeys personally, I've used them for six or so years now for as many accounts as possible and am glad there is more adoption. That being said, getting end users to wrap their heads around the concept of a passkey has been incredibly difficult for us. Combined with a lack of a unified password manager across the company (users just kinda store these things on whatever computer they're currently on), they get misplaced all the time."
+          },
+          {
+            "text": "I don't think it actually benefits users, it really benefits the websites. It is pushing the private/secret storage onto the user, so the website no longer has to worry about having password hashes stolen. If the website gets hacked, the attackers only get the public key part of the passkey, which is meant to the public anyway, so they basically won't care."
+          },
+          {
+            "text": "I think I need to dig more into them. The couple of places I've seen them used so far, they've worked poorly. The org I support that uses them as a primary is kind of a shitshow and there's a real good chance they're just incorrectly setup, but I have to reset my MFA weekly there because the Passkey stops working."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:35:19.467Z"
+      }
+    },
+    {
+      "id": "59371dc2e6",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1w4jucs/update_hospitality_guy_in_it",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "UPDATE: Hospitality Guy in IT",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1w4jucs/update_hospitality_guy_in_it/",
+      "summary": "previous post (got removed by mods, but its the same post) So basically, i joined today and after the onboarding, i met with the current IT guy (who is on his notice period) The situation is precarious to say the least. IT budget is severely limited, a bunch of systems are on Active Directory (controlled by an older IBM Intel Xeon machine running Windows Server 2008) , a bunch of systems are not on Active directory There are 3 headless Windows Machines around the offices acting as fileservers, disk management is messy all around, the entire network is flat with no segmentation or separation of…",
+      "deepenKey": "/r/sysadmin/comments/1w4jucs",
+      "via": null,
+      "publishedAt": "2026-09-01T18:05:54.000Z",
+      "ref": "I70",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "previous post (got removed by mods, but its the same post) So basically, i joined today and after the onboarding, i met with the current IT guy (who is on his notice period) The situation is precarious to say the least. IT budget is severely limited, a bunch of systems are on Active Directory (controlled by an older IBM Intel Xeon machine running Windows Server 2008) , a bunch of systems are not on Active directory There are 3 headless Windows Machines around the offices acting as fileservers, disk management is messy all around, the entire network is flat with no segmentation or separation of any kind, no NVRs, just 2 DVRs All Windows installs are not genuine/cracked versions (not by massgrave but the sketchy iso you get from shady websites) The primary database of the Dealership lives on a 1TB SATA HDD on a headless windows PC , which holds data of a tally server , file server and an apache based website that is used for storing purchase information This disk has NO BACKUPS OR REDUNDANCY! and this disk is accessed constantly everyday for 9hrs There is a FortiGate 50G Firewall standing between this network and the wide open web After work hours, they shut down all systems including the servers. Now, im not an expert, but this felt like it was one disk failure away from complete catastrophe. The existing sysadmin shares the same sentiment, he proposed a proper system, however management does not feel very enthusiastic about it, citing costs, they see IT as a simple tool I don't blame the current sysadmin, but i feel like i should unfuck this clusterfuck before it blows up in my face. Now, the total number of clients in the network is about 60 systems, running anywhere between Windows 8.1 to Windows 10 and about 5 printers Now, a lot of the data was stored on premise, however in 2018, the OEM mandated a lot of the data stored on cloud via their proprietary website, due to which they retired a server, which is sitting in the closet collecting dust.",
+        "comments": [
+          {
+            "text": "I stopped reading after the first few lines, bro run for your life, like how you have toxic girlfriends this is a toxic workplace."
+          },
+          {
+            "text": "I stopped reading after “they turn the servers off every night”…. WTF"
+          },
+          {
+            "text": "If you know just enough to be dangerous, this sounds like a great idea."
+          },
+          {
+            "text": "When I first started at my current job we had a site that went down every night. Turns out they were unplugging all the switches every night to save power. My initial response was pretty much the Frye squinting gif. They don't do that now. https://giphy.com/gifs/cFgb5p5e1My3K"
+          },
+          {
+            "text": "\"they air gap the servers every night\""
+          },
+          {
+            "text": "Can't get hacked if your servers are off!"
+          },
+          {
+            "text": "Yeah, this is a pretty bad situation. OP didn't even mention AV or anything, and cracked windows versions? Windows 8.1? OOOoof. I'd be reworking the resume, as well as having a frank conversation with the owner to find out what the expectations are, because there is no way that's not gonna come crashing down"
+          },
+          {
+            "text": "we don't need AV it slows stuff down. We don't need a firewall we run Windows XP no one us hacking Windows XP anymore!"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:30:06.694Z"
+      }
+    },
+    {
+      "id": "6d340aee76",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1w4vnsn/telstra_ntp_outage_a_result_of_us_not_treating",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "Telstra: NTP outage ... \"a result of us not treating network timing as a critical capability within the network\"",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1w4vnsn/telstra_ntp_outage_a_result_of_us_not_treating/",
+      "summary": "https://www.telstra.com.au/exchange/what-we-ve-learned-from-the-external-investigation-of-our-july-o An interesting and frank overview of the recent mobile outage in Australia on the Telstra network due to an NTP outage. \"We didn't realise how important this was, and nobody really owned the service.\"",
+      "deepenKey": "/r/sysadmin/comments/1w4vnsn",
+      "via": null,
+      "publishedAt": "2026-09-02T01:01:28.000Z",
+      "ref": "I71",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1d23eb1a6b",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1w5e8vc/proxmox_expands_enterprise_support_to_247",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "Proxmox expands Enterprise support to 24/7",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1w5e8vc/proxmox_expands_enterprise_support_to_247/",
+      "summary": "https://www.proxmox.com/en/about/company-details/press-releases/proxmox-24-7-support-and-proxmox-north-america 24x7 support coming October 17th for Enterprise support customers. North American offices in Kingston, ON.",
+      "deepenKey": "/r/sysadmin/comments/1w5e8vc",
+      "via": null,
+      "publishedAt": "2026-09-02T15:52:03.000Z",
+      "ref": "I72",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "f33a7e5fcb",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1w5k29g/does_everyone_have_people_vanish_after_asking_for",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "Does everyone have people vanish after asking for help?",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1w5k29g/does_everyone_have_people_vanish_after_asking_for/",
+      "summary": "- \"I'm having an issue, can you connect to my PC and have a look?\" - \"Sure, be on there in a minute.\" ...one minute later.... - \"OK I'm on. Show me the issue.\" - \".........\" - \"Are you there?\" - \"..........\"",
+      "deepenKey": "/r/sysadmin/comments/1w5k29g",
+      "via": null,
+      "publishedAt": "2026-09-02T19:15:21.000Z",
+      "ref": "I73",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "个人设备问题",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "033e797a01",
+      "normUrl": "https://producthunt.com/products/fillo-native-forms-without-the-backend",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Fillo",
+      "url": "https://www.producthunt.com/products/fillo-native-forms-without-the-backend",
+      "summary": "Build forms into your product with your coding agent",
+      "publishedAt": "2026-09-02T12:06:50.000Z",
+      "ref": "I74",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Build forms into your product with your coding agent",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:26:06.710Z"
+      }
+    },
+    {
+      "id": "dc79f47930",
+      "normUrl": "https://producthunt.com/products/atlas-by-world-labs",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Atlas by World Labs",
+      "url": "https://www.producthunt.com/products/atlas-by-world-labs",
+      "summary": "Turn text, pics, video, + 3D into camera-controlled HD video",
+      "publishedAt": "2026-09-02T03:16:17.000Z",
+      "ref": "I75",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Turn text, pics, video, + 3D into camera-controlled HD video",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Atlas: A World Model for Spatial Intelligence",
+            "points": 262,
+            "url": "https://news.ycombinator.com/item?id=49525160"
+          },
+          {
+            "title": "Ask HN: What hardware/software do you recommend in a post-Adobe world?",
+            "points": 21,
+            "url": "https://news.ycombinator.com/item?id=29323174"
+          }
+        ],
+        "fetchedAt": "2026-09-03T08:26:08.212Z"
+      }
+    },
+    {
+      "id": "37a64acbdc",
+      "normUrl": "https://producthunt.com/products/causal-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Causal",
+      "url": "https://www.producthunt.com/products/causal-2",
+      "summary": "AI Powered Canvas for planning visual projects",
+      "publishedAt": "2026-09-02T11:32:44.000Z",
+      "ref": "I76",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "AI Powered Canvas for planning visual projects",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:26:08.212Z"
+      }
+    },
+    {
+      "id": "970b4f024b",
+      "normUrl": "https://producthunt.com/products/grove-8",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Grove",
+      "url": "https://www.producthunt.com/products/grove-8",
+      "summary": "One terminal for you and your AI agent",
+      "publishedAt": "2026-09-02T14:13:31.000Z",
+      "ref": "I77",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "One terminal for you and your AI agent",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:26:08.212Z"
+      }
+    },
+    {
+      "id": "3190c8da41",
+      "normUrl": "https://producthunt.com/products/codelook",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "CodeLook",
+      "url": "https://www.producthunt.com/products/codelook",
+      "summary": "Quick Look code previews with 700+ editor themes",
+      "publishedAt": "2026-09-02T19:46:18.000Z",
+      "ref": "I78",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Quick Look code previews with 700+ editor themes",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:26:08.212Z"
+      }
+    },
+    {
+      "id": "cb27dd570e",
+      "normUrl": "https://producthunt.com/products/airtop",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Agent Builder by Airtop",
+      "url": "https://www.producthunt.com/products/airtop",
+      "summary": "Build agents that heal themselves.",
+      "publishedAt": "2026-08-25T14:48:06.000Z",
+      "ref": "I79",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Build agents that heal themselves.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:26:08.600Z"
+      }
+    },
+    {
+      "id": "d77ca9aab9",
+      "normUrl": "https://producthunt.com/products/blume-codes",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Blume.codes",
+      "url": "https://www.producthunt.com/products/blume-codes",
+      "summary": "Turns coding agent sessions into better rules and skills",
+      "publishedAt": "2026-08-31T17:22:47.000Z",
+      "ref": "I80",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Turns coding agent sessions into better rules and skills",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Dress code: blue tie and male",
+            "points": 353,
+            "url": "https://news.ycombinator.com/item?id=3965084"
+          }
+        ],
+        "fetchedAt": "2026-09-03T08:26:09.086Z"
+      }
+    },
+    {
+      "id": "df9ca46c0a",
+      "normUrl": "https://producthunt.com/products/tabbitai",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Tabbit AI",
+      "url": "https://www.producthunt.com/products/tabbitai",
+      "summary": "Give your browser a task, not just a question",
+      "publishedAt": "2026-08-21T11:43:12.000Z",
+      "ref": "I81",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Give your browser a task, not just a question",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:26:09.086Z"
+      }
+    },
+    {
+      "id": "25f673321d",
+      "normUrl": "https://producthunt.com/products/open-source-ai-necklace-friend",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Omi Desktop",
+      "url": "https://www.producthunt.com/products/open-source-ai-necklace-friend",
+      "summary": "Ask your Mac anything you saw or heard",
+      "publishedAt": "2026-09-03T05:25:44.000Z",
+      "ref": "I82",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Ask your Mac anything you saw or heard",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:26:09.086Z"
+      }
+    },
+    {
+      "id": "7a4394dded",
+      "normUrl": "https://producthunt.com/products/arbr",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "ARBR",
+      "url": "https://www.producthunt.com/products/arbr",
+      "summary": "Control Every AI Request",
+      "publishedAt": "2026-08-25T11:23:26.000Z",
+      "ref": "I83",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "6f31fc7acd",
+      "normUrl": "https://producthunt.com/products/nex-4",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Nex",
+      "url": "https://www.producthunt.com/products/nex-4",
+      "summary": "Claude Cowork for high-volume GTM workflows",
+      "publishedAt": "2026-09-03T03:04:36.000Z",
+      "ref": "I84",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Claude Cowork for high-volume GTM workflows",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:26:09.086Z"
+      }
+    },
+    {
+      "id": "ff38d30cf7",
+      "normUrl": "https://producthunt.com/products/readr-3",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Readr",
+      "url": "https://www.producthunt.com/products/readr-3",
+      "summary": "A free reader that answers your questions and reads aloud",
+      "publishedAt": "2026-09-02T18:30:59.000Z",
+      "ref": "I85",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "A free reader that answers your questions and reads aloud",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:26:09.086Z"
+      }
+    },
+    {
+      "id": "d006a63b74",
+      "normUrl": "https://producthunt.com/products/magicrew",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "MagiCrew",
+      "url": "https://www.producthunt.com/products/magicrew",
+      "summary": "Give everyone their own AI workforce in one platform",
+      "publishedAt": "2026-08-18T14:55:47.000Z",
+      "ref": "I86",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Give everyone their own AI workforce in one platform",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T08:26:09.086Z"
+      }
+    },
+    {
+      "id": "e76c494907",
+      "normUrl": "https://producthunt.com/products/higgsfield",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Higgsfield Genjutsu",
+      "url": "https://www.producthunt.com/products/higgsfield",
+      "summary": "Recast motion with your characters, locations & products",
+      "publishedAt": "2026-09-02T18:56:29.000Z",
+      "ref": "I87",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "62cf08f634",
+      "normUrl": "https://producthunt.com/products/tidy-6",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Tidy",
+      "url": "https://www.producthunt.com/products/tidy-6",
+      "summary": "Fix grammar in any Mac app with one shortcut",
+      "publishedAt": "2026-09-01T19:04:06.000Z",
+      "ref": "I88",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5057cb58cf",
+      "normUrl": "https://producthunt.com/products/thaw-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Thaw",
+      "url": "https://www.producthunt.com/products/thaw-2",
+      "summary": "The only app that owns your whole menu bar, in and out",
+      "publishedAt": "2026-09-02T21:02:22.000Z",
+      "ref": "I89",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "991b902bb4",
+      "normUrl": "https://producthunt.com/products/ghostreply-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "GhostReply",
+      "url": "https://www.producthunt.com/products/ghostreply-2",
+      "summary": "AI auto-replier for iMessage on your Mac",
+      "publishedAt": "2026-09-01T04:35:26.000Z",
+      "ref": "I90",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "48ac85251d",
+      "normUrl": "https://news.ycombinator.com/item?id=49545411",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "The cheapest GPU cloud – H100s at $2.04/HR, H200s at $3/HR",
+      "url": "https://news.ycombinator.com/item?id=49545411",
+      "externalUrl": "https://compute.cheap/",
+      "summary": null,
+      "deepenKey": "49545411",
+      "via": null,
+      "signal": {
+        "points": 19,
+        "comments": 3
+      },
+      "publishedAt": "2026-09-03T02:50:47Z",
+      "ref": "I91",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "fa5d851109",
+      "normUrl": "https://news.ycombinator.com/item?id=49543617",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Every AI agrees with you. This writes your startup's obituary instead",
+      "url": "https://news.ycombinator.com/item?id=49543617",
+      "externalUrl": "https://theyfell.com/",
+      "summary": null,
+      "deepenKey": "49543617",
+      "via": null,
+      "signal": {
+        "points": 9,
+        "comments": 7
+      },
+      "publishedAt": "2026-09-02T22:45:39Z",
+      "ref": "I92",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "c962cb6356",
+      "normUrl": "https://news.ycombinator.com/item?id=49539913",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "I built a version of Omarchy that runs on Apple Silicon",
+      "url": "https://news.ycombinator.com/item?id=49539913",
+      "externalUrl": "https://github.com/themartiano/try-omarchy",
+      "summary": "I wanted to try out Omarchy before doing a full install, but I only have an M series MacBook so I would have to find a laptop and there's no official M support yet. So I decided to create something that allows people to test and run Omarchy on their devices so they can understand how it feels. So I built an app that allows you to run Omarchy Quattro as a native, hardware-accelerated app on your Apple Silicon Mac! It uses QEMU and Apple's HVF, a custom built Omarchy ARM image, a swift app enclosing it, and custom patches on Omarchy, QEMU, Hyprland and more.",
+      "deepenKey": "49539913",
+      "via": null,
+      "signal": {
+        "points": 20,
+        "comments": 6
+      },
+      "publishedAt": "2026-09-02T17:54:32Z",
+      "ref": "I93",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I wanted to try out Omarchy before doing a full install, but I only have an M series MacBook so I would have to find a laptop and there's no official M support yet. So I decided to create something that allows people to test and run Omarchy on their devices so they can understand how it feels. So I built an app that allows you to run Omarchy Quattro as a native, hardware-accelerated app on your Apple Silicon Mac! It uses QEMU and Apple's HVF, a custom built Omarchy ARM image, a swift app enclosing it, and custom patches on Omarchy, QEMU, Hyprland and more. I tried many things, and this approach achieved the best results. The native keyboard experience with Super shortcuts works very well, along with all the rest. It supports any resolution (fixed ratio), retina or non retina displays, audio input / output devices, shared clipboard, and many other features. Since it runs on top of macOS, native features like universal clipboard and AirPods work smoothly. It takes ~3min to install, works the same as any other standard macOS app. The whole project is open source, so feel free it check it out on GitHub, install, PRs, etc.",
+        "comments": [
+          {
+            "text": "Tried this out and worked so well I bought a usb stick (because who owns those these days) and installed on my wife’s machine…"
+          },
+          {
+            "text": "Great work, thanks for sharing!"
+          },
+          {
+            "text": "I've used it and it's really great!"
+          },
+          {
+            "text": "Good job. Was going to hold off until I got a new power cord for the old laptop. Now I'll get to see it in action on my MAC. Thanks for this!"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: I built a version of Omarchy that runs on Apple Silicon",
+            "points": 20,
+            "url": "https://news.ycombinator.com/item?id=49539913"
+          }
+        ],
+        "fetchedAt": "2026-09-03T08:26:09.925Z"
+      }
+    },
+    {
+      "id": "3aea2086b4",
+      "normUrl": "https://trends.vc/synthetic-audiences-verified-humans-panel-fraud-consent-gap",
+      "sourceId": "trendsvc",
+      "source": "Trends.vc",
+      "sourceHome": "https://trends.vc/",
+      "side": "trend",
+      "pool": false,
+      "title": "Synthetic Audiences: Verified Humans, Panel Fraud, Consent Gap",
+      "url": "https://trends.vc/synthetic-audiences-verified-humans-panel-fraud-consent-gap/",
+      "summary": "“Public opinion is no more than this, What people think that other people think.” – Alfred Austin Get Full Access to Trends Pro ❓ What You’ll Learn 💎 Why It Matters A simulated person now takes the first pass at the survey a real one used to be paid for. 🔍 Problem You need to … Continue reading Synthetic Audiences: Verified Humans, Panel Fraud, Consent Gap → The post Synthetic Audiences: Verified Humans, Panel Fraud, Consent Gap appeared first on Trends.vc .",
+      "publishedAt": "2026-09-03T01:35:53.000Z",
+      "ref": "I94",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "附录源，不参与评选",
+        "hits": []
+      },
+      "candidate": false
+    }
+  ],
+  "deepenedAt": "2026-09-03T08:38:27.499Z"
+}

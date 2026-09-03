@@ -127,7 +127,15 @@ async function main() {
   const template = await readFile(TEMPLATE, 'utf-8');
 
   // 转义 < 防止正文里的 </script> 提前闭合标签（< 在 JSON 里等价于 <）
-  const payload = JSON.stringify({ builtAt: new Date().toISOString(), sourceOrder: SOURCE_ORDER, sourceManifest, issues })
+  // site 描述本页和姊妹页的差异，模板照它调报头和 EN 切换。
+  // 两个页面共用 viewer/template.html —— 样式仍然只有一个真相源。
+  const site = {
+    title: '建造者档案',
+    tagline: 'Follow Builders · 本地存档',
+    hasEn: true,
+    sibling: { href: 'ideas.html', label: '灵感' }
+  };
+  const payload = JSON.stringify({ builtAt: new Date().toISOString(), site, sourceOrder: SOURCE_ORDER, sourceManifest, issues })
     .replace(/</g, '\\u003c');
 
   if (!DATA_SLOT.test(template)) {

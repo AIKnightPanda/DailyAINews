@@ -1,0 +1,110 @@
+# 灵感候选源预抓
+# ============================================================================
+# 在 Routine（21:30 UTC）之前把榜单和订阅邮件抓好，提交进仓库，Routine 起来直接读。
+#
+# 和 fetch-extra 的关系：那个是备份（云端也能实时抓），**这个不是**。
+# 候选部分云端可以实时抓，但**邮件部分只能在这里跑** —— Routine 的沙箱里
+# 没有 Gmail 凭证，也不该有。所以这条工作流挂了，当期就没有 IdeaBrowser 那条。
+#
+# 排在 fetch-extra（21:00）之前，两条工作流都往 main 推，靠 rebase 重试避让。
+name: fetch-ideas
+
+on:
+  schedule:
+    - cron: '40 20 * * *'     # 比 fetch-extra 早 20 分钟，比 Routine 早 50 分钟
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-ideas
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # 期号取 Asia/Shanghai 当天，和 ideas-archive.js 的规则一致。
+      # UTC 20:40 已经是北京时间次日 04:40，所以这里必须 +8 小时再取日期。
+      - name: 定期号
+        run: echo "ISSUE=$(TZ=Asia/Shanghai date +%F)" >> "$GITHUB_ENV"
+
+      # reddit 那几个源串行 + 退避（含短语搜索），整步约 3–5 分钟，正常
+      - name: 抓候选源
+        run: |
+          echo "期号 $ISSUE"
+          node scripts/fetch-candidates.js --until="$ISSUE" > ideas/candidates-pending.json || true
+          node -e '
+            const j = require("./ideas/candidates-pending.json");
+            const ok = (j.sources || []).filter(s => s.status === "ok").length;
+            console.log(`候选 ${(j.items||[]).length} 条，成功源 ${ok}/${(j.sources||[]).length}`);
+            for (const s of j.sources || []) console.log(`  ${s.status.padEnd(6)} ${s.name} ${s.error || ""}`);
+          '
+
+      # 脱敏是「不把订阅者凭证推进公开仓库」的第一道闸，跑之前先确认它还好使。
+      # 这一步失败就整个停下：宁可当天没有邮件源，也不要在闸坏了的情况下往下走。
+      - name: 自检脱敏
+        run: node scripts/fetch-inbox.js --selftest
+
+      # 没配 Secrets 时脚本自己会输出带 error 的合法结构，不会让这一步失败 ——
+      # 榜单那半边照常出，只是当期少了邮件源。
+      - name: 抓订阅邮件
+        env:
+          GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
+          GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
+          GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
+        run: |
+          node scripts/fetch-inbox.js --until="$ISSUE" > ideas/inbox-pending.json || true
+          node -e '
+            const j = require("./ideas/inbox-pending.json");
+            if (j.error) console.log(`⚠️ ${j.error}`);
+            console.log(`邮件 ${(j.items||[]).length} 条`);
+            for (const s of j.sources || []) console.log(`  ${s.status.padEnd(6)} ${s.name} ${s.error || ""}`);
+          '
+
+      # 兜底：万一 fetch-inbox.js 的 sanitize 漏了什么，别把订阅者 token
+      # 推进公开仓库。只匹配**确实是凭证**的形状，不匹配单词 —— 早先的版本
+      # 把裸词 unsubscribe 也算上，那样一条讲「退订管理」的正当点子就会让
+      # 整天的提交失败。
+      #
+      # 命中不是让整个工作流失败，而是**只丢掉邮件那半边**：榜单照常提交。
+      # 「绝不泄漏」和「绝不因此丢掉一整天」两条都要满足。
+      - name: 检查没有个人凭证漏出去
+        run: |
+          if grep -aEiq 'https?://[^"]*(unsubscribe|/preferences|list-manage)|[?&]token=|eyJ[A-Za-z0-9_-]{12,}\.[A-Za-z0-9_-]{12,}' ideas/inbox-pending.json; then
+            echo "::warning::邮件预抓结果里出现疑似个人凭证，已丢弃该文件，本期不带邮件源"
+            node -e '
+              const fs = require("fs");
+              fs.writeFileSync("ideas/inbox-pending.json", JSON.stringify({
+                fetchedAt: new Date().toISOString(),
+                windowUntil: process.env.ISSUE + "T23:59:59.000Z",
+                error: "预抓结果疑似含个人凭证，已丢弃（见 fetch-ideas 工作流日志）",
+                sources: [], items: []
+              }, null, 2));
+            '
+          else
+            echo "干净"
+          fi
+
+      - name: 提交
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ideas/candidates-pending.json ideas/inbox-pending.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "无变化，不提交"
+          else
+            git commit -m "chore: 预抓灵感源 $ISSUE"
+            for i in 1 2 3; do
+              git push origin main && break
+              echo "推送失败，rebase 后重试 ($i/3)"
+              git pull --rebase origin main || exit 1
+            done
+          fi

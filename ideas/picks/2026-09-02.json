@@ -1,0 +1,22 @@
+{
+  "picks": [
+    {
+      "ref": "I43",
+      "t": "Software to create a database structure",
+      "kind": "need",
+      "title": "从一批 XSD 反推出可用的数据库结构",
+      "what": "吃进一整个目录的 XSD 文件，把跨文件重复的类型合并、把嵌套展开成表和外键，输出建库脚本和一张关系图。",
+      "who": "被监管方强制用 XSD 交换数据的企业开发者。发帖人要按部委规定从 50–100 份 XSD 建库出报表，用哪套 schema 不是他能选的：「doing them by hand with no errors is almost imposible, lots of missing foreing keys and isolated tables」。",
+      "paying": "**有人正拿工资在手工做这件事** —— 一个开发团队按周计的时间全耗在建表和查错上，这就是预算。相邻的商业工具（Altova XMLSpy、Liquid Studio）本身就卖几百到上千美元，说明这个人群肯为 XSD 工具付钱。",
+      "state": "唯一的回帖直接说没有现成方案：「You're asking a lot here, and I don't think you'll find anything off-the-shelf.」现有商业工具是一份 XSD 生成一张表，不做跨文件的关系推断。这条问题 386 次浏览、无人给出可用答案。",
+      "reach": "Stack Overflow 和 Software Recommendations 上「XSD to database」这类问题常年有人问，直接在这些问题下面回答就是渠道；另外欧盟和拉美的电子发票、报送规范都是公开 XSD，可以按国别去对应的开发者社区找人。",
+      "verdict": "值得做，但先接受一个前提。回帖点破的是真问题：**XSD 描述的是消息格式，不是数据模型**，自动推出来的结构可能语法对、业务上没法用。拿两份公开的政府 XSD 试跑一遍，如果输出仍要大量返工，这件事就不成立。受众也窄 —— 只有被强制的人才会找。",
+      "score": 3,
+      "how": "命令行工具，先只支持一种数据库方言，遇到 xs:choice 这类难缠结构就标出来让人手工决定。"
+    }
+  ],
+  "drop": [
+    "I16", "I28", "I8", "I70", "I24", "I117", "I118", "I103", "I109",
+    "I19", "I31", "I35", "I61", "I75", "I76", "I15"
+  ]
+}

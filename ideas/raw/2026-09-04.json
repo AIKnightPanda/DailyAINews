@@ -1,0 +1,2165 @@
+{
+  "issue": "2026-09-04",
+  "builtAt": "2026-09-03T17:54:13.227Z",
+  "from": {
+    "boards": "live",
+    "inbox": "prefetched"
+  },
+  "counts": {
+    "fetched": 166,
+    "added": 55,
+    "kept": 55,
+    "dropped": 111,
+    "pool": 55,
+    "screened": 41,
+    "candidates": 18,
+    "demandCandidates": 17,
+    "supplyCandidates": 1
+  },
+  "errors": [
+    "candidates-pending.json 自相矛盾：sources 报 143 条，items 里只有 154 条"
+  ],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "ok",
+      "items": 19,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "partial",
+      "items": 2,
+      "pool": true,
+      "error": "is there an app that（HTTP 429）；someone should build（HTTP 429）",
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 3,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "partial",
+      "items": 15,
+      "pool": true,
+      "error": "quoted us（HTTP 429）",
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "ok",
+      "items": 8,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 2,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 1,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "ideabrowser",
+      "name": "IdeaBrowser",
+      "status": "ok",
+      "mails": 2,
+      "items": 5,
+      "group": "inbox"
+    },
+    {
+      "id": "mobbin",
+      "name": "Mobbin",
+      "status": "ok",
+      "mails": 0,
+      "items": 0,
+      "group": "inbox"
+    }
+  ],
+  "items": [
+    {
+      "id": "f0697173b2",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1w6d0ln/after_a_long_wait_our_life_in_the_uk_test_2026",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "After a long wait, our Life in the UK Test 2026 app is finally live on iOS! 🚀",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1w6d0ln/after_a_long_wait_our_life_in_the_uk_test_2026/",
+      "summary": null,
+      "deepenKey": "/r/SomebodyMakeThis/comments/1w6d0ln",
+      "via": null,
+      "publishedAt": "2026-09-03T16:53:51.000Z",
+      "ref": "I1",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4ef2f22cbf",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1w6cm4h/streaming_sites_should_have_a_no_spoilers_option",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "Streaming sites should have a \"No Spoilers\" option to hide the info of finales and later seasons until you have watched up to that point.",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1w6cm4h/streaming_sites_should_have_a_no_spoilers_option/",
+      "summary": null,
+      "deepenKey": "/r/SomebodyMakeThis/comments/1w6cm4h",
+      "via": null,
+      "publishedAt": "2026-09-03T16:39:20.000Z",
+      "ref": "I2",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3334e8bc72",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1w6ajc9/anyone_else_leave_the_house_and_immediately_panic",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "Anyone else leave the house and immediately panic about the door/stove, and no app actually fixes it?",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1w6ajc9/anyone_else_leave_the_house_and_immediately_panic/",
+      "summary": "I check the deadbolt and stove knobs so automatically that my brain keeps zero memory of doing it. My workaround for months has been snapping a photo of both before I walk out, it stops me turning the car around, but now my camera roll is full of door handles and stove dials I have to manually delete.",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1w6ajc9",
+      "via": null,
+      "publishedAt": "2026-09-03T15:25:03.000Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": 10,
+        "hits": [
+          "在用笨办法凑合"
+        ],
+        "detail": {
+          "signal": 4,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false,
+      "deepError": "HTTP 429"
+    },
+    {
+      "id": "063a1c0b6e",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95562/web-based-document-sharing-tool-with-page-level-analytics-and-data-room-controls",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Web-based document sharing tool with page-level analytics and data-room controls",
+      "url": "https://softwarerecs.stackexchange.com/questions/95562/web-based-document-sharing-tool-with-page-level-analytics-and-data-room-controls",
+      "summary": "I’m looking for a browser-based SaaS tool for securely sharing documents with investors, clients and external stakeholders. Required features: Support for PDF, DOCX, PPTX, XLSX, images and video Email verification, password protection and NDA acceptance Download controls, link expiration and dynamic watermarking Page-by-page viewing analytics and time spent Returning-visitor and engagement tracking Multi-document data rooms or branded microsites Analytics export Custom branding, custom domains, approved-email access and webhooks would be useful additions.",
+      "deepenKey": "95562",
+      "signal": {
+        "score": 0,
+        "views": 2,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2026-09-03T17:43:29.000Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I’m looking for a browser-based SaaS tool for securely sharing documents with investors, clients and external stakeholders. Required features: Support for PDF, DOCX, PPTX, XLSX, images and video Email verification, password protection and NDA acceptance Download controls, link expiration and dynamic watermarking Page-by-page viewing analytics and time spent Returning-visitor and engagement tracking Multi-document data rooms or branded microsites Analytics export Custom branding, custom domains, approved-email access and webhooks would be useful additions.",
+        "comments": [],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Launch HN: Pulse (YC S24) – Production-grade unstructured document extraction",
+            "points": 40,
+            "url": "https://news.ycombinator.com/item?id=46313930"
+          },
+          {
+            "title": "Show HN: Horizon – Private alternative to Imgur",
+            "points": 361,
+            "url": "https://news.ycombinator.com/item?id=40972122"
+          },
+          {
+            "title": "Launch HN: Metriport (YC S22) – Open-source API for healthcare data exchange",
+            "points": 112,
+            "url": "https://news.ycombinator.com/item?id=40456064"
+          }
+        ],
+        "fetchedAt": "2026-09-03T17:56:42.388Z"
+      }
+    },
+    {
+      "id": "cd58fcafe8",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/49546/sortable-text-post-publisher",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Sortable text post publisher",
+      "url": "https://softwarerecs.stackexchange.com/questions/49546/sortable-text-post-publisher",
+      "summary": "Description I have lists of ideas. Despite their dubious quality, I would like to be able to present them to the public in an filterable, searchable and readable manner. An idea is essentially a super-simple blog post with only simple formatted text [1] and image content. I would like to be able to tag them and provide an interface for sorting them, so others can easily browse them.",
+      "deepenKey": "49546",
+      "signal": {
+        "score": 3,
+        "views": 188,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2018-04-06T20:51:01.000Z",
+      "ref": "I5",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Description I have lists of ideas. Despite their dubious quality, I would like to be able to present them to the public in an filterable, searchable and readable manner. An idea is essentially a super-simple blog post with only simple formatted text [1] and image content. I would like to be able to tag them and provide an interface for sorting them, so others can easily browse them.",
+        "comments": [
+          {
+            "text": "(FYI: Found your question via HN!) If your ideas consist of \"super-simple blog post[s] with only simple formatted text and image content\", why not just use blogging software like Wordpress ? It has all of your requirements: Creation of simple posts with formatting Templates ( native or via plugins ) Sorting by tags or categories Reading view (the actual blog post) separate from browsing view (the main feed and/or archive ) Ability to link individual posts Simple editor (okay, YMMV, but I find th…",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T17:56:13.975Z"
+      }
+    },
+    {
+      "id": "1c78f06939",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/35439/music-player-with-time-tags-marks",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Music player with \"time tags/marks\"",
+      "url": "https://softwarerecs.stackexchange.com/questions/35439/music-player-with-time-tags-marks",
+      "summary": "The devices I need are a Windows 10 PC, and a android 4.2 Samsung S3 mini. I have big mp3 that are entire albums. Problems include: I want to listen to particular song, I have to guess the starting time, I can't have all the initial times of all the songs in my memory, so i have to guess. I don't even have the song list with me when I'm with my phone, so I have to \"scroll trough\" the entire album to find the song. I could split the albums into songs, that solves that problem. But there are many others as I will point out, and a small feature would solve them all.",
+      "deepenKey": "35439",
+      "signal": {
+        "score": 1,
+        "views": 474,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2016-08-12T21:54:38.000Z",
+      "ref": "I6",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "个人设备问题",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "4ac8e04e5c",
+      "normUrl": "https://news.ycombinator.com/item?id=49552636",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "The Importance of Personal Archiving",
+      "url": "https://news.ycombinator.com/item?id=49552636",
+      "externalUrl": null,
+      "summary": "There was a time when most of us kept archives of the digital media we loved. FTP servers, Usenet newsgroups, followed by Napster, eDonkey, and torrent networks were our primary archival sources. Gigabytes of hard drives kept filling up to the brim. We would stare longingly at movies and music albums we couldn't acquire simply because we ran out of disk space. We spent hours agonizing over what to delete to free up space or figuring out how to compress files more efficiently. Then they introduced cloud storage, which has now become the backbone of most modern services.",
+      "deepenKey": "49552636",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-03T16:25:03Z",
+      "ref": "I7",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "7aa4fd28cf",
+      "normUrl": "https://news.ycombinator.com/item?id=49552450",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Laptop or Desktop?",
+      "url": "https://news.ycombinator.com/item?id=49552450",
+      "externalUrl": null,
+      "summary": "What portion of you all use a laptop versus a desktop and why? Ever since I got a laptop I've had recurring neck pain and issues from not being strict with desk setups and using laptops here and there instead of at a table. There is no good way to use a laptop without a stand and external peripherals. It makes sense for students and traveling professionals but not really for most people I think. Thinking I will go back to a full desktop now. Bonus: Mac or PC or GNU/Linux or BSD.",
+      "deepenKey": "49552450",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 3
+      },
+      "publishedAt": "2026-09-03T16:14:44Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "a8dc96d828",
+      "normUrl": "https://news.ycombinator.com/item?id=49552237",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Beware: Malicious Profiles on YC Co-Founder Matching",
+      "url": "https://news.ycombinator.com/item?id=49552237",
+      "externalUrl": null,
+      "summary": "Today I received a match through YC’s Co-Founder Matching Platform. The user claimed to be an experienced British technologist named “Dave J.” Immediately after matching, they sent me a WhatsApp link and asked to connect there. They then said they were “having a procedure” and were unable to voice or video call. A reverse image search of their YC profile photo led to the website and GitHub of someone named “David W.” When I asked the person I was speaking with for their GitHub, however, they provided a completely different account filled with infosec-related projects.",
+      "deepenKey": "49552237",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-03T16:02:14Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": -3,
+        "hits": [
+          "双边市场冷启动"
+        ],
+        "detail": {
+          "signal": -7,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2d612f0c6e",
+      "normUrl": "https://news.ycombinator.com/item?id=49551096",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Why are OpenAI, Claude, and Grok simultaneously down? Coincidence?",
+      "url": "https://news.ycombinator.com/item?id=49551096",
+      "externalUrl": null,
+      "summary": "https://status.openai.com https://status.claude.com https://status.x.ai",
+      "deepenKey": "49551096",
+      "via": null,
+      "signal": {
+        "points": 155,
+        "comments": 130
+      },
+      "publishedAt": "2026-09-03T15:07:01Z",
+      "ref": "I10",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "https://status.openai.com https://status.claude.com https://status.x.ai",
+        "comments": [
+          {
+            "text": "The Thundering Herd has thundered, apparently."
+          },
+          {
+            "text": "I kinda assume it's because one went down and a large amount of work shifted to another. I'm also aware that they have overlap in some areas on data centers."
+          },
+          {
+            "text": "Maybe the stack behind it is down, like AWS or something"
+          },
+          {
+            "text": "They all rent compute from SpaceXAI"
+          },
+          {
+            "text": "I assume it cascaded from one provider to the other as people who lost claude access for instance moved to openai who moved to grok when it went down, etc."
+          },
+          {
+            "text": "Probably same public cloud or CDN in front of them."
+          },
+          {
+            "text": "Think of it like one big distributed system. OpenAI is down, so people migrate to Claude, now this one gets overloaded and goes down, etc. So not a coincidence, one went down first and users migrated causing further DOS. At least that's my guess."
+          },
+          {
+            "text": "Some npm library that makes headers bold would be broken."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Ask HN: Why are OpenAI, Claude, and Grok simultaneously down? Coincidence?",
+            "points": 163,
+            "url": "https://news.ycombinator.com/item?id=49551096"
+          }
+        ],
+        "fetchedAt": "2026-09-03T17:56:44.132Z"
+      }
+    },
+    {
+      "id": "3549700ff9",
+      "normUrl": "https://news.ycombinator.com/item?id=49549795",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Is SpaceXAI taking Claude down too?",
+      "url": "https://news.ycombinator.com/item?id=49549795",
+      "externalUrl": null,
+      "summary": "Claude and Grok both went offline at the same time. Is this a shared SpaceXAI issue? Anthropic shows the outage; Grok shows nothing. Both have been down for about 15 min.",
+      "deepenKey": "49549795",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 2
+      },
+      "publishedAt": "2026-09-03T13:38:58Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6dfe9b1c5a",
+      "normUrl": "https://news.ycombinator.com/item?id=49549602",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Founders that raised funding and shutdown, did you raise again?",
+      "url": "https://news.ycombinator.com/item?id=49549602",
+      "externalUrl": null,
+      "summary": "Curious to know the number of repeat founders here who shutdown and raised again, or chose not to raise the second time. I bootstrapped, raised, shutdown, went solo again, thinking about next steps. Ultimately funding and the VC market is a tool but it comes with a lot of baggage. Thoughts?",
+      "deepenKey": "49549602",
+      "via": null,
+      "signal": {
+        "points": 9,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-03T13:21:49Z",
+      "ref": "I12",
+      "screen": {
+        "keep": true,
+        "score": 3,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "c20a90e337",
+      "normUrl": "https://news.ycombinator.com/item?id=49548600",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Who is using MCP in production?",
+      "url": "https://news.ycombinator.com/item?id=49548600",
+      "externalUrl": null,
+      "summary": "I’ve been following MCP since it first came out. It got a lot of attention early on, but I haven’t come across many people using it in production. I may simply have missed them. If you’re using MCP in production, what are you using it for? What advantages have you found over a normal API or direct tool integration or just CLI?",
+      "deepenKey": "49548600",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 2
+      },
+      "publishedAt": "2026-09-03T11:21:18Z",
+      "ref": "I13",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d0a806b794",
+      "normUrl": "https://news.ycombinator.com/item?id=49548507",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Returning from the AI brain-rot state, re-take the thinking ownership",
+      "url": "https://news.ycombinator.com/item?id=49548507",
+      "externalUrl": null,
+      "summary": "I have suffered some stages of mental illness with the AI. There are 4 stages: 1. Surprised: the first time I see the AI become valid in the real world. It is the Claude 3 family moment. I am with a god-tool in my hand. 2. Oversimulated: Use the god-tool to solve all the problems without thinking. 3. Frozen: Realize that the god-tool can solve only a few issues, and my brain is dying. 4. Wake-up: Understand that my brain is the main place where the problem-solving happens, not the god-tool. Then cultivate by jumping into every detail in my work with the god-tool in my hand.",
+      "deepenKey": "49548507",
+      "via": null,
+      "signal": {
+        "points": 7,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-03T11:08:16Z",
+      "ref": "I14",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4d537c0843",
+      "normUrl": "https://news.ycombinator.com/item?id=49548254",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Why does Claude not let me edit my questions?",
+      "url": "https://news.ycombinator.com/item?id=49548254",
+      "externalUrl": null,
+      "summary": "In ChatGPT I can edit my questions and just resubmit them, but in Claude, eventhough there is an edit Button, the editing field is so small, its practicable unusable. I don't get it.",
+      "deepenKey": "49548254",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-03T10:30:45Z",
+      "ref": "I15",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "cb7389f271",
+      "normUrl": "https://news.ycombinator.com/item?id=49547405",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are Technical Blogs Dead?",
+      "url": "https://news.ycombinator.com/item?id=49547405",
+      "externalUrl": null,
+      "summary": "I think the traffic for technical blogs has plummeted. Why would anyone searh for technical blog when they can just ask their agent about it? Also I am seeing less and less of them here on hacker news.",
+      "deepenKey": "49547405",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 19
+      },
+      "publishedAt": "2026-09-03T08:30:32Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 5,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I think the traffic for technical blogs has plummeted. Why would anyone searh for technical blog when they can just ask their agent about it? Also I am seeing less and less of them here on hacker news.",
+        "comments": [
+          {
+            "text": "I still see them occasionally and read them when I can. Because the content a human has made is much more interesting than something possibly plausible but useless that an Agent could tell me. I've been working on a project that'll look at the HN new submissions and start to filter out the stuff I really don't care about (news, product announcements, stuff about LLMs), which makes technical blogs more likely to show up, then I can bookmark them for later reading"
+          },
+          {
+            "text": "Mine is and rightly so. AI will do a better job at educating you on any technical subject than I could have ever hoped for. I can only hope my years of writing and open source code projects are useful to OpenAI otherwise it was all for nothing."
+          },
+          {
+            "text": "If you write one for likes and shares then yeah, totally dead. The same is true for all internet content though. AI has removed the need for anyone to ever visit a website again if they're happy to read what AI generates. If you write one to solidify your thinking, or for you to refer back to in the future, then they're just as useful as ever. Also, if you write a good post people will drop into the comments to accuse you of generating it, which is pretty disheartening."
+          },
+          {
+            "text": "I'm searching for them harder than ever. Ironically, I have agents crawl for independent bloggers so I can add more people to my ever-growing RSS feed."
+          },
+          {
+            "text": "They’re not dead. They’re resting ;-)"
+          },
+          {
+            "text": "HN is an IT site, but technology means a more than IT. Technical can be formal or informal. Social media encapsulated informal personal interest technical blogs long before llms. Reach is always the biggest problem. Mention on HN has helped a few personal blogs, I'm sure. If somebody wants to look something up that a particular blog is good about, they can take the data and run, or be entertained by following the llm back to the source."
+          },
+          {
+            "text": "Maybe there is value in another role for technical blogs: providing structured frameworks that change how an agent reasons through a problem. An agent may understand the underlying technology, but I spend a fair bit of time working out with agents the best framework for approaching a particular problem. A technical post could lay out various approaches, possible SOPs, and their tradeoffs. That can be useful to an agent even if it doesn’t teach it any new technical facts."
+          },
+          {
+            "text": "I feel much less incentivised to post publicly. The only benefit might be that I review and think more before posting than saving locally. The downside is that now bunch of llms will read it and spill my thoughts all over without any attribution. I might be even ok with that, but now some company is making money on it, and that doesn't sit well with me."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Ask HN: What's the best platform for technical writing in 2022?",
+            "points": 68,
+            "url": "https://news.ycombinator.com/item?id=30896189"
+          },
+          {
+            "title": "Show HN: Butter, a muscle memory cache for LLMs",
+            "points": 23,
+            "url": "https://news.ycombinator.com/item?id=45442177"
+          }
+        ],
+        "fetchedAt": "2026-09-03T17:56:45.141Z"
+      }
+    },
+    {
+      "id": "54b04385e7",
+      "normUrl": "https://reddit.com/r/chennaicity/comments/1w64oin/is_my_wife_payingtreating_our_caretakercook_too",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Is my wife paying/treating our caretaker-cook too generously because we are afraid of losing her?",
+      "url": "https://www.reddit.com/r/chennaicity/comments/1w64oin/is_my_wife_payingtreating_our_caretakercook_too/",
+      "summary": "Looking for some honest opinions from Chennai folks, especially people who employ cooks/caretakers at home. My wife and I have a 10-year-old daughter, and we currently have a caretaker-cook who has been working with us for some time. She is genuinely a good cook, and finding someone reliable who can handle both cooking and our daughter's after-school routine has been difficult. Her working hours and responsibilities are roughly: She comes around 3 PM and picks up our daughter from school. She has her own scooter.",
+      "deepenKey": "/r/chennaicity/comments/1w64oin",
+      "via": "we currently pay",
+      "publishedAt": "2026-09-03T11:27:17.000Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Looking for some honest opinions from Chennai folks, especially people who employ cooks/caretakers at home. My wife and I have a 10-year-old daughter, and we currently have a caretaker-cook who has been working with us for some time. She is genuinely a good cook, and finding someone reliable who can handle both cooking and our daughter's after-school routine has been difficult. Her working hours and responsibilities are roughly: She comes around 3 PM and picks up our daughter from school. She has her own scooter. The school and the place where she lives are both within about 3 km of our house, so we don't pay any separate conveyance. Once they reach home, she prepares 2 meals for 3 people. She gives our daughter her evening snack and generally looks after her until we return from work around 7 PM. She doesn't really help much with studies because she has studied only up to 10th standard, which we completely understand. Her work ends around 7 PM. Saturday and Sunday are completely off. We currently pay her ₹20,000/month . So effectively, we're paying ₹20k for around 20 hours of work per week , or roughly 80–90 hours a month. My wife, however, is extremely nice to her. She genuinely appreciates her cooking almost every day and makes sure she knows that we value her work. Her salary is paid religiously on the 1st of every month . We also order almost all our groceries through Blinkit, so she rarely has to go shopping for groceries. In fact, she has become somewhat reluctant to go to the shops because we've gotten used to ordering everything online. My mother recently came to know that we pay her ₹20k for this arrangement and was quite surprised, saying that it is on the higher side considering the number of hours involved. This got me thinking about whether my wife is being too generous with her. At the same time, I understand why my wife behaves this way. The cook is good, she is reliable, she takes care of our daughter after school, and we really don't know how easy or difficult it would be to find a replacement who would do all of this reliably.",
+        "comments": [
+          {
+            "text": "We pay our cook 7k for one hour of work everyday. Roughly the same hourly rate as yours. You are overthinking this."
+          },
+          {
+            "text": "bro give 20k to me i would all that plus jee tutor for kids"
+          },
+          {
+            "text": "20k is what they normally charge for a nanny within the city. Finding someone who doesnt come up with an excuse to take leave every fourth day is the herculean task here. Yes, the number of hours seem less but she is also doubling as a cook. 7k is the rate cooks charge for cooking one meal/ 2 hrs work. And yes paying on 1st is expected by most househelps. If you can afford it, just let the arrangement be - you have a trusted person and your wife is happy with her."
+          },
+          {
+            "text": "It's extremely difficult to find someone who will do school pick up/childcare and cooking. You will not find anyone who will agree for just childcare 5 days a week below 15k per month. A seperate cook for 2 meals will charge 7 to 10k based on your area. Irrespective of the pay, the helpers attitude, their reliability is very important. If you are not having any issues with her and your wife is able to manage the helper peacefully without stress, then you are very lucky."
+          },
+          {
+            "text": "Hi, I’m the wife. Thank you!"
+          },
+          {
+            "text": "I think you need to change your perspective on this one. Do you realistically think you can hire a reliable cook + caretaker for less than ₹20k who will also pick up your daughter from school? From my perspective, cooking two meals and taking care of your daughter for four hours may not feel like it’s worth ₹20k purely based on the amount of time involved, since neither task is particularly time-consuming or hard."
+          },
+          {
+            "text": "Why do you think paying on the 1st day of month is rushing? Isn’t it the norm?"
+          },
+          {
+            "text": "you cant have a cake and eat it too. you pay for her time. Dont ask elders opinion on this they always have different thoughts on this than ours as they were self sufficient but not us due to commitments and different job nature you are paying her a fair wage considering kid pickup and cooking and house help"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T17:57:01.384Z"
+      }
+    },
+    {
+      "id": "dff31fc08c",
+      "normUrl": "https://reddit.com/r/AI_Agents/comments/1w601i9/ai_companies_get_the_data_flywheel_users_get_a",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "AI companies get the data flywheel. Users get a usage limit.",
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1w601i9/ai_companies_get_the_data_flywheel_users_get_a/",
+      "summary": "Users pay for AI agents and generate valuable feedbacks that can make those agents better. Companies get the subscription revenue and valuable interaction data. Users get $0. That relationship felt backwards, so I built ATM: an opt-in marketplace for privacy-redacted agent logs. We currently pay $2.00/M accepted Fable tokens and $1.50/M Sol tokens.",
+      "deepenKey": "/r/AI_Agents/comments/1w601i9",
+      "via": "we currently pay",
+      "publishedAt": "2026-09-03T07:05:05.000Z",
+      "ref": "I18",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "515b989d20",
+      "normUrl": "https://reddit.com/r/RealEstateAdvice/comments/1w5llte/should_i_buy_duplex_from_landlord",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Should I buy duplex from landlord?",
+      "url": "https://www.reddit.com/r/RealEstateAdvice/comments/1w5llte/should_i_buy_duplex_from_landlord/",
+      "summary": "My fiance and I are thinking about buying the duplex we reside in for $360k from our landlord as long as no large concessions. The property was assessed for $400k and Zillow also estimates $390-400k. Its been texting back and forth and met in person so far, but we have now seem to be comfortable with $360k price. We currently pay $1630 for rent, but if we buy the place, it will go up to $1900 while we rent upstairs for $1400-1500 to cover the $3300 mortgage including property tax, home insurance and mortgage insurance. Is it worth it? DETAILS: NE Minneapolis.",
+      "deepenKey": "/r/RealEstateAdvice/comments/1w5llte",
+      "via": "we currently pay",
+      "publishedAt": "2026-09-02T20:09:06.000Z",
+      "ref": "I19",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "消费/家庭话题，不是软件需求",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "fc5ec78974",
+      "normUrl": "https://reddit.com/r/Landlord/comments/1w5lkxy/tenantmn_buying_duplex_from_landlord",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "[TENANT-MN] Buying duplex from landlord?",
+      "url": "https://www.reddit.com/r/Landlord/comments/1w5lkxy/tenantmn_buying_duplex_from_landlord/",
+      "summary": "My fiance and I are thinking about buying the duplex we reside in for $360k from our landlord as long as no large concessions. The property was assessed for $400k and Zillow also estimates $390-400k. Its been texting back and forth and met in person so far, but we have now seem to be comfortable with $360k price. We currently pay $1630 for rent, but if we buy the place, it will go up to $1900 while we rent upstairs for $1400-1500 to cover the $3300 mortgage including property tax, home insurance and mortgage insurance. Is it worth it? DETAILS: NE Minneapolis.",
+      "deepenKey": "/r/Landlord/comments/1w5lkxy",
+      "via": "we currently pay",
+      "publishedAt": "2026-09-02T20:08:15.000Z",
+      "ref": "I20",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "消费/家庭话题，不是软件需求",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "1df5bc718c",
+      "normUrl": "https://reddit.com/r/personalfinance/comments/1w5l683/buying_duplex_from_my_landlord",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Buying Duplex from my Landlord.",
+      "url": "https://www.reddit.com/r/personalfinance/comments/1w5l683/buying_duplex_from_my_landlord/",
+      "summary": "My fiance and I are thinking about buying the duplex we reside in for $360k from our landlord as long as no large concessions. The property was assessed for $400k and Zillow also estimates $390-400k. Its been texting back and forth and met in person so far, but we have now seem to be comfortable with $360k price. We currently pay $1630 for rent, but if we buy the place, it will go up to $1900 while we rent upstairs for $1400-1500 to cover the $3300 mortgage including property tax, home insurance and mortgage insurance. Is it worth it? DETAILS: NE Minneapolis.",
+      "deepenKey": "/r/personalfinance/comments/1w5l683",
+      "via": "we currently pay",
+      "publishedAt": "2026-09-02T19:54:14.000Z",
+      "alsoFrom": [
+        {
+          "source": "Reddit 付费信号",
+          "url": "https://www.reddit.com/r/FirstTimeHomeBuyer/comments/1w5k24f/buying_duplex_from_my_landlord/"
+        }
+      ],
+      "ref": "I21",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "消费/家庭话题，不是软件需求",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "9deea93429",
+      "normUrl": "https://reddit.com/r/everythingsaas/comments/1w66ctn/tools_you_actually_use_vs_tools_you_are_paying_for",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Tools you actually use vs tools you are paying for",
+      "url": "https://www.reddit.com/r/everythingsaas/comments/1w66ctn/tools_you_actually_use_vs_tools_you_are_paying_for/",
+      "summary": "We did an audit recently and the gap between these was more than we were expecting. We are paying for a dozen tools but we only use 3-4 of them day to day. Thank god for the audit, we ended up cleaning up our stack. How is the situation at your company?",
+      "deepenKey": "/r/everythingsaas/comments/1w66ctn",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-03T12:44:36.000Z",
+      "ref": "I22",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e7b633093a",
+      "normUrl": "https://reddit.com/r/adtech/comments/1w62i2w/our_trade_desk_seat_renews_soon_and_im_weighing",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "our trade desk seat renews soon and i'm weighing self-serve for the CTV line",
+      "url": "https://www.reddit.com/r/adtech/comments/1w62i2w/our_trade_desk_seat_renews_soon_and_im_weighing/",
+      "summary": "We are two years into a Trade Desk seat and the CTV attribution question has come round again, with self serve CTV options on the table and cross channel attribution the sticking point for whether we move anything. The seat does what it says. Control, inventory, and a team who know the platform very well but it costs us a lot of time and the CTV part and especially reporting, still has to be rebuilt in our own warehouse before anyone can use it so we are paying for control and then doing the measurement work ourselves anyway.",
+      "deepenKey": "/r/adtech/comments/1w62i2w",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-03T09:30:55.000Z",
+      "ref": "I23",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "We are two years into a Trade Desk seat and the CTV attribution question has come round again, with self serve CTV options on the table and cross channel attribution the sticking point for whether we move anything. The seat does what it says. Control, inventory, and a team who know the platform very well but it costs us a lot of time and the CTV part and especially reporting, still has to be rebuilt in our own warehouse before anyone can use it so we are paying for control and then doing the measurement work ourselves anyway. Noones unhappy enough to rip it out but the question is whether a lighter setup for CTV gives us the same read with less overhead or would we be trading a known set of limits for an unknown one. If you have moved part of your CTV buying off a big DSP what changed in practice and did measurement improve?",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T17:57:12.264Z"
+      }
+    },
+    {
+      "id": "0aae51fc1b",
+      "normUrl": "https://reddit.com/r/thevisoria/comments/1w5w0il/premium_accounts_for_sale_pricelist_below",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Premium accounts for sale, pricelist below",
+      "url": "https://www.reddit.com/r/thevisoria/comments/1w5w0il/premium_accounts_for_sale_pricelist_below/",
+      "summary": "PROVEN AND TRUSTED SELLER, feel free to ask me anything about the subscription Price list: SEPTEMBER 3, 2026 -------------AI TOOLS------------- 🧸 Genspark.ai PLUS solo account -10k credits 1 month-₱500 🧸 Google ai Sheer ID verification -Just send me the link and email address no need password or login -₱350.00 🧸 Google ai pro(5tb)/Gemini pro 12 months via invite full warranty -₱300.00 🧸 Google ai pro(5tb)/Gemini pro 18 months via invite w/ 3 months warranty -₱400.00 18 months solo account/redeem link w/ 3 months warranty -₱1500.00 18 months solo account/redeem link no warranty -₱1000.00 🧸…",
+      "deepenKey": "/r/thevisoria/comments/1w5w0il",
+      "via": "per seat per month",
+      "publishedAt": "2026-09-03T03:27:42.000Z",
+      "ref": "I24",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "个人故障求助",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "49546a00b2",
+      "normUrl": "https://reddit.com/r/Insurance/comments/1w5gj1s/has_anyone_tried_scalable_insurance_services_crm",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Has anyone tried Scalable insurance services CRM?",
+      "url": "https://www.reddit.com/r/Insurance/comments/1w5gj1s/has_anyone_tried_scalable_insurance_services_crm/",
+      "summary": "Has anyone tried Scalable insurance services CRM? Got this ad when i searched for startup plans for independent agency. Anyone familiar with them? Claims to have AI integrated systems into one system and get appointments with many carriers. Sounds good. I think it is around $400 per seat per month. Its really tempting with a claim of just one login does it all. comparative rater and all. Currently i am logged into 13 or so systems and they are not integrated at all. And i have never used a comparative rater that actually worked properly as advertised.",
+      "deepenKey": "/r/Insurance/comments/1w5gj1s",
+      "via": "per seat per month",
+      "publishedAt": "2026-09-02T17:12:43.000Z",
+      "ref": "I25",
+      "screen": {
+        "keep": true,
+        "score": 22,
+        "hits": [
+          "已经在花钱",
+          "提到了具体金额",
+          "有具体人群"
+        ],
+        "detail": {
+          "signal": 16,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Has anyone tried Scalable insurance services CRM? Got this ad when i searched for startup plans for independent agency. Anyone familiar with them? Claims to have AI integrated systems into one system and get appointments with many carriers. Sounds good. I think it is around $400 per seat per month. Its really tempting with a claim of just one login does it all. comparative rater and all. Currently i am logged into 13 or so systems and they are not integrated at all. And i have never used a comparative rater that actually worked properly as advertised. Any suggestions on what to use and what to do for a newer agent who is thinking to go independent?",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T17:59:25.386Z"
+      }
+    },
+    {
+      "id": "c3b78e5a21",
+      "normUrl": "https://reddit.com/r/msp/comments/1w6d850/ukon_vs_techrug_vs_beltex",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "ukon vs techrug vs beltex",
+      "url": "https://www.reddit.com/r/msp/comments/1w6d850/ukon_vs_techrug_vs_beltex/",
+      "summary": "CYBER INSURANCE i know this comes up a bit but specifically looking for input on these three for cyber insurance for us and/or our customers. we've used techrug in the past and it was fine. just looking to shop as our prices continue to skyrocket. how was the service? claims issues? did you feel you got good coverage for the pricing? any issues with their sales approach? would you renew with them? thanks!!!!!",
+      "deepenKey": "/r/msp/comments/1w6d850",
+      "via": null,
+      "publishedAt": "2026-09-03T17:01:32.000Z",
+      "ref": "I26",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "有具体人群"
+        ],
+        "detail": {
+          "signal": 3,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "CYBER INSURANCE i know this comes up a bit but specifically looking for input on these three for cyber insurance for us and/or our customers. we've used techrug in the past and it was fine. just looking to shop as our prices continue to skyrocket. how was the service? claims issues? did you feel you got good coverage for the pricing? any issues with their sales approach? would you renew with them? thanks!!!!!",
+        "comments": [
+          {
+            "text": "I feel pricing in the industry has been flat/slightly coming down over the last maybe 18 months? If my insurer was \"skyrocketing\" in our 2026 renewal, i'd have lots of questions. Haven't worked with beltex but very informative and helpful, same with cyberjoe, currently with ukon, felt a lot more in-depth than our experience with techrug but our techrug experience was a long time ago."
+          },
+          {
+            "text": "We use Beltex for both our companies and they have been great. Cut our bill by about 35-40% for better coverage. Would highly recommend."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T17:55:52.907Z"
+      }
+    },
+    {
+      "id": "f96bcd7f00",
+      "normUrl": "https://reddit.com/r/msp/comments/1w6ctz0/looking_for_help_brother_aio_machine_doesnt_fax",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Looking for help, Brother AIO machine doesn't Fax on Xfinity - HP AIO machine works fine",
+      "url": "https://www.reddit.com/r/msp/comments/1w6ctz0/looking_for_help_brother_aio_machine_doesnt_fax/",
+      "summary": null,
+      "deepenKey": "/r/msp/comments/1w6ctz0",
+      "via": null,
+      "publishedAt": "2026-09-03T16:47:07.000Z",
+      "ref": "I27",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "9aad4c23e7",
+      "normUrl": "https://reddit.com/r/msp/comments/1w6asfz/ninjaone_rmm_usecase_for_end_users",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "NinjaOne RMM Usecase for end users",
+      "url": "https://www.reddit.com/r/msp/comments/1w6asfz/ninjaone_rmm_usecase_for_end_users/",
+      "summary": "Hello MSP friends! We’ve got a client with around 100–200 users/endpoints and we’re looking at letting users connect back to their assigned desktops through NinjaOne. Anyone using NinjaOne Remote for end users to access their office PCs from home? Curious how other MSPs are handling this in the real world. Are you just letting users go straight through NinjaOne with MFA/SSO, or are you putting VPN/ZTNA in front of it too? Also wondering: * Company devices only, or do you allow BYOD? * Can you lock users down to only their own PC? * Any issues with clipboard/file transfer/printing?",
+      "deepenKey": "/r/msp/comments/1w6asfz",
+      "via": null,
+      "publishedAt": "2026-09-03T15:34:19.000Z",
+      "ref": "I28",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hello MSP friends! We’ve got a client with around 100–200 users/endpoints and we’re looking at letting users connect back to their assigned desktops through NinjaOne. Anyone using NinjaOne Remote for end users to access their office PCs from home? Curious how other MSPs are handling this in the real world. Are you just letting users go straight through NinjaOne with MFA/SSO, or are you putting VPN/ZTNA in front of it too? Also wondering: * Company devices only, or do you allow BYOD? * Can you lock users down to only their own PC? * Any issues with clipboard/file transfer/printing? * What happens when users shut down their office PC by accident? Mainly trying to figure out what the “normal” setup is and what controls people consider a must-have. Would love to hear how you’ve actually deployed it and anything you’d do differently.",
+        "comments": [
+          {
+            "text": "No for client access to ninja. Have only allowed this for client IT members in our co managed IT scenarios. We just have users VPN and RDP to their desktop if needed."
+          },
+          {
+            "text": "Have you seen Ninjas \"End User\" user type? It exists solely to remote to devices assigned to that users. IIRC its totally locked down, and just populated a list of device they can remote to. Not trying to be pedantic, but I would not quite relate it to \"access to ninja\" as its a purpose built user type. I have been meaning to test it, but if its how I understand it you may have a change of thought on the user type."
+          },
+          {
+            "text": "If you are planning on letting users connect to their work devices remotely from personal devices, that seems like a pretty big security risk unless you have some method of enforcing device compliance on those devices. If it's from work devices, I'd look at resolving their environment so that they don't need to access resources local to a specific computer."
+          },
+          {
+            "text": "So what's your actual recommendation then, because \"just resolve the environment so they don't need local resources\" is a fine end state but doesn't help when the client has some legacy app that only runs on that one workstation or a USB license dongle or whatever Like I get the security instinct, nobody wants a random home laptop with who knows what on it tunneling into the office, but the real world has these weird edge cases where the user genuinely needs their specific machine Would you just…"
+          },
+          {
+            "text": "Get the user a work machine to use remotely with VPN. If they need to use a LOB app that won't work well directly over VPN, terminal server over said VPN from work computer. Use laptops and docks instead of desktops if two devices per user is too much."
+          },
+          {
+            "text": "I am very much not a fan of \"you do not get this functionality\" as a security solution. It just leads to (reasonable) annoyance on the part of users, and encourages shadow IT solutions. That said, the security issues don't vanish just because of technical limitations of criticality of function. If I had a request along these lines I would focus on how we can meet the technical need (remote access to a local resource) while putting sufficient controls in place to address the security risks."
+          },
+          {
+            "text": "The biggest concern is getting off of using remote tools to access their devices while at home / traveling. Business need is there but there has to be an assumed risk."
+          },
+          {
+            "text": "N1 is kind of built for that use case and it works well. They have sufficient authentication mechanisms or you can use a 3rd party IDP. Company devices or BYOD is a customer question to decide, not yours. pretty sure all those things work as expected."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T17:57:41.394Z"
+      }
+    },
+    {
+      "id": "608b262e80",
+      "normUrl": "https://reddit.com/r/msp/comments/1w66ayj/do_msps_ever_offer_cyber_insurance_to_clients",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Do MSPs ever offer cyber insurance to clients?",
+      "url": "https://www.reddit.com/r/msp/comments/1w66ayj/do_msps_ever_offer_cyber_insurance_to_clients/",
+      "summary": "Do any MSPs actually provide/extend cyber insurance coverage to clients, or is it always a separate policy the client buys directly? If separate, do you typically get involved at all like broker referral, questionnaires, helping them meet requirements, etc.?",
+      "deepenKey": "/r/msp/comments/1w66ayj",
+      "via": null,
+      "publishedAt": "2026-09-03T12:42:24.000Z",
+      "ref": "I29",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "a698e52823",
+      "normUrl": "https://reddit.com/r/msp/comments/1w62fn9/where_do_you_go_to_outsource_projects",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Where do you go to outsource projects?",
+      "url": "https://www.reddit.com/r/msp/comments/1w62fn9/where_do_you_go_to_outsource_projects/",
+      "summary": "We’re a smaller MSP with a handfull of techs but only two senior engineers, and we have a handfull of small projects that we either can’t get into the schedule but need to get done sooner, and a few for larger clients that, if I’m being honest, should probably be done by more specialized / higher qualified people. Where do you go to find labor and skills your trust while protecting the business interest?",
+      "deepenKey": "/r/msp/comments/1w62fn9",
+      "via": null,
+      "publishedAt": "2026-09-03T09:27:02.000Z",
+      "ref": "I30",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "We’re a smaller MSP with a handfull of techs but only two senior engineers, and we have a handfull of small projects that we either can’t get into the schedule but need to get done sooner, and a few for larger clients that, if I’m being honest, should probably be done by more specialized / higher qualified people. Where do you go to find labor and skills your trust while protecting the business interest?",
+        "comments": [
+          {
+            "text": "To be honest, we just push ourselves out of our comfort zone. It pretty much always works out."
+          },
+          {
+            "text": "Oklahoma here - very difficult to find anybody we trust so I just kill myself trying to accommodate all 😂"
+          },
+          {
+            "text": "There are some good groups in Oklahoma maybe we should team up"
+          },
+          {
+            "text": "north tx if u need to reach out"
+          },
+          {
+            "text": "We're a 3 tech business and I can't say we've ever had project's we've had to outsource but we're friendly with other local MSP's we can outsource work too."
+          },
+          {
+            "text": "u/GhostNode We have a bench of vetted sys admins, network architects and infrastructure experts. We scope, produce a SOW, all you have to do is tack on margin and make money. You never have to say no to a project again :) [ Kris@t3techpartners.com ](mailto: Kris@t3techpartners.com )"
+          },
+          {
+            "text": "Tried going through a recruiter once to fill a gap on an exchange migration. Cost a fortune and the guy they placed knew less than our tier 2. For the bigger client stuff where you need specific certs or niche experience, I'd skip job boards entirely. There are a couple Slack groups and Discords for senior IT folks who take overflow work under their own LLC, and you can usually gauge their competence by how they talk shop before a contract is even signed."
+          },
+          {
+            "text": "I think you have to network a bit as local techs are usually better than remote"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T18:02:22.303Z"
+      }
+    },
+    {
+      "id": "82bf64f4a2",
+      "normUrl": "https://reddit.com/r/msp/comments/1w61b4o/website_security",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Website Security",
+      "url": "https://www.reddit.com/r/msp/comments/1w61b4o/website_security/",
+      "summary": "How are all of you handling website security? A client of ours website recently got hacked which lead to their domain getting flagged as malware, which impacted their emails etc. We've never had anything to do with our clients website security but I'm starting to think perhaps this is something we should do as it impacts the domain.",
+      "deepenKey": "/r/msp/comments/1w61b4o",
+      "via": null,
+      "publishedAt": "2026-09-03T08:20:17.000Z",
+      "ref": "I31",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "有具体人群"
+        ],
+        "detail": {
+          "signal": 3,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "How are all of you handling website security? A client of ours website recently got hacked which lead to their domain getting flagged as malware, which impacted their emails etc. We've never had anything to do with our clients website security but I'm starting to think perhaps this is something we should do as it impacts the domain.",
+        "comments": [
+          {
+            "text": "Pointing to compliance requirements and giving it to the web host, the developer and staying out of it."
+          },
+          {
+            "text": "lol a clients new small web guy published a new site and it immediately fell under attack. He tried to flame us because we’re not automatically putting all our clients through CloudFlares free tier. Like bro we CAN, but this is a basic landing page with some contact forms, didn’t really think we needed to up the shields.."
+          },
+          {
+            "text": "MSPs need to push back and make the website guys host. They should be doing something for their vibecoded crap."
+          },
+          {
+            "text": "If you don't host it or develop it I wouldn't get involved. Typically the site getting hacked causes issues when there's a link to it in the signature so there's a quick fix if it happens."
+          },
+          {
+            "text": "If you're not managing and developing it, getting involved in selling some magical solution on top of a web developer that doesn't know how to touch Wordpress without adding another few unmaintained plugins just leads to pain. You cannot WAF your way around badly built websites and pretending you can just brings liability."
+          },
+          {
+            "text": "Do you find website development and ongoing website maintenance to be a meaningful service that MSP clients actually care about or ask for?"
+          },
+          {
+            "text": "Unless you are a website developer I wouldn’t consider offering this service, leave it to the experts. Could bite you in the ass later. Should have it in your agreements that’s you don’t manage hosting / websites"
+          },
+          {
+            "text": "We urge the client to let us make changes when we see the obvious things: non-obfuscated email addresses on the site, contact forms without captchas or spam protection, domain spoofing on the email contact forms.. basically, the things that web guys don't know shit about."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Lessons in website security anti-patterns by Tesco",
+            "points": 352,
+            "url": "https://news.ycombinator.com/item?id=4311287"
+          },
+          {
+            "title": "CloudFlare: A website security product accidentally makes sites 60% faster",
+            "points": 89,
+            "url": "https://news.ycombinator.com/item?id=2631019"
+          },
+          {
+            "title": "Website Database Security (2018)",
+            "points": 88,
+            "url": "https://news.ycombinator.com/item?id=19336667"
+          }
+        ],
+        "fetchedAt": "2026-09-03T17:56:12.229Z"
+      }
+    },
+    {
+      "id": "894d439bf1",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1w5smde/i_was_laid_off_from_my_systems_administrator_job",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "I was laid off from my Systems Administrator job because I couldn’t obtain a security clearance",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1w5smde/i_was_laid_off_from_my_systems_administrator_job/",
+      "summary": "I'm not sure where to start. I was working as a Systems Administrator at the (confidential) company, and I really loved the job. The people were great, I enjoyed the work, and I felt like I was finally building the career I had been working toward. note: i needed to update this part , when i applied to this job they had greencard holders and US citizens listed,but after i got hired, they got a huge gov contract which required everyone to have clearance. Today, I was told that the position required a security clearance that I’m not eligible to obtain because I’m a U.S.",
+      "deepenKey": "/r/sysadmin/comments/1w5smde",
+      "via": null,
+      "publishedAt": "2026-09-03T00:48:26.000Z",
+      "ref": "I32",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I'm not sure where to start. I was working as a Systems Administrator at the (confidential) company, and I really loved the job. The people were great, I enjoyed the work, and I felt like I was finally building the career I had been working toward. note: i needed to update this part , when i applied to this job they had greencard holders and US citizens listed,but after i got hired, they got a huge gov contract which required everyone to have clearance. Today, I was told that the position required a security clearance that I’m not eligible to obtain because I’m a U.S. permanent resident and not a U.S. citizen. Because of that requirement, my employment ended. I’m honestly devastated; I liked my coworkers, and I genuinely thought I had found a great place to grow. Now I’m suddenly back on the job market; my co-workers, still reach out and are sorry about what happened, and honestly, it was nobody's fault, and I don't blame anyone but the unfortunate timing. Before this job, I had experience as a Network Administrator working with Active Directory, Microsoft 365, SCCM/MECM, WSUS, CrowdStrike, networking, etc. At my most recent job, I gained experience with Intune, Entra ID, Microsoft Defender, Wazuh, ThreatLocker, UniFi, CMMC/NIST 800-171, manufacturing/OT networking, and other infrastructure and security technologies. And not to forget was doing cyber certs while being employed. I’m already updating my resume and starting to apply for Systems Administrator and Azure/Microsoft Administrator positions, but I’m scared that employers will see that I only worked at my last company for a few months and assume something negative. Especially in this job market today. How would you explain this situation to recruiters/interviewers? And realistically, do you think this short employment period will hurt me? I’d really appreciate advice from anyone who has been through something similar. I’m trying to stay positive, but today has been really hard. Please be kind and provide advice based on your experience.",
+        "comments": [
+          {
+            "text": "Why is everyone saying not to mention this?! This is literally a best-case scenario. \"Why did you leave your previous position?\" \"A new contract introduced a DoD clearance requirement that I couldn't meet because I'm not a citizen\" It's a circumstance completely out of your control and has no effect on your ability to do the new job. No ethics issues No skill issues No personality clashes You do NOT want to work for a company that holds that against you."
+          },
+          {
+            "text": "thanks for the comment , i agree with you"
+          },
+          {
+            "text": "Your ex-colleagues and boss would likely give a good reference as well. Someone who’s been moved on often can’t do that."
+          },
+          {
+            "text": "yep ima ask them for letter of recommendation as well ."
+          },
+          {
+            "text": "800-171 CMMC - Requires all employees with access to CUI be US Persons. It's not a choice for the company. It's the law. Nov 1 2026 is the deadline for compliance Bending the rules or lying about compliance- means a big fine and treble damages Or the guy who signs the self-certification goes to club fed for 3 hots and a cot. The only way for OP to keep his job would be for company to not accept any DOD contracts."
+          },
+          {
+            "text": "Easy way to sift the wheat from the chaff (shit job posts), certainly."
+          },
+          {
+            "text": "Mention this where exactly? On a Resume? Cause that’s where the initial impression happens and the recruiter will see and draw his own conclusions before you even get a chance to explain it in an interview."
+          },
+          {
+            "text": "Have a guy I work with that not a citizen and has secret clearance because they are in the AF reserve. Seems to be the minimum clearence in the military now."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "I also need help finding a remote job",
+            "points": 13,
+            "url": "https://news.ycombinator.com/item?id=2533633"
+          },
+          {
+            "title": "Ask HN: I just wasted 4 years of my life. Now what?",
+            "points": 18,
+            "url": "https://news.ycombinator.com/item?id=2487588"
+          },
+          {
+            "title": "Ask HN: Want to join a startup as a developer, looking for a mentor",
+            "points": 48,
+            "url": "https://news.ycombinator.com/item?id=2595954"
+          }
+        ],
+        "fetchedAt": "2026-09-03T17:58:13.003Z"
+      }
+    },
+    {
+      "id": "d1b7953594",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1w69so5/chatgpt_down",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "ChatGPT Down",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1w69so5/chatgpt_down/",
+      "summary": "https://downdetector.com/status/openai/ Getting 404 errors. Downdetector lighting up as well.",
+      "deepenKey": "/r/sysadmin/comments/1w69so5",
+      "via": null,
+      "publishedAt": "2026-09-03T14:58:09.000Z",
+      "ref": "I33",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "aca901d952",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w6dvmx/the_silent_launch_crisis_built_for_3_months",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "The \"Silent Launch\" Crisis: Built for 3 months, launched to absolute crickets. How did you break the zero-traction loop?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w6dvmx/the_silent_launch_crisis_built_for_3_months/",
+      "summary": "Every launch story on here follows the same script: \"I built an app in a weekend and hit $2k MRR in 10 days.\" ​Then you try it yourself from actual zero. No pre-built email list, no Twitter/X followers, no product hunt karma, no network of founder friends to upvote you on day one. ​I spent the last few months building something that early feedback suggests actually solves a real problem. But \"launching\" it felt like shouting into a void. I posted on a couple of subreddits, got a few clicks, 2 signups, and then total silence.",
+      "deepenKey": "/r/microsaas/comments/1w6dvmx",
+      "via": null,
+      "publishedAt": "2026-09-03T17:24:27.000Z",
+      "ref": "I34",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "09e4959310",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w6d234/where_are_people_asking_for_your_product_right",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Where are people asking for your product right now? Drop your URL and I will post the three live threads, and whether you are even allowed to reply there.",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w6d234/where_are_people_asking_for_your_product_right/",
+      "summary": "Most founders post where they are allowed to post, which is rarely where their buyers are asking. The thread where someone is describing your exact problem is usually in a room with a self-promo rule, and the door in is a comment, not a post. I built Kasspian to find those threads: it reads the rooms, checks what each one actually allows, finds the live threads, and writes the first reply. I am running it for anyone here today. Drop what you are building, a URL or one line. I will reply with three threads, why each fits, and whether the room lets you post or only comment.",
+      "deepenKey": "/r/microsaas/comments/1w6d234",
+      "via": null,
+      "publishedAt": "2026-09-03T16:55:24.000Z",
+      "ref": "I35",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "5b6d18de47",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w6c6ds/built_your_saas_but_stuck_on_getting_users_im",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Built your SaaS but stuck on getting users? I’m giving 5 founders a free personalized traction report.",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w6c6ds/built_your_saas_but_stuck_on_getting_users_im/",
+      "summary": "If you've built or launched a SaaS but aren't sure what to do next to get traction, I'm opening this up to a few more founders. You go through a roughly 10-minute AI-led interview about your product, who you're trying to reach, what you've tried so far, and where you're getting stuck. You get a personalized report showing: • what looks like the biggest constraint right now • why it's likely holding you back • 2 or 3 specific experiments to run next • what success or failure would look like for each The first few founders I've run through it have given me encouraging feedback, so I'd like to ge…",
+      "deepenKey": "/r/microsaas/comments/1w6c6ds",
+      "via": null,
+      "publishedAt": "2026-09-03T16:23:58.000Z",
+      "ref": "I36",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "If you've built or launched a SaaS but aren't sure what to do next to get traction, I'm opening this up to a few more founders. You go through a roughly 10-minute AI-led interview about your product, who you're trying to reach, what you've tried so far, and where you're getting stuck. You get a personalized report showing: • what looks like the biggest constraint right now • why it's likely holding you back • 2 or 3 specific experiments to run next • what success or failure would look like for each The first few founders I've run through it have given me encouraging feedback, so I'd like to get it in front of more SaaS founders. If you're interested, comment with what you're building and what you're struggling with, or DM me. If you want to see what the output looks like I can share that as well here or via DM",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Show HN: Jottings; Anti-social microblog for your thoughts",
+            "points": 28,
+            "url": "https://news.ycombinator.com/item?id=46242071"
+          },
+          {
+            "title": "Ask HN: Getting up after repeated failures?",
+            "points": 39,
+            "url": "https://news.ycombinator.com/item?id=33835532"
+          },
+          {
+            "title": "Show HN: Shimmer – ADHD-adapted body doubling",
+            "points": 116,
+            "url": "https://news.ycombinator.com/item?id=42009087"
+          }
+        ],
+        "fetchedAt": "2026-09-03T18:01:39.993Z"
+      }
+    },
+    {
+      "id": "a6123ff314",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w6c22j/solobuilt_a_kids_tutoring_micro_saas_the_lesson",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Solo-built a kids' tutoring micro SaaS — the lesson that mattered most was in the wrong-answer screen, not the AI",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w6c22j/solobuilt_a_kids_tutoring_micro_saas_the_lesson/",
+      "summary": "Backstory: I kept seeing the same pattern in tutoring apps — a kid answers wrong, the app just says \"try again.\" That teaches nothing, it just makes the kid guess harder. So the core of what I built (a tutor character named Maya) is a diagnosis step: when a kid gets something wrong, she identifies which specific misconception produced that answer and explains that, before trying a different approach. The child also tells her what they covered in class that day (text, voice, or a photo of a notebook page), and the lesson is built from that instead of a fixed syllabus.",
+      "deepenKey": "/r/microsaas/comments/1w6c22j",
+      "via": null,
+      "publishedAt": "2026-09-03T16:19:49.000Z",
+      "ref": "I37",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "07f1d40dd7",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w6blyd/beta_testers_needed_for_brand_consistency",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Beta testers needed for Brand Consistency Monitoring tool",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w6blyd/beta_testers_needed_for_brand_consistency/",
+      "summary": "Hi Everyone, I've been building a brand consistency monitoring tool called \"Brand Guard\". It's aimed towards brand managment agencies, SMM, branding studios and freelancers who manage their clients brands acorss social and website channels. The idea is to keep every brand consistent with the Brand Identity guidelines, which turns to be harder than most people think. During my research on the topic - I found out that less than 1 in 10 brands today stay consistent to their brand identity, while inconsistent brands turn out to lose revenue.",
+      "deepenKey": "/r/microsaas/comments/1w6blyd",
+      "via": null,
+      "publishedAt": "2026-09-03T16:03:51.000Z",
+      "ref": "I38",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "fd6c3983f2",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w6bk5w/i_rebuilt_the_million_dollar_homepage_concept_for",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I rebuilt the Million Dollar Homepage concept for 2026 and turned each pixel spot into an actual digital ad",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w6bk5w/i_rebuilt_the_million_dollar_homepage_concept_for/",
+      "summary": "​ A few weeks ago, I started thinking about the old Million Dollar Homepage. The original idea was ridiculously simple: sell pixels on a giant webpage and let people put their logo and link there. It worked because the concept itself was easy to understand, visually interesting, and had a hard limit on inventory. I wanted to see what that idea would look like if you built it as a modern product rather than just recreating the original. So I built PixelWall. pixelwall.lol The core idea is still simple: Buy a spot → add your brand → link it to your website → share it.",
+      "deepenKey": "/r/microsaas/comments/1w6bk5w",
+      "via": null,
+      "publishedAt": "2026-09-03T16:02:08.000Z",
+      "ref": "I39",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "ab890256b4",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w6aog4/i_stopped_asking_my_market_about_its_problem_and",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I stopped asking my market about its problem, and the same people started volunteering numbers",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w6aog4/i_stopped_asking_my_market_about_its_problem_and/",
+      "summary": "I sell into trades and small service businesses. For two weeks my research method was the obvious one: go where they are, ask what the problem is. It does not work anymore, and this week I watched it fail five separate times in public. Same shape every time. A founder posts a clean, polite question in a trades sub. How do you handle X. Genuinely researching, not selling anything.",
+      "deepenKey": "/r/microsaas/comments/1w6aog4",
+      "via": null,
+      "publishedAt": "2026-09-03T15:30:25.000Z",
+      "ref": "I40",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "I sell into trades and small service businesses. For two weeks my research method was the obvious one: go where they are, ask what the problem is. It does not work anymore, and this week I watched it fail five separate times in public. Same shape every time. A founder posts a clean, polite question in a trades sub. How do you handle X. Genuinely researching, not selling anything. The replies: - We dont want your app - Preemptively saying no to your app - More market research spam - the vibecoder spam is relentless lately, there is no moat to what you think you are making - I dont know, how does your app do it One of those posts is already deleted, less than a day old. The tell is not the question. The tell is that the person asking has no scar in the thread. Asking about a pain you have never paid for reads as extraction, and these subs have been extracted from a hundred times this year, so they pattern match before they finish reading. What produced actual data for me, same week, same subs, zero pitch: I answered as someone who had lost money, and I named the amount. A handyman then told me he billed roughly 1300 dollars in travel charges last year and walked me through his whole estimate to invoice flow, including a read receipt on the invoice so a dispute becomes a timestamp instead of a they-never-saw-it. That is a better answer than any survey question I would have written, and I got it by going second. The rule I ended up with: you can take a number out of a thread only after you have put one in. If you have no number to put in, you are not ready to research that market, you are ready to work in it for a while first. Two things I am not claiming. This is one account over two weeks, and my sample of roasted posts is only the ones I happened to read. And the slow version is genuinely slow, about one real conversation a day, which is useless if your runway needs a hundred interviews this month.",
+        "comments": [
+          {
+            "text": "Same pattern shows up in cold outbound. A message that leads with a specific number or detail from our side gets an actual reply, a generic \"what's your biggest pain point\" gets ignored or read as extraction. The scar is the credibility, not the question."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Ask HN: Should I get investment?",
+            "points": 11,
+            "url": "https://news.ycombinator.com/item?id=1537916"
+          }
+        ],
+        "fetchedAt": "2026-09-03T18:03:04.690Z"
+      }
+    },
+    {
+      "id": "13df64db5a",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w6a0jm/im_building_a_simpler_way_to_generate_pdfs_from",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I’m building a simpler way to generate PDFs from HTML/CSS — looking for feedback",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w6a0jm/im_building_a_simpler_way_to_generate_pdfs_from/",
+      "summary": "I've been working on a small developer tool called Tupsara. The idea is simple: you send HTML + CSS to an API and get a PDF back, without having to maintain your own Puppeteer/Playwright/Chromium infrastructure. I'm still early in development, so I'm mainly looking for developers who have actually dealt with PDF generation to tell me whether this solves a real problem. I'm particularly interested in: What are you currently using for HTML → PDF? What are the biggest pain points? Would you use an API for this instead of running it yourself? What features would you consider essential?",
+      "deepenKey": "/r/microsaas/comments/1w6a0jm",
+      "via": null,
+      "publishedAt": "2026-09-03T15:06:12.000Z",
+      "ref": "I41",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4a93dc80b3",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w69ayv/hey_everyone_im_a_16yearold_developer",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Hey everyone, I’m a 16-year-old developer experimenting with SaaS concepts.",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w69ayv/hey_everyone_im_a_16yearold_developer/",
+      "summary": "I noticed a major gap in the market: Most bulk QR tools either limit you to 1 code at a time, or charge $10/month just to scan a few. To challenge myself, I spent the last 2 days using HTML, Tailwind, and AI to build a prototype that handles bulk generation (up to 20 URLs at once) with no account required. I’m not here to sell anything; it’s a free experiment. I want to open a discussion with the community: If you had to build a tool like this, what are the hidden API or infrastructure costs I might be missing?",
+      "deepenKey": "/r/microsaas/comments/1w69ayv",
+      "via": null,
+      "publishedAt": "2026-09-03T14:39:58.000Z",
+      "alsoFrom": [
+        {
+          "source": "r/microsaas",
+          "url": "https://www.reddit.com/r/microsaas/comments/1w696a0/hey_everyone_im_a_16yearold_developer/"
+        }
+      ],
+      "ref": "I42",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [
+          "提到了具体金额"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I noticed a major gap in the market: Most bulk QR tools either limit you to 1 code at a time, or charge $10/month just to scan a few. To challenge myself, I spent the last 2 days using HTML, Tailwind, and AI to build a prototype that handles bulk generation (up to 20 URLs at once) with no account required. I’m not here to sell anything; it’s a free experiment. I want to open a discussion with the community: If you had to build a tool like this, what are the hidden API or infrastructure costs I might be missing? And for those of you who use bulk QR codes, is a 100% free model even sustainable long-term, or are there downsides compared to paid competitors? If you want to check the prototype for major UX flaws, here is the link: https://vercel.com/fadhilnebhans-projects/bulk-qr-code-generator",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Launch HN: SuperTokens (YC S20) – Securely manage session tokens",
+            "points": 84,
+            "url": "https://news.ycombinator.com/item?id=24306572"
+          },
+          {
+            "title": "Ask HN: How Do You Usually Plan and Approach Your Solo Projects?",
+            "points": 10,
+            "url": "https://news.ycombinator.com/item?id=39348890"
+          }
+        ],
+        "fetchedAt": "2026-09-03T17:55:12.476Z"
+      }
+    },
+    {
+      "id": "c10ba7c11d",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w68qqc/i_almost_added_a_feature_nobody_asked_for",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I almost added a feature nobody asked for",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w68qqc/i_almost_added_a_feature_nobody_asked_for/",
+      "summary": "Building a small SaaS makes it tempting to keep adding things because an idea sounds useful. I caught myself doing that recently. The better question is whether the feature solves a problem users already have, rather than whether it makes the product look more impressive. Scope gets expensive very quickly.",
+      "deepenKey": "/r/microsaas/comments/1w68qqc",
+      "via": null,
+      "publishedAt": "2026-09-03T14:18:52.000Z",
+      "ref": "I43",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "7b51363ca7",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w6860l/built_a_google_meeting_schedule_slack_bridge",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Built a Google meeting schedule > slack bridge",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w6860l/built_a_google_meeting_schedule_slack_bridge/",
+      "summary": "Been slowly building this the past few months and it just cleared google's OAuth verification last week, so figured i'd share. the problem it's for: my team's calendar habit was type /zoom in slack, then a meeting card lands with a link that opens Zoom (or the wrong google account, depending on the person). i wanted the same experience but with google meet, and i wanted the join button to actually open the right google account for each teammate. i also wanted the transcript summary posted back into the meeting thread automatically after the meeting, since we kept forgetting to write recaps.",
+      "deepenKey": "/r/microsaas/comments/1w6860l",
+      "via": null,
+      "publishedAt": "2026-09-03T13:57:27.000Z",
+      "ref": "I44",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "41ffd7fc2c",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w680tq/b2b_micro_niche",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "B2B micro niche",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w680tq/b2b_micro_niche/",
+      "summary": "I took me 2 years from process mapping through launching low code mvp to full code development. For co text I met some extras casting agency (film industry) owner through my friend I got to talk to him about his problems with excel tracking and other stuff. I sent some time convincing him that the problem could be solved end to end. I developed AppSheet mvp and sold it to him for cash. Not a lot but I was happy and convinced that it works. I don't charge him for maintenance he just payed me for AppSheet user which was $20 per month.",
+      "deepenKey": "/r/microsaas/comments/1w680tq",
+      "via": null,
+      "publishedAt": "2026-09-03T13:52:09.000Z",
+      "ref": "I45",
+      "screen": {
+        "keep": true,
+        "score": 18,
+        "hits": [
+          "提到了具体金额",
+          "在用笨办法凑合",
+          "有具体人群"
+        ],
+        "detail": {
+          "signal": 12,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "I took me 2 years from process mapping through launching low code mvp to full code development. For co text I met some extras casting agency (film industry) owner through my friend I got to talk to him about his problems with excel tracking and other stuff. I sent some time convincing him that the problem could be solved end to end. I developed AppSheet mvp and sold it to him for cash. Not a lot but I was happy and convinced that it works. I don't charge him for maintenance he just payed me for AppSheet user which was $20 per month. Then he contaceted me again with some changes request which was way bigger then he thought. So I quoted him accordingly. He didn't accept and we parted our ways. I gave him his database and disabled the app. He got mad a bout it and said that it's not how you do business. Well partially he was right it was genuinely bad advice I received from other people. But I liked the concept of the app and started working on it using AI. I rebuild the entire piplene end to end which gave me a lot of experience and hope. After a year of solo development the owner contacted me again and I showed him the app I developed and he liked it. So we sat I gave him and his wife the test account and led them through the process while listening to the feedback. The feedback was actually good so I implemented it over next 2 weeks and when I was ready to get back to them they just told me that their not interested anymore since I didt give them the exclusivelty to use the app to build advantage over competition even though I told them that since they are first founding agency I would give them access just for the maintenance cost. 6 months later I saw they developed one of the main application features in house. Rought looking but working. This got me demotivated a bit and thinking I made a mistake since real user would show others that my app works and I would have a guinea pig to test it form me. Yet I was greedy and. Thought I would sell it on my own without giving them exclusive access. People who saw the app told me they like it and it's over all well thought. But since I'm more developer then salesman I was not able to sell the solution.",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T18:00:07.853Z"
+      }
+    },
+    {
+      "id": "1bf13cc666",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w677az/what_got_your_signups_to_come_back_on_day_two",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "What got your signups to come back on day two?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w677az/what_got_your_signups_to_come_back_on_day_two/",
+      "summary": "I've been running a small scheduling tool on my own for about fourteen months, currently at 83 paying users. I get maybe 35 signups a week, but most of them poke around once and never open it again, and nearly everyone who does convert does it inside the first two days. I know the reflex answer is onboarding, and I've rebuilt that twice now, so I don't think this is people failing to find the features. What was the thing that pulled yours back for a second session?",
+      "deepenKey": "/r/microsaas/comments/1w677az",
+      "via": null,
+      "publishedAt": "2026-09-03T13:19:08.000Z",
+      "ref": "I46",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "ef8bbee987",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w63caf/i_stopped_asking_users_to_rate_how_hard_a_word",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I stopped asking users to rate how hard a word was, and the schedule got better",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w63caf/i_stopped_asking_users_to_rate_how_hard_a_word/",
+      "summary": "context so this isn't a drive-by: vocabulary app, ios and android, mine, $237 mrr and 45 paying subscribers as of today, nine months in, $0 on ads. the lesson below is the one design decision i'd defend hardest. anki and most srs tools ask you to rate each card after you answer it. easy, good, hard, again. it's the standard, and it works well for people who rate honestly and consistently. my problem with it is that almost nobody does. rating is a second decision stacked on top of the recall you just did, and it lands exactly when the user wants to move on. so people rate by mood.",
+      "deepenKey": "/r/microsaas/comments/1w63caf",
+      "via": null,
+      "publishedAt": "2026-09-03T10:17:42.000Z",
+      "ref": "I47",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5bfb2ae208",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w636nv/my_extension_was_losing_87_of_installs_before_the",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "My extension was losing 87% of installs before the first value moment — where does your funnel bleed, and did removing the wall actually fix it for you?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w636nv/my_extension_was_losing_87_of_installs_before_the/",
+      "summary": "Solo founder here. My product clears people's \"watch later / read later\" backlog — videos, articles, PDFs come back as structured takeaways. ~140 installs across 27 countries, all organic, $0 spent. The ugly number: only ~13% of Chrome installs ever became accounts. People installed, clicked the icon, hit a sign-up wall before seeing any value, and left. It took me weeks to notice, because installs live in the Chrome Web Store dashboard and signups live in my own DB — the leak sat exactly between two dashboards nobody joins.",
+      "deepenKey": "/r/microsaas/comments/1w636nv",
+      "via": null,
+      "publishedAt": "2026-09-03T10:09:17.000Z",
+      "ref": "I48",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "dd51a2c99a",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w6351j/how_much_effort_do_you_put_into_app_store",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "How much effort do you put into App Store screenshots?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w6351j/how_much_effort_do_you_put_into_app_store/",
+      "summary": "I've noticed that getting the actual app ready is often easier than getting the store listing assets looking consistent. Things like sizing screenshots correctly, adding backgrounds, keeping layouts consistent, and exporting everything in the right format can become a surprisingly annoying part of shipping an app. I ended up building a small browser-based tool for myself to make this process easier. It lets you upload screenshots, arrange them into store layouts, customize the design, and export PNGs. The files stay in the browser. Disclosure: I built the tool, and it's free.",
+      "deepenKey": "/r/microsaas/comments/1w6351j",
+      "via": null,
+      "publishedAt": "2026-09-03T10:06:49.000Z",
+      "ref": "I49",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "2b2b1fbd26",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w62y4p/how_are_you_handling_fake_trial_signups_as_a",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "How are you handling fake trial signups as a micro SaaS?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w62y4p/how_are_you_handling_fake_trial_signups_as_a/",
+      "summary": "Running a small SaaS and fake signups are starting to skew my trial metrics pretty badly. Disposable emails and IP blocking aren't cutting it anymore. Any of you in similar situations, and what do you for it?",
+      "deepenKey": "/r/microsaas/comments/1w62y4p",
+      "via": null,
+      "publishedAt": "2026-09-03T09:56:50.000Z",
+      "ref": "I50",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "24fb73cc0e",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w62neq/looking_for_feedback_on_api_server_costs",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Looking for feedback on API server costs",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w62neq/looking_for_feedback_on_api_server_costs/",
+      "summary": "Hi everyone :D A few fellow engineers and I have been building something called \"ZK\" which is a operating system built specifically to run backends directly on bare hardware without Linux/Docker overhead. The main goal is to eliminate idle OS taxing for servers, where basically Linux eats up considerable amounts of RAM doing nothing and spikes power usage because it has overhead of being a general purpose system.",
+      "deepenKey": "/r/microsaas/comments/1w62neq",
+      "via": null,
+      "publishedAt": "2026-09-03T09:39:21.000Z",
+      "ref": "I51",
+      "screen": {
+        "keep": true,
+        "score": -2,
+        "hits": [
+          "要做硬件"
+        ],
+        "detail": {
+          "signal": -8,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6763d6ccfa",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w62aq1/can_you_guys_validade_and_analyse_my_little_app",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Can you guys validade and analyse my little app idea? Before advancing",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w62aq1/can_you_guys_validade_and_analyse_my_little_app/",
+      "summary": "Hi everyone! I'm vibecoding (and programming some parts myself, but having fun with AI) a little web app that tracks your mood during your days at work. I made this because I had a time during my career where I was struggling and unable to see how my work was literally costing so much energy and effort from my mind. Eventually I switched jobs and I'm now very happy — but I wish I had a way to track how work was influencing my days back then. That's what I'm building. I want to know if this is a viable concept before paying for a domain and infrastructure.",
+      "deepenKey": "/r/microsaas/comments/1w62aq1",
+      "via": null,
+      "publishedAt": "2026-09-03T09:19:09.000Z",
+      "ref": "I52",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "fe02b4f9c7",
+      "normUrl": "https://ideabrowser.com/emails/2026-09-03",
+      "sourceId": "ideabrowser",
+      "source": "IdeaBrowser",
+      "sourceHome": "https://www.ideabrowser.com/",
+      "side": "demand",
+      "title": "Brands are buying viral posts as ads (Startup idea)",
+      "url": "https://www.ideabrowser.com/emails/2026-09-03#opening",
+      "summary": "Good morning.\r\nGoogle released 3.8 Flash... I tried it with my Hermes agent... it's insanely fast. Made me have a realization about Google's approach.\r\nThis model will be a daily driver that powers agents. It won't be heavy or deep thinking for long loops, but it will get work done.\r\nGrok 4.7 is coming next week.\r\nThe builders are the winners in this model race. Take advantage.\r\nEstimated reading time: 3 minutes 12 seconds",
+      "publishedAt": "2026-09-03T13:57:45.000Z",
+      "depth": "brief",
+      "alsoFrom": [
+        {
+          "source": "IdeaBrowser",
+          "url": "https://www.ideabrowser.com/emails/2026-09-03#idea"
+        }
+      ],
+      "ref": "I53",
+      "pool": true,
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Good morning.\r\nGoogle released 3.8 Flash... I tried it with my Hermes agent... it's insanely fast. Made me have a realization about Google's approach.\r\nThis model will be a daily driver that powers agents. It won't be heavy or deep thinking for long loops, but it will get work done.\r\nGrok 4.7 is coming next week.\r\nThe builders are the winners in this model race. Take advantage.\r\nEstimated reading time: 3 minutes 12 seconds",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T17:58:40.960Z"
+      }
+    },
+    {
+      "id": "40ab86514a",
+      "normUrl": "https://ideabrowser.com/emails/2026-09-02",
+      "sourceId": "ideabrowser",
+      "source": "IdeaBrowser",
+      "sourceHome": "https://www.ideabrowser.com/",
+      "side": "demand",
+      "title": "How to find money in dead leads",
+      "url": "https://www.ideabrowser.com/emails/2026-09-02#opening",
+      "summary": "Good morning.\r\nJob postings are starting to read a lot like creator business plans.\r\na16z crypto is hiring a social media lead for $199K to $232K.\r\nThey want someone chronically online who gets internet culture, crypto, can create and ship across: Podcasts, Investments, Events, Editorial, Memes, Clips, Social strategy.\r\nSounds more like a business than a job.\r\nI think they want to hire the next\r\nThreadguy\r\n(who is a legend - watch his stream)\r\nYou could prob make $1M/yr partnering with a16z and other brands.\r\nEstimated reading time: 3 minutes 30 seconds",
+      "publishedAt": "2026-09-02T14:18:42.000Z",
+      "depth": "brief",
+      "alsoFrom": [
+        {
+          "source": "IdeaBrowser",
+          "url": "https://www.ideabrowser.com/emails/2026-09-02#idea"
+        },
+        {
+          "source": "IdeaBrowser",
+          "url": "https://www.ideabrowser.com/emails/2026-09-02#trend"
+        }
+      ],
+      "ref": "I54",
+      "pool": true,
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "招聘找人",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "2f83f630e9",
+      "normUrl": "https://news.ycombinator.com/item?id=49550578",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "A searchable, timestamped index of 1,124 AI Engineer talks",
+      "url": "https://news.ycombinator.com/item?id=49550578",
+      "externalUrl": "https://aietalks.com/",
+      "summary": "I love the videos and talks that appear on my feed ever day from the AI Engineer conferences. Unfortunately, there are so many of them it's often hard to find the time to keep up, or to watch what I'd like. So I built aietalks.com, a searchable written index and archive of all the talks on the AI Engineer Youtube channel. We currently cover 1,124 talks. The individual talk pages offer tl;dr summaries, key quotes and other summarised information from the videos. Search and packs allow you to find the talks that matter for your particular interest or use case.",
+      "deepenKey": "49550578",
+      "via": null,
+      "signal": {
+        "points": 9,
+        "comments": 2
+      },
+      "publishedAt": "2026-09-03T14:43:32Z",
+      "ref": "I55",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I love the videos and talks that appear on my feed ever day from the AI Engineer conferences. Unfortunately, there are so many of them it's often hard to find the time to keep up, or to watch what I'd like. So I built aietalks.com, a searchable written index and archive of all the talks on the AI Engineer Youtube channel. We currently cover 1,124 talks. The individual talk pages offer tl;dr summaries, key quotes and other summarised information from the videos. Search and packs allow you to find the talks that matter for your particular interest or use case. All the pages are accessible for agents etc though .md files (just add it to the URL) or via an auth-free MCP server which we offer. The site updates each day as new talks come in, with a little bit of a delay for me to handle deduplication or transcription errors of names and so on. Hope you enjoy this and find it useful!",
+        "comments": [
+          {
+            "text": "Nice, just like your LLMOps Database!"
+          },
+          {
+            "text": "https://aietalks.com/rss.xml from https://www.youtube.com/feeds/videos.xml?channel_id=UCLKPca3... Could you make a service that converts any YT channel's feed into the more succinct version as seen with AIEtalks? Perhaps add a querystring for screenshots / timestamps / top comments inclusion? Focus on the big channels first? Allow for an extra layer of comments that you'd host? https://news.ycombinator.com/item?id=49423674 - YT summaries very much in demand."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [],
+        "fetchedAt": "2026-09-03T17:58:42.454Z"
+      }
+    }
+  ],
+  "deepenedAt": "2026-09-03T18:03:04.690Z"
+}

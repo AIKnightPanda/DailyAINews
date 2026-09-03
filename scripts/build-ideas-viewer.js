@@ -19,8 +19,8 @@ import { readdir, readFile, writeFile, mkdir, stat } from 'fs/promises';
 import { existsSync, readFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { BOARDS, NEWSLETTERS, sourceById } from './idea-sources.js';
-import { renderRunnerUps, restRows, renderFailures, textOf, resolvePicks, stripPicks, KIND } from './lib/ideas-render.js';
+import { BOARDS, NEWSLETTERS, sourceById, CATEGORY_LABEL } from './idea-sources.js';
+import { renderRunnerUps, restRows, renderFailures, textOf, resolvePicks, stripPicks } from './lib/ideas-render.js';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const IDEAS_DIR = join(ROOT, 'ideas');
@@ -99,28 +99,27 @@ async function collectIssues() {
         titleEn: it.title,
         rawEn: (it.deep && it.deep.body) || it.summary || '',
         title: p.title || textOf(it, zh, 'zh').title,
-        kind: KIND[p.kind] || '',
+        // 点子/产品从来源注册表算，不再靠模型自己写 kind —— 少一个会漂移的字段
+        kind: CATEGORY_LABEL[sourceById(it.sourceId)?.category] || '',
         score: p.score ?? null,
-        how: p.how || '',
         featured: !!sourceById(it.sourceId)?.featured,
-        // 六栏，顺序有讲究：「钱在哪里」紧跟在「谁在要」后面 ——
-        // 判断一条需求先找钱，找不到钱就不该出现在这一节里。
+        // 2026-09-04 从六栏砍到两栏：背景（用户是谁/需求是什么/别人怎么反馈的，
+        // 揉成一段话）+ 判断。见 ideas-render.js 里 FIELDS 上面那段注释
         fields: [
-          ['是什么', p.what], ['谁在要', p.who], ['钱在哪里', p.paying],
-          ['已有方案', p.state], ['怎么找到人', p.reach], ['判断', p.verdict]
+          ['背景', p.background], ['判断', p.verdict]
         ].filter(([, v]) => v)
       }))
-        // IdeaBrowser 是人工深挖过的成品点子，排到精选卡片最前面，不跟自动抓来的帖子抢排序
+        // 优质来源（Product Hunt、IdeaBrowser）排到精选卡片最前面，不跟自动抓来的帖子抢排序
         .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
     }
     const cardsCount = cards.length;
 
     const rest = raw ? restRows(raw, zh, picks, 'zh') : [];
     const restEn = raw ? restRows(raw, zh, picks, 'en') : [];
-    // 展示了多少条 = 精选卡片 + 分组列表里实际出行的条目；
+    // 展示了多少条 = 精选卡片 + 库里实际出行的条目；
     // 隐藏了多少条 = 池子里进过深挖但没能落地展示的（没描述、或排名靠后没读过）。
     // 三个数字都写在标题下面，安静的一天和管道断了不该长得一样。
-    const displayed = cardsCount + rest.reduce((n, g) => n + g.subs.reduce((m, s) => m + s.rows.length, 0), 0);
+    const displayed = cardsCount + rest.reduce((n, g) => n + g.rows.length, 0);
 
     issues.push({
       issue,
@@ -155,8 +154,8 @@ function sourceManifest() {
   const line = s => ({ name: s.name, url: s.home || null, home: s.home || null, note: s.note || '' });
   return {
     builders: [],
-    blogs: BOARDS.filter(s => s.side === 'demand').map(line),
-    podcasts: BOARDS.filter(s => s.side !== 'demand').map(line),
+    blogs: BOARDS.filter(s => s.category === 'idea').map(line),
+    podcasts: BOARDS.filter(s => s.category !== 'idea').map(line),
     extra: NEWSLETTERS.map(s => ({ name: s.name, home: s.home, note: s.note || '' }))
   };
 }
@@ -172,12 +171,12 @@ async function main() {
 
   const site = {
     title: '灵感档案',
-    // 两条通道分开报数：把上新算进「需求源」会让人以为值得做的是从新品里挑的
+    // 两个类别分开报数：把产品算进「点子源」会让人以为值得做的是从新品里挑的
     tagline: (() => {
       const all = [...BOARDS, ...NEWSLETTERS].filter(s => s.pool);
-      const d = all.filter(s => s.side === 'demand').length;
+      const d = all.filter(s => s.category === 'idea').length;
       const u = all.length - d;
-      return `每天从 ${d} 个需求源和 ${u} 个上新榜里找值得做的`;
+      return `每天从 ${d} 个点子源和 ${u} 个产品源里找值得做的`;
     })(),
     hasEn: true,                                    // 英文原文视图：同结构、换语言
     self: '灵感',                                    // 页面切换 toggle 上，本页那颗按钮的文案
@@ -194,7 +193,7 @@ async function main() {
       panel: {
         note: '这是配置里的完整清单，不是当期出现过的统计。每天由 GitHub Actions 预抓，Routine 汇总。',
         tier1: '榜单源', tier1sub: '公开接口，每天抓一次',
-        g1: '', g2: '需求侧 · 有人明说想要什么', g3: '供给与趋势 · 别人做了什么、风往哪吹',
+        g1: '', g2: '点子 · 有人明说想要什么、抱怨什么', g3: '产品 · 已经做出来的东西，不论规模',
         tier2: '订阅源 · 邮箱', tier2sub: '只读允许清单内的发件人',
         g4: 'Newsletter'
       }

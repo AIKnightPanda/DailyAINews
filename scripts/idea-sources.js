@@ -25,26 +25,30 @@
 //   而那条帖子的**第一条评论**就是「iOS 本来就有这个功能」，发帖人自己回了
 //   「INCREDIBLE! Thank you!」。只读标题和摘要，这种错必然会犯。
 //
-// 所以 v2 有两条硬规则：
-//   1. **点子池只收需求侧**（有人明说他缺什么），供给侧降级成附录，不参与精选
-//   2. **入选的候选必须深挖正文和评论**。评论区是「有没有竞品、需求真不真」
-//      的唯一可靠答案 —— 那条 iOS 的教训就写在评论第一行
+// 所以真正的硬规则只有一条：**入选的候选必须深挖正文和评论**。
+// 评论区是「有没有竞品、需求真不真」的唯一可靠答案 —— 那条 iOS 的教训就写在评论第一行。
+// （这条注释以前写的是「点子池只收需求侧」，那是更早一版的规矩，
+//  跟上面「两条通道都进评选」互相矛盾，2026-09-04 顺手改掉）
 //
-// ── 第三条维度：视角（perspective）────────────────────────────────────────
-// side 回答「这条是需求还是供给」，perspective 回答「这条从哪种地方冒出来的」：
+// ── 第三条维度：category（页面上的分类，和 side 是两回事）──────────────────
+// side 回答的是「抓取/筛选时怎么处理这条」（demand 过需求规则、supply 不过），
+// category 回答的是「读者该把它归进哪个抽屉」，按**做没做出来**分两类：
 //
-//   user    —— 来自社区（Reddit / HN / StackExchange / GitHub）。
-//              社区里的人，不管是在喊「谁来做个这个」（需求）还是在秀
-//              自己刚做完的东西（Show HN，供给），本质都是「用户视角」。
-//   product —— 来自产品目录站（Product Hunt 这类）。这类站不是讨论区，
-//              只有「今天上了什么新品」，没有「用户在说什么」这个维度。
+//   idea    —— 还没做出来的：抱怨、想法、需求、别人问该怎么办。
+//              哪怕是「已经有人深挖过的成品点子」（IdeaBrowser）也算 idea——
+//              它讲的仍然是「这件事该怎么做」，不是一个能点开用的东西。
+//   product —— 已经做出来的：不管规模大小，只要有一个能点开看/用的东西
+//              （Product Hunt 的新品、Show HN 上一个人周末写的小工具）都算。
 //
-// 页面上先按 perspective 分栏，栏内再按 side 分「需求／供给」两小节，
-// 2026-09-04 改版就是把原来「一个点子一行、demand/supply/trend 摊平列」
-// 换成这套两层结构 —— 原来的摊平列法找不出「这条是谁的视角」。
+// 2026-09-04 改版之前分的是「用户视角／产品视角」，按**信息来自哪里**分——
+// 结果 Show HN（用户在社区里秀自己做的东西）被归进「用户视角」，
+// 但页面上它明明是个可以点开用的产品，跟 Reddit 上一句抱怨完全不是一回事。
+// 「有没有做出来」比「从哪冒出来的」更贴近一个创业者真正关心的问题：
+// 这一类我该不该做，那一类我的对手/参考是谁。所以换成按成熟度分。
 //
-// IdeaBrowser 是人工深挖过的成品点子，摆在 user/需求 小节最前面（featured）——
-// 它的可信度本来就高于自动抓来的原始帖子，不该和它们按同一套热度规则混排。
+// Product Hunt 和 IdeaBrowser 是各自类别里的「优质来源」——前者是编辑筛过的
+// 产品，后者是人工深挖过的点子，可信度都高于自动抓来的原始帖子，
+// 两者都标 featured，在各自类别里排最前面，不跟原始帖子按热度混排。
 // ============================================================================
 
 // 2026-09-02 逐个 curl 实测：
@@ -85,7 +89,7 @@ export const BOARDS = [
     id: 'somebodymakethis', name: 'r/SomebodyMakeThis', kind: 'reddit',
     url: 'https://www.reddit.com/r/SomebodyMakeThis/new/.rss',
     home: 'https://www.reddit.com/r/SomebodyMakeThis/',
-    side: 'demand', perspective: 'user', pool: true, cap: 25, deepen: 'reddit',
+    side: 'demand', category: 'idea', pool: true, cap: 25, deepen: 'reddit',
     // 这个版块一天只有三五条，用默认的三天窗口会饿死；它又是最贴合
     // 「有人明说想要什么」的源，值得多给几天。跨期重复由 seen.json 挡。
     windowDays: 8,
@@ -95,7 +99,7 @@ export const BOARDS = [
     id: 'reddit-search', name: 'Reddit 需求短语', kind: 'reddit-search',
     url: 'https://www.reddit.com/search.rss',
     home: 'https://www.reddit.com/',
-    side: 'demand', perspective: 'user', pool: true, cap: 40, deepen: 'reddit',
+    side: 'demand', category: 'idea', pool: true, cap: 40, deepen: 'reddit',
     phrases: DEMAND_PHRASES, window: 'week',
     note: '全站搜「有没有一个能……的工具」这类短语，捞的是垂直行业里的真实缺口'
   },
@@ -103,7 +107,7 @@ export const BOARDS = [
     id: 'softwarerecs', name: 'Software Recommendations', kind: 'stackexchange',
     url: 'https://api.stackexchange.com/2.3/questions',
     home: 'https://softwarerecs.stackexchange.com/',
-    side: 'demand', perspective: 'user', pool: true, cap: 25, deepen: 'stackexchange',
+    side: 'demand', category: 'idea', pool: true, cap: 25, deepen: 'stackexchange',
     site: 'softwarerecs',
     // unanswered 是这个源最值钱的地方：整站就是「我需要一个能做 X 的软件」，
     // 而「没人答得上来」直接等于「没有现成方案」—— 缺口是站方替你标好的。
@@ -114,7 +118,7 @@ export const BOARDS = [
     id: 'hn-ask', name: 'Ask HN', kind: 'ask-hn',
     url: 'https://hn.algolia.com/api/v1/search_by_date',
     home: 'https://news.ycombinator.com/ask',
-    side: 'demand', perspective: 'user', pool: true, cap: 25, deepen: 'hn', minPoints: 3,
+    side: 'demand', category: 'idea', pool: true, cap: 25, deepen: 'hn', minPoints: 3,
     // 不做短语搜索：实测按 "is there a tool that" 搜回来的是 2010–2022 年、
     // 1–9 分的老帖，那种缺口十年后多半已经被填上了。
     // 取最近的 Ask HN，是不是需求交给 ideas-screen.js 判断。
@@ -124,7 +128,7 @@ export const BOARDS = [
     id: 'gh-requests', name: 'GitHub 高赞功能请求', kind: 'github-issues',
     url: 'https://api.github.com/search/issues',
     home: 'https://github.com/',
-    side: 'demand', perspective: 'user', pool: true, cap: 6, deepen: 'none',
+    side: 'demand', category: 'idea', pool: true, cap: 6, deepen: 'none',
     minReactions: 40, windowDays: 45,
     // 实测这个源大半是「给现成产品提功能」（openai/codex、claude-code 之类），
     // 不是独立机会。留着是因为偶尔能看到「厂商不做、第三方可以做」的缺口，
@@ -135,7 +139,7 @@ export const BOARDS = [
     id: 'reddit-paying', name: 'Reddit 付费信号', kind: 'reddit-search',
     url: 'https://www.reddit.com/search.rss',
     home: 'https://www.reddit.com/',
-    side: 'demand', perspective: 'user', pool: true, cap: 30, deepen: 'reddit',
+    side: 'demand', category: 'idea', pool: true, cap: 30, deepen: 'reddit',
     phrases: PAYING_PHRASES, window: 'month',
     // 窗口给一个月而不是一周：说出具体价钱的帖子本来就少，一周捞不到几条。
     //
@@ -153,7 +157,7 @@ export const BOARDS = [
     id: 'msp', name: 'r/msp', kind: 'reddit',
     url: 'https://www.reddit.com/r/msp/new/.rss',
     home: 'https://www.reddit.com/r/msp/',
-    side: 'demand', perspective: 'user', pool: true, cap: 20, deepen: 'reddit', windowDays: 4,
+    side: 'demand', category: 'idea', pool: true, cap: 20, deepen: 'reddit', windowDays: 4,
     // 托管服务商：他们靠工具吃饭，每天都在比价、换供应商、抱怨订阅涨价。
     // 这是全站少数「说需求时会顺口报出单价」的人群。
     note: '托管服务商。他们靠工具吃饭，讨论里天天带着单价和供应商名字'
@@ -162,14 +166,14 @@ export const BOARDS = [
     id: 'sysadmin', name: 'r/sysadmin', kind: 'reddit',
     url: 'https://www.reddit.com/r/sysadmin/top/.rss?t=week',
     home: 'https://www.reddit.com/r/sysadmin/',
-    side: 'demand', perspective: 'user', pool: true, cap: 15, deepen: 'reddit',
+    side: 'demand', category: 'idea', pool: true, cap: 15, deepen: 'reddit',
     note: '企业 IT 的一周热帖，手里有采购预算，抱怨的是真实工作流'
   },
   {
     id: 'microsaas', name: 'r/microsaas', kind: 'reddit',
     url: 'https://www.reddit.com/r/microsaas/new/.rss',
     home: 'https://www.reddit.com/r/microsaas/',
-    side: 'demand', perspective: 'user', pool: true, cap: 20, deepen: 'reddit',
+    side: 'demand', category: 'idea', pool: true, cap: 20, deepen: 'reddit',
     note: '从业者抱怨自己每天的工具链，尺度接近一个人做得完的东西'
   },
 
@@ -178,21 +182,23 @@ export const BOARDS = [
     id: 'ycrfs', name: 'YC Requests for Startups', kind: 'ycrfs',
     url: 'https://www.ycombinator.com/rfs',
     home: 'https://www.ycombinator.com/rfs',
-    side: 'trend', perspective: 'trend', pool: false, cap: 15, deepen: 'none', cadence: 'weekly',
+    side: 'trend', category: 'idea', pool: false, cap: 15, deepen: 'none', cadence: 'weekly',
     note: 'YC 公开说想投什么方向。一年才变几次，看方向不看条目'
   },
   {
     id: 'trendsvc', name: 'Trends.vc', kind: 'rss',
     url: 'https://trends.vc/feed/',
     home: 'https://trends.vc/',
-    side: 'trend', perspective: 'trend', pool: false, cap: 6, deepen: 'none',
+    side: 'trend', category: 'idea', pool: false, cap: 6, deepen: 'none',
     note: '每期拆解一个细分赛道'
   },
   {
     id: 'producthunt', name: 'Product Hunt', kind: 'rss',
     url: 'https://www.producthunt.com/feed',
     home: 'https://www.producthunt.com/',
-    side: 'supply', perspective: 'product', pool: true, cap: 20, deepen: 'none', dateless: true,
+    side: 'supply', category: 'product', pool: true, cap: 20, deepen: 'none', dateless: true,
+    // 编辑筛过的产品目录站，「产品」类别里的优质来源，排最前面
+    featured: true,
     // PH 的 content 末尾固定挂着两个链接（Discussion / Link），剥完标签后
     // 它们的文字会黏在摘要屁股上。摘要要的是那句产品描述，尾巴切掉。
     trimTail: /\s*Discussion\s*\|?\s*Link\s*$/i,
@@ -202,9 +208,9 @@ export const BOARDS = [
     id: 'showhn', name: 'Show HN', kind: 'hn', url:
       'https://hn.algolia.com/api/v1/search_by_date?tags=show_hn&hitsPerPage=60',
     home: 'https://news.ycombinator.com/show',
-    // Show HN 是社区里的人秀自己做完的东西，不是产品目录站单方面收录 ——
-    // 归 user 视角、side 仍是 supply，页面上落在「用户视角 / 供给」小节。
-    side: 'supply', perspective: 'user', pool: true, cap: 20, deepen: 'hn', minPoints: 8,
+    // 一个人周末写完发出来的东西，规模小但**是个能点开用的产品**，
+    // 归 product 类；side 仍是 supply（抓取/筛选层面不过需求规则，这个没变）
+    side: 'supply', category: 'product', pool: true, cap: 20, deepen: 'hn', minPoints: 8,
     // 深挖 Show HN 是有回报的：评论区常常直接说「X 早就在做这个了」，
     // 那既是竞品信息，也是判断这条值不值得关注的依据。
     note: '开发者自己发布的项目，带票数和评论区的真实反馈'
@@ -218,16 +224,16 @@ export const NEWSLETTERS = [
   {
     id: 'ideabrowser', name: 'IdeaBrowser', from: 'notifications@mail.ideabrowser.com',
     home: 'https://www.ideabrowser.com/', parser: 'ideabrowser',
-    side: 'demand', perspective: 'user', pool: true, cap: 6, deepen: 'none',
-    // 人工深挖过的成品点子，可信度高于自动抓来的原始帖子 —— 出现在
-    // 用户视角/需求小节和「值得做」精选里都排在最前面，不跟别的条目抢排序。
+    side: 'demand', category: 'idea', pool: true, cap: 6, deepen: 'none',
+    // 人工深挖过的成品点子，可信度高于自动抓来的原始帖子 ——「点子」类别里的
+    // 优质来源，和「值得做」精选里都排在最前面，不跟别的条目抢排序。
     featured: true,
     note: '每天一条已经深挖过的点子。公开归档页被机器人验证挡死，只能走邮箱'
   },
   {
     id: 'mobbin', name: 'Mobbin', from: 'newsletter@mobbin.com',
     home: 'https://mobbin.com/', parser: 'generic',
-    side: 'trend', perspective: 'trend', pool: false, cap: 6, deepen: 'none',
+    side: 'trend', category: 'product', pool: false, cap: 6, deepen: 'none',
     note: '每周两封，新收录的产品与交互模式。只作附录'
   }
 ];
@@ -236,11 +242,15 @@ export const ALL_SOURCES = [...BOARDS, ...NEWSLETTERS];
 export const sourceById = id => ALL_SOURCES.find(s => s.id === id) || null;
 export const POOL_IDS = new Set(ALL_SOURCES.filter(s => s.pool).map(s => s.id));
 
+// side 只服务抓取/筛选层（fetch-candidates.js、screen.js、ideas-archive.js 的排序），
+// 页面展示不再用它分组 —— 见下面的 category。
 export const SIDE_ORDER = ['demand', 'supply', 'trend'];
 export const SIDE_LABEL = { demand: '有人在要', supply: '有人做了', trend: '风往哪吹' };
 
-// 页面上的第一层分栏：用户视角在前（社区里的人先开口），产品视角在后，
-// 风向（trend）不属于这两者中任何一个，另算一栏，见 ideas-render.js
-export const PERSPECTIVE_ORDER = ['user', 'product'];
-export const PERSPECTIVE_LABEL = { user: '用户视角', product: '产品视角', trend: '风向' };
-export const PERSPECTIVE_LABEL_EN = { user: 'User view', product: 'Product view', trend: 'Signals' };
+// 页面上唯一的两个抽屉：点子在前（先看有什么人在喊缺什么），产品在后
+// （再看已经有谁在做、做成什么样）。没有第三个类别 —— 风向类的源
+// （YC RFS、Trends.vc 折进「点子」，Mobbin 折进「产品」）也要落进这两个之一，
+// 不再单独立一栏，那样会显得像是第三种平级类别，其实它们只是补充信号。
+export const CATEGORY_ORDER = ['idea', 'product'];
+export const CATEGORY_LABEL = { idea: '点子', product: '产品' };
+export const CATEGORY_LABEL_EN = { idea: 'Ideas', product: 'Products' };

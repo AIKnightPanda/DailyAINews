@@ -730,9 +730,9 @@ h4.lk-sec {
 }
 
 /* ── 今日精选 ──────────────────────────────────────────────────────
-   灵感页专用。这一块是整个模块存在的理由：99 条里模型替你挑出的几条，
-   每条附上「为什么值得看 / 最小可用版 / 风险」三句判断，摆在最顶上，
-   看完这一块就能决定今天要不要动手。下面的全量清单是给你自己翻的。 */
+   灵感页专用。这一块是整个模块存在的理由：几十条里模型替你挑出的几条，
+   每条一小段背景 + 一句判断，摆在最顶上，看完这一块就能决定今天要不要
+   动手。下面的完整库是给你自己翻的。 */
 .picks { margin: 0 0 2.6rem; }
 .picks-head {
   display: flex; align-items: baseline; gap: .7rem;
@@ -801,10 +801,6 @@ h4.lk-sec {
 .pick-lv.lv-watch .dots b { color: var(--mark); font-weight: 400; }
 .pick-lv.lv-no { color: var(--ink-3); }
 .pick-lv.lv-no .dots b { color: var(--ink-3); font-weight: 400; }
-.pick-how {
-  margin-top: .8rem; padding-top: .6rem; border-top: 1px dashed var(--rule-2);
-  font-size: .8rem; line-height: 1.55; color: var(--ink-3);
-}
 .pick-raw { font-size: .9rem; line-height: 1.65; color: var(--ink-2); white-space: pre-wrap; }
 @media (max-width: 620px) {
   .pick dl { grid-template-columns: 1fr; gap: .08rem; }
@@ -812,35 +808,30 @@ h4.lk-sec {
   .pick-lv { margin-left: 0; }
 }
 
-/* 其余读过的：两层缩进 —— 视角（用户/产品/风向）在外层，需求/供给在内层，
-   一行一条，标题、说明、来源各归各位（灵感页）。
-   2026-09-04 之前只有一层「需求/上新/风向」平铺，看不出「这是谁的视角」；
-   现在的层级和缩进抄的是简报页「延伸阅读」那套 h3→h4→内容 的写法。 */
+/* 完整库：点子/产品各一节，一行一条，标题、说明、来源各归各位（灵感页）。
+   2026-09-04 第二次改版：上一版是「视角(h3)→需求/供给(h4)」两层，读者反馈
+   「其余读过的」被当成了一个和「值得做」平级的类别，很有歧义 ——
+   现在砍成一层：点子/产品各是一个独立小节，节标题下面直接跟来源列表和条目，
+   不再有中间的需求/供给层级。 */
 .rest { margin: 2.4rem 0 1rem; }
 .rest-g { margin: 0 0 2rem; }
 .rest-g > h3 {
+  display: flex; align-items: baseline; gap: .5rem; flex-wrap: wrap;
   font-family: var(--font-display); font-size: 1.02rem; font-weight: 600;
-  color: var(--ink); margin: 0 0 .9rem; padding-top: .7rem;
+  color: var(--ink); margin: 0 0 .3rem; padding-top: .8rem;
   border-top: 1px solid var(--rule);
 }
 .rest-g:first-child > h3 { padding-top: 0; border-top: 0; }
-.rest-sub { margin: 0 0 1.4rem; margin-left: 1.15rem; }
-.rest-sub:last-child { margin-bottom: 0; }
-.rest-sub h4 {
-  display: flex; align-items: baseline; gap: .5rem; flex-wrap: wrap;
-  margin: 0 0 .5rem; padding-bottom: .35rem;
-  border-bottom: 1px solid var(--rule-2);
-  font-family: var(--font-display); font-size: .92rem; font-weight: 600; color: var(--ink);
-}
-.rest-sub h4 .n { font-family: var(--font-mono); font-size: .72rem; font-weight: 400; color: var(--ink-3); }
+.rest-g > h3 .n { font-family: var(--font-mono); font-size: .74rem; font-weight: 400; color: var(--ink-3); }
 .rest-src {
   font-family: var(--font-mono); font-size: .68rem; font-weight: 400;
-  color: var(--ink-3); flex-basis: 100%; order: 3;
+  color: var(--ink-3); margin: 0 0 .8rem;
 }
 .rest-l { list-style: none; margin: 0; padding: 0; }
 .rest-l li { padding: .62rem 0; border-bottom: 1px solid var(--rule-2); }
 .rest-l li:last-child { border-bottom: 0; }
-/* featured（如 IdeaBrowser）排在子节最前，左边一道强调色竖线，和普通条目区分开 */
+/* featured（如 Product Hunt、IdeaBrowser 这类优质来源）排在小节最前，
+   左边一道强调色竖线，和普通条目区分开 */
 .rest-l li.rest-featured { padding-left: .6rem; border-left: 2px solid var(--accent); }
 .rest-star { color: var(--accent); margin-right: .3rem; }
 .rest-t {
@@ -859,9 +850,6 @@ h4.lk-sec {
 .rest-tail {
   margin: 1.2rem 0 0; padding-top: .7rem; border-top: 1px dashed var(--rule-2);
   font-family: var(--font-mono); font-size: .72rem; line-height: 1.6; color: var(--ink-3);
-}
-@media (max-width: 620px) {
-  .rest-sub { margin-left: .7rem; }
 }
 
 /* 期号标题下方那行「共 X 条 · 展示 Y 条 · 隐藏 Z 条」（灵感页） */
@@ -1324,7 +1312,7 @@ h4.lk-sec {
 
     var rows = picks.map(function (p, i) {
       var title = (mode === 'en' ? (p.titleEn || p.title) : (p.title || p.titleEn)) || '';
-      var star = p.featured ? '<span class="rest-star" title="来自 IdeaBrowser，人工深挖过">★</span>' : '';
+      var star = p.featured ? '<span class="rest-star" title="优质来源，排到本节最前">★</span>' : '';
       var head =
         '<div class="pick-top">' +
           '<span class="pick-n">' + (i + 1) + '</span>' +
@@ -1347,7 +1335,6 @@ h4.lk-sec {
         body = '<dl>' + (p.fields || []).map(function (f) {
           return '<dt>' + esc(f[0]) + '</dt><dd>' + fmt(f[1]) + '</dd>';
         }).join('') + '</dl>';
-        if (p.how) body += '<div class="pick-how">怎么做：' + fmt(p.how) + '</div>';
       }
       return '<div class="pick">' + head + body + '</div>';
     }).join('');
@@ -1359,16 +1346,15 @@ h4.lk-sec {
       rows + '</section>';
   }
 
-  // 其余读过的：先按视角分栏（用户视角＝来自社区／产品视角＝来自 Product Hunt
-  // 这类目录站／风向另算一栏），栏内再按需求/供给拆两个子节，子节标题上顺带
-  // 报一下这一节实际用到了哪些来源。走结构化数据而不是 markdown 列表 ——
-  // 「标题 + 说明 + 来源 + 信号」四样东西塞进一个 li 里怎么排都别扭。
+  // 完整库：点子/产品各一节，一层结构，节标题下面直接是来源清单 + 条目列表。
+  // 走结构化数据而不是 markdown 列表 —— 「标题 + 说明 + 来源 + 信号」
+  // 四样东西塞进一个 li 里怎么排都别扭。
   function renderRest(it) {
     var groups = (mode === 'en' ? it.restEn : it.rest) || [];
     if (!groups.length) return '';
 
     function rowHtml(r) {
-      var star = r.featured ? '<span class="rest-star" title="来自 IdeaBrowser，人工深挖过">★</span>' : '';
+      var star = r.featured ? '<span class="rest-star" title="优质来源，排到本节最前">★</span>' : '';
       return '<li' + (r.featured ? ' class="rest-featured"' : '') + '>' +
         '<a class="rest-t" href="' + esc(r.url) + '" target="_blank" rel="noopener">' +
           star + esc(r.title) + '</a>' +
@@ -1378,18 +1364,12 @@ h4.lk-sec {
       '</li>';
     }
 
+    var srcLabel = mode === 'en' ? 'Sources: ' : '来源：';
     var body = groups.map(function (g) {
-      var subsHtml = g.subs.map(function (sub) {
-        var rows = sub.rows.map(rowHtml).join('');
-        var srcLabel = mode === 'en' ? 'Sources: ' : '来源：';
-        var head = sub.label
-          ? '<h4>' + esc(sub.label) + '<span class="n">' + sub.rows.length + '</span>' +
-            (sub.sources.length ? '<span class="rest-src">' + srcLabel + esc(sub.sources.join(' · ')) + '</span>' : '') +
-            '</h4>'
-          : '';
-        return '<div class="rest-sub">' + head + '<ul class="rest-l">' + rows + '</ul></div>';
-      }).join('');
-      return '<section class="rest-g" id="rest-' + esc(g.key) + '"><h3>' + esc(g.label) + '</h3>' + subsHtml + '</section>';
+      var rows = g.rows.map(rowHtml).join('');
+      var head = '<h3>' + esc(g.label) + '<span class="n">' + g.rows.length + '</span></h3>' +
+        (g.sources.length ? '<p class="rest-src">' + srcLabel + esc(g.sources.join(' · ')) + '</p>' : '');
+      return '<section class="rest-g" id="rest-' + esc(g.key) + '">' + head + '<ul class="rest-l">' + rows + '</ul></section>';
     }).join('');
 
     var tail = it.hidden
@@ -1398,8 +1378,10 @@ h4.lk-sec {
       : '';
 
     return '<section class="rest">' +
-      '<div class="picks-head"><h3>' + (mode === 'en' ? 'The rest' : '其余读过的') + '</h3>' +
-      '<span class="sub">都读过，但没过「值得做」的门槛</span></div>' +
+      '<div class="picks-head"><h3>' + (mode === 'en' ? 'Full library' : '完整库') + '</h3>' +
+      '<span class="sub">' + (mode === 'en'
+        ? 'Everything read, minus what is highlighted above'
+        : '都读过了，去掉上面已经在「值得做」里出现过的') + '</span></div>' +
       body + tail + '</section>';
   }
 

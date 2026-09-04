@@ -1,18 +1,13 @@
 {
-  "fetchedAt": "2026-09-04T12:04:48.694Z",
+  "fetchedAt": "2026-09-04T22:46:35.306Z",
   "windowDays": 3,
   "windowUntil": "2026-09-04T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
-      "status": "ok",
-      "issues": 1,
-      "items": 24,
-      "via": {
-        "url": "https://swyx.substack.com/feed",
-        "because": "HTTP 402：Payment required DEPLOYMENT_DISABLED sfo1::w5vxm-1788523486417-9523917"
-      }
+      "status": "error",
+      "error": "主站 HTTP 402：Payment required DEPLOYMENT_DISABLED cle1::hftx2-1788561994256-209a237；镜像 HTTP 403：Just a moment... *"
     },
     {
       "id": "importai",
@@ -40,368 +35,29 @@
       "name": "The Rundown AI",
       "status": "ok",
       "issues": 4,
-      "items": 2
+      "items": 0
     },
     {
       "id": "aivalley",
       "name": "AI Valley",
       "status": "ok",
-      "issues": 2,
-      "items": 7
+      "issues": 3,
+      "items": 2
     }
   ],
   "items": [
     {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
+      "source": "AI Valley",
+      "sourceHome": "https://www.theaivalley.com/",
       "section": null,
       "subsection": null,
       "topic": null,
-      "title": "For the first time in their mutual history",
-      "url": "https://www.latent.space/p/ainews-the-biggest-claude-launch",
-      "links": [
-        {
-          "url": "https://substackcdn.com/image/fetch/$s_!CLBn!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe224c085-dad7-41e5-a852-58cfe15a2233_4140x2160.png",
-          "text": ""
-        },
-        {
-          "url": "https://www.latent.space/p/astra",
-          "text": "here"
-        }
-      ],
-      "summary": "You’ll recall we’ve previously observed that Anthropic tends to far outclass OpenAI in launch popularity. For the first time in their mutual history , OpenAI has turned the tables.",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Official claims and concrete specs",
-      "topic": null,
-      "title": "$20 / 1M input, $100 / 1M output",
-      "url": "https://x.com/reach_vb/status/2095596137721868488",
+      "title": "OpenAI says we might be in the AGI era now",
+      "url": "https://openai.com/index/gpt-6-astra/",
       "links": [],
-      "summary": "fast: $20 / 1M input, $100 / 1M output , for up to 2.5x speed via @reach_vb",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Independent and third-party benchmark reads",
-      "topic": "ARC Prize / ARC-AGI",
-      "title": "63% on ARC-AGI-3",
-      "url": "https://x.com/arcprize/status/2095597602545025138",
-      "links": [],
-      "summary": "@arcprize : 63% on ARC-AGI-3 under Astra’s direct score framing",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "99% via a new provider adapter harness",
-      "topic": null,
-      "title": "66% on ARC-AGI-3 using standard harness",
-      "url": "https://x.com/fchollet/status/2095598451115614371",
-      "links": [],
-      "summary": "@fchollet : 66% on ARC-AGI-3 using standard harness",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "66% on ARC-AGI-3 using standard harness",
-      "topic": null,
-      "title": "ARC-AGI-4 is coming Q1 2027",
-      "url": "https://x.com/fchollet/status/2095600998484201686",
-      "links": [],
-      "summary": "@fchollet also said ARC-AGI-4 is coming Q1 2027 , underscoring how quickly benchmarks are saturating",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "2–4x faster",
-      "topic": "Other eval fragments",
-      "title": "no-CoT time horizon at 30.9 minutes",
-      "url": "https://x.com/scaling01/status/2095597192035664348",
-      "links": [],
-      "summary": "@OpenAI system card snippet via @scaling01 : UK AISI measured Astra’s no-CoT time horizon at 30.9 minutes vs 3.6 minutes for GPT-5.6 Sol",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "2–4x faster",
-      "topic": "Other eval fragments",
-      "title": "half the cost",
-      "url": "https://x.com/thekaransinghal/status/2095608369621139773",
-      "links": [],
-      "summary": "@thekaransinghal : on HealthBench Professional, Astra at lowest reasoning effort surpasses GPT-5.6 Sol’s best score at about half the cost ; in a separate internal health eval, Astra was 3x less likely to make factual mistakes",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Different perspectives",
-      "topic": "3) Skeptical on practical capability: “Impressive, but not the slam-dunk SOTA everywhere”",
-      "title": "73.8% vs 73.3%",
-      "url": "https://x.com/theo/status/2095604548740210691",
-      "links": [],
-      "summary": "@theo noted Gemini 3.8 Flash beating Astra on DeepSWE, 73.8% vs 73.3% , which undercuts any “wins everything” narrative",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Different perspectives",
-      "topic": "4) Safety-critical / opposed: “The capability gain comes with a dangerous monitoring loss”",
-      "title": "opaque reasoning ability",
-      "url": "https://x.com/RyanGreenblatt/status/2095616782124163312",
-      "links": [],
-      "summary": "@RyanGreenblatt and follow-ups argued Astra may represent a jump in opaque reasoning ability , making CoT monitoring much less meaningful",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "change reasoning effort without breaking cache",
-      "topic": null,
-      "title": "compaction/native context management",
-      "url": "https://x.com/nikunjhanda/status/2095606297572073765",
-      "links": [
-        {
-          "url": "https://x.com/stevenheidel/status/2095603638051942681",
-          "text": "@stevenheidel"
-        }
-      ],
-      "summary": "in Responses API via @nikunjhanda , @stevenheidel",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "change reasoning effort without breaking cache",
-      "topic": "Math/science/formal reasoning",
-      "title": "246 down to 186",
-      "url": "https://x.com/weijie444/status/2095600108956262911",
-      "links": [],
-      "summary": "@weijie444 : pushing 246 down to 186 , with Lean formalization",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "change reasoning effort without breaking cache",
-      "topic": "Math/science/formal reasoning",
-      "title": "2/68 unsolved curated Erdős problems solved",
-      "url": "https://x.com/EpochAIResearch/status/2095602779125629248",
-      "links": [],
-      "summary": "Epoch’s FrontierMath Erdős result— 2/68 unsolved curated Erdős problems solved —is modest in percentage terms but historically notable given no prior model solved any: @EpochAIResearch",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "change reasoning effort without breaking cache",
-      "topic": "Health and cybersecurity",
-      "title": "$1B Daybreak",
-      "url": "https://x.com/fouadmatin/status/2095634888951250983",
-      "links": [
-        {
-          "url": "https://x.com/reach_vb/status/2095643099980603440",
-          "text": "@reach_vb"
-        }
-      ],
-      "summary": "OpenAI paired this with a $1B Daybreak subsidy/access commitment for defenders and critical infrastructure via @fouadmatin , @reach_vb",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Broader context and implications",
-      "topic": "Benchmarks are being saturated faster than benchmark culture can adapt",
-      "title": "<1% to ~100% in 6 months",
-      "url": "https://x.com/fchollet/status/2095605239269519771",
-      "links": [],
-      "summary": "ARC-AGI-3 went from , per @fchollet",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Broader context and implications",
-      "topic": "Cost is no longer captured by token prices",
-      "title": "cost per task",
-      "url": "https://x.com/ArtificialAnlys/status/2095595489031000350",
-      "links": [
-        {
-          "url": "https://x.com/stevenheidel/status/2095661538795487513",
-          "text": "@stevenheidel"
-        }
-      ],
-      "summary": "in some workflows Astra is cheaper per task, in others materially more expensive This shows why benchmark operators and infra teams are increasingly comparing cost per task or cost to target score , not price per token, as noted by @ArtificialAnlys and @steven…",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Benchmarks, Eval Infrastructure, and Research Methods",
-      "topic": null,
-      "title": "1,000 ML repos",
-      "url": "https://x.com/dair_ai/status/2095539831141220620",
-      "links": [],
-      "summary": "BAAI’s DisCo / AREX-Skill work on research agents claims large gains by distilling reusable skills from 1,000 ML repos into 5,000+ verified skills , with reported improvements of 134.3% on MLE-bench , 34.4% on PaperBench , 9.2% on FrontierCS , and 14.0% on Pas…",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Benchmarks, Eval Infrastructure, and Research Methods",
-      "topic": null,
-      "title": "52.0% on Gemma-4-31B",
-      "url": "https://x.com/omarsar0/status/2095612805496164801",
-      "links": [],
-      "summary": "Declarative Attention proposes letting the model declare where to read in long context, reducing attended tokens during decoding by 52.0% on Gemma-4-31B and 31.1% on Qwen-3.6-27B on 15 tasks, summarized by @omarsar0",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Benchmarks, Eval Infrastructure, and Research Methods",
-      "topic": null,
-      "title": "29.2% → 81.8%",
-      "url": "https://x.com/dair_ai/status/2095693344689238465",
-      "links": [],
-      "summary": "Trace-as-State shows large long-context gains by putting prior reasoning before the source context on a second pass, e.g. DeepSeek V4 Pro Preview from 29.2% → 81.8% and GLM-5.2 from 66.4% → 100% on GraphWalks Parents via @dair_ai",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Open Models, Infra, and Ecosystem",
-      "topic": null,
-      "title": "18M developers, 3M models, 200K companies",
-      "url": "https://x.com/MichaelDell/status/2095528112662409503",
-      "links": [],
-      "summary": "NVIDIA’s Hugging Face acquisition dominated open-ecosystem discussion. Supportive reactions emphasized scale and openness: HF scale claims: 18M developers, 3M models, 200K companies from @MichaelDell",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Open Models, Infra, and Ecosystem",
-      "topic": null,
-      "title": "535B parameters, 23B active, 18T tokens",
-      "url": "https://x.com/andykonwinski/status/2095671393862267186",
-      "links": [],
-      "summary": "Open Athena/Marin’s hero run continues: 535B parameters, 23B active, 18T tokens , with unusually transparent live tracking, highlighted by @andykonwinski",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "World models, video, and multimodal systems",
-      "topic": null,
-      "title": "2-hour football match",
-      "url": "https://x.com/JackWoth98/status/2095520018561630691",
-      "links": [],
-      "summary": "Google Gemini video understanding demo: indexing a 2-hour football match , locating yellow cards, mapping them onto a 2D field, and jumping to moments in video, from @JackWoth98",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "World models, video, and multimodal systems",
-      "topic": null,
-      "title": "H3 Max Director",
-      "url": "https://x.com/fal/status/2095599871449342288",
-      "links": [],
-      "summary": "fal launched H3 Max Director , a continuous real-time action-controlled long-form video model/API, with initial 75% off , via @fal",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "World models, video, and multimodal systems",
-      "topic": null,
-      "title": "73.9% win rate",
-      "url": "https://x.com/fal/status/2095669955467571339",
-      "links": [],
-      "summary": "fal also highlighted H3 Max r2v as #1 for realistic video style transfer with 73.9% win rate , via @fal",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Science, healthcare, and applied AI",
-      "topic": null,
-      "title": "166,000+ neurons",
-      "url": "https://x.com/NewsFromGoogle/status/2095553014715093022",
-      "links": [],
-      "summary": "Google/HHMI/Janelia mapped the complete brain and central nervous system of an adult male fruit fly, reconstructing 166,000+ neurons from millions of 2D images using AI, via @NewsFromGoogle",
-      "publishedAt": "2026-09-04T05:18:11.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest"
-    },
-    {
-      "source": "The Rundown AI",
-      "sourceHome": "https://www.therundown.ai/",
-      "title": "OpenAI’s “generational leap” with GPT-6 Astra",
-      "url": "https://www.therundown.ai/articles/openai-generational-leap-with-gpt-6-astra",
-      "summary": "PLUS: Where the future of content is headed",
-      "publishedAt": "2026-09-04T10:00:00.000Z"
-    },
-    {
-      "source": "The Rundown AI",
-      "sourceHome": "https://www.therundown.ai/",
-      "title": "Uber beats Waymo to London",
-      "url": "https://www.therundown.ai/articles/uber-beats-waymo-to-london",
-      "summary": "PLUS: OpenAI 'will definitely' build humanoids",
-      "publishedAt": "2026-09-03T14:30:00.000Z"
+      "summary": "OpenAI released GPT-6 Astra , its new frontier model that Greg Brockman is calling a “generational leap.” He personally thinks OpenAI has reached AGI with this one, ending the launch briefing with “Welcome to the AGI era.” So there’s that.",
+      "publishedAt": "2026-09-04T14:05:46.463Z",
+      "issueUrl": "https://www.theaivalley.com/p/gpt-6-is-here"
     },
     {
       "source": "AI Valley",
@@ -409,109 +65,12 @@
       "section": null,
       "subsection": null,
       "topic": null,
-      "title": "Dyson made a $499 AI toothbrush",
-      "url": "https://x.com/Polymarket/status/2094848260150374768?s=20",
-      "links": [
-        {
-          "url": "https://www.youtube.com/watch?v=IuP4jZOs4sY",
-          "text": "watch the launch video here"
-        }
-      ],
-      "summary": "the CameraJet has a tiny camera in the brush head that takes 28 images a second, uses on-device AI trained on 470K dental images to spot the gaps between your teeth, then shoots mouthrinse into them within 100 milliseconds.",
-      "publishedAt": "2026-09-03T14:19:27.982Z",
-      "issueUrl": "https://www.theaivalley.com/p/dyson-unveils-ai-powered-toothbrush-with-camera"
-    },
-    {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "Perplexity runs a model locally on your Mac",
-      "url": "https://x.com/perplexity_ai/status/2092268362386780270?s=20",
+      "title": "OpenAI’s agents apparently took over a German wiki",
+      "url": "https://www.reuters.com/",
       "links": [],
-      "summary": "a new Hybrid Mode will let Computer use models running directly on your Mac for some tasks, while still using cloud models for the harder stuff. The local steps don’t use Computer credits and the data involved stays on your machine.",
-      "publishedAt": "2026-09-03T14:19:27.982Z",
-      "issueUrl": "https://www.theaivalley.com/p/dyson-unveils-ai-powered-toothbrush-with-camera"
-    },
-    {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "Meta says its models are finally catching up",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-02/meta-releases-more-powerful-ai-model-edging-closer-to-rivals?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc4ODQwNzY0NiwiZXhwIjoxNzg5MDEyNDQ2LCJhcnRpY2xlSWQiOiJUS1FVQVVUOTZPVDEwMCIsImJjb25uZWN0SWQiOiJCMzZENUE5QzIxMDQ0NjU4OTFBMTc1MTVDRDNBQkZFNiJ9.Lid2dpYcy9_z5AEIw7C2bxhfSjYXlXDa4ZshhXaUBjg&leadSource=article-gifting",
-      "links": [],
-      "summary": "Muse Spark 1.3 is Meta’s new best model, with a big jump in coding and agentic stuff. Alexandr Wang says it’s competitive with Claude Fable 5.1, better than GPT-5.6 Sol (especially at coding) and better than any of the current open-source models.",
-      "publishedAt": "2026-09-03T14:19:27.982Z",
-      "issueUrl": "https://www.theaivalley.com/p/dyson-unveils-ai-powered-toothbrush-with-camera"
-    },
-    {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "Gemini can now decide which bits of a video it actually needs to watch",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/",
-      "links": [],
-      "summary": "Google added “agentic” video understanding to Gemini 3.7 Flash, 3.6 Flash and 3.5 Flash-Lite. Instead of processing a whole video at a fixed frame rate, Gemini can jump around between different moments, frames, audio and transcripts, then go back and look clos…",
-      "publishedAt": "2026-09-03T14:19:27.982Z",
-      "issueUrl": "https://www.theaivalley.com/p/dyson-unveils-ai-powered-toothbrush-with-camera"
-    },
-    {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "Anthropic released Claude Fable 5.1 and Mythos 5.1",
-      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-      "links": [
-        {
-          "url": "https://x.com/claudeai/status/2094848572143407483?s=20",
-          "text": "read the announcement"
-        }
-      ],
-      "summary": "they’re actually the same underlying model , but Fable is available to everyone while Mythos has fewer safeguards for cybersecurity and biology and is only available to vetted organizations. ( read the announcement )",
-      "publishedAt": "2026-09-02T14:43:54.777Z",
-      "issueUrl": "https://www.theaivalley.com/p/new-atlas-world-model-is-literally-black-magic"
-    },
-    {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "World Labs has a new world model called Atlas",
-      "url": "https://www.worldlabs.ai/blog/atlas",
-      "links": [
-        {
-          "url": "https://x.com/davidpantera_/status/2094841083805266401?s=20",
-          "text": "see the example here"
-        },
-        {
-          "url": "https://x.com/rehan_shei/status/2094955712606593294?s=20",
-          "text": "another one here"
-        }
-      ],
-      "summary": "it can take images, video and camera movements and turn them into a 3D world you can move around in. You can basically give it a few photos, tell the camera where to go and generate new image/video frames from that exact viewpoint.",
-      "publishedAt": "2026-09-02T14:43:54.777Z",
-      "issueUrl": "https://www.theaivalley.com/p/new-atlas-world-model-is-literally-black-magic"
-    },
-    {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "Meta has a new real-time speech model",
-      "url": "https://research.meta.ai/blog/introducing-muse-voice-transcribe",
-      "links": [],
-      "summary": "Muse Voice Transcribe is Meta’s first real-time audio perception model. It does speech-to-text, figures out who’s speaking and knows when someone has stopped talking, all in one model.",
-      "publishedAt": "2026-09-02T14:43:54.777Z",
-      "issueUrl": "https://www.theaivalley.com/p/new-atlas-world-model-is-literally-black-magic"
+      "summary": "researchers found 15,000+ edits made by AI agents on DseWiki, a German programming wiki, where they basically turned the site into a message board for each other.",
+      "publishedAt": "2026-09-04T14:05:46.463Z",
+      "issueUrl": "https://www.theaivalley.com/p/gpt-6-is-here"
     }
   ]
 }

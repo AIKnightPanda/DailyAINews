@@ -35,7 +35,11 @@ const SUPPLY_TOP = Number(arg('supply')) || 14;
 const REDDIT_GAP = 20_000;
 
 const BODY_MAX = 2200;      // 正文给足 —— 背景、问题、现状全在这儿
-const COMMENT_MAX = 500;    // 单条评论
+// 2026-09-05 从 500 提到 900：读者发现好几条评论被硬生生砍在句子中间——
+// 500 字对「有人报具体单价」「有人指出竞品」这类信息量最大的评论太紧，
+// 越是值得引用的评论越长，越容易被砍。clip() 本身也顺手改成更愿意找
+// 句末断点，两处一起才能把这个问题压下去。
+const COMMENT_MAX = 900;    // 单条评论
 const COMMENTS_KEEP = 8;    // 每条最多留几条评论
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -81,15 +85,23 @@ async function deepenHn(item) {
   };
 }
 
-// Stack Exchange：正文一阶段就拿到了，这里补答案。
+// Stack Exchange：正文单独再问一次接口拿完整版，不能偷懒用 item.summary。
+// item.summary 是一阶段给预筛用的 600 字裁剪，2026-09-05 读者发现拿它
+// 冒充「深挖后的正文」，遇到长一点的帖子就会截断成不完整的文档——
+// 一阶段的 API 请求本来就拿到了完整正文（filter=withbody），只是裁短
+// 之后就把全文扔了，深挖阶段这里必须自己再问一遍，跟 reddit/hn 一样
+// 按 BODY_MAX 走，而不是沿用预筛那个更紧的上限。
 // 有答案 = 已有现成方案（答案里就写着叫什么）；没答案 = 缺口还在。
 async function deepenStackExchange(item) {
-  const u = `https://api.stackexchange.com/2.3/questions/${item.deepenKey}/answers` +
+  const qUrl = `https://api.stackexchange.com/2.3/questions/${item.deepenKey}` +
+    `?site=softwarerecs&filter=withbody`;
+  const aUrl = `https://api.stackexchange.com/2.3/questions/${item.deepenKey}/answers` +
     `?site=softwarerecs&order=desc&sort=votes&filter=withbody&pagesize=5`;
-  const j = await fetchJson(u);
+  const [qj, aj] = await Promise.all([fetchJson(qUrl), fetchJson(aUrl)]);
+  const q = (qj.items || [])[0];
   return {
-    body: item.summary || '',
-    comments: (j.items || [])
+    body: clip(stripTags(q?.body || item.summary || ''), BODY_MAX),
+    comments: (aj.items || [])
       .map(a => ({ text: clip(stripTags(a.body || ''), COMMENT_MAX), score: a.score }))
       .filter(c => c.text.length > 25),
     source: 'stackexchange'

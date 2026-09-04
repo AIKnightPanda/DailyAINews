@@ -32,13 +32,21 @@ export const tag = (block, name) => {
   return m ? m[1].replace(/<!\[CDATA\[|\]\]>/g, '') : '';
 };
 
-// 尽量截在句末，避免把话砍在半截
+// 尽量截在句末，避免把话砍在半截。
+// 2026-09-05 把「找不到句末」时的退路从「硬切在第 max 个字符」改成
+// 「至少退到最后一个空格」——读者发现过评论被砍在单词中间（"...almost
+// entirely startups and inter…"），原因是最近的句末标点在前 50% 之外时
+// 直接硬切，硬切点常常落在单词内部。现在分两级：先找句末标点（门槛也从
+// 50% 放宽到 35%，更容易接受一个稍靠前但完整的句子），找不到再退到最后
+// 一个词边界，都找不到才认了整词砍断。
 export function clip(text, max) {
   const t = String(text || '').trim();
   if (t.length <= max) return t;
   const cut = t.slice(0, max);
   const stop = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('。'), cut.lastIndexOf('! '), cut.lastIndexOf('? '));
-  return (stop > max * 0.5 ? cut.slice(0, stop + 1) : cut.trimEnd() + '…');
+  if (stop > max * 0.35) return cut.slice(0, stop + 1);
+  const space = cut.lastIndexOf(' ');
+  return (space > max * 0.5 ? cut.slice(0, space) : cut).trimEnd() + '…';
 }
 
 // 实测 news.smol.ai 会在 TLS 握手阶段 RESET 掉带 "(compatible; …)" 的 UA，

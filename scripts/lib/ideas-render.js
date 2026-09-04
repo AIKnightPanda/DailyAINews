@@ -234,12 +234,19 @@ function restRowOf(it, zh, lang) {
 // 那不是「展示为 0」，是「今天没有它的数据」，没什么好报的。
 export function restRows(data, zh, picks, lang) {
   const picked = new Set(resolvePicks(data, picks).list.map(x => x.it.ref));
+  // picks.exclude：模型确认读完之后判断「纯讨论、跟点子/产品无关」的编号——
+  // 跟 picks.drop 是两回事，drop 只是「没选进值得做」，excluded 的这些
+  // 连库里都不该出现（评论区讨论 Claude 是不是变差了、怎么在 Ask HN 提问
+  // 这类，不是产品需求，2026-09-05 读者反馈这类不该展示）。
+  // 英文原文本来就一直存在 ideas/raw/<期号>.json 里，被排除不影响回查。
+  const excluded = new Set(picks?.exclude || []);
   const CL = lang === 'en' ? CATEGORY_LABEL_EN : CATEGORY_LABEL;
 
   // 池子里深挖过的候选，加上风向类源（不进池子，但有模型写的摘要）—— 两边
   // 都要落进 点子/产品 这两个抽屉之一，不再单独开一个「风向」平级分组
-  const pool = data.items.filter(x => x.candidate && !picked.has(x.ref));
-  const extra = data.items.filter(x => !x.pool && x.summary && !picked.has(x.ref));
+  const skip = ref => picked.has(ref) || excluded.has(ref);
+  const pool = data.items.filter(x => x.candidate && !skip(x.ref));
+  const extra = data.items.filter(x => !x.pool && x.summary && !skip(x.ref));
   const items = [...pool, ...extra];
 
   const groups = [];

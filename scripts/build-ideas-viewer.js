@@ -184,8 +184,8 @@ async function main() {
     // 版式和简报页完全一样，只有这些字串不同
     text: {
       kicker: '灵感',
-      tally: ['池', '读过', '值得做'],
-      countWord: '值得做 <b>{n}</b> 条',
+      tally: ['池', '读过', '精选'],
+      countWord: '精选 <b>{n}</b> 条',
       rawPath: 'ideas/raw/',
       sourceDir: 'ideas-source/',
       enIsMarkdown: true,         // EN 和中文是同一套结构，复用 markdown 渲染器
@@ -247,7 +247,7 @@ async function main() {
   const kb = n => `${Math.round(n / 1024)}KB`;
   console.log(`已生成 docs/ideas.html (${kb(html.length)})：${issues.length} 期，EN 正文 ${enCount} 期`);
   for (const it of issues) {
-    console.log(`  ${it.issue}  值得做 ${String(it.stats.builders).padStart(2)} 条` +
+    console.log(`  ${it.issue}  精选 ${String(it.stats.builders).padStart(2)} 条` +
       `（池 ${it.stats.tweets} → 读过 ${it.stats.blogs}）` +
       `\t${it.headline || '（本期没有达标的）'}`);
   }

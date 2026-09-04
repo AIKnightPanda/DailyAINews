@@ -732,14 +732,17 @@ h4.lk-sec {
 /* ── 今日精选 ──────────────────────────────────────────────────────
    灵感页专用。这一块是整个模块存在的理由：几十条里模型替你挑出的几条，
    每条一小段背景 + 一句判断，摆在最顶上，看完这一块就能决定今天要不要
-   动手。下面的完整库是给你自己翻的。 */
+   动手。下面按点子/产品分类的库是给你自己翻的。
+   标题用 h2（不是 h3）——这是本期大纲里除了「点子/产品」之外分量最重的
+   一级，h3 在大纲的既有样式里反而比来源用的 h4 还弱，用 h2 才对得上它
+   在页面上该有的分量，见 .outline a.lv2/.lv4 那两条规则。 */
 .picks { margin: 0 0 2.6rem; }
 .picks-head {
   display: flex; align-items: baseline; gap: .7rem;
   margin: 0 0 1rem; padding-bottom: .5rem;
   border-bottom: 2px solid var(--accent);
 }
-.picks-head h3 {
+.picks-head h2 {
   margin: 0; font-family: var(--font-display);
   font-size: 1.15rem; font-weight: 600; color: var(--accent); letter-spacing: .01em;
 }
@@ -808,13 +811,19 @@ h4.lk-sec {
   .pick-lv { margin-left: 0; }
 }
 
-/* 完整库：点子/产品各是一个和「值得做」平级的大类，来源是它们下面的
+/* 完整库：点子/产品各是一个和「精选」平级的大类，来源是它们下面的
    小节，条目一行一条（灵感页）。
    2026-09-04 第三次改版：上一版外面还包了一层「完整库」标题，读者反馈
    「点子」「产品」才是真正的分类，不该被一个容器标题压成它的子节 ——
    所以「完整库」这层去掉，.rest-cat 直接借用 .picks-head 那套视觉权重
-   （大字号、强调色下划线），和「值得做的」并排成三个同级大类；
-   来源退到 h4，比类别小一级，比条目本身大一级。 */
+   （大字号、强调色下划线），和「精选」并排成三个同级大类。
+   第四次改版：类别标题从 h3 改成 h2——本期大纲复用的是 AI 简报页的
+   既有层级样式（.outline a.lv2/.lv4），那套样式里 h3 反而比来源用的
+   h4 还弱（lv3 是纯缩进、不加粗，lv4 加粗又加大），h2 才是大纲里
+   真正分量最重的一级，跟「点子/产品」该有的地位对得上。
+   来源（h4）之前和类别标题一样顶格、没有缩进，读者反馈「渠道和条目
+   混在一起不好看」——现在整块来源小节向右缩进并加一道竖线，
+   看得出它是类别下面的一层，不是并列的。 */
 .rest { margin: 2.4rem 0 0; }
 .rest-cat { margin: 0 0 2.6rem; }
 .rest-cat-head {
@@ -822,13 +831,16 @@ h4.lk-sec {
   margin: 0 0 .3rem; padding-bottom: .5rem;
   border-bottom: 2px solid var(--accent);
 }
-.rest-cat-head h3 {
+.rest-cat-head h2 {
   margin: 0; font-family: var(--font-display);
   font-size: 1.15rem; font-weight: 600; color: var(--accent); letter-spacing: .01em;
 }
 .rest-cat-head .sub { font-size: .78rem; color: var(--ink-3); font-family: var(--font-mono); }
-.rest-src-g { margin: 1.4rem 0 0; }
-.rest-src-g:first-child { margin-top: .6rem; }
+.rest-src-g {
+  margin: 1.4rem 0 0; padding-left: 1rem;
+  border-left: 2px solid var(--rule-2);
+}
+.rest-src-g:first-child { margin-top: .9rem; }
 .rest-src-g > h4 {
   display: flex; align-items: baseline; gap: .5rem; flex-wrap: wrap;
   font-family: var(--font-display); font-size: .92rem; font-weight: 600;
@@ -1346,14 +1358,19 @@ h4.lk-sec {
       return '<div class="pick">' + head + body + '</div>';
     }).join('');
 
+    // 「精选」下面这行统计：候选是怎么一步步收窄到这几条的 ——
+    // 池子里 N 条，深挖读完的有 M 条，最后挑出来的就是上面这几条。
+    var picksStat = mode === 'en'
+      ? picks.length + ' picked · read ' + (it.stats.blogs || 0) + ' of ' + (it.stats.tweets || 0) + ' pooled'
+      : '从 ' + (it.stats.tweets || 0) + ' 条候选里读了 ' + (it.stats.blogs || 0) + ' 条，选出 ' + picks.length + ' 条';
+
     return '<section class="picks">' +
-      '<div class="picks-head"><h3>' + (mode === 'en' ? 'Worth building' : '值得做的') + '</h3>' +
-      '<span class="sub">' + picks.length + ' 条 · 读过 ' + (it.stats.blogs || 0) +
-      ' · 池 ' + (it.stats.tweets || 0) + '</span></div>' +
+      '<div class="picks-head"><h2>' + (mode === 'en' ? 'Featured' : '精选') + '</h2>' +
+      '<span class="sub">' + picksStat + '</span></div>' +
       rows + '</section>';
   }
 
-  // 完整库：点子/产品各是一个和「值得做」平级的大类（.rest-cat），
+  // 完整库：点子/产品各是一个和「精选」平级的大类（.rest-cat），
   // 类别下面再按来源分小节（.rest-src-g），来源标题下面直接跟这个来源的
   // 条目列表。走结构化数据而不是 markdown 列表 —— 「标题 + 说明 + 来源 +
   // 信号」四样东西塞进一个 li 里怎么排都别扭。
@@ -1374,19 +1391,22 @@ h4.lk-sec {
       '</li>';
     }
 
-    var fetchWord = mode === 'en' ? function (f, s) { return f + ' fetched · ' + s + ' shown'; }
-      : function (f, s) { return '抓了 ' + f + ' 条 · 展示 ' + s + ' 条'; };
+    // 「展示 12/17 条」—— 17 是这个来源今天抓到的全部，12 是说得出「这是
+    // 什么」而展示出来的那部分。分子分母都要报，抓了但一条没展示的来源
+    // 也照样列出来（restRows 只跳过今天压根没抓到数据的来源）。
+    var shownWord = mode === 'en' ? function (s, f) { return s + '/' + f + ' shown'; }
+      : function (s, f) { return '展示 ' + s + '/' + f + ' 条'; };
 
     var body = groups.map(function (g) {
       var subs = g.subs.map(function (s) {
         var rows = s.rows.map(rowHtml).join('');
         return '<section class="rest-src-g">' +
-          '<h4>' + esc(s.source) + '<span class="n">' + fetchWord(s.fetched, s.shown) + '</span></h4>' +
+          '<h4>' + esc(s.source) + '<span class="n">' + shownWord(s.shown, s.fetched) + '</span></h4>' +
           '<ul class="rest-l">' + rows + '</ul></section>';
       }).join('');
       return '<section class="rest-cat" id="rest-' + esc(g.key) + '">' +
-        '<div class="rest-cat-head"><h3>' + esc(g.label) + '</h3>' +
-        '<span class="sub">' + fetchWord(g.fetched, g.shown) + '</span></div>' +
+        '<div class="rest-cat-head"><h2>' + esc(g.label) + '</h2>' +
+        '<span class="sub">' + shownWord(g.shown, g.fetched) + '</span></div>' +
         subs + '</section>';
     }).join('');
 

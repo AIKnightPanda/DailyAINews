@@ -149,7 +149,10 @@ const FIELDS = [
 
 export function renderPicks(data, zh, picks, lang) {
   const { list } = resolvePicks(data, picks);
-  const out = [PICKS_START, '', `## ${lang === 'en' ? 'Worth building' : '值得做的'}`, ''];
+  // 2026-09-04 第四次改版：这一节的标题从「值得做的」改叫「精选」——
+  // 「值得做」是判断本身的措辞，留在下面的判断文字里就够了，标题只需要
+  // 说清「这是我们从今天的候选里挑出来的」。
+  const out = [PICKS_START, '', `## ${lang === 'en' ? 'Featured' : '精选'}`, ''];
 
   if (!list.length) {
     // 空是一个正常且诚实的结果，不是故障。但要让读者能分辨这两者，
@@ -223,10 +226,12 @@ function restRowOf(it, zh, lang) {
 // 走结构化而不是 markdown bullet，是因为「标题 + 说明 + 来源 + 信号」四样东西
 // 塞进一个 li 里怎么排都别扭，交给 CSS 才排得开。
 //
-// 两层分组：类别（点子/产品）→ 来源。每层都带「抓了多少、展示了多少」——
-// 类别层数的是这个类别下所有抓到的条目（不管有没有说明），来源层数的是
-// 这一个来源抓到的条目，两者都可能比 rows.length 大，差值就是「读过了但
-// 说不出来是什么」或「没排进深挖线以内」的那些，数字不会凭空消失。
+// 两层分组：类别（点子/产品）→ 来源。每个来源都报「抓了多少、展示了多少」，
+// 而且**只要这个来源今天抓到过东西就要列出来**，哪怕一条都没展示——
+// 「抓了 17 条、展示 0 条」和「今天没抓这个来源」是两件不同的事，
+// 前者要老实报出来，不能因为展示数是 0 就悄悄不提这个来源。
+// 只有今天确实一条都没抓到的来源（比如按周跑的源赶上非发布周）才跳过，
+// 那不是「展示为 0」，是「今天没有它的数据」，没什么好报的。
 export function restRows(data, zh, picks, lang) {
   const picked = new Set(resolvePicks(data, picks).list.map(x => x.it.ref));
   const CL = lang === 'en' ? CATEGORY_LABEL_EN : CATEGORY_LABEL;
@@ -239,23 +244,21 @@ export function restRows(data, zh, picks, lang) {
 
   const groups = [];
   for (const key of CATEGORY_ORDER) {
-    const fetched = data.items.filter(x => categoryOf(x) === key).length;
     const bucket = items.filter(x => categoryOf(x) === key);
-    if (!fetched) continue;
 
     const subs = [];
     for (const src of ALL_SOURCES) {
       if ((src.category || 'idea') !== key) continue;
-      const fromSrc = bucket.filter(x => x.sourceId === src.id);
-      const rows = fromSrc.map(it => restRowOf(it, zh, lang)).filter(Boolean)
+      const fetched = data.items.filter(x => x.sourceId === src.id).length;
+      if (!fetched) continue;   // 今天没抓到这个来源的数据，不是「展示为 0」，不用报
+      const rows = bucket.filter(x => x.sourceId === src.id)
+        .map(it => restRowOf(it, zh, lang)).filter(Boolean)
         .sort((a, b) => (b.star - a.star) || (b.engagement - a.engagement))
         .map(({ engagement, ...r }) => r);
-      if (!rows.length) continue;   // 这个来源今天一条都没能展示，不占一个小节
-      const srcFetched = data.items.filter(x => x.sourceId === src.id).length;
-      subs.push({ source: src.name, fetched: srcFetched, shown: rows.length, rows });
+      subs.push({ source: src.name, fetched, shown: rows.length, rows });
     }
-    if (!subs.length) continue;
-    const shown = subs.reduce((n, s) => n + s.rows.length, 0);
+    const fetched = subs.reduce((n, s) => n + s.fetched, 0);
+    const shown = subs.reduce((n, s) => n + s.shown, 0);
     groups.push({ key, label: CL[key], fetched, shown, subs });
   }
   return groups;
@@ -271,17 +274,16 @@ function signalText(it) {
 }
 
 // md 用：同一份数据排成 markdown，让 ideas/<期号>.md 在 GitHub 上自包含。
-// 层级和页面一致：类别（点子/产品）在 h2，和上面的「值得做的」平级；
-// 来源在 h3。
+// 层级和页面一致：类别（点子/产品）在 h2，和上面的「精选」平级；来源在 h3。
 export function renderRunnerUps(data, zh, picks, lang) {
   const groups = restRows(data, zh, picks, lang);
   if (!groups.length) return [];
 
   const out = [];
   for (const g of groups) {
-    out.push(`## ${g.label}（抓了 ${g.fetched} 条 · 展示 ${g.shown} 条）`, '');
+    out.push(`## ${g.label}（展示 ${g.shown}/${g.fetched} 条）`, '');
     for (const s of g.subs) {
-      out.push(`### ${s.source}（抓了 ${s.fetched} 条 · 展示 ${s.shown} 条）`, '');
+      out.push(`### ${s.source}（展示 ${s.shown}/${s.fetched} 条）`, '');
       for (const r of s.rows) {
         out.push(`- **[${esc(r.title)}](${escUrl(r.url)})**` + (r.star ? ' ⭐' : '') +
           (r.signal ? `　<sub>${esc(r.signal)}</sub>` : ''));

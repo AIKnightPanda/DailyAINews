@@ -103,5 +103,5 @@ else {
 if (!picks) notes.push('⚠️ 没有预筛结果，本期没有精选');
 else if (rejected.length) notes.push(`⚠️ ${rejected.length} 条与素材对不上，已丢弃：${rejected.join('、')}`);
 
-console.log(`[link-ideas] ${issue}：值得做 ${resolved.length} 条，读过 ${counts.candidates} 条，池内 ${counts.pool} 条` +
+console.log(`[link-ideas] ${issue}：精选 ${resolved.length} 条，读过 ${counts.candidates} 条，池内 ${counts.pool} 条` +
   (notes.length ? `，${notes.join('；')}` : ''));

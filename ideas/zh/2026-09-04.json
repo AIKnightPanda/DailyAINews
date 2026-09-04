@@ -1,35 +1,168 @@
 {
-  "I2":   ["Anyone else leave the house", "防复查强迫症的门锁/炉灶一键确认器", "反复检查门锁炉灶到失眠的人想要一个极简确认应用：三个大按钮，点一下带震动反馈，锁屏就能看到「几点几分已确认」。评论区给出的替代方案都是智能家居/电力监测设备（Home Assistant、Emporia），没人指出有现成的同类简单应用。"],
-  "I3":   ["A Nextdoor alternative that won't charge", "不向本地小商家收费的 Nextdoor 替代品", "Nextdoor 新收费政策惹恼了靠它获客的水电工、园艺工等本地服务者，有人提议做个免费替代品。评论里已经有人愿意接手开发，但另一条评论直接问「不收费你怎么赚钱」，冷启动和商业模式都没想清楚。（同一个话题在 09-03 那期已经出现过一次）"],
-  "I15":  ["Custom AI brain games", "给失智老人定制认知训练小游戏队列", "母亲有轻度痴呆，Lumosity 几十个游戏里只有 11 个她玩得来，但不能自定义播放队列，家属得全程手动切换。发帖当天就有人做出了免费开源版本（brainrounds.github.io），证明这类需求一个人一天就能满足。", true],
-  "I19":  ["Is there a tool that unlocks", "查游戏内隐藏奖杯能不能手动标记完成", "想全成就 GTA V，但线上专属奖杯玩不到，想找工具把它们标记成「已完成」凑齐白金。零回复，需求非常小众（单机主机破解圈）。"],
-  "I20":  ["Look through funds to see true", "穿透多只基金看真实资产配置", "机构投资者想知道自己个人账户里的一堆历史基金持仓整体跟指数偏离多少。评论直接给出 Morningstar X-Ray、Portfolio Visualizer 等现成付费工具，需求真实但已有成熟方案。"],
-  "I21":  ["Forward prerequisite checking tool", "反查一门课是哪些课的先修课程", "输入 PHYS-1200 想反查所有把它设为先修课的课程，唯一的回帖说「我和朋友也想做但没做」，还在用 Excel 手工筛选变通。受众局限在同一所大学的学生和课程顾问。"],
-  "I28":  ["Web-based Enterprise Level", "企业级数据可视化仪表盘该用什么技术栈", "在问该用什么软件或编程语言做免费开源的企业级数据看板，评论推荐了 Grafana、Bold BI 这类现成产品。是技术选型咨询，不是产品缺口。"],
-  "I29":  ["BI engine with REST API", "找一个带 REST API 的 BI 引擎", "给客户做分析看板，想要一个能通过 REST API（而非只有客户端 JS API）取数的 BI 引擎，好让前后端彻底分离。评论推荐了 Logi Analytics 的 Discovery 模块，需求具体但已有方案。"],
-  "I38":  ["Mendeley API (e.g., Python)", "批量把 Mendeley 文献库标题转句首大写", "APA 第七版要求参考文献标题用句首大写，但库里几千条文献大小写混乱，想要个基于 Mendeley API 的脚本批量转换。已有人写过脚本，但会把 BDI 这类缩写也一起转小写，还不够好用。"],
-  "I41":  ["Which mobile application", "做地图导航 App 该选哪个移动端框架", "要给客户做一个类似 Uber 的导航应用，在 Mapbox、React Native、Flutter 之间拿不定主意。评论推荐 Leaflet。技术选型咨询，不是产品缺口。"],
-  "I45":  ["Alternative to refbase", "refbase 文献管理系统的替代品", "要给一个小型非营利协会做网站，需要新手能管理、兼容 BibTeX 的文献库，refbase 年久失修还有 SQL 注入隐患。回帖推荐了 wikindx，但发帖人没试过。"],
-  "I61":  ["Are others seeing Google's", "Firefox 用户被谷歌 reCAPTCHA 反复拒绝的吐槽帖", "抱怨用 Firefox 访问 archive.is 陷入无限验证码循环，怀疑是谷歌针对非 Chrome 浏览器的手段。评论里更多是同类抱怨和猜测，没有产品诉求。"],
-  "I67":  ["Why were OpenAI, Claude, and Grok", "OpenAI/Claude/Grok 同时宕机的讨论帖", "三家同时宕机引发的纯讨论帖，评论都在猜测原因（流量激增、AWS 账单警报之类），没有产品诉求（这个话题本周已经出现过一次）。"],
-  "I71":  ["Who is using MCP in production?", "谁在生产环境里真正用 MCP 的调研帖", "问大家 MCP 在生产环境里的实际用法，评论里有人说更愿意直接用 CLI，也有人分享了具体落地场景。是行业趋势调研帖，不是某个具体的产品需求。"],
-  "I72":  ["Function Hooks - make plugins", "希望 Claude Code 能开放函数级 Hooks", "提议给 Claude Code 加一套 TypeScript 函数式 Hooks（类似 Express/Koa 中间件），可以深度自定义行为又不破坏安全边界。48 个赞，零评论，是给现成产品提功能。"],
-  "I94":  ["Jamf | A love hate relationship", "MSP 吐槽 Jamf 后台又乱又难管的长文", "MSP 抱怨 Jamf 的产品本身好用，但面向渠道商的管理后台一团糟：没有自动扣款、看用量要等 Excel 报表、开新租户又被锁死在创建者账号上。评论里有人也在找更好的 macOS 打包工具替代品，评论区达成一致：赶紧解约走人。"],
-  "I145": ["Inline", "Inline：人和 AI 一起协作办公", "让团队成员和 AI 一起在同一个工作空间里协作，主打「AI 是队友之一」而不是单独的助手面板。"],
-  "I146": ["WeatherNext 3", "WeatherNext 3：新一代全球天气预测 AI 模型", "Google 发布的最新全球天气 AI 模型，主打比上一代更准更先进。"],
-  "I147": ["Compliance by TwelveLabs", "TwelveLabs 的视频合规审查工具", "用可自定义规则驱动的方式自动审查视频内容是否合规，面向需要批量审核视频的团队。"],
-  "I148": ["GPT-6 Astra", "GPT-6 Astra：OpenAI 最新旗舰模型", "OpenAI 号称能力最强、主打端到端完成复杂工作的新旗舰模型上架 Product Hunt。"],
-  "I149": ["myAIcademy", "myAIcademy：按岗位定制的 AI 技能培训", "针对具体岗位和团队定制 AI 技能学习路径的培训平台。"],
-  "I150": ["Clockwork", "Clockwork：给 AI agent 排班的日历", "一个专门给 AI agent「打卡上班」用的日历工具，把 agent 的任务调度可视化成日历事件。"],
-  "I151": ["Offline JS Playground", "离线版 JavaScript/JSON 练习场", "不联网也能写、跑、测 JS 代码片段和 JSON 的本地工具。"],
-  "I152": ["Gemini 3.8 Flash", "Gemini 3.8 Flash：主打编码和 agent 场景的高性价比模型", "Google 发布的新一代轻量模型，号称是目前编码和 agent 任务上最聪明的高性价比选项。"],
-  "I153": ["Omarchy", "Omarchy：为 agent 时代设计的可塑操作系统", "一个主打「高度可定制、为 AI agent 时代设计」的 Linux 发行版登上 Product Hunt——本周它已经在 HN 上引发过两轮讨论（热度由来、在 Apple Silicon 上跑），这次同一产品同一周内第三次出现在不同信息源里。", true],
-  "I154": ["Chalked for Mac", "Chalked for Mac：带上下文的回复草稿工具", "根据你手头工作的完整上下文，直接帮你把回复写好备用。"],
-  "I155": ["cmmnts", "cmmnts：给任何网站加评论区", "一段代码就能给任意网站接入一个功能完整的评论区。"],
-  "I156": ["Snitch", "Snitch：由全公司共建的组织架构图", "让 Slack 里的每个人一起维护、更新公司的组织架构图。"],
-  "I165": ["Prices.eu.org", "Prices.eu.org：欧盟生活成本追踪站", "用 AI 调研工具花 40 多小时做的欧盟物价/电价/房价/工资等追踪站，数据每天自动从官方来源更新。评论质疑部分数据源不够准（跟促销价、实际购买价有出入），也有人建议加图表。"],
-  "I166": ["MCP Tool Definition Quality", "MCP 工具定义质量评分规范 TDQS", "由 MCP 生态的知名开源作者（FastMCP、awesome-mcp-servers 等项目作者）提出的一套评估 MCP 工具定义质量的开源规范，直指「MCP 生态最大的抱怨就是工具定义质量参差不齐」。已有开发者根据它改进了自己的 MCP 并给出反馈。", true],
-  "I167": ["The Primer", "YC 想投：像《钻石年代》启蒙书一样自适应成长的读本", "YC 公开征集的方向之一：做一本能随孩子成长自适应内容、教会阅读也教会思考的互动读物，灵感来自科幻小说《钻石年代》里的启蒙书。"],
-  "I168": ["Synthetic Audiences: Verified", "合成受众：真人验证、样本作弊与知情同意的缺口", "Trends.vc 本周拆解的赛道：AI 合成受众正在替代真人做问卷调研的第一轮反馈，随之而来的是「怎么验证受访者是不是真人」「怎么防止面板作弊」等新缺口。"],
-  "I169": ["⏰ Why Is Sleeping Less", "Trends.vc 本周合集：睡眠与长寿、AI 内容运营技巧等", "本周 Trends.vc 周报合集，涵盖睡眠与长寿关系、AI 时代的内容运营技巧等多个话题，不是单一点子。"]
+  "I2": [
+    "Anyone else leave the house and immediately panic",
+    "反复检查门锁炉灶的焦虑",
+    "有人因为容易忘记检查门锁和关炉灶而反复折返，现在用拍照来确认，但手机相册被塞满了，希望有一个极简应用：三个按钮记录「已确认」，带震动反馈，锁屏就能看。"
+  ],
+  "I3": [
+    "A Nextdoor alternative that won't charge local",
+    "小企业友好的社区平台",
+    "Nextdoor 改成付费政策后，水电工、园艺工等本地服务者无法免费推广，有人提议做免费替代品，评论里已有人愿意开发，但商业模式未明确。"
+  ],
+  "I15": [
+    "Custom AI brain games",
+    "定制脑力训练游戏",
+    "有人为患早期痴呆的家人需要定制游戏队列（Lumosity 无法自定义）。评论已有人做出开源方案，证明一个人一天能实现。",
+    true
+  ],
+  "I19": [
+    "Is there a tool that unlocks specific trophies",
+    "游戏成就解锁工具",
+    "玩家想解锁游戏内特定成就，特别是多人模式的成就，好专注单人故事。需求很小众。"
+  ],
+  "I20": [
+    "Look through funds to see true asset allocation",
+    "基金资产配置对账工具",
+    "机构投资者有多只基金，需要了解整体资产配置与指数的偏离度。评论已给出 Morningstar X-Ray、Portfolio Visualizer 等现成方案。"
+  ],
+  "I21": [
+    "Forward prerequisite checking tool",
+    "课程先修课反向查询工具",
+    "学生想快速查出哪些课以某门课为先修课。评论说没现成工具，受众局限在高校学生。"
+  ],
+  "I28": [
+    "Web-based Enterprise Level Dashboard and Visualization",
+    "企业级数据仪表板技术选择",
+    "询问用什么技术做企业级免费或开源数据看板。这是技术咨询，不是产品缺口。"
+  ],
+  "I29": [
+    "BI engine with REST API to retrieve data",
+    "提供 REST API 的 BI 引擎",
+    "企业想要一个 BI 工具能通过 REST API 返回聚合数据，实现前后端分离。评论推荐了 Logi Analytics。"
+  ],
+  "I38": [
+    "Mendeley API (e.g., Python) - Change all titles",
+    "论文标题批量转换工具",
+    "学术工作者需要把 Mendeley 中数千篇论文标题转成 Sentence case（符合 APA 格式）。已有人做过脚本但不完美。"
+  ],
+  "I41": [
+    "Which mobile application framework is good to build",
+    "共享打车应用框架选择",
+    "开发者在选择框架开发 Uber 类导航应用，询问 Mapbox 和移动端框架组合。这是技术咨询。"
+  ],
+  "I45": [
+    "Alternative to refbase",
+    "学术论文管理系统替代方案",
+    "小型协会需要新手友好、支持 BibTeX 的论文库管理系统，refbase 已年久失修。"
+  ],
+  "I61": [
+    "Are others seeing Google's reCAPTCHA rejecting Firefox",
+    "reCAPTCHA 对非 Chrome 浏览器的兼容问题",
+    "Firefox 用户遇到 Google reCAPTCHA 无限验证循环。讨论可能与反广告拦截有关，无产品诉求。"
+  ],
+  "I67": [
+    "Why were OpenAI, Claude, and Grok simultaneously down",
+    "大型 LLM 服务宕机事件讨论",
+    "OpenAI、Claude、Grok 同时出现服务中断，评论猜测可能原因。纯讨论帖，无产品诉求。"
+  ],
+  "I71": [
+    "Who is using MCP in production",
+    "MCP 在生产环境的应用调查",
+    "调查 Model Context Protocol 的实际生产应用场景，评论分享了各种落地情况。是行业调研，不是产品需求。"
+  ],
+  "I72": [
+    "Function Hooks - make plugins 10x more powerful",
+    "Claude Code 的 Function Hooks 功能请求",
+    "提议为 Claude Code 添加 TypeScript 函数式 Hooks，让用户能深度定制。这是对现成工具的功能建议。"
+  ],
+  "I94": [
+    "Jamf | A love hate relationship",
+    "MSP 友好的设备管理工具",
+    "小型托管服务商被 Jamf 的多租户管理、手工对账、支持差等问题所困，在寻找替代方案。"
+  ],
+  "I145": [
+    "Inline",
+    "Inline",
+    "支持与 AI 和团队成员多人协作的工作工具。"
+  ],
+  "I146": [
+    "WeatherNext 3",
+    "WeatherNext 3",
+    "新一代全球天气预报 AI 模型。"
+  ],
+  "I147": [
+    "Compliance by TwelveLabs",
+    "Compliance",
+    "基于自定义规则对视频进行合规性审查。"
+  ],
+  "I148": [
+    "GPT-6 Astra",
+    "GPT-6 Astra",
+    "OpenAI 最新旗舰 AI 模型。"
+  ],
+  "I149": [
+    "myAIcademy",
+    "myAIcademy",
+    "按岗位定制的 AI 技能学习平台。"
+  ],
+  "I150": [
+    "Clockwork",
+    "Clockwork",
+    "为 AI agent 日程安排的日历工具。"
+  ],
+  "I151": [
+    "Offline JS Playground",
+    "Offline JS Playground",
+    "支持离线执行 JavaScript 代码和 JSON 的本地工具。"
+  ],
+  "I152": [
+    "Gemini 3.8 Flash",
+    "Gemini 3.8 Flash",
+    "Google 的编码和 agent 优化的轻量模型。"
+  ],
+  "I153": [
+    "Omarchy",
+    "Omarchy",
+    "为 AI agent 时代设计的可塑型操作系统。"
+  ],
+  "I154": [
+    "Chalked for Mac",
+    "Chalked for Mac",
+    "根据工作上下文生成邮件回复的 Mac 工具。"
+  ],
+  "I155": [
+    "cmmnts",
+    "cmmnts",
+    "为任何网站添加评论系统的工具。"
+  ],
+  "I156": [
+    "Snitch",
+    "Snitch",
+    "从 Slack 自动构建组织结构图。"
+  ],
+  "I165": [
+    "Prices.eu.org",
+    "Prices.eu.org",
+    "每日更新的欧盟物价、能源、房价、工资指数追踪站。"
+  ],
+  "I166": [
+    "MCP Tool Definition Quality Score (TDQS) Spec",
+    "MCP 工具定义质量评分规范",
+    "开源规范，为 MCP server 的工具定义建立质量评分标准，解决生态中定义不一致问题。"
+  ],
+  "I167": [
+    "The Primer",
+    "自适应成长的 AI 家教系统",
+    "YC 创业方向：做一个能随学生成长自适应调整内容的交互式学习系统。"
+  ],
+  "I168": [
+    "Synthetic Audiences: Verified Humans, Panel Fraud",
+    "合成受众与民调数据真伪",
+    "AI 生成的合成人物被用于问卷调查，导致民意数据难以甄别真伪。"
+  ],
+  "I169": [
+    "Why Is Sleeping Less Than 7 Hours a 12% Mortality Risk",
+    "睡眠与健康的关系",
+    "讨论睡眠不足与死亡率的相关性和健康趋势。"
+  ]
 }

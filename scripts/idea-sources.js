@@ -46,9 +46,16 @@
 // 「有没有做出来」比「从哪冒出来的」更贴近一个创业者真正关心的问题：
 // 这一类我该不该做，那一类我的对手/参考是谁。所以换成按成熟度分。
 //
-// Product Hunt 和 IdeaBrowser 是各自类别里的「优质来源」——前者是编辑筛过的
-// 产品，后者是人工深挖过的点子，可信度都高于自动抓来的原始帖子，
-// 两者都标 featured，在各自类别里排最前面，不跟原始帖子按热度混排。
+// Product Hunt 和 IdeaBrowser 是各自类别里编辑/人工筛过的来源，可信度高于
+// 自动抓来的原始帖子——但这只影响读者怎么解读这些条目，不该变成机械的
+// 排序规则。2026-09-04 第三次改版之前给它们标了 `featured: true`，
+// 效果是不管内容本身怎样，这两个来源永远排最前、永远带星标。
+// 读者的反馈很直接：「星标应该标在你觉得重要的内容上，不是按渠道标」——
+// 一条来自 Product Hunt 的平庸新品和一条来自 Reddit 但被高度验证的抱怨，
+// 值不值得注意跟它从哪来的没关系。所以 `featured` 整个删掉：
+// 完整库现在按「类别 → 来源」两层分节展示（各来源的条目天然聚在一起，
+// 不需要再靠 featured 把某个来源的条目提到别的来源前面），
+// 星标改成逐条判断，见 ideas-style.md 里「星标」那一节。
 // ============================================================================
 
 // 2026-09-02 逐个 curl 实测：
@@ -197,8 +204,6 @@ export const BOARDS = [
     url: 'https://www.producthunt.com/feed',
     home: 'https://www.producthunt.com/',
     side: 'supply', category: 'product', pool: true, cap: 20, deepen: 'none', dateless: true,
-    // 编辑筛过的产品目录站，「产品」类别里的优质来源，排最前面
-    featured: true,
     // PH 的 content 末尾固定挂着两个链接（Discussion / Link），剥完标签后
     // 它们的文字会黏在摘要屁股上。摘要要的是那句产品描述，尾巴切掉。
     trimTail: /\s*Discussion\s*\|?\s*Link\s*$/i,
@@ -225,9 +230,6 @@ export const NEWSLETTERS = [
     id: 'ideabrowser', name: 'IdeaBrowser', from: 'notifications@mail.ideabrowser.com',
     home: 'https://www.ideabrowser.com/', parser: 'ideabrowser',
     side: 'demand', category: 'idea', pool: true, cap: 6, deepen: 'none',
-    // 人工深挖过的成品点子，可信度高于自动抓来的原始帖子 ——「点子」类别里的
-    // 优质来源，和「值得做」精选里都排在最前面，不跟别的条目抢排序。
-    featured: true,
     note: '每天一条已经深挖过的点子。公开归档页被机器人验证挡死，只能走邮箱'
   },
   {

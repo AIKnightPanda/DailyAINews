@@ -9,22 +9,17 @@
 // 不会产生死链；而错位本身由探针挡住。
 // ============================================================================
 
-import { sourceById, CATEGORY_ORDER, CATEGORY_LABEL, CATEGORY_LABEL_EN } from '../idea-sources.js';
+import { sourceById, ALL_SOURCES, CATEGORY_ORDER, CATEGORY_LABEL, CATEGORY_LABEL_EN } from '../idea-sources.js';
 
-// category/featured 都是注册表里的静态属性，按 sourceId 现查，
-// 不落进 raw JSON —— 这样旧期号加新维度不用回填数据，直接重新渲染就对齐了
+// category 是注册表里的静态属性，按 sourceId 现查，不落进 raw JSON ——
+// 这样旧期号加新维度不用回填数据，直接重新渲染就对齐了
 const categoryOf = it => sourceById(it.sourceId)?.category || 'idea';
-const isFeatured = it => !!sourceById(it.sourceId)?.featured;
-// 粗略的热度分：points/thumbsUp 权重给足，views 打个折 —— 只用来在类别内部
-// 排序，不展示给读者，所以不用多精确，能把明显更热的顶上去就够了
+// 粗略的热度分：points/thumbsUp 权重给足，views 打个折 —— 只用来在同一个
+// 来源内部排序，不展示给读者，所以不用多精确，能把明显更热的顶上去就够了
 const engagementOf = it => {
   const g = it.signal || {};
   return (g.points || 0) * 2 + (g.thumbsUp || 0) * 2 + Math.floor((g.views || 0) / 20);
 };
-// 排序规则：featured（优质来源，如 Product Hunt、IdeaBrowser）永远最前，
-// 类别内部按热度降序。Array#sort 在现代引擎里是稳定排序，热度打平时保持原序。
-const rankSort = list => list.slice().sort((a, b) =>
-  ((b.featured ? 1 : 0) - (a.featured ? 1 : 0)) || ((b.engagement || 0) - (a.engagement || 0)));
 
 export const esc = s => String(s || '').replace(/([[\]])/g, '\\$1');
 export const escUrl = u => String(u || '').replace(/[()\s]/g, encodeURIComponent);
@@ -113,6 +108,10 @@ const rowOf = (item, zh) => {
   return probeFits(p, item.title) && norm(item.title).startsWith(p) ? row : null;
 };
 
+// 星标是第四个可选元素（[探针, 标题, 说明, 星标?]），逐条由模型判断内容本身
+// 值不值得多看一眼 —— 不是按来源判断。见 ideas-style.md「星标」一节。
+const starOf = (item, zh) => !!(rowOf(item, zh) || [])[3];
+
 export const textOf = (item, zh, lang) => {
   if (lang === 'en') return { title: item.title, summary: item.summary, ok: true };
   if (isCJK(item.title)) return { title: item.title, summary: item.summary, ok: true };
@@ -131,10 +130,11 @@ export const PICKS_END = '<!-- PICKS:END -->';
 export const dots = n => '●'.repeat(Math.max(0, Math.min(5, n | 0))) + '○'.repeat(Math.max(0, 5 - (n | 0)));
 
 // 2026-09-04 从六栏（是什么/谁在要/钱在哪里/已有方案/怎么找到人/判断）
-// 砍到两栏。六栏那版是把「值不值得做」的四道判断门槛（需求具体/一人可做/
-// 有人已经在花钱/找得到这些人）每一条都摊成一个字段，读起来像审计报告，
-// 而这里要的其实只是「这是什么」加「我怎么判断」——四道门槛还在，只是
-// 收进了模型判断时的内部标准，不必每条都单独写出来给读者看。
+// 砍到两栏。六栏那版把「值不值得做」拆成四道单独打勾的门槛，读起来像审计
+// 报告，而且检查表本身会跑偏——2026-09-04 又一次改版是因为读者指出：
+// 「值不值得做，是对这个点子或产品本身的判断，而不是去看是否有这几个
+// 元素，这是舍本逐末」。所以这里要的从来不是「过了几道检查」，
+// 是「这是什么」加「我怎么判断它本身有没有价值」。
 //
 // 读者要知道的只有两件事：
 //   background —— 这是什么：用户是谁、他的问题/需求是什么、别人（评论区）
@@ -157,10 +157,8 @@ export function renderPicks(data, zh, picks, lang) {
     // 一条都没读过，那才是管道断了。
     const read = data.items.filter(x => x.candidate).length;
     out.push(lang === 'en'
-      ? `> Nothing cleared the bar today (${read} items read in full).`
-      : `> **今天没有值得做的。** 读完了 ${read} 条候选，没有一条同时满足四道门槛` +
-        `（需求具体 / 一个人做得完 / 有人已经在花钱 / 你找得到这些人）。` +
-        `下面的库里都读过了，可以自己翻。`,
+      ? `> Nothing looked worth building today (${read} items read in full).`
+      : `> **今天没有值得做的。** 读完了 ${read} 条候选，没有一条本身的价值大到值得单独拎出来。下面的库里都读过了，可以自己翻。`,
       '', PICKS_END, '');
     return out;
   }
@@ -197,12 +195,14 @@ export function renderPicks(data, zh, picks, lang) {
 // 只列有一句话说明的（模型在任务 A 里写的）。一条叫「Doop」或「Hey guys」的标题
 // 读者看了等于没看。池子里剩下多少条会在末尾报个数字，不会静悄悄消失。
 //
-// 2026-09-04 第二次改版：上一版把这一节叫「其余读过的」，内部按「谁的视角」
-// 分两栏、栏内再拆需求/供给两个子节——四层结构，读者反馈「这版结构不合理，
-// 而且非常有歧义」：「其余读过的」本身不该是一个类别，它只是「值得做」之外
-// 的库存；真正该分类的维度是**做没做出来**，不是「谁的视角」。
-// 所以砍成一层：点子（还没做出来的）、产品（已经做出来的，不论规模），
-// 没有第三个类别，风向类的源也要落进这两个之一（见 idea-sources.js 的注释）。
+// 2026-09-04 第三次改版：上一版是「点子/产品（h3）→ 条目」一层，
+// 但外面还包了一层「完整库」标题——读者反馈「点子」「产品」这两个才是真正
+// 的分类，「完整库」只是个容器，不该比它们还显眼。所以「完整库」这层
+// 整个去掉，点子/产品直接是本节最高一级；节内再按**来源**分小节
+// （之前是不分的一整条列表），每个来源标题下面顺带报「抓了几条、
+// 展示了几条」，读者不用再去别处对统计。来源顺序照 idea-sources.js
+// 里的注册表顺序走——各来源的条目已经天然聚在一起了，不需要再靠
+// 「优质来源永远置顶」这种规则去调顺序（那是上一版的 featured，已删）。
 
 function restRowOf(it, zh, lang) {
   const t = textOf(it, zh, lang);
@@ -214,14 +214,19 @@ function restRowOf(it, zh, lang) {
     url: it.url,
     source: it.source,
     signal: signalText(it),
-    featured: isFeatured(it),
-    engagement: engagementOf(it)   // 只用来排序，下面 rankSort 完就丢掉
+    star: starOf(it, zh),
+    engagement: engagementOf(it)   // 只用来排序，下面排完就丢掉
   };
 }
 
 // 页面用：结构化的行，由 template.html 排版。
 // 走结构化而不是 markdown bullet，是因为「标题 + 说明 + 来源 + 信号」四样东西
 // 塞进一个 li 里怎么排都别扭，交给 CSS 才排得开。
+//
+// 两层分组：类别（点子/产品）→ 来源。每层都带「抓了多少、展示了多少」——
+// 类别层数的是这个类别下所有抓到的条目（不管有没有说明），来源层数的是
+// 这一个来源抓到的条目，两者都可能比 rows.length 大，差值就是「读过了但
+// 说不出来是什么」或「没排进深挖线以内」的那些，数字不会凭空消失。
 export function restRows(data, zh, picks, lang) {
   const picked = new Set(resolvePicks(data, picks).list.map(x => x.it.ref));
   const CL = lang === 'en' ? CATEGORY_LABEL_EN : CATEGORY_LABEL;
@@ -234,12 +239,24 @@ export function restRows(data, zh, picks, lang) {
 
   const groups = [];
   for (const key of CATEGORY_ORDER) {
+    const fetched = data.items.filter(x => categoryOf(x) === key).length;
     const bucket = items.filter(x => categoryOf(x) === key);
-    const rows = rankSort(bucket.map(it => restRowOf(it, zh, lang)).filter(Boolean))
-      .map(({ engagement, ...r }) => r);   // 排完序就不需要这个数了，不进最终 payload
-    if (!rows.length) continue;
-    const sources = [...new Set(bucket.map(x => x.source).filter(Boolean))];
-    groups.push({ key, label: CL[key], sources, rows });
+    if (!fetched) continue;
+
+    const subs = [];
+    for (const src of ALL_SOURCES) {
+      if ((src.category || 'idea') !== key) continue;
+      const fromSrc = bucket.filter(x => x.sourceId === src.id);
+      const rows = fromSrc.map(it => restRowOf(it, zh, lang)).filter(Boolean)
+        .sort((a, b) => (b.star - a.star) || (b.engagement - a.engagement))
+        .map(({ engagement, ...r }) => r);
+      if (!rows.length) continue;   // 这个来源今天一条都没能展示，不占一个小节
+      const srcFetched = data.items.filter(x => x.sourceId === src.id).length;
+      subs.push({ source: src.name, fetched: srcFetched, shown: rows.length, rows });
+    }
+    if (!subs.length) continue;
+    const shown = subs.reduce((n, s) => n + s.rows.length, 0);
+    groups.push({ key, label: CL[key], fetched, shown, subs });
   }
   return groups;
 }
@@ -254,25 +271,24 @@ function signalText(it) {
 }
 
 // md 用：同一份数据排成 markdown，让 ideas/<期号>.md 在 GitHub 上自包含。
-// 层级和页面一致：类别（点子/产品）在 h3，条目直接跟在下面 —— 只有一层，
-// 不再有需求/供给这个中间层级。
+// 层级和页面一致：类别（点子/产品）在 h2，和上面的「值得做的」平级；
+// 来源在 h3。
 export function renderRunnerUps(data, zh, picks, lang) {
   const groups = restRows(data, zh, picks, lang);
   if (!groups.length) return [];
 
-  const out = [`## ${lang === 'en' ? 'Full library' : '完整库'}`, ''];
-  out.push(lang === 'en'
-    ? '> Everything read, minus what is already highlighted above. Sorted idea vs product, quality sources first.'
-    : '> 都读过了，去掉上面已经在「值得做」里出现过的。按点子/产品分类，优质来源排前面。', '');
-
+  const out = [];
   for (const g of groups) {
-    out.push(`### ${g.label}（${g.rows.length}）` + (g.sources.length ? ` · ${g.sources.join(' · ')}` : ''), '');
-    for (const r of g.rows) {
-      out.push(`- **[${esc(r.title)}](${escUrl(r.url)})**` + (r.featured ? ' 🔹' : '') +
-        `　<sub>${esc(r.source)}${r.signal ? ' · ' + esc(r.signal) : ''}</sub>`);
-      out.push(`  ${esc(r.desc)}`);
+    out.push(`## ${g.label}（抓了 ${g.fetched} 条 · 展示 ${g.shown} 条）`, '');
+    for (const s of g.subs) {
+      out.push(`### ${s.source}（抓了 ${s.fetched} 条 · 展示 ${s.shown} 条）`, '');
+      for (const r of s.rows) {
+        out.push(`- **[${esc(r.title)}](${escUrl(r.url)})**` + (r.star ? ' ⭐' : '') +
+          (r.signal ? `　<sub>${esc(r.signal)}</sub>` : ''));
+        out.push(`  ${esc(r.desc)}`);
+      }
+      out.push('');
     }
-    out.push('');
   }
 
   const hidden = data.items.filter(x => x.pool && !x.candidate).length;

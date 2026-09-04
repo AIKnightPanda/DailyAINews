@@ -1,72 +1,175 @@
 {
-  "I3":  ["An App for Women-Only Product", "只有女性的产品推荐社区",
-          "想做一个封闭给女性的美妆护肤个护推荐平台，靠真实使用经验互评，避开软文和刷单。评论直接点出冷启动是死穴。"],
-  "I4":  ["Concept Feedback: A hyper-local", "沙特本地的邻里志愿互助应用",
-          "把年轻志愿者和需要临时体力帮助的老人配对，不收钱，用积分和徽章驱动，子女可以远程替父母下单。"],
-  "I8":  ["Custom AI brain games", "认知训练游戏的自动播放队列",
-          "母亲有早期痴呆，Lumosity 几十个游戏里只有 11 个她玩得来，但它不让自定义队列，家属只能全程坐在旁边手动切。"],
-  "I15": ["Does this app exist?", "屏蔽网页和电子书里特定词的阅读工具",
-          "OCD 患者希望读东西时把会触发他的词挡掉。回帖说浏览器有替换词的扩展，但电子书没有解法。"],
-  "I16": ["Is there an app that scans for recalled", "扫条码查食品召回",
-          "想要扫一下商品条码就知道它在不在最近的召回名单上。现在只能站在货架前一盒盒 Google。"],
-  "I19": ["Weather Alerts??", "三星手机上的天气语音告警",
-          "从 iPhone 换到 S26 Ultra 后收不到出声的天气预警。评论里已经给出答案：开系统开关，或用 WeatherBug。"],
-  "I24": ["Overlaying Routes on Map", "把走过的路线全叠在一张地图上",
-          "常年在城里走路并记录轨迹，想把所有走过的路彩色叠成一张类似公交线路图的图。现有工具都是用来规划路线的。"],
-  "I28": ["Mendeley API (e.g., Python) - Change", "文献标题批量转句首大写",
-          "APA 第 7 版要求参考文献标题用句首大写，但库里几千条大小写不一。难点是自动转换会把 BDI 这类缩写一起转小写。"],
-  "I31": ["Which mobile application framework", "做地图导航应用该选哪个移动框架",
-          "要给客户做一个类似 Uber 的导航应用，在 Mapbox、React Native、Flutter 之间拿不定主意。技术选型咨询，不是产品缺口。"],
-  "I35": ["Alternative to refbase", "refbase 的替代品",
-          "要给一个学术协会做网站，需要新手也能管理、兼容 BibTeX 的文献库，最好有法语界面。回帖推荐了 wikindx。"],
-  "I43": ["Software to create a database structure", "从一批 XSD 自动生成数据库结构",
-          "按部委强制的 50–100 份 XSD 建库出报表，手工建表几乎不可能不出错，外键缺失、孤立表一堆。唯一的回帖说没有现成方案。"],
-  "I49": ["Git server solution using file permissions", "保留 AD 权限的自建 Git 服务",
-          "公司仓库放在受域控的目录里用 SMB 访问，想换成正经 Git 服务但网管要求保住 AD 组权限、且不肯花钱。"],
-  "I61": ["Alternative to Proton Mail?", "Proton Mail 的替代品",
-          "受不了 Proton 频繁宕机，想换一个支持自定义域名、PGP 和 IMAP 且稳定的邮箱。回帖给了 FastMail 和 Infomaniak。"],
-  "I66": ["Asked Reddit support to give me API key", "Reddit 拒绝给 API 权限，用户删不掉自己的数据",
-          "为了彻底删除自己在 Reddit 的历史去申请 API 权限被驳回。评论区的解法都是浏览器自动化，绕开官方接口。"],
-  "I70": ["Is it just me, or has Claude Opus gotten", "Claude Opus 是不是变差了",
-          "抱怨复杂任务上模型退化。评论里最值钱的一句是「LLM 本来就不确定，你根本没法度量性能，更别说度量随时间的变化」。"],
-  "I75": ["add an option to disable “Ran N commands”", "希望 Codex 能关掉命令折叠",
-          "0.149.0 起自动把连续成功的命令折叠成一行，78 人要求加个开关一直展开。给现成产品提功能，不是独立机会。"],
-  "I76": ["[FEATURE] Passkey (WebAuthn) sign-in", "希望 Claude 账号支持通行密钥登录",
-          "现在只有 Google 登录和邮件魔法链接，后者常常五分钟以上才到且容易失败。同样是给现成产品提功能。"],
-  "I89": ["I’ve been building for retention", "做留存容易，证明留存干预有效很难",
-          "做了个国际象棋改进报告产品，从第一天就为留存设计，但一直没法证明这些设计真的起了作用。"],
-
-  "I97":  ["Stitch AI by Dynamic Mockups", "Stitch AI：刺绣制版 agent",
-           "把图案自动转成刺绣机能读的针法文件。这一步过去要人工制版，是刺绣代工里最贵的一环。"],
-  "I99":  ["Doop", "Doop：多人协作的 AI 设计画布",
-           "几个人和多个 AI agent 同时在一块画布上改设计，类似 Figma 的多人协作，但参与者包括 agent。"],
-  "I100": ["HydraDB OSS", "HydraDB 开源",
-           "一个主打「最快最便宜」的图数据库转为开源。图数据库开源化是这两年的常见路径。"],
-  "I101": ["Parasocial", "Parasocial：原生播客播放器",
-           "给重度播客听众做的快速原生客户端。这个品类里 Overcast、Pocket Casts 已经很成熟。"],
-  "I102": ["Userlens", "Userlens：提升产品采用率的 AI agent",
-           "自动分析用户行为并给出提升采用率的建议，属于产品分析工具的 agent 化。"],
-  "I103": ["Monid", "Monid：agent 工具的 OpenRouter",
-           "给 AI agent 的工具调用做统一聚合层，就像 OpenRouter 之于模型。说明「agent 工具聚合」正在长成一个品类。"],
-  "I104": ["deepeye by deepidv", "deepeye：跟着你浏览的深伪检测器",
-           "浏览器里实时提示当前内容可能是深度伪造。和同期的 Weedout 一起说明「内容真实性过滤」这个方向在升温。"],
-  "I105": ["Basedash AI Sources", "Basedash AI Sources：让 AI 的回答可溯源",
-           "把 AI 给出的每个答案追溯到它依据的数据，解决企业内部不敢信 AI 分析结论的问题。"],
-  "I106": ["Onset MCP", "Onset MCP：让 AI 助手直接写发布说明",
-           "接进 MCP，让编码助手根据提交记录生成并发布 release notes。"],
-  "I107": ["Loqua", "Loqua：语音驱动的任务流",
-           "说一段话，直接变成可执行的动作，主打从想法到完成之间不用打字。"],
-  "I108": ["Browzer", "Browzer：技术内容自动化",
-           "自动生成和维护技术类内容，面向要持续产出文档和文章的团队。"],
-  "I109": ["Roadie", "Roadie：自动切回正确的麦克风和音箱",
-           "Mac 接上外设后音频输入输出经常被系统改掉，这个小工具帮你锁住。典型的一人做的小烦恼工具，也能上 Product Hunt。"],
-  "I117": ["Weedout – Safari extension", "Weedout：屏蔽 YouTube 上标注为 AI 生成的视频",
-           "1.99 美元的 Safari 扩展，靠 YouTube 自己打的「Made with AI」标签过滤，本地运行不做检测。150 票、66 条评论。"],
-  "I118": ["HN Match Maker – Matching", "HN Match Maker：把「谁想被雇」和「谁在招人」对起来",
-           "用 LLM 抽取两个月度固定帖的信息，按薪资、领域、远程与否打分配对。94 票，但评论里有人质疑隐私。"],
-
-  "I122": ["The Primer", "YC 想投：会自适应成长的启蒙读本",
-           "《钻石年代》里那本随孩子成长而成长的互动书 —— 不只教认字，而是用贴合她人生的故事教她思考和推理。"],
-  "I123": ["⏰ Why Is Sleeping Less Than 7 Hours", "Trends.vc 本周合集",
-           "本期包含反 AI 废话的技能、Grok Bot 用法、睡眠与长寿、一个 AI 项目目录等零散线索。"]
+  "I3": [
+    "An App for Women-Only Product",
+    "只有女性的产品推荐社区",
+    "想做一个封闭给女性的美妆护肤个护推荐平台，靠真实使用经验互评，避开软文和刷单。评论直接点出冷启动是死穴。"
+  ],
+  "I4": [
+    "Concept Feedback: A hyper-local",
+    "沙特本地的邻里志愿互助应用",
+    "把年轻志愿者和需要临时体力帮助的老人配对，不收钱，用积分和徽章驱动，子女可以远程替父母下单。"
+  ],
+  "I8": [
+    "Custom AI brain games",
+    "认知训练游戏的自动播放队列",
+    "母亲有早期痴呆，Lumosity 几十个游戏里只有 11 个她玩得来，但它不让自定义队列，家属只能全程坐在旁边手动切。"
+  ],
+  "I15": [
+    "Does this app exist?",
+    "屏蔽网页和电子书里特定词的阅读工具",
+    "OCD 患者希望读东西时把会触发他的词挡掉。回帖说浏览器有替换词的扩展，但电子书没有解法。"
+  ],
+  "I16": [
+    "Is there an app that scans for recalled",
+    "扫条码查食品召回",
+    "想要扫一下商品条码就知道它在不在最近的召回名单上。现在只能站在货架前一盒盒 Google。"
+  ],
+  "I19": [
+    "Weather Alerts??",
+    "三星手机上的天气语音告警",
+    "从 iPhone 换到 S26 Ultra 后收不到出声的天气预警。评论里已经给出答案：开系统开关，或用 WeatherBug。"
+  ],
+  "I24": [
+    "Overlaying Routes on Map",
+    "把走过的路线全叠在一张地图上",
+    "常年在城里走路并记录轨迹，想把所有走过的路彩色叠成一张类似公交线路图的图。现有工具都是用来规划路线的。"
+  ],
+  "I28": [
+    "Mendeley API (e.g., Python) - Change",
+    "文献标题批量转句首大写",
+    "APA 第 7 版要求参考文献标题用句首大写，但库里几千条大小写不一。难点是自动转换会把 BDI 这类缩写一起转小写。"
+  ],
+  "I31": [
+    "Which mobile application framework",
+    "做地图导航应用该选哪个移动框架",
+    "要给客户做一个类似 Uber 的导航应用，在 Mapbox、React Native、Flutter 之间拿不定主意。技术选型咨询，不是产品缺口。"
+  ],
+  "I35": [
+    "Alternative to refbase",
+    "refbase 的替代品",
+    "要给一个学术协会做网站，需要新手也能管理、兼容 BibTeX 的文献库，最好有法语界面。回帖推荐了 wikindx。"
+  ],
+  "I43": [
+    "Software to create a database structure",
+    "从一批 XSD 自动生成数据库结构",
+    "按部委强制的 50–100 份 XSD 建库出报表，手工建表几乎不可能不出错，外键缺失、孤立表一堆。唯一的回帖说没有现成方案。"
+  ],
+  "I49": [
+    "Git server solution using file permissions",
+    "保留 AD 权限的自建 Git 服务",
+    "公司仓库放在受域控的目录里用 SMB 访问，想换成正经 Git 服务但网管要求保住 AD 组权限、且不肯花钱。",
+    true
+  ],
+  "I61": [
+    "Alternative to Proton Mail?",
+    "Proton Mail 的替代品",
+    "受不了 Proton 频繁宕机，想换一个支持自定义域名、PGP 和 IMAP 且稳定的邮箱。回帖给了 FastMail 和 Infomaniak。"
+  ],
+  "I66": [
+    "Asked Reddit support to give me API key",
+    "Reddit 拒绝给 API 权限，用户删不掉自己的数据",
+    "为了彻底删除自己在 Reddit 的历史去申请 API 权限被驳回。评论区的解法都是浏览器自动化，绕开官方接口。"
+  ],
+  "I70": [
+    "Is it just me, or has Claude Opus gotten",
+    "Claude Opus 是不是变差了",
+    "抱怨复杂任务上模型退化。评论里最值钱的一句是「LLM 本来就不确定，你根本没法度量性能，更别说度量随时间的变化」。"
+  ],
+  "I75": [
+    "add an option to disable “Ran N commands”",
+    "希望 Codex 能关掉命令折叠",
+    "0.149.0 起自动把连续成功的命令折叠成一行，78 人要求加个开关一直展开。给现成产品提功能，不是独立机会。",
+    true
+  ],
+  "I76": [
+    "[FEATURE] Passkey (WebAuthn) sign-in",
+    "希望 Claude 账号支持通行密钥登录",
+    "现在只有 Google 登录和邮件魔法链接，后者常常五分钟以上才到且容易失败。同样是给现成产品提功能。"
+  ],
+  "I89": [
+    "I’ve been building for retention",
+    "做留存容易，证明留存干预有效很难",
+    "做了个国际象棋改进报告产品，从第一天就为留存设计，但一直没法证明这些设计真的起了作用。"
+  ],
+  "I97": [
+    "Stitch AI by Dynamic Mockups",
+    "Stitch AI：刺绣制版 agent",
+    "把图案自动转成刺绣机能读的针法文件。这一步过去要人工制版，是刺绣代工里最贵的一环。"
+  ],
+  "I99": [
+    "Doop",
+    "Doop：多人协作的 AI 设计画布",
+    "几个人和多个 AI agent 同时在一块画布上改设计，类似 Figma 的多人协作，但参与者包括 agent。"
+  ],
+  "I100": [
+    "HydraDB OSS",
+    "HydraDB 开源",
+    "一个主打「最快最便宜」的图数据库转为开源。图数据库开源化是这两年的常见路径。"
+  ],
+  "I101": [
+    "Parasocial",
+    "Parasocial：原生播客播放器",
+    "给重度播客听众做的快速原生客户端。这个品类里 Overcast、Pocket Casts 已经很成熟。"
+  ],
+  "I102": [
+    "Userlens",
+    "Userlens：提升产品采用率的 AI agent",
+    "自动分析用户行为并给出提升采用率的建议，属于产品分析工具的 agent 化。"
+  ],
+  "I103": [
+    "Monid",
+    "Monid：agent 工具的 OpenRouter",
+    "给 AI agent 的工具调用做统一聚合层，就像 OpenRouter 之于模型。说明「agent 工具聚合」正在长成一个品类。"
+  ],
+  "I104": [
+    "deepeye by deepidv",
+    "deepeye：跟着你浏览的深伪检测器",
+    "浏览器里实时提示当前内容可能是深度伪造。和同期的 Weedout 一起说明「内容真实性过滤」这个方向在升温。"
+  ],
+  "I105": [
+    "Basedash AI Sources",
+    "Basedash AI Sources：让 AI 的回答可溯源",
+    "把 AI 给出的每个答案追溯到它依据的数据，解决企业内部不敢信 AI 分析结论的问题。"
+  ],
+  "I106": [
+    "Onset MCP",
+    "Onset MCP：让 AI 助手直接写发布说明",
+    "接进 MCP，让编码助手根据提交记录生成并发布 release notes。"
+  ],
+  "I107": [
+    "Loqua",
+    "Loqua：语音驱动的任务流",
+    "说一段话，直接变成可执行的动作，主打从想法到完成之间不用打字。"
+  ],
+  "I108": [
+    "Browzer",
+    "Browzer：技术内容自动化",
+    "自动生成和维护技术类内容，面向要持续产出文档和文章的团队。"
+  ],
+  "I109": [
+    "Roadie",
+    "Roadie：自动切回正确的麦克风和音箱",
+    "Mac 接上外设后音频输入输出经常被系统改掉，这个小工具帮你锁住。典型的一人做的小烦恼工具，也能上 Product Hunt。"
+  ],
+  "I117": [
+    "Weedout – Safari extension",
+    "Weedout：屏蔽 YouTube 上标注为 AI 生成的视频",
+    "1.99 美元的 Safari 扩展，靠 YouTube 自己打的「Made with AI」标签过滤，本地运行不做检测。150 票、66 条评论。",
+    true
+  ],
+  "I118": [
+    "HN Match Maker – Matching",
+    "HN Match Maker：把「谁想被雇」和「谁在招人」对起来",
+    "用 LLM 抽取两个月度固定帖的信息，按薪资、领域、远程与否打分配对。94 票，但评论里有人质疑隐私。"
+  ],
+  "I122": [
+    "The Primer",
+    "YC 想投：会自适应成长的启蒙读本",
+    "《钻石年代》里那本随孩子成长而成长的互动书 —— 不只教认字，而是用贴合她人生的故事教她思考和推理。"
+  ],
+  "I123": [
+    "⏰ Why Is Sleeping Less Than 7 Hours",
+    "Trends.vc 本周合集",
+    "本期包含反 AI 废话的技能、Grok Bot 用法、睡眠与长寿、一个 AI 项目目录等零散线索。"
+  ]
 }

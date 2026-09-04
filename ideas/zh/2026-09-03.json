@@ -1,66 +1,164 @@
 {
-  "I1":  ["A Nextdoor alternative that won't", "不向本地小商家收费的 Nextdoor 替代品",
-          "Nextdoor 开始向本地小商家收费，有人想要一个不收费的邻里社区。典型的双边冷启动，一个人做不动。"],
-  "I4":  ["Would you sacrifice some features", "愿不愿意少几个功能，换少用几个工作 App",
-          "在问大家愿不愿意为了减少工具数量而牺牲部分功能。是个话题讨论，没有具体的缺口。"],
-  "I5":  ["18 months ago I pulled an idea from", "18 个月前从这个版块捡了个点子，现在在和大银行谈",
-          "一条成功故事汇报：从 r/SomebodyMakeThis 拿走一个点子做成了，现在在和大型金融机构接触。"],
-  "I6":  ["Look through funds to see true asset", "穿透基金看真实的资产配置",
-          "手上几只基金互相重叠，想知道整体离指数偏了多少。评论直接给了 Morningstar X-Ray 和 Portfolio Visualizer，已有方案。"],
-  "I8":  ["Forward prerequisite checking tool", "反查一门课是哪些课的先修",
-          "输入 PHYS-1200，列出所有以它为先修的课。唯一的回帖说「据我所知没有，我和朋友想做但没做」，还在用 Excel 变通。"],
-  "I9":  ["How are you optimising your project", "跨设备截图标注再喂回给编码 agent",
-          "用 Claude Code 建站后要在手机平板桌面逐个截图、标注、反馈，过程极慢。发帖人自己已经在做一个工具，问是不是已经有了。"],
-  "I12": ["Advice on Migrating from 1Password?", "从 1Password 迁走的经验",
-          "因为 1Password 的一笔捐赠争议想换密码管理器，也想说服公司换。评论里 Bitwarden、Vaultwarden、Proton Pass、pass 的迁移方案已经很全。"],
-  "I15": ["Omarchy Histerya", "Omarchy 为什么突然这么火",
-          "在问 Omarchy 这个 Linux 发行版最近的热度是怎么回事。社区讨论，不是需求。"],
-  "I20": ["How to ask questions in Ask HN", "怎么在 Ask HN 上提问",
-          "关于 Ask HN 提问方式的元讨论。"],
-  "I28": ["Add a setting to disable automatic", "希望 Codex CLI 能关掉自动对话摘要",
-          "Codex CLI 会自动压缩对话历史，用户希望有开关关掉。给现成产品提功能。"],
-  "I29": ["Performance: add skip_node_pool_refresh", "给 Terraform 的 GKE 数据源加个跳过节点池刷新的选项",
-          "读取集群信息时会连带刷新所有节点池，拖慢速度。给现成产品提功能。"],
-  "I33": ["Formal Complaint Regarding Repeated", "投诉垃圾清运公司反复漏收",
-          "针对市政垃圾清运服务的正式投诉。付费短语的假阳性，不是软件需求。"],
-  "I37": ["how much does zoominfo cost?", "B2B 数据供应商的真实成交价没人说得清",
-          "三个销售给了三个报价：$15k、$22k、$18k，功能说法还互相打架。评论点破这类厂商用的是「看你多想要就报多少」的定价模型。"],
-  "I42": ["Montenegro- going to Stari Bar", "黑山旅游怎么去 Stari Bar",
-          "问出租车报价和公交路线。付费短语的假阳性。"],
-  "I46": ["Whole home water softening system", "全屋软水系统求推荐",
-          "被报价 6500 美元，问有没有别家可选。付费短语的假阳性。"],
-  "I47": ["How are you managing local admin", "MSP 怎么管客户机器上的本地管理员权限",
-          "问同行用什么方案。评论里点名了 AutoElevate、Threatlocker、BeyondTrust EPM 三个付费产品，这块已经被吃掉。"],
-  "I48": ["Need some advice dealing with", "客户觉得「你们从没来过」，其实远程都修好了",
-          "MSP 接了个难缠客户，远程飞快修完却被抱怨「从来见不到人」。评论一边倒建议解约。隐含一个真问题：远程工作对客户是不可见的。"],
-  "I70": ["UPDATE: Hospitality Guy in IT", "接手了一个随时会炸的 IT 烂摊子",
-          "全网无分段、盗版 Windows、核心数据库跑在一块没有备份的机械盘上、服务器每晚关机。求助帖。"],
-  "I74": ["Fillo", "Fillo：让编码 agent 直接把表单嵌进你的产品",
-          "把表单能力做成 agent 可调用的组件，省掉自己搭一套表单系统。"],
-  "I75": ["Atlas by World Labs", "Atlas：把文字、图片、视频和 3D 转成可控镜头的高清视频",
-          "World Labs 出品，主打生成后还能像操作摄影机一样控制视角。"],
-  "I76": ["Causal", "Causal：给视觉项目做规划的 AI 画布",
-          "把拍摄、设计这类视觉项目的策划过程放到一块 AI 画布上。"],
-  "I77": ["Grove", "Grove：人和 agent 共用的一个终端",
-          "让你和 AI agent 在同一个终端会话里协作，而不是各开各的。"],
-  "I78": ["CodeLook", "CodeLook：在访达里快速预览代码，带 700 多种主题",
-          "macOS 的 Quick Look 扩展，空格键预览代码文件时带语法高亮。"],
-  "I79": ["Agent Builder by Airtop", "Airtop Agent Builder：会自我修复的 agent",
-          "主打网页自动化 agent 在页面结构变了之后能自己修好，而不是直接崩。"],
-  "I80": ["Blume.codes", "Blume.codes：把 agent 会话沉淀成规则和技能",
-          "读你和编码 agent 的历史会话，反过来生成更好的项目规则和 skill 文件。"],
-  "I81": ["Tabbit AI", "Tabbit AI：给浏览器派任务而不是提问",
-          "在浏览器里下达一个任务让它自己跑完，而不是一问一答。"],
-  "I82": ["Omi Desktop", "Omi Desktop：问你的 Mac 你看过听过的任何事",
-          "持续记录屏幕和声音，之后可以检索。隐私边界是这类产品的老问题。"],
-  "I84": ["Nex", "Nex：面向高频 GTM 工作流的 Claude Cowork",
-          "把销售和增长的重复流程交给 agent 批量跑。"],
-  "I85": ["Readr", "Readr：会答疑也会朗读的免费阅读器",
-          "读文章时能随时提问，也能朗读全文。"],
-  "I86": ["MagiCrew", "MagiCrew：给每个人配一支 AI 团队",
-          "一个平台里管理多个分工不同的 agent，面向非技术用户。"],
-  "I93": ["I built a version of Omarchy that runs", "在 Apple Silicon 上跑 Omarchy",
-          "用 QEMU 加 Apple 的 HVF 做了个原生 Mac 应用，能硬件加速跑 Omarchy，方便先试再决定要不要装。"],
-  "I94": ["Synthetic Audiences: Verified Humans", "合成受众：真人验证、样本作弊与知情同意的缺口",
-          "Trends.vc 本期：市场调研里越来越多的「第一轮问卷」由模拟人格先答，真人反而被挤到后面。"]
+  "I1": [
+    "A Nextdoor alternative that won't",
+    "不向本地小商家收费的 Nextdoor 替代品",
+    "Nextdoor 开始向本地小商家收费，有人想要一个不收费的邻里社区。典型的双边冷启动，一个人做不动。"
+  ],
+  "I4": [
+    "Would you sacrifice some features",
+    "愿不愿意少几个功能，换少用几个工作 App",
+    "在问大家愿不愿意为了减少工具数量而牺牲部分功能。是个话题讨论，没有具体的缺口。"
+  ],
+  "I5": [
+    "18 months ago I pulled an idea from",
+    "18 个月前从这个版块捡了个点子，现在在和大银行谈",
+    "一条成功故事汇报：从 r/SomebodyMakeThis 拿走一个点子做成了，现在在和大型金融机构接触。"
+  ],
+  "I6": [
+    "Look through funds to see true asset",
+    "穿透基金看真实的资产配置",
+    "手上几只基金互相重叠，想知道整体离指数偏了多少。评论直接给了 Morningstar X-Ray 和 Portfolio Visualizer，已有方案。"
+  ],
+  "I8": [
+    "Forward prerequisite checking tool",
+    "反查一门课是哪些课的先修",
+    "输入 PHYS-1200，列出所有以它为先修的课。唯一的回帖说「据我所知没有，我和朋友想做但没做」，还在用 Excel 变通。"
+  ],
+  "I9": [
+    "How are you optimising your project",
+    "跨设备截图标注再喂回给编码 agent",
+    "用 Claude Code 建站后要在手机平板桌面逐个截图、标注、反馈，过程极慢。发帖人自己已经在做一个工具，问是不是已经有了。"
+  ],
+  "I12": [
+    "Advice on Migrating from 1Password?",
+    "从 1Password 迁走的经验",
+    "因为 1Password 的一笔捐赠争议想换密码管理器，也想说服公司换。评论里 Bitwarden、Vaultwarden、Proton Pass、pass 的迁移方案已经很全。",
+    true
+  ],
+  "I15": [
+    "Omarchy Histerya",
+    "Omarchy 为什么突然这么火",
+    "在问 Omarchy 这个 Linux 发行版最近的热度是怎么回事。社区讨论，不是需求。"
+  ],
+  "I20": [
+    "How to ask questions in Ask HN",
+    "怎么在 Ask HN 上提问",
+    "关于 Ask HN 提问方式的元讨论。"
+  ],
+  "I28": [
+    "Add a setting to disable automatic",
+    "希望 Codex CLI 能关掉自动对话摘要",
+    "Codex CLI 会自动压缩对话历史，用户希望有开关关掉。给现成产品提功能。",
+    true
+  ],
+  "I29": [
+    "Performance: add skip_node_pool_refresh",
+    "给 Terraform 的 GKE 数据源加个跳过节点池刷新的选项",
+    "读取集群信息时会连带刷新所有节点池，拖慢速度。给现成产品提功能。"
+  ],
+  "I33": [
+    "Formal Complaint Regarding Repeated",
+    "投诉垃圾清运公司反复漏收",
+    "针对市政垃圾清运服务的正式投诉。付费短语的假阳性，不是软件需求。"
+  ],
+  "I37": [
+    "how much does zoominfo cost?",
+    "B2B 数据供应商的真实成交价没人说得清",
+    "三个销售给了三个报价：$15k、$22k、$18k，功能说法还互相打架。评论点破这类厂商用的是「看你多想要就报多少」的定价模型。"
+  ],
+  "I42": [
+    "Montenegro- going to Stari Bar",
+    "黑山旅游怎么去 Stari Bar",
+    "问出租车报价和公交路线。付费短语的假阳性。"
+  ],
+  "I46": [
+    "Whole home water softening system",
+    "全屋软水系统求推荐",
+    "被报价 6500 美元，问有没有别家可选。付费短语的假阳性。"
+  ],
+  "I47": [
+    "How are you managing local admin",
+    "MSP 怎么管客户机器上的本地管理员权限",
+    "问同行用什么方案。评论里点名了 AutoElevate、Threatlocker、BeyondTrust EPM 三个付费产品，这块已经被吃掉。"
+  ],
+  "I48": [
+    "Need some advice dealing with",
+    "客户觉得「你们从没来过」，其实远程都修好了",
+    "MSP 接了个难缠客户，远程飞快修完却被抱怨「从来见不到人」。评论一边倒建议解约。隐含一个真问题：远程工作对客户是不可见的。"
+  ],
+  "I70": [
+    "UPDATE: Hospitality Guy in IT",
+    "接手了一个随时会炸的 IT 烂摊子",
+    "全网无分段、盗版 Windows、核心数据库跑在一块没有备份的机械盘上、服务器每晚关机。求助帖。"
+  ],
+  "I74": [
+    "Fillo",
+    "Fillo：让编码 agent 直接把表单嵌进你的产品",
+    "把表单能力做成 agent 可调用的组件，省掉自己搭一套表单系统。"
+  ],
+  "I75": [
+    "Atlas by World Labs",
+    "Atlas：把文字、图片、视频和 3D 转成可控镜头的高清视频",
+    "World Labs 出品，主打生成后还能像操作摄影机一样控制视角。"
+  ],
+  "I76": [
+    "Causal",
+    "Causal：给视觉项目做规划的 AI 画布",
+    "把拍摄、设计这类视觉项目的策划过程放到一块 AI 画布上。"
+  ],
+  "I77": [
+    "Grove",
+    "Grove：人和 agent 共用的一个终端",
+    "让你和 AI agent 在同一个终端会话里协作，而不是各开各的。"
+  ],
+  "I78": [
+    "CodeLook",
+    "CodeLook：在访达里快速预览代码，带 700 多种主题",
+    "macOS 的 Quick Look 扩展，空格键预览代码文件时带语法高亮。"
+  ],
+  "I79": [
+    "Agent Builder by Airtop",
+    "Airtop Agent Builder：会自我修复的 agent",
+    "主打网页自动化 agent 在页面结构变了之后能自己修好，而不是直接崩。"
+  ],
+  "I80": [
+    "Blume.codes",
+    "Blume.codes：把 agent 会话沉淀成规则和技能",
+    "读你和编码 agent 的历史会话，反过来生成更好的项目规则和 skill 文件。"
+  ],
+  "I81": [
+    "Tabbit AI",
+    "Tabbit AI：给浏览器派任务而不是提问",
+    "在浏览器里下达一个任务让它自己跑完，而不是一问一答。"
+  ],
+  "I82": [
+    "Omi Desktop",
+    "Omi Desktop：问你的 Mac 你看过听过的任何事",
+    "持续记录屏幕和声音，之后可以检索。隐私边界是这类产品的老问题。"
+  ],
+  "I84": [
+    "Nex",
+    "Nex：面向高频 GTM 工作流的 Claude Cowork",
+    "把销售和增长的重复流程交给 agent 批量跑。"
+  ],
+  "I85": [
+    "Readr",
+    "Readr：会答疑也会朗读的免费阅读器",
+    "读文章时能随时提问，也能朗读全文。"
+  ],
+  "I86": [
+    "MagiCrew",
+    "MagiCrew：给每个人配一支 AI 团队",
+    "一个平台里管理多个分工不同的 agent，面向非技术用户。"
+  ],
+  "I93": [
+    "I built a version of Omarchy that runs",
+    "在 Apple Silicon 上跑 Omarchy",
+    "用 QEMU 加 Apple 的 HVF 做了个原生 Mac 应用，能硬件加速跑 Omarchy，方便先试再决定要不要装。"
+  ],
+  "I94": [
+    "Synthetic Audiences: Verified Humans",
+    "合成受众：真人验证、样本作弊与知情同意的缺口",
+    "Trends.vc 本期：市场调研里越来越多的「第一轮问卷」由模拟人格先答，真人反而被挤到后面。"
+  ]
 }

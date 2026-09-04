@@ -808,32 +808,39 @@ h4.lk-sec {
   .pick-lv { margin-left: 0; }
 }
 
-/* 完整库：点子/产品各一节，一行一条，标题、说明、来源各归各位（灵感页）。
-   2026-09-04 第二次改版：上一版是「视角(h3)→需求/供给(h4)」两层，读者反馈
-   「其余读过的」被当成了一个和「值得做」平级的类别，很有歧义 ——
-   现在砍成一层：点子/产品各是一个独立小节，节标题下面直接跟来源列表和条目，
-   不再有中间的需求/供给层级。 */
-.rest { margin: 2.4rem 0 1rem; }
-.rest-g { margin: 0 0 2rem; }
-.rest-g > h3 {
+/* 完整库：点子/产品各是一个和「值得做」平级的大类，来源是它们下面的
+   小节，条目一行一条（灵感页）。
+   2026-09-04 第三次改版：上一版外面还包了一层「完整库」标题，读者反馈
+   「点子」「产品」才是真正的分类，不该被一个容器标题压成它的子节 ——
+   所以「完整库」这层去掉，.rest-cat 直接借用 .picks-head 那套视觉权重
+   （大字号、强调色下划线），和「值得做的」并排成三个同级大类；
+   来源退到 h4，比类别小一级，比条目本身大一级。 */
+.rest { margin: 2.4rem 0 0; }
+.rest-cat { margin: 0 0 2.6rem; }
+.rest-cat-head {
+  display: flex; align-items: baseline; gap: .7rem; flex-wrap: wrap;
+  margin: 0 0 .3rem; padding-bottom: .5rem;
+  border-bottom: 2px solid var(--accent);
+}
+.rest-cat-head h3 {
+  margin: 0; font-family: var(--font-display);
+  font-size: 1.15rem; font-weight: 600; color: var(--accent); letter-spacing: .01em;
+}
+.rest-cat-head .sub { font-size: .78rem; color: var(--ink-3); font-family: var(--font-mono); }
+.rest-src-g { margin: 1.4rem 0 0; }
+.rest-src-g:first-child { margin-top: .6rem; }
+.rest-src-g > h4 {
   display: flex; align-items: baseline; gap: .5rem; flex-wrap: wrap;
-  font-family: var(--font-display); font-size: 1.02rem; font-weight: 600;
-  color: var(--ink); margin: 0 0 .3rem; padding-top: .8rem;
-  border-top: 1px solid var(--rule);
+  font-family: var(--font-display); font-size: .92rem; font-weight: 600;
+  color: var(--ink); margin: 0 0 .3rem;
 }
-.rest-g:first-child > h3 { padding-top: 0; border-top: 0; }
-.rest-g > h3 .n { font-family: var(--font-mono); font-size: .74rem; font-weight: 400; color: var(--ink-3); }
-.rest-src {
-  font-family: var(--font-mono); font-size: .68rem; font-weight: 400;
-  color: var(--ink-3); margin: 0 0 .8rem;
-}
+.rest-src-g > h4 .n { font-family: var(--font-mono); font-size: .7rem; font-weight: 400; color: var(--ink-3); }
 .rest-l { list-style: none; margin: 0; padding: 0; }
 .rest-l li { padding: .62rem 0; border-bottom: 1px solid var(--rule-2); }
 .rest-l li:last-child { border-bottom: 0; }
-/* featured（如 Product Hunt、IdeaBrowser 这类优质来源）排在小节最前，
-   左边一道强调色竖线，和普通条目区分开 */
-.rest-l li.rest-featured { padding-left: .6rem; border-left: 2px solid var(--accent); }
-.rest-star { color: var(--accent); margin-right: .3rem; }
+/* 星标现在是逐条判断（内容本身重要，不是渠道），左边一道强调色竖线 */
+.rest-l li.rest-star { padding-left: .6rem; border-left: 2px solid var(--accent); }
+.rest-star-ico { color: var(--accent); margin-right: .3rem; }
 .rest-t {
   display: block; font-family: var(--font-display);
   font-size: .97rem; font-weight: 600; line-height: 1.4;
@@ -1312,13 +1319,13 @@ h4.lk-sec {
 
     var rows = picks.map(function (p, i) {
       var title = (mode === 'en' ? (p.titleEn || p.title) : (p.title || p.titleEn)) || '';
-      var star = p.featured ? '<span class="rest-star" title="优质来源，排到本节最前">★</span>' : '';
+      // 精选本身已经是「值得做」里挑出来的，不需要再叠一层渠道星标
       var head =
         '<div class="pick-top">' +
           '<span class="pick-n">' + (i + 1) + '</span>' +
           (p.url
-            ? '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + star + esc(title) + '</a>'
-            : '<span class="pick-t">' + star + esc(title) + '</span>') +
+            ? '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(title) + '</a>'
+            : '<span class="pick-t">' + esc(title) + '</span>') +
           (p.score != null && mode !== 'en'
             ? '<span class="pick-lv lv-worth">值得做' + dots(p.score) + '</span>'
             : '') +
@@ -1346,16 +1353,19 @@ h4.lk-sec {
       rows + '</section>';
   }
 
-  // 完整库：点子/产品各一节，一层结构，节标题下面直接是来源清单 + 条目列表。
-  // 走结构化数据而不是 markdown 列表 —— 「标题 + 说明 + 来源 + 信号」
-  // 四样东西塞进一个 li 里怎么排都别扭。
+  // 完整库：点子/产品各是一个和「值得做」平级的大类（.rest-cat），
+  // 类别下面再按来源分小节（.rest-src-g），来源标题下面直接跟这个来源的
+  // 条目列表。走结构化数据而不是 markdown 列表 —— 「标题 + 说明 + 来源 +
+  // 信号」四样东西塞进一个 li 里怎么排都别扭。
   function renderRest(it) {
     var groups = (mode === 'en' ? it.restEn : it.rest) || [];
     if (!groups.length) return '';
 
     function rowHtml(r) {
-      var star = r.featured ? '<span class="rest-star" title="优质来源，排到本节最前">★</span>' : '';
-      return '<li' + (r.featured ? ' class="rest-featured"' : '') + '>' +
+      // 星标是逐条判断「这条内容本身重要」，不是渠道自带的——不管来自
+      // 哪个来源，一条条目自己够不够分量都要单独看
+      var star = r.star ? '<span class="rest-star-ico" title="内容本身值得多看一眼">★</span>' : '';
+      return '<li' + (r.star ? ' class="rest-star"' : '') + '>' +
         '<a class="rest-t" href="' + esc(r.url) + '" target="_blank" rel="noopener">' +
           star + esc(r.title) + '</a>' +
         '<p class="rest-d">' + esc(r.desc) + '</p>' +
@@ -1364,12 +1374,20 @@ h4.lk-sec {
       '</li>';
     }
 
-    var srcLabel = mode === 'en' ? 'Sources: ' : '来源：';
+    var fetchWord = mode === 'en' ? function (f, s) { return f + ' fetched · ' + s + ' shown'; }
+      : function (f, s) { return '抓了 ' + f + ' 条 · 展示 ' + s + ' 条'; };
+
     var body = groups.map(function (g) {
-      var rows = g.rows.map(rowHtml).join('');
-      var head = '<h3>' + esc(g.label) + '<span class="n">' + g.rows.length + '</span></h3>' +
-        (g.sources.length ? '<p class="rest-src">' + srcLabel + esc(g.sources.join(' · ')) + '</p>' : '');
-      return '<section class="rest-g" id="rest-' + esc(g.key) + '">' + head + '<ul class="rest-l">' + rows + '</ul></section>';
+      var subs = g.subs.map(function (s) {
+        var rows = s.rows.map(rowHtml).join('');
+        return '<section class="rest-src-g">' +
+          '<h4>' + esc(s.source) + '<span class="n">' + fetchWord(s.fetched, s.shown) + '</span></h4>' +
+          '<ul class="rest-l">' + rows + '</ul></section>';
+      }).join('');
+      return '<section class="rest-cat" id="rest-' + esc(g.key) + '">' +
+        '<div class="rest-cat-head"><h3>' + esc(g.label) + '</h3>' +
+        '<span class="sub">' + fetchWord(g.fetched, g.shown) + '</span></div>' +
+        subs + '</section>';
     }).join('');
 
     var tail = it.hidden
@@ -1377,12 +1395,7 @@ h4.lk-sec {
         '因此不展示。它们仍然存在 ideas/raw/' + esc(it.issue) + '.json 里。</p>'
       : '';
 
-    return '<section class="rest">' +
-      '<div class="picks-head"><h3>' + (mode === 'en' ? 'Full library' : '完整库') + '</h3>' +
-      '<span class="sub">' + (mode === 'en'
-        ? 'Everything read, minus what is highlighted above'
-        : '都读过了，去掉上面已经在「值得做」里出现过的') + '</span></div>' +
-      body + tail + '</section>';
+    return '<div class="rest">' + body + tail + '</div>';
   }
 
   function renderPane(it) {

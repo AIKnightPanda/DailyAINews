@@ -102,15 +102,15 @@ async function collectIssues() {
         // 点子/产品从来源注册表算，不再靠模型自己写 kind —— 少一个会漂移的字段
         kind: CATEGORY_LABEL[sourceById(it.sourceId)?.category] || '',
         score: p.score ?? null,
-        featured: !!sourceById(it.sourceId)?.featured,
         // 2026-09-04 从六栏砍到两栏：背景（用户是谁/需求是什么/别人怎么反馈的，
         // 揉成一段话）+ 判断。见 ideas-render.js 里 FIELDS 上面那段注释
         fields: [
           ['背景', p.background], ['判断', p.verdict]
         ].filter(([, v]) => v)
       }))
-        // 优质来源（Product Hunt、IdeaBrowser）排到精选卡片最前面，不跟自动抓来的帖子抢排序
-        .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+        // 精选本来就是「值得做」里挑出来的，按值得做的程度（score）排序，
+        // 不再按来源是不是「优质来源」排——那是渠道决定顺序，不是内容
+        .sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
     }
     const cardsCount = cards.length;
 
@@ -119,7 +119,7 @@ async function collectIssues() {
     // 展示了多少条 = 精选卡片 + 库里实际出行的条目；
     // 隐藏了多少条 = 池子里进过深挖但没能落地展示的（没描述、或排名靠后没读过）。
     // 三个数字都写在标题下面，安静的一天和管道断了不该长得一样。
-    const displayed = cardsCount + rest.reduce((n, g) => n + g.rows.length, 0);
+    const displayed = cardsCount + rest.reduce((n, g) => n + g.shown, 0);
 
     issues.push({
       issue,

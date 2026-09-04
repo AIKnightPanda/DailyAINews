@@ -1,15 +1,15 @@
 {
   "issue": "2026-09-04",
-  "builtAt": "2026-09-04T12:58:08.222Z",
+  "builtAt": "2026-09-04T14:09:19.041Z",
   "from": {
     "boards": "live",
     "inbox": "prefetched"
   },
   "counts": {
-    "fetched": 172,
-    "added": 169,
+    "fetched": 9,
+    "added": 0,
     "kept": 169,
-    "dropped": 3,
+    "dropped": 9,
     "pool": 166,
     "screened": 140,
     "candidates": 30,
@@ -23,34 +23,33 @@
     {
       "id": "somebodymakethis",
       "name": "r/SomebodyMakeThis",
-      "status": "ok",
-      "items": 18,
+      "status": "error",
       "pool": true,
+      "error": "HTTP 403：Host not in allowlist: www.reddit.com. Add this host to your network e",
       "group": "board"
     },
     {
       "id": "reddit-search",
       "name": "Reddit 需求短语",
-      "status": "partial",
-      "items": 3,
+      "status": "error",
       "pool": true,
-      "error": "is there an app that（HTTP 429）；someone should build（HTTP 429）",
+      "error": "全部短语失败：is there an app that（HTTP 403：Host not in allowlist: www.redd）；is there a tool that（HTTP 403：Host not in allowlist: www.redd）；someone should build（HTTP 403：Host not in allowlist: www.redd）；we still use spreadsheets（HTTP 403：Host not in allowlist: www.redd）",
       "group": "board"
     },
     {
       "id": "softwarerecs",
       "name": "Software Recommendations",
-      "status": "ok",
-      "items": 25,
+      "status": "error",
       "pool": true,
+      "error": "HTTP 403：Host not in allowlist: api.stackexchange.com. Add this host to your ne",
       "group": "board"
     },
     {
       "id": "hn-ask",
       "name": "Ask HN",
-      "status": "ok",
-      "items": 25,
+      "status": "error",
       "pool": true,
+      "error": "HTTP 403：Host not in allowlist: hn.algolia.com. Add this host to your network e",
       "group": "board"
     },
     {
@@ -64,66 +63,65 @@
     {
       "id": "reddit-paying",
       "name": "Reddit 付费信号",
-      "status": "partial",
-      "items": 16,
+      "status": "error",
       "pool": true,
-      "error": "we currently pay（HTTP 429）；quoted us（HTTP 429）",
+      "error": "全部短语失败：we currently pay（HTTP 403：Host not in allowlist: www.redd）；we are paying for（HTTP 403：Host not in allowlist: www.redd）；quoted us（HTTP 403：Host not in allowlist: www.redd）；per seat per month（HTTP 403：Host not in allowlist: www.redd）",
       "group": "board"
     },
     {
       "id": "msp",
       "name": "r/msp",
-      "status": "ok",
-      "items": 20,
+      "status": "error",
       "pool": true,
+      "error": "HTTP 403：Host not in allowlist: www.reddit.com. Add this host to your network e",
       "group": "board"
     },
     {
       "id": "sysadmin",
       "name": "r/sysadmin",
-      "status": "ok",
-      "items": 11,
+      "status": "error",
       "pool": true,
+      "error": "HTTP 403：Host not in allowlist: www.reddit.com. Add this host to your network e",
       "group": "board"
     },
     {
       "id": "microsaas",
       "name": "r/microsaas",
-      "status": "ok",
-      "items": 20,
+      "status": "error",
       "pool": true,
+      "error": "HTTP 403：Host not in allowlist: www.reddit.com. Add this host to your network e",
       "group": "board"
     },
     {
       "id": "ycrfs",
       "name": "YC Requests for Startups",
-      "status": "ok",
-      "items": 1,
+      "status": "error",
       "pool": false,
+      "error": "HTTP 403：Host not in allowlist: www.ycombinator.com. Add this host to your netw",
       "group": "board"
     },
     {
       "id": "trendsvc",
       "name": "Trends.vc",
-      "status": "ok",
-      "items": 2,
+      "status": "error",
       "pool": false,
+      "error": "HTTP 403：Host not in allowlist: trends.vc. Add this host to your network egress",
       "group": "board"
     },
     {
       "id": "producthunt",
       "name": "Product Hunt",
-      "status": "ok",
-      "items": 20,
+      "status": "error",
       "pool": true,
+      "error": "HTTP 403：Host not in allowlist: www.producthunt.com. Add this host to your netw",
       "group": "board"
     },
     {
       "id": "showhn",
       "name": "Show HN",
-      "status": "ok",
-      "items": 2,
+      "status": "error",
       "pool": true,
+      "error": "HTTP 403：Host not in allowlist: hn.algolia.com. Add this host to your network e",
       "group": "board"
     },
     {
@@ -3320,7 +3318,7 @@
         "reason": null
       },
       "candidate": false,
-      "deepError": "HTTP 429"
+      "deepError": "HTTP 403：Host not in allowlist: www.reddit.com. Add this host to your network e"
     },
     {
       "id": "d6a64e4e5b",
@@ -4275,7 +4273,7 @@
         "reason": null
       },
       "candidate": false,
-      "deepError": "HTTP 429"
+      "deepError": "HTTP 403：Host not in allowlist: www.reddit.com. Add this host to your network e"
     },
     {
       "id": "1847bc35ca",
@@ -5601,5 +5599,5 @@
       "candidate": false
     }
   ],
-  "deepenedAt": "2026-09-04T13:05:35.392Z"
+  "deepenedAt": "2026-09-04T14:10:06.717Z"
 }

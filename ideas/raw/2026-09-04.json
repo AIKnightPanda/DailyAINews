@@ -1,17 +1,17 @@
 {
   "issue": "2026-09-04",
-  "builtAt": "2026-09-04T14:09:19.041Z",
+  "builtAt": "2026-09-04T14:28:02.700Z",
   "from": {
     "boards": "live",
     "inbox": "prefetched"
   },
   "counts": {
-    "fetched": 9,
-    "added": 0,
-    "kept": 169,
-    "dropped": 9,
-    "pool": 166,
-    "screened": 140,
+    "fetched": 58,
+    "added": 1,
+    "kept": 170,
+    "dropped": 57,
+    "pool": 167,
+    "screened": 141,
     "candidates": 30,
     "demandCandidates": 16,
     "supplyCandidates": 14
@@ -41,15 +41,15 @@
       "name": "Software Recommendations",
       "status": "error",
       "pool": true,
-      "error": "HTTP 403：Host not in allowlist: api.stackexchange.com. Add this host to your ne",
+      "error": "HTTP 403：Blocked by egress policy",
       "group": "board"
     },
     {
       "id": "hn-ask",
       "name": "Ask HN",
-      "status": "error",
+      "status": "ok",
+      "items": 25,
       "pool": true,
-      "error": "HTTP 403：Host not in allowlist: hn.algolia.com. Add this host to your network e",
       "group": "board"
     },
     {
@@ -95,33 +95,33 @@
     {
       "id": "ycrfs",
       "name": "YC Requests for Startups",
-      "status": "error",
+      "status": "ok",
+      "items": 1,
       "pool": false,
-      "error": "HTTP 403：Host not in allowlist: www.ycombinator.com. Add this host to your netw",
       "group": "board"
     },
     {
       "id": "trendsvc",
       "name": "Trends.vc",
-      "status": "error",
+      "status": "ok",
+      "items": 2,
       "pool": false,
-      "error": "HTTP 403：Host not in allowlist: trends.vc. Add this host to your network egress",
       "group": "board"
     },
     {
       "id": "producthunt",
       "name": "Product Hunt",
-      "status": "error",
+      "status": "ok",
+      "items": 20,
       "pool": true,
-      "error": "HTTP 403：Host not in allowlist: www.producthunt.com. Add this host to your netw",
       "group": "board"
     },
     {
       "id": "showhn",
       "name": "Show HN",
-      "status": "error",
+      "status": "ok",
+      "items": 1,
       "pool": true,
-      "error": "HTTP 403：Host not in allowlist: hn.algolia.com. Add this host to your network e",
       "group": "board"
     },
     {
@@ -5597,7 +5597,40 @@
         "hits": []
       },
       "candidate": false
+    },
+    {
+      "id": "dd7b7b46a4",
+      "normUrl": "https://news.ycombinator.com/item?id=49555089",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Why does free time become another thing you have to use correctly?",
+      "url": "https://news.ycombinator.com/item?id=49555089",
+      "externalUrl": null,
+      "summary": "Picture this, it’s evening and you are casually relaxing on the couch, but then a striking thought crosses your mind… You aren’t productive, you are not working towards your goals, the rest feels undeserved and such… What happens is that in the time meant for you to wind down, to let the machinery cool down, you are still thinking of it as something that it is NOT meant to be. We know everyone needs rest. It’s something literally necessary and something you can’t skip under any circumstances if you want to be properly functioning individual.",
+      "deepenKey": "49555089",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-03T19:08:08Z",
+      "ref": "I170",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
     }
   ],
-  "deepenedAt": "2026-09-04T14:10:06.717Z"
+  "deepenedAt": "2026-09-04T14:28:32.646Z"
 }

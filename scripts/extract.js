@@ -83,12 +83,28 @@ if (transcriptMode) {
   process.exit(0);
 }
 
-// Haiku 预压缩的摘要，有就用，没有就退回采样
+// Haiku 预压缩的摘要，有就用，没有就退回采样。
+// **文件在但解析不了，必须喊出来。** 2026-09-04 那次 Haiku 把英文引号
+// 原样写进了 JSON 字符串（"评分器"），文件坏掉，这里静默退回采样 ——
+// 简报里播客那节就成了「采样片段约 20%」，而且没人知道本来是有全篇要点的。
+// 「今天没跑预处理」和「跑了但产物坏了」是两回事，不能长得一样。
 let summaries = null;
-try {
-  summaries = JSON.parse(await readFile(join(ROOT, 'digests/summaries', `${issue}.json`), 'utf-8'));
-} catch {
-  summaries = null;
+{
+  const path = join(ROOT, 'digests/summaries', `${issue}.json`);
+  let text = null;
+  try {
+    text = await readFile(path, 'utf-8');
+  } catch {
+    // 文件不存在 = 这一期没做预处理，正常，退回采样
+  }
+  if (text !== null) {
+    try {
+      summaries = JSON.parse(text);
+    } catch (err) {
+      console.error(`[extract] ⚠️ ${issue}：digests/summaries/${issue}.json 存在但不是合法 JSON` +
+        `（${err.message}），播客只能退回定点采样。常见原因是要点里的英文引号没转义。`);
+    }
+  }
 }
 
 const out = [];

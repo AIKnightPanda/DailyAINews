@@ -51,9 +51,18 @@ node scripts/extract.js <期号> --transcripts
 
 数组顺序必须和转录里的出现顺序一致。
 
-> **写 JSON 的坑**：要点里一定会有英文引号，直接拼进 JSON 字符串会炸。
-> 用 `JSON.stringify` 生成，或者确保引号都转义了 —— 写完跑一次
-> `node -e "JSON.parse(require('fs').readFileSync('digests/summaries/<期号>.json'))"` 自检。
+> **写 JSON 的坑**：要点里一定会有英文引号（`EN: "……"` 这条硬要求保证了这一点），
+> 直接拼进 JSON 字符串会炸。2026-09-04 那期就炸了 —— 「模型错误地相信会有一个"评分器"」
+> 里那对引号没转义，文件报废，播客那节退回了只覆盖 20% 的采样。
+>
+> **别手写 JSON。** 把要点写进一个纯文本临时文件，再用脚本转成 JSON：
+>
+> ```
+> node -e 'const fs=require("fs");fs.writeFileSync("digests/summaries/<期号>.json",JSON.stringify({podcasts:[fs.readFileSync("/tmp/pod1.txt","utf8")]},null,2))'
+> ```
+>
+> 写完必须自检一次，不通过就重来：
+> `node -e "JSON.parse(require('fs').readFileSync('digests/summaries/<期号>.json','utf8'));console.log('ok')"`
 
 ---
 
@@ -84,10 +93,12 @@ AI 硬件、机器人、AI 政策都算相关；癌症疫苗、阅兵、种菜�
 
 ### 翻译
 
-每个值是数组，**第一个元素是英文原标题的开头 18 个字符（原样照抄）**，
+每个值是数组，**第一个元素是英文原标题的开头 18 个字符（原样照抄）** ——
+素材里每条是 `标题 —— 背景说明`，**只抄 `——` 前面的标题部分**，
+标题本身不足 18 个字符就把整个标题抄下来，不要续上后面的说明；
 第二个是中文标题，第三个是中文背景说明。按来源区别对待：
 
-- **OpenAI / Google DeepMind / Import AI**：标题和背景都译（三个元素）
+- **OpenAI / Google DeepMind / Import AI / AI Valley**：标题和背景都译（三个元素）
 - **AINews / The Rundown AI**：**只译标题**（两个元素）——
   这两个源在版面上只显示标题，译背景是白花 token
 

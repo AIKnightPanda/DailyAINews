@@ -96,6 +96,21 @@ function clip(text, max) {
 }
 
 // 一条目里的所有正文链接，去重、去掉功能性链接
+// AI Valley 给每个外链都挂了 utm_*，而上面 JUNK 规则里正好有 `utm_` ——
+// 不摘掉的话这个源一条链接都留不下。**只摘分析参数**（utm_* 和 beehiiv 的 _bhlid），
+// 路径和其余 query 一律不动：?s=20 这种是推文链接本来就有的，照留。
+const detrack = html => html.replace(/href="([^"]+)"/g, (whole, href) => {
+  try {
+    const u = new URL(unescape(href));
+    for (const k of [...u.searchParams.keys()]) {
+      if (/^utm_/i.test(k) || k === '_bhlid') u.searchParams.delete(k);
+    }
+    return `href="${u.href.replace(/&/g, '&amp;')}"`;
+  } catch {
+    return whole;   // 解析不了就原样留着，交给 linksIn 自己判
+  }
+});
+
 function linksIn(html) {
   const seen = new Set();
   const out = [];
@@ -323,7 +338,74 @@ function parseArticle(items, source) {
   return out;
 }
 
-const PARSERS = { simple: parseSimple, ainews: parseAiNews, article: parseArticle };
+// AI Valley：一期是一篇 newsletter，只有 THROUGH THE VALLEY 那节是当日要闻。
+// 每条形如 <p><b>1/ 标题</b> - 正文 <a>链接</a>…</p>，后续段落是同一条的展开，
+// 不单独成条 —— 一条一个链接就够，正文摘要里已经把要点带上了。
+function parseAiValley(items, source) {
+  const out = [];
+  for (const it of items) {
+    const html = it.content || '';
+    const at = html.indexOf('THROUGH THE VALLEY');
+    if (at < 0) continue;
+    // 下一节开始的地方就是这一节的结束
+    let end = html.length;
+    for (const mark of ['TRENDING TOOLS', 'WHAT I', 'THE VALLEY GEMS', 'THAT’S ALL FOR TODAY']) {
+      const i = html.indexOf(mark, at + 20);
+      if (i > at) end = Math.min(end, i);
+    }
+    const seg = detrack(html.slice(at, end));
+
+    for (const p of seg.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/g)) {
+      // 只认「<b>数字/ 标题</b>」开头的那一段，其余段落是同一条的续写
+      const m = /^\s*<b>\s*\d+\s*\/\s*([\s\S]*?)<\/b>([\s\S]*)$/.exec(p[1].trim());
+      if (!m) continue;
+      const title = stripTags(m[1]);
+      const links = linksIn(m[2]);
+      if (title.length < 10 || !links.length) continue;
+      out.push({
+        source: source.name,
+        sourceHome: source.home || null,
+        section: null, subsection: null, topic: null,
+        title,
+        url: links[0].url,
+        links: links.slice(1),
+        summary: clip(stripTags(m[2]).replace(/^[\s:：—–-]+/, ''), CTX_AINEWS) || null,
+        publishedAt: it.publishedAt,
+        issueUrl: it.link || null
+      });
+    }
+  }
+  return out;
+}
+
+const PARSERS = { simple: parseSimple, ainews: parseAiNews, article: parseArticle, aivalley: parseAiValley };
+
+// 没有 RSS 的源自己去找当期文章。返回的对象和 rssItems() 同形，
+// 这样下游（窗口过滤、解析器）不用为它们分叉。
+const DISCOVER_PAGES = 4;   // 一天一期，窗口 3 天，取 4 篇够覆盖
+
+async function discoverAiValley(s, cutoff, anchor) {
+  const home = await fetchText(s.home);
+  const slugs = [...new Set([...home.matchAll(/\/p\/([a-z0-9][a-z0-9-]{6,})/g)].map(m => m[1]))]
+    .slice(0, DISCOVER_PAGES);
+  const pages = await Promise.all(slugs.map(async slug => {
+    const url = new URL('/p/' + slug, s.home).href;
+    try {
+      const html = await fetchText(url);
+      // beehiiv 的 JSON-LD 里有准确发布时间，比从 slug 或版面顺序猜可靠
+      const d = /"datePublished"\s*:\s*"([^"]+)"/.exec(html);
+      const t = d ? Date.parse(d[1]) : NaN;
+      const title = stripTags((/<title[^>]*>([\s\S]*?)<\/title>/.exec(html) || [])[1] || '');
+      return { title, link: url, content: html, ts: isNaN(t) ? 0 : t,
+        publishedAt: isNaN(t) ? null : new Date(t).toISOString() };
+    } catch {
+      return null;   // 单篇抓不到就跳过，不拖垮整个源
+    }
+  }));
+  return pages.filter(x => x && x.ts >= cutoff && x.ts <= anchor);
+}
+
+const DISCOVERERS = { aivalley: discoverAiValley };
 
 // ── 主流程 ────────────────────────────────────────────────────────────────
 
@@ -344,12 +426,32 @@ async function main() {
 
   // 一个源挂掉不能拖垮其他源，更不能拖垮整次运行
   const results = await Promise.allSettled(SOURCES.map(async s => {
-    const xml = await fetchText(s.url);
+    // 没有 RSS 的源走自己的发现流程
+    if (DISCOVERERS[s.kind]) {
+      const fresh = await DISCOVERERS[s.kind](s, cutoff, ANCHOR);
+      return { s, parsed: PARSERS[s.kind](fresh, s), total: fresh.length, via: null };
+    }
+    let xml, via = null;
+    try {
+      xml = await fetchText(s.url);
+    } catch (err) {
+      if (!s.fallback) throw err;
+      // 主站挂了就走镜像。两边都挂时把**两个**错误都带出来 —— 只报镜像那个的话，
+      // 「主站恢复了吗」这个问题下次还得重新查一遍。
+      try {
+        xml = await fetchText(s.fallback);
+      } catch (err2) {
+        throw new Error(`主站 ${err.message}；镜像 ${err2.message}`);
+      }
+      via = { url: s.fallback, because: String(err.message || err) };
+    }
     let fresh = rssItems(xml).filter(it => it.ts >= cutoff && it.ts <= ANCHOR);
+    // 镜像 feed 常常混着别的内容，按标题挑出属于这个源的那些
+    if (s.titleMatch) fresh = fresh.filter(it => s.titleMatch.test(it.title));
     if (s.latestOnly && fresh.length) {
       fresh = [fresh.reduce((a, b) => (b.ts > a.ts ? b : a))];
     }
-    return { s, parsed: PARSERS[s.kind](fresh, s), total: fresh.length };
+    return { s, parsed: PARSERS[s.kind](fresh, s), total: fresh.length, via };
   }));
 
   for (let i = 0; i < results.length; i++) {
@@ -381,7 +483,14 @@ async function main() {
 
     kept.forEach(x => seen.add(x.url));
     items = items.concat(kept);
-    report.push({ id: s.id, name: s.name, status: 'ok', issues: r.value.total, items: kept.length });
+    // via 有值 = 这个源今天是靠镜像救回来的。必须记下来：不记的话，
+    // 「主站挂了但内容照常」和「一切正常」在报告里长得一模一样，
+    // 主站悄悄挂上一个月也没人发现。
+    if (r.value.via) {
+      console.error(`[fetch-extra] ⚠️ ${s.name} 主站抓取失败（${r.value.via.because}），已改用镜像 ${r.value.via.url}`);
+    }
+    report.push({ id: s.id, name: s.name, status: 'ok', issues: r.value.total, items: kept.length,
+      ...(r.value.via ? { via: r.value.via } : {}) });
   }
 
   if (useState) {

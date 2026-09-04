@@ -131,7 +131,14 @@ function localized(item, n) {
   if (typeof v === 'string') return { title: v, summary: item.summary };  // 老格式
   if (!Array.isArray(v) || v.length < 2) return en;
   const [prefix, title, summary] = v;
-  if (!prefix || !flat(item.title).startsWith(flat(prefix).slice(0, 18))) {
+  // 探针是「英文原标题的开头 18 个字符」。素材里每条形如 `标题 —— 背景说明`，
+  // 标题不足 18 字符时，模型抄的 18 个字符会跨过分隔符把说明也带进来 ——
+  // 2026-09-04 那期 AINews 标题短到只有「63% on ARC-AGI-3」，10 条全栽在这。
+  // 分隔符是我们自己拼的格式，绝不会出现在标题里，按它截断就对齐了。
+  const probe = flat(String(prefix)).split('——')[0].trim();
+  // 标题比 18 字符还短就拿整个标题比 —— 那反而是更强的校验，不是放水
+  const need = Math.min(18, flat(item.title).length);
+  if (!probe || !flat(item.title).startsWith(probe.slice(0, need))) {
     mismatched++;
     return en;
   }
@@ -148,6 +155,7 @@ const failedSources = (extra.sources || []).filter(s => s.status === 'error');
 
 let body = md;
 let cited = 0;
+let tweetStrip = '';
 const bogus = [];
 
 // 先剥掉旧的延伸阅读节，避免在里面做替换
@@ -167,6 +175,42 @@ body = body.replace(/\[E(\d+)\]/g, (whole, n) => {
   cited++;
   return `（[${esc(localized(item, Number(n)).title)}](${escUrl(item.url)})）`;
 });
+
+// ── 1.5 推文板块的采集/展示统计条 ──────────────────────────────────────────
+// 和延伸阅读那条统计条同一套路数：数字由脚本算，不让模型自己数 —— 模型数不准，
+// 而这里每个数都是能精确算的。口径统一为「展示 / 采集」。
+// 「展示」= 正文里出现过原推 URL 的条数；正文展开和「其他从略」清单分开计。
+{
+  const tweets = [];
+  for (const a of raw.x || []) for (const t of a.tweets || []) {
+    if (t.url) tweets.push({ url: t.url, author: a.name || a.handle });
+  }
+  const head = /^##\s+.*(?:X \/ Twitter|推文).*$/m.exec(body);
+  if (tweets.length && head) {
+    // 幂等：先撕掉上一次插进去的那条
+    body = body.replace(/^⟦推文展示[^\n]*\n\n?/m, '');
+    const start = body.indexOf(head[0]) + head[0].length;
+    const seg = body.slice(start);
+    const cut = seg.search(/^###\s+其他从略/m);          // 从略清单的分界线
+    const inMain = cut === -1 ? seg : seg.slice(0, cut);
+    const inList = cut === -1 ? '' : seg.slice(cut);
+
+    let main = 0, list = 0;
+    const authors = new Set();
+    for (const t of tweets) {
+      const where = inMain.includes(t.url) ? 'main' : inList.includes(t.url) ? 'list' : null;
+      if (!where) continue;
+      if (where === 'main') main++; else list++;
+      authors.add(t.author);
+    }
+    const builders = new Set(tweets.map(t => t.author)).size;
+    const strip = `⟦推文展示 ⟨${main + list} / ${tweets.length}⟩ 条：正文展开 ⟨${main}⟩` +
+      (cut === -1 ? '' : ` · 其他从略 ⟨${list}⟩`) +
+      ` · 覆盖建造者 ⟨${authors.size} / ${builders}⟩ 位`;
+    body = body.slice(0, start) + '\n\n' + strip + '\n' + body.slice(start).replace(/^\n+/, '\n');
+    tweetStrip = strip;
+  }
+}
 
 // ── 2. 生成延伸阅读一节 ────────────────────────────────────────────────────
 
@@ -275,6 +319,14 @@ if (!items.length) {
     '');
 }
 
+// 靠镜像救回来的源也要明说 —— 内容是全的，但主站确实挂着，
+// 页面上不讲的话就没人知道该去催谁修。主站恢复后这行自己就没了。
+const viaMirror = (extra.sources || []).filter(s => s.via);
+if (viaMirror.length) {
+  lines.push(...viaMirror.map(s =>
+    `> ℹ️ ${s.name} 主站当前不可用（${s.via.because}），本期内容取自镜像 ${hostOf(s.via.url)}。`), '');
+}
+
 // 抓失败的源要明说，不能静悄悄少一块
 if (failedSources.length) {
   const all = failedSources.length === (extra.sources || []).length;
@@ -312,4 +364,5 @@ console.log(`[link-digest] ${issue}：${items.length} 条补充条目` +
   (bogus.length ? `，⚠️ 无效编号 ${bogus.length} 个已移除：${bogus.join(' ')}` : '') +
   (Object.keys(zh).length ? '，标题用中文译名' : '，标题用英文原文') +
   (mismatched ? `，⚠️ ${mismatched} 条译文与原标题对不上，已退回英文` : '') +
-  (emptySections.length ? `，⚠️ 这些板块下没有任何 ### 条目：${emptySections.join('、')}` : ''));
+  (emptySections.length ? `，⚠️ 这些板块下没有任何 ### 条目：${emptySections.join('、')}` : '') +
+  (tweetStrip ? `\n[link-digest] ${issue}：${tweetStrip.replace(/[⟦⟨⟩]/g, '')}` : ''));

@@ -1,0 +1,435 @@
+{
+  "issue": "2026-09-05",
+  "builtAt": "2026-09-04T21:36:57.926Z",
+  "from": {
+    "boards": "live",
+    "inbox": "live"
+  },
+  "counts": {
+    "fetched": 52,
+    "added": 8,
+    "kept": 8,
+    "dropped": 44,
+    "pool": 8,
+    "screened": 8,
+    "candidates": 1,
+    "demandCandidates": 0,
+    "supplyCandidates": 1
+  },
+  "errors": [
+    "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
+  ],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 403：Blocked by egress policy",
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：is there an app that（HTTP 403：Blocked by egress policy）；is there a tool that（HTTP 403：Blocked by egress policy）；someone should build（HTTP 403：Blocked by egress policy）；we still use spreadsheets（HTTP 403：Blocked by egress policy）",
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 403：Blocked by egress policy",
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 4,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：we currently pay（HTTP 403：Blocked by egress policy）；we are paying for（HTTP 403：Blocked by egress policy）；quoted us（HTTP 403：Blocked by egress policy）；per seat per month（HTTP 403：Blocked by egress policy）",
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 403：Blocked by egress policy",
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 403：Blocked by egress policy",
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 403：Blocked by egress policy",
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 1,
+      "pool": true,
+      "group": "board"
+    }
+  ],
+  "items": [
+    {
+      "id": "d9f9a17f7b",
+      "normUrl": "https://news.ycombinator.com/item?id=49569196",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What Is AGI?",
+      "url": "https://news.ycombinator.com/item?id=49569196",
+      "externalUrl": null,
+      "summary": "In your opinion, what is AGI? Are we already in?",
+      "deepenKey": "49569196",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 4
+      },
+      "publishedAt": "2026-09-04T19:34:33Z",
+      "ref": "I1",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "235a36db5f",
+      "normUrl": "https://news.ycombinator.com/item?id=49568460",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Does anyone have access to GPT-6 Astra yet?",
+      "url": "https://news.ycombinator.com/item?id=49568460",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "49568460",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 5
+      },
+      "publishedAt": "2026-09-04T18:38:10Z",
+      "ref": "I2",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "845caa2866",
+      "normUrl": "https://news.ycombinator.com/item?id=49568385",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Xfinity silently blocks lots of new domains",
+      "url": "https://news.ycombinator.com/item?id=49568385",
+      "externalUrl": null,
+      "summary": "We built a site for a launch and it was unreachable for anyone on an Xfinity router. We only found out because we have an Xfinity router at home. There's no notice to the site owner. Xfinity's Advanced Security draws on third-party domain reputation lists and blocks at the gateway. We found out a blacklist called SURBL had flagged us. Not sure exactly what tripped it. Since then I've hit the same block on 10+ unrelated sites and told the site owner. Now sharing with everyone here.",
+      "deepenKey": "49568385",
+      "via": null,
+      "signal": {
+        "points": 10,
+        "comments": 3
+      },
+      "publishedAt": "2026-09-04T18:31:48Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "b24bb26d8c",
+      "normUrl": "https://news.ycombinator.com/item?id=49567441",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Is there any way to contribute to nitter and xcancel's legal fights?",
+      "url": "https://news.ycombinator.com/item?id=49567441",
+      "externalUrl": null,
+      "summary": "Really, X's legal claims against those websites are bullshit and Musk probably knows that. Linkedin lost a similar case. Musk himself even lost similar data scraping lawsuits against Bright Data and the Center for Countering Digital Hate. But the real reason why X has been able to shut down Nitter and XCancel is just because those websites aren't going to be able to afford a legal fight, even though they almost certainly would win a lawsuit. So, is there any way we can contribute to their legal fight against Musk?",
+      "deepenKey": "49567441",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-04T17:18:33Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "75067f21bb",
+      "normUrl": "https://news.ycombinator.com/item?id=49566847",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Looking for a sci-fi short story posted here",
+      "url": "https://news.ycombinator.com/item?id=49566847",
+      "externalUrl": null,
+      "summary": "I've been digging around for a short story that I read that was posted here sometime in the past year or so. In the story, some kind of deep future researcher finds an intelligence stored in a vast archive and plugs it into a humanoid terminal to hear its story. The intelligence was originally a human which was trained to mentally control multiple points of awareness simultaneously. They have their consciousness transitioned (or copied) to silicon and are used for various purposes, including controlling production lines at a factory.",
+      "deepenKey": "49566847",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 3
+      },
+      "publishedAt": "2026-09-04T16:30:13Z",
+      "ref": "I5",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "04538f3ee2",
+      "normUrl": "https://news.ycombinator.com/item?id=49566388",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Why don't we talk about context window size anymore?",
+      "url": "https://news.ycombinator.com/item?id=49566388",
+      "externalUrl": null,
+      "summary": "Context length used to be one of the headline metrics for new models. I hardly hear about it anymore, but I can't imagine it doesn't still play a huge role in practical performance. Is this truly no longer a bottleneck, or does it just get rolled up in the headline benchmark numbers now?",
+      "deepenKey": "49566388",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-04T15:53:19Z",
+      "ref": "I6",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "062d855f3b",
+      "normUrl": "https://news.ycombinator.com/item?id=49565799",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Check your Claude settings, it may have silently enabled remote access",
+      "url": "https://news.ycombinator.com/item?id=49565799",
+      "externalUrl": null,
+      "summary": "I went to https://claude.ai/code today and saw some of my most recent Claude CLI sessions appeared there. I have never explicitly enabled RC, specifically because of security concerns and the only sessions I previously had in https://claude.ai/code were the ones I actually started there out of convenience, whenever I was away from my dev machine. So imagine my complete shock when I saw those sessions in their web client and that /rc was actually enabled in my CLI! Again, I never enabled it!!!",
+      "deepenKey": "49565799",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 5
+      },
+      "publishedAt": "2026-09-04T15:09:47Z",
+      "ref": "I7",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6a12010ba2",
+      "normUrl": "https://news.ycombinator.com/item?id=49567437",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Open-Source eInk Bike Computer",
+      "url": "https://news.ycombinator.com/item?id=49567437",
+      "externalUrl": "https://opentrailpaper.com",
+      "summary": "Hey all, i just launched my Eink Bike computer project and think it is cool. Another tidbit, in the crazy things that AI has done... It has helped create a ANT (common sensor wireless protocol used in workout/biking) implementation for ESP32 by messing around with undocumented registers: https://github.com/RaemondBW/esp32-ant",
+      "deepenKey": "49567437",
+      "via": null,
+      "signal": {
+        "points": 175,
+        "comments": 57
+      },
+      "publishedAt": "2026-09-04T17:18:08Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hey all, i just launched my Eink Bike computer project and think it is cool. Another tidbit, in the crazy things that AI has done... It has helped create a ANT (common sensor wireless protocol used in workout/biking) implementation for ESP32 by messing around with undocumented registers: https://github.com/RaemondBW/esp32-ant",
+        "comments": [
+          {
+            "text": "I can't imagine using this in the Netherlands with random rain. The tradeoffs are hard to accept, wondering how it looks and performs in various weather conditions, and if a physical buttoned shell is worth it..."
+          },
+          {
+            "text": "Wow. You managed to receive ANT+ via BLE hardware?! I didn't know these two protocols were so similar."
+          },
+          {
+            "text": "Does this work well in direct sunlight? I know a lot of e-paper panels struggle to refresh in strong sunlight. The waveshare panels look very faded if they update while exposed to UV."
+          },
+          {
+            "text": "Hey this looks neat, I’ve been thinking on trying something similar. I’ve not encountered the ANT protocol, what bike ya using? Is it a higher level thing that your display is giving you, or something your controller uses? I know Bafang uses CAN protocols in their newer e-bike systems and a lot of manufacturers (especially Chinese) use a proprietary UART protocol to stitch things together on the cheaper end. The mess of different implementations makes it really hard to hack on and share this kinda stuff. AI does make it really easy to figure out these protocols now so that’s nice I guess. I just flipped my bike upside down and hooked up a logic analyzer and it took LLM no time to figure it out… it is really impressive"
+          },
+          {
+            "text": "Any open source GPS locator for bikes?"
+          },
+          {
+            "text": "Battery of my Cubot King Kong Mini is slowly dying. I use it with OpenTracks to record my commutes and use as bikecomputer and sometimes Osmand+ for offline navigation. I am searching for alternative, which needs to be waterproof and cheap (my commutes luckily includes downhill trails sometimes - I dont want to break expensive device). The title gave me high hopes, but I suppose I need to keep searching."
+          },
+          {
+            "text": "Wow, this is really cool. I really needed something for my neo retro build, this might just fit the bill."
+          },
+          {
+            "text": "Insane! Quality on the ANT too!"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: Open-Source eInk Bike Computer",
+            "points": 178,
+            "url": "https://news.ycombinator.com/item?id=49567437"
+          }
+        ],
+        "fetchedAt": "2026-09-04T21:37:04.601Z"
+      }
+    }
+  ],
+  "deepenedAt": "2026-09-04T21:37:04.602Z"
+}

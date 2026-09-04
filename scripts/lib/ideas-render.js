@@ -209,11 +209,17 @@ export function renderPicks(data, zh, picks, lang) {
 
 function restRowOf(it, zh, lang) {
   const t = textOf(it, zh, lang);
-  const desc = lang === 'en' ? it.summary : t.summary;
+  // 中文是模型写的一句话说明，本来就短，裁到 220 字是为了跟 zh 一句话的
+  // 篇幅对齐，不算裁剪。英文视图是核查页——2026-09-05 读者发现这里之前
+  // 拿 it.summary（一阶段 600 字预筛摘要，还不是深挖后的正文）又裁到
+  // 220 字，两层裁剪叠在一起，「Custom AI brain games」这条被砍在
+  // "out of the" 半句上。现在英文视图改用深挖后的完整正文（没有就退到
+  // summary），也不再二次裁剪——核查页要看得到完整原文。
+  const desc = lang === 'en' ? ((it.deep && it.deep.body) || it.summary || '') : t.summary;
   if (!desc || String(desc).trim().length <= 8) return null;   // 说不出来就不展示
   return {
-    title: String(t.title).slice(0, 90),
-    desc: String(desc).slice(0, 220),
+    title: lang === 'en' ? String(t.title) : String(t.title).slice(0, 90),
+    desc: lang === 'en' ? String(desc) : String(desc).slice(0, 220),
     url: it.url,
     source: it.source,
     signal: signalText(it),
@@ -238,8 +244,12 @@ export function restRows(data, zh, picks, lang) {
   // 跟 picks.drop 是两回事，drop 只是「没选进值得做」，excluded 的这些
   // 连库里都不该出现（评论区讨论 Claude 是不是变差了、怎么在 Ask HN 提问
   // 这类，不是产品需求，2026-09-05 读者反馈这类不该展示）。
-  // 英文原文本来就一直存在 ideas/raw/<期号>.json 里，被排除不影响回查。
-  const excluded = new Set(picks?.exclude || []);
+  //
+  // 只在中文视图生效——英文视图是核对原始信息用的核查页，本来就该展示
+  // 读过的全部内容，不该被「是否相关」这种主观判断再筛一遍。exclude
+  // 挡的是模型的编辑判断，不是原始材料本身，读者要能在英文视图里
+  // 看到我筛掉的到底是什么，才有得核对。
+  const excluded = lang === 'en' ? new Set() : new Set(picks?.exclude || []);
   const CL = lang === 'en' ? CATEGORY_LABEL_EN : CATEGORY_LABEL;
 
   // 池子里深挖过的候选，加上风向类源（不进池子，但有模型写的摘要）—— 两边

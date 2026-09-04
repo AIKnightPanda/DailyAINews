@@ -821,9 +821,14 @@ h4.lk-sec {
    既有层级样式（.outline a.lv2/.lv4），那套样式里 h3 反而比来源用的
    h4 还弱（lv3 是纯缩进、不加粗，lv4 加粗又加大），h2 才是大纲里
    真正分量最重的一级，跟「点子/产品」该有的地位对得上。
-   来源（h4）之前和类别标题一样顶格、没有缩进，读者反馈「渠道和条目
-   混在一起不好看」——现在整块来源小节向右缩进并加一道竖线，
-   看得出它是类别下面的一层，不是并列的。 */
+   第五次改版：来源小节一度给整块（标题+列表）加过缩进 + 竖线，
+   读者反馈那不是想要的——想要的是「标题不缩进，标题下面的正文缩进」，
+   两者本该分开处理，我之前把它们当一整块一起缩进/一起去缩进，
+   两次都没分对。现在拆开：h4（来源标题）永远顶格，不缩进、不带竖线；
+   .rest-l（标题下面的条目列表）整体缩进一级，这才是「标题」和「正文」
+   该有的缩进区别。星标条目（.rest-star-ico）不再叠加任何额外缩进——
+   它已经跟着 .rest-l 缩进了一次，样式上和其他条目完全一样，
+   只用图标本身区分，不再有第二层缩进或竖线。 */
 .rest { margin: 2.4rem 0 0; }
 .rest-cat { margin: 0 0 2.6rem; }
 .rest-cat-head {
@@ -836,22 +841,21 @@ h4.lk-sec {
   font-size: 1.15rem; font-weight: 600; color: var(--accent); letter-spacing: .01em;
 }
 .rest-cat-head .sub { font-size: .78rem; color: var(--ink-3); font-family: var(--font-mono); }
-.rest-src-g {
-  margin: 1.4rem 0 0; padding-left: 1rem;
-  border-left: 2px solid var(--rule-2);
-}
+.rest-src-g { margin: 1.6rem 0 0; }
 .rest-src-g:first-child { margin-top: .9rem; }
+/* 来源标题：顶格，不缩进 —— 缩进只发生在它下面的条目列表上 */
 .rest-src-g > h4 {
   display: flex; align-items: baseline; gap: .5rem; flex-wrap: wrap;
   font-family: var(--font-display); font-size: .92rem; font-weight: 600;
-  color: var(--ink); margin: 0 0 .3rem;
+  color: var(--ink-2); margin: 0 0 .3rem;
 }
 .rest-src-g > h4 .n { font-family: var(--font-mono); font-size: .7rem; font-weight: 400; color: var(--ink-3); }
-.rest-l { list-style: none; margin: 0; padding: 0; }
+/* 条目列表：相对来源标题整体缩进一级，标题和正文才分得出层级 */
+.rest-l { list-style: none; margin: 0 0 0 1.1rem; padding: 0; }
 .rest-l li { padding: .62rem 0; border-bottom: 1px solid var(--rule-2); }
 .rest-l li:last-child { border-bottom: 0; }
-/* 星标现在是逐条判断（内容本身重要，不是渠道），左边一道强调色竖线 */
-.rest-l li.rest-star { padding-left: .6rem; border-left: 2px solid var(--accent); }
+/* 星标是逐条判断（内容本身重要，不是渠道）—— 不额外缩进，
+   跟没标星的条目享受同一层缩进，只靠★图标本身区分 */
 .rest-star-ico { color: var(--accent); margin-right: .3rem; }
 .rest-t {
   display: block; font-family: var(--font-display);
@@ -1107,6 +1111,14 @@ h4.lk-sec {
         flushPara(); flushQuote();
         if (!list || list.tag !== 'ol') { flushList(); list = { tag: 'ol', items: [] }; }
         list.items.push(ol[1]);
+        return;
+      }
+
+      // 列表项的续行（markdown 的 lazy continuation）。以前非 `- ` 开头的行一律
+      // 关掉列表另起一段，于是一条写不下换行就会把清单从中间截断。
+      // 「其他从略」那种「标题 + 一句说明」的条目正好要换行。
+      if (list && list.items.length) {
+        list.items[list.items.length - 1] += ' ' + t;
         return;
       }
 
@@ -1382,7 +1394,7 @@ h4.lk-sec {
       // 星标是逐条判断「这条内容本身重要」，不是渠道自带的——不管来自
       // 哪个来源，一条条目自己够不够分量都要单独看
       var star = r.star ? '<span class="rest-star-ico" title="内容本身值得多看一眼">★</span>' : '';
-      return '<li' + (r.star ? ' class="rest-star"' : '') + '>' +
+      return '<li>' +
         '<a class="rest-t" href="' + esc(r.url) + '" target="_blank" rel="noopener">' +
           star + esc(r.title) + '</a>' +
         '<p class="rest-d">' + esc(r.desc) + '</p>' +

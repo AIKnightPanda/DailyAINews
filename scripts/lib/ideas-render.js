@@ -18,7 +18,7 @@ const categoryOf = it => sourceById(it.sourceId)?.category || 'idea';
 // 来源内部排序，不展示给读者，所以不用多精确，能把明显更热的顶上去就够了
 const engagementOf = it => {
   const g = it.signal || {};
-  return (g.points || 0) * 2 + (g.thumbsUp || 0) * 2 + Math.floor((g.views || 0) / 20);
+  return (g.points || 0) * 2 + (g.thumbsUp || 0) * 2 + Math.floor((g.views || 0) / 20) + (g.followers || 0);
 };
 
 export const esc = s => String(s || '').replace(/([[\]])/g, '\\$1');
@@ -287,6 +287,7 @@ function signalText(it) {
   if (g.points != null) bits.push(`${g.points} 票`);
   if (g.views != null) bits.push(g.unanswered ? `${g.views} 浏览 · 无人答` : `${g.views} 浏览`);
   if (g.thumbsUp != null) bits.push(`👍 ${g.thumbsUp}`);
+  if (g.followers != null) bits.push(`${g.followers} 关注`);
   return bits.join(' · ');
 }
 

@@ -52,6 +52,7 @@ const signalLine = it => {
   if (g.points != null) bits.push(`${g.points} 票 / ${g.comments || 0} 评论`);
   if (g.views != null) bits.push(`${g.views} 次浏览${g.unanswered ? ' · **无人回答**' : ` · ${g.answers} 个回答`}`);
   if (g.thumbsUp != null) bits.push(`👍 ${g.thumbsUp}${g.repo ? ' · ' + g.repo : ''}`);
+  if (g.followers != null) bits.push(`${g.followers} 关注`);
   if (it.via) bits.push(`命中短语「${it.via}」`);
   if (it.alsoFrom?.length) bits.push(`同时出现在 ${it.alsoFrom.map(a => a.source).join('、')}`);
   return bits.join('；');

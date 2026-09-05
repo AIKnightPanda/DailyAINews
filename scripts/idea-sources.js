@@ -203,11 +203,13 @@ export const BOARDS = [
     id: 'producthunt', name: 'Product Hunt', kind: 'rss',
     url: 'https://www.producthunt.com/feed',
     home: 'https://www.producthunt.com/',
-    side: 'supply', category: 'product', pool: true, cap: 20, deepen: 'none', dateless: true,
+    side: 'supply', category: 'product', pool: true, cap: 20, deepen: 'producthunt', dateless: true,
     // PH 的 content 末尾固定挂着两个链接（Discussion / Link），剥完标签后
     // 它们的文字会黏在摘要屁股上。摘要要的是那句产品描述，尾巴切掉。
     trimTail: /\s*Discussion\s*\|?\s*Link\s*$/i,
-    note: '每日新品榜。自带一句话产品描述，是「今天上新了什么」的主力'
+    note: '每日新品榜。自带一句话产品描述，是「今天上新了什么」的主力。' +
+      '「深挖」只做一件事：访问产品页拿 followersCount（服务端渲染的 JSON 里现成的），' +
+      '没有评论区可抓'
   },
   {
     id: 'showhn', name: 'Show HN', kind: 'hn', url:

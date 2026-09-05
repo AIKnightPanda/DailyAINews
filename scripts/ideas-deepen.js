@@ -108,7 +108,35 @@ async function deepenStackExchange(item) {
   };
 }
 
-const DEEPENERS = { reddit: deepenReddit, hn: deepenHn, stackexchange: deepenStackExchange };
+// Product Hunt 没有评论区可抓，「深挖」在这里只做一件事：把服务端渲染的
+// 产品页拿下来，正则挖 followersCount —— 关注数比 RSS 里那句产品描述更能
+// 说明这条上新有没有人真的在意，读者要求加上（2026-09-05）。
+// PH 是 Next.js 应用，但这个数字已经在首屏 HTML 里的水合数据里，不用跑 JS。
+//
+// 2026-09-05 实测：连续访问约 12 个产品页之后，Product Hunt 的 Cloudflare
+// 直接开始返回「Just a moment...」challenge 页，90 秒后单独重试同一个 URL
+// 仍然被挡——不是简单的按请求限流，像是这个 IP 被判了一段时间的封禁。
+// 所以这里**绝不能抛错让整条item 连带出局**：抓不到关注数只是拿不到这一个
+// 数字，不该连累这条本来就该展示的候选。失败就静默退化成没有 signal。
+async function deepenProductHunt(item) {
+  try {
+    const html = await fetchText(item.url);
+    const m = html.match(/"followersCount":(\d+)/);
+    return {
+      body: item.summary || '',
+      comments: [],
+      source: 'producthunt',
+      signal: m ? { followers: Number(m[1]) } : {}
+    };
+  } catch {
+    return { body: item.summary || '', comments: [], source: 'producthunt' };
+  }
+}
+
+const DEEPENERS = {
+  reddit: deepenReddit, hn: deepenHn, stackexchange: deepenStackExchange,
+  producthunt: deepenProductHunt
+};
 
 // 竞品线索：拿标题里最有辨识度的几个词去 HN 搜一遍。
 // 评论区是竞品信息的第一来源（那条 iOS 的教训就在评论里），这是补充。
@@ -173,8 +201,8 @@ async function main() {
     // Ask HN 大半是闲聊、GitHub 大半是给现成产品提功能，留一两个名额就够
     caps: { 'hn-ask': 3, 'gh-requests': 2, softwarerecs: 5 }
   });
-  // 供给侧只深挖 Show HN（它有评论区）；Product Hunt 自带一句话描述，
-  // 够写「这是什么」了，没有可深挖的东西。
+  // 供给侧里 Show HN 深挖评论区；Product Hunt 自带一句话描述已经够写
+  // 「这是什么」了，深挖只是顺带去产品页拿 followersCount，拿不到不影响入选。
   const { chosen: supplyPick } = pickForDeepen(supply, {
     top: SUPPLY_TOP, perSource: 12, minScore: 4
   });
@@ -184,6 +212,7 @@ async function main() {
   let ok = 0;
   const failed = [];
   let lastReddit = 0;
+  let lastPH = 0;
 
   for (const { it } of targets) {
     const kind = sourceById(it.sourceId)?.deepen || 'none';
@@ -195,12 +224,21 @@ async function main() {
       if (lastReddit && wait > 0) await sleep(wait);
       lastReddit = Date.now();
     }
+    // Product Hunt 同理：2026-09-05 实测短时间内连续访问约 12 个产品页就会
+    // 触发 Cloudflare 的 challenge，拉开间隔降低连续触发的概率
+    // （拉开间隔也不保证不触发，触发之后 deepenProductHunt 会静默退化）
+    if (kind === 'producthunt') {
+      const wait = REDDIT_GAP - (Date.now() - lastPH);
+      if (lastPH && wait > 0) await sleep(wait);
+      lastPH = Date.now();
+    }
 
     try {
       const deep = fn ? await fn(it) : { body: it.summary || '', comments: [], source: 'none' };
       deep.priorArt = await priorArt(it.title);
       deep.fetchedAt = new Date().toISOString();
       it.deep = deep;
+      if (deep.signal) it.signal = { ...(it.signal || {}), ...deep.signal };
       it.candidate = true;
       ok++;
     } catch (err) {
@@ -226,6 +264,7 @@ async function main() {
         deep.priorArt = await priorArt(it.title);
         deep.fetchedAt = new Date().toISOString();
         it.deep = deep;
+        if (deep.signal) it.signal = { ...(it.signal || {}), ...deep.signal };
         it.candidate = true;
         it.deepError = null;
         ok++;

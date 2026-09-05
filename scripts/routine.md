@@ -208,9 +208,11 @@ DeepMind 抓下来的 15KB 文本大半是导航栏。RSS 是这几家唯一稳�
 
 抓取有两条路，互为备份：
 
-- **预抓** —— `.github/workflows/fetch-extra.yml`，cron `0 21 * * *`（UTC），
-  比 Routine 早 30 分钟，抓完提交进仓库。一天只跑一次：`fetch-extra.js` 抓完会把
+- **预抓** —— `.github/workflows/fetch-extra.yml`，cron `33 18 * * *`（UTC），
+  比 Routine 早约 2h57m，抓完提交进仓库。一天只跑一次：`fetch-extra.js` 抓完会把
   URL 记进 `extra-seen.json`，同一天再跑只会返回 0 条，把上一次的成果覆盖掉。
+  2026-09-05 把缓冲从 30 分钟拉到近 3 小时——实测 GitHub 的 `schedule`
+  触发本身能延迟近 110 分钟，30 分钟缓冲扛不住。
 - **实时抓取** —— 没有预抓文件、日期对不上、或文件没通过 `archive.js` 的三道关时，
   由 `archive.js` 自己抓。云端环境已放行这五个域名，这条路是通的。
 

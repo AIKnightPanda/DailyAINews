@@ -6,12 +6,17 @@
 # 候选部分云端可以实时抓，但**邮件部分只能在这里跑** —— Routine 的沙箱里
 # 没有 Gmail 凭证，也不该有。所以这条工作流挂了，当期就没有 IdeaBrowser 那条。
 #
-# 排在 fetch-extra（21:00）之前，两条工作流都往 main 推，靠 rebase 重试避让。
+# 排在 fetch-extra 之前，两条工作流都往 main 推，靠 rebase 重试避让。
+#
+# 2026-09-05 把缓冲从 50 分钟拉到约 3 小时：实测 9/4 这两条 workflow 都被
+# GitHub 自己的调度延迟了近 110 分钟（`schedule` 触发不保证准点，高峰期常见），
+# 50 分钟缓冲被吃光后 Routine 只能现抓，直接撞上沙箱的网络限制。
+# 分钟数刻意避开整点/整半点，躲开 GitHub 文档提到的那类拥堵时段。
 name: fetch-ideas
 
 on:
   schedule:
-    - cron: '40 20 * * *'     # 比 fetch-extra 早 20 分钟，比 Routine 早 50 分钟
+    - cron: '13 18 * * *'     # 03:13 北京时间，比 Routine（05:30）早约 3h17m
   workflow_dispatch:
 
 permissions:

@@ -152,9 +152,15 @@ scripts/
 ## 每天怎么跑
 
 ```
-20:40 UTC  Actions (fetch-ideas.yml)  抓候选 + 抓 Gmail → 提交两个 pending 文件
+18:13 UTC  Actions (fetch-ideas.yml)  抓候选 + 抓 Gmail → 提交两个 pending 文件
 21:30 UTC  Routine                    归档 → 深挖 → Haiku 翻译与判断 → 拼装 → 建页 → push
 ```
+
+2026-09-05 把预抓从 20:40 提前到 18:13——原来只留 50 分钟缓冲，实测被
+GitHub 自己的调度延迟吃光过（延迟近 110 分钟），预抓文件没到位时
+`ideas-archive.js` 会正确回落到实时抓取，但 Routine 沙箱里 Reddit 被
+网络策略挡、也没有 Gmail 凭证，回落等于抓空。缓冲拉到近 3 小时才扛得住
+这种延迟。
 
 手动跑一次：
 

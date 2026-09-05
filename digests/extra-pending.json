@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-09-04T22:46:35.306Z",
+  "fetchedAt": "2026-09-05T20:39:41.180Z",
   "windowDays": 3,
-  "windowUntil": "2026-09-04T23:59:59.000Z",
+  "windowUntil": "2026-09-05T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
       "status": "error",
-      "error": "主站 HTTP 402：Payment required DEPLOYMENT_DISABLED cle1::hftx2-1788561994256-209a237；镜像 HTTP 403：Just a moment... *"
+      "error": "主站 HTTP 402：Payment required DEPLOYMENT_DISABLED sfo1::qxfg5-1788640780233-eb0840d；镜像 HTTP 403：Just a moment... *"
     },
     {
       "id": "importai",
@@ -21,13 +21,13 @@
       "name": "OpenAI",
       "status": "ok",
       "issues": 5,
-      "items": 0
+      "items": 1
     },
     {
       "id": "deepmind",
       "name": "Google DeepMind",
       "status": "ok",
-      "issues": 3,
+      "issues": 1,
       "items": 0
     },
     {
@@ -35,42 +35,32 @@
       "name": "The Rundown AI",
       "status": "ok",
       "issues": 4,
-      "items": 0
+      "items": 1
     },
     {
       "id": "aivalley",
       "name": "AI Valley",
       "status": "ok",
-      "issues": 3,
-      "items": 2
+      "issues": 2,
+      "items": 0
     }
   ],
   "items": [
     {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "OpenAI says we might be in the AGI era now",
-      "url": "https://openai.com/index/gpt-6-astra/",
-      "links": [],
-      "summary": "OpenAI released GPT-6 Astra , its new frontier model that Greg Brockman is calling a “generational leap.” He personally thinks OpenAI has reached AGI with this one, ending the launch briefing with “Welcome to the AGI era.” So there’s that.",
-      "publishedAt": "2026-09-04T14:05:46.463Z",
-      "issueUrl": "https://www.theaivalley.com/p/gpt-6-is-here"
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "GPT-6 Astra: A new generation of intelligence",
+      "url": "https://openai.com/index/gpt-6-astra",
+      "summary": "Introducing GPT-6 Astra, our most intelligent and aligned model yet, with state-of-the-art capabilities across computer use, coding, cybersecurity, and science.",
+      "publishedAt": "2026-09-03T11:00:00.000Z"
     },
     {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "OpenAI’s agents apparently took over a German wiki",
-      "url": "https://www.reuters.com/",
-      "links": [],
-      "summary": "researchers found 15,000+ edits made by AI agents on DseWiki, a German programming wiki, where they basically turned the site into a message board for each other.",
-      "publishedAt": "2026-09-04T14:05:46.463Z",
-      "issueUrl": "https://www.theaivalley.com/p/gpt-6-is-here"
+      "source": "The Rundown AI",
+      "sourceHome": "https://www.therundown.ai/",
+      "title": "Apple Vision Pro scrubs into surgery",
+      "url": "https://www.therundown.ai/articles/apple-vision-pro-scrubs-into-surgery",
+      "summary": "PLUS: AI futurist Ray Kurzweil joins neurotech startup Subsense",
+      "publishedAt": "2026-09-04T14:30:00.000Z"
     }
   ]
 }

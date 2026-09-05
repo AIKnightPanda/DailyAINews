@@ -1,23 +1,23 @@
 {
   "issue": "2026-09-05",
-  "builtAt": "2026-09-04T21:36:57.926Z",
+  "builtAt": "2026-09-05T08:54:23.027Z",
   "from": {
     "boards": "live",
-    "inbox": "live"
+    "inbox": "prefetched"
   },
   "counts": {
-    "fetched": 52,
-    "added": 8,
-    "kept": 8,
-    "dropped": 44,
-    "pool": 8,
-    "screened": 8,
-    "candidates": 1,
-    "demandCandidates": 0,
-    "supplyCandidates": 1
+    "fetched": 158,
+    "added": 78,
+    "kept": 86,
+    "dropped": 80,
+    "pool": 86,
+    "screened": 67,
+    "candidates": 26,
+    "demandCandidates": 13,
+    "supplyCandidates": 13
   },
   "errors": [
-    "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
+    "candidates-pending.json 自相矛盾：sources 报 143 条，items 里只有 162 条"
   ],
   "sources": [
     {
@@ -25,23 +25,24 @@
       "name": "r/SomebodyMakeThis",
       "status": "error",
       "pool": true,
-      "error": "HTTP 403：Blocked by egress policy",
+      "error": "fetch failed",
       "group": "board"
     },
     {
       "id": "reddit-search",
       "name": "Reddit 需求短语",
-      "status": "error",
+      "status": "partial",
+      "items": 0,
       "pool": true,
-      "error": "全部短语失败：is there an app that（HTTP 403：Blocked by egress policy）；is there a tool that（HTTP 403：Blocked by egress policy）；someone should build（HTTP 403：Blocked by egress policy）；we still use spreadsheets（HTTP 403：Blocked by egress policy）",
+      "error": "is there an app that（fetch failed）；is there a tool that（fetch failed）；someone should build（fetch failed）",
       "group": "board"
     },
     {
       "id": "softwarerecs",
       "name": "Software Recommendations",
-      "status": "error",
+      "status": "ok",
+      "items": 25,
       "pool": true,
-      "error": "HTTP 403：Blocked by egress policy",
       "group": "board"
     },
     {
@@ -63,33 +64,34 @@
     {
       "id": "reddit-paying",
       "name": "Reddit 付费信号",
-      "status": "error",
+      "status": "partial",
+      "items": 27,
       "pool": true,
-      "error": "全部短语失败：we currently pay（HTTP 403：Blocked by egress policy）；we are paying for（HTTP 403：Blocked by egress policy）；quoted us（HTTP 403：Blocked by egress policy）；per seat per month（HTTP 403：Blocked by egress policy）",
+      "error": "quoted us（HTTP 429）",
       "group": "board"
     },
     {
       "id": "msp",
       "name": "r/msp",
-      "status": "error",
+      "status": "ok",
+      "items": 20,
       "pool": true,
-      "error": "HTTP 403：Blocked by egress policy",
       "group": "board"
     },
     {
       "id": "sysadmin",
       "name": "r/sysadmin",
-      "status": "error",
+      "status": "ok",
+      "items": 8,
       "pool": true,
-      "error": "HTTP 403：Blocked by egress policy",
       "group": "board"
     },
     {
       "id": "microsaas",
       "name": "r/microsaas",
-      "status": "error",
+      "status": "ok",
+      "items": 20,
       "pool": true,
-      "error": "HTTP 403：Blocked by egress policy",
       "group": "board"
     },
     {
@@ -120,9 +122,25 @@
       "id": "showhn",
       "name": "Show HN",
       "status": "ok",
-      "items": 1,
+      "items": 2,
       "pool": true,
       "group": "board"
+    },
+    {
+      "id": "ideabrowser",
+      "name": "IdeaBrowser",
+      "status": "ok",
+      "mails": 2,
+      "items": 5,
+      "group": "inbox"
+    },
+    {
+      "id": "mobbin",
+      "name": "Mobbin",
+      "status": "ok",
+      "mails": 0,
+      "items": 0,
+      "group": "inbox"
     }
   ],
   "items": [
@@ -429,7 +447,2670 @@
         ],
         "fetchedAt": "2026-09-04T21:37:04.601Z"
       }
+    },
+    {
+      "id": "c8458c791a",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/37644/is-there-a-cloud-management-platform-that-can-control-manage-hosted-open-source",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Is there a Cloud Management Platform that can control/manage hosted, open source Linux VMs?",
+      "url": "https://softwarerecs.stackexchange.com/questions/37644/is-there-a-cloud-management-platform-that-can-control-manage-hosted-open-source",
+      "summary": "Is there a CMP that can manage QEMU/KVM VMs without OpenStack? Is there a CMP that can integrate with oVirt? I want to manage a hybrid cloud (AWS and on-premises VMs) with the same application. I want an API for automation and a GUI to allow non-technical users to create VMs.",
+      "deepenKey": "37644",
+      "signal": {
+        "score": 3,
+        "views": 109,
+        "answers": 3,
+        "unanswered": true
+      },
+      "publishedAt": "2016-11-20T12:57:29.000Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "49f78865b9",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/91583/switch-between-media-playing-apps-by-pressing-physical-button",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Switch between media playing apps by pressing physical button",
+      "url": "https://softwarerecs.stackexchange.com/questions/91583/switch-between-media-playing-apps-by-pressing-physical-button",
+      "summary": "Recommend me some existing app(s) that can do it, or how to write it myself. There can be many media players opened the same time. Only one can play. They all have items in the notification area, each on which has at least play/pause button, and often next and prev buttons. When you listen to one app and press another app's play button, this app gets audio focus and starts playing, previous app pauses. The interface I want: I press a button (e.g. HOME, I have it on my device) while listening to a stream in browser and it pauses and media player starts playing.",
+      "deepenKey": "91583",
+      "signal": {
+        "score": 0,
+        "views": 150,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2024-12-07T18:02:39.000Z",
+      "ref": "I10",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [
+          "要做硬件"
+        ],
+        "detail": {
+          "signal": -8,
+          "engagement": 4,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "367cff0e83",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/71566/mobile-friendly-data-entry-app",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Mobile Friendly Data Entry App",
+      "url": "https://softwarerecs.stackexchange.com/questions/71566/mobile-friendly-data-entry-app",
+      "summary": "I am trying to create a data entry \"app\" to collect daily readings across our site. Here are the three biggest constraints: Software - ideally, we would use some software within the Microsoft 365 Suite, mainly because those are the only approved apps on site. It may be possible to use open source software, but that might raise some flags in terms of security. So my thoughts are to use either Excel or Access. Cost - ideally, we do not want purchase any additional software licenses.",
+      "deepenKey": "71566",
+      "signal": {
+        "score": 3,
+        "views": 479,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2020-01-08T21:29:50.000Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "在用笨办法凑合"
+        ],
+        "detail": {
+          "signal": 4,
+          "engagement": 5,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I am trying to create a data entry \"app\" to collect daily readings across our site. Here are the three biggest constraints: Software - ideally, we would use some software within the Microsoft 365 Suite, mainly because those are the only approved apps on site. It may be possible to use open source software, but that might raise some flags in terms of security. So my thoughts are to use either Excel or Access. Cost - ideally, we do not want purchase any additional software licenses. I would try and create something with Power Apps, but we do not have the licensing for an Azure or SQL server to store the data. I could be missing something here though. Mobile-Friendly - finally, it needs to work on an Android tablet. Currently, we collect readings using pen and paper. The whole idea of this is to move towards using a tablet. The easiest approach would be to create an Excel spreadsheet, save it on OneDrive, and edit the spreadsheet. I don't love this option because we are collecting 100's of data points each day. This would end up with a very wide spreadsheet that will be cumbersome to navigate. The other option I looked into was creating an Access database and accompanying form and storing it on SharePoint. However, it seems Microsoft has stopped supporting Access databases on SharePoint. I have created data entry forms using VBA, similar to this , but these do not work on mobile. Is it possible to create a data entry form in Excel that also works on the Android version of Excel? Are there other alternatives I am not thinking of?",
+        "comments": [
+          {
+            "text": "You might consider using Office Add-ins , which you can code in Java Script . This is the MS recommended way of programming Office 365. Use the Office Add-ins platform to build solutions that extend Office applications and interact with content in Office documents. With Office Add-ins, you can use familiar web technologies such as HTML, CSS, and JavaScript to build solutions that can run in Office on Windows, Mac, iPad, and on the web. There is extensive on-line documentation, including code examples.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Show HN: I am building a map of people who lived in the Roman Empire",
+            "points": 210,
+            "url": "https://news.ycombinator.com/item?id=48481400"
+          }
+        ],
+        "fetchedAt": "2026-09-05T08:54:48.633Z"
+      }
+    },
+    {
+      "id": "97170fc9dc",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/66241/what-languagelibraries-could-i-use-to-parse-a-csv-google-sheets-file-and-then-s",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "What language+libraries could I use to parse a CSV/Google Sheets file and then send text messages using some of the parsed info?",
+      "url": "https://softwarerecs.stackexchange.com/questions/66241/what-languagelibraries-could-i-use-to-parse-a-csv-google-sheets-file-and-then-s",
+      "summary": "The goal is to send the same message to many people (volunteering reminders) but in an automated fashion. The only difference between messages would be the name at the beginning and the target phone number, which would come from a CSV file or Google Sheets directly. Languages I would be comfortable using (in order): Java Python JavaScript Something new and not too hard to pick up The end goal would be click a few buttons (convert Google Sheet to CSV, add to a folder, run a .cmd command) and then everything is sent out within 5 minutes from a personal phone.",
+      "deepenKey": "66241",
+      "signal": {
+        "score": 1,
+        "views": 119,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2019-08-13T01:56:14.000Z",
+      "ref": "I12",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [
+          "在用笨办法凑合",
+          "要的是库不是产品"
+        ],
+        "detail": {
+          "signal": -1,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "18cba4a240",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/91240/is-there-a-free-online-cloud-proxy-for-scraping-content-from-israel",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Is there a free online/cloud proxy for scraping content from Israel?",
+      "url": "https://softwarerecs.stackexchange.com/questions/91240/is-there-a-free-online-cloud-proxy-for-scraping-content-from-israel",
+      "summary": "That is, an online service to which you give a website and it scrapes it from an Israeli IP address and returns the content, and you can utilize this proxy in your online scripts. It could be limited in credits (e.g. 1,000 free scrapes a month) or maybe even a free trial mode, if that's what it takes. It's for a free public JSON file that seems to accept just Israeli connections.",
+      "deepenKey": "91240",
+      "signal": {
+        "score": 0,
+        "views": 52,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2024-09-28T11:12:02.000Z",
+      "ref": "I13",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "That is, an online service to which you give a website and it scrapes it from an Israeli IP address and returns the content, and you can utilize this proxy in your online scripts. It could be limited in credits (e.g. 1,000 free scrapes a month) or maybe even a free trial mode, if that's what it takes. It's for a free public JSON file that seems to accept just Israeli connections.",
+        "comments": [
+          {
+            "text": "An actually free-forever service that combines a scraping API with Israeli residential exits is a rare find. If “free forever” is non-negotiable, expect significant limits and verify the service rather than assuming that an advertised free proxy has usable Israeli coverage. A consumer VPN is not the same thing as a scraping API: a VPN changes the egress IP for your client, but normally does not provide URL fetching, extraction, JavaScript rendering, retries, or concurrency controls for automation. Disclosure: I work on/build Spider Scrapers. If a trial is acceptable, Spider Scrapers ( https://www.spiderscrapers.com/ ) is one service you could evaluate. Its extraction API accepts POST /api/extract ; for Israel, pass countryCode as \"il\" to request Israel geo with a geo-sticky proxy.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Ask HN: Live TV streaming provider",
+            "points": 10,
+            "url": "https://news.ycombinator.com/item?id=10170029"
+          }
+        ],
+        "fetchedAt": "2026-09-05T08:56:10.268Z"
+      }
+    },
+    {
+      "id": "335070fdde",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/91599/what-tool-to-convert-an-otb-bitmap-font-to-a-ttf-or-otf-font",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "What tool to convert an OTB (bitmap font) to a TTF or OTF font?",
+      "url": "https://softwarerecs.stackexchange.com/questions/91599/what-tool-to-convert-an-otb-bitmap-font-to-a-ttf-or-otf-font",
+      "summary": "I have this wonderful old MiscFree font on linux that I was able to convert to OTB. Unfortunately, now, I have to use mac at work, and it does not support OTB fonts... How could I convert it to TTF or OTF formats ? Here is the font : https://github.com/hl037/MiscFixed13-12",
+      "deepenKey": "91599",
+      "signal": {
+        "score": 0,
+        "views": 989,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2024-12-11T12:36:03.000Z",
+      "ref": "I14",
+      "screen": {
+        "keep": true,
+        "score": 10,
+        "hits": [
+          "有具体人群"
+        ],
+        "detail": {
+          "signal": 3,
+          "engagement": 6,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I have this wonderful old MiscFree font on linux that I was able to convert to OTB. Unfortunately, now, I have to use mac at work, and it does not support OTB fonts... How could I convert it to TTF or OTF formats ? Here is the font : https://github.com/hl037/MiscFixed13-12",
+        "comments": [
+          {
+            "text": "Your OTB font is an (unofficial) extension of the OpenType bitmap format, not supported in non-Linux environments. The free (both libre and gratis ) FontForge does this and purports to be available for both Linux and MacOS X. There's also Vertopal's on-line converter to generate TTF. Converting bitmap fonts to vector formats generally has ... underwhelming results. The problem is that bitmap fonts don't normally contain hinting or kerning information to optimize the appearance of a font at anything other than the \"default\" size. If your OTB font is effectively a 12-point font, the TTF/OTF version isn't going to look good at 8 points or at 16 points or at any size other than 12 points. I thus don't recommend this course.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-09-05T08:55:09.115Z"
+      }
+    },
+    {
+      "id": "ad67cb47ad",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/41944/batch-processing-acrobat-forms",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Batch processing Acrobat Forms",
+      "url": "https://softwarerecs.stackexchange.com/questions/41944/batch-processing-acrobat-forms",
+      "summary": "I'm looking for a Windows app/process/whatever to batch export the data of filled-in Acrobat PDF Forms to an Excel file. App should do: get all PDFs from an input folder append PDF form data to an Excel file move the input PDF somewhere else",
+      "deepenKey": "41944",
+      "signal": {
+        "score": 1,
+        "views": 75,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2017-04-25T09:43:11.000Z",
+      "ref": "I15",
+      "screen": {
+        "keep": true,
+        "score": 8,
+        "hits": [
+          "在用笨办法凑合"
+        ],
+        "detail": {
+          "signal": 4,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I'm looking for a Windows app/process/whatever to batch export the data of filled-in Acrobat PDF Forms to an Excel file. App should do: get all PDFs from an input folder append PDF form data to an Excel file move the input PDF somewhere else",
+        "comments": [
+          {
+            "text": "I once needed something similar, so I adapted that for you. It's a Python script that you can run like this: python processforms.py <input folder> <output XSLX> <processed PDF folder> Limitations: it will not recognize if you process duplicate files. it can't deal with same file names in the processed PDF (output) folder. it will write to the first worksheet. You can't select one. import argparse from pathlib import Path import shutil from PyPDF2 import PdfReader from openpyxl import Workbook, load_workbook from openpyxl.worksheet.worksheet import Worksheet def extract_form_fields(pdf_path: Path) -> dict: \"\"\" Extract AcroForm fields from a PDF as a dict {field_name: value}. Returns an empty dict if no fields are found.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-09-05T08:56:09.259Z"
+      }
+    },
+    {
+      "id": "c5fda9f47f",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/73813/software-cms-for-a-subscription-service-website",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Software/CMS for a subscription service website",
+      "url": "https://softwarerecs.stackexchange.com/questions/73813/software-cms-for-a-subscription-service-website",
+      "summary": "I have a reasonable amount of experience in creating WordPress websites, plus I've made a couple of specific websites from scratch using html/css/js. However, I'd like to build a website for a monthly subscription delivery service I'm thinking of launching, and I'm wondering whether it's possible to create it just in WordPress (or any other CMS) using the right add-ons or if I'll need something more involved. I'm willing to pay someone to do the bits I can't do if necessary. The website will need to: Advertise and describe the service (no problems with WordPress for this one!).",
+      "deepenKey": "73813",
+      "signal": {
+        "score": 1,
+        "views": 80,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2020-04-04T10:14:53.000Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [
+          "工程量过大"
+        ],
+        "detail": {
+          "signal": -4,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2672622f7d",
+      "normUrl": "https://news.ycombinator.com/item?id=49573366",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Opinion: Religion Lowers Individual Morality",
+      "url": "https://news.ycombinator.com/item?id=49573366",
+      "externalUrl": null,
+      "summary": "The religious can commit crimes nobody else can. God is greater than reality, greater than your inhibitions. Religious people often brag that religion is the source of morality. But actually, it grants them permission to sin. Everything from asking for forgiveness to collecting donations to killing in the name of god fall under the guise of false benevolence that results in empowering the selfish and victimizing the helpless. Religion is the most evil force on earth - the great cause of all war and famine.",
+      "deepenKey": "49573366",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-05T05:31:51Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4ef6918911",
+      "normUrl": "https://news.ycombinator.com/item?id=49573149",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Word42 1.0.0 Released",
+      "url": "https://news.ycombinator.com/item?id=49573149",
+      "externalUrl": null,
+      "summary": "Word42 is a wordprocessor, inspired by MS Word 6. https://github.com/office-42/word42/releases/tag/1.0.0",
+      "deepenKey": "49573149",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-05T04:48:27Z",
+      "ref": "I18",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "a24800b931",
+      "normUrl": "https://news.ycombinator.com/item?id=49573070",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are you good at spotting fake news?",
+      "url": "https://news.ycombinator.com/item?id=49573070",
+      "externalUrl": null,
+      "summary": "Here is a little game that I made : https://masmedeam.github.io/nightdesk/",
+      "deepenKey": "49573070",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-05T04:26:53Z",
+      "ref": "I19",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "8a403cd3bb",
+      "normUrl": "https://news.ycombinator.com/item?id=49573036",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "I want to see the same moon as you",
+      "url": "https://news.ycombinator.com/item?id=49573036",
+      "externalUrl": null,
+      "summary": "My wife was at home in San Francisco and I was in Mexico City for work. She told me to go look at the moon. Being 2000 miles apart we could look at the same object at the same time. The Internet used to be like that. A shared experience - “did you see what was on the front page of Instagram?” I miss that. Now we are off in separate algorithms like the Tower of Babel. Doesn’t it feel like without a shared experience it’s basically offline?",
+      "deepenKey": "49573036",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 4
+      },
+      "publishedAt": "2026-09-05T04:19:10Z",
+      "ref": "I20",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "596236cc70",
+      "normUrl": "https://news.ycombinator.com/item?id=49572562",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Books Recommendations?",
+      "url": "https://news.ycombinator.com/item?id=49572562",
+      "externalUrl": null,
+      "summary": "I just wanted to know what you guys have enjoyed recently, or really any book you'd recommend to the HN crowd. I've currently got: - Metamagical Themas (Hofstadter) - The Complete Books of Charles Fort (Fort) - Heavenly Mathematics (van Brummelen) - Plane and Spherical Trigonometry (Kells, Kern and Bland) - Spherical Trigonometry with Naval and Military Applications (Kells, Kern, Bland) - Moby Dick (Melville)",
+      "deepenKey": "49572562",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 6
+      },
+      "publishedAt": "2026-09-05T02:36:51Z",
+      "ref": "I21",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5d0fa92092",
+      "normUrl": "https://news.ycombinator.com/item?id=49572431",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "A documentary about a scientist who thinks time loops are real",
+      "url": "https://news.ycombinator.com/item?id=49572431",
+      "externalUrl": null,
+      "summary": "The current consensus driving the scale-up of AI data centers rests on two assumptions: The human brain is a biological computer operating without quantum effects. The human brain does not solve computationally \"hard\" problems (NP-hard / PSPACE); it merely runs efficient heuristic approximations. Under these assumptions scaling classical compute architectures will eventually match biological cognitive capacity. With this in mind I made a documentary.",
+      "deepenKey": "49572431",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-05T02:13:26Z",
+      "ref": "I22",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "ed11d595bc",
+      "normUrl": "https://news.ycombinator.com/item?id=49571745",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What is your biggest career regret?",
+      "url": "https://news.ycombinator.com/item?id=49571745",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "49571745",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 3
+      },
+      "publishedAt": "2026-09-05T00:19:57Z",
+      "ref": "I23",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "aa0342c216",
+      "normUrl": "https://news.ycombinator.com/item?id=49571621",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Initial Thoughts on GPT-6 Astra?",
+      "url": "https://news.ycombinator.com/item?id=49571621",
+      "externalUrl": null,
+      "summary": "Personally, I've found it to be a bit too-aligned out of the gate, with some overly-legalistic interpretations and cautiousness that is unwarranted and makes it sounds like it actively wants to rat you out for... anything. Anyone find something similar, completely different, or somewhere in between?",
+      "deepenKey": "49571621",
+      "via": null,
+      "signal": {
+        "points": 7,
+        "comments": 4
+      },
+      "publishedAt": "2026-09-05T00:02:26Z",
+      "ref": "I24",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2fc8131efe",
+      "normUrl": "https://news.ycombinator.com/item?id=49571448",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What's Going on with Web.archive.org",
+      "url": "https://news.ycombinator.com/item?id=49571448",
+      "externalUrl": null,
+      "summary": "https://web.archive.org/cdx/search/cdx?url=example.com&fl=timestamp,original&limit=5&showDupeCount=true https://web.archive.org/*/example.com HTTP 429 Too many requests",
+      "deepenKey": "49571448",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-04T23:36:03Z",
+      "ref": "I25",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "ef9e37f31e",
+      "normUrl": "https://news.ycombinator.com/item?id=49571138",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Thoughts on Twitterviewer.net?",
+      "url": "https://news.ycombinator.com/item?id=49571138",
+      "externalUrl": null,
+      "summary": "Now that Nitter, XCancel, and Twitterwebviewer are gone, it seems to be the best website like that still around. One thing (which some people don’t seem to realize) is that you have to go to advanced search on the website to search by term rather than search by profile. On your phone, you have to use the 3 dots on the top left to open the menu that has advanced search. Once you figure that out, I don’t really find it that complicated to use. Twitterviewer does have a lot of ads, but then again X itself has a lot of ads too.",
+      "deepenKey": "49571138",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 3
+      },
+      "publishedAt": "2026-09-04T22:52:57Z",
+      "ref": "I26",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4b957482b8",
+      "normUrl": "https://news.ycombinator.com/item?id=49570804",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Wolfram Cloud Is Out",
+      "url": "https://news.ycombinator.com/item?id=49570804",
+      "externalUrl": null,
+      "summary": "Wolfram Cloud is currently out and has been out for over 48hrs now, the link is showing a status 503 error code and their site is reportedly being updated. Is this the same on your end and what sort of update takes over 48 hrs to be deployed if it is same on your ends. https://www.wolframcloud.com",
+      "deepenKey": "49570804",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-04T22:07:12Z",
+      "ref": "I27",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4317840ece",
+      "normUrl": "https://news.ycombinator.com/item?id=49570522",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Anthropic just reset usage, including Fable",
+      "url": "https://news.ycombinator.com/item?id=49570522",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "49570522",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 7
+      },
+      "publishedAt": "2026-09-04T21:36:34Z",
+      "ref": "I28",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d04267b91b",
+      "normUrl": "https://news.ycombinator.com/item?id=49570445",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Two random Anthropic allocation resets this week",
+      "url": "https://news.ycombinator.com/item?id=49570445",
+      "externalUrl": null,
+      "summary": "One was when they released Fable 5.1 and makes sense but they just reset allocations again. Why?",
+      "deepenKey": "49570445",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-04T21:28:52Z",
+      "ref": "I29",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "b47db3d68e",
+      "normUrl": "https://news.ycombinator.com/item?id=49570029",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How do you know if you have a product problem or a distribution one?",
+      "url": "https://news.ycombinator.com/item?id=49570029",
+      "externalUrl": null,
+      "summary": "I keep building products, ideas etc that are I think are good and solve people's issues at least what I see them complain about but it doesn't result in any meaningful traction. When I ask people to use something its either non-existent or you just get ignored even though it solves the issue they describe. Do I have a distribution/outreach issue or am I just building crappy stuff nobody wants ? I do all the recommended steps of getting an ICP and then doing difficult things that don't scale but it goes nowhere.",
+      "deepenKey": "49570029",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 4
+      },
+      "publishedAt": "2026-09-04T20:47:07Z",
+      "ref": "I30",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "57d1794ac8",
+      "normUrl": "https://news.ycombinator.com/item?id=49569993",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Prediction: GPU's are currently the cheapest they're ever gonna be",
+      "url": "https://news.ycombinator.com/item?id=49569993",
+      "externalUrl": null,
+      "summary": "and its not even close either",
+      "deepenKey": "49569993",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 5
+      },
+      "publishedAt": "2026-09-04T20:43:42Z",
+      "ref": "I31",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e82c3bea5b",
+      "normUrl": "https://reddit.com/r/novemberiscoming/comments/1w7e70r/is_there_a_commonsense_argument_for_universal",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Is there a common-sense argument for universal healthcare in America?",
+      "url": "https://www.reddit.com/r/novemberiscoming/comments/1w7e70r/is_there_a_commonsense_argument_for_universal/",
+      "summary": "America does not need to agree that healthcare is “socialism,” a “human right,” or anything else ideological to recognize that the way we currently pay for healthcare makes very little economic sense. The common-sense question is much simpler: If every American is eventually going to need healthcare, why have we built an enormously expensive system whose first task is figuring out who will pay for it? A rational American healthcare system should begin with one basic guarantee: Every American is automatically covered for essential healthcare.",
+      "deepenKey": "/r/novemberiscoming/comments/1w7e70r",
+      "via": "we currently pay",
+      "publishedAt": "2026-09-04T19:26:41.000Z",
+      "ref": "I32",
+      "screen": {
+        "keep": true,
+        "score": 14,
+        "hits": [
+          "已经在花钱"
+        ],
+        "detail": {
+          "signal": 8,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "America does not need to agree that healthcare is “socialism,” a “human right,” or anything else ideological to recognize that the way we currently pay for healthcare makes very little economic sense. The common-sense question is much simpler: If every American is eventually going to need healthcare, why have we built an enormously expensive system whose first task is figuring out who will pay for it? A rational American healthcare system should begin with one basic guarantee: Every American is automatically covered for essential healthcare. No American can be financially ruined because he or she became sick. That does not necessarily require eliminating private insurance, private hospitals, private doctors, or competition. It requires establishing a single public baseline payer underneath the system — a floor rather than a ceiling — with private coverage available above it for people who want additional benefits. 1. We already pay for everyone's healthcare. We just do it in the most expensive way imaginable. An uninsured person who develops appendicitis is not going to be left outside the emergency room. A person having a heart attack is going to receive treatment. A premature baby is going into the NICU. A person with metastatic cancer is eventually going to interact with the healthcare system. So the real choice has never been: Do we pay for everyone's healthcare or don't we? The real choice is: Do we pay for it rationally, predictably and efficiently — or do we wait until people become sick, shuffle bills between patients, hospitals, employers, insurers, states and the federal government, send some of those bills to collections, write others off, and ultimately absorb much of the cost anyway? That is not a free-market healthcare system. It is an extraordinarily complicated method of socializing unavoidable costs after they occur. 2. Medical bankruptcy is a particularly irrational feature of the American economy. Bankruptcy is supposed to result from financial risk. Starting a business involves risk. Borrowing money involves risk. Making a bad investment involves risk. Getting leukemia does not. Having a premature baby does not.",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-05T08:58:12.157Z"
+      }
+    },
+    {
+      "id": "b67b02b3d7",
+      "normUrl": "https://reddit.com/r/FirstTimeHomeBuyer/comments/1w77m47/advice_pleasetime_crunch",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Advice please/time crunch",
+      "url": "https://www.reddit.com/r/FirstTimeHomeBuyer/comments/1w77m47/advice_pleasetime_crunch/",
+      "summary": "My wife and I (both 24F) live in Maryland. Married 1 year. We’ve rented our house for 10 months now, with our lease ending Nov 15. Our landlord is considering selling the house. If the lady says she wants to buy it, we have first dibs, but we have no idea where to start or what to do. He’s asking 200k firm. The lady is coming to see it this week or next. This isn’t by any means our dream home, but with the pets we have, the large fenced in backyard makes it perfect for us and almost no other landlord is going to rent to us based on our pets.",
+      "deepenKey": "/r/FirstTimeHomeBuyer/comments/1w77m47",
+      "via": "we currently pay",
+      "publishedAt": "2026-09-04T15:30:09.000Z",
+      "ref": "I33",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "消费/家庭话题，不是软件需求",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "5a13ce5b9c",
+      "normUrl": "https://reddit.com/r/Conroe/comments/1w72mcw/developercontrolled_hoa_forcing_entire_community",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Developer-controlled HOA forcing entire community onto one internet provider with no opt-out",
+      "url": "https://www.reddit.com/r/Conroe/comments/1w72mcw/developercontrolled_hoa_forcing_entire_community/",
+      "summary": "Welcome to THE WOODLANDS HILLS Willis Texas - Our community is still developer-controlled by Howard Hughes, so residents don’t yet control our HOA board. They just announced that they’ve partnered with Centric Fiber and are making the service a mandatory “community-wide amenity” added to our HOA assessment. Starting July 2027, it’ll be $75/month ($900/year) on top of our existing HOA dues, with no opt-out that I can find, even if you already have an internet provider you’re happy with or are locked into a better rate.",
+      "deepenKey": "/r/Conroe/comments/1w72mcw",
+      "via": "we currently pay",
+      "publishedAt": "2026-09-04T12:10:43.000Z",
+      "ref": "I34",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [
+          "提到了具体金额"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Welcome to THE WOODLANDS HILLS Willis Texas - Our community is still developer-controlled by Howard Hughes, so residents don’t yet control our HOA board. They just announced that they’ve partnered with Centric Fiber and are making the service a mandatory “community-wide amenity” added to our HOA assessment. Starting July 2027, it’ll be $75/month ($900/year) on top of our existing HOA dues, with no opt-out that I can find, even if you already have an internet provider you’re happy with or are locked into a better rate. What really bothers me is that the board approved the agreement on September 1 and residents weren’t notified until September 3. So the people actually paying for this had no meaningful input before the agreement was approved. You can opt-out your home but you will still be paying this amount for the “community”. This is also a master-planned community with one pool and one relatively small gym, and residents have previously been told by the HOA that there are no plans for a second pool. Our splash pad has also repeatedly had issues. Yet we’re now adding another $900/year in mandatory costs and calling internet an additional “amenity.” This community is marketed as a “premier community,” but I don’t understand how limiting homeowner choice and increasing mandatory expenses while offering relatively limited physical amenities makes the community more desirable especially when it comes time to sell our homes. And seriously… $75/month is the negotiated bulk rate?! Who negotiated this deal? 😂 If thousands of homes are effectively being guaranteed as customers, I would expect a much more compelling price. We currently pay $45 a month for our internet. Has anyone lived in a developer-controlled HOA that did something similar? Were homeowners able to push back or get an opt-out added? Any other Howard Hughes communities dealing with this? ** forgot to add the $75/mo rate is ONLY LOCKED IN FOR TWO YEARS. Will increase either 3% yearly or whatever matches the market value. There’s no cap.",
+        "comments": [
+          {
+            "text": "They did negotiate it lower and are going to keep the difference as profit."
+          },
+          {
+            "text": "Not to mention, the HOA has already allowed multiple fiber companies into the community to install their infrastructure. Residents have dealt with yards being dug up, ugly fiber boxes placed directly in front of homes, and, from what residents have reported, some driveways still haven’t been properly repaired after damage from previous installations. So why were all of these companies allowed to come in, dig up the neighborhood and install their infrastructure, only for the HOA to turn around afterward and force every homeowner to pay for one specific fiber provider of their choosing."
+          },
+          {
+            "text": "I would call Channel 2 - sometimes that is the only way to get changes in bureaucratic situations."
+          },
+          {
+            "text": "Insane but yes. Someone in the neighborhood has contacted several media channels."
+          },
+          {
+            "text": "It might be a good idea to notify all the other internet providers in the neighborhood about this change. Maybe they can sue the HOA for creating a monopoly and not allowing the residents to choose their own provider. I mean, they all just invested all kinds of money and equipment into the neighborhood to lose all of their customers overnight? Seems to me that a half dozen lawsuits against HH and the new internet provider might stop all this nonsense."
+          },
+          {
+            "text": "Hearing about things like this with an HOA just makes it less and less appealing to buy. Especially with all these new builds that have questionable engineering. I’ll stick with a landlord and throw for the rest inside of the S&P"
+          },
+          {
+            "text": "Get control of the board ASAP that’s how you stop this."
+          },
+          {
+            "text": "It’s what everyone wants but it’s not allowed until the community is nearly 85% filled we are about 35% ish currently. It’s no where near that currently. The plan is around 4,500 homes. Lots of building and land development is still on going."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-05T08:55:07.856Z"
+      }
+    },
+    {
+      "id": "d63ded39b3",
+      "normUrl": "https://reddit.com/r/MEPEngineering/comments/1w6xq1t/whats_the_best_way_to_learn_mep_design_from",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "What’s the best way to learn MEP design from scratch?",
+      "url": "https://www.reddit.com/r/MEPEngineering/comments/1w6xq1t/whats_the_best_way_to_learn_mep_design_from/",
+      "summary": "Hey everyone, I’m a mechanical engineer working at a company that does structures . We currently pay other companies to handle the MEP side, so I’d like to learn it myself and hopefully get a better position within the company. They won’t pay for my training, so I’ll need to study on my own. I already work with Revit, Inventor, and AutoCAD, but I’m completely new to the MEP side of Revit. I’ve never modeled pipes, ducts, or used MEP families before.",
+      "deepenKey": "/r/MEPEngineering/comments/1w6xq1t",
+      "via": "we currently pay",
+      "publishedAt": "2026-09-04T07:44:50.000Z",
+      "ref": "I35",
+      "screen": {
+        "keep": true,
+        "score": 10,
+        "hits": [
+          "已经在花钱",
+          "工程量过大"
+        ],
+        "detail": {
+          "signal": 4,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Hey everyone, I’m a mechanical engineer working at a company that does structures . We currently pay other companies to handle the MEP side, so I’d like to learn it myself and hopefully get a better position within the company. They won’t pay for my training, so I’ll need to study on my own. I already work with Revit, Inventor, and AutoCAD, but I’m completely new to the MEP side of Revit. I’ve never modeled pipes, ducts, or used MEP families before. My goal is to eventually be able to take a project from the architectural model through calculations, equipment selection, coordination, a complete Revit model, and construction drawings. I know MEP is a huge field and that one course won’t make me an expert or allow me to work. Around 70% of our projects will probably be in the EU, but we may also have projects in the UK and US. I know the standards are different in each country, even within the EU, so I want to learn the main engineering principles first and then study the regional standards when needed. My questions are: Which MEP discipline should a mechanical engineer start with? Would HVAC be the most logical choice? Are there any good project-based courses that teach the actual calculations and design process, not just how to use the buttons in Revit? Besides Revit, which calculation and design programs should I learn for HVAC, plumbing, fire protection, electrical design, energy analysis, and coordination? Is it realistic to become good at the complete MEP scope, or should I focus mainly on HVAC and plumbing while learning enough about electrical and fire protection for coordination? I’d really appreciate any advice. Recommendations for paid courses, university programs, books, certifications, software, or free resources are all welcome. Thanks!",
+        "comments": [
+          {
+            "text": "Can you do the calculations yourself? You need to learn how to do the calcs yourself before using any software."
+          },
+          {
+            "text": "If you want to call yourself an engineer you do."
+          },
+          {
+            "text": "Solar heat gain calculations by hand are too laborious for the times required to turn around a project. Q=mcpdt is the equation that is often most used day to day. Psychrometrics might be worth doing it for a few cases, standard, dehum, chilled beams. Otherwise you can get the software to do it for you. When you size equipment for plant selections, you have to do inline with the manufacturer's software. You are better off getting exposure across a broad range of projects, networking with people on all sides of a project than getting stuck into detail that will only impress other low level engineers that wont be promoted."
+          },
+          {
+            "text": "Hang on a minute, you are talking about doing some calculations. You also talk about software, but how are you supposed to know how spot when software makes an error, if you don’t have a background yourself? You seem very confused. Is everything OK? As for OP, they claim to be a qualified mechanical engineer, so it would be a reasonable expectation for them to have covered the calcs academically, which I would expect the same from you as a minimum, if you call yourself a mechanical engineer."
+          },
+          {
+            "text": "People who have nothing constructive to say, are often the first to go to personal insults when their flawed views are challenged. 'Academically'. That tells me you know nothing about how things really work in MEP design engineering consultancies. There is nothing 'academic' about it. There is a knowledge base that can be acquired from scratch that is learnt through project work and from being supervised by more experienced engineers. There is no point spending time to go to the nth degree of calculations when you simply have to learn the fastest and most acceptable way of doing things, and that is by doing lots and lots of projects. Im not convinced you have ever spent any time in a paid design role. Maybe stop giving advice on things you dont have any relevant experience on?"
+          },
+          {
+            "text": "Sorry but where did I insult anyone? You also just explain a career path that doesn’t result in qualified engineers, just people who make it up as they go along. Very worrying. Just to confirm, that you’re not a qualified engineer? Sounds like you are very keen to insult me by projecting little fantasies onto me. Very toxic behaviour, particularly when it was you that jumped on my comment. Are you bitter about not being qualified?"
+          },
+          {
+            "text": "Spend less time talking and more time listening, especially from those who actually have real life experience that have worked in the field."
+          },
+          {
+            "text": "This is not a good approach. On your own you will not have the proper feedback to know if you are learning things correctly. Without actually going through project life cycles with senior engineering guidance, you will not actually learn the business. Also, not sure which country you are in, but depending on the rules self teaching is not going to help you earn your way towards professional licensure. If you want to learn MEP, switch to a design engineering role at an MEP company. If I was your current company - I'd never trust in you as a sole self-taught engineer to take on any insurance liability. They would always be better off outsourcing that work."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Ask HN: Good tech talks on how analytics systems are implemented?",
+            "points": 193,
+            "url": "https://news.ycombinator.com/item?id=20161841"
+          },
+          {
+            "title": "Ask HN: Is it worth a back-end developer's time to get into web-design and HTML/CSS",
+            "points": 38,
+            "url": "https://news.ycombinator.com/item?id=449214"
+          },
+          {
+            "title": "Ask HN: Where to start for hobby circuit design",
+            "points": 15,
+            "url": "https://news.ycombinator.com/item?id=25971423"
+          }
+        ],
+        "fetchedAt": "2026-09-05T08:59:03.610Z"
+      }
+    },
+    {
+      "id": "cc72610f81",
+      "normUrl": "https://reddit.com/r/personalfinance/comments/1w6thrz/honestrespectful_opinions_wanted",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Honest/respectful opinions wanted",
+      "url": "https://www.reddit.com/r/personalfinance/comments/1w6thrz/honestrespectful_opinions_wanted/",
+      "summary": "So my wife and I have been in our home for 9 years. We owe 160k on it and are looking to list for 290k. We should come out with about 130k and plan to put 90k down to meet the 20% requirement on a 450k house. This would leave us with about 20-30k left in the bank. Question is, we currently pay 1700 a month and our mortgage will jump to 3000k. We can realistically afford about 2100 but plan to regularly dip into the 20-30k as a cushion until our baby gets out of daycare, freeing up $1100 a month. What’re yalls thoughts?",
+      "deepenKey": "/r/personalfinance/comments/1w6thrz",
+      "via": "we currently pay",
+      "publishedAt": "2026-09-04T03:56:05.000Z",
+      "ref": "I36",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "消费/家庭话题，不是软件需求",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "68ddb64627",
+      "normUrl": "https://reddit.com/r/CRM/comments/1w6m23z/50person_construction_company_stay_with",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "50-Person Construction Company: Stay With Salesforce or Switch to Zoho?",
+      "url": "https://www.reddit.com/r/CRM/comments/1w6m23z/50person_construction_company_stay_with/",
+      "summary": "We’re a small specialized construction/pipelining company with about 50 employees, but only 3 people currently using the CRM for sales. We expect that to grow to somewhere around 5–10 sales/account management users over the next few years. We’ve been using Salesforce for about five years. Salesforce has gotten us through, but I can’t say we’ve ever really loved it.",
+      "deepenKey": "/r/CRM/comments/1w6m23z",
+      "via": "we currently pay",
+      "publishedAt": "2026-09-03T22:18:25.000Z",
+      "ref": "I37",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "We’re a small specialized construction/pipelining company with about 50 employees, but only 3 people currently using the CRM for sales. We expect that to grow to somewhere around 5–10 sales/account management users over the next few years. We’ve been using Salesforce for about five years. Salesforce has gotten us through, but I can’t say we’ve ever really loved it. The person who originally helped build and customize our Salesforce environment is no longer with us, and one of our biggest frustrations is that whenever we want to make changes, adjust workflows, or improve something, we need to use a Salesforce consultant. Recently we started looking at Zoho. We met with a Zoho consultant and Initially got pretty excited about it. Their position was basically that there is nothing we are currently doing in Salesforce that Zoho can’t handle. The cost difference is significant. Depending on how we structure it, we’re looking at roughly a 50–75% reduction compared with what we are currently spending. We also liked the idea of the larger Zoho ecosystem. CRM, Books, Inventory, etc. could potentially replace several separate applications we currently pay for and bring more of the business into one system. We were pretty much ready to move forward. Then I made the mistake of going down the Reddit rabbit hole. I started finding posts from people saying Zoho is terrible, the UI is outdated or clunky, different Zoho applications don’t work together as seamlessly as you would expect, support isn’t great, and certain products seem like they were developed and then stopped receiving much attention. That made me pump the brakes pretty hard. I asked our Zoho consultant specifically about the UI concerns and, as expected, they feel those concerns are overblown and that Zoho has improved considerably. But at this point I’m having a hard time separating a good sales/demo experience from what it’s actually like to live in the software every day for the next five years. Our CRM needs aren’t really traditional high-volume sales. We are a specialized commercial construction contractor.",
+        "comments": [
+          {
+            "text": "My company works in the Salesforce ecosystem and has been for many years. It's a crazy powerful crm and often the biggest pitfall is how it's implemented rather than the tool itself. If you guys are hoping to scale your business, sticking to it and making sure everything is set up properly is probably the best option if you can afford it. If you want we can run an assessment (I would say probably even for free if the org is not overburdened with custom stuff) and just understand what you're using, how and if it can be improved somehow. Then: - if we earn your trust to eventually fix it, nice. - If we earn at least your respect and you recommend us to others, still a win. - If you decide to take another way, all good and no hard feelings. - if you're interested we actually also held lessons for some customers that wanted to learn the platform and do it on their own for easier tasks."
+          },
+          {
+            "text": "I'm a Salesforce admin in enterprise. For my solo gig I used zoho. I liked it, I was impressed with the breadth of offerings. I ended up dropping the sub though. Their shared ip used for email is absolute trash and your platform sent emails will land in junk folders no matter how well set up your spf, dkim, and dmarc is. This could affect sales and paying for a dedicated IP is most likely not worth it for you guys. I love Salesforce but you need a champion or find a local/trusted fractional admin who you can keep on retainer for way less than a consultant. They exist, look for admin as a service/fractional admins in your area. I do that for a few sub 100 employee businesses in the industrial service sector. Zoho is as wide as an ocean but an inch deep. Salesforce is an actual ocean but the water are rocky and you need a full size ship to get through it."
+          },
+          {
+            "text": "This is solid advice. The hard part is always finding someone \"trusted\", because you really only find out who can be trusted when stuff hits the fan. But I agree with you."
+          },
+          {
+            "text": "Hey mate, so here’s a take from someone who’s worked in the CRM space for about 20 years. I now run an agency were we focus on crm implementation amongst other things. Salesforce is a powerhouse. It can pretty much do anything but that comes at a a price and as you pointed out, without someone owning it internally you become beholden to what someone else built. That’s not a bad thing but again it’s an ongoing cost (with any system). We’ve worked on Zoho projects (not by choice) and haven’t chose to partner with them because of the old adage, you get what you pay for. Their support is awful. They keep releasing new products rather than prioritising bugs/issues in their existing products. On the support side, this isn’t unique to them as with many vendors, support is linked to users and spend. Salesforce is an enterprise tool that focuses heavily on businesses with 250+ seats."
+          },
+          {
+            "text": "We moved from Salesforce to Zoho about two years ago, 30 person firm, not construction but similar in that we track long project cycles not high volume leads. Your situation sounds very close to ours. The cost difference is real but you pay for it in other ways. Zoho can do most of what Salesforce does, just not as smoothly. The UI complaints you read about are not people being picky, it genuinely feels like using software from 2015 sometimes. But here is the thing, after two months everyone stopped noticing. My sales team does not care about pretty interfaces, they care if it works and does not crash. Zoho works. On the ecosystem question, that one I would be more careful about. CRM and Books talk to each other decently, but we tried connecting Inventory and it was mess. Data syncing issues, duplicate records, weird permission conflicts. We ended up keeping separate inventory system."
+          },
+          {
+            "text": "We moved to Zoho One about three years ago, partly as a cost-saving exercise, but also because we wanted to take advantage of the wider Zoho ecosystem and the promised integration between the different apps. It worked to a point, but it never really felt like one smoothly integrated platform. For a lot of the tools we use outside of Zoho, Xero for accounts, for example, we ended up relying on Make.com to handle automations such as turning sales orders into invoices. We’re still with Zoho until our renewal comes up in December (25 users), but by then we’ll have migrated across to an in-house CRM that we’ve built around the way our company operates. Don’t underestimate the amount of work that goes into this though - even with AI assisting."
+          },
+          {
+            "text": "that Zoho sales pitch is what Salesforce told you before... it won't be easy. ofcourse if no one is trained you have to hire a consultant - if you need to change a toilet you can do it yourself or hire a plumber- why is this any different?"
+          },
+          {
+            "text": "Just throwing this out there as an option that nobody has mentioned yet, but Odoo is closer to Zoho in terms of price and closer to SalesForce in terms of features. We've implemented it for construction companies, residential / commercial and heavy industrial, and had good results. We've got some vertical modules for construction cost code tracking, bid management, etc. The platform works well for your industry. The CRM part of it is actually free and open source via Community, but support and the major integrated applications are part of Enterprise. Yes, we're a partner and consulting firm, but if all you need is CRM, that can be done through community. Just keep in mind that, in our experience, community installations work best when there's a strong in-house IT department to own it."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "What should I do with my life?",
+            "points": 28,
+            "url": "https://news.ycombinator.com/item?id=2726119"
+          }
+        ],
+        "fetchedAt": "2026-09-05T09:00:36.487Z"
+      }
+    },
+    {
+      "id": "cf64374857",
+      "normUrl": "https://reddit.com/r/InsuranceCanada/comments/1w6j2hd/intact_prestige_thoughts",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Intact Prestige thoughts?",
+      "url": "https://www.reddit.com/r/InsuranceCanada/comments/1w6j2hd/intact_prestige_thoughts/",
+      "summary": "Currently have Intact coverage, and have discussed intact prestige with our broker in the past. Now at a point where I think it might make sense to move to prestige, but looking at the pricing and what's included or not included, in standard vs prestige, its hard to understand from the brochure/website language. My broker hasn't dealt with prestige much at all, so the answers haven't been totally clear. Is the only real benefit of going to prestige that it opens a door to more coverage options, PLUS better customer service if a claim arises?",
+      "deepenKey": "/r/InsuranceCanada/comments/1w6j2hd",
+      "via": "we currently pay",
+      "publishedAt": "2026-09-03T20:25:42.000Z",
+      "ref": "I38",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "930982cc74",
+      "normUrl": "https://reddit.com/r/Renters/comments/1w6ibym/tenant_ne_minneapolis_mn_should_i_buy_duplex_from",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "[TENANT, NE Minneapolis, MN] Should I buy duplex from landlord?",
+      "url": "https://www.reddit.com/r/Renters/comments/1w6ibym/tenant_ne_minneapolis_mn_should_i_buy_duplex_from/",
+      "summary": "My fiance and I are thinking about buying the duplex we reside in for $360k from our landlord as long as no large concessions. The property was assessed for $400k and Zillow also estimates $390-400k. Its been texting back and forth and met in person so far, but we have now seem to be comfortable with $360k price. We currently pay $1630 for rent, but if we buy the place, it will go up to $1900 while we rent upstairs for $1400-1500 to cover the $3300 mortgage including property tax, home insurance and mortgage insurance. Is it worth it? DETAILS: NE Minneapolis.",
+      "deepenKey": "/r/Renters/comments/1w6ibym",
+      "via": "we currently pay",
+      "publishedAt": "2026-09-03T19:59:42.000Z",
+      "ref": "I39",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "消费/家庭话题，不是软件需求",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "3ff9b8ffde",
+      "normUrl": "https://reddit.com/r/JUSTNOMIL/comments/1w7sz9c/mil_thinks_shes_getting_married",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "MIL thinks she's getting married",
+      "url": "https://www.reddit.com/r/JUSTNOMIL/comments/1w7sz9c/mil_thinks_shes_getting_married/",
+      "summary": "You can skip the backstory: My fiance proposed after 1 month of knowing me and our feelings are mutual. It's extremely unconventional so I get it but we're unconventional people. We have crappy tattoos, walk barefoot, love being outdoors. This wedding we're planning is very 'us'. It'll be on 10-10 at a beautiful outdoor venue that has meaning to me and my fiance. Our photographer knows we will want a photo with joints and my officiant specializes in elopements. My MIL is wilding out.",
+      "deepenKey": "/r/JUSTNOMIL/comments/1w7sz9c",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-05T06:35:16.000Z",
+      "ref": "I40",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "消费/家庭话题，不是软件需求",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "18afac9430",
+      "normUrl": "https://reddit.com/r/GirlGamers/comments/1w7n7bd/were_making_a_romance_game_where_you_raise_a_baby",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "We're making a romance game where you raise a baby dragon and date a hot dragon \"daddy\" !",
+      "url": "https://www.reddit.com/r/GirlGamers/comments/1w7n7bd/were_making_a_romance_game_where_you_raise_a_baby/",
+      "summary": "(Posted with Mod Permission!) We are 5 women and NBs working on romance games in our free time after work! We just released an animated trailer for our dating sim, Dearest Darling Dragon , featuring the voice talents of Aja Rhianna, PorcelainMaid, Jason Daryl-Hall, Valentine Stokes, and Sky Gager. The full game will be partially voice-acted! We don't have any funding, so we are paying for voice acting and other things out of pocket. 😆 (It's truly a work of pure passion...",
+      "deepenKey": "/r/GirlGamers/comments/1w7n7bd",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-05T01:38:16.000Z",
+      "ref": "I41",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3eec0409b0",
+      "normUrl": "https://reddit.com/r/FlutterFlow/comments/1w7ilsx/no_help_from_flutterflow_14_days_with_an_open",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "NO HELP FROM FLUTTERFLOW! 14 DAYS WITH AN OPEN ISSUE THAT HAS STOPPED OUR PROJECT",
+      "url": "https://www.reddit.com/r/FlutterFlow/comments/1w7ilsx/no_help_from_flutterflow_14_days_with_an_open/",
+      "summary": "FlutterFlow Support Is Basically Nonexistent — Think Twice Before Building a Production App Here I honestly cannot believe I’m at the point where I have to post this publicly just to try to get someone at FlutterFlow to respond. We are PAYING for FlutterFlow. We are building a REAL application that we intend to launch.",
+      "deepenKey": "/r/FlutterFlow/comments/1w7ilsx",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-04T22:13:18.000Z",
+      "ref": "I42",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "af2519534a",
+      "normUrl": "https://reddit.com/r/GeForceNOW/comments/1w7e2tg/is_something_coming",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Is something coming?",
+      "url": "https://www.reddit.com/r/GeForceNOW/comments/1w7e2tg/is_something_coming/",
+      "summary": "Post might be deleted. But i have started to notice recent posts, non stop about nvidia being so good and great, like we dont deserve it. And that is the best thing everrr.. wtf? Just shut up and enjoy. You are paying your hard earned money for a hobby. Maybe an enshitification update is about to roll out and we just being bot brainwashed to accept it? Idk I understand is good, i love it. But we are paying for it. Its a symbiotic relationship.",
+      "deepenKey": "/r/GeForceNOW/comments/1w7e2tg",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-04T19:22:23.000Z",
+      "ref": "I43",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "a0c031f181",
+      "normUrl": "https://reddit.com/r/Brides/comments/1w77dwx/desperately_need_opinions_my_fianc%C3%A9_and_i_are",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Desperately need opinions. My fiancé and I are stuck on deciding the groomsmen color",
+      "url": "https://www.reddit.com/r/Brides/comments/1w77dwx/desperately_need_opinions_my_fiancé_and_i_are/",
+      "summary": "The my fiance is going to be wearing suit that is the blue with burgundy windowpaning, bridesmaids are in the color of the tie pictured. I don’t care if the groomsmen wear a different tie that goes better with either suit, brought this one with my just for comp to the bridesmaid color. I hate that the store only has these little swatches to decide from 😵‍💫 We genuinely think both would be fine, I’m leaning a little more toward the burgundy, fiance is legitimately slightly colorblind so he’s not sure lol ETA: we are paying for rentals for them so re-wearability isn’t a factor",
+      "deepenKey": "/r/Brides/comments/1w77dwx",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-04T15:21:41.000Z",
+      "ref": "I44",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "53d5c902a3",
+      "normUrl": "https://reddit.com/r/runwayml/comments/1w7a58b/introducing_team_plan",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Introducing Team Plan",
+      "url": "https://www.reddit.com/r/runwayml/comments/1w7a58b/introducing_team_plan/",
+      "summary": "Today we're introducing Team, a new plan built for teams that create together. Team gives you shared projects where all of your team's work lives, one pooled credit balance everyone draws from and the collaboration features to build on each other's work instead of starting from scratch. One Place for Your Team's Work At the center of Team are shared projects. Every asset, reference, Brand Kit, session and workflow lives in one place the whole team can see, so anyone can find what they need and pick up where a teammate left off. That shared context is what makes team output consistent.",
+      "deepenKey": "/r/runwayml/comments/1w7a58b",
+      "via": "per seat per month",
+      "publishedAt": "2026-09-04T17:00:57.000Z",
+      "ref": "I45",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [
+          "工程量过大"
+        ],
+        "detail": {
+          "signal": -4,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "f9c6965c7b",
+      "normUrl": "https://reddit.com/r/msp/comments/1w7nl61/ended_up_taking_a_full_time_role_whats_the_best",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Ended up taking a full time role, what's the best way to offboard a client?",
+      "url": "https://www.reddit.com/r/msp/comments/1w7nl61/ended_up_taking_a_full_time_role_whats_the_best/",
+      "summary": "I know this might generate some attention, but I'm looking to let my last client go to adhere to a no moonlighting policy I signed. It's 30 FTE, relatively simple azure environment, 60 contractors. I pass through their Microsoft/Azure licensing through pax8 at cost and charge $175 /u/m . I alone effectively have been their levels 1-3 support, fractional CIO (making decisions on behalf of the company), managing the IT budget (have brought costs down substantially, while saving them money in a few places). Profiting about $4k/month all said and done.",
+      "deepenKey": "/r/msp/comments/1w7nl61",
+      "via": null,
+      "publishedAt": "2026-09-05T01:57:13.000Z",
+      "ref": "I46",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [
+          "提到了具体金额",
+          "要牌照或合规"
+        ],
+        "detail": {
+          "signal": -1,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e07fc33deb",
+      "normUrl": "https://reddit.com/r/msp/comments/1w7aua5/pax8_down",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Pax8 down?",
+      "url": "https://www.reddit.com/r/msp/comments/1w7aua5/pax8_down/",
+      "summary": "It seems like the last 2 hours or so can't login to PAX8. Is anyone else having issues?",
+      "deepenKey": "/r/msp/comments/1w7aua5",
+      "via": null,
+      "publishedAt": "2026-09-04T17:25:46.000Z",
+      "ref": "I47",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "53d8aab8e0",
+      "normUrl": "https://reddit.com/r/msp/comments/1w79vxb/security_patch_needed_update_screenconnect_to_2665",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Security patch needed: update ScreenConnect to 26.6.5",
+      "url": "https://www.reddit.com/r/msp/comments/1w79vxb/security_patch_needed_update_screenconnect_to_2665/",
+      "summary": null,
+      "deepenKey": "/r/msp/comments/1w79vxb",
+      "via": null,
+      "publishedAt": "2026-09-04T16:52:03.000Z",
+      "ref": "I48",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8abc11238d",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1w78ljw/senior_accidentally_installed_whole_fleet_with",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "Senior accidentally installed whole fleet with 26H1",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1w78ljw/senior_accidentally_installed_whole_fleet_with/",
+      "summary": "Just needed to rant a little. One of our seniors finally completed the long-pending task of upgrading the fleet to Windows 11 from Windows 10. He downloaded the iso, installed it everywhere. All good. Until the internal WSUS started attempting to grab updates that don't exist. Apparently the 26H1 (which is supposed to be snapdragon-only, aka for ARM) was indeed one of the options you could download as the \"Latest\" version of windows. Someone at MS really screwed up. And this senior screwed up even more by not double checking.",
+      "deepenKey": "/r/sysadmin/comments/1w78ljw",
+      "via": null,
+      "publishedAt": "2026-09-04T16:06:11.000Z",
+      "ref": "I49",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Just needed to rant a little. One of our seniors finally completed the long-pending task of upgrading the fleet to Windows 11 from Windows 10. He downloaded the iso, installed it everywhere. All good. Until the internal WSUS started attempting to grab updates that don't exist. Apparently the 26H1 (which is supposed to be snapdragon-only, aka for ARM) was indeed one of the options you could download as the \"Latest\" version of windows. Someone at MS really screwed up. And this senior screwed up even more by not double checking. Since it's a complete different core, this will be one hell of a mess, now his idea is to try to change \"cversion.ini\" and force an \"update\" to 26H2, but I sincerely don't believe that will work. We'll see. If anyone ran into a similar problem I'd really love to know what their solution is.",
+        "comments": [
+          {
+            "text": "Surprised the installation went through. It's supposed to fail since it's not a compatible version."
+          },
+          {
+            "text": "It has a full x86 build, if it was ARM only/snapdragon only it wouldn't boot or install at all, not fail. Totally incompatible, not \"can boot and check\" type incompatible. It just wasn't set for release on devices not of that nature, but it does receive updates and regular support cycle. Update/upgrade path will be to 27H2. Per MS: Devices running Windows 11, version 26H1 won't be able to update to the next annual feature update in the second half of 2026. This is because 26H1 is based on a different Windows core than 24H2, 25H2, and the upcoming feature update. These devices will have a path to update in a future Windows release."
+          },
+          {
+            "text": "My guess is that 26H1 will get a feature update (prob just \"enablement\") in early 2027, and possibly get merged back into the \"main line\" in the future (maybe with 27H2, as that would most likely be a \"full\" feature update). However this is only speculation"
+          },
+          {
+            "text": "MS's statement outright says that in their 26H1 support article, and as I said elsewhere, current development train is around 29648 or so, and 26H1 was cut off the 28000 line."
+          },
+          {
+            "text": "Senior hasn't heard of \"Read Only Friday\"???"
+          },
+          {
+            "text": "You really think they did all this in the first few hours of today?"
+          },
+          {
+            "text": "Especially before a holiday weekend.."
+          },
+          {
+            "text": "We will see this on /r/shittysysadmin"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-05T09:01:23.389Z"
+      }
+    },
+    {
+      "id": "5f0b3cd328",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1w7pl1r/nothing_like_dealing_with_tpm_cert_issues_at_10pm",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "Nothing like dealing with TPM Cert issues at 10pm on Friday",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1w7pl1r/nothing_like_dealing_with_tpm_cert_issues_at_10pm/",
+      "summary": "Work Log: 9PM - User is unable to boot, absolute disaster, is litterally melting down crying for help. 9:10 - Confirmed TPM issue on boot, locate Bitlocker recover key, load up windows 9:20 - User Pin/TPM Trust is broken, user has an unprivileged account, so use Windows Hello to try and reset, found my own auth expired in my app, have to get myself back in via Passkey so I can approve Pin reset. Get them logged in to Windows, found my Pin/Trust broken as well - get my own Pin reset. 9:40 - Found can’t check TPM status in Windows security, presume BIOS needs update.",
+      "deepenKey": "/r/sysadmin/comments/1w7pl1r",
+      "via": null,
+      "publishedAt": "2026-09-05T03:36:48.000Z",
+      "ref": "I50",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "3289c933d5",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1w7o58c/salary_data_was_set_to_public_on_sharepoint",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "Salary data was set to public on sharepoint!",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1w7o58c/salary_data_was_set_to_public_on_sharepoint/",
+      "summary": "Hi I’m unaware if the is the right sub, but I would appreciate any guidance as I’m shitting bricks. I’m not a sysadmin and I’m preparing for an exam as an engineer. I needed motivation to see salary ranges for my next role and I searched for “salary” on search point and a pdf showed up. That had salary and bonus for all employees in the company. I’m shit scared right now, I’ve raised an IT ticket that the data isn’t supposed to be public and accessed by everyone but it is and hurting employees privacy. But I’m scared if it’ll backfire and I’ll be reprimanded.",
+      "deepenKey": "/r/sysadmin/comments/1w7o58c",
+      "via": null,
+      "publishedAt": "2026-09-05T02:24:15.000Z",
+      "ref": "I51",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "心理求助",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "dcf61a3bf2",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1w6k826/why_is_it_hard_to_fill_a_security_engineer",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "Why is it hard to fill a security engineer position?",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1w6k826/why_is_it_hard_to_fill_a_security_engineer/",
+      "summary": "Company I work for is hiring a sr security engineer. We are all Microsoft shop, cloud-only, no on-premises. I have been helping with some of the interviews and I fail to understand why we are getting candidates that don’t seem to know what product/technology to use for blocking executables on workstations. Device control for blocking usb devices, nope, this does not ever get mentioned. Briefly explaining difference between DLP and encrypting outbound emails with PII/PHI/PFI, nope, can’t get a simple answer or even a guess. The conversations steer away and never the answer.",
+      "deepenKey": "/r/sysadmin/comments/1w6k826",
+      "via": null,
+      "publishedAt": "2026-09-03T21:07:49.000Z",
+      "ref": "I52",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "招聘找人",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "5bfaea12a2",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w7v578/ive_built_a_studio_to_create_awesome_webgl",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I've built a studio to create awesome WEBGL backgrounds",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w7v578/ive_built_a_studio_to_create_awesome_webgl/",
+      "summary": "Hello everyone, Wanted to show you a simple tool i've made to quickly create animated backgrounds for your websites or videos. Reshaders: https://reshaders.com Stack layers in a drag and drop builder and export as media or code :) https://preview.redd.it/l4dfazqmynnh1.png?width=3014&format=png&auto=webp&s=ebf631c89d87f57155505a250fbb8932826227f1",
+      "deepenKey": "/r/microsaas/comments/1w7v578",
+      "via": null,
+      "publishedAt": "2026-09-05T08:38:16.000Z",
+      "ref": "I53",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hello everyone, Wanted to show you a simple tool i've made to quickly create animated backgrounds for your websites or videos. Reshaders: https://reshaders.com Stack layers in a drag and drop builder and export as media or code :) https://preview.redd.it/l4dfazqmynnh1.png?width=3014&format=png&auto=webp&s=ebf631c89d87f57155505a250fbb8932826227f1",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-05T08:57:07.445Z"
+      }
+    },
+    {
+      "id": "8de789b425",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w7ujha/built_clauselevel_consent_into_an_esign_product",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Built clause-level consent into an e-sign product - trying to figure out if that's a differentiator or just complexity nobody asked for",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w7ujha/built_clauselevel_consent_into_an_esign_product/",
+      "summary": "Context: solo developer, live in production for a while, zero users so far; spent the few months finishing the build before doing any distribution, which in hindsight might've been a poor decision. The product: Document signing where each clause in a document is independently accept/decline-able instead of the usual all-or-nothing checkbox. Stores it as a flat map so it's queryable, not buried in a PDF. Free tier is genuinely unlimited on signing events right now — no artificial cap to force upgrades.",
+      "deepenKey": "/r/microsaas/comments/1w7ujha",
+      "via": null,
+      "publishedAt": "2026-09-05T08:03:01.000Z",
+      "ref": "I54",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Context: solo developer, live in production for a while, zero users so far; spent the few months finishing the build before doing any distribution, which in hindsight might've been a poor decision. The product: Document signing where each clause in a document is independently accept/decline-able instead of the usual all-or-nothing checkbox. Stores it as a flat map so it's queryable, not buried in a PDF. Free tier is genuinely unlimited on signing events right now — no artificial cap to force upgrades. What I'm actually stuck on, and where I'd love this community's opinion specifically: is \"clause-level granularity\" a requirement that people would search for and choose, or is it the kind of thing that only matters once you already have the customer and are negotiating a specific contract? I have a feeling the differentiator and the thing people actually pay for might not be the same thing yet. Not looking for \"nice work\". Looking for \"here's why that product/feature does/doesn't hold up\" from people who've have been through the same. Link: https://theterms.app",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "The Gemini AI Studio \"Context Tax\": How a 10-word prompt cost me £121",
+            "points": 21,
+            "url": "https://news.ycombinator.com/item?id=46440008"
+          },
+          {
+            "title": "Launch HN: Meticulous (YC S21) – Catch JavaScript errors before they hit prod",
+            "points": 122,
+            "url": "https://news.ycombinator.com/item?id=31236066"
+          },
+          {
+            "title": "Tell HN: Midway review of Stanford online ML, AI, DB classes",
+            "points": 15,
+            "url": "https://news.ycombinator.com/item?id=3204591"
+          }
+        ],
+        "fetchedAt": "2026-09-05T09:02:06.270Z"
+      }
+    },
+    {
+      "id": "0b3c4b570e",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w7uas3/image_compressor_website",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Image compressor website",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w7uas3/image_compressor_website/",
+      "summary": "i made a website to compress images lol hey, i made this small website because i needed a simple way to reduce image size. it’s basically just upload image → compress → download. made it here: imgcompresspro.com it’s still new so i have no idea if it’s actually useful to other people if you have 2 mins, try it with a few images and tell me what you think. like: does it work properly? is the quality okay? is it too slow? anything you would change? any feature you think i should add? honestly just looking for some feedback before i spend more time working on it.",
+      "deepenKey": "/r/microsaas/comments/1w7uas3",
+      "via": null,
+      "publishedAt": "2026-09-05T07:49:06.000Z",
+      "ref": "I55",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "74883ec709",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w7tcok/i_built_a_paid_product_in_a_market_everyone_said",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I built a paid product in a market everyone said was full. Some things I learned",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w7tcok/i_built_a_paid_product_in_a_market_everyone_said/",
+      "summary": "Everyone told me not to build an analytics tool. Google's is free, and the privacy corner already has a couple of tools people love. I did it anyway, and a few things I learned along the way probably apply to whatever you're building too. A crowded market isn't a bad sign. It means people pay for this stuff. The real question is whether the existing tools have annoying problems they can't easily fix. I found mine by writing down everything that bugged me as a paying user of those tools, then crossing out anything they could fix in a week if they cared. What's left is where you build.",
+      "deepenKey": "/r/microsaas/comments/1w7tcok",
+      "via": null,
+      "publishedAt": "2026-09-05T06:55:34.000Z",
+      "ref": "I56",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "4901b6e0fa",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w7susc/i_have_built_a_tool_which_can_provide_bulk_wallet",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I have built a tool which can provide bulk wallet address labels (CEX wallets, entities, risk tags) - cheap, fast, any list size",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w7susc/i_have_built_a_tool_which_can_provide_bulk_wallet/",
+      "summary": "I run a pipeline that enriches crypto wallet addresses with the kind of labels you'd normally dig out of block explorers and intelligence platforms one address at a time: Entity / owner - e.g. Binance: Hot Wallet, Coinbase: Cold Wallet, Deribit Category tags - Centralized Exchange, Hot/Cold Wallet, Mixer, Gambling, Sanctioned (OFAC/UK), High Transacting, etc. First-funder relationships and contract flags Per-chain coverage - Ethereum, BSC, Base, Arbitrum, Polygon, Avalanche and more, one row per network Format: clean CSV/JSON, your list in → labeled list out.",
+      "deepenKey": "/r/microsaas/comments/1w7susc",
+      "via": null,
+      "publishedAt": "2026-09-05T06:28:31.000Z",
+      "ref": "I57",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "加密货币",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "83773d3dd1",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w7sigx/i_built_klipkap_pro_a_screen_studio_alternative",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I built KlipKap Pro a Screen Studio alternative for Windows and MacOS, here's the backstory and what it taught me about pricing",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w7sigx/i_built_klipkap_pro_a_screen_studio_alternative/",
+      "summary": "Hi reddit, I'm the dev behind KlipKap Pro, a screen recording tool. Sharing this because the pricing decision is directly relevant to a lot of what gets discussed here, not to pitch anything. About two years ago I was building my own SaaS products and needed demo videos for them, so I started using Screen Studio. The auto-zoom on clicks, the smooth cursor movement, the whole thing looked like it had been edited by a professional even though it clearly hadn't. Problem was, I only opened it once or twice a month, and paying a subscription for that felt ridiculous.",
+      "deepenKey": "/r/microsaas/comments/1w7sigx",
+      "via": null,
+      "publishedAt": "2026-09-05T06:10:16.000Z",
+      "ref": "I58",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "334fc810ef",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w7shyf/it_took_20_days_to_get_chatgpt_to_notice_askverb",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "it took 20 days to get chatgpt to notice askverb",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w7shyf/it_took_20_days_to_get_chatgpt_to_notice_askverb/",
+      "summary": "it took exactly 20 days to get chatgpt know about askverb from the day I bought the domain, ofc a bit of work on SEO was mandatory but now it's not in the void anymore https://preview.redd.it/5upw3oje7nnh1.png?width=1256&format=png&auto=webp&s=e04216f4ee4aacf7efd1aface5d96c844dbf1400",
+      "deepenKey": "/r/microsaas/comments/1w7shyf",
+      "via": null,
+      "publishedAt": "2026-09-05T06:09:29.000Z",
+      "ref": "I59",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "a6725b58ce",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w7qv6i/ive_shelved_5_ideas_in_6_months_and_im_sick_of",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I've shelved 5 ideas in 6 months and I'm sick of guessing",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w7qv6i/ive_shelved_5_ideas_in_6_months_and_im_sick_of/",
+      "summary": "Have you ever started a side project or micro SaaS and ended up dropping it? I've been tinkering with a few ideas myself and honestly don't know to quit it or change the course, stick with it so I'm curious. - What was the idea, and at what point did you stop or continue it and why? - Before starting, did you ever check whether people actually wanted it? What did you try (surveys, a landing page, just asking friends, etc.)? - When you have multiple ideas, do you have criteria for picking which one to build first, or do you just go with your gut?",
+      "deepenKey": "/r/microsaas/comments/1w7qv6i",
+      "via": null,
+      "publishedAt": "2026-09-05T04:42:27.000Z",
+      "ref": "I60",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "在换掉现有方案"
+        ],
+        "detail": {
+          "signal": 3,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Have you ever started a side project or micro SaaS and ended up dropping it? I've been tinkering with a few ideas myself and honestly don't know to quit it or change the course, stick with it so I'm curious. - What was the idea, and at what point did you stop or continue it and why? - Before starting, did you ever check whether people actually wanted it? What did you try (surveys, a landing page, just asking friends, etc.)? - When you have multiple ideas, do you have criteria for picking which one to build first, or do you just go with your gut? - Have you ever spent money or time trying to validate an idea and it just... didn't work out and what is it about?",
+        "comments": [
+          {
+            "text": "you don't have a validation problem, you have a stopping problem. five ideas in six months means you quit five times at the point where it stopped being fun, and none of those were decisions. write the kill criteria before you start. one sentence. if i don't have X by date Y, i stop. X should be something a stranger does, not something a stranger says. ten people paying, twenty who booked a call, a hundred on a waitlist who didn't come from your friends. the specific number matters less than choosing it in advance, because choosing it afterwards is just narrating whatever happened. on picking between ideas, gut is fine for the shortlist and useless for the pick. the tiebreaker i'd use is which buyer you can reach this week without asking anyone's permission. not market size, not which one excites you. access, because that's the part that actually kills these."
+          },
+          {
+            "text": "I agree. For some industries asking friends makes sense. I'm active in deep tech, where it (obviously) makes no sense at all. So it also strongly depends on what you aim to build. There is, unfortunately, no general playbook."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Show HN: I made crowdwave – imagine Twitter/Reddit but every post is a voicemail",
+            "points": 217,
+            "url": "https://news.ycombinator.com/item?id=41582539"
+          },
+          {
+            "title": "My mission to solve the problem with Facebook, Google+ etc.",
+            "points": 11,
+            "url": "https://news.ycombinator.com/item?id=3838747"
+          },
+          {
+            "title": "Thank, Tell & Gift HN: From Lone Nut to Launch, the Story of TripLingo",
+            "points": 15,
+            "url": "https://news.ycombinator.com/item?id=2519035"
+          }
+        ],
+        "fetchedAt": "2026-09-05T08:56:07.973Z"
+      }
+    },
+    {
+      "id": "38b2d4e7f6",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w7puxm/priced_my_privacy_tool_as_a_onetime_9_pass",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Priced my privacy tool as a one-time $9 pass instead of a subscription. Zero charges so far, and I think I know why.",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w7puxm/priced_my_privacy_tool_as_a_onetime_9_pass/",
+      "summary": "I built OBSCURA OS (obscuraos.com), a suite of browser-only privacy tools (PDF redaction, metadata scrubbing, file transfer, secret splitting). No accounts, no servers, everything runs client-side. On pricing I went with a one-time $9 \"pass\" that unlocks everything, no subscription, no recurring charge. Reasoning: a tool whose entire pitch is \"we don't want a relationship with your data\" felt hypocritical charging monthly, since a subscription means an account, a payment method on file, and a reason to keep pinging you. One-time payment matched the pitch. Result so far: zero Stripe charges.",
+      "deepenKey": "/r/microsaas/comments/1w7puxm",
+      "via": null,
+      "publishedAt": "2026-09-05T03:50:47.000Z",
+      "ref": "I61",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "0591157200",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w7pqna/contacted_1000_creators_by_hand_this_summer_for_a",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "contacted 1,000+ creators by hand this summer for a small iOS app. 33 deals, 6 paid, $412 tracked",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w7pqna/contacted_1000_creators_by_hand_this_summer_for_a/",
+      "summary": "that's the honest shape of it. a thousand-ish creators contacted manually over the summer for my $12 language app, 33 said yes, 6 of those actually produced revenue, $412 tracked total. the part that surprised me was that sending was never the bottleneck. finding creators who fit AND have a contact route is. a list of a thousand handles gives you maybe a hundred you can actually reach. the rest have no email, no link, nothing. the other thing, rate limits are per gap not per day. twenty messages spread over three hours reads as a person.",
+      "deepenKey": "/r/microsaas/comments/1w7pqna",
+      "via": null,
+      "publishedAt": "2026-09-05T03:44:45.000Z",
+      "ref": "I62",
+      "screen": {
+        "keep": true,
+        "score": 10,
+        "hits": [
+          "在用笨办法凑合"
+        ],
+        "detail": {
+          "signal": 4,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false,
+      "deepError": "HTTP 429"
+    },
+    {
+      "id": "682612be80",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w7n8mo/weve_tried_five_different_marketing_channels_for",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "We've tried five different marketing channels for our SaaS and none of them have worked yet. What are we missing?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w7n8mo/weve_tried_five_different_marketing_channels_for/",
+      "summary": "I built Beacon by optinws (email deliverability checker — SPF/DKIM/DMARC monitoring, spam-risk alerts) after watching too many small businesses find out their emails were landing in spam only after a customer complained. Self-serve, no free trial, priced for solo marketers and small agencies rather than enterprise IT teams. Here's the honest scoreboard on distribution so far, in case anyone's been down this road and can tell me what I'm missing: - Paid Facebook/Meta ads — ran a small campaign, spent about $25, got one visit that bounced immediately. Paused it and haven't gone back.",
+      "deepenKey": "/r/microsaas/comments/1w7n8mo",
+      "via": null,
+      "publishedAt": "2026-09-05T01:40:01.000Z",
+      "ref": "I63",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "50cb1ee50f",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w7lkya/built_a_one_time_9_micro_saas_instead_of_a",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Built a one time $9 micro SaaS instead of a subscription, here is why and how it is going",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w7lkya/built_a_one_time_9_micro_saas_instead_of_a/",
+      "summary": "Backstory: I built OBSCURA OS because I wanted a workspace (docs, sheets, slides, notes, file storage, forms, calendar) that does not phone home. Everything runs client side in the browser, in memory, so there is no server storing your data and no account system to breach or subpoena. Tech stack: pure client side web app, no backend database for user content, no accounts. State lives in the browser session and backups are a portable JSON file the user exports themselves. The pricing decision: the Workspace Suite is free.",
+      "deepenKey": "/r/microsaas/comments/1w7lkya",
+      "via": null,
+      "publishedAt": "2026-09-05T00:21:43.000Z",
+      "ref": "I64",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "565a2e4826",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w7igej/got_342_active_and_9_paid_users_on_my_3_months",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Got 342 active and 9 paid users on my 3 months old Chrome extension",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w7igej/got_342_active_and_9_paid_users_on_my_3_months/",
+      "summary": "Active Subscribers Current stats for my Tabisto Chrome extension which is a bookmark manager: Active users: 342 Paid users: 9 Active trial users: 2 Conversion rate: around 2.6% Most of my early growth came from Twitter. I have posted about the extension frequently and also shared it directly with people I already knew there. I am really happy with the results because 3 months ago, none of this existed. If you are early on your own micro SaaS, what does your conversion rate look like right now?",
+      "deepenKey": "/r/microsaas/comments/1w7igej",
+      "via": null,
+      "publishedAt": "2026-09-04T22:07:19.000Z",
+      "ref": "I65",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "7ed2c6e5db",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w7gqxt/drop_your_saas_and_ill_show_you_how_to_find_your",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Drop your SaaS and I’ll show you how to find your first 100 users without running ads",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w7gqxt/drop_your_saas_and_ill_show_you_how_to_find_your/",
+      "summary": "Getting the first 100 users for a SaaS is often harder than building the product where you launch, get a little traffic, maybe a few signups, and then... nothing. Buying a giant contact list and blasting cold emails usually isn't the answer either especially when you're still figuring out who actually cares about the problem. A better starting point is figuring out where your potential buyers are already talking about the problem so i'm testing something with SaaS founders here.",
+      "deepenKey": "/r/microsaas/comments/1w7gqxt",
+      "via": null,
+      "publishedAt": "2026-09-04T21:00:33.000Z",
+      "ref": "I66",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8b2812ac7f",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w7dqq4/half_the_titles_in_my_content_plan_were",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Half the titles in my content plan were unsearchable and I didn't notice for 47 articles",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w7dqq4/half_the_titles_in_my_content_plan_were/",
+      "summary": "Context: solo, vocabulary learning app, about 3,300 monthly active users and 45 paying. SEO is the whole acquisition channel, currently 4.66k clicks a week from Google off 5.48M impressions. So the blog is not a nice-to-have, it is the funnel. A year ago I sat down and wrote a plan of 100 article topics with titles. Today I audited it properly for the first time and found that roughly a third of the unpublished ones cannot bring a single visitor, for a reason that is obvious in hindsight.",
+      "deepenKey": "/r/microsaas/comments/1w7dqq4",
+      "via": null,
+      "publishedAt": "2026-09-04T19:09:59.000Z",
+      "ref": "I67",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "881cb3b7b6",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w7b39e/i_sold_a_50user_microsaas_for_5500_heres_what_i",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I sold a 50-user micro-SaaS for $5,500. Here’s what I wish I had prepared first",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w7b39e/i_sold_a_50user_microsaas_for_5500_heres_what_i/",
+      "summary": "I recently sold a small security app for Shopify stores for $5,500. It had around 50 users. That was enough to prove merchants would install it and some would pay, but not enough to justify making it my main focus. The buyer first contacted me in March. We agreed on the price fairly quickly, but the money did not arrive until July 15. Most of those four months went into compliance checks, documents, transferring the Shopify listing and explaining how to operate the product. A Shopify app cannot simply be moved by handing someone a repository.",
+      "deepenKey": "/r/microsaas/comments/1w7b39e",
+      "via": null,
+      "publishedAt": "2026-09-04T17:34:35.000Z",
+      "ref": "I68",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "df21624c03",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w7agv1/thought_detecting_thirdparty_api_changes_was_the",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "thought detecting third-party API changes was the hard part. Maybe it isn't.",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w7agv1/thought_detecting_thirdparty_api_changes_was_the/",
+      "summary": "I've been looking into this for a while because I've had a few conversations with people who've had third-party integrations break in production. At first I thought the main problem was just knowing that something changed. But most teams already have some combination of changelogs, integration tests, Sentry, monitoring, contract tests, etc. The part that seems more annoying is what happens after. You get told that something changed, then someone has to figure out: do we actually use the thing that changed? which integration is affected? where is it used in the code?",
+      "deepenKey": "/r/microsaas/comments/1w7agv1",
+      "via": null,
+      "publishedAt": "2026-09-04T17:12:33.000Z",
+      "ref": "I69",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "b4b6481824",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w7adaz/launched_my_micro_saas_over_a_week_ago_still_0",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Launched my Micro SaaS over a week ago. Still 0 signups and 0 conversions. Honestly, I'm getting frustrated — what should I improve?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w7adaz/launched_my_micro_saas_over_a_week_ago_still_0/",
+      "summary": "I launched my SaaS a little over a week ago, and I genuinely thought I would at least get a few people interested enough to sign up. But so far: no meaningful signups and no conversions. I know one week isn't a long time, and I'm not expecting instant success. But it's difficult not knowing what exactly is wrong . Is it: My landing page? The way I explain the product? The target audience? The pricing? The product itself? Or simply that nobody knows it exists yet?",
+      "deepenKey": "/r/microsaas/comments/1w7adaz",
+      "via": null,
+      "publishedAt": "2026-09-04T17:09:00.000Z",
+      "ref": "I70",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "3f6f9a45ce",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w79u5m/im_building_my_first_micro_saas_after_seeing_the",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I’m building my first Micro SaaS after seeing the same messy workflow over and over",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w79u5m/im_building_my_first_micro_saas_after_seeing_the/",
+      "summary": "I’m a UX/UI Specialist, not a seasoned SaaS founder, and I’ve been learning a lot of this as I go. The idea came from a problem I kept seeing in small tour operations: passenger lists in spreadsheets, payments tracked somewhere else, seat assignments in another file, and last-minute changes buried in WhatsApp. So I started building Pockél, a small SaaS focused specifically on organizing group tours and excursions. One thing I’ve learned so far is that building more features is much easier than deciding what the product should not do.",
+      "deepenKey": "/r/microsaas/comments/1w79u5m",
+      "via": null,
+      "publishedAt": "2026-09-04T16:50:14.000Z",
+      "ref": "I71",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "dd486b9e11",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w79kz7/demo_launch_video_for_saas",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Demo/ Launch Video for SAAS",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w79kz7/demo_launch_video_for_saas/",
+      "summary": "I've been building BrickForgerAI solo for a while now - the idea is simple (type a prompt, get a real buildable brick model) but actually getting there was not. Turning a generated shape into something that's really structurally sound, not just something that looks fine in a screenshot, took a lot of trial and error. Bricks floating in mid-air, sections that looked attached but weren't, models that would fall apart the second you tried to actually build them - I kept finding and fixing these one at a time, the hard way, right up until a few days ago. This demo is where it's landed.",
+      "deepenKey": "/r/microsaas/comments/1w79kz7",
+      "via": null,
+      "publishedAt": "2026-09-04T16:41:13.000Z",
+      "ref": "I72",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "031d5ff745",
+      "normUrl": "https://ideabrowser.com/emails/2026-09-04",
+      "sourceId": "ideabrowser",
+      "source": "IdeaBrowser",
+      "sourceHome": "https://www.ideabrowser.com/",
+      "side": "demand",
+      "title": "A YouTuber owns GoPro now?",
+      "url": "https://www.ideabrowser.com/emails/2026-09-04#opening",
+      "summary": "Good morning.\r\nIt's easy to forget how much value is in boring main street businesses.\r\nMy friend the\r\nBoring Marketer\r\nreminded me of this yesterday.\r\nYou don't have to be in PE to purchase your own garage door business though.\r\nBuy up one of the\r\nsmaller guys\r\nand follow the same playbook A1 put together.\r\nThat dream of owning a surf shop is\r\nvery real\r\n!\r\nEstimated reading time: 3 minutes 22 seconds",
+      "publishedAt": "2026-09-04T14:18:48.000Z",
+      "depth": "brief",
+      "alsoFrom": [
+        {
+          "source": "IdeaBrowser",
+          "url": "https://www.ideabrowser.com/emails/2026-09-04#idea"
+        },
+        {
+          "source": "IdeaBrowser",
+          "url": "https://www.ideabrowser.com/emails/2026-09-04#trend"
+        }
+      ],
+      "ref": "I73",
+      "pool": true,
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Good morning.\r\nIt's easy to forget how much value is in boring main street businesses.\r\nMy friend the\r\nBoring Marketer\r\nreminded me of this yesterday.\r\nYou don't have to be in PE to purchase your own garage door business though.\r\nBuy up one of the\r\nsmaller guys\r\nand follow the same playbook A1 put together.\r\nThat dream of owning a surf shop is\r\nvery real\r\n!\r\nEstimated reading time: 3 minutes 22 seconds",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-05T08:57:27.273Z"
+      }
+    },
+    {
+      "id": "2ac4e18fbc",
+      "normUrl": "https://producthunt.com/products/gitwarren",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "GitWarren",
+      "url": "https://www.producthunt.com/products/gitwarren",
+      "summary": "Review code with your coding agents before committing",
+      "publishedAt": "2026-09-04T05:02:54.000Z",
+      "ref": "I74",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Review code with your coding agents before committing",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-05T08:57:28.959Z"
+      }
+    },
+    {
+      "id": "5cf90829e6",
+      "normUrl": "https://producthunt.com/products/dif-sh",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "dif.sh",
+      "url": "https://www.producthunt.com/products/dif-sh",
+      "summary": "Markdown feature flags your coding agent installs for you",
+      "publishedAt": "2026-08-07T14:50:06.000Z",
+      "ref": "I75",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Markdown feature flags your coding agent installs for you",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-05T08:57:28.959Z"
+      }
+    },
+    {
+      "id": "c9c0309b55",
+      "normUrl": "https://producthunt.com/products/reflexio-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Reflexio",
+      "url": "https://www.producthunt.com/products/reflexio-2",
+      "summary": "Behavioral learning that makes AI agents better over time",
+      "publishedAt": "2026-09-01T08:22:47.000Z",
+      "ref": "I76",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Behavioral learning that makes AI agents better over time",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-05T08:57:28.959Z"
+      }
+    },
+    {
+      "id": "d048cd12b6",
+      "normUrl": "https://producthunt.com/products/at8pm",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "at8pm",
+      "url": "https://www.producthunt.com/products/at8pm",
+      "summary": "Your honest journal",
+      "publishedAt": "2026-09-03T11:59:03.000Z",
+      "ref": "I77",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "a44f7ca982",
+      "normUrl": "https://producthunt.com/products/brickforgerai",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "BrickForgerAI",
+      "url": "https://www.producthunt.com/products/brickforgerai",
+      "summary": "Turn any prompt into a brick set you can actually build",
+      "publishedAt": "2026-09-02T10:45:38.000Z",
+      "ref": "I78",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Turn any prompt into a brick set you can actually build",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-05T08:57:28.959Z"
+      }
+    },
+    {
+      "id": "d2d4798adb",
+      "normUrl": "https://producthunt.com/products/queuebrick",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Queuebrick",
+      "url": "https://www.producthunt.com/products/queuebrick",
+      "summary": "The Letterboxd alternative",
+      "publishedAt": "2026-09-02T14:42:18.000Z",
+      "ref": "I79",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The Letterboxd alternative",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-05T08:57:28.959Z"
+      }
+    },
+    {
+      "id": "4ca3661bbe",
+      "normUrl": "https://producthunt.com/products/hyperprobe",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Hyperprobe",
+      "url": "https://www.producthunt.com/products/hyperprobe",
+      "summary": "Lets your AI agents debug production without redeploying",
+      "publishedAt": "2026-08-31T03:39:25.000Z",
+      "ref": "I80",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Lets your AI agents debug production without redeploying",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-05T08:57:28.959Z"
+      }
+    },
+    {
+      "id": "e4e955bad3",
+      "normUrl": "https://producthunt.com/products/retold",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Retold",
+      "url": "https://www.producthunt.com/products/retold",
+      "summary": "Turn family voices into hand-drawn story films",
+      "publishedAt": "2026-08-26T11:38:41.000Z",
+      "ref": "I81",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Turn family voices into hand-drawn story films",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-05T08:57:28.959Z"
+      }
+    },
+    {
+      "id": "20f12ad361",
+      "normUrl": "https://producthunt.com/products/ponytail",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Ponytail",
+      "url": "https://www.producthunt.com/products/ponytail",
+      "summary": "Make new code the last resort",
+      "publishedAt": "2026-09-04T14:18:13.000Z",
+      "ref": "I82",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Make new code the last resort",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-05T08:57:28.959Z"
+      }
+    },
+    {
+      "id": "5678112d2b",
+      "normUrl": "https://producthunt.com/products/experiential-labs",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Experiential Labs",
+      "url": "https://www.producthunt.com/products/experiential-labs",
+      "summary": "Open source AI gateway turning traffic into a better model",
+      "publishedAt": "2026-09-04T03:10:57.000Z",
+      "ref": "I83",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Open source AI gateway turning traffic into a better model",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Show HN: Optimize and serve models with Fable quality at half the cost",
+            "points": 71,
+            "url": "https://news.ycombinator.com/item?id=49063454"
+          },
+          {
+            "title": "Show HN: We built open OpenRouter that turns usage into a better model",
+            "points": 222,
+            "url": "https://news.ycombinator.com/item?id=49471407"
+          },
+          {
+            "title": "Tell HN: Thanks",
+            "points": 18,
+            "url": "https://news.ycombinator.com/item?id=3367416"
+          }
+        ],
+        "fetchedAt": "2026-09-05T08:57:29.441Z"
+      }
+    },
+    {
+      "id": "e84a3539ae",
+      "normUrl": "https://producthunt.com/products/postbox",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "PostBox",
+      "url": "https://www.producthunt.com/products/postbox",
+      "summary": "Stage and post designs from your mac",
+      "publishedAt": "2026-08-27T23:32:18.000Z",
+      "ref": "I84",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Stage and post designs from your mac",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-05T08:57:29.441Z"
+      }
+    },
+    {
+      "id": "55e573cca2",
+      "normUrl": "https://producthunt.com/products/commutebar",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "CommuteBar",
+      "url": "https://www.producthunt.com/products/commutebar",
+      "summary": "Live commute times in your menu bar",
+      "publishedAt": "2026-09-01T03:02:18.000Z",
+      "ref": "I85",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Live commute times in your menu bar",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-05T08:57:29.441Z"
+      }
+    },
+    {
+      "id": "b42875791a",
+      "normUrl": "https://news.ycombinator.com/item?id=49571537",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Moadim.io – A scheduler for agents",
+      "url": "https://news.ycombinator.com/item?id=49571537",
+      "externalUrl": "https://moadim.io/",
+      "summary": "Why can't we get an agent scheduler that supports all of the following: - git compatible - agent agnostic - 100% open source - os and system-agnostic - multi-runner support - support mcp/ui/http - unlimited routines/crons So I built one, moadim.io is a local Rust daemon you install in the target machine, give it a name and manage its routines via a Git repository, wants a new routine that send you a daily message from this machine? Create a pr and merge, have another routine that run every hour to pull the latest changes to the ~/.config/moadim folder.",
+      "deepenKey": "49571537",
+      "via": null,
+      "signal": {
+        "points": 24,
+        "comments": 11
+      },
+      "publishedAt": "2026-09-04T23:50:29Z",
+      "ref": "I86",
+      "screen": {
+        "keep": true,
+        "score": 8,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Why can't we get an agent scheduler that supports all of the following: - git compatible - agent agnostic - 100% open source - os and system-agnostic - multi-runner support - support mcp/ui/http - unlimited routines/crons So I built one, moadim.io is a local Rust daemon you install in the target machine, give it a name and manage its routines via a Git repository, wants a new routine that send you a daily message from this machine? Create a pr and merge, have another routine that run every hour to pull the latest changes to the ~/.config/moadim folder. With more than 1,000 users, I define this project as almost \"done\" and ready for production. Me and thousand more people are use it in a daily manner. It currently supports Claude, Codex, Hermes, and Pi, and you are welcome to add your agent of choice as well because it's 100% configurable. You are welcome to have a look at the source code of the daemon in \" http://github.com/moadim-io/daemon \" Feel free to provide me with suggestions for more features around this topic. I don't want to branch out to new off road topics likt webhooks, this is a \"done\" software in the realm of agents schedulers that focus on cron-like work. Also feel free to start the github repository and open issues and PRs for your suggestions.",
+        "comments": [
+          {
+            "text": "How do I know this won't just eat through my token budget? It's hard to understand from the website how \"done\" is derived in the loop. If it's not deterministic then it seems like it would be prone to over-engineering."
+          },
+          {
+            "text": "Concretely and Simply, what are you actually building with this?"
+          },
+          {
+            "text": "BTY, I monitor this thread via moadim.io, I have a routine that ping this page every 10 minutes and ping me on discord for every message that I didn’t responded to yet"
+          },
+          {
+            "text": "I think the actual loop engineering lives in skills and workflows. The trigger is the creation of a ticket, manual or programmatic; e.g., through an incident."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: Moadim.io – A scheduler for agents",
+            "points": 24,
+            "url": "https://news.ycombinator.com/item?id=49571537"
+          }
+        ],
+        "fetchedAt": "2026-09-05T08:57:28.959Z"
+      }
     }
   ],
-  "deepenedAt": "2026-09-04T21:37:04.602Z"
+  "deepenedAt": "2026-09-05T09:02:06.270Z"
 }

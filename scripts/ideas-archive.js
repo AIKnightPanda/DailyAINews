@@ -66,7 +66,10 @@ function readPending(file, issue) {
     return { reject: `${file} 是 ${Number.isFinite(hours) ? Math.round(hours) + ' 小时前' : '不明时间'}抓的，太旧` };
   }
 
-  const claimed = j.sources.filter(s => s.status === 'ok')
+  // 'partial' 也会真实贡献 items（reddit 短语搜索常见：一部分短语 429 了，
+  // 另一部分抓到了），只数 'ok' 会把每一次 partial 都误判成「自相矛盾」，
+  // 白白扔掉一整份新鲜预抓、逼着这里重新实时抓一遍 —— 2026-09-05 实测踩过。
+  const claimed = j.sources.filter(s => s.status === 'ok' || s.status === 'partial')
     .reduce((n, s) => n + (Number(s.items) || 0), 0);
   if (claimed !== j.items.length) {
     return { reject: `${file} 自相矛盾：sources 报 ${claimed} 条，items 里只有 ${j.items.length} 条` };

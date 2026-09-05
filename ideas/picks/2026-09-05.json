@@ -1,5 +1,14 @@
 {
-  "picks": [],
-  "drop": ["I8"],
-  "exclude": []
+  "picks": [
+    {
+      "ref": "I11",
+      "t": "Mobile Friendly Data Entry App",
+      "title": "Microsoft 365框架内的平板数据采集表单",
+      "background": "发帖人所在公司每天在现场采集几百个数据点（可能是工业检修、工地测量、物业巡检），Microsoft 365是公司唯一批准的工具套件，成本有限。现在用纸笔或Excel，但Excel生成的表格又宽又难在平板上导航。Power Apps可以做但需要Azure/SQL许可（公司没有），Access在SharePoint上已停止支持。问能否用Excel在安卓平板上做表单，或者其他思路。评论只有一条建议用Office Add-ins（JavaScript），暗示此路也不通。",
+      "verdict": "值得做。痛点很具体（几百数据点+平板录入+Microsoft生态限制），用户已经在用笨办法凑合，一个人能做完（离线PWA + 数据同步方案）。最大的疑问是获客渠道——这个产品该怎么卖给有Microsoft 365限制的企业。但从技术和需求角度，这是真实且迫切的。",
+      "score": 3
+    }
+  ],
+  "drop": ["I13", "I14", "I15", "I53", "I54", "I74", "I75", "I76", "I78", "I79", "I80", "I81", "I82", "I83", "I84", "I85", "I86"],
+  "exclude": ["I32", "I34", "I35", "I37", "I49", "I60"]
 }

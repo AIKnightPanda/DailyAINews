@@ -252,10 +252,19 @@ export function restRows(data, zh, picks, lang) {
   const excluded = lang === 'en' ? new Set() : new Set(picks?.exclude || []);
   const CL = lang === 'en' ? CATEGORY_LABEL_EN : CATEGORY_LABEL;
 
-  // 池子里深挖过的候选，加上风向类源（不进池子，但有模型写的摘要）—— 两边
+  // 中文只展示模型读懂过的（candidate：入围深挖名额且深挖成功）；
+  // 英文是抓取核查页，抓下来的原始材料不该被「有没有深挖成功」再筛一遍——
+  // 2026-09-06 实测：Routine 沙箱的网络策略挡住了当天大半 Reddit/
+  // Stack Exchange 的深挖请求，这些条目 candidate 被判 false，
+  // 英文视图若也按 candidate 过滤，抓到的 63 条池子读者就只看得见 2 条，
+  // 没法核对「到底抓没抓到」。所以英文按 pool（抓到就算）来选，
+  // 深挖失败/没入围深挖名额都不影响它在英文视图里出现，
+  // 只是展示的正文退回一阶段摘要（见 restRowOf 里 lang==='en' 那支）。
+  const poolGate = lang === 'en' ? (x => x.pool) : (x => x.candidate);
+  // 池子里的候选，加上风向类源（不进池子，但有模型写的摘要）—— 两边
   // 都要落进 点子/产品 这两个抽屉之一，不再单独开一个「风向」平级分组
   const skip = ref => picked.has(ref) || excluded.has(ref);
-  const pool = data.items.filter(x => x.candidate && !skip(x.ref));
+  const pool = data.items.filter(x => poolGate(x) && !skip(x.ref));
   const extra = data.items.filter(x => !x.pool && x.summary && !skip(x.ref));
   const items = [...pool, ...extra];
 
@@ -311,12 +320,15 @@ export function renderRunnerUps(data, zh, picks, lang) {
     }
   }
 
-  const hidden = data.items.filter(x => x.pool && !x.candidate).length;
+  // 英文视图现在按 pool（抓到就算）展示，「深挖线以下没读过」这句话
+  // 对英文不成立了——只有真的连一阶段摘要都没有的条目才会在英文视图里
+  // 也显示不出来，那种情况极少见，不专门报数
+  const hidden = lang === 'en'
+    ? 0
+    : data.items.filter(x => x.pool && !x.candidate).length;
   if (hidden) {
-    out.push(lang === 'en'
-      ? `> ${hidden} more in the pool ranked below the cutoff and were not read.`
-      : `> 池子里另有 ${hidden} 条排名在深挖线以下，没有读过，因此不展示。` +
-        `它们仍然存在 \`ideas/raw/${data.issue}.json\` 里。`, '');
+    out.push(`> 池子里另有 ${hidden} 条排名在深挖线以下，没有读过，因此不展示。` +
+      `它们仍然存在 \`ideas/raw/${data.issue}.json\` 里。`, '');
   }
   return out;
 }

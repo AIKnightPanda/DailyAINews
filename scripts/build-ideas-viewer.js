@@ -5,11 +5,14 @@
 // ============================================================================
 // 和 build-viewer.js 是姊妹脚本，**共用 viewer/template.html** ——
 // 样式仍然只有一个真相源，改模板两个页面一起变。差异全部由注入的 site
-// 字段描述（报头文案、没有 EN 视图、指回简报页的互跳链接）。
+// 字段描述（报头文案、EN 视图、指回简报页的互跳链接）。
 //
 // 和简报页的两点不同：
-//   - 没有 EN 原文视图。灵感条目本来就是标题 + 一小段，没有「全文」这一层，
-//     再做一个 EN 视图只会是同一批英文标题再列一遍。
+//   - EN 视图不是「全文」，是**核查页**：中文只展示模型读懂过的
+//     （candidate），英文按 pool（抓到就算）展示——2026-09-06 起两边的
+//     选取条件不再共用，读者要能在英文视图里核对「到底抓没抓到」，
+//     不该因为深挖失败（限流、网络策略挡住）就连英文标题都看不见。
+//     见 lib/ideas-render.js 的 restRows。
 //   - 「信息源」面板读 scripts/idea-sources.js，和实际抓取用的是同一份注册表。
 //
 // 用法: node scripts/build-ideas-viewer.js
@@ -140,7 +143,16 @@ async function collectIssues() {
       // 其余候选走结构化数据，不走 markdown —— 标题、说明、来源、信号
       // 四样东西塞进一个列表项里怎么排都别扭，交给 CSS 才排得开
       rest, restEn,
+      // 库尾那句「另有 N 条没有读过」——中英文含义不一样，得分开算：
+      // 中文只展示 candidate（深挖成功），「没读过」= 池子里没成为 candidate 的；
+      // 英文按 pool 展示（见 restRows），candidate 与否不影响出现与否，
+      // 「没展示」只剩「连一阶段摘要都没有」这一种情况，用 restEn 实际
+      // 展示出的条数反推，不能沿用中文那条 candidate 判据，否则会一边说
+      // 「没读过、不展示」一边其实就在英文视图里展示着，自相矛盾。
       hidden: raw ? raw.items.filter(x => x.pool && !x.candidate).length : 0,
+      hiddenEn: raw
+        ? Math.max(0, counts.pool - cardsCount - restEn.reduce((n, g) => n + g.shown, 0))
+        : 0,
       body: '',
       _raw: raw, _zh: zh, _picks: picks     // 只在本进程里用来拼 EN 正文，不进页面
     });

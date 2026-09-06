@@ -1422,9 +1422,16 @@ h4.lk-sec {
         subs + '</section>';
     }).join('');
 
-    var tail = it.hidden
-      ? '<p class="rest-tail">池子里另有 ' + it.hidden + ' 条排名在深挖线以下，没有读过，' +
-        '因此不展示。它们仍然存在 ideas/raw/' + esc(it.issue) + '.json 里。</p>'
+    // 中英文「没展示」的含义不一样：中文是「排名在深挖线以下没读过」，
+    // 英文现在按 pool 展示（deepen 成不成功不影响出现），剩下没展示的
+    // 只剩「连一阶段摘要都没有」这一种情况，两句话不能共用同一个数字
+    var hiddenN = mode === 'en' ? (it.hiddenEn || 0) : it.hidden;
+    var tail = hiddenN
+      ? (mode === 'en'
+          ? '<p class="rest-tail">' + hiddenN + ' more items were fetched but have no readable text, ' +
+            'so they are not shown. They still exist in ideas/raw/' + esc(it.issue) + '.json.</p>'
+          : '<p class="rest-tail">池子里另有 ' + hiddenN + ' 条排名在深挖线以下，没有读过，' +
+            '因此不展示。它们仍然存在 ideas/raw/' + esc(it.issue) + '.json 里。</p>')
       : '';
 
     return '<div class="rest">' + body + tail + '</div>';

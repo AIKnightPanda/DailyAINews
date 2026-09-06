@@ -37,7 +37,11 @@ export const SOURCES = [
     // 邮件完全一致，正文也是同一套 h1 板块 → h2 子版块 → h3 主题 的结构，
     // 所以主站抓不到时退到这里。**不走邮件** —— 邮件要靠模型读，那就等于放弃
     // 「补充源 URL 不经过模型」这道保险；而且云端 Routine 根本没有邮件权限。
-    fallback: 'https://swyx.substack.com/feed',
+    // 两个镜像内容完全一样（同一份 817KB），分开列是因为它们是**两个不同的
+    // Cloudflare 站点**：substack.com 子域和 latent.space 自定义域，反爬策略
+    // 未必同步。GitHub Actions 的机房出口在 09-04、09-05 被前者 403 挡了两天，
+    // 多一个入口就多一次机会。
+    fallback: ['https://swyx.substack.com/feed', 'https://www.latent.space/feed'],
     // 这个 feed 里混着 Latent.Space 自己的播客和文章，只认 [AINews] 开头的那些
     titleMatch: /^\[AINews\]/,
     home: 'https://news.smol.ai/', latestOnly: true,

@@ -25,6 +25,12 @@ const STATE = join(ROOT, 'digests', 'extra-seen.json');
 const DAYS = Number((process.argv.find(a => a.startsWith('--days=')) || '').split('=')[1]) || 3;
 const useState = !process.argv.includes('--no-state');
 
+// 只抓指定的几个源（逗号分隔的 id）。archive.js 发现预抓文件里某个源失败时，
+// 用它单独补抓那一个 —— 成功的源不能重跑：它们的 URL 已经记进 extra-seen，
+// 再跑一遍只会返回 0 条，反而把预抓的成果盖掉。
+const onlyArg = (process.argv.find(a => a.startsWith('--only=')) || '').split('=')[1];
+const ONLY = onlyArg ? new Set(onlyArg.split(',').map(x => x.trim()).filter(Boolean)) : null;
+
 // 窗口必须锚在**期号日期**上，不能锚在「现在」。
 // 否则 08-24 那期会混进 08-25 的文章，而 08-21 发布的又被挤出去 —— 实际踩过。
 // 锚定后同一期号重跑结果也一致。
@@ -124,14 +130,20 @@ function linksIn(html) {
   return out;
 }
 
-async function fetchOnce(url) {
+async function fetchOnce(url, ua = UA) {
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), TIMEOUT);
   try {
     const res = await fetch(url, {
       signal: ctrl.signal,
       redirect: 'follow',
-      headers: { 'user-agent': UA }
+      // 只声明 UA、其他头一个不发，本身就是「我是脚本」的信号。
+      // 补上 Accept / Accept-Language 不保证过反爬，但至少不主动露馅。
+      headers: {
+        'user-agent': ua,
+        accept: 'application/rss+xml, application/atom+xml, application/xml;q=0.9, text/html;q=0.8, */*;q=0.7',
+        'accept-language': 'en-US,en;q=0.9'
+      }
     });
     if (!res.ok) {
       // 把响应正文的开头带上 —— 站点自己返回的 403 和被网关/代理拦下的 403
@@ -143,7 +155,7 @@ async function fetchOnce(url) {
         // 只留开头那段人话。拦截页往往是「一句说明 + 一大坨 JS」，
         // 从第一个括号截断就把代码甩掉了 —— 这行会显示给读者看。
         const body = (await res.text())
-          .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+          .replace(/<(script|style)[\s\S]*?<\/\1>/gi, ' ')
           .replace(/<[^>]+>/g, ' ')
           .replace(/\s+/g, ' ')
           .trim()
@@ -159,12 +171,23 @@ async function fetchOnce(url) {
   }
 }
 
+// substack 对机房 IP 挂 Cloudflare 托管挑战，返回 403 +「Just a moment...」。
+// 2026-09-04、09-05 两天 GitHub Actions 抓镜像连着栽在这上面，同一时刻本地是 200
+// —— 换句话说拦的是出口 IP，不是我们。挑战对 feed 阅读器一般放行，
+// 所以 403 / 429 时换成阅读器 UA 再试一次。**其余 4xx 不重试**：402、404 是
+// 确定性的，重试纯属浪费一轮请求。
+const UA_FEED = 'Feedly/1.0 (+http://www.feedly.com/fetcher.html; like FeedFetcher-Google)';
+
 // 五个源并发抓时偶发 fetch failed，直连却没问题 —— 明显是瞬时抖动。
-// 重试一次即可，HTTP 4xx 这类确定性失败不重试（重试也没用）。
+// 重试一次即可。
 async function fetchText(url) {
   try {
     return await fetchOnce(url);
   } catch (err) {
+    if (/HTTP (403|429)\b/.test(err.message)) {
+      await new Promise(r => setTimeout(r, 1500));
+      return await fetchOnce(url, UA_FEED);
+    }
     if (/HTTP 4\d\d/.test(err.message)) throw err;
     await new Promise(r => setTimeout(r, 1200));
     return await fetchOnce(url);
@@ -425,7 +448,8 @@ async function main() {
   let items = [];
 
   // 一个源挂掉不能拖垮其他源，更不能拖垮整次运行
-  const results = await Promise.allSettled(SOURCES.map(async s => {
+  const TARGETS = ONLY ? SOURCES.filter(s => ONLY.has(s.id)) : SOURCES;
+  const results = await Promise.allSettled(TARGETS.map(async s => {
     // 没有 RSS 的源走自己的发现流程
     if (DISCOVERERS[s.kind]) {
       const fresh = await DISCOVERERS[s.kind](s, cutoff, ANCHOR);
@@ -435,15 +459,21 @@ async function main() {
     try {
       xml = await fetchText(s.url);
     } catch (err) {
-      if (!s.fallback) throw err;
-      // 主站挂了就走镜像。两边都挂时把**两个**错误都带出来 —— 只报镜像那个的话，
+      const mirrors = [].concat(s.fallback || []);
+      if (!mirrors.length) throw err;
+      // 主站挂了就依次试镜像。全都挂时把**每一个**错误都带出来 —— 只报最后那个的话，
       // 「主站恢复了吗」这个问题下次还得重新查一遍。
-      try {
-        xml = await fetchText(s.fallback);
-      } catch (err2) {
-        throw new Error(`主站 ${err.message}；镜像 ${err2.message}`);
+      const fails = [`主站 ${err.message}`];
+      for (const m of mirrors) {
+        try {
+          xml = await fetchText(m);
+          via = { url: m, because: String(err.message || err) };
+          break;
+        } catch (err2) {
+          fails.push(`镜像 ${new URL(m).hostname} ${err2.message}`);
+        }
       }
-      via = { url: s.fallback, because: String(err.message || err) };
+      if (!via) throw new Error(fails.join('；'));
     }
     let fresh = rssItems(xml).filter(it => it.ts >= cutoff && it.ts <= ANCHOR);
     // 镜像 feed 常常混着别的内容，按标题挑出属于这个源的那些
@@ -456,7 +486,7 @@ async function main() {
 
   for (let i = 0; i < results.length; i++) {
     const r = results[i];
-    const s = SOURCES[i];
+    const s = TARGETS[i];
     if (r.status === 'rejected') {
       report.push({ id: s.id, name: s.name, status: 'error', error: String(r.reason?.message || r.reason) });
       continue;

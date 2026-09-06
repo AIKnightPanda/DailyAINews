@@ -100,6 +100,36 @@ async function main() {
   if (pending && !pending.reject) {
     extra = pending;
     extraFrom = 'prefetched';
+    // **预抓里某个源报 error，不等于今天它就该是空的。** 预抓跑在 GitHub Actions 上，
+    // 出口是机房 IP，被 Cloudflare 挑战是常事 —— 2026-09-04、09-05 连着两天
+    // substack 镜像 403，而同一时刻本地 200。Routine 的出口不一样，值得再试一次。
+    // 之前这里不补抓，一份「日期对得上、格式也合法」的预抓文件就把那个源
+    // 静默吞掉了，档案里只留下一行警告。
+    //
+    // 只补抓失败的那几个：成功的源 URL 已经记进 extra-seen，重跑只会返回 0 条，
+    // 反而把预抓的成果盖掉。
+    const broken = pending.sources.filter(x => x.status === 'error' && x.id).map(x => x.id);
+    if (broken.length) {
+      console.error(`[archive] 预抓里 ${broken.join('、')} 抓取失败，实时补抓这几个源`);
+      try {
+        const r = await execFileAsync('node',
+          [FETCH_EXTRA, `--until=${issue}`, `--only=${broken.join(',')}`],
+          { maxBuffer: 32 * 1024 * 1024, timeout: 90_000 });
+        const patch = JSON.parse(r.stdout);
+        extra = {
+          ...pending,
+          sources: pending.sources.map(x => patch.sources.find(y => y.id === x.id) || x),
+          items: pending.items.concat(patch.items || [])
+        };
+        const back = (patch.sources || []).filter(x => x.status === 'ok').map(x => x.name);
+        extraFrom = back.length ? 'prefetched+retry' : 'prefetched';
+        console.error(back.length
+          ? `[archive] 补抓救回 ${back.join('、')}，新增 ${(patch.items || []).length} 条`
+          : '[archive] 补抓仍然失败，按预抓的结果出稿');
+      } catch (err) {
+        console.error(`[archive] 补抓没跑起来：${err.message}`);
+      }
+    }
   } else {
     if (pending?.reject) console.error(`[archive] ${pending.reject}，改为实时抓取`);
     try {
@@ -123,8 +153,8 @@ async function main() {
   if (extra.error) {
     console.error(`[archive] 补充源抓取失败：${extra.error}`);
   }
-  console.error(`[archive] 补充源来自${extraFrom === 'prefetched' ? ' GitHub Actions 预抓' : '本次实时抓取'}` +
-    `，${extra.items?.length ?? 0} 条`);
+  const FROM = { prefetched: ' GitHub Actions 预抓', 'prefetched+retry': '预抓 + 实时补抓', live: '本次实时抓取' };
+  console.error(`[archive] 补充源来自${FROM[extraFrom] || extraFrom}，${extra.items?.length ?? 0} 条`);
 
   // 博客正文：feed 给的是一堵没有分段、没有小标题、没有任何链接的墙 ——
   // 文章里引用的 YouTube 演示、文档页、评测报告那些**属于内容本身**的链接全丢了。
@@ -174,7 +204,8 @@ async function main() {
     stats: feed.stats,
     extra: {
       items: extra.items?.length ?? 0,
-      source: extraFrom,          // prefetched = 用了 Actions 预抓的；live = 自己抓的
+      source: extraFrom,          // prefetched = 用了 Actions 预抓的；live = 自己抓的；
+                                  // prefetched+retry = 预抓有源失败，那几个是实时补回来的
       error: extra.error || null,
       failed: (extra.sources || []).filter(x => x.status === 'error').map(x => x.name)
     },

@@ -193,6 +193,7 @@
 | OpenAI News | RSS 标题 + 官方一句话摘要 | 1-3 |
 | Google DeepMind | 同上 | 0-1 |
 | The Rundown AI | RSS 标题 | 1-2 |
+| AI Valley | 首页发现当期 `/p/<slug>`，只取 `THROUGH THE VALLEY` 一节 | 0-8 |
 
 只取标题和链接，**不抓正文** —— 试过抓正文页，OpenAI 直接 403，
 DeepMind 抓下来的 15KB 文本大半是导航栏。RSS 是这几家唯一稳定的入口。
@@ -214,7 +215,25 @@ DeepMind 抓下来的 15KB 文本大半是导航栏。RSS 是这几家唯一稳�
   2026-09-05 把缓冲从 30 分钟拉到近 3 小时——实测 GitHub 的 `schedule`
   触发本身能延迟近 110 分钟，30 分钟缓冲扛不住。
 - **实时抓取** —— 没有预抓文件、日期对不上、或文件没通过 `archive.js` 的三道关时，
-  由 `archive.js` 自己抓。云端环境已放行这五个域名，这条路是通的。
+  由 `archive.js` 自己抓；预抓文件本身没问题、只是某个源失败时，只补抓那几个源。
+  这条路要靠云端出网白名单（见下），**加源必须同步加域名**。
+
+### 云端出网白名单
+
+Routine 只能访问白名单里的域名，**不在名单上的一律 403，且长得和站点自己的 403
+一模一样**（2026-08-26 五个源同时 403 就是这么来的）。带 `www.` 的要单独列，
+根域名不覆盖子域。加新源、或给旧源加镜像时，这份名单要一起改。
+
+截至 2026-09-06 的名单，按用途分：
+
+| 用途 | 域名 |
+|---|---|
+| 简报补充源 | `news.smol.ai`、`swyx.substack.com`、`www.latent.space`（后两个是 AINews 镜像）、`jack-clark.net`、`openai.com`、`deepmind.google`、`www.therundown.ai`、`theaivalley.com`、`www.theaivalley.com` |
+| 灵感源 | `www.reddit.com`、`reddit.com`、`hn.algolia.com`、`api.stackexchange.com`、`www.ycombinator.com`、`trends.vc`、`www.producthunt.com` |
+| 其他 | `claude.com`、`www.anthropic.com` |
+
+对照的是 `scripts/groups.js` 里的 `SOURCES`（url / home / fallback 三个字段的域名）
+和灵感模块的源清单 —— 改那边就回来核一遍这张表。
 
 `archive.js` 对预抓文件设了三道关，任何一道不过就退回实时抓取：
 
@@ -223,6 +242,17 @@ DeepMind 抓下来的 15KB 文本大半是导航栏。RSS 是这几家唯一稳�
 | 日期 | `windowUntil` 的日期 == 本期期号 | 静静走实时（本来就不是给这期的） |
 | 新鲜度 | `fetchedAt` 在 24 小时内 | 记进 `extra.error` 并喊出来 |
 | 自洽 | `items` 条数 == `sources` 里各 ok 源自报之和 | 同上 |
+
+三道关过了也不等于全盘照收：**预抓文件里哪个源报了 `error`，`archive.js` 就用
+`fetch-extra.js --only=<那几个 id>` 单独补抓一次**，抓回来的条目并进预抓的结果，
+`extra.source` 记成 `prefetched+retry`。只补失败的那几个 —— 成功的源 URL 已经
+记进 `extra-seen`，重跑只会返回 0 条，反而把预抓的成果盖掉。
+
+这一条是 2026-09-04、09-05 换来的：GitHub Actions 的出口是机房 IP，
+substack 镜像连着两天返回 Cloudflare 的 403「Just a moment...」，而同一时刻
+本地是 200。当时没有补抓，一份「日期对得上、格式也合法」的预抓文件就把 AINews
+整个吞掉了，页面上只留下一行「抓取失败」。
+（那两天恰好 AINews 也没出刊，所以没真丢内容 —— 但这是运气，不是设计。）
 
 第三道是 2026-08-27 那次的教训：预抓文件被手工掏空过，`items` 是空的、
 `sources` 却还写着「AINews 32 条」，日期又恰好对得上，于是一路静默到页面上少一块。

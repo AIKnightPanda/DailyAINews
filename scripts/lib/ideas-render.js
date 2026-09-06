@@ -241,14 +241,13 @@ function restRowOf(it, zh, lang) {
 export function restRows(data, zh, picks, lang) {
   const picked = new Set(resolvePicks(data, picks).list.map(x => x.it.ref));
   // picks.exclude：模型确认读完之后判断「纯讨论、跟点子/产品无关」的编号——
-  // 跟 picks.drop 是两回事，drop 只是「没选进值得做」，excluded 的这些
-  // 连库里都不该出现（评论区讨论 Claude 是不是变差了、怎么在 Ask HN 提问
-  // 这类，不是产品需求，2026-09-05 读者反馈这类不该展示）。
+  // 跟 picks.drop 是两回事，drop 只是「没选进值得做」。
   //
-  // 只在中文视图生效——英文视图是核对原始信息用的核查页，本来就该展示
-  // 读过的全部内容，不该被「是否相关」这种主观判断再筛一遍。exclude
-  // 挡的是模型的编辑判断，不是原始材料本身，读者要能在英文视图里
-  // 看到我筛掉的到底是什么，才有得核对。
+  // 2026-09-06 之前这些条目会从中文页面整条消失，但翻译（任务 A 的一句话
+  // 说明）已经写出来了，扔掉等于白翻。读者的建议：翻译不该白做，
+  // 挪进「其他」、默认折叠就好，想看的人自己展开，不想看的人当它不存在——
+  // 见下面 otherPool。只在中文生效，英文视图 excluded 恒为空集，
+  // 是因为英文视图本来就该展示读过的全部内容，不需要再分「其他」。
   const excluded = lang === 'en' ? new Set() : new Set(picks?.exclude || []);
   const CL = lang === 'en' ? CATEGORY_LABEL_EN : CATEGORY_LABEL;
 
@@ -263,14 +262,23 @@ export function restRows(data, zh, picks, lang) {
   const poolGate = lang === 'en' ? (x => x.pool) : (x => x.candidate);
   // 池子里的候选，加上风向类源（不进池子，但有模型写的摘要）—— 两边
   // 都要落进 点子/产品 这两个抽屉之一，不再单独开一个「风向」平级分组
-  const skip = ref => picked.has(ref) || excluded.has(ref);
-  const pool = data.items.filter(x => poolGate(x) && !skip(x.ref));
-  const extra = data.items.filter(x => !x.pool && x.summary && !skip(x.ref));
+  const skip = ref => picked.has(ref);
+  const pool = data.items.filter(x => poolGate(x) && !skip(x.ref) && !excluded.has(x.ref));
+  const extra = data.items.filter(x => !x.pool && x.summary && !skip(x.ref) && !excluded.has(x.ref));
   const items = [...pool, ...extra];
+  // 「其他」：exclude 了但不再整条扔掉的那批，翻译照常用，只是挪到折叠区。
+  // 跟上面 items 一样要拼上风向类源，不然风向条目一旦被 exclude 就会
+  // 真的从哪里都找不到了（之前漏了这一半，2026-09-04 那期 8 条 exclude
+  // 里有 2 条是风向源，「其他」区实测只出来 6 条）。
+  // 英文视图 excluded 恒为空集，这里天然也是空数组，不需要额外判断。
+  const otherPool = data.items.filter(x => poolGate(x) && !skip(x.ref) && excluded.has(x.ref));
+  const otherExtra = data.items.filter(x => !x.pool && x.summary && !skip(x.ref) && excluded.has(x.ref));
+  const otherAll = [...otherPool, ...otherExtra];
 
   const groups = [];
   for (const key of CATEGORY_ORDER) {
     const bucket = items.filter(x => categoryOf(x) === key);
+    const otherBucket = otherAll.filter(x => categoryOf(x) === key);
 
     const subs = [];
     for (const src of ALL_SOURCES) {
@@ -285,7 +293,11 @@ export function restRows(data, zh, picks, lang) {
     }
     const fetched = subs.reduce((n, s) => n + s.fetched, 0);
     const shown = subs.reduce((n, s) => n + s.shown, 0);
-    groups.push({ key, label: CL[key], fetched, shown, subs });
+    // 「其他」不再按来源分小节——量本来就小，混着按分数排一份平铺列表就够了
+    const other = otherBucket.map(it => restRowOf(it, zh, lang)).filter(Boolean)
+      .sort((a, b) => (b.star - a.star) || (b.engagement - a.engagement))
+      .map(({ engagement, ...r }) => r);
+    groups.push({ key, label: CL[key], fetched, shown, subs, other });
   }
   return groups;
 }
@@ -317,6 +329,17 @@ export function renderRunnerUps(data, zh, picks, lang) {
         out.push(`  ${esc(r.desc)}`);
       }
       out.push('');
+    }
+    // 「其他」：exclude 了但翻译没扔的那批，GitHub 原生支持 <details>，
+    // 折叠在 md 里也不需要额外的脚本
+    if (g.other?.length) {
+      out.push(`<details><summary>其他 ${g.other.length} 条 · 判断跟${g.label}无关，默认折叠</summary>`, '');
+      for (const r of g.other) {
+        out.push(`- **[${esc(r.title)}](${escUrl(r.url)})**` + (r.star ? ' ⭐' : '') +
+          (r.signal ? `　<sub>${esc(r.signal)}</sub>` : ''));
+        out.push(`  ${esc(r.desc)}`);
+      }
+      out.push('', '</details>', '');
     }
   }
 

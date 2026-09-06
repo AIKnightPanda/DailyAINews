@@ -874,6 +874,18 @@ h4.lk-sec {
   margin: 1.2rem 0 0; padding-top: .7rem; border-top: 1px dashed var(--rule-2);
   font-family: var(--font-mono); font-size: .72rem; line-height: 1.6; color: var(--ink-3);
 }
+/* 「其他」——模型判断跟点子/产品无关、但翻译没有被扔掉的那批，默认折叠。
+   summary 用原生 <details> 的三角箭头，不额外写 JS */
+.rest-other {
+  margin: 1.4rem 0 0; padding-top: .7rem; border-top: 1px dashed var(--rule-2);
+}
+.rest-other > summary {
+  cursor: pointer; font-family: var(--font-mono); font-size: .72rem;
+  color: var(--ink-3); user-select: none;
+}
+.rest-other > summary:hover { color: var(--ink-2); }
+.rest-other[open] > summary { margin-bottom: .5rem; }
+.rest-other .rest-l { margin-top: .6rem; }
 
 /* 期号标题下方那行「共 X 条 · 展示 Y 条 · 隐藏 Z 条」（灵感页） */
 .idea-stats {
@@ -1409,6 +1421,19 @@ h4.lk-sec {
     var shownWord = mode === 'en' ? function (s, f) { return s + '/' + f + ' shown'; }
       : function (s, f) { return '展示 ' + s + '/' + f + ' 条'; };
 
+    // 「其他」：模型判断跟点子/产品无关（picks.exclude）的条目——翻译已经
+    // 写出来了，不该白写，折叠展示比整条消失更不浪费。默认折叠（<details>
+    // 没有 open 属性），想看的人自己点开；只在中文出现，英文视图这里
+    // 恒是空数组（见 restRows）
+    function otherHtml(g) {
+      if (!g.other.length) return '';
+      var summary = mode === 'en'
+        ? 'Other ' + g.other.length + ' items — judged unrelated to ' + esc(g.label) + ', collapsed by default'
+        : '其他 ' + g.other.length + ' 条 · 判断跟' + esc(g.label) + '无关，默认折叠';
+      return '<details class="rest-other"><summary>' + summary + '</summary>' +
+        '<ul class="rest-l">' + g.other.map(rowHtml).join('') + '</ul></details>';
+    }
+
     var body = groups.map(function (g) {
       var subs = g.subs.map(function (s) {
         var rows = s.rows.map(rowHtml).join('');
@@ -1419,7 +1444,7 @@ h4.lk-sec {
       return '<section class="rest-cat" id="rest-' + esc(g.key) + '">' +
         '<div class="rest-cat-head"><h2>' + esc(g.label) + '</h2>' +
         '<span class="sub">' + shownWord(g.shown, g.fetched) + '</span></div>' +
-        subs + '</section>';
+        subs + otherHtml(g) + '</section>';
     }).join('');
 
     // 中英文「没展示」的含义不一样：中文是「排名在深挖线以下没读过」，

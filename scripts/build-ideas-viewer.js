@@ -119,10 +119,11 @@ async function collectIssues() {
 
     const rest = raw ? restRows(raw, zh, picks, 'zh') : [];
     const restEn = raw ? restRows(raw, zh, picks, 'en') : [];
-    // 展示了多少条 = 精选卡片 + 库里实际出行的条目；
+    // 展示了多少条 = 精选卡片 + 库里实际出行的条目 + 「其他」折叠区里的条目
+    // （它们确实渲染在页面上了，只是默认折叠，算「展示」而不是「隐藏」）；
     // 隐藏了多少条 = 池子里进过深挖但没能落地展示的（没描述、或排名靠后没读过）。
     // 三个数字都写在标题下面，安静的一天和管道断了不该长得一样。
-    const displayed = cardsCount + rest.reduce((n, g) => n + g.shown, 0);
+    const displayed = cardsCount + rest.reduce((n, g) => n + g.shown + g.other.length, 0);
 
     issues.push({
       issue,

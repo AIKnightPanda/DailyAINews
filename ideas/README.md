@@ -160,15 +160,31 @@ scripts/
 ## 每天怎么跑
 
 ```
-18:13 UTC  Actions (fetch-ideas.yml)  抓候选 + 抓 Gmail → 提交两个 pending 文件
-21:30 UTC  Routine                    归档 → 深挖 → Haiku 翻译与判断 → 拼装 → 建页 → push
+18:13 UTC  Actions (fetch-ideas.yml)  抓候选 + 抓 Gmail → 归档 → 深挖 → 提交 raw/seen
+21:30 UTC  Routine                    归档（多半空转）→ 深挖（多半空转）→ Haiku 翻译与判断 → 拼装 → 建页 → push
 ```
+
+2026-09-06 把「归档」和「深挖」也搬进了 `fetch-ideas.yml`（此前只有它俩
+一直是 Routine 自己在跑）。原因是深挖要连 Reddit / Stack Exchange /
+Product Hunt 这些第三方域名，Routine 沙箱的出网策略会挡一部分——
+2026-09-06 实测当天 26 条入围深挖的候选里 18 条报
+`HTTP 403：Blocked by egress policy`，中文精选那一侧只剩 2 条候选能看。
+GH Actions 的 runner 没有这层限制。
+
+搬过去之后 Routine 自己那两步大多数时候是**空转**：`ideas-deepen.js`
+对已经有 `deep` 字段的条目直接跳过、不重新发请求（见 `ideas-deepen.js`
+里 `targets = chosen.filter(({ it }) => force || !it.deep)`），
+只有 GH Actions 那边没抓全、或当天新冒出来的极少数条目才会由 Routine
+现抓补一次——暴露给沙箱网络限制的条目数比之前小得多，但**没法完全
+归零**：只要 Routine 还需要现抓补漏，理论上仍可能撞到网络策略，
+只是概率和影响范围都小了很多。
 
 2026-09-05 把预抓从 20:40 提前到 18:13——原来只留 50 分钟缓冲，实测被
 GitHub 自己的调度延迟吃光过（延迟近 110 分钟），预抓文件没到位时
 `ideas-archive.js` 会正确回落到实时抓取，但 Routine 沙箱里 Reddit 被
 网络策略挡、也没有 Gmail 凭证，回落等于抓空。缓冲拉到近 3 小时才扛得住
-这种延迟。
+这种延迟，加上深挖这一步之后，`fetch-ideas.yml` 整条跑下来预计
+10–15 分钟，缓冲仍然够用。
 
 手动跑一次：
 

@@ -1,6 +1,12 @@
-# 灵感候选源预抓
+# 灵感候选源预抓 + 归档 + 深挖
 # ============================================================================
-# 在 Routine（21:30 UTC）之前把榜单和订阅邮件抓好，提交进仓库，Routine 起来直接读。
+# 在 Routine（21:30 UTC）之前把榜单和订阅邮件抓好、归档、深挖完，提交进仓库，
+# Routine 起来直接读。**深挖也放在这里跑**（2026-09-06 起）—— 那一步要连到
+# Reddit / Stack Exchange / Product Hunt 等第三方域名，Routine 那边的沙箱
+# 网络策略会挡一部分（见 ideas-deepen.js 顶部注释），GH Actions 的 runner
+# 没有这层限制。Routine 自己还会再跑一遍 archive/deepen，但那时候大部分
+# 条目已经有 deep 字段，会被跳过、不重新发请求，只需要给漏网的少数条目
+# 兜底，暴露给沙箱网络限制的条目数比之前小得多。
 #
 # 和 fetch-extra 的关系：那个是备份（云端也能实时抓），**这个不是**。
 # 候选部分云端可以实时抓，但**邮件部分只能在这里跑** —— Routine 的沙箱里
@@ -98,11 +104,28 @@ jobs:
             echo "干净"
           fi
 
+      # 归档 + 深挖：放在这里而不是留给 Routine，是因为 Routine 跑在受限
+      # 沙箱里，那边的出站网络策略会挡掉 Reddit / Stack Exchange / Product
+      # Hunt 这些第三方域名——2026-09-06 实测：当天 26 条入围深挖的候选里
+      # 18 条直接报 `HTTP 403：Blocked by egress policy`，中文精选那一侧
+      # 只剩 2 条候选能看。GH Actions 的 runner 没有这层限制，深挖搬到这里
+      # 跑完、连同 ideas/raw/<期号>.json 一起提交，Routine 起来之后自己
+      # 再跑一遍 ideas-archive.js / ideas-deepen.js 时，已经有 deep 字段的
+      # 条目会被跳过（不重新发请求）——见 ideas-deepen.js 里
+      # `targets = chosen.filter(({ it }) => force || !it.deep)`，
+      # 所以这一步搬过来对 Routine 那边是安全的空转，只有这里没抓全/
+      # 当天新冒出来的条目才会由 Routine 现抓补一次，暴露面比之前小得多。
+      - name: 归档并深挖
+        run: |
+          node scripts/ideas-archive.js --issue="$ISSUE"
+          node scripts/ideas-deepen.js --issue="$ISSUE"
+
       - name: 提交
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add ideas/candidates-pending.json ideas/inbox-pending.json 2>/dev/null || true
+          git add ideas/candidates-pending.json ideas/inbox-pending.json \
+            "ideas/raw/$ISSUE.json" ideas/seen.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "无变化，不提交"
           else

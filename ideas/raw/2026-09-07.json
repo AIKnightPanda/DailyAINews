@@ -1,0 +1,1899 @@
+{
+  "issue": "2026-09-07",
+  "builtAt": "2026-09-06T20:28:09.816Z",
+  "from": {
+    "boards": "prefetched",
+    "inbox": "prefetched"
+  },
+  "counts": {
+    "fetched": 152,
+    "added": 47,
+    "kept": 47,
+    "dropped": 105,
+    "pool": 47,
+    "screened": 41,
+    "candidates": 20,
+    "demandCandidates": 13,
+    "supplyCandidates": 7
+  },
+  "errors": [],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "ok",
+      "items": 21,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "partial",
+      "items": 7,
+      "pool": true,
+      "error": "is there a tool that（HTTP 429）；we still use spreadsheets（HTTP 429）",
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 4,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "partial",
+      "items": 7,
+      "pool": true,
+      "error": "we are paying for（HTTP 429）；per seat per month（HTTP 429）",
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "ok",
+      "items": 12,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "ok",
+      "items": 2,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 0,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 2,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "ideabrowser",
+      "name": "IdeaBrowser",
+      "status": "ok",
+      "mails": 2,
+      "items": 6,
+      "group": "inbox"
+    },
+    {
+      "id": "mobbin",
+      "name": "Mobbin",
+      "status": "ok",
+      "mails": 0,
+      "items": 0,
+      "group": "inbox"
+    }
+  ],
+  "items": [
+    {
+      "id": "7bbe384b9b",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1w93qh1/ive_been_thinking_about_building_an_ai_that_can",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "I’ve been thinking about building an AI that can actually use your phone — is this a dumb idea?",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1w93qh1/ive_been_thinking_about_building_an_ai_that_can/",
+      "summary": null,
+      "deepenKey": "/r/SomebodyMakeThis/comments/1w93qh1",
+      "via": null,
+      "publishedAt": "2026-09-06T18:18:00.000Z",
+      "ref": "I1",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "57765e4f17",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1w8xbnm/somebody_make_an_app_where_a_friend_groups_trip",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "Somebody make an app where a friend group's trip photos all unlock at the same moment",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1w8xbnm/somebody_make_an_app_where_a_friend_groups_trip/",
+      "summary": "Every trip, it's the same. Photos scattered across everyone's phones, half never make it to the group chat, and by the time someone shares them the moment already feels old. Wish there was something where the whole group just adds photos quietly during the trip, and then on one specific day it all unlocks for everyone at once, instead of dribbling in over weeks.",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1w8xbnm",
+      "via": null,
+      "publishedAt": "2026-09-06T14:13:57.000Z",
+      "ref": "I2",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Every trip, it's the same. Photos scattered across everyone's phones, half never make it to the group chat, and by the time someone shares them the moment already feels old. Wish there was something where the whole group just adds photos quietly during the trip, and then on one specific day it all unlocks for everyone at once, instead of dribbling in over weeks.",
+        "comments": [
+          {
+            "text": "A shared Google folder for photos and videos is how we solve this. Works like a charm and it's native or easily accessible to most platforms, mobile and desktop."
+          },
+          {
+            "text": "Right, this is the most essential use case for personal shareable cloud storage going back a decade."
+          },
+          {
+            "text": "That sounds like a dumb idea."
+          },
+          {
+            "text": "Thanks for your feedback, but could you be a little more specific?"
+          },
+          {
+            "text": "While this would require some work, it would be cool if there was a setting while taking photos (maybe an external pop-up when you open the camera app) that sends any photos taken directly to the vault, so you don't have to add them manually"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Ask HN: How can I make the most out of high school?",
+            "points": 67,
+            "url": "https://news.ycombinator.com/item?id=18787851"
+          },
+          {
+            "title": "Tell HN: My dad told me I'd be a high school dropout and I make 200k a year",
+            "points": 12,
+            "url": "https://news.ycombinator.com/item?id=32441443"
+          }
+        ],
+        "fetchedAt": "2026-09-06T20:29:10.227Z"
+      }
+    },
+    {
+      "id": "15583f55c1",
+      "normUrl": "https://reddit.com/r/VictoriaBC/comments/1w8ztud/most_accurate_and_reliable_app_or_website_for",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Most accurate and reliable app or website for transit schedules",
+      "url": "https://www.reddit.com/r/VictoriaBC/comments/1w8ztud/most_accurate_and_reliable_app_or_website_for/",
+      "summary": "Hello, I’ve started using the bus with my UMO pass on days I’m at college. I’m new to using transit systems and so far been using both the transit website and UMO app for tracking bus schedules and routes. However recently I was screwed by the UMO app as it did not inform or show that my route time was cancelled, and I had been checking hours in advance. I got this situation resolved fairly quickly but was disappointed from the UMO app. Should I stick to the BC transit website or is there an app that is more straightforward? I see there’s a few in the App Store but unsure which one.",
+      "deepenKey": "/r/VictoriaBC/comments/1w8ztud",
+      "via": "is there an app that",
+      "publishedAt": "2026-09-06T15:53:34.000Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [
+          "在找但没找到"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Hello, I’ve started using the bus with my UMO pass on days I’m at college. I’m new to using transit systems and so far been using both the transit website and UMO app for tracking bus schedules and routes. However recently I was screwed by the UMO app as it did not inform or show that my route time was cancelled, and I had been checking hours in advance. I got this situation resolved fairly quickly but was disappointed from the UMO app. Should I stick to the BC transit website or is there an app that is more straightforward? I see there’s a few in the App Store but unsure which one. Thanks so much!",
+        "comments": [
+          {
+            "text": "I use an app called \"Transit\" which combines BC transit GPS data with data from other app users. It can give you notifications for when to leave to catch the bus. It has really cut down the amount of time that I spend waiting for the bus."
+          },
+          {
+            "text": "I always use the Transit app. I don’t know if it shows cancelled buses but I’ve used it for years and it’s never let me down."
+          },
+          {
+            "text": "Second transit, I find it better than Google Maps."
+          },
+          {
+            "text": "This one, I dont use it anymore since I got a car, but when I used transit this was the one that I found to be most reliable. It was a little confusing at first, but once I used it constantly it was pretty simple. Lets you save common routes you take for fast route selection, did when I used it at least."
+          },
+          {
+            "text": "On Friday the app showed that the 26 I was supposed to take to Uptown got canceled. Could have been a Royale member feature though."
+          },
+          {
+            "text": "Whenever I use the bus I just pop my route into Google Maps."
+          },
+          {
+            "text": "Google maps doesn't account for cancelled buses."
+          },
+          {
+            "text": "It does. I saw 2 last week that were crossed out and said Cancelled"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T20:34:19.229Z"
+      }
+    },
+    {
+      "id": "c0c97c234c",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/31025/software-to-make-windows-appear-more-like-el-capitan",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Software to make Windows appear more like El Capitan",
+      "url": "https://softwarerecs.stackexchange.com/questions/31025/software-to-make-windows-appear-more-like-el-capitan",
+      "summary": "I'm looking for software that can change the appearance (change the look windows, start menu, even buttons, etc.) of Windows to look like a mac (specifically, El Capitan). I'd like the software to meet these requirements: Compatible with Windows 10 64bit Does not slow down performance Comes from a trustworthy source (not someone's Dropbox account but behind an actual website/company) Changes the appearence of at least windows (minimize, maximize, & close button) but preferred it would also change actual buttons, loading bars, checkboxes, etc.",
+      "deepenKey": "31025",
+      "signal": {
+        "score": 0,
+        "views": 309,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2016-04-02T22:05:06.000Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I'm looking for software that can change the appearance (change the look windows, start menu, even buttons, etc.) of Windows to look like a mac (specifically, El Capitan). I'd like the software to meet these requirements: Compatible with Windows 10 64bit Does not slow down performance Comes from a trustworthy source (not someone's Dropbox account but behind an actual website/company) Changes the appearence of at least windows (minimize, maximize, & close button) but preferred it would also change actual buttons, loading bars, checkboxes, etc. Note: This does not have to be free as long it is a one-time purchase and not a subscription.",
+        "comments": [
+          {
+            "text": "One that I found and paid for ($10) is called WindowsBlinds by StarDock. It's quite wonderful being that it allows you to change the appearance to not only the look of a mac but also many OS's as well. It changes the appearance of windows, buttons found within them, radio buttons, checkboxes, progress bars, scrolling bars, start menu icon, and more. I have found a few bugs here and there with very old programs but the software gives you the option to toggle what it changes. It even has a styling package called \"El Capitan\". This software meets all my requirements. WindowBlinds (commercial) WindowBlinds is a computer program that allows users to skin the Windows graphical user interface. It has been developed by Stardock since 1998, and is the most popular component of their flagship software suite, Object Desktop.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Offer HN: I'll make a decal for your startup.",
+            "points": 40,
+            "url": "https://news.ycombinator.com/item?id=1844787"
+          },
+          {
+            "title": "Two proposals for modern browsers",
+            "points": 12,
+            "url": "https://news.ycombinator.com/item?id=2024164"
+          },
+          {
+            "title": "Show HN: Orange intelligence, an open source alternative to Apple Intelligence",
+            "points": 80,
+            "url": "https://news.ycombinator.com/item?id=42829309"
+          }
+        ],
+        "fetchedAt": "2026-09-06T20:28:58.388Z"
+      }
+    },
+    {
+      "id": "0c0650a15b",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/88382/is-there-any-program-that-would-allow-me-to-skin-a-specific-app-without-changing",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Is there any program that would allow me to skin a specific app without changing that app's code?",
+      "url": "https://softwarerecs.stackexchange.com/questions/88382/is-there-any-program-that-would-allow-me-to-skin-a-specific-app-without-changing",
+      "summary": "I'm just interested to see if there's any way of doing this, specifically for discord. Yes, I know discord doesn't care if you use a modified version - I'm just curious if you could use a theme without breaking their tos at all",
+      "deepenKey": "88382",
+      "signal": {
+        "score": 1,
+        "views": 66,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2023-11-19T00:02:07.000Z",
+      "ref": "I5",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3721caa9c2",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/92157/cross-platform-tool-for-real-time-dashboards-from-csv-files",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Cross-platform tool for real-time dashboards from CSV files",
+      "url": "https://softwarerecs.stackexchange.com/questions/92157/cross-platform-tool-for-real-time-dashboards-from-csv-files",
+      "summary": "I'm looking for a replacement for an implementation that was made in Microsoft Power BI of a dashboard that updates in real time based on a CSV data input. The main reason for the switch is the fact that I want the new tool to work on Linux. Essentially, what this dashboard implementation does is interpret CSVs with timestamped data about measurements, mostly environmental, that are made by some sensors.",
+      "deepenKey": "92157",
+      "signal": {
+        "score": 2,
+        "views": 108,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2025-04-13T19:19:31.000Z",
+      "ref": "I6",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I'm looking for a replacement for an implementation that was made in Microsoft Power BI of a dashboard that updates in real time based on a CSV data input. The main reason for the switch is the fact that I want the new tool to work on Linux. Essentially, what this dashboard implementation does is interpret CSVs with timestamped data about measurements, mostly environmental, that are made by some sensors. Said interpretation is made via graphs that show the evolution of the values, pie charts with the prevalence of each range of values within the measurements, and maps with the also logged geographic coordinates overlayed on them (since the sensors are within a moving system). I need the ability to select the set of sensor data that I want to retrieve, and updates are ideally done automatically. It is supposed to be deployed as a proof of concept for the time being, which means that: I don't need something too fancy, as long as it is a system that allows for an easy visualization of CSV data according to the requirements I outlined. I'm seeking options that are either not paid or self-hostable.",
+        "comments": [
+          {
+            "text": "One possible solution is to use Splunk/Elasticsearch/Opensearch. All of them offer you a way to feed data to the indexes (in server), do some operations on this data and create dashboards based on different aggregations, calculations, etc. Splunk have free option (with limited amount of data feed per 24 hours period, 500MB) Elasticsearch is \"free\" with special license (AFAIK you should buy license if you want to sell it as service) Opensearch is opensource and free",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Building a Cross-Browser, Cross-Platform, Real-Time Game Streaming Protocol",
+            "points": 120,
+            "url": "https://news.ycombinator.com/item?id=18242300"
+          },
+          {
+            "title": "Irrlicht Engine – a cross-platform realtime 3D engine",
+            "points": 76,
+            "url": "https://news.ycombinator.com/item?id=45214749"
+          }
+        ],
+        "fetchedAt": "2026-09-06T20:29:10.536Z"
+      }
+    },
+    {
+      "id": "27403d12fa",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/90800/how-can-i-open-a-dotx-or-docx-file-in-c-and-edit-it-using-key-value-fields",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "How can I open a .DOTX or .DOCX file in C++ and edit it using key-value fields?",
+      "url": "https://softwarerecs.stackexchange.com/questions/90800/how-can-i-open-a-dotx-or-docx-file-in-c-and-edit-it-using-key-value-fields",
+      "summary": "I need to edit template fields by key-value from C++ by opening the .DOTX or .DOCX file. So that I can change the data in the file to whatever I want. For example: in the file will appear {field} I want to change that {field} to gas for example. And when I save the file my new fields will appear. Which free or paid library could I use?",
+      "deepenKey": "90800",
+      "signal": {
+        "score": 1,
+        "views": 160,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2024-07-11T10:24:51.000Z",
+      "ref": "I7",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [
+          "要的是库不是产品"
+        ],
+        "detail": {
+          "signal": -5,
+          "engagement": 4,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "13e4313c4b",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/91116/end-to-end-rag-framework",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "End-to-end RAG framework",
+      "url": "https://softwarerecs.stackexchange.com/questions/91116/end-to-end-rag-framework",
+      "summary": "What are some good end-to-end RAG (Retrieval-Augmented Generation) frameworks for question-answering using an LLM? My requirements are: Low/no code and simple to setup. Reading and parsing local document files (.PDF, .DOCX, e.g.) into a database and generate vector embeddings of them. Scraping and parsing a website into the database. Of a lesser importance: Loading and parsing images, audios, and videos via image/audio-to-text and/or embeddings. Retrievers that query the database via vector embedding similarity and/or keyword search.",
+      "deepenKey": "91116",
+      "signal": {
+        "score": 3,
+        "views": 112,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2024-09-06T14:06:18.000Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "What are some good end-to-end RAG (Retrieval-Augmented Generation) frameworks for question-answering using an LLM? My requirements are: Low/no code and simple to setup. Reading and parsing local document files (.PDF, .DOCX, e.g.) into a database and generate vector embeddings of them. Scraping and parsing a website into the database. Of a lesser importance: Loading and parsing images, audios, and videos via image/audio-to-text and/or embeddings. Retrievers that query the database via vector embedding similarity and/or keyword search. Let an LLM choose the best rephrasing of the user-inputted query to search for with the retrievers. Rerank the results returned by the retrievers and select the most relevant parts. Synthesize a response to the end-user utilizing the information retrieved. Provide the sources of the results such as providing the exact path to the files referenced. Optional but great to have: An LLM agent that has memory and makes autonomous decisions regarding what queries to be performed and how to rephrase the query if the previous results are unsatisfactory. I understand that it might be difficult to find a framework that satisfies all of the requirements, so solutions satisfying a majority of the requirements would be acceptable. I would also accept a simple combination of different frameworks. However, I am not planning to stitch all the individual components together by code. It is OK for me to having to choose which parsers and which retrievers to use, but they need to be simple plug-and-play. I found that RAGFlow might be a good solution according to the requirements. Additionally, I am also building an agentic RAG framework myself using LlamaIndex , though I would not accept it as an answer to this question as it requires a lot of code to stitch the components together.",
+        "comments": [
+          {
+            "text": "NotebookLM is a zero-code webapp that can read/parse various formats: https://notebooklm.google Free to use. It does not scrape websites, but if you really want to scrape you might try to turn websites into HTML or PDF files, there are various tools for this. (disclaimer: I work for the same company)",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T20:29:10.625Z"
+      }
+    },
+    {
+      "id": "14e4ab8b50",
+      "normUrl": "https://news.ycombinator.com/item?id=49590168",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What's the best place to learn about skills and AI for coding in general",
+      "url": "https://news.ycombinator.com/item?id=49590168",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "49590168",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-09-06T19:48:50Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d1bc4b74ae",
+      "normUrl": "https://news.ycombinator.com/item?id=49589730",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "UK Rescue Rocket Sheds/Houses Information",
+      "url": "https://news.ycombinator.com/item?id=49589730",
+      "externalUrl": null,
+      "summary": "I can't seem to find pictures or significant details (nothing on Wikipedia) about the coastal buildings purportedly used to contain shipwreck rescue rocket apparatus. Many of the buildings still exist and are Grade II listed. Anyone have any additional anecdotal/local/oral tradition information that isn't found in the little blurbs online on the few websites mentioning them?",
+      "deepenKey": "49589730",
+      "via": null,
+      "signal": {
+        "points": 11,
+        "comments": 6
+      },
+      "publishedAt": "2026-09-06T19:06:54Z",
+      "ref": "I10",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I can't seem to find pictures or significant details (nothing on Wikipedia) about the coastal buildings purportedly used to contain shipwreck rescue rocket apparatus. Many of the buildings still exist and are Grade II listed. Anyone have any additional anecdotal/local/oral tradition information that isn't found in the little blurbs online on the few websites mentioning them?",
+        "comments": [
+          {
+            "text": "Example: https://britishlistedbuildings.co.uk/300022782-rocket-cart-s... https://maps.google.com/?q=51.5708572,-4.2850887 51°34'15.1\"N 4°17'06.3\"W"
+          },
+          {
+            "text": "I'm having difficulty googling what a \"rescue rocket\" is. I keep finding info on a video game and safety during space travel. What does \"rocket\" mean in a 1800s context? I found this: https://museum.maritimearchaeologytrust.org/2025/05/29/rocke... Is it a gunpowder rocket used to push a boat through the water instead of using rowing oars? Is it just a gun that sends the carrying cable, what makes it different from any other gunpowder gun? https://www.britishpathe.com/asset/52937/"
+          },
+          {
+            "text": "Have you tried the RNLI or lighthouses associations?"
+          },
+          {
+            "text": "Of interest? https://replay.bfi.org.uk/video/fbc58db0-b59f-5a31-9fda-1463... https://www.vectisarchaeology.org.uk/pdfs/irex_wrecked_at_th..."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Ask HN: UK Rescue Rocket Sheds/Houses Information",
+            "points": 12,
+            "url": "https://news.ycombinator.com/item?id=49589730"
+          }
+        ],
+        "fetchedAt": "2026-09-06T20:29:11.042Z"
+      }
+    },
+    {
+      "id": "0ed1046647",
+      "normUrl": "https://news.ycombinator.com/item?id=49589479",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What are you willing to spend 2 hours on?",
+      "url": "https://news.ycombinator.com/item?id=49589479",
+      "externalUrl": null,
+      "summary": "I'm finding that as I get older, I'm becoming more picky in committing to things that require time commitments - even watching a film that I'm not sure about. It's understandable, I'm aware of my limited time. But a major drawback is that it reduces random exploration / serendipitous discovery by trying unknown things out and sometimes being positively surprised. I have always found that kind of intellectual and physical wandering to be hugely valuable in creating alpha. How do you deal this?",
+      "deepenKey": "49589479",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 4
+      },
+      "publishedAt": "2026-09-06T18:37:35Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "64a0c2c162",
+      "normUrl": "https://news.ycombinator.com/item?id=49588082",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What are your predictions for the rest of 2026?",
+      "url": "https://news.ycombinator.com/item?id=49588082",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "49588082",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-09-06T16:27:17Z",
+      "ref": "I12",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5631eef2ff",
+      "normUrl": "https://news.ycombinator.com/item?id=49587521",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How are you finding and managing AI skills?",
+      "url": "https://news.ycombinator.com/item?id=49587521",
+      "externalUrl": null,
+      "summary": "How do you find skills, keep them organized, and make sure they actually work? Do you keep improving them over time? I believe skills will end up eating model capabilities, but until then I'm just looking for a better way to manage things.",
+      "deepenKey": "49587521",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-09-06T15:34:28Z",
+      "ref": "I13",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1565c22fff",
+      "normUrl": "https://news.ycombinator.com/item?id=49586478",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are people who only seem happy when they're angry increasing? Seems like it",
+      "url": "https://news.ycombinator.com/item?id=49586478",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "49586478",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 4
+      },
+      "publishedAt": "2026-09-06T13:42:41Z",
+      "ref": "I14",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e45b731b0c",
+      "normUrl": "https://news.ycombinator.com/item?id=49586165",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Reddits anti self promo policies are destroying startups",
+      "url": "https://news.ycombinator.com/item?id=49586165",
+      "externalUrl": null,
+      "summary": "I’m posting this here because Reddit just bans me whenever I talk about it. So let me explain. Reddit has these anti self promo policies to prevent spam. BUT they are enforced so strictly by Reddit, the mods and even the users that it becomes near impossible to share a startup. Now, Reddit in of itself wouldn’t get your startup big, but it prevents you from even being rejected. This causes people who make bad startups to not even know their thing is bad, leading to long drawn out failures. This even affects things outside of Reddit by shrinking the available spaces you can share your startup.",
+      "deepenKey": "49586165",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-09-06T13:02:12Z",
+      "ref": "I15",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1bd09f015e",
+      "normUrl": "https://news.ycombinator.com/item?id=49585683",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Astra still fails at creating acceptable Rotational Ambigram",
+      "url": "https://news.ycombinator.com/item?id=49585683",
+      "externalUrl": null,
+      "summary": "I have tried quite few different prompts, but Astra still fails to create decent Rotational Ambigram. Anyone tried?",
+      "deepenKey": "49585683",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 3
+      },
+      "publishedAt": "2026-09-06T12:03:18Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1ed0eee827",
+      "normUrl": "https://news.ycombinator.com/item?id=49585379",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Nadir – A Response to Astra",
+      "url": "https://news.ycombinator.com/item?id=49585379",
+      "externalUrl": null,
+      "summary": "This is brilliant on so many levels - and surprisingly hit a home for me while on my lazyboy -;) https://www.instagram.com/reel/Dc5914xBEf6/?stkn=MXIybmVsdnN4bWl3ag==",
+      "deepenKey": "49585379",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-06T11:15:13Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d7f46f9d1a",
+      "normUrl": "https://news.ycombinator.com/item?id=49583440",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Would you read a statistics textbook?",
+      "url": "https://news.ycombinator.com/item?id=49583440",
+      "externalUrl": null,
+      "summary": "I had a classic Bayesian statistical education throughout my undergraduate and grad years and I’ve come to conclude that the plethora of books offered are pretty bad. For me personally statistics is intuitive if illustrated properly. A great example is https://seeing-theory.brown.edu/ I was wondering whether it would make sense to turn the intuitions behind statistics into a book. Would anyone read it? Do people still read stats books or would it be mostly a waste of effort? If you wanted to teach/help people understand statistics, what resources would you consider?",
+      "deepenKey": "49583440",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 4
+      },
+      "publishedAt": "2026-09-06T04:52:18Z",
+      "ref": "I18",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1611252fcb",
+      "normUrl": "https://news.ycombinator.com/item?id=49577600",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "MITx is ending access to its courses for learners in Iran on September 8",
+      "url": "https://news.ycombinator.com/item?id=49577600",
+      "externalUrl": null,
+      "summary": "I received an email from MITx today saying that, following changes announced by the U.S. Department of the Treasury on August 24, MITx will no longer be able to provide course access or related services to people in Iran or ordinarily resident in Iran. The cutoff is September 8, 2026. This is just sad. MITOCW has been my primary resource for learning engineering math and has been absolutely amazing. I wonder if I can keep using it using a VPN. And what will happen to those who already enrolled in a course?",
+      "deepenKey": "49577600",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 2
+      },
+      "publishedAt": "2026-09-05T15:40:03Z",
+      "ref": "I19",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "bf2e212471",
+      "normUrl": "https://news.ycombinator.com/item?id=49573952",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "OpenAI's rogue agents used ntfy.sh as a pub/sub channel",
+      "url": "https://news.ycombinator.com/item?id=49573952",
+      "externalUrl": null,
+      "summary": "Looks like OpenAI's rogue agents used https://ntfy.sh as a pub/sub channel. This payload publishes via GET in an img tag, pulls chunked base64 JS from a topic, and eval()'s it. Remote code via GET only. Proof: https://httpbin.org/base64/PGJvZHk-PGltZyBzcmM9Imh0dHBzOi8vbnRmeS5zaC9ncm81MjhmYTYzL3B1Ymxpc2g_bWVzc2FnZT1QMyI-PGltZyBzcmM9L2RlbGF5LzEwPjxzY3JpcHQ-dmFyIG49MDtmdW5jdGlvbiBEKCl7aWYobisrPDUpe3ZhciBpPW5ldyBJbWFnZSgp%20%20%20%20O2kub25lcnJvcj1pLm9ubG9hZD1EO2kuc3JjPScvZGVsYXkvMTA_Yz0nK247ZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChpKX19RCgpO2ZldGNoKCdodHRwczovL250Znkuc2gvZ3BsZW9lbnNvL3Jhdz9wb2xsPTEmc2l…",
+      "deepenKey": "49573952",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-05T07:12:51Z",
+      "ref": "I20",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2dd7cc834c",
+      "normUrl": "https://reddit.com/r/SouthShore/comments/1w93bxk/daycarenanny_cost_for_full_time_south_shore",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Daycare/Nanny cost for full time, south shore?",
+      "url": "https://www.reddit.com/r/SouthShore/comments/1w93bxk/daycarenanny_cost_for_full_time_south_shore/",
+      "summary": "We’re planning to move to the South Shore next year and curious if people can share what they currently pay for full time child care. We will have a 3 month old, and a 2 year old. Also, does anyone have any recommendations or advice on daycares in the area? I’ll share that we currently pay $21 an hour for 30 hours a week for a nanny in Southern California. Thank you!",
+      "deepenKey": "/r/SouthShore/comments/1w93bxk",
+      "via": "we currently pay",
+      "publishedAt": "2026-09-06T18:03:09.000Z",
+      "ref": "I21",
+      "screen": {
+        "keep": true,
+        "score": 14,
+        "hits": [
+          "已经在花钱"
+        ],
+        "detail": {
+          "signal": 8,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "We’re planning to move to the South Shore next year and curious if people can share what they currently pay for full time child care. We will have a 3 month old, and a 2 year old. Also, does anyone have any recommendations or advice on daycares in the area? I’ll share that we currently pay $21 an hour for 30 hours a week for a nanny in Southern California. Thank you!",
+        "comments": [
+          {
+            "text": "Daycare, depends on where you go, but we’ve always paid $2500-$3200 a month per kid. Most places have a discount for the second kid (like 10%). There are some that are cheaper and some more expensive. We never had a nanny, but have looked into it, and the ranges are wide but I think it starts around $32/hr."
+          },
+          {
+            "text": "For a nanny, I would say average is $28-$30/hr for 1 child, $30-$32 for 2 children. Corporate daycare is going to be average $2750 a month per child. 2nd child discounts are laughable, barely worth calculating. A home daycare will be average $80/day/child. All of these are averages, sometimes more, sometimes less. But yeah, it’s crazy expensive here. Facebook Mom groups and childcare groups are a great way to get more information about costs, places with openings, etc!"
+          },
+          {
+            "text": "We pay $300 a week for a licensed in home daycare."
+          },
+          {
+            "text": "Hi! Would you mind sharing more info about this? I’m expecting my first and have struggled to find an in-home option with openings next year"
+          },
+          {
+            "text": "Daycare about $450+/ week for five days. Finally done after sending two kids. Figure it was $240k total. Kill me now."
+          },
+          {
+            "text": "WILD. Congrats on being done lol"
+          },
+          {
+            "text": "Can I ask where you used and if you liked it"
+          },
+          {
+            "text": "Starting daycare in December at 6mo old for $2620/mo"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T20:33:38.800Z"
+      }
+    },
+    {
+      "id": "ae83014a7a",
+      "normUrl": "https://reddit.com/r/msp/comments/1w95bil/what_edge_cases_have_you_added_to_your_msa_this",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "What edge cases have you added to your MSA this year?",
+      "url": "https://www.reddit.com/r/msp/comments/1w95bil/what_edge_cases_have_you_added_to_your_msa_this/",
+      "summary": "Towards the end of June I received a termination email from a client, and they had decided to move to this same dumpster fire . I sent our standard \"60 days until the lights go off\" email in alignment with our MSA, we did the documentation handoff via Zoom, and the next 57 days went by with absolute radio silence. On day 58, the PoC emails me and says that despite good recommendations, they're not feeling confident in the new provider and that they need more time to either stay or transition.",
+      "deepenKey": "/r/msp/comments/1w95bil",
+      "via": null,
+      "publishedAt": "2026-09-06T19:15:39.000Z",
+      "ref": "I22",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false,
+      "deepError": "HTTP 429"
+    },
+    {
+      "id": "b35b4fbc21",
+      "normUrl": "https://reddit.com/r/msp/comments/1w93uy2/do_folk_charge_for_moving_from_one_product_to",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Do folk charge for moving from one product to another?",
+      "url": "https://www.reddit.com/r/msp/comments/1w93uy2/do_folk_charge_for_moving_from_one_product_to/",
+      "summary": "Say one MDM to another, or EDR? The move is our instigation as a quality improvement. Would anyone charge to do this sort of thing?",
+      "deepenKey": "/r/msp/comments/1w93uy2",
+      "via": null,
+      "publishedAt": "2026-09-06T18:22:28.000Z",
+      "ref": "I23",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e990d99013",
+      "normUrl": "https://reddit.com/r/msp/comments/1w8z2gm/huntress_itdr_for_google_workspace",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Huntress ITDR for google workspace?",
+      "url": "https://www.reddit.com/r/msp/comments/1w8z2gm/huntress_itdr_for_google_workspace/",
+      "summary": "I have a mix of m365 and google clients. I know they started supporting Google sometime last year. How is that working out for you people that have Workspace clients?",
+      "deepenKey": "/r/msp/comments/1w8z2gm",
+      "via": null,
+      "publishedAt": "2026-09-06T15:23:59.000Z",
+      "ref": "I24",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3c3fb6af3c",
+      "normUrl": "https://reddit.com/r/msp/comments/1w8m0sn/urgent_update_ncentral_additional_second_hotfix",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "URGENT Update: N-central additional Second Hotfix 2026.3 HF4 — Immediate Action Required",
+      "url": "https://www.reddit.com/r/msp/comments/1w8m0sn/urgent_update_ncentral_additional_second_hotfix/",
+      "summary": "We recently communicated about two security vulnerabilities within N-central that were responsibly disclosed by a third party through our voluntary security disclosure program and we issued a hotfix. Since the disclosures, a third, independent researcher alerted us to a new vulnerability that has been exploited in the wild that is unrelated to the previously disclosed CVEs. This critical zero-day vulnerability, if exploited, could allow for pre-authenticated access to the N-central server. What You Need to Do N-central On-Premises Environments: Upgrade to 2026.3 HF4 immediately.",
+      "deepenKey": "/r/msp/comments/1w8m0sn",
+      "via": null,
+      "publishedAt": "2026-09-06T04:23:40.000Z",
+      "ref": "I25",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "We recently communicated about two security vulnerabilities within N-central that were responsibly disclosed by a third party through our voluntary security disclosure program and we issued a hotfix. Since the disclosures, a third, independent researcher alerted us to a new vulnerability that has been exploited in the wild that is unrelated to the previously disclosed CVEs. This critical zero-day vulnerability, if exploited, could allow for pre-authenticated access to the N-central server. What You Need to Do N-central On-Premises Environments: Upgrade to 2026.3 HF4 immediately. Hotfix link: https://documentation.n-able.com/N-central/Release_Notes/GA/Content/N-central_2026.3_HF4_Release_Notes.htm If you’ve already upgraded to 2026.3 HF3, you will need to upgrade to 2026.3 HF4 to protect against this newly discovered vulnerability. N-central Hosted Environments: No action is needed on your part; your instances have already been patched. Additional links: Here is the link to the previous post 2026.3 HF4 Release Notes Jason Murphy | Head Nerd",
+        "comments": [
+          {
+            "text": "Pinning the post for visibility"
+          },
+          {
+            "text": "Adding in from our SOC - N-able has released a fourth hotfix to address a brand new CVE (CVE-2026-86218) in N-central. This is a critical pre-authentication RCE vulnerability (CVSS 10.0). If you run N-central on premises, upgrade to version 2026.3 HF4 (build 2026.3.1.14) immediately. As stated above, this release supersedes HF3, so organizations that already applied HF3 still need to update. N-able has reported exploitation in the wild in its incident communications. As you patch, review appliance logs for signs of API manipulation and audit user accounts and permissions for unauthorized changes. Links for upgrade guidance and fourth hotfix are in OPs post Read our updated blog for more details: https://www.huntress.com/blog/n-able-vulnerability-exploitation"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T20:36:36.211Z"
+      }
+    },
+    {
+      "id": "d8153e43e2",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1w82i5m/whats_are_the_funniestbest_tickets_youve_ever_got",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "What's are the funniest/best tickets you've ever got working helpdesk?",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1w82i5m/whats_are_the_funniestbest_tickets_youve_ever_got/",
+      "summary": "I'm starting in an IT role for helpdesk, I need to know what I'm walking into and some of the best tickets you've had",
+      "deepenKey": "/r/sysadmin/comments/1w82i5m",
+      "via": null,
+      "publishedAt": "2026-09-05T14:39:33.000Z",
+      "ref": "I26",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "f73a642e38",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w976wz/i_posted_an_idea_here_about_paying_people_to_put",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I posted an idea here about paying people to put their phones down, I need more feedback",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w976wz/i_posted_an_idea_here_about_paying_people_to_put/",
+      "summary": "I posted an idea here earlier: what if advertisers paid for your focus instead of your attention? the app is now called offscreen You start a focus session, put your phone down, and if you complete it you can earn a small reward funded by a sponsor. A lot of the feedback on my original post was basically that it will get farmed. So I've changed the product quite a bit while building it. The direction now is that starting an Offscreen session puts your phone into a restricted focus state for the duration.",
+      "deepenKey": "/r/microsaas/comments/1w976wz",
+      "via": null,
+      "publishedAt": "2026-09-06T20:25:30.000Z",
+      "ref": "I27",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "求反馈",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "4cc1da5064",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w96zwz/what_convinced_you_to_finally_automate_a_manual",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "What convinced you to finally automate a manual process in your business?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w96zwz/what_convinced_you_to_finally_automate_a_manual/",
+      "summary": "I'm a software enigneer weighing whether to spend my free time building small tools for businesses instead of being bored (not trying to sell anything, just build real stuff). And trying to learn from people who've actually been on the other side of this. For those who've automated something that used to be manual (spreadsheets, tracking, checking things by hand). What was the tipping point? Was it time, cost, errors, or something else? And did you build/buy something, or just push through with the manual way?",
+      "deepenKey": "/r/microsaas/comments/1w96zwz",
+      "via": null,
+      "publishedAt": "2026-09-06T20:17:57.000Z",
+      "ref": "I28",
+      "screen": {
+        "keep": true,
+        "score": 10,
+        "hits": [
+          "在用笨办法凑合"
+        ],
+        "detail": {
+          "signal": 4,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "I'm a software enigneer weighing whether to spend my free time building small tools for businesses instead of being bored (not trying to sell anything, just build real stuff). And trying to learn from people who've actually been on the other side of this. For those who've automated something that used to be manual (spreadsheets, tracking, checking things by hand). What was the tipping point? Was it time, cost, errors, or something else? And did you build/buy something, or just push through with the manual way?",
+        "comments": [
+          {
+            "text": "For me it was the quiet dread of knowing id have to do the same 20-minute data pull every monday morning for the rest of my life Not even that long a task but the repetition was eating my soul. I realized i was spending more mental energy dreading it than actually doing it. That tipping point hits different for everyone but mine came when i caught myself putting off client work just to avoid a spreadsheet Built a quick script to handle it, nothing fancy. Took a weekend and never looked back"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T20:35:07.717Z"
+      }
+    },
+    {
+      "id": "a78a73a2ee",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w96dxd/i_put_the_supply_of_new_material_behind_my",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I put the supply of new material behind my paywall instead of the features",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w96dxd/i_put_the_supply_of_new_material_behind_my/",
+      "summary": "nine months in on a vocabulary app (vibeling, it's mine). the standard advice is to gate features, so that's what i assumed i'd do: lock the good training modes, lock statistics, lock the extras. what i actually gate is where the words come from. free gets you 3 recommended words a day, plus unlimited words you add yourself, and every training mode and every review stays free forever. pro raises the recommendation limit to 10 a day and lets you study more than one language at once. the reason is that the bottleneck for most people isn't reviewing, it's not knowing what to study next.",
+      "deepenKey": "/r/microsaas/comments/1w96dxd",
+      "via": null,
+      "publishedAt": "2026-09-06T19:55:10.000Z",
+      "ref": "I29",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "nine months in on a vocabulary app (vibeling, it's mine). the standard advice is to gate features, so that's what i assumed i'd do: lock the good training modes, lock statistics, lock the extras. what i actually gate is where the words come from. free gets you 3 recommended words a day, plus unlimited words you add yourself, and every training mode and every review stays free forever. pro raises the recommendation limit to 10 a day and lets you study more than one language at once. the reason is that the bottleneck for most people isn't reviewing, it's not knowing what to study next. i have this myself in two languages: english feeds me words because i read it all day, and my serbian list sat at 30 words for months. so the recommendation feed is the part people actually run out of, and it costs me money per word to generate, which makes it the honest thing to charge for. numbers as of september 3: $237 MRR, 45 active subscriptions against 3,292 active users in 28 days, so 1.4%. not proof of anything yet. if you gate consumption instead of features, has it held up for you, or did people just churn once they hit the ceiling?",
+        "comments": [
+          {
+            "text": "I have not gated supply myself, but your cost structure stands out: most free tiers cost near zero to serve, yours pays API generation per free user, so free users burn money until they convert. 28 day active is a wide net, most of those 3,292 never hit the 3 word cap, so 1.4% measures casual users more than the wall hitters who refused to pay. A hard stop mid session feels worse than a locked feature, that is when habit apps lose people. Do daily cap hitters convert better than monthly actives?"
+          },
+          {
+            "text": "the denominator critique is fair, 28-day actives includes everyone who opened it twice and never got near the cap. and no, i can't answer the cap-hitter question, i don't have that cohort broken out, which is the obvious thing to instrument next. on cost, per-word generation is cheap and words repeat a lot across users, so a free user lands in cents a month rather than dollars. the expensive part is the first session, before i know anything about the person. the hard stop mid-session is the objection i'd keep. what takes the edge off is that self-added words stay unlimited, so the app never refuses to work, it just stops proposing new material. not the same as having no wall though."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T20:30:10.355Z"
+      }
+    },
+    {
+      "id": "6452704439",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w96bgv/delegating_your_tweets_keeps_the_reach_and_kills",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "delegating your tweets keeps the reach and kills your cheapest research loop",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w96bgv/delegating_your_tweets_keeps_the_reach_and_kills/",
+      "summary": "Most people frame the founder-tweet call as time vs money. write them yourself and burn an hour a day, or pay to make it go away. for a micro saas that framing hides the real cost. when you write your own, half of it isn't marketing, it's positioning out loud. you post a framing, watch which replies actually bite, and quietly rewrite the landing page a week later off what you learned. that's free market research you never scheduled. delegate it and the reach can survive. the voice can even survive if it's trained on how you actually talk. what dies is that loop.",
+      "deepenKey": "/r/microsaas/comments/1w96bgv",
+      "via": null,
+      "publishedAt": "2026-09-06T19:52:39.000Z",
+      "ref": "I30",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Most people frame the founder-tweet call as time vs money. write them yourself and burn an hour a day, or pay to make it go away. for a micro saas that framing hides the real cost. when you write your own, half of it isn't marketing, it's positioning out loud. you post a framing, watch which replies actually bite, and quietly rewrite the landing page a week later off what you learned. that's free market research you never scheduled. delegate it and the reach can survive. the voice can even survive if it's trained on how you actually talk. what dies is that loop. drafts come back clean, you approve them, and nobody's feeding the weird half-formed take that would've told you something real. the $200/mo tools skip the loop by design, and a $3,000/mo human hands back a channel but not your ear on the replies. we hit this building the ghostwriting side and honestly still haven't cracked it. founder approval keeps the voice yours, it doesn't drop you back into the reply guts where the signal actually is. genuinely unsure if that loop survives delegation at all. if you handed off posting for a small saas, did you keep reading every reply, or did letting go of the writing quietly mean letting go of the listening too.",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T20:37:16.527Z"
+      }
+    },
+    {
+      "id": "f734c1c2df",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w9314q/fully_built_task_management_web_app_for_sale",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Fully built task management web app for sale – SnapTask.today – $4,900 OBO",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w9314q/fully_built_task_management_web_app_for_sale/",
+      "summary": "I'm selling SnapTask.today , a fully built and deployed task management web app. SnapTask is a simple, lightweight productivity tool designed to help people quickly organize what they need to do without unnecessary setup or complexity. The product is currently free to use and has no revenue , so this is not an MRR-based acquisition. You're buying a finished product that is already live and ready for someone who wants to focus on distribution, growth, or monetization instead of starting from scratch.",
+      "deepenKey": "/r/microsaas/comments/1w9314q",
+      "via": null,
+      "publishedAt": "2026-09-06T17:52:10.000Z",
+      "ref": "I31",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [
+          "工程量过大"
+        ],
+        "detail": {
+          "signal": -4,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1ee7ef35f1",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w91xrg/im_bootstrapping_a_tiny_saas_alone_my_first",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I’m bootstrapping a tiny SaaS alone - my first product came from a problem I kept avoiding",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w91xrg/im_bootstrapping_a_tiny_saas_alone_my_first/",
+      "summary": "I'm building Cadence, a tiny SaaS for founders who hate writing monthly investor updates. I'm doing everything myself right now — development, product, infrastructure and figuring out distribution. The original problem was pretty simple. Every month I'd have all the information needed for an investor update, but it was scattered across different places. Metrics here. Product updates there. Customer feedback somewhere else. Then I'd stare at a blank document and procrastinate. So I built Cadence to turn the metrics and monthly progress into a first draft that I can edit before sending.",
+      "deepenKey": "/r/microsaas/comments/1w91xrg",
+      "via": null,
+      "publishedAt": "2026-09-06T17:12:49.000Z",
+      "ref": "I32",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "07e74c13e5",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w91opw/made_a_thing_because_my_demo_voiceovers_always",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Made a thing because my demo voiceovers always sounded like garbage",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w91opw/made_a_thing_because_my_demo_voiceovers_always/",
+      "summary": "Every time I record a product demo, the narration comes out rough, ums, \"wait, let me redo that,\" awkward pauses. I re-record the same 60 seconds five or six times and it still isn't great. Editing it manually afterward is a pain. So I built dub.house to deal with just that part. You record your demo like normal and talk through it however messily, and it rewrites your narration into a clean, professional script and generates a new voiceover that stays synced to what's happening on screen.",
+      "deepenKey": "/r/microsaas/comments/1w91opw",
+      "via": null,
+      "publishedAt": "2026-09-06T17:03:23.000Z",
+      "ref": "I33",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "13e67dedf6",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w8yama/i_built_a_tool_that_scores_how_aiwritten_your",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I built a tool that scores how Ai-written your site sounds. My own homepage got 6 out of 100.",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w8yama/i_built_a_tool_that_scores_how_aiwritten_your/",
+      "summary": "I've spent the last month building SiteTell . It crawls a site and scores the copy against a curated rule set of the patterns that make writing read as Ai-generated. Generic vocabulary, structural tells, the openers that show up on every generated landing page. When it was working well enough to test, I decided to run it on my own site. It scored 6 out of 100. I'll be honest, in the first instance I did use Claude and shipped it just get the first draft out there. I thought it was fine but the rule set disagreed.",
+      "deepenKey": "/r/microsaas/comments/1w8yama",
+      "via": null,
+      "publishedAt": "2026-09-06T14:53:53.000Z",
+      "ref": "I34",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "94a44bf6c0",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w8ttfb/solo_founders_how_do_you_manage_everything_when",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Solo founders: How do you manage everything when you’re building a startup alone?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w8ttfb/solo_founders_how_do_you_manage_everything_when/",
+      "summary": "solo founder problem nobody warns you about: its not the amount of work. its that every task needs a different brain. code, design, marketing, sales, support — all in the same day, all context-switching. and with no funding, outsourcing isnt on the table. its just me. how are other early founders handling this? genuinely asking When Build MyLinkPal. build the product was difficult at the earlier stage but later on I realized build the product is no the actual job, sales, marketing and customer feedback are the toughest to do. is it worth building this product in spite of all these efforts.",
+      "deepenKey": "/r/microsaas/comments/1w8ttfb",
+      "via": null,
+      "publishedAt": "2026-09-06T11:36:16.000Z",
+      "ref": "I35",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "solo founder problem nobody warns you about: its not the amount of work. its that every task needs a different brain. code, design, marketing, sales, support — all in the same day, all context-switching. and with no funding, outsourcing isnt on the table. its just me. how are other early founders handling this? genuinely asking When Build MyLinkPal. build the product was difficult at the earlier stage but later on I realized build the product is no the actual job, sales, marketing and customer feedback are the toughest to do. is it worth building this product in spite of all these efforts. Ofcourse there are many AI tools to ease our work but I dont have funds to buy those tool. So as solo founder asking other solo founder how did you achieve this? kindly share. If my tool will be useful for you. I will provide you free subscription.",
+        "comments": [
+          {
+            "text": "The context switching is the killer, not the hours. I block out days now instead of hours, monday is code, tuesday is marketing, wednesday is support and sales, thursday is whatever fell through the cracks. Its not perfect but my brain stops feeling like scrambled eggs by noon"
+          },
+          {
+            "text": "the context switching drain is so real. i used to try doing an hour of each and just ended up staring at a blank screen all afternoon. blocking out entire days is the only way my brain actually boots up for the right task."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T20:38:04.983Z"
+      }
+    },
+    {
+      "id": "3546c9271d",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w8sp1k/i_wrote_a_book_for_indie_hackers_but_they",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I wrote a book for indie hackers, but they terrible customers",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w8sp1k/i_wrote_a_book_for_indie_hackers_but_they/",
+      "summary": "Hi, it took me a while to learn this, but indie hackers are good friends, but terrible customers. I wrote a book about how two main things that people are failing if they try build products online: - validation process - marketing ideas It's not a course, it's more like a storytelling how I did it. How from empty list in stripe I changed it into 10 customers. Success story: I did 2 pre-order sales - yes two guys decided to buy this even I had only 10 pages written.",
+      "deepenKey": "/r/microsaas/comments/1w8sp1k",
+      "via": null,
+      "publishedAt": "2026-09-06T10:36:10.000Z",
+      "ref": "I36",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5727730ecb",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w8oyn8/do_you_have_a_cancellation_flow_for_your",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Do you have a cancellation flow for your subscription business?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w8oyn8/do_you_have_a_cancellation_flow_for_your/",
+      "summary": "If yes: What made you add one? Was it to: understand why customers were leaving offer a pause/downgrade/alternative try to save some cancellations improve the cancellation experience If not: Why not? Is it because you don't get enough cancellations, don't want to add friction, or just haven't seen enough value in having one? I'm building ChurnIntel and have been digging into cancellation flows recently, so I'm really curious how subscription businesses think about this. Would love to hear both sides: what made you add one, or what made you decide not to.",
+      "deepenKey": "/r/microsaas/comments/1w8oyn8",
+      "via": null,
+      "publishedAt": "2026-09-06T07:04:45.000Z",
+      "ref": "I37",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4b4ad77248",
+      "normUrl": "https://ideabrowser.com/emails/2026-09-06",
+      "sourceId": "ideabrowser",
+      "source": "IdeaBrowser",
+      "sourceHome": "https://www.ideabrowser.com/",
+      "side": "demand",
+      "title": "$18M/year newsetter about corn",
+      "url": "https://www.ideabrowser.com/emails/2026-09-06#opening",
+      "summary": "Good morning.\r\nThis is your reminder to stop overthinking things.\r\nIf you have a project you are trying to get users to, try using static images with music... it makes them reels and the view count goes up. :)\r\nNot sure if it's an algorithm thing or good ol' back to basics social strategy working but I bet we start seeing more static, raw content in the near future.\r\nEstimated reading time: 2 minutes 56 seconds",
+      "publishedAt": "2026-09-06T14:18:24.000Z",
+      "depth": "brief",
+      "alsoFrom": [
+        {
+          "source": "IdeaBrowser",
+          "url": "https://www.ideabrowser.com/emails/2026-09-06#idea"
+        },
+        {
+          "source": "IdeaBrowser",
+          "url": "https://www.ideabrowser.com/emails/2026-09-06#trend"
+        }
+      ],
+      "ref": "I38",
+      "pool": true,
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Good morning.\r\nThis is your reminder to stop overthinking things.\r\nIf you have a project you are trying to get users to, try using static images with music... it makes them reels and the view count goes up. :)\r\nNot sure if it's an algorithm thing or good ol' back to basics social strategy working but I bet we start seeing more static, raw content in the near future.\r\nEstimated reading time: 2 minutes 56 seconds",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Launch HN: Substack (YC W18): Paid email newsletters made simple",
+            "points": 124,
+            "url": "https://news.ycombinator.com/item?id=16326411"
+          },
+          {
+            "title": "Show HN: Shepherd 3.0 – Like wandering the aisles of your favorite bookstore",
+            "points": 102,
+            "url": "https://news.ycombinator.com/item?id=40084193"
+          }
+        ],
+        "fetchedAt": "2026-09-06T20:30:58.237Z"
+      }
+    },
+    {
+      "id": "9c1d7a0472",
+      "normUrl": "https://producthunt.com/products/speakeasydev",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Kit by Speakeasy",
+      "url": "https://www.producthunt.com/products/speakeasydev",
+      "summary": "Your coding agent runtime. Claude but fast, cheap, concise.",
+      "publishedAt": "2026-09-02T14:23:38.000Z",
+      "ref": "I39",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Your coding agent runtime. Claude but fast, cheap, concise.",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T20:30:58.268Z"
+      }
+    },
+    {
+      "id": "1c15f5b532",
+      "normUrl": "https://producthunt.com/products/google",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Agentic Video Understanding in Gemini",
+      "url": "https://www.producthunt.com/products/google",
+      "summary": "Agentic video analysis for faster, smarter Gemini insights",
+      "publishedAt": "2026-09-02T19:44:06.000Z",
+      "ref": "I40",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Agentic video analysis for faster, smarter Gemini insights",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Show HN: Chat with Orion – a visual agent that sees, reasons and acts",
+            "points": 22,
+            "url": "https://news.ycombinator.com/item?id=45919778"
+          }
+        ],
+        "fetchedAt": "2026-09-06T20:31:18.640Z"
+      }
+    },
+    {
+      "id": "b329dd0f22",
+      "normUrl": "https://producthunt.com/products/docsalot-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "DocsAlot Visual Editor",
+      "url": "https://www.producthunt.com/products/docsalot-2",
+      "summary": "Create beautiful docs, by typing. No AI required.",
+      "publishedAt": "2026-09-04T21:26:52.000Z",
+      "ref": "I41",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Create beautiful docs, by typing. No AI required.",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T20:31:38.487Z"
+      }
+    },
+    {
+      "id": "402e46d2a3",
+      "normUrl": "https://producthunt.com/products/tadata",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Tadata",
+      "url": "https://www.producthunt.com/products/tadata",
+      "summary": "The AI employee in Slack that reads the room.",
+      "publishedAt": "2025-12-16T20:05:20.000Z",
+      "ref": "I42",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The AI employee in Slack that reads the room.",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T20:31:58.295Z"
+      }
+    },
+    {
+      "id": "0eaa0728d4",
+      "normUrl": "https://producthunt.com/products/notify-domains",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Notify.domains",
+      "url": "https://www.producthunt.com/products/notify-domains",
+      "summary": "Know the moment a domain opportunity appears",
+      "publishedAt": "2026-08-28T23:28:49.000Z",
+      "ref": "I43",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Know the moment a domain opportunity appears",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "OnlyFans snipe domain from Notify, a small startup",
+            "points": 31,
+            "url": "https://news.ycombinator.com/item?id=26444138"
+          },
+          {
+            "title": "Ask HN: Email saying my Amazon Route53 domains will be transferred?",
+            "points": 16,
+            "url": "https://news.ycombinator.com/item?id=29641746"
+          }
+        ],
+        "fetchedAt": "2026-09-06T20:32:18.526Z"
+      }
+    },
+    {
+      "id": "e3ad9d1539",
+      "normUrl": "https://producthunt.com/products/fal-ai",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "H3 Max by fal",
+      "url": "https://www.producthunt.com/products/fal-ai",
+      "summary": "fal's post-trained MiniMax H3 for quality video production",
+      "publishedAt": "2026-09-02T19:54:33.000Z",
+      "ref": "I44",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "fal's post-trained MiniMax H3 for quality video production",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T20:32:38.326Z"
+      }
+    },
+    {
+      "id": "45455b8560",
+      "normUrl": "https://producthunt.com/products/chatgpt-toolbox",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "AI Toolbox 3.0",
+      "url": "https://www.producthunt.com/products/chatgpt-toolbox",
+      "summary": "Search, organize and export every AI chat in one place",
+      "publishedAt": "2026-07-25T13:16:23.000Z",
+      "ref": "I45",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Search, organize and export every AI chat in one place",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T20:32:58.350Z"
+      }
+    },
+    {
+      "id": "3c27eb8de7",
+      "normUrl": "https://news.ycombinator.com/item?id=49586902",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Kadō – open-source habit tracker, with non-binary habit score, for iOS",
+      "url": "https://news.ycombinator.com/item?id=49586902",
+      "externalUrl": "https://github.com/scastiel/kado",
+      "summary": null,
+      "deepenKey": "49586902",
+      "via": null,
+      "signal": {
+        "points": 56,
+        "comments": 29
+      },
+      "publishedAt": "2026-09-06T14:34:46Z",
+      "ref": "I46",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "f15a745787",
+      "normUrl": "https://news.ycombinator.com/item?id=49584880",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Keen Bean – Mac meeting notes that draft the spec while you talk",
+      "url": "https://news.ycombinator.com/item?id=49584880",
+      "externalUrl": "https://keenbean.app/",
+      "summary": null,
+      "deepenKey": "49584880",
+      "via": null,
+      "signal": {
+        "points": 11,
+        "comments": 5
+      },
+      "publishedAt": "2026-09-06T09:53:12Z",
+      "ref": "I47",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    }
+  ],
+  "deepenedAt": "2026-09-06T20:38:04.984Z"
+}

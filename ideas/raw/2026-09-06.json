@@ -1,20 +1,20 @@
 {
   "issue": "2026-09-06",
-  "builtAt": "2026-09-05T21:39:01.913Z",
+  "builtAt": "2026-09-06T02:49:09.489Z",
   "from": {
     "boards": "prefetched",
     "inbox": "prefetched"
   },
   "counts": {
-    "fetched": 163,
-    "added": 63,
-    "kept": 63,
-    "dropped": 100,
-    "pool": 63,
-    "screened": 51,
-    "candidates": 2,
-    "demandCandidates": 0,
-    "supplyCandidates": 2
+    "fetched": 173,
+    "added": 19,
+    "kept": 82,
+    "dropped": 154,
+    "pool": 82,
+    "screened": 66,
+    "candidates": 19,
+    "demandCandidates": 15,
+    "supplyCandidates": 4
   },
   "errors": [],
   "sources": [
@@ -22,7 +22,7 @@
       "id": "somebodymakethis",
       "name": "r/SomebodyMakeThis",
       "status": "ok",
-      "items": 21,
+      "items": 24,
       "pool": true,
       "group": "board"
     },
@@ -30,7 +30,7 @@
       "id": "reddit-search",
       "name": "Reddit 需求短语",
       "status": "partial",
-      "items": 9,
+      "items": 10,
       "pool": true,
       "error": "is there a tool that（HTTP 429）；we still use spreadsheets（HTTP 429）",
       "group": "board"
@@ -63,7 +63,7 @@
       "id": "reddit-paying",
       "name": "Reddit 付费信号",
       "status": "partial",
-      "items": 10,
+      "items": 14,
       "pool": true,
       "error": "we are paying for（HTTP 429）；per seat per month（HTTP 429）",
       "group": "board"
@@ -72,7 +72,7 @@
       "id": "msp",
       "name": "r/msp",
       "status": "ok",
-      "items": 14,
+      "items": 15,
       "pool": true,
       "group": "board"
     },
@@ -80,7 +80,7 @@
       "id": "sysadmin",
       "name": "r/sysadmin",
       "status": "ok",
-      "items": 4,
+      "items": 3,
       "pool": true,
       "group": "board"
     },
@@ -120,7 +120,7 @@
       "id": "showhn",
       "name": "Show HN",
       "status": "ok",
-      "items": 4,
+      "items": 6,
       "pool": true,
       "group": "board"
     },
@@ -168,8 +168,40 @@
         },
         "reason": null
       },
-      "candidate": false,
-      "deepError": "HTTP 403：Blocked by egress policy"
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Hi all! I’m taking a crowdfunding class, and we were asked to come up with a few ideas that we could eventually bring to market. I narrowed it down to two of my ideas below. I had one other idea, but it’s much more niche and would require a larger audience, so I decided to leave it out for this purpose. Here are the two ideas: Idea 1 - Butterfly Bracelet The Butterfly Bracelet is a small, comfortable bracelet featuring a flower-shaped nectar spot with a small sponge in the center that holds the sugar water. Sugar water is provided separately in a dropper, which can be used to add nectar to the sponge when needed. The bracelet is designed to attract butterflies when worn in areas where butterflies are already present. With some patience and by staying still, there is a chance that a butterfly may even land on the bracelet and drink from the nectar. Idea 2- Living Scene Clock The Living Scene Clock is a functional desk clock that doubles as a changing piece of artwork. As time passes throughout the day, the background scene gradually changes, revealing different environments through an open pie-shaped panel. With several backgrounds to choose from, each clock can bring a different scene and story to life while also serving as a unique piece of décor. --------------------- Questions: Which would you be more likely to back? Why or why not? Which do you think is more likely to succeed as a crowdfunding campaign, and why? What would make you more likely to back either project? Do you have any suggestions for improving either idea? Comment down below with your answers! Thank you all!!",
+        "comments": [
+          {
+            "text": "What do you want someone to make?"
+          },
+          {
+            "text": "Like what do I want to see come to life? Ideally both lol. But I can only choose one, and that one has to have the most potential. So what do you think and would go for?"
+          },
+          {
+            "text": "This is a subreddit for you to post things you want other people to make, not to ask people what you should make"
+          },
+          {
+            "text": "oh huh, maybe I've read it wrong. Any suggestions on where else I can post? I've done a few posts on other subreddits that fits to asking others about the ideas, but not a lot."
+          },
+          {
+            "text": "Good luck with the bees, wasps and hornets."
+          },
+          {
+            "text": "I’d probably go with the Living Scene Clock. It has broader appeal since it’s both functional and decorative, and the changing scenes make it easy to demonstrate. I think different scene options or some customization would make it even more interesting. The Butterfly Bracelet is unique too, but I’d want to see how well it actually works and whether it’s easy to clean and refill."
+          },
+          {
+            "text": "There’s a few concerns I have with the clock like it’s over saturated so it’s hard to stand out and I heard this concept has been used before especially for kids and toddlers. I couldn’t find any existing products that has the same concept though probably cause there is so many clocks out there, however someone linked me a watch on kickstarter that has the same mechanic and then my idea seems more simplier then their the watch. I have an idea to have the artwork be 3d like to pop out more instead of 2d. The butterfly bracelet is more niche and might not be a big enough audience."
+          },
+          {
+            "text": "I would consider buying the bracelet if it was marketed towards rescuing bees. There’s a niche there of bee enthusiasts who carry sugar packet and you can market it as an eco beneficial product"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T02:57:29.623Z"
+      }
     },
     {
       "id": "b14b1baa17",
@@ -197,8 +229,46 @@
         },
         "reason": null
       },
-      "candidate": false,
-      "deepError": "HTTP 403：Blocked by egress policy"
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Its an alternative way to shop in a supermarket where items in store can be barcode scanned on your mobile phone instead of at the checkout. You could pay on your phone instead of the checkout and either have the items delivered or take them straight home. It means less waiting around and you could also keep track of the cost on your supermarket phone app. Products can still be viewed physically. It is an alternative but paying at the checkout or self service checkouts could still remain as an option. There would need to be some way to check items are not being stolen, maybe a digital way or by a quick check by an assistant. Some way of scanning. I think it could be cost effective to produce a special app for this kind of shopping partly because it could attract more customers. Most people in the west have smartphones so if it was done effectively there might be enough users to make it doable and cost effective.",
+        "comments": [
+          {
+            "text": "Use this all the time. Still have to scan at checkout, but it’s usually super smooth."
+          },
+          {
+            "text": "Wait? That doesn't sound correct. I think you're thinking of self-checkout. The scan and go app lets you scan items as you shop and then pay in the app and walk out. It is exclusive to Walmart+ customers"
+          },
+          {
+            "text": "You do... register == checkout to me . There’s a big shopping cart on the sign at our stores with Scan N Go under it."
+          },
+          {
+            "text": "From your perspective as a shopper, the Walmart Scan & Go app lets you skip the checkout line by scanning items with your phone as you shop and paying directly in the app. Here is the typical user journey: · 🛒 Scan as You Shop: Open the Walmart app and use the scanner to scan barcodes of items you put in your cart. You can also check prices and reviews with it. · 📱 Pay in the App: When done, complete payment right in the app using a saved card or Walmart Cash. · 🚶‍♂️ Exit: Show the digital receipt on your phone to the greeter at the door, and you're all set. This feature is exclusive to Walmart+ members."
+          },
+          {
+            "text": "In reality... you walk the store, scanning items (yes, true). When you’re done, you have to go to a line of scanners (like regular self checkout) and scan a code from the app (not the items, the code on the phone). That completes the checkout process and payment. The receipt is digital. Like this, but I’ve never had a greeter scan my code, I have to do it at a regular terminal. There are dedicated lanes though. https://www.youtube.com/watch?v=NHzfhDDRgME"
+          },
+          {
+            "text": "That's not how it works no matter how many times you say it. The app gives you a QR code to scan at checkout. There is no way to just pay in that app and leave without going to a regular register or self checkout"
+          },
+          {
+            "text": "It’s smooth until you’re waiting for someone with a cart full of groceries to slowly bag them all."
+          },
+          {
+            "text": "Hah. I bet. My store has separate lanes for Scan N Go."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Ask HN: Would you use an NFC PaaS (easy solution for real world analytics)?",
+            "points": 21,
+            "url": "https://news.ycombinator.com/item?id=2541266"
+          }
+        ],
+        "fetchedAt": "2026-09-06T02:58:10.187Z"
+      }
     },
     {
       "id": "bc771ceb95",
@@ -341,7 +411,7 @@
         "reason": null
       },
       "candidate": false,
-      "deepError": "HTTP 403：Blocked by egress policy"
+      "deepError": "HTTP 429"
     },
     {
       "id": "a25a8be3be",
@@ -515,8 +585,40 @@
         },
         "reason": null
       },
-      "candidate": false,
-      "deepError": "HTTP 403：Blocked by egress policy"
+      "candidate": true,
+      "deepError": "HTTP 403：Blocked by egress policy",
+      "deep": {
+        "body": "[removed]",
+        "comments": [
+          {
+            "text": "Only reason i can think of is different movesets!!"
+          },
+          {
+            "text": "Unsure if its considered optimal but I have two, one with ice beam/thunderbolt and another w psi strike/shadow ball"
+          },
+          {
+            "text": "No. There's no reason to build multiple mewtwo tbh unless you're someone who tries solos"
+          },
+          {
+            "text": "I had one maxed hundo Mega Y before they gave us the bonus hundo, so I’m building a second. Only use case I can think of is if one is on a cool down timer I can use the other?"
+          },
+          {
+            "text": "I was in the same position and grabbed the Counter option. Better to have Counter imho. I will Mega X&Y on both though."
+          },
+          {
+            "text": "So did you get counter for the freebie hundo on Saturday?"
+          },
+          {
+            "text": "I’d save candies for Shadow Mewtwo"
+          },
+          {
+            "text": "And much more for dynamax mewtwo. Strongest psychic Type"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T02:50:10.161Z"
+      }
     },
     {
       "id": "8ef31669a9",
@@ -552,8 +654,15 @@
         },
         "reason": null
       },
-      "candidate": false,
-      "deepError": "HTTP 403：Blocked by egress policy"
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Before launch, I want to get a head start finding the people this was really built for. I spent the last few months reading venture capital blogs, founder requests, investment theses, and “someone should build this” posts. Then I went and built them. I took 30 of the businesses and software ideas that kept showing up and turned them into enterprise-grade software that is ready to sell and deploy. Now I’m looking for the other half of the equation: distribution. Salespeople, influencers, consultants, agency owners, industry veterans, or anyone who has spent years inside a specific industry and already knows the people who need better software. The model behind software.supply is simple: You sell the software. I build it, deploy it, host it, maintain it, update it, and run the infrastructure behind it. For every subscriber you bring in, you keep 50% of the revenue for as long as that customer stays subscribed. Not a one-time commission. Half. Recurring. And this is not just for professional software salespeople. If you know a construction company still running jobs out of spreadsheets, a mechanic writing everything down by hand, a property manager tracking tenants in Excel, a small business owner still doing their books in Excel, or somebody in your industry constantly saying “there has to be a better way to do this,” this is for you. You already know where the outdated systems are because you’ve probably dealt with them yourself. That knowledge is valuable. You don’t need to code. You don’t need to build a product. You don’t need developers. You don’t need to worry about servers, deployments, updates, or infrastructure. You bring the customer. I handle the software. You keep half. The bigger idea I’m testing is whether software distribution can work more like real estate, insurance, or independent sales. Instead of every person having to become a startup founder, people who already understand an industry can sell software into that industry and build recurring income from relationships and knowledge they already have. I built the supply. Now I’m looking for people who know where the demand is.",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T02:56:00.778Z"
+      }
     },
     {
       "id": "794cd66029",
@@ -588,8 +697,20 @@
         },
         "reason": null
       },
-      "candidate": false,
-      "deepError": "HTTP 403：Blocked by egress policy"
+      "candidate": true,
+      "deepError": "HTTP 403：Blocked by egress policy",
+      "deep": {
+        "body": "These days organisations have alot of different communication channels at there disposal. I counted up, our student computer club has a: Multiple mailing lists Facebook Group Website Wiki Twitter IRC (eiter setting channel topic, or posting) Facebook Page a forum (phpBB) LinkedIn A Steam group Likely soon a Google+ a published iCal (currently broken) A physical notice board where a poster could be hung up. Now these all have different purposes, for example: a announcement that a server is going down for maintenance, would go to out Twitter, one of the mailing list, and potentially a post might be made on the facebook group. A event being run should go to a different mailing list, a facebook group event should be created, and the ical updated. Minutes from meeting should be sent to a third mailing list, and put on the website, and posted as a Facebook Note. I would like to reduce the manual handling in all this. A while ago I threw together (but never deployed) a command line tool for cross posting events to facebook/email. I am envisioning a more complete tool. Something highly plugin-able (Preferably in python), that takes a template for each communication type, and for each entry type. Checkboxes that would grey out, if there are not templates for that type. (IF GUI) Fields defined by entry type (different field for an event vs a minutes) I wouldn't expect it to support all of the above, they are in priority order. In particular I would be expecting website editting to be basically calling a user defined script. Feature List You may treat all the features I have described above as optional (but highly desirable). Must: create facebook events within a group and invite all group members Must: Send emails, based on a template Must: Work on Linux, though it could be a webapp (though I would prefer not as this makes commandline automation/script integration harder). Should: be able to facebook group doc. Should: be plugable, to allow plugins/script to allow for extra formats to be added.",
+        "comments": [
+          {
+            "text": "What you basically need is an Intranet CMS (Content Management System). The main functions of ICMS are: Document management Task management Employee directories Calendars Forums News feeds Advanced features: Native video AI-driven personalized feeds Automatic author reminders for aging content Passive listening to surface employee sentiment in real time Clear onboarding paths Personalized dashboards with news and to-do lists Integrations with multiple platforms for communication, data management, project management, human resources management, and more In the advanced features there is what you are seeking: posting content across different platforms and feeds, managing and automating of those postings. You may also need more specifically headless CMS, meaning it lacks own UI and the content is managed by API, posting it into different platforms.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T02:51:10.778Z"
+      }
     },
     {
       "id": "caeb0b91f7",
@@ -657,8 +778,20 @@
         },
         "reason": null
       },
-      "candidate": false,
-      "deepError": "HTTP 403：Blocked by egress policy"
+      "candidate": true,
+      "deepError": "HTTP 403：Blocked by egress policy",
+      "deep": {
+        "body": "I am trying to get my chemical notes digitized (into formats like the ones we see in textbooks). I have tried Mathpix and it works like a charm but I do not have the money to pay for it. Does anyone know of any other OCR tools for chemical reactions? Now I have tried the general OCR tools like Tesseract which is barely able to process the diagrams and provide accurate results. I've tried various forms of preprocessing via OpenCV, including threshes, blurs, kernels etc. However, there is no improvement, with Tesseract picking up 1-2 characters and often returning nothing at all. You can assume that the handwriting is fairly proper and upload quality of image is good. Any advice on this is highly appreciated even if it just points me in a general direction.",
+        "comments": [
+          {
+            "text": "I would suggest that a good starting point to train your own model for your subject area, (Chemical Reactions rather than Maths Equations) and handwriting would be pix2tex - LaTeX OCR - you will need to train the software as mentioned and this will probably take several days in total, (creating the training data and then running the training).",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T02:50:58.378Z"
+      }
     },
     {
       "id": "55a387c85d",
@@ -724,8 +857,30 @@
         },
         "reason": null
       },
-      "candidate": false,
-      "deepError": "HTTP 403：Blocked by egress policy"
+      "candidate": true,
+      "deepError": "HTTP 403：Blocked by egress policy",
+      "deep": {
+        "body": "I've searched a lot to for a tool to convert .qmg files to .png , I haven't found a good source. What is qmg file ? QMG files are included as part of a Samsung mobile phone theme. Samsung themes are created using the Samsung Theme Designer application. When a designer exports a theme, QMG files are compiled and packaged into an SMT file along with an XML file that specifies where the QMG files are displayed in the theme What is png file ? Portable Network Graphics (PNG ), is a raster graphics file format that supports lossless data compression. PNG was created as an improved, non-patented replacement for Graphics Interchange Format (GIF), and is the most used lossless image compression format on the Internet.",
+        "comments": [
+          {
+            "text": "There is an app called Qmg2Png which can convert \".qmg\" files to PNGs. The limitation ( probably )is that it depends on the android device to implement low level conversion. That is to say, your ( presumably Samsung's )phone must include native libraries that implement the loading of QMG image into android bitmap object. As the format is proprietary, it's editing program doesn't seem to be available. With this app, conversion to PNG is possible, but reverse of that seems very difficult. The XDA thread for app",
+            "score": 0
+          },
+          {
+            "text": "In 2025, there is this one for Windows. Contenta Converter There is a free version and a paid up version Screenshot from website It handles over 50 formats It allows conversion in batches.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Show HN: A Ghidra extension for exporting parts of a program as object files",
+            "points": 304,
+            "url": "https://news.ycombinator.com/item?id=41318133"
+          }
+        ],
+        "fetchedAt": "2026-09-06T02:51:11.081Z"
+      }
     },
     {
       "id": "db0b1f9998",
@@ -758,8 +913,31 @@
         },
         "reason": null
       },
-      "candidate": false,
-      "deepError": "HTTP 403：Blocked by egress policy"
+      "candidate": true,
+      "deepError": "HTTP 403：Blocked by egress policy",
+      "deep": {
+        "body": "I am looking for an asset management system which: I could run on our PHP/MySQL server. Could store files in a tree directory structure. Could either preview 3D file formats or would allow to add a custom thumbnail to a file. It would be great if the system: Would allow to add multiple asset versions. Would support multiple users.",
+        "comments": [
+          {
+            "text": "There are some free (limited) software for create 3d asset model and web interaction platform: blender , unity . Cesium is a platform for 3d asset presentation. GLTF format models can be incorporated to the platform.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Shelf – open-source asset management software",
+            "points": 320,
+            "url": "https://news.ycombinator.com/item?id=36666702"
+          },
+          {
+            "title": "Show HN: Marmotte – Open-Source IT Asset Management Made Simple",
+            "points": 15,
+            "url": "https://news.ycombinator.com/item?id=38053888"
+          }
+        ],
+        "fetchedAt": "2026-09-06T02:51:11.831Z"
+      }
     },
     {
       "id": "67e2fe426b",
@@ -926,8 +1104,31 @@
         },
         "reason": null
       },
-      "candidate": false,
-      "deepError": "HTTP 403：Blocked by egress policy"
+      "candidate": true,
+      "deepError": "HTTP 403：Blocked by egress policy",
+      "deep": {
+        "body": "I have an Android tablet with a keyboard and a mouse attached to it, and I want to use the tablet as a thin client for my Linux workstation. Previously, I've used a netbook with X2Go for this purpose and had zero problems with it. The image quality was perfect and the latency was imperceptible. Unfortunately, X2Go client is not available on Android, so I've tried other software. Solutions I've evaluated are: RealVNC Home Edition NoMachine NX 6 TeamViewer AnyDesk XRDP RDP with Windows 10 virtual machine as a server Most of them had a quite noticeable lag. The only solution which felt seamless is RDP with Win10 VM. However, my workflow requires the Linux tooling, so this setup doesn't fits my needs. RealVNC was also good, but it required a huge amount of bandwidth (60 Mbits/sec). In case such bandwidth is not available, it became as laggy as other software. I am looking for a software solution which provides a remote desktop access with the least possible visible delay. Network round-trip latency is 10 ms and the throughput is 30-80 Mbits/sec. The network setup allows to make a direct connection to the workstation (my organization provides the VPN access). My tablet is not very powerful (MT6735, 4xCortex-A53 @ 1.0 GHz) and this may be a limiting factor. Workstation's OS is Kubuntu 18.04. The software I'm going to control is IDE (IntelliJ IDEA) and sometimes a browser. No video or other multimedia content is expected, just text and pictures. I can try again software I've mentioned with different settings if necessary.",
+        "comments": [
+          {
+            "text": "Perhaps try this app for Android called UserLAnd ( https://userland.tech/ ) - it's open source and free, and it provides your Android phone with a Linux distro. More information on the website I linked to above. Try installing that on your Android device, and then from there you could install X2Go.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Show HN: PikaTorrent, a modern, multi-platform, open source BitTorrent app",
+            "points": 65,
+            "url": "https://news.ycombinator.com/item?id=36738295"
+          },
+          {
+            "title": "Ask HN: Why is there no performant remote desktop for Mac/Linux?",
+            "points": 198,
+            "url": "https://news.ycombinator.com/item?id=32526108"
+          }
+        ],
+        "fetchedAt": "2026-09-06T02:51:11.451Z"
+      }
     },
     {
       "id": "4ba6111691",
@@ -1346,8 +1547,34 @@
         },
         "reason": null
       },
-      "candidate": false,
-      "deepError": "HTTP 403：Blocked by egress policy"
+      "candidate": true,
+      "deepError": "HTTP 403：Blocked by egress policy",
+      "deep": {
+        "body": "Hello guys! !!! Long Post Alert !!! I got this Bayern Munich 125th Anniversary kit from a random store in Maidan Market (Esplanade, West Bengal) today, along with two other Player Version jerseys — Real Madrid Away and Arsenal Away 26/27 . Those two are currently with my friends, so I can’t show them here yet. Bayern Munich 125th Anniversary Kit I got this for just ₹400 including the shorts , which honestly surprised me. I wasn't expecting the price to be this low, and for ₹400, the quality is actually pretty good. The jersey fabric is decent — lightweight and comfortable, although obviously not as good as proper Fan Versions or Master Versions. The detailing is pretty good too, and the logos look surprisingly decent. One thing I noticed is that the shorts have some red colour on them . I'm not sure if it's supposed to be like that or if the colour leaked from the jersey, but either way, it's a minor issue. Overall, for ₹400, this is a really good deal. Rating: 4/5 ⭐ Real Madrid Away 26/27 This is probably one of the most trending kits right now, and we got it from the same shop as the Bayern one . It cost us ₹800 , which I think is a very good price for the quality. The details are nice, the RMCF text looks proper and subtle , and the fabric is lightweight and breathable, pretty similar to what you'd get from some online sellers. We basically got it for around ₹100 cheaper , so that's a win. Arsenal Away 26/27 We got this one from Sabha Garments , which is a pretty famous shop in the market. You'll probably find quite a few videos of the shop on YouTube. This cost us ₹750 , and honestly, the quality is pretty nice. The colours, detailing and fitting were all on point. From my experience, the shop is mainly worth visiting for Player Version jerseys . They do have some set jerseys as well, but the quality of those can be around 3/5 . But here's the important part: Maidan Market is a bit \"Overhyped\" I know a lot of people recommend Maidan Market for jerseys, and yes, you can definitely find some really good stuff there.",
+        "comments": [
+          {
+            "text": "https://preview.redd.it/kc6t8ajvsqnh1.jpeg?width=600&format=pjpg&auto=webp&s=674d749b8f730ff28a1849f62b3f8f8e7548460c This is the jersey you will find the 90% of the shops its the wrong pattern"
+          },
+          {
+            "text": "This is the original Pattern which many online sellers are currently providing https://preview.redd.it/8z1yfgj2tqnh1.jpeg?width=2000&format=pjpg&auto=webp&s=ad886f6152a0013463969b4ec5a539550e2b7e9b"
+          },
+          {
+            "text": "Don't hate me guys on my claims \"Its based on completely based on my personal experiences and I wanted to help you all\""
+          },
+          {
+            "text": "No man you are absolutely right . My friend got scammed in maidan market in real madrid away jersey"
+          },
+          {
+            "text": "Ik bro, but lots of people have sentiments attached with Maidan Market and I have a bit of that too, but I will say what's right, today we had to check the entire market to get the best Real Madrid away kit and I'm really happy with it, try to visit as many shops you can and you will surely get a good deal"
+          },
+          {
+            "text": "Yes bro true sometimes i feel like just to pay 100-150 extra online rather than going there and finding ."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T02:52:10.233Z"
+      }
     },
     {
       "id": "ac40acdb1d",
@@ -1376,7 +1603,7 @@
         "reason": null
       },
       "candidate": false,
-      "deepError": "HTTP 403：Blocked by egress policy"
+      "deepError": "HTTP 429"
     },
     {
       "id": "dca21859df",
@@ -1407,7 +1634,7 @@
         "reason": null
       },
       "candidate": false,
-      "deepError": "HTTP 403：Blocked by egress policy"
+      "deepError": "HTTP 429"
     },
     {
       "id": "ac30e061da",
@@ -1437,8 +1664,56 @@
         },
         "reason": null
       },
-      "candidate": false,
-      "deepError": "HTTP 403：Blocked by egress policy"
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Hoping to get some advice here as we’re in the process of building a custom home. We’re still in the design phase and the builder we are working with sent over a contract with a management included for the whole build, but hasn’t priced out the job. Is this a common practice and has anyone had experience with this model? Also wondering if there is any room for negotiation with it? I do understand he’s making his money, but what he quoted us was around 28% of the top end of the ballpark build price. It does seem odd to include this fee before seeing the overall build cost.",
+        "comments": [
+          {
+            "text": "I'd be more concerned that the build still isn't priced. Ask for a written breakdown of what the fixed fee covers what gets reimbursed and how change orders affect it. Hard to judge 28% off a ballpark alone."
+          },
+          {
+            "text": "Fixed management fees aren’t unusual on custom builds, but it’s really hard to say whether 28% is reasonable until you get a full pricing breakdown for the build. I’d want to know exactly what that fee covers versus what gets billed separately. PM, supervision, scheduling, procurement, insurance, site costs, cleanup, etc.... can all get structured differently. I’ve seen percentage fees, fixed fees, and cost-plus arrangements all work. I just wouldn't want to be locking in a fee based on the high end of a ballpark budget before the actual scope has been priced."
+          },
+          {
+            "text": "28% is a lot, but since his fee is fixed that %%% will shrink as your job grows / changes. If he builds it for the price he’s quoting, that is a very large sum. He may be thinking that you guys are going to change your minds a lot during the process and is covering his bases, or he may just charge a premium for his work. It’s hard to say from 10,000 feet up."
+          },
+          {
+            "text": "My standard for custom is 20% of the projected build cost, paid monthly with a balance at the end. Clients get a requisition to reimburse me every 2 weeks and I get a 100k working capital fund and the first months fee at signing if content. Total open book accounting, no markup on any material or subs. These are for 1.5-3m build costs, owners own the land. I never have more than 3 projects at a time, so I'm on site every day."
+          },
+          {
+            "text": "What exactly is the 28% management fee? Is that the entire markup? Depending on how your contract is structured, you may not get a cost breakdown. But if you did, some of the items you'd see (at least for us on a cost plus contract) are builder labor framing, builder labor trim, and builder labor other. The PM fee is part of \"other\". Other guys may charge a flat % markup, flat amount labor, and flat amount PM. Other guys may not put PM on there at all, but have a higher % markup (the PM cost is just part of their overhead). None of these are wrong, and at the end of the day you need to look at the bottom line/total cost. If you get 3 bids, and everyone is say 700k and all specs are comparable, it doesn't really matter how they break it down. Costs you 700k any way you look at it."
+          },
+          {
+            "text": "If you aren't also using a dedicated design team it's might be covering some of that as well as typical profit and overhead. Best way to handle it is to ask them to explain how they come up with their numbers. It's probably not negotiable unless you decide to reduce scope then less is less."
+          },
+          {
+            "text": "Does this include the plans or are you working with a separate design/architectural firm? Is that a set fee that you concluded is 28% of the ballpark? Is it included in the ball park or on top? Seems to me you do need a lot more info. Our builder produced a spreadsheet with estimates of all supplies and subcontractor fees plus a 10% fee on top and a monthly supervision fee. We figure he cleared 15-20% overall. Our architectural/engineering fees and permits were separate. How about the cost of the property?"
+          },
+          {
+            "text": "We are working with an architect firm, he did help set that up. That percentage was at the top end of the ballpark he gave us. We own the property outright."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Ask HN: How to deal with incompetent, obstructing CTO?",
+            "points": 10,
+            "url": "https://news.ycombinator.com/item?id=38366329"
+          },
+          {
+            "title": "Show HN: Factorio Learning Environment – Agents Build Factories",
+            "points": 749,
+            "url": "https://news.ycombinator.com/item?id=43331582"
+          },
+          {
+            "title": "Show HN: Frigade - React SDK for building quality onboarding & activation flows",
+            "points": 60,
+            "url": "https://news.ycombinator.com/item?id=39706035"
+          }
+        ],
+        "fetchedAt": "2026-09-06T02:54:39.820Z"
+      }
     },
     {
       "id": "b6492498bc",
@@ -1494,8 +1769,40 @@
         },
         "reason": null
       },
-      "candidate": false,
-      "deepError": "HTTP 403：Blocked by egress policy"
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Trusted Partner, Two security vulnerabilities within N-central were responsibly disclosed by a third party through our security disclosure program. We have issued a hotfix that you should apply immediately to help ensure your environments are protected. At this time, we have no confirmations that these vulnerabilities have been exploited in production environments, but unpatched systems remain at risk. This hotfix includes security fixes for CVE-2026-86206 and CVE-2026-86207 which are high-CVSS-rated vulnerabilities that could allow an unauthorized party to bypass authentication controls and gain full access to the N-central platform. What You Need to Do N-central On-Premises Environments: We recommend upgrading to 2026.3 HF3 immediately. Hotfix link: 2026.3 HF3 Release Notes N-central Hosted Environments: No action is needed on your part; your instances have already been patched and will be upgraded at a later time. \\ Please note that this is a server-side hotfix and upgrading to 2026.3 HF3 will not require agent upgrades.* Upgrade Guidance: How To: Upgrade N-able N-central Investigation Guidance: As a precaution, we recommend auditing your N-central user accounts to ensure that there are no unexpected users. If you have any concerns, please reach out to support. https://me.n-able.com/ -Jason Murphy | Head Nerd for N-able",
+        "comments": [
+          {
+            "text": "Adding in from our SOC: We've been investigating this new exploit chain directly, tied to two newly designated CVEs (CVE-2026-86206 and CVE-2026-86207) that are separate from August's flaws. Our investigation started on 9/4 after a customer's fully patched N-central environment was compromised, and in analyzing that intrusion we built and validated a working PoC against 2026.3.1.10. That work is what helped accelerate today's hotfix (2026.3.1.13). Even after patching, go audit your N-central user accounts for anything with \".invalid\" or similar oddities appended to otherwise legit email addresses. That's the clearest artifact we've found tied to unauthorized account creation. We also recommend reviewing N-central's Envoy_Proxy_HTTPS.log for anomalous successful requests to internal API routes."
+          },
+          {
+            "text": "Wait: You guys state: Our investigation started on 9/4 after a customer's fully patched N-central environment was compromised Yet n-able stated: At this time, we have no confirmations that these vulnerabilities have been exploited in production environments, /u/ncentral_nerd - which is it? Has it been seen in the wild or not?"
+          },
+          {
+            "text": "Immediately noticed that too. Interested in the answer to this."
+          },
+          {
+            "text": "This is getting old. 3rd hotfix in a row that will not install. Initiate support via chat and always overflows to another product group! Absolute trash."
+          },
+          {
+            "text": "If management portal isn't exposed to general Internet, are we still at risk?"
+          },
+          {
+            "text": "I have reached out to our engineering team to confirm. I will update you as soon as I know."
+          },
+          {
+            "text": "Engineering has said that UI Separation would be a \"partial mitigation\""
+          },
+          {
+            "text": "and what does engineering say about the vulnerabilities earlier in the month about removing the ui port from the internet. because in conference calls it was acknowledged that this would remove the exposure. but this wasn't shared with customers in public statements. and we suspect this is because hosted customers don't have this capability. so you open yourself to litigation. what does partial mitigation mean? yes or no? standby for locked thread...."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T02:59:39.076Z"
+      }
     },
     {
       "id": "550bfc5388",
@@ -1523,8 +1830,40 @@
         },
         "reason": null
       },
-      "candidate": false,
-      "deepError": "HTTP 403：Blocked by egress policy"
+      "candidate": true,
+      "deepError": "HTTP 403：Blocked by egress policy",
+      "deep": {
+        "body": "So, we've moved everyone to PassKey only. The issue is that there is a HUGE security gap with PassKeys. A rogue actor, phishing, or human persuasion can get someone to register an extra 1, 5, 10, 20, 40 PassKeys, or whatever the limit may be through a rogue browser extension using WebAuthn. And then they can take that PassKey and login to the system. 365, Google Workspace, and other websites drop their entire guard down when a PassKey is used to log in. But what I've noticed was that once a user is onboarded with their PassKeys, there is rarely a need for them to be able to register any extra PassKeys. We would rather have that be a support ticket. So to get to the point, we want to BLOCK the ability to create more PassKeys in 365 and Google Workspace. And then use a temporary access code when the user truly needs a new PassKey. I think this would be so nice, and a huge bump up in security. But neither Google nor 365 have the option to BLOCK the additional creation of PassKeys at the moment. Have any of you run into this issue and solved it, and if not, how do we reach out to Microsoft and Google to put in a request? Thanks!",
+        "comments": [
+          {
+            "text": "Build a CA that says registering Security Information needs a specific Authentication Strength. Set that authentication strength to only be a TAP. Done. Also: \"a rogue browser extension\" -> control the browser extensions. Intune settings catalog has policies for Edge & Chrome out of the box."
+          },
+          {
+            "text": "That's actually a clever workaround with the TAP-gated CA. I'm pocketing that one. What's weird to me is that neither platform has a native toggle for this yet. It's such an obvious control to want after the initial rollout, you'd think it would be a checkbox in the FIDO2 settings by now. I'd probably just open a ticket with MS support and explicitly ask them to log it as a Design Change Request, PGs sometimes move on those if enough noise piles up."
+          },
+          {
+            "text": "I mean, 365 does have it native, it's a conditional access policy, and is the exact thing I do as well. No one can register security info without a tap. Yes it's not a toggle where you turn on one button and it works exactly how you want. But neither is a lot of things conditional access policies are used for. It is super easy to setup as a cap, and is very easy to roll out to groups of users as a cap as well. If they added a toggle for it, I'd imagine it would end up working as well as \"security defaults\" work, and the recommendation would just be to use CAP instead anyways."
+          },
+          {
+            "text": "That specific CA idea is fantastic! That's great for our clients with 365 Premium licenses. We have 1 or 2 clients with Standard licenses that we limited authentication methods to PassKey only and that worked to lock that down. But to get a CA for them would be a challenge. Will try. Thanks! And yea, for rogue browser extension that would be for entra linked devices. It's just not the case at all locations. But that's a good idea for locations that do have that. Now for Google Workspace clients... heh."
+          },
+          {
+            "text": "That’s a really clean solution. TAP-only registration + locking down extensions pretty much closes the loop."
+          },
+          {
+            "text": "Great advice. Also don’t forget to limit what kind of passkeys are allowed to auth into your environment in the CA policy too!"
+          },
+          {
+            "text": "Attestation requirements might also serve your needs. For example, you can potentially limit key registrations to suitable security keys and exclude password managers: https://learn.microsoft.com/en-us/entra/identity/authentication/concept-fido2-hardware-vendor"
+          },
+          {
+            "text": "Unfortunately we don't hand out physical security keys, so that's not an option. And for software based PassKeys, the unique identifier can be spoofed. So if you think you've locked down attestation to the unique identifier of, let's say, 1Password, you actually did not because it can be spoofed."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T02:53:10.175Z"
+      }
     },
     {
       "id": "3c42c90390",
@@ -1582,8 +1921,33 @@
         },
         "reason": null
       },
-      "candidate": false,
-      "deepError": "HTTP 403：Blocked by egress policy"
+      "candidate": true,
+      "deepError": "HTTP 403：Blocked by egress policy",
+      "deep": {
+        "body": "\"Apparently, because of the rise in vibe coding All the apps available online now, the best way to put out an offer is to use the advantage we have as vibe coders. Big companies charge way more for the same service you can provide at a much lower cost. For example, a big company might have a $20/month subscription. You could build a micro-SaaS clone of that same product and offer it for like $5. It just needs to feel like the same quality—or even better than the original. But honestly, it kinda feels illegal or makes users feel guilty for not paying the full price. At the same time though, it's such a no-brainer that it's hard to say no to.\"",
+        "comments": [
+          {
+            "text": "The guilty feeling is telling you something useful. Undercutting a proven product by 75% filters for the customer a saas cant afford: the one whose whole decision is the $5. Guilt doesnt build loyalty, theyre gone the moment the original adds a feature or your clone breaks. That $20 mostly buys support and trust, not code, and you rebuild both at a quarter of the revenue. Cheaper than the incumbent is a position, cheaper and a copy is a trap. Undercut on scope instead, serve users the big tool ignores, theyll pay more than $5."
+          },
+          {
+            "text": "Nuhhh..... SAAS companies need to lower their standards or else they going to be eaten what ever the Upgrade they going to provide almost Vibe coder can provide the same thing with atleast 80% accuracy Of the original"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Launch HN: Fortress (YC S24) – Database platform for multi-tenant SaaS",
+            "points": 121,
+            "url": "https://news.ycombinator.com/item?id=41426998"
+          },
+          {
+            "title": "Ask HN: Business insurance for SaaS startup",
+            "points": 13,
+            "url": "https://news.ycombinator.com/item?id=19123111"
+          }
+        ],
+        "fetchedAt": "2026-09-06T02:51:10.168Z"
+      }
     },
     {
       "id": "860609276a",
@@ -2092,7 +2456,628 @@
         "priorArt": [],
         "fetchedAt": "2026-09-05T21:43:07.598Z"
       }
+    },
+    {
+      "id": "a081f815ba",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1w8jxsf/concept_idea_bereal_turning_your_daily_photo_into",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "Concept idea: BeReal turning your daily photo into art (student project, feedback wanted!)",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1w8jxsf/concept_idea_bereal_turning_your_daily_photo_into/",
+      "summary": "Hey everyone! I'm a design student doing an externship where I got to pitch a concept feature for BeReal, quick disclaimer, I'm not on the BeReal team; this is a student project, not an official feature (yet, who knows 👀). The idea, called Abstract , is a fun new way to look back at your daily BeReal: instead of just a photo sitting in your memories, you'd have the option to turn it into a generated abstract art piece made from the photo's colors, not a filter on the picture itself, just its palette turned into something new.",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1w8jxsf",
+      "via": null,
+      "publishedAt": "2026-09-06T02:40:24.000Z",
+      "ref": "I64",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5d1067f5de",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1w8jhe1/smt_digital_marie_kondo",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "[SMT] Digital Marie Kondo",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1w8jhe1/smt_digital_marie_kondo/",
+      "summary": null,
+      "deepenKey": "/r/SomebodyMakeThis/comments/1w8jhe1",
+      "via": null,
+      "publishedAt": "2026-09-06T02:18:00.000Z",
+      "ref": "I65",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8455687946",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1w8fnda/count_dankulas_countries_of_the_world_remastered",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "Count Dankula’s “Countries of the World Remastered.”",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1w8fnda/count_dankulas_countries_of_the_world_remastered/",
+      "summary": "Sadly Count Dankula’s countries of the world song isn’t all the countries in the world. I wanted to see if anyone else could somehow make a full version while still retaining the funniness of the original song. I know it might take a while but I implore someone to please do this.",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1w8fnda",
+      "via": null,
+      "publishedAt": "2026-09-05T23:16:42.000Z",
+      "ref": "I66",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "64bc41bf56",
+      "normUrl": "https://reddit.com/r/fossdroid/comments/1w8dzju/any_apps_that_let_you_download_spotify_playlists",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "any apps that let you download spotify playlists?",
+      "url": "https://www.reddit.com/r/fossdroid/comments/1w8dzju/any_apps_that_let_you_download_spotify_playlists/",
+      "summary": "hi! i have a whole lot of songs saved on my spotify (~2000) and im planning on buying an sd card to put on my mp3 player! issue: i am NOT downloading over 2000 songs by searching manually..... unless i really have to. so!!!! is there an app that facilitates this process? thank you!",
+      "deepenKey": "/r/fossdroid/comments/1w8dzju",
+      "via": "is there an app that",
+      "publishedAt": "2026-09-05T22:05:06.000Z",
+      "ref": "I67",
+      "screen": {
+        "keep": true,
+        "score": 13,
+        "hits": [
+          "在找但没找到",
+          "在用笨办法凑合"
+        ],
+        "detail": {
+          "signal": 9,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "hi! i have a whole lot of songs saved on my spotify (~2000) and im planning on buying an sd card to put on my mp3 player! issue: i am NOT downloading over 2000 songs by searching manually..... unless i really have to. so!!!! is there an app that facilitates this process? thank you!",
+        "comments": [
+          {
+            "text": "Do not share or recommend proprietary apps here. It is an infraction of this subreddit's rules. Make sure you read the rules of this subreddit on the sidebar. If you are not sure of the nature of an app, do not share or recommend it. To find out what constitutes FOSS or freedomware, read this article . To find out why proprietary software is bad, read this article . Proprietary software is dangerous because it is often malware . Have a splendid day! I am a bot, and this action was performed automatically. Please contact the moderators of this subreddit if you have any questions or concerns."
+          },
+          {
+            "text": "SpotiFLAC works just great."
+          },
+          {
+            "text": "i'm currently looking at it, but i dont know where to get the extensions needed for it. it says to find a repository, but i'm still quite new to foss.. where do i find one? edit: i found it, but there are no searching extensions. what am i supposed to do?"
+          },
+          {
+            "text": "Use yt music or amazon music as searching extension"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Show HN: I made an app to create Spotify playlists from music festival posters",
+            "points": 37,
+            "url": "https://news.ycombinator.com/item?id=32639833"
+          },
+          {
+            "title": "Spotify – now playing information and playback control",
+            "points": 16,
+            "url": "https://news.ycombinator.com/item?id=18550052"
+          }
+        ],
+        "fetchedAt": "2026-09-06T02:55:20.282Z"
+      }
+    },
+    {
+      "id": "c2aedac4a0",
+      "normUrl": "https://reddit.com/r/AppleApps/comments/1w8bmlx/ar_furniture_model_app",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "AR Furniture Model App?",
+      "url": "https://www.reddit.com/r/AppleApps/comments/1w8bmlx/ar_furniture_model_app/",
+      "summary": "I want to buy a particular bookshelf off of Amazon but want to see if it will fit in the space before buying. It doesn’t have the “view in my room” feature and I can’t find one with similar dimensions that does. Is there an app that I can just plug in the dimensions and it’ll pop out an AR furniture model?",
+      "deepenKey": "/r/AppleApps/comments/1w8bmlx",
+      "via": "is there an app that",
+      "publishedAt": "2026-09-05T20:29:12.000Z",
+      "ref": "I68",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [
+          "在找但没找到"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1309559567",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/48670/software-to-merge-template-pdf-to-many-pdf-files-using-a-batch-file",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Software to merge template PDF to many PDF files using a batch file",
+      "url": "https://softwarerecs.stackexchange.com/questions/48670/software-to-merge-template-pdf-to-many-pdf-files-using-a-batch-file",
+      "summary": "I need to create a PDF blank template dispatch note with terms and conditions printed on the back of each page. I need to then merge the template (front of the page) document with many individual PDF dispatch notes and print or email them. I need to run this job in batch in a job scheduler.",
+      "deepenKey": "48670",
+      "signal": {
+        "score": 1,
+        "views": 148,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2018-02-15T13:59:09.000Z",
+      "ref": "I69",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "67b5eca920",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/52840/android-tools-for-unzipping-corrupt-zip-files",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Android tools for unzipping corrupt ZIP files",
+      "url": "https://softwarerecs.stackexchange.com/questions/52840/android-tools-for-unzipping-corrupt-zip-files",
+      "summary": "I had searched for some tools that can unzip files from a large corrupt ZIP file on Android. I couldn't, so now I learned how to use ZipInputStream in Java. Now I want to share the fruit of my tiny work. Or if you have any other tools in your mind, please recommend me and I'll accept it as answer.",
+      "deepenKey": "52840",
+      "signal": {
+        "score": 2,
+        "views": 283,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2018-10-24T11:25:25.000Z",
+      "ref": "I70",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "bacd2b173b",
+      "normUrl": "https://news.ycombinator.com/item?id=49580353",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How do you build organic traction as an indie dev?",
+      "url": "https://news.ycombinator.com/item?id=49580353",
+      "externalUrl": null,
+      "summary": "I have recently become a fulltime indie gamedev. While I'm willing to trust myself on technical and creative output, the topic of getting the word out that I might release something interesting and worth people's time seems to have become increasingly daunting. Most popular technical channels like HN / specific sub-reddits require active community participation and \"karma-farming\" just to be able to post something, which is hard for me to spend time on (I'd rather work on my stuff). Twitter(X) / Bluesky have low visibility for gamedev topics.",
+      "deepenKey": "49580353",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-05T20:29:31Z",
+      "ref": "I71",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2edef09cce",
+      "normUrl": "https://reddit.com/r/Mortgages/comments/1w8jap6/first_time_home_buyers_can_we_do_it",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "First time home buyers, can we do it?",
+      "url": "https://www.reddit.com/r/Mortgages/comments/1w8jap6/first_time_home_buyers_can_we_do_it/",
+      "summary": "Husband and I want to buy a house. We currently make $110K annually. We have one car loan of about $14k with a payment of $260 a month. No other debt, no kids. We both have around an 800 credit score. We have $100k in savings but don’t want to fully drain it. I’d like to still keep a decent amount in there. My mom has also offered to help with a down payment, she offered $30k and possibly more if we need it. We have a friend looking to sell to us directly and neither of us would use realtors.",
+      "deepenKey": "/r/Mortgages/comments/1w8jap6",
+      "via": "we currently pay",
+      "publishedAt": "2026-09-06T02:08:58.000Z",
+      "ref": "I72",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "消费/家庭话题，不是软件需求",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "0b5e7105fb",
+      "normUrl": "https://reddit.com/r/pregnant/comments/1w8hm5x/childcare",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Childcare",
+      "url": "https://www.reddit.com/r/pregnant/comments/1w8hm5x/childcare/",
+      "summary": "Boy oh boy. I knew childcare was going to be costly, but my husband and I work pretty opposite schedules and only need like 5-11 hours a week in childcare, so we used that as a determining factor to have a baby. Little did I know how HARD it would be to find part time care! Daycares only do full time, and in-home daycares were having a hard time excepting us too because of our unpredictable schedule. Also I would get a lot of people tell me that they do hourly rates, then once I get there tell me they only do full time..",
+      "deepenKey": "/r/pregnant/comments/1w8hm5x",
+      "via": "quoted us",
+      "publishedAt": "2026-09-06T00:46:37.000Z",
+      "ref": "I73",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d0068c87f1",
+      "normUrl": "https://reddit.com/r/asbestoshelp/comments/1w8hjk7/vermiculite_during_renovations",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Vermiculite during renovations",
+      "url": "https://www.reddit.com/r/asbestoshelp/comments/1w8hjk7/vermiculite_during_renovations/",
+      "summary": "Location: Ontario Canada We had vermiculite pour out of the wall during renovations. Had it tested and confirmed as 1%asbestos containing. After lab results confirmed the presence we went through removal with a professional company. And had clearance air testing completed. We have not yet had the house professionally cleaned. Is the cleaning part something we can reasonably diy? From what I've read it seems like it's just wet wiping surfaces?",
+      "deepenKey": "/r/asbestoshelp/comments/1w8hjk7",
+      "via": "quoted us",
+      "publishedAt": "2026-09-06T00:43:16.000Z",
+      "ref": "I74",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "787b34fda3",
+      "normUrl": "https://reddit.com/r/startups_promotion/comments/1w8dk6y/im_building_a_99month_soc2_compliance_scanner_for",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "I'm building a $99/month SOC2 compliance scanner for AWS startups — roast my idea",
+      "url": "https://www.reddit.com/r/startups_promotion/comments/1w8dk6y/im_building_a_99month_soc2_compliance_scanner_for/",
+      "summary": "We lost a $120K enterprise deal last year because we couldn't show a SOC2 report fast enough. Consultants quoted us $30K. Enterprise compliance platforms wanted $15K/year with a 6-month contract. So I'm building the thing I wish existed. AuditReady connects to your AWS account (read-only IAM role, 2 minutes to set up), runs 55+ automated checks across IAM, S3, VPC, RDS, ECS, and CloudTrail, maps every finding to a specific SOC2 Trust Services Criteria, and lets you ask an AI chatbot to explain each gap and generate the exact Terraform fix. One-click PDF audit report at the end. $99/month.",
+      "deepenKey": "/r/startups_promotion/comments/1w8dk6y",
+      "via": "quoted us",
+      "publishedAt": "2026-09-05T21:47:20.000Z",
+      "ref": "I75",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "求反馈",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "1feb6adcb7",
+      "normUrl": "https://reddit.com/r/msp/comments/1w8cryo/anyone_using_hudu_for_client_wisp_security_policy",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Anyone Using Hudu for Client WISP & Security Policy Management?",
+      "url": "https://www.reddit.com/r/msp/comments/1w8cryo/anyone_using_hudu_for_client_wisp_security_policy/",
+      "summary": "Has anyone used Hudu as a client-facing WISP / security policy management platform? I’m developing a service for small accounting firms where we create and maintain their WISP, security policies, system documentation, and annual reviews. Since we already use Hudu internally, I’m considering creating a standardized compliance documentation structure for each client and giving them access through the Hudu client portal.",
+      "deepenKey": "/r/msp/comments/1w8cryo",
+      "via": null,
+      "publishedAt": "2026-09-05T21:15:09.000Z",
+      "ref": "I76",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1d47e013cf",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w8jue2/building_a_mobile_video_editor_in_flutter_ffmpeg",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Building a mobile video editor in Flutter & FFmpeg (CapCut alternative) — here is how we handle 4K exports and audio processing",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w8jue2/building_a_mobile_video_editor_in_flutter_ffmpeg/",
+      "summary": "Hey r/microsaas ! ​I’ve been building ClipSnap, an Android video editing app designed to provide native 4K exporting, clean audio extraction, and timeline tools without forcing subscriptions or watermarks on users.",
+      "deepenKey": "/r/microsaas/comments/1w8jue2",
+      "via": null,
+      "publishedAt": "2026-09-06T02:35:46.000Z",
+      "ref": "I77",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6a51c65363",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w8d1yl/built_a_narrow_ganttchart_saas_instead_of_a_full",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Built a narrow Gantt-chart SaaS instead of a full PM suite , been live 2 weeks, first paying customer in",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w8d1yl/built_a_narrow_ganttchart_saas_instead_of_a_full/",
+      "summary": "Backstory: I'd built a Gantt chart tool, ganttflow.ca for my own use for years, never as a product. In August I turned it into GanttFlow, a paid SaaS, and shipped it alone. Stack: Next.js on Vercel, Neon Postgres, Clerk for auth, Stripe for billing. Nothing exotic, chosen so I could ship solo in weeks instead of building auth and billing from scratch. Pricing: Free (1 project, watermarked export), Pro at 12 dollars a month or 99 a year (cloud sync, clean export), Lifetime at 249 one time. Live since 2026-08-22, took its first real payment a few days later.",
+      "deepenKey": "/r/microsaas/comments/1w8d1yl",
+      "via": null,
+      "publishedAt": "2026-09-05T21:26:22.000Z",
+      "ref": "I78",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "里程碑分享",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "69e893a600",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1w8bwx6/your_first_acquisition_channel_can_makeor",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Your first acquisition channel can make—or break—your startup's growth.",
+      "url": "https://www.reddit.com/r/microsaas/comments/1w8bwx6/your_first_acquisition_channel_can_makeor/",
+      "summary": "One of the biggest mistakes founders make is trying to be everywhere at once. - LinkedIn. - Google Ads. - SEO. - Cold Email. - YouTube. - Communities. - Partnerships. The problem isn't the number of channels available. The problem is trying to master all of them at the same time. When your resources, budget, and team are limited, spreading yourself across multiple channels often leads to average results everywhere. Successful startups usually don't grow because they use more acquisition channels. They grow because they identify one channel that works and master it before expanding further.",
+      "deepenKey": "/r/microsaas/comments/1w8bwx6",
+      "via": null,
+      "publishedAt": "2026-09-05T20:40:45.000Z",
+      "ref": "I79",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "b8c6a7a779",
+      "normUrl": "https://news.ycombinator.com/item?id=49580689",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Fast Cut Video tool for cutting video for Agents",
+      "url": "https://news.ycombinator.com/item?id=49580689",
+      "externalUrl": "https://github.com/modecir/fast-cutvid",
+      "summary": "Hi HN, Build this tool in a couple of hours with OpenAI Codex to scratch an itch. As part of my videos workflows I needed to cut the videos myself since the agent is pretty bad cutting and timing using only the transcription. But using a big app like Premiere or DaVinci Resolve was overkill so I used Astra to build an app tailored to that very task. It will be useful to others with the same problem. Tested only on Silicon Macs, so any feedback is welcome.",
+      "deepenKey": "49580689",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 4
+      },
+      "publishedAt": "2026-09-05T21:06:05Z",
+      "ref": "I80",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hi HN, Build this tool in a couple of hours with OpenAI Codex to scratch an itch. As part of my videos workflows I needed to cut the videos myself since the agent is pretty bad cutting and timing using only the transcription. But using a big app like Premiere or DaVinci Resolve was overkill so I used Astra to build an app tailored to that very task. It will be useful to others with the same problem. Tested only on Silicon Macs, so any feedback is welcome. As part of my workflow when the agent get the video it can open the app with the video or videos loaded in the timeline for me to cut and then export the cuts in a format the agent can use and continue the workflow.",
+        "comments": [
+          {
+            "text": "As an old FCP person, this has scratched my brain too, Davinci seems to be furtherst along on the MCP race. Tying your tool out and gather up some feedback!"
+          },
+          {
+            "text": "excited to test it, great idea I had a similar idea for an opensource video editor where you edit along side the LLM but I gave up on it haha"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [],
+        "fetchedAt": "2026-09-06T02:53:10.634Z"
+      }
+    },
+    {
+      "id": "366da27363",
+      "normUrl": "https://news.ycombinator.com/item?id=49578046",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Amaze Kings – a browser logic puzzle with 1,400 hand-graded levels",
+      "url": "https://news.ycombinator.com/item?id=49578046",
+      "externalUrl": "https://kings.amaze-apps.com/",
+      "summary": null,
+      "deepenKey": "49578046",
+      "via": null,
+      "signal": {
+        "points": 13,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-05T16:21:08Z",
+      "ref": "I81",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "1cc78dca17",
+      "normUrl": "https://news.ycombinator.com/item?id=49577943",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "HyperCard to HTML Converter",
+      "url": "https://news.ycombinator.com/item?id=49577943",
+      "externalUrl": "https://github.com/stachon/hc2html",
+      "summary": "I created a converter that turns HyperCard 2.x stacks into standalone HTML so they can run in a modern browser. I built it to share my own stacks from the early '90s, which have been sitting on old floppy images for 30 years. It's MIT-licensed and I'd welcome contributions - especially stacks that break the converter, since I've only tested it against my own. If you have old HyperCard files lying around, I'd love to hear how they fare.",
+      "deepenKey": "49577943",
+      "via": null,
+      "signal": {
+        "points": 11,
+        "comments": 2
+      },
+      "publishedAt": "2026-09-05T16:11:07Z",
+      "ref": "I82",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I created a converter that turns HyperCard 2.x stacks into standalone HTML so they can run in a modern browser. I built it to share my own stacks from the early '90s, which have been sitting on old floppy images for 30 years. It's MIT-licensed and I'd welcome contributions - especially stacks that break the converter, since I've only tested it against my own. If you have old HyperCard files lying around, I'd love to hear how they fare.",
+        "comments": [
+          {
+            "text": "Did you create your own hypercard parser? That's dope. I have been making multi language structural parser, I have some hypercard capabilities. I haven't compared my output to anyone. But I have created ci CD pipelines that contain examples of all the things I want evaluated in all formats I could think, perhaps that would be helpful for your project."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: HyperCard to HTML Converter",
+            "points": 11,
+            "url": "https://news.ycombinator.com/item?id=49577943"
+          }
+        ],
+        "fetchedAt": "2026-09-06T02:53:10.949Z"
+      }
     }
   ],
-  "deepenedAt": "2026-09-05T21:43:07.941Z"
+  "deepenedAt": "2026-09-06T02:59:39.076Z"
 }

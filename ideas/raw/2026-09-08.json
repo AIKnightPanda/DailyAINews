@@ -1,0 +1,1575 @@
+{
+  "issue": "2026-09-08",
+  "builtAt": "2026-09-07T21:39:32.168Z",
+  "from": {
+    "boards": "live",
+    "inbox": "live"
+  },
+  "counts": {
+    "fetched": 54,
+    "added": 36,
+    "kept": 36,
+    "dropped": 18,
+    "pool": 36,
+    "screened": 35,
+    "candidates": 17,
+    "demandCandidates": 4,
+    "supplyCandidates": 13
+  },
+  "errors": [
+    "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
+  ],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 403：Blocked by egress policy",
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：is there an app that（HTTP 403：Blocked by egress policy）；is there a tool that（HTTP 403：Blocked by egress policy）；someone should build（HTTP 403：Blocked by egress policy）；we still use spreadsheets（HTTP 403：Blocked by egress policy）",
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 403：Blocked by egress policy",
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 5,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：we currently pay（HTTP 403：Blocked by egress policy）；we are paying for（HTTP 403：Blocked by egress policy）；quoted us（HTTP 403：Blocked by egress policy）；per seat per month（HTTP 403：Blocked by egress policy）",
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 403：Blocked by egress policy",
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 403：Blocked by egress policy",
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 403：Blocked by egress policy",
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 0,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 3,
+      "pool": true,
+      "group": "board"
+    }
+  ],
+  "items": [
+    {
+      "id": "933dd84a34",
+      "normUrl": "https://news.ycombinator.com/item?id=49600646",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Gmail/Google Docs Down?",
+      "url": "https://news.ycombinator.com/item?id=49600646",
+      "externalUrl": null,
+      "summary": "Many users not able to acces gmail/google docs for last couple of hours",
+      "deepenKey": "49600646",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-09-07T17:20:53Z",
+      "ref": "I1",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "420fdc521d",
+      "normUrl": "https://news.ycombinator.com/item?id=49600530",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Bun rewrite and FLT formalization had nearly identical resource usage",
+      "url": "https://news.ycombinator.com/item?id=49600530",
+      "externalUrl": null,
+      "summary": "The Bun rewrite took 11 days and used 5.9B tokens: https://bun.com/blog/bun-in-rust The FLT formalization took 11 days (!) and used 6B tokens. Why the similar numbers? Why are the numbers so low? 6B is just enough for 6 agents at 1000 tokens/s running for 11 days.",
+      "deepenKey": "49600530",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-07T17:07:45Z",
+      "ref": "I2",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "73a02a4c0d",
+      "normUrl": "https://news.ycombinator.com/item?id=49600335",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Is HTTP Basic Auth Broken in Chromium?",
+      "url": "https://news.ycombinator.com/item?id=49600335",
+      "externalUrl": null,
+      "summary": "Any time I try to access a page that requires Basic authentication, chromium just renders the server's 401 page instead of opening a dialog to ask for a username/password. I could not find any existing bug reports about this... am I the only one with this issue? https://authenticationtest.com/HTTPAuth/ https://testpages.eviltester.com/pages/auth/basic-auth/basic-auth-protected.html",
+      "deepenKey": "49600335",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-07T16:49:50Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3e2a3cc93c",
+      "normUrl": "https://news.ycombinator.com/item?id=49600233",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "OpenAI brings back 5 hour limit for plus and business standard users",
+      "url": "https://news.ycombinator.com/item?id=49600233",
+      "externalUrl": null,
+      "summary": "In case you're wondering why the limits behave so very different from last week. Also: this makes limit resets kind woth significantly less.",
+      "deepenKey": "49600233",
+      "via": null,
+      "signal": {
+        "points": 117,
+        "comments": 129
+      },
+      "publishedAt": "2026-09-07T16:40:32Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "In case you're wondering why the limits behave so very different from last week. Also: this makes limit resets kind woth significantly less.",
+        "comments": [
+          {
+            "text": "In hindsight, this makes more sense with the release of Astra. The $100/mo is now a more compelling upsell."
+          },
+          {
+            "text": "Session limits are obnoxious and make Codex much less useful for me. I tend to code in spurts when I find some time and the $20 weekly limit was reasonable for my side projects. I'm now hitting the session limits which means I can either purchase another plan, upgrade, or move off of Codex."
+          },
+          {
+            "text": "This allows users to pace their subscription usage to last the whole week. I've had few weekends where I spend the full week credits over night then have nothing to do for a week"
+          },
+          {
+            "text": "This is very fair. Compared to Claude the Codex limits are much better and smarter model."
+          },
+          {
+            "text": "Clearly, the prices and limitations will increase with time if they don't find an efficient way to perform training and inference of LLMs. It would be great to see those issues being seriously addressed and, eventually, being fixed for good. THAT would definitely make an important and practical difference. Not only economically but also scientifically."
+          },
+          {
+            "text": "Previous discussion (from 13 days ago): https://news.ycombinator.com/item?id=49432879"
+          },
+          {
+            "text": "Codex pharming on X should take a dip…"
+          },
+          {
+            "text": "I dislike this approach. In my opinion it is much useful a 1x/2x billing based on hour like Deepseek does. Being unable to use it at the hours I need it makes me want to remove the service, not upgrading it."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Tell HN: OpenAI brings back 5 hour limit for plus and business standard users",
+            "points": 117,
+            "url": "https://news.ycombinator.com/item?id=49600233"
+          }
+        ],
+        "fetchedAt": "2026-09-07T21:39:45.004Z"
+      }
+    },
+    {
+      "id": "9d1c22cf0b",
+      "normUrl": "https://news.ycombinator.com/item?id=49598009",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "3.5 inch diskette read errors, would a period correct drive do better?",
+      "url": "https://news.ycombinator.com/item?id=49598009",
+      "externalUrl": null,
+      "summary": "My first attempt at restoring 1991 Learning Company Spellbound for DOS for my children is dubious. Despite being stored nowhere near magnetic sources, there are read errors on the 3.5 inch floppies and Linux could not mount them. ddrescue extracted data but I have not confirmed it works. The box also have 5.25 inch disks but I do not have a reader online at the moment, that is its own project. My technical question is this, the USB 3.5 inch drive I have is a \"USB Portable Diskette Drive\" that was Made in China but has no obvious sponsoring branding.",
+      "deepenKey": "49598009",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 4
+      },
+      "publishedAt": "2026-09-07T13:09:44Z",
+      "ref": "I5",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8f91ba1460",
+      "normUrl": "https://news.ycombinator.com/item?id=49597625",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How to Make the Skill File?",
+      "url": "https://news.ycombinator.com/item?id=49597625",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "49597625",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-07T12:35:38Z",
+      "ref": "I6",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4d9c7bd871",
+      "normUrl": "https://news.ycombinator.com/item?id=49597519",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "I Hated GPT 6",
+      "url": "https://news.ycombinator.com/item?id=49597519",
+      "externalUrl": null,
+      "summary": "Just want to make it public, not even close to the best model available.",
+      "deepenKey": "49597519",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-07T12:23:55Z",
+      "ref": "I7",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5788240768",
+      "normUrl": "https://news.ycombinator.com/item?id=49596976",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Apparently CodePen 2.0 sends data to their servers as you type",
+      "url": "https://news.ycombinator.com/item?id=49596976",
+      "externalUrl": null,
+      "summary": "They send all typed into editor input to codepen.dev almost immediately (you would see in 1-2 sec after you typed your secret that it appears in respective Network/Response tab) even before one saved it. I tested this with a unique marker: after typing it into index.html, CodePen ran a build with \"save:false\", and the marker then appeared verbatim in the HTML served from the generated \"*.codepen.dev preview\". Thus, if you ever entered some secrets in there by mistake consider them compromized even if you did not publish/save the pen",
+      "deepenKey": "49596976",
+      "via": null,
+      "signal": {
+        "points": 107,
+        "comments": 56
+      },
+      "publishedAt": "2026-09-07T11:22:40Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "They send all typed into editor input to codepen.dev almost immediately (you would see in 1-2 sec after you typed your secret that it appears in respective Network/Response tab) even before one saved it. I tested this with a unique marker: after typing it into index.html, CodePen ran a build with \"save:false\", and the marker then appeared verbatim in the HTML served from the generated \"*.codepen.dev preview\". Thus, if you ever entered some secrets in there by mistake consider them compromized even if you did not publish/save the pen",
+        "comments": [
+          {
+            "text": "because this is how autocomplete logic works i guess? Frontend cannot guess language and completions for you"
+          },
+          {
+            "text": "Sent to them to render the preview pane. Same as pasting secrets anywhere on a browser. Wait until you find out copying content on a computer might sent it over Wi-Fi/Bluetooth for sharing on other devices."
+          },
+          {
+            "text": "You're gonna be shocked how many input fields do this for various UX features :)"
+          },
+          {
+            "text": "i made my own html playground that is browser only and shares preview via url hash because of these useless shenanigans of codepen, its not as featureful but i mostly use it for sharing single page html files https://easyanalytica.com/tools/html-playground/"
+          },
+          {
+            "text": "For basic previewing I like to use https://htmledit.squarefree.com which has been online for years and does it all client side."
+          },
+          {
+            "text": "There’s a detailed discussion of the same issue here https://www.reddit.com/r/webdev/comments/1rj1oac/i_planted_f..."
+          },
+          {
+            "text": "Look into https://www.fullstory.com/ , many major websites use this, it's basically a real-time video view of the user's browser screen. You can see where they move their mouse, how quickly they are typing, each character one at a time. I worked for a company that would have phone support for users, and we'd be watching their screens giving gentle suggestions to them as they were using our app for how to do what they needed to do. We never offered up what we were doing, but given users' poor descriptions of what they were doing, FullStory was an amazing customer service tool."
+          },
+          {
+            "text": "CodePen does not disclose this in neither ToS nor in Privacy Policy, only in Builds documentation they say: “As you work on CodePen, your Pens are constantly running through the CodePen Compiler”"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Apparently CodePen 2.0 sends data to their servers as you type",
+            "points": 107,
+            "url": "https://news.ycombinator.com/item?id=49596976"
+          }
+        ],
+        "fetchedAt": "2026-09-07T21:39:44.178Z"
+      }
+    },
+    {
+      "id": "48d91d1c08",
+      "normUrl": "https://news.ycombinator.com/item?id=49596932",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What would be a genuinely fun interview process?",
+      "url": "https://news.ycombinator.com/item?id=49596932",
+      "externalUrl": null,
+      "summary": "What are some interviews you’ve had in the past that you thought were fun, and/or what are some ideas for making the candidate interview process more enjoyable?",
+      "deepenKey": "49596932",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 3
+      },
+      "publishedAt": "2026-09-07T11:17:24Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5f40640cda",
+      "normUrl": "https://news.ycombinator.com/item?id=49596904",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are agent orchestrators an anti-pattern?",
+      "url": "https://news.ycombinator.com/item?id=49596904",
+      "externalUrl": null,
+      "summary": "To put it plain and simply: WHY hasn't the entire industry by now converged on the insight that AI agent \"orchestrators\" are a terrible antipattern that causes burning away unfathomable man-hours and amounts of tokens?",
+      "deepenKey": "49596904",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-07T11:15:04Z",
+      "ref": "I10",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5042ec4a3a",
+      "normUrl": "https://news.ycombinator.com/item?id=49595998",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Do People Care About Image Optimisation Anymore?",
+      "url": "https://news.ycombinator.com/item?id=49595998",
+      "externalUrl": null,
+      "summary": "Maybe I'm showing my age a bit, but I recall hearing that images should be saved in formats based on their type to save on file size. So, photographs would be JPEGs, illustrations and icons would be PNGs, vector images would be SVGs, etc. But now it feels like no-one does this anymore. Every site I've seen just seems to store all images as webp now, with many outright uploading multiple megabyte photo files in PNG format.",
+      "deepenKey": "49595998",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-07T09:21:12Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e4cdedcf66",
+      "normUrl": "https://news.ycombinator.com/item?id=49595907",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "tuhat: Home for all your reading",
+      "url": "https://news.ycombinator.com/item?id=49595907",
+      "externalUrl": null,
+      "summary": "- What books you are reading - Who you are reading on tuhat - Who you are reading on the rest of the net eg. https://tuhat.net/@sbr/reading Because we should read from a diversity of sources, not just what one company promotes or allows. tuhat pulls external rss feeds to build a single chronological feed of posts from tuhat and outside under your /reading page.",
+      "deepenKey": "49595907",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-07T09:09:03Z",
+      "ref": "I12",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "fca774d81f",
+      "normUrl": "https://news.ycombinator.com/item?id=49595797",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Why can I use macOS passkeys without biometrics",
+      "url": "https://news.ycombinator.com/item?id=49595797",
+      "externalUrl": null,
+      "summary": "So this might be a stupid question but i notices that when i use my mac open or with a magic keyboard with a touchID field i get prompted to scan my finger to use a passkey. But whenever i use a secondary monitor and a non touchID keyboard all i need to do is press \"continue\" in the passkey dialoge. I get that passkeys are bound to the device and being logged into it is itself some sort of auth it just seems wierd to me to have a security step that is so easy to circumvent that they might as well not ask for my fingerprint at all.",
+      "deepenKey": "49595797",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-07T08:53:51Z",
+      "ref": "I13",
+      "screen": {
+        "keep": true,
+        "score": -4,
+        "hits": [
+          "要做硬件"
+        ],
+        "detail": {
+          "signal": -8,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "bd8c96f295",
+      "normUrl": "https://news.ycombinator.com/item?id=49594452",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "I made a fake news spotting minigame",
+      "url": "https://news.ycombinator.com/item?id=49594452",
+      "externalUrl": null,
+      "summary": "Hi I wanted to share that I'm working on a minigame. It's a very simple concept where the player needs to say if a given data is fake or real. Any feedback would be much appreciated ! https://unspin.hidden-pond-5e6a.workers.dev",
+      "deepenKey": "49594452",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-07T06:03:50Z",
+      "ref": "I14",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "3496a04844",
+      "normUrl": "https://news.ycombinator.com/item?id=49593777",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Anthropic should make Claude the Author and me the Co-Author",
+      "url": "https://news.ycombinator.com/item?id=49593777",
+      "externalUrl": null,
+      "summary": "Anthropic has been messing with this behavior as seen by the bugs below: https://github.com/anthropics/claude-code/issues/66602 https://github.com/anthropics/claude-code/issues/69835 etc They seem to be too hell bent on getting their attribution in. Why does an LLM even want to take credits for? They cannot own copyright. I suggest they make themselves the primary author, so they can get the blame as well. And would even match reality of orgs/people that have drank the AI fuelled cool-aid. What say?",
+      "deepenKey": "49593777",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 3
+      },
+      "publishedAt": "2026-09-07T04:07:09Z",
+      "ref": "I15",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "893594b170",
+      "normUrl": "https://news.ycombinator.com/item?id=49593441",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Looking for an old submission about sneering culture",
+      "url": "https://news.ycombinator.com/item?id=49593441",
+      "externalUrl": null,
+      "summary": "There was this blog submission from a while back talking about the prevalence of sneering culture within programming communities. The blog post mostly touches on how dismissive people can be about other people's choice of programming languages or technologies. In particular, I think PHP or WordPress is brought up, though my memory is fuzzy. I remember it being incredibly thoughtfully written and it left a big impact on the way I think. But for some reason I just can't find it again, no matter what keyword I use. Does this ring any bells for anyone here?",
+      "deepenKey": "49593441",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 2
+      },
+      "publishedAt": "2026-09-07T03:10:31Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "ee44c09ee7",
+      "normUrl": "https://news.ycombinator.com/item?id=49593357",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What are other \"uncrackable benchmarks\"?",
+      "url": "https://news.ycombinator.com/item?id=49593357",
+      "externalUrl": null,
+      "summary": "I have my own benchmark for AI just based off my Doctoral Thesis, which isn't public(university constraints). I am wondering if other people have other \"hidden\" benchmarks? I have a few I have made, and one wonder if talking about them devalues them, and two can a good test set be made that can't be leaked?",
+      "deepenKey": "49593357",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-07T02:57:41Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "289f9b178c",
+      "normUrl": "https://news.ycombinator.com/item?id=49593185",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Those still optimistic about a career in software – why?",
+      "url": "https://news.ycombinator.com/item?id=49593185",
+      "externalUrl": null,
+      "summary": "We keep hearing that the latest LLMs are approaching AGI. The people who run the frontier labs are warning or hinting that soon all code will be written by models. Some argue that software engineering is about much more than just coding, but you don't need nearly as many people for those other parts either. So what happens to people who spent decades in school and on the job, who are passionate about coding and get their energy from writing code? I don't believe in universal basic (or high) income, because that's not how the world has worked so far.",
+      "deepenKey": "49593185",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 10
+      },
+      "publishedAt": "2026-09-07T02:31:45Z",
+      "ref": "I18",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4a2fc05fbc",
+      "normUrl": "https://news.ycombinator.com/item?id=49591913",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What is your biggest struggle while learning?",
+      "url": "https://news.ycombinator.com/item?id=49591913",
+      "externalUrl": null,
+      "summary": "How do you learn? And what do you think limits your learning more?",
+      "deepenKey": "49591913",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-06T23:21:13Z",
+      "ref": "I19",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4387ff3827",
+      "normUrl": "https://news.ycombinator.com/item?id=49591646",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "The age of \"Software Deslopers\" is coming",
+      "url": "https://news.ycombinator.com/item?id=49591646",
+      "externalUrl": null,
+      "summary": "Soon, the software industry is going to realise that all the code that was rapidly (and carelessly) generated in pursuit of \"100x\" productivity has become a liability and the AI that promised to free up everyone has become the core dependency, without which the system just cannot move forward. At that point, we are going to need the \"software deslopers\" who are just the old software developers, the vibe-less coders, just with a new title that makes them employable once again :) Still holding out hope!",
+      "deepenKey": "49591646",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 6
+      },
+      "publishedAt": "2026-09-06T22:40:11Z",
+      "ref": "I20",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "846e3b7785",
+      "normUrl": "https://news.ycombinator.com/item?id=49590656",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Show your micro-SaaS",
+      "url": "https://news.ycombinator.com/item?id=49590656",
+      "externalUrl": null,
+      "summary": "HN is a fantastic founder community. We, the people, love transparency, numbers, and analyzing bootstrapped business models. What is your current project? Share your wins, losses, and tech stack. Share monthly recurring revenue (MRR) if you feel like.",
+      "deepenKey": "49590656",
+      "via": null,
+      "signal": {
+        "points": 15,
+        "comments": 8
+      },
+      "publishedAt": "2026-09-06T20:37:23Z",
+      "ref": "I21",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "9e6309ef0f",
+      "normUrl": "https://news.ycombinator.com/item?id=49589914",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How do you manage skills files?",
+      "url": "https://news.ycombinator.com/item?id=49589914",
+      "externalUrl": null,
+      "summary": "How do you find skills, keep them organized, and make sure they actually work? Do you keep improving them over time? I believe skills will eventually be eating by model capabilities, but until then I'm just looking for a better way to manage things.",
+      "deepenKey": "49589914",
+      "via": null,
+      "signal": {
+        "points": 282,
+        "comments": 255
+      },
+      "publishedAt": "2026-09-06T19:27:10Z",
+      "ref": "I22",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "How do you find skills, keep them organized, and make sure they actually work? Do you keep improving them over time? I believe skills will eventually be eating by model capabilities, but until then I'm just looking for a better way to manage things.",
+        "comments": [
+          {
+            "text": ">I believe skills will eventually be eating by model capabilities a model capability is never going to fill in an unknowable blank that a custom skill (or whatever equivalent your paradigm supports) can. a model might have the cleverness to whoami and look through the .ssh folder for keys and evidence of past connections when asked to connect to bob, but a skills file can just easily say \"We connect to bob using key Z and user X.\" so that the operation gets done without all this nonsense needless inference as far into the future as the information is valid for. a concise information dense skill is going to always dominate on tokens-burnt for any given task that requires insider knowledge. it simply gets rid of the entire investigative phase of work."
+          },
+          {
+            "text": "i have a docs/ it has all the skills/docs my particular application needs i treat it as ADRs as it helps the AI understand the parts of the system it is working on"
+          },
+          {
+            "text": "> How do you find skills I try to keep my collection of community skills short, usually a few established names (mattpocock, mcollina, trailsofbit). And then I check new releases (or when mattpocock published a youtube video for instance :D) > keep them organized For skills I wrote myself, I have my own private github repo. I use skills like /commands most of the time, so I can tell if they work straight away. For community skills, a package manager really helps. vercel-labs/skills and withastro/rosie are good options. I also built one myself: https://github.com/osrim/ski . It has some cool features like an update command and a security scan."
+          },
+          {
+            "text": "I manage them as part of my dotfiles using chezmoi. A `.agents/skills/` directory + a symlink to there from `.claude/skills/`. > Do you keep improving them over time? In my global AGENTS.md I have a note to agents to explain any frustrations they had doing a task, and to suggest any skill/tool/AGENTS.md improvements. I am trying to keep AGENTS.md files small but still finding the balance."
+          },
+          {
+            "text": "We have some company-managed skills, that help coding agents find the relationships between our repos, and our conventions, architecture, and other high-level decisions. These are supposed to be portable between agents, and so distributing them is currently awkward. We have a bootstrap script to deploy company-managed skills to each developer's \"personal\" skills. Hooks for codex and claude code try to refresh the skills on each startup."
+          },
+          {
+            "text": "I recently completely overhauled repo’s skill setup. I tried to control the execution of tasks performed by each project using claude.md within the project, but claude.md is only read at the beginning of each session, so it felt like the instructions weren’t being properly reflected. So I revised the strategy to manage frequently used features in skill units. In doing so, instead of organizing skills by project, it was structured to be integrated into the general skills of the individual repo. When skills are spread out across multiple projects and the number increases, it becomes impossible to keep track of which skills are available, so they end up not being used. I also think that eventually, once Claude(model) advances, it will be able to replace most of the skills, so I believe registering and managing countless skills actually degrades performance."
+          },
+          {
+            "text": "Any skills, I just add into the tool itself. I then have the py tools in their PWD, don’t bother with mcp."
+          },
+          {
+            "text": "I don't use any skills, what kinds of skills are people finding most useful? For general tasks, the model seems perfectly capable of figuring out things itself, for project or environment specific tasks, I just put that information in the readme or agents.md file."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Ask HN: How do you manage skills files?",
+            "points": 282,
+            "url": "https://news.ycombinator.com/item?id=49589914"
+          },
+          {
+            "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
+            "points": 93,
+            "url": "https://news.ycombinator.com/item?id=49394827"
+          }
+        ],
+        "fetchedAt": "2026-09-07T21:39:45.462Z"
+      }
+    },
+    {
+      "id": "cb2623d96b",
+      "normUrl": "https://github.com/nextcloud/android/issues/17570",
+      "sourceId": "gh-requests",
+      "source": "GitHub 高赞功能请求",
+      "sourceHome": "https://github.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "2-way sync of folders which are _outside_ of the local Nextcloud folder",
+      "url": "https://github.com/nextcloud/android/issues/17570",
+      "summary": "Similar to FolderSync or [EasySync](https://github.com/phpbg/easysync) the idea is to sync an external, not yet folder to Nextcloud server and back. This is opposite to internal [2way-sync](https://github.com/nextcloud/android/pull/13294). Use case could be - sync Notes folder to Nextcloud - backup any folder to Nextcloud - … This issue will be updated to take implementation ideas into account. Please 👍 if you like this feature, so that we know about the \"demand\" of it.",
+      "signal": {
+        "thumbsUp": 54,
+        "comments": 6,
+        "repo": "nextcloud/android"
+      },
+      "publishedAt": "2026-09-07T10:24:13Z",
+      "ref": "I23",
+      "screen": {
+        "keep": true,
+        "score": 10,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 7,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Similar to FolderSync or [EasySync](https://github.com/phpbg/easysync) the idea is to sync an external, not yet folder to Nextcloud server and back. This is opposite to internal [2way-sync](https://github.com/nextcloud/android/pull/13294). Use case could be - sync Notes folder to Nextcloud - backup any folder to Nextcloud - … This issue will be updated to take implementation ideas into account. Please 👍 if you like this feature, so that we know about the \"demand\" of it.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Ask HN: How do you Backup your Personal Files?",
+            "points": 25,
+            "url": "https://news.ycombinator.com/item?id=4365901"
+          },
+          {
+            "title": "Show HN: TeXbrain, a LaTeX editor that runs pdfTeX in the browser via WASM",
+            "points": 118,
+            "url": "https://news.ycombinator.com/item?id=49441375"
+          }
+        ],
+        "fetchedAt": "2026-09-07T21:39:44.398Z"
+      }
+    },
+    {
+      "id": "c415fdc9c2",
+      "normUrl": "https://producthunt.com/products/assist-4",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Assist",
+      "url": "https://www.producthunt.com/products/assist-4",
+      "summary": "Voice annotate your Mac, get screenshots + clipboard manager",
+      "publishedAt": "2026-09-06T10:08:53.000Z",
+      "ref": "I24",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Voice annotate your Mac, get screenshots + clipboard manager",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-07T21:39:45.954Z"
+      }
+    },
+    {
+      "id": "b572786239",
+      "normUrl": "https://producthunt.com/products/antalpha",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Nina by Antalpha",
+      "url": "https://www.producthunt.com/products/antalpha",
+      "summary": "Non-custodial AI Agent: research, predict & trade crypto",
+      "publishedAt": "2026-08-28T09:37:21.000Z",
+      "ref": "I25",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Non-custodial AI Agent: research, predict & trade crypto",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "A hand-drawn illustration skill for any articles",
+            "points": 17,
+            "url": "https://news.ycombinator.com/item?id=49182451"
+          }
+        ],
+        "fetchedAt": "2026-09-07T21:40:06.128Z"
+      }
+    },
+    {
+      "id": "cbce335712",
+      "normUrl": "https://producthunt.com/products/bloop-4",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Bloop",
+      "url": "https://www.producthunt.com/products/bloop-4",
+      "summary": "Turn any Mac audio into a visual you can actually export",
+      "publishedAt": "2026-08-06T15:52:08.000Z",
+      "ref": "I26",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Turn any Mac audio into a visual you can actually export",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-07T21:40:25.969Z"
+      }
+    },
+    {
+      "id": "1db8e712fc",
+      "normUrl": "https://producthunt.com/products/airuncode",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Airuncode",
+      "url": "https://www.producthunt.com/products/airuncode",
+      "summary": "Run multiple local coding agents on your machine",
+      "publishedAt": "2026-09-06T23:16:55.000Z",
+      "ref": "I27",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Run multiple local coding agents on your machine",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-07T21:40:45.912Z"
+      }
+    },
+    {
+      "id": "4fb6750ff3",
+      "normUrl": "https://producthunt.com/products/sciptly",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Scriptly",
+      "url": "https://www.producthunt.com/products/sciptly",
+      "summary": "An iOS teleprompter app controlled by your voice",
+      "publishedAt": "2026-09-04T08:09:19.000Z",
+      "ref": "I28",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "An iOS teleprompter app controlled by your voice",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-07T21:41:06.026Z"
+      }
+    },
+    {
+      "id": "c9efa94795",
+      "normUrl": "https://producthunt.com/products/coldtea",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "PR Lens by Coldtea.ai",
+      "url": "https://www.producthunt.com/products/coldtea",
+      "summary": "See code through a new lens",
+      "publishedAt": "2026-08-28T12:00:55.000Z",
+      "ref": "I29",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "See code through a new lens",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Show HN: Particle - News, Organized",
+            "points": 29,
+            "url": "https://news.ycombinator.com/item?id=43698590"
+          },
+          {
+            "title": "Managers exploit loyal workers over less committed colleagues",
+            "points": 176,
+            "url": "https://news.ycombinator.com/item?id=35307150"
+          }
+        ],
+        "fetchedAt": "2026-09-07T21:41:26.203Z"
+      }
+    },
+    {
+      "id": "4df8709e9e",
+      "normUrl": "https://producthunt.com/products/remind-7",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Remind",
+      "url": "https://www.producthunt.com/products/remind-7",
+      "summary": "Full-screen meeting reminders with AI briefings",
+      "publishedAt": "2026-09-06T16:10:46.000Z",
+      "ref": "I30",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Full-screen meeting reminders with AI briefings",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-07T21:41:45.960Z"
+      }
+    },
+    {
+      "id": "bd1ad6ae17",
+      "normUrl": "https://producthunt.com/products/databox",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Routines by Databox",
+      "url": "https://www.producthunt.com/products/databox",
+      "summary": "An AI Analyst that runs analysis and reports on a schedule",
+      "publishedAt": "2026-08-27T09:02:16.000Z",
+      "ref": "I31",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "An AI Analyst that runs analysis and reports on a schedule",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-07T21:42:06.608Z"
+      }
+    },
+    {
+      "id": "c2115953a1",
+      "normUrl": "https://producthunt.com/products/clipnote-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Clipnote",
+      "url": "https://www.producthunt.com/products/clipnote-2",
+      "summary": "Save your AI conversations so they persist after closing tab",
+      "publishedAt": "2026-09-07T01:55:40.000Z",
+      "ref": "I32",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Save your AI conversations so they persist after closing tab",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-07T21:42:26.037Z"
+      }
+    },
+    {
+      "id": "a9ac064d0b",
+      "normUrl": "https://producthunt.com/products/tucky",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Tucky",
+      "url": "https://www.producthunt.com/products/tucky",
+      "summary": "Notes docked to your screen edge, with an AI agent inside",
+      "publishedAt": "2026-09-06T21:09:48.000Z",
+      "ref": "I33",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Notes docked to your screen edge, with an AI agent inside",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-07T21:42:46.017Z"
+      }
+    },
+    {
+      "id": "e120d6e66b",
+      "normUrl": "https://news.ycombinator.com/item?id=49601328",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "HomeCat – Design your backyard office",
+      "url": "https://news.ycombinator.com/item?id=49601328",
+      "externalUrl": "https://myhomecat.com",
+      "summary": "Hey HN! Ilya and Nikita here. We’re building HomeCat, a tool that lets you design a backyard office space - https://myhomecat.com We started out by helping people design sheds, and quickly realized that many people actually want to build a backyard office. There wasn't really an easy way to do this, so we thought we'd take on the challenge. Right now, you can design a backyard shed and our tool will make it code compliant. It's maybe 90% of the way there, since you also have zoning/HOA and other edge cases. But it does figure out most of the details for you.",
+      "deepenKey": "49601328",
+      "via": null,
+      "signal": {
+        "points": 21,
+        "comments": 15
+      },
+      "publishedAt": "2026-09-07T18:23:35Z",
+      "ref": "I34",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 5,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hey HN! Ilya and Nikita here. We’re building HomeCat, a tool that lets you design a backyard office space - https://myhomecat.com We started out by helping people design sheds, and quickly realized that many people actually want to build a backyard office. There wasn't really an easy way to do this, so we thought we'd take on the challenge. Right now, you can design a backyard shed and our tool will make it code compliant. It's maybe 90% of the way there, since you also have zoning/HOA and other edge cases. But it does figure out most of the details for you. Right now, it's pretty simple: enter your address, what you want to build (i.e. 8x8 backyard office), and it'll create a few concepts for you. If you like one, you can customize it with the chat. Here's an example of a design that's compliant in SF: https://myhomecat.com/scene/classic-cottage-137134ef We would love for you to try our tool if you are planning your backyard office. As a bonus to the HN community, we can professionally design one for you for free if you comment what you're looking for. Happy labor day!",
+        "comments": [
+          {
+            "text": "We just got the hug of death. Fixing it - sorry about that! You can clone this scene and start designing from it for now https://myhomecat.com/scene/classic-cottage-137134ef Edit: back up and working now!"
+          },
+          {
+            "text": "Americentrism? Code compliant where? I tried my place in New Zealand, but the address isn't recognized. I couldn't find anywhere on the site what countries/regions are accepted."
+          },
+          {
+            "text": "There's something funky with the renderer, it looks like perspective is wrong. All vibe coded?"
+          },
+          {
+            "text": "Hijacking a bit, sorry: I already built the space, but I just filled it with old, mismatched, clunky furniture. Is there some sort of designer site where I could play with furniture, apart from Ikea?"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: HomeCat – Design your backyard office",
+            "points": 22,
+            "url": "https://news.ycombinator.com/item?id=49601328"
+          }
+        ],
+        "fetchedAt": "2026-09-07T21:39:45.836Z"
+      }
+    },
+    {
+      "id": "d2ee875410",
+      "normUrl": "https://news.ycombinator.com/item?id=49600269",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Wg-admin – web UI for an existing WireGuard host",
+      "url": "https://news.ycombinator.com/item?id=49600269",
+      "externalUrl": "https://github.com/logimaxx/wg-admin",
+      "summary": "Reads /etc/wireguard, lets you add/edit/remove peers, applies with wg syncconf (no interface bounce). Does not install WireGuard or rewrite your PostUp/NAT. That's all",
+      "deepenKey": "49600269",
+      "via": null,
+      "signal": {
+        "points": 16,
+        "comments": 3
+      },
+      "publishedAt": "2026-09-07T16:43:37Z",
+      "ref": "I35",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Reads /etc/wireguard, lets you add/edit/remove peers, applies with wg syncconf (no interface bounce). Does not install WireGuard or rewrite your PostUp/NAT. That's all",
+        "comments": [
+          {
+            "text": "Looks like hand coded. Kudos for that!"
+          },
+          {
+            "text": "Nice work, following along."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: Wg-admin – web UI for an existing WireGuard host",
+            "points": 16,
+            "url": "https://news.ycombinator.com/item?id=49600269"
+          },
+          {
+            "title": "Show HN: Pangolin: Open-source identity-based VPN (Twingate/Zscaler alternative)",
+            "points": 81,
+            "url": "https://news.ycombinator.com/item?id=47022745"
+          }
+        ],
+        "fetchedAt": "2026-09-07T21:42:46.318Z"
+      }
+    },
+    {
+      "id": "ed756538fc",
+      "normUrl": "https://news.ycombinator.com/item?id=49599559",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Send flowers from your AI agent and make your mum happy",
+      "url": "https://news.ycombinator.com/item?id=49599559",
+      "externalUrl": null,
+      "summary": "Hi, I have created an MCP for AI agents to send flowers for your mum’s birthday, for a great customer who just renewed his contract or what ever you can think of! I created this after working on a family AI assistant (hermo.ai) which desperately needed to trigger something tangible - like a flower delivery. You can send flowers without having to create an account to make it easy to get started. Currently you can send one type of bouquet in the USA ($100), UK(£100), Germany(€100), Switzerland and Italy.",
+      "deepenKey": "49599559",
+      "via": null,
+      "signal": {
+        "points": 10,
+        "comments": 7
+      },
+      "publishedAt": "2026-09-07T15:34:40Z",
+      "ref": "I36",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hi, I have created an MCP for AI agents to send flowers for your mum’s birthday, for a great customer who just renewed his contract or what ever you can think of! I created this after working on a family AI assistant (hermo.ai) which desperately needed to trigger something tangible - like a flower delivery. You can send flowers without having to create an account to make it easy to get started. Currently you can send one type of bouquet in the USA ($100), UK(£100), Germany(€100), Switzerland and Italy. Link to the new service is here: https://preznt.net The goal of this service is to have AI agents send flowers. It’s pretty simple. I have lots of ideas how to extend and order all sorts of things directly from an MCP, like chocolates, gift boxes, etc. Let me know what you think! I'd really like some feedback. Fabian",
+        "comments": [
+          {
+            "text": "Let me know what you think!"
+          },
+          {
+            "text": "Is this satire? Some feedback: bury this souless shit and be a real person and send flowers to your mom yourself. Jfc what's happening? I was under the impression that \"retardmaxxing\" was just a stupid meme, not something people actively do."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: Send flowers from your AI agent and make your mum happy",
+            "points": 10,
+            "url": "https://news.ycombinator.com/item?id=49599559"
+          },
+          {
+            "title": "Show HN: Web-eval-agent – Let the coding agent debug itself",
+            "points": 84,
+            "url": "https://news.ycombinator.com/item?id=43822659"
+          },
+          {
+            "title": "Launch HN: Slashy (YC S25) – AI that connects to apps and does tasks",
+            "points": 70,
+            "url": "https://news.ycombinator.com/item?id=45129031"
+          }
+        ],
+        "fetchedAt": "2026-09-07T21:42:46.828Z"
+      }
+    }
+  ],
+  "deepenedAt": "2026-09-07T21:42:46.829Z"
+}

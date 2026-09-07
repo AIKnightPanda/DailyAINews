@@ -13,7 +13,7 @@
 import { execFile } from 'child_process';
 import { promisify } from 'util';
 import { writeFile, readFile, mkdir } from 'fs/promises';
-import { existsSync, readFileSync } from 'fs';
+import { existsSync, readFileSync, readdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { restoreBody } from './blog-body.js';
@@ -30,6 +30,46 @@ const force = process.argv.includes('--force');
 function fail(message) {
   console.log(JSON.stringify({ status: 'error', message }));
   process.exit(1);
+}
+
+// 期号总比运行日早一天：feed 当天下午（约 06:4x UTC）出刊，Routine 次日
+// 凌晨（21:30 UTC）才跑。所以「今天」这一期本来就不该存在，上界不含今天。
+function todayCN() {
+  return new Date(Date.now() + 8 * 36e5).toISOString().slice(0, 10);
+}
+
+function nextDay(date) {
+  const d = new Date(`${date}T00:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + 1);
+  return d.toISOString().slice(0, 10);
+}
+
+// 早退本身是对的，但没人知道漏了一期 —— 2026-09-06 上游缺席一次、当晚 22:54Z
+// 才补发，比 Routine 晚 84 分钟。Routine 照常判 skipped 早退，而第二天它拿的是
+// 届时上游最新的那一份：上游一恢复正常节奏，缺的那期就再也没人来抓了。
+// 所以每次都算一遍从最新一期的次日到昨天之间缺了哪几期，交给上层喊出来。
+// 上游偶尔真的不出刊，这里分辨不了，宁可误报也别再静默漏一期。
+function missingIssues(issue) {
+  let have;
+  try {
+    have = new Set(
+      readdirSync(join(ROOT, 'digests'))
+        .filter(f => /^\d{4}-\d{2}-\d{2}\.md$/.test(f))
+        .map(f => f.slice(0, 10))
+    );
+  } catch {
+    return [];
+  }
+  if (!have.size) return [];
+
+  const latest = [...have].sort().pop();
+  const today = todayCN();
+  const gaps = [];
+  // 正在做的这一期不算缺 —— skipped 且 md 尚不存在时，上层会照常把它做完
+  for (let d = nextDay(latest); d < today; d = nextDay(d)) {
+    if (!have.has(d) && d !== issue) gaps.push(d);
+  }
+  return gaps;
 }
 
 // GitHub Actions 预抓的那份。要过三关才敢用：窗口日期对得上本期、抓取时间在
@@ -187,6 +227,7 @@ async function main() {
         status: 'skipped',
         issue,
         reason: 'feed 未更新，原始数据已是最新',
+        missing: missingIssues(issue),
         rawPath
       }));
       return;
@@ -199,6 +240,7 @@ async function main() {
     status: previousFeedAt ? 'refreshed' : 'archived',
     issue,
     rawPath,
+    missing: missingIssues(issue),
     feedGeneratedAt: generatedAt,
     previousFeedGeneratedAt: previousFeedAt,
     stats: feed.stats,

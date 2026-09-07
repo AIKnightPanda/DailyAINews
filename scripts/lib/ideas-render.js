@@ -382,6 +382,12 @@ export function renderFailures(data) {
     out.push('', `> ⚠️ ${partial.length} 个源只抓到一部分：` +
       partial.map(s => `**${s.name}**（${s.error}）`).join('；'));
   }
+  // 一直报 ok、一直 0 条 —— 这种断法不喊出来就永远没人发现
+  const quiet = (data.sources || []).filter(s => s.quietFor);
+  if (quiet.length) {
+    out.push('', `> ⚠️ ${quiet.length} 个源已经很久没有内容了（状态一直正常，值得核一下是不是断了）：` +
+      quiet.map(s => `**${s.name}**（连续 ${s.quietFor} 期 0 条）`).join('；'));
+  }
   for (const e of data.errors || []) out.push('', `> ⚠️ ${e}`);
   return out;
 }

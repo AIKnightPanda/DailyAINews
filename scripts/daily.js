@@ -88,6 +88,12 @@ async function main() {
     await log(`${issue} 已在档且 feed 未变，跳过抓取`);
   }
 
+  // 跳过是对的，漏一期不是。上游偶尔缺席一天再补发，而补发若晚于本次运行，
+  // 那一期就没人来抓了 —— 第二天拿到的是届时最新的那一份。喊出来，别静默。
+  if (result.missing?.length) {
+    await log(`⚠️ digests/ 里缺着 ${result.missing.join('、')} —— 这几期不会自己回来，要补得手工跑 archive.js`);
+  }
+
   // ── 2. 生成简报 ────────────────────────────────────────────────
   // feed 刷新过就必须重写简报，否则 md 会和 raw 对不上
   const needDigest = force || !existsSync(mdPath) || result.status === 'refreshed';

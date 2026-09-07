@@ -77,7 +77,10 @@ async function fetchOnce(url, opts = {}) {
           .split(/[({]/)[0].trim();
         if (body) hint = `：${body.slice(0, 70)}`;
       } catch { /* 读不出正文就算了 */ }
-      throw new Error(`HTTP ${res.status}${hint}`);
+      const err = new Error(`HTTP ${res.status}${hint}`);
+      // 限流方自己说的等待秒数比我们猜的准，带出去给重试那层用
+      err.retryAfter = Number(res.headers.get('retry-after')) || 0;
+      throw err;
     }
     return res;
   } finally {
@@ -88,13 +91,24 @@ async function fetchOnce(url, opts = {}) {
 // 并发抓时偶发 fetch failed，直连却没问题 —— 瞬时抖动，重试一次即可。
 // HTTP 4xx 是确定性失败，重试没意义。
 // 唯一的例外是 429：Reddit 就靠它限速，退避后重试是有用的。
+//
+// 429 等 20 秒，不是 8 秒：fetch-candidates.js 那边实测过「12 秒仍会 429，
+// 20 秒才稳」，8 秒的退避基本等于白重试一次。Reddit 若在 Retry-After 里
+// 写了更久，听它的（上限 60 秒，免得把一次抓取拖到没边）。
+const RETRY_429_MS = 20_000;
+
 export async function fetchRes(url, opts = {}) {
   try {
     return await fetchOnce(url, opts);
   } catch (err) {
     const m = /HTTP (\d\d\d)/.exec(err.message);
     if (m && m[1] !== '429') throw err;
-    await new Promise(r => setTimeout(r, m?.[1] === '429' ? 8000 : 1200));
+    let wait = 1200;
+    if (m?.[1] === '429') {
+      const after = Number(err.retryAfter);
+      wait = Math.min(Math.max(after * 1000 || 0, RETRY_429_MS), 60_000);
+    }
+    await new Promise(r => setTimeout(r, wait));
     return await fetchOnce(url, opts);
   }
 }

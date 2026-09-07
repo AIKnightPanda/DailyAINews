@@ -21,8 +21,8 @@
 import { execFile } from 'child_process';
 import { promisify } from 'util';
 import { writeFile, mkdir } from 'fs/promises';
-import { existsSync, readFileSync } from 'fs';
-import { join, dirname } from 'path';
+import { existsSync, readFileSync, readdirSync } from 'fs';
+import { join, dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 import { BOARDS, NEWSLETTERS, SIDE_ORDER } from './idea-sources.js';
 import { titleKey } from './lib/feedkit.js';
@@ -32,6 +32,40 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const IDEAS = join(ROOT, 'ideas');
 const SEEN = join(IDEAS, 'seen.json');
 const SEEN_CAP = 2000;
+
+// 一个源报 ok 却连着好些天 0 条，和它彻底断掉在数据上长得一模一样 ——
+// routine.md 里对简报的补充源警告过同一件事，灵感这边同样适用：**ok 不等于活着**。
+// 所以每期往回数一数，连续几期是「ok 且 0 条」。低频源本来就常有 0 条
+// （Mobbin 每周两封，窗口才 2 天），所以阈值放到一周：连着 7 期什么都没有，
+// 再低频的源也该有人去看一眼是不是断了。
+const QUIET_ALERT = 7;
+
+function pastSources(issue) {
+  try {
+    return readdirSync(join(IDEAS, 'raw'))
+      .filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f) && f.slice(0, 10) < issue)
+      .sort().reverse().slice(0, QUIET_ALERT)
+      .map(f => {
+        try { return JSON.parse(readFileSync(join(IDEAS, 'raw', f), 'utf-8')).sources || []; }
+        catch { return []; }
+      });
+  } catch { return []; }
+}
+
+// history 从外面传进来，这样它是个纯函数，能单独喂数据验证
+export function markQuiet(sources, history, threshold = QUIET_ALERT) {
+  for (const s of sources) {
+    if (s.status !== 'ok' || Number(s.items) !== 0) continue;
+    let streak = 1;
+    for (const past of history) {
+      const p = past.find(x => x.id === s.id);
+      // 那期它压根没跑、或跑出了东西、或明着失败了 —— 连续就断在这里
+      if (!p || p.status !== 'ok' || Number(p.items) !== 0) break;
+      streak++;
+    }
+    if (streak >= threshold) s.quietFor = streak;
+  }
+}
 
 const arg = k => (process.argv.find(a => a.startsWith(`--${k}=`)) || '').split('=')[1] || '';
 const force = process.argv.includes('--force');
@@ -85,7 +119,9 @@ async function collect(label, file, script) {
   }
   try {
     const r = await execFileAsync('node', [join(ROOT, 'scripts', script), `--until=${ISSUE}`],
-      { maxBuffer: 32 * 1024 * 1024, timeout: 600_000 });
+      // 20 分钟不是随手写的：reddit 的短语搜索串行 + 退避 + 单条重试，
+      // 8 条短语全程撞 429 时最坏约 12 分钟。给够余量，别让限流变成整组失败。
+      { maxBuffer: 32 * 1024 * 1024, timeout: 1_200_000 });
     const j = JSON.parse(r.stdout);
     return { ...j, from: 'live', reject: pending?.reject || null };
   } catch (err) {
@@ -182,6 +218,7 @@ async function main() {
     ...(boards.sources || []).map(s => ({ ...s, group: 'board' })),
     ...(inbox.sources || []).map(s => ({ ...s, group: 'inbox' }))
   ];
+  markQuiet(sources, pastSources(ISSUE));
   const errors = [boards.error, inbox.error, boards.reject, inbox.reject].filter(Boolean);
 
   const out = {
@@ -209,7 +246,11 @@ async function main() {
   await writeFile(SEEN, JSON.stringify({ updatedAt: new Date().toISOString(), entries: uniq }, null, 2));
 
   const failed = sources.filter(s => s.status === 'error');
+  const quiet = sources.filter(s => s.quietFor);
   for (const e of errors) console.error(`[ideas] ${e}`);
+  for (const s of quiet) {
+    console.error(`[ideas] ⚠️ ${s.name} 已连续 ${s.quietFor} 期 0 条（状态一直是 ok）—— 可能是源断了，去核一下`);
+  }
   console.error(`[ideas] ${ISSUE}：抓到 ${fetched.length} 条，新增 ${added.length} 条，当期累计 ${items.length} 条` +
     `（榜单${boards.from} / 邮件${inbox.from}）`);
 
@@ -220,11 +261,17 @@ async function main() {
     added: added.length,
     kept: items.length,
     failed: failed.map(s => `${s.name}: ${s.error}`),
+    quiet: quiet.map(s => `${s.name}: 连续 ${s.quietFor} 期 0 条`),
     errors
   }));
 }
 
-main().catch(err => {
-  console.log(JSON.stringify({ status: 'error', issue: ISSUE, message: String(err?.message || err) }));
-  process.exit(1);
-});
+// 只在被当成命令跑时才执行。这个文件现在也 export markQuiet 供人 import，
+// 没有这道守卫的话，一次 import 就会真的去抓一遍、并覆写当期的 raw ——
+// 后续步骤（预筛、深挖）写进去的字段会被抹掉。
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  main().catch(err => {
+    console.log(JSON.stringify({ status: 'error', issue: ISSUE, message: String(err?.message || err) }));
+    process.exit(1);
+  });
+}

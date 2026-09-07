@@ -33,6 +33,13 @@ const SUMMARY_MAX = 600;      // 一阶段的摘要够预筛判断即可，正�
 // Reddit 对同一 IP 的连续请求非常敏感：实测 12 秒仍会 429，20 秒才稳。
 const REDDIT_GAP = 25_000;
 const REDDIT_TRIES = 3;
+// 单条搜索短语自己的重试次数。feedkit 里已经有一次 20 秒退避的重试，
+// 这里再给一次（间隔 25 秒），一条短语最多四次请求。
+//
+// **别往上加。** 两个短语源一共 8 条短语，全程持续限流时按 3 次算能跑到
+// 21 分钟，直接打爆 ideas-archive.js 调这个脚本的超时 —— 那是整组抓取失败，
+// 比现在的 partial 更糟。2 次的最坏是约 12 分钟，超时那边留了 20 分钟。
+const PHRASE_TRIES = 2;
 
 // 版规帖、月度合集这类固定楼，标题就能认出来
 const REDDIT_NOISE = /monthly|weekly|megathread|showcase|read before|rules|announcement|mod post/i;
@@ -177,17 +184,30 @@ async function fetchSource(s, defaultCutoff) {
       // 一条短语一次请求，串行 + 退避（reddit 对连续请求很敏感）。
       // **单条短语被限流只跳过它，不拖垮整组** —— 早先是整组一起抛，
       // 结果四条里有一条 429，当期一条需求帖都没有。
+      //
+      // **单条短语撞 429 要自己重试。** 外层 run() 那圈 429 重试只在整组抛错时
+      // 才够得着，而这里挂 1、2 条是不抛的 —— 于是 2026-09-03 起每期这两个源
+      // 都是 partial，从没真正好过。限流不是失败，退避了再要一次就是了。
       let out = [];
       const failed = [];
       for (let i = 0; i < s.phrases.length; i++) {
         if (i) await sleep(REDDIT_GAP);
         const u = `${s.url}?q=${encodeURIComponent(`"${s.phrases[i]}"`)}` +
           `&sort=new&t=${s.window || 'week'}&limit=25&include_over_18=off`;
-        try {
-          out = out.concat(fromReddit(await fetchText(u), s, cutoff, s.phrases[i]));
-        } catch (err) {
-          failed.push(`${s.phrases[i]}（${String(err && err.message || err).slice(0, 40)}）`);
+        let last = null;
+        for (let t = 1; t <= PHRASE_TRIES; t++) {
+          try {
+            out = out.concat(fromReddit(await fetchText(u), s, cutoff, s.phrases[i]));
+            last = null;
+            break;
+          } catch (err) {
+            last = err;
+            // 429 之外的错（404、超时、解析失败）重试也是白重试
+            if (t >= PHRASE_TRIES || !/HTTP 429/.test(String(err?.message || err))) break;
+            await sleep(REDDIT_GAP * t);
+          }
         }
+        if (last) failed.push(`${s.phrases[i]}（${String(last.message || last).slice(0, 40)}）`);
       }
       if (failed.length === s.phrases.length) throw new Error(`全部短语失败：${failed.join('；')}`);
       if (failed.length) out.partialError = failed.join('；');

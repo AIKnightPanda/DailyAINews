@@ -1,32 +1,32 @@
 {
-  "fetchedAt": "2026-09-06T20:44:22.227Z",
+  "fetchedAt": "2026-09-07T21:44:12.855Z",
   "windowDays": 3,
-  "windowUntil": "2026-09-06T23:59:59.000Z",
+  "windowUntil": "2026-09-07T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
       "status": "ok",
-      "issues": 1,
+      "issues": 0,
       "items": 0,
       "via": {
         "url": "https://www.latent.space/feed",
-        "because": "HTTP 402：Deployment Paused This deployment is temporarily paused pdx1::c7cpw-17"
+        "because": "HTTP 402：Deployment Paused This deployment is temporarily paused iad1::wvs8s-17"
       }
     },
     {
       "id": "importai",
       "name": "Import AI",
       "status": "ok",
-      "issues": 0,
+      "issues": 1,
       "items": 0
     },
     {
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
-      "issues": 2,
-      "items": 2
+      "issues": 3,
+      "items": 0
     },
     {
       "id": "deepmind",
@@ -39,7 +39,7 @@
       "id": "rundown",
       "name": "The Rundown AI",
       "status": "ok",
-      "issues": 2,
+      "issues": 1,
       "items": 0
     },
     {
@@ -50,22 +50,5 @@
       "items": 0
     }
   ],
-  "items": [
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "An Alien Mind",
-      "url": "https://openai.com/index/an-alien-mind",
-      "summary": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination.",
-      "publishedAt": "2026-09-06T09:00:00.000Z"
-    },
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "Research acceleration: The view inside OpenAI",
-      "url": "https://openai.com/index/research-acceleration-view-inside-openai",
-      "summary": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration.",
-      "publishedAt": "2026-09-06T08:00:00.000Z"
-    }
-  ]
+  "items": []
 }

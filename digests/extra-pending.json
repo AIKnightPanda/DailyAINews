@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-09-07T21:44:12.855Z",
+  "fetchedAt": "2026-09-08T21:21:22.740Z",
   "windowDays": 3,
-  "windowUntil": "2026-09-07T23:59:59.000Z",
+  "windowUntil": "2026-09-08T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
@@ -11,7 +11,7 @@
       "items": 0,
       "via": {
         "url": "https://www.latent.space/feed",
-        "because": "HTTP 402：Deployment Paused This deployment is temporarily paused iad1::wvs8s-17"
+        "because": "HTTP 402：Deployment Paused This deployment is temporarily paused pdx1::4zrrv-17"
       }
     },
     {
@@ -25,22 +25,22 @@
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
-      "issues": 3,
-      "items": 0
+      "issues": 10,
+      "items": 7
     },
     {
       "id": "deepmind",
       "name": "Google DeepMind",
       "status": "ok",
-      "issues": 0,
-      "items": 0
+      "issues": 1,
+      "items": 1
     },
     {
       "id": "rundown",
       "name": "The Rundown AI",
       "status": "ok",
-      "issues": 1,
-      "items": 0
+      "issues": 3,
+      "items": 2
     },
     {
       "id": "aivalley",
@@ -50,5 +50,87 @@
       "items": 0
     }
   ],
-  "items": []
+  "items": [
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+      "url": "https://openai.com/index/codex-quantum-computing-experiments",
+      "summary": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.",
+      "publishedAt": "2026-09-08T17:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "The Work Now Within Reach",
+      "url": "https://openai.com/index/the-work-now-within-reach",
+      "summary": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
+      "publishedAt": "2026-09-08T13:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Introducing ChatGPT Images 2.5",
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+      "summary": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
+      "publishedAt": "2026-09-08T11:30:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "On the Navier–Stokes Millennium Prize Problem",
+      "url": "https://openai.com/index/navier-stokes-solution",
+      "summary": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
+      "publishedAt": "2026-09-08T10:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Funding grants for new research into AI and teen development",
+      "url": "https://openai.com/index/teen-development-research-grants",
+      "summary": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
+      "publishedAt": "2026-09-08T09:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+      "url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+      "summary": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
+      "publishedAt": "2026-09-08T00:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "1Password increases engineering productivity 21% with Codex",
+      "url": "https://openai.com/index/1password",
+      "summary": "Engineers at 1Password use Codex to rapidly build new features and internal tools, reaching production-readiness while maintaining rigorous security policies.",
+      "publishedAt": "2026-09-08T00:00:00.000Z"
+    },
+    {
+      "source": "Google DeepMind",
+      "sourceHome": "https://deepmind.google/blog/",
+      "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "summary": "Explore AlphaGenome Atlas, a catalogue predicting the molecular effects and AVI scores for 9 billion single-nucleotide variants across the human genome.",
+      "publishedAt": "2026-09-08T14:00:15.000Z",
+      "enriched": true
+    },
+    {
+      "source": "The Rundown AI",
+      "sourceHome": "https://www.therundown.ai/",
+      "title": "Inside OpenAI's agent-powered research boom",
+      "url": "https://www.therundown.ai/articles/inside-openai-agent-powered-research-boom",
+      "summary": "PLUS: Turn a family scheduler idea into an app with Astra",
+      "publishedAt": "2026-09-08T09:00:00.000Z"
+    },
+    {
+      "source": "The Rundown AI",
+      "sourceHome": "https://www.therundown.ai/",
+      "title": "A catwalk at IFA, but for robots",
+      "url": "https://www.therundown.ai/articles/a-catwalk-at-ifa-but-for-robots",
+      "summary": "PLUS: Figure's humanoid play gets a compute boost",
+      "publishedAt": "2026-09-07T14:30:00.000Z"
+    }
+  ]
 }

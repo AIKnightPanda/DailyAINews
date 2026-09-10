@@ -1,32 +1,32 @@
 {
-  "fetchedAt": "2026-09-09T21:06:47.230Z",
+  "fetchedAt": "2026-09-10T21:07:37.617Z",
   "windowDays": 3,
-  "windowUntil": "2026-09-09T23:59:59.000Z",
+  "windowUntil": "2026-09-10T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
       "status": "ok",
       "issues": 1,
-      "items": 19,
+      "items": 30,
       "via": {
         "url": "https://www.latent.space/feed",
-        "because": "HTTP 402：Deployment Paused This deployment is temporarily paused iad1::bxbqb-17"
+        "because": "HTTP 402：Deployment Paused This deployment is temporarily paused cle1::qr4m5-17"
       }
     },
     {
       "id": "importai",
       "name": "Import AI",
       "status": "ok",
-      "issues": 1,
+      "issues": 0,
       "items": 0
     },
     {
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
-      "issues": 9,
-      "items": 1
+      "issues": 16,
+      "items": 8
     },
     {
       "id": "deepmind",
@@ -39,8 +39,8 @@
       "id": "rundown",
       "name": "The Rundown AI",
       "status": "ok",
-      "issues": 5,
-      "items": 2
+      "issues": 4,
+      "items": 1
     },
     {
       "id": "aivalley",
@@ -55,365 +55,627 @@
       "source": "AINews",
       "sourceHome": "https://news.smol.ai/",
       "section": "AI Twitter Recap",
-      "subsection": "What is factual from the tweets",
+      "subsection": "Frontier Lab Safety Governance, Anthropic’s Cyber Incidents, and the Jacob Coxon Fallout",
       "topic": null,
-      "title": "10,000 agents",
-      "url": "https://x.com/__eknight__/status/2097538148754727260",
+      "title": "Anthropic published a deeper assessment of real-world cyber incidents involving Claude",
+      "url": "https://x.com/AnthropicAI/status/2097762642958135398",
+      "links": [
+        {
+          "url": "https://x.com/METR_Evals/status/2097765966088487290",
+          "text": "METR"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2097764932204769572",
+          "text": "interpretation from @kimmonismus"
+        }
+      ],
+      "summary": "the company said four incidents occurred during third-party cybersecurity evaluations that were mistakenly connected to the internet, with normal safeguards disabled.",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Twitter Recap",
+      "subsection": "Frontier Lab Safety Governance, Anthropic’s Cyber Incidents, and the Jacob Coxon Fallout",
+      "topic": null,
+      "title": "The policy and governance response dominated discussion",
+      "url": "https://x.com/Yoshua_Bengio/status/2097742071104757965",
+      "links": [
+        {
+          "url": "https://x.com/davidshor/status/2097765310250074349",
+          "text": "Shor"
+        },
+        {
+          "url": "https://x.com/EthanJPerez/status/2097861257714172270",
+          "text": "Ethan Perez"
+        }
+      ],
+      "summary": "former Anthropic/OpenAI researcher Jacob Coxon’s resignation and public warnings triggered a broad debate over whether frontier labs are moving too fast on recursive self-improvement and cyber-capable agents.",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Twitter Recap",
+      "subsection": "OpenAI Product Access, Governance Changes, and Security Operations",
+      "topic": null,
+      "title": "OpenAI described a “scale utility for all” strategy for ChatGPT",
+      "url": "https://x.com/michpokrass/status/2097724905177645329",
+      "links": [
+        {
+          "url": "https://x.com/aidan_mclau/status/2097727582166819214",
+          "text": "summary by @aidan_mclau"
+        }
+      ],
+      "summary": "in a detailed product note, the company said the default experience for over 1 billion weekly users has improved substantially since March, with major factual errors down 65% , 72% in finance , extreme sycophancy down 80% , and medical hallucination flags down…",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Twitter Recap",
+      "subsection": "OpenAI Product Access, Governance Changes, and Security Operations",
+      "topic": null,
+      "title": "OpenAI also made two governance/security moves worth tracking",
+      "url": "https://x.com/OpenAI/status/2097741659509584091",
+      "links": [
+        {
+          "url": "https://x.com/paulfchristiano/status/2097733214303645729",
+          "text": "Paul Christiano"
+        },
+        {
+          "url": "https://x.com/sama/status/2097776310940569783",
+          "text": "Sam Altman"
+        }
+      ],
+      "summary": ". First, it added Paul Christiano to the OpenAI Foundation Board and its Safety and Security Committee , with a non-voting observer role on the PBC board ( OpenAI , Paul Christiano , Sam Altman ).",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Twitter Recap",
+      "subsection": "OpenAI Product Access, Governance Changes, and Security Operations",
+      "topic": null,
+      "title": "Operationally, OpenAI had a visible usage-reset incident",
+      "url": "https://x.com/reach_vb/status/2097740432188858422",
+      "links": [
+        {
+          "url": "https://x.com/reach_vb/status/2097743318125846736",
+          "text": "recovery update"
+        },
+        {
+          "url": "https://x.com/thsottiaux/status/2097752790177370535",
+          "text": "Thomas Sottiaux"
+        }
+      ],
+      "summary": "affecting ChatGPT Work/Codex banked resets and some usage meters. The company investigated, rolled back, and said affected users would get replacement resets and apology emails ( reach_vb , recovery update , Thomas Sottiaux ).",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agents, Benchmarks, and Harness Engineering",
+      "topic": null,
+      "title": "Agent evaluation is becoming more long-horizon and workflow-grounded",
+      "url": "https://x.com/AlexGDimakis/status/2097757256783970713",
+      "links": [
+        {
+          "url": "https://x.com/madiator/status/2097761146749190163",
+          "text": "Madiator"
+        },
+        {
+          "url": "https://x.com/arena/status/2097746218399203640",
+          "text": "Arena"
+        }
+      ],
+      "summary": ". Bespoke Labs released AutoResearchExam , a benchmark spanning 29 open-ended ML and engineering tasks over 24 hours , explicitly checking whether agent-created improvements generalize to hidden data.",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agents, Benchmarks, and Harness Engineering",
+      "topic": null,
+      "title": "A parallel theme was “harness engineering” and recursive workflows",
+      "url": "https://x.com/kmad/status/2097715542178083178",
+      "links": [
+        {
+          "url": "https://x.com/omarsar0/status/2097790938911498494",
+          "text": "omarsar0"
+        },
+        {
+          "url": "https://x.com/LangChain/status/2097732992735015230",
+          "text": "LangChain"
+        }
+      ],
+      "summary": ". A talk from @kmad covered Recursive Language Models already used by firms including Harvey and Prime Intellect ( kmad ). @omarsar0 connected this to model-harness co-optimization : owning both the model and the surrounding task harness can unlock strong gain…",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agents, Benchmarks, and Harness Engineering",
+      "topic": null,
+      "title": "Retrieval benchmarks also got more production-shaped",
+      "url": "https://x.com/perplexity_ai/status/2097782467210166601",
+      "links": [
+        {
+          "url": "https://x.com/antoine_chaffin/status/2097783987028509073",
+          "text": "Antoine Chaffin"
+        }
+      ],
+      "summary": ". Perplexity introduced Q2D-Web , a benchmark and public leaderboard for agentic web-search retrieval, built on 190M documents and 70k agent-rewritten queries , with multiple relevance sets to reduce dependence on a single labeling pipeline.",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Twitter Recap",
+      "subsection": "Model and Tooling Releases: Muse Spark, Robotics, Local Inference, and Document Pipelines",
+      "topic": null,
+      "title": "Meta’s Muse Spark 1.3 had one of the strongest product/benchmark cycles of the day",
+      "url": "https://x.com/cline/status/2097751997097431387",
+      "links": [
+        {
+          "url": "https://x.com/DesignArena/status/2097754795838951752",
+          "text": "Design Arena"
+        },
+        {
+          "url": "https://x.com/T0M248/status/2097755416897696139",
+          "text": "T0M248"
+        }
+      ],
+      "summary": ". It became available for free in Cline , where the team said it performs similarly to Opus 5 while being much cheaper ( Cline ). On external evals, Design Arena reported Muse Spark 1.3 (xhigh) reaching #1 on Website Arena with Elo 1362 , a five-position jump…",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Twitter Recap",
+      "subsection": "Model and Tooling Releases: Muse Spark, Robotics, Local Inference, and Document Pipelines",
+      "topic": null,
+      "title": "Perceptron’s Isaac 0.5 is a notable robotics release",
+      "url": "https://x.com/perceptroninc/status/2097716670165058034",
+      "links": [
+        {
+          "url": "https://x.com/LambdaAPI/status/2097766859236053201",
+          "text": "Lambda"
+        }
+      ],
+      "summary": "the company says the model can fine-tune to “almost any task,” with repetitive tasks like box packing working reliably with roughly 30 episodes , and released weights on Hugging Face ( Perceptron ).",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Twitter Recap",
+      "subsection": "Model and Tooling Releases: Muse Spark, Robotics, Local Inference, and Document Pipelines",
+      "topic": null,
+      "title": "Local and document-centric tooling also improved",
+      "url": "https://x.com/googlegemma/status/2097731661953917185",
+      "links": [
+        {
+          "url": "https://x.com/llama_index/status/2097731325532811647",
+          "text": "LlamaIndex"
+        },
+        {
+          "url": "https://x.com/jerryjliu0/status/2097737867405701163",
+          "text": "Jerry Liu"
+        }
+      ],
+      "summary": ". Google’s Gemma team highlighted llama.app as a no-code local UI over llama.cpp , including one-click downloads, memory estimates, and MCP connectivity ( Gemma ).",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Twitter Recap",
+      "subsection": "Systems, Compute, and Specialized Infra",
+      "topic": null,
+      "title": "Photon 2.2 expanded optimized local inference coverage across a wide NVIDIA stack",
+      "url": "https://x.com/vikhyatk/status/2097745546287227242",
+      "links": [
+        {
+          "url": "https://x.com/vikhyatk/status/2097789978680131926",
+          "text": "compiler note"
+        }
+      ],
+      "summary": "including A10/A10G, A100, 3090, L4, H100, B200, and RTX PRO 6000 Blackwell —while also shipping major upgrades to its megakernel compiler , with the pitch that unified kernels can better feed GPUs under CPU contention and variable prefill patterns ( vikhyatk ,…",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Twitter Recap",
+      "subsection": "Systems, Compute, and Specialized Infra",
+      "topic": null,
+      "title": "Epoch AI published a useful compute-intensity snapshot of frontier labs",
+      "url": "https://x.com/EpochAIResearch/status/2097787904462627017",
+      "links": [
+        {
+          "url": "https://x.com/EpochAIResearch/status/2097787917074935818",
+          "text": "ownership clarification"
+        },
+        {
+          "url": "https://x.com/AndrewCurran_/status/2097789799805714746",
+          "text": "Andrew Curran summary"
+        }
+      ],
+      "summary": ". Their new AI Chip Users explorer estimates that OpenAI has grown compute use nearly 20x since 2023 , with broader comparisons across OpenAI, Google DeepMind, Anthropic, Meta, and xAI/SpaceXAI, while distinguishing compute usage from hardware ownership ( Epoc…",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Twitter Recap",
+      "subsection": "Systems, Compute, and Specialized Infra",
+      "topic": null,
+      "title": "Two additional infra stories stood out",
+      "url": "https://x.com/dolaoseb/status/2097776763514560680",
+      "links": [
+        {
+          "url": "https://x.com/cognition/status/2097775999417032762",
+          "text": "Cognition"
+        },
+        {
+          "url": "https://x.com/penlume/status/2097777956437606820",
+          "text": "writeup link from @penlume"
+        }
+      ],
+      "summary": ". First, Kepler Compute emerged from 7 years in stealth claiming a new path to AI memory and logic manufacturing, with $468M raised , its own fab, memory samples this year, and a roadmap centered on 3D/materials innovations , no EUV dependence , and memory wit…",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Twitter Recap",
+      "subsection": "Top Tweets (by engagement, filtered for technical relevance)",
+      "topic": null,
+      "title": "AI safety/policy discourse explosion",
+      "url": "https://x.com/ParkerThayer/status/2097759699626328575",
       "links": [],
-      "summary": "An OpenAI-linked claim circulated that a Navier–Stokes “solution” involved about 10,000 agents working collaboratively @ eknight .",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
+      "summary": "Parker Thayer on Coxon/policy-network coordination claims generated the most engagement among tech-adjacent posts, reflecting how AI governance debate is now inseparable from U.S. political coalition-building.",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://news.smol.ai/",
       "section": "AI Twitter Recap",
-      "subsection": "What is factual from the tweets",
+      "subsection": "Top Tweets (by engagement, filtered for technical relevance)",
       "topic": null,
-      "title": "Navier–Stokes existence/singularity problem",
-      "url": "https://x.com/LearnOpenCV/status/2097541292352065954",
+      "title": "Frontier model economics/perf",
+      "url": "https://x.com/ArtificialAnlys/status/2097802897442627662",
       "links": [],
-      "summary": "Public readers understood the claim as concerning the Navier–Stokes existence/singularity problem , one of the Millennium Prize Problems , though the exact theorem statement and proof scope are not supplied in the tweet set @LearnOpenCV .",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Meta’s Muse Launch and the Personal-Agent Security Architecture",
-      "topic": null,
-      "title": "Meta launched Muse",
-      "url": "https://x.com/finkd/status/2097402101332590646",
-      "links": [
-        {
-          "url": "https://x.com/alexandr_wang/status/2097402344061510004",
-          "text": "@alexandr_wang"
-        },
-        {
-          "url": "https://x.com/MetaNewsroom/status/2097400062544425022",
-          "text": "@MetaNewsroom"
-        }
-      ],
-      "summary": ", a consumer-facing “personal AI agent” positioned as always-on, app-connected, browser-capable, and goal-oriented, with strong distribution through Meta properties and integrations @finkd , @alexandr_wang , @MetaNewsroom .",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Meta’s Muse Launch and the Personal-Agent Security Architecture",
-      "topic": null,
-      "title": "Security architecture is the differentiator being pushed hardest.",
-      "url": "https://x.com/shengjia_zhao/status/2097402766989926911",
-      "links": [
-        {
-          "url": "https://x.com/alexandr_wang/status/2097405157319541135",
-          "text": "@alexandr_wang"
-        },
-        {
-          "url": "https://x.com/alexandr_wang/status/2097410373221773355",
-          "text": "@alexandr_wang"
-        }
-      ],
-      "summary": "Meta’s team said each Muse runs in its own secure VM , actions are mediated by a separate Sentinel , secrets are never directly exposed to the agent, sensitive actions require approval, and there is a public bug bounty up to $300k @shengjia_zhao , @alexandr_wa…",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Meta’s Muse Launch and the Personal-Agent Security Architecture",
-      "topic": null,
-      "title": "Early reception from practitioners was notably positive",
-      "url": "https://x.com/matthuang/status/2097406663339000052",
-      "links": [
-        {
-          "url": "https://x.com/signulll/status/2097416338147049795",
-          "text": "@signulll"
-        },
-        {
-          "url": "https://x.com/lilyjclifford/status/2097479117902070069",
-          "text": "@lilyjclifford"
-        }
-      ],
-      "summary": ", especially on permissioning, secrets management, and consumer utility. Commentary from @matthuang , @signulll , and @lilyjclifford suggests Muse may be one of the first broadly legible personal-agent products where context and access , not raw model IQ, are…",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Meta’s Muse Launch and the Personal-Agent Security Architecture",
-      "topic": null,
-      "title": "Model and ecosystem placement:",
-      "url": "https://x.com/cursor_ai/status/2097402609531236708",
-      "links": [
-        {
-          "url": "https://x.com/arena/status/2097464147890118945",
-          "text": "@arena"
-        }
-      ],
-      "summary": "Meta’s Muse Spark 1.3 was quickly exposed in third-party tooling like Cursor @cursor_ai , while arena-style benchmarking positioned Muse Spark 1.3 Max as price/perf competitive in web-dev coding workloads @arena .",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "OpenAI’s Image 2.5 Release and Astra Rollout",
-      "topic": null,
-      "title": "OpenAI also shipped ChatGPT Images 2.5",
-      "url": "https://x.com/OpenAI/status/2097394956457623964",
-      "links": [
-        {
-          "url": "https://x.com/ChatGPT/status/2097411337064227032",
-          "text": "@ChatGPT"
-        },
-        {
-          "url": "https://x.com/sama/status/2097410967978324010",
-          "text": "@sama"
-        }
-      ],
-      "summary": ", though it was partially overshadowed. The release emphasizes up to 50% lower latency vs Images 2.0 , better realism, stronger edit consistency across repeated edits, comment-based localized changes, transparent backgrounds, and a new Sketch tool for guided g…",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "OpenAI’s Image 2.5 Release and Astra Rollout",
-      "topic": null,
-      "title": "Two API variants were introduced",
-      "url": "https://x.com/reach_vb/status/2097399096000581655",
-      "links": [
-        {
-          "url": "https://x.com/arena/status/2097400515546255754",
-          "text": "@arena"
-        },
-        {
-          "url": "https://x.com/fal/status/2097417427168428356",
-          "text": "@fal"
-        }
-      ],
-      "summary": "GPT-Image-2.5 Flare for speed/quality and Sunburst for higher-precision detailed work @reach_vb . Arena results claimed #1 and #2 positions across text-to-image, image-edit, and multi-image-edit leaderboards, with especially large gains in multi-image editing…",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "OpenAI’s Image 2.5 Release and Astra Rollout",
-      "topic": null,
-      "title": "Astra availability widened materially.",
-      "url": "https://x.com/OpenAI/status/2097431322117476423",
-      "links": [
-        {
-          "url": "https://x.com/theo/status/2097435069900341544",
-          "text": "@theo"
-        },
-        {
-          "url": "https://x.com/ValsAI/status/2097447789630542024",
-          "text": "@ValsAI"
-        }
-      ],
-      "summary": "OpenAI said GPT-6 Astra is now fully rolled out to Plus, Pro, Business, and Enterprise users in Codex and ChatGPT Work @OpenAI . Community demos showed strong practical computer-use performance: @theo reported Astra compiling and running Super Smash Bros.",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Agent Harnesses, Post-Training, and Serving Infrastructure",
-      "topic": null,
-      "title": "Harvey + Baseten’s M&A diligence work is one of the clearest model-harness co-optimization case studies.",
-      "url": "https://x.com/harvey/status/2097372371195953272",
-      "links": [
-        {
-          "url": "https://x.com/nikogrupen/status/2097370187674869803",
-          "text": "@nikogrupen"
-        }
-      ],
-      "summary": "Their recursive language model (RLM) harness uses a root agent to search a data room, delegate to sub-agents for document review, and aggregate findings over corpora up to 80M tokens .",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Agent Harnesses, Post-Training, and Serving Infrastructure",
-      "topic": null,
-      "title": "LangChain/deepagents shipped quality-of-life primitives for harness design",
-      "url": "https://x.com/colifran_/status/2097377522623389865",
-      "links": [
-        {
-          "url": "https://x.com/hwchase17/status/2097410530717704546",
-          "text": "@hwchase17"
-        },
-        {
-          "url": "https://x.com/caspar_br/status/2097424144459874412",
-          "text": "@caspar_br"
-        }
-      ],
-      "summary": ", including subagent forking that passes supervisor context down to subagents, plus managed connections to abstract OAuth/token/consent flows for either agent-owned or user-owned identities @colifran_ , @hwchase17 , @caspar_br .",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Inference and Systems: Sparse Attention, Agentic Serving, and Decode Megakernels",
-      "topic": null,
-      "title": "vLLM’s long-context serving work is notable.",
-      "url": "https://x.com/vllm_project/status/2097397769338282222",
-      "links": [],
-      "summary": "The project described Hybrid HiSparse for sparse-MLA models: KV stays on GPU while possible, then cold KV pages are offloaded to host memory , while a hot buffer serves the indexer.",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Inference and Systems: Sparse Attention, Agentic Serving, and Decode Megakernels",
-      "topic": null,
-      "title": "vLLM also published a full-stack optimization pass for real-world agent traffic",
-      "url": "https://x.com/vllm_project/status/2097427310513426721",
-      "links": [],
-      "summary": ", benchmarked on AgentX . Key takeaways: pipeline parallelism helps cold long prompts but loses on warm short turns; decode context parallelism depends strongly on the model’s attention stack; and session-sticky routing can beat naive load balancing because wa…",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Inference and Systems: Sparse Attention, Agentic Serving, and Decode Megakernels",
-      "topic": null,
-      "title": "Cohere introduced an open-source serving stack built around a “decode megakernel,”",
-      "url": "https://x.com/cohere/status/2097410772355666393",
-      "links": [
-        {
-          "url": "https://x.com/baseten/status/2097407857855803799",
-          "text": "@baseten"
-        }
-      ],
-      "summary": "claiming up to 1.58× faster performance than vLLM on North Mini Code and 1.25×–1.41× end-to-end gains at higher batch sizes @cohere .",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Top Tweets (by engagement)",
-      "topic": null,
-      "title": "Anthropic resignation / safety warning",
-      "url": "https://x.com/hilbertspaess/status/2097476196791709843",
-      "links": [
-        {
-          "url": "https://x.com/hilbertspaess/status/2097476201283834281",
-          "text": "@hilbertspaess"
-        }
-      ],
-      "summary": "Jacob Hilton resigned from Anthropic, arguing both Anthropic and OpenAI are racing toward self-improving superintelligence irresponsibly and that insiders privately treat extinction risk as real @hilbertspaess , with follow-up claims that current systems could…",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Top Tweets (by engagement)",
-      "topic": null,
-      "title": "OpenAI’s user-data clarification",
-      "url": "https://x.com/OpenAI/status/2097375276384567642",
-      "links": [],
-      "summary": "OpenAI’s formal statement that no specific user data was accessed for Navier–Stokes, alongside the caveat about possible de-identified derivative improvement, became a major flashpoint @OpenAI .",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://news.smol.ai/",
-      "section": "AI Twitter Recap",
-      "subsection": "Top Tweets (by engagement)",
-      "topic": null,
-      "title": "Cognition financing",
-      "url": "https://x.com/cognition/status/2097369798518681891",
-      "links": [],
-      "summary": "Cognition announced a raise of $2B+ at a $48B valuation , saying run-rate revenue grew from $492M to nearly $900M since May @cognition .",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
+      "summary": "Artificial Analysis on the updated intelligence-vs-cost Pareto frontier captured the week’s practical model-selection story: Claude Fable 5.1 , Muse Spark 1.3 , and GPT-6 Astra all moved the frontier outward.",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://news.smol.ai/",
       "section": "AI Reddit Recap",
       "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "1. Chinese Multimodal AI Releases: Driving and Flash APIs",
-      "title": "Qwen/Qwen-Drive-1.0-4B · Hugging Face",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wauxg9/qwenqwendrive104b_hugging_face/",
+      "topic": "1. DeepSeek V4.1 Flash API Rollout",
+      "title": "Deepseek Has Soft Retired Deepseek V4 Pro",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wbfrut/deepseek_has_soft_retired_deepseek_v4_pro/",
       "links": [
         {
-          "url": "https://arxiv.org/pdf/2609.00111",
-          "text": "technical report"
+          "url": "https://i.redd.it/01k8gclhggoh1.png",
+          "text": "tweet screenshot"
         }
       ],
-      "summary": "(Activity: 549): Qwen released Qwen/Qwen-Drive-1.0-4B , an open-weight autonomous-driving VLM derived from an unchanged Qwen3.5 4B VLM, with a full BF16 checkpoint around 9B and extra planner-sft , planner-rl , and perception modules.",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
+      "summary": "(Activity: 1496): The image is a tweet screenshot stating that DeepSeek V4 Pro has been effectively soft-retired: requests to DeepSeek V4 Pro are being routed to DeepSeek V4.1 Flash and billed at Flash pricing until V4.1 Pro launches.",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://news.smol.ai/",
       "section": "AI Reddit Recap",
       "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "1. Chinese Multimodal AI Releases: Driving and Flash APIs",
-      "title": "DeepSeek Flash 4.1 is already being tested via API and rolling out.",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wan3nl/deepseek_flash_41_is_already_being_tested_via_api/",
+      "topic": "2. Qwen Driving VLM and 1M-Context MLX Serving",
+      "title": "Qwen3.8-Flash-Next on MLX-serve, 1m context is released!",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wb7p70/qwen38flashnext_on_mlxserve_1m_context_is_released/",
       "links": [
         {
-          "url": "https://x.com/kimmonismus/status/2097286327909675477",
-          "text": "source"
+          "url": "https://github.com/beamivalice/opencode2-mlx-serve",
+          "text": "plugin"
         }
       ],
-      "summary": "(Activity: 528): DeepSeek V4.1 Flash is reportedly in internal beta via API: keep the existing base_url and call model deepseek-v4.1-flash-expires-on-0910 , with pricing unchanged from deepseek-v4-flash and a 20 concurrent request/account limit ( source ).",
-      "publishedAt": "2026-09-09T05:04:51.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-openai-reports-navier-stokes"
+      "summary": "(Activity: 318): Qwen3.8-Flash-Next support for mlx-serve was released with a mixed 4/8-bit MLX quant : dense layers at 8-bit , expert layers at 4-bit , and 8-bit KV cache targeting 1M-token context on an M5 Max 128GB.",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "3. Local AI Hardware Memory Bandwidth",
+      "title": "GPU guide (GB per dollar, bandwidth)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1waq7hu/gpu_guide_gb_per_dollar_bandwidth/",
+      "links": [],
+      "summary": "(Activity: 541): The post shares a GPU comparison aimed at local LLM users, plotting VRAM capacity per dollar, nominal memory bandwidth, and bandwidth per dollar, using commonly discussed GPUs from LocalLLaMA/LowEndLocalAI/LocalLLM.",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "3. Local AI Hardware Memory Bandwidth",
+      "title": "Apple A20 Pro debuts with 7-core GPU, 32-core Neural Engine and 50% more memory bandwidth (~115 GB/s)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wc0ekw/apple_a20_pro_debuts_with_7core_gpu_32core_neural/",
+      "links": [
+        {
+          "url": "https://www.notebookcheck.net/Apple-A20-Pro-debuts-with-7-core-GPU-32-core-Neural-Engine-and-50-more-memory-bandwidth.1395027.0.html",
+          "text": "Notebookcheck"
+        }
+      ],
+      "summary": "(Activity: 435): Apple’s A20 Pro is reported to move to TSMC N2-class 2 nm, keeping a 6-core CPU topology while adding a 7-core GPU , a doubled 32-core Neural Engine , and a likely 96-bit LPDDR5X memory interface for ~ 115 GB/s bandwidth—about 50% above A19 Pr…",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "1. OpenAI Navier–Stokes Solution and Authorship Controversy",
+      "title": "OpenAl Says It Has Cracked One of Math’s “Millennium Problems” (Navier-Stokes) [N]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1wavdi7/openal_says_it_has_cracked_one_of_maths/",
+      "links": [
+        {
+          "url": "https://openai.com/index/navier-stokes-solution/",
+          "text": "OpenAI"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/09/08/science/openai-proof-millennium-problem.html?smid=nytcore-ios-share",
+          "text": "NYT"
+        }
+      ],
+      "summary": "(Activity: 1154): OpenAI claims it has solved the Clay Millennium Prize Navier–Stokes existence/smoothness problem in a new announcement ( OpenAI , reported by NYT ).",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "1. OpenAI Navier–Stokes Solution and Authorship Controversy",
+      "title": "Tristan Buckmaster",
+      "url": "https://cims.nyu.edu/~tristanb/statement.pdf",
+      "links": [],
+      "summary": "A detailed timeline claims Tristan Buckmaster and Levent Alpöge had independent progress on related PDE blowup problems—“finite-time blowup with smooth forcing” for incompressible porous media , Boussinesq , and 3D incompressible Euler —and possibly a related…",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "1. OpenAI Navier–Stokes Solution and Authorship Controversy",
+      "title": "Millenium Prize solution discovered at OpenAI",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wav1l6/millenium_prize_solution_discovered_at_openai/",
+      "links": [
+        {
+          "url": "https://i.redd.it/mi1582vh0coh1.png",
+          "text": "image"
+        }
+      ],
+      "summary": "(Activity: 1287): The image is a screenshot of a purported OpenAI X post claiming an internal model solved the Navier–Stokes Millennium Prize problem in 88 hours using roughly 10,000 coordinating AI agents, with a chart showing dramatically higher pass rates f…",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "1. OpenAI Navier–Stokes Solution and Authorship Controversy",
+      "title": "The insanity of 10.000 agents running",
+      "url": "https://www.reddit.com/r/singularity/comments/1wbx0o5/the_insanity_of_10000_agents_running/",
+      "links": [],
+      "summary": "(Activity: 1644): The post highlights the compute scale allegedly used by OpenAI in a controversial proof attempt: ~10,000 agents running for 88 hours, i.e. 880,000 agent-hours or roughly 100 continuous agent-years.",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "1. OpenAI Navier–Stokes Solution and Authorship Controversy",
+      "title": "OpenAI might’ve cheated when solving the Navier-Stokes millennium-prize problem; problems with AI in academics",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/1wb0qn9/openai_mightve_cheated_when_solving_the/",
+      "links": [
+        {
+          "url": "https://www.claymath.org/millennium/navier-stokes-equation/",
+          "text": "Navier–Stokes existence and smoothness Millennium Prize problem"
+        }
+      ],
+      "summary": "(Activity: 1213): The post alleges that OpenAI used a non-public model and roughly $15M of compute / “ 10,000 agents ” to accelerate work on the Navier–Stokes existence and smoothness Millennium Prize problem after learning that Tristan Buckmaster and Levent A…",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "1. OpenAI Navier–Stokes Solution and Authorship Controversy",
+      "title": "OpenAI threatened to ruin star mathematician’s career",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wayuay/openai_threatened_to_ruin_star_mathematicians/",
+      "links": [
+        {
+          "url": "https://i.redd.it/tm72mtvzncoh1.png",
+          "text": "link"
+        }
+      ],
+      "summary": "(Activity: 3174): The image ( link ) is a highlighted excerpt from an alleged/verified statement by Tristan Buckmaster, an NYU mathematician, claiming OpenAI pressured him over authorship credit related to a purported Navier–Stokes result.",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "2. Astra Agents in Real-World R&D Workflows",
+      "title": "Today Astra is doing 100% of my job",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1waqlhc/today_astra_is_doing_100_of_my_job/",
+      "links": [
+        {
+          "url": "https://i.redd.it/vcm3dgq28boh1.jpeg",
+          "text": "JPEG"
+        }
+      ],
+      "summary": "(Activity: 2737): The image ( JPEG ) shows an electronics workbench with monitors running PCB/CAD-like tooling and overlays reading “ChatGPT is using your computer”, contextualizing the title’s claim that Astra/ChatGPT is automating an embedded hardware workfl…",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "2. Astra Agents in Real-World R&D Workflows",
+      "title": "A guy dropped a computer into the simulation his Astra agents live in. One agent sat down and built a simulation of his own, with its own agents living inside. Simulations all the way down.",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/1wbcahf/a_guy_dropped_a_computer_into_the_simulation_his/",
+      "links": [],
+      "summary": "(Activity: 1557): A post attributes to Matt Shumer an experiment where Astra-powered autonomous agents were placed in a simulated environment containing a computer capable of running code; one agent reportedly used it to build a nested simulation with its own…",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "3. Creative Model Workflows: MiniMax H3 and Fable 5.1",
+      "title": "Pushing AI emotions is possible through microexpressions, tags and context",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1wap0rb/pushing_ai_emotions_is_possible_through/",
+      "links": [
+        {
+          "url": "https://www.reddit.com/user/AnybodyAlarmed9661/",
+          "text": "Sheltie Chill / AnybodyAlarmed9661"
+        }
+      ],
+      "summary": "(Activity: 2062): The post demonstrates emotion/prosody control in MiniMax H3 video generation using inline speech tags such as , , , , , , , and … , plus contextual acting instructions like [English, crying] or [English, singing] ; the author says humming can…",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://news.smol.ai/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "3. Creative Model Workflows: MiniMax H3 and Fable 5.1",
+      "title": "Fable 5.1 vs GPT-6 Astra for 2D Sprites",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1wanm8p/fable_51_vs_gpt6_astra_for_2d_sprites/",
+      "links": [
+        {
+          "url": "https://v.redd.it/i6c2ojunmaoh1",
+          "text": "v.redd.it/i6c2ojunmaoh1"
+        }
+      ],
+      "summary": "(Activity: 1219): A user compared sprite-generation workflows from Codex CLI with GPT-5.6 Astra in XHigh versus Claude Code CLI with Fable 5.1 in XHigh using the same prompt: “Build me some knight sprites…” .",
+      "publishedAt": "2026-09-10T03:33:12.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-d3b"
     },
     {
       "source": "OpenAI",
       "sourceHome": "https://openai.com/news/",
-      "title": "Paul Christiano joins OpenAI Foundation Board",
-      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
-      "summary": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
-      "publishedAt": "2026-09-09T17:00:00.000Z"
+      "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+      "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+      "summary": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections.",
+      "publishedAt": "2026-09-10T16:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Now everyone can put data to work",
+      "url": "https://openai.com/index/put-data-to-work",
+      "summary": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.",
+      "publishedAt": "2026-09-10T15:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Introducing ChatGPT for Financial Services",
+      "url": "https://openai.com/index/introducing-chatgpt-financial-services",
+      "summary": "Introducing ChatGPT for Financial Services, combining built-in financial data and GPT-6 Astra for research, modeling, and client-ready materials.",
+      "publishedAt": "2026-09-10T07:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Expanding AI access and cyber defense for federal, state, local, and tribal governments",
+      "url": "https://openai.com/index/expanding-ai-access-us-government",
+      "summary": "OpenAI and GSA will offer eligible federal, state, local, and tribal governments $0 license fees, 50% off usage, and expanded cyber defense support.",
+      "publishedAt": "2026-09-10T07:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Build more natural voice experiences with GPT‑Live‑1 in the API",
+      "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+      "summary": "GPT‑Live‑1 brings natural, full-duplex voice conversations to the API, with stronger instruction following, custom voices, and telephony support.",
+      "publishedAt": "2026-09-10T00:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Introducing the Agents API",
+      "url": "https://openai.com/index/introducing-the-agents-api",
+      "summary": "Build and launch cloud agents with the Agents API, a managed service powered by the Codex harness for orchestration, long-running sessions, and tool use.",
+      "publishedAt": "2026-09-10T00:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "The AI policy window is open. We need to act.",
+      "url": "https://openai.com/index/ai-policy-window",
+      "summary": "Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open.",
+      "publishedAt": "2026-09-09T13:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "GPT-6 Astra: The next generation in intelligence for work",
+      "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
+      "summary": "Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.",
+      "publishedAt": "2026-09-09T11:00:00.000Z"
     },
     {
       "source": "The Rundown AI",
       "sourceHome": "https://www.therundown.ai/",
-      "title": "OpenAI's secret model settles a $1M math problem",
-      "url": "https://www.therundown.ai/articles/openai-secret-model-settles-a-1m-math-problem",
-      "summary": "PLUS: Find out where your brand appears in AI search",
-      "publishedAt": "2026-09-09T10:00:00.000Z"
-    },
-    {
-      "source": "The Rundown AI",
-      "sourceHome": "https://www.therundown.ai/",
-      "title": "Apple unfolds its decade-long iPhone",
-      "url": "https://www.therundown.ai/articles/apple-unfolds-its-decade-long-iphone",
-      "summary": "PLUS: Australia wants algorithms to be optional",
-      "publishedAt": "2026-09-08T14:30:00.000Z"
+      "title": "An Anthropic exit becomes an extinction debate",
+      "url": "https://www.therundown.ai/articles/an-anthropic-exit-becomes-an-extinction-debate",
+      "summary": "PLUS: Make your website easier for AI to find and cite pt. 2",
+      "publishedAt": "2026-09-10T10:00:00.000Z"
     },
     {
       "source": "AI Valley",
@@ -421,12 +683,12 @@
       "section": null,
       "subsection": null,
       "topic": null,
-      "title": "OpenAI says AI solved one of maths’ biggest problems",
-      "url": "https://openai.com/index/navier-stokes-solution/",
+      "title": "Anthropic modeled what AI could do to the US economy by 2030",
+      "url": "https://www.anthropic.com/institute/econ-scenarios",
       "links": [],
-      "summary": "OpenAI is claiming its unreleased AI model just solved Navier-Stokes, the 3rd most famous unsolved math problem in the world that’s been open for ~90 years. It's one of the 7 Millennium Prize Problems, with a $1 million bounty.",
-      "publishedAt": "2026-09-09T14:06:02.422Z",
-      "issueUrl": "https://www.theaivalley.com/p/openai-cracked-a-new-breakthrough"
+      "summary": "and their extreme scenario gets pretty wild after 2027. By 2030, US GDP is 32.4% higher than without AI, annual growth hits 15.4% and unemployment reaches 11.9%.",
+      "publishedAt": "2026-09-10T13:58:28.450Z",
+      "issueUrl": "https://www.theaivalley.com/p/anthropic-modeled-what-ai-could-do-by-2030"
     },
     {
       "source": "AI Valley",
@@ -434,12 +696,12 @@
       "section": null,
       "subsection": null,
       "topic": null,
-      "title": "AI researchers are starting to quit over ‘out-of-control’ AI fears",
-      "url": "https://x.com/hilbertspaess/status/2097476196791709843?s=20",
+      "title": "Meta has a new personal AI agent called Muse",
+      "url": "https://ai.meta.com/muse/",
       "links": [],
-      "summary": "Jacob Coxon resigned from Anthropic after three years doing pretraining research at OpenAI and Anthropic, saying neither company is acting responsibly and they’re “racing straight to self-improving superintelligence and gambling with our lives.”",
-      "publishedAt": "2026-09-09T14:06:02.422Z",
-      "issueUrl": "https://www.theaivalley.com/p/openai-cracked-a-new-breakthrough"
+      "summary": "it’s designed to understand your goals and keep working on stuff for you 24/7. It gets its own isolated Linux computer with a browser, CPU, memory and storage, where your data and credentials live.",
+      "publishedAt": "2026-09-10T13:58:28.450Z",
+      "issueUrl": "https://www.theaivalley.com/p/anthropic-modeled-what-ai-could-do-by-2030"
     }
   ]
 }

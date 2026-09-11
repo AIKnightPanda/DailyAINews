@@ -455,7 +455,7 @@ async function main() {
       const fresh = await DISCOVERERS[s.kind](s, cutoff, ANCHOR);
       return { s, parsed: PARSERS[s.kind](fresh, s), total: fresh.length, via: null };
     }
-    let xml, via = null;
+    let xml, via = null, used = s.url;
     try {
       xml = await fetchText(s.url);
     } catch (err) {
@@ -467,6 +467,7 @@ async function main() {
       for (const m of mirrors) {
         try {
           xml = await fetchText(m);
+          used = m;
           via = { url: m, because: String(err.message || err) };
           break;
         } catch (err2) {
@@ -477,7 +478,9 @@ async function main() {
     }
     let fresh = rssItems(xml).filter(it => it.ts >= cutoff && it.ts <= ANCHOR);
     // 镜像 feed 常常混着别的内容，按标题挑出属于这个源的那些
-    if (s.titleMatch) fresh = fresh.filter(it => s.titleMatch.test(it.title));
+    if (s.titleMatch && (!s.titleMatchOn || s.titleMatchOn.test(used))) {
+      fresh = fresh.filter(it => s.titleMatch.test(it.title));
+    }
     if (s.latestOnly && fresh.length) {
       fresh = [fresh.reduce((a, b) => (b.ts > a.ts ? b : a))];
     }

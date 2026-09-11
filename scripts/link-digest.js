@@ -166,14 +166,21 @@ if (oldStart !== -1) {
          (oldEnd !== -1 ? body.slice(oldEnd + END.length) : '');
 }
 
-body = body.replace(/\[E(\d+)\]/g, (whole, n) => {
+// 替换结果自带一对全角括号。模型常常自己已经写成「（[E15]）」，
+// 再套一层就成了「（（…））」——2026-09-08、09-09 两次 Routine 都撞上，
+// 模型还跑去手改脚本输出、改完只重跑 build-viewer。所以编号两侧紧贴着
+// 括号（全角半角都算）时连括号一起吃掉，只留脚本给的那一对。
+body = body.replace(/([（(]\s*)?\[E(\d+)\](\s*[）)])?/g, (whole, open, n, close) => {
   const item = items[Number(n) - 1];
+  const wrapped = open && close;
   if (!item) {
-    bogus.push(whole);
-    return '';   // 编号不存在：整个标记去掉，不留死链也不留噪声
+    bogus.push(`[E${n}]`);
+    // 编号不存在：整个标记去掉，不留死链也不留噪声；只有一侧括号的原样还回去
+    return wrapped ? '' : (open || '') + (close || '');
   }
   cited++;
-  return `（[${esc(localized(item, Number(n)).title)}](${escUrl(item.url)})）`;
+  const link = `（[${esc(localized(item, Number(n)).title)}](${escUrl(item.url)})）`;
+  return wrapped ? link : (open || '') + link + (close || '');
 });
 
 // ── 1.5 推文板块的采集/展示统计条 ──────────────────────────────────────────
@@ -324,7 +331,7 @@ if (!items.length) {
 const viaMirror = (extra.sources || []).filter(s => s.via);
 if (viaMirror.length) {
   lines.push(...viaMirror.map(s =>
-    `> ℹ️ ${s.name} 主站当前不可用（${s.via.because}），本期内容取自镜像 ${hostOf(s.via.url)}。`), '');
+    `> ℹ️ ${s.name} 首选地址当前不可用（${s.via.because}），本期内容取自备用地址 ${hostOf(s.via.url)}。`), '');
 }
 
 // 抓失败的源要明说，不能静悄悄少一块
@@ -352,6 +359,13 @@ const emptySections = [];
   });
 }
 
+// 中文正文里混进半角标点（「时代,基础设施」「Levie:个人」）——2026-09-07 那期整篇如此，
+// 页面上和其他期一眼就不统一。英文引语、链接和 URL 里的半角是对的，先摘掉再数。
+const halfWidth = body.split('\n')
+  .filter(l => /[一-鿿]/.test(l) && !/^(issue|feed_generated_at|headline):/.test(l))
+  .map(l => l.replace(/"[^"]*"|\]\([^)]*\)|https?:\/\/\S+/g, ''))
+  .reduce((n, l) => n + (l.match(/[一-鿿][,:()]|[,:()][一-鿿]/g) || []).length, 0);
+
 // ── 4. 写回 ───────────────────────────────────────────────────────────────
 
 const out = body.replace(/\n+$/, '\n') + '\n' + lines.join('\n');
@@ -365,4 +379,5 @@ console.log(`[link-digest] ${issue}：${items.length} 条补充条目` +
   (Object.keys(zh).length ? '，标题用中文译名' : '，标题用英文原文') +
   (mismatched ? `，⚠️ ${mismatched} 条译文与原标题对不上，已退回英文` : '') +
   (emptySections.length ? `，⚠️ 这些板块下没有任何 ### 条目：${emptySections.join('、')}` : '') +
+  (halfWidth >= 3 ? `，⚠️ 中文正文里有 ${halfWidth} 处半角标点（, : ( )），和其他期不统一` : '') +
   (tweetStrip ? `\n[link-digest] ${issue}：${tweetStrip.replace(/[⟦⟨⟩]/g, '')}` : ''));

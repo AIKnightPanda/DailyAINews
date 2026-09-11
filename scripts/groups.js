@@ -30,7 +30,7 @@ export const groupOf = src =>
 export const SOURCES = [
   // AINews 自己就是日报，一个窗口里可能套进好几期。只取期号当天那一期，
   // 否则「看当期汇总」指向哪一期就说不清了。
-  { id: 'ainews',   name: 'AINews',         kind: 'ainews',  url: 'https://news.smol.ai/rss.xml',
+  { id: 'ainews',   name: 'AINews',         kind: 'ainews',  url: 'https://www.latent.space/feed',
     // news.smol.ai 是 Vercel 部署，2026-09-03 起返回 402 DEPLOYMENT_DISABLED
     //（对方把部署停了，账单或订阅问题，不是我们这侧的事）。
     // swyx 把每期 AINews 全文同步发在 Latent.Space 的 substack 上：时间戳与站点、
@@ -41,10 +41,16 @@ export const SOURCES = [
     // Cloudflare 站点**：substack.com 子域和 latent.space 自定义域，反爬策略
     // 未必同步。GitHub Actions 的机房出口在 09-04、09-05 被前者 403 挡了两天，
     // 多一个入口就多一次机会。
-    fallback: ['https://swyx.substack.com/feed', 'https://www.latent.space/feed'],
-    // 这个 feed 里混着 Latent.Space 自己的播客和文章，只认 [AINews] 开头的那些
-    titleMatch: /^\[AINews\]/,
-    home: 'https://news.smol.ai/', latestOnly: true,
+    //
+    // 2026-09-11 起主备对调：news.smol.ai 已连续 8 天 402，每天白打一枪再退镜像，
+    // 期末还挂一行「主站不可用」。latent.space 这边 09-05 以来天天稳定，
+    // Actions 机房出口也没被它挡过，直接当首选；smol.ai 留在最后，哪天恢复了自动接上。
+    fallback: ['https://swyx.substack.com/feed', 'https://news.smol.ai/rss.xml'],
+    // 镜像 feed 里混着 Latent.Space 自己的播客和文章，只认 [AINews] 开头的那些。
+    // **只对镜像生效**：smol.ai 自家 feed 的标题不带这个前缀，一视同仁地过滤
+    // 会让它恢复那天被静默筛成 0 条（09-04 加这条规则时就埋下了这个坑）。
+    titleMatch: /^\[AINews\]/, titleMatchOn: /latent\.space|substack\.com/,
+    home: 'https://www.latent.space/', latestOnly: true,
     note: 'smol.ai 的每日聚合，把 X、Reddit、Discord 的讨论汇成一期' },
   { id: 'importai', name: 'Import AI',      kind: 'article', url: 'https://jack-clark.net/feed/',
     home: 'https://jack-clark.net/',

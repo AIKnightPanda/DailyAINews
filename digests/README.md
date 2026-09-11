@@ -245,12 +245,13 @@ claude -p "ok"    # 报 OAuth session expired 就在交互式终端跑一次 cla
 抓取有两条路，互为备份：
 
 ```
-18:33 UTC  Actions runner 抓五个源 → 提交 digests/extra-pending.json   （预抓）
+16:33 UTC  Actions runner 抓六个源 → 提交 digests/extra-pending.json   （预抓，实际常晚 2–3 小时触发）
 21:30 UTC  Routine 起来，archive.js 读这份现成的；读不到就自己实时抓   （回落）
 ```
 
 2026-09-05 把预抓时间从 21:00 提前到 18:33——GitHub 的 `schedule` 触发本身
 不保证准点，实测延迟过近 110 分钟，缓冲从 30 分钟拉到近 3 小时才扛得住。
+2026-09-11 又提前到 16:33——延迟涨到了 2.5–3 小时，09-07 那次预抓比 Routine 还晚到。
 
 预抓一天只跑一次 —— `fetch-extra.js` 抓完会把 URL 记进 `extra-seen.json`，
 同一天再跑只会返回 0 条，把上一次的成果覆盖掉。

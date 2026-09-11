@@ -12,11 +12,16 @@
 # 2026-09-05 缓冲从 30 分钟拉到约 3 小时，跟 fetch-ideas 一起改的——
 # 虽然这条本身有实时抓取兜底、没那么急，但同一天两条 workflow 一起被
 # GitHub 调度延迟了近 110 分钟，索性一起挪，分钟数也避开整点/整半点。
+#
+# 2026-09-11 再提前到 16:33 UTC：18:33 的设定实际 20:39–21:44 才触发，
+# 09-07 那次 21:44 才跑，比 Routine 还晚——Routine 已经实时抓过并记了
+# extra-seen，这边抓回来 0 条，白跑。期号取 UTC 日期，上游 feed 06:4x UTC 出刊，
+# 16:33 在两者之间，延迟 3 小时也不跨日。
 name: fetch-extra
 
 on:
   schedule:
-    - cron: '33 18 * * *'     # 03:33 北京时间，紧跟 fetch-ideas 之后，比 Routine 早约 2h57m
+    - cron: '33 16 * * *'     # 00:33 北京时间，紧跟 fetch-ideas 之后，比 Routine 早约 4h57m
   workflow_dispatch:
 
 permissions:

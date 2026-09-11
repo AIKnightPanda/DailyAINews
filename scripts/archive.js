@@ -202,7 +202,7 @@ async function main() {
   // 补充信息源（AINews / Import AI / 官方博客）—— 纯链接墙，不抓正文。
   // 它是加分项不是必需品：抓不到就带着空清单继续，绝不让当期简报出不来。
   //
-  // 优先用 GitHub Actions 在 21:00 UTC 预抓好的那份，没有或日期对不上就自己实时抓。
+  // 优先用 GitHub Actions 预抓好的那份（fetch-extra.yml，16:33 UTC 起），没有或日期对不上就自己实时抓。
   // 两条路都通：云端环境已放行这五个域名（2026-08-28 实测 5/5）。
   let extra = { items: [], sources: [] };
   let extraFrom = 'live';

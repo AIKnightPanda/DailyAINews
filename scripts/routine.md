@@ -54,7 +54,7 @@
 
 2. 预处理（**用 Haiku 子代理，不要自己做**）：
 
-   起一个 **model 为 haiku** 的子代理，任务是：
+   起一个 **model 为 haiku** 的子代理（**前台跑**，`run_in_background` 设为 false），任务是：
 
      读 `scripts/preprocess-style.md`，按其中的「任务 A」和「任务 B」执行，
      期号是 <issue>。两个任务彼此独立，其中一个失败不要重试，把另一个做完就交付。
@@ -158,7 +158,7 @@
    一两分钟；如果确实有较多新条目要现抓，可能到 4–8 分钟。
    输出里的 failed 数组要如实报告。
 
-9. 起一个 **model 为 haiku** 的子代理，任务是：
+9. 起一个 **model 为 haiku** 的子代理（**前台跑**，`run_in_background` 设为 false），任务是：
 
      读 scripts/ideas-style.md，按其中的「任务 A」和「任务 B」执行，期号是 <issue>。
      素材来自 node scripts/ideas-extract.js <issue>。
@@ -169,6 +169,10 @@
      每条写一段背景和一句判断；判断的是这件事本身有没有价值，不是走一遍检查表。
      两个任务彼此独立，其中一个失败不要重试，把另一个做完就交付。
 
+   **必须等它交付再往下走。** 2026-09-08、09-09 两次都起在了后台，主会话没等它
+   就报了 success 收工，全靠完成通知把会话重新叫醒才去拼装和提交 ——
+   通知哪天没来，当期灵感就是写了一半、没有提交。
+
    素材约 36KB（候选的正文和评论全给），让主会话读它既贵又会稀释注意力。
    **这一步失败不要重试，直接进下一步。** 没有说明的条目不会上页面，
    没有判断就没有精选那一节，页面照样出得来。
@@ -178,7 +182,8 @@
     node scripts/link-ideas.js <issue>
 
     看它的输出：报告「N 条精选与素材对不上，已丢弃」说明子代理写的探针有问题，
-    在最后如实报告；「N 条译文在素材里找不到对应条目」同理。
+    在最后如实报告；「N 条译文在素材里找不到对应条目」「N 条展示条目没有说明」同理 ——
+    后者是任务 A 漏写了，页面上会露出英文原标题，不能说成「全部正常」。
 
 11. 建页并提交：
 
@@ -255,7 +260,7 @@ Routine 只能访问白名单里的域名，**不在名单上的一律 403，且
 
 | 用途 | 域名 |
 |---|---|
-| 简报补充源 | `news.smol.ai`、`swyx.substack.com`、`www.latent.space`（后两个是 AINews 镜像）、`jack-clark.net`、`openai.com`、`deepmind.google`、`www.therundown.ai`、`theaivalley.com`、`www.theaivalley.com` |
+| 简报补充源 | `www.latent.space`（AINews 首选）、`swyx.substack.com`、`news.smol.ai`（后两个是 AINews 备用）、`jack-clark.net`、`openai.com`、`deepmind.google`、`www.therundown.ai`、`theaivalley.com`、`www.theaivalley.com` |
 | 灵感源 | `www.reddit.com`、`reddit.com`、`hn.algolia.com`、`api.stackexchange.com`、`www.ycombinator.com`、`trends.vc`、`www.producthunt.com` |
 | 其他 | `claude.com`、`www.anthropic.com` |
 

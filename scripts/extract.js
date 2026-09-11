@@ -113,6 +113,16 @@ out.push(`# 第 ${issue} 期素材`);
 out.push(`feed 生成于 ${data.stats.feedGeneratedAt}`);
 out.push(`统计：${data.stats.xBuilders} 位建造者 / ${data.stats.totalTweets} 条推文 / ${data.stats.blogPosts} 篇博客 / ${data.stats.podcastEpisodes} 期播客`);
 
+// 入档时剔掉的上游重复推送（见 archive.js 的 dropRepeats）。只给名字不给正文：
+// 模型要知道「这节空着是因为重复」，才能把缺省说明写对，而不是写成「无新增」。
+if (data.repeats?.length) {
+  const KIND = { podcast: '播客', blog: '博客' };
+  out.push('上游重复推送、入档时已剔除（**不是本期内容，不要写**，只在缺省说明里提一句）：');
+  for (const r of data.repeats) {
+    out.push(`- ${KIND[r.kind] || r.kind} ${r.name}：${String(r.title).trim()}（${r.firstIssue} 期已收录）`);
+  }
+}
+
 // ── 推文 ────────────────────────────────────────────────────────
 out.push('\n## 推文');
 for (const author of data.x || []) {

@@ -13,8 +13,8 @@
 import { execFile } from 'child_process';
 import { promisify } from 'util';
 import { writeFile, readFile, mkdir } from 'fs/promises';
-import { existsSync, readFileSync, readdirSync } from 'fs';
-import { join, dirname } from 'path';
+import { existsSync, readFileSync, readdirSync, realpathSync } from 'fs';
+import { join, dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 import { restoreBody } from './blog-body.js';
 
@@ -70,6 +70,69 @@ function missingIssues(issue) {
     if (!have.has(d) && d !== issue) gaps.push(d);
   }
   return gaps;
+}
+
+// 上游会把一两周前的播客和博客当新内容再推一遍。根子在它的 generate-feed.js：
+// 已读记录 7 天就修剪掉，而播客回溯窗口是 14 天、没有发布日期的博客干脆不受
+// 72 小时窗口约束 —— 过了 7 天，同一集、同一篇就又「没见过」了。
+// 2026-09-05 到 09-08 连着四期中招：6 篇博客、3 期播客都是 08-27~29 写过的，
+// 09-06 那期的博客和播客整节是重复的。推文窗口只有 24 小时，不受影响。
+//
+// 上游改不了，就在入档前对着前 REPEAT_DAYS 天的存档剔掉。被剔的条目记进
+// feed.repeats —— 下一轮扫描也读它，所以同一篇隔 8 天冒一次、冒到第 N 次，
+// 链条都接得上，不会因为首发那期滑出窗口就漏过去。
+const REPEAT_DAYS = 30;
+
+const repeatKeys = (kind, x) => [
+  x.guid && `${kind}:guid:${x.guid}`,
+  // 播客的 url 常是频道页/播放列表，一个频道所有集共用，不能当键
+  kind === 'blog' && x.url && `${kind}:url:${String(x.url).replace(/[?#].*$/, '').replace(/\/+$/, '')}`,
+  x.title && `${kind}:title:${x.name || ''}|${String(x.title).trim()}`
+].filter(Boolean);
+
+export function dropRepeats(feed, issue, rawDir = RAW_DIR) {
+  const floor = new Date(Date.parse(`${issue}T00:00:00Z`) - REPEAT_DAYS * 864e5).toISOString().slice(0, 10);
+  const first = new Map();   // 键 → 最早出现的期号
+  let files = [];
+  try {
+    files = readdirSync(rawDir)
+      .filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
+      .map(f => f.slice(0, 10))
+      .filter(d => d >= floor && d < issue)
+      .sort();
+  } catch { return []; }
+
+  for (const d of files) {
+    let past;
+    try { past = JSON.parse(readFileSync(join(rawDir, `${d}.json`), 'utf-8')); } catch { continue; }
+    const seen = [
+      ...(past.podcasts || []).map(x => ['podcast', x, d]),
+      ...(past.blogs || []).map(x => ['blog', x, d]),
+      ...(past.repeats || []).map(x => [x.kind, x, x.firstIssue || d])
+    ];
+    for (const [kind, x, at] of seen) {
+      for (const k of repeatKeys(kind, x)) if (!first.has(k)) first.set(k, at);
+    }
+  }
+
+  const repeats = [];
+  const keep = (kind, list) => (list || []).filter(x => {
+    const hit = repeatKeys(kind, x).map(k => first.get(k)).find(Boolean);
+    if (!hit) return true;
+    repeats.push({ kind, name: x.name, title: x.title, url: x.url, guid: x.guid, firstIssue: hit });
+    return false;
+  });
+
+  if (Array.isArray(feed.podcasts)) feed.podcasts = keep('podcast', feed.podcasts);
+  if (Array.isArray(feed.blogs)) feed.blogs = keep('blog', feed.blogs);
+  if (repeats.length) {
+    feed.repeats = repeats;
+    if (feed.stats) {
+      feed.stats.podcastEpisodes = feed.podcasts?.length ?? 0;
+      feed.stats.blogPosts = feed.blogs?.length ?? 0;
+    }
+  }
+  return repeats;
 }
 
 // GitHub Actions 预抓的那份。要过三关才敢用：窗口日期对得上本期、抓取时间在
@@ -128,6 +191,13 @@ async function main() {
   const issue = (generatedAt ? new Date(generatedAt) : new Date())
     .toISOString()
     .slice(0, 10);
+
+  // 放在博客正文还原之前：重复的那几篇不值得再回原文页抓一遍
+  const repeats = dropRepeats(feed, issue);
+  if (repeats.length) {
+    console.error(`[archive] 剔除上游重复推送 ${repeats.length} 条：` +
+      repeats.map(r => `${r.name}「${String(r.title).trim()}」（${r.firstIssue} 期已收）`).join('；'));
+  }
 
   // 补充信息源（AINews / Import AI / 官方博客）—— 纯链接墙，不抓正文。
   // 它是加分项不是必需品：抓不到就带着空清单继续，绝不让当期简报出不来。
@@ -244,6 +314,7 @@ async function main() {
     feedGeneratedAt: generatedAt,
     previousFeedGeneratedAt: previousFeedAt,
     stats: feed.stats,
+    repeats: repeats.map(r => `${r.name}「${String(r.title).trim()}」← ${r.firstIssue}`),
     extra: {
       items: extra.items?.length ?? 0,
       source: extraFrom,          // prefetched = 用了 Actions 预抓的；live = 自己抓的；
@@ -255,4 +326,13 @@ async function main() {
   }));
 }
 
-main().catch(err => fail(err.message));
+// 入口守卫：import 进来测 dropRepeats 时不能顺手跑一次抓取、覆盖掉当期存档。
+// 两边都取 realpath —— 路径里有软链接（macOS 的 /tmp、某些沙箱的挂载点）时
+// 字面比较会判成「不是入口」，脚本就一声不吭地什么都不做，比报错还糟。
+const isEntry = () => {
+  try { return realpathSync(resolve(process.argv[1])) === realpathSync(fileURLToPath(import.meta.url)); }
+  catch { return false; }
+};
+if (process.argv[1] && isEntry()) {
+  main().catch(err => fail(err.message));
+}

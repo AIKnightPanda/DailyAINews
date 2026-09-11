@@ -38,11 +38,29 @@ export const isCJK = t => {
 //
 // 前缀匹配而不是「前 N 个字符逐字相等」：让模型数准字符数本身就容易出错，
 // 而出错的代价是一条本来没问题的译文被判死。
-const norm = s => String(s || '').toLowerCase().replace(/\s+/g, ' ').trim();
+// 弯引号、破折号统一成 ASCII：原文是 I’m，模型抄出来常是 I'm（2026-09-09 的 I7 就栽在这）
+const norm = s => String(s || '').toLowerCase()
+  .replace(/[‘’′]/g, "'").replace(/[“”″]/g, '"').replace(/[–—]/g, '-')
+  .replace(/\s+/g, ' ').trim();
 // 探针要够独特，否则短前缀会撞上一片条目。例外是产品名本身就短
 // （Folio、nOS4），整条等于标题时不存在「不够独特」的问题。
 const PROBE_MIN = 10;
 const probeFits = (p, title) => p.length >= PROBE_MIN || p === norm(title);
+
+// 探针认不认这一条。标题前缀是本来的规矩；另外两种也认：
+//   - 标题**中间**的一段（「Sparrow-2 – Noise cancellation…」抄了破折号后半截）
+//   - 简介/正文的开头（Product Hunt 素材里产品名底下紧跟一行像标题的 tagline，
+//     「Dictantor」底下是「Record meetings and transcribe…」，模型把后者当了标题）
+// 2026-09-09 那期 22 条译文 14 条就是这么被判死的 —— 编号全对、内容也对，
+// 只因探针抄的不是标题开头。放宽的这两种仍然要求 ≥ PROBE_MIN 个字符，
+// 而且都是**这一条自己的**文字：别的条目的简介不会恰好出现在这里，错位照样挡得住。
+const probeHits = (p, it) => {
+  const title = norm(it.title);
+  if (probeFits(p, it.title) && title.startsWith(p)) return true;
+  if (p.length < PROBE_MIN) return false;
+  if (title.includes(p)) return true;
+  return [it.summary, it.deep?.body].some(t => t && norm(t).startsWith(p));
+};
 
 // 把 zh 文件解析成 ref → 译文 的映射。先认编号（快路径），编号对不上就靠探针找，
 // 但**只在唯一命中时才认** —— 有歧义宁可不翻，也不能挂错。
@@ -60,7 +78,7 @@ export function resolveZh(data, zh) {
     const p = norm(row[0]);
     if (!p) { stat.orphan++; continue; }
     const hit = byRef.get(key);
-    if (hit && probeFits(p, hit.title) && norm(hit.title).startsWith(p)) {
+    if (hit && probeHits(p, hit)) {
       out.set(hit.ref, row); taken.add(hit.ref); stat.byRef++;
     } else {
       pending.push({ p, row });
@@ -69,7 +87,7 @@ export function resolveZh(data, zh) {
 
   for (const { p, row } of pending) {
     const hits = data.items.filter(x =>
-      !taken.has(x.ref) && probeFits(p, x.title) && norm(x.title).startsWith(p));
+      !taken.has(x.ref) && probeHits(p, x));
     if (hits.length === 1) { out.set(hits[0].ref, row); taken.add(hits[0].ref); stat.byProbe++; }
     else if (hits.length > 1) stat.ambiguous++;   // 分不清是哪条，宁可不翻
     else stat.orphan++;                          // 素材里没有这条
@@ -88,8 +106,8 @@ export function resolvePicks(data, picks) {
     let it = byRef.get(p.ref);
     if (p.t) {
       const q = norm(p.t);
-      if (!it || !probeFits(q, it.title) || !norm(it.title).startsWith(q)) {
-        const hits = data.items.filter(x => probeFits(q, x.title) && norm(x.title).startsWith(q));
+      if (!it || !probeHits(q, it)) {
+        const hits = data.items.filter(x => probeHits(q, x));
         it = hits.length === 1 ? hits[0] : null;
       }
     }
@@ -105,7 +123,7 @@ const rowOf = (item, zh) => {
   const row = zh[item.ref];
   if (!Array.isArray(row)) return null;
   const p = norm(row[0]);
-  return probeFits(p, item.title) && norm(item.title).startsWith(p) ? row : null;
+  return probeHits(p, item) ? row : null;
 };
 
 // 星标是第四个可选元素（[探针, 标题, 说明, 星标?]），逐条由模型判断内容本身

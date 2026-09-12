@@ -168,6 +168,36 @@ function fromYcRfs(html, s) {
   }));
 }
 
+// GitHub Trending 页面没有官方 API/RSS，只能解析 Box-row 卡片。
+// 2026-09-11 实测的结构：<h2> 里是 "owner /\nrepo"，简介在紧跟着的
+// <p class="col-9 color-fg-muted ...">，语言在 <span itemprop="programmingLanguage">，
+// 今日新增星标在卡片末尾的 "N stars today"。改版后任何一处取不到就整条跳过，
+// 不猜——猜错了比缺一条更容易在页面上编造出不存在的仓库。
+function fromGithubTrending(html, s) {
+  const cards = [...html.matchAll(/<article class="Box-row">([\s\S]*?)<\/article>/g)].map(m => m[1]);
+  return cards.map(block => {
+    const h2 = /<h2[^>]*>([\s\S]*?)<\/h2>/.exec(block);
+    const full = h2 ? stripTags(h2[1]).replace(/\s+/g, ' ').trim() : '';
+    const [owner, repo] = full.split('/').map(x => (x || '').trim());
+    if (!owner || !repo) return null;
+
+    const descMatch = /<p class="col-9[^"]*"[^>]*>([\s\S]*?)<\/p>/.exec(block);
+    const langMatch = /itemprop="programmingLanguage">([^<]*)</.exec(block);
+    const todayMatch = /([\d,]+)\s*stars?\s*today/i.exec(block);
+
+    return base(s, {
+      title: `${owner}/${repo}`,
+      url: `https://github.com/${owner}/${repo}`,
+      summary: clip(stripTags(unescapeHtml(descMatch ? descMatch[1] : '')), SUMMARY_MAX) || null,
+      signal: {
+        language: langMatch ? langMatch[1].trim() : null,
+        points: todayMatch ? Number(todayMatch[1].replace(/,/g, '')) : 0
+      },
+      publishedAt: null   // 榜单是即时快照，没有单条发布时间，靠 seen.json 跨期去重
+    });
+  }).filter(Boolean).filter(x => x.title && /^https?:/.test(x.url));
+}
+
 // ── 抓取 ──────────────────────────────────────────────────────────────────
 
 async function fetchSource(s, defaultCutoff) {
@@ -179,6 +209,7 @@ async function fetchSource(s, defaultCutoff) {
     case 'reddit': return fromReddit(await fetchText(s.url), s, cutoff);
     case 'ycrfs':  return fromYcRfs(await fetchText(s.url), s);
     case 'hn':     return fromHn(await fetchJson(s.url), s, cutoff);
+    case 'github-trending': return fromGithubTrending(await fetchText(s.url), s);
 
     case 'reddit-search': {
       // 一条短语一次请求，串行 + 退避（reddit 对连续请求很敏感）。

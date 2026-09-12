@@ -221,6 +221,26 @@ export const BOARDS = [
     // 深挖 Show HN 是有回报的：评论区常常直接说「X 早就在做这个了」，
     // 那既是竞品信息，也是判断这条值不值得关注的依据。
     note: '开发者自己发布的项目，带票数和评论区的真实反馈'
+  },
+  {
+    id: 'github-trending', name: 'GitHub Trending', kind: 'github-trending',
+    url: 'https://github.com/trending?since=daily',
+    home: 'https://github.com/trending',
+    // 官网页面本身没有 RSS/API，靠正则解析 Box-row 卡片（见 fetch-candidates.js）。
+    // 不分语言、不分是否 AI 相关，混着全站热度榜；每个仓库自带一行简介，
+    // 「有没有描述」这条硬规则已经在 screen.js 供给侧逻辑里生效。
+    side: 'supply', category: 'product', pool: true, cap: 20, deepen: 'none',
+    note: '全站每日热门仓库榜，自带一行简介；不筛语言也不筛是否与 AI 相关'
+  },
+  {
+    id: 'consoledev', name: 'Console.dev', kind: 'rss',
+    url: 'https://console.dev/rss.xml',
+    home: 'https://console.dev/',
+    // 每周四发一期，一期 8 条左右（2 条工具详评 + 若干条测试版一句话介绍）。
+    // 窗口给 8 天而不是默认 3 天，理由和 r/SomebodyMakeThis 一样：
+    // 低频源用默认窗口会在非发刊日饿死。
+    side: 'supply', category: 'product', pool: true, cap: 10, deepen: 'none', windowDays: 8,
+    note: '开发者工具周刊，编辑人工筛选并写点评，一周一期'
   }
 ];
 

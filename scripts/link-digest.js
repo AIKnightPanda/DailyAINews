@@ -247,8 +247,12 @@ for (const item of items) {
   const k = groupOf(item.source).name;
   collected.set(k, collected.get(k) + 1);
 }
+// 每个源都列出来，包括当天一条没采到的 —— 和灵感模块同一条规矩
+//（README「每个来源都报展示了几条/一共抓了几条，抓了但一条没展示的来源也照样列出来」）。
+// 2026-09-11 的教训：AINews/Import AI/Google DeepMind 当天状态都是 ok、只是 0 条，
+// 之前这里按 collected > 0 过滤掉了整个源，页面上和「源坏了」长得一模一样，
+// 读者没法只看这一行分清「今天没内容」和「抓取管道断了」。
 const parts = GROUPS
-  .filter(g => collected.get(g.name) > 0)
   .map(g => `${esc(g.name)} ⟨${byGroup.get(g.name).length} / ${collected.get(g.name)}⟩`);
 if (parts.length) {
   // ⟦ 开头：渲染器会把这一行排成统计条。一律「展示 / 采集」，不再加图例。

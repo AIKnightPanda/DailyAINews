@@ -16,6 +16,22 @@
 
 - **期号 = feed 的 `generatedAt` 日期，不是运行日期。** 不要用文件 mtime 或今天的日期推断期号。
   **灵感模块是例外**：它没有上游 feed，期号就是运行当天（Asia/Shanghai）
+- **简报是「次日生成前一天」，灵感是「当天生成当天」——两条线的时间感完全不一样，别混。**
+  云端 Routine 每天 05:30 Asia/Shanghai 跑，这时上游 feed 的 `generatedAt` 大概率还是昨天，
+  所以简报的期号总是比实际生成日期晚一天：**还在当天白天，就不该抢跑手动生成「今天」这个
+  期号的简报**（`archive.js` 当天多半也能抓到一份 `generatedAt` 是今天的 feed，但那不代表
+  这份 feed 已经收全——真正该生成它的时间点是明天的 Routine）。灵感模块没有这个滞后，
+  当天的内容就该当天跑、当天出（2026-09-12 真的把这条混过一次，手动把还没到时候的简报
+  当成任务跑了，后来 revert 撤回）
+- **改了 `scripts/idea-sources.js`（或 `scripts/groups.js`/`scripts/fetch-extra.js`）新增或
+  调整源之后，别以为当天重跑归档脚本就能生效。** `ideas-archive.js`/`archive.js` 优先用
+  GitHub Actions 预抓好的 `ideas/candidates-pending.json`/`digests/extra-pending.json`——
+  只要这份预抓文件的日期对得上、抓取时间在 24 小时内，脚本就直接拿它用，**不会因为源注册表
+  刚改过就重新抓一遍**。新源要在当天就生效，得手动实时抓一次
+  （`node scripts/fetch-candidates.js --only=<新源 id>`），再按归档脚本的追加规则
+  （去重用 `ideas/seen.json`、编号从当期最大 `ref` 往后接）手动并进当期 raw 档，
+  不能指望预抓文件自己更新。这条 2026-09-12 踩过：GitHub Trending/Console.dev
+  接入当天，`candidates-pending.json` 还是改动前抓的，页面上一条都没有
 - **`viewer/template.html` 是样式的唯一真相源。** `docs/index.html`、`docs/ideas.html` 和
   `viewer/artifact.html` 都是构建产物，改它们会被下次构建覆盖。
   两个页面共用这一份模板，差异由注入的 `site` 字段描述（报头文案、EN 视图、互跳链接）

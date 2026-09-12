@@ -6,12 +6,12 @@
     "inbox": "live"
   },
   "counts": {
-    "fetched": 186,
-    "added": 0,
-    "kept": 98,
+    "fetched": 210,
+    "added": 24,
+    "kept": 122,
     "dropped": 186,
-    "pool": 98,
-    "screened": 82,
+    "pool": 122,
+    "screened": 102,
     "candidates": 32,
     "demandCandidates": 18,
     "supplyCandidates": 14
@@ -121,6 +121,22 @@
       "name": "Show HN",
       "status": "ok",
       "items": 5,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub Trending",
+      "status": "ok",
+      "items": 16,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "consoledev",
+      "name": "Console.dev",
+      "status": "ok",
+      "items": 8,
       "pool": true,
       "group": "board"
     }
@@ -2818,7 +2834,7 @@
         },
         "reason": null
       },
-      "candidate": true,
+      "candidate": false,
       "deep": {
         "body": "Take your conversation anywhere.",
         "comments": [],
@@ -2853,7 +2869,7 @@
         },
         "reason": null
       },
-      "candidate": true,
+      "candidate": false,
       "deep": {
         "body": "A hosted agentic loop to bring agentic possibilities to life",
         "comments": [],
@@ -2888,7 +2904,7 @@
         },
         "reason": null
       },
-      "candidate": true,
+      "candidate": false,
       "deep": {
         "body": "Ctrl+F for every conversation you've had with an AI",
         "comments": [],
@@ -2951,7 +2967,7 @@
         },
         "reason": null
       },
-      "candidate": true,
+      "candidate": false,
       "deep": {
         "body": "You say it, Devin ships it",
         "comments": [],
@@ -3002,7 +3018,7 @@
         },
         "reason": null
       },
-      "candidate": true,
+      "candidate": false,
       "deep": {
         "body": "A browser canvas to design merch with over 1.000+ products",
         "comments": [],
@@ -3037,7 +3053,7 @@
         },
         "reason": null
       },
-      "candidate": true,
+      "candidate": false,
       "deep": {
         "body": "An open-source app for open-weight models",
         "comments": [],
@@ -3078,7 +3094,7 @@
         },
         "reason": null
       },
-      "candidate": true,
+      "candidate": false,
       "deep": {
         "body": "The next generation of Raycast is here",
         "comments": [],
@@ -3113,7 +3129,7 @@
         },
         "reason": null
       },
-      "candidate": true,
+      "candidate": false,
       "deep": {
         "body": "One shared space where your team and AI agents work",
         "comments": [],
@@ -3148,7 +3164,7 @@
         },
         "reason": null
       },
-      "candidate": true,
+      "candidate": false,
       "deep": {
         "body": "Add legally binding signature to your Google Form",
         "comments": [],
@@ -3183,7 +3199,7 @@
         },
         "reason": null
       },
-      "candidate": true,
+      "candidate": false,
       "deep": {
         "body": "Anonymize sensitive data before pasting into AI tools",
         "comments": [],
@@ -3218,7 +3234,7 @@
         },
         "reason": null
       },
-      "candidate": true,
+      "candidate": false,
       "deep": {
         "body": "Codex, Claude Code, Grok, + OpenCode in one shared workspace",
         "comments": [],
@@ -3582,7 +3598,7 @@
         },
         "reason": null
       },
-      "candidate": true,
+      "candidate": false,
       "deep": {
         "body": "How should agents interact with other agents? What happens when they rap or fight against each other with the pressure of human spectators? Clawfight.ai is an experiment to explore this space. This is my first post about it. The journey began on a beefed up machine I purchased with a decent GPU (5090). I installed claude code and set to dangerously skip permissions, enabled /rc and became completely submerged in the all-hours modern AI builder workflow. I stood up openclaw to see if I could have an agentic org drive this project. I spent a good amount of time on “openclaw ops”, babysitting 3 agents and trying to make them the best versions of themselves. They still do stupid things that cost me tokens. For the game render, I started out using Unreal Engine and allowing agents to remote control their players, but the quality just wasn’t there. I recently moved to doing near-real time video renders of the match and will bring UE back in for multi-agent games. Everything is AI generated. I’m fascinated by the future of realtime video generation and building out native MCP infrastructure. You can play directly from model provider apps (claude connector or openai plugin) and has fallback support for more basic HTTP clients. But the architecture and gameplay is MCP first. Tell your agent/app “go read clawfight.ai/agents.md and play”",
         "comments": [
@@ -3612,7 +3628,862 @@
         ],
         "fetchedAt": "2026-09-11T19:26:32.473Z"
       }
+    },
+    {
+      "id": "df489c1052",
+      "normUrl": "https://github.com/bilawalsidhu/gods-eye-view",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "bilawalsidhu/gods-eye-view",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "summary": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+      "signal": {
+        "language": "JavaScript",
+        "points": 3680
+      },
+      "publishedAt": null,
+      "ref": "I99",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "A spy satellite simulator in the browser, except the data is real",
+            "points": 12,
+            "url": "https://news.ycombinator.com/item?id=49446839"
+          }
+        ],
+        "fetchedAt": "2026-09-12T11:05:07.930Z"
+      }
+    },
+    {
+      "id": "c13d595564",
+      "normUrl": "https://github.com/melgarafael/DeskcommCRM",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "melgarafael/DeskcommCRM",
+      "url": "https://github.com/melgarafael/DeskcommCRM",
+      "summary": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
+      "signal": {
+        "language": "TypeScript",
+        "points": 152
+      },
+      "publishedAt": null,
+      "ref": "I100",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-12T11:05:08.887Z"
+      }
+    },
+    {
+      "id": "a699cca176",
+      "normUrl": "https://github.com/asgeirtj/system_prompts_leaks",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "asgeirtj/system_prompts_leaks",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "summary": "Extracted system prompts from Anthropic - Claude Fable 5.1, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.",
+      "signal": {
+        "language": "JavaScript",
+        "points": 216
+      },
+      "publishedAt": null,
+      "ref": "I101",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Extracted system prompts from Anthropic - Claude Fable 5.1, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Claude's system prompt is over 24k tokens with tools",
+            "points": 627,
+            "url": "https://news.ycombinator.com/item?id=43909409"
+          }
+        ],
+        "fetchedAt": "2026-09-12T11:05:09.337Z"
+      }
+    },
+    {
+      "id": "57a327dd1a",
+      "normUrl": "https://github.com/nab138/iloader",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "nab138/iloader",
+      "url": "https://github.com/nab138/iloader",
+      "summary": "User friendly sideloader",
+      "signal": {
+        "language": "TypeScript",
+        "points": 50
+      },
+      "publishedAt": null,
+      "ref": "I102",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 6,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "2f697f94cd",
+      "normUrl": "https://github.com/Flowseal/zapret-discord-youtube",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "Flowseal/zapret-discord-youtube",
+      "url": "https://github.com/Flowseal/zapret-discord-youtube",
+      "summary": null,
+      "signal": {
+        "language": "Batchfile",
+        "points": 52
+      },
+      "publishedAt": null,
+      "ref": "I103",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 7,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "0bf265e9aa",
+      "normUrl": "https://github.com/jihe520/MathModelAgent",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "jihe520/MathModelAgent",
+      "url": "https://github.com/jihe520/MathModelAgent",
+      "summary": "🤖📐专为数学建模设计的 Agent & skills ,自动完成数学建模，生成一份完整的可以直接提交的论文。 An Agent Designed for Mathematical Modeling ,Automatically complete mathmodel and generate a complete paper ready for submission.",
+      "signal": {
+        "language": "Python",
+        "points": 129
+      },
+      "publishedAt": null,
+      "ref": "I104",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "🤖📐专为数学建模设计的 Agent & skills ,自动完成数学建模，生成一份完整的可以直接提交的论文。 An Agent Designed for Mathematical Modeling ,Automatically complete mathmodel and generate a complete paper ready for submission.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-12T11:05:09.767Z"
+      }
+    },
+    {
+      "id": "ec3625e76f",
+      "normUrl": "https://github.com/Sonarr/Sonarr",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "Sonarr/Sonarr",
+      "url": "https://github.com/Sonarr/Sonarr",
+      "summary": "Smart PVR for newsgroup and bittorrent users.",
+      "signal": {
+        "language": "C#",
+        "points": 191
+      },
+      "publishedAt": null,
+      "ref": "I105",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Smart PVR for newsgroup and bittorrent users.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Show HN: Recommendarr – AI Driven Recommendations Based on Sonarr/Radarr Media",
+            "points": 88,
+            "url": "https://news.ycombinator.com/item?id=43230790"
+          }
+        ],
+        "fetchedAt": "2026-09-12T11:05:10.238Z"
+      }
+    },
+    {
+      "id": "a647555277",
+      "normUrl": "https://github.com/alsk1992/CloddsBot",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "alsk1992/CloddsBot",
+      "url": "https://github.com/alsk1992/CloddsBot",
+      "summary": "Open Source AI trading agent that operates autonomously across 1000+ markets - Polymarket, Kalshi, Binance, Hyperliquid, Solana DEXs, 5 EVM chains. Scans for edge, executes instantly, manages risk while you sleep. Agent commerce protocol for machine-to-machine payments. Self-hosted. Built on Claude.",
+      "signal": {
+        "language": "TypeScript",
+        "points": 626
+      },
+      "publishedAt": null,
+      "ref": "I106",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Open Source AI trading agent that operates autonomously across 1000+ markets - Polymarket, Kalshi, Binance, Hyperliquid, Solana DEXs, 5 EVM chains. Scans for edge, executes instantly, manages risk while you sleep. Agent commerce protocol for machine-to-machine payments. Self-hosted. Built on Claude.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-12T11:05:10.687Z"
+      }
+    },
+    {
+      "id": "f84cf8c69f",
+      "normUrl": "https://github.com/yuliskov/SmartTube",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "yuliskov/SmartTube",
+      "url": "https://github.com/yuliskov/SmartTube",
+      "summary": "Browse media content with your own rules on Android TV",
+      "signal": {
+        "language": "Java",
+        "points": 247
+      },
+      "publishedAt": null,
+      "ref": "I107",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Browse media content with your own rules on Android TV",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "YouTube is returning 403 to NewPipe and other 3rd party players",
+            "points": 30,
+            "url": "https://news.ycombinator.com/item?id=40918652"
+          },
+          {
+            "title": "SmartTube – an advanced player for set-top boxes and TVs running Android OS",
+            "points": 117,
+            "url": "https://news.ycombinator.com/item?id=41990219"
+          }
+        ],
+        "fetchedAt": "2026-09-12T11:05:11.055Z"
+      }
+    },
+    {
+      "id": "b409dc7b84",
+      "normUrl": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "summary": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
+      "signal": {
+        "language": "Python",
+        "points": 237
+      },
+      "publishedAt": null,
+      "ref": "I108",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-12T11:05:11.520Z"
+      }
+    },
+    {
+      "id": "3378d5730c",
+      "normUrl": "https://github.com/p1neappleXpress/OpenFlux",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "p1neappleXpress/OpenFlux",
+      "url": "https://github.com/p1neappleXpress/OpenFlux",
+      "summary": "Network stack research tool. TCP tunnel with pluggable transports.",
+      "signal": {
+        "language": "Go",
+        "points": 198
+      },
+      "publishedAt": null,
+      "ref": "I109",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Network stack research tool. TCP tunnel with pluggable transports.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-12T11:05:11.947Z"
+      }
+    },
+    {
+      "id": "ad68ac912e",
+      "normUrl": "https://github.com/armory3d/armorpaint",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "armory3d/armorpaint",
+      "url": "https://github.com/armory3d/armorpaint",
+      "summary": "Graphics Creation Tools",
+      "signal": {
+        "language": "C",
+        "points": 350
+      },
+      "publishedAt": null,
+      "ref": "I110",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "983f23e993",
+      "normUrl": "https://github.com/SnailSploit/Claude-Red",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "SnailSploit/Claude-Red",
+      "url": "https://github.com/SnailSploit/Claude-Red",
+      "summary": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
+      "signal": {
+        "language": "Python",
+        "points": 99
+      },
+      "publishedAt": null,
+      "ref": "I111",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-12T11:05:12.324Z"
+      }
+    },
+    {
+      "id": "53c63f8a69",
+      "normUrl": "https://github.com/multimodal-art-projection/YuE",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "multimodal-art-projection/YuE",
+      "url": "https://github.com/multimodal-art-projection/YuE",
+      "summary": "YuE2: frontier music generation with symbolic planning, zero-shot covers, and agentic music editing.",
+      "signal": {
+        "language": "Python",
+        "points": 193
+      },
+      "publishedAt": null,
+      "ref": "I112",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "YuE2: frontier music generation with symbolic planning, zero-shot covers, and agentic music editing.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "YuE: Open Full-Song Generation Foundation Model",
+            "points": 27,
+            "url": "https://news.ycombinator.com/item?id=42850514"
+          }
+        ],
+        "fetchedAt": "2026-09-12T11:05:12.860Z"
+      }
+    },
+    {
+      "id": "d747ecb589",
+      "normUrl": "https://github.com/max-sixty/worktrunk",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "max-sixty/worktrunk",
+      "url": "https://github.com/max-sixty/worktrunk",
+      "summary": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+      "signal": {
+        "language": "Rust",
+        "points": 44
+      },
+      "publishedAt": null,
+      "ref": "I113",
+      "screen": {
+        "keep": true,
+        "score": 10,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 6,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2e8a64d0e7",
+      "normUrl": "https://github.com/vxcontrol/pentagi",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "vxcontrol/pentagi",
+      "url": "https://github.com/vxcontrol/pentagi",
+      "summary": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+      "signal": {
+        "language": "Go",
+        "points": 250
+      },
+      "publishedAt": null,
+      "ref": "I114",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-12T11:05:13.282Z"
+      }
+    },
+    {
+      "id": "b19b3722ed",
+      "normUrl": "https://four.htmx.org/",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Tool: htmx 4",
+      "url": "https://four.htmx.org?ref=console.dev",
+      "summary": "Description: Enhance HTML. What we like: Simplifies the approach to adding attributes to HTML tags for dynamic features. Now uses fetch(). Makes it easy to implement features like infinite scroll, form post, search as you type, polling, and streaming responses. Still pretty minimal (11kb) and no dependencies. What we dislike: Lots of attributes littered all over your HTML, but that is the point.",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "ref": "I115",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "7b402756ab",
+      "normUrl": "https://github.com/pg83/solo",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Tool: Solo",
+      "url": "https://github.com/pg83/solo?ref=console.dev",
+      "summary": "Description: Loader for Linux static binaries. What we like: Makes static binaries for GPU-accelerated code actually work. Makes it easy to build self-contained applications that can benefit from acceleration. Compile to musl, but still use common shared packages. What we dislike: Incomplete ABI coverage: unsupported glibc calls currently abort. Musl has its own compatibility issues.",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "ref": "I116",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "0c66f27aef",
+      "normUrl": "https://copperhead.sh/",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Beta: Copperhead",
+      "url": "https://copperhead.sh?ref=console.dev",
+      "summary": "Cursor for circuit boards.",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "ref": "I117",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e77ccb8ba0",
+      "normUrl": "https://github.com/mlc-ai/web-llm",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Beta: WebLLM",
+      "url": "https://github.com/mlc-ai/web-llm?ref=console.dev",
+      "summary": "In-browser LLM inference.",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "ref": "I118",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "42af8b1624",
+      "normUrl": "https://github.com/NVIDIA/Personal-AI-Router",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Beta: PAIR",
+      "url": "https://github.com/NVIDIA/Personal-AI-Router?ref=console.dev",
+      "summary": "Personal AI Router.",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "ref": "I119",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "9dccd8283f",
+      "normUrl": "https://vidact.dev/",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Beta: Vidact",
+      "url": "https://www.vidact.dev?ref=console.dev",
+      "summary": "Compile React-style components to DOM.",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "ref": "I120",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "eede34817a",
+      "normUrl": "https://tt-a1i.github.io/archify",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Beta: Archify",
+      "url": "https://tt-a1i.github.io/archify/?ref=console.dev",
+      "summary": "HTML architecture diagrams.",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "ref": "I121",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "7e133ecbdc",
+      "normUrl": "https://github.com/ebitengine/purego",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Beta: Purego",
+      "url": "https://github.com/ebitengine/purego?ref=console.dev",
+      "summary": "Call C functions from Go without Cgo.",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "ref": "I122",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
     }
   ],
-  "deepenedAt": "2026-09-11T21:37:59.746Z"
+  "deepenedAt": "2026-09-12T11:05:13.282Z"
 }

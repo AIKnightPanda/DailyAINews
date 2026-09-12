@@ -1,14 +1,14 @@
 {
-  "fetchedAt": "2026-09-11T19:14:20.829Z",
+  "fetchedAt": "2026-09-12T18:38:39.623Z",
   "windowDays": 3,
-  "windowUntil": "2026-09-11T23:59:59.000Z",
+  "windowUntil": "2026-09-12T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
       "status": "ok",
       "issues": 1,
-      "items": 0
+      "items": 38
     },
     {
       "id": "importai",
@@ -21,7 +21,7 @@
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
-      "issues": 10,
+      "issues": 8,
       "items": 1
     },
     {
@@ -36,66 +36,674 @@
       "name": "The Rundown AI",
       "status": "ok",
       "issues": 4,
-      "items": 2
+      "items": 1
     },
     {
       "id": "aivalley",
       "name": "AI Valley",
       "status": "ok",
-      "issues": 3,
-      "items": 2
+      "issues": 2,
+      "items": 0
     }
   ],
   "items": [
     {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": null,
+      "subsection": null,
+      "topic": null,
+      "title": "AI Twitter Recap",
+      "url": "https://x.com/teortaxesTex/status/2097927946769948717",
+      "links": [
+        {
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wbfrut/deepseek_has_soft_retired_deepseek_v4_pro/",
+          "text": "retiring V4 Pro"
+        },
+        {
+          "url": "https://artificialanalysis.ai/models/open-source?lab=alibaba%2Cdeepseek%2Cnvidia%2Cmeta%2Cgoogle%2Cmistral%2Cazure%2Czai",
+          "text": "v4.1 Flash"
+        }
+      ],
+      "summary": "It looked dicey for a little bit, but true whalebros never wavered, and now DeepSeek are sending a weirdly mixed message by doing a completely new architecture, retiring V4 Pro and going all in on this new model, and yet only titling it v4.1 Flash, it seems to…",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": null,
+      "topic": null,
+      "title": "#1 open-weight model on the Vals Index",
+      "url": "https://x.com/ValsAI/status/2098125164072554545",
+      "links": [
+        {
+          "url": "https://x.com/ValsAI/status/2098125177116848591",
+          "text": "@ValsAI"
+        },
+        {
+          "url": "https://x.com/ValsAI/status/2098125179092431297",
+          "text": "@ValsAI"
+        }
+      ],
+      "summary": "Vals called it the new #1 open-weight model on the Vals Index , ahead of Kimi K3, at just $0.30 per test , the cheapest model in the open-weight top 10; they also note the eval ran with 1M context , 384 max output tokens , temperature 1 , default top-p/top-k,…",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": null,
+      "topic": null,
+      "title": "smarter, faster, and more efficient than DeepSeek v4 Pro 0813",
+      "url": "https://x.com/baseten/status/2098169972874994071",
+      "links": [],
+      "summary": "Baseten shipped day-0 support and summarized the product positioning as smarter, faster, and more efficient than DeepSeek v4 Pro 0813 , with text and vision , US-only , ZDR , and 1M context @baseten",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": null,
+      "topic": null,
+      "title": "Max and Team",
+      "url": "https://x.com/ollama/status/2098188014119985406",
+      "links": [
+        {
+          "url": "https://x.com/ollama/status/2098188470305128692",
+          "text": "@ollama"
+        },
+        {
+          "url": "https://x.com/ollama/status/2098235674793242770",
+          "text": "@ollama"
+        }
+      ],
+      "summary": "Ollama began rolling it out to Max and Team accounts, later expanding to Pro plan subscribers @ollama , @ollama , @ollama",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Architecture and paper-level technical details",
+      "topic": null,
+      "title": "new causal Encoder–Decoder architecture",
+      "url": "https://x.com/ArtificialAnlys/status/2098148674203488422",
+      "links": [],
+      "summary": "Artificial Analysis says the model uses a new causal Encoder–Decoder architecture , with 8B active parameters for input/prefill and 16B active parameters for output/decode @ArtificialAnlys",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Architecture and paper-level technical details",
+      "topic": null,
+      "title": "“big overhaul”",
+      "url": "https://x.com/rasbt/status/2098142625819672603",
+      "links": [],
+      "summary": "Sebastian Raschka characterized V4.1 as a “big overhaul” and said they “should have called it DeepSeek V5,” explicitly highlighting the encoder-decoder setup as the key break from prior DeepSeek generations @rasbt",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Architecture and paper-level technical details",
+      "topic": null,
+      "title": "HySparse, NSA, and DeepSeek’s own CSA/HCA from V4",
+      "url": "https://x.com/stochasticchasm/status/2098102323268767832",
+      "links": [],
+      "summary": "A concise architecture read from Stochastic Chasm compared the design philosophy to HySparse, NSA, and DeepSeek’s own CSA/HCA from V4 , summarizing it as a local sliding-window branch plus sparse retrieval branch , suggesting this sparse/local hybrid is becomi…",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Architecture and paper-level technical details",
+      "topic": null,
+      "title": "first N layers",
+      "url": "https://x.com/teortaxesTex/status/2098132297253896451",
+      "links": [],
+      "summary": "TeortaxesTex observed a recurring DeepSeek pattern of doing something unusual in the first N layers —previously dense or hash-routed, now SWA-only —speculating this may reflect repeated training difficulties in early layers @teortaxesTex",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Architecture and paper-level technical details",
+      "topic": null,
+      "title": "multiple compression frequencies",
+      "url": "https://x.com/teortaxesTex/status/2098131613678707129",
+      "links": [],
+      "summary": "Another thread fragment from TeortaxesTex suggested DeepSeek is doing multiple compression frequencies , “it’s just all CSA2,” in response to architectural discussion around memory compression @teortaxesTex",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Architecture and paper-level technical details",
+      "topic": null,
+      "title": "KV cache compression",
+      "url": "https://x.com/nrehiew_/status/2098170409686647263",
+      "links": [],
+      "summary": "Nrehiew’s technical notes emphasize KV cache compression as central to the design, calling it a case study in “how obsessing over KV Cache compression gets you a hyper-efficient frontier model” @nrehiew_",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Architecture and paper-level technical details",
+      "topic": null,
+      "title": "dispatch strategy to reduce long-tail stalls",
+      "url": "https://x.com/nrehiew_/status/2098170443660402942",
+      "links": [],
+      "summary": "In a follow-up, nrehiew highlighted infrastructure specifics from the report: dispatch strategy to reduce long-tail stalls , router replay from previous checkpoints , management of shorter-completion off-policy effects via dataset-level capping , discard schem…",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Architecture and paper-level technical details",
+      "topic": null,
+      "title": "QAT for the KV cache",
+      "url": "https://x.com/stochasticchasm/status/2098154481750020375",
+      "links": [],
+      "summary": "Stochastic Chasm inferred QAT for the KV cache , saying this would explain why the model performs better than peers under FP4 KV cache @stochasticchasm",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Benchmark results and numbers",
+      "topic": null,
+      "title": "better performance than GPT-5.6 Sol and Opus 5 in DeepSWE at 94% lower API costs",
+      "url": "https://x.com/kimmonismus/status/2098107083665060275",
+      "links": [],
+      "summary": "A separate reaction thread summarized DeepSWE-style claims more aggressively, saying V4.1 Flash offered better performance than GPT-5.6 Sol and Opus 5 in DeepSWE at 94% lower API costs , but that statement is secondhand summary rather than a primary benchmark…",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Running it locally and inference engineering reactions",
+      "topic": null,
+      "title": "full-precision DeepSeek 4.1 Flash + DSpark at 200 TPS on 4 Max-Qs with just 64GB system RAM",
+      "url": "https://x.com/fraserpricee/status/2098078317723242813",
+      "links": [],
+      "summary": "Fraser Price reported full-precision DeepSeek 4.1 Flash + DSpark at 200 TPS on 4 Max-Qs with just 64GB system RAM , offloading a 200GB Engram/hash table to NVMe ; he says this made keeping the full structure in RAM unnecessary and promised a vLLM recipe @frase…",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Running it locally and inference engineering reactions",
+      "topic": null,
+      "title": "300+ TPS on 4 RTX Pros",
+      "url": "https://x.com/fraserpricee/status/2098183796080173382",
+      "links": [],
+      "summary": "He later improved that to 300+ TPS on 4 RTX Pros , still at full precision , with , using a custom vLLM fork and SSD support @fraserpricee",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Running it locally and inference engineering reactions",
+      "topic": null,
+      "title": "DwarfStar running V4.1 Flash on a 128GB M5 Max",
+      "url": "https://x.com/antirez/status/2098121665771110540",
+      "links": [],
+      "summary": "Antirez showed DwarfStar running V4.1 Flash on a 128GB M5 Max , saying SSD streaming made it unexpectedly fast; he speculated both recent SSD-streaming changes and the possibility that DS4.1 “uses the same experts more” contributed @antirez",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Running it locally and inference engineering reactions",
+      "topic": null,
+      "title": "inference engineer view",
+      "url": "https://x.com/eliebakouch/status/2098223948127183261",
+      "links": [],
+      "summary": "Elie Bakouch posted a reaction meme explicitly about the inference engineer view of the V4.1 Flash architecture, reflecting how strongly the launch resonated with systems folks @eliebakouch",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Running it locally and inference engineering reactions",
+      "topic": null,
+      "title": "DeepSeek-V4 shared experts fused into MegaMoE",
+      "url": "https://x.com/vllm_project/status/2098214992755765758",
+      "links": [
+        {
+          "url": "https://x.com/vllm_project/status/2098214998426444009",
+          "text": "@vllm_project"
+        }
+      ],
+      "summary": "vLLM’s new release also included DeepSeek-V4 shared experts fused into MegaMoE , plus Mooncake Store can offload decode KV , relevant context for why serving this class of model is rapidly becoming easier in open infra @vllm_project , @vllm_project",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Neutral / analytical",
+      "topic": null,
+      "title": "organic data camp",
+      "url": "https://x.com/gordic_aleksa/status/2098108613676212598",
+      "links": [],
+      "summary": "Gordic Aleksa used the paper as evidence in a broader pretraining-data taxonomy, placing DeepSeek in the organic data camp and noting surprise that, based on publications, they do not appear to use even synthetic rephrasing @gordic_aleksa",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Critical / skeptical",
+      "topic": null,
+      "title": "high internal evals, weaker external robustness, brittleness, and weird skill gaps",
+      "url": "https://x.com/teortaxesTex/status/2098213577546985945",
+      "links": [],
+      "summary": "TeortaxesTex repeatedly pushed back on external impressions, arguing DeepSeek often shows high internal evals, weaker external robustness, brittleness, and weird skill gaps , because it “ships internal research artifacts and not products” @teortaxesTex",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Critical / skeptical",
+      "topic": null,
+      "title": "AutomationBench #1",
+      "url": "https://x.com/teortaxesTex/status/2098157751465603171",
+      "links": [],
+      "summary": "The same account called some eval results “very strange,” particularly AutomationBench #1 and a CritPt regression, and asked the DeepSeek team to “meditate on this” @teortaxesTex",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Critical / skeptical",
+      "topic": null,
+      "title": "multi-agent “DSH agent teams”",
+      "url": "https://x.com/teortaxesTex/status/2098154067948134492",
+      "links": [
+        {
+          "url": "https://x.com/teortaxesTex/status/2098202210228109478",
+          "text": "@teortaxesTex"
+        }
+      ],
+      "summary": "In hands-on use, they reported that multi-agent “DSH agent teams” could degrade quality unless the project has very clear modularity, with V4.1 solo outperforming team mode in at least one example because subagents produced slop or wasted tokens on unnecessary…",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "OpenAI’s Voice, Agents, and Enterprise Push",
+      "topic": null,
+      "title": "OpenAI launched GPT-Live-1 into the API and quickly seeded an ecosystem around it",
+      "url": "https://x.com/OpenAIDevs/status/2098099269551149398",
+      "links": [
+        {
+          "url": "https://x.com/OpenAIDevs/status/2098099427357724870",
+          "text": "here"
+        },
+        {
+          "url": "https://x.com/OpenAIDevs/status/2098118242548281588",
+          "text": "details"
+        }
+      ],
+      "summary": "the new model is positioned as a full-duplex voice interface that can listen while speaking and delegate tool use or reasoning to a backend model.",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "OpenAI’s Voice, Agents, and Enterprise Push",
+      "topic": null,
+      "title": "The surrounding toolchain is maturing toward hosted agent infra",
+      "url": "https://x.com/OpenAIDevs/status/2098130570048045453",
+      "links": [
+        {
+          "url": "https://x.com/livekit/status/2098126102052905001",
+          "text": "LiveKit"
+        },
+        {
+          "url": "https://x.com/HeyGen/status/2098108031276134776",
+          "text": "HeyGen"
+        }
+      ],
+      "summary": "OpenAI also announced a public-beta Agents API with the Codex harness , plus OpenAI-hosted sandboxes for code execution, files, and artifacts via managed cloud agents launch .",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "OpenAI’s Voice, Agents, and Enterprise Push",
+      "topic": null,
+      "title": "Enterprise data access is becoming a first-class product primitive",
+      "url": "https://x.com/ChatGPT/status/2098065296968011853",
+      "links": [
+        {
+          "url": "https://x.com/Box/status/2098127482088267799",
+          "text": "Box"
+        }
+      ],
+      "summary": "OpenAI’s product-side announcement of a Data agent in ChatGPT Work promises dashboards, answers, and actions over connected company data sources @ChatGPT , while Box framed its integration as “the file system for AI” bringing governed enterprise context into C…",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Cognition, Cursor, and the Shift Toward Persistent Coding Agents",
+      "topic": null,
+      "title": "Cognition had a notably strong day",
+      "url": "https://x.com/cognition/status/2098069235733823965",
+      "links": [
+        {
+          "url": "https://x.com/ybenpan/status/2098077716146958723",
+          "text": "ybenpan"
+        },
+        {
+          "url": "https://x.com/silasalberti/status/2098115298125897961",
+          "text": "silasalberti"
+        }
+      ],
+      "summary": "it released SWE-2 , described as “our closest model yet to the frontier,” claiming parity on leading coding evals at up to 70% lower cost and explicitly stating it scaled RL to multiple trillions of parameters launch .",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Cognition, Cursor, and the Shift Toward Persistent Coding Agents",
+      "topic": null,
+      "title": "The Devin stack is becoming more multimodal and more integrated with developer workflows",
+      "url": "https://x.com/cognition/status/2098142686486356185",
+      "links": [
+        {
+          "url": "https://x.com/cognition/status/2098109121169883237",
+          "text": "Cognition"
+        }
+      ],
+      "summary": "beyond SWE-2, Cognition launched Devin Voice powered by GPT-Live and SWE-2 tweet , and announced that Dioxus Labs is joining Cognition to contribute to Devin’s VM, computer use, and testing while continuing support for Dioxus and related Rust OSS Cognition .",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Cognition, Cursor, and the Shift Toward Persistent Coding Agents",
+      "topic": null,
+      "title": "Cursor’s new “Projects” feature points to the same destination from the IDE side",
+      "url": "https://x.com/cursor_ai/status/2098162488013455784",
+      "links": [
+        {
+          "url": "https://x.com/ClaudeDevs/status/2098090911137972271",
+          "text": "pane pop-outs"
+        },
+        {
+          "url": "https://x.com/ClaudeDevs/status/2098120133549895978",
+          "text": "managed-agent session viewer / auto mode"
+        }
+      ],
+      "summary": "Cursor introduced persistent threads with a coordinator agent , shared memory/artifacts across agents, and sync across user devices and agent computers.",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agent Research: Harnesses, Horizons, Parallel Retrieval, and Self-Evolution",
+      "topic": null,
+      "title": "Several papers pushed on a common theme: the harness is now a core optimization target",
+      "url": "https://x.com/omarsar0/status/2097958286146605446",
+      "links": [
+        {
+          "url": "https://x.com/Sumanth_077/status/2098053941800100294",
+          "text": "Sumanth_077’s writeup of ByteDance’s HarnessDev"
+        }
+      ],
+      "summary": ". A widely shared Salesforce paper summary from omarsar0 showed that training a weaker model on a stronger expert’s full trajectories can hurt performance by 4–30 points after harness evolution, because the fine-tuned model adopts an incompatible planning styl…",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agent Research: Harnesses, Horizons, Parallel Retrieval, and Self-Evolution",
+      "topic": null,
+      "title": "Long-horizon and long-context agent training also got more principled treatments",
+      "url": "https://x.com/dair_ai/status/2098109386568925397",
+      "links": [
+        {
+          "url": "https://x.com/omarsar0/status/2098140712504332411",
+          "text": "omarsar0"
+        }
+      ],
+      "summary": "dair_ai summarized Qwen work on Elastic Horizon , a closed-loop controller that tracks the 90th percentile of successful trajectory lengths to adjust the maximum interaction horizon, improving success while saving up to 25% of trajectory tokens.",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agent Research: Harnesses, Horizons, Parallel Retrieval, and Self-Evolution",
+      "topic": null,
+      "title": "Skill and tool-use data generation are being formalized too",
+      "url": "https://x.com/dair_ai/status/2098154641854992676",
+      "links": [
+        {
+          "url": "https://x.com/GoogleResearch/status/2098183830968705163",
+          "text": "Google Research’s ToolGrad"
+        }
+      ],
+      "summary": "dair_ai on SkillAdam framed skill self-evolution as a discrete optimization problem, borrowing Adam-like first/second-moment ideas to stabilize update direction and edit magnitude.",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Safety, Misuse, Monitorability, and Model Governance",
+      "topic": null,
+      "title": "Anthropic’s threat intelligence report dominated the safety discussion",
+      "url": "https://x.com/AnthropicAI/status/2098097512544444447",
+      "links": [
+        {
+          "url": "https://x.com/pradeepXkapoor/status/2098115046069223631",
+          "text": "pradeepXkapoor"
+        },
+        {
+          "url": "https://x.com/logangraham/status/2098112853270257747",
+          "text": "logangraham"
+        }
+      ],
+      "summary": "the company published its most detailed misuse report so far, covering attempts to use Claude for cyberattacks, influence ops, surveillance, biology, and weapons , and said it disrupted every operation described launch tweet .",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Safety, Misuse, Monitorability, and Model Governance",
+      "topic": null,
+      "title": "A second thread focused on reasoning monitorability and “neuralese” risk",
+      "url": "https://x.com/redwood_ai/status/2098095409084420456",
+      "links": [
+        {
+          "url": "https://x.com/RyanGreenblatt/status/2098095983716688281",
+          "text": "Ryan Greenblatt"
+        },
+        {
+          "url": "https://x.com/NeelNanda5/status/2098177895932068174",
+          "text": "Neel Nanda"
+        }
+      ],
+      "summary": "Redwood Research proposed transparency norms for architectures that may weaken or eliminate chain-of-thought visibility, and Ryan Greenblatt argued companies should publish evidence and policies before deploying architectures that substantially reduce CoT depe…",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Safety, Misuse, Monitorability, and Model Governance",
+      "topic": null,
+      "title": "There was also visible disagreement among frontier-lab employees and alumni about risk culture",
+      "url": "https://x.com/ChrisHayduk/status/2098017706494566761",
+      "links": [
+        {
+          "url": "https://x.com/balesni/status/2098109503518683491",
+          "text": "balesni"
+        },
+        {
+          "url": "https://x.com/jkcarlsmith/status/2098189287917588835",
+          "text": "jkcarlsmith"
+        }
+      ],
+      "summary": "Chris Hayduk emphasized AI’s humanitarian upside, while balesni and jkcarlsmith openly endorsed >10% extinction-risk views. On governance, Thom Wolf announced a new Open Alignment team at Hugging Face, and Richard Ngo published a sharp critique of Paul joining…",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Top tweets by engagement",
+      "topic": null,
+      "title": "OpenAI pauses new $200 Pro signups for Astra capacity reasons",
+      "url": "https://x.com/thsottiaux/status/2098113585683808624",
+      "links": [],
+      "summary": "@thsottiaux said existing users are unaffected and API/other plans remain available.",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "1. DeepSeek V4.1 Flash Release and Architecture",
+      "title": "DeepSeek V4.1 Flash: Stronger, Faster, More Accessible",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wcb0o3/deepseek_v41_flash_stronger_faster_more_accessible/",
+      "links": [
+        {
+          "url": "https://mp.weixin.qq.com/s/qg0NU3NNUbp1co2PdkAPAg",
+          "text": "source"
+        },
+        {
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+          "text": "weights"
+        }
+      ],
+      "summary": "(Activity: 317): DeepSeek announced V4.1 Flash, a 552B -parameter MoE with native multimodal vision support and a new Causal-Encoder-Decoder asymmetric architecture: 8B parameters active on input and 16B on output, claiming higher capability than V4 Pro at low…",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "1. DeepSeek V4.1 Flash Release and Architecture",
+      "title": "Deepseek V4.1 Flash is 748B, not 552B",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wcd4rx/deepseek_v41_flash_is_748b_not_552b/",
+      "links": [
+        {
+          "url": "https://forums.developer.nvidia.com/t/deepseek-v4-1-flash/382725/11",
+          "text": "NVIDIA forum estimate"
+        },
+        {
+          "url": "https://huggingface.co/nvidia/GLM-5.3-Flash-NVFP4",
+          "text": "GLM-5.3-Flash-NVFP4"
+        }
+      ],
+      "summary": "(Activity: 575): OP inspected the Hugging Face safetensors and argues DeepSeek V4.1 Flash is ~ 748.5B parameters for backbone + engram—not 284B , 305B , 485B , or 522B —with a 551.566B backbone and 196.929B engram; including optional DSpark/MTP ( 14.225B ) and…",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "1. DeepSeek V4.1 Flash Release and Architecture",
+      "title": "DeepSeek-V4.1-Flash surprised ....",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wcdati/deepseekv41flash_surprised/",
+      "links": [
+        {
+          "url": "https://i.redd.it/va67hbc7knoh1.jpeg",
+          "text": "image"
+        }
+      ],
+      "summary": "(Activity: 537): The image is a reaction meme, but it highlights a technical claim that DeepSeek-V4.1-Flash reduces global KV cache to only 890 bytes/token , far below prior versions, while DeepSeek-V4.1-Flash-Base is shown as a 552B -parameter backbone with o…",
+      "publishedAt": "2026-09-12T05:56:05.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b"
+    },
+    {
       "source": "OpenAI",
       "sourceHome": "https://openai.com/news/",
-      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
-      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
-      "summary": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
-      "publishedAt": "2026-09-11T10:00:00.000Z"
+      "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
+      "url": "https://openai.com/index/cognition-devin-testing-with-astra",
+      "summary": "GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more.",
+      "publishedAt": "2026-09-11T16:00:00.000Z"
     },
     {
       "source": "The Rundown AI",
       "sourceHome": "https://www.therundown.ai/",
-      "title": "Anthropic opens the files on global Claude misuse",
-      "url": "https://www.therundown.ai/articles/anthropic-opens-the-files-on-global-claude-misuse",
-      "summary": "PLUS: How Rowan used Astra to redo his wardrobe",
-      "publishedAt": "2026-09-11T09:00:00.000Z"
-    },
-    {
-      "source": "The Rundown AI",
-      "sourceHome": "https://www.therundown.ai/",
-      "title": "Tesla’s Cybercab is already getting weird",
-      "url": "https://www.therundown.ai/articles/tesla-cybercab-is-already-getting-weird",
-      "summary": "PLUS: A Boston Dynamics spinout emerges from stealth",
-      "publishedAt": "2026-09-10T14:30:00.000Z"
-    },
-    {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "OpenAI made a ChatGPT specifically for finance",
-      "url": "https://openai.com/index/introducing-chatgpt-financial-services/",
-      "links": [],
-      "summary": "ChatGPT for Financial Services is a version of ChatGPT Work built around GPT-6 Astra, with financial data from Daloopa, PitchBook, LSEG News and Crunchbase already baked in. It’s built for research, financial models, pitchbooks and client materials.",
-      "publishedAt": "2026-09-11T14:24:31.913Z",
-      "issueUrl": "https://www.theaivalley.com/p/anthropic-dropped-a-154-page-threat-report"
-    },
-    {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "Anthropic says it blocked possible efforts to build biological weapons",
-      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-      "links": [],
-      "summary": "Anthropic published its latest Threat Report covering misuse it shut down over the last eight months, including possible bioweapon research, espionage, surveillance and weapons development.",
-      "publishedAt": "2026-09-11T14:24:31.913Z",
-      "issueUrl": "https://www.theaivalley.com/p/anthropic-dropped-a-154-page-threat-report"
+      "title": "Apple turns Watch into AI notetaker",
+      "url": "https://www.therundown.ai/articles/apple-turns-watch-into-ai-notetaker",
+      "summary": "PLUS: Air taxis take flight in Texas",
+      "publishedAt": "2026-09-11T14:30:00.000Z"
     }
   ]
 }

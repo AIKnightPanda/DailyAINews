@@ -1,6 +1,6 @@
 {
   "issue": "2026-09-12",
-  "builtAt": "2026-09-12T10:48:35.648Z",
+  "builtAt": "2026-09-11T21:37:54.090Z",
   "from": {
     "boards": "prefetched",
     "inbox": "live"
@@ -9,7 +9,12 @@
     "fetched": 186,
     "added": 0,
     "kept": 98,
-    "dropped": 186
+    "dropped": 186,
+    "pool": 98,
+    "screened": 82,
+    "candidates": 32,
+    "demandCandidates": 18,
+    "supplyCandidates": 14
   },
   "errors": [
     "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
@@ -3608,5 +3613,6 @@
         "fetchedAt": "2026-09-11T19:26:32.473Z"
       }
     }
-  ]
+  ],
+  "deepenedAt": "2026-09-11T21:37:59.746Z"
 }

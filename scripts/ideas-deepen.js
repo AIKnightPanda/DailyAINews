@@ -203,8 +203,12 @@ async function main() {
   });
   // 供给侧里 Show HN 深挖评论区；Product Hunt 自带一句话描述已经够写
   // 「这是什么」了，深挖只是顺带去产品页拿 followersCount，拿不到不影响入选。
+  // GitHub Trending 单独封顶 10：它的热度算法（stars/8 封顶 8 分）几乎每条
+  // 都顶格，2026-09-12/13 接入当天就把 Product Hunt/Console.dev 的名额挤没了——
+  // 供给侧其他源根本没机会露面。10 留出至少 4 个名额给其他供给源竞争。
   const { chosen: supplyPick } = pickForDeepen(supply, {
-    top: SUPPLY_TOP, perSource: 12, minScore: 4
+    top: SUPPLY_TOP, perSource: 12, minScore: 4,
+    caps: { 'github-trending': 10 }
   });
   const chosen = [...demandPick, ...supplyPick];
   const targets = chosen.filter(({ it }) => force || !it.deep);

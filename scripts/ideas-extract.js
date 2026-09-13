@@ -59,7 +59,17 @@ const signalLine = it => {
 };
 
 const demand = data.items.filter(x => x.candidate && x.side !== 'supply');
-const supply = data.items.filter(x => x.candidate && x.side === 'supply');
+// GitHub Trending 在 ideas-deepen.js 里没有共享名额上限——够格的全标了
+// candidate，都会上页面。但中文翻译只给分数最高的 GITHUB_FULL 条，
+// 其余的照常展示、退回英文原文简述，不进这份素材：不然「上新特别多的
+// 一天」会把这份素材撑到几十条 GitHub 仓库简介，稀释掉真正的需求候选。
+const GITHUB_FULL = 10;
+const supplyAll = data.items.filter(x => x.candidate && x.side === 'supply');
+const githubOverflow = supplyAll.filter(x => x.sourceId === 'github-trending')
+  .sort((a, b) => (b.screen?.score || 0) - (a.screen?.score || 0))
+  .slice(GITHUB_FULL);
+const overflowRefs = new Set(githubOverflow.map(x => x.ref));
+const supply = supplyAll.filter(x => !overflowRefs.has(x.ref));
 const trend = data.items.filter(x => !x.pool && x.summary);
 const hidden = data.items.filter(x => x.pool && !x.candidate).length;
 const failedSources = (data.sources || []).filter(s => s.status === 'error');
@@ -69,6 +79,10 @@ out.push(`# 灵感素材 ${issue}`);
 out.push('');
 out.push(`需求候选 **${demand.length}** 条，上新候选 **${supply.length}** 条，风向 ${trend.length} 条。`);
 out.push(`池内另有 ${hidden} 条没进候选（预筛排名靠后），**它们不在这份素材里，也不会上页面**。`);
+if (githubOverflow.length) {
+  out.push(`另有 ${githubOverflow.length} 条 GitHub Trending 超出中文翻译额度（前 ${GITHUB_FULL} 条` +
+    `之外），**会照常上页面、退回英文原文简述，不用你管**。`);
+}
 if (failedSources.length) {
   out.push('');
   out.push(`⚠️ ${failedSources.length} 个源抓取失败：${failedSources.map(s => `${s.name}（${s.error}）`).join('；')}`);

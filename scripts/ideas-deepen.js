@@ -191,10 +191,12 @@ async function main() {
     it.candidate = false;
   }
 
-  // 两条通道各自选拔，名额分开算 —— 供给侧不该和需求侧抢名额，
+  // 三条通道各自选拔，名额分开算 —— 供给侧不该和需求侧抢名额，
   // 它们回答的是不同的问题，混在一起排会让当天热闹的那一侧吃掉全部名额。
+  // GitHub Trending 再单独分出来，理由见上面 GITHUB_FULL 的注释。
   const demand = pool.filter(x => x.side !== 'supply');
-  const supply = pool.filter(x => x.side === 'supply');
+  const supply = pool.filter(x => x.side === 'supply' && x.sourceId !== 'github-trending');
+  const github = pool.filter(x => x.sourceId === 'github-trending');
 
   const { chosen: demandPick } = pickForDeepen(demand, {
     top: TOP,
@@ -203,14 +205,20 @@ async function main() {
   });
   // 供给侧里 Show HN 深挖评论区；Product Hunt 自带一句话描述已经够写
   // 「这是什么」了，深挖只是顺带去产品页拿 followersCount，拿不到不影响入选。
-  // GitHub Trending 单独封顶 10：它的热度算法（stars/8 封顶 8 分）几乎每条
-  // 都顶格，2026-09-12/13 接入当天就把 Product Hunt/Console.dev 的名额挤没了——
-  // 供给侧其他源根本没机会露面。10 留出至少 4 个名额给其他供给源竞争。
   const { chosen: supplyPick } = pickForDeepen(supply, {
-    top: SUPPLY_TOP, perSource: 12, minScore: 4,
-    caps: { 'github-trending': 10 }
+    top: SUPPLY_TOP, perSource: 12, minScore: 4
   });
-  const chosen = [...demandPick, ...supplyPick];
+  // GitHub Trending 独立预算：不设 top/perSource 上限，只卡质量门槛
+  // （screen().keep + minScore）——够格的全部标 candidate、全部上页面，
+  // 不跟 Product Hunt/Show HN 抢 SUPPLY_TOP 那 14 个名额（它的热度算法
+  // 几乎每条都顶格，混进共用池会把其他供给源挤没，2026-09-12/13 接入
+  // 当天就这么挤过一次）。深挖对它是空转（deepen: 'none'），标多少条
+  // candidate 都不产生额外请求。**只有分数最高的一部分会拿到中文翻译**——
+  // 那道筛选在 ideas-extract.js 里做（超出的直接不进模型素材），这里不用管。
+  const { chosen: githubPick } = pickForDeepen(github, {
+    top: github.length, perSource: github.length, minScore: 4
+  });
+  const chosen = [...demandPick, ...supplyPick, ...githubPick];
   const targets = chosen.filter(({ it }) => force || !it.deep);
 
   let ok = 0;

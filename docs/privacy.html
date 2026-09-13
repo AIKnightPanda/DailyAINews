@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 · DailyAINews</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Noto+Serif+SC:wght@400;500;700&display=swap">
+<style>
+:root {
+  --paper:   #E9EDEB;
+  --surface: #F8FAF9;
+  --ink:     #141C1A;
+  --ink-2:   #5A6764;
+  --rule:    #CFD8D4;
+  --accent:  #0D6B5C;
+  --font-display: 'Fraunces', Georgia, 'Songti SC', serif;
+  --font-body: 'Newsreader', 'Noto Serif SC', 'Songti SC', 'Source Han Serif SC', Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper:   #0E1211;
+    --surface: #161C1A;
+    --ink:     #E4E9E6;
+    --ink-2:   #8D9C97;
+    --rule:    #26302D;
+    --accent:  #4CC3A9;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+}
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 6rem;
+}
+h1 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+.updated { color: var(--ink-2); font-size: 0.9rem; margin: 0 0 3rem; }
+h2 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 2.5rem 0 0.8rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.4rem;
+}
+p, li { color: var(--ink); }
+ul { padding-left: 1.3rem; }
+li { margin-bottom: 0.5rem; }
+a { color: var(--accent); }
+.box {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 0.5rem;
+  padding: 1.2rem 1.4rem;
+  margin: 1.2rem 0;
+  font-size: 0.95rem;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  background: var(--surface);
+  padding: 0.1em 0.35em;
+  border-radius: 0.25em;
+}
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-2);
+  font-size: 0.9rem;
+}
+</style>
+</head>
+<body>
+<main>
+  <h1>隐私政策</h1>
+  <p class="updated">DailyAINews · 最后更新 2026-09-13</p>
+
+  <p>
+    DailyAINews 是一个个人自动化项目：每天抓取、整理并发布一份 AI 行业简报和一份
+    创业灵感摘要，产出就是你现在能看到的这个公开页面。它请求 Gmail 只读权限，
+    唯一的用途是读取<strong>一个固定白名单里的邮件来源</strong>，把里面的公开内容
+    并入当天的摘要。
+  </p>
+
+  <h2>它请求了什么权限</h2>
+  <p>只有一个 OAuth scope：<code>gmail.readonly</code>。</p>
+  <div class="box">
+    只读，不能修改、删除任何邮件，也不能代你发信。这个应用没有申请任何写权限。
+  </div>
+
+  <h2>它读取哪些邮件</h2>
+  <p>
+    只读<strong>代码里写死的发件人白名单</strong>（目前是 IdeaBrowser 的每日邮件
+    和 Mobbin 的每周产品简报两家），白名单之外的邮件不会被列出、也不会被读取。
+    白名单在仓库里公开可见：
+    <a href="https://github.com/AIKnightPanda/DailyAINews/blob/main/scripts/idea-sources.js" target="_blank" rel="noopener">scripts/idea-sources.js</a>。
+  </p>
+
+  <h2>读到的内容怎么处理</h2>
+  <ul>
+    <li>写入本地/CI 存储之前，会先剪掉邮件页脚、抹掉带订阅者标识的链接
+      （比如退订链接里嵌着的身份令牌），并把邮件地址替换成占位符。</li>
+    <li>公开页面上展示的是从邮件里提炼、翻译出的摘要文字，不会展示邮件原文，
+      也不会展示任何邮箱地址或订阅者标识信息。</li>
+    <li>不会把邮件内容或账号信息发送给这个项目以外的任何第三方服务、
+      不用于广告或用户画像，也不会出售或共享给任何人。</li>
+  </ul>
+
+  <h2>谁能访问</h2>
+  <p>
+    这是单人项目，只有仓库所有者本人的 Google 账号会被这个应用访问。
+    凭证只保存在项目所有者自己的电脑和该仓库私有的 GitHub Actions Secrets 里，
+    不会出现在仓库的公开代码或页面中。
+  </p>
+
+  <h2>怎么撤销授权</h2>
+  <p>
+    随时可以在 <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google 账号 → 安全性 → 第三方应用授权</a>
+    里找到 DailyAINews 并移除访问权限，撤销后这个应用会立即无法再读取任何邮件。
+  </p>
+
+  <footer>
+    有问题可以到 <a href="https://github.com/AIKnightPanda/DailyAINews" target="_blank" rel="noopener">GitHub 仓库</a> 提 issue。
+  </footer>
+</main>
+</body>
+</html>

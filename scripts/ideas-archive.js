@@ -220,6 +220,13 @@ async function main() {
   ];
   markQuiet(sources, pastSources(ISSUE));
   const errors = [boards.error, inbox.error, boards.reject, inbox.reject].filter(Boolean);
+  // notice 和 error 是两码事：notice 是「这个功能本来就没开」（比如没配
+  // Gmail），是已知的稳定状态，不是当天出的故障。放进 errors 会被
+  // renderFailures() 原样喊到公开页面上，天天挂着一条「缺环境变量」，
+  // 读者分不清这是「今天坏了」还是「压根没配」——2026-09-14 改成分开：
+  // errors 只留真正的抓取失败，notices 只用于下面控制台输出和运行报告，
+  // 不写进会渲染到页面的字段。
+  const notices = [boards.notice, inbox.notice].filter(Boolean);
 
   const out = {
     issue: ISSUE,
@@ -232,6 +239,7 @@ async function main() {
       dropped: fetched.length - added.length
     },
     errors,
+    notices,
     sources,
     items
   };
@@ -248,6 +256,7 @@ async function main() {
   const failed = sources.filter(s => s.status === 'error');
   const quiet = sources.filter(s => s.quietFor);
   for (const e of errors) console.error(`[ideas] ${e}`);
+  for (const n of notices) console.error(`[ideas] ℹ️ ${n}`);
   for (const s of quiet) {
     console.error(`[ideas] ⚠️ ${s.name} 已连续 ${s.quietFor} 期 0 条（状态一直是 ok）—— 可能是源断了，去核一下`);
   }
@@ -262,7 +271,10 @@ async function main() {
     kept: items.length,
     failed: failed.map(s => `${s.name}: ${s.error}`),
     quiet: quiet.map(s => `${s.name}: 连续 ${s.quietFor} 期 0 条`),
-    errors
+    errors,
+    // 这个字段只用于运行报告（跟 Routine 聊天里汇报），不进公开页面：
+    // 「没配 Gmail」这类已知的、非故障性的状态该写在这里，别写进 errors。
+    notices
   }));
 }
 

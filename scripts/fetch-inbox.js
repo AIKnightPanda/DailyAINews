@@ -42,7 +42,15 @@ const SUMMARY_MAX = 700;   // 邮件正文比 RSS 摘要值钱，给得比榜单
 async function accessToken() {
   const { GMAIL_CLIENT_ID: id, GMAIL_CLIENT_SECRET: secret, GMAIL_REFRESH_TOKEN: refresh } = process.env;
   const missing = ['GMAIL_CLIENT_ID', 'GMAIL_CLIENT_SECRET', 'GMAIL_REFRESH_TOKEN'].filter(k => !process.env[k]);
-  if (missing.length) throw new Error(`缺少环境变量 ${missing.join('、')}，见 ideas/README.md`);
+  if (missing.length) {
+    // 没配凭证是「还没开」，不是「坏了」——标出来跟下面真的抓失败区分开，
+    // 好让 main() 把它归进 notice 而不是 error（2026-09-14 之前两者不分，
+    // 「没配 Gmail」这句常态提示天天挂在公开页面上，跟真的抓取故障长得
+    // 一模一样，读者当成了「任务失败」）。
+    const err = new Error(`缺少环境变量 ${missing.join('、')}，见 ideas/README.md`);
+    err.notConfigured = true;
+    throw err;
+  }
 
   const res = await fetch('https://oauth2.googleapis.com/token', {
     method: 'POST',
@@ -266,12 +274,12 @@ async function main() {
 
 // 被 import 时不执行 main()，好让解析器能单独测试
 if (import.meta.url === pathToFileURL(process.argv[1] || '').href) main().catch(err => {
-  // 没配凭证是常态（本地跑、第一次跑），不该让整条管线炸掉：
-  // 输出合法结构 + error，ideas-archive.js 会照常带着榜单条目往下走。
-  console.log(JSON.stringify({
-    fetchedAt: new Date().toISOString(),
-    error: String(err?.message || err),
-    sources: [],
-    items: []
-  }, null, 2));
+  // 没配凭证是常态（本地跑、第一次跑），不该让整条管线炸掉：输出合法结构，
+  // ideas-archive.js 会照常带着榜单条目往下走。区分 notice/error 两个字段：
+  // notice 是「这个功能没开，是已知状态」，只进运行报告，不上公开页面；
+  // error 是「配了凭证但真的抓失败」（token 被撤销、Gmail API 报错……），
+  // 这种要跟其他源的抓取失败一样在页面上喊出来。
+  const out = { fetchedAt: new Date().toISOString(), sources: [], items: [] };
+  out[err?.notConfigured ? 'notice' : 'error'] = String(err?.message || err);
+  console.log(JSON.stringify(out, null, 2));
 });

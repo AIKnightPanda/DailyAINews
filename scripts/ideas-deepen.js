@@ -213,8 +213,8 @@ async function main() {
   // 不跟 Product Hunt/Show HN 抢 SUPPLY_TOP 那 14 个名额（它的热度算法
   // 几乎每条都顶格，混进共用池会把其他供给源挤没，2026-09-12/13 接入
   // 当天就这么挤过一次）。深挖对它是空转（deepen: 'none'），标多少条
-  // candidate 都不产生额外请求。**只有分数最高的一部分会拿到中文翻译**——
-  // 那道筛选在 ideas-extract.js 里做（超出的直接不进模型素材），这里不用管。
+  // candidate 都不产生额外请求。**全部都要写中文**（见 ideas-extract.js/
+  // ideas-style.md）——数量多只影响页面上排多靠后，不影响是不是中文。
   const { chosen: githubPick } = pickForDeepen(github, {
     top: github.length, perSource: github.length, minScore: 4
   });

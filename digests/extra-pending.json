@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-09-13T18:54:44.189Z",
+  "fetchedAt": "2026-09-14T20:26:38.670Z",
   "windowDays": 3,
-  "windowUntil": "2026-09-13T23:59:59.000Z",
+  "windowUntil": "2026-09-14T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
@@ -22,7 +22,7 @@
       "name": "OpenAI",
       "status": "ok",
       "issues": 2,
-      "items": 0
+      "items": 2
     },
     {
       "id": "deepmind",
@@ -35,16 +35,72 @@
       "id": "rundown",
       "name": "The Rundown AI",
       "status": "ok",
-      "issues": 2,
-      "items": 0
+      "issues": 1,
+      "items": 1
     },
     {
       "id": "aivalley",
       "name": "AI Valley",
       "status": "ok",
       "issues": 1,
-      "items": 0
+      "items": 2
     }
   ],
-  "items": []
+  "items": [
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "How Fyxer built an AI executive assistant people trust",
+      "url": "https://openai.com/index/fyxer",
+      "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice.",
+      "publishedAt": "2026-09-14T12:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "summary": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models.",
+      "publishedAt": "2026-09-14T00:00:00.000Z"
+    },
+    {
+      "source": "The Rundown AI",
+      "sourceHome": "https://www.therundown.ai/",
+      "title": "Top AI labs want to pump the brakes",
+      "url": "https://www.therundown.ai/articles/top-ai-labs-want-to-pump-the-brakes",
+      "summary": "PLUS: Send a one-page proposal after sales calls",
+      "publishedAt": "2026-09-14T09:00:00.000Z"
+    },
+    {
+      "source": "AI Valley",
+      "sourceHome": "https://www.theaivalley.com/",
+      "section": null,
+      "subsection": null,
+      "topic": null,
+      "title": "AI leaders are actually asking to slow AI down",
+      "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+      "links": [
+        {
+          "url": "https://x.com/AISafetyMemes/status/2098944808844988480?s=20",
+          "text": "basically agree"
+        }
+      ],
+      "summary": "Anthropic CEO Dario Amodei wrote a 3,800-word essay arguing that AI capabilities are moving too fast for safety work to keep up. Sam Altman, Elon Musk and DeepMind’s Demis Hassabis basically agree .",
+      "publishedAt": "2026-09-14T14:31:56.596Z",
+      "issueUrl": "https://www.theaivalley.com/p/the-ai-fear"
+    },
+    {
+      "source": "AI Valley",
+      "sourceHome": "https://www.theaivalley.com/",
+      "section": null,
+      "subsection": null,
+      "topic": null,
+      "title": "OpenAI isn’t going public this year",
+      "url": "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026",
+      "links": [],
+      "summary": "despite confidentially filing for an IPO, Sam Altman says 2026 would be an “ ill-advised ” time to actually do it. OpenAI had reportedly been aiming for Q3/Q4 this year, but Altman now says “we’ve got a lot of stuff to do.”",
+      "publishedAt": "2026-09-14T14:31:56.596Z",
+      "issueUrl": "https://www.theaivalley.com/p/the-ai-fear"
+    }
+  ]
 }

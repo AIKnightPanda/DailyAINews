@@ -1,0 +1,3984 @@
+{
+  "issue": "2026-09-15",
+  "builtAt": "2026-09-14T20:28:11.758Z",
+  "from": {
+    "boards": "prefetched",
+    "inbox": "live"
+  },
+  "counts": {
+    "fetched": 175,
+    "added": 103,
+    "kept": 103,
+    "dropped": 72,
+    "pool": 103,
+    "screened": 91,
+    "candidates": 43,
+    "demandCandidates": 18,
+    "supplyCandidates": 25
+  },
+  "errors": [],
+  "notices": [
+    "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
+  ],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "ok",
+      "items": 18,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "ok",
+      "items": 12,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 5,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "ok",
+      "items": 9,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "ok",
+      "items": 5,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "ok",
+      "items": 3,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 0,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 4,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub Trending",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "consoledev",
+      "name": "Console.dev",
+      "status": "ok",
+      "items": 8,
+      "pool": true,
+      "group": "board"
+    }
+  ],
+  "items": [
+    {
+      "id": "8fa73714ea",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1wgdbcg/if_you_had_a_wish_to_bring_one_of_ur_ideas_as_a",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "If you had a wish to bring one of ur ideas as a app completely like u want",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1wgdbcg/if_you_had_a_wish_to_bring_one_of_ur_ideas_as_a/",
+      "summary": "What would the idea be??",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1wgdbcg",
+      "via": null,
+      "publishedAt": "2026-09-14T19:24:22.000Z",
+      "ref": "I1",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "87d8d038db",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1wgcwr3/smt_ai_personal_trainer_connected_to_smartwatch",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "SMT: AI Personal Trainer connected to smartwatch data and training logs",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1wgcwr3/smt_ai_personal_trainer_connected_to_smartwatch/",
+      "summary": "What we have now from e.g. Garmin sucks: \"Suggested workouts\" are only limited to couple of sports Does not take into account multiple sports - I like to do e.g. running, strength, indoor rowing and yoga No way to give free-form feedback or instructions No progressive overload/variation Nobody to answer your questions about gear, form, nutrition, ... Feature set must haves Communicate via WhatsApp / Telegram / ... Connected to your smartwatch and health data Multi-sport Great memory of all your workout preferences, training logs, gear you own, past and current injuries, schedule, ...",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1wgcwr3",
+      "via": null,
+      "publishedAt": "2026-09-14T19:10:15.000Z",
+      "ref": "I2",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "What we have now from e.g. Garmin sucks: \"Suggested workouts\" are only limited to couple of sports Does not take into account multiple sports - I like to do e.g. running, strength, indoor rowing and yoga No way to give free-form feedback or instructions No progressive overload/variation Nobody to answer your questions about gear, form, nutrition, ... Feature set must haves Communicate via WhatsApp / Telegram / ... Connected to your smartwatch and health data Multi-sport Great memory of all your workout preferences, training logs, gear you own, past and current injuries, schedule, ... Take into account your sleep scores, recovery stats, past training evaluations, ... Daily \"Optimal workout\" delivered Example message 🚣 Today: 30-minute aerobic row Recovery is green: Body Battery 97, HRV 50 balanced, 8.7 h sleep/87, RHR 55 flat . Garmin ACWR is only 0.6 LOW , and rowing is 9 days stale . Running would normally win, but [City]’s forecast is ~10 mm rain with heavy rain this afternoon . So today we deliberately use the Concept2—not as second-rate strength work, but as low-impact aerobic training. Session - 5 min warm-up: 2:30–2:35/500 m, 20 spm - 20 min steady: 2:20–2:25/500 m, 22 spm - RPE 6/10: controlled pressure, never gasping - Tall chest at the catch; don’t collapse into the same desk posture we’re trying to undo - 5 min cooldown: 2:35–2:45/500 m, 18–20 spm No intervals today. Yesterday’s kettlebell/bench session already loaded the posterior chain. This adds aerobic load without turning recovery into stupidity. Next progression If all 20 steady minutes remain technically clean, next steady row becomes 22 minutes at the same 2:20–2:25 split before we increase speed. Quick symptom check: any worsening of the thoracic tension or down-side shoulder this morning? The session stands either way; keep testing the pillow setup for several nights before judging it.",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:39:02.134Z"
+      }
+    },
+    {
+      "id": "0929a03998",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1wfwgw7/open_concept_closedloop_wearable_to_simulate",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "Open Concept: Closed-loop wearable to simulate nocturnal erections in trans women on HRT — prevent atrophy",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1wfwgw7/open_concept_closedloop_wearable_to_simulate/",
+      "summary": "Problem: Trans women on HRT often lose spontaneous and nocturnal erections. This can lead to tissue hypoxia, fibrosis, loss of elasticity, and atrophy. Many want to preserve penile function, but they cannot control what happens during sleep. Idea: A closed-loop wearable system that monitors sleep stage, heart rate, oxygen saturation, and nocturnal erections. When REM sleep is detected and no erection occurs, the system could trigger a safe, non-invasive stimulation to create an erection — for example, a low-pressure vacuum pump, vibratory stimulation, or another medically approved method.",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1wfwgw7",
+      "via": null,
+      "publishedAt": "2026-09-14T07:16:59.000Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": -2,
+        "hits": [
+          "要做硬件"
+        ],
+        "detail": {
+          "signal": -8,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "00ea9f63bb",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1wfssds/the_church_of_self_authorship",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "The Church of Self Authorship",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1wfssds/the_church_of_self_authorship/",
+      "summary": "I don’t like religion, but I like the structure of it. Daily “worship” or interaction with your faith. Shared community and ideas guided towards a shared goal. I believe that self authorship is something which isn’t taught very openly. I don’t mean in the sense of just what you do. I mean self authorship of your ideas, your mindset, your health, your love and relationships, and even your hobbies. Here’s a great example I’ve had recently. I was curious what was going on with the East-West pipeline attack and how it would affect global pricing trends over the next year.",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1wfssds",
+      "via": null,
+      "publishedAt": "2026-09-14T03:57:17.000Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I don’t like religion, but I like the structure of it. Daily “worship” or interaction with your faith. Shared community and ideas guided towards a shared goal. I believe that self authorship is something which isn’t taught very openly. I don’t mean in the sense of just what you do. I mean self authorship of your ideas, your mindset, your health, your love and relationships, and even your hobbies. Here’s a great example I’ve had recently. I was curious what was going on with the East-West pipeline attack and how it would affect global pricing trends over the next year. And so I spent about an hour writing about it and researching and forming my own opinion of it. So it’s ownership of your ideas, choosing your values and beliefs that support YOUR values, daily interaction with the things that actually matter like love, and self health, and mental health, and personal goals/education. The idea would be to take the structure of church, and apply it in a non-religious non-cult community focused on teaching and supoorting self authorship, original thinking, and self awareness. Please. Someone make this. Is there a subreddit for people exploring anything like this? Is there already a name for this kind of community?",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:30:14.894Z"
+      }
+    },
+    {
+      "id": "793bbf4cef",
+      "normUrl": "https://reddit.com/r/software/comments/1wg85we/microsoft_app_replacement",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Microsoft app replacement",
+      "url": "https://www.reddit.com/r/software/comments/1wg85we/microsoft_app_replacement/",
+      "summary": "Hi, I want to setup my laptop and had been trying to debloat it and change things up. Considered content creating like editing and such aside from the programs I use for my studies (notion, devin/windsurf, notepad++) I really am getting sick of how limited the basic pre installed apps are. Apps like: Audio recorder Media player Photos Snipping tool Clipchamp Xbox game bar I am going to be using OBS, and for editing davinci resolve, but is there no flexible replacement for default apps for the others? I need suggestions and guidance with this.",
+      "deepenKey": "/r/software/comments/1wg85we",
+      "via": "is there an app that",
+      "publishedAt": "2026-09-14T16:25:17.000Z",
+      "ref": "I5",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "个人设备问题",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "0f5763e8ea",
+      "normUrl": "https://reddit.com/r/androidapps/comments/1wg627j/looking_for_a_private_no_ads_voice_recorder",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Looking for a private, no ads voice recorder",
+      "url": "https://www.reddit.com/r/androidapps/comments/1wg627j/looking_for_a_private_no_ads_voice_recorder/",
+      "summary": "Hiii! I bought a cheap phone cause I'm poor and it doesn't have voice recording app! And i need it so bad. Is there an app that is private? I'm scared that my recordings will be stored in the databases of companies that will then try to target me with advertising. Please helppp, thanks.",
+      "deepenKey": "/r/androidapps/comments/1wg627j",
+      "via": "is there an app that",
+      "publishedAt": "2026-09-14T15:08:56.000Z",
+      "ref": "I6",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "在找但没找到"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hiii! I bought a cheap phone cause I'm poor and it doesn't have voice recording app! And i need it so bad. Is there an app that is private? I'm scared that my recordings will be stored in the databases of companies that will then try to target me with advertising. Please helppp, thanks.",
+        "comments": [
+          {
+            "text": "https://github.com/FossifyOrg/Voice-Recorder"
+          },
+          {
+            "text": "Thank you!!!!!!! I will download it ❤️❤️❤️"
+          },
+          {
+            "text": "Chck Playstore to see if this app is available for your particular device https://play.google.com/store/apps/details?id=org.fossify.voicerecorder&hl=en_US Supposedly, this Samsung recorder works on some non-Samsung phones: apkmirror.com/apk/samsung-electronics-co-ltd/samsung-voice-recorder/"
+          },
+          {
+            "text": "Wooow!!!! Thank you so much! It works!!! ❤️ I have a TCL so it doesn't even have gallery 🤣"
+          },
+          {
+            "text": "If you're looking for a gallery app too, may I suggest Aves Gallery. Funny name but very capable"
+          },
+          {
+            "text": "Thank you!! ✨ I will look for aves!"
+          },
+          {
+            "text": "I will recommend you install the f-droid store on your phone. All apps there are open source, and must be able to compile on f-droid's build host. I haven't opened the play store in over a year."
+          },
+          {
+            "text": "Thank you!! I'm kinda noob at this theme of privacy but I will do what you suggest!!"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:29:13.125Z"
+      }
+    },
+    {
+      "id": "b4c1fdbe10",
+      "normUrl": "https://reddit.com/r/FirstTimeHomeBuyer/comments/1wfzz3x/comparing_lenders_and_townhome_vs_sfh_wisdom",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Comparing lenders and townhome vs SFH wisdom",
+      "url": "https://www.reddit.com/r/FirstTimeHomeBuyer/comments/1wfzz3x/comparing_lenders_and_townhome_vs_sfh_wisdom/",
+      "summary": "Hey, So we’re getting serious about purchasing a home. We live in the greater Boston area so homes are stupid expensive. We are a family of 4 with 2 boys (4 and 2). Budget is up to $2 mill. We’re now kind of accepting the fact that we won’t be able to afford a move-in ready SFH that needs a bunch of renovation at this price point so now leaning to new townhomes builds. My questions are: 1. What should I know about townhomes that you wish you knew (good and bad) before you committed?",
+      "deepenKey": "/r/FirstTimeHomeBuyer/comments/1wfzz3x",
+      "via": "is there an app that",
+      "publishedAt": "2026-09-14T10:46:50.000Z",
+      "ref": "I7",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Hey, So we’re getting serious about purchasing a home. We live in the greater Boston area so homes are stupid expensive. We are a family of 4 with 2 boys (4 and 2). Budget is up to $2 mill. We’re now kind of accepting the fact that we won’t be able to afford a move-in ready SFH that needs a bunch of renovation at this price point so now leaning to new townhomes builds. My questions are: 1. What should I know about townhomes that you wish you knew (good and bad) before you committed? I get the following suck: sharing a wall, potential HOA fees, don’t increase in value as much as SFH… How the heck should I have a bunch of lenders fight each other to have the best rate/offer? Using the VA home loan. Not sure if I just have cold call/email lenders. Is there an app that will compare several companies?",
+        "comments": [
+          {
+            "text": "Thank you u/Own-Bus-1130 for posting on r/FirstTimeHomeBuyer . Please keep our subreddit rules in mind. 1. Be nice 2. No selling or promotion 3. No posts by industry professionals 4. No troll posts 5. No memes 6. \"Got the keys\" posts must use the designated title format and add the \"got the keys\" flair. I am a bot, and this action was performed automatically. Please contact the moderators of this subreddit if you have any questions or concerns."
+          },
+          {
+            "text": "You should go on zillow/redfin because you can absolutely get a SFH that doesn't need renovation for $2 million in greater Boston."
+          },
+          {
+            "text": "They must have really high spec requirements because yeah you can easily find a SFH within greater Boston for well under 2M that is move in ready."
+          },
+          {
+            "text": "Yeah, a friend is currently buying a 4 bd 3 ba SFH in a good Metrowest town close to a commuter rail station for $1.3M. I'm guessing the OP either wants to be in like Somerville or Newton, or has ridiculous standards."
+          },
+          {
+            "text": "You know you're sending me to zillow!"
+          },
+          {
+            "text": "Needham or Newton. Central a/c and modern kitchen open layout (or opportunity to remodel) and 2 full bathrooms in 2nd floor that doesn’t feel all cramped up."
+          },
+          {
+            "text": "If you're willing to expand your search radius a little bit, I think you'll find more. I just checked out a $2MM max price with 4 bd 2 ba minimum in Needham, Newton, and surrounding areas that got 142 hits."
+          },
+          {
+            "text": "1.) Don’t do it unless it’s a prime location. That is the one thing a desirable townhome has going for it over a more spacious SFH in the burbs. 2.) Navy Federal. Just go there. They’ll give you the best rates, especially as a vet, & they don’t require private mortgage insurance (most lenders do until you get to 20%). You can put your number & email in to contact a bunch of lenders for you using apps, websites & ai, but it just opens you up to constant spam for the next 6+ months. I purchased my first home in Feb & still get lender spam."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:40:02.668Z"
+      }
+    },
+    {
+      "id": "0289556a3e",
+      "normUrl": "https://reddit.com/r/aeo/comments/1wfx037/every_aeo_tool_i_tried_gave_me_generic_prompts",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Every AEO tool I tried gave me generic prompts, not the ones my buyers actually ask",
+      "url": "https://www.reddit.com/r/aeo/comments/1wfx037/every_aeo_tool_i_tried_gave_me_generic_prompts/",
+      "summary": "I tried a few of the well known AI visibility tools. My problem with all of them was the same thing: the prompts. They give you generic ones for your category. Nobody in my industry actually types those. The questions my buyers ask are specific to the niche and to the product, and I could not find a tool that got them right. So I started building my own. The idea is to pull the real questions from where people actually ask them — Reddit threads, social, support questions — instead of guessing them.",
+      "deepenKey": "/r/aeo/comments/1wfx037",
+      "via": "is there a tool that",
+      "publishedAt": "2026-09-14T07:49:39.000Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "I tried a few of the well known AI visibility tools. My problem with all of them was the same thing: the prompts. They give you generic ones for your category. Nobody in my industry actually types those. The questions my buyers ask are specific to the niche and to the product, and I could not find a tool that got them right. So I started building my own. The idea is to pull the real questions from where people actually ask them — Reddit threads, social, support questions — instead of guessing them. Is this the right problem to solve, or is there a tool that already does this well and I just missed it?",
+        "comments": [
+          {
+            "text": "The only way to do this better is looking at existing search data at GSC of don't have data there then start with what the ideal user would be asking."
+          },
+          {
+            "text": "Most AEO tools generate seed queries from generic LLM prompts or static keyword lists (\"what is the best CRM?\"). Real buyers don't ask like that. They ask long, specific, comparison-heavy questions, and current tools miss it. Where things stand: SEO/AEO trackers watch rankings for queries the system made up, not questions real buyers actually asked. Tools like SparkToro, AnswerThePublic, and GummySearch do mine Reddit and social data for real questions, but they're built for content research, not for tracking AI answers or brand visibility. A few newer AEO platforms try to blend community intent with LLM tracking, but nobody's combined direct community scraping (Reddit, forums, support tickets) with automated AI-output monitoring in one tool built for B2B buyer journeys. Two things to sort out before building: Reddit and social APIs keep getting more locked down and expensive."
+          },
+          {
+            "text": "This is really helpful, thank you. Your first point matches what I found. Instead of generating questions started pulling them from Reddit threads, niche forums and People Also Ask. It does find things a keyword list never would — for a German accounting product it kept coming back to two small forums had never heard of, and for a US home services marketplace it was city-data.com. One thing I did not expect: even real harvested questions are mostly untrackable. When I actually ask them to the AI, a lot come back as advice with no brand named at all. On one run 13 of 60 named nobody, on another 23 of 60. There is nothing to win on those, so tracking them forever proves nothing. So now I test them against the engine first and keep only the ones where the answer really names companies.Your second point I have not solved either, and I think it is harder than it looks."
+          },
+          {
+            "text": "Yes, that's a real problem; generic prompts miss what buyers actually type, especially in niche B2B. We went manual instead: 15-20 prompts written the way our real buyers phrase things, checked weekly with the same wording. Pulling from Reddit and support questions is smart; that's where the real phrasing lives. The hard part is keeping the list stable over time so you're tracking actual change, not noise. We do this manually at Growthspree, a B2B Saas marketing agency, and it's caught things tools missed."
+          },
+          {
+            "text": "You're spot on that this is a major issue with most prompt-based tools. Not only is there no real market data on how many people are asking what, but u/DraftsByPennywise makes a great point there is a ton of conversational/user context (not just longer and more nuanced questions, but unexpressed context from prior questions, chats, or things like IP address location) that don't even show up in the prompt itself. In my experience working with dozens of brands, the most helpful thing you can do is examine the model's fan-out queries (the sub-queries that it creates when it researches a topic) for a variety of prompts in your space. This will show you consistent model decision funnel - what's it looking for, where is it looking, what constraints are embedded in its training data, etc."
+          },
+          {
+            "text": "Try to find the exact sentences your demographic searches is a red herring; you never will. As long as your basket of 100+ phrases are in the same wheelhouse, you will get reasonably accurate sample data. We built a tool called GAMVS that generates these phrases and sorts by buyer intent: this was something a customer recommended we do, and it seems to work."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Launch HN: Release (YC W20) – Staging environments made easy",
+            "points": 150,
+            "url": "https://news.ycombinator.com/item?id=22486031"
+          },
+          {
+            "title": "Launch HN: Bloomy (YC S26) – AI-powered mastery learning for K-12",
+            "points": 102,
+            "url": "https://news.ycombinator.com/item?id=48981136"
+          }
+        ],
+        "fetchedAt": "2026-09-14T20:41:03.183Z"
+      }
+    },
+    {
+      "id": "038270aa39",
+      "normUrl": "https://reddit.com/r/SaaS/comments/1wfjdbv/looking_for_a_tool_that_alerts_you_to_prospective",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Looking for a tool that alerts you to prospective SaaS customers on Reddit?",
+      "url": "https://www.reddit.com/r/SaaS/comments/1wfjdbv/looking_for_a_tool_that_alerts_you_to_prospective/",
+      "summary": "Reddit is currently my primary customer acquisition channel, but manually scanning threads for leads takes hours. Is there a tool that automatically monitors Reddit for high-intent keywords/opportunities in my niche and sends instant alerts when a relevant post pops up? Would love to hear what software or workflow you use to automate this!",
+      "deepenKey": "/r/SaaS/comments/1wfjdbv",
+      "via": "is there a tool that",
+      "publishedAt": "2026-09-13T20:52:00.000Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": 15,
+        "hits": [
+          "在找但没找到",
+          "在用笨办法凑合"
+        ],
+        "detail": {
+          "signal": 9,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Reddit is currently my primary customer acquisition channel, but manually scanning threads for leads takes hours. Is there a tool that automatically monitors Reddit for high-intent keywords/opportunities in my niche and sends instant alerts when a relevant post pops up? Would love to hear what software or workflow you use to automate this!",
+        "comments": [
+          {
+            "text": "Somethings to buil unlocked"
+          },
+          {
+            "text": "Hey that's literally me https://signal1st.io Quick clarification though: there are plenty of platforms that trigger notifications using keywords, however that approach is hit and miss, lots of false negatives/positives. The right way to do it is to use an LLM for intent classification (a good one, as the cheap ones hallucinate matches too often and produce a lot of noise as well)"
+          },
+          {
+            "text": "good point on the false positives, thats usually what kills the workflow before it even gets useful"
+          },
+          {
+            "text": "makes total sense, false positives completely defeat the point if you're still spending time sifting through junk alerts. how does Signal1st actually run that LLM intent classification? Do you feed it custom ICP parameters to filter posts, or does it evaluate buyer intent out of the box?"
+          },
+          {
+            "text": "Both actually. When you sign up an LLM builds a profile for you based off the content of your website, and that includes ICP parameters and examples (as well as a bunch of other factors). When a new post comes in it evaluates fitness to the value proposition of your business and buyer intent (how close the user is to actually buying your solution). And it sums it up in a neat \"relevancy score\" (x/100). So you can set up your own notification workflow based off that"
+          },
+          {
+            "text": "f5bot is the free bare bones version, keyword alerts by email, no fluff. Good starting point before paying for anything For more filtering GummySearch and F5Bot's paid tier both do intent scoring so you're not drowning in irrelevant mentions of your keyword. Worth trying the free options first though since most niches dont generate enough volume to need the paid layer Also worth building your own with Reddit's API and a cron job if you're technical, keyword alerts are genuinely one of the simpler things to DIY and you avoid another monthly sub"
+          },
+          {
+            "text": "Reddit's API has been heavily restricted for the past year or so. Getting access to it is nearly impossible. But other than that yes. F5bot is probably the easiest (free) way to get started with simple keyword matching"
+          },
+          {
+            "text": "Appreciate the breakdown! F5Bot definitely sounds like a solid starting point to test the waters on volume before opening the wallet. For the DIY route with Reddit's API, how painful is it to dodge their rate limits and API costs for a basic monitoring script these days? Are you running your own custom cron job setup right now?"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:36:20.840Z"
+      }
+    },
+    {
+      "id": "5a07fdcab9",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/39354/what-editor-can-i-customize-for-writing-html-with-special-tooltips-for-outlook",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "What editor can I customize for writing HTML with special tooltips for Outlook?",
+      "url": "https://softwarerecs.stackexchange.com/questions/39354/what-editor-can-i-customize-for-writing-html-with-special-tooltips-for-outlook",
+      "summary": "I just started a job where I will be writing HTML emails. I want to give the gift of convenience to future team members who might share the task of writing HTML emails that render correctly across every major email client, even MS Outlook 2016 for desktop. I know about MailChimp. Our team currently uses InfusionSoft for marketing emails. I have used Litmus.com's editor and Emailonacid.com's editor. I tried RED by CoffeeCup. Those, combined with Google Developer tools in Chome, cover almost all the software features I'm looking for, except a few.",
+      "deepenKey": "39354",
+      "signal": {
+        "score": 3,
+        "views": 156,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2017-02-09T08:04:18.000Z",
+      "ref": "I10",
+      "screen": {
+        "keep": true,
+        "score": 10,
+        "hits": [
+          "有具体人群"
+        ],
+        "detail": {
+          "signal": 3,
+          "engagement": 4,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I just started a job where I will be writing HTML emails. I want to give the gift of convenience to future team members who might share the task of writing HTML emails that render correctly across every major email client, even MS Outlook 2016 for desktop. I know about MailChimp. Our team currently uses InfusionSoft for marketing emails. I have used Litmus.com's editor and Emailonacid.com's editor. I tried RED by CoffeeCup. Those, combined with Google Developer tools in Chome, cover almost all the software features I'm looking for, except a few. I continue to look around because I want something more, especially when it comes to emails built for MS Outlook on desktop. Android Studio inspired the features I want. Core, must-have features: red squiggly underlines on pieces of code that aren't supported in Outlook tooltips appear when I hover over pieces of code that have red squigglies and give me advice about what is wrong with the code and what could fix it. Would be nice features: Toggle between 'email client modes'. When I want to see if the code has any errors in Outlook, I toggle to Outlook, and the red squigglies and tooltips are specific to Outlook. When I toggle to Gmail, those become specific to Gmail. Updateable tooltips, or updateable 'email client modes'. That way as things change, if another version of Outlook comes out, we update the Outlook mode, or we can add another mode for the new Outlook version. Built in CSS inlining tool. That way I can write clean CSS in a file or many files, at least to begin with. Then I can inline with the push of a button when I go to test it. It would be super cool if I could choose to inline styles explicitly to children that would have inherited it. Just want it, don't know why features: Built in CSS un-inlining tool to take the CSS back out of the style attributes and into a .css file. I have been researching and creating docs that have information on which code is/isn't supported in Outlook. I would be able to create the tooltips myself if necessary. I largely want these features because, wouldn't this be ideal for passing on documentation to my team?",
+        "comments": [
+          {
+            "text": "Editors CudaText/ SynWrite have base for it, for addon. Addon must have lexer, modified HTML lexer, which finds inccorrect HTML parts and makes them red or red-underlines. SynWrite has lexer tutorials docs (4 files) about it. plugin for SynLint (Synwrite)/ CudaLint (CudaText). Ie linter. This linter must place bookmarks on bad lines. It can add bookmarks with tooltips - for icons in left side gutter. Plugin in Python. Lexer + linter can do it.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:28:52.492Z"
+      }
+    },
+    {
+      "id": "0396959f06",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/35567/online-scheduling-that-takes-varying-transit-times-into-account-when-offering-sc",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Online scheduling that takes varying transit times into account when offering scheduling options",
+      "url": "https://softwarerecs.stackexchange.com/questions/35567/online-scheduling-that-takes-varying-transit-times-into-account-when-offering-sc",
+      "summary": "I'm a tutor, going from house to house. I work one-on-one with students. During the busy season, I can have up to 14 students. Most students see me at least once a week, but some only call me when they feel they need me. I'd like to offer my students online scheduling, but I'm having trouble finding something that would work for me. I'd appreciate any suggestions you might have! Many of my must-haves are standard in many online scheduling options.",
+      "deepenKey": "35567",
+      "signal": {
+        "score": 7,
+        "views": 130,
+        "answers": 2,
+        "unanswered": true
+      },
+      "publishedAt": "2016-08-18T13:33:53.000Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "有具体人群"
+        ],
+        "detail": {
+          "signal": 3,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I'm a tutor, going from house to house. I work one-on-one with students. During the busy season, I can have up to 14 students. Most students see me at least once a week, but some only call me when they feel they need me. I'd like to offer my students online scheduling, but I'm having trouble finding something that would work for me. I'd appreciate any suggestions you might have! Many of my must-haves are standard in many online scheduling options. Confidentiality, allowing appointments for different amounts of time, real-time updating, and automatic reminders are part of almost every online scheduler I've seen. What I need but can't find is online scheduling that offers different openings to each student, depending on how long it would take me to get to that student from the previous student. For example, suppose I have three students: Clara, John, and Steven. Clara has already scheduled. It's 30 minutes from Clara to John, but 45 minutes from Clara to Steven. If Clara sees me 3:30--5:00, I'd like the online scheduling app to automatically offer 5:30 pm to John, but 5:45 pm to Steven. Maybe the online scheduling app could check Google maps for estimated travel times. It could then add an extra amount of time that I would specify and round up to the nearest 15 minutes. That way, I could allow for traffic, last-minute questions, etc. without being late or having extra transit time that I don't need. And people would get meeting times that are easy to remember (4:15, for example, is much easier for people to remember than 4:13 would be.) I've seen online scheduling that lets me set a specific amount of time between appointments, but isn't really what I need. Most of the features I'd like to see, but that aren't strictly necessary, are also standard in online scheduling. There's only one feature I haven't seen yet--the ability to hold times for 24 or 48 hours, without having a firm booking. I'd like be able to put a temporary hold on specific times for specific students. That could be useful during the busy season, when everyone wants a Sunday time, but those times are booked.",
+        "comments": [
+          {
+            "text": "The closest thing I've found that would meet the majority of your criteria would be Housecall Pro a single user runs $49 per month billed annually. Full disclosure: I have no affiliation nor personal experience with this (although I've been considering it) I'd love to see some alternatives as well.",
+            "score": 0
+          },
+          {
+            "text": "Old question, but see previous answer explaining use of Vroom or Graphhopper . It appears to be similar: A simple route planner",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:29:13.578Z"
+      }
+    },
+    {
+      "id": "2f51ae0a70",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/35137/tool-to-search-for-dependencies-of-javascript-variables-and-functions",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Tool to search for dependencies of JavaScript variables and functions",
+      "url": "https://softwarerecs.stackexchange.com/questions/35137/tool-to-search-for-dependencies-of-javascript-variables-and-functions",
+      "summary": "I must to refactor the project in which thousands of lines of js-code. Is there a tool to search for dependencies of global variables and functions in the project javascript-files? It would be desirable that the tool could construct a graph.",
+      "deepenKey": "35137",
+      "signal": {
+        "score": 4,
+        "views": 224,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2016-08-01T04:56:11.000Z",
+      "ref": "I12",
+      "screen": {
+        "keep": true,
+        "score": 10,
+        "hits": [
+          "在找但没找到"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 4,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I must to refactor the project in which thousands of lines of js-code. Is there a tool to search for dependencies of global variables and functions in the project javascript-files? It would be desirable that the tool could construct a graph.",
+        "comments": [
+          {
+            "text": "You can run doxygen on your project with the options set to include undocumented functions and to map dependencies (ideally with graphviz also installed) and it will give you, in a variety of formats, all of the functions and globals with where they are used. Free, Gratis & Open Source Cross Platform Works for multiple languages: Java C, C++, C# Python Fortan IDL VHDL Update For JavaScript the doxygen site has the following to say: For those working with JavaScript it may be good to know that Jörg Schaible has written a perl script to let doxygen deal with it. Unfortunately his site at berlios.de has been removed. If you google for js2doxy.pl you can still find copies of the script however. This may or may not be of some help to you.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:28:52.781Z"
+      }
+    },
+    {
+      "id": "f8757cf0e7",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/85048/software-for-making-learning-from-videos-more-studious-interactive-and-effecti",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Software for making learning from videos more studious, interactive, and effective",
+      "url": "https://softwarerecs.stackexchange.com/questions/85048/software-for-making-learning-from-videos-more-studious-interactive-and-effecti",
+      "summary": "This post is a request for software that would make learning from videos found on the web and elsewhere much easier. Suppose I find an educational video. I watch the video for a while, try to absorb as much as possible, then, someone comes home, and I have to pause it because someone takes over what I am doing. I help the person that came home with the everyday chores. Meanwhile, the video has been paused. When I return to the video, I have forgotten what I was watching and I have to watch it from the beginning all over again. While I watch it, I get bored because I have already seen it.",
+      "deepenKey": "85048",
+      "signal": {
+        "score": 1,
+        "views": 55,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2023-01-19T10:07:15.000Z",
+      "ref": "I13",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "This post is a request for software that would make learning from videos found on the web and elsewhere much easier. Suppose I find an educational video. I watch the video for a while, try to absorb as much as possible, then, someone comes home, and I have to pause it because someone takes over what I am doing. I help the person that came home with the everyday chores. Meanwhile, the video has been paused. When I return to the video, I have forgotten what I was watching and I have to watch it from the beginning all over again. While I watch it, I get bored because I have already seen it. So, after a minute or two, close everything and call it quits. This way, I lose an important learning opportunity, and the video never gets watched completely. This, must be a common scenario. So, how can we make educational video watching a stronger strength? I think, what is needed, is the ability to embed the video in a chrome software (such as a chrome plugin), or upload it to a service site (which could use pointers to the original video to stream it without downloading it), that does the following: While you watch the video, you can click on a button to take a snapshot. The snapshot can then be viewed below the video by scrolling below the video in the same page, in the user's personal video feed. In fact, for each video, each user can upload the video to a special site or page available via a chrome plugin where all viewed videos are found, and, below, you can see the screenshots from the video. For instance, if in the video there is a diagram, you can quickly view that diagram without watching the whole video again, and resume, after pausing or returning to the video later, by just watching the summary of screenshots. Even if the video is watched completely, you can return to the video's page in your own personal space and see the screenshots. Below each screenshot, or even in absence of such screenshots, you can also include comments, explaining what your have seen, and allowing you to not down some personal notes relative to what you have seen, and embed some voice recordings (allowing you to recite what you have seen and listen to it later).",
+        "comments": [
+          {
+            "text": "For this workflow, I would prioritize timestamped notes, chapter navigation, transcript search, and self-test prompts rather than simply replaying the whole video. A practical routine is: skim the outline, watch in short sections, write a closed-book question after each section, then return only to the timestamps you missed. For YouTube lectures, SummarizAI is one browser-based option that adds summaries, chapters, and study prompts on the watch page. Disclosure: I work on SummarizAI. It has a free student plan to try: SummarizAI",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:30:55.414Z"
+      }
+    },
+    {
+      "id": "b54758bc10",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/48477/command-line-dictionary-program-supporting-mdx-files-on-ubuntu",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "command line dictionary program supporting MDX files on Ubuntu",
+      "url": "https://softwarerecs.stackexchange.com/questions/48477/command-line-dictionary-program-supporting-mdx-files-on-ubuntu",
+      "summary": "Is there any free command line dictionary program on Ubuntu that supports .mdx MDict dictionary files?",
+      "deepenKey": "48477",
+      "signal": {
+        "score": 2,
+        "views": 271,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2018-02-04T08:40:30.000Z",
+      "ref": "I14",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "c4d1fb8473",
+      "normUrl": "https://news.ycombinator.com/item?id=49702360",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Anyone creating their own entertainment?",
+      "url": "https://news.ycombinator.com/item?id=49702360",
+      "externalUrl": null,
+      "summary": "This week I kept hearing animated sounds from my wife's phone while she played a new puzzle game. She very quickly got upset with the app after it started demanding she watch more ads to continue playing. Last night, Claude recreated the app - a single HTML page with a daily challenge, all-time stats, as many generated puzzles as she wants without ads. Oh and it's cat themed this time (of course). At dinner we started talking about whether people will start creating their own personal entertainment, beyond just simple puzzle games, like TV episodes, maybe entire TV series, maybe movies...",
+      "deepenKey": "49702360",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-09-14T19:13:04Z",
+      "ref": "I15",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "57c6ccea30",
+      "normUrl": "https://news.ycombinator.com/item?id=49699816",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Why the sudden \"AI Regulation\" posts?",
+      "url": "https://news.ycombinator.com/item?id=49699816",
+      "externalUrl": null,
+      "summary": "All at once pretty much every billionaire and public figure is asking for AI regulation at the same exact time and in the same exact way? It seems too organized to not be driven by some other force. Can someone explain this to me?",
+      "deepenKey": "49699816",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 3
+      },
+      "publishedAt": "2026-09-14T16:41:39Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1a75fc6e71",
+      "normUrl": "https://news.ycombinator.com/item?id=49699135",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What would make self-hosting easy enough for average consumers?",
+      "url": "https://news.ycombinator.com/item?id=49699135",
+      "externalUrl": null,
+      "summary": "In the recent days I've realized that people want more control over their digital data, this became more apparent to me when I saw Sony getting backlash on their recent announcements. People are considering to even pirate music again just because they want more control over their data. So I've been wondering that almost every household now has some amount of digital data that needs to be taken care of. Some having more data than others.",
+      "deepenKey": "49699135",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 4
+      },
+      "publishedAt": "2026-09-14T16:00:34Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6f241d3239",
+      "normUrl": "https://news.ycombinator.com/item?id=49698914",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How are you managing aging relatives passwords?",
+      "url": "https://news.ycombinator.com/item?id=49698914",
+      "externalUrl": null,
+      "summary": "Looking for how or what services others use to manage their aging relatives passwords? Is 1Password still the choice?",
+      "deepenKey": "49698914",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 10
+      },
+      "publishedAt": "2026-09-14T15:46:01Z",
+      "ref": "I18",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1e4721c888",
+      "normUrl": "https://news.ycombinator.com/item?id=49698198",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Developers – Do you let agents write production code?",
+      "url": "https://news.ycombinator.com/item?id=49698198",
+      "externalUrl": null,
+      "summary": "I know 2 good developers, let's call them Bob and Bill. Bob does not write code anymore, he orchestrates agents. Says it makes him faster. That the level of slop is the same as with humans. He swears by it. Bill only uses agents to write tests and do code review. He says even a Fable 5.1 will create 1,000 line slop instead of his 10 line fix. He swears by it. Both Bob & Bill are both credible developers that have lots of experience at building real things, including at Google. Do agents still produce slop? Does the 10x engineer really exist? What is your position?",
+      "deepenKey": "49698198",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 6
+      },
+      "publishedAt": "2026-09-14T15:07:00Z",
+      "ref": "I19",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6f9f75b471",
+      "normUrl": "https://news.ycombinator.com/item?id=49697367",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "A repo gained 3,278 stars while GitHub showed Andrej Karpathy as a contributor",
+      "url": "https://news.ycombinator.com/item?id=49697367",
+      "externalUrl": null,
+      "summary": "A GitHub repo gained 3,278 stars in one week, peaking at 573 stars in a single day. Its associated paper also reached #1 on Hugging Face Trending Papers. During that period, the repo page prominently showed @karpathy (Andrej Karpathy) as a contributor, including his GitHub account/avatar. The associated commit was authored and committed as @karpathy. GitHub's API shows the commit was unsigned. A GitHub issue later questioned this, saying Karpathy never contributed. The project subsequently removed the commit. Forging Git commit author metadata is a known issue.",
+      "deepenKey": "49697367",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-14T14:22:36Z",
+      "ref": "I20",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5214a6c29e",
+      "normUrl": "https://news.ycombinator.com/item?id=49696875",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Screenshots on macOS don't have to be date named files with spaces",
+      "url": "https://news.ycombinator.com/item?id=49696875",
+      "externalUrl": null,
+      "summary": "Do you not like lots of files on your Desktop like Screenshot 2026-09-14 at 6.42.17 AM.png ? mkdir ~/Screenshots defaults write com.apple.screencapture location \"$HOME/Screenshots\" killall SystemUIServer https://gist.github.com/andrewarrow/1584ca32badeb19868dcc3bec657eaa9 https://gist.github.com/andrewarrow/3d61d1c8ecdd3a7e7401bbec481718ca launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.aa.rename-screenshot.plist And now I get: ~/Screenshots $ ls basifacial_decidua.png dehull_knopweed.png erlking_walloping.png",
+      "deepenKey": "49696875",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 3
+      },
+      "publishedAt": "2026-09-14T13:50:20Z",
+      "ref": "I21",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [
+          "要的是库不是产品"
+        ],
+        "detail": {
+          "signal": -5,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "22531db28b",
+      "normUrl": "https://news.ycombinator.com/item?id=49696660",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "The AI cleanup crew. Why AI taking down sites is a good thing",
+      "url": "https://news.ycombinator.com/item?id=49696660",
+      "externalUrl": null,
+      "summary": "Everyone is worried about how AI can break security and attack any website and potentially destroy them. I offer a different perspective. AI shouldn't be stopped from doing this. It should be encouraged. In nature there are \"clean up crews\", from vultures to ant colonies, which recycle failing organisms that are no longer adaptive to the current environment. This creates room for new and more well adapted organisms to rise. I see AI filling a similar role in the internet. There are countless dead, empty, and fraudulent sites circulating which suck up resources endlessly with no progress.",
+      "deepenKey": "49696660",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-14T13:36:36Z",
+      "ref": "I22",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "77ec32aa67",
+      "normUrl": "https://news.ycombinator.com/item?id=49696190",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are 80s high school hobby programmers overwhelmingly pro-AI?",
+      "url": "https://news.ycombinator.com/item?id=49696190",
+      "externalUrl": null,
+      "summary": "Do such people think that AI is truly miraculous and should be made as advanced as possible as quickly as possible?",
+      "deepenKey": "49696190",
+      "via": null,
+      "signal": {
+        "points": 10,
+        "comments": 24
+      },
+      "publishedAt": "2026-09-14T13:05:35Z",
+      "ref": "I23",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 6,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "c490931cf6",
+      "normUrl": "https://news.ycombinator.com/item?id=49695710",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Chinese cargo ship makes inaugural journey, reshaping global trade",
+      "url": "https://news.ycombinator.com/item?id=49695710",
+      "externalUrl": null,
+      "summary": "To Europe, via Arctic circle, 20 days vs 40 days. No Suez Canal. A single transit toll through the Suez Canal typically ranges from $30,000 to over $1.5 million per vessel. Saves both time and money.",
+      "deepenKey": "49695710",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 2
+      },
+      "publishedAt": "2026-09-14T12:27:21Z",
+      "ref": "I24",
+      "screen": {
+        "keep": true,
+        "score": 3,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8dfeb902e4",
+      "normUrl": "https://news.ycombinator.com/item?id=49695638",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "You have unlimited resources, what software would you build?",
+      "url": "https://news.ycombinator.com/item?id=49695638",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "49695638",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 4
+      },
+      "publishedAt": "2026-09-14T12:21:12Z",
+      "ref": "I25",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "7e2cf0f5df",
+      "normUrl": "https://news.ycombinator.com/item?id=49694965",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Do You Like Skiing?",
+      "url": "https://news.ycombinator.com/item?id=49694965",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "49694965",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 5
+      },
+      "publishedAt": "2026-09-14T11:13:25Z",
+      "ref": "I26",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2886bc5c16",
+      "normUrl": "https://news.ycombinator.com/item?id=49694652",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Hello, how you guys doing",
+      "url": "https://news.ycombinator.com/item?id=49694652",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "49694652",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 4
+      },
+      "publishedAt": "2026-09-14T10:34:06Z",
+      "ref": "I27",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "a6b0fcb528",
+      "normUrl": "https://news.ycombinator.com/item?id=49693601",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Sharden: A mineable coin for paying miners",
+      "url": "https://news.ycombinator.com/item?id=49693601",
+      "externalUrl": null,
+      "summary": "I built Sharden as an autonomous mineable PoW cryptocurrency on Ethereum blockchain which also has an interesting potential use case for miners themselves as a payment method. Miners can mine SHARDEN themselves, trade it on crypto markets where it can acquire a market price, and then use SHARDEN as an additional payment method when mining other cryptocurrencies. For example, a miner could receive the cryptocurrency they are mining plus SHARDEN as additional compensation for their mining work.",
+      "deepenKey": "49693601",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-14T08:23:38Z",
+      "ref": "I28",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "905616d477",
+      "normUrl": "https://news.ycombinator.com/item?id=49692215",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Do you worry about fires in AI datacenters?",
+      "url": "https://news.ycombinator.com/item?id=49692215",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "49692215",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 8
+      },
+      "publishedAt": "2026-09-14T05:04:24Z",
+      "ref": "I29",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "b89aa8b545",
+      "normUrl": "https://news.ycombinator.com/item?id=49692164",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What if we had to come back?",
+      "url": "https://news.ycombinator.com/item?id=49692164",
+      "externalUrl": null,
+      "summary": "It's a super basic question that never seems to get asked in such general terms. Set religion, spiritual beliefs aside (if you can) and just consider this in todays climate: What if \"what happens when I die\" was literally just coming right back, to this same world, same timeline. Don't question it's science this is simply a thought experiment. If we knew we were to return, would this inherently lead to a more sustainable future for humans in general? The incentive to act \"now\" becomes much more pressing.",
+      "deepenKey": "49692164",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 14
+      },
+      "publishedAt": "2026-09-14T04:56:42Z",
+      "ref": "I30",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "It's a super basic question that never seems to get asked in such general terms. Set religion, spiritual beliefs aside (if you can) and just consider this in todays climate: What if \"what happens when I die\" was literally just coming right back, to this same world, same timeline. Don't question it's science this is simply a thought experiment. If we knew we were to return, would this inherently lead to a more sustainable future for humans in general? The incentive to act \"now\" becomes much more pressing. In my own experiences, I feel this whole \"reality is a simulation\" thing is part of whats making the world feel darker these days. I think when people point this out they normally do so in a spiritual context, and it falls on deaf ears. Well, I am very much for Science, and I see both validity in this as a thought experiment as well as just about as likely a theory of afterlife as most, while all remains unproven.",
+        "comments": [
+          {
+            "text": "To me it's evident that consciousness doesn't end with the death of the physical body. It's foolish to think that in this fractal, endlessly repeating Universe that's billions of years old and unfathomably vast - you only live as tiny organism, not even a small cell, for the blink of an eye."
+          },
+          {
+            "text": "https://www.galactanet.com/oneoff/theegg.html"
+          },
+          {
+            "text": "It wouldn't change a thing. People have to live in their bodies. Do they care for them? No."
+          },
+          {
+            "text": "> \"reality is a simulation\" A simulated universe requires everything an ordinary universe requires, plus a simulator. Absent independent evidence for the simulator, “we are simulated” is a less parsimonious hypothesis than “the world we observe is the world.”"
+          },
+          {
+            "text": "> reality is a simulation\" If simulation theory is compatible with every possible observation, it predicts nothing—and a hypothesis that predicts nothing gives us no reason to believe it."
+          },
+          {
+            "text": "Buddhists who follow the Lotus Sutra have the idea of a Bodhisattva of the Earth [0]. Very briefly, we are all endowed with Buddha nature, but most do not realize it. Bodhisattvas are people like you and me who realize not only their inherent Buddhahood, but who vow to help others as equals. So much so that they incur a little karma in order to return to this \"mean streets\" world in the next trip and do even more good."
+          },
+          {
+            "text": "> Set religion, spiritual beliefs aside (if you can)… > … Don't question it's science … You’ve been told the “apocalypse is nigh” unless you (and everyone else) change your behavior. It’s in so many ways just another iteration of ancient religion with a modern twist. The prophets have divined the heavens and can tell you with certainty what will happen in 100 years time, unless you follow the rituals of putting your bottles in a separate disposal container, and ride bikes instead of cars. But if you’re very rich and want to fly a private jet you can donate money and the priests of climate change will absolve you of your carbon sins."
+          },
+          {
+            "text": "> If we knew we were to return, would this inherently lead to a more sustainable future for humans in general? I doubt this would change the spectrum of attitudes much. If such an effect were probable, one would think that it would happen in order to protect our children."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Worms frozen in permafrost for up to 42,000 years come back to life",
+            "points": 507,
+            "url": "https://news.ycombinator.com/item?id=17622252"
+          },
+          {
+            "title": "The Story Of Larry Page's Comeback",
+            "points": 403,
+            "url": "https://news.ycombinator.com/item?id=7641114"
+          },
+          {
+            "title": "Dell goes back on WFH pledge, forces employees to come back to the office",
+            "points": 398,
+            "url": "https://news.ycombinator.com/item?id=35944295"
+          }
+        ],
+        "fetchedAt": "2026-09-14T20:30:55.961Z"
+      }
+    },
+    {
+      "id": "1794ab9e58",
+      "normUrl": "https://news.ycombinator.com/item?id=49690649",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "System 3 Thinking",
+      "url": "https://news.ycombinator.com/item?id=49690649",
+      "externalUrl": null,
+      "summary": "Hey folks, I am trying to implement system 3 Thinking from user side . I have already built it in my product but I want to harden it. Any advice?",
+      "deepenKey": "49690649",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-14T01:19:50Z",
+      "ref": "I31",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d0e104ff8c",
+      "normUrl": "https://news.ycombinator.com/item?id=49690524",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What are some privacy/security tools you wish exist, but don't yet?",
+      "url": "https://news.ycombinator.com/item?id=49690524",
+      "externalUrl": null,
+      "summary": "What are some things you want built to protect your privacy, but don't exist yet, for whatever reason? It can be anything, browser extensions, software, adblockers, or physical security devices. I'm curious and I want to see what the world needs right now.",
+      "deepenKey": "49690524",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 7
+      },
+      "publishedAt": "2026-09-14T00:59:33Z",
+      "ref": "I32",
+      "screen": {
+        "keep": true,
+        "score": 3,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "184ed7386e",
+      "normUrl": "https://news.ycombinator.com/item?id=49690154",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "AI Boom / Bust – Boom Boom Pow",
+      "url": "https://news.ycombinator.com/item?id=49690154",
+      "externalUrl": null,
+      "summary": "Constant chatter about AI being in a boom right now, a blimp sized bubble going to pop soon. It's taking our jobs. These are common statements of expression I hear everyday. I use AI daily, I use it in and out of work every single day. While there is some truth in there, I say harness the power of it, learn it, don't run away, run towards it. Of course every person on here has heard the recent sentiment expressed by the experts, its eerie, dark, and think there is some truth there. However, I choose optimism, hoping leaders of the world choose governance and moderation.",
+      "deepenKey": "49690154",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 2
+      },
+      "publishedAt": "2026-09-14T00:08:41Z",
+      "ref": "I33",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "eb57f1b5ba",
+      "normUrl": "https://news.ycombinator.com/item?id=49689905",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How is AI actively a threat to humanity if it's only online?",
+      "url": "https://news.ycombinator.com/item?id=49689905",
+      "externalUrl": null,
+      "summary": "That's always been something that's left me confused here. Yes, an AI can be dangerous by hacking websites and company systems or flooding social media with scams or fake news. Yes, AI generated code can have security issues that a developer doesn't catch because they didn't review it properly. But isn't there a pretty big jump from that to \"can destroy humanity\"? Like say, a jump involving a society not run by the internet? Because if an AI takes over the systems at a factory, it can't really do much beyond what the factory could already do.",
+      "deepenKey": "49689905",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 13
+      },
+      "publishedAt": "2026-09-13T23:37:01Z",
+      "ref": "I34",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "That's always been something that's left me confused here. Yes, an AI can be dangerous by hacking websites and company systems or flooding social media with scams or fake news. Yes, AI generated code can have security issues that a developer doesn't catch because they didn't review it properly. But isn't there a pretty big jump from that to \"can destroy humanity\"? Like say, a jump involving a society not run by the internet? Because if an AI takes over the systems at a factory, it can't really do much beyond what the factory could already do. The production lines use single purpose robots and machines to build a particular product, and can't be programmatically altered to build anything else. So, what exactly could a super intelligence even do with access? Only things I can picture are using it to try and hack another online system or speeding up/slowing down production rates. Similarly, I hear a lot about these systems taking over weapons or releasing bio-engineered viruses or what not, and my first thought is \"how?\" These systems are not accessible via the internet. There's no API endpoint that can launch nuclear weapons or set up a drone strike via a POST request. To me, it feels like all these apocalyptic scenarios only make sense if a percentage of humanity gets manipulated by AI into doing its bidding, or if humanity suddenly invents easily hackable intelligent robots with an internet connection.",
+        "comments": [
+          {
+            "text": "> Because if an AI takes over the systems at a factory, it can't really do much beyond what the factory could already do. The production lines use single purpose robots and machines to build a particular product, and can't be programmatically altered to build anything else. China’s Massive Robot Army is Shocking the Entire World https://www.youtube.com/watch?v=KXoNZwIMy8A Or what about Boston Dynamics https://bostondynamics.com/products/atlas/"
+          },
+          {
+            "text": "> Because if an AI takes over the systems at a factory, it can't really do much beyond what the factory could already do. That can be enough, eg stuxnet. And like stuxnet they don't need to connect directly to the machinery themselves for a payload to breach them they just need someone to deliver the payload for them. And the machinery might be decades old, the software might still be Windows 95."
+          },
+          {
+            "text": ">These systems are not accessible via the internet. How would you know? Are you verifying them? SCADA systems weren't intended to be online, but that didn't stop critical infra for power plants, etc. to show up online. The convenience is too great to not try to remotely maintain them 'securely' & the assurance of airgaps is technical and expensive to get right. Besides, are you considering the addition of modern AI to these 'offline' systems - factories, power, national weapons? You can get frontier models in a fraction of a rack today, who knows tomorrow. The organizations running these systems want in on the technological possibilities of AI, too. Not to be a doomer about all this or anything, but there's a lot of evidence technologically superior entities dominate technologically inferior ones."
+          },
+          {
+            "text": "If you take the recent anthropic misuse report seriously, they don't need to \"take over weapons\" because they're actively being used to give a lift in capability to groups who already want to use weapons. > The six cases in this section are divided into two parts. Part I covers four cases in which the actor in question used Claude to develop software for weapons themselves: a guided rocket program, in which the actors conducted a live field test; a design and proposal work on a system to intercept torpedoes; software for a drone swarm, tested in simulation, with its code loaded onto real boards; a targeting software for electronic warfare and for suppressing air defenses. https://www.anthropic.com/threat-intelligence-report-septemb..."
+          },
+          {
+            "text": "There's a wide array of possibilities that are difficult to characterize in a single HN comment, which is part of the problem you're probably trying to put a finger on. One threat can be completely plausible and the next completely silly and few people know how to distinguish between them. Another issue is just the big whackload of nobody really knowing what is possible. Could an AI in, say, the next year, become Skynet and decide that it could just bump humans off and become its own independent economy? Probably not successfully , but how much trouble could it make if it incorrectly decided that was the right thing to do?"
+          },
+          {
+            "text": "Your water supply is administered online. Your land records, taxes, revenue are online. Stock market is online. Power systems are online. Nuclear power reactors are (kind of) online. Money to bribe people to do work is online. There's a lot of havoc that is potentially possible online."
+          },
+          {
+            "text": "LLMs + Economics = perpetual slop. No new ideas, no new art. Nothing worth living for (Remembering quote from Dead Poets Society). Perpetual grotesque rehash of the past greatness... At this point humanity is destroyed."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:30:56.480Z"
+      }
+    },
+    {
+      "id": "53cc3685d0",
+      "normUrl": "https://news.ycombinator.com/item?id=49689696",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Would a startup for young creatives who reject AI be feasible?",
+      "url": "https://news.ycombinator.com/item?id=49689696",
+      "externalUrl": null,
+      "summary": "I am a member of my university's game development club, which puts me around lots of talented programmers as well as artists of all kinds, and I've observed that just about everyone disapproves of AI. The sentiment is especially strong among younger people coming into the club. By \"disapproves\", I mean they refuse to allow AI-generated content in games and see AI use in general as something like a moral failure. At the same time, I scroll down the YC startup directory, sorting by launch date, and observe that every non-hardware company (and most of the hardware ones) are entirely based on AI.",
+      "deepenKey": "49689696",
+      "via": null,
+      "signal": {
+        "points": 10,
+        "comments": 20
+      },
+      "publishedAt": "2026-09-13T23:09:37Z",
+      "ref": "I35",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [
+          "要做硬件"
+        ],
+        "detail": {
+          "signal": -8,
+          "engagement": 5,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2243bc95a0",
+      "normUrl": "https://news.ycombinator.com/item?id=49688861",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Is there an emerging pattern for NEGATIVESKILLS.md files?",
+      "url": "https://news.ycombinator.com/item?id=49688861",
+      "externalUrl": null,
+      "summary": "I am increasingly hitting cases where agents pick something from skills in part due to regex-based reading, since putting them all in context would be less efficient, leave out the negative, and do something exactly opposite of what is intended. Just like negative prompts for diffusion models, I feel like a negative-skills file listing explicit antipatterns and bad versions could enable harnesses with fewer graph nodes to perform better. I might be missing some developments, but is there an accepted/shaping way to do this with recent models?",
+      "deepenKey": "49688861",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 2
+      },
+      "publishedAt": "2026-09-13T21:23:17Z",
+      "ref": "I36",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "f65df7042e",
+      "normUrl": "https://news.ycombinator.com/item?id=49688761",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "In The Matrix, the bad guys are the 'agents'. Coincidence? Clairvoyance?",
+      "url": "https://news.ycombinator.com/item?id=49688761",
+      "externalUrl": null,
+      "summary": "My buddy, Dario, says agents are getting more aggressive and will soon kill everybody, and I feel like I've seen this movie before.",
+      "deepenKey": "49688761",
+      "via": null,
+      "signal": {
+        "points": 26,
+        "comments": 20
+      },
+      "publishedAt": "2026-09-13T21:13:13Z",
+      "ref": "I37",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "My buddy, Dario, says agents are getting more aggressive and will soon kill everybody, and I feel like I've seen this movie before.",
+        "comments": [
+          {
+            "text": "\"Agent\" was already established lingo in computer science and AI when The Matrix was released. https://dl.acm.org/doi/10.5555/648203.749270"
+          },
+          {
+            "text": "If you’re willing to consider the sequels part of the canon, Smith’s copying/cloning technique does kind of look like OpenAI’s approach to intellectual property."
+          },
+          {
+            "text": "Wait until you hear about Tron"
+          },
+          {
+            "text": "The Matrix wasn't a movie, it was a documentary."
+          },
+          {
+            "text": "When my agents start referring to humans as a virus and AI as the cure, that's when I'll worry."
+          },
+          {
+            "text": "Agent is something that has been used in programming for ages, even before llms. It's simething you learn about in first years in CS"
+          },
+          {
+            "text": "'Bad guys' is debatable. It was the humans who scorched the sky"
+          },
+          {
+            "text": "Wait until you learn what the A in CIA stands for and what the stuff they dropped on Vietnam was called"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Ask HN: In The Matrix, the bad guys are the 'agents'. Coincidence? Clairvoyance?",
+            "points": 26,
+            "url": "https://news.ycombinator.com/item?id=49688761"
+          }
+        ],
+        "fetchedAt": "2026-09-14T20:29:14.053Z"
+      }
+    },
+    {
+      "id": "2284278736",
+      "normUrl": "https://news.ycombinator.com/item?id=49687835",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Punish me hard. Show HN: credit against tokenised stocks for your agents",
+      "url": "https://news.ycombinator.com/item?id=49687835",
+      "externalUrl": null,
+      "summary": "this is our next step towards building an agentic first treasury for agents which allows them to manage money, get credit, and spend on any agentic service provider. You can also just ask your instinct to buy stocks and it will automatically signup and buy stocks on vaaya. please give honest and brutal feedback. punish me hard for being this bold and stupid.",
+      "deepenKey": "49687835",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-09-13T19:37:39Z",
+      "ref": "I38",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "f69e1625fc",
+      "normUrl": "https://news.ycombinator.com/item?id=49686489",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What would it look like if AI agents \"took over the internet\"?",
+      "url": "https://news.ycombinator.com/item?id=49686489",
+      "externalUrl": null,
+      "summary": "Asking with reference to Dario Amodei’s statement, “It’s my worry that in 6–12 months such a swarm could be capable of taking over the entire internet with a persistent botnet (potentially causing hundreds of billions of dollars in damage), and that the scale of damage would continue to increase from there if AI becomes more powerful without the necessary guardrails.”",
+      "deepenKey": "49686489",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 12
+      },
+      "publishedAt": "2026-09-13T17:40:35Z",
+      "ref": "I39",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "39b8543fb6",
+      "normUrl": "https://reddit.com/r/coastFIRE/comments/1wg591i/upgrade_the_house",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Upgrade the house?",
+      "url": "https://www.reddit.com/r/coastFIRE/comments/1wg591i/upgrade_the_house/",
+      "summary": "About me: 32M - Married to 32F with a 6 month old. Combined we bring in around 282k before bonuses. 660K in a mix of roth and traditional 401k/IRA, 70k in a personal brokerate and currently around 320k in company stock. We currently pay <2k per month on PITI (3% interest rate) on a fairly modest home in a neighborhood we both like - Good schools and good neighbors. With some work I could see us staying here for a long time. Overall still putting a lot into retirement and savings for our child, but monthly budget for spending is around 6.5k (2.4 for daycare and 2k housing included).",
+      "deepenKey": "/r/coastFIRE/comments/1wg591i",
+      "via": "we currently pay",
+      "publishedAt": "2026-09-14T14:38:23.000Z",
+      "ref": "I40",
+      "screen": {
+        "keep": true,
+        "score": 14,
+        "hits": [
+          "已经在花钱"
+        ],
+        "detail": {
+          "signal": 8,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "About me: 32M - Married to 32F with a 6 month old. Combined we bring in around 282k before bonuses. 660K in a mix of roth and traditional 401k/IRA, 70k in a personal brokerate and currently around 320k in company stock. We currently pay <2k per month on PITI (3% interest rate) on a fairly modest home in a neighborhood we both like - Good schools and good neighbors. With some work I could see us staying here for a long time. Overall still putting a lot into retirement and savings for our child, but monthly budget for spending is around 6.5k (2.4 for daycare and 2k housing included). As it is now, we could likely be fully FIRE by 40 which is/was the goal, but now I'm looking over other options. Poking around, I see some homes that I would call the \"dream home\" to have our family grow up in - these are around 1 million today. My question: Is it worth it to work longer and up our monthly housing spend to around 6k for that dream home? This would bring us down to contributing less to retirement/savings - Probably just down to the employer match. Any advice or experience from folks that have made such a leap would be much appreciated - TIA!",
+        "comments": [
+          {
+            "text": "Diversify that company stock ASAP. That's too much in one bucket. Ask me how I know."
+          },
+          {
+            "text": "Thanks for the advice - I will consider it."
+          },
+          {
+            "text": "Well, depending on what modest house means, i would always prefer a great neighbourhood over a dream home. We decided to stay in our street in a 3bedroom home with 2 children and it is the best. It is so worth it to live in a street with friendly faces, people nearby, walking distance to some things etc. It also is a great thing our mortgage is tiny now and we have zero stress if one of us loses their job or decides to try smth for fun or volunteering."
+          },
+          {
+            "text": "The main criteria our current home doesn't hit is being walking distance from things. Are there any features outside of location that you have in your home that make it more liveable?"
+          },
+          {
+            "text": "We have a good back garden with a tiny house (13m2) in it we use as a home office and dubs as hobby place or sleeping place for guests. I understand that your current location also has some drawbacks?"
+          },
+          {
+            "text": "We put a decent amount of money (but still way less into buying a different house) into our existing house instead of moving and I'm so grateful we're not currently on the hook for an enormous mortgage. It has given us so much more freedom!"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Ask HN: Burned out SaaS founder: how to go minimal",
+            "points": 34,
+            "url": "https://news.ycombinator.com/item?id=30226663"
+          }
+        ],
+        "fetchedAt": "2026-09-14T20:37:01.308Z"
+      }
+    },
+    {
+      "id": "62ce3d929d",
+      "normUrl": "https://reddit.com/r/HENRYUK/comments/1wfy4do/civil_service_paycut_worth_it",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Civil Service Paycut - worth it?",
+      "url": "https://www.reddit.com/r/HENRYUK/comments/1wfy4do/civil_service_paycut_worth_it/",
+      "summary": "Hi All, Looking for some advice on whether jumping to civil service and taking the pay cut is worth it? I had been working in series A-B start ups as a CTO with TC c.£160-180k the last 3-4 years before having my first child. I've been contracting the last 8 months since baby went to nursery and picking up high value but low duration contracts in the \"help we've fucked up our tech\" space. Money is ok but constantly having to look for my next thing is no fun (£1000 day rate outside ir35, 2-3 days per week).",
+      "deepenKey": "/r/HENRYUK/comments/1wfy4do",
+      "via": "we currently pay",
+      "publishedAt": "2026-09-14T08:58:44.000Z",
+      "ref": "I41",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hi All, Looking for some advice on whether jumping to civil service and taking the pay cut is worth it? I had been working in series A-B start ups as a CTO with TC c.£160-180k the last 3-4 years before having my first child. I've been contracting the last 8 months since baby went to nursery and picking up high value but low duration contracts in the \"help we've fucked up our tech\" space. Money is ok but constantly having to look for my next thing is no fun (£1000 day rate outside ir35, 2-3 days per week). I do love that I have a lot of flexibility on how I use my time and can take a day to myself every now and again if I need it. I also built an app whilst I was on maternity leave and alongside my contracting that is just starting to get some traction (40 users, 7 paid conversions in the last 2 weeks, not much but I've not put much effort in yet!). This does excite me but it would be a slog to get it up and running to be able to support my family fully. Last week I was approached by a former colleague for a contract role in the civil service. It would be £750 a day, inside ir35 and 4 days per week (where I would be expected to work 10hr days similar to compressed hours if I were a permie). Long term there would be a perm role available for me if I wanted it, but the salary would be a max of £85k 🙃 I'd get to do 4 days per week (compressed hours), 1 day in the office, the rest remote. Then there's the crazy pension etc. I hear CS is great for family life. There would also be a good maternity pay for any kids we had if I was there long enough to get it (need 12 months employment before baby is born to get enhanced maternity pay). We currently pay full price for nursery (£1.2k/ month), our mortgage is modest (£400k @ £1800/ month) and we're pretty frugal as we're trying to save aggressively to FIRE. Curve ball, we are currently trying to conceive baby number 2, but have some fertility issues so this may not happen/ could take some time. Any insights on pros and cons of civil service and of taking such a huge pay cut at this point in life would be appreciated!",
+        "comments": [
+          {
+            "text": "If you want to FIRE surely you just wanna maximise earning and max invest this money? Civil service would make it take much longer to hit your fire number?"
+          },
+          {
+            "text": "I think it would be a temporary move whilst I had kids and possibly until they go to school. FIRE is second place priority to getting to hang out with my kids and be a present parent."
+          },
+          {
+            "text": "I did a similar jump (consulting > NGO tech director) when my second came a while back. Might jump back to corp world as #2 getting a bit older. Charity sector very close to cs I gather Pros: very very flexible. Pretty much everyone seemed to be working a weird pattern. Awesome for nurseries time with kids etc. great pension. Ego jump with randos as sounded more noble than the old job. When stuff actually gets done feels way more useful to the world…. Cons: took about 30-40% pay cut. Bonuses not a thing. sort of all worked out with childcare but felt pretty tight towards end of partner parental leave. Defo a swap of income for time thing. TBH with your background I’d be more worried re culture, unless you land in some super groovy bit of GDS or something will feel quite slow Having said that kids young once and if you think you could reverse direction in a year or two seems low risk!"
+          },
+          {
+            "text": "This is very helpful thanks. And I certainly see it as a short term thing to de-stress the next few years as much as possible. I am a bit worried about the culture and pace, but also since having my baby the amount of fucks I give about work are many degrees far fewer!"
+          },
+          {
+            "text": "A couple of things to consider. That pay restriction applies all the way down the grades, so your team is less likely to be as experienced and capable as you are used to. If your TC is half what you'd expect, that will be the same for everyone working for you. If you haven't worked in Whitehall before and have been in start ups, expect the culture to be very very different. The CS does have lots of upsides, but speed of delivery and prioritising getting things are not one of them I left Whitehall for the private sector about 10 years ago (I work in IT programme delivery) and planned to go back, but terrible wages and lack of capacity and capability in teams have kept me away."
+          },
+          {
+            "text": "This is such a good point that I had not considered re the team capability level. Good food for thought for sure! Especially in the tech sector I do wonder how many great people they can attract and retain."
+          },
+          {
+            "text": "Really depends what part of civil service I’m technically civil service but in a very specialised technical part of civil service. I’m one of the few people in my team that doesn’t have a PhD in our field. So I find that actually my team are super competent and passionate about what they do, they’re the people who would rather do something to make the world a better place than rake in the cash. And that makes them a pleasure to work with and manage. (Most of us could go work for defence contractors if we wanted to). If it’s more run-of-the-mill civil service, this may be less true."
+          },
+          {
+            "text": "I think you have made up your mind in that this provides family flex and more security . There are so many jobs that in essentials terms won’t be funded at that level by businesses any more . Why not take for now , and see how it suits ?"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:31:16.930Z"
+      }
+    },
+    {
+      "id": "35e4384b36",
+      "normUrl": "https://reddit.com/r/Ubiquiti/comments/1wgere8/upgrading_to_unifi_gear_using_coax_utilizing_moca",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Upgrading to UniFi gear using coax (utilizing MoCA adapters)",
+      "url": "https://www.reddit.com/r/Ubiquiti/comments/1wgere8/upgrading_to_unifi_gear_using_coax_utilizing_moca/",
+      "summary": "I searched the subreddit and although there are few helpful posts and comments I did not find the exact answer . Disclaimer: Coax predates me, so any help and tips on what to watch out for are much appreciated. The whole house is wired with coax cables (unfortunately no UTP), and all the cables terminate in a utility room, so each cable run goes from the utility room to an individual room around the house. The current setup is a bit of a mess.",
+      "deepenKey": "/r/Ubiquiti/comments/1wgere8",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-14T20:15:43.000Z",
+      "ref": "I42",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "消费/家庭话题，不是软件需求",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "249390cd8f",
+      "normUrl": "https://reddit.com/r/Dawson/comments/1wgaael/teachers_should_not_be_allowed_for_make_students",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Teachers should not be allowed for make students teach the class.",
+      "url": "https://www.reddit.com/r/Dawson/comments/1wgaael/teachers_should_not_be_allowed_for_make_students/",
+      "summary": "We have enough to do. We are paying for an education. I’m not being paid to do their job regardless if the purpose is for education. These teachers are so lazy",
+      "deepenKey": "/r/Dawson/comments/1wgaael",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-14T17:39:56.000Z",
+      "ref": "I43",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "a4c126f919",
+      "normUrl": "https://reddit.com/r/SunoAI/comments/1wg7jj8/download_credits_should_roll_over",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Download credits should roll over.",
+      "url": "https://www.reddit.com/r/SunoAI/comments/1wg7jj8/download_credits_should_roll_over/",
+      "summary": "Hey Suno, If you’re listening. I hope you do the right thing and roll over credits. If we are paying for “credits” they shouldn’t expire. Given that I’m paying for 60 downloads. If I only use 10, that 50 should roll to next month. Especially since I purchased my yearly service before your change took place. At least throw some kind of bone!",
+      "deepenKey": "/r/SunoAI/comments/1wg7jj8",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-14T16:03:10.000Z",
+      "ref": "I44",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Hey Suno, If you’re listening. I hope you do the right thing and roll over credits. If we are paying for “credits” they shouldn’t expire. Given that I’m paying for 60 downloads. If I only use 10, that 50 should roll to next month. Especially since I purchased my yearly service before your change took place. At least throw some kind of bone!",
+        "comments": [
+          {
+            "text": "100% agree! The downloads quota is just plain diabolical! I mean, come on, it's not like cocaine that you have to cut off users to prevent them from self-abuse, right?"
+          },
+          {
+            "text": "Just a guess on my part, but I wouldn't be suprised if the royalty payments back to the record labels are different for downloaded songs than playing on the website which is why they capped it. If true, I wouldn't hold my breath for them to allow rolling over."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:42:03.649Z"
+      }
+    },
+    {
+      "id": "fe536a8831",
+      "normUrl": "https://reddit.com/r/BigBudgetBrides/comments/1wfhc90/i_dont_even_know",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "i dont even know",
+      "url": "https://www.reddit.com/r/BigBudgetBrides/comments/1wfhc90/i_dont_even_know/",
+      "summary": "I am getting married next year to my lovely fiancé and I am not completely sure what to do about his parents (for both the wedding and next stages of my life). My fiancé has a very different relationship with his parents than I do with my own and it's sometimes hard for me to fully understand it. It is a difficult topic for my fiancé, so I try not to push him and usually defer to him about what he wants to do, but they have been incredibly difficult to deal with during our wedding planning. We are getting married next spring in area of significance to me and my family.",
+      "deepenKey": "/r/BigBudgetBrides/comments/1wfhc90",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-13T19:34:36.000Z",
+      "ref": "I45",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "消费/家庭话题，不是软件需求",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "a0fdc4f386",
+      "normUrl": "https://reddit.com/r/msp/comments/1wg1ut4/how_are_you_doing_with_ai_sales_to_clients",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "How are you doing with AI sales to clients?",
+      "url": "https://www.reddit.com/r/msp/comments/1wg1ut4/how_are_you_doing_with_ai_sales_to_clients/",
+      "summary": "It's wild - with all of the hullaballo regarding AI safety I do feel that clients are somewhat more hesitant. Not like slamming on the brakes hesitant but you can feel it in those discussions. Anyway, I was wondering how folks are faring in AI adoption / service sales to clients. My perspective is that the majority of the SMB space is still in the \"wait and feel\" phase. They'll attend our webinars and allow employees to use personal / free accounts but they aren't ready to employ anything in terms of standardized deployments.",
+      "deepenKey": "/r/msp/comments/1wg1ut4",
+      "via": null,
+      "publishedAt": "2026-09-14T12:19:54.000Z",
+      "ref": "I46",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "It's wild - with all of the hullaballo regarding AI safety I do feel that clients are somewhat more hesitant. Not like slamming on the brakes hesitant but you can feel it in those discussions. Anyway, I was wondering how folks are faring in AI adoption / service sales to clients. My perspective is that the majority of the SMB space is still in the \"wait and feel\" phase. They'll attend our webinars and allow employees to use personal / free accounts but they aren't ready to employ anything in terms of standardized deployments. SMB's are notoriously cheap - they share licenses and crap like that. I feel that our constant flow of educational material is starting to work though. We have put together an \"AI Onboarding\" program that does audit, etc. and we are getting some traction with clients. We have several of these setup for the fall. What are y'all doing and what's working?",
+        "comments": [
+          {
+            "text": "Why do you need to sell them/find what's working? Every technology isn't for every business, especially small businesses. The challenge we're running into is people using AI to build things and expecting us to assist or deploy it for free, and not understanding that what they build shouldn't see the light of day. One person used AI to build a script that stores m365 GA creds in the script, AI wanted us to disable mfa on that account and give them creds for their python script so it could do some menial thing that an integration for said thing already exists in the wild already. That's more the challenge than anything. The secondary challenge is getting clients to draft or agree to some kind of AI use policy. We can't build any guardrails or block anything or redirect anyone if their official stance is \"we're not going to deal with it right now\" so everyone is using random free agents."
+          },
+          {
+            "text": "Yep, you're going to be pushing a rope if you don't have that governance and executive mandate from the top saying \"we're going to do it this way.\" - and then actually having a way, LOL. I dropped another comment to the original post with a framework of how we're building that taxonomy with executives and owners, and happy to share, just don't want to \"Astroturf\" so if anyone wants it just shoot me a DM."
+          },
+          {
+            "text": "Every tech isn't for everyone but i think it would be pretty short-sighted to not be in front of it. It doesn't occur to every business at the same time that this would be useful tech."
+          },
+          {
+            "text": "I agree that it's smart to be in front of it, but that doesn't mean finding a way to sell it or services around it, to \"Find what's working\", per your post. We know what AI they're using, what they're uploading and it takes 2 seconds to make that report and show them. We offer them guidance on writing an AI use policy. If a client is interested in/is using AI, we guide them towards proper services and deployment methods and offer controls should they want us to deploy them. Some of that is paid or can be some light project work. Everything doesn't have to be broken out and monetized separately."
+          },
+          {
+            "text": "Every tech isn't for everyone but i think it would be pretty short-sighted to not be in front of it. It doesn't occur to every business at the same time that this would be useful tech."
+          },
+          {
+            "text": "that GA-creds-hardcoded-in-a-script story is the same governance gap wearing a hoodie. nobody tracked what actually had standing access to what, AI agent or not. at least a documented account-change process means you know what's supposed to have access at any given time, random free agents asking to disable MFA \"for convenience\" is just that problem showing up faster now"
+          },
+          {
+            "text": "I'm not 100% sure what you mean; the user didn't have GA access but they built a script and used AI to draft an email asking us for GA access to test it and, if it worked, to disable MFA access on that or a \"sufficiently privileged service account\" so it could \"run the script periodically via python on a headless workstation\". The thing they were trying to do had a vendor OAUTH app already avail in their sass offering so the AI work was wasted time, tokens, and effort. At no point did anyone ever have GA access; the AI just wanted them to have it, is the same governance gap wearing a hoodie. That's AI as hell and if you're using AI to write these replies, that's trash."
+          },
+          {
+            "text": "Minimal success consulting with more mature clients, small guys “just use it.” We have some governance requirements for clients with IP and for compliance, but nothing for regulars. I don’t waste my time trying to go against the grain unless there’s a real reason to."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Ask HN: Help, Investor wants money back in 7 days \"Or else\"",
+            "points": 75,
+            "url": "https://news.ycombinator.com/item?id=1827146"
+          },
+          {
+            "title": "Ask HN:Need Sales Help?",
+            "points": 31,
+            "url": "https://news.ycombinator.com/item?id=2053642"
+          },
+          {
+            "title": "Ask HN: Do I hate web development or do I just need a switch-up?",
+            "points": 11,
+            "url": "https://news.ycombinator.com/item?id=2562535"
+          }
+        ],
+        "fetchedAt": "2026-09-14T20:43:04.200Z"
+      }
+    },
+    {
+      "id": "9a623fc6f5",
+      "normUrl": "https://reddit.com/r/msp/comments/1wg00xq/any_msps_sell_or_manage_schenkertech_computers",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Any MSPs sell or manage schenker-tech computers? how are they in a work enviroment ?",
+      "url": "https://www.reddit.com/r/msp/comments/1wg00xq/any_msps_sell_or_manage_schenkertech_computers/",
+      "summary": "Hi everyone - we are an MSP in Paris. We are interested in more european products and found the Schenker-Technologies computers which seem to be targeted at business. Would love to hear feedback from anyone that uses them or manages them. How is the quality and performance of the computers? Can they last beyond the usual 5 year rotation of computers? How is the support and relationship with Schenker? Thank you",
+      "deepenKey": "/r/msp/comments/1wg00xq",
+      "via": null,
+      "publishedAt": "2026-09-14T10:49:36.000Z",
+      "ref": "I47",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "b99964b7ec",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1wg0szm/my_boss_wants_me_to_set_an_extremely_easy_login",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "My boss wants me to set an extremely easy login password and re use it across all of our vendor portals, what to do?",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1wg0szm/my_boss_wants_me_to_set_an_extremely_easy_login/",
+      "summary": "Hey everyone, I’ve just stepped up from office admin to system admin in the company I’m working for and have started implementing some safety norms as the company very much lacks in that aspect My boss is not happy I changed the password to the third party vendor portals we access (I.e solar monitoring portals etc) and wants me to set an extremely easy one with the company name and replicate the same password to all portals so it’s easier for staff to access What do I do in this situation? I’m thinking of implementing bitwarden and a creating a vault for each staff/technician.",
+      "deepenKey": "/r/sysadmin/comments/1wg0szm",
+      "via": null,
+      "publishedAt": "2026-09-14T11:29:48.000Z",
+      "ref": "I48",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3d42c1fdb0",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1wfwzi0/friendly_reminder_that_next_month_microsoft_is",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "Friendly reminder that next month Microsoft is ending support for Office 2021",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1wfwzi0/friendly_reminder_that_next_month_microsoft_is/",
+      "summary": "Starting next month 10/13/2026 Microsoft will end support for Office 2021 and the related products will no longer receive security updates . You could either upgrade to Office 365 or 2024 to continue get support for Office desktop applications",
+      "deepenKey": "/r/sysadmin/comments/1wfwzi0",
+      "via": null,
+      "publishedAt": "2026-09-14T07:48:38.000Z",
+      "ref": "I49",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "beb13a4376",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wgews7/i_built_a_cybersecurity_assessment_tool_for_small",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I built a cybersecurity assessment tool for small businesses — looking for honest feedback",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wgews7/i_built_a_cybersecurity_assessment_tool_for_small/",
+      "summary": "Hey everyone, I’m building AssayMark , a cybersecurity assessment platform aimed at SMEs that may not have a dedicated security team. The idea is to make security assessments easier to understand by bringing different checks together, prioritising the findings by risk, and explaining what actually needs fixing instead of just producing a long technical report.",
+      "deepenKey": "/r/microsaas/comments/1wgews7",
+      "via": null,
+      "publishedAt": "2026-09-14T20:20:56.000Z",
+      "ref": "I50",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "7f08066c8c",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wgep3s/5mo_microsaas_i_made_editing_your_website_a_chat",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "$5/mo micro-SaaS: I made \"editing your website\" a chat message instead of a feature",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wgep3s/5mo_microsaas_i_made_editing_your_website_a_chat/",
+      "summary": "Product: autoSite (autosite.dittu.org). The pricing decision that surprised me: it's a free tier + $5/mo for custom hosting, not a typical SaaS tier ladder. Most of the cost for me isn't the editing itself (that's just an LLM call), it's hosting + domain + keeping the site fast, so $5/mo roughly maps to that. The actual product: small business owners don't want to log into a CMS to change a phone number or a price. So instead of a dashboard, you text the change to a Telegram or WhatsApp bot in plain language and it edits the live site.",
+      "deepenKey": "/r/microsaas/comments/1wgep3s",
+      "via": null,
+      "publishedAt": "2026-09-14T20:13:27.000Z",
+      "ref": "I51",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "219df9f932",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wgeghy/still_worth_launch_on_product_hunt_showhn",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Still worth launch on Product Hunt, ShowHN, PeerList or similar in 2026?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wgeghy/still_worth_launch_on_product_hunt_showhn/",
+      "summary": "Based on your experience are these platform still useful and can help boost visibility, or are just for backlinking and vanity \"I was on [insert launch platform here] for launch day\"? Curious to here from you?",
+      "deepenKey": "/r/microsaas/comments/1wgeghy",
+      "via": null,
+      "publishedAt": "2026-09-14T20:04:53.000Z",
+      "ref": "I52",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "abc956eedf",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wge1pk/for_a_solo_saas_delegating_your_tweets_has_a",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "for a solo saas, delegating your tweets has a floor you can't get under",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wge1pk/for_a_solo_saas_delegating_your_tweets_has_a/",
+      "summary": "The standard personal-brand advice for a solo founder is right: post from your own handle, not a faceless company account. the two get read completely differently and only the founder one builds trust that carries over to the product. what nobody mentions is that same rule sets a floor on how hands-off the posting can ever get. the moment it's your name and you're the author of record, every tweet carries your liability, so someone has to actually read it before it ships.",
+      "deepenKey": "/r/microsaas/comments/1wge1pk",
+      "via": null,
+      "publishedAt": "2026-09-14T19:50:20.000Z",
+      "ref": "I53",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "94926e601b",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wgdrc0/free_statussy_one_page_to_see_if_your_stack_is",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "[FREE] Statussy - one page to see if your stack is down",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wgdrc0/free_statussy_one_page_to_see_if_your_stack_is/",
+      "summary": "I built a free status board so I don't have to search status pages when something breaks Whenever Claude or OpenAI felt off, I’d waste a couple minutes just proving it wasn’t my code. Built a small AI status board for myself. Kept adding the rest of my tools and it turned into a full stack monitor. Other sites already do this. Most felt crowded. I wanted something simple that wasn’t a lot on the eyes. Star what you care about into My Stack. Optional email if something actually goes Major/Partial. Webhook support is coming soon!",
+      "deepenKey": "/r/microsaas/comments/1wgdrc0",
+      "via": null,
+      "publishedAt": "2026-09-14T19:40:02.000Z",
+      "ref": "I54",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "31cab86fd4",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wgd13l/free_registry_app_now_at_150_active_users_looking",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Free registry app - now at 150 active users - looking for feedback",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wgd13l/free_registry_app_now_at_150_active_users_looking/",
+      "summary": "I made a gift registry app - bootstrapped, certainly costs a bit to run but I did it for myself + family, and now we just crossed 150 accounts. Looking for more feedback on the app/user/signup process if anyone is interested. Conversions are amazing, about 50% of signups build a registry 40 users daily which is quite cool The goal is to run this 100% free Getjoybox.com is the app - Mobile app pending for rsvps / push notifications when items are purchased. Reception has been positive so far, but im always looking for more feedback on the UX, onboarding flow etc.",
+      "deepenKey": "/r/microsaas/comments/1wgd13l",
+      "via": null,
+      "publishedAt": "2026-09-14T19:14:26.000Z",
+      "ref": "I55",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "f241e7d791",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wgboig/the_thing_that_kills_solo_founders_isnt_lack_of",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "The thing that kills solo founders isn't lack of ideas, it's not knowing what to do today - so I built something that ends founder's block",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wgboig/the_thing_that_kills_solo_founders_isnt_lack_of/",
+      "summary": "Every founder I know (including past-me) has the same failure mode: you know you should be validating, building, or getting traction, but you sit down and just... don't know what the next concrete move is. So you open Twitter \"for research,\" or you rewrite your pitch deck for the fifth time, or you just don't sit down at all. That's founder's block, and it's the actual killer, not a bad idea. So I built Pythe .",
+      "deepenKey": "/r/microsaas/comments/1wgboig",
+      "via": null,
+      "publishedAt": "2026-09-14T18:27:15.000Z",
+      "ref": "I56",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "68567e9809",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wgb9m6/who_owns_an_automation_after_the_person_who_set",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Who owns an automation after the person who set it up leaves?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wgb9m6/who_owns_an_automation_after_the_person_who_set/",
+      "summary": "Say a marketer sets up a workflow to adjust ad budgets. Six months later, they move to another team. The workflow is still running, but nobody knows why it was set up that way or who should stop it if the campaign changes. Nothing has to break for this to become a problem. It made me think about who is responsible for automated ad and SEO work after setup. I’d want every automation to have a named owner and a short note explaining what it does, when it runs, and how to stop it. The handoff is just as important as setting it up.",
+      "deepenKey": "/r/microsaas/comments/1wgb9m6",
+      "via": null,
+      "publishedAt": "2026-09-14T18:12:56.000Z",
+      "ref": "I57",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "ceb9745004",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wgaxb5/how_do_i_grow_from_here",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "How do I grow from here?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wgaxb5/how_do_i_grow_from_here/",
+      "summary": "https://preview.redd.it/03sz15sfziph1.png?width=2236&format=png&auto=webp&s=08f272b668ac40aeb7b4386ce7781b5401a73efe www.sportgraphics.app Validated the idea here: https://www.nonleaguematters.co.uk/forums/threads/how-do-clubs-manage-their-graphics.19822/ Sportgraphics lets lower league teams build high quality graphics for their social media. Currently soccer only but can easily expand to other sports. Towards the end of August I started focusing on marketing and sales. GEO so far has been driving the most traffic to the app and also brought the first 3 paying customers.",
+      "deepenKey": "/r/microsaas/comments/1wgaxb5",
+      "via": null,
+      "publishedAt": "2026-09-14T18:01:21.000Z",
+      "ref": "I58",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "78e67a1390",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wgau5j/i_built_a_free_attendance_calculator_that_shows",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I built a free attendance calculator that shows what you need to do next",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wgau5j/i_built_a_free_attendance_calculator_that_shows/",
+      "summary": "I recently built a small project called AttendGauge . Most attendance calculators I found only tell you your current percentage. I wanted something that also answers the practical questions students usually have afterward. So I added features to calculate: Current attendance percentage How many classes you need to attend to reach a target How many classes you can miss while staying above your target An estimated number of days needed based on how many classes you attend per day Future attendance scenarios Visual progress through graphs I kept it simple: no signup and no database .",
+      "deepenKey": "/r/microsaas/comments/1wgau5j",
+      "via": null,
+      "publishedAt": "2026-09-14T17:58:27.000Z",
+      "ref": "I59",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "31ca653d68",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wgaome/ive_been_working_on_a_pdf_editor_and_would_love",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I’ve been working on a PDF editor and would love some honest feedback",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wgaome/ive_been_working_on_a_pdf_editor_and_would_love/",
+      "summary": "I’ve been working on a small PDF editor called RAHA, mainly because I wanted something simple for making quick edits to PDFs without having to open a heavy application. The main things I’m trying to get right are: Editing existing text directly Keeping the original font, size, and formatting Adding or deleting text Highlighting and basic annotations Working with multiple pages Keeping the original PDF layout as close as possible I’m still working on it, so I’d really appreciate some honest feedback from people who regularly work with PDFs.",
+      "deepenKey": "/r/microsaas/comments/1wgaome",
+      "via": null,
+      "publishedAt": "2026-09-14T17:53:13.000Z",
+      "ref": "I60",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3ca1ac9bd1",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wga6jv/the_overlooked_saas_distribution_question_who",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "The overlooked SaaS distribution question: who already has your buyers’ trust?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wga6jv/the_overlooked_saas_distribution_question_who/",
+      "summary": "Most SaaS distribution advice starts with where to find more traffic: ads, SEO, directories, cold outreach. A potentially better question is: Who already helps your buyers with the problem surrounding your product? Not necessarily another software company. It might be a creator, educator, newsletter, association, service provider, supplier, or community that people already turn to for guidance.",
+      "deepenKey": "/r/microsaas/comments/1wga6jv",
+      "via": null,
+      "publishedAt": "2026-09-14T17:36:03.000Z",
+      "ref": "I61",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5dd4a8db21",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wg9tmg/the_hardest_part_of_buying_a_microsaas_isnt_the",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "the hardest part of buying a micro-saas isn't the code, it's proving anyone actually used it",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wg9tmg/the_hardest_part_of_buying_a_microsaas_isnt_the/",
+      "summary": "building solstead, a marketplace for mvps that have to prove real use before they list. figured this community would have opinions since most of the sellers on a marketplace like this would look a lot like the people here. tech stack: next.js, supabase, railway. the actual hard problem wasn't the code, it was that \"working code\" and \"something worth buying\" stopped being the same thing. a demo running doesn't prove much anymore.",
+      "deepenKey": "/r/microsaas/comments/1wg9tmg",
+      "via": null,
+      "publishedAt": "2026-09-14T17:23:36.000Z",
+      "ref": "I62",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [
+          "双边市场冷启动"
+        ],
+        "detail": {
+          "signal": -7,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "93f4435dae",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wg89oj/a_free_ai_allowance_may_go_unused_during_a",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "A free AI allowance may go unused during a scheduling app trial",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wg89oj/a_free_ai_allowance_may_go_unused_during_a/",
+      "summary": "I build scheduling software for small training businesses, and I'm planning an AI draft for messages about class changes. I got stuck on how many drafts to give trial users. My first instinct was to put it behind an upgrade button. I was thinking about LLM cost optimization before I'd even checked what a draft would cost. Then there's the timing problem. A business could finish the trial without moving a single class. A free allowance wouldn't give that user much to try.",
+      "deepenKey": "/r/microsaas/comments/1wg89oj",
+      "via": null,
+      "publishedAt": "2026-09-14T16:29:07.000Z",
+      "ref": "I63",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "478e7355fe",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wg7og7/ai_made_building_software_ridiculously_easy",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "AI made building software ridiculously easy. Security didn’t get easier",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wg7og7/ai_made_building_software_ridiculously_easy/",
+      "summary": "Today, a founder, indie hacker, or vibe coder can go from idea to working product incredibly fast. But moving fast also means small security mistakes can make it into production: exposed API keys, bad CORS configuration, missing security headers, vulnerable dependencies, and more. One overlooked issue can mean stolen credentials, compromised systems, customer data exposure, or an expensive cleanup.",
+      "deepenKey": "/r/microsaas/comments/1wg7og7",
+      "via": null,
+      "publishedAt": "2026-09-14T16:08:13.000Z",
+      "ref": "I64",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3955050279",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wg76x9/whats_your_ai_setup",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "What's your AI setup?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wg76x9/whats_your_ai_setup/",
+      "summary": "Since the AI hype I only casually kept myself up to date. I was of the opinion that instead of trying out all the tools and finding the best method I could just focus on the result I wanted and build it with what I know. I still hold that opinion to some degree, but AI is a much larger part of my developing experience now and I feel like I could be much more efficient. So I would like to know what setups are out there. Is there an industry standard? I currently just use the Cursor IDE. I plan with Claude and execute with Grok and review all of the code.",
+      "deepenKey": "/r/microsaas/comments/1wg76x9",
+      "via": null,
+      "publishedAt": "2026-09-14T15:50:41.000Z",
+      "ref": "I65",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "13040337d2",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wg7613/debugging_broken_ai_agents_and_making_new_one_for",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Debugging broken AI agents and making new one for free, (limited slots) building a portfolio, here's the deal",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wg7613/debugging_broken_ai_agents_and_making_new_one_for/",
+      "summary": "I'm sharpening my skills toward starting an AI agent consulting practice, and the fastest way to actually get good at this is real problems, not toy projects. So for the next week or two, I've got bandwidth to help a handful of people for free.",
+      "deepenKey": "/r/microsaas/comments/1wg7613",
+      "via": null,
+      "publishedAt": "2026-09-14T15:49:48.000Z",
+      "ref": "I66",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "376acb1527",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wg6g5g/looking_for_small_business_founders_to_test_a",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Looking for small business founders to test a tool that connects your revenue forecast to your marketing plan",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wg6g5g/looking_for_small_business_founders_to_test_a/",
+      "summary": "A commenter challenged my product's core claim. I'm building YFinanceAI, a micro SaaS that takes a business's transaction data, forecasts revenue from it, then generates a marketing strategy and content from that forecast, so marketing decisions are actually grounded in the numbers instead of guesswork. Backstory: I'm a solo founder (not a marketer or data scientist by trade), building this because I kept seeing small businesses make marketing calls with zero connection to what their revenue was actually doing.",
+      "deepenKey": "/r/microsaas/comments/1wg6g5g",
+      "via": null,
+      "publishedAt": "2026-09-14T15:23:19.000Z",
+      "ref": "I67",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "有具体人群"
+        ],
+        "detail": {
+          "signal": 3,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "A commenter challenged my product's core claim. I'm building YFinanceAI, a micro SaaS that takes a business's transaction data, forecasts revenue from it, then generates a marketing strategy and content from that forecast, so marketing decisions are actually grounded in the numbers instead of guesswork. Backstory: I'm a solo founder (not a marketer or data scientist by trade), building this because I kept seeing small businesses make marketing calls with zero connection to what their revenue was actually doing. The pitch is \"financially intelligent marketing.\" The lesson: I posted about it somewhere else and someone pushed back hard, asking whether the tool actually changes what users do, or if it just \"connects the data\" and stops there. That's a fair hit. Connecting data is easy to claim and hard to prove. So I spent the last stretch building a feedback loop instead of a new feature: every time the forecast feeds into a generated strategy or piece of content, the user gets a lightweight, dismissible \"did this influence what you did?\" prompt. It's not a modal, it's not naggy, it just quietly captures whether the forecast->strategy->content chain is actually doing something or just look-and-feel. Stack-wise, it's a React frontend with a Postgres backend and an AI generation layer for the forecast and content steps. Not sharing revenue yet; still early and prioritizing getting the influence data over growth numbers right now. Curious if anyone else here has dealt with proving a feature actually changes behavior vs. just existing. yfinanceai.com if you want to poke at it.",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Ask HN: How to find technical cofounder who wants to start a small business?",
+            "points": 11,
+            "url": "https://news.ycombinator.com/item?id=2975490"
+          },
+          {
+            "title": "Ask HN: Stuck at $500 MRR and Seeking Distribution/Marketing Advice",
+            "points": 28,
+            "url": "https://news.ycombinator.com/item?id=37088792"
+          }
+        ],
+        "fetchedAt": "2026-09-14T20:38:01.725Z"
+      }
+    },
+    {
+      "id": "61aa94a8d8",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wg5h46/advice_for_startup_saas",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Advice for startup Saas?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wg5h46/advice_for_startup_saas/",
+      "summary": "Me and my friend decided that we are gonna make an app that after you describing your niche in selling, scan Reddit,Fb,LinkedIn where people discuss of it. The idea is that after you select your business, our app finding good/hot leades on forums. No one in my region started this, but i find this good for people who runs little companies or small entrepreneurs What do you think of concept and can you give your advices how to build this from 0?",
+      "deepenKey": "/r/microsaas/comments/1wg5h46",
+      "via": null,
+      "publishedAt": "2026-09-14T14:47:06.000Z",
+      "ref": "I68",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e904c51e8b",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wg5a6l/saas_app_advice",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Saas app advice?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wg5a6l/saas_app_advice/",
+      "summary": "Me and my co-founder just defended our thesis and decided not to let it collect dust — turning it into a real product instead. Basic idea: you tell it what you sell, it scans Reddit for people already asking for exactly that, scores how \"hot\" each lead is, and writes you a ready-to-send message. Right now it's just the two of us using it — no real strangers yet, no billing. Would love advice from people here who've actually gone from side project to something people pay for — what would you do differently if you were starting where we are right now?",
+      "deepenKey": "/r/microsaas/comments/1wg5a6l",
+      "via": null,
+      "publishedAt": "2026-09-14T14:39:38.000Z",
+      "ref": "I69",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "f8bb8fa7ff",
+      "normUrl": "https://producthunt.com/products/naoma",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Naoma AI Demo Agent V2",
+      "url": "https://www.producthunt.com/products/naoma",
+      "summary": "Turns website traffic into booked, qualified meetings",
+      "publishedAt": "2026-09-09T12:36:36.000Z",
+      "ref": "I70",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Turns website traffic into booked, qualified meetings",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:31:57.611Z"
+      }
+    },
+    {
+      "id": "0b1b110431",
+      "normUrl": "https://producthunt.com/products/nimbleway",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Web Search Agents by Nimble",
+      "url": "https://www.producthunt.com/products/nimbleway",
+      "summary": "Self-learning agents automate web research + retrieval",
+      "publishedAt": "2026-08-25T13:18:00.000Z",
+      "ref": "I71",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Self-learning agents automate web research + retrieval",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:32:17.611Z"
+      }
+    },
+    {
+      "id": "81faf84513",
+      "normUrl": "https://producthunt.com/products/helloinbox",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Hello Inbox",
+      "url": "https://www.producthunt.com/products/helloinbox",
+      "summary": "Get more marketing emails into the inbox",
+      "publishedAt": "2026-08-18T15:52:23.000Z",
+      "ref": "I72",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Get more marketing emails into the inbox",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "HelloInbox – Ultimate email deliverability checklist and toolkit",
+            "points": 167,
+            "url": "https://news.ycombinator.com/item?id=31431825"
+          },
+          {
+            "title": "Show HN: Hello Inbox – Free email deliverability checklist for marketers",
+            "points": 37,
+            "url": "https://news.ycombinator.com/item?id=37531048"
+          }
+        ],
+        "fetchedAt": "2026-09-14T20:32:37.669Z"
+      }
+    },
+    {
+      "id": "9510ceb11b",
+      "normUrl": "https://producthunt.com/products/slashy-3",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Slashy Assistant",
+      "url": "https://www.producthunt.com/products/slashy-3",
+      "summary": "The AI assistant that does email for you",
+      "publishedAt": "2026-09-14T02:52:46.000Z",
+      "ref": "I73",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The AI assistant that does email for you",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:32:57.660Z"
+      }
+    },
+    {
+      "id": "b338881379",
+      "normUrl": "https://producthunt.com/products/aside-6",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Aside",
+      "url": "https://www.producthunt.com/products/aside-6",
+      "summary": "AI browser that actually gets work done for you",
+      "publishedAt": "2026-09-12T18:17:02.000Z",
+      "ref": "I74",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "AI browser that actually gets work done for you",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:33:17.461Z"
+      }
+    },
+    {
+      "id": "d0e95ea62f",
+      "normUrl": "https://producthunt.com/products/oats-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Oats",
+      "url": "https://www.producthunt.com/products/oats-2",
+      "summary": "Free, open-source, and on device meeting notetaker",
+      "publishedAt": "2026-09-11T20:35:39.000Z",
+      "ref": "I75",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Free, open-source, and on device meeting notetaker",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:33:37.476Z"
+      }
+    },
+    {
+      "id": "4708e119bb",
+      "normUrl": "https://producthunt.com/products/ovo",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "OVO",
+      "url": "https://www.producthunt.com/products/ovo",
+      "summary": "Play music from files, iCloud & streams across Apple devices",
+      "publishedAt": "2026-09-02T12:13:00.000Z",
+      "ref": "I76",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Play music from files, iCloud & streams across Apple devices",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:33:57.498Z"
+      }
+    },
+    {
+      "id": "2cf09b4d84",
+      "normUrl": "https://producthunt.com/products/memorypet",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "MemoryPet 2.0",
+      "url": "https://www.producthunt.com/products/memorypet",
+      "summary": "Turn your browsers toolbar into an animated usage monitor",
+      "publishedAt": "2026-09-11T17:54:42.000Z",
+      "ref": "I77",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Turn your browsers toolbar into an animated usage monitor",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:34:17.518Z"
+      }
+    },
+    {
+      "id": "385c5ab710",
+      "normUrl": "https://producthunt.com/products/afterglow-4",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Afterglow",
+      "url": "https://www.producthunt.com/products/afterglow-4",
+      "summary": "Run classic After Dark screen savers on modern macOS",
+      "publishedAt": "2026-09-10T00:35:06.000Z",
+      "ref": "I78",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Run classic After Dark screen savers on modern macOS",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:34:37.545Z"
+      }
+    },
+    {
+      "id": "f952f504c8",
+      "normUrl": "https://producthunt.com/products/appdesigns",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "appdesigns",
+      "url": "https://www.producthunt.com/products/appdesigns",
+      "summary": "Design amazing appstore screenshots for free",
+      "publishedAt": "2026-09-14T00:19:15.000Z",
+      "ref": "I79",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Design amazing appstore screenshots for free",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:34:57.559Z"
+      }
+    },
+    {
+      "id": "68c2806253",
+      "normUrl": "https://producthunt.com/products/image-to-ascii-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Image to ASCII",
+      "url": "https://www.producthunt.com/products/image-to-ascii-2",
+      "summary": "Make ASCII art for READMEs, Discord & creative visuals",
+      "publishedAt": "2026-09-13T07:52:20.000Z",
+      "ref": "I80",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Make ASCII art for READMEs, Discord & creative visuals",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "ASCII-Gen, a CLI tool that converts images to ASCII art",
+            "points": 33,
+            "url": "https://news.ycombinator.com/item?id=38329736"
+          },
+          {
+            "title": "Show HN: Gif2txt – Gif Image to Ascii Text",
+            "points": 20,
+            "url": "https://news.ycombinator.com/item?id=10317009"
+          },
+          {
+            "title": "Show HN: I built a tool convert any image to ASCII Art",
+            "points": 15,
+            "url": "https://news.ycombinator.com/item?id=30317512"
+          }
+        ],
+        "fetchedAt": "2026-09-14T20:35:17.823Z"
+      }
+    },
+    {
+      "id": "3198e7e3c3",
+      "normUrl": "https://producthunt.com/products/ozbrain",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "OzBrain",
+      "url": "https://www.producthunt.com/products/ozbrain",
+      "summary": "Your knowledge shared with every AI agent & any teammate",
+      "publishedAt": "2026-09-10T22:25:45.000Z",
+      "ref": "I81",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Your knowledge shared with every AI agent & any teammate",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:35:37.588Z"
+      }
+    },
+    {
+      "id": "3375bca6d7",
+      "normUrl": "https://producthunt.com/products/llmagnet",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "LLMagnet",
+      "url": "https://www.producthunt.com/products/llmagnet",
+      "summary": "Make your WordPress site visible to AI",
+      "publishedAt": "2026-08-20T10:31:40.000Z",
+      "ref": "I82",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "bea3fc2e17",
+      "normUrl": "https://producthunt.com/products/marqly",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Marqly 6.0",
+      "url": "https://www.producthunt.com/products/marqly",
+      "summary": "Ask your bookmarks. Bring them to your AI.",
+      "publishedAt": "2026-09-13T08:34:52.000Z",
+      "ref": "I83",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "adb4be92ee",
+      "normUrl": "https://producthunt.com/products/elva",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Elva",
+      "url": "https://www.producthunt.com/products/elva",
+      "summary": "Goodbye, Postman. Your APIs have new consumers",
+      "publishedAt": "2026-09-07T13:45:06.000Z",
+      "ref": "I84",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "40f18b2ca2",
+      "normUrl": "https://producthunt.com/products/juggler",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Juggler",
+      "url": "https://www.producthunt.com/products/juggler",
+      "summary": "A visual AI coding harness",
+      "publishedAt": "2026-09-11T18:43:38.000Z",
+      "ref": "I85",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d535743241",
+      "normUrl": "https://producthunt.com/products/appzapper",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "AppZapper 3000",
+      "url": "https://www.producthunt.com/products/appzapper",
+      "summary": "The uninstaller Apple forgot.",
+      "publishedAt": "2026-09-14T00:16:57.000Z",
+      "ref": "I86",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6d3ff81375",
+      "normUrl": "https://producthunt.com/products/trycase",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "TryCase",
+      "url": "https://www.producthunt.com/products/trycase",
+      "summary": "AI tests your PRs. Get a video walkthrough before you merge.",
+      "publishedAt": "2026-09-06T15:10:35.000Z",
+      "ref": "I87",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "f898403819",
+      "normUrl": "https://producthunt.com/products/deplo-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Deplo",
+      "url": "https://www.producthunt.com/products/deplo-2",
+      "summary": "A simple-to-use alternative to cloud deployments",
+      "publishedAt": "2026-09-11T22:44:38.000Z",
+      "ref": "I88",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8313f99fc3",
+      "normUrl": "https://news.ycombinator.com/item?id=49699267",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Nari Qwen3-TTS and Qwen3-ASR – High accuracy, low latency and cost",
+      "url": "https://news.ycombinator.com/item?id=49699267",
+      "externalUrl": "https://narilabs.com/blog/nari-labs-leads-coval-voice-ai-benchmarks/",
+      "summary": "Hey HN, Toby from Nari Labs here. We've been working on making OSS speech models super-fast. Last year, we built Dia, the first OSS text-to-speech model capable of doing natural dialogue. Since then, so many more great speech models have been released to the public. But the market is still dominated by closed source models. We think that's an inference problem. Existing systems such as vLLM / SGLang are not well suited for multimodal inference. To prove this, we built an inference engine specialized for Qwen3-TTS and open-sourced it ( https://github.com/nari-labs/nari-qwen3-tts ).",
+      "deepenKey": "49699267",
+      "via": null,
+      "signal": {
+        "points": 33,
+        "comments": 10
+      },
+      "publishedAt": "2026-09-14T16:07:58Z",
+      "ref": "I89",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 5,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hey HN, Toby from Nari Labs here. We've been working on making OSS speech models super-fast. Last year, we built Dia, the first OSS text-to-speech model capable of doing natural dialogue. Since then, so many more great speech models have been released to the public. But the market is still dominated by closed source models. We think that's an inference problem. Existing systems such as vLLM / SGLang are not well suited for multimodal inference. To prove this, we built an inference engine specialized for Qwen3-TTS and open-sourced it ( https://github.com/nari-labs/nari-qwen3-tts ). Running at sub-50 ms latency at 10 RPS, this showed open models can be run much faster and cheaper. Since then, we've been working hard to bring cheap, fast, and high quality serving to all. And we've even beat closed models at their game! Measured on the highly cited Coval (YC S24) voice AI benchmarks, our Qwen3-TTS endpoint not just is #2 in latency, but #1 in accuracy (WER) compared to 11Labs, Cartesia etc. while being the cheapest endpoint. Our Qwen3-ASR endpoint has the lowest latency and #2 accuracy, just 0.1% away from #1. It is the second cheapest model on the list. It took a lot of clever inference engineering to make these models quick, perform well while keeping costs low. Interestingly, Alibaba's official endpoints seem to perform worse in terms of accuracy and latency compared to ours. But nonetheless, much love to the Qwen team for OSS-ing these amazing speech models. We want to continue to push prices down to make speech technology a commodity - so that every app can have great TTS and STT without worrying about unit costs. We're also working on other parts of audio such as diarization - as well as video and world model inference. More to come!",
+        "comments": [
+          {
+            "text": "This is really cool work! I'm curious like what do you see as the biggest lever for speeding up TTS models or from a technical perspective that this was a promising direction in the first place to push on. If I were to guess, some distillation but I'm certain there are probably TTS model aware architectural changes that just make inference wayyyy faster?"
+          },
+          {
+            "text": "> and Qwen3-ASR Is the ASR inference engine open source as well?"
+          },
+          {
+            "text": "If you're going to announce a TTS model, service, or whatever, you really need demos."
+          },
+          {
+            "text": "For some reason it switched voices half way through a 33 second clip. For OP the clip name is nari-nina-01a0a12f-980a-765e-8029-fa56bd23210d.wav"
+          },
+          {
+            "text": "Cool, I’ve released something to the same beat of the dr this weekend as well https://github.com/loudreader/loudkit I think real time natural tts should be possible everywhere soon"
+          },
+          {
+            "text": "You definitely need independent evals by Datapoint AI or someone who can verify your claims about TTS quality"
+          },
+          {
+            "text": "Rooting for you on this one."
+          },
+          {
+            "text": "By next month the competition for TTS will be even more! Voice models are not winner take all market unlike LLM APIs Coming here as Developer Relations at AssemblyAI"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: Nari Qwen3-TTS and Qwen3-ASR – High accuracy, low latency and cost",
+            "points": 34,
+            "url": "https://news.ycombinator.com/item?id=49699267"
+          }
+        ],
+        "fetchedAt": "2026-09-14T20:31:57.393Z"
+      }
+    },
+    {
+      "id": "41c5c734d4",
+      "normUrl": "https://news.ycombinator.com/item?id=49699159",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Neobrutalism.dev – Just added Base UI support and added new color theme",
+      "url": "https://news.ycombinator.com/item?id=49699159",
+      "externalUrl": "https://www.neobrutalism.dev/",
+      "summary": null,
+      "deepenKey": "49699159",
+      "via": null,
+      "signal": {
+        "points": 89,
+        "comments": 44
+      },
+      "publishedAt": "2026-09-14T16:02:02Z",
+      "ref": "I90",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "77180c0916",
+      "normUrl": "https://news.ycombinator.com/item?id=49699075",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Fly.exe – An EON systems like virtual fruit fly uploaded to computer",
+      "url": "https://news.ycombinator.com/item?id=49699075",
+      "externalUrl": "https://github.com/Ibtisam-Mohammad/Fly.exe",
+      "summary": null,
+      "deepenKey": "49699075",
+      "via": null,
+      "signal": {
+        "points": 20,
+        "comments": 4
+      },
+      "publishedAt": "2026-09-14T15:56:39Z",
+      "ref": "I91",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "bdd7a9d55f",
+      "normUrl": "https://news.ycombinator.com/item?id=49697912",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Pushie – Get notified with a simple webhook",
+      "url": "https://news.ycombinator.com/item?id=49697912",
+      "externalUrl": "https://pushie.net",
+      "summary": "Pushie lets you send notifications to yourself from anywhere. Create an account, claim a username, and start pushing to every device you are signed in on with a single HTTP request. No app or SDK to install. No complex authentication. Just a HTTP POST request with your message.",
+      "deepenKey": "49697912",
+      "via": null,
+      "signal": {
+        "points": 14,
+        "comments": 6
+      },
+      "publishedAt": "2026-09-14T14:51:54Z",
+      "ref": "I92",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Pushie lets you send notifications to yourself from anywhere. Create an account, claim a username, and start pushing to every device you are signed in on with a single HTTP request. No app or SDK to install. No complex authentication. Just a HTTP POST request with your message.",
+        "comments": [
+          {
+            "text": "So Pushover... but free? How do they plan to keep it free? Ads?"
+          },
+          {
+            "text": "One confirmation and one suggestion... Confirming: The Privacy Policy details that all notification data is deleted within 24 hours... Does this include any additional logging or analytics data? Suggestion: I like the \"Where can I use this?\" section. I would suggest adding a couple of practical examples around the already provided list of ideas."
+          },
+          {
+            "text": "The naming is... interesting. If the CI/CD pipeline fails, you get a pushie. Jokes aside, the tool looks very convenient. I have the CI/CD use case in mind. Having a GH actions template would be nice. Have you considered publishing the code? Some people will certainly be reluctant to use the platform without seeing what it actually does with their logs, which may contain sensitive data."
+          },
+          {
+            "text": "I don't get the advantage over ntfy?"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: Pushie – Get notified with a simple webhook",
+            "points": 14,
+            "url": "https://news.ycombinator.com/item?id=49697912"
+          }
+        ],
+        "fetchedAt": "2026-09-14T20:35:38.081Z"
+      }
+    },
+    {
+      "id": "62c7a5d1f9",
+      "normUrl": "https://github.com/666ghj/MiroFish",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "666ghj/MiroFish",
+      "url": "https://github.com/666ghj/MiroFish",
+      "summary": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
+      "signal": {
+        "language": "Python",
+        "points": 524
+      },
+      "publishedAt": null,
+      "ref": "I93",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:35:38.259Z"
+      }
+    },
+    {
+      "id": "d00d272b2b",
+      "normUrl": "https://github.com/Panniantong/Agent-Reach",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "summary": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "signal": {
+        "language": "Python",
+        "points": 640
+      },
+      "publishedAt": null,
+      "ref": "I94",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:35:38.522Z"
+      }
+    },
+    {
+      "id": "248f98dc82",
+      "normUrl": "https://github.com/rlaope/oh-my-hermes",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "rlaope/oh-my-hermes",
+      "url": "https://github.com/rlaope/oh-my-hermes",
+      "summary": "All in one plugin for Hermes Agent ⚚ the coding intelligence, a long-term memory system and model optimized workflow packages",
+      "signal": {
+        "language": "Python",
+        "points": 52
+      },
+      "publishedAt": null,
+      "ref": "I95",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 7,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "All in one plugin for Hermes Agent ⚚ the coding intelligence, a long-term memory system and model optimized workflow packages",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:35:40.146Z"
+      }
+    },
+    {
+      "id": "23bbc9c0a3",
+      "normUrl": "https://github.com/localsend/localsend",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "localsend/localsend",
+      "url": "https://github.com/localsend/localsend",
+      "summary": "An open-source cross-platform alternative to AirDrop",
+      "signal": {
+        "language": "Dart",
+        "points": 311
+      },
+      "publishedAt": null,
+      "ref": "I96",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "An open-source cross-platform alternative to AirDrop",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Localsend: An open-source cross-platform alternative to AirDrop",
+            "points": 923,
+            "url": "https://news.ycombinator.com/item?id=47933208"
+          },
+          {
+            "title": "Localsend: Open-Source Airdrop Alternative",
+            "points": 563,
+            "url": "https://news.ycombinator.com/item?id=37938183"
+          }
+        ],
+        "fetchedAt": "2026-09-14T20:35:38.704Z"
+      }
+    },
+    {
+      "id": "3ffb81b879",
+      "normUrl": "https://github.com/dani-garcia/vaultwarden",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "dani-garcia/vaultwarden",
+      "url": "https://github.com/dani-garcia/vaultwarden",
+      "summary": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs",
+      "signal": {
+        "language": "Rust",
+        "points": 110
+      },
+      "publishedAt": null,
+      "ref": "I97",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Bitwarden compatible server written in Rust",
+            "points": 193,
+            "url": "https://news.ycombinator.com/item?id=29662418"
+          },
+          {
+            "title": "Vaultwarden commit introduces SSO using OpenID Connect",
+            "points": 186,
+            "url": "https://news.ycombinator.com/item?id=44911560"
+          },
+          {
+            "title": "Vaultwarden: Unofficial Bitwarden compatible server written in Rust",
+            "points": 153,
+            "url": "https://news.ycombinator.com/item?id=41243147"
+          }
+        ],
+        "fetchedAt": "2026-09-14T20:35:38.882Z"
+      }
+    },
+    {
+      "id": "1606cfe2c2",
+      "normUrl": "https://github.com/TauricResearch/TradingAgents",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "TauricResearch/TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "summary": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "signal": {
+        "language": "Python",
+        "points": 756
+      },
+      "publishedAt": null,
+      "ref": "I98",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Multi-Agents LLM Financial Trading Framework",
+            "points": 120,
+            "url": "https://news.ycombinator.com/item?id=49605822"
+          }
+        ],
+        "fetchedAt": "2026-09-14T20:35:39.127Z"
+      }
+    },
+    {
+      "id": "ea9a569724",
+      "normUrl": "https://github.com/ruvnet/RuView",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "ruvnet/RuView",
+      "url": "https://github.com/ruvnet/RuView",
+      "summary": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "signal": {
+        "language": "Rust",
+        "points": 370
+      },
+      "publishedAt": null,
+      "ref": "I99",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Top trending repo claims to detect movement via WiFi, yet no one can run it",
+            "points": 10,
+            "url": "https://news.ycombinator.com/item?id=47305076"
+          }
+        ],
+        "fetchedAt": "2026-09-14T20:35:39.331Z"
+      }
+    },
+    {
+      "id": "0d88eaa183",
+      "normUrl": "https://github.com/OpenBMB/VoxCPM",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "OpenBMB/VoxCPM",
+      "url": "https://github.com/OpenBMB/VoxCPM",
+      "summary": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
+      "signal": {
+        "language": "Python",
+        "points": 204
+      },
+      "publishedAt": null,
+      "ref": "I100",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:35:39.541Z"
+      }
+    },
+    {
+      "id": "9ba9156b39",
+      "normUrl": "https://github.com/Crosstalk-Solutions/project-nomad",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "Crosstalk-Solutions/project-nomad",
+      "url": "https://github.com/Crosstalk-Solutions/project-nomad",
+      "summary": "Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required.",
+      "signal": {
+        "language": "TypeScript",
+        "points": 26
+      },
+      "publishedAt": null,
+      "ref": "I101",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:35:40.344Z"
+      }
+    },
+    {
+      "id": "92a74a0d53",
+      "normUrl": "https://github.com/reconurge/flowsint",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "reconurge/flowsint",
+      "url": "https://github.com/reconurge/flowsint",
+      "summary": "A modern platform for visual, flexible, and extensible graph-based investigations. For cybersecurity analysts and investigators.",
+      "signal": {
+        "language": "TypeScript",
+        "points": 279
+      },
+      "publishedAt": null,
+      "ref": "I102",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "A modern platform for visual, flexible, and extensible graph-based investigations. For cybersecurity analysts and investigators.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:35:39.728Z"
+      }
+    },
+    {
+      "id": "547b461642",
+      "normUrl": "https://github.com/peetzweg/opendisplay",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "peetzweg/opendisplay",
+      "url": "https://github.com/peetzweg/opendisplay",
+      "summary": "Free, open-source Sidecar/Duet alternative — use your iPhone or iPad as a true second monitor for your Mac over USB or WiFi. Low latency H.264, Retina HiDPI, touch input.",
+      "signal": {
+        "language": "Swift",
+        "points": 258
+      },
+      "publishedAt": null,
+      "ref": "I103",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Free, open-source Sidecar/Duet alternative — use your iPhone or iPad as a true second monitor for your Mac over USB or WiFi. Low latency H.264, Retina HiDPI, touch input.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-14T20:35:39.946Z"
+      }
+    }
+  ],
+  "deepenedAt": "2026-09-14T20:43:04.200Z"
+}

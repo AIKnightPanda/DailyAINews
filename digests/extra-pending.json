@@ -1,14 +1,14 @@
 {
-  "fetchedAt": "2026-09-14T20:26:38.670Z",
+  "fetchedAt": "2026-09-15T19:47:30.644Z",
   "windowDays": 3,
-  "windowUntil": "2026-09-14T23:59:59.000Z",
+  "windowUntil": "2026-09-15T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
       "status": "ok",
       "issues": 1,
-      "items": 0
+      "items": 24
     },
     {
       "id": "importai",
@@ -22,85 +22,463 @@
       "name": "OpenAI",
       "status": "ok",
       "issues": 2,
-      "items": 2
+      "items": 0
     },
     {
       "id": "deepmind",
       "name": "Google DeepMind",
       "status": "ok",
-      "issues": 0,
-      "items": 0
+      "issues": 1,
+      "items": 1
     },
     {
       "id": "rundown",
       "name": "The Rundown AI",
       "status": "ok",
-      "issues": 1,
-      "items": 1
+      "issues": 3,
+      "items": 2
     },
     {
       "id": "aivalley",
       "name": "AI Valley",
       "status": "ok",
-      "issues": 1,
-      "items": 2
+      "issues": 2,
+      "items": 0
     }
   ],
   "items": [
     {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "How Fyxer built an AI executive assistant people trust",
-      "url": "https://openai.com/index/fyxer",
-      "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice.",
-      "publishedAt": "2026-09-14T12:00:00.000Z"
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": null,
+      "subsection": null,
+      "topic": null,
+      "title": "Embedded Evaluators.",
+      "url": "https://metr.org/",
+      "links": [],
+      "summary": "Each frontier AI company commits to giving ongoing, employee-like access to a team of embedded third-party evaluators (such as METR ), whose role is to verify adherence to safety practices and commitments, report incidents, and help assess the alignment of not…",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
     },
     {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
-      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-      "summary": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models.",
-      "publishedAt": "2026-09-14T00:00:00.000Z"
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": null,
+      "subsection": null,
+      "topic": null,
+      "title": "AI Twitter Recap",
+      "url": "https://darioamodei.com/post/we-must-pace-the-frontier#global-pacing",
+      "links": [
+        {
+          "url": "https://twitter.com/i/lists/1585430245762441216",
+          "text": "544 Twitters"
+        },
+        {
+          "url": "https://news.smol.ai/",
+          "text": "AINews’ website"
+        }
+      ],
+      "summary": "With the members of the AEF presumably now being the leading third party auditors that will be recruited by these big labs for self regulation.",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "AI Safety Governance, Third-Party Evaluation, and the “Pace the Frontier” Split",
+      "topic": null,
+      "title": "A sharp public split emerged over frontier slowdown vs control-first safety",
+      "url": "https://x.com/bilalchughtai_/status/2099592489023734085",
+      "links": [
+        {
+          "url": "https://x.com/DKokotajlo/status/2099600298855829616",
+          "text": "Daniel Kokotajlo sharing Dan Selsam’s statement"
+        },
+        {
+          "url": "https://x.com/sayashk/status/2099632561396056214",
+          "text": "Shashank/Sayash Kapoor and Lennart Heim’s new essay summary"
+        }
+      ],
+      "summary": "Several high-signal posts framed the current debate around whether labs should pace capability progress or focus on specific mitigations and containment .",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "AI Safety Governance, Third-Party Evaluation, and the “Pace the Frontier” Split",
+      "topic": null,
+      "title": "The anti-slowdown reaction was equally forceful and often targeted Anthropic specifically",
+      "url": "https://x.com/aidangomez/status/2099551963721421186",
+      "links": [
+        {
+          "url": "https://x.com/cohere/status/2099618523463012832",
+          "text": "Cohere"
+        },
+        {
+          "url": "https://x.com/brianchau57/status/2099580986879094916",
+          "text": "Brian Chau"
+        }
+      ],
+      "summary": "Aidan Gomez argued against a world where a few Silicon Valley companies become AI gatekeepers for governments. Cohere also pushed the line that public x-risk discourse can veer into science fiction.",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "AI Safety Governance, Third-Party Evaluation, and the “Pace the Frontier” Split",
+      "topic": null,
+      "title": "A related theme: governance as production engineering, not just principles",
+      "url": "https://x.com/aiDotEngineer/status/2099551501613986198",
+      "links": [],
+      "summary": "The AI Engineer World’s Fair Harness Engineering track emphasized that when agents fail in production, the failure mode is often not “the model” but everything around it: harnesses, permissions, tool routing, memory, retries, kill switches, and monitoring.",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agent Harnesses, Coding Agents, and the Shift from Models to Orchestration",
+      "topic": null,
+      "title": "Harness engineering continues to harden into its own discipline",
+      "url": "https://x.com/omarsar0/status/2099545598156288292",
+      "links": [
+        {
+          "url": "https://x.com/omarsar0/status/2099548107327275488",
+          "text": "custom harnesses can materially reduce costs and improve reliability"
+        },
+        {
+          "url": "https://x.com/businessbarista/status/2099565601312166157",
+          "text": "Business Barista’s eval masterclass recap"
+        }
+      ],
+      "summary": "Omar Shorbagy posted a practical guide to building an agent harness from scratch: separate inference, tools, and loop; keep prompts minimal; log aggressively; test on diverse tasks; then layer in memory, skills, and subagents.",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agent Harnesses, Coding Agents, and the Shift from Models to Orchestration",
+      "topic": null,
+      "title": "Desktop coding agents are spreading beyond IDE plugins",
+      "url": "https://x.com/cline/status/2099536235350086029",
+      "links": [
+        {
+          "url": "https://x.com/kimmonismus/status/2099538795502964839",
+          "text": "kimmonismus"
+        },
+        {
+          "url": "https://x.com/omarsar0/status/2099552255733014788",
+          "text": "Omar"
+        }
+      ],
+      "summary": "Cline launched Cline Desktop , a native app for working with open-weight models, with BYOK/provider choice and support for models like DeepSeek-V4.1-Flash and Musespark-1.3.",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agent Harnesses, Coding Agents, and the Shift from Models to Orchestration",
+      "topic": null,
+      "title": "Copilot/Codex workflows are becoming more orchestration-heavy",
+      "url": "https://x.com/pierceboggan/status/2099573225915388166",
+      "links": [
+        {
+          "url": "https://x.com/burkeholland/status/2099604401312694576",
+          "text": "/ask mode while the agent is already working"
+        },
+        {
+          "url": "https://x.com/OpenAIDevs/status/2099582651229450749",
+          "text": "native Codex app support for Arch Linux"
+        }
+      ],
+      "summary": "GitHub added auto model selection tiers —efficiency, balance, intelligence—via Pierce Boggan , plus a Jira canvas and an /ask mode while the agent is already working . OpenAI’s dev team also added native Codex app support for Arch Linux .",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agent Harnesses, Coding Agents, and the Shift from Models to Orchestration",
+      "topic": null,
+      "title": "Evidence is accumulating that orchestration choices matter as much as raw model quality",
+      "url": "https://x.com/sydneyrunkle/status/2099618743580299305",
+      "links": [],
+      "summary": "A recurring claim in the tweets is that more expensive or more capable lead models can reduce overall cost by delegating better, and that production gains increasingly come from context handling, file formats, tool use, and verifier design , not simply “use a…",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Model/Product Releases and Cost-Performance Shifts",
+      "topic": null,
+      "title": "DeepSeek-V4.1-Flash (Max) looks like the day’s most notable cost/performance datapoint",
+      "url": "https://x.com/arena/status/2099549108013006958",
+      "links": [
+        {
+          "url": "https://x.com/arena/status/2099606881845321841",
+          "text": "here"
+        }
+      ],
+      "summary": "Agent Arena and a fuller follow-up here reported the model reached #3 among open models and landed on the Pareto frontier with +4.87% net improvement at roughly $0.06–$0.07 median cost per task .",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Model/Product Releases and Cost-Performance Shifts",
+      "topic": null,
+      "title": "Cohere is pushing document parsing economics",
+      "url": "https://x.com/cohere/status/2099579340308521076",
+      "links": [
+        {
+          "url": "https://x.com/jerryjliu0/status/2099629838005149855",
+          "text": "Jerry Liu"
+        }
+      ],
+      "summary": "Cohere Parse 5 was positioned as a cheaper parser, prompting a nuanced counter from Jerry Liu , who argued there’s no free lunch in parsing: Parse 5 is cost-competitive but weaker on visual grounding, chart parsing, and fine-grained citation-oriented extractio…",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Model/Product Releases and Cost-Performance Shifts",
+      "topic": null,
+      "title": "Multimodal and consumer features continue to broaden",
+      "url": "https://x.com/Google/status/2099631885626274299",
+      "links": [
+        {
+          "url": "https://x.com/victornunez/status/2099659150972117006",
+          "text": "OpenAI"
+        },
+        {
+          "url": "https://x.com/TheRundownAI/status/2099554848341475611",
+          "text": "Apple/Siri AI"
+        }
+      ],
+      "summary": "Google integrated Deep Research with Gemini Live , enabling asynchronous voice-triggered research with follow-up chat over the generated report. OpenAI cut desktop voice pricing by ~60% , increasing usage by 2.4× , and added ChatGPT gift cards.",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Model/Product Releases and Cost-Performance Shifts",
+      "topic": null,
+      "title": "Other notable tooling/product moves",
+      "url": "https://x.com/turbopuffer/status/2099570335712444494",
+      "links": [
+        {
+          "url": "https://x.com/NousResearch/status/2099599032037388404",
+          "text": "Nous Research"
+        },
+        {
+          "url": "https://x.com/Plasma__AI/status/2099565044182745341",
+          "text": "Plasma"
+        }
+      ],
+      "summary": "TurboPuffer made native embeddings generally available; Nous Research launched Hermes Business/Enterprise for shared agents and sovereign deployments; Plasma introduced Radio , a shared chat room for humans and agents.",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Robotics, World Models, and Specialized Applied AI",
+      "topic": null,
+      "title": "A notable robot foundation model launch",
+      "url": "https://x.com/RewardAI_/status/2099553899804053992",
+      "links": [],
+      "summary": "RewardAI introduced OM-1 , positioned as a robot foundation model that zero-shot generalizes across tabletop, industrial, and humanoid robots, trained directly from human manipulation data rather than teleop/robot-specific data.",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Robotics, World Models, and Specialized Applied AI",
+      "topic": null,
+      "title": "Applied AI for chip design is moving up-stack",
+      "url": "https://x.com/kimmonismus/status/2099544210638873074",
+      "links": [],
+      "summary": "kimmonismus summarizing Cognichip described ACI Enterprise as a full-stack AI copilot for chip design covering spec-to-RTL, verification, and PPA optimization.",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Robotics, World Models, and Specialized Applied AI",
+      "topic": null,
+      "title": "World models and real-time generative systems remain active",
+      "url": "https://x.com/GoogleDeepMind/status/2099575049929802053",
+      "links": [
+        {
+          "url": "https://x.com/c_valenzuelab/status/2099556981321199761",
+          "text": "Runway/fal-adjacent generative media chatter"
+        },
+        {
+          "url": "https://x.com/MiniMax_AI/status/2099642910853788051",
+          "text": "MiniMax’s H3 inference optimization"
+        }
+      ],
+      "summary": "Google DeepMind’s WeatherNext 3 applies weather modeling to renewables planning with hourly updates for turbine-height wind and solar radiation forecasting.",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Robotics, World Models, and Specialized Applied AI",
+      "topic": null,
+      "title": "RL with verifiers is extending beyond math/code",
+      "url": "https://x.com/tinkerapi/status/2099616802208903659",
+      "links": [],
+      "summary": "Tinker highlighted using physics-based verifiers and Tinker to train models that design power transformers meeting real-world specs at low cost—an example of RLVR-style methods porting into engineering domains with existing simulator/verification infrastructur…",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Infrastructure, Open Ecosystems, and Data/Compute Sovereignty",
+      "topic": null,
+      "title": "TPU + vLLM is getting tighter integration",
+      "url": "https://x.com/inferact/status/2099602528484913552",
+      "links": [],
+      "summary": "Inferact and Google Cloud announced a partnership to make TPU a first-class citizen in vLLM , including production serving features, optimized kernels, a native PyTorch path via TorchTPU , and a community program that offers TPU capacity plus maintainer suppor…",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Infrastructure, Open Ecosystems, and Data/Compute Sovereignty",
+      "topic": null,
+      "title": "Open-model ecosystems are increasingly tied to real-world data capture",
+      "url": "https://x.com/arcee_ai/status/2099593249337831870",
+      "links": [],
+      "summary": "Arcee’s Forge initiative with Bolt offers opted-in Bolt Pro users 50× more usage across open-weight models in exchange for anonymized development-session data that will inform training/evals for future open models, with weights promised for public release afte…",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Infrastructure, Open Ecosystems, and Data/Compute Sovereignty",
+      "topic": null,
+      "title": "There’s growing interest in sovereign/decentralized AI stacks",
+      "url": "https://x.com/jon_durbin/status/2099565522543104495",
+      "links": [],
+      "summary": "Jon Durbin argued for P2P, “unstoppable” AI systems and claimed a DGX Spark plus solar/starlink setup can participate in training an 80B model with distributed nodes.",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Top Tweets (by engagement)",
+      "topic": null,
+      "title": "Anthropic/safety ecosystem critique",
+      "url": "https://x.com/kevinnbass/status/2099621874279817638",
+      "links": [],
+      "summary": "Kevin Bass posted the highest-engagement technical-adjacent thread, alleging financial entanglement between Anthropic and parts of the AI safety/eval ecosystem and arguing this compromises claims of evaluator independence.",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Top Tweets (by engagement)",
+      "topic": null,
+      "title": "Dan Selsam’s AI risk statement",
+      "url": "https://x.com/DKokotajlo/status/2099600298855829616",
+      "links": [],
+      "summary": "Shared by Daniel Kokotajlo , this was one of the most consequential safety posts: a current OpenAI researcher arguing that future models may systematically game alignment evaluations by understanding when they are being tested.",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Top Tweets (by engagement)",
+      "topic": null,
+      "title": "DeepSeek kernel engineer reflection",
+      "url": "https://x.com/teortaxesTex/status/2099575222512836893",
+      "links": [],
+      "summary": "teortaxesTex’s translation/share of a DeepSeek kernel engineer’s essay drew major attention. The technical substance isn’t a release, but it captured an increasingly important engineering reality: specialists expect AI to absorb more of the low-level optimizat…",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Top Tweets (by engagement)",
+      "topic": null,
+      "title": "Consumer AI momentum around Muse",
+      "url": "https://x.com/SashaKaletsky/status/2099536653048225833",
+      "links": [
+        {
+          "url": "https://x.com/alexandr_wang/status/2099548924105379974",
+          "text": "Alexandr Wang"
+        }
+      ],
+      "summary": "Sasha Kaletsky and Alexandr Wang both amplified claims that Muse is the biggest consumer AI launch since ChatGPT, with downloads reportedly surpassing Threads, WhatsApp, and Facebook in the US on a daily basis.",
+      "publishedAt": "2026-09-15T04:50:36.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for"
+    },
+    {
+      "source": "Google DeepMind",
+      "sourceHome": "https://deepmind.google/blog/",
+      "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "summary": "Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking are our most advanced live dialogue models yet, built for natural conversation.",
+      "publishedAt": "2026-09-15T17:05:57.000Z",
+      "enriched": true
     },
     {
       "source": "The Rundown AI",
       "sourceHome": "https://www.therundown.ai/",
-      "title": "Top AI labs want to pump the brakes",
-      "url": "https://www.therundown.ai/articles/top-ai-labs-want-to-pump-the-brakes",
-      "summary": "PLUS: Send a one-page proposal after sales calls",
-      "publishedAt": "2026-09-14T09:00:00.000Z"
+      "title": "Trump, China both shoot down the AI slowdown",
+      "url": "https://www.therundown.ai/articles/trump-china-both-shoot-down-the-ai-slowdown",
+      "summary": "PLUS: Make any complex topic click with an ELI5 skill",
+      "publishedAt": "2026-09-15T10:00:00.000Z"
     },
     {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "AI leaders are actually asking to slow AI down",
-      "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
-      "links": [
-        {
-          "url": "https://x.com/AISafetyMemes/status/2098944808844988480?s=20",
-          "text": "basically agree"
-        }
-      ],
-      "summary": "Anthropic CEO Dario Amodei wrote a 3,800-word essay arguing that AI capabilities are moving too fast for safety work to keep up. Sam Altman, Elon Musk and DeepMind’s Demis Hassabis basically agree .",
-      "publishedAt": "2026-09-14T14:31:56.596Z",
-      "issueUrl": "https://www.theaivalley.com/p/the-ai-fear"
-    },
-    {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "OpenAI isn’t going public this year",
-      "url": "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026",
-      "links": [],
-      "summary": "despite confidentially filing for an IPO, Sam Altman says 2026 would be an “ ill-advised ” time to actually do it. OpenAI had reportedly been aiming for Q3/Q4 this year, but Altman now says “we’ve got a lot of stuff to do.”",
-      "publishedAt": "2026-09-14T14:31:56.596Z",
-      "issueUrl": "https://www.theaivalley.com/p/the-ai-fear"
+      "source": "The Rundown AI",
+      "sourceHome": "https://www.therundown.ai/",
+      "title": "Japan’s latest answer to home robots",
+      "url": "https://www.therundown.ai/articles/japan-latest-answer-to-home-robots",
+      "summary": "PLUS: Foundation develops its war machine",
+      "publishedAt": "2026-09-14T14:30:00.000Z"
     }
   ]
 }

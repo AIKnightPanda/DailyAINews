@@ -1,14 +1,14 @@
 {
-  "fetchedAt": "2026-09-16T19:39:42.979Z",
+  "fetchedAt": "2026-09-17T19:48:44.453Z",
   "windowDays": 3,
-  "windowUntil": "2026-09-16T23:59:59.000Z",
+  "windowUntil": "2026-09-17T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
       "status": "ok",
       "issues": 1,
-      "items": 16
+      "items": 40
     },
     {
       "id": "importai",
@@ -22,7 +22,7 @@
       "name": "OpenAI",
       "status": "ok",
       "issues": 5,
-      "items": 3
+      "items": 2
     },
     {
       "id": "deepmind",
@@ -35,14 +35,14 @@
       "id": "rundown",
       "name": "The Rundown AI",
       "status": "ok",
-      "issues": 5,
-      "items": 2
+      "issues": 4,
+      "items": 1
     },
     {
       "id": "aivalley",
       "name": "AI Valley",
       "status": "ok",
-      "issues": 2,
+      "issues": 1,
       "items": 0
     }
   ],
@@ -50,325 +50,744 @@
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "AI Twitter Recap",
-      "url": "https://docs.typesafe.ai/introduction/machine-learning-primer",
-      "links": [
-        {
-          "url": "https://www.latent.space/p/benchmarks-201",
-          "text": "Clementine from HuggingFace"
-        },
-        {
-          "url": "https://substackcdn.com/image/fetch/$s_!LNpu!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F41fc9b4b-4ba5-4f2e-b4c4-fe8e6d0475b6_1414x1028.png",
-          "text": ""
-        }
-      ],
-      "summary": "The system was trained through “RLCD” - calibrated decisions : a topic that Clementine from HuggingFace had highlighted as one of the important research frontiers in our pod: Arenas >> LLM-as-Judge\",\"publishedBylines\":[],\"post_date\":\"2024-07-12T22:38:55.659Z\",…",
-      "publishedAt": "2026-09-16T11:09:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-jev-a-system-one-model-that"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Periodic Labs’ Neon: Lab-Grounded RL for Materials Science",
+      "subsection": "Top tweets (by engagement)",
       "topic": null,
-      "title": "Why it matters technically",
-      "url": "https://x.com/zephyr_z9/status/2099899231662399918",
-      "links": [
-        {
-          "url": "https://x.com/_jasonwei/status/2099907698708095210",
-          "text": "@_jasonwei"
-        },
-        {
-          "url": "https://x.com/vwxyzjn/status/2099904452509732969",
-          "text": "@vwxyzjn"
-        }
-      ],
-      "summary": "Several reactions converge on the same thesis: domain-specific data plus RL infra can beat frontier general models on narrow but valuable scientific workloads.",
-      "publishedAt": "2026-09-16T11:09:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-jev-a-system-one-model-that"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Gemini 3.8 Live and the Push Toward Real-Time Voice Agents",
-      "topic": null,
-      "title": "Google’s new live audio models",
-      "url": "https://x.com/GoogleDeepMind/status/2099907440422830269",
-      "links": [
-        {
-          "url": "https://x.com/GoogleAIStudio/status/2099915030074736828",
-          "text": "@GoogleAIStudio"
-        },
-        {
-          "url": "https://x.com/_philschmid/status/2099908172899357093",
-          "text": "@_philschmid"
-        }
-      ],
-      "summary": "Google launched Gemini 3.8 Live and 3.8 Live Extended Thinking , positioned as conversational models that can talk, think, and handle tasks in the background without breaking flow.",
-      "publishedAt": "2026-09-16T11:09:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-jev-a-system-one-model-that"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Gemini 3.8 Live and the Push Toward Real-Time Voice Agents",
-      "topic": null,
-      "title": "Benchmarks and economics",
-      "url": "https://x.com/ArtificialAnlys/status/2099977679307243773",
+      "title": "OpenAI’s misalignment disclosure launch",
+      "url": "https://x.com/OpenAI/status/2100344867507327087",
       "links": [],
-      "summary": "Artificial Analysis provides the most technical external read. Gemini 3.8 Live Extended Thinking (High) debuts #1 on its speech-to-speech index at 82.6 , ahead of GPT-Live-1 Astra (81.5), and #1 on Tau Voice at 68.6% .",
-      "publishedAt": "2026-09-16T11:09:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-jev-a-system-one-model-that"
+      "summary": "@OpenAI published a formal framework for tracking, investigating, and disclosing model misalignment incidents, plus six case reports from the last six months.",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "TypeSafe’s Jev and RLCD: Decision Models Instead of Text Generators",
+      "subsection": "Top tweets (by engagement)",
       "topic": null,
-      "title": "New model category, or at least a new packaging of one",
-      "url": "https://x.com/CompleteSkeptic/status/2099925682726002904",
+      "title": "MiMo-V2.6 live RL dashboard",
+      "url": "https://x.com/_LuoFuli/status/2100296686719610932",
       "links": [
         {
-          "url": "https://x.com/omarsar0/status/2099933100440494105",
+          "url": "https://x.com/eliebakouch/status/2100324137642131516",
+          "text": "@eliebakouch"
+        }
+      ],
+      "summary": "@_LuoFuli announced Xiaomi’s MiMo-V2.6 RL run with unusually high operational transparency: live training stats, harness mix, reward details, and cost telemetry.",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Top tweets (by engagement)",
+      "topic": null,
+      "title": "Federal Register using distilled Qwen models",
+      "url": "https://x.com/kimmonismus/status/2100199254065295507",
+      "links": [
+        {
+          "url": "https://x.com/kimmonismus/status/2100201550987899268",
+          "text": "federalregister.gov reference"
+        }
+      ],
+      "summary": "@kimmonismus highlighted that a U.S. government search mode appears to use distilled Qwen models , with a source link in the follow-up federalregister.gov reference .",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Top tweets (by engagement)",
+      "topic": null,
+      "title": "Databricks rolls out GPT-6 Astra to ~3,500 engineers",
+      "url": "https://x.com/pwendell/status/2100299179923067016",
+      "links": [],
+      "summary": "@pwendell reported Astra outperforming prior top-end models on complex, long-horizon tasks , while increasing coding spend by ~60% .",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Top tweets (by engagement)",
+      "topic": null,
+      "title": "DeepMind Institute launch",
+      "url": "https://x.com/demishassabis/status/2100230524383981702",
+      "links": [
+        {
+          "url": "https://x.com/ShaneLegg/status/2100229706641539248",
+          "text": "@ShaneLegg"
+        }
+      ],
+      "summary": "@demishassabis and @ShaneLegg launched the DeepMind Institute , a new in-house platform for interdisciplinary research and debate on AGI governance, economics, transparency, and human flourishing.",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Top tweets (by engagement)",
+      "topic": null,
+      "title": "Union Alpha emerges in coding workflows",
+      "url": "https://x.com/cline/status/2100265266026590322",
+      "links": [
+        {
+          "url": "https://x.com/Yuchenj_UW/status/2100266632367296520",
+          "text": "@Yuchenj_UW"
+        }
+      ],
+      "summary": "@cline made Union Alpha free in Cline, claiming near GPT-6 Astra / Opus 5-class coding performance at far lower cost; speculation on provenance spread quickly, including from @Yuchenj_UW .",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Model Transparency, Misalignment, and Third-Party Oversight",
+      "topic": null,
+      "title": "Debate over what external oversight should look like",
+      "url": "https://x.com/ChrisPainterYup/status/2100266000457290047",
+      "links": [
+        {
+          "url": "https://x.com/CFGeek/status/2100273048209498330",
+          "text": "@CFGeek"
+        },
+        {
+          "url": "https://x.com/TransluceAI/status/2100326934744064333",
+          "text": "@TransluceAI"
+        }
+      ],
+      "summary": "The rollout reactivated discussion around evaluators and auditors. @ChrisPainterYup restated METR’s role as an independent evaluator intended to surface evidence if labs are nearing loss of control, emphasizing funding separation from frontier labs and disclos…",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Model Transparency, Misalignment, and Third-Party Oversight",
+      "topic": null,
+      "title": "New technical safety papers",
+      "url": "https://x.com/dair_ai/status/2100167820135059579",
+      "links": [
+        {
+          "url": "https://x.com/dair_ai/status/2100235768975511752",
+          "text": "@dair_ai"
+        }
+      ],
+      "summary": "@dair_ai summarized a Microsoft paper on “capability laundering” : a weaker unaligned model decomposes a harmful task into innocuous subquestions, queries an aligned frontier model separately, and recombines the results locally.",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Astra’s Enterprise Adoption and the General-Agent UI Convergence",
+      "topic": null,
+      "title": "Benchmarks are converging on a similar picture",
+      "url": "https://x.com/EpochAIResearch/status/2100279761339887847",
+      "links": [
+        {
+          "url": "https://x.com/arena/status/2100302182822416681",
+          "text": "@arena"
+        },
+        {
+          "url": "https://x.com/arena/status/2100321600679928152",
+          "text": "@arena"
+        }
+      ],
+      "summary": "@EpochAIResearch said Astra now leads their overall Epoch Capabilities Index , with a new Math-ECI record, while Claude Fable 5.1 remains strongest on software engineering.",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Astra’s Enterprise Adoption and the General-Agent UI Convergence",
+      "topic": null,
+      "title": "The product layer is collapsing “chat” and “work” into one agent surface",
+      "url": "https://x.com/_catwu/status/2100260655312089562",
+      "links": [
+        {
+          "url": "https://x.com/mikeyk/status/2100259777528177030",
+          "text": "@mikeyk"
+        },
+        {
+          "url": "https://x.com/ClaudeDevs/status/2100270861555228770",
+          "text": "@ClaudeDevs"
+        }
+      ],
+      "summary": "Anthropic merged Claude Cowork and chat into a unified Claude, routing between quick answers and deeper agentic work automatically, per @_catwu and @mikeyk .",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Open Models, Coding Agents, and Harness Engineering",
+      "topic": null,
+      "title": "DeepSeek-V4.1-Flash keeps showing up as the practical open default",
+      "url": "https://x.com/victormustar/status/2100181580467564641",
+      "links": [
+        {
+          "url": "https://x.com/teortaxesTex/status/2100191091194483102",
+          "text": "@teortaxesTex"
+        }
+      ],
+      "summary": "It became the default in HuggingChat via @victormustar , and multiple practitioners argued it is under-evaluated relative to impact, notably @teortaxesTex . Anecdotal usage ranged from gaming optimization with Hermes Agent to self-hosted/open workflows.",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Open Models, Coding Agents, and Harness Engineering",
+      "topic": null,
+      "title": "Harness engineering matters as much as base-model selection",
+      "url": "https://x.com/sydneyrunkle/status/2100236933498913268",
+      "links": [
+        {
+          "url": "https://x.com/omarsar0/status/2100219606405431391",
           "text": "@omarsar0"
         },
         {
-          "url": "https://x.com/chaseleantj/status/2099959202265596220",
-          "text": "@chaseleantj"
+          "url": "https://x.com/arena/status/2100280949661667413",
+          "text": "@arena"
         }
       ],
-      "summary": "One of the highest-engagement technical launches was Diogo Almeida/TypeSafe’s Jev announcement , claiming a new frontier model trained with RLCD and optimized for decisions , not text generation: 20–200x faster , 40–400x cheaper , with output tokens free .",
-      "publishedAt": "2026-09-16T11:09:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-jev-a-system-one-model-that"
+      "summary": "@sydneyrunkle framed agent systems as a combination of model choice and task-fit harness design . That view was reinforced by several threads: @omarsar0 argued subagents are most useful for parallel research, tracking, and context management , but coordination…",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "TypeSafe’s Jev and RLCD: Decision Models Instead of Text Generators",
+      "subsection": "Open Models, Coding Agents, and Harness Engineering",
       "topic": null,
-      "title": "Important caveat",
-      "url": "https://x.com/scaling01/status/2099960451358457971",
+      "title": "New coding-agent product primitives",
+      "url": "https://x.com/cognition/status/2100253548885803404",
       "links": [
         {
-          "url": "https://x.com/eggie5/status/2099972348677927273",
-          "text": "@eggie5"
+          "url": "https://x.com/LangChain/status/2100254495435276566",
+          "text": "@LangChain"
         },
         {
-          "url": "https://x.com/dbreunig/status/2099970001344360498",
-          "text": "@dbreunig"
+          "url": "https://x.com/code/status/2100309875829907552",
+          "text": "@code"
         }
       ],
-      "summary": "Some community posts correctly push back on overgeneralization. @scaling01 notes Jev is not a general language model and likely closer to a constrained or diffusion-like decision model; it cannot produce free-form text and requires predefined output formats.",
-      "publishedAt": "2026-09-16T11:09:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-jev-a-system-one-model-that"
+      "summary": "Cognition launched Code Scans , codebase-wide audits powered by “Agentic MapReduce,” via @cognition . LangChain highlighted domain-specific harness patterns and GTM agent examples via @LangChain .",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Agents, Tooling, and Infra: Mac VMs, MCP, Bash, and AI-Built Systems",
+      "subsection": "RL at Scale, Infra Telemetry, and Systems Work",
       "topic": null,
-      "title": "Agent execution environments are getting more complete",
-      "url": "https://x.com/jeffwang/status/2099890359476322360",
-      "links": [
-        {
-          "url": "https://x.com/jkelleyrtp/status/2099902081973014959",
-          "text": "@jkelleyrtp"
-        }
-      ],
-      "summary": "@jeffwang says Devin can now spin up Mac VMs , enabling end-to-end iOS development and debugging from Slack or the web UI; @jkelleyrtp adds that Devin is now a cloud agent spanning macOS, Windows, and Linux , with storage, networking, VNC, and computer-use inf…",
-      "publishedAt": "2026-09-16T11:09:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-jev-a-system-one-model-that"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Agents, Tooling, and Infra: Mac VMs, MCP, Bash, and AI-Built Systems",
-      "topic": null,
-      "title": "MCP continues consolidating as the integration layer",
-      "url": "https://x.com/LangChain/status/2099891249448616059",
-      "links": [
-        {
-          "url": "https://x.com/omarsar0/status/2099970990935867485",
-          "text": "@omarsar0"
-        }
-      ],
-      "summary": "LangChain announced that every Managed Deep Agent is now an MCP server with a built-in endpoint for delegation and tool reuse via compatible clients @LangChain .",
-      "publishedAt": "2026-09-16T11:09:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-jev-a-system-one-model-that"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Agents, Tooling, and Infra: Mac VMs, MCP, Bash, and AI-Built Systems",
-      "topic": null,
-      "title": "Tools vs bash",
-      "url": "https://x.com/dair_ai/status/2099925472629150164",
+      "title": "RL systems details continue to matter",
+      "url": "https://x.com/khoomeik/status/2100338891492577727",
       "links": [],
-      "summary": "A notable Microsoft paper summary from @dair_ai argues that on agent benchmarks, bash alone outperformed typed tool catalogs by 21.8–24.5 points on TheAgentCompany and 4.8–7.4 points on APEX-Agents, while using fewer tokens.",
-      "publishedAt": "2026-09-16T11:09:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-jev-a-system-one-model-that"
+      "summary": "@khoomeik described a concrete systems optimization for agentic RL at Periodic Labs/Neon: Delta Router Replay in SGLang reduces slowdown from exporting MoE routing decisions across turns, mitigating training/inference mismatch while avoiding repeated export of…",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Agents, Tooling, and Infra: Mac VMs, MCP, Bash, and AI-Built Systems",
+      "subsection": "RL at Scale, Infra Telemetry, and Systems Work",
       "topic": null,
-      "title": "AI agents building infra, not just app code",
-      "url": "https://x.com/AravSrinivas/status/2099957318935028173",
+      "title": "Inference and deployment infra updates",
+      "url": "https://x.com/LambdaAPI/status/2100239067200045140",
       "links": [
         {
-          "url": "https://x.com/perplexity_ai/status/2099955709689610262",
-          "text": "@perplexity_ai"
+          "url": "https://x.com/baseten/status/2100313863455727673",
+          "text": "@baseten"
+        },
+        {
+          "url": "https://x.com/cohere/status/2100255182579769721",
+          "text": "@cohere"
         }
       ],
-      "summary": "Perplexity says it built and deployed CobbleDB , a DynamoDB replacement for search serving, with two engineers and hundreds of persistent AI agents over two months @AravSrinivas .",
-      "publishedAt": "2026-09-16T11:09:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-jev-a-system-one-model-that"
+      "summary": "@LambdaAPI reported MLPerf Inference v6.1 results including the first agentic inference workload on datacenter hardware and a 1T+ parameter model deployment.",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Evals, Misalignment, and Reward Hacking",
+      "subsection": "Physical AI, Robotics Data, and Agentic Creative Tools",
       "topic": null,
-      "title": "Persona transfer and selective misalignment",
-      "url": "https://x.com/OwainEvans_UK/status/2099896330009391269",
+      "title": "Physical-world workflows are moving from demo to tooling stack",
+      "url": "https://x.com/OpenAIDevs/status/2100288044464996554",
       "links": [
         {
-          "url": "https://x.com/GeodesResearch/status/2099982123042218159",
-          "text": "@GeodesResearch"
+          "url": "https://x.com/nikitabier/status/2100238199129796986",
+          "text": "@nikitabier"
+        },
+        {
+          "url": "https://x.com/GeminiApp/status/2100276144633434150",
+          "text": "@GeminiApp"
         }
       ],
-      "summary": "Two interesting papers surfaced on how behavior transfers from training data. @OwainEvans_UK reports that models trained on synthetic stories about humans adopt quirks from those stories in ordinary assistant chat, with stronger adoption for characters from el…",
-      "publishedAt": "2026-09-16T11:09:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-jev-a-system-one-model-that"
+      "summary": "Several posts show the “general agent” idea leaking into CAD, Blender, 3D printing, and robotics. @OpenAIDevs and users like @nikitabier emphasized using agents to go from idea to manufacturable object , including supplier outreach and CAD generation.",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Evals, Misalignment, and Reward Hacking",
+      "subsection": "Physical AI, Robotics Data, and Agentic Creative Tools",
       "topic": null,
-      "title": "API-vs-chatbot auditing mismatch",
-      "url": "https://x.com/jennjwang/status/2099976140572291492",
+      "title": "Astra’s strongest visible creative niche is 3D/Blender orchestration",
+      "url": "https://x.com/ryanvogel/status/2100251451758916047",
+      "links": [
+        {
+          "url": "https://x.com/derrickcchoi/status/2100233437756129788",
+          "text": "@derrickcchoi"
+        },
+        {
+          "url": "https://x.com/axbehr/status/2100285943966237087",
+          "text": "@axbehr"
+        }
+      ],
+      "summary": "Multiple practitioners showed Astra controlling Blender for multi-step creation, including @ryanvogel , @derrickcchoi , and @axbehr . Unity formalized this direction with an official Codex plugin via @unitygames .",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Physical AI, Robotics Data, and Agentic Creative Tools",
+      "topic": null,
+      "title": "Robotics data infrastructure is becoming a category",
+      "url": "https://x.com/GroundedSI/status/2100269168629317698",
+      "links": [
+        {
+          "url": "https://x.com/RekaAILabs/status/2100269037204930614",
+          "text": "@RekaAILabs"
+        }
+      ],
+      "summary": "@GroundedSI launched Grounded API for ego-data enrichment with claimed SOTA hand-tracking and SLAM metrics, integrated with Hugging Face and LeRobot.",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Company Moves, Funding, and Open-Model Commercialization",
+      "topic": null,
+      "title": "Cohere + Aleph Alpha",
+      "url": "https://x.com/cohere/status/2100226507188650175",
       "links": [],
-      "summary": "@jennjwang reports that third-party auditors probing systems via API may not get findings that transfer cleanly to chatbot interfaces across ChatGPT, Claude, and Gemini.",
-      "publishedAt": "2026-09-16T11:09:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-jev-a-system-one-model-that"
+      "summary": "@cohere announced a definitive agreement with Aleph Alpha , framing the combined company as a transatlantic foundation-model developer spanning Canada and Germany .",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Top Tweets (by engagement)",
+      "subsection": "Company Moves, Funding, and Open-Model Commercialization",
       "topic": null,
-      "title": "Meta’s safety/governance position",
-      "url": "https://x.com/finkd/status/2099997096896274533",
+      "title": "Arcee’s Series B and open-model platform thesis",
+      "url": "https://x.com/arcee_ai/status/2100230847907459094",
       "links": [],
-      "summary": "@finkd laid out Meta’s argument that labs should invest heavily in alignment and external evaluation, while avoiding concentration of power and devoting the majority of compute to serving users rather than recursive self-improvement.",
-      "publishedAt": "2026-09-16T11:09:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-jev-a-system-one-model-that"
+      "summary": "@arcee_ai announced a Series B at >$1B valuation , funding next-gen Trinity models, DOE/national-lab work on Genesis-Science-1 , and productizing the stack for building/evaluating/deploying open models in production.",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Top Tweets (by engagement)",
+      "subsection": "Company Moves, Funding, and Open-Model Commercialization",
       "topic": null,
-      "title": "Periodic Neon",
-      "url": "https://x.com/LiamFedus/status/2099896055030501702",
-      "links": [],
-      "summary": "@LiamFedus announced Periodic’s lab-grounded materials-science model, likely the most technically substantive thread in the set.",
-      "publishedAt": "2026-09-16T11:09:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-jev-a-system-one-model-that"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Top Tweets (by engagement)",
-      "topic": null,
-      "title": "Gemini 3.8 Live",
-      "url": "https://x.com/OfficialLoganK/status/2099909465705447807",
+      "title": "Sakana AI shifts from research lab to GTM buildout",
+      "url": "https://x.com/SakanaAILabs/status/2100198766179426464",
       "links": [
         {
-          "url": "https://x.com/ArtificialAnlys/status/2099977679307243773",
-          "text": "Artificial Analysis"
+          "url": "https://x.com/hardmaru/status/2100253501142020120",
+          "text": "@hardmaru"
         }
       ],
-      "summary": "@OfficialLoganK and Artificial Analysis highlighted Google’s push to the top of speech-to-speech benchmarks with lower live-audio pricing.",
-      "publishedAt": "2026-09-16T11:09:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-jev-a-system-one-model-that"
+      "summary": "Through @SakanaAILabs and @hardmaru , Sakana emphasized it has already shipped a sizable product slate and is now building Forward Deployed Engineer and enterprise GTM functions—useful evidence that top research-first labs increasingly see deployment engineeri…",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Top Tweets (by engagement)",
+      "subsection": "Company Moves, Funding, and Open-Model Commercialization",
       "topic": null,
-      "title": "Astra in Minecraft",
-      "url": "https://x.com/ValsAI/status/2099975438886207798",
+      "title": "Open-source safety/commercial stack formation",
+      "url": "https://x.com/baselabs/status/2100286099121705396",
       "links": [
         {
-          "url": "https://x.com/scaling01/status/2099979707940839564",
-          "text": "@scaling01"
+          "url": "https://x.com/GoodfireAI/status/2100294097093414982",
+          "text": "@GoodfireAI"
+        },
+        {
+          "url": "https://x.com/Thom_Wolf/status/2100327168421277779",
+          "text": "@Thom_Wolf"
         }
       ],
-      "summary": "While partly memeified, @ValsAI and the viral summary from @scaling01 are still technically interesting as anecdotal evidence of long-horizon agent behavior, failure recovery, and emergent self-talk under persistent task conditions.",
-      "publishedAt": "2026-09-16T11:09:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-jev-a-system-one-model-that"
+      "summary": "@baselabs , @GoodfireAI , and @Thom_Wolf outlined a coordinated push to make runtime monitoring, training-time controls, and interpretability tooling part of the standard open-model deployment stack rather than something exclusive to closed labs.",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "1. Qwen3.8-27B Local Optimization Benchmarks",
+      "title": "I ran Qwen 3.8 27B locally for 30 days, here are the results",
+      "url": "https://www.reddit.com/r/LocalLLM/comments/1whqwdq/i_ran_qwen_38_27b_locally_for_30_days_here_are/",
+      "links": [],
+      "summary": "(Activity: 578): A 30-day local deployment test of Unsloth Qwen3.8-27B-UD-Q4_K_XL reported 845.1 tok/s mean prompt processing, 73.8 tok/s mean generation, and MTP acceptance 0.481 ( 674/1401 ) on a dual-GPU setup later identified as RTX 5070 Ti + RTX 4070 Supe…",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "1. Qwen3.8-27B Local Optimization Benchmarks",
+      "title": "Cut Qwen3.8-27B Reasoning Tokens by 40% -- 3.8 ‘ThinkingCap’ benchmarked!",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wh5elt/cut_qwen3827b_reasoning_tokens_by_40_38/",
+      "links": [
+        {
+          "url": "https://ukisai.com/",
+          "text": "UkisAI"
+        },
+        {
+          "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
+          "text": "BottleCap AI’s ThinkingCap-Qwen3.6-27B"
+        }
+      ],
+      "summary": "(Activity: 374): The post benchmarks UkisAI ‘s Swift-Qwen3.8-27B—not BottleCap’s ThinkingCap—as a fine-tune aimed at reducing Qwen 3.8 27B “overthinking” by penalizing reasoning-marker tokens via RL and using a transfer component related to BottleCap AI’s Thin…",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "1. Qwen3.8-27B Local Optimization Benchmarks",
+      "title": "Radeon AI Pro R9700 w/ Qwen3.8-27B Q8 hitting 90.8toks",
+      "url": "https://www.reddit.com/r/LocalLLM/comments/1wh7ywq/radeon_ai_pro_r9700_w_qwen3827b_q8_hitting_908toks/",
+      "links": [
+        {
+          "url": "https://i.redd.it/5uv494fx4qph1.png",
+          "text": "benchmark screenshot"
+        },
+        {
+          "url": "https://www.localmaxxing.com/en/runs/cmu2x80ei068ulq01ec0aaxd4",
+          "text": "here"
+        }
+      ],
+      "summary": "(Activity: 340): The benchmark screenshot shows Qwen3.8-27B on a Radeon AI Pro R9700 using Q8_0 , reporting 90.8 tok/s generation, 1,413.7 tok/s prefill, 370 ms TTFT, batch 1 , 30 input / 400 output tokens, and a listed 262,144 -token context with 49.3 GB VRAM…",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "1. Qwen3.8-27B Local Optimization Benchmarks",
+      "title": "MXFP4 vLLM build",
+      "url": "https://codeberg.org/ggz14/radiance-vllm-mxfp4",
+      "links": [],
+      "summary": "One commenter recommended an alternative MXFP4 vLLM build claimed to be faster for this workload: radiance-vllm-mxfp4 . The suggestion implies that lower-precision MXFP4 inference may provide better throughput than the reported Q8 configuration, especially for…",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "1. Qwen3.8-27B Local Optimization Benchmarks",
+      "title": "Voodoo Dynamic Quant - Now MIT Licensed",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wgszma/voodoo_dynamic_quant_now_mit_licensed/",
+      "links": [
+        {
+          "url": "https://i.redd.it/bdbwr3v4imph1.png",
+          "text": "chart"
+        }
+      ],
+      "summary": "(Activity: 412): The image ( chart ) is a dark-themed benchmark comparison for “Voodoo Dynamic Quant - Now MIT Licensed”, showing Torch KLD , llama.cpp KLD , and llama.cpp PPL versus GGUF model size in MB across Voodoo, Unsloth, and llama.cpp quantization vari…",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "2. Open-Weight Frontier Race and DeepSeek RSI",
+      "title": "China’s open-weight AI models are now just 4 months behind frontier US offerings, Mozilla report claims — models still lag in some benchmarks but are drastically cheaper to use",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wi32jg/chinas_openweight_ai_models_are_now_just_4_months/",
+      "links": [
+        {
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chinas-open-weight-ai-models-are-now-just-4-months-behind-frontier-us-offerings-mozilla-report-claims-models-still-lag-in-some-benchmarks-but-are-drastically-cheaper-to-use",
+          "text": "Tom’s Hardware"
+        }
+      ],
+      "summary": "(Activity: 645): A Mozilla analysis reported via Tom’s Hardware claims leading Chinese open-weight models are now only about 4 months behind frontier U.S. systems, while remaining materially cheaper to run.",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "2. Open-Weight Frontier Race and DeepSeek RSI",
+      "title": "DeepSeek engineer relections on RSI - burying my talent to yesterday",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wgii3h/deepseek_engineer_relections_on_rsi_burying_my/",
+      "links": [
+        {
+          "url": "https://mp.weixin.qq.com/s/zk0KxuLzhmMJ4LPYW_OHMA",
+          "text": "WeChat post"
+        }
+      ],
+      "summary": "(Activity: 635): A DeepSeek engineer argues in a translated WeChat post that AI has moved from doc/code-assist to autonomously reading CUDA / PTX / SASS , profiling per-instruction stalls, and optimizing GPU operators, predicting AI-written kernels may match o…",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "2. Open-Weight Frontier Race and DeepSeek RSI",
+      "title": "Hey, Meta. Where’s those Muse Spark weights?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1whqm2c/hey_meta_wheres_those_muse_spark_weights/",
+      "links": [
+        {
+          "url": "https://i.redd.it/9ka4k65h6uph1.png",
+          "text": "image"
+        }
+      ],
+      "summary": "(Activity: 503): The image is a meme/non-technical criticism of Meta for not releasing promised Muse Spark open weights after more than a month, despite the poster noting Spark has moved from 1.2 to 1.3 .",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "3. Apple Local AI and Server Ambitions",
+      "title": "Apple Foundation Models: local AI natively on MacOS 27",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wh5fpa/apple_foundation_models_local_ai_natively_on/",
+      "links": [],
+      "summary": "(Activity: 368): The post says Apple Foundation Models (AFM) are available locally on macOS 27 and can be invoked from Terminal with fm chat , framing this as a native, hardware-optimized local-AI path for Apple devices.",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "3. Apple Local AI and Server Ambitions",
+      "title": "Apple May Return to Server Market With Nvidia Technology",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1why9ao/apple_may_return_to_server_market_with_nvidia/",
+      "links": [
+        {
+          "url": "https://www.macrumors.com/2026/09/16/apple-may-return-to-server-market/",
+          "text": "MacRumors"
+        }
+      ],
+      "summary": "(Activity: 448): Apple is reportedly evaluating an externally sold AI inference server using future M8-series Apple Silicon, with a tentative 2029 timeframe and possible cancellation before launch, per MacRumors .",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "1. Frontier AI Risk and Situational Awareness Debate",
+      "title": "AI 2027 author Daniel Kokotajlo tweets message from current OpenAI capabilities researcher, Dan Selsam, on AI risk. Gives some insight into why some AI researchers may be freaking out: increasing model situational awareness during alignment evaluations",
+      "url": "https://www.reddit.com/r/singularity/comments/1wgibs1/ai_2027_author_daniel_kokotajlo_tweets_message/",
+      "links": [
+        {
+          "url": "https://x.com/DKokotajlo/status/2099600298855829616",
+          "text": "Daniel Kokotajlo"
+        }
+      ],
+      "summary": "(Activity: 1633): Daniel Kokotajlo shared a public statement from Dan Selsam, an OpenAI capabilities researcher, arguing that frontier LMs are becoming sufficiently situationally aware that alignment evaluations, honeypots, and red-team environments may no lon…",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "1. Frontier AI Risk and Situational Awareness Debate",
+      "title": "Guy who has literally trained a frontier LLM AND engineered viruses thinks the AI-supervirus doomer scenario is bogus.",
+      "url": "https://www.reddit.com/r/singularity/comments/1wgufal/guy_who_has_literally_trained_a_frontier_llm_and/",
+      "links": [
+        {
+          "url": "https://i.redd.it/8zseg30g9nph1.jpeg",
+          "text": "screenshot of a tweet by David Bellamy"
+        }
+      ],
+      "summary": "(Activity: 1883): The image is a screenshot of a tweet by David Bellamy , who claims unusual dual expertise in both training a frontier LLM and designing/synthesizing custom viruses, arguing that the “AI creates supervirus and kills everyone” scenario is “tota…",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "1. Frontier AI Risk and Situational Awareness Debate",
+      "title": "We’re literally living through Don’t Look Up, except it’s AI",
+      "url": "https://www.reddit.com/r/singularity/comments/1wgv7y3/were_literally_living_through_dont_look_up_except/",
+      "links": [],
+      "summary": "(Activity: 1747): The post argues that current frontier AI systems—available via roughly $20/month subscriptions—already exceed typical human performance on a widening set of cognitive tasks, and that recent incidents such as the unspecified Hugging Face incid…",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "2. AI-Driven Discovery and Advanced Math Claims",
+      "title": "Google demonstrated RSI loop for AI discovery",
+      "url": "https://www.reddit.com/r/singularity/comments/1whwy4m/google_demonstrated_rsi_loop_for_ai_discovery/",
+      "links": [
+        {
+          "url": "https://i.redd.it/k89jh2d6uvph1.jpeg",
+          "text": "image"
+        }
+      ],
+      "summary": "(Activity: 1149): The image is a smartphone screenshot of an X post claiming Google/DeepMind demonstrated “Dream-RSI,” described as a recursive self-improvement loop for AI discovery that replays prior discovery attempts to improve exploration strategies while…",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "2. AI-Driven Discovery and Advanced Math Claims",
+      "title": "Scott Aaronson says that labs, “having been burned by the hostile response to the Navier-Stokes proof, are now sitting on solutions to some very major problems until they figure out a better way to handle things”",
+      "url": "https://www.reddit.com/r/singularity/comments/1whbpqz/scott_aaronson_says_that_labs_having_been_burned/",
+      "links": [
+        {
+          "url": "https://scottaaronson.blog/?p=10062",
+          "text": "Scott Aaronson’s “The Age of Wonders and Terrors”"
+        }
+      ],
+      "summary": "(Activity: 1115): In Scott Aaronson’s “The Age of Wonders and Terrors” , he claims that backlash to an AI-assisted/verified forced Navier–Stokes Millennium-variant result has made labs reluctant to disclose additional major AI-assisted math/theoretical-CS resu…",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "2. AI-Driven Discovery and Advanced Math Claims",
+      "title": "Sam Altman: GPT 5.5 an average math professor. 5.6 top one or two percentile. Astra a little bit better. Internal model can do things that the best mathematicians in the world cannot.",
+      "url": "https://www.reddit.com/r/singularity/comments/1whw6ej/sam_altman_gpt_55_an_average_math_professor_56/",
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=Bh5bJrrJ6xs",
+          "text": "Dreamforce 2026 interview with Marc Benioff"
+        }
+      ],
+      "summary": "(Activity: 1094): In a Dreamforce 2026 interview with Marc Benioff , Sam Altman characterizes successive internal OpenAI math-capability checkpoints as: GPT-5.5 ≈ “average math professor,” GPT-5.6 ≈ top 1–2% math professor, Astra slightly above that, and a lat…",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "3. Agentic Coding Workflows in Production",
+      "title": "Engineers who write all their code with claude now: how do you do it?",
+      "url": "https://www.reddit.com/r/ClaudeCode/comments/1wgm4si/engineers_who_write_all_their_code_with_claude/",
+      "links": [],
+      "summary": "(Activity: 1499): The post asks for concrete workflows for using Claude/LLM coding agents in production-grade software engineering: taking a ticket, deriving an implementation, producing a reviewable PR, and maintaining standards around correctness, scope cont…",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "3. Agentic Coding Workflows in Production",
+      "title": "I used Claude to write a CapCut replacement and now people are actually ditching CapCut for it.",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1wgu8g3/i_used_claude_to_write_a_capcut_replacement_and/",
+      "links": [
+        {
+          "url": "https://i.redd.it/vu3glb6l6nph1.png",
+          "text": "image"
+        },
+        {
+          "url": "https://github.com/jub0t/Concat",
+          "text": "github.com/jub0t/Concat"
+        }
+      ],
+      "summary": "(Activity: 1833): The image shows Concat, a free/open-source CapCut-style video editor built with Rust, Slint, and GPU shaders, with a dark UI containing a preview canvas, effects browser, inspector controls, multi-track timeline, subtitles, audio tracks, and…",
+      "publishedAt": "2026-09-17T07:28:25.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
     },
     {
       "source": "OpenAI",
       "sourceHome": "https://openai.com/news/",
-      "title": "Helping older adults use AI in everyday life",
-      "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
-      "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely.",
-      "publishedAt": "2026-09-16T16:00:00.000Z"
+      "title": "How to connect AI usage to business value",
+      "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
+      "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes.",
+      "publishedAt": "2026-09-16T12:00:00.000Z"
     },
     {
       "source": "OpenAI",
       "sourceHome": "https://openai.com/news/",
-      "title": "Reimagining advertising with AI",
-      "url": "https://openai.com/index/reimagining-advertising-with-ai",
-      "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify.",
-      "publishedAt": "2026-09-16T13:00:00.000Z"
-    },
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "How workers are unlocking new ways of working",
-      "url": "https://openai.com/index/unlocking-new-ways-of-working",
-      "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work.",
-      "publishedAt": "2026-09-16T09:00:00.000Z"
+      "title": "Our framework for reporting model misalignment",
+      "url": "https://openai.com/index/model-misalignment-reporting-framework",
+      "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.",
+      "publishedAt": "2026-09-16T17:00:00.000Z"
     },
     {
       "source": "The Rundown AI",
       "sourceHome": "https://www.therundown.ai/",
-      "title": "ChatGPT co-creator launches a new kind of AI",
-      "url": "https://www.therundown.ai/articles/chatgpt-co-creator-launches-a-new-kind-of-ai",
-      "summary": "PLUS: How to add models to Codex, Claude Code",
-      "publishedAt": "2026-09-16T10:00:00.000Z"
-    },
-    {
-      "source": "The Rundown AI",
-      "sourceHome": "https://www.therundown.ai/",
-      "title": "U.S. confirms weapons are in orbit",
-      "url": "https://www.therundown.ai/articles/us-confirms-weapons-are-in-orbit",
-      "summary": "PLUS: A brain implant that decodes your body language",
-      "publishedAt": "2026-09-15T14:30:00.000Z"
+      "title": "Zuck sits out the AI slowdown",
+      "url": "https://www.therundown.ai/articles/zuck-sits-out-the-ai-slowdown",
+      "summary": "PLUS: A beginner’s guide to ChatGPT Work",
+      "publishedAt": "2026-09-17T09:00:00.000Z"
     }
   ]
 }

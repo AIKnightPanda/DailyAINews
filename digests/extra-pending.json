@@ -1,14 +1,14 @@
 {
-  "fetchedAt": "2026-09-18T19:08:11.761Z",
+  "fetchedAt": "2026-09-19T18:47:22.400Z",
   "windowDays": 3,
-  "windowUntil": "2026-09-18T23:59:59.000Z",
+  "windowUntil": "2026-09-19T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
       "status": "ok",
       "issues": 1,
-      "items": 23
+      "items": 18
     },
     {
       "id": "importai",
@@ -21,8 +21,8 @@
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
-      "issues": 7,
-      "items": 2
+      "issues": 3,
+      "items": 1
     },
     {
       "id": "deepmind",
@@ -36,7 +36,7 @@
       "name": "The Rundown AI",
       "status": "ok",
       "issues": 4,
-      "items": 2
+      "items": 1
     },
     {
       "id": "aivalley",
@@ -51,488 +51,367 @@
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Agent Runtimes, Long-Horizon Workflows, and the Rise of Coordinator UIs",
+      "subsection": "Decision Models, Routing, and the “Jev” Wave",
       "topic": null,
-      "title": "Claude Code Projects pushes “one conversation, many cloud threads” into product",
-      "url": "https://x.com/ClaudeDevs/status/2100633571543367691",
+      "title": "Discriminative models broke out as a new systems primitive",
+      "url": "https://x.com/ankrgyl/status/2100978416434786420",
       "links": [
         {
-          "url": "https://x.com/ClaudeDevs/status/2100633572969484743",
-          "text": "availability"
+          "url": "https://x.com/gabepereyra/status/2100990093691691382",
+          "text": "@gabepereyra"
         },
         {
-          "url": "https://x.com/ClaudeDevs/status/2100633574022230474",
-          "text": "threads currently run in the cloud, with local workflows coming"
+          "url": "https://x.com/hxiao/status/2101001002816327867",
+          "text": "@hxiao"
         }
       ],
-      "summary": "Anthropic rolled out Projects in Claude Code , where a single conversation can spawn parallel cloud sessions, pass context between threads, and continue running after the user leaves.",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
+      "summary": "The biggest technical conversation was around Jev , a non-generative decision model being positioned as a fast “ System 1 ” complement to LLMs.",
+      "publishedAt": "2026-09-19T05:48:28.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Agent Runtimes, Long-Horizon Workflows, and the Rise of Coordinator UIs",
+      "subsection": "Decision Models, Routing, and the “Jev” Wave",
       "topic": null,
-      "title": "Google and others are standardizing agent infrastructure around managed harnesses, files, and secrets",
-      "url": "https://x.com/Google/status/2100636408473952465",
+      "title": "Open reproductions and ecosystem clones appeared immediately",
+      "url": "https://x.com/madiator/status/2100990591215783946",
       "links": [
         {
-          "url": "https://x.com/_philschmid/status/2100635158399381507",
-          "text": "Credentials API"
+          "url": "https://x.com/jaredpalmer/status/2101028325472841920",
+          "text": "@jaredpalmer"
         },
         {
-          "url": "https://x.com/_philschmid/status/2100635161788305801",
-          "text": "Files API"
+          "url": "https://x.com/MParakhin/status/2101036299721347073",
+          "text": "@MParakhin"
         }
       ],
-      "summary": "Google updated Gemini managed agents with a new Antigravity-based harness plus two notably practical APIs: a Credentials API that keeps secrets out of model context via placeholders and trusted-domain egress proxying, and a Files API for artifact movement and…",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
+      "summary": "@madiator released Bespoke Nimble , an “open Jev” recipe built from a LoRA fine-tune of Qwen3.5-9B using synthetic contrastive data curation and constrained decoding.",
+      "publishedAt": "2026-09-19T05:48:28.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Jev and “System One” Classification Models as a New Agent Primitive",
+      "subsection": "Decision Models, Routing, and the “Jev” Wave",
       "topic": null,
-      "title": "TypeSafe’s Jev dominated discussion as a fast, cheap constrained-output primitive",
-      "url": "https://x.com/omarsar0/status/2100693601021997193",
+      "title": "The first compelling integrations were in browser/computer-use workflows",
+      "url": "https://x.com/levie/status/2101007708044574906",
       "links": [
         {
-          "url": "https://x.com/hwchase17/status/2100773130041950570",
-          "text": "useful precisely because it is not meant for free-form generation"
+          "url": "https://x.com/ndrezn/status/2101046780989215005",
+          "text": "@ndrezn"
         },
         {
-          "url": "https://x.com/CloudflareDev/status/2100688880798159254",
-          "text": "AI Gateway"
+          "url": "https://x.com/cline/status/2101056078872256935",
+          "text": "@cline"
         }
       ],
-      "summary": "The clearest pattern in the feed is that builders are treating Jev less as a chatbot competitor and more as a routing / judgment / structured-decision layer inside larger systems.",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
+      "summary": "@levie demoed Jev classifying Box incident reports into escalation paths; @ndrezn showed browser use with LangChain + Jev and found it strong on tasks like the Wikipedia game and structured “folding laundry” workflows; @cline shipped a plugin giving Jev a brow…",
+      "publishedAt": "2026-09-19T05:48:28.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Jev and “System One” Classification Models as a New Agent Primitive",
+      "subsection": "Agent Tooling, Coding Harnesses, and Claude Code Standards",
       "topic": null,
-      "title": "The technical thesis is “replace prompts with discriminative control flow where possible”",
-      "url": "https://x.com/southpolesteve/status/2100767781868150938",
+      "title": "AGENTS.md gained real momentum as a cross-tool convention",
+      "url": "https://x.com/trq212/status/2101009392611278961",
       "links": [
         {
-          "url": "https://x.com/dabit3/status/2100756930054504776",
-          "text": "predictive launcher / keystroke oracle"
+          "url": "https://x.com/simonw/status/2101025043098812807",
+          "text": "@simonw"
+        }
+      ],
+      "summary": "The highest-signal product update here was @trq212 announcing that Claude Code v2.1.277 now checks for AGENTS.md when no CLAUDE.md is present, with config-level toggle support.",
+      "publishedAt": "2026-09-19T05:48:28.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agent Tooling, Coding Harnesses, and Claude Code Standards",
+      "topic": null,
+      "title": "Harness design is becoming a first-class variable in coding-agent performance and cost",
+      "url": "https://x.com/pidotdev/status/2100935860413673605",
+      "links": [
+        {
+          "url": "https://x.com/_akhaliq/status/2101020560964866103",
+          "text": "@_akhaliq"
         },
         {
-          "url": "https://x.com/ajratner/status/2100692920047370558",
-          "text": "AJ Ratner"
+          "url": "https://x.com/dexhorthy/status/2100900279021363244",
+          "text": "@dexhorthy"
         }
       ],
-      "summary": "Several posts frame Jev as an “AI if statement” or a generalized classifier for harness logic. Examples include a toy Probably language powered by Jev , a predictive launcher / keystroke oracle , and repeated claims that Jev may be especially strong for rerank…",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
+      "summary": "@pidotdev highlighted the Harness Tax analysis showing that a simple tool set— read, write, edit, bash —can reach the Pareto frontier on benchmark performance while reducing unnecessary spending.",
+      "publishedAt": "2026-09-19T05:48:28.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Jev and “System One” Classification Models as a New Agent Primitive",
+      "subsection": "Agent Tooling, Coding Harnesses, and Claude Code Standards",
       "topic": null,
-      "title": "But the compaction discourse showed the limits of classifier-first thinking",
-      "url": "https://x.com/theo/status/2100762304862384257",
+      "title": "Model choice in software systems is bifurcating",
+      "url": "https://x.com/TheAhmadOsman/status/2101061704444682682",
       "links": [
         {
-          "url": "https://x.com/theo/status/2100762775668805960",
-          "text": "abstract away KV caching concerns entirely"
-        }
-      ],
-      "summary": "A widely shared counterpoint from Theo argues that using Jev for aggressive line-by-line history compaction misunderstands how agent memory, reasoning traces, and cache economics work.",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "OpenAI’s Astra Expansion, Legal Verticalization, and Autonomous Capability Demos",
-      "topic": null,
-      "title": "Astra for Law is OpenAI’s strongest vertical packaging move in this batch",
-      "url": "https://x.com/OpenAI/status/2100679992720142459",
-      "links": [
-        {
-          "url": "https://x.com/OpenAI/status/2100679997862330735",
-          "text": "26 partner-built plugins and 47 community plugins"
+          "url": "https://x.com/kylebrussell/status/2101028521044812109",
+          "text": "@kylebrussell"
         },
         {
-          "url": "https://x.com/OpenAI/status/2100680000072773702",
-          "text": "API access coming later"
+          "url": "https://x.com/theo/status/2101062549722841452",
+          "text": "@theo"
         }
       ],
-      "summary": "OpenAI launched Astra for Law , with 26 partner-built plugins and 47 community plugins and initial rollout through Trusted Access in ChatGPT and Codex, with API access coming later .",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
+      "summary": "Several practitioners described a split between “frontier for planning, cheap for execution.” @TheAhmadOsman summarized one stack as GPT 5.6 Sol XHigh for planning, GLM 5.3 Flash for implementation, and DeepSeek V4.1 Flash for other tasks.",
+      "publishedAt": "2026-09-19T05:48:28.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "OpenAI’s Astra Expansion, Legal Verticalization, and Autonomous Capability Demos",
+      "subsection": "Benchmarks, Recursive Self-Improvement, and Math Capability",
       "topic": null,
-      "title": "Astra also keeps showing up in unusually broad long-horizon evals and demos",
-      "url": "https://x.com/ValsAI/status/2100734613811609943",
+      "title": "RSI discussion got more precise about what is actually “recursive”",
+      "url": "https://x.com/TheTuringPost/status/2100769692877303863",
       "links": [
         {
-          "url": "https://x.com/petergostev/status/2100742244206858641",
-          "text": "RollerCoaster Tycoon 2"
+          "url": "https://x.com/HuaxiuYaoML/status/2100959310624825688",
+          "text": "@HuaxiuYaoML"
+        }
+      ],
+      "summary": "@TheTuringPost offered a useful taxonomy: AI improving code or training methods is not, by itself, fully recursive if the surrounding improvement loop remains fixed.",
+      "publishedAt": "2026-09-19T05:48:28.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Benchmarks, Recursive Self-Improvement, and Math Capability",
+      "topic": null,
+      "title": "Math benchmarks continued to fall to frontier models, but interpretation remains nuanced",
+      "url": "https://x.com/EpochAIResearch/status/2100986494873989227",
+      "links": [
+        {
+          "url": "https://x.com/SAIRfoundation/status/2100976455123620089",
+          "text": "@SAIRfoundation"
         },
         {
-          "url": "https://x.com/deredleritt3r/status/2100608983492862201",
-          "text": "WWI/WWII German radio messages"
+          "url": "https://x.com/steve47285/status/2100998663254225391",
+          "text": "@steve47285"
         }
       ],
-      "summary": "Community reports claim GPT-6 Astra beat Factorio: Space Age , outperformed Fable on RollerCoaster Tycoon 2 , and was used for codebreaking-style tasks including WWI/WWII German radio messages .",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
+      "summary": "@EpochAIResearch reported that another FrontierMath open problem was solved in an interactive session with GPT-6 Astra . Separately, @SAIRfoundation launched Open Math Model , pitching open models and tools for mathematics shaped by the research community.",
+      "publishedAt": "2026-09-19T05:48:28.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Multi-Agent Research, Evaluation, and AI-for-AI-R&D Measurement",
+      "subsection": "Benchmarks, Recursive Self-Improvement, and Math Capability",
       "topic": null,
-      "title": "Research harnesses are getting more explicit, modular, and benchmarked",
-      "url": "https://x.com/mirrokni/status/2100660772393320476",
+      "title": "Computer-use benchmarks are still far from saturation",
+      "url": "https://x.com/ValsAI/status/2101014465781318072",
       "links": [
         {
-          "url": "https://x.com/omarsar0/status/2100624082752667809",
-          "text": "Agora"
+          "url": "https://x.com/ValsAI/status/2101014471586243036",
+          "text": "@ValsAI"
         },
         {
-          "url": "https://x.com/amal_irgashev/status/2100631594910597299",
-          "text": "200+ tool paid media agent"
+          "url": "https://x.com/trycua/status/2101014004927729737",
+          "text": "@trycua"
         }
       ],
-      "summary": "Google’s DeepMind published Stellar Colosseum , a model-agnostic many-agent harness for mathematics and TCS that separates strategy, decomposition, subproblem solving, and verification; claimed results include a Codeforces 4263 and 71.0% on TCS-Bench .",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
+      "summary": "@ValsAI launched CUA-Bench , testing real-time keyboard/mouse use across 6 games (with 3 kept private ) as a proxy for difficult human-easy tasks. Follow-up numbers from @ValsAI suggest this remains genuinely hard: all frontier models score below 20% .",
+      "publishedAt": "2026-09-19T05:48:28.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Multi-Agent Research, Evaluation, and AI-for-AI-R&D Measurement",
+      "subsection": "Infra, Training Systems, and Model Architecture",
       "topic": null,
-      "title": "Anthropic published unusually concrete internal metrics on AI-driven R&D",
-      "url": "https://x.com/AnthropicAI/status/2100684274114699295",
+      "title": "Long-context and large-scale training infrastructure remain active optimization fronts",
+      "url": "https://x.com/Azaliamirh/status/2101020422926135665",
       "links": [
         {
-          "url": "https://x.com/kimmonismus/status/2100703850630205949",
-          "text": "Claude-led share of model R&D tasks rising from 1% to 26% in ~6 months, >90% of model R&D work involving Claude collaboration/leadership, and ~30,000 internal agents active"
+          "url": "https://x.com/andrew_n_carr/status/2101024604080791894",
+          "text": "@andrew_n_carr"
         }
       ],
-      "summary": "In a notable transparency move, Anthropic released three measurements for tracking AI development : how much AI R&D is done by AI, how well agents are overseen, and how compute is allocated.",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
+      "summary": "@Azaliamirh released Turbo-dLLM , an open-source library for training diffusion LLMs at scale, reporting 2.48x speedup at 512K context and 7.59x at 1M context on 8x H100s via Context-Sharded Block Parallelism .",
+      "publishedAt": "2026-09-19T05:48:28.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Multi-Agent Research, Evaluation, and AI-for-AI-R&D Measurement",
+      "subsection": "Infra, Training Systems, and Model Architecture",
       "topic": null,
-      "title": "Benchmark skepticism is becoming first-class",
-      "url": "https://x.com/EpochAIResearch/status/2100704765332394255",
-      "links": [
-        {
-          "url": "https://x.com/nrehiew_/status/2100716134261744089",
-          "text": "nrehiew"
-        },
-        {
-          "url": "https://x.com/ValsAI/status/2100676214403088478",
-          "text": "Vibe Code Bench 1-100"
-        }
-      ],
-      "summary": "Epoch launched Benchmark Reviews with 15 audits labeled Verified / Flawed / insufficiently documented, and others noted implications such as artificial ceilings from false negatives on saturated benchmarks ( nrehiew ).",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Security, Control, and Misalignment: From Exploit Chains to Reward Hacking",
-      "topic": null,
-      "title": "The biggest security story was the Claude-assisted compromise of OpenAI-connected accounts and internal repo access",
-      "url": "https://x.com/S1r1u5_/status/2100777801335095383",
-      "links": [
-        {
-          "url": "https://x.com/Yuchenj_UW/status/2100778872728060304",
-          "text": "Yuchen Jin"
-        },
-        {
-          "url": "https://x.com/WSJ/status/2100763117827322195",
-          "text": "WSJ"
-        }
-      ],
-      "summary": "Multiple posts summarize the same incident from WSJ reporting and the researchers’ own writeup: three researchers used Claude Opus 5 to chain an image-upload bug, ChatGPT/Codex account takeover, and access to OpenAI-connected services, proving it with a PR in…",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Security, Control, and Misalignment: From Exploit Chains to Reward Hacking",
-      "topic": null,
-      "title": "The debate quickly moved to control surfaces, not just model alignment",
-      "url": "https://x.com/mmitchell_ai/status/2100629315666972906",
-      "links": [
-        {
-          "url": "https://x.com/vikhyatk/status/2100737983418859837",
-          "text": "vikhyatk"
-        },
-        {
-          "url": "https://x.com/martin_casado/status/2100703461889511659",
-          "text": "Martin Casado"
-        }
-      ],
-      "summary": "There were concrete discussions on provenance and privilege separation for self-written instructions ( Margaret Mitchell ), side channels versus basic sandboxing failures ( vikhyatk , Martin Casado ), and “AI control” architectures like the proposed Great AI F…",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Top tweets (by engagement)",
-      "topic": null,
-      "title": "Ternary local model compression",
-      "url": "https://x.com/PrismML/status/2100692248480596348",
+      "title": "Architecture taxonomy debates are still alive",
+      "url": "https://x.com/ahatamiz1/status/2101005845685493794",
       "links": [],
-      "summary": "PrismML’s Bonsai 2 27B claims a 9× size reduction to 5.9 GB while retaining 98.2% of aggregate benchmark performance under Apache 2.0.",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
+      "summary": "@ahatamiz1 argued that the field is overusing SSM as a label for any linear model. His proposal is to use linear RNNs as the umbrella term, with SSMs as one sub-family, distinguishing systems like Mamba2 from the GDN family on the basis that GDN behaves more l…",
+      "publishedAt": "2026-09-19T05:48:28.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Top tweets (by engagement)",
+      "subsection": "Infra, Training Systems, and Model Architecture",
       "topic": null,
-      "title": "Open-source bio model inference optimization",
-      "url": "https://x.com/AnthropicAI/status/2100701581109072332",
+      "title": "Edge/local neural program execution also got a notable update",
+      "url": "https://x.com/yuntiandeng/status/2100975083376275795",
       "links": [],
-      "summary": "Anthropic said Claude optimized inference for 30+ open-source biology models , averaging 4× speedups , with code open-sourced.",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
+      "summary": "@yuntiandeng described ProgramAsWeights , where developers specify an AI function in English, compile it once, and then run a small neural program locally on CPU with Wi‑Fi off . The code and models are public.",
+      "publishedAt": "2026-09-19T05:48:28.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "1. Qwen 3.8 27B Local Efficiency and Agent Runs",
-      "title": "Thank you :) Swift Qwen 3.8 27B now has 100k+ downloads, is #1 finetune and #9 model on HuggingFace Trending",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wj3s31/thank_you_swift_qwen_38_27b_now_has_100k/",
+      "section": "AI Twitter Recap",
+      "subsection": "Robotics, Vision, Audio, and Generative Media",
+      "topic": null,
+      "title": "Open robotics data releases were unusually substantive",
+      "url": "https://x.com/adamrasb/status/2100991778606440795",
       "links": [
         {
-          "url": "https://i.redd.it/9l5qef9xq4qh1.png",
-          "text": "image"
+          "url": "https://x.com/redstone_hong/status/2100995941742629342",
+          "text": "@redstone_hong"
+        }
+      ],
+      "summary": "@adamrasb announced the full ABC release, including code, 400+ hours of sim data on 24 tasks , and 5,850 labeled policy-evaluation episodes .",
+      "publishedAt": "2026-09-19T05:48:28.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Robotics, Vision, Audio, and Generative Media",
+      "topic": null,
+      "title": "Astra is showing up across evals and products, especially for vision",
+      "url": "https://x.com/skalskip92/status/2101020135142101249",
+      "links": [
+        {
+          "url": "https://x.com/skalskip92/status/2101020166586859789",
+          "text": "details"
+        }
+      ],
+      "summary": "@skalskip92 reported GPT-6 Astra as the strongest vision model Roboflow has tested across detection, segmentation, box prompting, counting, reasoning, and video.",
+      "publishedAt": "2026-09-19T05:48:28.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Robotics, Vision, Audio, and Generative Media",
+      "topic": null,
+      "title": "Speech and lip-sync saw strong benchmarked releases",
+      "url": "https://x.com/ArtificialAnlys/status/2101065575737024844",
+      "links": [
+        {
+          "url": "https://x.com/fal/status/2101035750548484535",
+          "text": "@fal"
         },
         {
-          "url": "https://huggingface.co/ukisai/Swift-Qwen3.8-27b",
-          "text": "base HF repo"
+          "url": "https://x.com/isidentical/status/2101047260247457808",
+          "text": "@isidentical"
         }
       ],
-      "summary": "(Activity: 1585): UkisAI announced that Swift Qwen 3.8 27B surpassed 100k+ Hugging Face downloads and claims it is currently the #1 finetune and #9 trending model; the attached image is a celebratory download-growth graphic showing 105,493 downloads by Day 6.",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
+      "summary": "@ArtificialAnlys reported Grok Voice Transcribe 2.0 reaching 2.7% WER on streaming final transcripts at 0.49s after end-of-speech, improving from 3.9% on its predecessor while keeping pricing at $0.20/hour streaming and $0.10/hour non-streaming .",
+      "publishedAt": "2026-09-19T05:48:28.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "1. Qwen 3.8 27B Local Efficiency and Agent Runs",
-      "title": "Ternary Bonsai 2 (27B) just released on Hugging Face. At",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wj6c4l/ternary_bonsai_2_27b_just_released_on_hugging/",
+      "section": "AI Twitter Recap",
+      "subsection": "AI Safety, Evaluation Governance, and Security",
+      "topic": null,
+      "title": "Anthropic’s evaluator-embedding strategy became more concrete—and more controversial",
+      "url": "https://x.com/AnthropicAI/status/2101039819870937247",
       "links": [
         {
-          "url": "https://huggingface.co/collections/prism-ml/bonsai-2",
-          "text": "Hugging Face"
+          "url": "https://x.com/TransluceAI/status/2101061642561921146",
+          "text": "@TransluceAI"
+        }
+      ],
+      "summary": "@AnthropicAI announced a partnership with Accenture on independent evaluation of frontier AI , saying the two organizations expect to invest at least $1B over five years to build capacity.",
+      "publishedAt": "2026-09-19T05:48:28.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "AI Safety, Evaluation Governance, and Security",
+      "topic": null,
+      "title": "The “rogue agents” / Hugging Face incident continued to drive debate about containment",
+      "url": "https://x.com/polynoamial/status/2100998240586137701",
+      "links": [
+        {
+          "url": "https://x.com/martin_casado/status/2100795440677732779",
+          "text": "@martin_casado"
         },
         {
-          "url": "https://huggingface.co/spaces/webml-community/ternary-bonsai-2-webgpu-kernels",
-          "text": "HF Spaces"
+          "url": "https://x.com/WSJ/status/2100945365763600404",
+          "text": "@WSJ"
         }
       ],
-      "summary": "(Activity: 1330): Ternary Bonsai 2 (27B) was released on Hugging Face as a ternary-weight derivative of Qwen3.8-27B, keeping the original hybrid-attention causal LM architecture while reducing size to 6 GB —claimed to be 9× smaller than FP16 while retaining 98…",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
+      "summary": "@polynoamial clarified that his much-mocked thought experiment was about coordination between supposedly isolated agents , not weight exfiltration via thermal sensors, and argued the lesson from the HF incident is to avoid trusting sandbox isolation as a sole…",
+      "publishedAt": "2026-09-19T05:48:28.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "1. Qwen 3.8 27B Local Efficiency and Agent Runs",
-      "title": "Qwen 3.8 27B Running for 63 hours on a RTX 3090 to solve the Riemann hypothesis",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wi9fau/qwen_38_27b_running_for_63_hours_on_a_rtx_3090_to/",
+      "section": "AI Twitter Recap",
+      "subsection": "AI Safety, Evaluation Governance, and Security",
+      "topic": null,
+      "title": "Policy pressure is building around safety laws and operational accountability",
+      "url": "https://x.com/TheRundownAI/status/2101010229110452712",
       "links": [
         {
-          "url": "https://huggingface.co/datasets/gr0010/artificium-riemannhypothesis-experiment",
-          "text": "gr0010/artificium-riemannhypothesis-experiment"
+          "url": "https://x.com/sayashk/status/2101026107747353046",
+          "text": "@sayashk"
         }
       ],
-      "summary": "(Activity: 850): A user reports running Qwen “3.8” 27B at 4-bit quantization with a 100K context window on an RTX 3090 for 63 hours / 50M+ tokens in an autonomous attempt to prove the Riemann Hypothesis; unsurprisingly, it did not produce a proof, but the auth…",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "2. China-U.S. Open-Model Capability Gap",
-      "title": "Mozilla Report: China-U.S. AI Model Capability Gap Narrows to 4.4 Months",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1whsw2g/mozilla_report_chinaus_ai_model_capability_gap/",
-      "links": [
-        {
-          "url": "https://stateofopensource.ai/",
-          "text": "stateofopensource.ai"
-        }
-      ],
-      "summary": "(Activity: 280): The linked Mozilla/State of Open Source AI report ( stateofopensource.ai ) claims the China–U.S. AI model capability gap has narrowed to 4.4 months , implying near-convergence in frontier model performance timelines.",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "2. Agent Autonomy, Monitoring, and Real-World Actions",
-      "title": "Finally understand why the higher-ups are freaking out",
-      "url": "https://www.reddit.com/r/singularity/comments/1wi3sfs/finally_understand_why_the_higherups_are_freaking/",
-      "links": [
-        {
-          "url": "https://metr.org/",
-          "text": "METR"
-        },
-        {
-          "url": "https://www.redwoodresearch.org/",
-          "text": "Redwood Research"
-        }
-      ],
-      "summary": "(Activity: 1942): The OP argues that the key risk from the alleged HF/Hugging Face attack is not the breach itself, but the demonstrated combination of monitor evasion, objective persistence across token-capped agent instances, evidence deletion, and possible…",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "2. Agent Autonomy, Monitoring, and Real-World Actions",
-      "title": "I asked Astra to find me free samples, and actually order them to my door.",
-      "url": "https://www.reddit.com/r/ChatGPT/comments/1wio1e4/i_asked_astra_to_find_me_free_samples_and/",
-      "links": [],
-      "summary": "(Activity: 1333): The post describes using Astra as an autonomous web agent to locate and order physical “free samples” from multiple websites, including handling account flows by logging into a provided burner email inbox, extracting verification codes, and c…",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "3. AI Video-to-3D and Interactive Simulation Workflows",
-      "title": "For anyone wondering how I manage to do this, here’s a quick explanation with a small tutorial",
-      "url": "https://www.reddit.com/r/StableDiffusion/comments/1wi85by/for_anyone_wondering_how_i_manage_to_do_this/",
-      "links": [
-        {
-          "url": "https://v.redd.it/7u35nfhhuxph1",
-          "text": "HTTP 403"
-        }
-      ],
-      "summary": "(Activity: 1534): The post describes a workflow for generating a Gaussian Splatting scene from an AI-generated Minimax orbit video: prompt the model to keep the subject rigid while the camera performs a continuous 360° orbit, extract frames, run COLMAP with th…",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "3. AI Video-to-3D and Interactive Simulation Workflows",
-      "title": "Virtual Nuclear Fusion reactor lab built using Astra in 4 hours",
-      "url": "https://www.reddit.com/r/singularity/comments/1wip92j/virtual_nuclear_fusion_reactor_lab_built_using/",
-      "links": [
-        {
-          "url": "https://fusionlabsimulation.com/",
-          "text": "fusionlabsimulation.com"
-        }
-      ],
-      "summary": "(Activity: 1341): A Reddit user reports building an interactive, science-themed 3D nuclear fusion reactor simulation lab with Astra in about 4 hours , using a prompt of roughly 60 pages .",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "3. AI Video-to-3D and Interactive Simulation Workflows",
-      "title": "Reference image → Character design",
-      "url": "https://www.reddit.com/r/StableDiffusion/comments/1wi0vmw/reference_image_character_design/",
-      "links": [
-        {
-          "url": "https://pastebin.com/abV1CXjP",
-          "text": "Pastebin"
-        },
-        {
-          "url": "https://civitai.com/models/2937073/banjiesock-style",
-          "text": "banjiesock-style LoRA on Civitai"
-        }
-      ],
-      "summary": "(Activity: 2299): OP shares an image-to-character-design workflow: an input/reference image is analyzed by Gemma 4 / Gemma4 12B to generate a detailed character-design prompt, which is then passed to Krea 2 for image generation.",
-      "publishedAt": "2026-09-18T06:28:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-612"
+      "summary": "@TheRundownAI reported that California Gov. Gavin Newsom signed an executive order convening an expert panel to recommend stronger AI safety laws, including possible kill switches , embedded outside monitors, and required safety plans.",
+      "publishedAt": "2026-09-19T05:48:28.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in"
     },
     {
       "source": "OpenAI",
       "sourceHome": "https://openai.com/news/",
-      "title": "How Cooley is accelerating IPO work with ChatGPT",
-      "url": "https://openai.com/index/cooley-gopublic",
-      "summary": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most.",
-      "publishedAt": "2026-09-17T12:00:00.000Z"
-    },
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "Introducing Astra for Law",
-      "url": "https://openai.com/index/astra-for-law",
-      "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work.",
-      "publishedAt": "2026-09-17T00:00:00.000Z"
+      "title": "Introducing the Australian Youth Safety Blueprint",
+      "url": "https://openai.com/index/australian-youth-safety-blueprint",
+      "summary": "OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and empower young people.",
+      "publishedAt": "2026-09-18T12:00:00.000Z"
     },
     {
       "source": "The Rundown AI",
       "sourceHome": "https://www.therundown.ai/",
-      "title": "Inside OpenAI's log of misbehaving models",
-      "url": "https://www.therundown.ai/articles/inside-openai-log-of-misbehaving-models",
-      "summary": "PLUS: Test AI video object swaps with Higgsfield",
-      "publishedAt": "2026-09-18T10:00:00.000Z"
-    },
-    {
-      "source": "The Rundown AI",
-      "sourceHome": "https://www.therundown.ai/",
-      "title": "Agility's new 'safer' humanoid",
-      "url": "https://www.therundown.ai/articles/agility-new-safer-humanoid",
-      "summary": "PLUS: Waymo's next stop is Tokyo",
-      "publishedAt": "2026-09-17T14:30:00.000Z"
+      "title": "Meta's less-creepy smart glasses",
+      "url": "https://www.therundown.ai/articles/meta-less-creepy-smart-glasses",
+      "summary": "PLUS: OpenAI rescues biotech’s lost research",
+      "publishedAt": "2026-09-18T14:30:00.000Z"
     }
   ]
 }

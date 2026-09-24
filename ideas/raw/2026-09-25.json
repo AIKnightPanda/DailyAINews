@@ -1,17 +1,17 @@
 {
   "issue": "2026-09-25",
-  "builtAt": "2026-09-24T20:08:24.634Z",
+  "builtAt": "2026-09-24T21:48:34.427Z",
   "from": {
     "boards": "prefetched",
     "inbox": "live"
   },
   "counts": {
     "fetched": 188,
-    "added": 101,
-    "kept": 101,
-    "dropped": 87,
-    "pool": 100,
-    "screened": 87,
+    "added": 2,
+    "kept": 103,
+    "dropped": 186,
+    "pool": 102,
+    "screened": 89,
     "candidates": 38,
     "demandCandidates": 18,
     "supplyCandidates": 20
@@ -757,7 +757,7 @@
         },
         "reason": null
       },
-      "candidate": true,
+      "candidate": false,
       "deep": {
         "body": "You can configure Windows such that pressing the Ctrl key shows the mouse position: I activate it and a few days later company policy deactivates it. I am not allowed to install software, so is there a gratis portable app, preferably command line, than I can run with a single click or Win+R, rather than having to drill down into it to set? [Update] Note that I have tried reg add \"HKCU\\Control Panel\\Mouse\" /v MouseSonar /t REG_SZ /d 1 /f but that didn't work.",
         "comments": [],
@@ -1256,7 +1256,7 @@
         },
         "reason": null
       },
-      "candidate": true,
+      "candidate": false,
       "deepError": null,
       "deep": {
         "body": "Does Meta still count this as a Lead even if the user doesn’t provide the requested information ? In my ad, the CTA is “Collect user information in WA” . However, out of 100 conversations initiated through the ad, only 2–3 users actually provide the required information. The remaining users simply close the form without submitting anything. Does Meta still consider those users as leads? If so, is there any way to require users to submit the information before they can close or exit the form , since we are paying for these interactions?",
@@ -3734,7 +3734,89 @@
         "hits": []
       },
       "candidate": false
+    },
+    {
+      "id": "ab781712d2",
+      "normUrl": "https://github.com/anthropics/claude-code/issues/91870",
+      "sourceId": "gh-requests",
+      "source": "GitHub 高赞功能请求",
+      "sourceHome": "https://github.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Mods - make Claude 10x more extensible",
+      "url": "https://github.com/anthropics/claude-code/issues/91870",
+      "summary": "# Community Update: Sep 9, 2026 > **AI;DR**: We're shipping in N weeks. Thank you all for the positive feedback, and especially for the insightful, high-signal feedback that has materially shaped our design. We're now committed to shipping function hooks, on the scale of weeks in lieu of days or months. As well, from a product perspective, we are going to be calling this functionality \"Claude Mods\". The engineering term of art 'function hook' will still exist as the documented implementation primitive Mods are built on.",
+      "signal": {
+        "thumbsUp": 126,
+        "comments": 213,
+        "repo": "anthropics/claude-code"
+      },
+      "publishedAt": "2026-09-03T18:00:23Z",
+      "ref": "I102",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "# Community Update: Sep 9, 2026 > **AI;DR**: We're shipping in N weeks. Thank you all for the positive feedback, and especially for the insightful, high-signal feedback that has materially shaped our design. We're now committed to shipping function hooks, on the scale of weeks in lieu of days or months. As well, from a product perspective, we are going to be calling this functionality \"Claude Mods\". The engineering term of art 'function hook' will still exist as the documented implementation primitive Mods are built on.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Show HN: Training a model to identify AI web content from structure alone",
+            "points": 68,
+            "url": "https://news.ycombinator.com/item?id=49800566"
+          }
+        ],
+        "fetchedAt": "2026-09-24T21:48:40.818Z"
+      }
+    },
+    {
+      "id": "86f2a1385b",
+      "normUrl": "https://github.com/openai/codex/issues/41622",
+      "sourceId": "gh-requests",
+      "source": "GitHub 高赞功能请求",
+      "sourceHome": "https://github.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Add a setting to disable automatic conversation recaps in Codex CLI",
+      "url": "https://github.com/openai/codex/issues/41622",
+      "summary": "### What variant of Codex are you using? CLI (codex-cli 0.151.0) ### What feature would you like to see? Please add a documented `config.toml` setting that disables automatic conversation recap generation. ### Additional information For users who already understand the conversation, automatic recaps are unsolicited and distracting; when a recap is wanted, the user can explicitly request one.",
+      "signal": {
+        "thumbsUp": 89,
+        "comments": 22,
+        "repo": "openai/codex"
+      },
+      "publishedAt": "2026-08-30T06:29:30Z",
+      "ref": "I103",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "### What variant of Codex are you using? CLI (codex-cli 0.151.0) ### What feature would you like to see? Please add a documented `config.toml` setting that disables automatic conversation recap generation. ### Additional information For users who already understand the conversation, automatic recaps are unsolicited and distracting; when a recap is wanted, the user can explicitly request one.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-24T21:48:41.018Z"
+      }
     }
   ],
-  "deepenedAt": "2026-09-24T20:23:19.655Z"
+  "deepenedAt": "2026-09-24T21:48:41.018Z"
 }

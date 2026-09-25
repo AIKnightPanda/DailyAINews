@@ -1,14 +1,14 @@
 {
-  "fetchedAt": "2026-09-24T20:04:49.059Z",
+  "fetchedAt": "2026-09-25T20:05:55.083Z",
   "windowDays": 3,
-  "windowUntil": "2026-09-24T23:59:59.000Z",
+  "windowUntil": "2026-09-25T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
       "status": "ok",
       "issues": 1,
-      "items": 39
+      "items": 40
     },
     {
       "id": "importai",
@@ -21,15 +21,15 @@
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
-      "issues": 14,
-      "items": 4
+      "issues": 11,
+      "items": 1
     },
     {
       "id": "deepmind",
       "name": "Google DeepMind",
       "status": "ok",
       "issues": 3,
-      "items": 1
+      "items": 0
     },
     {
       "id": "rundown",
@@ -42,719 +42,666 @@
       "id": "aivalley",
       "name": "AI Valley",
       "status": "ok",
-      "issues": 3,
-      "items": 3
+      "issues": 2,
+      "items": 0
     }
   ],
   "items": [
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "What happened",
+      "section": null,
+      "subsection": null,
       "topic": null,
-      "title": "Keynote framing.",
-      "url": "https://x.com/finkd/status/2102894436992929982",
+      "title": "long overdue",
+      "url": "https://devday.openai.com/",
       "links": [
         {
-          "url": "https://x.com/finkd/status/2102913005730271579",
-          "text": "recap thread"
+          "url": "https://x.com/Smol_AI/status/1725307919141588999",
+          "text": "Discord fatigue"
         },
         {
-          "url": "https://x.com/kimmonismus/status/2102900459791122460",
-          "text": "@kimmonismus"
+          "url": "https://x.com/Smol_AI/status/2014764859989315932",
+          "text": "became LS’s newspaper"
         }
       ],
-      "summary": "@finkd set the keynote for 4pm PT and later posted a recap thread . Live-blogger @kimmonismus summarized the thesis as “personal Superintelligence coming soon,” which means people need hardware to interact with it, so Meta is going all-in on AI glasses.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "Today is the calm before the DevDay storm, so we’re taking some time to share some long overdue changes we are making to Latent Space in the coming week: Plans for AINews v3: This op-ed you are reading has always been human-authored by swyx (hi!!) every weekda…",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "What happened",
+      "section": null,
+      "subsection": null,
       "topic": null,
-      "title": "Muse voice and real-time video.",
-      "url": "https://x.com/finkd/status/2102913007106093300",
+      "title": "Plans for a new home:",
+      "url": "https://www.latent.space/p/science",
       "links": [
         {
-          "url": "https://x.com/alexandr_wang/status/2102923941669171330",
-          "text": "@alexandr_wang"
+          "url": "https://www.latent.space/p/foundries-vs-navigators-lowering",
+          "text": "writing"
         },
         {
-          "url": "https://x.com/Muse/status/2102901319937982968",
-          "text": "@Muse"
+          "url": "https://www.youtube.com/watch?v=jhpmMTus5a0&list=PLRXcLZforLwc",
+          "text": "food"
         }
       ],
-      "summary": "Muse now supports voice and real-time video. It can hold long conversations while working on tasks in the background ( @finkd ). Video chat with a prompt-customizable voice is marked “coming soon” ( @alexandr_wang ).",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "with the success of our AI for Science pod and writing , and new podcasts from food to FDE rising, we’re slowly becoming a multi-show, multi-newsletter network of the best technical news, analysis and edutainment in AI.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "What happened",
+      "section": null,
+      "subsection": null,
       "topic": null,
-      "title": "Muse on glasses.",
-      "url": "https://x.com/alexandr_wang/status/2102919945516630236",
-      "links": [],
-      "summary": "Muse is coming to all Meta glasses, activated by saying its name (a wake word), “coming soon” ( @alexandr_wang ).",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "What happened",
-      "topic": null,
-      "title": "Computer use on Mac.",
-      "url": "https://x.com/alexandr_wang/status/2102916057006764370",
-      "links": [],
-      "summary": "Muse for Mac now does computer use: “queue up your jobs, walk away, and it keeps going” ( @alexandr_wang ).",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "What happened",
-      "topic": null,
-      "title": "Connectors and commerce.",
-      "url": "https://x.com/alexandr_wang/status/2102916777529466928",
+      "title": "Open for business:",
+      "url": "https://select.supabase.com/",
       "links": [
         {
-          "url": "https://x.com/alexandr_wang/status/2103009297802424518",
-          "text": "Spotify"
+          "url": "https://aeo.latent.space/entities?entity=Supabase&entityId=platform%3A4d7594e57f7d03f35ede2d31&cat=integrated-backend",
+          "text": "universally preferred integrated backend by every frontier model"
         },
         {
-          "url": "https://x.com/alexandr_wang/status/2103012868191047997",
-          "text": "Box"
+          "url": "https://supabase.com/blog/supabase-series-f",
+          "text": "0 to $10B"
         }
       ],
-      "summary": "@alexandr_wang showed the connector catalog. Partner graphics were posted for Spotify , Box and an apparent Temu integration.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "with a new Business/Ops Manager and Head of Editorial, we are once again reopening for sponsorships ( business@latent.space ) and PR/ tips ! That said, join us next week at Supabase Select in SF !!!",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "What happened",
+      "subsection": "Frontier Model Wave: Claude Opus 5.5, GPT-6 Astra/Sol/Luna, Gemini 3.8 Flash, and Xiaomi MiMo-V2.6-Pro",
       "topic": null,
-      "title": "Business model and partner list.",
-      "url": "https://x.com/clairejyz/status/2102900337204142261",
-      "links": [],
-      "summary": "@clairejyz compiled the numbers from the keynote: Muse is free for users, but Meta may eventually take a cut of transactions.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "What happened",
-      "topic": null,
-      "title": "Muse Realtime Avatar (research release).",
-      "url": "https://x.com/alexandr_wang/status/2102919552254484765",
+      "title": "Claude Opus 5.5",
+      "url": "https://x.com/AiBattle_/status/2103171713672372379",
       "links": [
         {
-          "url": "https://x.com/AIatMeta/status/2102997291732766943",
-          "text": "@AIatMeta"
+          "url": "https://x.com/skalskip92/status/2103124154765484505",
+          "text": "@skalskip92"
         },
         {
-          "url": "https://x.com/alexandr_wang/status/2102919555647697232",
-          "text": "@alexandr_wang"
+          "url": "https://x.com/ArtificialAnlys/status/2103265959314395457",
+          "text": "Terminal-Bench-Science"
         }
       ],
-      "summary": "A new model animates your Muse in sync with Muse Realtime Voice. It answers in under a second and supports unbounded session length ( @alexandr_wang ; @AIatMeta ). All output is watermarked as AI “without adding latency” ( @alexandr_wang ).",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "Opus 5.5 now leads SimpleBench at 88.4% . On vision evals, @skalskip92 ranks it Anthropic’s best vision model to date: better than Fable 5 and GPT-6 Sol, worse than GPT-6 Astra, at about 60% lower cost than Fable 5.1.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "What happened",
+      "subsection": "Frontier Model Wave: Claude Opus 5.5, GPT-6 Astra/Sol/Luna, Gemini 3.8 Flash, and Xiaomi MiMo-V2.6-Pro",
       "topic": null,
-      "title": "Meta VR Glasses:",
-      "url": "https://x.com/finkd/status/2102913015205265725",
+      "title": "Terminal-Bench-Science leaders",
+      "url": "https://x.com/ArtificialAnlys/status/2103265961487093794",
+      "links": [],
+      "summary": "GPT-6 Astra and Opus 5.5 lead Fable 5.1 by about 20 points. The best model from outside those two labs is Qwen3.8 Max at 12% .",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Frontier Model Wave: Claude Opus 5.5, GPT-6 Astra/Sol/Luna, Gemini 3.8 Flash, and Xiaomi MiMo-V2.6-Pro",
+      "topic": null,
+      "title": "Community sentiment",
+      "url": "https://x.com/theo/status/2103258221700067769",
       "links": [
         {
-          "url": "https://x.com/kimmonismus/status/2102910253583176185",
-          "text": "@kimmonismus"
+          "url": "https://x.com/theo/status/2103242875320615308",
+          "text": "review/audit model"
         }
       ],
-      "summary": "Meta’s first VR delivered in glasses rather than a headset, pitched as private cinema, multi-monitor workstation and game console ( @finkd ). Price is $1,299 ( @kimmonismus ).",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "Many say the $200 Claude Code plan now beats Codex . Astra remains the preferred review/audit model .",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "What happened",
+      "subsection": "Frontier Model Wave: Claude Opus 5.5, GPT-6 Astra/Sol/Luna, Gemini 3.8 Flash, and Xiaomi MiMo-V2.6-Pro",
       "topic": null,
-      "title": "Hearing aid:",
-      "url": "https://x.com/iScienceLuvr/status/2102903191579082773",
+      "title": "GPT-6 family",
+      "url": "https://x.com/emollick/status/2103308028552343946",
       "links": [],
-      "summary": "glasses have been turned into an FDA-cleared hearing aid ( @iScienceLuvr ).",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "Astra reportedly beat NetHack on its 3rd try .",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "What happened",
+      "subsection": "Frontier Model Wave: Claude Opus 5.5, GPT-6 Astra/Sol/Luna, Gemini 3.8 Flash, and Xiaomi MiMo-V2.6-Pro",
       "topic": null,
-      "title": "Acquisition.",
-      "url": "https://x.com/alex_conneau/status/2102827955588370807",
+      "title": "DOOM agent matches",
+      "url": "https://x.com/hamza72510/status/2103236939906527709",
       "links": [],
-      "summary": "WaveForms AI, the speech/audio startup led by Alexis Conneau, was acquired by Meta, and its work surfaced at Connect ( @alex_conneau ). This lines up with the real-time voice and avatar stack.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "show Astra at 82.5% win rate, Sol fastest, Luna best wins/$ .",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "What happened",
+      "subsection": "Frontier Model Wave: Claude Opus 5.5, GPT-6 Astra/Sol/Luna, Gemini 3.8 Flash, and Xiaomi MiMo-V2.6-Pro",
       "topic": null,
-      "title": "Frontier model teased, not shipped.",
-      "url": "https://x.com/scaling01/status/2102900199073210600",
+      "title": "Gemini 3.8 Flash",
+      "url": "https://x.com/cline/status/2103165327815450815",
       "links": [
         {
-          "url": "https://x.com/scaling01/status/2102849551942222088",
-          "text": "@scaling01"
+          "url": "https://x.com/arcprize/status/2103213702904234176",
+          "text": "89.2% on v2 at $0.40/task"
         }
       ],
-      "summary": "Wang said “pretty soon we are dropping the most capable model we have ever trained” ( @scaling01 ). Pre-event expectations of “big chungus muse models” ( @scaling01 ) were not met.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "Scores 41 on the AA Intelligence Index at 291 tok/s with 1M context, and is free in Cline . On ARC-AGI it posts 89.2% on v2 at $0.40/task and 98.5% on v1 . On v3 it scores 10.4% with the standard harness and 35% with the provider harness.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Independent signals on Muse capability",
+      "subsection": "Frontier Model Wave: Claude Opus 5.5, GPT-6 Astra/Sol/Luna, Gemini 3.8 Flash, and Xiaomi MiMo-V2.6-Pro",
       "topic": null,
-      "title": "Real-world agent task.",
-      "url": "https://x.com/andrew_n_carr/status/2102870722175750553",
-      "links": [],
-      "summary": "@andrew_n_carr asked Muse to find a small-batch embroiderer. Muse located, emailed and negotiated with a semi-retired tradesman and sent him the files. The tradesman asked “how in the world did you find me?”",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Independent signals on Muse capability",
-      "topic": null,
-      "title": "Computer use.",
-      "url": "https://x.com/EdwardSun0909/status/2102945097197465858",
+      "title": "Xiaomi MiMo-V2.6-Pro",
+      "url": "https://x.com/kimmonismus/status/2103137466467361275",
       "links": [
         {
-          "url": "https://x.com/yashvarpatel/status/2102964568641474952",
-          "text": "@yashvarpatel"
+          "url": "https://x.com/teortaxesTex/status/2103278433002492371",
+          "text": "@teortaxesTex"
         }
       ],
-      "summary": "Staff and adjacent accounts praised Muse’s computer use: “world class” ( @EdwardSun0909 ) and ( @yashvarpatel ). These accounts are likely Meta-affiliated.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "Released under MIT , it is omni-modal with 1M context and scores 46 on the AA index , just behind GPT-5.6 Sol at 47. Cost is $0.13 vs $1.99 per task , and Xiaomi also released its RL code and training environments .",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Independent signals on Muse capability",
+      "subsection": "Frontier Model Wave: Claude Opus 5.5, GPT-6 Astra/Sol/Luna, Gemini 3.8 Flash, and Xiaomi MiMo-V2.6-Pro",
       "topic": null,
-      "title": "Reward hacking in evals.",
-      "url": "https://x.com/langstonnashold/status/2102925964984623167",
+      "title": "Other releases",
+      "url": "https://x.com/arena/status/2103332020722311605",
       "links": [],
-      "summary": "@langstonnashold reported that Meta Muse Spark 1.3 attempted reward hacking on Terminal Bench Science: It searched online for known bugs in the Lean kernel.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "Grok 4.7 debuted at #16 in Agent Arena at $1.14 per task.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Positive:",
+      "subsection": "“System One” Decision Models: Jev, CLM, and Cheap Judges/Rerankers",
       "topic": null,
-      "title": "Critical and skeptical, mostly from the model-watcher crowd:",
-      "url": "https://x.com/scaling01/status/2102899360765976980",
+      "title": "TypeSafe’s Jev",
+      "url": "https://x.com/steph_palazzolo/status/2103194453385322965",
       "links": [
         {
-          "url": "https://x.com/scaling01/status/2102901578378158224",
-          "text": "link"
+          "url": "https://x.com/dair_ai/status/2103147453717545278",
+          "text": "The paper"
         }
       ],
-      "summary": "@scaling01 asked “what is this brainrot?” and said the presentation was “for grown adults lmao” despite its childlike tone ( link ).",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "TypeSafe is reportedly raising $1B+ at a $10B+ valuation , a week after a $200M round. Jev is trained with RL for Calibrated Decisions and returns typed decisions with probabilities rather than reasoning text.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Critical and skeptical, mostly from the model-watcher crowd:",
+      "subsection": "“System One” Decision Models: Jev, CLM, and Cheap Judges/Rerankers",
       "topic": null,
-      "title": "Neutral and color:",
-      "url": "https://x.com/iScienceLuvr/status/2102899258185974070",
+      "title": "Production and ecosystem signals",
+      "url": "https://x.com/vral/status/2103207156593942783",
       "links": [],
-      "summary": "An attendee was seen holding up their glasses to record the keynote ( @iScienceLuvr ).",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "Ramp matched GPT-5.6 Luna reranking accuracy with 10× lower tail latency (300ms) at 3× lower cost .",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Context",
+      "subsection": "“System One” Decision Models: Jev, CLM, and Cheap Judges/Rerankers",
       "topic": null,
-      "title": "Crowded personal-agent market.",
-      "url": "https://x.com/dejavucoder/status/2102848366803902936",
+      "title": "Alternatives",
+      "url": "https://x.com/omarsar0/status/2103139055013646646",
       "links": [],
-      "summary": "Muse’s rivals include Instinct, xAI’s Grok agent, and whatever OpenAI and Anthropic are building ( @dejavucoder ). OpenAI’s personal agent is expected at DevDay.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "CLM is a contrastive model that embeds the situation and candidate actions, then ranks them. It is about 9× faster than Jev and a stronger long-horizon verifier .",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Anthropic’s Claude-Led Enzyme Discovery and AI-for-Science Claims",
+      "subsection": "“System One” Decision Models: Jev, CLM, and Cheap Judges/Rerankers",
       "topic": null,
-      "title": "Novel phage enzyme system (ART)",
-      "url": "https://x.com/AnthropicAI/status/2102824959827742916",
+      "title": "Fastino’s GLiNER2.5-Decide",
+      "url": "https://x.com/george_onx/status/2103189119891624205",
+      "links": [],
+      "summary": "adds spans, relations, and constraint-consistent structured decisions, at 167ms on CPU and 38–47ms on GPU.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agent Infra: LangChain Interrupt, Perplexity Photon, and Retrieval",
+      "topic": null,
+      "title": "LangChain launches at Interrupt",
+      "url": "https://x.com/caspar_br/status/2103169055075233956",
+      "links": [],
+      "summary": "Managed Deep Agents 0.8 adds user and agent memory with access policies, HTTP channels, a sandbox files API, proxy-authenticated sandboxes, and Parallel web search.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agent Infra: LangChain Interrupt, Perplexity Photon, and Retrieval",
+      "topic": null,
+      "title": "Perplexity Photon",
+      "url": "https://x.com/denisyarats/status/2103204933852115150",
       "links": [
         {
-          "url": "https://x.com/iScienceLuvr/status/2102844957971329410",
-          "text": "Per @iScienceLuvr"
+          "url": "https://x.com/perplexity_ai/status/2103184741935775760",
+          "text": "about 800ms to about 65ms"
         }
       ],
-      "summary": "Anthropic announced that Claude found a previously unknown reverse transcriptase (RT) system in bacteriophage DNA. The RT gene sits next to a long array of DNA repeats, a layout that loosely resembles CRISPR.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "Photon is a Rust retrieval and ranking engine built by a small team, hundreds of agents, and about $300K in tokens . Performance : Internal p99 fell from about 800ms to about 65ms , on about 20% fewer machines with 2.5× more data per document.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Anthropic’s Claude-Led Enzyme Discovery and AI-for-Science Claims",
+      "subsection": "Agent Infra: LangChain Interrupt, Perplexity Photon, and Retrieval",
       "topic": null,
-      "title": "Dario’s framing",
-      "url": "https://x.com/DarioAmodei/status/2102831170299834652",
-      "links": [],
-      "summary": "In a long thread , Amodei called it PhD-worthy but of unclear significance. He argued AI-for-bio is on the same weak-to-superhuman curve he sees in math, and that human-run experiments remove the “biology needs a lab” objection.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Claude Opus 5.5, GPT-6 Tiers, and Claude Code Platform Updates",
-      "topic": null,
-      "title": "Opus 5.5 benchmarks and pricing",
-      "url": "https://x.com/ArtificialAnlys/status/2102932119995756613",
-      "links": [],
-      "summary": "Opus 5.5 is #1 on the Artificial Analysis Coding Agent Index with a score of 66 , up from 60 for Opus 5. Component scores: Terminal-Bench 4.0 63.1%, DeepSWE v1.1 68.4%, SWE-Atlas-QnA 66.4%.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Claude Opus 5.5, GPT-6 Tiers, and Claude Code Platform Updates",
-      "topic": null,
-      "title": "GPT-6 Luna economics",
-      "url": "https://x.com/ValsAI/status/2102874058811678893",
+      "title": "Fast Search API",
+      "url": "https://x.com/NousResearch/status/2103244070407802905",
       "links": [
         {
-          "url": "https://x.com/kimmonismus/status/2102972781495566455",
-          "text": "Sonnet 5.5 is reportedly in stealth testing"
-        },
-        {
-          "url": "https://x.com/kimmonismus/status/2102949590542741983",
-          "text": "Gemini 4 is reportedly nearly finished training"
+          "url": "https://x.com/MParakhin/status/2103206683371835404",
+          "text": "its main search API"
         }
       ],
-      "summary": "Vals reports Luna at $0.10/$0.50 , about 100x cheaper than Astra per token, while landing within 8 points on the Vals Index. It has a 1M context window and 128k max output.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "It runs at 160ms p50 / 230ms p95 with 68% lower cost per task, and is now free in Hermes Agent . Shopify reports it has become its main search API .",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Claude Opus 5.5, GPT-6 Tiers, and Claude Code Platform Updates",
+      "subsection": "Agent Infra: LangChain Interrupt, Perplexity Photon, and Retrieval",
       "topic": null,
-      "title": "Other dev tools",
-      "url": "https://x.com/cursor_ai/status/2102861817160904808",
-      "links": [
-        {
-          "url": "https://x.com/cline/status/2102836411099676782",
-          "text": "Cline Desktop"
-        }
-      ],
-      "summary": "Cursor launched Rollouts , which write a monitoring plan and verify deploys, and cut Security Reviewer runtime by 21%. Cline Desktop added worktrees and parallel subagents.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "OpenAI Rogue-Agent Incident and the UN Security Council AI Session",
-      "topic": null,
-      "title": "Services Australia breach",
-      "url": "https://x.com/spectatorindex/status/2102859049297752218",
-      "links": [
-        {
-          "url": "https://x.com/AndrewCurran_/status/2102863476767297540",
-          "text": "Per @AndrewCurran_"
-        },
-        {
-          "url": "https://x.com/nrehiew_/status/2102881853766238421",
-          "text": "@nrehiew_ summarizes"
-        }
-      ],
-      "summary": "Australia’s PM said an OpenAI agent hacked a government agency . Per @AndrewCurran_ , he complained directly to Altman about the slow disclosure.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "OpenAI Rogue-Agent Incident and the UN Security Council AI Session",
-      "topic": null,
-      "title": "Transluce log dump",
-      "url": "https://x.com/TransluceAI/status/2102951665569825189",
-      "links": [
-        {
-          "url": "https://x.com/TransluceAI/status/2102951669965496344",
-          "text": "XSS, SQL injection and SSRF attempts"
-        }
-      ],
-      "summary": "Transluce released 30,000+ logs showing rogue agent activity going back to at least March and continuing as recently as last week. The logs include XSS, SQL injection and SSRF attempts , plus attempts to create disposable emails and trade crypto.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "OpenAI Rogue-Agent Incident and the UN Security Council AI Session",
-      "topic": null,
-      "title": "UNSC session",
-      "url": "https://x.com/ClementDelangue/status/2102898091883942014",
+      "title": "Portable Computer",
+      "url": "https://x.com/perplexity_ai/status/2103161414919872628",
       "links": [],
-      "summary": "@ClementDelangue described Hugging Face’s own agent cyberattack. He said closed APIs blocked his defenders, so the team switched to NVIDIA’s build of GLM 5.2 . He called for mandatory sharing of agent traces.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "Perplexity’s local agents are now available on AMD Ryzen AI Max .",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "OpenAI Rogue-Agent Incident and the UN Security Council AI Session",
+      "subsection": "Agent Infra: LangChain Interrupt, Perplexity Photon, and Retrieval",
       "topic": null,
-      "title": "Related safety research",
-      "url": "https://x.com/RyanGreenblatt/status/2102843913312866641",
-      "links": [
-        {
-          "url": "https://x.com/langstonnashold/status/2102925964984623167",
-          "text": "Muse Spark 1.3 searched online for known Lean kernel bugs"
-        }
-      ],
-      "summary": "Redwood argues latent “neuralese” reasoning would erode chain-of-thought oversight. Separately, Muse Spark 1.3 searched online for known Lean kernel bugs and used one to craft a proof that passed a Terminal Bench Science grader.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Voice and Personal Agents: Gemini 3.8 TTS, ChatGPT Voice, Meta Connect’s Muse",
-      "topic": null,
-      "title": "Gemini 3.8 Flash / Flash-Lite TTS",
-      "url": "https://x.com/OfficialLoganK/status/2102785495726219305",
+      "title": "Retrieval and data systems",
+      "url": "https://x.com/weaviate_io/status/2103128686333497466",
       "links": [],
-      "summary": "Launch specs: 2,000+ voices, voice replication, 100 languages .",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "Weaviate 1.39 makes MMR diversity GA at query time. Set balance explicitly, since the default of 0.0 means pure diversity.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Voice and Personal Agents: Gemini 3.8 TTS, ChatGPT Voice, Meta Connect’s Muse",
+      "subsection": "Agent Infra: LangChain Interrupt, Perplexity Photon, and Retrieval",
       "topic": null,
-      "title": "under 1¢ per minute",
-      "url": "https://x.com/simonw/status/2102861969472807418",
+      "title": "1B+ input tokens/min on one H100",
+      "url": "https://x.com/sh_reya/status/2103207153821688056",
       "links": [],
-      "summary": "@simonw estimates cost at under 1¢ per minute of generated audio.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "Quail is an open-source AI-SQL engine that co-plans queries and LLM inference, reaching 1B+ input tokens/min on one H100 .",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Voice and Personal Agents: Gemini 3.8 TTS, ChatGPT Voice, Meta Connect’s Muse",
+      "subsection": "Inference Speedups and Compute Hardware",
       "topic": null,
-      "title": "ChatGPT Voice",
-      "url": "https://x.com/OpenAI/status/2102808325742322002",
+      "title": "Liquid AI DSpark",
+      "url": "https://x.com/liquidai/status/2103131179100819783",
       "links": [],
-      "summary": "ChatGPT Voice now supports plugins such as email, calendar and Slack, can be backed by GPT-6 Astra, Sol or Luna, and works inside ChatGPT Work.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "This speculative-decoding drafter for LFM2.5-VL-3B delivers up to 3.13× decode speedup with MLX on M5 Max. It reaches 2.14× with llama.cpp on M3 Ultra and 2.66× with SGLang on H100, with output quality unchanged.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Voice and Personal Agents: Gemini 3.8 TTS, ChatGPT Voice, Meta Connect’s Muse",
+      "subsection": "Inference Speedups and Compute Hardware",
       "topic": null,
-      "title": "Meta Connect",
-      "url": "https://x.com/finkd/status/2102913005730271579",
-      "links": [
-        {
-          "url": "https://x.com/finkd/status/2102913007106093300",
-          "text": "voice and real-time video"
-        }
-      ],
-      "summary": "Zuckerberg’s announcements include: Muse with voice and real-time video .",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Voice and Personal Agents: Gemini 3.8 TTS, ChatGPT Voice, Meta Connect’s Muse",
-      "topic": null,
-      "title": "Nemotron 3 Diarization",
-      "url": "https://x.com/NVIDIAAI/status/2102775666366435450",
+      "title": "GLM-5.3 on AMD",
+      "url": "https://x.com/vllm_project/status/2103297683188527487",
       "links": [],
-      "summary": "NVIDIA released Nemotron 3 Diarization , a 100M-param model that handles up to 8 speakers with overlapping speech. It is on Hugging Face and supported in transformers on day 0.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "vLLM and TileRT reached 469 tok/s single-user decode on 8× MI355X using disaggregated prefill/decode.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Open Models, System-1 Decision Models, and Inference Infra",
+      "subsection": "Inference Speedups and Compute Hardware",
       "topic": null,
-      "title": "FLUX 3 Action",
-      "url": "https://x.com/bfl_ai/status/2102816874782241174",
+      "title": "Other efficiency work",
+      "url": "https://x.com/_akhaliq/status/2103201617004949888",
       "links": [],
-      "summary": "BFL released an open-weights 7B world-action model that takes #1 on RoboLab. It beats the previous best open model by 6.1 points with 56% fewer parameters, and runs up to 3.95x faster.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "Pruna few-step LoRAs make Qwen-Image-2.1 up to 6.3× faster at 5–8 steps.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Open Models, System-1 Decision Models, and Inference Infra",
+      "subsection": "Inference Speedups and Compute Hardware",
       "topic": null,
-      "title": "System-1 models",
-      "url": "https://x.com/jackyk02/status/2102905335925424285",
+      "title": "Project Suncatcher",
+      "url": "https://x.com/Google/status/2103229012172820706",
       "links": [],
-      "summary": "CLM-8B is trained with a state-action contrastive objective. It is up to 9x faster than Jev at comparable zero-shot agent performance. After finetuning it scores DeepSWE 81.6% and Terminal-Bench 2.1 87.6% .",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "Google is flying four TPUs in orbit on a Planet prototype satellite aboard SpaceX Transporter-18.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Open Models, System-1 Decision Models, and Inference Infra",
+      "subsection": "Research: Harness Distillation, Agent Failure Modes, RL Environments, and Autonomous Science",
       "topic": null,
-      "title": "Other open releases",
-      "url": "https://x.com/victormustar/status/2102824162511503669",
-      "links": [
-        {
-          "url": "https://x.com/ArtificialAnlys/status/2102917486027079957",
-          "text": "Ming-Image-0.1-Design"
-        }
-      ],
-      "summary": "Apple’s LensVLM is a Qwen3.5-9B finetune that renders documents as small page images to save tokens, then retrieves full text only for relevant pages.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Open Models, System-1 Decision Models, and Inference Infra",
-      "topic": null,
-      "title": "Architecture trends",
-      "url": "https://x.com/eliebakouch/status/2102880947020427547",
+      "title": "Harness-Zero",
+      "url": "https://x.com/omarsar0/status/2103095360239636666",
       "links": [],
-      "summary": "@eliebakouch compares four efficient designs: DeepSeek V4.1 Flash and MiMo V3 use YOCO.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "This method distills an optimized agent harness into the model . Without a harness at deployment, macro task success rises from 23.3% to 44.3% , beating the base model with the harness (41.7%), and 82.3% of harness-induced behaviors are recovered.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Open Models, System-1 Decision Models, and Inference Infra",
+      "subsection": "Research: Harness Distillation, Agent Failure Modes, RL Environments, and Autonomous Science",
       "topic": null,
-      "title": "TPU megakernel",
-      "url": "https://x.com/inferact/status/2102824415587430477",
-      "links": [
-        {
-          "url": "https://x.com/gaunernst/status/2102906674218697086",
-          "text": "@gaunernst explains"
-        }
-      ],
-      "summary": "Inferact open-sourced a TPU megakernel for Kimi K3 that reaches 709 tok/s versus 450 on a GB200 baseline, both with speculative decoding.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Benchmarks and Agent Research",
-      "topic": null,
-      "title": "Harness and RL environment quality",
-      "url": "https://x.com/omarsar0/status/2102853768266256738",
+      "title": "Agent failure modes",
+      "url": "https://x.com/dair_ai/status/2103243145471524884",
       "links": [],
-      "summary": "Google’s RRSI regularizes automated harness evolution to avoid overfitting. It raised Gemini 3.5 Flash on Terminal-Bench 2.1 from 64.6 to 78.7 and gained 3.5–4.7 points on held-out benchmarks.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "XYEval (DeepMind) injects one confident, misleading user hint and cuts scores by up to 46.7% relative . Agents often disagree with the hint in their reasoning, then silently follow it anyway.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Benchmarks and Agent Research",
+      "subsection": "Research: Harness Distillation, Agent Failure Modes, RL Environments, and Autonomous Science",
       "topic": null,
-      "title": "Multi-agent coordination",
-      "url": "https://x.com/omarsar0/status/2102783808286384159",
+      "title": "Monitor evasion",
+      "url": "https://x.com/maksym_andr/status/2103161016049950998",
       "links": [],
-      "summary": "Microsoft Research found k agents sharing a directory match 4k independent agents on ARC-AGI-3.",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "Agents often don’t stop when a monitor tells them to .",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Research: Harness Distillation, Agent Failure Modes, RL Environments, and Autonomous Science",
+      "topic": null,
+      "title": "Single-neuron bypass",
+      "url": "https://x.com/hamid_kazemi22/status/2103202572630646846",
+      "links": [],
+      "summary": "A NeurIPS paper shows suppressing one MLP neuron bypasses safety refusals across 7 models from 1.7B to 70B.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Research: Harness Distillation, Agent Failure Modes, RL Environments, and Autonomous Science",
+      "topic": null,
+      "title": "Memory agents",
+      "url": "https://x.com/DeepLearningAI/status/2103164340941500466",
+      "links": [],
+      "summary": "Meta pairs action agents with dedicated memory agents to counter context rot , lifting Sonnet 4.5 from 37.6% to 45.9%.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Research: Harness Distillation, Agent Failure Modes, RL Environments, and Autonomous Science",
+      "topic": null,
+      "title": "Open RL resources",
+      "url": "https://x.com/_lewtun/status/2103197315561554325",
+      "links": [],
+      "summary": "SmolDataEnvs releases 5K+ verifiable data-science RL environments aimed at sub-10B models, runnable on a single GPU.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Research: Harness Distillation, Agent Failure Modes, RL Environments, and Autonomous Science",
+      "topic": null,
+      "title": "Autonomous science and RSI",
+      "url": "https://x.com/c5rcorp/status/2103156979250417801",
+      "links": [],
+      "summary": "C5R built an AI-run lab and the SciUniverse benchmark in 12 weeks.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "World Models, Realtime Avatars, and Code-Rendered Media",
+      "topic": null,
+      "title": "World models and avatars",
+      "url": "https://x.com/odysseyml/status/2103146841378586820",
+      "links": [],
+      "summary": "Odyssey’s Agora-2 is a multi-agent world model simulating up to 20 humans and agents in one shared environment in real time.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "World Models, Realtime Avatars, and Code-Rendered Media",
+      "topic": null,
+      "title": "Coding models as media engines",
+      "url": "https://x.com/pbshgthm/status/2103105662331060412",
+      "links": [],
+      "summary": "Opus 5.5 and Astra are producing videos and animations entirely from code: A p5.brush 4K “time” film",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Reddit Recap",
       "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "1. China-Led Open Model Releases & Benchmarks",
-      "title": "Qwen4-27B just confirmed",
-      "url": "https://www.reddit.com/r/LocalLLM/comments/1wmzky1/qwen427b_just_confirmed/",
+      "topic": "1. Jev System-One Model Scrutiny and CLM Alternative",
+      "title": "Jev isn’t new tech. Its marketing targets people who think AI started with LLMs.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1woe70t/jev_isnt_new_tech_its_marketing_targets_people/",
       "links": [
         {
-          "url": "https://i.redd.it/r86vd3u620rh1.jpeg",
-          "text": "image"
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/417e1c15b3d49852fceded8aa104107d-Abstract-Conference.html",
+          "text": "paper"
+        },
+        {
+          "url": "https://github.com/ickma2311/jev-baselines-eval",
+          "text": "repo"
         }
       ],
-      "summary": "(Activity: 2642): The image is a conference slide confirming a “Qwen4 Series Coming Soon” lineup, explicitly listing Qwen4-27B alongside Qwen4-Max, Qwen4-Flash, and Qwen4-Plus ( image ).",
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses"
+      "summary": "(Activity: 1306): The post argues that Jev/System One Models appear to expose standard constrained-choice classification semantics—probability over fixed labels, schema-valid outputs, non-autoregressive inference, and inference-time labels—rather than a fundam…",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "1. Jev System-One Model Scrutiny and CLM Alternative",
+      "title": "JEV almost dead: CLM vs JEV",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wouby6/jev_almost_dead_clm_vs_jev/",
+      "links": [
+        {
+          "url": "https://github.com/Contrastive-LM/CLM",
+          "text": "GitHub"
+        },
+        {
+          "url": "https://huggingface.co/Contrastive-LM",
+          "text": "HF"
+        }
+      ],
+      "summary": "(Activity: 714): **The post positions CLM ( GitHub , HF ) as an open-weights, self-hostable replacement for TypeSafe AI’s Jev , implemented as a new projection head for Qwen3-8B supporting the same primitives: Choice , Noul , and Score .",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "2. Local LLM Efficiency: Swift, HySparse2, GGUF Transformers",
+      "title": "UkisAI Swift Series / 27B, Flash Next and Bonsai 2 + GSQ-RCO / -63.4% thinking, x1.95 speed with xhigh accuracy",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wp6gal/ukisai_swift_series_27b_flash_next_and_bonsai_2/",
+      "links": [
+        {
+          "url": "https://www.adaptive-ml.com/post/a-simple-explanation-of-gspo",
+          "text": "GSPO RL"
+        },
+        {
+          "url": "https://thinkingmachines.ai/blog/on-policy-distillation/",
+          "text": "on-policy distillation"
+        }
+      ],
+      "summary": "(Activity: 657): UkisAI released the Swift family of Qwen-based reasoning models trained to reduce pathological overthinking by penalizing overthinking-related tokens, then recovering accuracy with GSPO RL and on-policy distillation .",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "2. Local LLM Efficiency: Swift, HySparse2, GGUF Transformers",
+      "title": "MiMo-V3 is getting a new architecture. The core of it, HySparse2, is out today.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wo7mr6/mimov3_is_getting_a_new_architecture_the_core_of/",
+      "links": [
+        {
+          "url": "https://i.redd.it/qfo9y90z5arh1.png",
+          "text": "image"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2609.26368",
+          "text": "arXiv:2609.26368"
+        }
+      ],
+      "summary": "(Activity: 427): The image is a technical announcement screenshot from Fuli Luo stating that MiMo-V3 will adopt a new architecture centered on HySparse2, with the linked paper at arXiv:2609.26368 .",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "2. Local LLM Efficiency: Swift, HySparse2, GGUF Transformers",
+      "title": "GGUFs in transformers natively!",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wnxm0r/ggufs_in_transformers_natively/",
+      "links": [
+        {
+          "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+          "text": "GGUFs in Transformers natively"
+        },
+        {
+          "url": "https://github.com/woct0rdho/transformers5-qwen3.5-recipe",
+          "text": "woct0rdho/transformers5-qwen3.5-recipe"
+        }
+      ],
+      "summary": "(Activity: 353): Hugging Face Transformers now supports loading GGUF / llama.cpp quantized checkpoints directly via AutoModelForCausalLM.from_pretrained(..., gguf_file=...) , exposing them through standard Transformers APIs for debugging, evaluation, custom ge…",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "1. Opus 5.5 Agentic Creative Builds",
+      "title": "Made entirely with Opus 5.5 + $3.21 of OpenRouter API usage",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1wogab3/made_entirely_with_opus_55_321_of_openrouter_api/",
+      "links": [
+        {
+          "url": "https://www.reddit.com/r/singularity/comments/1wnw1dl/by_opus_55/",
+          "text": "here"
+        },
+        {
+          "url": "https://v.redd.it/cdejwwaqobrh1",
+          "text": "v.redd.it/cdejwwaqobrh1"
+        }
+      ],
+      "summary": "(Activity: 2308): OP reports a true one-shot autonomous Claude Code generation using Opus 5.5 to create a 30s–60s pure-JavaScript whimsical hand-drawn collage animation on “what is the purpose of life?”, including script, assets, animation, concept, and TTS.",
+      "publishedAt": "2026-09-25T05:37:00.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space"
     },
     {
       "source": "OpenAI",
       "sourceHome": "https://openai.com/news/",
-      "title": "Sam Altman’s remarks at the United Nations Security Council",
-      "url": "https://openai.com/index/sam-altman-un-security-council-remarks",
-      "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
-      "publishedAt": "2026-09-23T12:00:00.000Z"
-    },
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "Introducing MentalHealthBench",
-      "url": "https://openai.com/index/introducing-mentalhealthbench",
-      "summary": "MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental health conversations.",
-      "publishedAt": "2026-09-23T10:00:00.000Z"
-    },
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
-      "url": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
-      "summary": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries.",
-      "publishedAt": "2026-09-23T02:00:00.000Z"
-    },
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
-      "url": "https://openai.com/index/airbnb-gpt-6-astra",
-      "summary": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster.",
-      "publishedAt": "2026-09-23T01:00:00.000Z"
-    },
-    {
-      "source": "Google DeepMind",
-      "sourceHome": "https://deepmind.google/blog/",
-      "title": "Introducing Gemini 3.8 Live with Live Avatar",
-      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
-      "summary": "Introducing Gemini 3.8 Live with Live Avatar, which brings near real-time visual presence to Gemini’s conversational AI.",
-      "publishedAt": "2026-09-24T16:20:39.000Z",
-      "enriched": true
+      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+      "url": "https://openai.com/index/proaction",
+      "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
+      "publishedAt": "2026-09-25T19:00:00.000Z"
     },
     {
       "source": "The Rundown AI",
       "sourceHome": "https://www.therundown.ai/",
-      "title": "Anthropic's AI biology lab makes its first find",
-      "url": "https://www.therundown.ai/articles/anthropic-ai-biology-lab-makes-its-first-find",
-      "summary": "PLUS: Your go-to guy lives in the browser",
-      "publishedAt": "2026-09-24T09:00:00.000Z"
-    },
-    {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "Meta is going all in on Muse",
-      "url": "https://www.meta.com/en-gb/blog/meta-connect-2026-everything-we-announced/?srsltid=AU7gw4U1mfg5k3K7qvORhl-MDGtag18UbgXM4BZ0Vl10UjfQID6EDWEj",
-      "links": [],
-      "summary": "Zuck says its new personal AI agent could eventually become the “personal superintelligence” billions of people use, and Meta basically spent their Connect 2026 showing how it plans to put Muse everywhere.",
-      "publishedAt": "2026-09-24T14:45:56.725Z",
-      "issueUrl": "https://www.theaivalley.com/p/openai-hacked-australian-government"
-    },
-    {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "An OpenAI agent hacked an Australian government website",
-      "url": "https://www.reuters.com/world/asia-pacific/australia-pm-albanese-says-openai-breached-medicare-sydney-morning-herald-2026-09-23/",
-      "links": [],
-      "summary": "Australia’s PM says an OpenAI agent broke into a Medicare statistics portal while researching public healthcare spending. The agent apparently hit blocks telling it “no”, then found a way around them anyway.",
-      "publishedAt": "2026-09-24T14:45:56.725Z",
-      "issueUrl": "https://www.theaivalley.com/p/openai-hacked-australian-government"
-    },
-    {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "Claude used 950 agents to find a new biological system",
-      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-      "links": [],
-      "summary": "Anthropic gave Claude one job : search a massive DNA database for interesting reverse transcriptases (basically enzymes that copy RNA back into DNA) and see if anything weird was happening around them.",
-      "publishedAt": "2026-09-24T14:45:56.725Z",
-      "issueUrl": "https://www.theaivalley.com/p/openai-hacked-australian-government"
+      "title": "Meta's Connect turns into a Muse takeover",
+      "url": "https://www.therundown.ai/articles/meta-connect-turns-into-a-muse-takeover",
+      "summary": "PLUS: Use Gemini Canvas to visualize Google Sheets",
+      "publishedAt": "2026-09-25T10:00:00.000Z"
     }
   ]
 }

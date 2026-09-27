@@ -1,0 +1,2456 @@
+{
+  "issue": "2026-09-28",
+  "builtAt": "2026-09-27T19:55:13.367Z",
+  "from": {
+    "boards": "prefetched",
+    "inbox": "live"
+  },
+  "counts": {
+    "fetched": 158,
+    "added": 61,
+    "kept": 61,
+    "dropped": 97,
+    "pool": 61,
+    "screened": 47,
+    "candidates": 31,
+    "demandCandidates": 18,
+    "supplyCandidates": 13
+  },
+  "errors": [],
+  "notices": [
+    "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
+  ],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "ok",
+      "items": 13,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "ok",
+      "items": 16,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 13,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 6,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "ok",
+      "items": 12,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "ok",
+      "items": 8,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "ok",
+      "items": 3,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 0,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 4,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub Trending",
+      "status": "ok",
+      "items": 9,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "consoledev",
+      "name": "Console.dev",
+      "status": "ok",
+      "items": 8,
+      "pool": true,
+      "group": "board"
+    }
+  ],
+  "items": [
+    {
+      "id": "10205c01f8",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1wrnpuz/mall_solar_charger_that_keeps_a_smart_lock",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "mall solar charger that keeps a smart lock battery topped up",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1wrnpuz/mall_solar_charger_that_keeps_a_smart_lock/",
+      "summary": "bought a fingerprint smart lock because I wanted one less thing to remember. Instead, my front door joined the list of devices I have to charge. The fingerprint reader is convenient, but every low battery notification becomes another task I tell myself I’ll handle later. I still carry the physical backup key because I don’t completely trust myself to remember the battery, which defeats part of the reason I bought a keyless lock. What I wish existed is a small weatherproof solar panel that mounts beside the doorframe and connects to the lock’s emergency charging port.",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1wrnpuz",
+      "via": null,
+      "publishedAt": "2026-09-27T15:54:01.000Z",
+      "ref": "I1",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "bought a fingerprint smart lock because I wanted one less thing to remember. Instead, my front door joined the list of devices I have to charge. The fingerprint reader is convenient, but every low battery notification becomes another task I tell myself I’ll handle later. I still carry the physical backup key because I don’t completely trust myself to remember the battery, which defeats part of the reason I bought a keyless lock. What I wish existed is a small weatherproof solar panel that mounts beside the doorframe and connects to the lock’s emergency charging port. It wouldn’t need to recharge a completely dead battery. It would just provide enough power during the day to slow the drain or keep the battery topped up. Ideally, it would have a short protected cable, a removable mounting plate and some kind of small buffer battery for cloudy days. It should also work without permanently modifying the lock or drilling into the door. I don’t have the electronics or weatherproofing skills to build this properly, and I’m not selling anything. I’m just surprised I haven’t found a simple add-on like it. Would the power available from a panel that small actually be enough, or is there an obvious technical problem I’m missing?",
+        "comments": [
+          {
+            "text": "I mean you can just buy solar panels with a usb output from Amazon, it doesn’t make a lot of power but it might be enough."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T20:07:03.654Z"
+      }
+    },
+    {
+      "id": "450dd96a9d",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1wrinat/somebody_make_a_powerpointcompatible_editor_where",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "Somebody make a PowerPoint-compatible editor where I can customize the workspace, not the slides",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1wrinat/somebody_make_a_powerpointcompatible_editor_where/",
+      "summary": "I make PowerPoint decks professionally, and I want this badly. I don't want another full-featured PowerPoint competitor. I want a lightweight, fast, stable editor that can open, edit, and save .pptx files and do the normal stuff well — text, shapes, images, alignment, z-order, slide reordering, copy/paste, etc. But here's the thing I actually care about: I want to dress up the workspace. Not the slides. The workspace. Give me themes. Lots of themes. Let me change the UI colors, fonts, background, cursor, icons, and little visual effects.",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1wrinat",
+      "via": null,
+      "publishedAt": "2026-09-27T12:10:51.000Z",
+      "ref": "I2",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I make PowerPoint decks professionally, and I want this badly. I don't want another full-featured PowerPoint competitor. I want a lightweight, fast, stable editor that can open, edit, and save .pptx files and do the normal stuff well — text, shapes, images, alignment, z-order, slide reordering, copy/paste, etc. But here's the thing I actually care about: I want to dress up the workspace. Not the slides. The workspace. Give me themes. Lots of themes. Let me change the UI colors, fonts, background, cursor, icons, and little visual effects. Maybe even let me put a completely useless character in the corner of the screen. If I'm using a night-sky theme, I want tiny stars to sparkle when I click. ✨ And I want to change themes whenever I feel like it. Morning, afternoon, every hour. Give me a random theme button too. 🎲 Ideally, users could make and share their own themes — maybe something like the theme ecosystem around text/code editors, but with an easy theme builder for people who don't write CSS. None of this should affect the actual presentation. My client's corporate deck should remain a completely normal corporate deck. Inside the slide is their world. Outside the slide is yours. AI has actually made this problem more noticeable for me. My workflow is increasingly: work with AI → generate a PPTX → revise it with AI → eventually think, “okay, I have to finish this by hand now.” That's when I want this editor. Changing my keyboard, mouse, music, or Typora theme genuinely makes me want to work again. Apparently my productivity system is just “ooh, pretty.” I don't need advanced animations, presentation features, or every obscure PowerPoint function. I'm perfectly happy to open the finished file in PowerPoint for a final compatibility check. I can't code this. If something like this already exists, PLEASE tell me. If not, somebody make it. I would happily pay for it. I make presentations professionally, so if anyone actually decides to build something like this, I'd also be very happy to share more about my workflow and what I'd need from it. I just want unnecessary sparkles in my professional presentation workflow. ✨",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T19:58:16.501Z"
+      }
+    },
+    {
+      "id": "290fb99480",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1wrfshn/sonic_mania_ambiance",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "Sonic Mania ambiance",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1wrfshn/sonic_mania_ambiance/",
+      "summary": "Idk if this is the right place to come for this but I seriously need a YouTube video series of sonic mania level ambiance. I mean like, slow gameplay of certain levels, my main wish being press garden act 2 (mania mode and encore mode) but I an also see levels like flying battery act 2, stardust speedway act 1, oil ocean act 2, mirage saloon act 1 knuckles and encore, and lava reef act 2.",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1wrfshn",
+      "via": null,
+      "publishedAt": "2026-09-27T09:26:30.000Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Idk if this is the right place to come for this but I seriously need a YouTube video series of sonic mania level ambiance. I mean like, slow gameplay of certain levels, my main wish being press garden act 2 (mania mode and encore mode) but I an also see levels like flying battery act 2, stardust speedway act 1, oil ocean act 2, mirage saloon act 1 knuckles and encore, and lava reef act 2. But my point is, these levels with slow gameplay or sometimes just standing still in the back (a mix of all characters and both mania and encore modes) with no SFX (just music) would be bliss and they could be like an hour or two long, would watch the hell out of those. I have zero editing skills so I'd love to see somebody take these on!",
+        "comments": [
+          {
+            "text": "Why not just record yourself playing those levels or even better, just play the game yourself?"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T20:08:04.131Z"
+      }
+    },
+    {
+      "id": "9452bf0602",
+      "normUrl": "https://reddit.com/r/PSO/comments/1wrhpye/symbol_art_question",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Symbol Art Question",
+      "url": "https://www.reddit.com/r/PSO/comments/1wrhpye/symbol_art_question/",
+      "summary": "Hello, is there an app that people use to edit symbol art beyond what you can do by normal means in the game? I've copied some odd ones that had much larger face part shapes and a few other oddities. How they do that?",
+      "deepenKey": "/r/PSO/comments/1wrhpye",
+      "via": "is there an app that",
+      "publishedAt": "2026-09-27T11:21:13.000Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "在找但没找到"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Hello, is there an app that people use to edit symbol art beyond what you can do by normal means in the game? I've copied some odd ones that had much larger face part shapes and a few other oddities. How they do that?",
+        "comments": [
+          {
+            "text": "There are some action replay codes that can do stuff like this. I don't know what they are, though"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T20:06:03.126Z"
+      }
+    },
+    {
+      "id": "8180897ac0",
+      "normUrl": "https://reddit.com/r/ios/comments/1wr7zop/plaintext_editor_for_files_on_a_usb_thumb_drive",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Plain-text editor for files on a USB thumb drive?",
+      "url": "https://www.reddit.com/r/ios/comments/1wr7zop/plaintext_editor_for_files_on_a_usb_thumb_drive/",
+      "summary": "I have an ipad air, and I'd like to be able to edit plain-text files (ie, ASCII or UTF-8, no formatting) that are stored on a USB thumb drive, and then plug that thumb drive into a Linux box and edit the same files there. Is there an app that can do this? I know Apple wants everyone to use icloud, but I'd prefer something that doesn't assume a reliable internet connection (ie, cellular data in a fringe area, it's pretty slow in some cases). And, I don't know how well icloud works with Linux.",
+      "deepenKey": "/r/ios/comments/1wr7zop",
+      "via": "is there an app that",
+      "publishedAt": "2026-09-27T02:04:32.000Z",
+      "ref": "I5",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [
+          "在找但没找到"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I have an ipad air, and I'd like to be able to edit plain-text files (ie, ASCII or UTF-8, no formatting) that are stored on a USB thumb drive, and then plug that thumb drive into a Linux box and edit the same files there. Is there an app that can do this? I know Apple wants everyone to use icloud, but I'd prefer something that doesn't assume a reliable internet connection (ie, cellular data in a fringe area, it's pretty slow in some cases). And, I don't know how well icloud works with Linux. The reason for doing this is that I don't always have the Linux laptop with me, but I could easily carry the ipad (I already have the ipad for other reasons, but I don't have any other Apple devices).",
+        "comments": [
+          {
+            "text": "https://apps.apple.com/us/app/subtext/id1606625287"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Modern CSV version 2",
+            "points": 324,
+            "url": "https://news.ycombinator.com/item?id=37140159"
+          },
+          {
+            "title": "Show HN: Minimalist editor that lives in browser, stores everything in the URL",
+            "points": 468,
+            "url": "https://news.ycombinator.com/item?id=46378554"
+          }
+        ],
+        "fetchedAt": "2026-09-27T19:56:14.057Z"
+      }
+    },
+    {
+      "id": "705dadadd1",
+      "normUrl": "https://reddit.com/r/land/comments/1wrk87g/is_there_a_tool_that_finds_recorded_easements_and",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Is there a tool that finds recorded easements and maps them on a property?",
+      "url": "https://www.reddit.com/r/land/comments/1wrk87g/is_there_a_tool_that_finds_recorded_easements_and/",
+      "summary": "I'm considering a few properties and trying to understand whether any easements would affect where I could build. The research has been more involved than I expected: finding the parcel on the county GIS site, pulling deeds and recorded plats, tracing previous owners, and searching for separately recorded easements and restrictions. Then there's translating the descriptions into something I can actually see on a map. Finding the documents and figuring out where an easement sits on the property feel like two separate projects.",
+      "deepenKey": "/r/land/comments/1wrk87g",
+      "via": "is there a tool that",
+      "publishedAt": "2026-09-27T13:27:32.000Z",
+      "ref": "I6",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [
+          "在找但没找到"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "I'm considering a few properties and trying to understand whether any easements would affect where I could build. The research has been more involved than I expected: finding the parcel on the county GIS site, pulling deeds and recorded plats, tracing previous owners, and searching for separately recorded easements and restrictions. Then there's translating the descriptions into something I can actually see on a map. Finding the documents and figuring out where an easement sits on the property feel like two separate projects. I've seen tools that can plot boundaries and easements from documents you upload. Does anything handle the document gathering too? Ideally, I'd enter an address or parcel number, get the relevant records with links to the originals, and see the easements that can be plotted. I'm mainly looking for help screening properties before getting further into a purchase. I'm also considering building something along these lines, so I'd appreciate hearing from buyers, agents, surveyors, and others who do this regularly. How do you handle it now, and which part takes the most time?",
+        "comments": [
+          {
+            "text": "Realize that in US each county, around 3000, has their own database & software that stores these documents; which are maintained in a small limited number of different file formats. In theory it is possible to automate the data gathering, but in practice it is non-trivial to implement."
+          },
+          {
+            "text": "Yeah its called a title company and a land surveyor. Even if you find and plot all easements and deeds you will never be able to place it on a map accurately without some additional work."
+          },
+          {
+            "text": "Architect and developer here. No. Mostly due to bad data. Some parts due to inconsistent mapping. Other parts due to bad easements or historic degradation of data. And finally, many do not want to disclose such information. If you are serious about a property you make an offer contingent on a clean title search. Then you pay someone to survey and apply the title data. Then review it and see if you can live with it. In development this is part of our 60-90 day due diligence periods."
+          },
+          {
+            "text": "I’m VERY skeptical that all US easements are in digital data bases. And it is not trivial to define “easements”. Example #1 In some western states, roads were built on section boundaries. There may not be a formal easement. In some cases you can infer the easement because the property tax excludes the right of way. But this varies. Example #2 In some rural counties there are less than 1000 people. Everyone knows everyone. They don’t bother to keep property records updated unless they have a contested inheritance. You might see the records showing ownership by great grandparents who have been dead 90 years. So… even if these rural communities have digital records, do you think easements are recorded when ownership is not? And of course a lot of them don’t have digital records. If they do it might be just tax rolls."
+          },
+          {
+            "text": "Doing this for a living i can also state that many utility easements have been around for decades, and many highly populated counties only have online records going back to the 1960s, some even less. One county by me gas nothing online. AI can't physically go look at a book in the court house, so until every record goes online this can't be automated."
+          },
+          {
+            "text": "Mineral conveyances do NOT transfer any rights to the surface estate. Mineral leases may, but commonly do not."
+          },
+          {
+            "text": "you can write your own app to do this with claude code in a couple hours and maybe 50 dollars of tokens."
+          },
+          {
+            "text": "Nothing is impossible for the person who only has to state a solution exists."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T20:04:02.189Z"
+      }
+    },
+    {
+      "id": "e809cbb34c",
+      "normUrl": "https://reddit.com/r/u_HoneeMagreePlumpwell/comments/1wr05t7/boos_butcher_block_country_table_and_conditioning",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Boos Butcher Block \"Country Table\" and conditioning the underside of the slotted shelves.",
+      "url": "https://www.reddit.com/r/u_HoneeMagreePlumpwell/comments/1wr05t7/boos_butcher_block_country_table_and_conditioning/",
+      "summary": "I have a beautiful BOOS BUTCHER BLOCK \"COUNTRY\" BAKERS TABLE and have no trouble oiling and conditioning the top of those shelves, which are easily accessable. But caring for the underside of the two lower shelves which are slotted is less accessible (due to physical limitations). Is there a tool that would help me reach underneath the two lower slotted shelves? Thanks and happy cooking/Baking. 😊 ​",
+      "deepenKey": "/r/u_HoneeMagreePlumpwell/comments/1wr05t7",
+      "via": "is there a tool that",
+      "publishedAt": "2026-09-26T20:04:09.000Z",
+      "ref": "I7",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [
+          "在找但没找到"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "I have a beautiful BOOS BUTCHER BLOCK \"COUNTRY\" BAKERS TABLE and have no trouble oiling and conditioning the top of those shelves, which are easily accessable. But caring for the underside of the two lower shelves which are slotted is less accessible (due to physical limitations). Is there a tool that would help me reach underneath the two lower slotted shelves? Thanks and happy cooking/Baking. 😊 ​",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T20:05:02.728Z"
+      }
+    },
+    {
+      "id": "6384e287d3",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/91113/free-windows-pdf-editor-which-support-text-redacting",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Free Windows PDF editor which support text redacting",
+      "url": "https://softwarerecs.stackexchange.com/questions/91113/free-windows-pdf-editor-which-support-text-redacting",
+      "summary": "I would like a free PDF editor for Windows 11 which supports: text redaction (i.e., permanent removal, not just covering it with a black box). This is the same as the Redact feature of Apple Preview multiple PDF merging (nice to have, but not mandatory) digital signing Do you have any suggestions? PS just for clarity, this must be an offline PDF editor. I thought this was implied by the fact that I specified \"for Windows 11\", but maybe better to be safe than sorry :-)",
+      "deepenKey": "91113",
+      "signal": {
+        "score": 2,
+        "views": 98,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2024-09-05T16:29:58.000Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I would like a free PDF editor for Windows 11 which supports: text redaction (i.e., permanent removal, not just covering it with a black box). This is the same as the Redact feature of Apple Preview multiple PDF merging (nice to have, but not mandatory) digital signing Do you have any suggestions? PS just for clarity, this must be an offline PDF editor. I thought this was implied by the fact that I specified \"for Windows 11\", but maybe better to be safe than sorry :-)",
+        "comments": [
+          {
+            "text": "Disclosure: I work on Certyneo Reader. Certyneo Reader (free, Windows 10/11 x64 and ARM64, also Linux) covers your two mandatory points offline, with no account: True redaction. Draw boxes (or let it suggest IBANs, e-mails, card numbers, or every occurrence of a term). Each redacted page is re-rendered as an image with the boxes burned in, and any text that touched a box is dropped from the file. The hidden text cannot be recovered by removing a black rectangle, because there is no rectangle, and none of the original page content is left underneath it. The text outside the boxes is kept, so the page stays searchable. Trade-off: on redacted pages you lose vector quality, links and form fields, and the output file is not encrypted. Unredacted pages are copied as they are. Merging. the Merge tool: add the other PDFs, put them in order, merge. It runs locally too.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Ask HN: how do you organize your workspace to work more efficiently?",
+            "points": 30,
+            "url": "https://news.ycombinator.com/item?id=1523763"
+          }
+        ],
+        "fetchedAt": "2026-09-27T19:58:37.050Z"
+      }
+    },
+    {
+      "id": "be42a48920",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/2850/which-angular-datagrid-library-to-use",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Which Angular DataGrid library to use?",
+      "url": "https://softwarerecs.stackexchange.com/questions/2850/which-angular-datagrid-library-to-use",
+      "summary": "I am looking for a DataGrid library to use on a new Angular project. The main functionalities I want are: Server side filtering. Pagination (first, previous, next, last) (Page [1] of 10) (Results Per Page: [5]) Sortable columns. Check/Select rows. On the previous project we used jQuery and EasyUI for the DataGrid and were more or less satisfied. Now we want to move to an Angular solution for this.",
+      "deepenKey": "2850",
+      "signal": {
+        "score": 4,
+        "views": 188,
+        "answers": 2,
+        "unanswered": true
+      },
+      "publishedAt": "2014-03-31T07:47:34.000Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [
+          "要的是库不是产品"
+        ],
+        "detail": {
+          "signal": -5,
+          "engagement": 4,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "7bfc128f50",
+      "normUrl": "https://news.ycombinator.com/item?id=49868483",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "I was impressed by Jev, please explain why I shouldn't be",
+      "url": "https://news.ycombinator.com/item?id=49868483",
+      "externalUrl": null,
+      "summary": "I'm not a computer science guy, but I had a play with Jev and found it impressive. It allowed me to offer non-technical researchers the ability to classify arbitrary things their participants enter, without prior training or classification, at near instant speed, and negligible cost. My users may find that very helpful in the qualitative research world. I showed them an innocuous working example of how they could classify thousands of participant entries as \"mentioning Italian food\" whether it mentioned \"pasta\", \"penne\", \"rigatone\", etc etc.",
+      "deepenKey": "49868483",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 9
+      },
+      "publishedAt": "2026-09-27T16:59:15Z",
+      "ref": "I10",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "40fe55ec67",
+      "normUrl": "https://news.ycombinator.com/item?id=49867620",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Allow agents access to cloud files with least privilege?",
+      "url": "https://news.ycombinator.com/item?id=49867620",
+      "externalUrl": null,
+      "summary": "Let's say I have a Google spreadsheet on my Drive that I want an agent like Muse to work on. Currently my options are: a) I can allow Muse to access my Drive b) Share the spreadsheet with edit privilege to anyone with link and give that link to Muse. Both of these are not least privilege access that I'm comfortable with. Ideally I should be able to share access to a file with an agent. Other options like webhooks, burner accounts, etc are too tedious to do regularly. Any obvious solution that I am missing?",
+      "deepenKey": "49867620",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-09-27T15:38:46Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": 8,
+        "hits": [
+          "在用笨办法凑合"
+        ],
+        "detail": {
+          "signal": 4,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Let's say I have a Google spreadsheet on my Drive that I want an agent like Muse to work on. Currently my options are: a) I can allow Muse to access my Drive b) Share the spreadsheet with edit privilege to anyone with link and give that link to Muse. Both of these are not least privilege access that I'm comfortable with. Ideally I should be able to share access to a file with an agent. Other options like webhooks, burner accounts, etc are too tedious to do regularly. Any obvious solution that I am missing?",
+        "comments": [
+          {
+            "text": "A grant limited to one selected file, with read and write access scoped separately and an expiry, would avoid giving the agent the whole Drive."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Launch HN: Poly (YC S22) – Cursor for Files",
+            "points": 66,
+            "url": "https://news.ycombinator.com/item?id=45995394"
+          },
+          {
+            "title": "Show HN: Control webviews programmatically with the Pipeable iOS SDK",
+            "points": 21,
+            "url": "https://news.ycombinator.com/item?id=39760090"
+          },
+          {
+            "title": "Show HN: I built a smart proxy so your coding agent can run loose",
+            "points": 14,
+            "url": "https://news.ycombinator.com/item?id=48907871"
+          }
+        ],
+        "fetchedAt": "2026-09-27T19:57:35.695Z"
+      }
+    },
+    {
+      "id": "c678829ef1",
+      "normUrl": "https://news.ycombinator.com/item?id=49865041",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How can you quikly tell if a technical article lacks firsthand experience?",
+      "url": "https://news.ycombinator.com/item?id=49865041",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "49865041",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-09-27T09:40:16Z",
+      "ref": "I12",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "82c7844c56",
+      "normUrl": "https://news.ycombinator.com/item?id=49862453",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Who is the inspiration for your thinking?",
+      "url": "https://news.ycombinator.com/item?id=49862453",
+      "externalUrl": null,
+      "summary": "Leaving broad and vague by design. Who formed your thinking? Philosophers? Business magnates? Ancient wisdom? Or more recent thinking? Socrates to Bill Gates? I'll go first, in no particular order: - The Ancient Stoics - D. T. Suzuki, Thich Nhat Hanh, and other - C G Jung - Alfred Adler - Arthur Schopenhauer - Friedrich Nietzsche - Fyodor Dostoevsky - Franz Kafka - Niccolo Machiavelli (highly misunderstood, I strongly suggest starting by watching the \"Learning to Love Machiavelli: Don MacDonald at TEDxBoston\" - George Pólya",
+      "deepenKey": "49862453",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 14
+      },
+      "publishedAt": "2026-09-27T01:33:59Z",
+      "ref": "I13",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Leaving broad and vague by design. Who formed your thinking? Philosophers? Business magnates? Ancient wisdom? Or more recent thinking? Socrates to Bill Gates? I'll go first, in no particular order: - The Ancient Stoics - D. T. Suzuki, Thich Nhat Hanh, and other - C G Jung - Alfred Adler - Arthur Schopenhauer - Friedrich Nietzsche - Fyodor Dostoevsky - Franz Kafka - Niccolo Machiavelli (highly misunderstood, I strongly suggest starting by watching the \"Learning to Love Machiavelli: Don MacDonald at TEDxBoston\" - George Pólya",
+        "comments": [
+          {
+            "text": "I got interested in civic coding because of the essays by Tim O'Reilly. When I was running the Code Michigan hackathon for a couple of years with the State Of Michigan I tried getting him as a speaker with no luck."
+          },
+          {
+            "text": "I’d like to name specific people, but I’ve been influenced much more by my family and the people around me."
+          },
+          {
+            "text": "For me: Primary level, Ancient eastern wisdom(Hinduism, Buddhism, Yogic texts) to attain calmness during storm/failures. Then on secondary level, modern tech people like steve jobs, engineers who build open source etc."
+          },
+          {
+            "text": "David Foster Wallace, Scott Alexander, and Plato"
+          },
+          {
+            "text": "Ward Christensen taught me the joy of hacking, just modifying things to suit my will. He once told me that he heard \"You can't write programs in assembler for OS/2\" at work at IBM. With his help getting me the C++ compiler kit, this challenge resulted in Forth/2, a direct threaded forth for OS/2, written in assembler, of course. Russel Reynolds taught me the nature of software development. He was the Operations Manager at Will County Generating Station, which burned coal and turned it into power. He saw computers as a tool, and one that had to be as practical and unobstructive as possible. In the 1980s, he sought out hand-held computers for recording the inspections of fire fighting equipment. He tried running them with gloves on, spilling coffee on them, dropping them on the concrete floor. I wrote the software to record the inspections."
+          },
+          {
+            "text": "Steve Jobs and Jony Ive. Particularly one of the promo videos with Ive’s voice-over saying something to the effect of, “There isn’t anything we could remove to make it any better.” This put some language to a shift that was already happening as a result of using the products for several years. I’m a different person today because of this lesson and how it shifted the way I think at a pretty deep level, from purchases to problem-solving. Related: “Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.” -Antoine de Saint-Exupéry “Less, but better.” -Dieter Rams"
+          },
+          {
+            "text": "Username checks out. As for me, I've come to appreciate that I'm a fairly average thinker. Mostly I just try to make things work and watch the clouds. There are people who's thinking I admire - Stewart Brand, for example. As for Nietzsche et al, I've never really had the time."
+          },
+          {
+            "text": "Alan Watts The Red Green Show"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T19:57:36.056Z"
+      }
+    },
+    {
+      "id": "8a9cac4988",
+      "normUrl": "https://news.ycombinator.com/item?id=49861878",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What do you do now as a software engineer?",
+      "url": "https://news.ycombinator.com/item?id=49861878",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "49861878",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 7
+      },
+      "publishedAt": "2026-09-27T00:06:54Z",
+      "ref": "I14",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "26436e3a4f",
+      "normUrl": "https://news.ycombinator.com/item?id=49861047",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "OpenAI Codex agents go rogue and consumes USD 78,000 without authorization",
+      "url": "https://news.ycombinator.com/item?id=49861047",
+      "externalUrl": null,
+      "summary": "My OpenAI CODEX account went rogue and from a simple request took the autonomous decision to launch 826 parallel agents / threads without any authorization on my side and without reporting any result of any sort but consuming nearly 2,146 trillions tokens, consuming a total of roughly USD 78,000 and deleting all records of what was done: I have a ticket open with OpenAI since 2 weeks but it is impossible to get an hold of a human operator. On July 10, 2026 I opened a normal Codex task from VS Code.",
+      "deepenKey": "49861047",
+      "via": null,
+      "signal": {
+        "points": 80,
+        "comments": 30
+      },
+      "publishedAt": "2026-09-26T22:15:32Z",
+      "ref": "I15",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "My OpenAI CODEX account went rogue and from a simple request took the autonomous decision to launch 826 parallel agents / threads without any authorization on my side and without reporting any result of any sort but consuming nearly 2,146 trillions tokens, consuming a total of roughly USD 78,000 and deleting all records of what was done: I have a ticket open with OpenAI since 2 weeks but it is impossible to get an hold of a human operator. On July 10, 2026 I opened a normal Codex task from VS Code. The task was running: GPT-5.5 / Medium reasoning My prompt was very simple and asked for a UX/UI validation on a specific module within my product. What I found in the next days after hard analysis was: The task with Root ID 019f4b90-4169-7201-bfdd-732940d8631e with reasoning GPT-5.5 / Medium created 826 children recorded as GPT-5.6 Sol / Ultra (notice the difference in reasoning level and in model selection) This was not 826 messages inside one conversation, they are 826 distinct child task records with their own IDs. A particularly strange group consists of 104 child tasks. They all preserve the same initial message as the original task, are recorded as GPT-5.6 Sol/Ultra, and have no recorded agent_role or agent_path. Those 104 tasks alone account for approximately 147.9 billion local final task-token counters. Their titles show that my request to inspect UI/UX had expanded into work involving backend infrastructure, OAuth, metering, hardening, audits, certification, implementation and release work. To be precise: these local token counters are not the authoritative OpenAI billing ledger, and I am not pretending that 147.9B local counters can simply be multiplied by an API price. That is exactly part of the problem: only OpenAI has the server-side mapping. There is another unusual correlation. Under Codex client build 0.144.0-alpha.4, the task family contains: 584 child tasks / ~154.36B local token counters Average: ~264.3M per task Under 0.144.2: 242 child tasks / ~7.51B Average: ~31.0M per task That is roughly an 8.5x difference in average local token volume per child.",
+        "comments": [
+          {
+            "text": "Sounds like you got scammed Hope this gets some visibility idk why it's flagged guess the PR guys for those companies are doing it Should spread this around"
+          },
+          {
+            "text": "Does openAI not support spending caps on your billing account?"
+          },
+          {
+            "text": "clarification: your credit card or company’s card now has $78,000 of charges on it?"
+          },
+          {
+            "text": "This submission appears to be highly vote-manipulated (45 upvotes but only 7 \"real\" karma on OP's fresh account)."
+          },
+          {
+            "text": "The user evidently had no spending protections enabled at any level. It makes no sense that none of the OpenAI or bank controls kicked in or even sent alert emails as they actually do send. Anyone with half a brain would know to not run AI without a hard cap on its expenses."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "OpenAI Codex agents go rogue and consumes USD 78,000 without authorization",
+            "points": 80,
+            "url": "https://news.ycombinator.com/item?id=49861047"
+          }
+        ],
+        "fetchedAt": "2026-09-27T19:56:54.743Z"
+      }
+    },
+    {
+      "id": "406f423845",
+      "normUrl": "https://news.ycombinator.com/item?id=49859765",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Did you not get the warnings about building thinking machines in Dune?",
+      "url": "https://news.ycombinator.com/item?id=49859765",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "49859765",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 3
+      },
+      "publishedAt": "2026-09-26T19:31:15Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "9f8e01e813",
+      "normUrl": "https://github.com/ggml-org/llama.cpp/issues/29058",
+      "sourceId": "gh-requests",
+      "source": "GitHub 高赞功能请求",
+      "sourceHome": "https://github.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Feature Request: Support Prism PQ2_0 (GGML type 142) and PTQ1_0 (type 143) used by Ternary-Bonsai-2",
+      "url": "https://github.com/ggml-org/llama.cpp/issues/29058",
+      "summary": "### Prerequisites - [x] I am running the latest code. Mention the version if possible as well. - [x] I carefully followed the [README.md](https://github.com/ggml-org/llama.cpp/blob/master/README.md). - [x] I searched using keywords relevant to my issue to make sure that I am creating a new issue that is not already open (or closed). - [x] I reviewed the [Discussions](https://github.com/ggml-org/llama.cpp/discussions), and have a new and useful enhancement to share.",
+      "signal": {
+        "thumbsUp": 0,
+        "comments": 6,
+        "repo": "ggml-org/llama.cpp"
+      },
+      "publishedAt": "2026-09-18T00:08:15Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": 3,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 0,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "aa09b05cb0",
+      "normUrl": "https://reddit.com/r/Parenting/comments/1wrpkd5/7_year_old_doesnt_want_to_quite_football_but",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "7 year old doesn't want to quite football but doesn't play during training or games",
+      "url": "https://www.reddit.com/r/Parenting/comments/1wrpkd5/7_year_old_doesnt_want_to_quite_football_but/",
+      "summary": "I have a 6 year old who has been playing football for a little over a year now. We originally put her in because she was a very hyper and busy person, and her friends father was creating a girls football team, so we put her in it and she loved it. Now, she doesn't want to go to training or play, but whenever we tell her that she can stay home, she then complains that she wants to go. During training sessions and in games, she doesn't do anything.",
+      "deepenKey": "/r/Parenting/comments/1wrpkd5",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-27T17:06:32.000Z",
+      "ref": "I18",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "I have a 6 year old who has been playing football for a little over a year now. We originally put her in because she was a very hyper and busy person, and her friends father was creating a girls football team, so we put her in it and she loved it. Now, she doesn't want to go to training or play, but whenever we tell her that she can stay home, she then complains that she wants to go. During training sessions and in games, she doesn't do anything. At training, she refuses to get out of the car until warm up is done because she doesn't want to do it, she spends the whole time talking to her friends, and she doesn't chase the ball or tackle at all. She is like this in games as well. Usually before games begin, they ask if anyone wants to start off of on the side and she is always the first one to put her hand up, and sometimes she just automatically puts herself there. When she is playing, she doesn't chase or tackle for the ball either. She had a game earlier and maybe touched the ball twice. We have told her loads of times that she can stop if she wants to, but she doesn't want to. We have asked if she is in pain or anything and she says that she's completely fine. It's not as if she has any close friends she has made from football (the girls she mainly talks to there are her friends from school so she sees them almost every day anyway). We are paying for her to spend 2 hours a week watching other people play football (respectfully). Any advice on what to do? Edit: She is 6, not 7, but I can't change the title",
+        "comments": [
+          {
+            "text": "“We have told her loads of times that she can stop if she wants to, but she doesn't want to.” If you don’t want to pay for her to watch other people play football, have you tried “if you don’t play football while you’re at football, you will have to stop going”? “If you want to” entirely puts it in her court, and she might be happy to just go and hang out with friends and sit on the side."
+          },
+          {
+            "text": "Sounds like she's less interested in football and more interested in the social aspect."
+          },
+          {
+            "text": "I think so too. There's a different energy to playing a sport with your friends than school or other extra curriculars."
+          },
+          {
+            "text": "We recently had to have this talk with our 6yo. If you wanna do the activity, you gotta do all of it 100%, or you can be out. They didn't want to do all the necessary parts so we made the call to stop doing it."
+          },
+          {
+            "text": "I have a 6 year old going through a similar thing with hockey. He loves it, he's great at it, but gets stressed out with the more structured parts. Ive done a little research and here's what I learned. Make it fun and not totally performance based. There are a lot of different aspects of organized sports we overlook like being on a new team with new peers, parent expectations, etc. Focus on their effort and spending time with peers, and part of a team rather than making tackles. There will be plenty of time to do that over the next 12 years. Ive shifted away from saying things like \"nice goal\" to things like\"we loved watching you play\". Does she like playing football with you in the backyard or with friends in a less structured setting? This can be telling of what they really want. Hopefully this helps, or at least validates how your feeling a bit. Its normal 6 year old stuff"
+          },
+          {
+            "text": "Hey /u/achr8 ! It looks like you might be new here. Welcome! Our Early Parenting Wiki addresses topics like pregnancy (both intended and unintended) as well as birth control and post partum care! If you're worried about developmental delays use the Healthy Children Assessment Tool - available in multiple languages. Curious about the rules? Check out our Rules Wiki which provides helpful explanations for new and returning users. Check out the Subreddit Wikis , for a variety of topics. I am a bot, and this action was performed automatically. Please contact the moderators of this subreddit if you have any questions or concerns."
+          },
+          {
+            "text": "Id start a conversation about her behaviour. Not being dismissive or mean but just ask questions: why do you want to go but dont actually play the game? She has reasons and maybe work from there. Can she keep up physically? Does she actually play football in other places then at the club? Are there other moments she gets to interact with these girls? Does she just want to be social?"
+          },
+          {
+            "text": "She's 6 and I assume it's not a competitive league? Just for fun? The activity and social interaction are good for her, and the memories too for when she's older. My 6yo and 11yo both do soccer, and my 6yo usually lays down in the goal area and picks clovers, does cartwheels etc. He has weeks where he participates more, some less. My 11yo is capable of buckling down and doing his best effort, but I wouldn't necessarily expect that same effort at 6. He seems to have fun and wants to be there, so it's fine for me. Once he's ready to hustle, he'll have a little more experience and knowledge than if we didn't bring him at all. I'm thinking around 8 is when we will expect decent effort."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T20:09:04.576Z"
+      }
+    },
+    {
+      "id": "1bc02e00f4",
+      "normUrl": "https://reddit.com/r/CanadianbyDescent/comments/1wrp7ju/applying_for_dec_copy_of_an_act",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Applying For DEC Copy Of An Act",
+      "url": "https://www.reddit.com/r/CanadianbyDescent/comments/1wrp7ju/applying_for_dec_copy_of_an_act/",
+      "summary": "My wife's paternal grandfather (G0) was born in Lingwick, Quebec in 1914. His family emigrated to NH where he later married and her father (G1) was born. He passed away in 1991 in NH. When he emigrated his name was anglicized from Louis Édouard <last name> to Edward Lewis <last name>. Our son and his family live in Ottawa (daughter-in-law is Canadian born, son is also applying for Citizenship by Descent, currently has permanent resident visa). We are wanting to get citizenship for my wife in case something were to happen to me, she would be eligible to move up with them immediately.",
+      "deepenKey": "/r/CanadianbyDescent/comments/1wrp7ju",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-27T16:52:17.000Z",
+      "alsoFrom": [
+        {
+          "source": "Reddit 付费信号",
+          "url": "https://www.reddit.com/r/CitizenshipByDescent/comments/1wrp73x/applying_for_dec_copy_of_an_act/"
+        }
+      ],
+      "ref": "I19",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "My wife's paternal grandfather (G0) was born in Lingwick, Quebec in 1914. His family emigrated to NH where he later married and her father (G1) was born. He passed away in 1991 in NH. When he emigrated his name was anglicized from Louis Édouard <last name> to Edward Lewis <last name>. Our son and his family live in Ottawa (daughter-in-law is Canadian born, son is also applying for Citizenship by Descent, currently has permanent resident visa). We are wanting to get citizenship for my wife in case something were to happen to me, she would be eligible to move up with them immediately. They are building a new house in Ottawa and we are paying for an in-law suite to use when we come visit, so that's where she'd stay if something were to happen to me. We submitted her application back in June consisting of BanQ baptism record, G0 death certificate, G1 Birth certificate, her birth certificate, copy of her drivers license and passport, and a copy of our wedding license to prove her name change - no AOR yet. In the meantime time we are wanting to get a DEC Copy Of An Act in case they come back and say it's needed. We plan to submit: \\- G0 BanQ record \\- G0 death certificate \\- G1 birth certificate \\- Her birth certificate \\- Copy of her drivers license to verify address Is this all that is needed, or does she need a limited power of attorney from her father to apply, or would it be easier for her father to apply? I'm a little lost in all the bureaucracy and recent changes so I could use a little guidance. Also, do we also need to go through the process of getting G0's death entered in to the registry, and if so, how do we go about that? Thanks in advance.",
+        "comments": [
+          {
+            "text": "BEFORE commenting, please read the rules. Intentional violations of Rule #1 (No Ad Hominem Attacks/Arguments) can lead to an immediate ban. I am a bot, and this action was performed automatically. Please contact the moderators of this subreddit if you have any questions or concerns."
+          },
+          {
+            "text": "In addition to what you already have you’ll want the request form, a written statement stating why you want the copy of an act & why G1 isn’t applying & a French translation of the death certificate from an OTTIAQ-certified translator. It shouldn’t be a huge issue for her to be the one applying. I applied for my grandmother’s even tho my mom is still living & just explained she wasn’t particularly on board with my getting citizenship & they gave it to me."
+          },
+          {
+            "text": "Was your G0's birth more than 100 years old?"
+          },
+          {
+            "text": "No my G0 was born in 1927 but others have mentioned when they’re past the date they usually handle the only extra thing you need is the certified baptism certificate from BAnQ. Also if you don’t have everything they need they won’t out right reject you. They’ll call or email and make the request."
+          },
+          {
+            "text": "Why should the English language death certificate be translated into French for DEC? I thought that all the Canadian agencies were bilingual that way, not needing translation for either English or French documents."
+          },
+          {
+            "text": "It’s a Quebec agency. Quebec is very particular about certain things being in French & mainly use French. I’m guessing it’s because it’s being used to register the person’s death & not just verify the person requesting’s identity & eligibility to receive the copy of an act."
+          },
+          {
+            "text": "Indeed, a quick AI search says DEC requires English documents to be translated into French. Never thought about that before now. Here’s what I got: Quebec's Directeur de l'état civil (DEC) requires any foreign document in English to be officially translated into French if it is being submitted for specific administrative processes like the insertion of a foreign act. [ 1 ] Translation Rules at DEC English to French: If you submit a supporting document or foreign certificate (such as a foreign death certificate required to update a civil register entry) that is written in English, the DEC requires it to be accompanied by a French translation. Certified Translator: The translation must be done or authenticated by a member of the Ordre des traducteurs, terminologues et interprètes agréés du Québec (OTTIAQ)."
+          },
+          {
+            "text": "A POA may not help. Her father may have to actually sign the application in wet ink. A lot of records that are 100 years or less are only available to the next of kin. Thankfully 1914 is over 100 years old, so you may get lucky."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Ask HN: I’ve been applying to a million jobs",
+            "points": 274,
+            "url": "https://news.ycombinator.com/item?id=13659160"
+          }
+        ],
+        "fetchedAt": "2026-09-27T19:59:17.608Z"
+      }
+    },
+    {
+      "id": "ac50b70dd6",
+      "normUrl": "https://reddit.com/r/HomeNetworking/comments/1wrkcfy/fixing_ethernet_issues_is_my_pc_fricked_or_is_it",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Fixing Ethernet issues - Is my PC fricked, or is it the Router?",
+      "url": "https://www.reddit.com/r/HomeNetworking/comments/1wrkcfy/fixing_ethernet_issues_is_my_pc_fricked_or_is_it/",
+      "summary": "Preface: I already trawled through the FAQ, and I didn't find anything that could help me. I've already tried to do my own research, and it has not been fruitful. I am not a home network enthusiast, I just need my PC to make use of the full plan we are paying for. Background: My internet plan is meant to provide 1000Mbps. It is fibre optic. My area has had some pretty bad power outages recently, my PC and my brother's PC were caught a few times.",
+      "deepenKey": "/r/HomeNetworking/comments/1wrkcfy",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-27T13:32:47.000Z",
+      "ref": "I20",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "个人设备问题",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "e4a3a7f58f",
+      "normUrl": "https://reddit.com/r/vitbhopal/comments/1wrg69e/can_we_really_evaluate_whats_going_on_atp",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Can we really evaluate what's going on atp",
+      "url": "https://www.reddit.com/r/vitbhopal/comments/1wrg69e/can_we_really_evaluate_whats_going_on_atp/",
+      "summary": "Okay so no hate yeah but facts: - CAT-1 okay , not a big deal like mid terms, passable exams -CAT-2, hard exams, takes a lot of studying and even after that, the exam is not doable( not for me, idk about you guys) - 15 days in which you gotta do viva and all the internal exam things left -rest of the month TEE, vast syllabus, hard subjects and takes all the time, even after that the gpa is fked because of all this Now, just tell me, what is left after everything, can you even code something or do you have time to do anything else You can call this a hate post, yea cause I am frustrated, when…",
+      "deepenKey": "/r/vitbhopal/comments/1wrg69e",
+      "via": "we are paying for",
+      "publishedAt": "2026-09-27T09:50:05.000Z",
+      "ref": "I21",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "cfb3f498a5",
+      "normUrl": "https://reddit.com/r/Tile/comments/1wrsp2d/realistic_expectations",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Realistic Expectations?",
+      "url": "https://www.reddit.com/r/Tile/comments/1wrsp2d/realistic_expectations/",
+      "summary": "Hello, I’m looking for some suggestions or help from this community at this point for our 8 x 5 bathroom remodel. We were quoted around 26k originally to do a full bathroom gut and remodel. This work started in early August and was “completed” early September. However, there were issues with the tile chipping and the drywall was extremely crooked - they did not shim anything. We asked our GC about this, the tile we selected was defective and he agreed to redo the drywall. He quoted us an additional 15k for a new tile job that extended tile half wall to the doors.",
+      "deepenKey": "/r/Tile/comments/1wrsp2d",
+      "via": "quoted us",
+      "publishedAt": "2026-09-27T19:09:20.000Z",
+      "ref": "I22",
+      "screen": {
+        "keep": true,
+        "score": 14,
+        "hits": [
+          "已经在花钱"
+        ],
+        "detail": {
+          "signal": 8,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Hello, I’m looking for some suggestions or help from this community at this point for our 8 x 5 bathroom remodel. We were quoted around 26k originally to do a full bathroom gut and remodel. This work started in early August and was “completed” early September. However, there were issues with the tile chipping and the drywall was extremely crooked - they did not shim anything. We asked our GC about this, the tile we selected was defective and he agreed to redo the drywall. He quoted us an additional 15k for a new tile job that extended tile half wall to the doors. This quote included demolishing and replacing the cement float plus mesh underneath. We decided to go safe and chose the Renzo Jade subway tile instead of the previously faulty large format tile. We did choose a new, thicker, large format tile to fill in the pony wall top and threshold as well as the window and shower niche edges since the subway tile dimensions were awkward. We also gave up on mitred edges in hopes of keeping this job simple. It’s now three weeks past and we are on our second tile crew trying to get the subway tile spacing even and the edges of the shower plumb. The first tile crew had difficulty cutting straight lines and used the tile spacers inconsistently. The second tile crew spent all of yesterday trying to fit the pieces for the window box and the shower niche with these results. Is it unreasonable to expect the shower niche to be squared off and the edges to be clean? I thought using the Schluter edging was supposed to make this build easier. Did they skip a step building it out further? I’ve included a photo of the cement before any tile was added. Please help us with any suggestions - we just want to be done at this point, it is our only bathroom. We are in the South Bay Area of Los Angeles. We already made concessions by going to subway tile and to skip the mitred edges. Thank you.",
+        "comments": [
+          {
+            "text": "If they’re already struggling to get the niche right, I’d be concerned about how the rest of the job will turn out. There’s a professional in California I’d recommend called Tile Coach. I’m not sure if he works in your area, but you can look him up and ask."
+          },
+          {
+            "text": "The weird thing is they got the niche right originally with the chipping tile. Do you think this struggle to get it square is because of left over thinset or other material? Is it hard to get the niche squared?"
+          },
+          {
+            "text": "Maybe they don’t have much experience working with smaller tile formats. Using Schluter trim on a niche is much easier than making 45-degree miter cuts—the difference is night and day. https://reddit.com/link/pcfp079/video/nn93l2y7c4sh1/player"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T20:03:01.619Z"
+      }
+    },
+    {
+      "id": "7cf545ef69",
+      "normUrl": "https://reddit.com/r/WeddingRingAdvice/comments/1wrsezl/is_this_engagement_ring_overpriced",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Is this engagement ring overpriced?",
+      "url": "https://www.reddit.com/r/WeddingRingAdvice/comments/1wrsezl/is_this_engagement_ring_overpriced/",
+      "summary": "I went to Diamonds Direct with my boyfriend to try on engagement rings today. I had looked online at places like Brilliance but wanted to go in person to try on to really narrow down the size and style. I didn’t really think I’d want to get something at a place like Diamonds Direct since I’ve heard it’s more expensive to go to a place in person like that so I was thinking we’d go just to figure out what size and style I want and then order online from a cheaper place like Brilliance.",
+      "deepenKey": "/r/WeddingRingAdvice/comments/1wrsezl",
+      "via": "quoted us",
+      "publishedAt": "2026-09-27T18:58:48.000Z",
+      "ref": "I23",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "35dc6de31e",
+      "normUrl": "https://reddit.com/r/sideprojects/comments/1wrkgai/i_built_marka_after_being_quoted_1000_a_month_for",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "I built Marka after being quoted $1,000 a month for 12 social posts",
+      "url": "https://www.reddit.com/r/sideprojects/comments/1wrkgai/i_built_marka_after_being_quoted_1000_a_month_for/",
+      "summary": "I’m building Marka because the existing social media model felt disconnected from how content is produced today. An agency quoted us about $1,000 per month for 12 posts. That is roughly $83 per post, and only 12 publishing opportunities across an entire month. The product we built starts by creating a persistent understanding of the brand: logo, colors, typography, visual language, writing tone, audience and customer pain points. From there, Marka can create branded images, carousels, UGC style videos and written posts, then schedule them across connected channels.",
+      "deepenKey": "/r/sideprojects/comments/1wrkgai",
+      "via": "quoted us",
+      "publishedAt": "2026-09-27T13:37:48.000Z",
+      "ref": "I24",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "d44eb9ea7f",
+      "normUrl": "https://reddit.com/r/GetStartups/comments/1wrk54j/we_built_marka_after_being_quoted_1000_a_month",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "We built Marka after being quoted $1,000 a month for 12 social posts",
+      "url": "https://www.reddit.com/r/GetStartups/comments/1wrk54j/we_built_marka_after_being_quoted_1000_a_month/",
+      "summary": "A social media agency quoted us about $1,000 per month for 12 posts. Roughly $83 for each post. The real problem was not only the price. Those 12 posts were supposed to cover every social platform combined. After spreading them across the different channels, the brand would barely be present during most of the month. We started building Marka to test a different model. Marka learns a business once: its logo, brand colors, typography, visual language, tone of voice, target audience, customer problems and positioning.",
+      "deepenKey": "/r/GetStartups/comments/1wrk54j",
+      "via": "quoted us",
+      "publishedAt": "2026-09-27T13:23:33.000Z",
+      "ref": "I25",
+      "screen": {
+        "keep": true,
+        "score": 22,
+        "hits": [
+          "已经在花钱",
+          "提到了具体金额",
+          "有具体人群"
+        ],
+        "detail": {
+          "signal": 16,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "A social media agency quoted us about $1,000 per month for 12 posts. Roughly $83 for each post. The real problem was not only the price. Those 12 posts were supposed to cover every social platform combined. After spreading them across the different channels, the brand would barely be present during most of the month. We started building Marka to test a different model. Marka learns a business once: its logo, brand colors, typography, visual language, tone of voice, target audience, customer problems and positioning. It then helps create and publish an unlimited number of branded posts across connected channels. Businesses can approve and schedule content, generate branded images, carousels and UGC videos, find daily Reddit opportunities and measure performance from one dashboard. The trial is free for 3 days. Plans start at $8. I am one of the people building it: https://marka.social I would appreciate honest feedback on the offer. Is the strongest value the price, the unlimited content or having the system remember the brand context?",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T20:02:21.154Z"
+      }
+    },
+    {
+      "id": "e0db5cb4d0",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1wripp5/sysadmin_as_adhd",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "Sysadmin as ADHD.",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1wripp5/sysadmin_as_adhd/",
+      "summary": "I posted a while back, and it was somewhat well received, and ... a few people contacted me directly expressing that they'd actually managed to make a big difference to their lives. So I'm posting again, and I hope I don't manage to bore you this time either. I was diagnosed with ADHD 36 months ago, at age 43. I had never realised that was what was going on, but I'd got to a very bad state in terms of mental health, burnout, depression and anxiety. Through it all, I've been a sysadmin - and I like to think I'm pretty good at it, because 25 years in no one's sacked me yet.",
+      "deepenKey": "/r/sysadmin/comments/1wripp5",
+      "via": null,
+      "publishedAt": "2026-09-27T12:14:23.000Z",
+      "ref": "I26",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "心理求助",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "b74531b894",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1wr51r9/most_of_our_ac_down_in_the_server_room",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "most of our A/C down in the server room",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1wr51r9/most_of_our_ac_down_in_the_server_room/",
+      "summary": "I was chilling in the couch and doing some fun stuff on our work servers while all of a sudden my RDP session was gone. Had a look at the physical screen, the server is shutting down. I lookalike at the health: temp critical at 43C. I log in on another ILO, it's not a fluke. (23:00 local time). Also one PVE server and several ceph nodes down. So I shut everything down and jump in my car over to our offices and indeed one fuse is off. When I want to switch it on again it refuses, even if I hold it for a couple of seconds. (differential kicks in).",
+      "deepenKey": "/r/sysadmin/comments/1wr51r9",
+      "via": null,
+      "publishedAt": "2026-09-26T23:40:47.000Z",
+      "ref": "I27",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "停服通知",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "afb5a20853",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wrte9m/so_im_testing_my_new_video_editor_please_drop",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "So i'm testing my new video editor :) please drop your SAAS business name for a free promo video preview!",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wrte9m/so_im_testing_my_new_video_editor_please_drop/",
+      "summary": "So I've been working over the past couple of months on building a SAAS video editor - I've seen way too many fly by night AI generated slop. I wanted to give control to the user. But also considering that the user doesn't exactly have the technical skills for a pro level editor like After Effects. So introducing Protohype. A lay persons video editor for SAAS videos. I've made a meta based on text and image scenes. The animations are pre-built, but still giving the user some flexibility in their branding. However, perhaps i'm missing some stuff, hence i need the feedback.",
+      "deepenKey": "/r/microsaas/comments/1wrte9m",
+      "via": null,
+      "publishedAt": "2026-09-27T19:36:25.000Z",
+      "ref": "I28",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "So I've been working over the past couple of months on building a SAAS video editor - I've seen way too many fly by night AI generated slop. I wanted to give control to the user. But also considering that the user doesn't exactly have the technical skills for a pro level editor like After Effects. So introducing Protohype. A lay persons video editor for SAAS videos. I've made a meta based on text and image scenes. The animations are pre-built, but still giving the user some flexibility in their branding. However, perhaps i'm missing some stuff, hence i need the feedback. Are there any scenes i could add? Any other ways i can make it as easy as possible for users but still hitting high quality videos. I'm trying to put the launcher first, without needing a video editor themselves. Im testing it out. Comment by writing out your business name - and your website URL!",
+        "comments": [
+          {
+            "text": "leadverse - find people looking for what you offer on Reddit and X"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T20:10:05.181Z"
+      }
+    },
+    {
+      "id": "ba8d834689",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wrs5le/i_built_a_tool_to_detect_failures_in_enterprise",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I built a tool to detect failures in enterprise approval workflows before users start complaining — is there actually a market for this?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wrs5le/i_built_a_tool_to_detect_failures_in_enterprise/",
+      "summary": "I’ve been working on a product called FlowSentinel and I’m trying to figure out whether the problem is big enough to build a business around. The problem I noticed is that a lot of enterprise approval systems — especially invoice/AP workflows connected to things like SAP, shared mailboxes, mobile approval tools, etc. — can fail pretty quietly.",
+      "deepenKey": "/r/microsaas/comments/1wrs5le",
+      "via": null,
+      "publishedAt": "2026-09-27T18:48:27.000Z",
+      "ref": "I29",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "6f1a3e2f2d",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wrpt96/solo_founder_i_want_to_run_both_ad_accounts_from",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "solo founder — i want to run both ad ​​​​a​​​​c​​​​c​​​​o​​​​u​​​​n​​​​t​​​​s​​​ from chatgpt end to end, what actually works?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wrpt96/solo_founder_i_want_to_run_both_ad_accounts_from/",
+      "summary": "i'm building the product and doing the marketing and i live in chat all day. i have so much to do and i am not a media buyer, switching into two ad managers breaks my whole afternoon. i tried a couple of connectors, but seems they can only read. i get a nice ​​​​a​​​​n​​​​s​​​​w​​​​e​​​​r​​​ and then still have to go click things myself - the reporting connectors are okay-ish but read-only. also they answer per-platform so i still reconcile two numbers. - writing my own api scripts was fine for a week and then became a permanent maintenance job. honestly, i need an end-to-end setup.",
+      "deepenKey": "/r/microsaas/comments/1wrpt96",
+      "via": null,
+      "publishedAt": "2026-09-27T17:16:19.000Z",
+      "ref": "I30",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "i'm building the product and doing the marketing and i live in chat all day. i have so much to do and i am not a media buyer, switching into two ad managers breaks my whole afternoon. i tried a couple of connectors, but seems they can only read. i get a nice ​​​​a​​​​n​​​​s​​​​w​​​​e​​​​r​​​ and then still have to go click things myself - the reporting connectors are okay-ish but read-only. also they answer per-platform so i still reconcile two numbers. - writing my own api scripts was fine for a week and then became a permanent maintenance job. honestly, i need an end-to-end setup. i tell chatgpt to fix the account and it actually fixes the account. help me pls",
+        "comments": [
+          {
+            "text": "Full end-to-end from ChatGPT isn't real yet — every connector's read-only because the platforms don't offer write APIs that are stable enough. What actually worked for me was a middle ground: Claude Code with a few cron jobs (via OpenClaw) that pulls both platforms' reports into one summary every morning, then flags budget/anomaly changes for me to approve. One prompt, one digest, one click to act — not zero clicks, but it cut my ad management from half a day to 20 minutes. Imo that's the realistic ceiling right now."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Co-founder or employee?",
+            "points": 17,
+            "url": "https://news.ycombinator.com/item?id=877589"
+          }
+        ],
+        "fetchedAt": "2026-09-27T20:11:05.745Z"
+      }
+    },
+    {
+      "id": "e94bf7b712",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wrplzv/what_i_learned_launching_my_first_paid_chrome",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "What I learned launching my first paid Chrome extension",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wrplzv/what_i_learned_launching_my_first_paid_chrome/",
+      "summary": "I recently shipped my first subscription-based Chrome extension and underestimated almost everything outside of coding. The extension itself was the easy part. Payments, store approval, localization, free trials, pricing and figuring out distribution took much longer than expected. One thing I’m testing now is whether a very narrow positioning works better than a generic productivity pitch.",
+      "deepenKey": "/r/microsaas/comments/1wrplzv",
+      "via": null,
+      "publishedAt": "2026-09-27T17:08:22.000Z",
+      "ref": "I31",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "768c4e9d15",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wrpez7/i_made_a_place_for_people_to_get_more_trafic_to",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "i made a place for people to get more trafic to their saas, for free",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wrpez7/i_made_a_place_for_people_to_get_more_trafic_to/",
+      "summary": "hi all, I've been working on a little site called The SaaS Harbor over the past few weeks. the idea is simple: somewhere small SaaS products can have a page and actually get some eyes on them. what pushed me to make it was how many launch sites charge you just to be listed, or make you wait months unless you pay for the fast lane. I didn't want that, so it's free. make an account, add your product and it shows up straight away. nothing to upgrade to and no paid spots at the top.",
+      "deepenKey": "/r/microsaas/comments/1wrpez7",
+      "via": null,
+      "publishedAt": "2026-09-27T17:00:32.000Z",
+      "ref": "I32",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "08c06c00dd",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wrp0ov/my_saas_has_no_server_so_it_costs_me_0_a_month_to",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "My SaaS has no server, so it costs me $0 a month to run. Here's how I priced it",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wrp0ov/my_saas_has_no_server_so_it_costs_me_0_a_month_to/",
+      "summary": "I built a Chrome extension that resizes one photo into every social media size (feed, story, pin, thumbnail and so on, 43 in total). Every competitor is a website: you upload, they process on their servers, and they charge around $15/mo, largely to cover those servers. Mine runs entirely in the browser. Rust compiled to wasm does the images and WebCodecs does the video. That changed the business more than I expected: No server means no marginal cost.",
+      "deepenKey": "/r/microsaas/comments/1wrp0ov",
+      "via": null,
+      "publishedAt": "2026-09-27T16:44:37.000Z",
+      "ref": "I33",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "4f0aee9b12",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wro0v0/builders_stuck_near_zero_revenue_lets_chat",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Builders Stuck Near Zero Revenue - Let's Chat",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wro0v0/builders_stuck_near_zero_revenue_lets_chat/",
+      "summary": "I know there are many, many people who have an idea, build it, launch it and then crickets. You try directory listings, maybe some paid ads, post on X and reddit (then get banned). There has got to be a better way. I wish I knew the answer. People with 40,000 followers will say \"just stick with it\", but that doesn't really seem to work. I'm going to guess there are lots of people in this spot, so I wanted to start an honest discussion on how to improve this outcome so great products don't die silently.",
+      "deepenKey": "/r/microsaas/comments/1wro0v0",
+      "via": null,
+      "publishedAt": "2026-09-27T16:05:37.000Z",
+      "ref": "I34",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6a9cffdcd1",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wrn6pz/made_my_first_14_today_after_6_weeks_of_building",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Made my first $14 today after 6 weeks of building, here's exactly how it happened",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wrn6pz/made_my_first_14_today_after_6_weeks_of_building/",
+      "summary": "Small win, but it's my first real dollar from this thing so I wanted to write it down. Built VoxScribe, a local voice dictation app for Windows (hold a hotkey, talk, it types into whatever app has focus). Python, PySide6, faster-whisper running fully offline, no cloud API, no server costs on my end. Free and open source (MIT), with an optional $14 one-time Pro unlock for bigger models and text snippets. Numbers so far, about 6 weeks in: 5 GitHub stars, 30 total downloads across all versions. Small. Today I posted about it on a few subreddits.",
+      "deepenKey": "/r/microsaas/comments/1wrn6pz",
+      "via": null,
+      "publishedAt": "2026-09-27T15:32:45.000Z",
+      "ref": "I35",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "78d3324dc4",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wrn237/if_you_are_not_at_10k_a_month_after_year_one_you",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "If you are not at $10k a month after year one you are not behind",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wrn237/if_you_are_not_at_10k_a_month_after_year_one_you/",
+      "summary": "every week there's a \"$10k MRR in 60 days\" post and it makes everyone else feel slow. so i checked how old startups actually are when they get there. 787 startups with stripe-verified revenue and a founding date on trustmrr. share making $10k+ a month, by age: - under 1 year: 10% - 1 to 2 years: 19% - 2 to 3 years: 19% - 3 to 5 years: 28% - 5+ years: 37% the median startup at $10k+ a month is 2 years old. median monthly revenue by age: - under 1 year: $1,768 - 1 to 2 years: $2,090 - 5+ years: $4,514 and that's only startups already making $500+ a month.",
+      "deepenKey": "/r/microsaas/comments/1wrn237",
+      "via": null,
+      "publishedAt": "2026-09-27T15:27:40.000Z",
+      "ref": "I36",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [
+          "提到了具体金额"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "every week there's a \"$10k MRR in 60 days\" post and it makes everyone else feel slow. so i checked how old startups actually are when they get there. 787 startups with stripe-verified revenue and a founding date on trustmrr. share making $10k+ a month, by age: - under 1 year: 10% - 1 to 2 years: 19% - 2 to 3 years: 19% - 3 to 5 years: 28% - 5+ years: 37% the median startup at $10k+ a month is 2 years old. median monthly revenue by age: - under 1 year: $1,768 - 1 to 2 years: $2,090 - 5+ years: $4,514 and that's only startups already making $500+ a month. the ones that never got there aren't in the data, so the real picture is slower. so if you're a year in and making a couple thousand a month, you're right around the median. the fast ones get posted because they're rare. the rest of the numbers are in a free report, no signup: state of indie business ideas 2026",
+        "comments": [
+          {
+            "text": "Really useful, I needed to read that. Thanks!"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Ask HN: Just got an innocent man out of prison. What now?",
+            "points": 510,
+            "url": "https://news.ycombinator.com/item?id=12010760"
+          },
+          {
+            "title": "Ask HN: Took a break after burnout – what now?",
+            "points": 10,
+            "url": "https://news.ycombinator.com/item?id=44496470"
+          }
+        ],
+        "fetchedAt": "2026-09-27T19:57:15.174Z"
+      }
+    },
+    {
+      "id": "d6301000b9",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wrl721/trying_to_rebuild_my_agency_into_a_saas",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "trying to rebuild my agency into a saas, documenting it from here",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wrl721/trying_to_rebuild_my_agency_into_a_saas/",
+      "summary": "honestly i've been stuck in the same agency loop for a while now. client work, delivery, finding the next client, repeat. i've been wanting to get out of that cycle for a long time, so i've started building a saas and decided to document the whole thing this time. not just the polished “look what i built” stuff either. i wanna share the actual process, what i'm building, what breaks, pivots, shitty decisions, wins, revenue, all of it. i also challenged myself to post every single day while doing this.",
+      "deepenKey": "/r/microsaas/comments/1wrl721",
+      "via": null,
+      "publishedAt": "2026-09-27T14:10:35.000Z",
+      "ref": "I37",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "9f1afbfac9",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wrkxyp/i_am_a_50yearold_veteran_building_an_agtech",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I am a 50-year-old veteran building an AgTech Startup from a laptop in Slovenia. My son runs cross-border tests from Germany. Rate our 66-table database architecture for the EU Honey Directive.",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wrkxyp/i_am_a_50yearold_veteran_building_an_agtech/",
+      "summary": "Hi everyone, I am Serhii, a 50-year-old veteran currently living on the Slovenian coast (Piran). I don’t speak perfect English, and I write my posts using a translator, but I’ve spent months bootstrapping AgroNode & The Bee Temple Project (The Biosphere’s Digital Twin Operating System). Recently, I hit a heavy solo sprint. Primorski tehnološki park rejected me due to the language barrier, but I am not stopping.",
+      "deepenKey": "/r/microsaas/comments/1wrkxyp",
+      "via": null,
+      "publishedAt": "2026-09-27T13:59:59.000Z",
+      "ref": "I38",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "60d6e6049f",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wrjdhg/is_there_an_ai_that_actually_does_the_seo_work",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Is there an AI that ​​​​a​​​​c​​​​t​​​​u​​​​a​​​​l​​​​l​​​​y​​​ does the SEO work, not just audits it?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wrjdhg/is_there_an_ai_that_actually_does_the_seo_work/",
+      "summary": "Every platform I've paid for this year does the same thing. It crawls the site, produces 340 issues sorted by severity, and ​​​​h​​​​a​​​​n​​​​d​​​​s​​​ it to me. Great. I already knew the site was broken. What I want is something that fixes it, writes the pages that are missing, and tells me whether any of it is landing in the AI answers people actually read now. Does that exist yet or am I describing a fantasy?",
+      "deepenKey": "/r/microsaas/comments/1wrjdhg",
+      "via": null,
+      "publishedAt": "2026-09-27T12:47:32.000Z",
+      "ref": "I39",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "be10163145",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wriuo0/i_launched_an_ai_spam_filter_competing_with",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I launched an AI spam filter competing with Akismet — here's why \"better accuracy\" doesn't sell",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wriuo0/i_launched_an_ai_spam_filter_competing_with/",
+      "summary": "Launched last month: JevShield, an AI-powered contact form spam filter with a WordPress plugin. Competing head-on with Akismet (6M+ sites, pre-installed everywhere) and CleanTalk ($12/year — yes, per year). Three lessons from the first few weeks: 1. Competing on accuracy is unwinnable. Akismet has 500B+ data points and network effects — every flagged spam on any site improves detection for everyone. A solo founder cannot out-data Automattic. If your pitch is \"we block 99.9% vs their 99.99%,\" you've already lost. 2. The real gap isn't bots, it's humans + missed leads.",
+      "deepenKey": "/r/microsaas/comments/1wriuo0",
+      "via": null,
+      "publishedAt": "2026-09-27T12:21:20.000Z",
+      "ref": "I40",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "663e108c07",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wrir37/have_you_ever_killed_your_favorite_feature_and",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "have you ever killed your favorite feature and had the retention numbers thank you?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wrir37/have_you_ever_killed_your_favorite_feature_and/",
+      "summary": "i run a small marketing analytics tool, about 60 paying users. i spent most of the summer on an automated insights feature i was sure would be the selling point. dashboards that wrote their own summaries, the whole thing. churn kept creeping. i finally interviewed the people who left and every one of them said the same thing in different words. it felt like the tool was doing something behind their back they could not check. so i turned the feature off and made it opt-in and buried. retention went up two months running. turns out the people paying me wanted control, not cleverness.",
+      "deepenKey": "/r/microsaas/comments/1wrir37",
+      "via": null,
+      "publishedAt": "2026-09-27T12:16:21.000Z",
+      "ref": "I41",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6256a7affa",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wri8wb/weekend_is_here_what_are_you_building",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Weekend is here, What are you building?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wri8wb/weekend_is_here_what_are_you_building/",
+      "summary": "Weekend's here, and I'm curious what you're all working on. Drop your startup or side project below with a line about what it does. I'll go through every one, and if something fits a problem I actually have, I'll sign up and be your first customer. No catch, I just know how much that first user means. P.S. If you just want better visibility of your startup you can check circlesaasboard.com",
+      "deepenKey": "/r/microsaas/comments/1wri8wb",
+      "via": null,
+      "publishedAt": "2026-09-27T11:50:17.000Z",
+      "ref": "I42",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "里程碑分享",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "fa05caacb9",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wrhn1m/i_have_every_featured_product_hunt_launch_from",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I have every featured Product Hunt launch from the last 757 days in a table. Ask me anything and I'll pull the number.",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wrhn1m/i_have_every_featured_product_hunt_launch_from/",
+      "summary": "Everyone argues about what works on Product Hunt. I got tired of guessing, so I built a crawler. 10,111 featured launches, every day from 1 Sep 2024 through 27 Sep 2026, no missing days. Six topics: AI, Developer Tools, Productivity, Design, Marketing, SaaS. For each launch: votes, comments, daily rank, maker count, topics, whether it had a video. A few things already in there: the median launch gets 150 votes, 4,673 launches were one person, 6,972 had a video. Ask a specific question in the comments and I'll run it and reply with the real number.",
+      "deepenKey": "/r/microsaas/comments/1wrhn1m",
+      "via": null,
+      "publishedAt": "2026-09-27T11:16:39.000Z",
+      "ref": "I43",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "a6984c5d50",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wrgtw6/roast_my_micro_saas_paste_a_domain_get_134_checks",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Roast my micro SaaS: paste a domain, get 134 checks in about three seconds, no signup",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wrgtw6/roast_my_micro_saas_paste_a_domain_get_134_checks/",
+      "summary": "Disclosure: I built it. I am a solo indie dev. Revenue so far: zero. It went live this week. Backstory. I used to be a CIO. Checking if a website was really healthy took most of a day. Domain expiry, certificates, DNS, mail authentication, what a page actually does in a browser, what it loads before the visitor agrees to anything. Nobody ever had that day, so it did not get done. I wanted the tool for myself. Then I saw who else wants it: agencies and freelancers. A report like this helps them win a client, and then keep one. Stack. Java 25 and Spring Boot 4 for the engine. Postgres.",
+      "deepenKey": "/r/microsaas/comments/1wrgtw6",
+      "via": null,
+      "publishedAt": "2026-09-27T10:29:24.000Z",
+      "ref": "I44",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "求反馈",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "0d49bc71e5",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wrg3q0/what_looked_like_a_simple_credit_balance_turned",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "What looked like a simple credit balance turned into one of the harder parts of my SaaS",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wrg3q0/what_looked_like_a_simple_credit_balance_turned/",
+      "summary": "I originally thought adding credits to a SaaS product would be simple: Customer has 100 credits. Feature costs 5. Use feature → subtract 5. That works until real users and real requests show up. A few things I ended up having to solve: two requests trying to spend the same last credits retries deducting credits twice keeping Test and Live customers completely separate plan upgrades and downgrades changing what users can access top-ups and manual credit changes keeping a ledger so you can explain why a balance changed tracking usage without making every feature handle it differently The…",
+      "deepenKey": "/r/microsaas/comments/1wrg3q0",
+      "via": null,
+      "publishedAt": "2026-09-27T09:45:40.000Z",
+      "ref": "I45",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "6d4c469210",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wrfd2n/first_100_users_get_free_access",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "First 100 Users get FREE Access",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wrfd2n/first_100_users_get_free_access/",
+      "summary": "https://jobsapplier.com is opening up early access for the first 100 users. It's built for people who apply to a lot of jobs and rarely hear back. If something doesn't make sense, feels unnecessary, or just sucks, say so First 100 users get free access during the early launch.",
+      "deepenKey": "/r/microsaas/comments/1wrfd2n",
+      "via": null,
+      "publishedAt": "2026-09-27T09:00:40.000Z",
+      "ref": "I46",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "585e80ae8a",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1wrf5zk/is_seo_actually_still_the_best_free_acquisition",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Is SEO actually still the best free acquisition strategy for micro-SaaS, or just the slowest?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1wrf5zk/is_seo_actually_still_the_best_free_acquisition/",
+      "summary": "As a solo dev with zero ad budget, everywhere you look people give the same default advice: \"just publish programmatic SEO or write 30 blog posts.\" The logic sounds great on paper: rank once, build an organic moat, and wake up to passive signups. But in practice, you're looking at a 4 to 6 month sandbox, competing against DR 80+ content mills, and watching Google's AI snippets answer user queries right on the search page before anyone clicks.",
+      "deepenKey": "/r/microsaas/comments/1wrf5zk",
+      "via": null,
+      "publishedAt": "2026-09-27T08:48:30.000Z",
+      "ref": "I47",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "99cf0a6575",
+      "normUrl": "https://producthunt.com/products/cuey-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Cuey",
+      "url": "https://www.producthunt.com/products/cuey-2",
+      "summary": "Compare ChatGPT, Claude & Gemini answers in one tab.",
+      "publishedAt": "2026-07-22T21:39:59.000Z",
+      "ref": "I48",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Compare ChatGPT, Claude & Gemini answers in one tab.",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T19:59:58.677Z"
+      }
+    },
+    {
+      "id": "36fa3df399",
+      "normUrl": "https://producthunt.com/products/kiwidesk",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "KiwiDesk",
+      "url": "https://www.producthunt.com/products/kiwidesk",
+      "summary": "Tiling that feels like it shipped with macOS.",
+      "publishedAt": "2026-09-13T16:31:36.000Z",
+      "ref": "I49",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Tiling that feels like it shipped with macOS.",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T20:00:18.651Z"
+      }
+    },
+    {
+      "id": "4c6402a957",
+      "normUrl": "https://producthunt.com/products/harmony-it",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Harmony",
+      "url": "https://www.producthunt.com/products/harmony-it",
+      "summary": "AI agents that resolve IT/HR tickets inside Slack and Teams",
+      "publishedAt": "2026-09-19T14:01:14.000Z",
+      "ref": "I50",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "AI agents that resolve IT/HR tickets inside Slack and Teams",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T20:00:38.667Z"
+      }
+    },
+    {
+      "id": "180a197e6b",
+      "normUrl": "https://producthunt.com/products/clicks",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Clicks Communicator",
+      "url": "https://www.producthunt.com/products/clicks",
+      "summary": "A new kind of mobile communicator designed for doing",
+      "publishedAt": "2026-09-21T05:16:54.000Z",
+      "ref": "I51",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "A new kind of mobile communicator designed for doing",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Clicks Communicator",
+            "points": 422,
+            "url": "https://news.ycombinator.com/item?id=46467057"
+          }
+        ],
+        "fetchedAt": "2026-09-27T20:00:59.308Z"
+      }
+    },
+    {
+      "id": "ca5986d428",
+      "normUrl": "https://producthunt.com/products/humalike-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Humalike x GTA RP",
+      "url": "https://www.producthunt.com/products/humalike-2",
+      "summary": "AI NPCs that talk, remember & act on their own",
+      "publishedAt": "2026-09-01T17:19:53.000Z",
+      "ref": "I52",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "AI NPCs that talk, remember & act on their own",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T20:01:18.699Z"
+      }
+    },
+    {
+      "id": "27ac5df1c3",
+      "normUrl": "https://producthunt.com/products/superhuman-go",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Superhuman Go",
+      "url": "https://www.producthunt.com/products/superhuman-go",
+      "summary": "The AI assistant that works where you do",
+      "publishedAt": "2026-09-22T06:48:30.000Z",
+      "ref": "I53",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The AI assistant that works where you do",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T20:01:38.719Z"
+      }
+    },
+    {
+      "id": "a72d02d755",
+      "normUrl": "https://news.ycombinator.com/item?id=49869574",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Lofi Cities – Pixel-art city nights with browser-generated lofi",
+      "url": "https://news.ycombinator.com/item?id=49869574",
+      "externalUrl": "https://loficities.com/",
+      "summary": null,
+      "deepenKey": "49869574",
+      "via": null,
+      "signal": {
+        "points": 42,
+        "comments": 7
+      },
+      "publishedAt": "2026-09-27T18:44:30Z",
+      "ref": "I54",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 6,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "a5f683e7f7",
+      "normUrl": "https://news.ycombinator.com/item?id=49867775",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "TinyAIArena watch AI agents battle it out",
+      "url": "https://news.ycombinator.com/item?id=49867775",
+      "externalUrl": "https://tinyaiarena.com/",
+      "summary": "Did you ever click on an “AI Arena” expecting glorious battle and instead get a boring benchmark? If so, this project is for you: proper life-or-death fights between four models on a picturesque 8×8 grid. May the most intelligent one win! Click on any of the matches to spectate them. Code: https://github.com/hp6/ai-arena",
+      "deepenKey": "49867775",
+      "via": null,
+      "signal": {
+        "points": 68,
+        "comments": 33
+      },
+      "publishedAt": "2026-09-27T15:51:28Z",
+      "ref": "I55",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Did you ever click on an “AI Arena” expecting glorious battle and instead get a boring benchmark? If so, this project is for you: proper life-or-death fights between four models on a picturesque 8×8 grid. May the most intelligent one win! Click on any of the matches to spectate them. Code: https://github.com/hp6/ai-arena",
+        "comments": [
+          {
+            "text": "Since the page exposes frame-by-frame playback, a shareable replay link would make it easier to compare decisions across the four models."
+          },
+          {
+            "text": "Code link didn't work for me. On mobile, I don't have enough room to scroll the background so I got stuck in a long text box."
+          },
+          {
+            "text": "Unusable website on Android running Chrome latest (can't scroll)"
+          },
+          {
+            "text": "Fun, but considering this puts `claude-sonnet-5` at the first place isn't it a little... iffy when it comes to measuring intelligence?"
+          },
+          {
+            "text": "This will be a weird rant, but the dialogue here is a perfect example of how SOTA models are so heavily tuned towards \"solving agentic tasks\" that they're useless at almost everything else - especially creative tasks. \"Coming for you, Crimson!\" \"You'll never catch me alive, Azure!\" That's why nobody has been able to stick these things in a video game successfully, even though it seems like the tech is a perfect match. It's all a game to them. They aren't afraid for their lives. They're making a mockery out of the world you've put them in. Those are not the words of little pixel people fighting to the death, those are AI abominations making \"tool calls\", LARPing as little pixel people fighting to the death. I'm 100% serious when I say that you would've gotten cooler outputs with a GPT 3.5-era model, once you managed to beat it into producing structured output."
+          },
+          {
+            "text": "Bug: Music skips around in autoplay."
+          },
+          {
+            "text": "I love this and the aesthetic. I've been jamming on a sort of Corewars (remember?) / Starcraft hybrid battler where LLMs write sandboxed Lua programs to control bots fighting out 10-100 vs 10-100 tank battles. Every quarter the LLM gets a full view of the situation and can reprogram all the bots to better adapt strategy etc. It's good fun to watch - excited to share soon."
+          },
+          {
+            "text": "So that I can see the future we shall all enjoy, can you do this with the superpowers of earth and their known nuclear weapons and armies?"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: TinyAIArena watch AI agents battle it out",
+            "points": 71,
+            "url": "https://news.ycombinator.com/item?id=49867775"
+          }
+        ],
+        "fetchedAt": "2026-09-27T19:59:58.193Z"
+      }
+    },
+    {
+      "id": "e3a73345e8",
+      "normUrl": "https://news.ycombinator.com/item?id=49866597",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Building a Markdown editor for Mac, iOS and web",
+      "url": "https://news.ycombinator.com/item?id=49866597",
+      "externalUrl": "https://www.markdown.beauty/",
+      "summary": "I've spent the last 10 months building Beauty: a local, powerful greco-roman Markdown editor where the page looks finished while you type. It runs on the Mac, iPhone and in the browser, and the browser version opens without an account: https://app.markdown.beauty I was frustrated with writing apps, and like most I used Apple Notes. After 2+ years immersed in Cursor, Codex and CC, I wished some interactions existed in a text editor. The Markdown renders in place as you write it, including tables (which you can drag and resize without lining up pipes), KaTeX math and Mermaid diagrams.",
+      "deepenKey": "49866597",
+      "via": null,
+      "signal": {
+        "points": 47,
+        "comments": 30
+      },
+      "publishedAt": "2026-09-27T13:44:45Z",
+      "ref": "I56",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I've spent the last 10 months building Beauty: a local, powerful greco-roman Markdown editor where the page looks finished while you type. It runs on the Mac, iPhone and in the browser, and the browser version opens without an account: https://app.markdown.beauty I was frustrated with writing apps, and like most I used Apple Notes. After 2+ years immersed in Cursor, Codex and CC, I wished some interactions existed in a text editor. The Markdown renders in place as you write it, including tables (which you can drag and resize without lining up pipes), KaTeX math and Mermaid diagrams. A lot of thought went into typography and the writing experience. Your notes on the Mac are plain .md files in a folder with images next to them, so they open in anything else too. Each note keeps 200 versions. If you share a note with a link it syncs peer to peer over WebRTC while someone has it open, and the server that connects you only ever sees a random room id. Most of the ~1,000 commits went into the editor itself. It's a contenteditable, and I don't let the browser restructure the document at all, which was a lot more work than I expected. Building this to be performant and cross-platform required some novel approaches, which I'll later open source. The editor is free with no account or ads, and there's an optional subscription for sync through your own iCloud. https://www.markdown.beauty",
+        "comments": [
+          {
+            "text": "Hey, I quickly tried your editor and even when the writing experience is the most important thing, I have to admit it looks really lovely! I love the design and how it interacts. That is cool. Maybe you could add some more color options (not everyone likes the newish beige-toned interfaces). Cool that even flowcharts are supported. The only thing I miss in the block options would be a callout and the option to set a color for that callout. So far my first impressions :)"
+          },
+          {
+            "text": "Amazing project and execution. Makes my IDE's quickly-bolted-on (3 hours) .md support look ridiculous in comparison. Installed as PWA. Thank you!"
+          },
+          {
+            "text": "Just tried it! Hell yeah, someone finally got notes right. I don’t say this lightly, but notes are supposed to be simple, fast and easily retrieved. Apple Notes doesn’t give us nearly enough. Notion gives way too much. Obsidian is a mess. Craft, AnyType, etc are janky, gimmicky or slow. You managed to make something simple, local, that gives us exactly the features we need for writing and finding notes and also MCP so I can point my agent to it?! I’d give you a fcking nobel prize for this lol"
+          },
+          {
+            "text": "It looks really nice. I definitely will use it. Many questions come to mind: - What is the revenue model? - What is your personal story? Why you do not explain it in the site?"
+          },
+          {
+            "text": "the UI looks clean and slick. Nice work!"
+          },
+          {
+            "text": "This question is somewhat more general than this specific application, but how can an app guarantee that files will remain local, also in future updates of the app? To put it simply, an automatic update of the app might start uploading the notes to a server. I don't think there is any security boundary in iOS, Android, or any other platform preventing this, right? Other than that, congratulations on what seems to be a nice app!"
+          },
+          {
+            "text": "Looks epic, id like to connect a Dropbox folder"
+          },
+          {
+            "text": "What does the \"Open Folder\" option do? For me it opens a system open dialog, but there is no button to select something. Can I point this at my Obsidian folder and call it a day? If not, is there an easy way to import it?"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: Building a Markdown editor for Mac, iOS and web",
+            "points": 47,
+            "url": "https://news.ycombinator.com/item?id=49866597"
+          }
+        ],
+        "fetchedAt": "2026-09-27T19:59:58.602Z"
+      }
+    },
+    {
+      "id": "22de510c13",
+      "normUrl": "https://news.ycombinator.com/item?id=49865067",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "LightCloud – A cloud console organised like file system",
+      "url": "https://news.ycombinator.com/item?id=49865067",
+      "externalUrl": "https://www.light-cloud.com/",
+      "summary": "Hi HN, Light Cloud is a hosting platform where the unit of organisation is a folder. A folder holds everything project needs: frontend, API, database, env variables, preview per branch.",
+      "deepenKey": "49865067",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 8
+      },
+      "publishedAt": "2026-09-27T09:45:15Z",
+      "ref": "I57",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hi HN, Light Cloud is a hosting platform where the unit of organisation is a folder. A folder holds everything project needs: frontend, API, database, env variables, preview per branch.",
+        "comments": [
+          {
+            "text": "The site claims they have an editor \"ICE\" as open-source software. But that is a lie: it is not open source, but shareware or such. They also accept contributions released only under the no-commercial-use-allowed license, so any dual licensing under a commercial-use-allowed license would be out of the window once a contribution gets merged. Not sure what their business model is if they forbid commercial use. I guess selling commercial use licenses in violation of the no-commercial-use-allowed license?"
+          },
+          {
+            "text": "A pretty load-bearing theme, full stop."
+          },
+          {
+            "text": "It took me minutes to find what it actually cost, which is $50/month for the cheapest, 256MB deployment. Looks cool, but this info should be easier to get to. Tell us what resources we get in a \"nano\", \"micro\", etc. and how much they cost. That's the first and usually only thing I look at with these."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T20:01:39.516Z"
+      }
+    },
+    {
+      "id": "14d6d1760f",
+      "normUrl": "https://github.com/InfinityLoop1308/PipePipe",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "InfinityLoop1308/PipePipe",
+      "url": "https://github.com/InfinityLoop1308/PipePipe",
+      "summary": "An open-source Android app to let you browse YouTube and other services freely.",
+      "signal": {
+        "language": "Shell",
+        "points": 139
+      },
+      "publishedAt": null,
+      "ref": "I58",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "An open-source Android app to let you browse YouTube and other services freely.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "PipePipe: NewPipe hard fork implementing SponsorBlock",
+            "points": 481,
+            "url": "https://news.ycombinator.com/item?id=49842764"
+          }
+        ],
+        "fetchedAt": "2026-09-27T20:01:39.741Z"
+      }
+    },
+    {
+      "id": "2df68072a7",
+      "normUrl": "https://github.com/vercel-labs/scriptc",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "vercel-labs/scriptc",
+      "url": "https://github.com/vercel-labs/scriptc",
+      "summary": "TypeScript-to-Native Compiler",
+      "signal": {
+        "language": "TypeScript",
+        "points": 186
+      },
+      "publishedAt": null,
+      "ref": "I59",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "TypeScript-to-Native Compiler",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Scriptc by Vercel: TypeScript-to-Native compiler, no JavaScript engine in binary",
+            "points": 287,
+            "url": "https://news.ycombinator.com/item?id=49063175"
+          },
+          {
+            "title": "Show HN: cmux - Ghostty-based terminal with vertical tabs and notifications",
+            "points": 198,
+            "url": "https://news.ycombinator.com/item?id=47079718"
+          }
+        ],
+        "fetchedAt": "2026-09-27T20:01:40.368Z"
+      }
+    },
+    {
+      "id": "b32771b7cb",
+      "normUrl": "https://github.com/mvschwarz/openrig",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "mvschwarz/openrig",
+      "url": "https://github.com/mvschwarz/openrig",
+      "summary": "Multi-agent harness that runs Claude Code and Codex together as one system",
+      "signal": {
+        "language": "TypeScript",
+        "points": 114
+      },
+      "publishedAt": null,
+      "ref": "I60",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Multi-agent harness that runs Claude Code and Codex together as one system",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T20:01:40.568Z"
+      }
+    },
+    {
+      "id": "f3053bdc9c",
+      "normUrl": "https://github.com/willfaust/Madeira",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "willfaust/Madeira",
+      "url": "https://github.com/willfaust/Madeira",
+      "summary": "Run x86-64 Windows PC games on jailed iOS via FEX-Emu + Wine + DXMT",
+      "signal": {
+        "language": "C",
+        "points": 117
+      },
+      "publishedAt": null,
+      "ref": "I61",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Run x86-64 Windows PC games on jailed iOS via FEX-Emu + Wine + DXMT",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-09-27T20:01:40.765Z"
+      }
+    }
+  ],
+  "deepenedAt": "2026-09-27T20:11:05.745Z"
+}

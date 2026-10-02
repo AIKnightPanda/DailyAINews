@@ -1,14 +1,14 @@
 {
-  "fetchedAt": "2026-10-01T21:14:41.481Z",
+  "fetchedAt": "2026-10-02T20:54:09.842Z",
   "windowDays": 3,
-  "windowUntil": "2026-10-01T23:59:59.000Z",
+  "windowUntil": "2026-10-02T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
       "status": "ok",
       "issues": 1,
-      "items": 40
+      "items": 3
     },
     {
       "id": "importai",
@@ -22,7 +22,7 @@
       "name": "OpenAI",
       "status": "ok",
       "issues": 7,
-      "items": 2
+      "items": 3
     },
     {
       "id": "deepmind",
@@ -36,14 +36,14 @@
       "name": "The Rundown AI",
       "status": "ok",
       "issues": 4,
-      "items": 1
+      "items": 2
     },
     {
       "id": "aivalley",
       "name": "AI Valley",
       "status": "ok",
       "issues": 2,
-      "items": 2
+      "items": 0
     }
   ],
   "items": [
@@ -51,688 +51,99 @@
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon: Google Returns to the Frontier",
+      "subsection": "Frontier and Multimodal Launches: Gemini 4 Argon, GPT-6.1 Sol and FLUX 3",
       "topic": null,
-      "title": "Output limit",
-      "url": "https://x.com/GoogleAI/status/2105388478683119904",
+      "title": "Contested readiness",
+      "url": "https://x.com/kimmonismus/status/2105570914574209283",
       "links": [
         {
-          "url": "https://x.com/TheRundownAI/status/2105388648657031424",
-          "text": "@TheRundownAI"
+          "url": "https://x.com/kimmonismus/status/2105709302484729879",
+          "text": "reported rebuttal"
+        }
+      ],
+      "summary": "A circulated Bloomberg report attributed coding weaknesses to anonymous insiders; a subsequent post reported a senior DeepMind engineer rejecting that account.",
+      "publishedAt": "2026-10-02T06:40:53.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-pi-10-pi-durable-and-aie-nyc"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Frontier and Multimodal Launches: Gemini 4 Argon, GPT-6.1 Sol and FLUX 3",
+      "topic": null,
+      "title": "FLUX 3 Image",
+      "url": "https://x.com/bfl_ai/status/2105734605621825738",
+      "links": [
+        {
+          "url": "https://x.com/fal/status/2105745492474802514",
+          "text": "fal"
         },
         {
-          "url": "https://x.com/ValsAI/status/2105388463885549820",
-          "text": "@ValsAI"
+          "url": "https://x.com/krea_ai/status/2105769469880799716",
+          "text": "Krea"
         }
       ],
-      "summary": "Google cites an industry-leading 1M-token output limit, up from 64K ( @GoogleAI , @TheRundownAI ). Measurement note : Vals lists 262K max output.",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
+      "summary": "Black Forest Labs launched native generation up to 4K, up to ten reference images, bounding-box layout control and targeted multi-turn editing. Preserving every untouched pixel is a vendor capability claim, not independently established here ( announcement ).",
+      "publishedAt": "2026-10-02T06:40:53.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-pi-10-pi-durable-and-aie-nyc"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon: Google Returns to the Frontier",
+      "subsection": "Frontier and Multimodal Launches: Gemini 4 Argon, GPT-6.1 Sol and FLUX 3",
       "topic": null,
-      "title": "Google’s claimed results",
-      "url": "https://x.com/TheRundownAI/status/2105388648657031424",
+      "title": "Interactive video agents",
+      "url": "https://x.com/tavus/status/2105704169009246248",
       "links": [
         {
-          "url": "https://x.com/kimmonismus/status/2105395385191776455",
-          "text": "@kimmonismus"
+          "url": "https://x.com/synthesiaIO/status/2105591908659540474",
+          "text": "launch"
         }
       ],
-      "summary": "Argon takes first place on 13 of 19 published benchmarks against GPT-6 Astra and Claude Opus 5.5. On DeepSWE it scores 77.9%, versus 74.2% for Opus 5.5 and 74.1% for Astra ( @TheRundownAI ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon: Google Returns to the Frontier",
-      "topic": null,
-      "title": "Research use",
-      "url": "https://x.com/mirrokni/status/2105500370675921213",
-      "links": [],
-      "summary": "The team says internal agent loops built on Argon helped complete the CK conjecture ( @mirrokni ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon: Google Returns to the Frontier",
-      "topic": null,
-      "title": "Artificial Analysis evaluation",
-      "url": "https://x.com/ArtificialAnlys/status/2105392625788637299",
-      "links": [],
-      "summary": "Argon scores 53 on the Intelligence Index, matching GPT-6 Astra (53) and edging GPT-6.1 Sol (52) ( @ArtificialAnlys ). Cost per task : At discounted pricing it costs $1.99 per task versus $3.26 for Astra; standard pricing would raise this to $3.98.",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon: Google Returns to the Frontier",
-      "topic": null,
-      "title": "Hallucination",
-      "url": "https://x.com/aipulseda1ly/status/2105394296815779861",
-      "links": [],
-      "summary": "Its 15% rate on AA-Omniscience compares with 51% for Astra. The tradeoff is lower accuracy: 50% versus Astra’s 63% ( @aipulseda1ly ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon: Google Returns to the Frontier",
-      "topic": null,
-      "title": "Vals evaluation",
-      "url": "https://x.com/ValsAI/status/2105388446844072033",
-      "links": [
-        {
-          "url": "https://x.com/ValsAI/status/2105388451415953464",
-          "text": "@ValsAI"
-        },
-        {
-          "url": "https://x.com/ValsAI/status/2105388458885943418",
-          "text": "@ValsAI"
-        }
-      ],
-      "summary": "Argon is #1 on the Vals Index at 68.9%, at an average $15.68 per task ( @ValsAI , @ValsAI ). Coding : It built 30 Vibe Code Bench apps perfectly, against 25 for Opus 5 and 24 for Astra ( @ValsAI ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon: Google Returns to the Frontier",
-      "topic": null,
-      "title": "Terminal and security",
-      "url": "https://x.com/ValsAI/status/2105388457019551797",
-      "links": [],
-      "summary": "Terminal-Bench 4.0 rose from 19.0% to 57.6%. It scores 70% on CyberBench proof-of-concept tasks and 100% on IOI 2024–2026 ( @ValsAI ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon: Google Returns to the Frontier",
-      "topic": null,
-      "title": "Arena and other evals",
-      "url": "https://x.com/arena/status/2105394855644139908",
-      "links": [
-        {
-          "url": "https://x.com/arena/status/2105411271525052418",
-          "text": "@arena"
-        }
-      ],
-      "summary": "Argon is #1 in Text Arena at 1525 and #8 in Code Arena WebDev at 1679 ( @arena ). Agent Arena : It ranks #8 overall and #1 for steerability on a preliminary 3K sessions ( @arena ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon: Google Returns to the Frontier",
-      "topic": null,
-      "title": "PostTrainBench",
-      "url": "https://x.com/karinanguyen/status/2105411208635711499",
-      "links": [],
-      "summary": "It scores 45.3%, up from 21.99% for Gemini 3.1 Pro ( @karinanguyen ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon: Google Returns to the Frontier",
-      "topic": null,
-      "title": "Other critiques",
-      "url": "https://x.com/teortaxesTex/status/2105455812915433849",
-      "links": [
-        {
-          "url": "https://x.com/teortaxesTex/status/2105468003727110380",
-          "text": "@teortaxesTex"
-        }
-      ],
-      "summary": "Commentators raised possible preference-data benchmaxxing and objected to some figures, including DeepSWE ( @teortaxesTex , @teortaxesTex ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "GPT-6.1 Sol and OpenAI’s DevDay Agent Stack",
-      "topic": null,
-      "title": "Independent evals",
-      "url": "https://x.com/j_dekoninck/status/2105213644795523106",
-      "links": [
-        {
-          "url": "https://x.com/arena/status/2105367591174995999",
-          "text": "@arena"
-        }
-      ],
-      "summary": "GPT-6.1 Sol is the new #1 on MathArena ( @j_dekoninck ). Code Arena : It ranks #3 on WebDev at 1759, 70 points above GPT-6 Sol for the same $2/$10 pricing ( @arena ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "GPT-6.1 Sol and OpenAI’s DevDay Agent Stack",
-      "topic": null,
-      "title": "Cost per task",
-      "url": "https://x.com/ArtificialAnlys/status/2105491868608004578",
-      "links": [
-        {
-          "url": "https://x.com/ArtificialAnlys/status/2105449959554441580",
-          "text": "@ArtificialAnlys"
-        }
-      ],
-      "summary": "Artificial Analysis measures $0.72 per task at max effort, versus $3.26 for Astra and $1.04 for GPT-6 Sol ( @ArtificialAnlys ). Source of savings : Sol uses fewer turns and has a lower cache-read price ( @ArtificialAnlys ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "GPT-6.1 Sol and OpenAI’s DevDay Agent Stack",
-      "topic": null,
-      "title": "Ultrafast inference",
-      "url": "https://x.com/kimmonismus/status/2105275411802267960",
-      "links": [
-        {
-          "url": "https://x.com/sayashk/status/2105472435390906634",
-          "text": "@sayashk"
-        }
-      ],
-      "summary": "OpenAI quotes up to 300 tok/s. SemiAnalysis reports it runs on NVIDIA GPUs at low batch sizes, not on Cerebras ( @kimmonismus ). Hands-on report : Generation is about 8x faster, but end-to-end agent tasks speed up only 2–4x because tool latency dominates ( @sa…",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "GPT-6.1 Sol and OpenAI’s DevDay Agent Stack",
-      "topic": null,
-      "title": "Product layer",
-      "url": "https://x.com/latentspacepod/status/2105442037042663491",
-      "links": [
-        {
-          "url": "https://x.com/mxstbr/status/2105428405571428785",
-          "text": "@mxstbr"
-        }
-      ],
-      "summary": "DevDay introduced dots (persistent agents with their own cloud computers), a Decisions API and computer use ( @latentspacepod ). Sites : ChatGPT Sites can now host MCP servers and turn them into installable plugins ( @mxstbr ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "GPT-6.1 Sol and OpenAI’s DevDay Agent Stack",
-      "topic": null,
-      "title": "Usage limits",
-      "url": "https://x.com/kimmonismus/status/2105211908131295283",
-      "links": [
-        {
-          "url": "https://x.com/kimmonismus/status/2105335676875276522",
-          "text": "@kimmonismus"
-        }
-      ],
-      "summary": "Users report one-off credits worth about $2,500. Others complain that usage limits were cut ( @kimmonismus , @kimmonismus ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Other Releases: Embeddings, Image/Video and Open Models",
-      "topic": null,
-      "title": "Perplexity contextual embeddings",
-      "url": "https://x.com/perplexity_ai/status/2105373989262827915",
-      "links": [
-        {
-          "url": "https://x.com/denisyarats/status/2105380502203195835",
-          "text": "@denisyarats"
-        }
-      ],
-      "summary": "pplx-embed-v2-context-9b-preview is open on Hugging Face ( @perplexity_ai ). Method : The model encodes the whole document once and pools chunk vectors afterward.",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Other Releases: Embeddings, Image/Video and Open Models",
-      "topic": null,
-      "title": "Cohere Embed 5",
-      "url": "https://x.com/cohere/status/2105285142394896435",
-      "links": [
-        {
-          "url": "https://x.com/cohere/status/2105285152351920239",
-          "text": "@cohere"
-        }
-      ],
-      "summary": "The family has Pro and Fast variants in a shared embedding space, so you can index with one and retrieve with the other ( @cohere ). Fast tier : Cohere says it beats other fast-tier models by at least 6 points at a third less cost than Pro.",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Other Releases: Embeddings, Image/Video and Open Models",
-      "topic": null,
-      "title": "Ideogram 4.5",
-      "url": "https://x.com/ideogram_ai/status/2105327223431737780",
-      "links": [
-        {
-          "url": "https://x.com/fal/status/2105341213138199020",
-          "text": "@fal"
-        }
-      ],
-      "summary": "The editing model targets artifact-free multi-turn edits, with open weights promised ( @ideogram_ai ). Edit fidelity : Over ten consecutive edits, 94–99% of untouched content stays identical ( @fal ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Other Releases: Embeddings, Image/Video and Open Models",
-      "topic": null,
-      "title": "Video benchmark",
-      "url": "https://x.com/ArtificialAnlys/status/2105291240573190370",
-      "links": [],
-      "summary": "Artificial Analysis launched AA-Video-T2V v2.0, judged at 1080p with more than 68K human votes ( @ArtificialAnlys ). Leaders : Wan 3.0 is #1 at $12/min. Seedance 2.5 is #2 at $34.12/min, and MiniMax H3 is statistically tied at $4.80/min.",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Other Releases: Embeddings, Image/Video and Open Models",
-      "topic": null,
-      "title": "Open and small models",
-      "url": "https://x.com/kimmonismus/status/2105360290451767792",
-      "links": [
-        {
-          "url": "https://x.com/DesignArena/status/2105351493457174764",
-          "text": "@DesignArena"
-        }
-      ],
-      "summary": "Ling-3.1-flash : A 500B model reported close to GPT-5.6 Sol and Opus 5 ( @kimmonismus ). It ranks #2 among open-weight models in Mobile App Arena ( @DesignArena ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Other Releases: Embeddings, Image/Video and Open Models",
-      "topic": null,
-      "title": "Solar Mini 4",
-      "url": "https://x.com/ArtificialAnlys/status/2105459219059401036",
-      "links": [
-        {
-          "url": "https://x.com/ArtificialAnlys/status/2105459225979994278",
-          "text": "@ArtificialAnlys"
-        }
-      ],
-      "summary": "Upstage reports 35B total / 3B active parameters. It scores 24 on the Intelligence Index at $0.10/$0.40 ( @ArtificialAnlys ). Caching penalty : It still costs about 5x Luna per task, because only 48% of its repeated context hits cache versus 99% for Luna ( @Ar…",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Agent Research, Inference and Systems",
-      "topic": null,
-      "title": "Context Language Models (Meta)",
-      "url": "https://x.com/RulinShao/status/2105282444270448647",
-      "links": [
-        {
-          "url": "https://x.com/arankomatsuzaki/status/2105181276714242518",
-          "text": "@arankomatsuzaki"
-        },
-        {
-          "url": "https://x.com/natolambert/status/2105284621638439271",
-          "text": "@natolambert"
-        }
-      ],
-      "summary": "CLMs treat context as an editable file rather than an append-only log, with context-management policies learned in the weights and no external harness ( @RulinShao ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Agent Research, Inference and Systems",
-      "topic": null,
-      "title": "Adaptive reasoning compute",
-      "url": "https://x.com/ZhihuFrontier/status/2105165367891157032",
-      "links": [],
-      "summary": "TaH2 : Lookahead depth supervision teaches the model which hard tokens deserve another loop ( @ZhihuFrontier ). Gains : It reports +3.4pp accuracy at matched test-time compute and a 53% steeper scaling slope.",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Agent Research, Inference and Systems",
-      "topic": null,
-      "title": "AutoBenchmark (Meta)",
-      "url": "https://x.com/jaseweston/status/2105305463784935791",
-      "links": [],
-      "summary": "The project automates benchmark creation. Human feedback at the ideation stage beats agents working alone, and difficulty transfers to held-out solvers ( @jaseweston ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Agent Research, Inference and Systems",
-      "topic": null,
-      "title": "Prefill/decode disaggregation",
-      "url": "https://x.com/ekzhang1/status/2105444878716932411",
-      "links": [
-        {
-          "url": "https://x.com/cHHillee/status/2105177416666914936",
-          "text": "@cHHillee"
-        }
-      ],
-      "summary": "A steady-state analysis argues that disaggregation raises mean interactivity by about 1/(decode-time fraction) at equal batch size and throughput ( @ekzhang1 , @cHHillee ). Implication : It helps prefill-heavy workloads, not decode-bound low-latency serving.",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Agent Research, Inference and Systems",
-      "topic": null,
-      "title": "Compilers and hardware",
-      "url": "https://x.com/kimmonismus/status/2105197839844303175",
-      "links": [],
-      "summary": "DeepSeek on Huawei : DeepSeek released an open-source Ascend toolkit with TileLang optimized for Ascend 950 ( @kimmonismus ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Agent Research, Inference and Systems",
-      "topic": null,
-      "title": "AI as compiler",
-      "url": "https://x.com/Azaliamirh/status/2105360428046151735",
-      "links": [],
-      "summary": "A model translates Triton directly to PTX, with a verifier checking correctness, races and deadlocks. Speedups on B200 reach 1.37x on FlashAttention ( @Azaliamirh ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Agent Research, Inference and Systems",
-      "topic": null,
-      "title": "DFlash drafts",
-      "url": "https://x.com/ornith_/status/2105434033987739852",
-      "links": [],
-      "summary": "New draft models for Ornith-1.5 give up to 2.54x lossless speedups ( @ornith_ ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Agent Research, Inference and Systems",
-      "topic": null,
-      "title": "Agent sandboxes",
-      "url": "https://x.com/mgamache/status/2105283879519265023",
-      "links": [
-        {
-          "url": "https://x.com/ashleypeacock/status/2105282521013305625",
-          "text": "@ashleypeacock"
-        }
-      ],
-      "summary": "Cloudflare rebuilt Containers for agents, with p50 time-to-interactive of 648 ms (6x faster) and snapshots in beta ( @mgamache ). AutoRouter : Cloudflare’s model router showed about 30% lower spend in internal tests ( @ashleypeacock ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Security and Eval Integrity",
-      "topic": null,
-      "title": "Reasoning extraction",
-      "url": "https://x.com/kimmonismus/status/2105375343544619127",
-      "links": [],
-      "summary": "OpenAI attributes a core part of a hidden-reasoning extraction campaign to individuals linked to Moonshot AI ( @kimmonismus ). Scale : OpenAI recorded 16,000 attempts from more than 4,000 users in two days, with related activity across more than 15,000 users.",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Security and Eval Integrity",
-      "topic": null,
-      "title": "External researchers",
-      "url": "https://x.com/JSchaeff3r/status/2105356987630543057",
-      "links": [
-        {
-          "url": "https://x.com/jonasgeiping/status/2105381603237368304",
-          "text": "@jonasgeiping"
-        }
-      ],
-      "summary": "Their attacks kept working on Astra until this week. Patches were hard to propagate across product versions and third-party hosts ( @JSchaeff3r , @jonasgeiping ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Security and Eval Integrity",
-      "topic": null,
-      "title": "Distillation defenses",
-      "url": "https://x.com/shidan_javaheri/status/2105349479868281201",
-      "links": [],
-      "summary": "Defenses evaluated without later RL give a false sense of security. RL makes simple attacks effective ( @shidan_javaheri ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Security and Eval Integrity",
-      "topic": null,
-      "title": "Embedded evaluations",
-      "url": "https://x.com/ApolloResearch/status/2105330306266153454",
-      "links": [],
-      "summary": "Apollo Research published principles for outside evaluators who receive employee-like access to frontier labs ( @ApolloResearch ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Security and Eval Integrity",
-      "topic": null,
-      "title": "Provenance and transparency",
-      "url": "https://x.com/demishassabis/status/2105348732464070823",
-      "links": [],
-      "summary": "SynthID Bio : Watermarking for AI-generated proteins is published in Nature, with open-sourced tools ( @demishassabis ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Security and Eval Integrity",
-      "topic": null,
-      "title": "AI-detector evasion",
-      "url": "https://x.com/ValsAI/status/2105456030746546448",
-      "links": [],
-      "summary": "Opus 5.5 and Astra can rewrite more than 50% of a document without Pangram flagging it ( @ValsAI ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Security and Eval Integrity",
-      "topic": null,
-      "title": "Agent reports",
-      "url": "https://x.com/jennyihuang/status/2105320921674203386",
-      "links": [],
-      "summary": "A new preprint asks how transparent LLM-written reports on agent work actually are ( @jennyihuang ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Industry and Policy",
-      "topic": null,
-      "title": "Factory vs Cognition",
-      "url": "https://x.com/matanSF/status/2105335179502064038",
-      "links": [
-        {
-          "url": "https://x.com/cognition/status/2105348951079571871",
-          "text": "@cognition"
-        }
-      ],
-      "summary": "Factory removed advisor Chris Degnan, alleging he was confiding in Cognition while attending its board meetings ( @matanSF ). Hire : Cognition announced Degnan as its CRO the same day ( @cognition ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Industry and Policy",
-      "topic": null,
-      "title": "Political spending",
-      "url": "https://x.com/teddyschleifer/status/2105405198185459821",
-      "links": [
-        {
-          "url": "https://x.com/AlexBores/status/2105475999383027977",
-          "text": "@AlexBores"
-        }
-      ],
-      "summary": "Greg Brockman dropped a promised second $25M donation to the Leading the Future super PAC ( @teddyschleifer ). Follow-up question : Alex Bores asked whether this also covers anti-regulation groups that don’t disclose donors ( @AlexBores ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Industry and Policy",
-      "topic": null,
-      "title": "OpenAI finances",
-      "url": "https://x.com/srimuppidi/status/2105343557578158234",
-      "links": [],
-      "summary": "NYT reports OpenAI is near $70B in annualized revenue and in talks to raise $30B at a $1.4T valuation, with its IPO pushed to next year ( @srimuppidi ).",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "1. GLM-5.3 Cyber Risk and Local Inference Support",
-      "title": "add GLM-5.3-Flash (GLM5-Next) support by timkhronos · Pull Request #27773 · ggml-org/llama.cpp",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wu0bdf/add_glm53flash_glm5next_support_by_timkhronos/",
-      "links": [],
-      "summary": "(Activity: 348): Merged ggml-org/llama.cpp#27773 adds GLM-5.3-Flash / GLM5-Next support to llama.cpp , enabling local inference for the 320B hybrid text+vision model.",
-      "publishedAt": "2026-10-01T06:45:05.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer"
+      "summary": "Tavus introduced Griffin, a video-to-video interaction model. It claims 48% of live participants mistook it for a human, versus under 3% for earlier systems; that result should not be generalized into an unrestricted “Turing test passed” conclusion without the…",
+      "publishedAt": "2026-10-02T06:40:53.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-pi-10-pi-durable-and-aie-nyc"
     },
     {
       "source": "OpenAI",
       "sourceHome": "https://openai.com/news/",
-      "title": "The eternal complement",
-      "url": "https://openai.com/index/the-eternal-complement",
-      "summary": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress.",
-      "publishedAt": "2026-10-01T17:00:00.000Z"
+      "title": "A model guide for the GPT-6 family",
+      "url": "https://openai.com/index/practical-guide-building-gpt-6",
+      "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
+      "publishedAt": "2026-10-02T16:15:00.000Z"
     },
     {
       "source": "OpenAI",
       "sourceHome": "https://openai.com/news/",
-      "title": "How Albertsons Companies is reimagining retail from the inside out",
-      "url": "https://openai.com/index/albertsons-reimagining-retail",
-      "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
-      "publishedAt": "2026-10-01T16:00:00.000Z"
+      "title": "Chatham scales its capital markets expertise with OpenAI",
+      "url": "https://openai.com/index/chatham-financial",
+      "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
+      "publishedAt": "2026-10-02T00:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+      "url": "https://openai.com/index/the-den-family-social",
+      "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days.",
+      "publishedAt": "2026-10-01T00:00:00.000Z"
     },
     {
       "source": "The Rundown AI",
       "sourceHome": "https://www.therundown.ai/",
-      "title": "Argon aims to return Google to the frontier",
-      "url": "https://www.therundown.ai/articles/argon-aims-to-return-google-to-the-frontier",
-      "summary": "PLUS: How (and why) to set up Meta’s Muse Desktop",
-      "publishedAt": "2026-10-01T09:00:00.000Z"
+      "title": "Tavus' AI looks, listens, and talks back live",
+      "url": "https://www.therundown.ai/articles/tavus-ai-looks-listens-and-talks-back-live",
+      "summary": "PLUS: Is ChatGPT “Dots” worth upgrading to Pro for?",
+      "publishedAt": "2026-10-02T09:00:00.000Z"
     },
     {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "Trump wants the US government to stop calling it AI",
-      "url": "https://www.cbsnews.com/news/trump-ai-constitution-tech-execs-openai-anthropic-voluntary-controls/",
-      "links": [],
-      "summary": "Trump signed an executive order instructing the US government to refer to AI as “Super Intelligence” (SI) in official communications, websites and policy documents.",
-      "publishedAt": "2026-10-01T14:42:00.017Z",
-      "issueUrl": "https://www.theaivalley.com/p/ai-is-now-super-intelligence"
-    },
-    {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "Google unveils Gemini 4 Argon",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
-      "links": [],
-      "summary": "their new flagship model built for long-running coding, knowledge work and cybersecurity tasks. The ridiculous bit: it can output up to 1 million tokens in a single run, up from 64K before.",
-      "publishedAt": "2026-10-01T14:42:00.017Z",
-      "issueUrl": "https://www.theaivalley.com/p/ai-is-now-super-intelligence"
+      "source": "The Rundown AI",
+      "sourceHome": "https://www.therundown.ai/",
+      "title": "DoorDash puts its own drone on the menu",
+      "url": "https://www.therundown.ai/articles/doordash-puts-its-own-drone-on-the-menu",
+      "summary": "PLUS: Figure jumps into fiery inferno",
+      "publishedAt": "2026-10-01T14:30:00.000Z"
     }
   ]
 }

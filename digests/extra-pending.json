@@ -1,14 +1,14 @@
 {
-  "fetchedAt": "2026-10-02T20:54:09.842Z",
+  "fetchedAt": "2026-10-03T19:21:25.416Z",
   "windowDays": 3,
-  "windowUntil": "2026-10-02T23:59:59.000Z",
+  "windowUntil": "2026-10-03T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
       "status": "ok",
       "issues": 1,
-      "items": 3
+      "items": 40
     },
     {
       "id": "importai",
@@ -21,14 +21,14 @@
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
-      "issues": 7,
-      "items": 3
+      "issues": 5,
+      "items": 0
     },
     {
       "id": "deepmind",
       "name": "Google DeepMind",
       "status": "ok",
-      "issues": 2,
+      "issues": 0,
       "items": 0
     },
     {
@@ -36,7 +36,7 @@
       "name": "The Rundown AI",
       "status": "ok",
       "issues": 4,
-      "items": 2
+      "items": 1
     },
     {
       "id": "aivalley",
@@ -51,99 +51,635 @@
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Frontier and Multimodal Launches: Gemini 4 Argon, GPT-6.1 Sol and FLUX 3",
+      "subsection": "GPT-6.1 Sol and Sonnet 5.5 Reshape the Cost–Performance Frontier",
       "topic": null,
-      "title": "Contested readiness",
-      "url": "https://x.com/kimmonismus/status/2105570914574209283",
-      "links": [
-        {
-          "url": "https://x.com/kimmonismus/status/2105709302484729879",
-          "text": "reported rebuttal"
-        }
-      ],
-      "summary": "A circulated Bloomberg report attributed coding weaknesses to anonymous insiders; a subsequent post reported a senior DeepMind engineer rejecting that account.",
-      "publishedAt": "2026-10-02T06:40:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-pi-10-pi-durable-and-aie-nyc"
+      "title": "GPT-6.1 Sol launch",
+      "url": "https://x.com/dl_weekly/status/2106096982024429590",
+      "links": [],
+      "summary": "OpenAI priced Sol at $2/$10 per million input/output tokens, compared with $10/$50 for Astra ( pricing summary ). Claimed results : It reportedly beats GPT-6 Sol by 6.4 points on DeepSWE v1.1 and Opus 5.5 by 2.2 points on AutomationBench ( summary ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Frontier and Multimodal Launches: Gemini 4 Argon, GPT-6.1 Sol and FLUX 3",
+      "subsection": "GPT-6.1 Sol and Sonnet 5.5 Reshape the Cost–Performance Frontier",
       "topic": null,
-      "title": "FLUX 3 Image",
-      "url": "https://x.com/bfl_ai/status/2105734605621825738",
+      "title": "Agent Arena placements",
+      "url": "https://x.com/arena/status/2106109027923140928",
+      "links": [],
+      "summary": "Sol [Max] entered at #5 (+11.23%) with a $0.56 median cost per task ( @arena ). Sol cost comparison : That is 39% cheaper than GPT-6 Sol while scoring 1.52 points higher. It is 81% cheaper than Astra while landing within 1.04 points.",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "GPT-6.1 Sol and Sonnet 5.5 Reshape the Cost–Performance Frontier",
+      "topic": null,
+      "title": "Code and Text Arena",
+      "url": "https://x.com/arena/status/2106072778407563590",
+      "links": [],
+      "summary": "Sol briefly entered WebDev at #3 before Sonnet 5.5 pushed it to #4 ( weekly recap ). Sonnet on WebDev : Sonnet now sits 2 points behind GPT-6 Astra [Max] at 80% lower cost.",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "GPT-6.1 Sol and Sonnet 5.5 Reshape the Cost–Performance Frontier",
+      "topic": null,
+      "title": "Other independent evals",
+      "url": "https://x.com/htihle/status/2105984992534819156",
       "links": [
         {
-          "url": "https://x.com/fal/status/2105745492474802514",
-          "text": "fal"
+          "url": "https://x.com/DesignArena/status/2106124098418139370",
+          "text": "@DesignArena"
+        }
+      ],
+      "summary": "WeirdML v3 finds Sol very token-efficient, close to Astra but with a lower peak. On the same benchmark, Sonnet 5.5 beats Opus 5 and Grok 4.7 beats Kimi-K3; these results are incomplete ( @htihle ). Reasoning style : Design Arena read 324 thinking summaries.",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "GPT-6.1 Sol and Sonnet 5.5 Reshape the Cost–Performance Frontier",
+      "topic": null,
+      "title": "Step 5 Preview",
+      "url": "https://x.com/ValsAI/status/2106162514904207396",
+      "links": [
+        {
+          "url": "https://x.com/ValsAI/status/2106162520511873261",
+          "text": "details"
+        }
+      ],
+      "summary": "StepFun’s model ranks #7 among open-weight models on Vals at $2.54 per task. It averages nearly two hours per task and has a 1M-token context window ( Vals , details ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "GPT-6.1 Sol and Sonnet 5.5 Reshape the Cost–Performance Frontier",
+      "topic": null,
+      "title": "Rumors (unconfirmed)",
+      "url": "https://x.com/kimmonismus/status/2106116402134294568",
+      "links": [
+        {
+          "url": "https://x.com/kimmonismus/status/2106144924898935046",
+          "text": "follow-up"
+        }
+      ],
+      "summary": "Fable 5.5 : Claude Fable 5.5 is rumored for next week and said to outperform an “Astra 6.1” that was reportedly delayed over security concerns. The poster says he cannot verify either claim ( @kimmonismus , follow-up ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "GPT-6.1 Sol and Sonnet 5.5 Reshape the Cost–Performance Frontier",
+      "topic": null,
+      "title": "GPT-6 Astra Lite",
+      "url": "https://x.com/scaling01/status/2106104756066226179",
+      "links": [],
+      "summary": "A “GPT-6 Astra Lite” listing has been spotted, which @scaling01 speculates is the same model as Sol ( @scaling01 ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "GPT-6.1 Sol and Sonnet 5.5 Reshape the Cost–Performance Frontier",
+      "topic": null,
+      "title": "Decision models and open weights",
+      "url": "https://x.com/ggerganov/status/2106029758350032937",
+      "links": [
+        {
+          "url": "https://x.com/ClementDelangue/status/2106037207631008033",
+          "text": "@ClementDelangue"
         },
         {
-          "url": "https://x.com/krea_ai/status/2105769469880799716",
-          "text": "Krea"
+          "url": "https://x.com/jaredpalmer/status/2106105911165292877",
+          "text": "post"
         }
       ],
-      "summary": "Black Forest Labs launched native generation up to 4K, up to ten reference images, bounding-box layout control and targeted multi-turn editing. Preserving every untouched pixel is a vendor capability claim, not independently established here ( announcement ).",
-      "publishedAt": "2026-10-02T06:40:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-pi-10-pi-durable-and-aie-nyc"
+      "summary": "llama.cpp added a /v1/systemone endpoint for local “Jev-style” decision-model inference ( @ggerganov ). Running locally : Models are launched with llama serve -hf ggml-org/Kev-4B-GGUF ( @ClementDelangue ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Frontier and Multimodal Launches: Gemini 4 Argon, GPT-6.1 Sol and FLUX 3",
+      "subsection": "GPT-6.1 Sol and Sonnet 5.5 Reshape the Cost–Performance Frontier",
       "topic": null,
-      "title": "Interactive video agents",
-      "url": "https://x.com/tavus/status/2105704169009246248",
+      "title": "Skeptical view",
+      "url": "https://x.com/mervenoyann/status/2105987051422114157",
+      "links": [],
+      "summary": "@mervenoyann calls decision models a rebrand of zero-shot classifiers ( tweet ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "GPT-6.1 Sol and Sonnet 5.5 Reshape the Cost–Performance Frontier",
+      "topic": null,
+      "title": "Calibration analysis",
+      "url": "https://x.com/SOURADIPCHAKR18/status/2105879836375892297",
+      "links": [],
+      "summary": "A blog post links Jev-style calibration to value and Q-function prediction ( @SOURADIPCHAKR18 ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "GPT-6.1 Sol and Sonnet 5.5 Reshape the Cost–Performance Frontier",
+      "topic": null,
+      "title": "webAI TwIL-LM3-Pro",
+      "url": "https://x.com/kimmonismus/status/2105911541384224800",
+      "links": [],
+      "summary": "This 3.66B model is post-trained from Granite 4.2. In webAI’s tests it roughly matches Qwen3-8B on formal logic. The Q4 GGUF is 2.09 GiB and the license is non-commercial ( @kimmonismus ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agent Harnesses, Assistants and Developer Tooling",
+      "topic": null,
+      "title": "Muse Gadgets",
+      "url": "https://x.com/natfriedman/status/2106099383037309211",
       "links": [
         {
-          "url": "https://x.com/synthesiaIO/status/2105591908659540474",
-          "text": "launch"
+          "url": "https://x.com/alexandr_wang/status/2106113742266089526",
+          "text": "@alexandr_wang"
+        },
+        {
+          "url": "https://x.com/alexandr_wang/status/2106113745282015730",
+          "text": "shipping"
         }
       ],
-      "summary": "Tavus introduced Griffin, a video-to-video interaction model. It claims 48% of live participants mistook it for a human, versus under 3% for earlier systems; that result should not be generalized into an unrestricted “Turing test passed” conclusion without the…",
-      "publishedAt": "2026-10-02T06:40:53.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-pi-10-pi-durable-and-aie-nyc"
+      "summary": "Meta open-sourced ESP32 firmware and a Linux SDK for building hardware that works with Muse ( @natfriedman ). Muse Home Link : Meta made 5,000 units of its own smart-home bridge, free for subscribers while supplies last ( @alexandr_wang , shipping ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
     },
     {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "A model guide for the GPT-6 family",
-      "url": "https://openai.com/index/practical-guide-building-gpt-6",
-      "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
-      "publishedAt": "2026-10-02T16:15:00.000Z"
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agent Harnesses, Assistants and Developer Tooling",
+      "topic": null,
+      "title": "Extensible harnesses",
+      "url": "https://x.com/deepseek_ai/status/2105915715241062644",
+      "links": [
+        {
+          "url": "https://x.com/lydiahallie/status/2106127556491821499",
+          "text": "@lydiahallie"
+        },
+        {
+          "url": "https://x.com/ClaudeDevs/status/2106118517447876618",
+          "text": "@ClaudeDevs"
+        }
+      ],
+      "summary": "DeepSeek Harness shipped desktop builds for macOS and Windows; Linux users install @deepseek-ai/dsh from npm ( @deepseek_ai ). Claude Code mods : Mods are plugins with middleware-like hooks into Claude Code ( @lydiahallie ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
     },
     {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "Chatham scales its capital markets expertise with OpenAI",
-      "url": "https://openai.com/index/chatham-financial",
-      "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
-      "publishedAt": "2026-10-02T00:00:00.000Z"
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agent Harnesses, Assistants and Developer Tooling",
+      "topic": null,
+      "title": "T3 Code orchestrator rewrite",
+      "url": "https://x.com/theo/status/2105921113603952853",
+      "links": [
+        {
+          "url": "https://x.com/maria_rcks/status/2106106120754352209",
+          "text": "@maria_rcks"
+        },
+        {
+          "url": "https://x.com/theo/status/2106123856759120317",
+          "text": "feature list"
+        }
+      ],
+      "summary": "The project passed 400K users ( @theo ). Its 4-month PR, with 823 commits across 1,912 files, has now merged ( @maria_rcks ). New features : The rewrite adds Pi support, cross-provider delegate_task , an ACP registry, thread forking, mid-thread model switching…",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
     },
     {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
-      "url": "https://openai.com/index/the-den-family-social",
-      "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days.",
-      "publishedAt": "2026-10-01T00:00:00.000Z"
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agent Harnesses, Assistants and Developer Tooling",
+      "topic": null,
+      "title": "Platform updates",
+      "url": "https://x.com/stevendcoffey/status/2106159012538442068",
+      "links": [
+        {
+          "url": "https://x.com/cursor_ai/status/2106066782155157603",
+          "text": "@cursor_ai"
+        }
+      ],
+      "summary": "OpenAI’s Agents API added one-call browser computer use, Bedrock Managed Agents and portable environments. It also claims 99.97% turn reliability and 20% faster tool calls ( @stevendcoffey ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Research: Agent Training, Long-Horizon Control and AI for Math",
+      "topic": null,
+      "title": "Multi-harness RL (Hugging Face)",
+      "url": "https://x.com/huggingface/status/2106034221005312448",
+      "links": [],
+      "summary": "The same model weights score 62% in one harness and 33% in another ( @huggingface ). Method : A proxy speaks the OpenAI, Anthropic and Gemini API formats and records sampled token IDs and logprobs for training, with no changes to the harnesses themselves.",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Research: Agent Training, Long-Horizon Control and AI for Math",
+      "topic": null,
+      "title": "Credit assignment and RL efficiency",
+      "url": "https://x.com/omarsar0/status/2105930871534690714",
+      "links": [
+        {
+          "url": "https://x.com/wen_kaiyue/status/2106052620507091244",
+          "text": "@wen_kaiyue"
+        }
+      ],
+      "summary": "ProVer has a judge locate the decisive trajectory segment, then uses rollouts on either side to set that segment’s advantage. It reports +9.91% (Qwen3.5-2B) and +7.12% (Qwen3.5-4B) relative gains over GRPO ( @omarsar0 ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Research: Agent Training, Long-Horizon Control and AI for Math",
+      "topic": null,
+      "title": "Frontier Learning",
+      "url": "https://x.com/robinfaro13/status/2105967412684247291",
+      "links": [],
+      "summary": "The method targets problems at the edge of capability, since problems a model always or never solves give zero GRPO gradient ( @robinfaro13 ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Research: Agent Training, Long-Horizon Control and AI for Math",
+      "topic": null,
+      "title": "Sharpening Tax",
+      "url": "https://x.com/iScienceLuvr/status/2105983504425365928",
+      "links": [],
+      "summary": "The paper quantifies the loss of pass@K scalability after post-training and proposes PTGS, a per-prompt temperature sampler ( @iScienceLuvr ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Research: Agent Training, Long-Horizon Control and AI for Math",
+      "topic": null,
+      "title": "Long-horizon control and context",
+      "url": "https://x.com/dair_ai/status/2105832649868837275",
+      "links": [
+        {
+          "url": "https://x.com/dair_ai/status/2105915729812050342",
+          "text": "@dair_ai"
+        }
+      ],
+      "summary": "Meta Superintelligence Labs reports that a dedicated controller lifts GPT-5.5 on ProgramBench from 63.7% to 71.5%, using the same workers and budget, versus 58.0% for Codex ( @dair_ai ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Research: Agent Training, Long-Horizon Control and AI for Math",
+      "topic": null,
+      "title": "Long-context degradation",
+      "url": "https://x.com/dair_ai/status/2106047824093979033",
+      "links": [],
+      "summary": "NVIDIA’s Long-Transduction study measures a 62.8% accuracy drop from 4K to 128K context across seven open models ( @dair_ai ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Research: Agent Training, Long-Horizon Control and AI for Math",
+      "topic": null,
+      "title": "Multi-agent coordination",
+      "url": "https://x.com/omarsar0/status/2105855550588428584",
+      "links": [],
+      "summary": "In AgentWorld, fewer than a third of multi-agent actions help complete the task, and coordination tasks reach only 12% success ( @omarsar0 ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Research: Agent Training, Long-Horizon Control and AI for Math",
+      "topic": null,
+      "title": "Apple LoopCD",
+      "url": "https://x.com/arankomatsuzaki/status/2105888510482034876",
+      "links": [],
+      "summary": "The method halves recurrent loops while raising AIME 2024 pass@1 from 61.88% to 73.33% ( @arankomatsuzaki ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Research: Agent Training, Long-Horizon Control and AI for Math",
+      "topic": null,
+      "title": "AI on open math problems",
+      "url": "https://x.com/AIatMeta/status/2106099776035152231",
+      "links": [
+        {
+          "url": "https://x.com/alexandr_wang/status/2106149796121805099",
+          "text": "list"
+        }
+      ],
+      "summary": "Meta released six papers on open problems produced with Muse Spark 1.1 and 1.2 through plain meta.ai chat, with no custom scaffold ( @AIatMeta , list ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Research: Agent Training, Long-Horizon Control and AI for Math",
+      "topic": null,
+      "title": "Google Cogentic",
+      "url": "https://x.com/omarsar0/status/2106056369816420624",
+      "links": [],
+      "summary": "This Gemini multi-agent system produced new results on five open theory problems ( @omarsar0 ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Research: Agent Training, Long-Horizon Control and AI for Math",
+      "topic": null,
+      "title": "Image post-training",
+      "url": "https://x.com/arena/status/2106037792870649995",
+      "links": [],
+      "summary": "Arena combined a Bradley-Terry reward model with faithfulness, constraint and anti-reward-hacking rewards ( @arena ). Results : FLUX.2-dev gained 69 Elo to 1202, and Ideogram 4 gained 20 Elo to 1224.",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Benchmarks, Eval Integrity and Safety",
+      "topic": null,
+      "title": "Research-taste benchmarks",
+      "url": "https://x.com/yoonholeee/status/2106036734798725577",
+      "links": [
+        {
+          "url": "https://x.com/JiayiiGeng/status/2106051912491557065",
+          "text": "@JiayiiGeng"
+        }
+      ],
+      "summary": "ScholarCatalyst asks agents to find the “catalyst papers” behind research projects. It is labeled by 184 lead authors on 207 of their own projects and is described as far from saturated ( @yoonholeee ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Benchmarks, Eval Integrity and Safety",
+      "topic": null,
+      "title": "Vals Web Search Index",
+      "url": "https://x.com/ValsAI/status/2106142531142783187",
+      "links": [
+        {
+          "url": "https://x.com/ValsAI/status/2106142534837944514",
+          "text": "details"
+        }
+      ],
+      "summary": "The index holds model and harness constant, swaps only the search tool, and scores final answers on finance and legal tasks ( @ValsAI ). Validation : Agents score 2.9% (legal) and 7.4% (finance) without search, versus 30–50% with it.",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Benchmarks, Eval Integrity and Safety",
+      "topic": null,
+      "title": "SWE bug-finding bench",
+      "url": "https://x.com/giffmana/status/2105910335391596928",
+      "links": [],
+      "summary": "In this new benchmark, agents start from an older commit and are scored against real bugs fixed in later commits. Critique : Lucas Beyer argues it mainly tests recall and that the construction is easy to train toward ( @giffmana ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Benchmarks, Eval Integrity and Safety",
+      "topic": null,
+      "title": "Authors’ response",
+      "url": "https://x.com/OfirPress/status/2106063137602408487",
+      "links": [],
+      "summary": "The authors say training for bug-finding is fine as long as the test set is excluded ( @OfirPress ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Benchmarks, Eval Integrity and Safety",
+      "topic": null,
+      "title": "Eval integrity question",
+      "url": "https://x.com/idavidrein/status/2106134845038727460",
+      "links": [],
+      "summary": "David Rein asks whether Harbor, the framework behind Terminal Bench, lets agents modify their trajectories before evaluation. He notes he may be misreading the code ( @idavidrein ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Benchmarks, Eval Integrity and Safety",
+      "topic": null,
+      "title": "Offensive capability of open models",
+      "url": "https://x.com/DeepLearningAI/status/2106036280349892838",
+      "links": [
+        {
+          "url": "https://x.com/teortaxesTex/status/2106147334895837478",
+          "text": "@teortaxesTex"
+        }
+      ],
+      "summary": "The Batch reports GLM-5.3 nearly matched Claude Mythos at exploiting vulnerabilities, 12% vs 14% ( @DeepLearningAI ). Disputed claim : One commentator says GLM-5.3 Flash exceeds Mythos Preview on ExploitBench ( @teortaxesTex ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Benchmarks, Eval Integrity and Safety",
+      "topic": null,
+      "title": "Uncensored variant",
+      "url": "https://x.com/kimmonismus/status/2105970946347814913",
+      "links": [],
+      "summary": "An uncensored GLM-5.3 is circulating on Hugging Face ( @kimmonismus ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Benchmarks, Eval Integrity and Safety",
+      "topic": null,
+      "title": "Safety research and safeguards",
+      "url": "https://x.com/lenalibon/status/2106025416481972666",
+      "links": [
+        {
+          "url": "https://x.com/HaritzPuerto/status/2105996769272508508",
+          "text": "@HaritzPuerto"
+        }
+      ],
+      "summary": "A new paper proposes using internal signals during training to improve alignment without degrading white-box monitoring ( @lenalibon ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Benchmarks, Eval Integrity and Safety",
+      "topic": null,
+      "title": "False positives",
+      "url": "https://x.com/ChaseBrowe32432/status/2105822570381799474",
+      "links": [],
+      "summary": "Opus 5.5 frequently triggers “reasoning extraction” safeguards during spectrogram syllable labeling ( @ChaseBrowe32432 ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Benchmarks, Eval Integrity and Safety",
+      "topic": null,
+      "title": "Emergent world knowledge",
+      "url": "https://x.com/karpathy/status/2105909609487872075",
+      "links": [],
+      "summary": "Asking a model “land or water?” for 16,200 lat/long coordinates and plotting the answers yields a recognizable world map ( @karpathy ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Inference, Hardware and Systems",
+      "topic": null,
+      "title": "Ascend 950 via DeepSeek kernels",
+      "url": "https://x.com/ZhihuFrontier/status/2106022206950260766",
+      "links": [],
+      "summary": "An analysis of DeepSeek’s open-sourced DeepGEMM, FlashMLA, TileKernels and DeepEP infers the chip’s layout ( @ZhihuFrontier ). Estimated specs : The chip has 32 AI cores, each pairing one Cube core with two Vector cores.",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Inference, Hardware and Systems",
+      "topic": null,
+      "title": "Prime Inference",
+      "url": "https://x.com/PrimeIntellect/status/2106146492721648033",
+      "links": [
+        {
+          "url": "https://x.com/vllm_project/status/2106159655290589305",
+          "text": "@vllm_project"
+        }
+      ],
+      "summary": "Prime Intellect stores the MLA latent in NVFP4, shrinking rows from 576 to 352 bytes and fitting about 50% more cached tokens than FP8 ( @PrimeIntellect ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Inference, Hardware and Systems",
+      "topic": null,
+      "title": "Low-precision benchmarking",
+      "url": "https://x.com/StasBekman/status/2106059303962697863",
+      "links": [
+        {
+          "url": "https://x.com/StasBekman/status/2106060501268775134",
+          "text": "update"
+        }
+      ],
+      "summary": "Stas Bekman measured NVFP4 about 9% more efficient than MXFP4 on B200, with higher accuracy ( @StasBekman ). mamf-finder : The tool now benchmarks FP8, MXFP8, MXFP4 and NVFP4 ( update ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Inference, Hardware and Systems",
+      "topic": null,
+      "title": "Memory and speed",
+      "url": "https://x.com/vikramskr/status/2106031222275387618",
+      "links": [
+        {
+          "url": "https://x.com/vikramskr/status/2106032007356829836",
+          "text": "counterpoint"
+        }
+      ],
+      "summary": "NVHBM moves the memory controller into a custom base die, claiming up to 30% more bandwidth and 15% lower power than HBM4E ( @vikramskr ). Disputed economics : Micron says NVHBM will improve its margins; @vikramskr disputes this ( counterpoint ).",
+      "publishedAt": "2026-10-03T08:45:15.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
     },
     {
       "source": "The Rundown AI",
       "sourceHome": "https://www.therundown.ai/",
-      "title": "Tavus' AI looks, listens, and talks back live",
-      "url": "https://www.therundown.ai/articles/tavus-ai-looks-listens-and-talks-back-live",
-      "summary": "PLUS: Is ChatGPT “Dots” worth upgrading to Pro for?",
-      "publishedAt": "2026-10-02T09:00:00.000Z"
-    },
-    {
-      "source": "The Rundown AI",
-      "sourceHome": "https://www.therundown.ai/",
-      "title": "DoorDash puts its own drone on the menu",
-      "url": "https://www.therundown.ai/articles/doordash-puts-its-own-drone-on-the-menu",
-      "summary": "PLUS: Figure jumps into fiery inferno",
-      "publishedAt": "2026-10-01T14:30:00.000Z"
+      "title": "Apple's 'no-video' security camera",
+      "url": "https://www.therundown.ai/articles/apple-no-video-security-camera",
+      "summary": "PLUS: Telecom giants team up to kill dead zones",
+      "publishedAt": "2026-10-02T14:34:09.000Z"
     }
   ]
 }

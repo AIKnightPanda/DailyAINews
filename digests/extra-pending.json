@@ -1,28 +1,28 @@
 {
-  "fetchedAt": "2026-10-04T19:46:20.871Z",
+  "fetchedAt": "2026-10-05T22:52:17.826Z",
   "windowDays": 3,
-  "windowUntil": "2026-10-04T23:59:59.000Z",
+  "windowUntil": "2026-10-05T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
       "status": "ok",
       "issues": 1,
-      "items": 18
+      "items": 0
     },
     {
       "id": "importai",
       "name": "Import AI",
       "status": "ok",
-      "issues": 0,
-      "items": 0
+      "issues": 1,
+      "items": 4
     },
     {
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
       "issues": 2,
-      "items": 0
+      "items": 2
     },
     {
       "id": "deepmind",
@@ -35,318 +35,125 @@
       "id": "rundown",
       "name": "The Rundown AI",
       "status": "ok",
-      "issues": 2,
-      "items": 0
+      "issues": 1,
+      "items": 1
     },
     {
       "id": "aivalley",
       "name": "AI Valley",
       "status": "ok",
       "issues": 1,
-      "items": 0
+      "items": 3
     }
   ],
   "items": [
     {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Inference, Hardware and Systems",
+      "source": "Import AI",
+      "sourceHome": "https://jack-clark.net/",
+      "section": null,
+      "title": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
+      "url": "https://jack-clark.net/2026/10/05/import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-science-economy/",
+      "summary": null,
+      "publishedAt": "2026-10-05T12:32:30.000Z",
+      "isIssue": true
+    },
+    {
+      "source": "Import AI",
+      "sourceHome": "https://jack-clark.net/",
+      "section": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
+      "title": "Swarm Scaling (Toby Ord)",
+      "url": "https://www.tobyord.com/writing/swarm-scaling",
+      "links": [],
+      "summary": "new factors in scaling: So far, AI has mostly scaled capabilities through picking the right combination of compute and data for a trained model, then figuring out how to spend inference budget on thinking via ever-longer chains of thought and tool calls, etc.",
+      "publishedAt": "2026-10-05T12:32:30.000Z"
+    },
+    {
+      "source": "Import AI",
+      "sourceHome": "https://jack-clark.net/",
+      "section": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
+      "title": "SciUniverse: Can frontier models carry out scientific work? (C5R Corp, blog)",
+      "url": "https://c5r.net/sciuniverse/",
+      "links": [],
+      "summary": "towards the automated scientist: Research like this helps give us a sense of how well AI systems might be able to translate their increasingly capable scientific capabilities into real world impact.",
+      "publishedAt": "2026-10-05T12:32:30.000Z"
+    },
+    {
+      "source": "Import AI",
+      "sourceHome": "https://jack-clark.net/",
+      "section": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
+      "title": "Agentic Economies for Autonomous Scientific Discovery (arXiv)",
+      "url": "https://arxiv.org/abs/2609.31562",
+      "links": [],
+      "summary": "preparing for the singularity: If AI systems are able to truly accelerate human scientists – and based on lots of coverage in this newsletter in 2026 and 2025 it seems like they might – then we should be prepared for an associated boom in the demand for aspects of the scientific supply chain.",
+      "publishedAt": "2026-10-05T12:32:30.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Our approach to EU text provenance rules",
+      "url": "https://openai.com/index/eu-text-provenance",
+      "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
+      "publishedAt": "2026-10-05T15:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Building advertising for the way people use AI",
+      "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers.",
+      "publishedAt": "2026-10-05T10:00:00.000Z"
+    },
+    {
+      "source": "The Rundown AI",
+      "sourceHome": "https://www.therundown.ai/",
+      "title": "An OpenAI safety insider calls the culture 'broken'",
+      "url": "https://www.therundown.ai/articles/an-openai-safety-insider-calls-the-culture-broken",
+      "summary": "PLUS: How to decide between different models",
+      "publishedAt": "2026-10-05T09:00:00.000Z"
+    },
+    {
+      "source": "AI Valley",
+      "sourceHome": "https://www.theaivalley.com/",
+      "section": null,
+      "subsection": null,
       "topic": null,
-      "title": "Capacity economics (Epoch)",
-      "url": "https://x.com/EpochAIResearch/status/2106090365627555931",
-      "links": [
-        {
-          "url": "https://x.com/EpochAIResearch/status/2106090409181278444",
-          "text": "details"
-        }
-      ],
-      "summary": "Epoch estimates AI infrastructure could soon support hundreds of millions to billions of agents ( @EpochAIResearch ). Demand gap : Just 20% utilization implies $2.6–5.3T in annual spending, against roughly $1T in lab revenue by the end of 2027 ( details ).",
-      "publishedAt": "2026-10-03T08:45:15.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+      "title": "Reflection is about to drop a big American open-weight AI model",
+      "url": "https://www.axios.com/2026/10/04/reflection-open-weight-ai",
+      "links": [],
+      "summary": "the Nvidia-backed startup is reportedly preparing to release its first model, aimed squarely at Chinese open models like Kimi and Qwen.",
+      "publishedAt": "2026-10-05T14:57:44.566Z",
+      "issueUrl": "https://www.theaivalley.com/p/the-super-intelligence-force-is-real"
     },
     {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Industry and Policy",
+      "source": "AI Valley",
+      "sourceHome": "https://www.theaivalley.com/",
+      "section": null,
+      "subsection": null,
       "topic": null,
-      "title": "Anthropic and the Vatican",
-      "url": "https://x.com/ChristopherHale/status/2106011594182304234",
+      "title": "Trump just created a “Super Intelligence Force”",
+      "url": "https://truthsocial.com/@realDonaldTrump/posts/117382616783706638",
       "links": [
         {
-          "url": "https://x.com/kimmonismus/status/2106055260787625992",
-          "text": "@kimmonismus"
+          "url": "https://www.politico.com/news/2026/10/04/jay-clayton-ai-trump-01106137",
+          "text": "Jay Clayton"
         }
       ],
-      "summary": "The NYT reports that Chris Olah raised pulling out of the Pope’s AI encyclical launch, whose text rejects machine consciousness ( @ChristopherHale ). Lobbying : Olah’s team reportedly lobbied the Pope’s advisers to take model consciousness seriously.",
-      "publishedAt": "2026-10-03T08:45:15.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+      "summary": "yes , that's actually what it's called. After telling the US government to start calling AI “Super Intelligence” last week, Trump has now named Director of National Intelligence Jay Clayton as his AI czar and put him in charge of a new White House task force f…",
+      "publishedAt": "2026-10-05T14:57:44.566Z",
+      "issueUrl": "https://www.theaivalley.com/p/the-super-intelligence-force-is-real"
     },
     {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Industry and Policy",
+      "source": "AI Valley",
+      "sourceHome": "https://www.theaivalley.com/",
+      "section": null,
+      "subsection": null,
       "topic": null,
-      "title": "Anti-safety influence campaign",
-      "url": "https://x.com/NeelNanda5/status/2105846904789614774",
+      "title": "OpenAI is putting ads inside image generation",
+      "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement/",
       "links": [],
-      "summary": "A report describes a group planning to spend at least $100M, run by a former White House deputy chief of staff, that frames AI warnings as a coordinated campaign ( @NeelNanda5 ).",
-      "publishedAt": "2026-10-03T08:45:15.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Industry and Policy",
-      "topic": null,
-      "title": "New organizations",
-      "url": "https://x.com/natolambert/status/2106060179985019085",
-      "links": [],
-      "summary": "Nathan Lambert and Tom Zick launched Trillium Labs, a non-profit for open post-training recipes and infrastructure ( @natolambert ). Funding : Initial support comes from Halcyon Futures and Schmidt Sciences.",
-      "publishedAt": "2026-10-03T08:45:15.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Industry and Policy",
-      "topic": null,
-      "title": "Governance and markets",
-      "url": "https://x.com/Yoshua_Bengio/status/2106154362921795605",
-      "links": [
-        {
-          "url": "https://x.com/AndrewCurran_/status/2106080039574044993",
-          "text": "@AndrewCurran_"
-        }
-      ],
-      "summary": "Yoshua Bengio joined Canada’s new National Council on AI ( @Yoshua_Bengio ). Meta : Meta has parted ways with Virtue AI ( @AndrewCurran_ ).",
-      "publishedAt": "2026-10-03T08:45:15.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "1. Qwen Local Inference: 27B Benchmarks, Fine-Tunes, and MTP",
-      "title": "I made my iPhone a second GPU for my 24 GB MacBook: Qwen 3.8 27B prefills 29–44% faster & my holds part of the CTX window.",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wvz1ex/i_made_my_iphone_a_second_gpu_for_my_24_gb/",
-      "links": [
-        {
-          "url": "https://github.com/StayLameBro/backburner",
-          "text": "fork / distributed inference setup"
-        }
-      ],
-      "summary": "(Activity: 1192): OP built backburner, a llama.cpp fork / distributed inference setup that offloads part of Qwen 3.8 27B IQ4_XS from a 24 GB M4 Pro MacBook to an iPhone 17 Pro Max over 10 Gb/s USB-C: the Mac runs layers 1–40 , streams activations, and the phon…",
-      "publishedAt": "2026-10-03T08:45:15.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "1. Qwen Local Inference: 27B Benchmarks, Fine-Tunes, and MTP",
-      "title": "Qwen3.8-27B-Humanlike-Chat 2.0: texts like a human, now with tool calls and better instruction following",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wvxl4n/qwen3827bhumanlikechat_20_texts_like_a_human_now/",
-      "links": [
-        {
-          "url": "https://huggingface.co/LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-GGUF",
-          "text": "Hugging Face"
-        },
-        {
-          "url": "https://huggingface.co/spaces/LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat",
-          "text": "demo Space"
-        }
-      ],
-      "summary": "(Activity: 805): LessThanThreeAI released Qwen3.8-27B-Humanlike-Chat 2.0, a merged LoRA over huihui-ai’s abliterated Qwen3.8-27B, available as GGUF/BF16/LoRA on Hugging Face with a demo Space .",
-      "publishedAt": "2026-10-03T08:45:15.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "1. Qwen Local Inference: 27B Benchmarks, Fine-Tunes, and MTP",
-      "title": "The gap is smaller than they told you: local 27B nearly matches frontier on real code tests",
-      "url": "https://www.reddit.com/r/LocalLLM/comments/1wv1u54/the_gap_is_smaller_than_they_told_you_local_27b/",
-      "links": [
-        {
-          "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-          "text": "unsloth/Qwen3.8-27B-GGUF"
-        },
-        {
-          "url": "https://deepswe.datacurve.ai/data/v1.1",
-          "text": "DeepSWE v1.1 raw data"
-        }
-      ],
-      "summary": "(Activity: 730): OP reports a single-task DeepSWE/local-code benchmark run using Qwen3.8-27B GGUF via llama.cpp b11115 + llama-swap v257 on 1× RTX 4090 24GB, specifically Qwen3.8-27B-UD-IQ4_XS.gguf ( 14.25GB ) from unsloth/Qwen3.8-27B-GGUF , at ctx-size 196608…",
-      "publishedAt": "2026-10-03T08:45:15.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "1. Qwen Local Inference: 27B Benchmarks, Fine-Tunes, and MTP",
-      "title": "Qwen4Exp: add MTP by am17an · Pull Request #29761 · ggml-org/llama.cpp",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wuwrsk/qwen4exp_add_mtp_by_am17an_pull_request_29761/",
-      "links": [
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/29761",
-          "text": "PR #29761"
-        },
-        {
-          "url": "https://huggingface.co/ggml-org/Qwen3.8-Flash-Next-GGUF",
-          "text": "Hugging Face"
-        }
-      ],
-      "summary": "(Activity: 405): llama.cpp PR #29761 adds MTP speculative decoding support for Qwen3.8-Flash Next via --spec-type draft-mtp , merged into the aman/qwen4-opt branch after ~ 17h of development.",
-      "publishedAt": "2026-10-03T08:45:15.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "2. Local Agent Tooling: Decision Models and MCP",
-      "title": "Pi 1.0 released - MCP support now included by default",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wvffcr/pi_10_released_mcp_support_now_included_by_default/",
-      "links": [
-        {
-          "url": "https://earendil.com/posts/you-said-no-mcp/",
-          "text": "“You said no MCP”"
-        }
-      ],
-      "summary": "(Activity: 679): Earendil released Pi 1.0 , a stable version of its minimal agent harness, with Codemode now including native MCP support by default plus non-LLM/image model support, virtual-model extensions, deferred tool loading, Anthropic cache warming, mid…",
-      "publishedAt": "2026-10-03T08:45:15.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "2. Local Agent Tooling: Decision Models and MCP",
-      "title": "Clef: Open Weights decision model by Cloudflare",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wv4zzi/clef_open_weights_decision_model_by_cloudflare/",
-      "links": [],
-      "summary": "(Activity: 619): Cloudflare announced Clef, an open-weights “decision model” intended for local/self-hosted use. A top commenter notes that Clef was post-trained from Qwen3.8-27B and that clef-flash was also released, post-trained from Qwen3.5-9B.",
-      "publishedAt": "2026-10-03T08:45:15.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "2. Local Agent Tooling: Decision Models and MCP",
-      "title": "New in llama.cpp: Decision Models",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wvv6im/new_in_llamacpp_decision_models/",
-      "links": [],
-      "summary": "(Activity: 574): The post announces Decision Models support in llama.cpp : local “Jev/Jeff-like” models intended to act more like controllers/classifiers—selecting among actions, continuations, or behavioral choices—rather than purely free-form generators.",
-      "publishedAt": "2026-10-03T08:45:15.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "1. Gemini 4 Argon Access Backlash",
-      "title": "Just canceled my Google One AI plan.",
-      "url": "https://www.reddit.com/r/GeminiAI/comments/1wv2ste/just_canceled_my_google_one_ai_plan/",
-      "links": [],
-      "summary": "(Activity: 1838): The OP claims Google’s paid Google One AI Pro tier no longer provides access to frontier Gemini models: after an alleged Gemini 4 Argon announcement, access is described as limited to enterprise “Fairwind” partners, paid API users, and a fort…",
-      "publishedAt": "2026-10-03T08:45:15.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "1. Gemini 4 Argon Access Backlash",
-      "title": "Why publicly announce a model that the public can’t use yet??",
-      "url": "https://www.reddit.com/r/GeminiAI/comments/1wv038r/why_publicly_announce_a_model_that_the_public/",
-      "links": [
-        {
-          "url": "https://i.redd.it/0akcfcby2vsh1.jpeg",
-          "text": "image"
-        }
-      ],
-      "summary": "(Activity: 1624): The image is a screenshot of a purported Google/Gemini announcement for “Gemini 4 Argon”, claiming frontier performance in software engineering, knowledge work, and cybersecurity defense, plus an extremely large 1M token output limit : image…",
-      "publishedAt": "2026-10-03T08:45:15.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "2. Claude Opus 5.5 Regression Reports",
-      "title": "Opus 5.5 nerfing - how to measure, how to spot, how to sue",
-      "url": "https://www.reddit.com/r/ClaudeAI/comments/1wuw9bc/opus_55_nerfing_how_to_measure_how_to_spot_how_to/",
-      "links": [
-        {
-          "url": "https://eur-lex.europa.eu/eli/dir/2019/770/oj",
-          "text": "Digital Content Directive 2019/770"
-        }
-      ],
-      "summary": "(Activity: 2722): Poster alleges Anthropic Opus 5.5 showed a sharp post-launch regression after 5–6 days on complex C++/3D/physics/Blender MCP workloads, citing abnormal phrasing and lower code/output quality, and recommends preserving exact launch-day prompts…",
-      "publishedAt": "2026-10-03T08:45:15.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "2. Claude Opus 5.5 Regression Reports",
-      "title": "Mmmkay. I didn’t believe others at first, but something is suddenly off with Opus 5.5",
-      "url": "https://www.reddit.com/r/ClaudeCode/comments/1wurd3e/mmmkay_i_didnt_believe_others_at_first_but/",
-      "links": [
-        {
-          "url": "https://modelsentiment.com/m/claude-opus-5.5",
-          "text": "modelsentiment.com"
-        }
-      ],
-      "summary": "(Activity: 2045): A Claude Code Enterprise PAYG user reports a sharp perceived regression in Claude Opus 5.5 Med behavior after a monthly limit reset: from architecture-first, DRY/SOLID, token-efficient implementation to verbose preambles, duplicated code, “sl…",
-      "publishedAt": "2026-10-03T08:45:15.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "3. AI Video Models and Motion Control",
-      "title": "Orbiting Lora + first and last frame in MiniMax gives fantastic results",
-      "url": "https://www.reddit.com/r/StableDiffusion/comments/1wuzyq0/orbiting_lora_first_and_last_frame_in_minimax/",
-      "links": [],
-      "summary": "(Activity: 2263): A user shared a MiniMax-H3 LoRA for generating locked-subject 360° orbit shots from first/last-frame conditioning: pablodawson/MiniMax-H3-360-Orbit-LoRA .",
-      "publishedAt": "2026-10-03T08:45:15.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "3. AI Video Models and Motion Control",
-      "title": "Griffin, the first Human Interaction Model to pass video Turing Test it’s already #1 on NVIDIA’s benchmark for full-duplex AI video - 44% of people thought it was a real person while other systems are at ~3%",
-      "url": "https://www.reddit.com/r/singularity/comments/1wv7q40/griffin_the_first_human_interaction_model_to_pass/",
-      "links": [],
-      "summary": "(Activity: 2018): A Reddit post claims Griffin, described as a “Human Interaction Model,” is the first system to pass a video Turing Test and ranks #1 on NVIDIA’s benchmark for full-duplex AI video, with 44% of participants judging it as a real person versus r…",
-      "publishedAt": "2026-10-03T08:45:15.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee"
+      "summary": "OpenAI is testing a new ad format that shows sponsored products and experiences while you're generating images in ChatGPT, starting in the US later this month.",
+      "publishedAt": "2026-10-05T14:57:44.566Z",
+      "issueUrl": "https://www.theaivalley.com/p/the-super-intelligence-force-is-real"
     }
   ]
 }

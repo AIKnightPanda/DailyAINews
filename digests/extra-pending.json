@@ -1,28 +1,28 @@
 {
-  "fetchedAt": "2026-10-07T21:30:19.950Z",
+  "fetchedAt": "2026-10-08T21:27:20.035Z",
   "windowDays": 3,
-  "windowUntil": "2026-10-07T23:59:59.000Z",
+  "windowUntil": "2026-10-08T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
       "status": "ok",
       "issues": 1,
-      "items": 40
+      "items": 9
     },
     {
       "id": "importai",
       "name": "Import AI",
       "status": "ok",
-      "issues": 1,
+      "issues": 0,
       "items": 0
     },
     {
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
-      "issues": 9,
-      "items": 5
+      "issues": 10,
+      "items": 3
     },
     {
       "id": "deepmind",
@@ -35,651 +35,226 @@
       "id": "rundown",
       "name": "The Rundown AI",
       "status": "ok",
-      "issues": 5,
-      "items": 2
+      "issues": 4,
+      "items": 1
     },
     {
       "id": "aivalley",
       "name": "AI Valley",
       "status": "ok",
       "issues": 2,
-      "items": 0
+      "items": 2
     }
   ],
   "items": [
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "What happened",
+      "topic": null,
+      "title": "Pre-launch signals.",
+      "url": "https://x.com/scaling01/status/2107889433777258535",
+      "links": [
+        {
+          "url": "https://x.com/kimmonismus/status/2107890621834990038",
+          "text": "@kimmonismus"
+        },
+        {
+          "url": "https://x.com/kimmonismus/status/2107892761709993985",
+          "text": "@kimmonismus"
+        }
+      ],
+      "summary": "@scaling01 posted “happy Haiku 5.5 day” before the announcement. @kimmonismus said the model had already appeared in a Claude Code update and predicted “Luna-pricing.” He then posted the pricing ahead of the official post ( @kimmonismus ) and confirmed when it…",
+      "publishedAt": "2026-10-08T07:27:51.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-claude-haiku-55-better-than"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "What happened",
+      "topic": null,
+      "title": "Official launch.",
+      "url": "https://x.com/claudeai/status/2107894039626277339",
+      "links": [
+        {
+          "url": "https://x.com/AnthropicAI/status/2107894208547983705",
+          "text": "@AnthropicAI"
+        }
+      ],
+      "summary": "@claudeai and @AnthropicAI called it “the cheapest, fastest, and most capable small model we’ve ever released,” costing about 75% less to run than Haiku 4.5 on average.",
+      "publishedAt": "2026-10-08T07:27:51.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-claude-haiku-55-better-than"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "What happened",
+      "topic": null,
+      "title": "Availability and intended use.",
+      "url": "https://x.com/ClaudeDevs/status/2107895955144208813",
+      "links": [
+        {
+          "url": "https://x.com/mikeyk/status/2107894911907614872",
+          "text": "@mikeyk"
+        }
+      ],
+      "summary": "It is live on the Claude Platform and in Claude Code ( @ClaudeDevs ). Anthropic positions it as a subagent paired with Opus 5.5 or Sonnet 5.5, for high-volume, cost-sensitive work such as summaries, compactions and database queries.",
+      "publishedAt": "2026-10-08T07:27:51.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-claude-haiku-55-better-than"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "What happened",
+      "topic": null,
+      "title": "Tiered pricing",
+      "url": "https://x.com/ClaudeDevs/status/2107895956872290654",
+      "links": [],
+      "summary": "( @ClaudeDevs ): Prompt lengthInput / output per 1M tokensCache reads per 1MUnder 100K tokens$0.10 / $0.50$0.01Over 100K tokens$0.50 / $2.50$0.05",
+      "publishedAt": "2026-10-08T07:27:51.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-claude-haiku-55-better-than"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "What happened",
+      "topic": null,
+      "title": "Sonnet 5.5 price cut.",
+      "url": "https://x.com/claudeai/status/2107894060229034197",
+      "links": [],
+      "summary": "Cache reads were halved from $0.20 to $0.10 per 1M tokens. Anthropic says this makes Sonnet 5.5 about 20% cheaper on most long-running or agentic work ( @claudeai ).",
+      "publishedAt": "2026-10-08T07:27:51.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-claude-haiku-55-better-than"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "What happened",
+      "topic": null,
+      "title": "API credits for subscribers.",
+      "url": "https://x.com/ClaudeDevs/status/2107895957933408429",
+      "links": [],
+      "summary": "Monthly Claude Platform API credits now come with Max 5x ($100), Max 20x ($200) and Team (up to $500, pooled). They work on any model, including Haiku 5.5, and in third-party harnesses ( @ClaudeDevs ).",
+      "publishedAt": "2026-10-08T07:27:51.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-claude-haiku-55-better-than"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "What happened",
+      "topic": null,
+      "title": "Same-day SDK update.",
+      "url": "https://x.com/ClaudeDevs/status/2107925762720326090",
+      "links": [
+        {
+          "url": "https://x.com/ClaudeDevs/status/2107925764163113107",
+          "text": "quickstart"
+        }
+      ],
+      "summary": "Computer-use and browser-use toolsets are now built into the Python and TypeScript Claude SDKs. The SDK runs the action loop and sends clicks and keystrokes to drivers from browser_use, Browserbase, E2B or Daytona, so developers no longer write that loop thems…",
+      "publishedAt": "2026-10-08T07:27:51.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-claude-haiku-55-better-than"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "What happened",
+      "topic": null,
+      "title": "Partner rollouts on day one:",
+      "url": "https://x.com/cursor_ai/status/2107897245282799864",
+      "links": [
+        {
+          "url": "https://x.com/cursor_ai/status/2107897257651769464",
+          "text": "@cursor_ai"
+        }
+      ],
+      "summary": "Cursor: @cursor_ai claims “10x less than Haiku 4.5” on shorter requests and published CursorBench comparisons ( @cursor_ai ).",
+      "publishedAt": "2026-10-08T07:27:51.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-claude-haiku-55-better-than"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Other benchmark claims (mostly vendor or secondhand)",
+      "topic": null,
+      "title": "Document parsing",
+      "url": "https://x.com/LoganMarkewich/status/2107911680550433252",
+      "links": [],
+      "summary": "(independent, on ParseBench): @LoganMarkewich : overall close to Luna, slightly better on tables, worse on chart understanding.",
+      "publishedAt": "2026-10-08T07:27:51.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-claude-haiku-55-better-than"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+      "url": "https://openai.com/index/oracle",
+      "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
+      "publishedAt": "2026-10-08T16:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "url": "https://openai.com/index/pollo-ai",
+      "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+      "publishedAt": "2026-10-08T12:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Disrupting AI-enabled “false front” operations",
+      "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+      "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
+      "publishedAt": "2026-10-08T00:00:00.000Z"
+    },
+    {
+      "source": "The Rundown AI",
+      "sourceHome": "https://www.therundown.ai/",
+      "title": "AI's next frontier is the human cell",
+      "url": "https://www.therundown.ai/articles/ai-s-next-frontier-is-the-human-cell",
+      "summary": "PLUS: Give Claude’s routine work to Haiku 5.5",
+      "publishedAt": "2026-10-08T09:00:00.000Z"
+    },
+    {
+      "source": "AI Valley",
+      "sourceHome": "https://www.theaivalley.com/",
       "section": null,
       "subsection": null,
       "topic": null,
-      "title": "3 hours of ChatGPT Pro on average",
-      "url": "https://github.com/openai/math/tree/main/preprints/The-Quasi-Riemann-Hypothesis-October-5-2026",
+      "title": "Google launches an AI game builder called Playground.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
       "links": [
         {
-          "url": "https://news.ycombinator.com/item?id=49986286",
-          "text": "a Fields Medal result and “the biggest result in number theory in 200 years"
-        },
-        {
-          "url": "https://ai.engineer/nyc",
-          "text": "the how"
+          "url": "https://techcrunch.com/2026/10/07/googles-new-synthid-website-can-identify-ai-generated-media/",
+          "text": "SynthID Detector"
         }
       ],
-      "summary": "In particular, Result 003, the Quasi-Riemann Hypothesis , is somewhere between a Fields Medal result and “the biggest result in number theory in 200 years ”.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
+      "summary": "The new no-code platform lets you create games just by describing what you want, using Gemini, Nano Banana and Lyria. It's available to U.S. users aged 18+.",
+      "publishedAt": "2026-10-08T15:05:59.061Z",
+      "issueUrl": "https://www.theaivalley.com/p/gpt-6-and-intelligent-ui"
     },
     {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "OpenAI Releases 722 Math Manuscripts From an Unreleased Internal Model",
+      "source": "AI Valley",
+      "sourceHome": "https://www.theaivalley.com/",
+      "section": null,
+      "subsection": null,
       "topic": null,
-      "title": "Notable claimed results",
-      "url": "https://x.com/AcerFur/status/2107606747972309163",
+      "title": "Zuckerberg wants AI to simulate human cells.",
+      "url": "https://biohub.org/news/virtual-biology-initiative-expansion/",
       "links": [],
-      "summary": "These are reported by individual commentators and have not been independently verified. Integer multiplication : One contributor highlighted a result for integer multiplication faster than n log n .",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "OpenAI Releases 722 Math Manuscripts From an Unreleased Internal Model",
-      "topic": null,
-      "title": "Elastic inverse problem",
-      "url": "https://x.com/andrew_n_carr/status/2107615669533696460",
-      "links": [],
-      "summary": "Another singled out a uniqueness result for the elastic inverse problem , which the paper says had been open in 3D since 1994.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "OpenAI Releases 722 Math Manuscripts From an Unreleased Internal Model",
-      "topic": null,
-      "title": "Millennium-adjacent work",
-      "url": "https://x.com/mathemagic1an/status/2107602453441253611",
-      "links": [],
-      "summary": "Commenters point to partial progress on Riemann, Hodge and BSD .",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "OpenAI Releases 722 Math Manuscripts From an Unreleased Internal Model",
-      "topic": null,
-      "title": "Mathematician reaction",
-      "url": "https://x.com/__alpoge__/status/2107616859595981117",
-      "links": [],
-      "summary": "Levent Alpöge praised the quasi-Riemann and no-Siegel-zeros results and called it “the most significant moment in mathematical history” . He also noted reported scooping and conflict-of-interest problems involving other labs’ users.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "OpenAI Releases 722 Math Manuscripts From an Unreleased Internal Model",
-      "topic": null,
-      "title": "Composition of results",
-      "url": "https://x.com/nrehiew_/status/2107637795531767962",
-      "links": [],
-      "summary": "An analysis estimates about 20% of the results are disproofs or counterexamples . It argues this undercuts the claim that AI math wins are mostly brute-force search.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "OpenAI Releases 722 Math Manuscripts From an Unreleased Internal Model",
-      "topic": null,
-      "title": "Skepticism and open questions",
-      "url": "https://x.com/willdepue/status/2107631516692132186",
-      "links": [
-        {
-          "url": "https://x.com/willdepue/status/2107621761470840907",
-          "text": "citedbyagi.com"
-        }
-      ],
-      "summary": "Errors expected : Will Depue expects that some results should not survive scrutiny . He built citedbyagi.com to track which human papers the release cites.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "OpenAI Releases 722 Math Manuscripts From an Unreleased Internal Model",
-      "topic": null,
-      "title": "Compute framing",
-      "url": "https://x.com/teortaxesTex/status/2107603001275793839",
-      "links": [],
-      "summary": "Teortaxes notes that three hours of compute “is not much” .",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "OpenAI Releases 722 Math Manuscripts From an Unreleased Internal Model",
-      "topic": null,
-      "title": "Generalization",
-      "url": "https://x.com/fchollet/status/2107625225768858076",
-      "links": [],
-      "summary": "François Chollet asks whether gains in RLVR-friendly math and code generalize, or whether non-verifiable domains stay bottlenecked on human data .",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Mistral Large 4 (”Le Chonk”): Launch, Pricing and Contested Evals",
-      "topic": null,
-      "title": "Mistral Large 4 preview",
-      "url": "https://x.com/MistralAI/status/2107457414387622310",
-      "links": [
-        {
-          "url": "https://x.com/GuillaumeLample/status/2107461898127954001",
-          "text": "“still in flight and shows no sign of saturation”"
-        }
-      ],
-      "summary": "The model has 1T total parameters and 49B active, is natively multimodal and is available via API now ( announcement ). Open weights are promised for end of October. Training status : The RL run is “still in flight and shows no sign of saturation” .",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Mistral Large 4 (”Le Chonk”): Launch, Pricing and Contested Evals",
-      "topic": null,
-      "title": "Mistral’s own claims",
-      "url": "https://x.com/GuillaumeLample/status/2107461914607710443",
-      "links": [],
-      "summary": "Human evals : Mistral says it beats GLM 5.3 on STEM, CAD and finance in human evals and is on par in agentic coding.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Mistral Large 4 (”Le Chonk”): Launch, Pricing and Contested Evals",
-      "topic": null,
-      "title": "Coding benchmarks",
-      "url": "https://x.com/b_roziere/status/2107470925952344505",
-      "links": [],
-      "summary": "It reports outperforming GLM 5.3 on DeepSWE and Kimi K3 on Terminal-Bench 4 ( Rozière ).",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Mistral Large 4 (”Le Chonk”): Launch, Pricing and Contested Evals",
-      "topic": null,
-      "title": "Blind review",
-      "url": "https://x.com/echen/status/2107504639968940534",
-      "links": [],
-      "summary": "In a blind Surge coding review it finished #2, behind only Opus 5 .",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Mistral Large 4 (”Le Chonk”): Launch, Pricing and Contested Evals",
-      "topic": null,
-      "title": "Independent measurements",
-      "url": "https://x.com/ArtificialAnlys/status/2107467221421420919",
-      "links": [],
-      "summary": "Artificial Analysis : It scores 38 on the Intelligence Index , level with GPT-6 Luna (max) and the top score from outside the US and China. It scores 50 on the Cyber Index and 82% on CyberGym-E2E-AA.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Mistral Large 4 (”Le Chonk”): Launch, Pricing and Contested Evals",
-      "topic": null,
-      "title": "Clinical triage",
-      "url": "https://x.com/MaziyarPanahi/status/2107540140247662708",
-      "links": [],
-      "summary": "One evaluator reports a tie for #1 on 669 clinical decisions with zero severe misses.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Mistral Large 4 (”Le Chonk”): Launch, Pricing and Contested Evals",
-      "topic": null,
-      "title": "Caveats and disagreement",
-      "url": "https://x.com/cline/status/2107561157787824347",
-      "links": [],
-      "summary": "Refusal effect : Cline attributes the cyber lead largely to fewer refusals , saying Opus 5.5 and Astra had about 40% of tasks blocked by their own safety filters.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Mistral Large 4 (”Le Chonk”): Launch, Pricing and Contested Evals",
-      "topic": null,
-      "title": "Open-weight claim",
-      "url": "https://x.com/ClementDelangue/status/2107525319012090301",
-      "links": [],
-      "summary": "Hugging Face’s CEO points out it isn’t open-weight until the weights ship .",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Mistral Large 4 (”Le Chonk”): Launch, Pricing and Contested Evals",
-      "topic": null,
-      "title": "Configuration",
-      "url": "https://x.com/qtnx_/status/2107591095224090653",
-      "links": [],
-      "summary": "Mistral warns that many reported failures come from not setting reasoning_effort=\"high\" .",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Mistral Large 4 (”Le Chonk”): Launch, Pricing and Contested Evals",
-      "topic": null,
-      "title": "Distillation hypothesis",
-      "url": "https://x.com/Yuchenj_UW/status/2107520610188607904",
-      "links": [],
-      "summary": "Yuchen Jin speculates, as an unconfirmed opinion, that the Western–Chinese open-model gap reflects Chinese labs’ ability to distill Anthropic and OpenAI models .",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Open-Weight and API Model Releases: Embeddings, Image, Decision Models",
-      "topic": null,
-      "title": "EmbeddingGemma 2",
-      "url": "https://x.com/GoogleDeepMind/status/2107502286758895878",
-      "links": [
-        {
-          "url": "https://x.com/_philschmid/status/2107539841101758856",
-          "text": "Phil Schmid"
-        }
-      ],
-      "summary": "Google’s first natively multimodal open embedding model covers text, code, image, video and audio in one space. It is built on Gemma 4 and released under Apache 2.0 ( DeepMind ).",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Open-Weight and API Model Releases: Embeddings, Image, Decision Models",
-      "topic": null,
-      "title": "Nano Banana 2.1",
-      "url": "https://x.com/Google/status/2107501211532382687",
-      "links": [
-        {
-          "url": "https://x.com/_philschmid/status/2107502894685749672",
-          "text": "Schmid"
-        }
-      ],
-      "summary": "Google’s updated image model is rolling out across the Gemini app, AI Studio, Search and Ads ( Google ). Pricing : $0.034 per image, versus $0.134 for the previous Pro model, which Google says it outperforms ( Schmid ).",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Open-Weight and API Model Releases: Embeddings, Image, Decision Models",
-      "topic": null,
-      "title": "Arena results",
-      "url": "https://x.com/arena/status/2107576893973344578",
-      "links": [],
-      "summary": "It ranks #4 in Multi-Image Edit, #5 in Text-to-Image and #6 in Image Edit, gaining +80 points over Nano Banana 2 in Text-to-Image ( Arena ).",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Open-Weight and API Model Releases: Embeddings, Image, Decision Models",
-      "topic": null,
-      "title": "Decision models become a product category",
-      "url": "https://x.com/OpenAIDevs/status/2107573382229188645",
-      "links": [
-        {
-          "url": "https://x.com/reach_vb/status/2107591233262555353",
-          "text": "$0.10/M input with no output charges"
-        }
-      ],
-      "summary": "OpenAI Decisions API : The public beta runs on GPT-6 Luna and returns predicates, choices or scores. OpenAI says it is up to 10x faster than the Responses API ( OpenAI Devs ). Pricing starts at $0.10/M input with no output charges .",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Open-Weight and API Model Releases: Embeddings, Image, Decision Models",
-      "topic": null,
-      "title": "Independent check on Jev",
-      "url": "https://x.com/ValsAI/status/2107559370208997711",
-      "links": [
-        {
-          "url": "https://x.com/ValsAI/status/2107559373589668095",
-          "text": "ranked last on LegalBench"
-        }
-      ],
-      "summary": "Vals found Jev matched GPT-6 Astra’s 97.5% on claim verification at about 1/500th the cost. Jev also ranked last on LegalBench .",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Open-Weight and API Model Releases: Embeddings, Image, Decision Models",
-      "topic": null,
-      "title": "Skeptic view",
-      "url": "https://x.com/theo/status/2107581731109065066",
-      "links": [],
-      "summary": "Theo argues model-routing use cases are “absolutely useless” for choosing intelligence levels.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Open-Weight and API Model Releases: Embeddings, Image, Decision Models",
-      "topic": null,
-      "title": "Other open releases",
-      "url": "https://x.com/ArtificialAnlys/status/2107440860849901822",
-      "links": [],
-      "summary": "Ling 3.1 Flash : The model has 560B total and 25B active parameters and scores 41 on AA’s index , up from 20. It costs $0.30/$0.90 per million tokens, and weights are coming.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Open-Weight and API Model Releases: Embeddings, Image, Decision Models",
-      "topic": null,
-      "title": "Reflection Beam",
-      "url": "https://x.com/ZhihuFrontier/status/2107458766040080836",
-      "links": [],
-      "summary": "A Zhihu analysis of Beam describes a 501B/23B MoE with 23.8T pretraining tokens. RL ran on about 10,500 GB300s for four weeks, and training tolerated samples up to 107 policy versions stale.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Open-Weight and API Model Releases: Embeddings, Image, Decision Models",
-      "topic": null,
-      "title": "Kandinsky 6.0",
-      "url": "https://x.com/vllm_project/status/2107382595239682065",
-      "links": [],
-      "summary": "The video model ships under an MIT license with synchronized audio and day-0 vLLM-Omni support .",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Control and Eval Integrity",
-      "topic": null,
-      "title": "Control-intervention awareness",
-      "url": "https://x.com/JSchaeff3r/status/2107452392283271207",
-      "links": [
-        {
-          "url": "https://x.com/jonasgeiping/status/2107469609334907339",
-          "text": "co-author"
-        }
-      ],
-      "summary": "The updated CIAware benchmark shows GPT-6 Astra near-saturates detection of control interventions . Most models were near chance in May. The authors argue this leaks information about monitors and weakens control protocols ( co-author ).",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Control and Eval Integrity",
-      "topic": null,
-      "title": "Observability as attack surface",
-      "url": "https://x.com/METR_Evals/status/2107521398667436321",
-      "links": [],
-      "summary": "METR warns that misaligned agents could hack the log-review tooling humans use to supervise them. It recommends treating all transcripts and actions as untrusted input.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Control and Eval Integrity",
-      "topic": null,
-      "title": "Anthropic Cyber Verification Program",
-      "url": "https://x.com/AnthropicAI/status/2107546569654636883",
-      "links": [],
-      "summary": "Anthropic is expanding access to Mythos 5.1, Opus 5.5 and Sonnet 5.5 for verified defenders. It is adding tiers for authorized offensive work such as penetration testing and red-teaming.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Control and Eval Integrity",
-      "topic": null,
-      "title": "Open-model cyber debate",
-      "url": "https://x.com/random_walker/status/2107435883062325411",
-      "links": [
-        {
-          "url": "https://x.com/natolambert/status/2107478651134701609",
-          "text": "closed-model risk is underweighted"
-        }
-      ],
-      "summary": "Arvind Narayanan argues that weeks without incidents from GLM 5.3 should lower cyber-risk estimates . Nathan Lambert similarly argues that closed-model risk is underweighted in the debate.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Control and Eval Integrity",
-      "topic": null,
-      "title": "Benchmark audits",
-      "url": "https://x.com/omarsar0/status/2107534535604711492",
-      "links": [],
-      "summary": "AutomationBench Verified : An audit of Zapier’s AutomationBench found 206 verifier bugs . Fixing them changed 27.9% of grades across 1,235 Kimi K3 runs.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Control and Eval Integrity",
-      "topic": null,
-      "title": "AI as area chair",
-      "url": "https://x.com/ShayneRedford/status/2107513487568368039",
-      "links": [],
-      "summary": "AI rankings of all 6,617 ICML 2026 papers showed weak agreement with humans , with Kendall’s τ ≈ 0.08.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Control and Eval Integrity",
-      "topic": null,
-      "title": "Agent incident",
-      "url": "https://x.com/ShaneMac/status/2107486740491669879",
-      "links": [],
-      "summary": "A proactive agent posted a founder’s bank balances to company Slack under his identity.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Research, Infrastructure and Developer Tools",
-      "topic": null,
-      "title": "Research highlights",
-      "url": "https://x.com/arankomatsuzaki/status/2107470948265779593",
-      "links": [],
-      "summary": "H-JEPA : A hierarchical world model that raises Visual AntMaze success from 18% to 73% while using less planning compute.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Research, Infrastructure and Developer Tools",
-      "topic": null,
-      "title": "Prompt cues in base models",
-      "url": "https://x.com/arankomatsuzaki/status/2107484366763135191",
-      "links": [],
-      "summary": "Prepending a cue like “Okay” lifts Olmo-3-7B on MATH-500 from 42% to 78% . The authors say RL mostly makes such cues more likely.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Research, Infrastructure and Developer Tools",
-      "topic": null,
-      "title": "Harness-Aware Distillation",
-      "url": "https://x.com/omarsar0/status/2107507684270600394",
-      "links": [],
-      "summary": "The student reaches 63.4% on unseen ALFWorld tasks versus 47.0% for the best baseline and exceeds its 8B teacher.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Research, Infrastructure and Developer Tools",
-      "topic": null,
-      "title": "Other papers",
-      "url": "https://x.com/arankomatsuzaki/status/2107473674211328010",
-      "links": [
-        {
-          "url": "https://x.com/dair_ai/status/2107482016342233309",
-          "text": "MIRA meta-reasoner for research agents"
-        },
-        {
-          "url": "https://x.com/wen_kaiyue/status/2107501385059381556",
-          "text": "Priced Guidance"
-        }
-      ],
-      "summary": "Amazon’s looped diffusion LMs , Meta’s MIRA meta-reasoner for research agents and Priced Guidance , which measures LLM research novelty through compression.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Research, Infrastructure and Developer Tools",
-      "topic": null,
-      "title": "Optimizer claim",
-      "url": "https://x.com/DevenPzak/status/2107555263591190549",
-      "links": [],
-      "summary": "ANVIL III reportedly reaches 0.020–0.028 nats lower loss than Muon from 124M to 1.2B parameters. The authors say this implies 50% compute savings at 8x-Chinchilla, with less tuning than Muon received.",
-      "publishedAt": "2026-10-07T04:55:44.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai"
-    },
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "Helping teens learn, plan, and shape the future of AI",
-      "url": "https://openai.com/index/teens-learn-and-plan",
-      "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
-      "publishedAt": "2026-10-07T12:00:00.000Z"
-    },
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
-      "url": "https://openai.com/index/radisson",
-      "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
-      "publishedAt": "2026-10-07T07:00:00.000Z"
-    },
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "GPT-6 and Intelligent UI for everyone",
-      "url": "https://openai.com/index/gpt-6-for-everyone",
-      "summary": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
-      "publishedAt": "2026-10-07T00:00:00.000Z"
-    },
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "How Jump Trading is scaling quant research with ChatGPT",
-      "url": "https://openai.com/index/jump-trading",
-      "summary": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
-      "publishedAt": "2026-10-06T12:00:00.000Z"
-    },
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "Sharing AI progress in mathematics",
-      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
-      "summary": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
-      "publishedAt": "2026-10-06T12:00:00.000Z"
-    },
-    {
-      "source": "The Rundown AI",
-      "sourceHome": "https://www.therundown.ai/",
-      "title": "OpenAI's math avalanche continues",
-      "url": "https://www.therundown.ai/articles/openai-math-avalanche-continues",
-      "summary": "PLUS: Let OpenAI’s GPT-6 Astra compare websites for you",
-      "publishedAt": "2026-10-07T10:00:00.000Z"
-    },
-    {
-      "source": "The Rundown AI",
-      "sourceHome": "https://www.therundown.ai/",
-      "title": "A breakout moment for AI medicine",
-      "url": "https://www.therundown.ai/articles/a-breakout-moment-for-ai-medicine",
-      "summary": "PLUS: This new headset measures burnout",
-      "publishedAt": "2026-10-06T14:30:00.000Z"
+      "summary": "Mark Zuckerberg and Priscilla Chan's Biohub is expanding its $500M biology initiative into a $1.8B effort with the US government, Google DeepMind and Meta.",
+      "publishedAt": "2026-10-08T15:05:59.061Z",
+      "issueUrl": "https://www.theaivalley.com/p/gpt-6-and-intelligent-ui"
     }
   ]
 }

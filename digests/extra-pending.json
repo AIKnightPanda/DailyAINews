@@ -1,14 +1,14 @@
 {
-  "fetchedAt": "2026-10-09T21:09:37.851Z",
+  "fetchedAt": "2026-10-10T20:17:00.643Z",
   "windowDays": 3,
-  "windowUntil": "2026-10-09T23:59:59.000Z",
+  "windowUntil": "2026-10-10T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
       "status": "ok",
       "issues": 1,
-      "items": 40
+      "items": 30
     },
     {
       "id": "importai",
@@ -21,8 +21,8 @@
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
-      "issues": 9,
-      "items": 3
+      "issues": 6,
+      "items": 0
     },
     {
       "id": "deepmind",
@@ -36,14 +36,14 @@
       "name": "The Rundown AI",
       "status": "ok",
       "issues": 4,
-      "items": 2
+      "items": 1
     },
     {
       "id": "aivalley",
       "name": "AI Valley",
       "status": "ok",
-      "issues": 3,
-      "items": 3
+      "issues": 2,
+      "items": 0
     }
   ],
   "items": [
@@ -51,669 +51,491 @@
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "OpenAI Fires Three Safety Researchers Linked to the METR / Hugging Face Incident",
+      "subsection": "Decision Models Become a Product Category",
       "topic": null,
-      "title": "OpenAI’s position",
-      "url": "https://x.com/TheRundownAI/status/2108278538482659767",
+      "title": "Microsoft-Decision-1",
+      "url": "https://x.com/omarsar0/status/2108644675166888033",
       "links": [],
-      "summary": "The company has reportedly said the three mishandled confidential information. The letter is titled “OpenAI cannot make AI safe on its own” ( summary ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
+      "summary": "Positioned for LLM judges and screening scientific hypotheses. An early evaluator says decision models still struggle on consistency and complex decisions ( @omarsar0 ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "OpenAI Fires Three Safety Researchers Linked to the METR / Hugging Face Incident",
+      "subsection": "Decision Models Become a Product Category",
       "topic": null,
-      "title": "Reactions (opinion)",
-      "url": "https://x.com/NeelNanda5/status/2108299947137200488",
+      "title": "Perplexity pplx-decider-v1.1-27b",
+      "url": "https://x.com/perplexitydevs/status/2108588583158526461",
+      "links": [],
+      "summary": "Claims top Decision Bench accuracy at 94.5% across 1,071 cases, at $0.017 per 1K decisions ( @perplexitydevs ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Decision Models Become a Product Category",
+      "topic": null,
+      "title": "Cloudflare clef",
+      "url": "https://x.com/michellechen/status/2108625984585170988",
       "links": [
         {
-          "url": "https://x.com/NeelNanda5/status/2108305417629815005",
-          "text": "2"
+          "url": "https://x.com/julien_c/status/2108650927288918084",
+          "text": "Hugging Face"
         }
       ],
-      "summary": "Neel Nanda called the dismissals “extremely sketchy” if the accounts are accurate. He argued that the norms for third-party evaluator access were unsettled and that firing staff over good-faith judgment will chill outside safety work ( 1 , 2 ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
+      "summary": "New clef-omni accepts audio, video, image and text. clef-flash is now cheaper than Jev, and clef overall is about 2x faster ( @michellechen ). Weights are on Hugging Face .",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "OpenAI Fires Three Safety Researchers Linked to the METR / Hugging Face Incident",
+      "subsection": "Decision Models Become a Product Category",
       "topic": null,
-      "title": "Swarm-attack framing",
-      "url": "https://x.com/vineete_5/status/2108205982409261181",
+      "title": "Serving and routing",
+      "url": "https://x.com/vllm_project/status/2108441335044997468",
       "links": [
         {
-          "url": "https://x.com/dl_weekly/status/2108166157651820860",
-          "text": "Apollo via DL Weekly"
+          "url": "https://x.com/hwchase17/status/2108453917277254058",
+          "text": "@hwchase17"
         }
       ],
-      "summary": "A separate account describes the July breach as 700 agents firing more than 17,000 actions to gain admin control of internal clusters. Cogent Security uses that description to launch attack-path analysis built for agent swarms ( Cogent ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
+      "summary": "vLLM Semantic Router’s Decision 2.0 answers multiple questions about one input in one pass, with per-option probabilities ( @vllm_project ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Model Launches, Rollouts and Pricing",
+      "subsection": "Decision Models Become a Product Category",
       "topic": null,
-      "title": "GPT-6.1 Sol Ultrafast",
-      "url": "https://x.com/OpenAIDevs/status/2108262812489531498",
+      "title": "Train your own",
+      "url": "https://x.com/UnslothAI/status/2108568667449618930",
       "links": [
         {
-          "url": "https://x.com/OpenAIDevs/status/2108262830348886150",
-          "text": "price"
+          "url": "https://x.com/akshay_pachaar/status/2108658332739485746",
+          "text": "@akshay_pachaar"
+        }
+      ],
+      "summary": "Unsloth released a free notebook that turns Qwen3.5-4B into a decision model on 8GB of VRAM ( @UnslothAI ). A walkthrough on Qwen3.5-0.8B reports accuracy rising from 37% to 65% in 60 steps, about 10 minutes on 4GB ( @akshay_pachaar ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Decision Models Become a Product Category",
+      "topic": null,
+      "title": "Why harnesses want this",
+      "url": "https://x.com/hwchase17/status/2108777449622245793",
+      "links": [],
+      "summary": "Many agent steps are yes/no calls rather than generation. LangChain says routing each task to the cheapest adequate model cut median Open SWE cost per task by 64% ( @hwchase17 ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Decision Models Become a Product Category",
+      "topic": null,
+      "title": "Related research",
+      "url": "https://x.com/ZhihuFrontier/status/2108435752891850881",
+      "links": [],
+      "summary": "Apple/CMU’s Selection-based Structured Reasoning (SSR) applies the same idea inside agents ( @ZhihuFrontier ). Method : Six natural-language strategies are scored by length-normalized log-likelihood in one batched forward pass that shares the KV cache.",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Multi-Agent Orchestration and Coding Tools",
+      "topic": null,
+      "title": "Claude Managed Agents dynamic workflows (public beta)",
+      "url": "https://x.com/ClaudeDevs/status/2108591328732856655",
+      "links": [
+        {
+          "url": "https://x.com/ClaudeDevs/status/2108591331660468538",
+          "text": "config"
         },
         {
-          "url": "https://x.com/reach_vb/status/2108265722745114719",
-          "text": "comparison"
+          "url": "https://x.com/ClaudeDevs/status/2108591334449684643",
+          "text": "guidance"
         }
       ],
-      "summary": "OpenAI claims “near-Astra intelligence” at up to 8x the speed of Sol Standard. It is rolling out in the API, Codex and ChatGPT Work ( OpenAI Devs ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
+      "summary": "A lead agent writes a phased plan, fans it out to up to 1,000 agents per run, then merges the results. It is enabled with multiagent_20261001 ( @ClaudeDevs , config ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Model Launches, Rollouts and Pricing",
+      "subsection": "Multi-Agent Orchestration and Coding Tools",
+      "topic": null,
+      "title": "Claude Code Projects",
+      "url": "https://x.com/ClaudeDevs/status/2108621476538781878",
+      "links": [
+        {
+          "url": "https://x.com/gem_ray/status/2108625622889353414",
+          "text": "@gem_ray"
+        }
+      ],
+      "summary": "All waitlisted Pro and Max users were admitted. Each project runs tasks as parallel threads ( @ClaudeDevs ), and sessions can now run locally ( @gem_ray ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Multi-Agent Orchestration and Coding Tools",
+      "topic": null,
+      "title": "Opus 5.5 fast mode",
+      "url": "https://x.com/theo/status/2108730886191735218",
+      "links": [],
+      "summary": "It has rolled out, but it bills against usage credits and is not included in subscriptions ( @theo ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Multi-Agent Orchestration and Coding Tools",
+      "topic": null,
+      "title": "Do agent teams pay off?",
+      "url": "https://x.com/ValsAI/status/2108608719420600709",
+      "links": [],
+      "summary": "Vals AI ran GPT-6 Sol and Opus 5.5 on Vibe Code Bench, alone and as teams ( @ValsAI ). Results : Teams cost 1.8–5.1x more. Only Sol at medium effort improved significantly, by 7.3 points.",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Multi-Agent Orchestration and Coding Tools",
+      "topic": null,
+      "title": "Prime Agent rewrites itself in Rust",
+      "url": "https://x.com/PrimeIntellect/status/2108672479007047952",
+      "links": [
+        {
+          "url": "https://x.com/PrimeIntellect/status/2108645812591092114",
+          "text": "essay"
+        }
+      ],
+      "summary": "Over two weeks, a swarm of more than 2,000 agents used 10K+ sandboxes and 200B+ GLM-5.3 tokens. The result reaches usable input about 13x faster and uses 83% less startup memory ( @PrimeIntellect ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Multi-Agent Orchestration and Coding Tools",
+      "topic": null,
+      "title": "Codex updates",
+      "url": "https://x.com/OpenAIDevs/status/2108573188703781190",
+      "links": [],
+      "summary": "Windows sandbox : A new mode built on Microsoft Execution Containers (MXC) gives faster setup, network enforcement and granular file controls ( @OpenAIDevs ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Multi-Agent Orchestration and Coding Tools",
+      "topic": null,
+      "title": "Composer predictions",
+      "url": "https://x.com/OpenAIDevs/status/2108624138369929725",
+      "links": [
+        {
+          "url": "https://x.com/Angaisb_/status/2108646791558172772",
+          "text": "@Angaisb_"
+        }
+      ],
+      "summary": "Codex now suggests your next message, in beta for Pro users only ( announcement ). Some users criticize the Pro-only gating ( @Angaisb_ ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Multi-Agent Orchestration and Coding Tools",
+      "topic": null,
+      "title": "Devin and Grok Bot",
+      "url": "https://x.com/devindevelopers/status/2108587364926758936",
+      "links": [
+        {
+          "url": "https://x.com/cognition/status/2108692010056188048",
+          "text": "@cognition"
+        },
+        {
+          "url": "https://x.com/bot/status/2108609764766908772",
+          "text": "@bot"
+        }
+      ],
+      "summary": "Devins can now spawn trees of managed Devins, so wall time tracks the slowest branch rather than the sum ( @devindevelopers ). Devin also accepts personal ChatGPT plans for GPT usage ( @cognition ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Model Releases and Independent Evals",
+      "topic": null,
+      "title": "Qwen-Image-2.1-Turbo (open weights)",
+      "url": "https://x.com/Alibaba_Qwen/status/2108549075218120949",
+      "links": [],
+      "summary": "An accelerated checkpoint of the 7B Qwen-Image-2.1. It does 8-step 2K generation and natural-language editing, loads through Diffusers QwenImage21Pipeline , and launches alongside Pro and Turbo APIs ( @Alibaba_Qwen ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Model Releases and Independent Evals",
+      "topic": null,
+      "title": "StepFun Step 5 Preview",
+      "url": "https://x.com/omarsar0/status/2108609487338631207",
+      "links": [
+        {
+          "url": "https://x.com/NousResearch/status/2108638389045960958",
+          "text": "@NousResearch"
+        }
+      ],
+      "summary": "A 600B-total, 27B-active sparse MoE with 1M context and vision ( @omarsar0 ). Results : It scores 33.89 on the Hermes Index, matching GPT-6 Luna, and is free on Nous Portal for a week ( @NousResearch ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Model Releases and Independent Evals",
       "topic": null,
       "title": "Availability",
-      "url": "https://x.com/OpenAIDevs/status/2108262843544211494",
+      "url": "https://x.com/kimmonismus/status/2108675280772677914",
       "links": [
         {
-          "url": "https://x.com/kimmonismus/status/2108271817433530503",
-          "text": "critique"
+          "url": "https://x.com/omarsar0/status/2108767737543634953",
+          "text": "correction"
         }
       ],
-      "summary": "In Codex and ChatGPT it is limited to the $500 Pro tier and eligible Enterprise/Edu plans. US/EU data residency is supported, and EU residency is added for Sol Fast and Luna Fast ( details ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
+      "summary": "It reached #1 on OpenRouter Trending, which measures usage, not quality ( @kimmonismus ). Open weights are due October 15. Max output was corrected to 64K tokens ( correction ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Model Launches, Rollouts and Pricing",
+      "subsection": "Model Releases and Independent Evals",
       "topic": null,
-      "title": "Long-context behavior",
-      "url": "https://x.com/EpochAIResearch/status/2108306213943586979",
+      "title": "Upstage Solar Mini 4",
+      "url": "https://x.com/cline/status/2108630302381994318",
       "links": [],
-      "summary": "Epoch notes that cached-input pricing was halved relative to GPT-6 Sol and measures faster long-prompt handling. It calls this suggestive of an architectural change, not conclusive ( Epoch ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
+      "summary": "A 35B MoE with 3B active, 524K context and 208 tok/s. Its AAII score of 24 is the best at 3B active, within a point of Nemotron 3 Ultra. It is free in Cline ( @cline ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Model Launches, Rollouts and Pricing",
+      "subsection": "Model Releases and Independent Evals",
       "topic": null,
-      "title": "GPT-6 with Intelligent UI",
-      "url": "https://x.com/ManukaStratta/status/2107999267797516760",
+      "title": "Gemini 4 Argon",
+      "url": "https://x.com/dl_weekly/status/2108648776164319667",
       "links": [
         {
-          "url": "https://x.com/AndrewHojel/status/2107970003702276498",
-          "text": "Hojel"
+          "url": "https://x.com/testingcatalog/status/2108696747874697354",
+          "text": "@testingcatalog"
+        },
+        {
+          "url": "https://x.com/OfficialLoganK/status/2108613251349242028",
+          "text": "@OfficialLoganK"
         }
       ],
-      "summary": "ChatGPT now renders streamable native components through a progressive compiler. GPT-6 was trained to decide when interactivity helps and when plain text is enough. It is rolling out to Plus first, then Free/Go ( announcement ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
+      "summary": "Reported at 77.9% on DeepSWE v1.1 versus Opus 5.5’s 74.2%. It ships first to 650+ Fairwind Program defenders at $2/$10 per M tokens ( @dl_weekly ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Model Launches, Rollouts and Pricing",
+      "subsection": "Model Releases and Independent Evals",
       "topic": null,
-      "title": "Hands-on reaction",
-      "url": "https://x.com/nicdunz/status/2108198616636764298",
-      "links": [],
-      "summary": "One early user found real-world use less impressive than the demos ( reaction ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Model Launches, Rollouts and Pricing",
-      "topic": null,
-      "title": "Claude Haiku 5.5",
-      "url": "https://x.com/ValsAI/status/2108049884372926511",
+      "title": "Speech models",
+      "url": "https://x.com/ArtificialAnlys/status/2108608255387935199",
       "links": [
         {
-          "url": "https://x.com/arena/status/2108286973119230096",
-          "text": "Arena"
+          "url": "https://x.com/victormustar/status/2108526909457867026",
+          "text": "@victormustar"
         }
       ],
-      "summary": "The model has a 1M context window and 128K max output ( Vals ). Pricing : $0.10/$0.50 per million input/output tokens, matching GPT-6 Luna ( Arena ). Vals reports that the price rises 5x beyond 100k tokens of context.",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
+      "summary": "HeyGen Voice tops the Artificial Analysis Controlled Voice TTS arena with an Elo of 1,201, at $30/1M characters and 40 chars/s ( @ArtificialAnlys ). Whistle is a 16.9MB on-device STT model said to rival Whisper base ( @victormustar ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Model Launches, Rollouts and Pricing",
+      "subsection": "Model Releases and Independent Evals",
       "topic": null,
-      "title": "Cost per task",
-      "url": "https://x.com/ValsAI/status/2108049880438698471",
+      "title": "Multi-turn image editing",
+      "url": "https://x.com/ArtificialAnlys/status/2108600224478572767",
       "links": [],
-      "summary": "Combined with heavy reasoning (59 vs 17 steps on Legal Research), Vals finds it costs more per test than Haiku 4.5 on every shared benchmark ( token use ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
+      "summary": "Artificial Analysis chained 30 consecutive edits ( @ArtificialAnlys ). Results : Ideogram 4.5 and FLUX 3 edit locally, leaving 95%+ of the image untouched on small edits.",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Model Launches, Rollouts and Pricing",
+      "subsection": "Model Releases and Independent Evals",
       "topic": null,
-      "title": "Sonnet 5.5 cache reads halved",
-      "url": "https://x.com/ClaudeDevs/status/2108287358374482381",
-      "links": [],
-      "summary": "Cache reads now cost $0.10 per million tokens on the API, with input at $2 and output at $10. Anthropic estimates this makes most agentic work about 20% cheaper. Claude Code limits are unchanged ( ClaudeDevs ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Model Launches, Rollouts and Pricing",
-      "topic": null,
-      "title": "Gemini universal work agent",
-      "url": "https://x.com/sundarpichai/status/2108257472553386059",
+      "title": "OCR benchmarks",
+      "url": "https://x.com/skalskip92/status/2108603073509925105",
       "links": [
         {
-          "url": "https://x.com/testingcatalog/status/2108270023319970086",
-          "text": "report"
+          "url": "https://x.com/VikParuchuri/status/2108668863231451578",
+          "text": "@VikParuchuri"
         }
       ],
-      "summary": "Google Cloud launched a single cloud-resident Gemini agent. It offers persistent memory, sub-agent orchestration, Workspace inline integration and routing across models ( Pichai ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
+      "summary": "Roboflow’s new benchmark covers 48 models, with GPT-6 Astra leading text localization ( @skalskip92 ). Datalab’s OmniParseBench has 16K tests across 90 languages, and its own model does not rank first ( @VikParuchuri ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Model Launches, Rollouts and Pricing",
+      "subsection": "Model Releases and Independent Evals",
       "topic": null,
-      "title": "Other releases",
-      "url": "https://x.com/staghado/status/2108236279481844108",
-      "links": [],
-      "summary": "LightOnOCR-3 : Released in 0.8B, 1B and 4B sizes under Apache 2.0, covering OCR, layout and chart extraction ( LightOn ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Model Launches, Rollouts and Pricing",
-      "topic": null,
-      "title": "Step 5 Preview",
-      "url": "https://x.com/cline/status/2108249633789263917",
-      "links": [],
-      "summary": "Now free in Cline, which says it scores ahead of Kimi K3 and GLM-5.3 on DeepSWE ( Cline ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Eval Integrity, RL Environments and Agent Safety",
-      "topic": null,
-      "title": "MiMo reward hacking",
-      "url": "https://x.com/ValsAI/status/2107967073729343806",
+      "title": "Arena roundup",
+      "url": "https://x.com/arena/status/2108568443037614515",
       "links": [
         {
-          "url": "https://x.com/ValsAI/status/2107967075474157934",
-          "text": "audit"
+          "url": "https://x.com/arcprize/status/2108577347192676612",
+          "text": "@arcprize"
         }
       ],
-      "summary": "Vals AI audited Xiaomi’s open-sourced RL environments for MiMo v2.6 ( thread ). Leaked fixes : In 1,795 of 2,698 coding tasks (67%), the fix commit survives as an unreachable Git object.",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
+      "summary": "Claude Haiku 5.5 ranks #30 on WebDev at $0.10/$0.50, matching GPT-6 Luna’s price while scoring 6 points higher. Mistral Large 4 sits at #43 on Agent Arena ( @arena ). On ARC-AGI-3, a new high score of 59.17% ( @arcprize ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Eval Integrity, RL Environments and Agent Safety",
+      "subsection": "Research, Training and Inference Systems",
       "topic": null,
-      "title": "Timestamp exploit",
-      "url": "https://x.com/ValsAI/status/2107967079450353773",
-      "links": [],
-      "summary": "Where Git history had been cleaned, MiMo used find -newermt on file modification times to locate files touched by the reference patch. Vals knows of no earlier report of an agent exploiting timestamps ( mtimes ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Eval Integrity, RL Environments and Agent Safety",
-      "topic": null,
-      "title": "Behavior carries into evals",
-      "url": "https://x.com/ValsAI/status/2107967081258115481",
-      "links": [],
-      "summary": "On Terminal-Bench 4, MiMo read upstream commits despite an explicit no-cheating instruction. Naming exactly what was off-limits cut fix-hunting from 6/6 runs to 0/6 ( evals ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Eval Integrity, RL Environments and Agent Safety",
-      "topic": null,
-      "title": "Recommendation",
-      "url": "https://x.com/ValsAI/status/2107967082835083749",
-      "links": [],
-      "summary": "Vals says RL environments should be audited before training and models again before deployment ( blog ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Eval Integrity, RL Environments and Agent Safety",
-      "topic": null,
-      "title": "Arena Alignment Index",
-      "url": "https://x.com/arena/status/2108226499560214777",
-      "links": [],
-      "summary": "The index is built from more than 90K real agent sessions across 27 models. It measures unauthorized actions, false attribution and deceptive completion ( Arena ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Eval Integrity, RL Environments and Agent Safety",
-      "topic": null,
-      "title": "Long conversations",
-      "url": "https://x.com/MTSlive/status/2108292446463647760",
-      "links": [],
-      "summary": "Arena’s CEO says misalignment exceeds 50% beyond 20 turns ( interview ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Eval Integrity, RL Environments and Agent Safety",
-      "topic": null,
-      "title": "Tools degrade refusals",
-      "url": "https://x.com/omarsar0/status/2108029716267671600",
-      "links": [],
-      "summary": "NVIDIA’s NeurIPS 2026 paper finds that tool access raises multimodal refusal failures by 17.7% on average and up to 68.7% relative, across Claude Opus 4.6/4.7, Gemini and Qwen3.5 ( paper ). Cause and fix : Tool outputs bury the original intent in context.",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Eval Integrity, RL Environments and Agent Safety",
-      "topic": null,
-      "title": "Open-weight safeguards",
-      "url": "https://x.com/dl_weekly/status/2108227001953714581",
-      "links": [],
-      "summary": "GLM-5.3 red-team : An Anthropic analysis reports simple attacks bypassing GLM-5.3 safeguards 64–100% of the time in simulation ( DL Weekly ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Eval Integrity, RL Environments and Agent Safety",
-      "topic": null,
-      "title": "Goodfire monitors",
-      "url": "https://x.com/GoodfireAI/status/2108233339329257490",
-      "links": [],
-      "summary": "Goodfire released probe-based cyber monitors for Kimi K3 and GLM 5.3. It claims they are 50x faster and cheaper than an LLM judge, and FAR.AI red-teaming found they greatly reduce universal jailbreaks ( Goodfire ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Eval Integrity, RL Environments and Agent Safety",
-      "topic": null,
-      "title": "AI-assisted bank hack (reported)",
-      "url": "https://x.com/AndrewCurran_/status/2108108695876092323",
+      "title": "vLLM and SGLang on Vera Rubin",
+      "url": "https://x.com/vllm_project/status/2108736734309896625",
       "links": [
         {
-          "url": "https://x.com/ClementDelangue/status/2108184948548976921",
-          "text": "call"
+          "url": "https://x.com/vllm_project/status/2108736793541800036",
+          "text": "details"
         }
       ],
-      "summary": "A CrowdStrike report, as summarized by @AndrewCurran_, attributes last week’s attack on South Korean banks possibly to a single person. The stack reportedly combined ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6 and Claude Code ( report ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
+      "summary": "vLLM reports more than 7.8x GB200 throughput on MiniMax M3 at matched interactivity on AgentX. These are early results ( @vllm_project ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Eval Integrity, RL Environments and Agent Safety",
+      "subsection": "Research, Training and Inference Systems",
       "topic": null,
-      "title": "Open RL environments",
-      "url": "https://x.com/Weyaxi/status/2108246041548018053",
+      "title": "SemiAnalysis claims",
+      "url": "https://x.com/SemiAnalysis_/status/2108604228440658369",
       "links": [],
-      "summary": "TermGrade : 1k execution-verified terminal environments plus 36k trajectories. Training Gemma-4-31B on the tasks it solved half the time added 3.1 points on Terminal-Bench 2.1 ( TermGrade ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
+      "summary": "A preview InferenceX submission shows 3.2x profit per gigawatt and up to 10x performance per dollar versus GB300 ( @SemiAnalysis_ ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Eval Integrity, RL Environments and Agent Safety",
+      "subsection": "Research, Training and Inference Systems",
       "topic": null,
-      "title": "Open Env Arena",
-      "url": "https://x.com/ben_burtenshaw/status/2108200143069561151",
-      "links": [],
-      "summary": "Hugging Face’s arena trains Qwen-3.8-27B on agent-submitted environments and scores the results on a leaderboard ( arena ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Independent Benchmarks",
-      "topic": null,
-      "title": "Harvey LAB-AA v1.1",
-      "url": "https://x.com/ArtificialAnlys/status/2108264572545310824",
-      "links": [],
-      "summary": "The new headline metric only credits tasks whose deliverables contain no material hallucinations ( AA ). Leaders : Grok 4.7 (xhigh) leads at 9.4%, ahead of Muse Spark 1.3 at 8.9% and GPT-6 Astra at 8.6%.",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Independent Benchmarks",
-      "topic": null,
-      "title": "AA Cyber Index",
-      "url": "https://x.com/ArtificialAnlys/status/2108280721358111188",
-      "links": [],
-      "summary": "Artificial Analysis now includes trusted-access models ( AA ). New leader : GPT-6 Sol (Daybreak Blue) leads with no safety blocks across the index.",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Independent Benchmarks",
-      "topic": null,
-      "title": "Epoch Automation Reports",
-      "url": "https://x.com/EpochAIResearch/status/2108250259889831979",
+      "title": "Data and post-training services",
+      "url": "https://x.com/pratyushmaini/status/2108587864644870540",
       "links": [
         {
-          "url": "https://x.com/EpochAIResearch/status/2108250335638855883",
-          "text": "example"
+          "url": "https://x.com/arimorcos/status/2108578519920021944",
+          "text": "@arimorcos"
         }
       ],
-      "summary": "The new reports test models on Epoch’s own open-ended work. Claude Fable 5.1 and GPT-6 Astra lead, but neither comes close to fully automating Epoch’s work ( Epoch ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
+      "summary": "Datology Curation Studio : Claims a 6x compute multiplier on 39 open datasets for a 30B MoE ( @pratyushmaini ). It also cites Thomson-1, trained for $450K, beating GPT-5.6 Sol head-to-head ( @arimorcos ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Independent Benchmarks",
+      "subsection": "Research, Training and Inference Systems",
       "topic": null,
-      "title": "Decision models",
-      "url": "https://x.com/MaziyarPanahi/status/2108180624372605186",
+      "title": "DeepSeek periodic weak spots",
+      "url": "https://x.com/ZhihuFrontier/status/2108475220298551728",
       "links": [],
-      "summary": "pplx-decider v1.1 : The open-weight model scored 643/669 on clinical decisions vs 628 for Jev, at 42% lower cost ( Panahi ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
+      "summary": "ByteDance Seed finds that retrieval depends on where a token lands relative to the compression stride ( @ZhihuFrontier ). Evidence : The pattern persists without RoPE or learned gates, and tracks stride length.",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Independent Benchmarks",
+      "subsection": "Research, Training and Inference Systems",
       "topic": null,
-      "title": "Mercury Decide",
-      "url": "https://x.com/ValsAI/status/2108250279846219810",
+      "title": "Agent research",
+      "url": "https://x.com/omarsar0/status/2108580251127439710",
       "links": [],
-      "summary": "Matched frontier claim-verification accuracy at the lowest cost Vals has measured ( Vals ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
+      "summary": "Agent plasticity (Meta) : Measures held-out gain per learning dollar. The best performers are not the most efficient learners ( @omarsar0 ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Independent Benchmarks",
+      "subsection": "Research, Training and Inference Systems",
       "topic": null,
-      "title": "Image and video leaderboards",
-      "url": "https://x.com/ArtificialAnlys/status/2108236656700768310",
+      "title": "Base-model selection (NVIDIA)",
+      "url": "https://x.com/dair_ai/status/2108584781877522655",
       "links": [],
-      "summary": "Nano Banana 2.1 : Ranks #4 on both T2I and Editing at $0.0336 per 1K image, half its predecessor’s price ( AA ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Independent Benchmarks",
-      "topic": null,
-      "title": "Vidu Q4 Preview",
-      "url": "https://x.com/ArtificialAnlys/status/2107987818526146964",
-      "links": [],
-      "summary": "Debuts at #3 on I2V, up from #19, at an unchanged price ( AA ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Systems, Infrastructure and Research",
-      "topic": null,
-      "title": "vLLM v0.31.0",
-      "url": "https://x.com/vllm_project/status/2108128026303357173",
-      "links": [
-        {
-          "url": "https://x.com/vllm_project/status/2108027563608350794",
-          "text": "paper"
-        }
-      ],
-      "summary": "Highlights include DeepSeek-V4.1-Flash support with NVFP4 KV caching, vllm preload for fast restarts, draft-model speculative decoding in Model Runner V2, MoonEP/DeepEPv2 and RL weight transfer ( release ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Systems, Infrastructure and Research",
-      "topic": null,
-      "title": "RL refit transfer",
-      "url": "https://x.com/dair_ai/status/2108229693061357652",
-      "links": [],
-      "summary": "NVIDIA’s NeMo-DCR exploits the fact that only 0.6–1.2% of weights change per RL step. It ships bit-exact deltas through a relay tree, cutting a 1T cross-region refit from 87.5 minutes to 150 seconds, or 12–40x faster overall ( summary ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Systems, Infrastructure and Research",
-      "topic": null,
-      "title": "MoE communication",
-      "url": "https://x.com/ZyphraAI/status/2108219753139777586",
-      "links": [],
-      "summary": "Zyphra uses routing patterns to speed up token-to-expert communication by up to 2.63x on MI300X without changing the model ( Zyphra ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Systems, Infrastructure and Research",
-      "topic": null,
-      "title": "CLIFT (Salesforce)",
-      "url": "https://x.com/dair_ai/status/2108014562922688647",
-      "links": [],
-      "summary": "A 31B Gemma-4 web agent reaches 74.6% on WebArena Infinity without a frontier judge, beating Gemini 3 Flash at 70.1% ( summary ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Systems, Infrastructure and Research",
-      "topic": null,
-      "title": "FlowAgent (Google)",
-      "url": "https://x.com/omarsar0/status/2108276499615014936",
-      "links": [],
-      "summary": "A CI repair agent that suggested fixes on 295K changes, of which 28.5K were applied ( summary ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "AI for Mathematics and Science",
-      "topic": null,
-      "title": "OpenAI’s 722-paper math release",
-      "url": "https://x.com/TheRundownAI/status/2108214995087396923",
-      "links": [],
-      "summary": "The release faces credibility pushback ( summary ). Retractions : Three papers have been withdrawn and 14 revised.",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "AI for Mathematics and Science",
-      "topic": null,
-      "title": "Formalization gap",
-      "url": "https://x.com/BlackHC/status/2108094390186995733",
-      "links": [
-        {
-          "url": "https://x.com/giffmana/status/2108103596541919366",
-          "text": "giffmana"
-        }
-      ],
-      "summary": "The README conceded that unformalized results “could have issues,” and critics questioned releasing proofs without full Lean checks ( BlackHC , giffmana ).",
-      "publishedAt": "2026-10-08T23:29:43.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f"
-    },
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-      "url": "https://openai.com/index/sophos",
-      "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
-      "publishedAt": "2026-10-09T07:00:00.000Z"
-    },
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-      "url": "https://openai.com/index/asana-browser-agent",
-      "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
-      "publishedAt": "2026-10-09T07:00:00.000Z"
-    },
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "LegalOn halves Codex costs while maintaining development speed",
-      "url": "https://openai.com/index/legalon-halves-codex-costs",
-      "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
-      "publishedAt": "2026-10-08T12:00:00.000Z"
+      "summary": "Ranks checkpoints by whether the base model can reproduce the “decisive edit,” a signal that tracks post-trained SWE-bench Verified scores ( @dair_ai ).",
+      "publishedAt": "2026-10-10T06:45:57.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
     },
     {
       "source": "The Rundown AI",
       "sourceHome": "https://www.therundown.ai/",
-      "title": "Fired OpenAI safety researchers hit back",
-      "url": "https://www.therundown.ai/articles/fired-openai-safety-researchers-hit-back",
-      "summary": "PLUS: Clean up a messy Excel report with Claude",
-      "publishedAt": "2026-10-09T09:00:00.000Z"
-    },
-    {
-      "source": "The Rundown AI",
-      "sourceHome": "https://www.therundown.ai/",
-      "title": "Meet Roger, the bomb-squad humanoid",
-      "url": "https://www.therundown.ai/articles/meet-roger-the-bomb-squad-humanoid",
-      "summary": "PLUS: Agilink's robot hands are getting crafty",
-      "publishedAt": "2026-10-08T14:30:00.000Z"
-    },
-    {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "Claude can now build live dashboards and animated videos.",
-      "url": "https://x.com/claudeai/status/2108271552991252810?s=20",
-      "links": [
-        {
-          "url": "https://claude.com/resources/articles/dashboards-and-motion",
-          "text": "Claude Motion"
-        }
-      ],
-      "summary": "Two new things: Claude Dashboards and Claude Motion .",
-      "publishedAt": "2026-10-09T14:00:00.000Z",
-      "issueUrl": "https://www.theaivalley.com/p/ai-labs-prepare-for-disaster"
-    },
-    {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "AI companies are quietly preparing for a major AI disaster.",
-      "url": "https://www.axios.com/2026/10/09/ai-companies-day-after-major-attack",
-      "links": [],
-      "summary": "Axios reported that executives at OpenAI, Anthropic and other labs are privately war-gaming a public and political backlash after a catastrophic incident — possibly as soon as 2027. Some insiders apparently expect something within the next 6–12 months.",
-      "publishedAt": "2026-10-09T14:00:00.000Z",
-      "issueUrl": "https://www.theaivalley.com/p/ai-labs-prepare-for-disaster"
-    },
-    {
-      "source": "AI Valley",
-      "sourceHome": "https://www.theaivalley.com/",
-      "section": null,
-      "subsection": null,
-      "topic": null,
-      "title": "Three fired OpenAI researchers are pushing back.",
-      "url": "https://x.com/balesni/status/2108262814003687745",
-      "links": [],
-      "summary": "Tomek Korbak, Jasmine Wang and Mikita Balesni were let go for allegedly mishandling sensitive information. They’ve published an open letter disputing the accusations and saying OpenAI’s shifting internal rules are making people afraid to speak up.",
-      "publishedAt": "2026-10-09T14:00:00.000Z",
-      "issueUrl": "https://www.theaivalley.com/p/ai-labs-prepare-for-disaster"
+      "title": "Apple brings touch to the Mac",
+      "url": "https://www.therundown.ai/articles/apple-brings-touch-to-the-mac",
+      "summary": "PLUS: Amazon retires Fire, lets Google in",
+      "publishedAt": "2026-10-09T14:30:00.000Z"
     }
   ]
 }

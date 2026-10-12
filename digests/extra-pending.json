@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-10-11T20:30:38.689Z",
+  "fetchedAt": "2026-10-12T23:09:36.243Z",
   "windowDays": 3,
-  "windowUntil": "2026-10-11T23:59:59.000Z",
+  "windowUntil": "2026-10-12T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
@@ -14,14 +14,14 @@
       "id": "importai",
       "name": "Import AI",
       "status": "ok",
-      "issues": 0,
-      "items": 0
+      "issues": 1,
+      "items": 7
     },
     {
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
-      "issues": 2,
+      "issues": 0,
       "items": 0
     },
     {
@@ -35,25 +35,100 @@
       "id": "rundown",
       "name": "The Rundown AI",
       "status": "ok",
-      "issues": 3,
+      "issues": 2,
       "items": 1
     },
     {
       "id": "aivalley",
       "name": "AI Valley",
       "status": "ok",
-      "issues": 1,
+      "issues": 0,
       "items": 0
     }
   ],
   "items": [
     {
+      "source": "Import AI",
+      "sourceHome": "https://jack-clark.net/",
+      "section": null,
+      "title": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
+      "url": "https://jack-clark.net/2026/10/12/import-ai-476-creativity-and-rsi-worse-than-china-open-weight-models-ai-goes-to-space/",
+      "summary": null,
+      "publishedAt": "2026-10-12T12:30:39.000Z",
+      "isIssue": true
+    },
+    {
+      "source": "Import AI",
+      "sourceHome": "https://jack-clark.net/",
+      "section": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
+      "title": "Introducing Humanity’s Sixth Sense (HSS) (Elorian)",
+      "url": "https://elorian.ai/blog/humanitys-sixth-sense",
+      "links": [
+        {
+          "url": "https://labs.scale.com/papers/humanitys-sixth-sense",
+          "text": "Humanity’s Sixth Sense: Benchmarking Intuitive Visual Reasoning in Multimodal Models (Scale Labs)"
+        }
+      ],
+      "summary": "HSS tells us whether world models are emergent: One way of looking at HSS is highlighting deficiencies in current systems, but a more interesting way is highlighting how adept today’s frontier LLMs are at doing tasks which many people have long assumed would require sophisticated, different AI systems to solve.",
+      "publishedAt": "2026-10-12T12:30:39.000Z"
+    },
+    {
+      "source": "Import AI",
+      "sourceHome": "https://jack-clark.net/",
+      "section": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
+      "title": "The AI Race Will Extend Far Beyond Earth (AI Frontiers)",
+      "url": "https://ai-frontiers.org/articles/the-ai-race-will-extend-far-beyond-earth",
+      "links": [],
+      "summary": "“Space is not a brand-new domain, but AI may be about to drastically accelerate its industrialization, demanding make-or-break decisions of leaders under ever-greater urgency and uncertainty,” AI Frontiers writes. I agree.",
+      "publishedAt": "2026-10-12T12:30:39.000Z"
+    },
+    {
+      "source": "Import AI",
+      "sourceHome": "https://jack-clark.net/",
+      "section": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
+      "title": "Introducing TasteVal (P-Zero Research)",
+      "url": "https://pzeroresearch.com/work/tasteval/",
+      "links": [],
+      "summary": "RSI: In my analysis of recursive self-improvement ( AI Systems Are About To Start Building Themselves, Import AI 455 ), I repeatedly noted that creativity seemed like a key variable for how fast AI systems could develop the capacity to improve themselves.",
+      "publishedAt": "2026-10-12T12:30:39.000Z"
+    },
+    {
+      "source": "Import AI",
+      "sourceHome": "https://jack-clark.net/",
+      "section": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
+      "title": "Introducing Beam: Reflection’s 501B open-weight model (Reflection, blog)",
+      "url": "https://reflection.ai/blog/introducing-beam",
+      "links": [],
+      "summary": "America returns to open weight models: With the exception of Google’s good-but-small ‘Gemma’ class of models, the US has fallen off of the open weight model frontier, largely because Meta stopped making good LLaMA models and its MSL team is still spinning up.",
+      "publishedAt": "2026-10-12T12:30:39.000Z"
+    },
+    {
+      "source": "Import AI",
+      "sourceHome": "https://jack-clark.net/",
+      "section": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
+      "title": "Le chonk, Introducing Mistral Large 4 (Mistral.ai)",
+      "url": "https://mistral.ai/news/mistral-large-4/",
+      "links": [],
+      "summary": "European sovereignty: Mistral is Europe’s single best hope for having a (multi-)national champion for AI development. But as the results here show, competing with China is going to be very difficult.",
+      "publishedAt": "2026-10-12T12:30:39.000Z"
+    },
+    {
+      "source": "Import AI",
+      "sourceHome": "https://jack-clark.net/",
+      "section": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
+      "title": "From Pilots to Production: Lessons in Cross-Institutional Federated Training and Artificial Intelligence for Science (arXiv)",
+      "url": "https://arxiv.org/abs/2609.39803",
+      "links": [],
+      "summary": "leverage through existing assets: Papers like this show how governments could pool their resources together to utilize AI systems for national security or otherwise sensitive purposes.",
+      "publishedAt": "2026-10-12T12:30:39.000Z"
+    },
+    {
       "source": "The Rundown AI",
       "sourceHome": "https://www.therundown.ai/",
-      "title": "Microsoft's Jacob Andreou on AI's product gap",
-      "url": "https://www.therundown.ai/articles/microsoft-s-jacob-andreou-on-ai-s-product-gap",
-      "summary": "How Microsoft rebuilt the new Copilot with capabilities to address a growing gap in AI",
-      "publishedAt": "2026-10-11T10:00:00.000Z"
+      "title": "This AI factory builds tiny machines from code",
+      "url": "https://www.therundown.ai/articles/this-ai-factory-builds-tiny-machines-from-code",
+      "summary": "PLUS: Turn a product photo into three matching ads",
+      "publishedAt": "2026-10-12T09:00:00.000Z"
     }
   ]
 }

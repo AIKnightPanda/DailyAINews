@@ -1,134 +1,696 @@
 {
-  "fetchedAt": "2026-10-12T23:09:36.243Z",
+  "fetchedAt": "2026-10-13T21:28:56.497Z",
   "windowDays": 3,
-  "windowUntil": "2026-10-12T23:59:59.000Z",
+  "windowUntil": "2026-10-13T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
       "status": "ok",
       "issues": 1,
-      "items": 0
+      "items": 40
     },
     {
       "id": "importai",
       "name": "Import AI",
       "status": "ok",
       "issues": 1,
-      "items": 7
+      "items": 0
     },
     {
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
-      "issues": 0,
-      "items": 0
+      "issues": 1,
+      "items": 1
     },
     {
       "id": "deepmind",
       "name": "Google DeepMind",
       "status": "ok",
-      "issues": 0,
-      "items": 0
+      "issues": 3,
+      "items": 3
     },
     {
       "id": "rundown",
       "name": "The Rundown AI",
       "status": "ok",
-      "issues": 2,
-      "items": 1
+      "issues": 4,
+      "items": 2
     },
     {
       "id": "aivalley",
       "name": "AI Valley",
       "status": "ok",
-      "issues": 0,
+      "issues": 1,
       "items": 0
     }
   ],
   "items": [
     {
-      "source": "Import AI",
-      "sourceHome": "https://jack-clark.net/",
-      "section": null,
-      "title": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
-      "url": "https://jack-clark.net/2026/10/12/import-ai-476-creativity-and-rsi-worse-than-china-open-weight-models-ai-goes-to-space/",
-      "summary": null,
-      "publishedAt": "2026-10-12T12:30:39.000Z",
-      "isIssue": true
-    },
-    {
-      "source": "Import AI",
-      "sourceHome": "https://jack-clark.net/",
-      "section": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
-      "title": "Introducing Humanity’s Sixth Sense (HSS) (Elorian)",
-      "url": "https://elorian.ai/blog/humanitys-sixth-sense",
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "What happened",
+      "topic": null,
+      "title": "Availability is split",
+      "url": "https://x.com/AIatMeta/status/2109691148943999167",
       "links": [
         {
-          "url": "https://labs.scale.com/papers/humanitys-sixth-sense",
-          "text": "Humanity’s Sixth Sense: Benchmarking Intuitive Visual Reasoning in Multimodal Models (Scale Labs)"
+          "url": "https://x.com/MetaNewsroom/status/2109696203545792791",
+          "text": "Newsroom"
         }
       ],
-      "summary": "HSS tells us whether world models are emergent: One way of looking at HSS is highlighting deficiencies in current systems, but a more interesting way is highlighting how adept today’s frontier LLMs are at doing tasks which many people have long assumed would require sophisticated, different AI systems to solve.",
-      "publishedAt": "2026-10-12T12:30:39.000Z"
+      "summary": "( @AIatMeta , Newsroom ): Wonder is available via the Meta Model API and Muse Code.",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
     },
     {
-      "source": "Import AI",
-      "sourceHome": "https://jack-clark.net/",
-      "section": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
-      "title": "The AI Race Will Extend Far Beyond Earth (AI Frontiers)",
-      "url": "https://ai-frontiers.org/articles/the-ai-race-will-extend-far-beyond-earth",
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "What happened",
+      "topic": null,
+      "title": "Positioning.",
+      "url": "https://x.com/alexandr_wang/status/2109699673221169617",
       "links": [],
-      "summary": "“Space is not a brand-new domain, but AI may be about to drastically accelerate its industrialization, demanding make-or-break decisions of leaders under ever-greater urgency and uncertainty,” AI Frontiers writes. I agree.",
-      "publishedAt": "2026-10-12T12:30:39.000Z"
+      "summary": "Meta pitches the models as SOTA for “personal and professional agentic work.” @alexandr_wang named three headline features: Active Memory: memory across days, weeks and months.",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
     },
     {
-      "source": "Import AI",
-      "sourceHome": "https://jack-clark.net/",
-      "section": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
-      "title": "Introducing TasteVal (P-Zero Research)",
-      "url": "https://pzeroresearch.com/work/tasteval/",
-      "links": [],
-      "summary": "RSI: In my analysis of recursive self-improvement ( AI Systems Are About To Start Building Themselves, Import AI 455 ), I repeatedly noted that creativity seemed like a key variable for how fast AI systems could develop the capacity to improve themselves.",
-      "publishedAt": "2026-10-12T12:30:39.000Z"
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "What happened",
+      "topic": null,
+      "title": "Training story.",
+      "url": "https://x.com/alexandr_wang/status/2109690903074054598",
+      "links": [
+        {
+          "url": "https://x.com/alexandr_wang/status/2109690904407928973",
+          "text": "research blog"
+        },
+        {
+          "url": "https://x.com/AIatMeta/status/2109698705490149596",
+          "text": "@AIatMeta"
+        }
+      ],
+      "summary": "Wang says Meta continued scaling both pre-training and RL since Muse Spark shipped in April ( post ; research blog ). @AIatMeta framed it as going “from rebuilding our foundation to pushing the frontier in 14 months.”",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
     },
     {
-      "source": "Import AI",
-      "sourceHome": "https://jack-clark.net/",
-      "section": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
-      "title": "Introducing Beam: Reflection’s 501B open-weight model (Reflection, blog)",
-      "url": "https://reflection.ai/blog/introducing-beam",
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "What happened",
+      "topic": null,
+      "title": "Safety claims.",
+      "url": "https://x.com/AIatMeta/status/2109691159412904199",
       "links": [],
-      "summary": "America returns to open weight models: With the exception of Google’s good-but-small ‘Gemma’ class of models, the US has fallen off of the open weight model frontier, largely because Meta stopped making good LLaMA models and its MSL team is still spinning up.",
-      "publishedAt": "2026-10-12T12:30:39.000Z"
+      "summary": "@AIatMeta says the family was trained for robustness to adversarial instructions and for careful handling of private information. No detailed system card was referenced.",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
     },
     {
-      "source": "Import AI",
-      "sourceHome": "https://jack-clark.net/",
-      "section": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
-      "title": "Le chonk, Introducing Mistral Large 4 (Mistral.ai)",
-      "url": "https://mistral.ai/news/mistral-large-4/",
-      "links": [],
-      "summary": "European sovereignty: Mistral is Europe’s single best hope for having a (multi-)national champion for AI development. But as the results here show, competing with China is going to be very difficult.",
-      "publishedAt": "2026-10-12T12:30:39.000Z"
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "What happened",
+      "topic": null,
+      "title": "Launch-day usage-limit bug.",
+      "url": "https://x.com/alexandr_wang/status/2109714291062620560",
+      "links": [
+        {
+          "url": "https://x.com/alexandr_wang/status/2109719667527061883",
+          "text": "follow-up"
+        },
+        {
+          "url": "https://x.com/alexandr_wang/status/2109774017574113780",
+          "text": "fix"
+        }
+      ],
+      "summary": "Wonder and Wonder Full were draining Muse Code quotas abnormally fast ( @alexandr_wang , follow-up ). It was fixed the same day, with a quota reset for all users ( fix ; @mjdouglas ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
     },
     {
-      "source": "Import AI",
-      "sourceHome": "https://jack-clark.net/",
-      "section": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
-      "title": "From Pilots to Production: Lessons in Cross-Institutional Federated Training and Artificial Intelligence for Science (arXiv)",
-      "url": "https://arxiv.org/abs/2609.39803",
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Independent evals (facts)",
+      "topic": null,
+      "title": "Intelligence Index v4.3:",
+      "url": "https://x.com/TheRundownAI/status/2109696026735227303",
       "links": [],
-      "summary": "leverage through existing assets: Papers like this show how governments could pool their resources together to utilize AI systems for national security or otherwise sensitive purposes.",
-      "publishedAt": "2026-10-12T12:30:39.000Z"
+      "summary": "Wonder Full (max) scores 56 and Wonder (max) scores 52, up from Muse Spark 1.3 (max) at 48. The gap between Spark 1.3 and Wonder releases was only 6 weeks. Opus 5.5 leads at 58 ( @TheRundownAI ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Specs:",
+      "topic": null,
+      "title": "Wonder Full (Max):",
+      "url": "https://x.com/ValsAI/status/2109706327014674664",
+      "links": [],
+      "summary": "#5 on the Vals Index, +6.4 points over its predecessor and ahead of every OpenAI model. ProofBench (private): 94/100, versus 58 for Spark 1.3. The top models score 99–100 ( post ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Meta’s own framing (opinion/vendor claims)",
+      "topic": null,
+      "title": "@alexandr_wang",
+      "url": "https://x.com/alexandr_wang/status/2109707211249537348",
+      "links": [],
+      "summary": "says research “starts with evals”: MSL built an internal Personal Superintelligence Index (PSI) rather than chasing external benchmarks, and claims “big model smell (which we quantified!).”",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Meta’s own framing (opinion/vendor claims)",
+      "topic": null,
+      "title": "@_jasonwei :",
+      "url": "https://x.com/_jasonwei/status/2109695682676506679",
+      "links": [],
+      "summary": "“scaling prevails.” Much of Meta pivoted to support the model, including business development teams hiring human experts for data review. He also calls it “great for multimodal.”",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Meta’s own framing (opinion/vendor claims)",
+      "topic": null,
+      "title": "Other MSL staff:",
+      "url": "https://x.com/hwchung27/status/2109718685388853622",
+      "links": [],
+      "summary": "@hwchung27 — “something magical about big models.”",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Other MSL staff:",
+      "topic": null,
+      "title": "Amplification.",
+      "url": "https://x.com/alexandr_wang/status/2109702778239279222",
+      "links": [
+        {
+          "url": "https://x.com/alexandr_wang/status/2109703458278535245",
+          "text": "post"
+        },
+        {
+          "url": "https://x.com/alexandr_wang/status/2109716422259781832",
+          "text": "post"
+        }
+      ],
+      "summary": "Wang reposted a stream of third-party praise: “mogged Astra in my hardcore physics testing” ( post ), “meta is going to win consumer agents in a landslide” ( post ), and “might actually be the best AI model in the world” ( post ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Bullish:",
+      "topic": null,
+      "title": "@kimmonismus",
+      "url": "https://x.com/kimmonismus/status/2109757129103970507",
+      "links": [
+        {
+          "url": "https://x.com/kimmonismus/status/2109768554585415743",
+          "text": "post"
+        }
+      ],
+      "summary": "(early access, says he was unpaid — post ): Resists trick questions, follows instructions precisely, and self-checks code.",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "@QuixiAI :",
+      "topic": null,
+      "title": "@Yuchenj_UW :",
+      "url": "https://x.com/Yuchenj_UW/status/2109846485663990129",
+      "links": [
+        {
+          "url": "https://x.com/andrew_n_carr/status/2109850657520025810",
+          "text": "@andrew_n_carr"
+        }
+      ],
+      "summary": "vindicates Meta’s expensive talent and Scale acquisition bet. @andrew_n_carr argues Nat Friedman’s role is underrated.",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Skeptical or neutral:",
+      "topic": null,
+      "title": "@teortaxesTex",
+      "url": "https://x.com/teortaxesTex/status/2109716288931242282",
+      "links": [
+        {
+          "url": "https://x.com/teortaxesTex/status/2109716085222355033",
+          "text": "post"
+        }
+      ],
+      "summary": "is waiting for third-party confirmation of “Fable level.” He argues OpenAI and Anthropic are far enough ahead to “pace” between themselves, since public access lags their internal models ( post ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Skeptical or neutral:",
+      "topic": null,
+      "title": "Access complaints.",
+      "url": "https://x.com/theo/status/2109752564740956508",
+      "links": [
+        {
+          "url": "https://x.com/theo/status/2109784568672985520",
+          "text": "post"
+        }
+      ],
+      "summary": "@theo objects to Full being subscriber-only with no price. He says the two variants are “very different models” ( post ): Full matches Opus xhigh on AA using fewer tokens.",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Context: Muse product and strategy",
+      "topic": null,
+      "title": "Retention (Sensor Tower, via @kimmonismus ):",
+      "url": "https://x.com/kimmonismus/status/2109716732210225171",
+      "links": [
+        {
+          "url": "https://x.com/scottastevenson/status/2109504336040730967",
+          "text": "@scottastevenson"
+        },
+        {
+          "url": "https://x.com/zachtratar/status/2109769315566456929",
+          "text": "@zachtratar"
+        }
+      ],
+      "summary": "DayMuseChatGPTD173.3%—D7>30%—D1422.5%26.8% ChatGPT overtakes Muse around day 9. @scottastevenson reads Muse’s curve as tilting toward zero rather than flattening.",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Retention (Sensor Tower, via @kimmonismus ):",
+      "topic": null,
+      "title": "Enterprise governance.",
+      "url": "https://x.com/berman66/status/2109689582199423237",
+      "links": [],
+      "summary": "@berman66 (Runlayer) launched governance tooling for Muse at work. He cites companies blocking Muse after it “went rogue,” leaking data and sending unauthorized emails.",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Retention (Sensor Tower, via @kimmonismus ):",
+      "topic": null,
+      "title": "Policy implications.",
+      "url": "https://x.com/AndrewCurran_/status/2109700551860695109",
+      "links": [],
+      "summary": "@AndrewCurran_ argues frontier “pacing” is now broken. One US lab defecting forces the others to accelerate, Zuckerberg has the compute and Trump’s ear, and nothing changes before 2029.",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Retention (Sensor Tower, via @kimmonismus ):",
+      "topic": null,
+      "title": "Consumer pricing.",
+      "url": "https://x.com/scaling01/status/2109690694054854915",
+      "links": [],
+      "summary": "@scaling01 called the pricing steep (”it better beat Opus 5.5”). AA’s cost math puts Wonder between Anthropic’s models and OpenAI/Google’s on cost per task.",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agents, RL and Self-Improvement Research",
+      "topic": null,
+      "title": "Scale result",
+      "url": "https://x.com/Alibaba_Qwen/status/2109633085658808515",
+      "links": [],
+      "summary": "On Qwen3.8-2.4T-A95B with about 700K tokens per rollout, NL2RepoBench rose from 52.5% to 58.5% in 48 steps, with about 44% less training time ( @Alibaba_Qwen ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agents, RL and Self-Improvement Research",
+      "topic": null,
+      "title": "GitSwarm (Meta)",
+      "url": "https://x.com/omarsar0/status/2109287161199812802",
+      "links": [],
+      "summary": "Hundreds of asynchronous agents share one Git repo, with no central planner. It solved all 30 IMOProofBench-Advanced problems and scored 79.4% on ProgramBench, against 65.1% for a single agent ( @omarsar0 ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agents, RL and Self-Improvement Research",
+      "topic": null,
+      "title": "Fork-and-Flush",
+      "url": "https://x.com/DimitrisPapail/status/2109661202733212136",
+      "links": [],
+      "summary": "Periodically forking autoresearch agents with emptied context helps them escape “idea basins.” At equal compute it beats single runs and best-of-N on 12 of 13 long-horizon tasks ( @DimitrisPapail ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agents, RL and Self-Improvement Research",
+      "topic": null,
+      "title": "Other results",
+      "url": "https://x.com/omarsar0/status/2109771098120450299",
+      "links": [],
+      "summary": "LoGRA (NVIDIA) : Full-weight RL that uses less memory than LoRA, 7.2 GiB against 13.2 GiB at 1.5B ( @omarsar0 ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agents, RL and Self-Improvement Research",
+      "topic": null,
+      "title": "Test-writing gap",
+      "url": "https://x.com/nielstron/status/2109651666790445209",
+      "links": [],
+      "summary": "Frontier agents’ tests catch fewer than 55% of logical mutants ( @nielstron ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Inference Systems, Silicon and Power",
+      "topic": null,
+      "title": "Microsoft Maia 300",
+      "url": "https://x.com/Microsoft/status/2109634232163471782",
+      "links": [
+        {
+          "url": "https://x.com/kimmonismus/status/2109649697677664407",
+          "text": "details"
+        }
+      ],
+      "summary": "Microsoft claims 40% more tokens per megawatt than leading GPU systems and 7× the rack-scale throughput of Maia 200 ( @Microsoft ). Maia is planned to become the primary inference system for Microsoft’s own products starting in 2027 ( details ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Inference Systems, Silicon and Power",
+      "topic": null,
+      "title": "Other hardware",
+      "url": "https://x.com/aschilling/status/2109727206716916152",
+      "links": [],
+      "summary": "Intel Crescent Island : 480 GB of LPDDR5X, 1.5 TB/s of bandwidth and 1.3 PF of FP8 at 350 W ( @aschilling ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Inference Systems, Silicon and Power",
+      "topic": null,
+      "title": "AMD megakernel decode",
+      "url": "https://x.com/SemiAnalysis_/status/2109841575547211955",
+      "links": [],
+      "summary": "Support landed in upstream vLLM on ROCm before CUDA ( @SemiAnalysis_ ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Inference Systems, Silicon and Power",
+      "topic": null,
+      "title": "Quantization formats",
+      "url": "https://x.com/StasBekman/status/2109311840346108087",
+      "links": [],
+      "summary": "On B200, NVFP4 beats MXFP4, with up to about 8% faster decode at small batches ( @StasBekman ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Inference Systems, Silicon and Power",
+      "topic": null,
+      "title": "Grid constraints",
+      "url": "https://x.com/kimmonismus/status/2109557215900131721",
+      "links": [],
+      "summary": "Mississippi’s Entergy warned it would curtail Amazon data centers at peak times. AWS responded with Project Falcon, which lets the utility switch sites to backup power itself ( report ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Inference Systems, Silicon and Power",
+      "topic": null,
+      "title": "Agent infrastructure",
+      "url": "https://x.com/AravSrinivas/status/2109738344011972893",
+      "links": [],
+      "summary": "Perplexity runs each project as a Git forge, with ephemeral agent sandboxes committing to S3. Fewer than 2% of commits collide, and grep beat semantic search 63% to 37% on financial document questions ( @AravSrinivas ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Specialized Models and Developer Products",
+      "topic": null,
+      "title": "GLM-Legal (Z.ai)",
+      "url": "https://x.com/Zai_org/status/2109678174468534511",
+      "links": [
+        {
+          "url": "https://x.com/ValsAI/status/2109678919108690380",
+          "text": "@ValsAI"
+        },
+        {
+          "url": "https://x.com/ValsAI/status/2109678924376703330",
+          "text": "details"
+        }
+      ],
+      "summary": "Built on GLM-5.3-Flash, it is the #1 open-weights model on Harvey’s LAB and LegalBench ( @Zai_org , @ValsAI ). It scored 4 points worse on LegalResearchBench and searched case law far less often ( details ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Specialized Models and Developer Products",
+      "topic": null,
+      "title": "Custom-model economics",
+      "url": "https://x.com/brian_armstrong/status/2109412046244913643",
+      "links": [],
+      "summary": "Coinbase : A Qwen3.5-9B fine-tune for fraud prevention outperformed frontier models at lower cost and latency ( @brian_armstrong ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Specialized Models and Developer Products",
+      "topic": null,
+      "title": "Decision models",
+      "url": "https://x.com/XunzhuoLiu/status/2109207207284027737",
+      "links": [],
+      "summary": "Several groups released models that select from a set of options rather than generate text. Decision 3.0 : Open models from 0.6B to 27B, ranked #1 on Jev Decision Index boards ( @XunzhuoLiu ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Specialized Models and Developer Products",
+      "topic": null,
+      "title": "Liquid d1-3B",
+      "url": "https://x.com/TheTuringPost/status/2109367107477553573",
+      "links": [],
+      "summary": "35 ms per image on Jetson Thor ( @TheTuringPost ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Specialized Models and Developer Products",
+      "topic": null,
+      "title": "Open releases",
+      "url": "https://x.com/dl_weekly/status/2109253009163141415",
+      "links": [],
+      "summary": "EmbeddingGemma 2 : 740M parameters and 78.68 on MTEB code ( @dl_weekly ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Specialized Models and Developer Products",
+      "topic": null,
+      "title": "Carbon-A (Hugging Face)",
+      "url": "https://x.com/lvwerra/status/2109643972255658063",
+      "links": [],
+      "summary": "Proposed 566M gene candidates across 22,617 species ( @lvwerra ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Specialized Models and Developer Products",
+      "topic": null,
+      "title": "ColGrep-Agent-2B",
+      "url": "https://x.com/AmelieTabatta/status/2109645386818150568",
+      "links": [],
+      "summary": "A local code-search agent that cuts API tokens by 34% ( @AmelieTabatta ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Specialized Models and Developer Products",
+      "topic": null,
+      "title": "Product updates",
+      "url": "https://x.com/reach_vb/status/2109543080609165508",
+      "links": [],
+      "summary": "Codex : GPT-6.1 Sol’s default context in Codex and ChatGPT rose from 272K to 500K ( @reach_vb ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Specialized Models and Developer Products",
+      "topic": null,
+      "title": "OpenCode 2.0",
+      "url": "https://x.com/opencode/status/2109649032931119362",
+      "links": [],
+      "summary": "Released ( @opencode ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Industry and Policy",
+      "topic": null,
+      "title": "Cursor joins the X Subscription",
+      "url": "https://x.com/cursor_ai/status/2109783879490191502",
+      "links": [],
+      "summary": "Paid plans share one usage pool with Grok Build, and third-party models in Cursor move to API pricing ( @cursor_ai ).",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Higgsfield takes AI video from 1 minute to over 10",
+      "url": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
+      "publishedAt": "2026-10-13T12:00:00.000Z"
+    },
+    {
+      "source": "Google DeepMind",
+      "sourceHome": "https://deepmind.google/blog/",
+      "title": "Developing Gemini 4 Argon responsibly and safely",
+      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "summary": "Learn more about our approach to safety and security for Gemini 4 Argon.",
+      "publishedAt": "2026-10-13T19:43:07.000Z",
+      "enriched": true
+    },
+    {
+      "source": "Google DeepMind",
+      "sourceHome": "https://deepmind.google/blog/",
+      "title": "Gemini 4 Argon for Robotics",
+      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+      "summary": null,
+      "publishedAt": "2026-10-13T16:01:58.000Z"
+    },
+    {
+      "source": "Google DeepMind",
+      "sourceHome": "https://deepmind.google/blog/",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "summary": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model.",
+      "publishedAt": "2026-10-13T16:01:52.000Z",
+      "enriched": true
     },
     {
       "source": "The Rundown AI",
       "sourceHome": "https://www.therundown.ai/",
-      "title": "This AI factory builds tiny machines from code",
-      "url": "https://www.therundown.ai/articles/this-ai-factory-builds-tiny-machines-from-code",
-      "summary": "PLUS: Turn a product photo into three matching ads",
-      "publishedAt": "2026-10-12T09:00:00.000Z"
+      "title": "Meta's Watermelon ripens into a frontier model",
+      "url": "https://www.therundown.ai/articles/meta-watermelon-ripens-into-a-frontier-model",
+      "summary": "PLUS: Put Meta’s new model to work",
+      "publishedAt": "2026-10-13T09:00:00.000Z"
+    },
+    {
+      "source": "The Rundown AI",
+      "sourceHome": "https://www.therundown.ai/",
+      "title": "UCLA builds a humanoid from smartphone",
+      "url": "https://www.therundown.ai/articles/ucla-builds-a-humanoid-from-smartphone",
+      "summary": "PLUS: Tesla is developing a robot skin",
+      "publishedAt": "2026-10-12T14:30:00.000Z"
     }
   ]
 }

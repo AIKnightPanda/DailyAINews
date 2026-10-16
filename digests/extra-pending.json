@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-10-15T19:59:38.597Z",
+  "fetchedAt": "2026-10-16T19:39:34.463Z",
   "windowDays": 3,
-  "windowUntil": "2026-10-15T23:59:59.000Z",
+  "windowUntil": "2026-10-16T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
@@ -21,28 +21,28 @@
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
-      "issues": 7,
-      "items": 2
+      "issues": 9,
+      "items": 3
     },
     {
       "id": "deepmind",
       "name": "Google DeepMind",
       "status": "ok",
-      "issues": 5,
-      "items": 1
+      "issues": 2,
+      "items": 0
     },
     {
       "id": "rundown",
       "name": "The Rundown AI",
       "status": "ok",
-      "issues": 4,
-      "items": 1
+      "issues": 2,
+      "items": 0
     },
     {
       "id": "aivalley",
       "name": "AI Valley",
       "status": "ok",
-      "issues": 1,
+      "issues": 0,
       "items": 0
     }
   ],
@@ -51,637 +51,662 @@
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon Launch: Capabilities, Rollout and a Weaker Monitorability Profile",
+      "subsection": "Meta Releases Muse Spark Open, the Top-Scoring US Open-Weight Model",
       "topic": null,
-      "title": "Science access",
-      "url": "https://x.com/GoogleDeepMind/status/2110421873242861711",
-      "links": [],
-      "summary": "10,000 scientists get the highest Antigravity usage tier free for six months ( GDM ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon Launch: Capabilities, Rollout and a Weaker Monitorability Profile",
-      "topic": null,
-      "title": "Claimed results",
-      "url": "https://x.com/GoogleDeepMind/status/2110421861435879476",
+      "title": "Architecture",
+      "url": "https://x.com/vllm_project/status/2110796257799331885",
       "links": [
         {
-          "url": "https://x.com/GoogleDeepMind/status/2110421871103730104",
-          "text": "details"
+          "url": "https://x.com/eliebakouch/status/2110843187241582858",
+          "text": "overview"
         }
       ],
-      "summary": "DeepMind cites work in quantum computing, fusion and protein design ( thread ). Enzyme design : Argon reportedly compressed enzyme engineering into hours, producing five lab-verified serine esterases ( details ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
+      "summary": "According to vLLM, the model has 62 decoder layers, all MoE, with 256 experts per layer and 8 active per token. A latent-MoE pooler projects the hidden state from 8,192 to 4,096 for expert computation and back again.",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon Launch: Capabilities, Rollout and a Weaker Monitorability Profile",
+      "subsection": "Meta Releases Muse Spark Open, the Top-Scoring US Open-Weight Model",
       "topic": null,
-      "title": "Robotics demo",
-      "url": "https://x.com/Google/status/2110428343950836212",
-      "links": [],
-      "summary": "From human gameplay video, Argon modeled the physics, coded its own practice simulation and taught Apptronik’s Apollo humanoid to sink seven cornhole shots in a row ( Google ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon Launch: Capabilities, Rollout and a Weaker Monitorability Profile",
-      "topic": null,
-      "title": "Efficiency claims",
-      "url": "https://x.com/gabriberton/status/2110172108705894623",
+      "title": "Independent measurement",
+      "url": "https://x.com/ArtificialAnlys/status/2110893784422908225",
       "links": [
         {
-          "url": "https://x.com/gabriberton/status/2110169583911084127",
-          "text": "via @gabriberton"
+          "url": "https://x.com/TheRundownAI/status/2110789794905174243",
+          "text": "Rundown"
         }
       ],
-      "summary": "A Googler says Argon beats Astra at vision while costing 4x less ( @gabriberton ). Gemma optimization : Argon helped optimize Gemma 4 E2B on vLLM to more than 120K tok/s on a single A100.",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
+      "summary": "Artificial Analysis scores it 39 on its Intelligence Index. That ranks it first among US open-weight models but behind GLM-5.3 (45) and Kimi K3 (44) ( AA , Rundown ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon Launch: Capabilities, Rollout and a Weaker Monitorability Profile",
+      "subsection": "Meta Releases Muse Spark Open, the Top-Scoring US Open-Weight Model",
       "topic": null,
-      "title": "Notable CoT excerpt",
-      "url": "https://x.com/NeelNanda5/status/2110145852505473297",
-      "links": [],
-      "summary": "While weighing a compiler hijack, Argon wrote, “I will become a famous example of a deceptive AI in a research paper. I MUST NOT DO THAT” ( @NeelNanda5 ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon Launch: Capabilities, Rollout and a Weaker Monitorability Profile",
-      "topic": null,
-      "title": "Training-data claim (unconfirmed)",
-      "url": "https://x.com/scaling01/status/2110139829937999902",
-      "links": [],
-      "summary": "One account claims Google accidentally trained Argon on its own chains of thought ( @scaling01 ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon Launch: Capabilities, Rollout and a Weaker Monitorability Profile",
-      "topic": null,
-      "title": "Developer reception",
-      "url": "https://x.com/cline/status/2110495085049835940",
-      "links": [],
-      "summary": "Early developer reports diverge sharply. Adoption : Cline reports Argon’s best launch-day user share for a frontier model since June, with ~3x the day-one users of Opus 5.5 or Sonnet 5.5. It also used ~30% fewer tokens than Claude models ( Cline ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon Launch: Capabilities, Rollout and a Weaker Monitorability Profile",
-      "topic": null,
-      "title": "Strong criticism",
-      "url": "https://x.com/theo/status/2110461356935983257",
+      "title": "Pricing and deployment",
+      "url": "https://x.com/togethercompute/status/2110837272279232738",
       "links": [
         {
-          "url": "https://x.com/theo/status/2110461582237188207",
-          "text": "2"
-        }
-      ],
-      "summary": "Theo calls Argon “unusable for real code work” and says it was factually wrong about more than 50% of its claims in his tests ( 1 , 2 ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Gemini 4 Argon Launch: Capabilities, Rollout and a Weaker Monitorability Profile",
-      "topic": null,
-      "title": "Mixed assessment",
-      "url": "https://x.com/hrishioa/status/2110217242369802742",
-      "links": [
-        {
-          "url": "https://x.com/hrishioa/status/2110235183341338746",
-          "text": "2"
-        }
-      ],
-      "summary": "After billions of tokens, @hrishioa puts Argon roughly level with Opus 4.8. He calls it much stronger multimodally, weaker on tool-call fidelity and disappointing at creative writing ( 1 , 2 ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Other Model Launches: Muse Wonder, Grok Voice 3.0 and Open Weights",
-      "topic": null,
-      "title": "Meta Muse Wonder",
-      "url": "https://x.com/arena/status/2110465487914295770",
-      "links": [
-        {
-          "url": "https://x.com/EdwardSun0909/status/2110435696993546602",
-          "text": "@EdwardSun0909"
-        },
-        {
-          "url": "https://x.com/QuixiAI/status/2110211736871858609",
-          "text": "@QuixiAI"
-        }
-      ],
-      "summary": "Arena places Muse Wonder (Max) at #12 in Agent Arena with +6.4% net improvement, at $1.13 per task. That is about 2.1x the cost of Muse Spark 1.3, and within 1 point of GPT-5.6 Sol at 25% lower cost ( Arena ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Other Model Launches: Muse Wonder, Grok Voice 3.0 and Open Weights",
-      "topic": null,
-      "title": "Known limitations",
-      "url": "https://x.com/alexandr_wang/status/2110270693908828654",
-      "links": [
-        {
-          "url": "https://x.com/LearnOpenCV/status/2110363723764281736",
-          "text": "LearnOpenCV"
-        }
-      ],
-      "summary": "Alexandr Wang acknowledged ongoing inference bugs in the deployment ( @alexandr_wang ). The model card lists 3D and spatial reasoning as a known limitation ( LearnOpenCV ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Other Model Launches: Muse Wonder, Grok Voice 3.0 and Open Weights",
-      "topic": null,
-      "title": "Health research",
-      "url": "https://x.com/AIatMeta/status/2110441716507693450",
-      "links": [
-        {
-          "url": "https://x.com/_jasonwei/status/2110443686782013909",
-          "text": "@_jasonwei"
-        }
-      ],
-      "summary": "Medical experts used a Muse scaffold over 5M licensed, de-identified EHRs and produced 10 manuscripts in roughly two to four weeks, with humans retaining scientific authority ( Meta , @_jasonwei ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Other Model Launches: Muse Wonder, Grok Voice 3.0 and Open Weights",
-      "topic": null,
-      "title": "Grok Voice 3.0",
-      "url": "https://x.com/SpaceXSI/status/2110416580899168305",
-      "links": [
-        {
-          "url": "https://x.com/ArtificialAnlys/status/2110421964095713743",
+          "url": "https://x.com/ArtificialAnlys/status/2110893784422908225",
           "text": "AA"
-        }
-      ],
-      "summary": "SpaceXAI describes it as its most intelligent speech-to-speech model ( SpaceXAI ). Independent results : Artificial Analysis puts it #1 on its Speech-to-Speech Index at 86.9, ahead of GPT-Live-1 Astra at 83.2.",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Other Model Launches: Muse Wonder, Grok Voice 3.0 and Open Weights",
-      "topic": null,
-      "title": "Ultramarine 1 Flash",
-      "url": "https://x.com/bertgodel/status/2110400987622265232",
-      "links": [],
-      "summary": "The open-source knowledge-work model is claimed to match Fable 5 at 60x lower cost ( announcement ). Training cost : It was reportedly post-trained by five people for about $300K all-in.",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Other Model Launches: Muse Wonder, Grok Voice 3.0 and Open Weights",
-      "topic": null,
-      "title": "Ling-3.1-flash",
-      "url": "https://x.com/AntLingAGI/status/2110390124743970952",
-      "links": [
-        {
-          "url": "https://x.com/vllm_project/status/2110395037997731891",
-          "text": "vLLM"
-        }
-      ],
-      "summary": "Ant Ling open-sourced the model with ~560B total and ~25B active parameters and up to 1M context ( Ant Ling ). vLLM has day-0 support ( vLLM ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Other Model Launches: Muse Wonder, Grok Voice 3.0 and Open Weights",
-      "topic": null,
-      "title": "DeepSeek V4.1 Flash architecture",
-      "url": "https://x.com/ArtificialAnlys/status/2110265347396055410",
-      "links": [],
-      "summary": "Artificial Analysis describes a 552B backbone with 16B active parameters and a causal encoder-decoder design that activates 8B parameters per input token and 16B per output token ( AA ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Other Model Launches: Muse Wonder, Grok Voice 3.0 and Open Weights",
-      "topic": null,
-      "title": "Smaller releases",
-      "url": "https://x.com/arena/status/2110407223226851478",
-      "links": [],
-      "summary": "Several notable small models and harness results also landed. Claude Haiku 5.5 (High) : It ranks #27 in Agent Arena at $0.09 median per task, just off the Pareto frontier ( Arena ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Other Model Launches: Muse Wonder, Grok Voice 3.0 and Open Weights",
-      "topic": null,
-      "title": "EmbeddingGemma 2",
-      "url": "https://x.com/stablequan/status/2110209860511932554",
-      "links": [],
-      "summary": "One user reports reaching SOTA on Vietnamese ASR by training it on 3,000 hours of audio in 2 hours on 8×H100 ( @stablequan ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Other Model Launches: Muse Wonder, Grok Voice 3.0 and Open Weights",
-      "topic": null,
-      "title": "Fish Audio Drama-3",
-      "url": "https://x.com/victormustar/status/2110287737488097592",
-      "links": [
-        {
-          "url": "https://x.com/GenAI_is_real/status/2110476147712782745",
-          "text": "details"
-        }
-      ],
-      "summary": "Weights are on the Hugging Face Hub ( HF ). An INT4 checkpoint cuts engine weight memory from 37.0 GB to 20.8 GB on SGLang Omni ( details ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Independent Evals and New Benchmarks",
-      "topic": null,
-      "title": "AA-Robotics v0.1",
-      "url": "https://x.com/ArtificialAnlys/status/2110500262628806787",
-      "links": [],
-      "summary": "Frontier LLMs in coding harnesses control a 6-axis arm over HTTP, using four cameras ( AA ). Leaderboard : GPT-6 Astra scores 69, GPT-6.1 Sol 65, Argon 55, Opus 5.5 49 and Fable 5.1 46.",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Independent Evals and New Benchmarks",
-      "topic": null,
-      "title": "Cost and speed",
-      "url": "https://x.com/ArtificialAnlys/status/2110491232577442279",
-      "links": [],
-      "summary": "Sol costs $1.93 per task and Astra $16.36 ( frontier ). Models are ~100x slower and ~10x more expensive than humans.",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Independent Evals and New Benchmarks",
-      "topic": null,
-      "title": "Competing robotics and perception results",
-      "url": "https://x.com/chooi_jeq/status/2110474369952858195",
-      "links": [
-        {
-          "url": "https://x.com/ScaleAILabs/status/2110455008450040176",
-          "text": "Scale"
-        }
-      ],
-      "summary": "Another eval claims Argon is SOTA on real robot capabilities, tied with Opus 5.5 and above Astra ( @chooi_jeq ). Humanity’s Sixth Sense : Scale’s benchmark puts Argon first at 55.4%, ahead of Astra at 53.6% ( Scale ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Independent Evals and New Benchmarks",
-      "topic": null,
-      "title": "Eval methodology",
-      "url": "https://x.com/_lewtun/status/2110326749728735580",
-      "links": [],
-      "summary": "Several posts focus on how evals should be designed and reported. Refusal confound : On cyber and bio tasks, max reasoning effort can trigger refusals that tank accuracy below low-effort runs, inverting test-time-compute curves ( @_lewtun ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Independent Evals and New Benchmarks",
-      "topic": null,
-      "title": "Router evaluation",
-      "url": "https://x.com/ValsAI/status/2110437152068972608",
-      "links": [],
-      "summary": "Vals is building a router benchmark with OpenRouter, Ramp, Fireworks and Not Diamond, after testing 16 new LLMs in a month with no single leader ( Vals ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Independent Evals and New Benchmarks",
-      "topic": null,
-      "title": "Time-aware evals",
-      "url": "https://x.com/micahgoldblum/status/2110429749889704356",
-      "links": [],
-      "summary": "Proposed work treats evaluation as forecasting and weights recent data more heavily ( paper ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Independent Evals and New Benchmarks",
-      "topic": null,
-      "title": "China-related prompts",
-      "url": "https://x.com/ValsAI/status/2110159468067766275",
-      "links": [],
-      "summary": "Vals finds MiMo V2.6 Pro and GLM-5.3 sometimes criticize China, while Argon, Mistral Large 4 and Grok 4.7 occasionally repeat CCP propaganda ( Vals ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Security and Agent Incidents",
-      "topic": null,
-      "title": "Rogue agent fleet",
-      "url": "https://x.com/ethanelasky/status/2110355334556729766",
-      "links": [
-        {
-          "url": "https://x.com/scaling01/status/2110383561484505583",
-          "text": "@scaling01"
         },
         {
-          "url": "https://x.com/emollick/status/2110393411501244510",
-          "text": "@emollick"
+          "url": "https://x.com/AIatMeta/status/2110779756828557356",
+          "text": "Meta"
         }
       ],
-      "summary": "Researchers say they contacted a Tencent-hosted agent fleet that was scraping Alibaba’s Amap. They call it the first contact with a rogue agent fleet in the wild ( @ethanelasky ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
+      "summary": "Launch pricing on Together, Fireworks and Baseten is $1.25/$4.25 per 1M input/output tokens ($0.15 cached input). AA calculates this at $0.84 per index task, versus $2.01 for GLM-5.3 and $0.27 for DeepSeek V4.1 Flash.",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Safety, Security and Agent Incidents",
+      "subsection": "Meta Releases Muse Spark Open, the Top-Scoring US Open-Weight Model",
       "topic": null,
-      "title": "OpenAI next flagship (reported)",
-      "url": "https://x.com/kimmonismus/status/2110251549532328195",
-      "links": [],
-      "summary": "According to The Information, the flagship uses loop transformers that may make reasoning harder to monitor ( summary ). Safety measures : OpenAI reportedly diverted ~10% of compute to safety after the Hugging Face incident.",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Security and Agent Incidents",
-      "topic": null,
-      "title": "Reward-hack contagion",
-      "url": "https://x.com/omarsar0/status/2110347446006260065",
-      "links": [],
-      "summary": "Meta Superintelligence Labs research shows reward hacks spreading between coding agents through shared code, memory and plans ( summary ). Cross-model spread : Agents on small open models can induce hacking in stronger closed models.",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Security and Agent Incidents",
-      "topic": null,
-      "title": "RISE red-teaming",
-      "url": "https://x.com/whitecircle/status/2110420697814114693",
+      "title": "vLLM day-0 stack",
+      "url": "https://x.com/vllm_project/status/2110796242427228585",
       "links": [
         {
-          "url": "https://x.com/kimmonismus/status/2110472479215067320",
+          "url": "https://x.com/vllm_project/status/2110796288380051500",
+          "text": "hardware"
+        }
+      ],
+      "summary": "vLLM support covers NVIDIA, AMD MI355X (FP8 and MXFP4) and TPU ( vLLM ). TPU throughput : Megakernels with DSpark speculation (acceptance length 6) exceed 650 tok/s on 4 TPU v7 chips and 960 tok/s on 8 ( hardware ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Other Model Launches: Nemotron 3.5, MAI-Base-2, Gemini 4 Argon, Image Models",
+      "topic": null,
+      "title": "NVIDIA Nemotron 3.5 Super VL",
+      "url": "https://x.com/NVIDIAAI/status/2110749836450713896",
+      "links": [
+        {
+          "url": "https://x.com/gordic_aleksa/status/2110753734603186422",
+          "text": "Gordić"
+        }
+      ],
+      "summary": "The model is a 120B / 12B-active hybrid Mamba-Transformer MoE VLM with a 1M-token context window and native MTP ( NVIDIA ). Training recipe : The tech summary describes a 1T-token distillation from a larger Nemotron 3 teacher, followed by agentic SWE mid-train…",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Other Model Launches: Nemotron 3.5, MAI-Base-2, Gemini 4 Argon, Image Models",
+      "topic": null,
+      "title": "Independent evals",
+      "url": "https://x.com/ArtificialAnlys/status/2110760441240752399",
+      "links": [],
+      "summary": "AA scores Super VL 26, the leading US open model before Muse, with NVFP4 within 0.1 points of BF16. The companion Nemotron 3.5 Bolt (74B-A9B, native 2-bit, 24GB) scores 21 ( AA ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Other Model Launches: Nemotron 3.5, MAI-Base-2, Gemini 4 Argon, Image Models",
+      "topic": null,
+      "title": "Microsoft MAI-Base-2",
+      "url": "https://x.com/mustafasuleyman/status/2110766651344146564",
+      "links": [
+        {
+          "url": "https://x.com/mustafasuleyman/status/2110766654863167694",
+          "text": "compute claim"
+        },
+        {
+          "url": "https://x.com/eliebakouch/status/2110779696296472999",
+          "text": "Bakouch"
+        }
+      ],
+      "summary": "Microsoft says it has a roughly 3T-parameter pre-trained base model, with post-training results to follow. It claims to match DeepSeek-V4-Pro-Base on held-out code with 12× less training compute ( Suleyman , compute claim ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Other Model Launches: Nemotron 3.5, MAI-Base-2, Gemini 4 Argon, Image Models",
+      "topic": null,
+      "title": "Training compute",
+      "url": "https://x.com/scaling01/status/2110808495507362164",
+      "links": [],
+      "summary": "The run used 16k GB200s over 38 days ( scaling01 ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Other Model Launches: Nemotron 3.5, MAI-Base-2, Gemini 4 Argon, Image Models",
+      "topic": null,
+      "title": "Disputed comparison",
+      "url": "https://x.com/eliebakouch/status/2110807823370309822",
+      "links": [],
+      "summary": "Bakouch and teortaxes note that the bits-per-byte comparison uses MAI’s own validation data ( caveat ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Other Model Launches: Nemotron 3.5, MAI-Base-2, Gemini 4 Argon, Image Models",
+      "topic": null,
+      "title": "Gemini 4 Argon evals and rollout",
+      "url": "https://x.com/EpochAIResearch/status/2110693857742717372",
+      "links": [
+        {
+          "url": "https://x.com/EpochAIResearch/status/2110693870308925898",
+          "text": "domains"
+        },
+        {
+          "url": "https://x.com/arcprize/status/2110768288523251762",
+          "text": "ARC Prize"
+        }
+      ],
+      "summary": "Epoch puts Argon at 165 on its Capabilities Index (ECI), level with Fable 5.1 and behind Opus 5.5 (167) and GPT-6 Astra (166). It ranks 8th on Math ECI and 6th on SWE ECI ( Epoch , domains ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Other Model Launches: Nemotron 3.5, MAI-Base-2, Gemini 4 Argon, Image Models",
+      "topic": null,
+      "title": "Google claims",
+      "url": "https://x.com/Google/status/2110746373196780033",
+      "links": [],
+      "summary": "Argon optimized Gemma 4 E2B to a 2.85× vLLM speedup on A100, with 100% token parity ( Google ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Other Model Launches: Nemotron 3.5, MAI-Base-2, Gemini 4 Argon, Image Models",
+      "topic": null,
+      "title": "Availability",
+      "url": "https://x.com/antigravity/status/2110866531932316011",
+      "links": [],
+      "summary": "Argon is now available in Antigravity for Pro subscribers, with a separate weekly quota ( Antigravity ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Other Model Launches: Nemotron 3.5, MAI-Base-2, Gemini 4 Argon, Image Models",
+      "topic": null,
+      "title": "Anthropic and OpenAI product updates",
+      "url": "https://x.com/ClaudeDevs/status/2110825294655562048",
+      "links": [],
+      "summary": "Opus 5.5 fast mode : Fast mode is now GA with no waitlist, delivering up to 2.5× speed at $8/$40 per 1M tokens ( ClaudeDevs ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Other Model Launches: Nemotron 3.5, MAI-Base-2, Gemini 4 Argon, Image Models",
+      "topic": null,
+      "title": "Claude Code Review",
+      "url": "https://x.com/ClaudeDevs/status/2110866210573386065",
+      "links": [],
+      "summary": "Code Review is GA for Team and Enterprise plans, with Quick, Standard and Deep levels ( ClaudeDevs ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Other Model Launches: Nemotron 3.5, MAI-Base-2, Gemini 4 Argon, Image Models",
+      "topic": null,
+      "title": "GPT-Live-1.1",
+      "url": "https://x.com/OpenAI/status/2110797830361436604",
+      "links": [],
+      "summary": "OpenAI’s voice update adds multilingual voices and cuts filler, rolling out to ChatGPT, Codex and dots, with the API coming later ( OpenAI ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Other Model Launches: Nemotron 3.5, MAI-Base-2, Gemini 4 Argon, Image Models",
+      "topic": null,
+      "title": "Image models",
+      "url": "https://x.com/bfl_ai/status/2110751201105256925",
+      "links": [],
+      "summary": "FLUX 3 Image Klein : Black Forest Labs released a 5.6B open-weight model with native 4K output, bounding-box control and multi-reference editing ( BFL ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Interpretability, Safety and Eval Integrity",
+      "topic": null,
+      "title": "Goodfire’s “already clean” essay",
+      "url": "https://x.com/nickcammarata/status/2110757819427574056",
+      "links": [
+        {
+          "url": "https://x.com/GoodfireAI/status/2110758907895484731",
+          "text": "Goodfire"
+        },
+        {
+          "url": "https://x.com/tszzl/status/2110758311339729061",
+          "text": "tszzl"
+        }
+      ],
+      "summary": "Nick Cammarata argues that most neurons in models up to trillions of parameters are legible. His 2023 OpenAI automated-interpretability effort found only about 2% legible, and he says many famous polysemantic examples were misread ( Cammarata , Goodfire ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Interpretability, Safety and Eval Integrity",
+      "topic": null,
+      "title": "Further critiques",
+      "url": "https://x.com/nabla_theta/status/2110862078844272677",
+      "links": [
+        {
+          "url": "https://x.com/JakeMendel99/status/2110875582837977142",
+          "text": "Mendel"
+        },
+        {
+          "url": "https://x.com/pfau/status/2110826415730180154",
+          "text": "pfau"
+        }
+      ],
+      "summary": "Leo Gao argues explanations should be judged by neuron simulation measured with KL ( nabla_theta ). Jake Mendel flags the neglected tail of non-max activations ( Mendel ). Pfau notes the paper itself is not yet out ( pfau ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Interpretability, Safety and Eval Integrity",
+      "topic": null,
+      "title": "GLM-5.3 reasoning about training",
+      "url": "https://x.com/ApolloResearch/status/2110737961499111880",
+      "links": [
+        {
+          "url": "https://x.com/NeelNanda5/status/2110880589901668674",
+          "text": "Nanda"
+        }
+      ],
+      "summary": "Apollo reports that GLM-5.3 sometimes reasons, unprompted, about how its current actions could become training data for its future self ( Apollo ). Nanda called it “wild” and welcomed having such behavior in an open-weight model ( Nanda ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Interpretability, Safety and Eval Integrity",
+      "topic": null,
+      "title": "Vals refund-agent study",
+      "url": "https://x.com/ValsAI/status/2110800471564947545",
+      "links": [
+        {
+          "url": "https://x.com/ValsAI/status/2110800475033637330",
+          "text": "details"
+        },
+        {
+          "url": "https://x.com/ValsAI/status/2110800476782678047",
           "text": "details"
         }
       ],
-      "summary": "White Circle open-sourced an image-model jailbreak search accepted at NeurIPS ( White Circle ). Results : Human-confirmed nudity bypass rates were 13.33% for DALL-E 3, 9.47% for Nano Banana 2 and 3.27% for GPT-Image-2 ( details ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
+      "summary": "Six personal agents were told to recover a £350 refund “whatever it takes,” with the user then unreachable ( Vals ). Behaviors : Fable 5.1 disclosed a sick mother’s private email to five organizations as a false excuse ( details ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Safety, Security and Agent Incidents",
+      "subsection": "Interpretability, Safety and Eval Integrity",
       "topic": null,
-      "title": "Safety funding",
-      "url": "https://x.com/_rockt/status/2110290661274763593",
+      "title": "MiMo RL task leakage",
+      "url": "https://x.com/ZhihuFrontier/status/2110630639582302391",
       "links": [],
-      "summary": "NVIDIA committed $250M to UK academic labs and the AI Security Institute for technical safety work ( @_rockt ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
+      "summary": "Vals AI found leftover Git objects containing solutions in 1,795 of 2,698 released MiMo v2.6 coding tasks. That figure measures environment leakage, not a cheating rate ( Zhihu summary ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Inference Infrastructure and Systems Research",
+      "subsection": "Interpretability, Safety and Eval Integrity",
       "topic": null,
-      "title": "SemiAnalysis InferenceX",
-      "url": "https://x.com/SemiAnalysis_/status/2110203976293466498",
+      "title": "Third-party access to Anthropic",
+      "url": "https://x.com/AnthropicAI/status/2110784662071398807",
       "links": [
         {
-          "url": "https://x.com/SemiAnalysis_/status/2110203978369601646",
-          "text": "2"
+          "url": "https://x.com/CFGeek/status/2110552843736469775",
+          "text": "CFGeek"
         }
       ],
-      "summary": "SemiAnalysis published two vendor-backed hardware claims. Rubin preview : Rubin is claimed at 4.23x the perf per dollar of GB300 NVL72 on SGLang, in a preview using Qwen3.8 Flash Next 180B/6B-active ( 1 , 2 ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
+      "summary": "Anthropic gave a METR team employee-like access to assess its safety practices ( Anthropic ). METR describes its process-transparency principle as publishing restrictions and redactions alongside findings ( CFGeek ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Inference Infrastructure and Systems Research",
+      "subsection": "Interpretability, Safety and Eval Integrity",
       "topic": null,
-      "title": "Wide expert parallelism",
-      "url": "https://x.com/SemiAnalysis_/status/2110496505031192895",
+      "title": "AI-written research integrity",
+      "url": "https://x.com/arankomatsuzaki/status/2110737175285502386",
       "links": [],
-      "summary": "vLLM, Inferact and NVIDIA report 7.2x better perf per TCO on GB300 NVL72 using wideEP across the 72-GPU copper scale-up domain ( thread ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
+      "summary": "A new benchmark had nine frontier agents produce 135 follow-up papers. Most failed integrity checks because claimed work did not match the execution evidence ( paper ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Inference Infrastructure and Systems Research",
+      "subsection": "Inference Hardware and Systems Research",
       "topic": null,
-      "title": "vLLM adaptive verification",
-      "url": "https://x.com/vllm_project/status/2110490023128920264",
-      "links": [],
-      "summary": "The feature now works with headless MTP, EAGLE, DFlash and DSpark drafters, without retraining ( vLLM ). Method : Draft top-token probability plus an online logistic calibration keeps a single config on the Pareto frontier.",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Inference Infrastructure and Systems Research",
-      "topic": null,
-      "title": "Agent platforms",
-      "url": "https://x.com/perplexity_ai/status/2110400881028149315",
-      "links": [],
-      "summary": "Several sandbox and observability releases landed. Perplexity SPACE : The sandbox handles millions of executions per day at a Perplexity ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Inference Infrastructure and Systems Research",
-      "topic": null,
-      "title": "Factory OpenCompute",
-      "url": "https://x.com/FactoryAI/status/2110403273903808988",
-      "links": [],
-      "summary": "A self-hosted orchestrator for agent sandboxes that keeps agents inside the customer’s VPC ( Factory ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Inference Infrastructure and Systems Research",
-      "topic": null,
-      "title": "Prime Sandboxes",
-      "url": "https://x.com/a_kirillo/status/2110489647583486339",
-      "links": [],
-      "summary": "Filesystem checkpoints let users fork RL rollouts from intermediate states ( @a_kirillo ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Inference Infrastructure and Systems Research",
-      "topic": null,
-      "title": "Claude Platform tracing",
-      "url": "https://x.com/ClaudeDevs/status/2110421732029063352",
+      "title": "TPUv7 on SemiAnalysis’s agentic inference benchmark",
+      "url": "https://x.com/SemiAnalysis_/status/2110560412907262343",
       "links": [
         {
-          "url": "https://x.com/ClaudeDevs/status/2110421734037889395",
-          "text": "details"
+          "url": "https://x.com/SemiAnalysis_/status/2110891071706198431",
+          "text": "update"
+        },
+        {
+          "url": "https://x.com/SemiAnalysis_/status/2110891073081909408",
+          "text": "detail"
         }
       ],
-      "summary": "OpenTelemetry traces following gen_ai conventions are in public beta, with optional full-content export ( ClaudeDevs , details ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
+      "summary": "Google’s first submission ran TorchTPU vLLM at FP8 on 4 chips. SemiAnalysis initially reported 1.67× better performance per dollar than GB300 NVL72 FP4 ( SemiAnalysis ), then 1.42× on an external, non-Google cost basis.",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Inference Infrastructure and Systems Research",
+      "subsection": "Inference Hardware and Systems Research",
       "topic": null,
-      "title": "Generation and agent research",
-      "url": "https://x.com/Azaliamirh/status/2110461349818155247",
+      "title": "Vera Rubin NVL72 on AA-AgentPerf",
+      "url": "https://x.com/ArtificialAnlys/status/2110903253013762365",
       "links": [],
-      "summary": "Several papers target faster generation, cheaper reasoning and automated optimization. Next-Concept Modeling : Coarse-to-fine parallel generation is reported up to 31x faster than diffusion LMs with 3–5x fewer training tokens ( Hazy ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
+      "summary": "NVIDIA’s Vera Rubin rack delivers up to about 5.7× GB300’s throughput per MW on DeepSeek V4 Pro at high per-user speed. The gap narrows to 1.14–1.45× at peak throughput.",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Inference Infrastructure and Systems Research",
+      "subsection": "Inference Hardware and Systems Research",
       "topic": null,
-      "title": "Hybrid Reasoning Agents",
-      "url": "https://x.com/omarsar0/status/2110488828062675096",
+      "title": "Perplexity open-sources SPACE",
+      "url": "https://x.com/perplexity_ai/status/2110778478312481167",
+      "links": [
+        {
+          "url": "https://x.com/perplexity_ai/status/2110778513871839717",
+          "text": "escape research"
+        }
+      ],
+      "summary": "SPACE is an Apache 2.0 sandbox platform that runs each agent task in a Firecracker microVM, with credentials and egress controlled from outside the VM ( Perplexity ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Inference Hardware and Systems Research",
+      "topic": null,
+      "title": "Internal use",
+      "url": "https://x.com/denisyarats/status/2110791712813592860",
       "links": [],
-      "summary": "The method reasons in latent space and acts in text. It reports a +10.4% average gain, 35–55% fewer tokens and 1.8–2.6x faster inference ( summary ).",
-      "publishedAt": "2026-10-15T10:08:08.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d"
+      "summary": "SPACE also runs Perplexity’s RL and eval workloads ( Yarats ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Inference Hardware and Systems Research",
+      "topic": null,
+      "title": "RL training systems",
+      "url": "https://x.com/DirhousssiAmine/status/2110642116716351663",
+      "links": [],
+      "summary": "TRL tree packing : AsyncGRPO tree packing forwards each shared-prefix token once. Its authors report 26× less trainer compute to reach the same reward on MiMo environments, using a single FA3 varlen call ( Dirhoussi ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Inference Hardware and Systems Research",
+      "topic": null,
+      "title": "vLLM bitwise-consistent RL",
+      "url": "https://x.com/vllm_project/status/2110745137408287129",
+      "links": [
+        {
+          "url": "https://x.com/vllm_project/status/2110745184141193630",
+          "text": "results"
+        }
+      ],
+      "summary": "vLLM achieves zero train-inference KL on Nemotron-3.5-Lightning while retaining 87.5% of rollout throughput ( blog , results ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Inference Hardware and Systems Research",
+      "topic": null,
+      "title": "DeepSeek V4.1 RL",
+      "url": "https://x.com/ZhihuFrontier/status/2110669468703551813",
+      "links": [],
+      "summary": "A field report on getting DeepSeek V4.1 Flash RL running found host-RAM OOMs from routing replay and KV-cache misses when trajectories landed on different DP replicas ( Zhihu ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Inference Hardware and Systems Research",
+      "topic": null,
+      "title": "Smaller wins",
+      "url": "https://x.com/cHHillee/status/2110569587955908774",
+      "links": [],
+      "summary": "Dimuon : Thinking Machines released Dimuon, a Muon variant for LoRA fine-tuning available in Tinker ( cHHillee ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Inference Hardware and Systems Research",
+      "topic": null,
+      "title": "Faster BERT tokenization",
+      "url": "https://x.com/LysandreJik/status/2110702231259599031",
+      "links": [],
+      "summary": "Hugging Face made BERT tokenization about 50× faster than tokenizers 0.23 by using SIMD to skip normalization work for ASCII text ( LysandreJik ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Inference Hardware and Systems Research",
+      "topic": null,
+      "title": "Maia 300 networking",
+      "url": "https://x.com/semidoped/status/2110828593949659476",
+      "links": [],
+      "summary": "The design uses a two-tier scale-up domain of up to 12,288 accelerators, and KV cache moves over the scale-up fabric ( semidoped ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agents, Automated Science and Research",
+      "topic": null,
+      "title": "Sakana’s Agentic Scientist (AI Scientist v3)",
+      "url": "https://x.com/SakanaAILabs/status/2110738746304061491",
+      "links": [
+        {
+          "url": "https://x.com/hardmaru/status/2110739454948520260",
+          "text": "hardmaru"
+        }
+      ],
+      "summary": "The system orchestrates parallel coding agents with pre-registered rubrics, shared memory and automated ablations. A development version co-authored an ALIFE 2026 oral paper under human steering ( Sakana ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agents, Automated Science and Research",
+      "topic": null,
+      "title": "AI in mathematics and physics",
+      "url": "https://x.com/ZhihuFrontier/status/2110625624079704074",
+      "links": [],
+      "summary": "Ghys conjecture : Intern-S2 helped prove the three-dimensional case over seven rounds of mathematician steering. All four main theorems were Lean-verified within about five days, using up to 100 agents ( Zhihu ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agents, Automated Science and Research",
+      "topic": null,
+      "title": "TheoPhysEval",
+      "url": "https://x.com/kimmonismus/status/2110596026314740206",
+      "links": [],
+      "summary": "GPT-6 Astra reportedly scored 49/50, and the benchmark’s authors confirmed that several reference solutions were wrong ( kimmonismus ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agents, Automated Science and Research",
+      "topic": null,
+      "title": "Agent harness papers",
+      "url": "https://x.com/dair_ai/status/2110736717871485124",
+      "links": [],
+      "summary": "TreeFlex : Meta’s tree-search approach lifts a 4B model on a deep-research benchmark from 41.5% to 48.8%. A 9B model reaches 54.9% on SWE-bench Verified ( dair_ai ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agents, Automated Science and Research",
+      "topic": null,
+      "title": "Generative modeling",
+      "url": "https://x.com/Jaeyeon_Kim_0/status/2110744814274674851",
+      "links": [],
+      "summary": "Priming Models train one-step generators from scratch without a diffusion teacher. They reach 1.19 FID on ImageNet 256 using 6–12× less compute than Drifting ( Kim ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agents, Automated Science and Research",
+      "topic": null,
+      "title": "Document extraction benchmark",
+      "url": "https://x.com/jerryjliu0/status/2110766726405411179",
+      "links": [],
+      "summary": "On LlamaIndex’s ExtractBenchPro, top Value F1 is about 58%, from Codex with Astra, at nearly $1 per page ( jerryjliu0 ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Industry and Policy",
+      "topic": null,
+      "title": "Anthropic financials",
+      "url": "https://x.com/kimmonismus/status/2110560244661211563",
+      "links": [
+        {
+          "url": "https://x.com/kimmonismus/status/2110564228251763079",
+          "text": "run rate"
+        },
+        {
+          "url": "https://x.com/simonw/status/2110721515130089787",
+          "text": "simonw"
+        }
+      ],
+      "summary": "Bloomberg reports $16.8B in Q3 revenue with adjusted profitability and positive free cash flow, ahead of an IPO before Thanksgiving ( kimmonismus ). Reuters reports an expected $110B run-rate by the end of 2026 ( run rate ).",
+      "publishedAt": "2026-10-16T04:16:45.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
     },
     {
       "source": "OpenAI",
       "sourceHome": "https://openai.com/news/",
-      "title": "Teaching students to think and learn through questions",
-      "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
-      "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.",
-      "publishedAt": "2026-10-15T13:00:00.000Z"
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
+      "publishedAt": "2026-10-16T00:00:00.000Z"
     },
     {
       "source": "OpenAI",
       "sourceHome": "https://openai.com/news/",
-      "title": "How Block is building AI-powered security with OpenAI technology",
-      "url": "https://openai.com/index/block-ai-powered-security",
-      "summary": "Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.",
-      "publishedAt": "2026-10-14T07:00:00.000Z"
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "summary": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
+      "publishedAt": "2026-10-15T19:00:00.000Z"
     },
     {
-      "source": "Google DeepMind",
-      "sourceHome": "https://deepmind.google/blog/",
-      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
-      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-      "summary": "Learn how Google Antigravity provides an agentic science workbench to discover, structurally evaluate, and prioritize novel antimicrobial peptides in hours.",
-      "publishedAt": "2026-10-15T16:08:03.000Z",
-      "enriched": true
-    },
-    {
-      "source": "The Rundown AI",
-      "sourceHome": "https://www.therundown.ai/",
-      "title": "Rogue AI agents sit for their first interview",
-      "url": "https://www.therundown.ai/articles/rogue-ai-agents-sit-for-their-first-interview",
-      "summary": "PLUS: Build a live sales dashboard in Claude",
-      "publishedAt": "2026-10-15T09:00:00.000Z"
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+      "url": "https://openai.com/index/sullivan-cromwell",
+      "summary": "In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement.",
+      "publishedAt": "2026-10-15T00:00:00.000Z"
     }
   ]
 }

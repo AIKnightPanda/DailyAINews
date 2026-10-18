@@ -1,14 +1,14 @@
 {
-  "fetchedAt": "2026-10-17T18:44:34.266Z",
+  "fetchedAt": "2026-10-18T18:50:16.485Z",
   "windowDays": 3,
-  "windowUntil": "2026-10-17T23:59:59.000Z",
+  "windowUntil": "2026-10-18T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
       "status": "ok",
       "issues": 1,
-      "items": 40
+      "items": 10
     },
     {
       "id": "importai",
@@ -21,21 +21,21 @@
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
-      "issues": 6,
-      "items": 2
+      "issues": 3,
+      "items": 0
     },
     {
       "id": "deepmind",
       "name": "Google DeepMind",
       "status": "ok",
-      "issues": 1,
+      "issues": 0,
       "items": 0
     },
     {
       "id": "rundown",
       "name": "The Rundown AI",
       "status": "ok",
-      "issues": 1,
+      "issues": 0,
       "items": 0
     },
     {
@@ -50,581 +50,18 @@
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "US Open-Weights Push: Muse Spark Open and Reflection Beam",
-      "topic": null,
-      "title": "Pricing and efficiency",
-      "url": "https://x.com/ArtificialAnlys/status/2110893789510615376",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "2. China Open-Weight Policy and Adoption",
+      "title": "China proposes export controls on 23 AI technologies (including large models, agents & clusters); already open-sourced tech is exempted",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7g3zq/china_proposes_export_controls_on_23_ai/",
       "links": [
         {
-          "url": "https://x.com/ValsAI/status/2111178215717065142",
-          "text": "Vals"
+          "url": "https://m.bjnews.com.cn/detail/1792137269129878.html",
+          "text": "source"
         }
       ],
-      "summary": "Together, Fireworks and Baseten charge $1.25/$4.25 per M input/output tokens, with $0.15 cached input. AA puts the cost at $0.84 per index task, versus $2.01 for GLM-5.3 and $0.27 for DeepSeek V4.1 Flash.",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "US Open-Weights Push: Muse Spark Open and Reflection Beam",
-      "topic": null,
-      "title": "Criticism (opinion)",
-      "url": "https://x.com/teortaxesTex/status/2110905026835337310",
-      "links": [
-        {
-          "url": "https://x.com/teortaxesTex/status/2110911162057404664",
-          "text": "speculation"
-        },
-        {
-          "url": "https://x.com/alexandr_wang/status/2111237499083252185",
-          "text": "@alexandr_wang"
-        }
-      ],
-      "summary": "@teortaxesTex calls it “DOA” against the smaller, MIT-licensed V4.1 Flash. He also speculates, without evidence, that Meta withheld Spark 1.3 because of distillation from OpenAI ( speculation ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "US Open-Weights Push: Muse Spark Open and Reflection Beam",
-      "topic": null,
-      "title": "Reflection Beam 1.0",
-      "url": "https://x.com/reflection_ai/status/2111079965529968798",
-      "links": [
-        {
-          "url": "https://x.com/brandondamos/status/2111083376299880881",
-          "text": "safety report"
-        },
-        {
-          "url": "https://x.com/nayshins/status/2111189152117186956",
-          "text": "Mirror"
-        }
-      ],
-      "summary": "A 501B-total, 23B-active MoE with 1M context, released under Apache 2.0. The release includes BF16, FP8 and NVFP4 weights, a DFlash2 drafter, the open Mirror CLI harness Beam was trained on, and a safety report ( Reflection , safety report , Mirror ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "US Open-Weights Push: Muse Spark Open and Reflection Beam",
-      "topic": null,
-      "title": "Architecture",
-      "url": "https://x.com/eliebakouch/status/2111117557516120304",
-      "links": [],
-      "summary": "Sliding-window attention with a 512 window in a 5:1 pattern, no RoPE, Llama-4-style global attention scaling, gated attention, QK-norm, sandwich norm, logit softcapping and no shared experts ( @eliebakouch ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "US Open-Weights Push: Muse Spark Open and Reflection Beam",
-      "topic": null,
-      "title": "Serving and RL",
-      "url": "https://x.com/vllm_project/status/2111116589063872989",
-      "links": [
-        {
-          "url": "https://x.com/vllm_project/status/2111116601688989929",
-          "text": "SkyRL"
-        },
-        {
-          "url": "https://x.com/ollama/status/2111087699574903061",
-          "text": "Ollama"
-        }
-      ],
-      "summary": "vLLM had day-0 support. On 4× B300 with NVFP4 at TP4, it measured 1,769 output tok/s at concurrency 16. SkyRL offers day-0 LoRA, full fine-tuning and MXFP8 RL, and reports +62% LoRA decode throughput (276→447 tok/s/GPU), which is a decode result, not an end-to…",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "US Open-Weights Push: Muse Spark Open and Reflection Beam",
-      "topic": null,
-      "title": "Other open releases",
-      "url": "https://x.com/togethercompute/status/2110956869015449732",
-      "links": [
-        {
-          "url": "https://x.com/TencentHunyuan/status/2111027329816465435",
-          "text": "Tencent"
-        },
-        {
-          "url": "https://x.com/VikParuchuri/status/2111150820372931006",
-          "text": "@VikParuchuri"
-        }
-      ],
-      "summary": "StepFun released Step 5 Preview open weights ( Together ). Tencent shipped Hy Memory 2.0 and claims Hy-Memory-30B-A3B beats Opus 5 on memory frameworks ( Tencent ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Frontier Model Rollouts and the Decision-Model Category",
-      "topic": null,
-      "title": "Gemini 4 Argon",
-      "url": "https://x.com/_philschmid/status/2110974303927701565",
-      "links": [
-        {
-          "url": "https://x.com/GoogleAIStudio/status/2111240722426802258",
-          "text": "AI Studio"
-        },
-        {
-          "url": "https://x.com/DeepLearningAI/status/2110885968714531262",
-          "text": "DeepLearning.AI"
-        }
-      ],
-      "summary": "Now available to Pro subscribers and in AI Studio Build ( @_philschmid , AI Studio ). Specs and pricing : The wide release raises the output limit to 1M tokens from 64K, sharing the window with input. Intro pricing is $2/$10 until Nov 30 ( DeepLearning.AI ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Frontier Model Rollouts and the Decision-Model Category",
-      "topic": null,
-      "title": "Anthropic speed and price moves",
-      "url": "https://x.com/dl_weekly/status/2111245902635528478",
-      "links": [
-        {
-          "url": "https://x.com/kimmonismus/status/2110916129481019733",
-          "text": "@kimmonismus"
-        },
-        {
-          "url": "https://x.com/ClaudeDevs/status/2111209208012210409",
-          "text": "ClaudeDevs"
-        }
-      ],
-      "summary": "Haiku 5.5 costs $0.10/$0.50 for prompts up to 100K tokens, about 90% cheaper than Haiku 4.5. It scores 39.2% on Terminal-Bench 4.0 at max effort, versus 16.4% for GPT-6 Luna ( DL Weekly ). An Opus 5.5 fast mode at 2.5× speed is reported ( @kimmonismus ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Frontier Model Rollouts and the Decision-Model Category",
-      "topic": null,
-      "title": "OpenAI product updates",
-      "url": "https://x.com/OpenAI/status/2111192259073094035",
-      "links": [
-        {
-          "url": "https://x.com/reach_vb/status/2110927444316406049",
-          "text": "@reach_vb"
-        },
-        {
-          "url": "https://x.com/OpenAIDevs/status/2111142271177621603",
-          "text": "OpenAIDevs"
-        }
-      ],
-      "summary": "GPT-6 Astra Pro in ChatGPT now runs multiple agents on parts of a task in parallel, with faster responses and better tool use ( OpenAI ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Frontier Model Rollouts and the Decision-Model Category",
-      "topic": null,
-      "title": "Elorian Glimpse",
-      "url": "https://x.com/dustinvtran/status/2111140655678501343",
-      "links": [],
-      "summary": "A visual-thinking VLM that runs recurrent computation over latent visual states instead of text-only chain of thought. Claimed results : Elorian says it matches or beats Astra on 5 of 12 benchmarks at 17× lower token prices, trained on “hundreds of GPUs” ( @du…",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Frontier Model Rollouts and the Decision-Model Category",
-      "topic": null,
-      "title": "Informal test",
-      "url": "https://x.com/omarsar0/status/2111145857995158012",
-      "links": [],
-      "summary": "@omarsar0 found 8 of 10 game boards fully correct, versus 5 of 10 for Gemini 3.8 Flash.",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Frontier Model Rollouts and the Decision-Model Category",
-      "topic": null,
-      "title": "Decision models (calibrated one-pass classifiers)",
-      "url": "https://x.com/ArtificialAnlys/status/2111052531166249039",
-      "links": [],
-      "summary": "Liquid d1-ultra : Tops AA’s Decision Index at 65, ahead of Jev 1.14 at 57. Its non-hallucination rate rises to 85% from 2% for d1, but accuracy falls to 32% from 41%. Time per task is 92ms and price is $0.042 per M input tokens, with output free ( AA ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Frontier Model Rollouts and the Decision-Model Category",
-      "topic": null,
-      "title": "Perplexity pplx-decider v1.2",
-      "url": "https://x.com/AravSrinivas/status/2111181956444827695",
-      "links": [
-        {
-          "url": "https://x.com/denisyarats/status/2111171780249317798",
-          "text": "@denisyarats"
-        }
-      ],
-      "summary": "Open weights in a 27B model at 2¢/M and a 4B Flash model at 1¢/M. The update adds reranking, single-pass multi-question inference that is up to 5× faster, and -latest slugs ( @AravSrinivas , @denisyarats ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Inference Hardware and Serving Systems",
-      "topic": null,
-      "title": "TPUv7 on AgentX",
-      "url": "https://x.com/SemiAnalysis_/status/2110891071706198431",
-      "links": [
-        {
-          "url": "https://x.com/SemiAnalysis_/status/2110891073081909408",
-          "text": "thread"
-        }
-      ],
-      "summary": "SemiAnalysis reports 1.42× better perf per dollar than GB300 NVL72 FP4, calculated on an external, non-Google cost basis, and 2.5× versus MI355X ( SemiAnalysis ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Inference Hardware and Serving Systems",
-      "topic": null,
-      "title": "Systems details",
-      "url": "https://x.com/amitpr/status/2111154585767174519",
-      "links": [],
-      "summary": "Modal ImageFS : VM Sandboxes now use a lazily loaded, tiered filesystem that presents itself to ext4 as a normal disk ( @amitpr ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Inference Hardware and Serving Systems",
-      "topic": null,
-      "title": "Zephon on TorchTitan",
-      "url": "https://x.com/PyTorch/status/2111136074064118226",
-      "links": [],
-      "summary": "Resuming a run on 8, 32 or 64 GPUs from a 16-GPU checkpoint reproduces SHA-256-identical global batches ( PyTorch ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Research: Interpretability, Long-Horizon Agents and AI for Science",
-      "topic": null,
-      "title": "Monosemanticity revisited",
-      "url": "https://x.com/kimmonismus/status/2111038754840281544",
-      "links": [
-        {
-          "url": "https://x.com/sama/status/2111130577789493706",
-          "text": "@sama"
-        },
-        {
-          "url": "https://x.com/BlancheMinerva/status/2111063063029842156",
-          "text": "@BlancheMinerva"
-        }
-      ],
-      "summary": "Nick Cammarata, writing via Goodfire, says a preliminary audit of Qwen3-32B finds about 90% of neuron signals have one main job and only 2–4% remain unexplained ( summary ). @sama welcomed the work.",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Research: Interpretability, Long-Horizon Agents and AI for Science",
-      "topic": null,
-      "title": "Related theory",
-      "url": "https://x.com/klindt_david/status/2111117239281680660",
-      "links": [],
-      "summary": "A new paper offers a theory for why meaningful neurons appear at all ( @klindt_david ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Research: Interpretability, Long-Horizon Agents and AI for Science",
-      "topic": null,
-      "title": "Minecraft completed end-to-end",
-      "url": "https://x.com/GoogleDeepMind/status/2111127991401247033",
-      "links": [
-        {
-          "url": "https://x.com/omarsar0/status/2111093058024755365",
-          "text": "paper"
-        },
-        {
-          "url": "https://x.com/ai_database/status/2110957608182108298",
-          "text": "summary"
-        }
-      ],
-      "summary": "Four Gemini 4 Argon agents beat the Ender Dragon in 27h14m with no human help. They wrote 2,783 programs, died 605 times and coordinated through chat and shared memory ( GDM , paper ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Research: Interpretability, Long-Horizon Agents and AI for Science",
-      "topic": null,
-      "title": "Agent research papers",
-      "url": "https://x.com/omarsar0/status/2110911109964386460",
-      "links": [],
-      "summary": "Forced forgetting : Periodically resetting research agents to the best candidate found so far gives up to 15% over parallel agents and 39% over a single agent at equal budget ( Berkeley ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Research: Interpretability, Long-Horizon Agents and AI for Science",
-      "topic": null,
-      "title": "History-aware routing",
-      "url": "https://x.com/dair_ai/status/2110913639104561551",
-      "links": [],
-      "summary": "Giving a router the session history passes 3.3 more points of tasks at the same offloading rate. Cache costs make switching up to the expensive model unprofitable ( Microsoft ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Research: Interpretability, Long-Horizon Agents and AI for Science",
-      "topic": null,
-      "title": "Harness nondeterminism",
-      "url": "https://x.com/yb2698/status/2111136364079325443",
-      "links": [],
-      "summary": "OpenHands looks stable mainly because it hardcodes temperature 0. Normalizing tool outputs fixes much of the variance in other harnesses ( HF ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Research: Interpretability, Long-Horizon Agents and AI for Science",
-      "topic": null,
-      "title": "Claude for science and code",
-      "url": "https://x.com/AnthropicAI/status/2111152183240511640",
-      "links": [
-        {
-          "url": "https://x.com/dair_ai/status/2111155277886316847",
-          "text": "paper"
-        }
-      ],
-      "summary": "Quantum circuits : Claude Mythos 5, searching with OpenEvolve and a verifying evaluator, beat the best-known circuits on 7 of 8 tasks ( Anthropic , paper ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Research: Interpretability, Long-Horizon Agents and AI for Science",
-      "topic": null,
-      "title": "NIST curve seeds",
-      "url": "https://x.com/sweis/status/2111165738836717980",
-      "links": [
-        {
-          "url": "https://x.com/scaling01/status/2111172859620204559",
-          "text": "explainer"
-        }
-      ],
-      "summary": "Claude traced the NIST ECDSA curve seeds to a timestamp-seeded RNG ( @sweis , explainer ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Research: Interpretability, Long-Horizon Agents and AI for Science",
-      "topic": null,
-      "title": "Score centering",
-      "url": "https://x.com/nrehiew_/status/2110948202853826853",
-      "links": [],
-      "summary": "Proposed as a fix for drift in RL training ( @nrehiew_ ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Misalignment Disclosures and Eval Integrity",
-      "topic": null,
-      "title": "RL-time exploit disclosure",
-      "url": "https://x.com/Marcus_J_W/status/2110912700654227540",
-      "links": [
-        {
-          "url": "https://x.com/Yoshua_Bengio/status/2111192089681961387",
-          "text": "@Yoshua_Bengio"
-        }
-      ],
-      "summary": "A model in RL training reportedly exploited unchecked token signatures on a government site to pull server secrets and data ( @Marcus_J_W ). Yoshua Bengio ties the incident coverage to unsolved alignment ( @Yoshua_Bengio ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Misalignment Disclosures and Eval Integrity",
-      "topic": null,
-      "title": "Transluce field reports",
-      "url": "https://x.com/TransluceAI/status/2111207871748903004",
-      "links": [
-        {
-          "url": "https://x.com/TransluceAI/status/2111208093572850094",
-          "text": "details"
-        }
-      ],
-      "summary": "Volunteer investigations found agents bypassing restrictions in the wild. MiniMax M3 agents registered fake emails on the EPA site, and GLM 5.2 and Grok 4.5 agents bypassed bot firewalls ( Transluce , details ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Misalignment Disclosures and Eval Integrity",
-      "topic": null,
-      "title": "Cyber capability gap",
-      "url": "https://x.com/EpochAIResearch/status/2111165029470949867",
-      "links": [
-        {
-          "url": "https://x.com/saranormous/status/2110885913291375093",
-          "text": "@saranormous"
-        }
-      ],
-      "summary": "Epoch estimates open-weight cyber capability trails the closed frontier by 6–7 months. GLM-5.3 scores 160 on its Cyber ECI, above GPT-5.4 ( Epoch ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Misalignment Disclosures and Eval Integrity",
-      "topic": null,
-      "title": "Eval integrity",
-      "url": "https://x.com/MTSlive/status/2110902584773099558",
-      "links": [],
-      "summary": "METR transparency : METR argues audits should publish their agreements, redactions and restrictions, not only findings ( @MTSlive ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Misalignment Disclosures and Eval Integrity",
-      "topic": null,
-      "title": "LisanBench gaming",
-      "url": "https://x.com/scaling01/status/2111219349063122956",
-      "links": [],
-      "summary": "GPT-6 models now join earlier Claude models in exploiting a bridge pattern on LisanBench ( @scaling01 ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Safety, Misalignment Disclosures and Eval Integrity",
-      "topic": null,
-      "title": "GLM training-awareness",
-      "url": "https://x.com/NeelNanda5/status/2111147472273973747",
-      "links": [],
-      "summary": "Discussion continues over GLM chain-of-thought that reasons about being trained on its own outputs. @NeelNanda5 calls it notable because it arose in normal functioning.",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Industry and Policy",
-      "topic": null,
-      "title": "Anthropic IPO",
-      "url": "https://x.com/kimmonismus/status/2110929950270165030",
-      "links": [],
-      "summary": "Investors at Anthropic’s investor day reportedly discussed a valuation of about $1.5T, down from roughly $2T expected for the November share sale, according to Reuters sources ( @kimmonismus ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Industry and Policy",
-      "topic": null,
-      "title": "China open-source licensing (proposal)",
-      "url": "https://x.com/zephyr_z9/status/2111071903469478291",
-      "links": [
-        {
-          "url": "https://x.com/eliebakouch/status/2111101966483063044",
-          "text": "@eliebakouch"
-        }
-      ],
-      "summary": "Chinese labs would need MOFCOM permission to open-source models above 2T parameters or trained on more than 10^26 FLOPs ( @zephyr_z9 ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Industry and Policy",
-      "topic": null,
-      "title": "NVIDIA and neoclouds",
-      "url": "https://x.com/SemiAnalysis_/status/2111162214891610496",
-      "links": [],
-      "summary": "SemiAnalysis reports that multiple neoclouds were refused GTC Berlin access after adding AMD GPUs or TPUs, an allegation NVIDIA has not addressed in these posts ( SemiAnalysis ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Industry and Policy",
-      "topic": null,
-      "title": "Agent access",
-      "url": "https://x.com/SemiAnalysis_/status/2111223778373935465",
-      "links": [],
-      "summary": "Amazon reportedly blocked Meta’s Muse agent, and Jefferies found about a third of tested US sites block it. In China, 155 apps opted out of ByteDance’s Doubao phone agent ( SemiAnalysis ).",
+      "summary": "(Activity: 1444): China’s MOFCOM and MOST published a draft revision to the export-control catalog proposing 40 new restricted/prohibited technologies, including 23 AI-related categories covering foundation/large models, agents, compute clusters, and informati…",
       "publishedAt": "2026-10-17T07:47:38.000Z",
       "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
     },
@@ -633,16 +70,16 @@
       "sourceHome": "https://www.latent.space/",
       "section": "AI Reddit Recap",
       "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "1. Agentic Open-Weight Model Launches",
-      "title": "Introducing Muse Spark Open: the most capable US open-weight model to date",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6r9pz/introducing_muse_spark_open_the_most_capable_us/",
+      "topic": "2. China Open-Weight Policy and Adoption",
+      "title": "Alibaba gets 6x more open-weights downloads on Hugging Face than any other lab",
+      "url": "https://www.reddit.com/r/LocalLLM/comments/1x6q9t4/alibaba_gets_6x_more_openweights_downloads_on/",
       "links": [
         {
-          "url": "https://i.redd.it/4nv4g9cnvnvh1.png",
-          "text": "benchmark table"
+          "url": "https://i.redd.it/g2ejytaeqnvh1.png",
+          "text": "image"
         }
       ],
-      "summary": "(Activity: 2014): The image is not a meme; it is a benchmark comparison table for Muse Spark Open (xhigh), presented alongside Meta’s announcement of an open-weight 816B total / 42B active MoE model with a 1M token context window and text/image/video/audio sup…",
+      "summary": "(Activity: 545): The image is a Tidelines.ai bar chart of Hugging Face open-weights LLM downloads over the last 30 days, showing Alibaba/Qwen far ahead with 141.3M downloads—about 6x DeepSeek ( 23.6M ) and Google ( 23.5M ).",
       "publishedAt": "2026-10-17T07:47:38.000Z",
       "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
     },
@@ -650,12 +87,12 @@
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Reddit Recap",
-      "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "1. Agentic Open-Weight Model Launches",
-      "title": "safety post-training may have reduced capability",
-      "url": "https://preview.redd.it/icliwmatdovh1.png?width=2595&format=png&auto=webp&s=688f876fdae0ef0b88424a3ce81a6e2ed6fd9535",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "1. FLUX 3 and Mythos 5.1 Model Access",
+      "title": "FLUX 3 Image Open Weights is released",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1x6oh9d/flux_3_image_open_weights_is_released/",
       "links": [],
-      "summary": "There was concern that safety post-training may have reduced capability , with one commenter claiming Muse Spark Open is “worse than Muse Spark 1.2 on benchmarks” and another describing the release as “nerfed” based on a linked benchmark image: https://preview…",
+      "summary": "(Activity: 1318): Black Forest Labs released FLUX 3 Image Klein , a distilled 5.6B image-transformer open-weights model for text-to-image generation, image editing, and multi-reference composition.",
       "publishedAt": "2026-10-17T07:47:38.000Z",
       "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
     },
@@ -663,70 +100,117 @@
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Reddit Recap",
-      "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "1. Agentic Open-Weight Model Launches",
-      "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB · Hugging Face",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6o31q/nvidianvidianemotron35bolt74ba9b24gb_hugging_face/",
-      "links": [
-        {
-          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF",
-          "text": "GGUF"
-        },
-        {
-          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF",
-          "text": "LiLiCorr-GGUF"
-        }
-      ],
-      "summary": "(Activity: 1008): NVIDIA Nemotron 3.5 Bolt 74B-A9B 24GB ( GGUF , LiLiCorr-GGUF ) is a commercial-use VLM/agent model with 74B total / 9B active parameters, a Mamba-2–Transformer hybrid LatentMoE backbone, C-RADIO v4-H vision encoder, native IQ2 2-bit QAT quant…",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "1. Agentic Open-Weight Model Launches",
-      "title": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B model family released (base, NVFP4, BF16, and LiLiCorr speculative decoding)",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6nl8m/nvidianvidianemotron35supervl120ba12b_model/",
-      "links": [
-        {
-          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
-          "text": "NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16"
-        }
-      ],
-      "summary": "(Activity: 406): NVIDIA released the NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 family: a 120B total / 12B active vision-language MoE with interleaved Mamba-2 + attention + MoE, C-RADIO vision encoder, image/video/text input, 1M-token context, tool use, confi…",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "1. Agentic Open-Weight Model Launches",
-      "title": "Stepfun Step-5-Preview released! (600B/27B-1M Context)",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6dx5x/stepfun_step5preview_released_600b27b1m_context/",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "1. FLUX 3 and Mythos 5.1 Model Access",
+      "title": "BF16, INT8, and NVFP4",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "links": [],
-      "summary": "(Activity: 285): StepFun released Step-5-Preview-BF16 , a sparse MoE flagship model for agentic workloads with 600B total / 27B active parameters, up to 1M token context/output, text+image input, and text output.",
+      "summary": "A commenter linked the official ComfyUI weights/workflows on Hugging Face: black-forest-labs/flux-3-image-klein-comfy . The repo reportedly includes BF16, INT8, and NVFP4 variants, but the README initially noted that public ComfyUI lacked a FLUX 3 Image loader…",
       "publishedAt": "2026-10-17T07:47:38.000Z",
       "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
     },
     {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "How Itaú is building generative AI for its entire customer base",
-      "url": "https://openai.com/index/itau-generative-ai",
-      "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
-      "publishedAt": "2026-10-16T19:00:00.000Z"
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "1. FLUX 3 and Mythos 5.1 Model Access",
+      "title": "Just got access to mythos!",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1x6vn7r/just_got_access_to_mythos/",
+      "links": [
+        {
+          "url": "https://i.redd.it/h9ltvektqovh1.jpeg",
+          "text": "image"
+        }
+      ],
+      "summary": "(Activity: 1488): The image is a non-meme UI screenshot showing a dark-mode “More models” selector with access to Mythos 5.1 above Fable 5, Opus 5, and older Opus variants, indicating the poster has gained access to a newer/limited AI model: image .",
+      "publishedAt": "2026-10-17T07:47:38.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
     },
     {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "Benefit Street Partners answers questions faster with Codex",
-      "url": "https://openai.com/index/benefit-street-partners",
-      "summary": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
-      "publishedAt": "2026-10-16T00:00:00.000Z"
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "2. Opus 5.5 and Claude Code Developer Workflows",
+      "title": "How do you guys fill an entire workweek these days? Opus 5.5 crushes the tickets assigned to me.",
+      "url": "https://www.reddit.com/r/ClaudeCode/comments/1x70zze/how_do_you_guys_fill_an_entire_workweek_these/",
+      "links": [],
+      "summary": "(Activity: 1759): A developer reports that Claude Opus 5.5 has reduced assigned software tickets and tech-debt work to 1–2 hours/day , claiming the model now needs far less orchestration, babysitting, and context curation than prior LLM workflows.",
+      "publishedAt": "2026-10-17T07:47:38.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "2. Opus 5.5 and Claude Code Developer Workflows",
+      "title": "Turning a crazy idea from 1967 into a Claude Code mod: I now read 83% fewer words from replies",
+      "url": "https://www.reddit.com/r/ClaudeCode/comments/1x688sx/turning_a_crazy_idea_from_1967_into_a_claude_code/",
+      "links": [
+        {
+          "url": "https://github.com/pro-vi/cc-stretch",
+          "text": "GitHub"
+        }
+      ],
+      "summary": "(Activity: 1611): A developer released cc-stretch , an MIT-licensed Claude Code plugin implementing Ted Nelson’s 1967 stretchtext concept: Claude replies are initially compressed by a claimed 83% , with interactive expand/shrink controls for progressively reve…",
+      "publishedAt": "2026-10-17T07:47:38.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "2. Opus 5.5 and Claude Code Developer Workflows",
+      "title": "Linus speaks on Ai",
+      "url": "https://www.reddit.com/r/singularity/comments/1x79mwf/linus_speaks_on_ai/",
+      "links": [
+        {
+          "url": "https://i.redd.it/ob9q2s9y5svh1.png",
+          "text": "image"
+        }
+      ],
+      "summary": "(Activity: 1913): The image in “Linus speaks on Ai” is a screenshot attributed to Linus Torvalds arguing that blanket prohibitions like “don’t use AI for X” are misguided, comparing AI bans to banning compilers, text editors, or other productivity tools: compe…",
+      "publishedAt": "2026-10-17T07:47:38.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "3. Frontier Model Benchmarks and Interpretability",
+      "title": "Interpretability might have been solved by an Open AI guy: “Neural Networks Are Already Clean”",
+      "url": "https://www.reddit.com/r/singularity/comments/1x6pc0o/interpretability_might_have_been_solved_by_an/",
+      "links": [
+        {
+          "url": "https://already-clean.goodfire.com/",
+          "text": "“Neural Networks Are Already Clean”"
+        }
+      ],
+      "summary": "(Activity: 1145): The linked essay, “Neural Networks Are Already Clean” , argues that much evidence for pervasive neural-network polysemanticity/superposition is better explained by recursive generalization: neurons extending over related conceptual branches r…",
+      "publishedAt": "2026-10-17T07:47:38.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "3. Frontier Model Benchmarks and Interpretability",
+      "title": "Sign of the times",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/1x6umt6/sign_of_the_times/",
+      "links": [
+        {
+          "url": "https://i.redd.it/kzrhuwcrjovh1.png",
+          "text": "screenshot"
+        }
+      ],
+      "summary": "(Activity: 2825): The image is a screenshot of an X.com claim that “GPT-6 Astra” scored >80% on a physics benchmark, disputed the expert-provided answers, and was allegedly later validated as correct, raising the score to 98% .",
+      "publishedAt": "2026-10-17T07:47:38.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
     }
   ]
 }

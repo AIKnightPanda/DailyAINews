@@ -1,27 +1,27 @@
 {
-  "fetchedAt": "2026-10-18T18:50:16.485Z",
+  "fetchedAt": "2026-10-19T21:12:14.905Z",
   "windowDays": 3,
-  "windowUntil": "2026-10-18T23:59:59.000Z",
+  "windowUntil": "2026-10-19T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
       "status": "ok",
       "issues": 1,
-      "items": 10
+      "items": 0
     },
     {
       "id": "importai",
       "name": "Import AI",
       "status": "ok",
-      "issues": 0,
-      "items": 0
+      "issues": 1,
+      "items": 1
     },
     {
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
-      "issues": 3,
+      "issues": 0,
       "items": 0
     },
     {
@@ -35,8 +35,8 @@
       "id": "rundown",
       "name": "The Rundown AI",
       "status": "ok",
-      "issues": 0,
-      "items": 0
+      "issues": 2,
+      "items": 2
     },
     {
       "id": "aivalley",
@@ -48,169 +48,30 @@
   ],
   "items": [
     {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "2. China Open-Weight Policy and Adoption",
-      "title": "China proposes export controls on 23 AI technologies (including large models, agents & clusters); already open-sourced tech is exempted",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7g3zq/china_proposes_export_controls_on_23_ai/",
-      "links": [
-        {
-          "url": "https://m.bjnews.com.cn/detail/1792137269129878.html",
-          "text": "source"
-        }
-      ],
-      "summary": "(Activity: 1444): China’s MOFCOM and MOST published a draft revision to the export-control catalog proposing 40 new restricted/prohibited technologies, including 23 AI-related categories covering foundation/large models, agents, compute clusters, and informati…",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
+      "source": "Import AI",
+      "sourceHome": "https://jack-clark.net/",
+      "section": null,
+      "title": "Import AI 477: In which I tell the IMF the Singularity has begun",
+      "url": "https://jack-clark.net/2026/10/19/import-ai-477-in-which-i-tell-the-imf-the-singularity-has-begun/",
+      "summary": null,
+      "publishedAt": "2026-10-19T12:31:37.000Z",
+      "isIssue": true
     },
     {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "/r/LocalLlama + /r/localLLM Recap",
-      "topic": "2. China Open-Weight Policy and Adoption",
-      "title": "Alibaba gets 6x more open-weights downloads on Hugging Face than any other lab",
-      "url": "https://www.reddit.com/r/LocalLLM/comments/1x6q9t4/alibaba_gets_6x_more_openweights_downloads_on/",
-      "links": [
-        {
-          "url": "https://i.redd.it/g2ejytaeqnvh1.png",
-          "text": "image"
-        }
-      ],
-      "summary": "(Activity: 545): The image is a Tidelines.ai bar chart of Hugging Face open-weights LLM downloads over the last 30 days, showing Alibaba/Qwen far ahead with 141.3M downloads—about 6x DeepSeek ( 23.6M ) and Google ( 23.5M ).",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
+      "source": "The Rundown AI",
+      "sourceHome": "https://www.therundown.ai/",
+      "title": "SoftBank’s $18B bet on robot guards",
+      "url": "https://www.therundown.ai/articles/softbank-18b-bet-on-robot-guards",
+      "summary": "PLUS: Teleport to grandma's with this robot",
+      "publishedAt": "2026-10-19T14:30:00.000Z"
     },
     {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "1. FLUX 3 and Mythos 5.1 Model Access",
-      "title": "FLUX 3 Image Open Weights is released",
-      "url": "https://www.reddit.com/r/StableDiffusion/comments/1x6oh9d/flux_3_image_open_weights_is_released/",
-      "links": [],
-      "summary": "(Activity: 1318): Black Forest Labs released FLUX 3 Image Klein , a distilled 5.6B image-transformer open-weights model for text-to-image generation, image editing, and multi-reference composition.",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "1. FLUX 3 and Mythos 5.1 Model Access",
-      "title": "BF16, INT8, and NVFP4",
-      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-      "links": [],
-      "summary": "A commenter linked the official ComfyUI weights/workflows on Hugging Face: black-forest-labs/flux-3-image-klein-comfy . The repo reportedly includes BF16, INT8, and NVFP4 variants, but the README initially noted that public ComfyUI lacked a FLUX 3 Image loader…",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "1. FLUX 3 and Mythos 5.1 Model Access",
-      "title": "Just got access to mythos!",
-      "url": "https://www.reddit.com/r/ClaudeAI/comments/1x6vn7r/just_got_access_to_mythos/",
-      "links": [
-        {
-          "url": "https://i.redd.it/h9ltvektqovh1.jpeg",
-          "text": "image"
-        }
-      ],
-      "summary": "(Activity: 1488): The image is a non-meme UI screenshot showing a dark-mode “More models” selector with access to Mythos 5.1 above Fable 5, Opus 5, and older Opus variants, indicating the poster has gained access to a newer/limited AI model: image .",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "2. Opus 5.5 and Claude Code Developer Workflows",
-      "title": "How do you guys fill an entire workweek these days? Opus 5.5 crushes the tickets assigned to me.",
-      "url": "https://www.reddit.com/r/ClaudeCode/comments/1x70zze/how_do_you_guys_fill_an_entire_workweek_these/",
-      "links": [],
-      "summary": "(Activity: 1759): A developer reports that Claude Opus 5.5 has reduced assigned software tickets and tech-debt work to 1–2 hours/day , claiming the model now needs far less orchestration, babysitting, and context curation than prior LLM workflows.",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "2. Opus 5.5 and Claude Code Developer Workflows",
-      "title": "Turning a crazy idea from 1967 into a Claude Code mod: I now read 83% fewer words from replies",
-      "url": "https://www.reddit.com/r/ClaudeCode/comments/1x688sx/turning_a_crazy_idea_from_1967_into_a_claude_code/",
-      "links": [
-        {
-          "url": "https://github.com/pro-vi/cc-stretch",
-          "text": "GitHub"
-        }
-      ],
-      "summary": "(Activity: 1611): A developer released cc-stretch , an MIT-licensed Claude Code plugin implementing Ted Nelson’s 1967 stretchtext concept: Claude replies are initially compressed by a claimed 83% , with interactive expand/shrink controls for progressively reve…",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "2. Opus 5.5 and Claude Code Developer Workflows",
-      "title": "Linus speaks on Ai",
-      "url": "https://www.reddit.com/r/singularity/comments/1x79mwf/linus_speaks_on_ai/",
-      "links": [
-        {
-          "url": "https://i.redd.it/ob9q2s9y5svh1.png",
-          "text": "image"
-        }
-      ],
-      "summary": "(Activity: 1913): The image in “Linus speaks on Ai” is a screenshot attributed to Linus Torvalds arguing that blanket prohibitions like “don’t use AI for X” are misguided, comparing AI bans to banning compilers, text editors, or other productivity tools: compe…",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "3. Frontier Model Benchmarks and Interpretability",
-      "title": "Interpretability might have been solved by an Open AI guy: “Neural Networks Are Already Clean”",
-      "url": "https://www.reddit.com/r/singularity/comments/1x6pc0o/interpretability_might_have_been_solved_by_an/",
-      "links": [
-        {
-          "url": "https://already-clean.goodfire.com/",
-          "text": "“Neural Networks Are Already Clean”"
-        }
-      ],
-      "summary": "(Activity: 1145): The linked essay, “Neural Networks Are Already Clean” , argues that much evidence for pervasive neural-network polysemanticity/superposition is better explained by recursive generalization: neurons extending over related conceptual branches r…",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Reddit Recap",
-      "subsection": "Less Technical AI Subreddit Recap",
-      "topic": "3. Frontier Model Benchmarks and Interpretability",
-      "title": "Sign of the times",
-      "url": "https://www.reddit.com/r/ChatGPT/comments/1x6umt6/sign_of_the_times/",
-      "links": [
-        {
-          "url": "https://i.redd.it/kzrhuwcrjovh1.png",
-          "text": "screenshot"
-        }
-      ],
-      "summary": "(Activity: 2825): The image is a screenshot of an X.com claim that “GPT-6 Astra” scored >80% on a physics benchmark, disputed the expert-provided answers, and was allegedly later validated as correct, raising the score to 98% .",
-      "publishedAt": "2026-10-17T07:47:38.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1"
+      "source": "The Rundown AI",
+      "sourceHome": "https://www.therundown.ai/",
+      "title": "Anthropic designs a pay package for the public",
+      "url": "https://www.therundown.ai/articles/anthropic-designs-a-pay-package-for-the-public",
+      "summary": "PLUS: Turn a content spreadsheet into a working app",
+      "publishedAt": "2026-10-19T09:00:00.000Z"
     }
   ]
 }

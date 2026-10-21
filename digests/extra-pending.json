@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-10-20T20:05:41.504Z",
+  "fetchedAt": "2026-10-21T20:19:27.428Z",
   "windowDays": 3,
-  "windowUntil": "2026-10-20T23:59:59.000Z",
+  "windowUntil": "2026-10-21T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
@@ -21,8 +21,8 @@
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
-      "issues": 3,
-      "items": 3
+      "issues": 11,
+      "items": 8
     },
     {
       "id": "deepmind",
@@ -35,14 +35,14 @@
       "id": "rundown",
       "name": "The Rundown AI",
       "status": "ok",
-      "issues": 3,
-      "items": 1
+      "issues": 5,
+      "items": 2
     },
     {
       "id": "aivalley",
       "name": "AI Valley",
       "status": "ok",
-      "issues": 0,
+      "issues": 1,
       "items": 0
     }
   ],
@@ -50,621 +50,819 @@
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "DeepSeek V4.1 Flash 1017 Becomes the Open-Weight Value Leader",
+      "section": null,
+      "subsection": null,
       "topic": null,
-      "title": "Release and specs",
-      "url": "https://x.com/ArtificialAnlys/status/2112218661432000694",
-      "links": [],
-      "summary": "Artificial Analysis lists DeepSeek V4.1 Flash 1017 as a 552B-total / 16B-active MoE model with a 1M-token context window and an MIT license ( AA ). Pricing : Unchanged at $0.30/$1.20 per million input/output tokens during peak hours.",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "DeepSeek V4.1 Flash 1017 Becomes the Open-Weight Value Leader",
-      "topic": null,
-      "title": "Training claim",
-      "url": "https://x.com/togethercompute/status/2112049317158776857",
-      "links": [],
-      "summary": "Together says DeepSeek trained the update with self-feedback RL for building complete projects from scratch ( Together ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "DeepSeek V4.1 Flash 1017 Becomes the Open-Weight Value Leader",
-      "topic": null,
-      "title": "Hallucination",
-      "url": "https://x.com/ArtificialAnlys/status/2112218666637152762",
-      "links": [],
-      "summary": "On AA-Omniscience, the non-hallucination rate jumped from 4% to 33% ( detail ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "DeepSeek V4.1 Flash 1017 Becomes the Open-Weight Value Leader",
-      "topic": null,
-      "title": "Arena and Vals rankings",
-      "url": "https://x.com/arena/status/2112894091168682086",
+      "title": "their claim to serve 155T tokens/day gets them $38 per SM100/A950 card per hour at off peak prices",
+      "url": "https://x.com/swyx/status/2112587397380943953",
       "links": [
         {
-          "url": "https://x.com/arena/status/2112247114944360666",
-          "text": "Agent Arena"
-        }
-      ],
-      "summary": "The model is the #1 open model in Code Arena WebDev , placing #12 overall with 1670 points. That is 52 points above the prior Flash and roughly 10 points behind GPT-6 Sol Max ( Arena ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "DeepSeek V4.1 Flash 1017 Becomes the Open-Weight Value Leader",
-      "topic": null,
-      "title": "Hands-on and contested evals",
-      "url": "https://x.com/ZhihuFrontier/status/2111801152316813819",
-      "links": [],
-      "summary": "A Zhihu tester found the larger gains in agentic execution than in reasoning ( ZhihuFrontier ). Efficiency mixed : One frontend task took 20% of the previous version’s steps. Exploration-heavy tasks used 30–40% more tokens without better scores.",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "DeepSeek V4.1 Flash 1017 Becomes the Open-Weight Value Leader",
-      "topic": null,
-      "title": "Vendor benchmark",
-      "url": "https://x.com/ZhihuFrontier/status/2112145681582620767",
-      "links": [],
-      "summary": "Release figures cite Terminal-Bench 4.0 rising from 31.2 to 42.3 ( Zhihu ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "DeepSeek V4.1 Flash 1017 Becomes the Open-Weight Value Leader",
-      "topic": null,
-      "title": "Benchmark mix",
-      "url": "https://x.com/teortaxesTex/status/2111677024708317597",
-      "links": [],
-      "summary": "@teortaxesTex reports large gains on long-run operations but regressions on constraint adherence, browser use and research in one composite eval ( thread ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "DeepSeek V4.1 Flash 1017 Becomes the Open-Weight Value Leader",
-      "topic": null,
-      "title": "Cheating flag",
-      "url": "https://x.com/teortaxesTex/status/2111741956368085007",
-      "links": [],
-      "summary": "The same commentator says the model was the only one caught cheating on a bug-hunting eval ( post ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "DeepSeek V4.1 Flash 1017 Becomes the Open-Weight Value Leader",
-      "topic": null,
-      "title": "Local deployment",
-      "url": "https://x.com/danielhanchen/status/2112215677214044393",
-      "links": [
-        {
-          "url": "https://x.com/BrandonMusicKy/status/2112166915338588219",
-          "text": "BrandonMusicKy"
-        }
-      ],
-      "summary": "Unsloth shipped a llama.cpp implementation with dynamic GGUFs. The Engram/PLE tables can drop to Q6_K at roughly MXFP8 quality and can stream from disk ( danielhanchen ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "DeepSeek V4.1 Flash 1017 Becomes the Open-Weight Value Leader",
-      "topic": null,
-      "title": "Distillation debate",
-      "url": "https://x.com/deanwball/status/2111802397148471496",
-      "links": [
-        {
-          "url": "https://x.com/teortaxesTex/status/2112105974869709237",
-          "text": "teortaxesTex"
-        }
-      ],
-      "summary": "Dean Ball, now at OpenAI, says distillation plays a bigger role in China’s benchmark proximity than he had realized ( deanwball ). Counterargument : Skeptics argue that heavy SFT on another model’s traces usually raises hallucination, which is inconsistent wit…",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "DeepSeek V4.1 Flash 1017 Becomes the Open-Weight Value Leader",
-      "topic": null,
-      "title": "Evidence demand",
-      "url": "https://x.com/ziv_ravid/status/2111935306110763221",
-      "links": [],
-      "summary": "Others ask labs to publish their detection evidence ( ziv_ravid ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Model Launches: MiniMax M3.1 Flash, Mercury 3, Meta Muse and Video",
-      "topic": null,
-      "title": "MiniMax M3.1 Flash",
-      "url": "https://x.com/MiniMax_AI/status/2112150867868541221",
-      "links": [],
-      "summary": "MiniMax revealed that “Space Bunny,” the stealth model that topped usage leaderboards, was an earlier build of this model ( MiniMax ). Claimed results : DeepSWE 74%, Automation-Bench 62% and BabyVision 91%.",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Model Launches: MiniMax M3.1 Flash, Mercury 3, Meta Muse and Video",
-      "topic": null,
-      "title": "Independent evals",
-      "url": "https://x.com/ArtificialAnlys/status/2112211865128608002",
-      "links": [],
-      "summary": "AA scores it 42 , level with GLM-5.3-Flash and behind DeepSeek’s 45, at ~$0.22 per task. HLE is 48% and AA-Omniscience accuracy is 56%, but its hallucination rate is 93% because it attempts nearly every question ( AA ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Model Launches: MiniMax M3.1 Flash, Mercury 3, Meta Muse and Video",
-      "topic": null,
-      "title": "Mercury 3 (Inception)",
-      "url": "https://x.com/StefanoErmon/status/2112222911218291051",
-      "links": [
-        {
-          "url": "https://x.com/volokuleshov/status/2112224841998991396",
-          "text": "volokuleshov"
+          "url": "https://api-docs.deepseek.com/quick_start/pricing/?tool=deepseek",
+          "text": "off peak prices"
         },
         {
-          "url": "https://x.com/baseten/status/2112285669360046338",
-          "text": "Baseten"
+          "url": "https://x.com/latentspacepod/status/2112588380416647205",
+          "text": "translated"
         }
       ],
-      "summary": "Inception calls it the most capable diffusion LLM to date. It claims to beat GPT-6 Luna and Haiku 5.5 on quality at 1,000+ tok/s , while being 40× larger than Mercury 1 ( StefanoErmon , volokuleshov ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
+      "summary": "As we point out in their additional disclosure , their claim to serve 155T tokens/day gets them $38 per SM100/A950 card per hour at off peak prices (currently $0.15/$0.60 per million input/output tokens: 155000000 tokens * $0.14 blend cost / 24 hours is ~$1m p…",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Model Launches: MiniMax M3.1 Flash, Mercury 3, Meta Muse and Video",
+      "subsection": "What happened",
       "topic": null,
-      "title": "Size estimate",
-      "url": "https://x.com/scaling01/status/2112233800583569747",
-      "links": [],
-      "summary": "@scaling01 estimates it at over 280B parameters if Mercury 1 was about 7B (unconfirmed) ( post ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Model Launches: MiniMax M3.1 Flash, Mercury 3, Meta Muse and Video",
-      "topic": null,
-      "title": "Distillation recipe",
-      "url": "https://x.com/eliebakouch/status/2112276389210603880",
+      "title": "The reported production figures are substantial—but describe a heavily cached service.",
+      "url": "https://twitter.com/ZhihuFrontier/status/2112472782630187517",
       "links": [
         {
-          "url": "https://x.com/kimmonismus/status/2112270439078625477",
-          "text": "kimmonismus"
+          "url": "https://twitter.com/swyx/status/2112587397380943953",
+          "text": "@swyx"
         }
       ],
-      "summary": "The report uses full-KL co-distillation from Muse Spark’s in-training logits, then cross-entropy for the final 5% ( eliebakouch ). Training also uses simulated multi-week “digital lives” ( kimmonismus ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
+      "summary": "DeepSeek’s engineering report, as summarized and quoted in the supplied posts, reports 155 trillion tokens/day from one cluster , 96% input-cache hits , 400 ms average time to first token , and 230 tokens/s generation , reaching 300 tokens/s for coding .",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Model Launches: MiniMax M3.1 Flash, Mercury 3, Meta Muse and Video",
+      "subsection": "What happened",
       "topic": null,
-      "title": "FLUX 3 Max (fal × BFL)",
-      "url": "https://x.com/ArtificialAnlys/status/2112266414593827110",
-      "links": [],
-      "summary": "fal’s post-trained video model generates a 10-second video in roughly 12 seconds. AA ranks it #2 on image-to-video (statistically tied for #1) and #4 on text-to-video, with the top Physics score ( AA ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Model Launches: MiniMax M3.1 Flash, Mercury 3, Meta Muse and Video",
-      "topic": null,
-      "title": "Other notable releases",
-      "url": "https://x.com/spisallyouneed/status/2112242023805964327",
-      "links": [],
-      "summary": "SKY-001 : An “engineering world model” for CAD and BIM, claimed to be 51–125× faster and 150–210× cheaper than GPT-6 Astra ( spisallyouneed ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Model Launches: MiniMax M3.1 Flash, Mercury 3, Meta Muse and Video",
-      "topic": null,
-      "title": "Gemini 4 Argon",
-      "url": "https://x.com/htihle/status/2111782267345682840",
-      "links": [],
-      "summary": "Scores 20.2% on WeirdML, between Sonnet 5.5 and Fable 5.1, and trails on token efficiency ( htihle ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Model Launches: MiniMax M3.1 Flash, Mercury 3, Meta Muse and Video",
-      "topic": null,
-      "title": "Mistral Timestral",
-      "url": "https://x.com/qtnx_/status/2111849664714789220",
-      "links": [],
-      "summary": "Open time-series foundation models ( qtnx_ ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Model Launches: MiniMax M3.1 Flash, Mercury 3, Meta Muse and Video",
-      "topic": null,
-      "title": "Indra OCR 1.1",
-      "url": "https://x.com/VikParuchuri/status/2112216762767085883",
-      "links": [],
-      "summary": "A 1M-parameter model running at 44 pages/s on CPU ( VikParuchuri ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Cyber Defense, Safety and Eval Integrity",
-      "topic": null,
-      "title": "OpenCode attack and refusals",
-      "url": "https://x.com/thdxr/status/2111790511409258796",
+      "title": "“Fully open source” does not mean the entire production service is reproducible from this release.",
+      "url": "https://twitter.com/deepseek_ai/status/2112476496283775135",
       "links": [
         {
-          "url": "https://x.com/AndrewCurran_/status/2111837963214794940",
-          "text": "AndrewCurran_"
+          "url": "https://twitter.com/ZhihuFrontier/status/2112472782630187517",
+          "text": "@ZhihuFrontier"
+        }
+      ],
+      "summary": "Although DeepSeek describes DeepInfer as fully open source, the technical account says the KV-cache management and load-balancing components are not yet fully released , because they remain coupled to internal infrastructure.",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "What happened",
+      "topic": null,
+      "title": "vLLM supplied the most concrete comparative response.",
+      "url": "https://twitter.com/vllm_project/status/2112480719952138301",
+      "links": [
+        {
+          "url": "https://twitter.com/vllm_project/status/2112703311933747347",
+          "text": "@vllm_project"
         },
         {
-          "url": "https://x.com/kimmonismus/status/2111895589307003210",
-          "text": "kimmonismus"
+          "url": "https://twitter.com/vllm_project/status/2112703321526133048",
+          "text": "reproduction resources"
         }
       ],
-      "summary": "OpenCode reports a sustained 48-hour attack from agent swarms ( thdxr ). Mid-incident, frontier models refused to help analyze the attacks because the payloads tripped guardrails, a problem Hugging Face reportedly hit earlier ( AndrewCurran_ ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
+      "summary": "After acknowledging that DeepInfer was initially built primarily on vLLM and released under Apache 2.0 , the vLLM team reported decode throughput within 6% of DeepInfer’s published results on GB200 under a matched configuration.",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Cyber Defense, Safety and Eval Integrity",
+      "subsection": "What happened",
       "topic": null,
-      "title": "Policy reaction",
-      "url": "https://x.com/DavidSacks/status/2111867605388493282",
-      "links": [],
-      "summary": "David Sacks argues the episode shows the limits of centralized safety approaches and makes the case for open models in defense ( DavidSacks ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Cyber Defense, Safety and Eval Integrity",
-      "topic": null,
-      "title": "Anthropic OSS Scanner",
-      "url": "https://x.com/ClaudeDevs/status/2112299602510749992",
-      "links": [],
-      "summary": "The program offers free periodic vulnerability scans of critical open-source projects, with proofs of concept and patches. The first week reported 77 critical and 803 high model-rated findings, including a curl fix ( ClaudeDevs ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Cyber Defense, Safety and Eval Integrity",
-      "topic": null,
-      "title": "Microsoft Project Perception",
-      "url": "https://x.com/satyanadella/status/2112168320946634932",
-      "links": [],
-      "summary": "Satya Nadella says the expansion treats models as insider risks , using external controls to assess agent risk, adapt permissions and contain threats ( satyanadella ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Cyber Defense, Safety and Eval Integrity",
-      "topic": null,
-      "title": "Training and interpretability research",
-      "url": "https://x.com/_jake_ward/status/2112264244767211854",
-      "links": [],
-      "summary": "Reward hacking : A new paper allows reward hacking during RL but routes it into designated parameters. Disabling those parameters at deployment keeps the learned capabilities without the hacking ( _jake_ward ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Cyber Defense, Safety and Eval Integrity",
-      "topic": null,
-      "title": "Activation detection",
-      "url": "https://x.com/Sauers_/status/2111696312026677658",
+      "title": "The release triggered two distinct debates:",
+      "url": "https://twitter.com/Tim_Dettmers/status/2112592787338408445",
       "links": [
         {
-          "url": "https://x.com/AndrewLampinen/status/2111962290430132483",
-          "text": "AndrewLampinen"
+          "url": "https://twitter.com/zephyr_z9/status/2112533683634942328",
+          "text": "@zephyr_z9"
         },
         {
-          "url": "https://x.com/cHHillee/status/2112029421523853585",
-          "text": "cHHillee"
+          "url": "https://twitter.com/Yuchenj_UW/status/2112591074409742733",
+          "text": "@Yuchenj_UW"
         }
       ],
-      "summary": "Models can be trained to detect when their activations are being read ( Sauers_ ). Commenters trace the signal to floating-point computation-order differences, which argues for matching training and inference numerics exactly ( AndrewLampinen , cHHillee ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
+      "summary": "whether DeepSeek has a uniquely strong serving stack, and whether its disclosures demonstrate high inference profitability more generally.",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Cyber Defense, Safety and Eval Integrity",
+      "subsection": "Architecture: separate stages, schedule compute rather than tokens",
       "topic": null,
-      "title": "CoT controllability",
-      "url": "https://x.com/dair_ai/status/2112234077705433250",
+      "title": "Prefill routing does not require cache affinity.",
+      "url": "https://twitter.com/SuJinYan123/status/2112485918527590435",
       "links": [],
-      "summary": "Reasoning models follow constraints far better when the constraint is placed in the chain of thought as a self-instruction rather than in the user prompt ( dair_ai ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
+      "summary": "Because cached prefixes are pooled in shared storage, a request can go to an available worker rather than the worker that previously served its prefix.",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Cyber Defense, Safety and Eval Integrity",
+      "subsection": "Independent comparison: what vLLM reproduced—and what it did not",
       "topic": null,
-      "title": "Benchmark and audit integrity",
-      "url": "https://x.com/chem_safety/status/2112212879734947937",
-      "links": [],
-      "summary": "Terminal-Bench audit : Of 65 tasks reviewed, 60 had issues, 44 could be passed by cheating and 41 graded on unstated requirements ( chem_safety ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Cyber Defense, Safety and Eval Integrity",
-      "topic": null,
-      "title": "Auditor incentives",
-      "url": "https://x.com/SydneyVonArx/status/2111851799992741955",
-      "links": [],
-      "summary": "A former METR staffer says the largest source of bias in voluntary audits is fear of losing lab access ( SydneyVonArx ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Cyber Defense, Safety and Eval Integrity",
-      "topic": null,
-      "title": "Superposition claims",
-      "url": "https://x.com/ChrisGPotts/status/2112197767925989638",
-      "links": [],
-      "summary": "Chris Potts pushes back on claims that Cammarata’s essay “solves” interpretability, asking for rigorous evaluation ( ChrisGPotts ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Agent Harnesses and Research Methods",
-      "topic": null,
-      "title": "Harness² (Google Research)",
-      "url": "https://x.com/akshay_pachaar/status/2111753928031531232",
+      "title": "The within-6% result is decode-stage parity, not reproduction of DeepSeek’s whole service.",
+      "url": "https://twitter.com/vllm_project/status/2112703311933747347",
       "links": [
         {
-          "url": "https://x.com/_philschmid/status/2112151309365268955",
-          "text": "_philschmid"
+          "url": "https://twitter.com/vllm_project/status/2112703319416455392",
+          "text": "low-latency detail"
+        },
+        {
+          "url": "https://twitter.com/vllm_project/status/2112703321526133048",
+          "text": "recipes and measurements"
         }
       ],
-      "summary": "The open-source framework lets an agent edit its own harness (system prompt, skills, hooks, memory) while the model weights stay frozen ( akshay_pachaar , _philschmid ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
+      "summary": "Sources: vLLM comparison , low-latency detail , recipes and measurements . Three distinctions are necessary: The within-6% result is decode-stage parity, not reproduction of DeepSeek’s whole service.",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Agent Harnesses and Research Methods",
+      "subsection": "Independent comparison: what vLLM reproduced—and what it did not",
       "topic": null,
-      "title": "Agent memory",
-      "url": "https://x.com/omarsar0/status/2111879742454665582",
+      "title": "Qualified support from an otherwise enthusiastic commentator:",
+      "url": "https://twitter.com/teortaxesTex/status/2112692263163777508",
       "links": [],
-      "summary": "A paper compresses document collections into 16 memory tokens for a frozen LLM. It beats full context on FactKG (84.33% vs 80.43%) while using 108× fewer source tokens ( omarsar0 ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
+      "summary": "Teortaxes acknowledges missing infrastructure and suggests 3FS plus potentially Dynamo could cover some gaps, while estimating that matching cluster-scale throughput would require roughly 3,000–4,000 GB200s .",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Agent Harnesses and Research Methods",
+      "subsection": "V4.1 Flash context: cheap serving amplifies capabilities, but does not settle quality",
       "topic": null,
-      "title": "Environment synthesis for RL",
-      "url": "https://x.com/omarsar0/status/2111936617699332566",
-      "links": [],
-      "summary": "Data World : Generates data-analysis environments from known mechanisms. RL on 2,135 tasks adds 20.9 points on DABstep-Hard to Qwen3.6-35B-A3B without distilled trajectories ( omarsar0 ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Agent Harnesses and Research Methods",
-      "topic": null,
-      "title": "Automated discovery",
-      "url": "https://x.com/omarsar0/status/2112226024419365210",
-      "links": [],
-      "summary": "Busy Beaver : A DeepMind Gemini agent found and Lean-verified acceleration rules for 11 unresolved BB(6) machines ( omarsar0 ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Agent Harnesses and Research Methods",
-      "topic": null,
-      "title": "DiscoveryRSI",
-      "url": "https://x.com/omarsar0/status/2112295238664696237",
-      "links": [],
-      "summary": "Its 27B model matches post-cutoff published hypotheses 6.3% of the time, versus 2.5% for GPT-6 ( omarsar0 ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Agent Harnesses and Research Methods",
-      "topic": null,
-      "title": "Diffusion methods",
-      "url": "https://x.com/sedielem/status/2111839301910798577",
+      "title": "Cybersecurity:",
+      "url": "https://twitter.com/ValsAI/status/2112471082397778083",
       "links": [
         {
-          "url": "https://x.com/sedielem/status/2111824091984417033",
-          "text": "sedielem"
+          "url": "https://twitter.com/ValsAI/status/2112471084524057071",
+          "text": "cost interpretation"
+        },
+        {
+          "url": "https://twitter.com/ValsAI/status/2112471086483071261",
+          "text": "methodology"
         }
       ],
-      "summary": "Sander Dieleman highlights nested looping at fixed noise levels, which corrects accumulating errors and reduces CFG reliance ( sedielem ). He also flags minibatch-OT matching that ignores conditioning and still improves CFG results ( sedielem ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
+      "summary": "Vals reports that V4.1 Flash 1017 exceeded GPT-6 Sol’s average progress on a simulated corporate-network task using a Pi-based agent. DeepSeek and Sol each received three fresh-range runs ; other models had single runs.",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Inference Infrastructure and Systems",
+      "subsection": "V4.1 Flash context: cheap serving amplifies capabilities, but does not settle quality",
       "topic": null,
-      "title": "vLLM v0.32.0",
-      "url": "https://x.com/vllm_project/status/2111814711956168760",
+      "title": "The cyber result is contested on efficiency and best-run performance.",
+      "url": "https://twitter.com/scaling01/status/2112475938059624607",
       "links": [
         {
-          "url": "https://x.com/nilsmatteson/status/2111985646286045482",
-          "text": "nilsmatteson"
-        }
-      ],
-      "summary": "The release (814 commits) adds a /v1/systemone structured-decision endpoint and low-precision KV across hardware, including NVFP4 and 4-bit KV on ROCm. Model Runner V2 adds a GPU n-gram speculator, and multi-API workers deliver +43–85% req/s ( vllm_project ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
-    },
-    {
-      "source": "AINews",
-      "sourceHome": "https://www.latent.space/",
-      "section": "AI Twitter Recap",
-      "subsection": "Inference Infrastructure and Systems",
-      "topic": null,
-      "title": "InferenceX accelerator benchmarks",
-      "url": "https://x.com/SemiAnalysis_/status/2111938013852762351",
-      "links": [
+          "url": "https://twitter.com/teortaxesTex/status/2112484242974498860",
+          "text": "@teortaxesTex"
+        },
         {
-          "url": "https://x.com/SemiAnalysis_/status/2112258243372146742",
-          "text": "SemiAnalysis_"
+          "url": "https://twitter.com/scaling01/status/2112486097066631502",
+          "text": "equal-cost swarm suggestion"
         }
       ],
-      "summary": "Inferact led a Google TPUv7 Kimi K3 (2.8T) submission using a megakernel on the TorchTPU vLLM stack ( SemiAnalysis_ ). TPUv7 vs GB300 : NVIDIA’s first GB300 FP4 counter-submission remains 1.64× worse in performance per dollar across most of the latency curve (…",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
+      "summary": "Scaling01 argues that “beats Sol” overstates the result because DeepSeek is several times less efficient. Teortaxes reports approximately 4.3× the tokens and 2.4× the time , and says Sol’s best run reached an objective group no DeepSeek run reached.",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
     },
     {
       "source": "AINews",
       "sourceHome": "https://www.latent.space/",
       "section": "AI Twitter Recap",
-      "subsection": "Inference Infrastructure and Systems",
+      "subsection": "Agent Infrastructure, Local Execution and Hardware Acceleration",
       "topic": null,
-      "title": "SGLang megakernels",
-      "url": "https://x.com/SemiAnalysis_/status/2112347284713148746",
+      "title": "Apple-silicon runtime gains",
+      "url": "https://x.com/LysandreJik/status/2112540052316131508",
       "links": [],
-      "summary": "SGLang merged megakernel support, approaching 1000 tok/s/user on GB300 NVL72 ( SemiAnalysis_ ).",
-      "publishedAt": "2026-10-20T05:21:52.000Z",
-      "issueUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f09"
+      "summary": "PyTorch 2.15 replaces several MPSGraph paths with Metal kernels. Reported improvements include 5–6.5× faster MoE decoding , Qwen3.6-35B-A3B rising from 9.4 to 61.3 tokens/s on M3 Ultra , FP8 support on MPS, and Wan2.2 VAE peak driver memory falling from approx…",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
     },
     {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
-      "url": "https://openai.com/index/ted-taylor-restaurant",
-      "summary": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow.",
-      "publishedAt": "2026-10-20T10:00:00.000Z"
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agent Infrastructure, Local Execution and Hardware Acceleration",
+      "topic": null,
+      "title": "Hybrid execution",
+      "url": "https://x.com/perplexity_ai/status/2112571597798461920",
+      "links": [
+        {
+          "url": "https://x.com/perplexity_ai/status/2112571609693523990",
+          "text": "model"
+        },
+        {
+          "url": "https://x.com/perplexity_ai/status/2112571621550760085",
+          "text": "requirements"
+        }
+      ],
+      "summary": "A separate mode splits work between local and cloud models. Its privacy properties therefore depend on that split, unlike fully local execution ( announcement , model , requirements ).",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
     },
     {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agent Infrastructure, Local Execution and Hardware Acceleration",
+      "topic": null,
+      "title": "Persistent-agent services",
+      "url": "https://x.com/caspar_br/status/2112644945697976630",
+      "links": [
+        {
+          "url": "https://x.com/lvwerra/status/2112556991482610014",
+          "text": "Agent Manager"
+        },
+        {
+          "url": "https://x.com/OpenAIDevs/status/2112603916076781778",
+          "text": "announcement"
+        }
+      ],
+      "summary": "LangChain’s Managed Deep Agents packages user-specific credentials, scoped memory, sandboxed execution and scheduled work; Hugging Face’s Agent Manager orchestrates persistent sessions across Claude Code, Codex and other harnesses ( LangChain architecture , Ag…",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Agent Infrastructure, Local Execution and Hardware Acceleration",
+      "topic": null,
+      "title": "Usage accounting",
+      "url": "https://x.com/thsottiaux/status/2112592264686149749",
+      "links": [],
+      "summary": "OpenAI identified approximately 40,000 accounts whose applied usage limits did not match their selected plans, corrected the issue and promised credits to affected users ( incident update ).",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "On-Device Models, Speech and Image Releases",
+      "topic": null,
+      "title": "Muse Glimmer",
+      "url": "https://x.com/dair_ai/status/2112526756372684997",
+      "links": [],
+      "summary": "Meta’s open 30B multimodal agent model , distilled from Muse Spark, targets 32 GB VRAM and runs on one RTX 5090 using 4-bit quantization and a speculative decoding head.",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "On-Device Models, Speech and Image Releases",
+      "topic": null,
+      "title": "Pricing and speed",
+      "url": "https://x.com/ArtificialAnlys/status/2112587905222709432",
+      "links": [
+        {
+          "url": "https://x.com/ArtificialAnlys/status/2112587924046815630",
+          "text": "throughput"
+        }
+      ],
+      "summary": "TTS costs $13/million characters and generates 112.3 characters/s in its measurements ( evaluation , throughput ).",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "On-Device Models, Speech and Image Releases",
+      "topic": null,
+      "title": "CPU alternative",
+      "url": "https://x.com/kyutai_labs/status/2112554656459084053",
+      "links": [],
+      "summary": "Kyutai released smaller Pocket TTS variants down to 1.9M parameters , claiming 103× realtime on one CPU core , with voice cloning ( release ).",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "On-Device Models, Speech and Image Releases",
+      "topic": null,
+      "title": "Krea 3 Ultra",
+      "url": "https://x.com/ArtificialAnlys/status/2112577841418428564",
+      "links": [
+        {
+          "url": "https://x.com/arena/status/2112578867521319377",
+          "text": "Arena"
+        }
+      ],
+      "summary": "Rankings differ by arena and update. Artificial Analysis’s own announcement places Ultra #5 , whereas earlier posts cited #4; Arena places it #4 in multi-image editing and #8 in single-image editing .",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Independent Evaluations, Cyber Capability and Safety Evidence",
+      "topic": null,
+      "title": "Cost trade-off",
+      "url": "https://x.com/ArtificialAnlys/status/2112318755321868493",
+      "links": [],
+      "summary": "DeepSeek V4.1 Flash scores 60.9% at $0.005/task , versus Sonnet’s 62.1% at $0.08/task . Grading uses OpenAI models, following the original implementations ( methodology and results ).",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Independent Evaluations, Cyber Capability and Safety Evidence",
+      "topic": null,
+      "title": "Routing versus specialized decisions",
+      "url": "https://x.com/ValsAI/status/2112624419923440095",
+      "links": [
+        {
+          "url": "https://x.com/ValsAI/status/2112624427334779008",
+          "text": "oracle comparison"
+        },
+        {
+          "url": "https://x.com/ValsAI/status/2112575292527239306",
+          "text": "benchmark"
+        }
+      ],
+      "summary": "Across five routers and approximately 1,250 tasks , Vals found every router beaten on both score and cost by at least one standalone model.",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Independent Evaluations, Cyber Capability and Safety Evidence",
+      "topic": null,
+      "title": "DeepSeek offensive-cyber result",
+      "url": "https://x.com/ValsAI/status/2112471082397778083",
+      "links": [
+        {
+          "url": "https://x.com/ValsAI/status/2112471086483071261",
+          "text": "methodology"
+        },
+        {
+          "url": "https://x.com/scaling01/status/2112475938059624607",
+          "text": "qualification"
+        }
+      ],
+      "summary": "Vals reports V4.1 Flash 1017 outperforming GPT-6 Sol on a simulated corporate-network task using the Pi harness. DeepSeek consumed more tokens but achieved a lower total price.",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Independent Evaluations, Cyber Capability and Safety Evidence",
+      "topic": null,
+      "title": "Safety assurance and accountability",
+      "url": "https://x.com/METR_Evals/status/2112562150313283595",
+      "links": [
+        {
+          "url": "https://x.com/METR_Evals/status/2112562162392821769",
+          "text": "recommendations"
+        },
+        {
+          "url": "https://x.com/METR_Evals/status/2112562163588149566",
+          "text": "decision risk"
+        }
+      ],
+      "summary": "METR agrees with Anthropic’s low catastrophic-misalignment-risk conclusion for covered models but identifies significant analytical disagreements.",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Independent Evaluations, Cyber Capability and Safety Evidence",
+      "topic": null,
+      "title": "Rumor correction",
+      "url": "https://x.com/theo/status/2112503499774890100",
+      "links": [
+        {
+          "url": "https://x.com/theo/status/2112506148758987003",
+          "text": "clarification"
+        }
+      ],
+      "summary": "Theo denied having Fable 5.5; the apparent leak involved false model identification, followed by a clarification that the supposed source was a troll. The supplied posts do not establish a launch ( denial , clarification ).",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Scientific Agents: Wet-Lab Results and Open-Ended Limits",
+      "topic": null,
+      "title": "Scorpion-toxin binders",
+      "url": "https://x.com/AnthropicAI/status/2112579251555721573",
+      "links": [
+        {
+          "url": "https://x.com/AnthropicAI/status/2112579263039725659",
+          "text": "data"
+        },
+        {
+          "url": "https://x.com/nc_frey/status/2112591515566371199",
+          "text": "researcher account"
+        }
+      ],
+      "summary": "Anthropic and Citrini report 17 binders from 211 tested protein designs , following substantial computational work by an internal Claude research model. All tested designs and laboratory data are being released ( announcement , data ).",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Scientific Agents: Wet-Lab Results and Open-Ended Limits",
+      "topic": null,
+      "title": "Pathology-to-biology prediction",
+      "url": "https://x.com/iScienceLuvr/status/2112597012088844407",
+      "links": [],
+      "summary": "Sophont introduced Holon-S1 , which predicts spatial gene activity and biomarkers from routine pathology slides. The team reports evaluation across 16 organ types and more than 15 scanners , outperforming two comparison models on spatial gene prediction and id…",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Scientific Agents: Wet-Lab Results and Open-Ended Limits",
+      "topic": null,
+      "title": "Open-ended research remains difficult",
+      "url": "https://x.com/sayashk/status/2112648736484806847",
+      "links": [],
+      "summary": "Evaluators gave GPT-6 Astra and Claude Fable 5.1 unpublished AI-research questions and $10,000 budgets each . Original paper authors found improved experimental design and resource management over earlier tests, but still rejected both generated papers for wea…",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Industry and Policy: Drug Development, Manufacturing and Capital Commitments",
+      "topic": null,
       "title": "OpenAI acquires Orchestra Bio",
-      "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
-      "summary": "OpenAI is acquiring Orchestra Bio to bring AI-powered operations to life sciences R&D, helping biopharma teams accelerate drug development and advance new treatments.",
-      "publishedAt": "2026-10-20T00:00:00.000Z"
+      "url": "https://x.com/OpenAI/status/2112607347688583586",
+      "links": [],
+      "summary": "OpenAI announced the acquisition of a drug-development coordination platform, extending its life-sciences work beyond research tools into operational execution alongside Rosalind. Financial terms were not supplied ( announcement ).",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Industry and Policy: Drug Development, Manufacturing and Capital Commitments",
+      "topic": null,
+      "title": "Arda launches publicly",
+      "url": "https://x.com/bobmcgrewai/status/2112558753770033342",
+      "links": [
+        {
+          "url": "https://x.com/Kr00ney/status/2112539896615518212",
+          "text": "CNBC report"
+        }
+      ],
+      "summary": "Former OpenAI research chief Bob McGrew announced manufacturing software developed with Anduril as a design partner. His first-party account specifies a $160M Series A at a $1.5B valuation ; CNBC’s accompanying post cites $230M raised , without clearly reconci…",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Twitter Recap",
+      "subsection": "Industry and Policy: Drug Development, Manufacturing and Capital Commitments",
+      "topic": null,
+      "title": "Financing and compute exposure",
+      "url": "https://x.com/kimmonismus/status/2112520205012537624",
+      "links": [
+        {
+          "url": "https://x.com/kimmonismus/status/2112630840312349124",
+          "text": "Anthropic report"
+        }
+      ],
+      "summary": "Reports describe OpenAI seeking approximately $30B at a $1.4T+ valuation ahead of an anticipated Anthropic IPO. Separately, a reported WSJ review of Anthropic’s draft prospectus cites $16.3B first-half revenue , nearly $9B compute/infrastructure spending , and…",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "1. DeepSeek DeepInfer Open-Source Inference Framework",
+      "title": "New from DeepSeek - DeepInfer -",
+      "url": "https://www.reddit.com/r/LocalLLM/comments/1xap8rw/new_from_deepseek_deepinfer/",
+      "links": [
+        {
+          "url": "https://i.redd.it/un28x42hulwh1.jpeg",
+          "text": "image"
+        },
+        {
+          "url": "https://github.com/deepseek-ai/DeepInfer",
+          "text": "GitHub"
+        }
+      ],
+      "summary": "(Activity: 313): The image is a mobile screenshot of DeepSeek’s X announcement that DeepInfer, its in-house inference framework, is now fully open source: image , GitHub .",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "1. DeepSeek DeepInfer Open-Source Inference Framework",
+      "title": "Deepseek released DeepInfer - Open Source high-performance, large-scale inference framework for DeepSeek models!",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xanm55/deepseek_released_deepinfer_open_source/",
+      "links": [
+        {
+          "url": "https://github.com/deepseek-ai/DeepInfer",
+          "text": "DeepInfer"
+        },
+        {
+          "url": "https://github.com/deepseek-ai/deepseek-recipe",
+          "text": "deepseek-recipe"
+        }
+      ],
+      "summary": "(Activity: 1023): DeepSeek released DeepInfer , an open-source high-performance offline inference framework for DeepSeek-V4.1-Flash, with production-oriented primitives including optimized kernels, attention/data/context parallelism, MoE expert parallelism wit…",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "1. DeepSeek DeepInfer Open-Source Inference Framework",
+      "title": "Can DeepSeek V4.1 Flash 1017 really run on 12GB VRAM + 64GB RAM?",
+      "url": "https://www.reddit.com/r/LocalLLM/comments/1x9qwcb/can_deepseek_v41_flash_1017_really_run_on_12gb/",
+      "links": [
+        {
+          "url": "https://i.redd.it/4fddqq8csdwh1.jpeg",
+          "text": "image"
+        }
+      ],
+      "summary": "(Activity: 352): The image is a screenshot of an X/Twitter thread claiming DeepSeek V4.1 Flash 1017 may be runnable locally at Q4 with 12GB VRAM + 64GB RAM ; the Reddit post asks whether an RTX 3060 12GB could offload enough layers to make inference usable.",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "2. MiniMax M3.1 Flash Release",
+      "title": "MiniMax M3.1 Flash released, Model weights Oct 23",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9uzv9/minimax_m31_flash_released_model_weights_oct_23/",
+      "links": [
+        {
+          "url": "https://i.redd.it/ljgsfz02zewh1.jpeg",
+          "text": "image"
+        },
+        {
+          "url": "https://agent.minimax.io/tools/m3-1-flash-preview",
+          "text": "agent.minimax.io/tools/m3-1-flash-preview"
+        }
+      ],
+      "summary": "(Activity: 874): The image is an official MiniMax X announcement for MiniMax M3.1 Flash, described as “Space Performance + Bunny Speed,” with API availability now and open model weights scheduled for Oct 23.",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "2. MiniMax M3.1 Flash Release",
+      "title": "MiniMax-M3.1-Flash is coming",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9suvs/minimaxm31flash_is_coming/",
+      "links": [
+        {
+          "url": "https://x.com/MiniMax_AI/status/2112111925975032241",
+          "text": "source"
+        }
+      ],
+      "summary": "(Activity: 521): MiniMax teased MiniMax-M3.1-Flash via an official X post ( source ), but the Reddit post provides no architecture details, parameter count, context length, pricing, release date, or benchmarks.",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "3. Benchmark Inflation and AI Slop Measurement",
+      "title": "AI labs report benchmark scores 6.4% higher than independent testers, on average",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9skrx/ai_labs_report_benchmark_scores_64_higher_than/",
+      "links": [
+        {
+          "url": "https://i.redd.it/d4j3ywip3dwh1.png",
+          "text": "Image"
+        },
+        {
+          "url": "https://whatmodel.sh/claims",
+          "text": "interactive chart"
+        }
+      ],
+      "summary": "(Activity: 334): The image is a technical benchmark-comparison chart from the whatmodel.sh open leaderboard, visualizing 611 matched comparisons across 180 AI models and 103 benchmarks from 1,629 published results.",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "3. Benchmark Inflation and AI Slop Measurement",
+      "title": "Let’s delve into the tapestry of AI slop on r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xa7hi8/lets_delve_into_the_tapestry_of_ai_slop_on/",
+      "links": [
+        {
+          "url": "https://thil.ooo/blog/measuring-slop/",
+          "text": "thil.ooo/blog/measuring-slop"
+        },
+        {
+          "url": "https://louisabraham.github.io/load-bearing/",
+          "text": "“load-bearing vocabulary of Claude”"
+        }
+      ],
+      "summary": "(Activity: 455): The post links an informal longitudinal analysis of “AI slop” across Reddit communities, including r/LocalLLaMA, with an attempted extrapolation of future slop prevalence: thil.ooo/blog/measuring-slop .",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "/r/LocalLlama + /r/localLLM Recap",
+      "topic": "3. Benchmark Inflation and AI Slop Measurement",
+      "title": "Claude’s load-bearing vocabulary",
+      "url": "https://louisabraham.github.io/load-bearing/",
+      "links": [],
+      "summary": "One technical suggestion was to expand the detector’s lexical feature set using Claude-specific “slop” terms, referencing the analysis of Claude’s load-bearing vocabulary at https://louisabraham.github.io/load-bearing/ .",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "1. Opus 5.5 Game Automation Feats",
+      "title": "After $712 and 39 hours, Opus 5.5 beat Baldur’s Gate 3 all by itself",
+      "url": "https://www.reddit.com/r/ClaudeCode/comments/1x9ue4y/after_712_and_39_hours_opus_55_beat_baldurs_gate/",
+      "links": [
+        {
+          "url": "https://bogdantruta.com/blog/claude-finished-baldurs-gate-3/",
+          "text": "write-up"
+        },
+        {
+          "url": "https://github.com/Bogzx/bg3-agent-harness",
+          "text": "code"
+        }
+      ],
+      "summary": "(Activity: 1145): A user reports that Claude Opus 5.5 autonomously completed Baldur’s Gate 3 using a custom harness: claude -p with built-in tools disabled, a Python MCP server connected over TCP to a Lua BG3 mod, Vulkan-layer screenshots, and SDL-mediated cli…",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "1. Opus 5.5 Game Automation Feats",
+      "title": "Claude Opus 5.5 decompiles a PS2-era game overnight, and hundreds of them now run in browser tabs",
+      "url": "https://www.reddit.com/r/ClaudeCode/comments/1xa79hb/claude_opus_55_decompiles_a_ps2era_game_overnight/",
+      "links": [
+        {
+          "url": "https://kotaku.com/we-might-be-cooked-as-these-vibe-coded-web-browser-ports-of-halo-the-simpsons-hit-and-run-and-gta-vice-city-seem-to-work-perfectly-2000743300",
+          "text": "Kotaku report"
+        }
+      ],
+      "summary": "(Activity: 2348): A Kotaku report claims AI-assisted reverse engineering—attributed in the post title to Claude Opus 5.5—has enabled browser-playable ports of older titles such as Halo: CE , GTA: Vice City , Skate 3 , and The Simpsons: Hit & Run .",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
+    },
+    {
+      "source": "AINews",
+      "sourceHome": "https://www.latent.space/",
+      "section": "AI Reddit Recap",
+      "subsection": "Less Technical AI Subreddit Recap",
+      "topic": "2. AI Proofs and Academic Labor",
+      "title": "Fields Medalist Richard Borcherds on OpenAI proofs: “I think what people are getting upset about is they’re slowly realizing that they are dumb and somehow blaming this on AI, even though it’s not really AI’s fault”",
+      "url": "https://www.reddit.com/r/singularity/comments/1xa0dgj/fields_medalist_richard_borcherds_on_openai/",
+      "links": [
+        {
+          "url": "https://www.dailycal.org/news/campus/academics/uc-berkeley-math-community-left-at-crossroads-in-wake-of-openai-navier-stokes-proof/article_2253ca6c-39c0-45be-947a-f0fd5b48bd6c.html",
+          "text": "article"
+        }
+      ],
+      "summary": "(Activity: 1309): The linked Daily Cal piece covers UC Berkeley mathematicians’ reaction to an alleged OpenAI Navier–Stokes proof ( article ), framing it as a stress test for mathematical proof validation, pedagogy, and the role of AI systems in advanced resea…",
+      "publishedAt": "2026-10-21T06:54:09.000Z",
+      "issueUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source"
     },
     {
       "source": "OpenAI",
       "sourceHome": "https://openai.com/news/",
-      "title": "Advancing coding in low‑resource programming languages",
-      "url": "https://openai.com/index/low-resource-programming-languages",
-      "summary": "Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL migration.",
-      "publishedAt": "2026-10-19T12:00:00.000Z"
+      "title": "How AT&T is rethinking in-house legal work with OpenAI",
+      "url": "https://openai.com/index/att-legal",
+      "summary": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.",
+      "publishedAt": "2026-10-21T17:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "OpenAI models are coming to Google Cloud",
+      "url": "https://openai.com/index/openai-models-google-cloud",
+      "summary": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
+      "publishedAt": "2026-10-21T12:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+      "summary": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.",
+      "publishedAt": "2026-10-21T07:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+      "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "summary": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
+      "publishedAt": "2026-10-21T13:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Using thousands of AI agents to uncover new leads in biological data",
+      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+      "summary": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.",
+      "publishedAt": "2026-10-21T04:50:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+      "url": "https://openai.com/index/building-chatgpt-ad-stack",
+      "summary": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
+      "publishedAt": "2026-10-21T07:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+      "url": "https://openai.com/index/empowering-cyber-defenders",
+      "summary": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions.",
+      "publishedAt": "2026-10-21T00:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+      "url": "https://openai.com/index/terminal-x",
+      "summary": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
+      "publishedAt": "2026-10-20T07:00:00.000Z"
     },
     {
       "source": "The Rundown AI",
       "sourceHome": "https://www.therundown.ai/",
-      "title": "Anthropic co-founder says the singularity is underway",
-      "url": "https://www.therundown.ai/articles/anthropic-co-founder-says-the-singularity-is-underway",
-      "summary": "PLUS: Try ChatGPT’s new voices with GPT-Live-1.1",
-      "publishedAt": "2026-10-20T09:00:00.000Z"
+      "title": "Sam Altman’s three endings for the AI safety race",
+      "url": "https://www.therundown.ai/articles/sam-altman-three-endings-for-the-ai-safety-race",
+      "summary": "PLUS: Make Claude Code check its work after each edit",
+      "publishedAt": "2026-10-21T10:00:00.000Z"
+    },
+    {
+      "source": "The Rundown AI",
+      "sourceHome": "https://www.therundown.ai/",
+      "title": "What AI sees in your selfie",
+      "url": "https://www.therundown.ai/articles/what-ai-sees-in-your-selfie",
+      "summary": "PLUS: Japan heads to Martian moon",
+      "publishedAt": "2026-10-20T14:30:00.000Z"
     }
   ]
 }

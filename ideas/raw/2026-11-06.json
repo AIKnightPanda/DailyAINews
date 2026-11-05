@@ -1,0 +1,3444 @@
+{
+  "issue": "2026-11-06",
+  "builtAt": "2026-11-05T22:08:14.074Z",
+  "from": {
+    "boards": "prefetched",
+    "inbox": "live"
+  },
+  "counts": {
+    "fetched": 197,
+    "added": 96,
+    "kept": 96,
+    "dropped": 101,
+    "pool": 95,
+    "screened": 77,
+    "candidates": 32,
+    "demandCandidates": 13,
+    "supplyCandidates": 19
+  },
+  "errors": [],
+  "notices": [
+    "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
+  ],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "ok",
+      "items": 24,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "ok",
+      "items": 9,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 6,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "ok",
+      "items": 24,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "ok",
+      "items": 16,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 500：reddit broke!",
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 2,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 0,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub Trending",
+      "status": "ok",
+      "items": 15,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "consoledev",
+      "name": "Console.dev",
+      "status": "ok",
+      "items": 10,
+      "pool": true,
+      "group": "board"
+    }
+  ],
+  "items": [
+    {
+      "id": "3be7a43b6a",
+      "normUrl": "https://reddit.com/r/seestar/comments/1xodt90/is_there_any_way_to_use_the_seestar_app_or",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Is there any way to use the seestar app, or something like it without being connected to the device?",
+      "url": "https://www.reddit.com/r/seestar/comments/1xodt90/is_there_any_way_to_use_the_seestar_app_or/",
+      "summary": "I like how the app asks what you want to photograph and only shows what is visible in your area. Is there a way to use it without being connected to the device, or is there an app that works similarly to the seestar app?",
+      "deepenKey": "/r/seestar/comments/1xodt90",
+      "via": "is there an app that",
+      "publishedAt": "2026-11-05T08:51:14.000Z",
+      "ref": "I1",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [
+          "在找但没找到",
+          "要做硬件"
+        ],
+        "detail": {
+          "signal": -3,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "c403d3d54d",
+      "normUrl": "https://reddit.com/r/Skigear/comments/1xolnnd/how_to_file_side_edge_of_this_ski_type",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "How to file side edge of this ski type?",
+      "url": "https://www.reddit.com/r/Skigear/comments/1xolnnd/how_to_file_side_edge_of_this_ski_type/",
+      "summary": "I am the recipient of a used set of Atomic Vantage 75 C skis. I understand ski edges need periodic filing to stay sharp--or at least the side edges (88 degrees for these). Is there a tool that would work for these skis given there is plastic flush with the metal edge? Maybe one where you can adjust how far out the file extends from the guide so it only files the metal, or is the plastic sacrificial? All the file/guide sets I see online would also hit the plastic and so wouldn't work or would also file that down. Can ski shops even sharpen skis of this type?",
+      "deepenKey": "/r/Skigear/comments/1xolnnd",
+      "via": "is there a tool that",
+      "publishedAt": "2026-11-05T15:32:47.000Z",
+      "alsoFrom": [
+        {
+          "source": "Reddit 需求短语",
+          "url": "https://www.reddit.com/r/skiing/comments/1xolmsv/how_to_file_side_edge_of_this_ski_type/"
+        }
+      ],
+      "ref": "I2",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [
+          "在找但没找到"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "I am the recipient of a used set of Atomic Vantage 75 C skis. I understand ski edges need periodic filing to stay sharp--or at least the side edges (88 degrees for these). Is there a tool that would work for these skis given there is plastic flush with the metal edge? Maybe one where you can adjust how far out the file extends from the guide so it only files the metal, or is the plastic sacrificial? All the file/guide sets I see online would also hit the plastic and so wouldn't work or would also file that down. Can ski shops even sharpen skis of this type? I am a beginner/recreational skier only so blade sharpness probably doesn't need to be perfect.",
+        "comments": [
+          {
+            "text": "There are plenty of videos on YT .....side wall cutter opens the area by removing some of the cap base material for the side edge file jig to actually have room cut/ file side edge / then the base edge. I went full berries and bought a set of files and jigs. 1 for the side and 1 for the base and a cutter. I did a 2 degree. seems standard for mainstream skiers. I just wanted to learn and have the capabilities to quick tune on the go. There is manufacturer OEM edges angle prep that can be looked up for a reference. I believe EVO has a list."
+          },
+          {
+            "text": "Ski shops can sharpen them. The plastic is called the 'sidewall', and there are tools to remove it called 'sidewall cutters' or 'sidewall planers' or something similar. Some people just use a coarse file held at a tighter angle. You want to remove just enough to allow the file to contact the metal edge."
+          },
+          {
+            "text": "You need 2 tools: sidewall remover tool and edge sharpener. You correctly noticed that without removing some sidewall material here (usually called profiling the sidewall) the sharpener would just dig into the plastic."
+          },
+          {
+            "text": "I am a beginner/recreational skier only so blade sharpness probably doesn't need to be perfect. You want your skis to be in shape, regardless of skill level. Bad edge grip gives bad experiences. As well as badly waxed skis. As a beginner, I would concentrate on the skiing, have the shop maintain your gear and ease into DIY-maintenance. Waxing as the first thing. The I'd progress to light edge maintenance, and lastly to actual sharpening."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Show HN: Paseo – Open-source coding agent interface (desktop, mobile, CLI)",
+            "points": 14,
+            "url": "https://news.ycombinator.com/item?id=47530027"
+          },
+          {
+            "title": "Show HN: Fireproof – local-first database with Git-like encrypted sync",
+            "points": 99,
+            "url": "https://news.ycombinator.com/item?id=42184362"
+          }
+        ],
+        "fetchedAt": "2026-11-05T22:17:40.328Z"
+      }
+    },
+    {
+      "id": "c3e304bd05",
+      "normUrl": "https://reddit.com/r/Moxfield/comments/1xo89pf/is_there_a_way_to_see_what_cards_you_play_the",
+      "sourceId": "reddit-search",
+      "source": "Reddit 需求短语",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Is there a way to see what cards you play the most across decks",
+      "url": "https://www.reddit.com/r/Moxfield/comments/1xo89pf/is_there_a_way_to_see_what_cards_you_play_the/",
+      "summary": "I want to set preferred printings on all the cards I play often, but have no idea how to find that other than looking through all my 50+ decks, is there a tool that can do that?",
+      "deepenKey": "/r/Moxfield/comments/1xo89pf",
+      "via": "is there a tool that",
+      "publishedAt": "2026-11-05T03:22:06.000Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "在找但没找到"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "I want to set preferred printings on all the cards I play often, but have no idea how to find that other than looking through all my 50+ decks, is there a tool that can do that?",
+        "comments": [
+          {
+            "text": "There is not currently a way to see this. I tinkered with a tool for this sort of thing a couple of years ago. Might be time to dust it off and take another look at it. 🤔"
+          },
+          {
+            "text": "you could make a temp deck and import all your current decks into it to see the count of each card in it."
+          },
+          {
+            "text": "Yeah unfortunately that's what I'll have to do"
+          },
+          {
+            "text": "Might actually be arcane signet, I didn't run sol ring in a deck with a 5c commander with no colorless pips"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Tell HN: A Great New Card Game",
+            "points": 34,
+            "url": "https://news.ycombinator.com/item?id=1015368"
+          },
+          {
+            "title": "Ask HN: How to Migrate All the Data from Your Google Account?",
+            "points": 17,
+            "url": "https://news.ycombinator.com/item?id=19198285"
+          }
+        ],
+        "fetchedAt": "2026-11-05T22:18:20.826Z"
+      }
+    },
+    {
+      "id": "26c29e8000",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/77839/whatsapp-chat-export",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Whatsapp chat export",
+      "url": "https://softwarerecs.stackexchange.com/questions/77839/whatsapp-chat-export",
+      "summary": "I want to export the chat history from WhatsApp (on Android). The problem is that I live in germany, and that function has been blocked for german users due to legal issues. Are there any alternatives to export the chat history in a readable and searchable format?",
+      "deepenKey": "77839",
+      "signal": {
+        "score": 2,
+        "views": 265,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2021-01-22T20:12:05.000Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2385c82381",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/33884/personal-collections-management-software",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Personal collections management software",
+      "url": "https://softwarerecs.stackexchange.com/questions/33884/personal-collections-management-software",
+      "summary": "I collect both books and stamps, so library management software would be insufficient. I am looking for the following factors in a software package: Mac compatible with a desktop client, rather than web-based. free or low-cost it should be capable of managing multiple libraries and each should be searchable It should be able to group sets. I'm picturing stamps of different values within a series (eg.",
+      "deepenKey": "33884",
+      "signal": {
+        "score": 4,
+        "views": 746,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2016-06-15T00:55:05.000Z",
+      "ref": "I5",
+      "screen": {
+        "keep": true,
+        "score": 3,
+        "hits": [
+          "要的是库不是产品"
+        ],
+        "detail": {
+          "signal": -5,
+          "engagement": 5,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "51c0dab69c",
+      "normUrl": "https://news.ycombinator.com/item?id=50383349",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Wix stolen my .com domain",
+      "url": "https://news.ycombinator.com/item?id=50383349",
+      "externalUrl": null,
+      "summary": "I transferred .com domain to wix from another domain registrar, paid for transfer and additional year of domain from my bank card, they blocked account, requested passport and bank card photo via email, and after I provided them document and bank card photo they rejected to reactivate account, so I don't have access to my domain anymore and can't withdraw it to another registrar.",
+      "deepenKey": "50383349",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-05T19:33:00Z",
+      "ref": "I6",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "19a0af09a4",
+      "normUrl": "https://news.ycombinator.com/item?id=50381690",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are there any non-wireless Android devices for sale?",
+      "url": "https://news.ycombinator.com/item?id=50381690",
+      "externalUrl": null,
+      "summary": "I wish there was a device that had the same form-factor as an android phone, touch screen and pocket-sized, but without any of the wireless networking capabilities, and ideally without the camera and mic too. Still would need a usb-c port though. Does such a device exist for sale? I work in education. The use-case here is to buy a bunch of these devices, load Desmos (or any other computational software) onto them, and hand them out to students for exams. We're still trying to undermine the Texas Instruments chokehold on the calculators-for-school market.",
+      "deepenKey": "50381690",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-05T17:17:51Z",
+      "ref": "I7",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [
+          "直说缺口",
+          "要做硬件"
+        ],
+        "detail": {
+          "signal": -2,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "76fa838b4f",
+      "normUrl": "https://news.ycombinator.com/item?id=50381045",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Local AI Models for Coding and General Tasks?",
+      "url": "https://news.ycombinator.com/item?id=50381045",
+      "externalUrl": null,
+      "summary": "Hi, I'm looking at Gemma and Qwen as a local AI. I wanted to try it out for coding but also some other basic tasks. My system has an AMD based GPU with 12GB VRAM. What are some considerations or other options that I should look at?",
+      "deepenKey": "50381045",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-05T16:21:50Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d4bca347ba",
+      "normUrl": "https://news.ycombinator.com/item?id=50380992",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Any good AI design tools for pitch decks and visuals?",
+      "url": "https://news.ycombinator.com/item?id=50380992",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50380992",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-05T16:18:23Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "faa6bb6222",
+      "normUrl": "https://news.ycombinator.com/item?id=50380348",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "GitLab patched the CVE. Your leaked token is still valid",
+      "url": "https://news.ycombinator.com/item?id=50380348",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50380348",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-05T15:30:56Z",
+      "ref": "I10",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "加密货币",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "7139b8c586",
+      "normUrl": "https://news.ycombinator.com/item?id=50379710",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are you building an AI company brain?",
+      "url": "https://news.ycombinator.com/item?id=50379710",
+      "externalUrl": null,
+      "summary": "Hey guys, the CTO requested me to start working towards building a \"AI company brain\", some sort of entity that keeps the context of what's going on in the company so different roles can use AI agents/interfaces in order to do things like: - draft emails or presentations. - prepare meetings and provide the current context to the employees. - update clients information after meeting based on transcripts or employee notes. - query different sources in order to gather how our system is working for a particular client.",
+      "deepenKey": "50379710",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-05T14:44:58Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3ea1d386dd",
+      "normUrl": "https://news.ycombinator.com/item?id=50378854",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are you writing your own programming language?",
+      "url": "https://news.ycombinator.com/item?id=50378854",
+      "externalUrl": null,
+      "summary": "LLMs make this more tractable as a one person hobby and I have seen a lot of interesting LLM-driven languages posted here with new ideas, but not all of them in one place? Are you writing one? Are you actually using it? What are the new ideas you are exploring? It is okay if it is mostly “slop” or if it is half done or barely works, I just want to see what people are doing",
+      "deepenKey": "50378854",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 8
+      },
+      "publishedAt": "2026-11-05T13:31:41Z",
+      "ref": "I12",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "b9df5230f1",
+      "normUrl": "https://news.ycombinator.com/item?id=50378284",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Protonmail No Longer Allows Contact Management in Android",
+      "url": "https://news.ycombinator.com/item?id=50378284",
+      "externalUrl": null,
+      "summary": "Proton has seemingly disabled contact management in Android. Any attempt to add, remove or modify contacts displays a message as follows: Available on web Creating contacts or groups in the app is not yet ready. For now, you can create them in the web app and they'll sync to your device",
+      "deepenKey": "50378284",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 5
+      },
+      "publishedAt": "2026-11-05T12:25:54Z",
+      "ref": "I13",
+      "screen": {
+        "keep": true,
+        "score": -5,
+        "hits": [
+          "要做硬件"
+        ],
+        "detail": {
+          "signal": -8,
+          "engagement": 2,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e5d19afda0",
+      "normUrl": "https://news.ycombinator.com/item?id=50377668",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How do small teams pragmatically manage Dependabot fatigue?",
+      "url": "https://news.ycombinator.com/item?id=50377668",
+      "externalUrl": null,
+      "summary": "Amount of CVEs nowadays is kind of madness and I'm wondering how you're all dealing with the updates? I know larger organizations are more structured in this regard - there's private dependencies registry with some kind of vetting process, so not everyone has to decide what version to take. But what about smaller projects without private registry platform solution? How you go about updating your packages? Especially for projects without high frequency changes. I'm genuinely curious. Is it just `npm update` or similar locally? or in the controlled environment (Github Actions)?",
+      "deepenKey": "50377668",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-05T10:53:20Z",
+      "ref": "I14",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "23a74c52e4",
+      "normUrl": "https://news.ycombinator.com/item?id=50377058",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Suggest Alternatives for Conductor.build",
+      "url": "https://news.ycombinator.com/item?id=50377058",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50377058",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-05T09:26:43Z",
+      "ref": "I15",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "c4099bb7c6",
+      "normUrl": "https://news.ycombinator.com/item?id=50376478",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What are the fundamentals of agentic coding?",
+      "url": "https://news.ycombinator.com/item?id=50376478",
+      "externalUrl": null,
+      "summary": "This thought popped in my head today. Most of us probably know the fundamentals of programming by now - data structures, complexity (big O), type systems, functions, architecture etc. But what are the fundamentals of this new era of coding? Have any had time to develop as it's changing so fast? 2 years ago prompt engineering was something people took seriously, but now the harnesses take care of it and you can again just prompt \"its wrong please fix\". Maybe setting up feedback loops can be a fundamental? It seems to be the current fad at least. Curious to hear your experiences.",
+      "deepenKey": "50376478",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 4
+      },
+      "publishedAt": "2026-11-05T08:08:06Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "a412268f01",
+      "normUrl": "https://news.ycombinator.com/item?id=50375898",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Google Play will public-share your address and phone if you sell in EU",
+      "url": "https://news.ycombinator.com/item?id=50375898",
+      "externalUrl": null,
+      "summary": "tl;dr (quoted from the email, full below): * If you are an individual developer declared as a trader, provide and verify a public phone number. Please be aware that your phone number and address will be displayed publicly on Google Play. * You’re typically considered a trader under European Economic Area (EEA) and United Kingdom (UK) laws if you engage in commercial activities, including when you earn revenue from your apps (such as paid downloads, in-app products, subscriptions, or ads).",
+      "deepenKey": "50375898",
+      "via": null,
+      "signal": {
+        "points": 9,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-05T06:32:48Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "855477fd38",
+      "normUrl": "https://news.ycombinator.com/item?id=50375863",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Is it possible for a residential proxy provider to exist ethically?",
+      "url": "https://news.ycombinator.com/item?id=50375863",
+      "externalUrl": null,
+      "summary": "I'm leaning towards \"no\", because I've not seen a single bulk residential proxy provider that doesn't use some form of trickery to get people to agree to a TOS/AUP that bundles their proxy. Extremely few if any users install a residential proxy allowing unknown 3rd parties to run traffic through their house with full knowledge of what that really means, nor are they compensated for it.",
+      "deepenKey": "50375863",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-05T06:25:14Z",
+      "ref": "I18",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8857bd6a3b",
+      "normUrl": "https://news.ycombinator.com/item?id=50375196",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Where should I start to do marketing?",
+      "url": "https://news.ycombinator.com/item?id=50375196",
+      "externalUrl": null,
+      "summary": "so basically i want to do marketing my website , i am running google ads right now and there conversion in okay okay , i am not satisfied with that at all. now i am creating content also (not much but 2 reel published with 3000+ view on each) on my personal account because i think that we have to start market our self first. if you have any suggestion like in which platform i should focus and which type of content",
+      "deepenKey": "50375196",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 5
+      },
+      "publishedAt": "2026-11-05T04:28:55Z",
+      "ref": "I19",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4129939cbd",
+      "normUrl": "https://news.ycombinator.com/item?id=50374984",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What's the worst bug an AI coding agent silently introduced into your code?",
+      "url": "https://news.ycombinator.com/item?id=50374984",
+      "externalUrl": null,
+      "summary": "I'm researching AI code reliability — specifically bugs that pass existing tests but cause real failures. Interested in patterns: what breaks, how it's caught, and how long it takes to debug. Happy to share aggregated findings with everyone who responds.",
+      "deepenKey": "50374984",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-05T03:57:14Z",
+      "ref": "I20",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d0f2ef9527",
+      "normUrl": "https://news.ycombinator.com/item?id=50374845",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Credit card and loyalty analytics, where to start?",
+      "url": "https://news.ycombinator.com/item?id=50374845",
+      "externalUrl": null,
+      "summary": "I inherited responsibilities for creating credit card and loyalty analytics reporting/dashboarding for a firm that processes roughly $750M in monthly transactions. There hasn't been any large scale analytical or statistical review of this data and my main focus now is understanding the data, but also trying to design reporting. At this volume, what specific data points or low-hanging fruit can drive real commercial value? And what education or learning can I take to succeed? I'm coming from the benefits world, so this is very new. For loyalty: is it similar to benefits? Demographic based?",
+      "deepenKey": "50374845",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-05T03:38:59Z",
+      "ref": "I21",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d1671648fe",
+      "normUrl": "https://news.ycombinator.com/item?id=50374297",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "AI Coding Preference",
+      "url": "https://news.ycombinator.com/item?id=50374297",
+      "externalUrl": null,
+      "summary": "Do you prefer tabs or spaces with code generated from your AI models?",
+      "deepenKey": "50374297",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 4
+      },
+      "publishedAt": "2026-11-05T02:20:41Z",
+      "ref": "I22",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3f9cd03dda",
+      "normUrl": "https://news.ycombinator.com/item?id=50373223",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Have you changed your setup in the age of AI and mass vulnerabilities?",
+      "url": "https://news.ycombinator.com/item?id=50373223",
+      "externalUrl": null,
+      "summary": "I'm curious if given all the recent advancements in LLMs but also news about hacks, vulnerabilities and exploits anyone has changed substantially their setup (OS, devices, tools, security policies, etc.) Have you reduced your surface of attack? Searched for more isolated environments? Started using Nix thanks to agentic aid? Stopped using IDEs and other tools you used for years?",
+      "deepenKey": "50373223",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-05T00:09:05Z",
+      "ref": "I23",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "b73ba76611",
+      "normUrl": "https://news.ycombinator.com/item?id=50372381",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Canva lays off 22% of its workforce; 1,270 people",
+      "url": "https://news.ycombinator.com/item?id=50372381",
+      "externalUrl": null,
+      "summary": "This was probably already coming. Sad day for many folks but frankly AI put in a strong pivot in the world of design.",
+      "deepenKey": "50372381",
+      "via": null,
+      "signal": {
+        "points": 32,
+        "comments": 4
+      },
+      "publishedAt": "2026-11-04T22:29:08Z",
+      "ref": "I24",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 6,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5257b03a9b",
+      "normUrl": "https://news.ycombinator.com/item?id=50372294",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What your experience with the monthly \"who wants to be hired\" thread?",
+      "url": "https://news.ycombinator.com/item?id=50372294",
+      "externalUrl": null,
+      "summary": "I recently commented on the \"who wants to be hired\" this month and so far have only received spam. Has anyone had any success with this, or is it just a way to subscribe to junk mail and automated marketing?",
+      "deepenKey": "50372294",
+      "via": null,
+      "signal": {
+        "points": 51,
+        "comments": 42
+      },
+      "publishedAt": "2026-11-04T22:18:21Z",
+      "ref": "I25",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "招聘找人",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "17bda991d7",
+      "normUrl": "https://reddit.com/r/AskUK/comments/1xoux0j/what_do_you_think_of_the_police_releasing_footage",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "What do you think of the Police releasing footage?",
+      "url": "https://www.reddit.com/r/AskUK/comments/1xoux0j/what_do_you_think_of_the_police_releasing_footage/",
+      "summary": "Was thinking about this the other day but the Russell Brand thing compelled me to post. What do you think about the Police posting video footage of things like interviews, chases, arrests and so on? The Police have released footage of Russell Brand being interviewed and I ask myself why? There doesn't really seem any legitimate reason for it other than to embarrass him.",
+      "deepenKey": "/r/AskUK/comments/1xoux0j",
+      "via": "we are paying for",
+      "publishedAt": "2026-11-05T21:31:06.000Z",
+      "ref": "I26",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Was thinking about this the other day but the Russell Brand thing compelled me to post. What do you think about the Police posting video footage of things like interviews, chases, arrests and so on? The Police have released footage of Russell Brand being interviewed and I ask myself why? There doesn't really seem any legitimate reason for it other than to embarrass him. It may also make people who are being interviewed wonder whether their own interview will be on the TV in two years time (appreciate this may only apply to major crimes or famous people) - but I don't really see why we should see something as private as an interview. I've noticed recently the various Police uploading videos of high speed chases where they have added dramatic music and what they must think is amusing commentary (wonder how much we are paying for it) - like its a new form of entertainment. I bet some of these social media officers have targets of how many videos to put up a month. A big element of why they are doing it seems to be embarrass the people. I understand however there is a balance and sometimes in important cases there may be a real public interest to see the footage such as Henry Nowak or the Manchester fight with the Police...but recently it feels like its become a bit like 'Can't Pay? We'll Take it Away' where its sort of being used to embarrass people. I'm not sure that's what the justice system should be doing. I know there might be some of the view of 'open justice' where they think even more should be shown - either to expose criminals or for educational reasons. I see the argument - but I think it needs to be applied a bit more fairly.",
+        "comments": [
+          {
+            "text": "Please help keep AskUK welcoming! When replying to submission/post please make genuine efforts to answer the question given . Please no jokes, judgements, etc. If a post is marked 'Serious Answers Only' you will likely receive a ban for violating this rule . More info: https://www.reddit.com/r/AskUK/wiki/serious-answers-only/ Don't be a dick to each other. If getting heated, just block and move on. This is a strictly no-politics subreddit! Please help us by reporting comments that break these rules. I am a bot, and this action was performed automatically. Please contact the moderators of this subreddit if you have any questions or concerns."
+          },
+          {
+            "text": "a) If the person is guilty beyond reasonable doubt then it's footage of our justice system in process. It's informative and educational and should bring confidence in the system. b) Fuck that pretentious wanker and now confirmed rapist (quite possibly multiple rapist). If he's embarrassed you would need the large hadron collider to find the particles small enough to construct the violin small enough to show how little sympathy I feel for him."
+          },
+          {
+            "text": "Step 1: People moan about the police not doing anything, or not dealing with \"proper crime\". Step 2: Police publicise their work. Step 3: People complain about the Police publicising thier work. Step 4 (TBC): Police do less PR and the cycle repeats"
+          },
+          {
+            "text": "TBF the Police can publicise their work with reports and stats."
+          },
+          {
+            "text": "I suspect the engagement figures would speak for themselves."
+          },
+          {
+            "text": "He's been convicted of rape and several sexual assaults. He'll be held in jail under the public purse. It's public interest. It being difficult or embarrassing is part of the point."
+          },
+          {
+            "text": "If he is guilty perhaps they are trying to show us he was. I haven't seen it but I can't cope with hearing him speak anyway. We can all use unnecessarily superfluous words to somewhat articulate ones forthcoming tumultuous demise."
+          },
+          {
+            "text": "I mean, there's been TV programs based around police chases and arrests for decades. So that's nothing new. These things happened in public, so no expectation of privacy. Interviews does feel a step too far for me."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:10:15.651Z"
+      }
+    },
+    {
+      "id": "5cbdf56c8e",
+      "normUrl": "https://reddit.com/r/poland/comments/1xonzyb/my_apartment_building_has_been_arguing_over_one",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "My apartment building has been arguing over one open window for 12 days",
+      "url": "https://www.reddit.com/r/poland/comments/1xonzyb/my_apartment_building_has_been_arguing_over_one/",
+      "summary": "I've lived in Łódź for a little over a year, and I think I'm witnessing my first proper Polish apartment building war. It started with a window on the staircase between the second and third floors. Someone kept opening it. Someone else kept closing it. Normal stuff, right? Then a handwritten note appeared: \"Please close the window. We are paying for heating.\" Two days later, someone wrote underneath it: \"THEN STOP SMOKING ON THE STAIRS.\" Fair enough. Mystery partially solved. The next morning there was a second piece of paper taped beside it: \"Smoking is forbidden in the building.",
+      "deepenKey": "/r/poland/comments/1xonzyb",
+      "via": "we are paying for",
+      "publishedAt": "2026-11-05T17:03:10.000Z",
+      "ref": "I27",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "消费/家庭话题，不是软件需求",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "1a3ac016c4",
+      "normUrl": "https://reddit.com/r/UKweddings/comments/1xomglk/evening_food_are_we_being_stingy",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Evening food - are we being stingy?",
+      "url": "https://www.reddit.com/r/UKweddings/comments/1xomglk/evening_food_are_we_being_stingy/",
+      "summary": "We are having our reception in a barn which requires us to find all the vendors ourselves. For the 80 day guests we have a barbecue buffet serving at 4-5:30pm. Around 60 evening guests arrive from 6pm. For evening food, we’re undecided between a DIY finger buffet, a catered buffet, or a food van. The pizza van we’ve been quoted said it was £200 hire and either pay up front for all 140 guests or it can be pay as you go with a min spend of £2000. Given we are paying for a full meal for the day guests, would it be cheeky to ask guests to pay £10-14 per pizza in the evening?",
+      "deepenKey": "/r/UKweddings/comments/1xomglk",
+      "via": "we are paying for",
+      "publishedAt": "2026-11-05T16:04:34.000Z",
+      "ref": "I28",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "We are having our reception in a barn which requires us to find all the vendors ourselves. For the 80 day guests we have a barbecue buffet serving at 4-5:30pm. Around 60 evening guests arrive from 6pm. For evening food, we’re undecided between a DIY finger buffet, a catered buffet, or a food van. The pizza van we’ve been quoted said it was £200 hire and either pay up front for all 140 guests or it can be pay as you go with a min spend of £2000. Given we are paying for a full meal for the day guests, would it be cheeky to ask guests to pay £10-14 per pizza in the evening? Another £2k is really beyond our reach, but we don’t want to be stingy.",
+        "comments": [
+          {
+            "text": "yes it’s so cheeky & stingy to ask for guests to pay for food at a wedding. you need to provide adequate food, you’ve invited them as guests!"
+          },
+          {
+            "text": "What are your timings for the day? Yes it would be quite tacky to ask them to pay for their food. A diy finger buffet is fine if cost is an issue."
+          },
+          {
+            "text": "Sorry I do think asking guests to pay is very cheeky. They’ve paid to come and celebrate your day (travel, accommodation, potentially outfit and gift) and so you should cover their food for the time you’re asking them to be there. If people aren’t fed, or have to pay, they will just leave earlier"
+          },
+          {
+            "text": "Asking guests to pay for food in the evening is tacky yeah. Sorry, but you asked! Finger buffet would be fine imo."
+          },
+          {
+            "text": "would it be cheeky to ask guests to pay £10-14 per pizza in the evening? In short, yes Another £2k is really beyond our reach, but we don’t want to be stingy. Have you already sent told people who's invited (whether by sending out invites, or some other means)? If not, you cut your invitee list to suit your budget, you don't have your guests pay for their own food. If you can't afford a big 140 person wedding, don't have one."
+          },
+          {
+            "text": "In the uk you can have your guests pay for their alcoholic drinks from the bar but it’s bad etiquette to throw a party and not provide food for your guests. If you can’t afford the food then you couldn’t afford the party/guests in the first place and should have made it smaller. Go for a cheaper option that is within budget or make cuts elsewhere, food is super important!"
+          },
+          {
+            "text": "I think it is cheeky unfortunately and also feels a bit expensive to me for pizza anyway, £14 definitely on the pricey side for street food style They're spending time at your event so they can't have their own meal or choose something cheaper, or what they prefer Buffet is fine"
+          },
+          {
+            "text": "This is 100% not what you asked but I have been to a wedding just like this - early informal meal for day guests then relatively early arrival of evening guests. I just want to point out that when there is no sit down meal to fill out the evening a bit it is a loooooong evening. We had a great party but everybody was ready to go to by 11ish. Maybe that sounds ideal to you but just giving you an insight. No you shouldn’t ask evening guests to pay for food - some sort of food would be expected to be provided. Especially especially if you’re asking them to be there at 6pm!"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:20:02.330Z"
+      }
+    },
+    {
+      "id": "a7f5ed8feb",
+      "normUrl": "https://reddit.com/r/Palakkad/comments/1xoimjj/markup_prices_in_food_delivery_apps",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Mark-up prices in food delivery apps",
+      "url": "https://www.reddit.com/r/Palakkad/comments/1xoimjj/markup_prices_in_food_delivery_apps/",
+      "summary": "There are already a lot of posts about how much extra we are paying for using food delivery apps like Zomato and Swiggy. I wanted to have a shawarma and thought of ordering it from Al-Taza on the Bypass. Checked Zomato and decided to order the Special Chicken one. Just before ordering I thought why not test the theory. So, I took my vehicle and went there. What was priced at Rs. 280 in the app was only Rs. 230 at the shop. That is a margin of Rs. 50 per piece and not order. I paid Rs. 460 at the counter, came home and had it on peace. It tasted good.",
+      "deepenKey": "/r/Palakkad/comments/1xoimjj",
+      "via": "we are paying for",
+      "publishedAt": "2026-11-05T13:27:46.000Z",
+      "alsoFrom": [
+        {
+          "source": "Reddit 付费信号",
+          "url": "https://www.reddit.com/r/PalakkadCentral/comments/1xoildd/markup_prices_in_food_delivery_apps/"
+        }
+      ],
+      "ref": "I29",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "There are already a lot of posts about how much extra we are paying for using food delivery apps like Zomato and Swiggy. I wanted to have a shawarma and thought of ordering it from Al-Taza on the Bypass. Checked Zomato and decided to order the Special Chicken one. Just before ordering I thought why not test the theory. So, I took my vehicle and went there. What was priced at Rs. 280 in the app was only Rs. 230 at the shop. That is a margin of Rs. 50 per piece and not order. I paid Rs. 460 at the counter, came home and had it on peace. It tasted good. After that I took the app and went up to the payment window to see what will be the final amount in it. The Rs. 50 extra per piece and further additional costs has now put the order value at Rs. 631.94. That is a mark-up of Rs. 171.94 for just one order. They already charge delivery partner fee and above that guilt traps us to tip again. I do not intend say apps shouldn't make money for what they do but charging Rs. 170 extra for one order is way too much. There exists absolutely no regulation in this sector and since we are now habituated to this convenience, I don't see any change happening either.",
+        "comments": [
+          {
+            "text": "Whatever they charge should be transparent. So, the user can decide to go and get it or pay the premium."
+          },
+          {
+            "text": "Transparency can be very 'risky' for them. Imagine showing the actual restaurant prices in the app and people making purchase decision based on that. Informed decision making is a dream."
+          },
+          {
+            "text": "Nobody comes to zomato or swiggy expecting actual menu prices."
+          },
+          {
+            "text": "As I mentioned in the post they can definitely charge a margin. Oresle how are they going to stay aflot? But this is literally fleecing but again we are so habituated to the convenience."
+          },
+          {
+            "text": "Zomoto charges around 15-30% commission Every restaurant increase the price to match that On top of that they will charge platform fees and gst It's not worth it to order it you can go and get it directly."
+          },
+          {
+            "text": "Yeah not against them making a profit. It is needed for any business to function. However I felt like this is too much of a mark up."
+          },
+          {
+            "text": "Free ayi theraam venel? They ain't doing this for charity."
+          },
+          {
+            "text": "You're comparing two different business models. The restaurant's walk-in price doesn't account for the logistics, delivery infrastructure, technology, customer support, payment processing and other operational costs that platforms like Zomato absorb. Convenience comes at a cost , AFAIK they make a fraction of the markup in actual profit."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:21:02.875Z"
+      }
+    },
+    {
+      "id": "601f93dd54",
+      "normUrl": "https://reddit.com/r/industrialengineering/comments/1xob7h1/renewal_is_up_on_a_system_we_barely_use_so_what",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Renewal is up on a system we barely use, so what PTC Windchill alternatives are worth a look",
+      "url": "https://www.reddit.com/r/industrialengineering/comments/1xob7h1/renewal_is_up_on_a_system_we_barely_use_so_what/",
+      "summary": "We are a 90 person contract manufacturer and we inherited a big PLM from the parent company. We use change control and the part library. Everything else sits there. The renewal came in and finance asked a fair question about what we are paying for. Im pricing Duro, Arena and Aras against keeping it. The worry is migration, since we have about nine years of change history and four thousand parts in there. How much did the history migration end up costing you?",
+      "deepenKey": "/r/industrialengineering/comments/1xob7h1",
+      "via": "we are paying for",
+      "publishedAt": "2026-11-05T06:03:12.000Z",
+      "ref": "I30",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [
+          "要的是库不是产品"
+        ],
+        "detail": {
+          "signal": -5,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "0c9c747407",
+      "normUrl": "https://reddit.com/r/guns/comments/1xon947/what_to_do_with_my_deceased_brotherinlaws_firearms",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "What to do with my deceased brother-in-law's firearms?",
+      "url": "https://www.reddit.com/r/guns/comments/1xon947/what_to_do_with_my_deceased_brotherinlaws_firearms/",
+      "summary": "Hi, guys. I'll try to keep my inquiry as brief as possible: My wife's brother passed away in September in South Carolina. Heart attack at age 48. He was a loner and a hoarder, and he amassed a substantial collection of guns over the decades. We recently flew in from several states away to check the condition of his house and, sure enough, it was a nightmare. So much so we're having to hire a bio cleaning service just to make the house safe to breathe and walk around in. It's going to be a MASSIVE cleanup job.",
+      "deepenKey": "/r/guns/comments/1xon947",
+      "via": "quoted us",
+      "publishedAt": "2026-11-05T16:35:00.000Z",
+      "ref": "I31",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "cfe276e265",
+      "normUrl": "https://reddit.com/r/AskContractors/comments/1xojyaf/plumber_quoted_us_12k_for_a_sewer_blockage_now",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Plumber quoted us $12K for a sewer blockage, now wants another $20K after finding broken pipes. Does this sound reasonable?",
+      "url": "https://www.reddit.com/r/AskContractors/comments/1xojyaf/plumber_quoted_us_12k_for_a_sewer_blockage_now/",
+      "summary": null,
+      "deepenKey": "/r/AskContractors/comments/1xojyaf",
+      "via": "quoted us",
+      "publishedAt": "2026-11-05T14:25:01.000Z",
+      "alsoFrom": [
+        {
+          "source": "Reddit 付费信号",
+          "url": "https://www.reddit.com/r/HomeImprovement/comments/1xojxn2/plumber_quoted_us_12k_for_a_sewer_blockage_now/"
+        }
+      ],
+      "ref": "I32",
+      "screen": {
+        "keep": true,
+        "score": 14,
+        "hits": [
+          "已经在花钱",
+          "提到了具体金额"
+        ],
+        "detail": {
+          "signal": 13,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:16:59.835Z"
+      }
+    },
+    {
+      "id": "53774c6e22",
+      "normUrl": "https://reddit.com/r/sanantonio/comments/1xo9k99/roofing_repair_company",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Roofing repair company",
+      "url": "https://www.reddit.com/r/sanantonio/comments/1xo9k99/roofing_repair_company/",
+      "summary": "Hi yall, so Ive tried to look at the other posts in this sub for roofing companies for a repair but a lot of the posts were older and wanted to get y’all’s opinion. So we have a somewhat minor leak in our roof next to the chimney. It’s missing the kick out flashing which I’m willing to bet is a part of it, but we can see a bit of water damage in the ceiling under where we believe the leak is. Ive looked into Presidio roofing and also BH roofing but haven’t gotten a response yet. Does anyone have any good recommendations for an “honest” roofing company that you’ve had a good experience with?",
+      "deepenKey": "/r/sanantonio/comments/1xo9k99",
+      "via": "quoted us",
+      "publishedAt": "2026-11-05T04:28:53.000Z",
+      "ref": "I33",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "元讨论",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "3f970739eb",
+      "normUrl": "https://reddit.com/r/FirstTimeHomeBuyer/comments/1xo58rm/builders_lender_vs_our_own_lender_on_a_new_build",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Builder's lender vs. our own lender on a new build: what are the downsides when the builder's rate is so much lower?",
+      "url": "https://www.reddit.com/r/FirstTimeHomeBuyer/comments/1xo58rm/builders_lender_vs_our_own_lender_on_a_new_build/",
+      "summary": "We're looking at buying a new build and trying to understand our financing options. Our real estate agent recommended a lender, that we met with, and that's who we'd likely go with by default. However, the builder is running an incentive this month: a 2/1 buydown if we finance through their preferred lender. The rate would be 3.5% in year 1, 4.5% in year 2, and 5.5% for years 3-30 on a conventional loan. An outside lender is quoting us around 7% or higher. I know the loan will likely be sold off right after closing, and that doesn't seem like a dealbreaker.",
+      "deepenKey": "/r/FirstTimeHomeBuyer/comments/1xo58rm",
+      "via": "quoted us",
+      "publishedAt": "2026-11-05T00:54:01.000Z",
+      "ref": "I34",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d62384bc78",
+      "normUrl": "https://reddit.com/r/mazda3/comments/1xo55lv/how_bad_does_the_rust_look_on_my_2012_mazda_3",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "How bad does the rust look on my 2012 Mazda 3?",
+      "url": "https://www.reddit.com/r/mazda3/comments/1xo55lv/how_bad_does_the_rust_look_on_my_2012_mazda_3/",
+      "summary": "I had my car serviced today, routine maintenence. Here are a few stills from the video. Said the front stabilizer links need replaced (quoted US $511) as well as the battery (quoted $270, but I can install that). I'm a little concerned about the rust, though. Would you keep going with the car or begin the sad process of moving on? Edit: I live in a place where roads are salted nearly half the year and regularly drive on gravel roads.",
+      "deepenKey": "/r/mazda3/comments/1xo55lv",
+      "via": "quoted us",
+      "publishedAt": "2026-11-05T00:49:52.000Z",
+      "ref": "I35",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "个人设备问题",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "adfeff804e",
+      "normUrl": "https://reddit.com/r/MistralAI/comments/1xojj1j/looking_for_an_eu_inference_provider_for_our",
+      "sourceId": "reddit-paying",
+      "source": "Reddit 付费信号",
+      "sourceHome": "https://www.reddit.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Looking for an EU inference provider for our company",
+      "url": "https://www.reddit.com/r/MistralAI/comments/1xojj1j/looking_for_an_eu_inference_provider_for_our/",
+      "summary": "We are a software engineering company of about 150 people. We are looking for inference providers (subscription-based, API, ideally both). Our wishlist: EU inference (this one is a must) SOTA and cost-effective models (GLM 5.3, DS4.1 flash, ...) EU-based company Limited vendor lock-in: ability to use the subscription outside of the proprietary harness API usage (for our CI/CD and other automated tasks) Our budget is tight (about 4000€ per month, or 20-30€ per seat per month). We expect token usage to be very uneven across seats, which is why we are also considering API usage.",
+      "deepenKey": "/r/MistralAI/comments/1xojj1j",
+      "via": "per seat per month",
+      "publishedAt": "2026-11-05T14:07:35.000Z",
+      "ref": "I36",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "加密货币",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "5212de5b3c",
+      "normUrl": "https://reddit.com/r/msp/comments/1xosruo/anyone_at_it_nation_thats_heavy_into_ai_and",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Anyone at IT Nation, that's heavy into AI, and finding the sessions painful?",
+      "url": "https://www.reddit.com/r/msp/comments/1xosruo/anyone_at_it_nation_thats_heavy_into_ai_and/",
+      "summary": "Curious if anyone is at IT Nation and is heavy into AI Managed Services and finding the AI Sessions painful to sitthrough. If so - I'd love to get a group together today / tonight / tomorrow and chat. I feel like there is a MASSIVE gap between MSPs right now and how we're addressing AI / Managed AI / AI Consolution, etc",
+      "deepenKey": "/r/msp/comments/1xosruo",
+      "via": null,
+      "publishedAt": "2026-11-05T20:05:15.000Z",
+      "ref": "I37",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Curious if anyone is at IT Nation and is heavy into AI Managed Services and finding the AI Sessions painful to sitthrough. If so - I'd love to get a group together today / tonight / tomorrow and chat. I feel like there is a MASSIVE gap between MSPs right now and how we're addressing AI / Managed AI / AI Consolution, etc",
+        "comments": [
+          {
+            "text": "1-2 years ago it was “adopt AI or die”. A lot have and are starting to drop services provided by these companies thanks to AI. Since they’re obviously feeling the churn it is now “AI scary don’t do AI yourself buy our AI we took out the scary parts” Didn’t the S1 guy say something like “installing Claude on a machine is like putting a sentient being on your computer and you have no idea what it is doing”"
+          },
+          {
+            "text": "I'm not there, but can I join the group?"
+          },
+          {
+            "text": "first time in awhile I havent gone - whos the musical guest and what park ya'll goin to?"
+          },
+          {
+            "text": "Ha. That's the reason I went."
+          },
+          {
+            "text": "Think it's universal studios again."
+          },
+          {
+            "text": "im here. and yes, speeches are subpar for sure. The huntress CEO was a very good presentation. but thats it so far. Every vendor does the same nonsense now...."
+          },
+          {
+            "text": "let me know if you do the meetup"
+          },
+          {
+            "text": "Also interested in partaking"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:11:16.667Z"
+      }
+    },
+    {
+      "id": "3b6efb380c",
+      "normUrl": "https://reddit.com/r/msp/comments/1xonxem/skynet_approved_ai_in_cyber_insurance_policies",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Skynet Approved: AI in Cyber Insurance Policies",
+      "url": "https://www.reddit.com/r/msp/comments/1xonxem/skynet_approved_ai_in_cyber_insurance_policies/",
+      "summary": "Here's a quick video for you all: Skynet Approved: AI in Cyber Insurance Topics Include: - Why your MSP should care. - Types of AI coverage. (4 Types) - Examples of real AI coverage in cyber policies. - Types of AI related losses to consider. - What to do about it moving forward.",
+      "deepenKey": "/r/msp/comments/1xonxem",
+      "via": null,
+      "publishedAt": "2026-11-05T17:00:38.000Z",
+      "ref": "I38",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "ef93c1da70",
+      "normUrl": "https://reddit.com/r/msp/comments/1xoka8u/winget_annoyance_rant",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Winget annoyance (rant)",
+      "url": "https://www.reddit.com/r/msp/comments/1xoka8u/winget_annoyance_rant/",
+      "summary": "OK, seriously, how highly annoying is it that: winget update --all drops 100 icons on the desktop every time? Why can’t we distinguish between 1) first time installation where the user might actually want an icon on the desktop, and 2) an update done 5 years later? Yes, yes, I know... we can just delete it from C:\\Users\\Public\\Desktop provided that 1) there is nothing there we don’t want to delete, and 2) it's not dropping the icon on the current user’s desktop. It's not that we cannot script our way around these things. It's the fact that we have to in the first place.",
+      "deepenKey": "/r/msp/comments/1xoka8u",
+      "via": null,
+      "publishedAt": "2026-11-05T14:39:05.000Z",
+      "ref": "I39",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "OK, seriously, how highly annoying is it that: winget update --all drops 100 icons on the desktop every time? Why can’t we distinguish between 1) first time installation where the user might actually want an icon on the desktop, and 2) an update done 5 years later? Yes, yes, I know... we can just delete it from C:\\Users\\Public\\Desktop provided that 1) there is nothing there we don’t want to delete, and 2) it's not dropping the icon on the current user’s desktop. It's not that we cannot script our way around these things. It's the fact that we have to in the first place. I am not a Linux-is-better kind of guy. But in this respect, it is. The following: apt clean && apt update && apt upgrade Just works exactly how you would expect it to every time.",
+        "comments": [
+          {
+            "text": "Add a flag to install/upgrade packages without creating desktop shortcuts · Issue #1045 · microsoft/winget-cli"
+          },
+          {
+            "text": "The reason for no fix is in the comments. While apt pulls from set repositories, winget does not - it's closer to using the AUR on arch based distros, and has all the same security flaws."
+          },
+          {
+            "text": "It depends on what the setup config was set to. You can either modify the installation by using the custom attribute or by setting up your own winget repository with each setup configured how you want it to behave (and you can make sure that each setup doesn’t install unwanted components). But it’s sadly some kind of standard behavior for windows apps with setups defaulting to putting an icon on the desktop. Winget was a huge step in the right direction. One tool to solve most of the issues with a cluttered ecosystem like windows when it comes to installing and maintaining software. Is it perfect? No, of course not."
+          },
+          {
+            "text": "I get that. And I am aware of the workarounds. Yes, we could set up our own winget repo. Yes, I know... My point is, I we shouldn’t ignore things like this and pretend that the Windows ecosystem is without its flaws. There are something things that just seem to persist for decades and decades. New stuff gets layered on top (Windows Store, MSIX, etc.) but the old problems just remain. I would rather everything be installed with MSI and have a silent installer option and a “create no new junk” option (i.e. “update” option) than have YAPF (yet another package format) and still have the same issues. I would love to have a clean, enterprise-oriented Windows installation that installs with Calculator, Paint, Notepad, and Edge. That’s it. No LinkedIn, no WhatsApp, no Xbox app, no Candy Crush Saga."
+          },
+          {
+            "text": "Might be time to visit /r/thirdpartypatching to find an alternative to Winget"
+          },
+          {
+            "text": "I do it like that in my scripts: I get all .lnk files from the public desktop and save their paths to a variable. Then I run winget update / install or whatever, and then I check the public desktop again, if there are .lnk files that weren't there before the winget operation and delete them."
+          },
+          {
+            "text": "Yeah, the install vs update distinction is the part that gets me too. An update five years in should not be allowed to touch the desktop at all. The snapshot-before-and-after trick in here is the only thing that has held up for us, because wiping the folder outright bit us once when a user had their own stuff sitting in there."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:22:03.382Z"
+      }
+    },
+    {
+      "id": "6278e2f5e7",
+      "normUrl": "https://reddit.com/r/msp/comments/1xo814u/federal_acronis_removal",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Federal Acronis Removal",
+      "url": "https://www.reddit.com/r/msp/comments/1xo814u/federal_acronis_removal/",
+      "summary": "I did not see this posted here, but on 10/30/26 the DHS has ordered the removal of all Acronis products from government systems. Federal Register :: Notice of Order Regarding Exclusion and Removal of Acronis Products From Federal Civilian Executive Branch Information Technology Systems and Procurements",
+      "deepenKey": "/r/msp/comments/1xo814u",
+      "via": null,
+      "publishedAt": "2026-11-05T03:10:12.000Z",
+      "ref": "I40",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "I did not see this posted here, but on 10/30/26 the DHS has ordered the removal of all Acronis products from government systems. Federal Register :: Notice of Order Regarding Exclusion and Removal of Acronis Products From Federal Civilian Executive Branch Information Technology Systems and Procurements",
+        "comments": [
+          {
+            "text": "There have been rumblings for a while about them having ties to Russia. Around the beginning of the year, I was made aware of an RFP that one of my clients was responding to which specifically had an addendum disallowing Acronis (and about a dozen other software vendors) from accessing their data. One of the other vendors on the no-no list was Kaspersky. You will be shocked, appalled, and downright surprised that my Pax8 rep assured me that there was no logical reason why my client’s potential client would have a problem with Acronis."
+          },
+          {
+            "text": "Quality people at that disti. They may also swear that their billing is 100% accurate!"
+          },
+          {
+            "text": "Just put it on auto-pay, never look at your invoices, and you won’t have to fight their finance department ever again! Which is good, because I’m convinced their finance department is 7 squirrels in a trench coat, 6 of whom are slowly suffocating."
+          },
+          {
+            "text": "My single favorite support call I ever had happened with Acronis. They had just released a new whole number version (like 5.0) and were pressuring everyone to go upgrade. My boss tasks me with it and I get all the clients updated that night. The next morning I notice the backup didn't complete for 1 customer but instead just kinda hung. When I called support I got a guy who was very clearly baked. I explain the situation, he is following along and comes back with \"yeah, that upgrade to 5.0 is buggy as hell\", no follow up, just a statement. So I ask if I should revert to the previous version and in the most 90's surf movie stoner kind of way he chuckles and says \"I don't know man, that one had a shitload of bugs too\" and starts cracking up. I mean on one hand I appreciated his honesty but damn dude."
+          },
+          {
+            "text": "That beats the rigmarole I got with a three month old ticket with Acronis on an error restoring a channel in Teams. They set up like a development environment and kept having me do the same steps over and over it was a shit show."
+          },
+          {
+            "text": "Sounds like you weren't doing the needful."
+          },
+          {
+            "text": "That's just it though, I did the needful with the developer tools and the HAR file, screenshot, I even screen recorded what was going on, the URL of the parent team and channel and the first line then set up a call to do the exact same thing. The user needing a handful of files just gave up and said they didn't need the files but it did not give me the warm and fuzzies."
+          },
+          {
+            "text": "On May 15, 2025, EQT, a Sweden-based private investment firm acquired a majority controlling interest in the Acronis group companies. Over 75% of the shares are owned by western blue chip investors including CVC Capital Partners, Springcoast Partners and BlackRock. EQT’s acquisition of Acronis received customary regulatory approvals, including CFIUS. The DHS published an exclusion order that was expected as part of the original FASCSA order issued on July 31, 2024. The DHS exclusion order only applies to U.S. Federal Agencies and was originally signed and published on July 31, 2026. This does not affect our customers and partners unless they are providing services with our products to a U.S. Federal Agency. We continue to work with the U.S. government agencies to address any concerns that they may have."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:23:04.008Z"
+      }
+    },
+    {
+      "id": "e407eb31ce",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xotw19/where_does_adding_a_testimonial_to_your_site",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Where does adding a testimonial to your site usually get stuck?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xotw19/where_does_adding_a_testimonial_to_your_site/",
+      "summary": "Curious how other makers handle this: When you last tried to add a customer testimonial to your site, where did it actually stall? - Getting permission - Finding a quote that felt usable - Updating the page (screenshots / HTML / CMS) Trying to understand if the friction is upstream (getting the quote) or downstream (publishing it).",
+      "deepenKey": "/r/microsaas/comments/1xotw19",
+      "via": null,
+      "publishedAt": "2026-11-05T20:49:56.000Z",
+      "ref": "I41",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Curious how other makers handle this: When you last tried to add a customer testimonial to your site, where did it actually stall? - Getting permission - Finding a quote that felt usable - Updating the page (screenshots / HTML / CMS) Trying to understand if the friction is upstream (getting the quote) or downstream (publishing it).",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:12:17.382Z"
+      }
+    },
+    {
+      "id": "ed42c03050",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xosk3a/i_built_2_free_reddit_bots_to_steelman_and_spot",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I built 2 free Reddit bots to steelman and spot logical fallacies/errors in comments/debate",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xosk3a/i_built_2_free_reddit_bots_to_steelman_and_spot/",
+      "summary": "They are free to use, and customizable to a subreddit's norms/culture. More detail on their Devvit listings (comments).",
+      "deepenKey": "/r/microsaas/comments/1xosk3a",
+      "via": null,
+      "publishedAt": "2026-11-05T19:56:56.000Z",
+      "ref": "I42",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "8581a0c075",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xor0w8/built_a_pdf_website_even_my_friends_use_ilovepdf",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Built a PDF website. Even my friends use iLovePDF.",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xor0w8/built_a_pdf_website_even_my_friends_use_ilovepdf/",
+      "summary": "Made pdfsworld.com free. Asked my friend to try it. He said, “Why? Is iLovePDF down?” I should’ve built a calculator instead of this",
+      "deepenKey": "/r/microsaas/comments/1xor0w8",
+      "via": null,
+      "publishedAt": "2026-11-05T18:57:08.000Z",
+      "ref": "I43",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8c8561b0af",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xoqiin/instead_of_raw_html_blowing_up_my_llm_context",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Instead of raw html blowing up my llm context window, i built a micro tool (domscout)",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xoqiin/instead_of_raw_html_blowing_up_my_llm_context/",
+      "summary": "hey everyone, so i've been hacking on this for the past couple months mostly out of personal annoyance lol. every time i tried to build any kind of agent or rag pipeline that reads the web, passing raw html was just straight up painful. either the context window gets clogged with 80k tokens of useless div soup and tracking scripts, or dynamic javascript pages just fail to render properly with simple fetch/cheerio.",
+      "deepenKey": "/r/microsaas/comments/1xoqiin",
+      "via": null,
+      "publishedAt": "2026-11-05T18:37:47.000Z",
+      "ref": "I44",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "ec67dea5b4",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xoq1j7/built_a_14_onetime_mac_app_instead_of_a",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Built a $14 one-time Mac app instead of a subscription, here's why",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xoq1j7/built_a_14_onetime_mac_app_instead_of_a/",
+      "summary": "Diskly explains what's actually taking up space on your Mac in plain language instead of macOS's vague \"System Data: 70GB\" bucket. Right-click any folder in Finder and it tells you what it is, which app it belongs to, and whether it's safe to remove. Nothing auto-deletes, you confirm every action. Went with one-time pricing instead of subscription since this is a \"run it occasionally\" tool, not something people open daily, felt wrong to charge monthly for that. Currently in beta ahead of a Product Hunt launch on Nov 17, Apple Silicon Macs on macOS 14+.",
+      "deepenKey": "/r/microsaas/comments/1xoq1j7",
+      "via": null,
+      "publishedAt": "2026-11-05T18:19:53.000Z",
+      "ref": "I45",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Diskly explains what's actually taking up space on your Mac in plain language instead of macOS's vague \"System Data: 70GB\" bucket. Right-click any folder in Finder and it tells you what it is, which app it belongs to, and whether it's safe to remove. Nothing auto-deletes, you confirm every action. Went with one-time pricing instead of subscription since this is a \"run it occasionally\" tool, not something people open daily, felt wrong to charge monthly for that. Currently in beta ahead of a Product Hunt launch on Nov 17, Apple Silicon Macs on macOS 14+. If anyone wants to try it or has thoughts on the pricing model: https://diskly.net",
+        "comments": [
+          {
+            "text": "one-time pricing makes total sense for a utility app you don't open daily. subscription fatigue is brutal for tools like this. good luck with the ph launch next month! how's the beta feedback been on the finder integration so far?"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:24:04.562Z"
+      }
+    },
+    {
+      "id": "ad6e530fa3",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xopm6e/what_platform_do_you_use_to_give_your_agent",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "What platform do you use to give your agent access to slack, email, a phone number and whatsapp?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xopm6e/what_platform_do_you_use_to_give_your_agent/",
+      "summary": "Question for anyone running an agent that communicates with users across channels. what platforms or services do you use for slack, email, phone and whatsapp? which channels have you actually connected? how do you manage context between them? for example, if someone emails the agent and later messages it on whatsapp, how do you connect their identity and conversation history? researching how people handle this today. would love to hear about your setup or chat with anyone who's shipped something like this.",
+      "deepenKey": "/r/microsaas/comments/1xopm6e",
+      "via": null,
+      "publishedAt": "2026-11-05T18:03:34.000Z",
+      "ref": "I46",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "dca0ef3417",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xooolw/is_vibecoding_a_bad_idea_for_a_micro_saas",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Is vibe-coding a bad idea for a micro SaaS?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xooolw/is_vibecoding_a_bad_idea_for_a_micro_saas/",
+      "summary": "Let's say I have a problem to solve, but I'm still in the learning phase of coding. Should I perfect my coding skills before even starting to make the tool, or should I just vibe-code it? Also, let's say I have raw JS and HTML files. How does that convert from scripts to a final product, and where do I start \"marketing\" it for free?",
+      "deepenKey": "/r/microsaas/comments/1xooolw",
+      "via": null,
+      "publishedAt": "2026-11-05T17:29:05.000Z",
+      "ref": "I47",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "259bacda85",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xooc1f/90_of_solo_founders_dont_have_a_positioning",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "90% of solo founders don't have a positioning problem they have a distribution bottleneck.",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xooc1f/90_of_solo_founders_dont_have_a_positioning/",
+      "summary": "Building a product as a solo founder is hard, but getting distribution for it is where most of us actually die. You spend months writing code, only to realize nobody knows you exist. So you try doing distribution all yourself: extracting hooks, writing ad copy, editing videos for dynamic captions, formatting carousels, and fighting complex ad dashboards just to watch your testing budget burn on a bad campaign in 30 minutes. It is exhausting, and let us be honest: most of us are engineers, not marketers.",
+      "deepenKey": "/r/microsaas/comments/1xooc1f",
+      "via": null,
+      "publishedAt": "2026-11-05T17:15:57.000Z",
+      "ref": "I48",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "b4a19b0fe6",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xont2w/micro_saas_founders_what_is_the_smallest_change",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Micro SaaS founders: what is the smallest change that actually moved retention for you?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xont2w/micro_saas_founders_what_is_the_smallest_change/",
+      "summary": "I keep hearing that retention matters more than new signups for a small product, but most advice is vague. For me the biggest shift was a short email on day 3 that asked one simple question about what the user was trying to finish. Replies told me more than any dashboard did. What is the smallest change you made that actually moved retention? A nudge, a removed step, a different onboarding email, anything small. What did you change, and how did you know it worked?",
+      "deepenKey": "/r/microsaas/comments/1xont2w",
+      "via": null,
+      "publishedAt": "2026-11-05T16:56:11.000Z",
+      "ref": "I49",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1516dcd9b6",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xonhwu/i_made_launchorbit_a_startup_launch_platform_that",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I made LaunchOrbit, a startup launch platform, that made $164.",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xonhwu/i_made_launchorbit_a_startup_launch_platform_that/",
+      "summary": "I finally launched LaunchOrbit (an indie Product Hunt alternative) in September. Fast forward to today, and I have earned $164 so far $126 from premium launches and $38 from premium+. What do you guys think of the idea? What should I do? Let it run on its own & start a new project or add something to it?",
+      "deepenKey": "/r/microsaas/comments/1xonhwu",
+      "via": null,
+      "publishedAt": "2026-11-05T16:44:18.000Z",
+      "ref": "I50",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "059af98f1e",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xonbm0/better_alternatives_to_supabase_for_a_tiny_app",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Better alternatives to Supabase for a tiny app with health data",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xonbm0/better_alternatives_to_supabase_for_a_tiny_app/",
+      "summary": "I built a small web app for one nutritionist (React + Node/Express). It stores client health data, so backups and reliability matter. Only she uses it, plus a handful of her patients. I use Supabase only as a plain Postgres database; my own backend handles auth, so I can move to another Postgres host easily. The free tier pauses after a week of inactivity and has no backups, and Pro is $25/month, which feels like a lot for an app this small.",
+      "deepenKey": "/r/microsaas/comments/1xonbm0",
+      "via": null,
+      "publishedAt": "2026-11-05T16:37:27.000Z",
+      "ref": "I51",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "8e18cc14d4",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xojrv2/should_every_ai_saas_idea_be_tested_manually",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Should every AI SaaS idea be tested manually before code?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xojrv2/should_every_ai_saas_idea_be_tested_manually/",
+      "summary": "I'm starting to think the first version of an AI SaaS should sometimes be a human doing the work. Not because manual service scales. Because it proves whether the outcome matters, if the idea is AI document review, review documents manually. If the idea is AI lead scoring, score leads manually. If the idea is AI support triage, triage tickets manually. If customers do not care about the manual result, automation probably will not save it. This is uncomfortable because Flatlogic and similar tools let you build the product shell fast. But maybe that is exactly why manual proof matters more now.",
+      "deepenKey": "/r/microsaas/comments/1xojrv2",
+      "via": null,
+      "publishedAt": "2026-11-05T14:17:40.000Z",
+      "ref": "I52",
+      "screen": {
+        "keep": true,
+        "score": 10,
+        "hits": [
+          "在用笨办法凑合"
+        ],
+        "detail": {
+          "signal": 4,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I'm starting to think the first version of an AI SaaS should sometimes be a human doing the work. Not because manual service scales. Because it proves whether the outcome matters, if the idea is AI document review, review documents manually. If the idea is AI lead scoring, score leads manually. If the idea is AI support triage, triage tickets manually. If customers do not care about the manual result, automation probably will not save it. This is uncomfortable because Flatlogic and similar tools let you build the product shell fast. But maybe that is exactly why manual proof matters more now. Has anyone here sold or tested the manual result before building the AI product? What did you learn?",
+        "comments": [
+          {
+            "text": "mostly yes, but the point isn't \"manual vs code\", it's finding the expensive assumption. for AI products that's usually output quality, not demand. so do the job yourself with chatgpt and a doc for 5-10 real users, deliver the result by hand, and watch whether they'd actually pay or just say \"cool.\" the exception is when the value is speed or scale, like processing thousands of files. manual can't fake that, so a rough script is the cheaper test there."
+          },
+          {
+            "text": "The manual route feels dumb right up until you've shipped the automated version to nobody. Agree with the \"if they don't care about the manual result\" bit, less with the \"every\" in your title: when the whole pitch is speed or volume, doing it by hand proves nothing except that you'll work for cheap. Charge three people for the concierge version, that's the part that carries over to the product."
+          },
+          {
+            "text": "yes and it's the cheapest test there is. i'd do it like this: find 5 people with the problem, do the job by hand for them (a doc review, a lead list, whatever) and send the result with a price on it. if 2 of 5 say they'd pay or ask for it again next week, you have something. if they say 'nice' and go quiet, no amount of automation fixes that. also watch what you end up doing by hand over and over, that repeated part is the thing worth building first."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "My Criteria for Picking Startup Ideas",
+            "points": 50,
+            "url": "https://news.ycombinator.com/item?id=32261464"
+          }
+        ],
+        "fetchedAt": "2026-11-05T22:09:14.864Z"
+      }
+    },
+    {
+      "id": "76edd77d0c",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xoiyuv/i_created_a_tool_to_monitor_the_mood_in_saas",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I created a tool to monitor the mood in SaaS",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xoiyuv/i_created_a_tool_to_monitor_the_mood_in_saas/",
+      "summary": "I work in SaaS M&A and I was at the SHIFT AI conference in Barcelona (used to be SaaStock) couple of weeks ago and a lot of the founders were asking me \"How's the market?\", \"How is the SaaSapocalypse going?\" etc. It's honestly hard to answer even for me. So i just created a survey that will help me and also the SaaS founders themselves get a feel for the sentiment every quarter. I call it SaaSentiment: saasentiment.com I'm genuinely curious what you guys will think about it. Let me know if it's any useful (at least 5 people have to fill it in so it has any value)",
+      "deepenKey": "/r/microsaas/comments/1xoiyuv",
+      "via": null,
+      "publishedAt": "2026-11-05T13:43:18.000Z",
+      "ref": "I53",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "b38114ff2f",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xoh8fk/before_building_4_checks_i_run_on_every_problem_i",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Before building: 4 checks I run on every problem I find",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xoh8fk/before_building_4_checks_i_run_on_every_problem_i/",
+      "summary": "I'm early (no product yet), but I've been scoring the problems I find instead of going on gut feel. My filter: Does it repeat? Weekly or daily beats a one-off. \"450 transactions took 40 hours\" is painful, but if it only happens once a year, that's a service, not SaaS. Are they already paying for a workaround? A VA, a freelancer, a clunky tool. That tells you the problem is worth money. Did more than one person describe it, separately? One loud post is an anecdote. Can I ship a rough version in under 2 weeks? If not, it's not my first product.",
+      "deepenKey": "/r/microsaas/comments/1xoh8fk",
+      "via": null,
+      "publishedAt": "2026-11-05T12:19:24.000Z",
+      "ref": "I54",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "有具体人群"
+        ],
+        "detail": {
+          "signal": 3,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "I'm early (no product yet), but I've been scoring the problems I find instead of going on gut feel. My filter: Does it repeat? Weekly or daily beats a one-off. \"450 transactions took 40 hours\" is painful, but if it only happens once a year, that's a service, not SaaS. Are they already paying for a workaround? A VA, a freelancer, a clunky tool. That tells you the problem is worth money. Did more than one person describe it, separately? One loud post is an anecdote. Can I ship a rough version in under 2 weeks? If not, it's not my first product. Competitor price tracking for small stores passes 1, 2 and 3, but there are already a lot of tools. Chargeback recovery has the angriest posters but a messy legal side. What's on your checklist that isn't on mine?",
+        "comments": [
+          {
+            "text": "Solid filter. One check I'd add is whether you can reach the buyer cheaply, meaning you know where those people hang out and can talk to ten of them this week. A problem can pass all four of yours and still stall if the buyers are scattered and expensive to find. I'd also check how they describe the pain: if they use the same words repeatedly, you can borrow that wording for the landing page. On your two candidates, price tracking's crowding is a real signal, so a narrow niche (one platform or store type) might beat a general tool."
+          },
+          {
+            "text": "That's a great fifth check, and one I was missing. A problem can pass all four and still die if the buyers are scattered. The idea of borrowing their wording for the landing page is gold too. On price tracking, a narrow version for one platform makes sense. Do you think picking a store type (like Shopify fashion) or a platform (like Amazon sellers only) is the better cut?"
+          },
+          {
+            "text": "I'd start with one platform and one store type, then check whether those shops track prices in the same way. “Amazon sellers” can still mean very different jobs. If five shops can give you the same weekly task and current workaround, that's a more useful boundary than the platform name alone."
+          },
+          {
+            "text": "I'd lean toward one platform plus one store type, like Shopify fashion, because the workflow and the competitor set stay consistent. A quick test: talk to five owners in that cut and see if they describe the same weekly task and the same workaround. If they do, you've found your boundary. If answers scatter, narrow further before you build anything."
+          },
+          {
+            "text": "One more I'd add: is the person who feels the pain the same person who can pay for the fix? With price tracking it's the same shop owner, so the sale is simple. Plenty of problems pass all four checks but die because the person suffering can't approve a purchase and the person with the budget never feels the pain. If they aren't the same person, I want to know who the buyer is before building anything."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Launch HN: InspectMind (YC W24) – AI agent for reviewing construction drawings",
+            "points": 59,
+            "url": "https://news.ycombinator.com/item?id=46219386"
+          },
+          {
+            "title": "Show HN: EchoStream – A Local AI Agent That Lives on Your iPhone",
+            "points": 22,
+            "url": "https://news.ycombinator.com/item?id=44318655"
+          }
+        ],
+        "fetchedAt": "2026-11-05T22:19:01.317Z"
+      }
+    },
+    {
+      "id": "144b173358",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xofrjf/i_didnt_want_to_show_my_face_to_market_my_product",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I didn’t want to show my face to market my product, so I automated quality faceless video for me every day",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xofrjf/i_didnt_want_to_show_my_face_to_market_my_product/",
+      "summary": "Every founder gets the same advice: “just post on TikTok and Reels every day.” I tried to follow it. The problem was that it meant filming myself every day, and I didn’t want to be the face of my product. So I tried animation videos with claude. But i got low view counts and it took me a lot of time without beeing sure if it would work. Than i found a good format: just someone laughing and covering their mouth with a hand. for 2 seconds + a text hook. after that just a recording of me going to the website and using the product. The person is the hook, the product is the content.",
+      "deepenKey": "/r/microsaas/comments/1xofrjf",
+      "via": null,
+      "publishedAt": "2026-11-05T10:57:28.000Z",
+      "ref": "I55",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "81b3d51968",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xod1v4/i_built_an_ai_virtual_staging_tool_that_keeps",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I built an AI virtual staging tool that keeps walls and windows untouched – feedback welcome",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xod1v4/i_built_an_ai_virtual_staging_tool_that_keeps/",
+      "summary": "Hi all, I’m the maker of Roomora Studio (roomora.studio). You upload a photo of an empty room and get two furnished versions in about 20 seconds. Every result carries a “Virtually Staged” label, because most listing sites require it. What I’d love feedback on: Does the result look realistic enough for a listing? Is the pricing clear ($15 for 20 photos, or monthly plans)? New accounts get 2 free credits, no card needed. Happy to answer anything about how it works under the hood. https://roomora.studio/",
+      "deepenKey": "/r/microsaas/comments/1xod1v4",
+      "via": null,
+      "publishedAt": "2026-11-05T08:00:18.000Z",
+      "ref": "I56",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "a8ccdc0033",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xock20/do_launch_directories_actually_give_results",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Do launch directories actually give results (specifically conversions)??",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xock20/do_launch_directories_actually_give_results/",
+      "summary": "I'm building a new app and planning to launch in a few weeks. I'm considering submitting it to 5–10 launch directories and I'm happy to spend up to $300 on paid listings. I know directories can be useful for backlinks (if dofolllow) and SEO, but I'm interested in whether they can drive conversions, would love to hear from real experience!! BTW I'm looking more at smaller launch directories rather than the big platforms like Product Hunt. What's the best result you've had from a launch directory?",
+      "deepenKey": "/r/microsaas/comments/1xock20",
+      "via": null,
+      "publishedAt": "2026-11-05T07:26:50.000Z",
+      "ref": "I57",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d0de97b03b",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xocgii/built_stagelocked_freelance_payments_with_zero",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Built stage-locked freelance payments with zero escrow — wrong bet?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xocgii/built_stagelocked_freelance_payments_with_zero/",
+      "summary": "Solo CS student. Built Trelio: agreement + stages, client pays via private link (no signup), next stage locked until prior is paid. Money goes to the freelancer — we never hold it. Biggest doubt: skipping escrow. Was that stupid for a trust product, or is \"don't touch the money\" the right call for a micro SaaS? trelio.in, free open beta. Brutal feedback on the lock + no-escrow choice appreciated. (Disclosure: I built it.)",
+      "deepenKey": "/r/microsaas/comments/1xocgii",
+      "via": null,
+      "publishedAt": "2026-11-05T07:20:18.000Z",
+      "ref": "I58",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "dc7fddfe62",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xobzp4/getting_google_to_approve_readonly_analytics",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Getting Google to approve read-only analytics access for my micro SaaS took 4 days and 2 demo videos. Here's what they asked for",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xobzp4/getting_google_to_approve_readonly_analytics/",
+      "summary": "I'm building Pingsold, a directory that ranks startups by traffic read directly from their analytics instead of screenshots. The core feature is \"Connect with Google\", which needs the analytics.readonly scope. That scope is sensitive, so Google has to review your app before real users can connect without a scary \"unverified app\" warning.",
+      "deepenKey": "/r/microsaas/comments/1xobzp4",
+      "via": null,
+      "publishedAt": "2026-11-05T06:50:53.000Z",
+      "ref": "I59",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "41a013a382",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xob4gx/a_user_wrote_that_my_tool_loads_forever_it_was",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "A user wrote that my tool loads forever. It was working, the screen was just silent",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xob4gx/a_user_wrote_that_my_tool_loads_forever_it_was/",
+      "summary": "A user wrote that the scan \"doesn't work, loads forever\". It was working. The scan takes about 45 seconds, but after a page reload the screen showed no progress at all, so to him it looked frozen. Nobody waits on a silent screen, so the terminal now narrates every step. My takeaway is to watch session recordings instead of dashboards. Problems like this one were invisible in my metrics and obvious within 30 seconds of watching a recording. Has anyone else found a bug this way that the numbers never showed?",
+      "deepenKey": "/r/microsaas/comments/1xob4gx",
+      "via": null,
+      "publishedAt": "2026-11-05T05:58:33.000Z",
+      "ref": "I60",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "44d9746323",
+      "normUrl": "https://producthunt.com/products/pushary",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Pushary for Teams",
+      "url": "https://www.producthunt.com/products/pushary",
+      "summary": "See who said yes to your team’s AI agents",
+      "publishedAt": "2026-11-01T16:09:33.000Z",
+      "ref": "I61",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "See who said yes to your team’s AI agents",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Scrum for Non-Engineering Teams",
+            "points": 12,
+            "url": "https://news.ycombinator.com/item?id=7133167"
+          },
+          {
+            "title": "Launch HN: Nomi (YC X25) – Copilot for Sales",
+            "points": 87,
+            "url": "https://news.ycombinator.com/item?id=44098706"
+          }
+        ],
+        "fetchedAt": "2026-11-05T22:12:37.873Z"
+      }
+    },
+    {
+      "id": "fad8ea483a",
+      "normUrl": "https://producthunt.com/products/safetyclip",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "SafetyClip",
+      "url": "https://www.producthunt.com/products/safetyclip",
+      "summary": "A clipboard manager for Mac that keeps secrets secret",
+      "publishedAt": "2026-11-04T08:40:49.000Z",
+      "ref": "I62",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "A clipboard manager for Mac that keeps secrets secret",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:12:57.526Z"
+      }
+    },
+    {
+      "id": "2b22a9f485",
+      "normUrl": "https://producthunt.com/products/glasshand",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Glasshand",
+      "url": "https://www.producthunt.com/products/glasshand",
+      "summary": "Give your agent a real iPhone and Mac",
+      "publishedAt": "2026-11-02T20:28:39.000Z",
+      "ref": "I63",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Give your agent a real iPhone and Mac",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:13:17.542Z"
+      }
+    },
+    {
+      "id": "87a19784cf",
+      "normUrl": "https://producthunt.com/products/rainbrand",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Rainbrand",
+      "url": "https://www.producthunt.com/products/rainbrand",
+      "summary": "The brand layer for agents",
+      "publishedAt": "2026-10-26T10:25:50.000Z",
+      "ref": "I64",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The brand layer for agents",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:13:37.560Z"
+      }
+    },
+    {
+      "id": "05383f6973",
+      "normUrl": "https://producthunt.com/products/easy-peasy-ai",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "AI Employees by Easy-Peasy.AI",
+      "url": "https://www.producthunt.com/products/easy-peasy-ai",
+      "summary": "Hire an AI team that splits the work and asks before sending",
+      "publishedAt": "2026-11-04T06:19:49.000Z",
+      "ref": "I65",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hire an AI team that splits the work and asks before sending",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Launch HN: Hivy (YC W17) – An App to Get What You Need at the Office",
+            "points": 56,
+            "url": "https://news.ycombinator.com/item?id=13941882"
+          }
+        ],
+        "fetchedAt": "2026-11-05T22:13:57.873Z"
+      }
+    },
+    {
+      "id": "b03d5ce6f8",
+      "normUrl": "https://producthunt.com/products/stitch-ai",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Stitch.ai",
+      "url": "https://www.producthunt.com/products/stitch-ai",
+      "summary": "Your AI workspace for mail, calendar, notes, tasks and more",
+      "publishedAt": "2026-11-03T06:04:34.000Z",
+      "ref": "I66",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Your AI workspace for mail, calendar, notes, tasks and more",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:14:17.588Z"
+      }
+    },
+    {
+      "id": "378ad7cd50",
+      "normUrl": "https://producthunt.com/products/bambu-lab-h3c",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Bambu Lab H3C",
+      "url": "https://www.producthunt.com/products/bambu-lab-h3c",
+      "summary": "Print multi-material projects faster and easier",
+      "publishedAt": "2026-11-04T02:19:41.000Z",
+      "ref": "I67",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Print multi-material projects faster and easier",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:14:37.610Z"
+      }
+    },
+    {
+      "id": "448878e980",
+      "normUrl": "https://producthunt.com/products/maritime",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Maritime",
+      "url": "https://www.producthunt.com/products/maritime",
+      "summary": "Cloud computers for any AI agent, customized your way",
+      "publishedAt": "2026-11-01T19:24:15.000Z",
+      "ref": "I68",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Cloud computers for any AI agent, customized your way",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:14:57.631Z"
+      }
+    },
+    {
+      "id": "c943ba468d",
+      "normUrl": "https://producthunt.com/products/meetonbridge",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Bridge",
+      "url": "https://www.producthunt.com/products/meetonbridge",
+      "summary": "Video conferencing for the agentic era",
+      "publishedAt": "2026-10-28T21:00:49.000Z",
+      "ref": "I69",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Video conferencing for the agentic era",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:15:17.661Z"
+      }
+    },
+    {
+      "id": "1af30a1d76",
+      "normUrl": "https://producthunt.com/products/hunyuan-a13b",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Tencent Hy4",
+      "url": "https://www.producthunt.com/products/hunyuan-a13b",
+      "summary": "Tencent’s flagship model learns to see and use a computer",
+      "publishedAt": "2026-11-04T08:07:42.000Z",
+      "ref": "I70",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Tencent’s flagship model learns to see and use a computer",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:15:37.669Z"
+      }
+    },
+    {
+      "id": "af3999aec3",
+      "normUrl": "https://producthunt.com/products/backlane-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "backlane",
+      "url": "https://www.producthunt.com/products/backlane-2",
+      "summary": "Manage marketplaces in ChatGPT and Claude via MCP",
+      "publishedAt": "2026-11-03T16:06:19.000Z",
+      "ref": "I71",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Manage marketplaces in ChatGPT and Claude via MCP",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:15:57.695Z"
+      }
+    },
+    {
+      "id": "3cc1f8ebc5",
+      "normUrl": "https://producthunt.com/products/textkit-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "TextKit",
+      "url": "https://www.producthunt.com/products/textkit-2",
+      "summary": "Send + receive texts in the US and Canada with a simple API",
+      "publishedAt": "2026-11-05T00:10:10.000Z",
+      "ref": "I72",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Send + receive texts in the US and Canada with a simple API",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:16:17.704Z"
+      }
+    },
+    {
+      "id": "28292bbbfc",
+      "normUrl": "https://producthunt.com/products/vibeconferencing",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Vibeconferencing",
+      "url": "https://www.producthunt.com/products/vibeconferencing",
+      "summary": "Your Claude Code session, in your Meet, Zoom or Teams call",
+      "publishedAt": "2026-11-02T22:49:38.000Z",
+      "ref": "I73",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "08a1ac729d",
+      "normUrl": "https://producthunt.com/products/cc-auto-review",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "CC Auto Review",
+      "url": "https://www.producthunt.com/products/cc-auto-review",
+      "summary": "macOS app that reviews GitHub PRs w/ your local Claude Code",
+      "publishedAt": "2026-11-05T04:54:13.000Z",
+      "ref": "I74",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "ecfa65be2e",
+      "normUrl": "https://producthunt.com/products/polylane",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Polylane for Google Cloud",
+      "url": "https://www.producthunt.com/products/polylane",
+      "summary": "An AI on-call engineer for your Google Cloud apps",
+      "publishedAt": "2026-11-04T18:54:52.000Z",
+      "ref": "I75",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "03bf0dee0e",
+      "normUrl": "https://producthunt.com/products/rerun-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Rerun",
+      "url": "https://www.producthunt.com/products/rerun-2",
+      "summary": "Turn your AI subscriptions into a team of coworkers",
+      "publishedAt": "2026-11-03T13:00:39.000Z",
+      "ref": "I76",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1528f39023",
+      "normUrl": "https://producthunt.com/products/scrollsnacks",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Scrollsnacks",
+      "url": "https://www.producthunt.com/products/scrollsnacks",
+      "summary": "Launch videos, broken down second by second",
+      "publishedAt": "2026-11-04T21:46:13.000Z",
+      "ref": "I77",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "da00d6bc34",
+      "normUrl": "https://producthunt.com/products/seamcult",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Seamcult",
+      "url": "https://www.producthunt.com/products/seamcult",
+      "summary": "A pattern design tool for the LLM era ('paper' for patterns)",
+      "publishedAt": "2026-11-03T11:42:12.000Z",
+      "ref": "I78",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "fe914f4a19",
+      "normUrl": "https://producthunt.com/products/nvidia",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Nemotron 3.5 Transcribe",
+      "url": "https://www.producthunt.com/products/nvidia",
+      "summary": "Intelligent Transcription with a Speech LLM",
+      "publishedAt": "2026-11-05T04:51:07.000Z",
+      "ref": "I79",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1cafbfd084",
+      "normUrl": "https://producthunt.com/products/snaptiles",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "SnapTiles",
+      "url": "https://www.producthunt.com/products/snaptiles",
+      "summary": "Build with magnetic tiles in 3D, free in your browser",
+      "publishedAt": "2026-10-28T13:06:04.000Z",
+      "ref": "I80",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "504631b73e",
+      "normUrl": "https://github.com/lz4/lz4",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "lz4/lz4",
+      "url": "https://github.com/lz4/lz4",
+      "summary": "Extremely Fast Compression algorithm",
+      "signal": {
+        "language": "C",
+        "points": 16
+      },
+      "publishedAt": null,
+      "ref": "I81",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Extremely Fast Compression algorithm",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:16:19.332Z"
+      }
+    },
+    {
+      "id": "876f4401e1",
+      "normUrl": "https://github.com/google/skills",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "google/skills",
+      "url": "https://github.com/google/skills",
+      "summary": "Agent Skills for Google products and technologies",
+      "signal": {
+        "language": "Python",
+        "points": 199
+      },
+      "publishedAt": null,
+      "ref": "I82",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Agent Skills for Google products and technologies",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Google Skills",
+            "points": 37,
+            "url": "https://news.ycombinator.com/item?id=46473383"
+          }
+        ],
+        "fetchedAt": "2026-11-05T22:16:18.597Z"
+      }
+    },
+    {
+      "id": "1ceb56a3b3",
+      "normUrl": "https://github.com/vercel-labs/agent-browser",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "summary": "Browser automation CLI for AI agents",
+      "signal": {
+        "language": "Rust",
+        "points": 181
+      },
+      "publishedAt": null,
+      "ref": "I83",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Browser automation CLI for AI agents",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Show HN: cmux - Ghostty-based terminal with vertical tabs and notifications",
+            "points": 198,
+            "url": "https://news.ycombinator.com/item?id=47079718"
+          },
+          {
+            "title": "Show HN: Skill that lets Claude Code/Codex spin up VMs and GPUs",
+            "points": 138,
+            "url": "https://news.ycombinator.com/item?id=47006393"
+          },
+          {
+            "title": "Show HN: Smooth CLI – Token-efficient browser for AI agents",
+            "points": 109,
+            "url": "https://news.ycombinator.com/item?id=46901233"
+          }
+        ],
+        "fetchedAt": "2026-11-05T22:16:18.849Z"
+      }
+    },
+    {
+      "id": "98270c7120",
+      "normUrl": "https://github.com/ConardLi/garden-skills",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "ConardLi/garden-skills",
+      "url": "https://github.com/ConardLi/garden-skills",
+      "summary": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
+      "signal": {
+        "language": "JavaScript",
+        "points": 241
+      },
+      "publishedAt": null,
+      "ref": "I84",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:16:19.147Z"
+      }
+    },
+    {
+      "id": "b9901cf076",
+      "normUrl": "https://github.com/microsoft/VibeVoice",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "microsoft/VibeVoice",
+      "url": "https://github.com/microsoft/VibeVoice",
+      "summary": "Open-Source Frontier Voice AI",
+      "signal": {
+        "language": "Python",
+        "points": 214
+      },
+      "publishedAt": null,
+      "ref": "I85",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Open-Source Frontier Voice AI",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:16:19.332Z"
+      }
+    },
+    {
+      "id": "ed4ae771b4",
+      "normUrl": "https://flox.dev/blog/a-turnkey-toolkit-for-agentic-development-with-flox",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Sponsor: Flox",
+      "url": "https://flox.dev/blog/a-turnkey-toolkit-for-agentic-development-with-flox/?utm_source=consoledev&utm_medium=newsletter&utm_campaign=2026q4_tofu_awa_consoledev_all_flox_gl&utm_content=blog",
+      "summary": "Flox - Try 80+ agentic AI tools on your own machine. No containers. No dependency conflicts. Visit Flox",
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "ref": "I86",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Flox - Try 80+ agentic AI tools on your own machine. No containers. No dependency conflicts. Visit Flox",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:16:18.315Z"
+      }
+    },
+    {
+      "id": "00635b23bd",
+      "normUrl": "https://osewa.dev/",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Tool: Osewa",
+      "url": "https://osewa.dev/?ref=console.dev",
+      "summary": "Terminal connectivity protocol. What we like: Uses QUIC or a TLS WebSocket to connect to terminal sessions. Acts almost like a proxy between terminal sessions, built on Ghostty’s engine. You can close the client without the server quitting. Every device gets its own key - no passwords. What we dislike: Transport-only for now, not a multiplexer. No Windows support. Website animations are annoying.",
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "ref": "I87",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Terminal connectivity protocol. What we like: Uses QUIC or a TLS WebSocket to connect to terminal sessions. Acts almost like a proxy between terminal sessions, built on Ghostty’s engine. You can close the client without the server quitting. Every device gets its own key - no passwords. What we dislike: Transport-only for now, not a multiplexer. No Windows support. Website animations are annoying.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-05T22:16:18.315Z"
+      }
+    },
+    {
+      "id": "06d8756b7b",
+      "normUrl": "https://vinext.dev/",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Tool: Vinext",
+      "url": "https://vinext.dev/?ref=console.dev",
+      "summary": "Nextjs on Vite. What we like: API-compatible (currently at 94%) alternative runtime for Nextjs, built on Vite. Claims faster builds and smaller client bundles. Migration can be done through a CLI by your agent. Supports most common Nextjs features. Sophisticated caching options. What we dislike: Primarily designed for running Nextjs on Cloudflare today, which does work well. Nitro is a non-Cloudflare alternative.",
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "ref": "I88",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "89307f734c",
+      "normUrl": "https://github.com/ivankovic/omnidiff",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Beta: omnidiff",
+      "url": "https://github.com/ivankovic/omnidiff?ref=console.dev",
+      "summary": "Context-aware diffing.",
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "ref": "I89",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "5cf660c158",
+      "normUrl": "https://bwplotka.dev/2026/rust-microbenchmarks-benchstat",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Beta: benchfmt",
+      "url": "https://www.bwplotka.dev/2026/rust-microbenchmarks-benchstat/?ref=console.dev",
+      "summary": "Rust benchmarking.",
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "ref": "I90",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "4641541e58",
+      "normUrl": "https://earendil-works.github.io/djs/introduction.html",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Beta: djs",
+      "url": "https://earendil-works.github.io/djs/introduction.html?ref=console.dev",
+      "summary": "Small JS engine.",
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "ref": "I91",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "5894128064",
+      "normUrl": "https://github.com/Leaflet/Leaflet/releases/tag/v2.0.0-beta.1",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Beta: Leaflet 2",
+      "url": "https://github.com/Leaflet/Leaflet/releases/tag/v2.0.0-beta.1?ref=console.dev",
+      "summary": "JS maps.",
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "ref": "I92",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "0444b4a9f4",
+      "normUrl": "https://evergreenlang.net/",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Beta: Evergreen",
+      "url": "https://evergreenlang.net/?ref=console.dev",
+      "summary": "Provably safe systems language.",
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "ref": "I93",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "bfe68262fb",
+      "normUrl": "https://lisette.run/",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Beta: Lisette",
+      "url": "https://lisette.run/?ref=console.dev",
+      "summary": "A language inspired by Rust, compiles to Go.",
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "ref": "I94",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d69fe30214",
+      "normUrl": "https://buildkite.com/home",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Sponsor: BuildKite",
+      "url": "https://buildkite.com/home/?ref=console.dev",
+      "summary": "Programmable CI orchestration for AI Visit BuildKite",
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "ref": "I95",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "473d4b0375",
+      "normUrl": "https://trends.vc/instant-course-apps-exam-date-pricing-free-study-modes-cram-and-cancel",
+      "sourceId": "trendsvc",
+      "source": "Trends.vc",
+      "sourceHome": "https://trends.vc/",
+      "side": "trend",
+      "pool": false,
+      "title": "Instant Course Apps: Exam-Date Pricing, Free Study Modes, Cram-And-Cancel",
+      "url": "https://trends.vc/instant-course-apps-exam-date-pricing-free-study-modes-cram-and-cancel/",
+      "summary": "“Everyone is forced to learn the same thing on the same day at the same speed in class.” – Isaac Asimov Get Full Access to Trends Pro ❓ What You’ll Learn 💎 Why It Matters AI apps can make a personalized course on any topic, however niche, for free. 🔍 Problem You want to learn … Continue reading Instant Course Apps: Exam-Date Pricing, Free Study Modes, Cram-And-Cancel → The post Instant Course Apps: Exam-Date Pricing, Free Study Modes, Cram-And-Cancel appeared first on Trends.vc .",
+      "publishedAt": "2026-11-05T01:09:05.000Z",
+      "ref": "I96",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "附录源，不参与评选",
+        "hits": []
+      },
+      "candidate": false
+    }
+  ],
+  "deepenedAt": "2026-11-05T22:24:04.562Z"
+}

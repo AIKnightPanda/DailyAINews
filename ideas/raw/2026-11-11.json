@@ -1,0 +1,2681 @@
+{
+  "issue": "2026-11-11",
+  "builtAt": "2026-11-10T21:57:19.131Z",
+  "from": {
+    "boards": "prefetched",
+    "inbox": "live"
+  },
+  "counts": {
+    "fetched": 163,
+    "added": 70,
+    "kept": 70,
+    "dropped": 93,
+    "pool": 70,
+    "screened": 55,
+    "candidates": 29,
+    "demandCandidates": 13,
+    "supplyCandidates": 16
+  },
+  "errors": [],
+  "notices": [
+    "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
+  ],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "ok",
+      "items": 15,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：is there an app that（HTTP 403：2026-11-10T21:47:13+00:00 /sear）；is there a tool that（HTTP 403：2026-11-10T21:48:23+00:00 /sear）；someone should build（HTTP 403：2026-11-10T21:49:09+00:00 /sear）；we still use spreadsheets（HTTP 403：2026-11-10T21:50:19+00:00 /sear）",
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 6,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：we currently pay（HTTP 403：2026-11-10T21:51:04+00:00 /sear）；we are paying for（HTTP 403：2026-11-10T21:52:15+00:00 /sear）；quoted us（HTTP 403：2026-11-10T21:53:00+00:00 /sear）；per seat per month（HTTP 403：2026-11-10T21:54:11+00:00 /sear）",
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "ok",
+      "items": 6,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 0,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 3,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub Trending",
+      "status": "ok",
+      "items": 12,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "consoledev",
+      "name": "Console.dev",
+      "status": "ok",
+      "items": 10,
+      "pool": true,
+      "group": "board"
+    }
+  ],
+  "items": [
+    {
+      "id": "b61dccd4cc",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1xszcyj/custom_camera_help",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "Custom camera help",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1xszcyj/custom_camera_help/",
+      "summary": "I just want to start by saying sorry if this isn't the right sub for this, I'm new to reddit. I have an old phone (Samsung a13 4g) and I was wondering if it would be possible to salvage the camera parts from it, and put it in a Lego camera frame to make a working Lego camera. If this is possible please give me help on how I would be able to do this. I also have an SD reader that I bought for esp32 if that helps, thanks. Also if this isn't the right sub for this can you please direct me to a better one",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1xszcyj",
+      "via": null,
+      "publishedAt": "2026-11-10T21:32:27.000Z",
+      "ref": "I1",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I just want to start by saying sorry if this isn't the right sub for this, I'm new to reddit. I have an old phone (Samsung a13 4g) and I was wondering if it would be possible to salvage the camera parts from it, and put it in a Lego camera frame to make a working Lego camera. If this is possible please give me help on how I would be able to do this. I also have an SD reader that I bought for esp32 if that helps, thanks. Also if this isn't the right sub for this can you please direct me to a better one",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Launch HN: Seam (YC S20) – API for IoT Devices",
+            "points": 158,
+            "url": "https://news.ycombinator.com/item?id=36212903"
+          },
+          {
+            "title": "Launch HN: OctaPulse (YC W26) – Robotics and computer vision for fish farming",
+            "points": 111,
+            "url": "https://news.ycombinator.com/item?id=47220320"
+          }
+        ],
+        "fetchedAt": "2026-11-10T21:58:01.060Z"
+      }
+    },
+    {
+      "id": "6243c56421",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1xsucvj/full_stack_real_world_usable_project_ideas",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "Full Stack Real World Usable Project Ideas?",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1xsucvj/full_stack_real_world_usable_project_ideas/",
+      "summary": null,
+      "deepenKey": "/r/SomebodyMakeThis/comments/1xsucvj",
+      "via": null,
+      "publishedAt": "2026-11-10T18:19:30.000Z",
+      "ref": "I2",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "b88a4d8d35",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/64807/which-mesh-processing-library-for-python-to-chose",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Which mesh processing library for python to chose",
+      "url": "https://softwarerecs.stackexchange.com/questions/64807/which-mesh-processing-library-for-python-to-chose",
+      "summary": "for a project I'm writing I need a library for python to process \".off\" files (3d models mesh files), so I would be able to visualize them and save an image of several views of the model . (the visualization is for that purpose, I just didn't find a lib with such option) I found the following libraries, and they seem fine but I'm not sure what to chose: PyMesh OpenMesh TriMesh Open3d Can you recommend on another library or which of the ones here is preferred?",
+      "deepenKey": "64807",
+      "signal": {
+        "score": 5,
+        "views": 4398,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2019-07-17T14:50:08.000Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [
+          "要的是库不是产品"
+        ],
+        "detail": {
+          "signal": -5,
+          "engagement": 7,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "0ed9562bf6",
+      "normUrl": "https://news.ycombinator.com/item?id=50444537",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What are your predictions for the next 2 years?",
+      "url": "https://news.ycombinator.com/item?id=50444537",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50444537",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-10T18:53:11Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "09cfa387d8",
+      "normUrl": "https://news.ycombinator.com/item?id=50444380",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How do you keep up quality when you vibe-code?",
+      "url": "https://news.ycombinator.com/item?id=50444380",
+      "externalUrl": null,
+      "summary": "I'm having a really hard time working with claude. In the past when I wrote all the code manually, it was always carefully reviewed and architected, with all possible flows carefully mapped out. Now, my code is mostly AI written which has led to things going out of control. Since it's easy to add new features and support many user flows, we went ahead and implemented flows that support a lot of cases our users run into.",
+      "deepenKey": "50444380",
+      "via": null,
+      "signal": {
+        "points": 15,
+        "comments": 16
+      },
+      "publishedAt": "2026-11-10T18:41:15Z",
+      "ref": "I5",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "在用笨办法凑合"
+        ],
+        "detail": {
+          "signal": 4,
+          "engagement": 5,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I'm having a really hard time working with claude. In the past when I wrote all the code manually, it was always carefully reviewed and architected, with all possible flows carefully mapped out. Now, my code is mostly AI written which has led to things going out of control. Since it's easy to add new features and support many user flows, we went ahead and implemented flows that support a lot of cases our users run into. But now, I feel like things are getting too complex with no central notion of behaviour definitions, which causes every bug-fixing session to feel like a game of whack-a-mole, and results in missing edge cases and UI bugs that are becoming impossible to review and keep track of. Every time I build anything new, it adds more complexity and the agent only seems to focus on the surrounding code within that session without keeping track of how it fits into the rest of the code base/product. How do you all deal with this? Any suggestions for improving?",
+        "comments": [
+          {
+            "text": "The same I was facing now I have built complete app but always worried about it is really protected and production ready I also facing this issue I don't know what to do"
+          },
+          {
+            "text": "I'm not sure if there is any standard for this, I also tried to search about it in the past. But what I ended up doing that has been working well is to keep everything documented. Every task and decisions are documented on .md files, referencing related tasks and decisions. The project becomes bloated quickly, but Claude can easily locate and relate decisions from a long time ago. Some times I even ask to do do something and mid-way Claude realizes that it goes against a previous written decision."
+          },
+          {
+            "text": "I've always been a bottom-up programmer, so I tend to think more about discrete operations of software rather than the user-facing features (which IME will fall out naturally). 1. Experiment and solidify architecture before adding features. I think this is the hardest step for top-down thinkers. 2. Heavy testing and benchmarking. Prefer to TDD as much as possible. The actual lines for my agent-written codebases are generally ~70+% tests, benchmarks, and experiments. 3. Full mutation test coverage after the code is written. Doing this as a human is miserable IMO, but robots make it reasonable. This step resolves SO MANY subtle bugs. At that point my main role is ensuring alignment with the actual specs."
+          },
+          {
+            "text": "One thing that's surprisingly powerful is to just say what you want in the prompt. One of my skill files now includes \"inspect existing code under [subdir] for implementation patterns.\" Depending how much code you have, that might take a lot of tokens. You could either list the patterns that you want or include a smaller code sample in the skill's references. A stronger version of this would be to make a separate gate. Fail the commit if the new code duplicates something already in a utility function, renames something that already had a name, uses for-loops instead of list comprehensions, whatever is bothering you."
+          },
+          {
+            "text": "Just know what you're doing, what and how you want it from a coding agent. It saves time on typing but not on thinking"
+          },
+          {
+            "text": "I don’t think it is “you” that deals with this. You have outsourced your engineering to Claude, so Claude must deal with this, and if it’s not good enough to deal with that task just yet, you should wait for improvements to Claude until it is. (Some of the other suggestions here are good; it is possible that Claude already is good enough to deal with the task and you’re just not asking it correctly.)"
+          },
+          {
+            "text": "OpenSpec solves this incidentally by dividing work into planning, implementation, and archiving phases. If you tell it what you're doing and the business reasons during planning (and bicker with it about technical implementation) then it goes off the rails much less when it actually does the work. You can also PR the spec to coworkers before implementation and run the implementation step in a new context to keep it more on track."
+          },
+          {
+            "text": "The way I deal with it is to not have an agent write all of my code. Hand tools didn't become obsolete after power tools were invented."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "How do you keep up quality when you vibe-code?",
+            "points": 15,
+            "url": "https://news.ycombinator.com/item?id=50444380"
+          },
+          {
+            "title": "Show HN: One prompt generates an app with its own database",
+            "points": 82,
+            "url": "https://news.ycombinator.com/item?id=45291618"
+          },
+          {
+            "title": "Show HN: Command Center, the AI coding env for people who care about quality",
+            "points": 69,
+            "url": "https://news.ycombinator.com/item?id=48453002"
+          }
+        ],
+        "fetchedAt": "2026-11-10T21:57:19.853Z"
+      }
+    },
+    {
+      "id": "9c448a0375",
+      "normUrl": "https://news.ycombinator.com/item?id=50443855",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "I Am at School on Here",
+      "url": "https://news.ycombinator.com/item?id=50443855",
+      "externalUrl": null,
+      "summary": "hello guys",
+      "deepenKey": "50443855",
+      "via": null,
+      "signal": {
+        "points": 20,
+        "comments": 6
+      },
+      "publishedAt": "2026-11-10T18:03:57Z",
+      "ref": "I6",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "a3c3b517d8",
+      "normUrl": "https://news.ycombinator.com/item?id=50441091",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "The tcl.tk domain has been hijacked",
+      "url": "https://news.ycombinator.com/item?id=50441091",
+      "externalUrl": null,
+      "summary": "Many historic links to TCL/TK now point to a vibecoded spam website. Example: the Tcl 8.5 tutorial at http://www.tcl.tk/man/tcl8.5/tutorial/tcltutorial.html Apparently the Tcl language team has switched over to tcl-lang.org, but plenty search results now point to spam.",
+      "deepenKey": "50441091",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-10T14:42:52Z",
+      "ref": "I7",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "26b8d76abc",
+      "normUrl": "https://news.ycombinator.com/item?id=50440360",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How angry are you about Apple's walled garden when using Android?",
+      "url": "https://news.ycombinator.com/item?id=50440360",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50440360",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-10T13:51:58Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4d43a5680c",
+      "normUrl": "https://news.ycombinator.com/item?id=50438506",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Anyone else notice Fable 5.2 making grammar errors?",
+      "url": "https://news.ycombinator.com/item?id=50438506",
+      "externalUrl": null,
+      "summary": "While trying out Fable 5.2 today I've run into the second instance of it using incorrect grammar, here is an excerpt: \"It can be blocked afterwards, but it has registered with cloud once.\" Anyone else seeing this?",
+      "deepenKey": "50438506",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-10T10:51:34Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "918267f165",
+      "normUrl": "https://news.ycombinator.com/item?id=50437119",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Question: How to control unit tests in Agentic Pipelines",
+      "url": "https://news.ycombinator.com/item?id=50437119",
+      "externalUrl": null,
+      "summary": "Have some wins but many struggles here When generating new features using agents, we must then update the unit tests This is counter to the purpose of unit tests. Allowing the system to update its unit tests is introducing risk and uncertainty, even with scoped PRs Not allowing the system to update unit tests will negatively impact velocity… How are folks in the field handling this? Have a real rube-Goldberg situation going on here",
+      "deepenKey": "50437119",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-10T07:20:54Z",
+      "ref": "I10",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "ae49486c09",
+      "normUrl": "https://news.ycombinator.com/item?id=50436636",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Notion AI chat sessions have been exposed via Fireworks AI hack",
+      "url": "https://news.ycombinator.com/item?id=50436636",
+      "externalUrl": null,
+      "summary": "Only an email so far, nothing official I could find. I figure if you didn't get this email you are ok. --- We are writing to inform you of a security incident at one of our vendors, Fireworks AI, that may impact you. For the latest on the Fireworks AI incident, see their official updates here. Following an investigation by the Notion security team, we have determined that your workspace, [...], was among the This email explains what happened, what data of yours might be affected, what we’re doing to address this, and what we recommend to protect your data from this Fireworks AI incident.",
+      "deepenKey": "50436636",
+      "via": null,
+      "signal": {
+        "points": 15,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-10T06:00:48Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Only an email so far, nothing official I could find. I figure if you didn't get this email you are ok. --- We are writing to inform you of a security incident at one of our vendors, Fireworks AI, that may impact you. For the latest on the Fireworks AI incident, see their official updates here. Following an investigation by the Notion security team, we have determined that your workspace, [...], was among the This email explains what happened, what data of yours might be affected, what we’re doing to address this, and what we recommend to protect your data from this Fireworks AI incident. What is Fireworks AI and how we used them: Fireworks is one of the most used global AI infrastructure platforms powering tens of thousands of customers and used by hundreds of thousands of developers. We used Fireworks for classification jobs to help customers understand their own AI usage through a feature in Notion called Insights, and we used them as a general inference provider to serve open-weight models inside our product. The Insights feature has been disabled as we investigate this incident, and we are no longer serving open-weight models through Fireworks. What happened and how we addressed it: We learned from Fireworks about potential incidents earlier this month, and we shut down all connections to their systems out of an abundance of caution. On November 6, Fireworks notified us that malicious actors may have accessed potential customer data. Our team immediately began another internal investigation. On November 8, Fireworks confirmed this new dataset for us. Upon analysis of the new data, we discovered that it included unattributable Notion AI chat transcripts used for the Insights feature. Chats weren't labeled with who wrote them or which workspace they came from, and the transcripts did not contain any tool call results. Beyond the words in the chat transcripts themselves, the data contained no information that could specifically identify your workspace, users, or company. No other Notion data from your workspace is affected, and we continue to monitor this incident.",
+        "comments": [
+          {
+            "text": "https://www.notion.com/help/security-incident-involving-a-th... I adore notion as a notetaking tool (love making notes in markdown, love syncing across multiple computers) but have been really frustrated the last 1-2 years with them shoving ai-enabled tools down my throat that only slowed down the application for me. I think I emailed them to ask them to turn off the ai features and they just asked why. I've been gradually thinking I was ready to migrate away and I'm incredibly glad I wasn't included in this issue but it's clear they're not taking security seriously and I won't be surprised if I'm included in the next exploit. Also poor timing for them to talk about \"Notion 3.0\" lol: https://www.notion.com/blog/the-next-era-of-notion"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Tell HN: Notion AI chat sessions have been exposed via Fireworks AI hack",
+            "points": 15,
+            "url": "https://news.ycombinator.com/item?id=50436636"
+          },
+          {
+            "title": "How do you keep up quality when you vibe-code?",
+            "points": 15,
+            "url": "https://news.ycombinator.com/item?id=50444380"
+          }
+        ],
+        "fetchedAt": "2026-11-10T21:58:01.555Z"
+      }
+    },
+    {
+      "id": "b226961558",
+      "normUrl": "https://news.ycombinator.com/item?id=50435929",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "CoderPad Reports a Security Breach",
+      "url": "https://news.ycombinator.com/item?id=50435929",
+      "externalUrl": null,
+      "summary": "Not yet detailed on their website or Trust center yet, but we received the following breach notification from CoderPad: > We are writing to inform you of unauthorized access to personal information held by CoderPad. > > *What happened* > > We identified unauthorized access through an internal reporting system. We have blocked the access identified during our investigation and taken steps to secure the affected system. > > *What information was involved* > > Based on our current assessment, personal information was exposed, including first name, last name, email and IP addresses.",
+      "deepenKey": "50435929",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-10T04:05:15Z",
+      "ref": "I12",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "0dab527435",
+      "normUrl": "https://news.ycombinator.com/item?id=50435819",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are companies making money by using AI?",
+      "url": "https://news.ycombinator.com/item?id=50435819",
+      "externalUrl": null,
+      "summary": "AI news is focused on the same companies improving their models. But I am really interested in getting opinions about companies that are actually making money by using AI, either by granting access to Claude or by including some sort of AI feature in their products.",
+      "deepenKey": "50435819",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 11
+      },
+      "publishedAt": "2026-11-10T03:49:10Z",
+      "ref": "I13",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "03ecad6afe",
+      "normUrl": "https://news.ycombinator.com/item?id=50435490",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "OpenAI models have no agency anymore",
+      "url": "https://news.ycombinator.com/item?id=50435490",
+      "externalUrl": null,
+      "summary": "I don't know if it's a token saving measure or to bait more interactivity from users but it feels like out of nowhere the models have just became useless with zero agency. If you don't have a goal plugin that constantly prods them, there is a very high chance it just doesn't do anything and responds back like you're asking it a question. OFTEN it ends sentences with \"I'll do XXXXX.\" or \"I'll implement XXXXX.\" and STOPS where the next turn should be a tool call or something.",
+      "deepenKey": "50435490",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-10T02:51:25Z",
+      "ref": "I14",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "加密货币",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "d0a2a05e4e",
+      "normUrl": "https://news.ycombinator.com/item?id=50431888",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Remote island can only have 1 PC, 1 book, 1 programming language",
+      "url": "https://news.ycombinator.com/item?id=50431888",
+      "externalUrl": null,
+      "summary": "Imagine being dropped on a remote island for 1 year with a solar-powered laptop, zero internet, you can only bring one book, and can choose any one programming language and you may find some e-waste ? What do you pick, and what do you spend 12 months building ?",
+      "deepenKey": "50431888",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 9
+      },
+      "publishedAt": "2026-11-09T20:48:33Z",
+      "ref": "I15",
+      "screen": {
+        "keep": true,
+        "score": 3,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8dd16d5941",
+      "normUrl": "https://news.ycombinator.com/item?id=50429583",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Share your best blog/videos on learning about LLMs in depth",
+      "url": "https://news.ycombinator.com/item?id=50429583",
+      "externalUrl": null,
+      "summary": "Fine tuning, training, testing, creating/acquiring training data, images/text, instruction training, how inference works, etc",
+      "deepenKey": "50429583",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-09T18:36:05Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "9fbbeedefa",
+      "normUrl": "https://news.ycombinator.com/item?id=50429114",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "P2P inference using WebGPU libp2p and IPFS",
+      "url": "https://news.ycombinator.com/item?id=50429114",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50429114",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-09T18:03:54Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "687a855ace",
+      "normUrl": "https://github.com/NuvioMedia/NuvioTV/issues/4141",
+      "sourceId": "gh-requests",
+      "source": "GitHub 高赞功能请求",
+      "sourceHome": "https://github.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "[Feature]: Display Active Streaming Quality, Audio Format & Language Beside Movie Title",
+      "url": "https://github.com/NuvioMedia/NuvioTV/issues/4141",
+      "summary": "### Area (tag) Playback ### Problem statement I want to be able to see the actual playback resolution, HDR format, audio format, and currently playing audio language directly beside the movie title on the playback screen. Currently, users need to open audio settings to check the active audio track and its format.",
+      "signal": {
+        "thumbsUp": 341,
+        "comments": 19,
+        "repo": "NuvioMedia/NuvioTV"
+      },
+      "publishedAt": "2026-10-19T13:45:18Z",
+      "ref": "I18",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "### Area (tag) Playback ### Problem statement I want to be able to see the actual playback resolution, HDR format, audio format, and currently playing audio language directly beside the movie title on the playback screen. Currently, users need to open audio settings to check the active audio track and its format.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-10T21:57:20.076Z"
+      }
+    },
+    {
+      "id": "d86161e53b",
+      "normUrl": "https://reddit.com/r/msp/comments/1xsyxie/important_ncentral_security_hotfix_update_action",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Important N-central Security Hotfix Update - Action Required",
+      "url": "https://www.reddit.com/r/msp/comments/1xsyxie/important_ncentral_security_hotfix_update_action/",
+      "summary": "Trusted N-able N-central Partner, As we notified yesterday, Nov. 9, N-able is currently responding to a non-responsible communication of critical vulnerabilities in N-central found by an independent researcher. We are now observing scanning activity associated with the published proof-of-concept code. We continue to recommend that N-central servers remain offline until your server has been successfully upgraded.",
+      "deepenKey": "/r/msp/comments/1xsyxie",
+      "via": null,
+      "publishedAt": "2026-11-10T21:15:18.000Z",
+      "ref": "I19",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Trusted N-able N-central Partner, As we notified yesterday, Nov. 9, N-able is currently responding to a non-responsible communication of critical vulnerabilities in N-central found by an independent researcher. We are now observing scanning activity associated with the published proof-of-concept code. We continue to recommend that N-central servers remain offline until your server has been successfully upgraded. We have released N-central 2026.4 HF2, which addresses the critical security updates and includes a number of security patches and technology updates that improve the overall security of N-central. Related CVEs have now also been published. To keep your environment protected, customers running on-premises N-central deployments should upgrade their servers as soon as possible, and keep them inaccessible to the internet until upgraded. Hosted N-central servers are upgraded by N-able and are now back online . All customers, both hosted and on-premises, must upgrade their Agents and Probes. N-central On-Premises Environments Action Required: Please apply the applicable hotfix to your N-central server as soon as possible. Download information: N-central 2026.4 HF2 Release Notes | N-able Status Additional steps are required to upgrade the agents and probes. See this KnowledgeBase article for helpful information: https://me.n-able.com/s/article/How-to-upgrade-Agents-and-Probes-on-N-able-N-central-version-2026-4-HF1-and-above N-central Hosted Environments No action is required on your part for the Hotfix. Additional steps are required to upgrade the agents and probes. See this KnowledgeBase article for helpful information: https://me.n-able.com/s/article/How-to-upgrade-Agents-and-Probes-on-N-able-N-central-version-2026-4-HF1-and-above Please note that a follow-up hotfix will be released to provide further security updates as part of our ongoing response. Protecting our partners and their customers is our highest priority. We know the steps we have taken have caused disruption, and we do not take that lightly. We took these precautions because we believe acting quickly to protect your environments is the right thing to do.",
+        "comments": [
+          {
+            "text": "That's pretty funny you had to add \"non-responsible\" to the commentary here. Because the way the news articles tell it, he reached out to you guys multiple times and was ignored, and disclosed to force you to fix the very serious CVEs that you would have otherwise let live on. I guess we've learned nothing from SolarWinds123. Strong work, n-able."
+          },
+          {
+            "text": "I agree with you. If they truly knew months ago...which would be hard to prove from either side, then I wish my money was going to another vendor. That is inexcusable."
+          },
+          {
+            "text": "Wouldn't be that hard to prove from the security researcher's side honestly. The subtle \"non-responsible\" is a bad look."
+          },
+          {
+            "text": "Pretty sure the researcher who disclosed it has proof of that, because all the news articles are saying it and I doubt they’d report that without checking."
+          },
+          {
+            "text": "Fun fact: today they cold called me and tried to get us to move away from our current RMM and to get N-Central. When I mentioned what's happening, they even tried to sell it as a good thing. I had a good laugh."
+          },
+          {
+            "text": "He admitted to the media he did NOT responsibly disclose any of these: https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/"
+          },
+          {
+            "text": "You’re right it was the previous disclosures that went unanswered. I don’t blame him honestly. I have been sitting on a stack (8) of very serious CVEs with a very well known vendor for over 9 months without a fix. Vendors in this channel do not handle responsible disclosure well. If I was him and didn’t hear back on previous ones I would probably do the same thing. He inconvenienced a lot of people but less so than if everything got breached, all while the responsible disclosure process played out with a vendor who probably wouldn’t have answered him anyways."
+          },
+          {
+            "text": "Good luck to all those getting things back online today! Fully realize that’s a bit of a process so we’re still sending pizza as the requests come in. Also figured it was time to up our game for those wondering if this was real ;)"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-10T22:06:15.071Z"
+      }
+    },
+    {
+      "id": "9f0dff3103",
+      "normUrl": "https://reddit.com/r/msp/comments/1xsq6hi/pax8_microsoft_365_business_standard_licenses",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Pax8 (Microsoft 365 Business Standard) licenses showing non-profit pricing",
+      "url": "https://www.reddit.com/r/msp/comments/1xsq6hi/pax8_microsoft_365_business_standard_licenses/",
+      "summary": "So long story short, went into a tenant this morning to update some settings for a user, and I happened to notice that the users assigned a Business Standard license has the name/license type changed to [non-profit pricing]. I was like, thats messed up, checked the licensing section and shows there too. I opened a ticket with Pax8 for the one client this morning. Then I decided to check on some other tenants, sure enough, all the regular Business Standard NCE licenses are now showing [non-profit pricing]. Exchange online, and others are not changed.",
+      "deepenKey": "/r/msp/comments/1xsq6hi",
+      "via": null,
+      "publishedAt": "2026-11-10T15:43:34.000Z",
+      "ref": "I20",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [
+          "要牌照或合规"
+        ],
+        "detail": {
+          "signal": -6,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5a264e32f3",
+      "normUrl": "https://reddit.com/r/msp/comments/1xs8qut/need_proofpoint_365_permission_manager_on_its_own",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Need Proofpoint 365 Permission Manager on it's own",
+      "url": "https://www.reddit.com/r/msp/comments/1xs8qut/need_proofpoint_365_permission_manager_on_its_own/",
+      "summary": "Can Proofpoint 365 Permission Manager be purchased on it's own or does it need to be part of their bundles? I think it might be useful to do a quick SharePoint and OneDrive permission reviews for small SMBs before deploying AI - as well as keeping them compliant going forward. Interested in alternate solutions - love it if CIPP could create this sort of report without requiring a ton of extra MS licenses.",
+      "deepenKey": "/r/msp/comments/1xs8qut",
+      "via": null,
+      "publishedAt": "2026-11-10T00:29:25.000Z",
+      "ref": "I21",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Can Proofpoint 365 Permission Manager be purchased on it's own or does it need to be part of their bundles? I think it might be useful to do a quick SharePoint and OneDrive permission reviews for small SMBs before deploying AI - as well as keeping them compliant going forward. Interested in alternate solutions - love it if CIPP could create this sort of report without requiring a ton of extra MS licenses.",
+        "comments": [
+          {
+            "text": "Proofpoint won't sell their M365/CASB permission tooling truly standalone for small SMBs—it gets tied into their broader bundles and seat minimums. If you just need a quick pre-AI audit of overshared SharePoint and OneDrive links without buying extra Microsoft E5 or SharePoint Advanced Management licenses, pairing CIPP with a scheduled PnP PowerShell script that flags 'Everyone except external users' and anonymous links across tenants is honestly the cleanest free way to get that report right now. The other half of keeping small SMBs compliant once they start using AI is stopping staff from just copying data out of SharePoint and pasting or uploading it into public ChatGPT or Claude in their browser."
+          },
+          {
+            "text": "pnp powershell script is the way to go. No need to have a million licenses from a million vendors eating into margins. Learn powershell and run with it."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-10T22:07:16.090Z"
+      }
+    },
+    {
+      "id": "e5734090a1",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1xsctcn/how_to_stop_being_angry_all_the_time",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "How to stop being angry all the time?",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1xsctcn/how_to_stop_being_angry_all_the_time/",
+      "summary": "Between the total disfunction in the organization, the seeming lack of accountability of management and the apathy of the IT-adjacent application owners, developers, stakeholders etc I deal with all day who don't seem to be motivated to care about how anything they are responsible for works... It seems like when shit inevitably hits the fan it turns into me being the escalation point. I'm running around putting out fires while also answering everyone's stupid questions, and it's like I'm talking to a wall.",
+      "deepenKey": "/r/sysadmin/comments/1xsctcn",
+      "via": null,
+      "publishedAt": "2026-11-10T03:45:43.000Z",
+      "ref": "I22",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Between the total disfunction in the organization, the seeming lack of accountability of management and the apathy of the IT-adjacent application owners, developers, stakeholders etc I deal with all day who don't seem to be motivated to care about how anything they are responsible for works... It seems like when shit inevitably hits the fan it turns into me being the escalation point. I'm running around putting out fires while also answering everyone's stupid questions, and it's like I'm talking to a wall. \"I don't know how to do that\" seems to automatically become \"you have to do it because we need it to work\". I go home every night just fucking angry at everything and everyone and having imaginary arguments with people in my head. It seems like 75% of my job seems to be explaining to other people how they are supposed to do their job, because if I don't then it becomes my job.",
+        "comments": [
+          {
+            "text": "A while ago I learned the art of just not caring. Put in the effort, sure. But no one is allowed to make their negligence an emergency on my part. I realize not every position can do that, but they can to some extent. Put your foot down but be polite about it. Or don't, maybe it calls for that. Put your mental health first OP. It's worth it."
+          },
+          {
+            "text": "That's where I'm at with it. I developed 3 rules that really helped my mental health. I don't care more about an issue than the person experiencing it. That means if I email for more info and don't get a reply? I don't care. It's clearly not that big an issue. If I documented why it was wrong/a risk/broken and was ignored, it's no longer my concern. I'm not wasting my energy worrying about things after they've been ignored. All I can do is provide the information, it's on the users and C suite to follow it. Unless someone is literally about to die, it's not an emergency after hours. That's it. Unless someone is literally going to die and I'm the only one who can save them, it can wait until 8 am."
+          },
+          {
+            "text": "That was the advice i've gotten all year from different people, especially concerning 2. Which of course makes sense and is the right approach, but i couldn't tell my mind to just let go.always all in, it's exhausting. Good for you though."
+          },
+          {
+            "text": "It’s connected to your self esteem. If you’re not valuing your time, it’s hard to evaluate why you shouldn’t self destruct for your employer."
+          },
+          {
+            "text": "Don't worry about that, after ~8 years of being stuck in a corporate do-nothing hellhole dead-end job even the brightest and most passionate person will eventually be broken and learn the ways of quiet quitting It's sad but it's what these companies inevitably breed, culture wise"
+          },
+          {
+            "text": "I’m in the middle of a stockpiles of work overflowing and spilling over and it’s been extremely stressful on top of personal life mega stressors. Thank you for the reminder."
+          },
+          {
+            "text": "This, but another slightly spiteful option as well. I've been through a number of larger scale layoffs at different companies over the years, but have never been let go. Some of the people whose tasks I've automated because they refused to do their job have though. The \"shut up or I will replace you with a very small script\" - joke has some truth to it."
+          },
+          {
+            "text": "You are paid to a job and nothing more. It’s not your business, your profits. Stay professional but let the others fuck up around you. Do your job and go home and collect your paycheck"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Telling our children the truth: response to Paul Graham",
+            "points": 58,
+            "url": "https://news.ycombinator.com/item?id=199279"
+          }
+        ],
+        "fetchedAt": "2026-11-10T21:59:02.823Z"
+      }
+    },
+    {
+      "id": "d0ab353615",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1xskb3e/happyquit_my_job_last_week",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "Happy-Quit my job last week.",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1xskb3e/happyquit_my_job_last_week/",
+      "summary": "After 6 years at my current Sr. Sys Admin/IT Director role, I left my job and I'm going to just chill for the rest of the year. It's all fun and games when you're up in the corporate chain but that means you're the one stop shop for execs/VIPs. Uninstalling Outlook from my phone felt so good. No more documentation, no more ISO, no more NIST, no more certs. I made enough money to pay off my house so I'm fine. Will unwind with a random vacation trip, catch up on some shows/ video games, get some good workouts in, and eat whatever I crave. Still planning my all you can eat seafood feast.",
+      "deepenKey": "/r/sysadmin/comments/1xskb3e",
+      "via": null,
+      "publishedAt": "2026-11-10T11:15:52.000Z",
+      "ref": "I23",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "6f3f031bcd",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1xskwge/first_day_on_the_job_compliance_nightmare",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "First day on the job - compliance nightmare unraveled",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1xskwge/first_day_on_the_job_compliance_nightmare/",
+      "summary": "I just started a new job in IT for a small org. Induction went well and got to meet all the nice people that work in the HQ. Sit down at my desk and read a report that was drafted up by the previous IT guy and details how to obtain previous logins. All good. As I get to the next page all the issues are listed and what needs carried out to improve the companies security. First point was about how the majority of endpoints are using Home Edition. Next was unmanaged devices only 20 work mobiles so far are managed so they had made a start but ran into a roadblock it seems.",
+      "deepenKey": "/r/sysadmin/comments/1xskwge",
+      "via": null,
+      "publishedAt": "2026-11-10T11:50:24.000Z",
+      "ref": "I24",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "I just started a new job in IT for a small org. Induction went well and got to meet all the nice people that work in the HQ. Sit down at my desk and read a report that was drafted up by the previous IT guy and details how to obtain previous logins. All good. As I get to the next page all the issues are listed and what needs carried out to improve the companies security. First point was about how the majority of endpoints are using Home Edition. Next was unmanaged devices only 20 work mobiles so far are managed so they had made a start but ran into a roadblock it seems. Probably realised the hefty amount of work required for ONE person to carry out. Next point was about how all users have admin rights so can install any apps. Same issue as the endpoint management I suppose. So I asked my manager can we start buying Pro keys and sent the price across. He became hesitant and said - ‘Is it necessary we are a small org?’ I said yes we need it for compliance and if an audit were to be done we’d fail. I’m still waiting for a response 2 days later and was told they are still deciding. Anyways with hundreds of remote staff being in the mix I’m started to think this task will be impossible to carry out for 1 IT person. I mean even in the notes itself the previous guy said they need an MSP to become compliant. I’m going to start looking for another job.",
+        "comments": [
+          {
+            "text": "I’m going to start looking for another job. A wise choice /thread"
+          },
+          {
+            "text": "Next point was about how all users have admin rights so can install any apps. That's exactly what I walked into about three years ago. It was a horror show. In my first month I restricted everyone down to standard users and deployed endpoint management to mitigate the problem. It really didn't take much effort, I just think my predecessor got really really lazy."
+          },
+          {
+            "text": "Had proxy contact to an MSP via a shared customer i provided software for but network, servers, domain, etc was under the umbrella of the MSP. Every user was full domain admin with no restrictions and passwords for all accounts where shared on paper and put next to every keyboard as a reminder."
+          },
+          {
+            "text": "Yep... these people walk among us. In my MSP days I encountered a customer who had very similar practices. \"What field were they in?\" I hear you ask... Medical. Yes, this company was in posession of thousands of peoples' confidential medical data."
+          },
+          {
+            "text": "From what I’ve observed, medical clients are really cheap. Dental is even worse. We had clients that filled up their servers and they fought tooth and nails when it came to paying for more storage. They even fought upgrade Server 2012 after it reached EoL."
+          },
+          {
+            "text": "Bro got literally the EASIEST job in the world and came her to brag. Phone it in dude, you can do (or not do) whatever you want at this company."
+          },
+          {
+            "text": "If you can't buy Windows licensing, then you can't afford to do anything."
+          },
+          {
+            "text": "Alternatively, if you can't afford to do anything, you can afford to do nothing. Document risks and communication about needs to fix. Document the refusal. Sit on hands."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-10T22:08:16.988Z"
+      }
+    },
+    {
+      "id": "fe89d821c5",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1xs57ht/nontech_users_asking_for_python_to_run_ai",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "Non-tech users asking for Python to run AI generated scripts",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1xs57ht/nontech_users_asking_for_python_to_run_ai/",
+      "summary": "How do you even begin to approach this? We had another user ask to be able to run python. Well, they asked for Visual Studio.. sigh \"Are we able to have Visual Studio installed for running Python scripts?\" We already had a few of these and most were shot down as they had no idea what they'd be running exactly, but I know they're pressured and somewhat encouraged to try and find solutions to their problems, and AI can help. But these guys have no idea about scriting, programming, security, nothing.",
+      "deepenKey": "/r/sysadmin/comments/1xs57ht",
+      "via": null,
+      "publishedAt": "2026-11-09T22:02:36.000Z",
+      "ref": "I25",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "How do you even begin to approach this? We had another user ask to be able to run python. Well, they asked for Visual Studio.. sigh \"Are we able to have Visual Studio installed for running Python scripts?\" We already had a few of these and most were shot down as they had no idea what they'd be running exactly, but I know they're pressured and somewhat encouraged to try and find solutions to their problems, and AI can help. But these guys have no idea about scriting, programming, security, nothing. I don't want to outright ban AI, but I don't think we can allow random scripts running all over the place..",
+        "comments": [
+          {
+            "text": "Think about blast radius and work on reducing that. Because if you stop them running python they’ll just slopcode some powershell, or batch files, or whatever."
+          },
+          {
+            "text": "But those should be locked down from being able to run too. However it's much easier to approve each script versus simply installing Visual Studio unattended. Each version should require re-approval as well."
+          },
+          {
+            "text": "But those should be locked down from being able to run too. If it supports AppControl (Basically PowerShell but there's a few others too) it's allowed. If not, no can do unless it's on a dev box."
+          },
+          {
+            "text": "wait you're just allowing powershell? first thing i endeavor to turn off from end user devices"
+          },
+          {
+            "text": "Not too hard to prevent them from touching those tools as well"
+          },
+          {
+            "text": "It’ll be a cat and mouse game with them finding new workarounds that you need to waste time blocking. Best to fix this at the policy/org level, not through technical means"
+          },
+          {
+            "text": "Technical vs policy solutions. If you make it clear that users should not be running scripts without prior approval and they run around trying to get past your technical blockers, that's a violation of corporate policy and should be punished accordingly. You can't put every fence in the world in. But people know when they should not be hopping fences, it is a violation, and they should get written up. Make it clear that if they continue doing things they've been told they should not be doing they will be fired. And follow through."
+          },
+          {
+            "text": "It’ll be a cat and mouse game with them finding new workarounds No it won't. It is baseline security to block all non-admin script execution on endpoints. If users manage to run a script your EDR alerts should go off like a Christmas tree."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-10T22:09:17.838Z"
+      }
+    },
+    {
+      "id": "970bef40b3",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xsyk59/i_sent_500_applications_got_tired_of_manual",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I sent 500+ applications, got tired of manual spreadsheets and a broken system. So I built my own job-hunt CRM.",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xsyk59/i_sent_500_applications_got_tired_of_manual/",
+      "summary": "Like a lot of grads and job seekers, I've felt the brutal beating of the modern job market. Since August of 2025, I’ve sent out over 530 applications across tech and commercial roles, only to be hit with endless \"we're sorry, but we've decided to move on to other candidates\" emails. It felt like I was smashing my head against a brick wall over and over again and asking for more. Things finally clicked for me when I saw a post on LinkedIn that prompted me to try a new approach.",
+      "deepenKey": "/r/microsaas/comments/1xsyk59",
+      "via": null,
+      "publishedAt": "2026-11-10T21:01:01.000Z",
+      "ref": "I26",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "e1e09c496e",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xsxyfn/how_do_you_get_actionable_takeaways_from_a",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "How do you get actionable takeaways from a podcast when you don't have time to listen?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xsxyfn/how_do_you_get_actionable_takeaways_from_a/",
+      "summary": "I keep saving long podcasts and long YouTube interviews for later, and later almost never comes. I don't have two hours in a row, and even when I do I usually pick something else. I used to tell myself that if I ever sat through the whole episode, I'd walk away with the useful parts. I don't think that's true. I think people overestimate how much they actually take from a full podcast. Finishing it feels like learning. A day later I usually can't point to one thing I was going to do differently. So I started building around a simpler action.",
+      "deepenKey": "/r/microsaas/comments/1xsxyfn",
+      "via": null,
+      "publishedAt": "2026-11-10T20:37:15.000Z",
+      "ref": "I27",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I keep saving long podcasts and long YouTube interviews for later, and later almost never comes. I don't have two hours in a row, and even when I do I usually pick something else. I used to tell myself that if I ever sat through the whole episode, I'd walk away with the useful parts. I don't think that's true. I think people overestimate how much they actually take from a full podcast. Finishing it feels like learning. A day later I usually can't point to one thing I was going to do differently. So I started building around a simpler action. Paste a podcast or long-form YouTube link, and get a playbook back: a useful summary plus actionable steps from that specific episode, not a generic transcript recap. I have 200+ summaries in so far. If you're building something and you don't have time for the long episodes either, how do you get actionable takeaways from them? Do you skip them, listen at 2x, or is there something that actually stuck? Edit: I'm a co-founder of Podex. It turns a podcast or long-form YouTube link into a playbook with a useful summary and actionable steps from that episode.",
+        "comments": [
+          {
+            "text": "Finishing an episode feels like learning, but a day later most people can't name one thing they meant to do differently, so your read on it is probably right. What's actually usable is usually two or three sentences. Take the transcript, keep only the lines with a digit in them or the ones where someone says what they did and what came of it, and drop the rest. A 90 minute episode runs about 13k words and usually leaves half a dozen of those. Recaps that summarize the topic instead of the claim are the ones nobody opens twice."
+          },
+          {
+            "text": "That digit filter is a smart heuristic. The \"what they did and what came of it\" lines are exactly the ones I end up wanting, and I think you're right that topic-level recaps are why most summaries never get opened twice. Do you do this by hand or have you scripted it?"
+          },
+          {
+            "text": "- Open Gemini (if it's a youtube video) - Paste the video link - Add the prompt: Extract all the actionnable lessons with examples Bullet point style skip apps.."
+          },
+          {
+            "text": "Fair, that works well for YouTube. Where I kept getting stuck was audio-only podcasts, and actually acting on the list a week later rather than generating it. Do you keep those bullet lists somewhere you go back to?"
+          },
+          {
+            "text": "I use a script to scrap audio only and it's the same process. I don't keep that somewhere I execute on it right away. The worse thing is to have a library of \"learnings\" as if it pokemon cards"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-10T22:00:06.914Z"
+      }
+    },
+    {
+      "id": "8a394bc0d5",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xsxxt3/build_something_people_want_to_pay_for",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Build something people want (to pay for)",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xsxxt3/build_something_people_want_to_pay_for/",
+      "summary": "https://preview.redd.it/sfn7ht1xiu0i1.png?width=1228&format=png&auto=webp&s=3438050bd0e471870c8a8a4965dcf26e517a9751",
+      "deepenKey": "/r/microsaas/comments/1xsxxt3",
+      "via": null,
+      "publishedAt": "2026-11-10T20:36:32.000Z",
+      "ref": "I28",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "f93231bcbb",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xswpd9/where_do_most_of_your_users_come_from",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Where do most of your users come from?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xswpd9/where_do_most_of_your_users_come_from/",
+      "summary": "I recently launched a small crypto trade replay tool and am figuring out where to focus my efforts to reach more users. For those running a micro SaaS, where do most of your users come from—Reddit, search, social media, word of mouth, paid ads, or somewhere else? I'm interested in free and trial users too, not just paying customers. Was that also how you found your first few users, or has your main source changed as you grew?",
+      "deepenKey": "/r/microsaas/comments/1xswpd9",
+      "via": null,
+      "publishedAt": "2026-11-10T19:48:15.000Z",
+      "ref": "I29",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "加密货币",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "6bb147d430",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xsw41y/i_built_a_program_for_scrubbing_your_reddit",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I built a program for scrubbing your Reddit history",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xsw41y/i_built_a_program_for_scrubbing_your_reddit/",
+      "summary": "A few months ago I decided I want to start cleaning my internet history, especially in this LLM era. I have had my Reddit account for years, accumulating thousands of comments, so I searched a way to do that. Reddit API changes killed most of the tools available, the online reliable one left was Redact, however I didn't like it because: - it was expensive (it costs $100 billed annually). I planned to use it only one time so it wouldn't work for me. - I didn't want to remove valuable contributions made along the years.",
+      "deepenKey": "/r/microsaas/comments/1xsw41y",
+      "via": null,
+      "publishedAt": "2026-11-10T19:25:31.000Z",
+      "ref": "I30",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "7b26dba00c",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xsvp1s/once_your_app_is_live_how_do_you_split_your_week",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Once your app is live, how do you split your week between building and marketing?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xsvp1s/once_your_app_is_live_how_do_you_split_your_week/",
+      "summary": "My app has been on the App Store for about a month now, and I've noticed the hardest part isn't building anymore. It's getting myself to stop building. Every time I sit down to work on marketing, I find a bug or a small feature I want to add and suddenly the whole day is gone. Building feels productive because you can see the progress. Marketing feels like shouting into a void until something randomly works. But I know marketing is the actual bottleneck right now, not the product.",
+      "deepenKey": "/r/microsaas/comments/1xsvp1s",
+      "via": null,
+      "publishedAt": "2026-11-10T19:09:19.000Z",
+      "ref": "I31",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "9d6766fcde",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xsveqh/looking_for_technical_co_founder",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "looking for technical co founder",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xsveqh/looking_for_technical_co_founder/",
+      "summary": "Hey everyone My name is Ed im 35 and im based in Boston and have I tried working on my app idea for a marketplace type of business (its more niche, but will give details if we talk and seems like a good fit). Anyway im not very technical with coding or ux design so I've tried hiring people from sites like upstart but its just not working and getting too expansive. Im looking for someone or even if you have another person in mind you'd think would be a good fit to help with this idea. Someone who is entrepreneurial and works good as a team.",
+      "deepenKey": "/r/microsaas/comments/1xsveqh",
+      "via": null,
+      "publishedAt": "2026-11-10T18:58:39.000Z",
+      "ref": "I32",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "招聘找人",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "c36b5a7bbf",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xstjay/i_think_micro_saas_demos_often_fail_because",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I think Micro SaaS demos often fail because founders try to show every feature",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xstjay/i_think_micro_saas_demos_often_fail_because/",
+      "summary": "One thing I keep noticing with SaaS demos is that founders try to show everything. Which makes sense. You’ve spent months building the product, so every feature feels important. But then the demo becomes: click here open this tab show the dashboard go to settings show another feature And by the end, the viewer has seen a lot… but still might not really understand why they should care. I think a better approach is to keep the story really simple: Problem → Key Action → Product Response → Outcome Before making the demo, I’d probably ask: What problem does the user already understand?",
+      "deepenKey": "/r/microsaas/comments/1xstjay",
+      "via": null,
+      "publishedAt": "2026-11-10T17:49:34.000Z",
+      "ref": "I33",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "One thing I keep noticing with SaaS demos is that founders try to show everything. Which makes sense. You’ve spent months building the product, so every feature feels important. But then the demo becomes: click here open this tab show the dashboard go to settings show another feature And by the end, the viewer has seen a lot… but still might not really understand why they should care. I think a better approach is to keep the story really simple: Problem → Key Action → Product Response → Outcome Before making the demo, I’d probably ask: What problem does the user already understand? What’s the main “aha” moment? Which 2–3 actions actually prove the value? What can be left out? That last one is probably the hardest. A product can have 20 useful features, but the first demo doesn’t need all 20. Sometimes showing less makes the product much easier to understand. Curious how other Micro SaaS founders handle this: What’s the one thing you need someone to understand about your product in the first 60 seconds?",
+        "comments": [
+          {
+            "text": "nah, the hardest part is getting anyone to sit through a demo at all. Most people asking for one have already half decided and are just looking for a reason to say no."
+          },
+          {
+            "text": "That’s fair and I think that’s exactly why most SaaS demos shouldn’t behave like product tours. If someone is already looking for a reason to say no, showing them 12 features usually gives them 12 more places to lose interest. The demo has to earn the next 20 seconds first. Problem they already care about → one key action → visible outcome. If that part doesn’t land quickly, the rest of the walkthrough probably doesn’t matter. Curious, in your experience, what usually gets someone to actually watch: the pain being relevant, strong proof, or timing?"
+          },
+          {
+            "text": "it often fail because of 2 things: - Too many features (focus on the best 3) - For each feature explain why the customer should care"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Launch HN: Patterns (YC S21) – A much faster way to build and deploy data apps",
+            "points": 149,
+            "url": "https://news.ycombinator.com/item?id=33801314"
+          }
+        ],
+        "fetchedAt": "2026-11-10T22:10:18.505Z"
+      }
+    },
+    {
+      "id": "a77ec476d3",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xssot9/i_made_drove_a_driving_journal",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I made Drove: a driving journal",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xssot9/i_made_drove_a_driving_journal/",
+      "summary": "Backstory: I made this app about a year back for personal use, I love driving and discovering new roads, and want to know where I have driven around with my little Toyota. Fast forward today, Drove is now out on the Play Store. Looking for honest feedback. Do check out here: https://play.google.com/store/apps/details?id=com.drove.app Drove is a driving journal that allows you to record your trip, replay your trip, share your trip, and a “track mode” for your track/racing needs. I charged 2.99USD one time for “premium”.",
+      "deepenKey": "/r/microsaas/comments/1xssot9",
+      "via": null,
+      "publishedAt": "2026-11-10T17:17:09.000Z",
+      "ref": "I34",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "dc16261558",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xss3o7/micro_saas_founders_what_is_the_one_metric_you",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Micro SaaS founders: what is the one metric you check every morning before anything else?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xss3o7/micro_saas_founders_what_is_the_one_metric_you/",
+      "summary": "I keep going back and forth between MRR, churn, and active users. Curious what other solo founders actually look at first, and why that one matters more than the rest.",
+      "deepenKey": "/r/microsaas/comments/1xss3o7",
+      "via": null,
+      "publishedAt": "2026-11-10T16:55:20.000Z",
+      "ref": "I35",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "c83e48aa05",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xsrbdi/first_paying_customer_2_weeks_after_product_hunt",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "First paying customer 2 weeks after Product Hunt, and it wasn’t the plan I expected",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xsrbdi/first_paying_customer_2_weeks_after_product_hunt/",
+      "summary": "I launched Senti on Product Hunt at the end of October. It makes brand sentiment reports from public posts on X, Reddit, Instagram and TikTok. What’s different from most sentiment tools: every number links to the actual posts behind it, so you can check whether a “negative” really was negative. Cheap and fast. Today I got my first paying customer. What I got wrong before the sale: I assumed people would want a subscription first. The first yes came from the $5 single report. Nobody wanted to commit before seeing a report on their own brand. I posted a lot of brand reports on X.",
+      "deepenKey": "/r/microsaas/comments/1xsrbdi",
+      "via": null,
+      "publishedAt": "2026-11-10T16:26:04.000Z",
+      "ref": "I36",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "4afce0f111",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xsqbg2/i_got_tired_of_losing_track_of_subscriptions_so_i",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I got tired of losing track of subscriptions, so I built my own subscription manager",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xsqbg2/i_got_tired_of_losing_track_of_subscriptions_so_i/",
+      "summary": "Between streaming services, software, cloud tools, and random free trials, keeping track of recurring payments became annoying. It's not always the expensive subscriptions that hurt. Sometimes it's the small ones you completely forget about. So I built Subscription Manager , a web app to organize recurring expenses in one place.",
+      "deepenKey": "/r/microsaas/comments/1xsqbg2",
+      "via": null,
+      "publishedAt": "2026-11-10T15:48:45.000Z",
+      "ref": "I37",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "0a5f05902e",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xsq803/would_you_keep_a_b2c_saas_usonly_for_the_first",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Would you keep a B2C SaaS US-only for the first validation stage, even if it could easily serve more countries?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xsq803/would_you_keep_a_b2c_saas_usonly_for_the_first/",
+      "summary": "I’m a solo founder outside the US and I’m close to launching a consumer subscription SaaS. My current plan is to keep the actual service US-only at first. Not because of a technical limitation — the product could support users in other countries fairly easily. My thinking is to validate with the first 20–30 paying users in one market, understand activation and retention properly, keep support/analytics simpler, and avoid taking on multiple privacy, consumer-protection and subscription-rule differences before I even know if the product has real pull.",
+      "deepenKey": "/r/microsaas/comments/1xsq803",
+      "via": null,
+      "publishedAt": "2026-11-10T15:45:09.000Z",
+      "ref": "I38",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "I’m a solo founder outside the US and I’m close to launching a consumer subscription SaaS. My current plan is to keep the actual service US-only at first. Not because of a technical limitation — the product could support users in other countries fairly easily. My thinking is to validate with the first 20–30 paying users in one market, understand activation and retention properly, keep support/analytics simpler, and avoid taking on multiple privacy, consumer-protection and subscription-rule differences before I even know if the product has real pull. I’m using Paddle as MoR, so payments and tax handling are simpler, but obviously that doesn’t make every country operationally identical. The thing making me reconsider it is acquisition: while looking for early users in public communities, I keep finding people who seem like a strong fit but are either outside the US or their country isn’t clear. So I’m wondering if US-only is smart focus — or if I’m just making the first-customer problem harder. For founders who have actually launched B2C SaaS internationally : Did you start with one country and expand after getting real paid + retention signals, or open a few countries from day one? What happened in practice with acquisition, conversion, support, compliance, or payments? And knowing what you know now, would you make the same choice again? Not looking for bigger market = better in theory, mainly interested in what actually happened.",
+        "comments": [
+          {
+            "text": "Public community interest measures curiosity, not subscription retention. Opening multiple countries early creates compliance overhead and fragments cohort data. Keep the US gate until 20 paying subscribers complete their first renewal, then expand to the single country with the strongest inbound intent."
+          },
+          {
+            "text": "yes, if the point is to learn from 20 to 30 users in one place. just keep signups from the other countries tracked, so you can check later whether activation looks the same there. and be straight in the marketing about why it's US only, otherwise it reads as a restriction you'll have to unwind later"
+          },
+          {
+            "text": "One thing that helps is putting the non-US people who show up on a waitlist and capturing their country. It costs you nothing, and it tells you which market to open second based on real demand. It also gives you a ready first batch when you expand. Just make sure your ads and outreach are targeted at the US only, so you aren't paying to reach people you can't serve yet."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Show HN: Skip the SSO Tax, access your user data with OSS",
+            "points": 220,
+            "url": "https://news.ycombinator.com/item?id=35524328"
+          }
+        ],
+        "fetchedAt": "2026-11-10T22:11:19.189Z"
+      }
+    },
+    {
+      "id": "dbbc5bff38",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xsq7ih/anthropic_just_rewarded_customers_based_on_how",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Anthropic just rewarded customers based on how long they've been paying. Micro SaaS companies do the opposite.",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xsq7ih/anthropic_just_rewarded_customers_based_on_how/",
+      "summary": "This week Anthropic launched Fable 5.2, and instead of throwing everything at new users, they gave free usage resets to existing Ultra and Team Premium subscribers, scaled by tenure: - Less than 6 months: 1 reset - 6 to 12 months: 2 resets - More than a year: 3 resets It got me thinking about what I see with the companies I work with. A lot of them sell AI, automation or high-tech services. Sales closes the deal, everyone celebrates, and then at renewal they find out the client used maybe 1% of what they bought. So the client leaves. Sometimes it's worse.",
+      "deepenKey": "/r/microsaas/comments/1xsq7ih",
+      "via": null,
+      "publishedAt": "2026-11-10T15:44:40.000Z",
+      "ref": "I39",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "45a01aef49",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xsq2e6/would_an_allinone_insurance_tool_for_saas_small",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Would an all-in-one insurance tool for SaaS small businesses be useful? (Cornell Tech student research)",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xsq2e6/would_an_allinone_insurance_tool_for_saas_small/",
+      "summary": "Hi all, we’re Cornell Tech students (MBA + engineering) exploring a tool that puts all of a small business’s insurance in one place for SaaS companies, personalized, so you don’t have to juggle brokers, insurer websites and 40-page policy PDFs. It would do three things: Know your risk: see how your business’s risk compares with similar companies, and what drives it. Compare coverage: see options across insurers side by side, ranked by fit for your business, not just price. Understand your policy: upload your policy and ask “am I covered for this?” to get a plain-English answer.",
+      "deepenKey": "/r/microsaas/comments/1xsq2e6",
+      "via": null,
+      "publishedAt": "2026-11-10T15:39:19.000Z",
+      "ref": "I40",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "有具体人群"
+        ],
+        "detail": {
+          "signal": 3,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Hi all, we’re Cornell Tech students (MBA + engineering) exploring a tool that puts all of a small business’s insurance in one place for SaaS companies, personalized, so you don’t have to juggle brokers, insurer websites and 40-page policy PDFs. It would do three things: Know your risk: see how your business’s risk compares with similar companies, and what drives it. Compare coverage: see options across insurers side by side, ranked by fit for your business, not just price. Understand your policy: upload your policy and ask “am I covered for this?” to get a plain-English answer. Nothing to sell, no link. We just want honest opinions. Would this be useful to you and Would you upload your current policy document to get personalized answers? A quick response would help us a lot. Thanks!",
+        "comments": [
+          {
+            "text": "I’d test this around a SaaS company facing an actual insurance decision, such as a renewal or a customer’s contract requirements. That gives someone a reason to upload a document now, while a general risk dashboard may stay on the someday list. Tony Yang’s Mucker growth playbook starts by separating the user, decision maker and the specific problem. For your interviews, ask who handled the last insurance decision, what triggered it, what documents they compared and where they needed clarification. Those roles may sit with the founder, finance or a broker. Then prototype one task with a redacted policy and an actual question they previously needed answered. Show the relevant clauses alongside the explanation, highlight uncertainty, and see whether the result helps them prepare a useful question for their broker."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-10T22:05:13.943Z"
+      }
+    },
+    {
+      "id": "efb093aef8",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xspvxo/a_user_said_my_tool_made_his_output_worse_so_i",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "A user said my tool made his output worse, so I changed the default instead of defending the benchmark",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xspvxo/a_user_said_my_tool_made_his_output_worse_so_i/",
+      "summary": "I build probe0, a free Mac tool for people who lean hard on Claude Code and Codex. It runs as a local proxy on your machine, shows what every call costs, and trims the things that quietly eat usage, like re-reading a conversation after the cache went cold or resending a giant test log every turn. I built it, so read this with that in mind. When I launched, the default was the aggressive setting. On a replay of 12 days of my own traffic, the conservative settings saved 12.8% of the bill, and the aggressive one (which also sends easy turns to a cheaper model) saved 41.8%.",
+      "deepenKey": "/r/microsaas/comments/1xspvxo",
+      "via": null,
+      "publishedAt": "2026-11-10T15:32:16.000Z",
+      "ref": "I41",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "412cb0ff52",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xspa3e/open_core_with_a_paid_cloud_has_the_free_tier",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Open core with a paid cloud: has the free tier ever eaten your revenue instead of feeding it?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xspa3e/open_core_with_a_paid_cloud_has_the_free_tier/",
+      "summary": "Small open source project here, and I want this sub's read on the business model rather than feedback on the product. The shape is standard open core. The entire product is open source and free to self-host, with no feature held back and no licence key. Revenue comes from the hosted version, which people pay for because they do not want to run infrastructure, not because they are unlocking anything. Two things I am unsure about. First, self-hosting here is genuinely the full product.",
+      "deepenKey": "/r/microsaas/comments/1xspa3e",
+      "via": null,
+      "publishedAt": "2026-11-10T15:08:36.000Z",
+      "ref": "I42",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "元讨论",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "1f13cc33c9",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xsoc8l/roast_my_landing_page_pingloom_phone_alerts_for",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Roast my landing page: PingLoom, phone alerts for small dev teams (pre-launch)",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xsoc8l/roast_my_landing_page_pingloom_phone_alerts_for/",
+      "summary": "Two days into building this in public and I'd like the page torn apart before more people see it. What it is: your server, cron job or script sends one HTTP request, your phone buzzes, and the alert goes into an inbox your team shares. One tap on \"I've got this\" and everyone else knows it's handled. Alerts can also ask a question (Deploy / Wait / Roll back) and the answer goes back to your script. One decision I keep second guessing: the whole thing runs on Postgres only. No Redis, no queue service.",
+      "deepenKey": "/r/microsaas/comments/1xsoc8l",
+      "via": null,
+      "publishedAt": "2026-11-10T14:30:28.000Z",
+      "ref": "I43",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "求反馈",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "3e059868af",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xso3q8/building_an_ai_api_saas_in_india_with_upi_payments",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Building an AI API SaaS in India with UPI payments",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xso3q8/building_an_ai_api_saas_in_india_with_upi_payments/",
+      "summary": "OxyRouter brings multiple AI models under one API, with UPI payments for Indian developers and a 2% platform fee. Still early, looking for feedback!",
+      "deepenKey": "/r/microsaas/comments/1xso3q8",
+      "via": null,
+      "publishedAt": "2026-11-10T14:20:46.000Z",
+      "ref": "I44",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "48833a0d66",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xslup6/what_is_more_challenging_zero_to_one_or_one_to",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "What Is More Challenging: Zero to One or One to Hundred? Entrepreneurs, I would love to hear your thoughts on this.",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xslup6/what_is_more_challenging_zero_to_one_or_one_to/",
+      "summary": "When building a business, what did you find more challenging: going from Zero to One (starting from scratch, finding product-market fit, and acquiring your first customers) or going from One to Hundred (scaling operations, growing revenue, and managing larger teams)? I asked a few entrepreneurs this question a couple of years ago, and I am curious to revisit it in today's AI-driven landscape. I am sure both stages come with their own unique challenges, but I wouldd love to hear about your experiences. Which stage demanded more time, effort, and resources? And what made it more challenging?",
+      "deepenKey": "/r/microsaas/comments/1xslup6",
+      "via": null,
+      "publishedAt": "2026-11-10T12:38:55.000Z",
+      "ref": "I45",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [
+          "工程量过大"
+        ],
+        "detail": {
+          "signal": -4,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8ccce9882a",
+      "normUrl": "https://producthunt.com/products/alsona",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Alsona",
+      "url": "https://www.producthunt.com/products/alsona",
+      "summary": "AI agents that turn buying signals into booked sales calls",
+      "publishedAt": "2026-10-21T15:41:38.000Z",
+      "ref": "I46",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "AI agents that turn buying signals into booked sales calls",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-10T22:00:52.203Z"
+      }
+    },
+    {
+      "id": "93cda0d4c1",
+      "normUrl": "https://producthunt.com/products/ember-117",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Ember",
+      "url": "https://www.producthunt.com/products/ember-117",
+      "summary": "Free, open-source Slack you host on Cloudflare in one click",
+      "publishedAt": "2026-11-09T17:00:33.000Z",
+      "ref": "I47",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Free, open-source Slack you host on Cloudflare in one click",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-10T22:01:12.133Z"
+      }
+    },
+    {
+      "id": "ca57045ccc",
+      "normUrl": "https://producthunt.com/products/latch-ai-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Latch.ai",
+      "url": "https://www.producthunt.com/products/latch-ai-2",
+      "summary": "Automate complex accounting work without a single prompt",
+      "publishedAt": "2026-10-28T20:19:05.000Z",
+      "ref": "I48",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Automate complex accounting work without a single prompt",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-10T22:01:32.154Z"
+      }
+    },
+    {
+      "id": "cf6bcc0640",
+      "normUrl": "https://producthunt.com/products/maxma-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Maxma",
+      "url": "https://www.producthunt.com/products/maxma-2",
+      "summary": "The 24/7 AI teammate that scales your paid ad performance",
+      "publishedAt": "2026-10-24T00:59:22.000Z",
+      "ref": "I49",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The 24/7 AI teammate that scales your paid ad performance",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-10T22:01:52.174Z"
+      }
+    },
+    {
+      "id": "c47da5ea11",
+      "normUrl": "https://producthunt.com/products/lottiefiles",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Lottie AI",
+      "url": "https://www.producthunt.com/products/lottiefiles",
+      "summary": "Editable vector animations from a text prompt",
+      "publishedAt": "2026-11-09T08:16:41.000Z",
+      "ref": "I50",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Editable vector animations from a text prompt",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-10T22:02:12.182Z"
+      }
+    },
+    {
+      "id": "942feb0720",
+      "normUrl": "https://producthunt.com/products/chromeping",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "ChromePing",
+      "url": "https://www.producthunt.com/products/chromeping",
+      "summary": "Talk to anyone by phone, in a language you don't speak",
+      "publishedAt": "2026-11-05T06:37:36.000Z",
+      "ref": "I51",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Talk to anyone by phone, in a language you don't speak",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-10T22:02:32.198Z"
+      }
+    },
+    {
+      "id": "a54031d247",
+      "normUrl": "https://producthunt.com/products/kata-send",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Kata Send",
+      "url": "https://www.producthunt.com/products/kata-send",
+      "summary": "Cold email infrastructure for AI agents",
+      "publishedAt": "2026-11-05T08:50:12.000Z",
+      "ref": "I52",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Cold email infrastructure for AI agents",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Send+more=money and how to use forward-checking in search",
+            "points": 24,
+            "url": "https://news.ycombinator.com/item?id=27896817"
+          },
+          {
+            "title": "April 28th in Menlo Park – Mattt Thompson of NSHipster.com and Kat Li of Stripe",
+            "points": 10,
+            "url": "https://news.ycombinator.com/item?id=7590047"
+          },
+          {
+            "title": "Tell HN: Zirtual just announced it is ceasing all operations",
+            "points": 15,
+            "url": "https://news.ycombinator.com/item?id=10033664"
+          }
+        ],
+        "fetchedAt": "2026-11-10T22:02:52.566Z"
+      }
+    },
+    {
+      "id": "3362a083a0",
+      "normUrl": "https://producthunt.com/products/toweb",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "TOWeb 15",
+      "url": "https://www.producthunt.com/products/toweb",
+      "summary": "Rewritten as a native Mac & Windows app, with AI and MCP",
+      "publishedAt": "2026-11-03T18:07:07.000Z",
+      "ref": "I53",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Rewritten as a native Mac & Windows app, with AI and MCP",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-10T22:03:12.228Z"
+      }
+    },
+    {
+      "id": "289513fe94",
+      "normUrl": "https://producthunt.com/products/obsiva",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Obsiva",
+      "url": "https://www.producthunt.com/products/obsiva",
+      "summary": "Turn site pics + voice notes into a PDF inspection report",
+      "publishedAt": "2026-11-09T19:41:51.000Z",
+      "ref": "I54",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Turn site pics + voice notes into a PDF inspection report",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-10T22:03:32.245Z"
+      }
+    },
+    {
+      "id": "ae61cbcfd6",
+      "normUrl": "https://producthunt.com/products/tokens-by-ui-colors",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Tokens by UI Colors",
+      "url": "https://www.producthunt.com/products/tokens-by-ui-colors",
+      "summary": "Build your product’s visual language with design tokens",
+      "publishedAt": "2026-11-09T17:29:48.000Z",
+      "ref": "I55",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Build your product’s visual language with design tokens",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-10T22:03:52.636Z"
+      }
+    },
+    {
+      "id": "6e2702f13c",
+      "normUrl": "https://producthunt.com/products/zus-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "ZUS",
+      "url": "https://www.producthunt.com/products/zus-2",
+      "summary": "AI-native IDE: agents code with human review",
+      "publishedAt": "2026-11-09T17:01:49.000Z",
+      "ref": "I56",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "AI-native IDE: agents code with human review",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-10T22:04:12.283Z"
+      }
+    },
+    {
+      "id": "e57c38f2e4",
+      "normUrl": "https://producthunt.com/products/quotedpart",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "QuotedPart",
+      "url": "https://www.producthunt.com/products/quotedpart",
+      "summary": "AI quoting for CNC and sheet metal job shops",
+      "publishedAt": "2026-11-09T00:04:46.000Z",
+      "ref": "I57",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "AI quoting for CNC and sheet metal job shops",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-10T22:04:32.335Z"
+      }
+    },
+    {
+      "id": "1c15f5b532",
+      "normUrl": "https://producthunt.com/products/google",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "MuJoCo 4",
+      "url": "https://www.producthunt.com/products/google",
+      "summary": "A physics engine for robots with its own studio",
+      "publishedAt": "2026-11-10T06:23:09.000Z",
+      "ref": "I58",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "dd9bc8b6bc",
+      "normUrl": "https://producthunt.com/products/gitmanual",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "gitmanual",
+      "url": "https://www.producthunt.com/products/gitmanual",
+      "summary": "See if a GitHub repo runs on your OS, and how to set it up",
+      "publishedAt": "2026-11-06T17:01:01.000Z",
+      "ref": "I59",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "37b8fd8702",
+      "normUrl": "https://producthunt.com/products/gesso-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Gesso",
+      "url": "https://www.producthunt.com/products/gesso-2",
+      "summary": "Ask ChatGPT or Claude to design, then edit every layer",
+      "publishedAt": "2026-11-04T05:47:42.000Z",
+      "ref": "I60",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "549a135d8d",
+      "normUrl": "https://producthunt.com/products/seldon",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Seldon",
+      "url": "https://www.producthunt.com/products/seldon",
+      "summary": "Behavioral QA agents that use your product like customers do",
+      "publishedAt": "2026-11-10T01:18:21.000Z",
+      "ref": "I61",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "16dfac68c5",
+      "normUrl": "https://producthunt.com/products/wipecraft",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Wipecraft",
+      "url": "https://www.producthunt.com/products/wipecraft",
+      "summary": "Mac System Data cleaner with on-device AI mode",
+      "publishedAt": "2026-11-09T11:50:59.000Z",
+      "ref": "I62",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "221a4fd20c",
+      "normUrl": "https://producthunt.com/products/ownkube",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Ownkube",
+      "url": "https://www.producthunt.com/products/ownkube",
+      "summary": "Deploy apps from your coding agent with one prompt",
+      "publishedAt": "2026-10-20T14:25:22.000Z",
+      "ref": "I63",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "cbf4219274",
+      "normUrl": "https://producthunt.com/products/daytwo-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Daytwo",
+      "url": "https://www.producthunt.com/products/daytwo-2",
+      "summary": "Let your team change your custom site without touching code",
+      "publishedAt": "2026-11-09T15:17:34.000Z",
+      "ref": "I64",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "186608be2c",
+      "normUrl": "https://news.ycombinator.com/item?id=50444761",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "I have trained 15 blood glucose forecasting models on my own data",
+      "url": "https://news.ycombinator.com/item?id=50444761",
+      "externalUrl": "https://github.com/0xdeadf1sh/T1DMAI",
+      "summary": null,
+      "deepenKey": "50444761",
+      "via": null,
+      "signal": {
+        "points": 10,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-10T19:07:53Z",
+      "ref": "I65",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "aa8e9ffb2c",
+      "normUrl": "https://news.ycombinator.com/item?id=50443812",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+      "url": "https://news.ycombinator.com/item?id=50443812",
+      "externalUrl": "https://github.com/GoogleChrome/modern-web-guidance",
+      "summary": "Browsers natively handle a lot of what used to take 50 lines of JS (or a dependency): `CSS.highlights` for text range highlighting without s everywhere, ` ` and showModal() give you backdrops and ideal focus management, `field-sizing` to auto-grow textareas as the user types.. (Something yesterday's ftrain post touched on [0]) Models know about some of these by name, but consistently won't default to using the platform-native solution and instead prefer the incumbent +JS based pattern.",
+      "deepenKey": "50443812",
+      "via": null,
+      "signal": {
+        "points": 178,
+        "comments": 50
+      },
+      "publishedAt": "2026-11-10T18:01:15Z",
+      "ref": "I66",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Browsers natively handle a lot of what used to take 50 lines of JS (or a dependency): `CSS.highlights` for text range highlighting without s everywhere, ` ` and showModal() give you backdrops and ideal focus management, `field-sizing` to auto-grow textareas as the user types.. (Something yesterday's ftrain post touched on [0]) Models know about some of these by name, but consistently won't default to using the platform-native solution and instead prefer the incumbent +JS based pattern. We started an effort in Chrome to supplement coding agents with this key domain knowledge and we're shipping our 1.0 today, in collaboration with Firefox, MDN, and Edge. 200+ guides (~1.7MB) of curated, hand-crafted implementation best-practices from web experts, updated as the web evolves. (Open source, obv, so.. we'll welcome your bikeshedding ;) Readable versions here: [1] I've spent the last 9 months obsessing over how to ship this as an agent skill + (Agentic RAG) CLI without blowing up your context window. (Or cedeing activation mechanics to MCP dynamic tool search). The skill description is minmaxed for activating on relevant frontend tasks. The RAG work I'm pretty proud of… originally a 500mb native stack down to a ~7MB pure-JS package, ~10ms search on your CPU. We just introduced a deterministic 'legacy-scan' (trained on 30k github repos) to identify old 'n dusted patterns that your agent can modernize. (92% avg precision on held-out repos.) People make a lot of claims about what coding agents are good/bad at. We wanted receipts, so we invested heavily in eval infra [2] to help us hill-climb, but also to identify when knowledge is common enough we can prune our guides. (Ofc, some of the things we thought AI didn't know turned out to be wrong :) We run codex/claude/agy against 200 tasks without the skill and then with.. In total ~1,700 playwright/AST-based assertions. Agents go from 55% pass unguided to 92% guided.",
+        "comments": [
+          {
+            "text": "\"Best Practices\" are pretty much dead in the AI era. Pretty soon no one is going to read any of the code AI produces and that's a scary thought."
+          },
+          {
+            "text": "Finally. This is exactly what I need when I need it. The amount of pull requests I reviewed with a mess of codes that can be switched to 2 lines of modern features made me write such tools myself, only half assed since I have other things to do."
+          },
+          {
+            "text": "I treat all my code as some kind of stochastic machinery. So atleast one stage, I'd just tell an agent to go through and follow the guide. But I'd not inject all this fluff into the wheels of the machine because it'd just take the \"average\" of these practices which would be just as useless."
+          },
+          {
+            "text": "Distribution suggestion: in addition to the npm packages you have right now, set up GitHub Pages to publish a markdown index document of the skills at https://googlechrome.github.io/modern-web-guidance-src/skill... (currently a 404) That index page should link to plain markdown versions of all of the documents, and should be designed for search with grep to find the right answers. That way I don't have to install anything at all - provided my agent has the ability to make HTTP requests I can tell it \"Look for tips on https://googlechrome.github.io/modern-web-guidance-src/skill... \" and it will fetch the index, then navigate to the most relevant documents - no MCP or npm or installation required at all."
+          },
+          {
+            "text": "Chrome already has too much power in the browser standards world. The last thing we need is everyone's LLMs to follow Chrome team's guidance on how to do web development. This road leads back to \"To view this site, please view in [DOMINANT BROWSER]\""
+          },
+          {
+            "text": "What's the best way to introduce this to a Gemini chat?"
+          },
+          {
+            "text": "I added this a few months ago and Claude Doctor has not removed it. It must be working and getting use."
+          },
+          {
+            "text": "These skills look better than most, but running my code through the legacy scan only found two issues. So while I still think training beats skills, I'm sure this has its place, especially with weaker models."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+            "points": 185,
+            "url": "https://news.ycombinator.com/item?id=50443812"
+          }
+        ],
+        "fetchedAt": "2026-11-10T22:00:52.052Z"
+      }
+    },
+    {
+      "id": "1fba176358",
+      "normUrl": "https://news.ycombinator.com/item?id=50443596",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "WolveKafka – Consume Kafka with a plain HTTP endpoint",
+      "url": "https://news.ycombinator.com/item?id=50443596",
+      "externalUrl": "https://github.com/wolveflake/wolvekafka",
+      "summary": null,
+      "deepenKey": "50443596",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-10T17:45:20Z",
+      "ref": "I67",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "2e74d0228d",
+      "normUrl": "https://github.com/addyosmani/agent-skills",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "summary": "Production-grade engineering skills for AI coding agents.",
+      "signal": {
+        "language": "JavaScript",
+        "points": 465
+      },
+      "publishedAt": null,
+      "ref": "I68",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Production-grade engineering skills for AI coding agents.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Agent Skills",
+            "points": 376,
+            "url": "https://news.ycombinator.com/item?id=48015397"
+          }
+        ],
+        "fetchedAt": "2026-11-10T22:04:32.655Z"
+      }
+    },
+    {
+      "id": "a8efea0dac",
+      "normUrl": "https://github.com/we-promise/sure",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "we-promise/sure",
+      "url": "https://github.com/we-promise/sure",
+      "summary": "The personal finance app for everyone (by everyone)",
+      "signal": {
+        "language": "Ruby",
+        "points": 184
+      },
+      "publishedAt": null,
+      "ref": "I69",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The personal finance app for everyone (by everyone)",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Tell YC: Answers from John McCarthy",
+            "points": 136,
+            "url": "https://news.ycombinator.com/item?id=185348"
+          },
+          {
+            "title": "Zuckerberg on hot mic telling Trump he wasn't sure how much to spend on AI",
+            "points": 21,
+            "url": "https://news.ycombinator.com/item?id=45150687"
+          }
+        ],
+        "fetchedAt": "2026-11-10T22:04:32.947Z"
+      }
+    },
+    {
+      "id": "5f987f0636",
+      "normUrl": "https://github.com/tokio-rs/topcoat",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "tokio-rs/topcoat",
+      "url": "https://github.com/tokio-rs/topcoat",
+      "summary": "A batteries-included framework for building web apps",
+      "signal": {
+        "language": "Rust",
+        "points": 192
+      },
+      "publishedAt": null,
+      "ref": "I70",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "A batteries-included framework for building web apps",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Topcoat: The full full-stack framework for Rust",
+            "points": 134,
+            "url": "https://news.ycombinator.com/item?id=48952067"
+          },
+          {
+            "title": "Topcoat is pushing the boundary of server applications with Rust",
+            "points": 114,
+            "url": "https://news.ycombinator.com/item?id=49842332"
+          }
+        ],
+        "fetchedAt": "2026-11-10T22:04:33.162Z"
+      }
+    }
+  ],
+  "deepenedAt": "2026-11-10T22:11:19.189Z"
+}

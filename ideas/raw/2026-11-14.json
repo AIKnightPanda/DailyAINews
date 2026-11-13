@@ -1,0 +1,3897 @@
+{
+  "issue": "2026-11-14",
+  "builtAt": "2026-11-13T22:07:02.996Z",
+  "from": {
+    "boards": "prefetched",
+    "inbox": "live"
+  },
+  "counts": {
+    "fetched": 183,
+    "added": 100,
+    "kept": 100,
+    "dropped": 83,
+    "pool": 100,
+    "screened": 91,
+    "candidates": 40,
+    "demandCandidates": 18,
+    "supplyCandidates": 22
+  },
+  "errors": [],
+  "notices": [
+    "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
+  ],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：is there an app that（HTTP 403：2026-11-13T21:57:23+00:00 /sear）；is there a tool that（HTTP 403：2026-11-13T21:58:08+00:00 /sear）；someone should build（HTTP 403：2026-11-13T21:59:18+00:00 /sear）；we still use spreadsheets（HTTP 403：2026-11-13T22:00:04+00:00 /sear）",
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 6,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：we currently pay（HTTP 403：2026-11-13T22:01:14+00:00 /sear）；we are paying for（HTTP 403：2026-11-13T22:02:24+00:00 /sear）；quoted us（HTTP 403：2026-11-13T22:03:10+00:00 /sear）；per seat per month（HTTP 403：2026-11-13T22:04:20+00:00 /sear）",
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "ok",
+      "items": 15,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 3,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub Trending",
+      "status": "ok",
+      "items": 12,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "consoledev",
+      "name": "Console.dev",
+      "status": "ok",
+      "items": 10,
+      "pool": true,
+      "group": "board"
+    }
+  ],
+  "items": [
+    {
+      "id": "e7716044cc",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1xvkdby/first_av2_corvertion_site",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "first av2 corvertion site",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1xvkdby/first_av2_corvertion_site/",
+      "summary": "av2 source code: https://github.com/AOMediaCodec/avm i want somebody to make a site where you can turn av1 to av2 and turn av2 to av1 above is the source code for av2 i do not work for AOM but i think making that would be the first step into the future make a better version that you have to download too",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1xvkdby",
+      "via": null,
+      "publishedAt": "2026-11-13T21:31:05.000Z",
+      "ref": "I1",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "av2 source code: https://github.com/AOMediaCodec/avm i want somebody to make a site where you can turn av1 to av2 and turn av2 to av1 above is the source code for av2 i do not work for AOM but i think making that would be the first step into the future make a better version that you have to download too",
+        "comments": [],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Ask HN: Ask to be acquired?",
+            "points": 47,
+            "url": "https://news.ycombinator.com/item?id=979696"
+          },
+          {
+            "title": "Ask HN: Review my first MVP",
+            "points": 14,
+            "url": "https://news.ycombinator.com/item?id=1487319"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:09:07.859Z"
+      }
+    },
+    {
+      "id": "ed574af713",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1xvi01v/3d_interactive_display",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "3D interactive display",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1xvi01v/3d_interactive_display/",
+      "summary": "I was wondering if this idea would work. Here are some crude renderings i made to illustrate my idea. An LED matrix in one of those mirror hologram toys with IR sensors around the top. The led matrix takes care of the actual display part, the mirrors make it a nonphysical object that you’re seeing and thus makes it able to pass your hand through and interact with it (also glass covering the hole so dirt doesn't get in). The IR sensors would recognise hand motions and apply the changes to the led matrix.",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1xvi01v",
+      "via": null,
+      "publishedAt": "2026-11-13T19:58:18.000Z",
+      "ref": "I2",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "a094ad6085",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1xvgqu9/an_app_that_connects_people_based_on_their",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "An app that connects people based on their favourite series , movies, shows. Is it viable ? And If someone wants to join in we can discuss that too.",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1xvgqu9/an_app_that_connects_people_based_on_their/",
+      "summary": null,
+      "deepenKey": "/r/SomebodyMakeThis/comments/1xvgqu9",
+      "via": null,
+      "publishedAt": "2026-11-13T19:10:02.000Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "da5bbb2765",
+      "normUrl": "https://reddit.com/r/SomebodyMakeThis/comments/1xvddgf/what_if_your_phone_had_a_little_digital_companion",
+      "sourceId": "somebodymakethis",
+      "source": "r/SomebodyMakeThis",
+      "sourceHome": "https://www.reddit.com/r/SomebodyMakeThis/",
+      "side": "demand",
+      "pool": true,
+      "title": "What if your phone had a little digital companion that randomly texted you throughout the day?",
+      "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1xvddgf/what_if_your_phone_had_a_little_digital_companion/",
+      "summary": "Imagine getting unexpected notifications from a virtual companion with different personalities like a sarcastic bestie, a flirty friend, a sleepyhead, or a chaotic little troublemaker. The interesting part? These aren't AI-generated messages. I'm the one writing and curating them! No reminders, no productivity stuff. Just random messages to make your day a little more interesting. I'm curious: Would you enjoy something like this? Would random notifications be fun or annoying? What kind of personality would you want? Just exploring this idea. Would love to hear your honest opinions! :)",
+      "deepenKey": "/r/SomebodyMakeThis/comments/1xvddgf",
+      "via": null,
+      "publishedAt": "2026-11-13T17:05:08.000Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Imagine getting unexpected notifications from a virtual companion with different personalities like a sarcastic bestie, a flirty friend, a sleepyhead, or a chaotic little troublemaker. The interesting part? These aren't AI-generated messages. I'm the one writing and curating them! No reminders, no productivity stuff. Just random messages to make your day a little more interesting. I'm curious: Would you enjoy something like this? Would random notifications be fun or annoying? What kind of personality would you want? Just exploring this idea. Would love to hear your honest opinions! :)",
+        "comments": [
+          {
+            "text": "No. I block spam messages. In no way would I find this useful, interesting, or entertaining. Annoying as as all get out, yes. Something I would willingly sign up for? That's a hard no."
+          },
+          {
+            "text": "You can just ask muse to do this if that's what you really want. Not sure why you would though."
+          },
+          {
+            "text": "I think there's a difference between asking an assistant to generate messages and having a little companion that sends you unexpected, curated messages without you asking for anything. The whole point is that you don't have to prompt, schedule or interact with anything. It just shows up in your notifications. But I get that this might not appeal to everyone. That's why I'm exploring the idea!"
+          },
+          {
+            "text": "You can just tell it to do exactly that.. and you'll only need to tell it to do that once. There will be no difference."
+          },
+          {
+            "text": "You're right. If an existing assistant can already do the same thing with a one-time setup, there's not much difference in functionality. I was more interested in recreating that feeling of receiving unexpected, witty messages from a brand or service you enjoy. But I see your point! Thanks mate."
+          },
+          {
+            "text": "CARROT apps are kind of fun for this."
+          },
+          {
+            "text": "You're role-playing my flirty friend? I think I'm good dude."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:19:17.713Z"
+      }
+    },
+    {
+      "id": "f978a12eb0",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/34199/countdown-timer-alarm-clock-software-with-very-specific-features",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Countdown, Timer & Alarm Clock software with very specific features",
+      "url": "https://softwarerecs.stackexchange.com/questions/34199/countdown-timer-alarm-clock-software-with-very-specific-features",
+      "summary": "Looking for the following features, or help creating them myself, in an as small an amount of separate programs as possible. OS : Windows 10. Android would also be interesting, but strictly optional, or, (undesirably and as last resort): as an alternative. Desired features: (Not in order of priority, that comes later) Main: Alarm Clock : Multiple alarms Repeat function (Daily, Weekly, Weekdays, Thursdays etc.) Countdown : You set either a a) period (say 4hrs), or b) deadline (clock time AND/OR date) <-- Can be an extension of the \"Alarm\" feature.",
+      "deepenKey": "34199",
+      "signal": {
+        "score": 2,
+        "views": 580,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2016-06-27T04:12:48.000Z",
+      "ref": "I5",
+      "screen": {
+        "keep": true,
+        "score": 8,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 5,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Looking for the following features, or help creating them myself, in an as small an amount of separate programs as possible. OS : Windows 10. Android would also be interesting, but strictly optional, or, (undesirably and as last resort): as an alternative. Desired features: (Not in order of priority, that comes later) Main: Alarm Clock : Multiple alarms Repeat function (Daily, Weekly, Weekdays, Thursdays etc.) Countdown : You set either a a) period (say 4hrs), or b) deadline (clock time AND/OR date) <-- Can be an extension of the \"Alarm\" feature. ...and it continually shows you how many days, hours, minutes, seconds are left till you reach 00:00:00 Multiple countdowns (I want multiple ones running at the same time) Timers/Stopwatch : You click a button and it starts counting the amount of time elapsed. Multiple Timers going at the same time Other: SAVING \\ LOGGING FUNCTIONS: I want to the app to log: Timers especially (Alarm is a given): Start time/date: When I started the timer Time timed: The duration before I stopped the timer Name: I want to be able to name my timer, especially if you'll have multiple ones running If the Countdown is to take a deadline on a further date, obviously it needs to save said date so the countdown can survive a PC and/or Application reboot. ALWAYS VISIBLE TIMER STATUS: For example, the timer status is continuously reflected in the TASKBAR BUTTON, or (more annoying) a minimalistic \"always on top\" window with transparency. Priority: It's a fantasy to get all of these features in one program, I think, so my biggest priorities, in order, are: Countdown and Timer, \"Always visible\" Multiple of each at the same time (Exigent, but I'd really like): Log at least the start time of each active timer TL;DR : There is none. Just skip what's below this line SIDE-NOTE: I have the utmost basic knowledge of Python , which I acquired in a few days, and just enough to create a script to help me import specific information from an online dictionary into an excel spreadsheet.",
+        "comments": [
+          {
+            "text": "I would strongly suggest taking a look at implementing this in Python with the wxPython library for GUI elements. wxPython is a python binding for the C++ GUI library they are both Free, Gratis, Open Source & Cross Platform. Note that if you are using Python 2.7 you need the downloads from here but for Python 3.5 you will have to use the wxPython project Phoenix installation. Be sure to install and try out the wxPython Docs & Demos especially the demos - they show you what you can do with the library. For python 2.7 this is available on the main download page but for python 3.x & phoenix you will need to fetch from github . For date/time & time delta calculations check out the python builtin datetime.datetime and datetime.timedelta classes.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Show HN: Time Keep – Location timezones, timers, alarms, countdowns in one place",
+            "points": 26,
+            "url": "https://news.ycombinator.com/item?id=47445433"
+          },
+          {
+            "title": "Show HN: Online Timers",
+            "points": 12,
+            "url": "https://news.ycombinator.com/item?id=37368166"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:08:26.972Z"
+      }
+    },
+    {
+      "id": "55b3408481",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95787/what-software-can-help-manage-large-volumes-of-data-for-long-term-archiving",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "What software can help manage large volumes of data for long-term archiving?",
+      "url": "https://softwarerecs.stackexchange.com/questions/95787/what-software-can-help-manage-large-volumes-of-data-for-long-term-archiving",
+      "summary": "I'm researching ways to manage large volumes of historical business data while keeping storage organized, secure, and accessible when needed. I'm interested in data archiving software that can help with long-term retention without requiring all archived information to remain on expensive, high-performance storage. My main requirements are: Scalability: The solution should accommodate growing volumes of files and records. Retention management: It should support configurable retention policies.",
+      "deepenKey": "95787",
+      "signal": {
+        "score": 0,
+        "views": 4,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2026-11-13T12:49:46.000Z",
+      "ref": "I6",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I'm researching ways to manage large volumes of historical business data while keeping storage organized, secure, and accessible when needed. I'm interested in data archiving software that can help with long-term retention without requiring all archived information to remain on expensive, high-performance storage. My main requirements are: Scalability: The solution should accommodate growing volumes of files and records. Retention management: It should support configurable retention policies. Search and retrieval: Authorized users should be able to locate and retrieve archived information efficiently. Security: Access controls and appropriate data-protection features are important. Cost management: I want to understand the ongoing storage, retrieval, and administration costs. Backup and recovery: The overall approach should help protect archived information against accidental loss or corruption. What software or approaches would you recommend for this use case? I'd appreciate comparisons that explain the main advantages, limitations, and maintenance requirements of the available options.",
+        "comments": [],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Trader Joe's Is Not Your Average Business (2002)",
+            "points": 20,
+            "url": "https://news.ycombinator.com/item?id=340188"
+          },
+          {
+            "title": "Show HN: Hydra (YC W22) – Serverless Analytics on Postgres",
+            "points": 60,
+            "url": "https://news.ycombinator.com/item?id=43937852"
+          },
+          {
+            "title": "Show HN: Maxxwell – The IDE for Optimal Tokenmaxxing",
+            "points": 11,
+            "url": "https://news.ycombinator.com/item?id=49625975"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:09:28.591Z"
+      }
+    },
+    {
+      "id": "54fc984cf0",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95785/how-to-set-up-an-isolated-environment-for-c-development-session-with-the-abil",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "How to set up an isolated environment for C++ development session, with the ability to run scripts?",
+      "url": "https://softwarerecs.stackexchange.com/questions/95785/how-to-set-up-an-isolated-environment-for-c-development-session-with-the-abil",
+      "summary": "Let me start with a question. And really, the question here is more about who does it and how. Personally, here's why I need this: I want to set up an isolated environment for the session I need, with the ability to run scripts. The latter is important here. That is, in addition to just setting up the environment, I want to be able to call some batch file that in turn also further configures the environment. First I want to note that I haven't lost my mind and made up a problem for myself — this is, in my view, a real problem.",
+      "deepenKey": "95785",
+      "signal": {
+        "score": 0,
+        "views": 21,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2026-11-12T09:33:02.000Z",
+      "ref": "I7",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Let me start with a question. And really, the question here is more about who does it and how. Personally, here's why I need this: I want to set up an isolated environment for the session I need, with the ability to run scripts. The latter is important here. That is, in addition to just setting up the environment, I want to be able to call some batch file that in turn also further configures the environment. First I want to note that I haven't lost my mind and made up a problem for myself — this is, in my view, a real problem. So, I write in C++, use VS Code with the CMake extension, and also vcpkg in manifest mode for projects. The latter probably isn't that important. Anyway, for configuring projects I use CMake presets. There I set the requirements for building the project: the build system, compiler, standard, etc. — so it's a pretty important thing. That part is all transparent, let's move on to the tools. C++ itself is quite rich in ecosystem, where everyone is free to choose or create an element for each stage of building a C++ application, from build system and compiler to sanitizers. I, for my part, use MSVC, because Microsoft guarantees vcpkg compatibility with its compiler, whereas with other compilers that's left to the community's conscience. And that's where the dancing with the tambourine begins — well, maybe it's necessary, but still, it's a fact. To just install cl.exe you have to download VS Build Tools, and through it, through the GUI, select what you need — both the compiler and the tools for it. All of this also turns out to be quite heavy compared to its competitors, if you can put it that way. Okay, we installed it. Now somewhere in the depths of the install directory lies the compiler itself, and you can't just run it like some MinGW or Clang compiler — for Microsoft's compiler to work, you need an additional environment. And here, sure, you could set it up yourself, but instead the package politely provides batch files that create such an environment, and that's wonderful — instead of manually creating INCLUDE or LIB, where you'd also ideally need to choose which bitness to point the paths for, there are scripts.",
+        "comments": [],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:09:29.110Z"
+      }
+    },
+    {
+      "id": "b021833332",
+      "normUrl": "https://news.ycombinator.com/item?id=50488230",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What is the state of self-hosting email in 2026?",
+      "url": "https://news.ycombinator.com/item?id=50488230",
+      "externalUrl": null,
+      "summary": "I mean both on your own server and on cheap but reliable VPS providers like Hetzner? If you self-host email what is your current stack?",
+      "deepenKey": "50488230",
+      "via": null,
+      "signal": {
+        "points": 16,
+        "comments": 8
+      },
+      "publishedAt": "2026-11-13T19:06:06Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "80bb63554a",
+      "normUrl": "https://news.ycombinator.com/item?id=50484426",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Can anyone name anything new that AI has done?",
+      "url": "https://news.ycombinator.com/item?id=50484426",
+      "externalUrl": null,
+      "summary": "We're 2 years into this. Still looking for something that an AI did all by itself that is actually new. Everything I've seen so far still involves a human sussing out the new thing or the model is just aggregating data that is already there from disconnected sources that never got tied together.",
+      "deepenKey": "50484426",
+      "via": null,
+      "signal": {
+        "points": 26,
+        "comments": 46
+      },
+      "publishedAt": "2026-11-13T14:53:56Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "We're 2 years into this. Still looking for something that an AI did all by itself that is actually new. Everything I've seen so far still involves a human sussing out the new thing or the model is just aggregating data that is already there from disconnected sources that never got tied together.",
+        "comments": [
+          {
+            "text": "That's AI for ya. What you are seemingly looking for is AGI and that we do not yet have."
+          },
+          {
+            "text": "https://github.com/openai/math among many others"
+          },
+          {
+            "text": "Yep, it is all over. Nihil novi and all that. It it is totally pointless. No sane person uses AI. Can you step a little closer over there? Don't worry. It is totally not a trap."
+          },
+          {
+            "text": "It created a novel form of psychosis."
+          },
+          {
+            "text": "What has any human done all by itself ? Everything you do comes from a synthesis of your memories of the past with your senses of the present. > \"Everything I've seen so far still involves a human sussing out the new thing or the model is just aggregating data that is already there from disconnected sources that never got tied together.\" Yes, that describes people as well. You think ideas appear from...what...handed to you by God through the aether from the spirit realm? We're literally meat computers. Your question seems to boil down to whether current AI has any kind of intrinsic motivation to do anything. It doesn't."
+          },
+          {
+            "text": "protein folding problem? https://deepmind.google/science/alphafold/"
+          },
+          {
+            "text": "Some pretty interesting financial schemes"
+          },
+          {
+            "text": "Can you provide a completely made up example of something that would fit your definition of something that \"is actually new\" here? I'm finding this question difficult to answer without a concrete example of what would pass the bar."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Ask HN: Can anyone name anything new that AI has done?",
+            "points": 26,
+            "url": "https://news.ycombinator.com/item?id=50484426"
+          },
+          {
+            "title": "How we fed ourselves for a year & sold a startup...with only 300 lines of code",
+            "points": 488,
+            "url": "https://news.ycombinator.com/item?id=2222522"
+          },
+          {
+            "title": "Ask HN: Is mental illness an ad-targeting category?",
+            "points": 63,
+            "url": "https://news.ycombinator.com/item?id=30214652"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:07:45.111Z"
+      }
+    },
+    {
+      "id": "172d03253a",
+      "normUrl": "https://news.ycombinator.com/item?id=50484421",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "U.S. October PPI Rises 6.5% YoY, Highest in Nearly Four Years",
+      "url": "https://news.ycombinator.com/item?id=50484421",
+      "externalUrl": null,
+      "summary": "U.S. producer prices rose 6.5% YoY in October, the highest since November 2022, below expectations of 6.6% and up from 6.3% previously. PPI increased 0.3% MoM, below the expected 0.4%, while September’s reading was revised up from 1.3% to 1.4%.",
+      "deepenKey": "50484421",
+      "via": null,
+      "signal": {
+        "points": 161,
+        "comments": 192
+      },
+      "publishedAt": "2026-11-13T14:53:32Z",
+      "ref": "I10",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "466f567ad7",
+      "normUrl": "https://news.ycombinator.com/item?id=50481829",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What do you think about Microsoft future? // Microsoft products down",
+      "url": "https://news.ycombinator.com/item?id=50481829",
+      "externalUrl": null,
+      "summary": "The outage in the microsoft tech and still down. I and still confused, microsoft layed of people and suddendly things went down lol",
+      "deepenKey": "50481829",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 4
+      },
+      "publishedAt": "2026-11-13T11:09:40Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": 3,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "c7b07ab361",
+      "normUrl": "https://news.ycombinator.com/item?id=50481347",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What are you doing now that Claude is down?",
+      "url": "https://news.ycombinator.com/item?id=50481347",
+      "externalUrl": null,
+      "summary": "On a more serious note: what does this say about our dependence on a single company and toolchain?",
+      "deepenKey": "50481347",
+      "via": null,
+      "signal": {
+        "points": 7,
+        "comments": 7
+      },
+      "publishedAt": "2026-11-13T10:28:05Z",
+      "ref": "I12",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "671be98cea",
+      "normUrl": "https://news.ycombinator.com/item?id=50481227",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Do you see a human written book more valuable than an AI written one?",
+      "url": "https://news.ycombinator.com/item?id=50481227",
+      "externalUrl": null,
+      "summary": "I have been working on a book for the past year and half and Im finally done with it. But now that it is time to publish it i think what I have written and reviewed by hand would not be as good as an AI written one. I wonder if anyone values human work more than AI even if it's not as good. Would love to hear your opinions on this.",
+      "deepenKey": "50481227",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 16
+      },
+      "publishedAt": "2026-11-13T10:20:59Z",
+      "ref": "I13",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [
+          "在用笨办法凑合"
+        ],
+        "detail": {
+          "signal": 4,
+          "engagement": 4,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I have been working on a book for the past year and half and Im finally done with it. But now that it is time to publish it i think what I have written and reviewed by hand would not be as good as an AI written one. I wonder if anyone values human work more than AI even if it's not as good. Would love to hear your opinions on this.",
+        "comments": [
+          {
+            "text": "I value human work more than AI - especially if that book is fiction rather than some technical documentation."
+          },
+          {
+            "text": "Fiction/Non fiction? If its a text book I think you are looking at it the wrong way. Having someone who has spent serious amount of time on a subject, is like meeting someone who has explored some part of jungle I haven't visited. The info that has accumulated in your head through that process is what is interesting. I stopped reading books not because AI is mesmerizing but because I find the non-interactive nature of books irritating after too much AI use. ChatGPT allows me to stop and explore something, slow things down, bypass other things, connect it to other things etc etc My suggestion would be make it interactive. Release it with an interactive interface rag or fine tuned to your ideas and content. Use your imagination on how that interactivity should be shaped."
+          },
+          {
+            "text": "If you want human readers - remember that roughly zero humans will ever read even 0.01% of the world's human-written books. Sticking your head down the \"human author vs. AI author\" rabbit hole may be a poor use of time. Or - back when electric typewriters were cutting-edge tech, only a puny percentage of human-written books were accepted for publication. Writing well is difficult . Look at bio's of famous authors - roughly zero mastered the skill after only 18 month and one book draft."
+          },
+          {
+            "text": "It sounds like you are presenting us with \"100% AI\" or \"100% human\". You could prompt 'is this dialogue bit realistic for an [man v. woman]+[profession]+background. Or you can dream up other targeted prompts that could improve your writing, plot, realism, geographic details, character-arc, historical details, etc."
+          },
+          {
+            "text": "Yes, 100%. If you want to get the writing improved, hire an editor."
+          },
+          {
+            "text": "An equally important question is - how many people are easily able to differentiate between AI and human works? It will increasingly get harder and harder, especially with digital art. Maybe fiction not so much, but it will get harder in non-fiction writing too, especially sports commentary, technical documentation etc"
+          },
+          {
+            "text": "depends. maybe to me, a book doesn’t have the same value it might to another who values the topic or whatever else much higher than i do. for me, some fiction is compelling to read because it is imaginative. there are some authors i like, and i’ll read their works fully. i would prefer the author was a human who used his or her brain to imagine a brand new world, and not ai slop. non fiction can be summarized. i look at this as reference material. i don’t really care if the author uses ai assistance as long as the factual information is accurate. hey claude summarize this book for me and …"
+          },
+          {
+            "text": "> But now that it is time to publish it i think what I have written and reviewed by hand would not be as good as an AI written one. A shitty book by a human being is better than anything an AI could produce. You are infinitely more interesting than an AI."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Ask HN: What to do for college?",
+            "points": 38,
+            "url": "https://news.ycombinator.com/item?id=1682581"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:07:03.687Z"
+      }
+    },
+    {
+      "id": "b8323c7e61",
+      "normUrl": "https://news.ycombinator.com/item?id=50481201",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Claude – OAuth request failed Temporarily unable to authenticate",
+      "url": "https://news.ycombinator.com/item?id=50481201",
+      "externalUrl": null,
+      "summary": "Some of my sessions logged out. This is what I get from them. Other keep on churning? Am I the only one?",
+      "deepenKey": "50481201",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-13T10:19:18Z",
+      "ref": "I14",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "471a33ebb0",
+      "normUrl": "https://news.ycombinator.com/item?id=50480941",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Claude AI Is Down",
+      "url": "https://news.ycombinator.com/item?id=50480941",
+      "externalUrl": null,
+      "summary": "Claude AI is down according to independent detectors [1]. The official status page ha no incident issue yet. [1] https://downdetector.co.uk/status/claude-ai/ [2] https://status.claude.com/uptime",
+      "deepenKey": "50480941",
+      "via": null,
+      "signal": {
+        "points": 27,
+        "comments": 7
+      },
+      "publishedAt": "2026-11-13T09:55:06Z",
+      "ref": "I15",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 6,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5a27a019c2",
+      "normUrl": "https://news.ycombinator.com/item?id=50480936",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Claude OAuth Failures",
+      "url": "https://news.ycombinator.com/item?id=50480936",
+      "externalUrl": null,
+      "summary": "Claude has started having serious OAuth errors and hangs, but nothing appears on the Claude Status site yet[0]. It's been several minutes now, not sure if its a blip or something more serious. Obv Claude is still reporting the issues with MS O365 connector; but not sure if it's related. [0] https://status.claude.com/",
+      "deepenKey": "50480936",
+      "via": null,
+      "signal": {
+        "points": 27,
+        "comments": 24
+      },
+      "publishedAt": "2026-11-13T09:54:36Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Claude has started having serious OAuth errors and hangs, but nothing appears on the Claude Status site yet[0]. It's been several minutes now, not sure if its a blip or something more serious. Obv Claude is still reporting the issues with MS O365 connector; but not sure if it's related. [0] https://status.claude.com/",
+        "comments": [
+          {
+            "text": "Thanks for posting. Was wondering it was just me or not."
+          },
+          {
+            "text": "Thanks for posting! Facts from my end: I got \"Please run /login · API Error: 403 Attention Required! | Cloudflare\" during a long task that had been running for 27 minutes 10 seconds. I don't do any work related to Microsoft Office. The login isn't working, it opens the browser with a URL starting with https://claude.com/cai/oauth/authorize?{etc} but just sits there with the little spinner."
+          },
+          {
+            "text": "Yeah, I've noticed that I got booted from Claude Code and can't log-in again. (Graz, Austria.) Happened about 20 mins ago. Anthropic just updated with an incident report: https://status.claude.com/incidents/nn11wk485zfn"
+          },
+          {
+            "text": "It seems to have resolved for me now; I retried the auth link and it worked now."
+          },
+          {
+            "text": "Getting this frequently today within the last 2 hours: > \"Please run /login · API Error: 403 Attention Required! | Cloudflare\" even though CC answers normally in-between and even performed tool calls and everything. It's ferquent and sporadic, for a few chat messages it works, then again it doesnt...Very very weird. EDIT: Even with this message showing CC generates messages and replies, so it's not a matter of being totally logged-off..."
+          },
+          {
+            "text": "Same issue, resolved a few minutes ago but happened again."
+          },
+          {
+            "text": "Yes happend to me as well- I am so disapponted . User from Malaysia"
+          },
+          {
+            "text": "Same in India. It works for few minutes then you get logged out of Claude Code"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Claude OAuth Failures",
+            "points": 27,
+            "url": "https://news.ycombinator.com/item?id=50480936"
+          },
+          {
+            "title": "Show HN: mcp-use v2 rebuilt from scratch for stateless 2026-07-28 MCP spec",
+            "points": 10,
+            "url": "https://news.ycombinator.com/item?id=49198472"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:07:04.229Z"
+      }
+    },
+    {
+      "id": "c908f57a28",
+      "normUrl": "https://news.ycombinator.com/item?id=50480909",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Claude Code Is Down",
+      "url": "https://news.ycombinator.com/item?id=50480909",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50480909",
+      "via": null,
+      "signal": {
+        "points": 37,
+        "comments": 21
+      },
+      "publishedAt": "2026-11-13T09:51:59Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5eaba134a9",
+      "normUrl": "https://news.ycombinator.com/item?id=50479788",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Is there hope against slop?",
+      "url": "https://news.ycombinator.com/item?id=50479788",
+      "externalUrl": null,
+      "summary": "Long time HNer here, mostly lurker. Developer turned agent steerer yada yada yada, you all know the story. I'm writing because I think we are missing something important in the discourse on slop. The realization that occured to me recently is that it is simply not possible for media (social, tranditional) platforms to ban and clean the mess of AI generated content — and for some reason I expected them to act on it solely on the sheer amount of nefarious, fraudolent and ill advised AI generated content posted. I now personally think they wont and can't fix the situation.",
+      "deepenKey": "50479788",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 5
+      },
+      "publishedAt": "2026-11-13T07:46:23Z",
+      "ref": "I18",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3bd3c8a6ae",
+      "normUrl": "https://news.ycombinator.com/item?id=50478730",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Google search hides Nvidia stock graph",
+      "url": "https://news.ycombinator.com/item?id=50478730",
+      "externalUrl": null,
+      "summary": "As the title says, this might be region-specific, EU here, searching any form of: - NVDA stock - $NVDA stock price - NVIDIA stock Doesn’t show the graph module. Any other company works fine.",
+      "deepenKey": "50478730",
+      "via": null,
+      "signal": {
+        "points": 12,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-13T05:26:55Z",
+      "ref": "I19",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "ac26f1db43",
+      "normUrl": "https://news.ycombinator.com/item?id=50478356",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Outlook still down for anyone else?",
+      "url": "https://news.ycombinator.com/item?id=50478356",
+      "externalUrl": null,
+      "summary": "microsoft status page says up but I get a straight up 500",
+      "deepenKey": "50478356",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 6
+      },
+      "publishedAt": "2026-11-13T04:31:47Z",
+      "ref": "I20",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2eeddbd49d",
+      "normUrl": "https://news.ycombinator.com/item?id=50477517",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Do you distrust OSS projects with Claude commits?",
+      "url": "https://news.ycombinator.com/item?id=50477517",
+      "externalUrl": null,
+      "summary": "Does any amount of AI contribution to a project turn you off? What's the limit?",
+      "deepenKey": "50477517",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 4
+      },
+      "publishedAt": "2026-11-13T02:53:35Z",
+      "ref": "I21",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "efc25e593f",
+      "normUrl": "https://news.ycombinator.com/item?id=50475155",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Why Is Nvidia Valuable?",
+      "url": "https://news.ycombinator.com/item?id=50475155",
+      "externalUrl": null,
+      "summary": "In the 1980s I programmed two kinds of array processors for signal processing. It was mostly matrix vector multiplication. It was tedious. I imagine that video cards are kind of like that. NVIDIA has their products fabbed at TSMC. What value does NVIDIA add? What is their moat?",
+      "deepenKey": "50475155",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-12T22:19:08Z",
+      "ref": "I22",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "0964d662a4",
+      "normUrl": "https://news.ycombinator.com/item?id=50475056",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "MS Defender, Intune and Purview possibly affected in outage. Any confirmation?",
+      "url": "https://news.ycombinator.com/item?id=50475056",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50475056",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-12T22:10:49Z",
+      "ref": "I23",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "611fb0c1b1",
+      "normUrl": "https://news.ycombinator.com/item?id=50473788",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What % of HN is now AI-generated?",
+      "url": "https://news.ycombinator.com/item?id=50473788",
+      "externalUrl": null,
+      "summary": "I promise you that the title was not AI-generated. And also, I promise you (but most of you won't believe me) that all the comments and submissions I did so far have been typed by hand. But besides this, the question remains: I have a sense that the % is non-zero, and perhaps it is higher than 50%. What do you think?",
+      "deepenKey": "50473788",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 6
+      },
+      "publishedAt": "2026-11-12T20:31:53Z",
+      "ref": "I24",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "在用笨办法凑合"
+        ],
+        "detail": {
+          "signal": 4,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4d92b6529a",
+      "normUrl": "https://github.com/openai/codex/issues/58530",
+      "sourceId": "gh-requests",
+      "source": "GitHub 高赞功能请求",
+      "sourceHome": "https://github.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Please preserve separate ChatGPT High and Codex/Work allowances on Plus (confirmed December 2026 change)",
+      "url": "https://github.com/openai/codex/issues/58530",
+      "summary": "## Please keep the path from a first idea to a first income open — preserve independent ChatGPT High and Codex/Work allowances **Update — November 9, 2026: OpenAI has officially confirmed the planned December change.** When I opened this issue on October 31, the upcoming shared allowance was still being discussed as a reported change.",
+      "signal": {
+        "thumbsUp": 50,
+        "comments": 31,
+        "repo": "openai/codex"
+      },
+      "publishedAt": "2026-10-31T10:17:51Z",
+      "ref": "I25",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 6,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "## Please keep the path from a first idea to a first income open — preserve independent ChatGPT High and Codex/Work allowances **Update — November 9, 2026: OpenAI has officially confirmed the planned December change.** When I opened this issue on October 31, the upcoming shared allowance was still being discussed as a reported change.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:07:45.347Z"
+      }
+    },
+    {
+      "id": "33c88d085b",
+      "normUrl": "https://reddit.com/r/msp/comments/1xvjvez/where_does_huntress_email_security_fit_within_the",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Where does Huntress Email Security fit within the email security stack",
+      "url": "https://www.reddit.com/r/msp/comments/1xvjvez/where_does_huntress_email_security_fit_within_the/",
+      "summary": "I've started demoing Huntress Email Security and I'm trying to understand where it fits in the stack. They have an FAQ page where they try and answer these questions, but it seems like this product covers just the security portion of the mailbox? The FAQ says \"Does Email Security filter spam? No. ES targets attacks, phishing, business email compromise, and malware, and deliberately leaves spam and graymail in place...\" Almost all email filtering products already do this and also includes spam and graymail for a complete solution.",
+      "deepenKey": "/r/msp/comments/1xvjvez",
+      "via": null,
+      "publishedAt": "2026-11-13T21:11:08.000Z",
+      "ref": "I26",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "I've started demoing Huntress Email Security and I'm trying to understand where it fits in the stack. They have an FAQ page where they try and answer these questions, but it seems like this product covers just the security portion of the mailbox? The FAQ says \"Does Email Security filter spam? No. ES targets attacks, phishing, business email compromise, and malware, and deliberately leaves spam and graymail in place...\" Almost all email filtering products already do this and also includes spam and graymail for a complete solution. I'm using Avanan for most of my clients and thought that this would be a competing product, but it appears that's not the case since it can't handle spam / graymail. It appears that they are partnering with Sublime's email security engine for this product to work and then connecting it into their portal. Huntress Email Security - Early Access FAQ – Huntress Support",
+        "comments": [
+          {
+            "text": "I was also curious about this, being in the same boat as you."
+          },
+          {
+            "text": "I think it's an extra layer to sit behind both an MX and EO filtering, layering on top of another API if one present or acting as it. Filters after delivery to inbox."
+          },
+          {
+            "text": "So how would this be any better than using avanan that does everything? Huntress has good products so I don't want to sound dismissive, but rather understand the use case better."
+          },
+          {
+            "text": "Totally with ya. Huntress is fantastic. From an EDR/ITDR/SIEM perspective. I’m not a fan of their SAT but it’s a good and different offering than most and its integration with the above makes total sense. Their latest products to me though are almost pointless. ISPM/ESPM and now ES. None of them seem to do anything new or anything better than what a large portion of people already have managed and or are licensed for, via 365. Can they save a few clicks by making it ‘managed’ and handling the ‘best practice’, sure but none of it adds anywhere near enough actual value to justify the costs imo. I’d rather they focused on bolstering and improving the core offerings, like the ITDR dash updates etc."
+          },
+          {
+            "text": "We get constant complaints about the SAT. It’s like the biggest thing we hear."
+          },
+          {
+            "text": "It is a bit goofy, but thats what Curricula was known for before Huntress acquired them. It was voted best by our staff compared to some of the others that were there at the time."
+          },
+          {
+            "text": "Quarterly reviews. Every client that has it asks when the contract is up because they wasted money on an immature cartoon."
+          },
+          {
+            "text": "I agree but 90% of end users are “immature” in my sector."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Tell HN: Google Cloud lets anyone add you to a project without your permission",
+            "points": 303,
+            "url": "https://news.ycombinator.com/item?id=34193047"
+          },
+          {
+            "title": "Tell HN: Notion AI chat sessions have been exposed via Fireworks AI hack",
+            "points": 19,
+            "url": "https://news.ycombinator.com/item?id=50436636"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:20:18.551Z"
+      }
+    },
+    {
+      "id": "3e4a417d66",
+      "normUrl": "https://reddit.com/r/msp/comments/1xv89y3/why_did_outlook_stop_working_during_the_outage",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Why did Outlook stop working during the outage? Shouldn’t offline mode and/or cached email (.ost) still have been accessible?",
+      "url": "https://www.reddit.com/r/msp/comments/1xv89y3/why_did_outlook_stop_working_during_the_outage/",
+      "summary": "I noticed that for most clients, Outlook was blank on their desktop and mobile device which means they couldn’t access or search emails prior to the outage. What’s the point of an .ost if it can’t be used in situations like this?",
+      "deepenKey": "/r/msp/comments/1xv89y3",
+      "via": null,
+      "publishedAt": "2026-11-13T13:45:47.000Z",
+      "ref": "I27",
+      "screen": {
+        "keep": true,
+        "score": -4,
+        "hits": [
+          "要做硬件"
+        ],
+        "detail": {
+          "signal": -8,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e51f5f4fab",
+      "normUrl": "https://reddit.com/r/msp/comments/1xv7wx3/dont_let_microsoft_off_the_hook_make_sure_you",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Don't let Microsoft off the hook, make sure you submit for credit for your customers if you are a CSP.",
+      "url": "https://www.reddit.com/r/msp/comments/1xv7wx3/dont_let_microsoft_off_the_hook_make_sure_you/",
+      "summary": "It's easy to forget when we all have 1000 other things to do, but the only way to highlight this is to ensure the financial penalty is fully felt to increase shareholder pressure. Looks like it should be a 50% credit, but will not be solidified until the incident is fully resolved. Below are the incident numbers you'll need when putting in the claims. EX1550543. Tracks the core Exchange Online service disruption affecting Outlook mailbox access and email delivery. MO1550821.",
+      "deepenKey": "/r/msp/comments/1xv7wx3",
+      "via": null,
+      "publishedAt": "2026-11-13T13:30:05.000Z",
+      "ref": "I28",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "It's easy to forget when we all have 1000 other things to do, but the only way to highlight this is to ensure the financial penalty is fully felt to increase shareholder pressure. Looks like it should be a 50% credit, but will not be solidified until the incident is fully resolved. Below are the incident numbers you'll need when putting in the claims. EX1550543. Tracks the core Exchange Online service disruption affecting Outlook mailbox access and email delivery. MO1550821. Tracks the broader Microsoft 365 suite impact across services that interact with Exchange Online, including Microsoft Teams, SharePoint Online, Copilot, Defender XDR, Intune, Planner, To-Do, Power BI, and Universal Print EDIT: AI response but I included the link to sources. (Yeah yeah, whatever fight me I'm tired ok) Steps Collect the incident ID. Microsoft’s own incident ID is required. Customer name, tenant ID, ticket number and timestamp alone aren’t sufficient. Get the ID from Service Health in the Microsoft 365 admin center. Per third-party coverage, the incidents are: Confirm these in your own tenant’s Service Health, because the coverage is secondhand. EX1550543 for Exchange Online MO1550821 for Microsoft 365 TM1550488 for Teams (a separate, earlier incident that was resolved) Gather the tenant GUID for each affected customer. Get customer proof of impact. You need an email from the customer requesting the credit. It must come from the affected tenant’s domain, because personal email addresses aren’t accepted. You also need the downtime window and duration, the number and location of affected users, and a note of what you did to try to resolve it. Open a support ticket in Partner Center using the credit request form . In the ticket, state whether the affected subscriptions were purchased through CSP (Yes or No). Watch the deadline. For anything other than Azure, you must file within one month of the end of the billing month in which the incident happened. For a November 12 incident, that means by the end of December. Azure claims get two months. Wait for the credit. If Microsoft approves it, the credit shows up on your next invoice and reconciliation data.",
+        "comments": [
+          {
+            "text": "This is SO MUCH FUCKING WORK for some pennies. it's insane the hoops they want you to jump through for what a was a global outage lasting over 20 hours..."
+          },
+          {
+            "text": "The point is to make sure Microsoft is held accountable and make them do the work, even if it is pennies."
+          },
+          {
+            "text": "50% on a month isnt pennies."
+          },
+          {
+            "text": "It isn’t 50% of your license."
+          },
+          {
+            "text": "The amount of work required doesn't match the credit. My time is always going to be better spent elsewhere than asking customers to email to request credits"
+          },
+          {
+            "text": "Credit only applies to the service that went down. So it's not the full 50%. Source https://lazyadmin.nl/office-365/microsoft-365-outage-november-2026/#sla-credits-%e2%80%93-how-they-work So if you have a few hundred licenses or more the it might be worth your time."
+          },
+          {
+            "text": "We have 21k licensed users, this is over 100k for us lol"
+          },
+          {
+            "text": "Lmao. This reminds me of bargain shoppers spending more in gas and time than they save to get a “deal”"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Show HN: ArchGW – An intelligent edge and service proxy for agents",
+            "points": 118,
+            "url": "https://news.ycombinator.com/item?id=44546265"
+          },
+          {
+            "title": "Launch HN: Datree (YC W20) – Best practices and security policies on each commit",
+            "points": 106,
+            "url": "https://news.ycombinator.com/item?id=22536228"
+          },
+          {
+            "title": "Satya Nadella 'Not Sure' Who Said Microsoft Wanted to Make Addictive AI",
+            "points": 26,
+            "url": "https://news.ycombinator.com/item?id=48408581"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:10:10.827Z"
+      }
+    },
+    {
+      "id": "3bbcfb5857",
+      "normUrl": "https://reddit.com/r/msp/comments/1xv7iq9/for_those_who_prefer_not_to_speculate_on_the",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "For those who prefer not to speculate on the current Microsoft 365 outage, follow @MSFT365Status on X.",
+      "url": "https://www.reddit.com/r/msp/comments/1xv7iq9/for_those_who_prefer_not_to_speculate_on_the/",
+      "summary": "Latest update: https://x.com/MSFT365Status/status/2121213845490336163",
+      "deepenKey": "/r/msp/comments/1xv7iq9",
+      "via": null,
+      "publishedAt": "2026-11-13T13:12:10.000Z",
+      "ref": "I29",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "c9d50e45e0",
+      "normUrl": "https://reddit.com/r/msp/comments/1xv6bza/its_starting_to_pour_in",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "It's starting to pour in...",
+      "url": "https://www.reddit.com/r/msp/comments/1xv6bza/its_starting_to_pour_in/",
+      "summary": "Getting email but there's a disconnect between the email alerts that pop up and email in the box but it seems to be coming to life.... What are ya'll going to say when customers ask \"is there anything we could do to prevent this\"\" I can't think of anything but thought I'd ask.",
+      "deepenKey": "/r/msp/comments/1xv6bza",
+      "via": null,
+      "publishedAt": "2026-11-13T12:14:50.000Z",
+      "ref": "I30",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "0fb8945e33",
+      "normUrl": "https://reddit.com/r/msp/comments/1xv4uc8/email_continuity_services_example_from_proofpoint",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Email Continuity services (example from Proofpoint and Mimecast)",
+      "url": "https://www.reddit.com/r/msp/comments/1xv4uc8/email_continuity_services_example_from_proofpoint/",
+      "summary": "Is anyone finding these services useful during the current Office 365 issues? We are already getting inundated with questions from clients asking what we can do to help them avoid these major outages in the future, and I am not convinced these services would make much of a difference. Are there MSPs here currently offering these services, and if so, are you finding that they help during outages like this?",
+      "deepenKey": "/r/msp/comments/1xv4uc8",
+      "via": null,
+      "publishedAt": "2026-11-13T10:54:49.000Z",
+      "ref": "I31",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Is anyone finding these services useful during the current Office 365 issues? We are already getting inundated with questions from clients asking what we can do to help them avoid these major outages in the future, and I am not convinced these services would make much of a difference. Are there MSPs here currently offering these services, and if so, are you finding that they help during outages like this? Personally, I think having a basic \"dial-tone\" email setup ready to go in something like Google Workspace, where you could quickly license accounts and switch MX records, is probably about the best we could realistically offer that would work for internal and external email. The downside is that users would be starting with empty inboxes once switched over, and syncing emails received during the outage back into Office 365 afterwards would be a real pain. Interested to hear what others are doing here and whether anyone has found a practical solution that actually works well during a major outage.",
+        "comments": [
+          {
+            "text": "What exactly is the point? Will the people you are emailing have their mailboxes working? Because if not, then you are back into the square one, you can send emails, but no one can receive them anyways."
+          },
+          {
+            "text": "We have mimecast personal portal. Sure it is useful, but less than expected because clients still cant send and receive emails as they are also on microsoft. Users who sent a ton of emails the day prior and expecting responses today logged into it during the outage only to see they didn’t have any backed up emails at all."
+          },
+          {
+            "text": "Well I certainly wouldn’t setup Google workspace. Why would you? Look if they wanna pay for an emergency inbox fine, but I’m not swapping MX records and keeping another environment configured and secure on the off chance this occurs, plus needing to sync mail back to their inbox, so we can use a service that provides emergency inbox, but I would be recommending against it. Whether it’s an emergency inbox, or a full IAAS swap, they will have empty inboxes and it won’t sync back. Everyone else is down. Everyone they want to email doesn’t have functional email. This is just how it is. There is nothing you or anyone else can do about it. Unless there is a direct business need to have those emails functional during this downtime and whoever they are emailing also has a functional emergency inbox, then I don’t see the point and would be telling my clients exactly that. Edit: Also."
+          },
+          {
+            "text": "fyi, just got our first batch of 365 email"
+          },
+          {
+            "text": "If nobody else can read the emails you send then what's the point?"
+          },
+          {
+            "text": "Mimecast is terrible. I would not recommend them to anyone."
+          },
+          {
+            "text": "What specifically is terrible about Mimecast? We’re in the research stage for migrating a few clients to a cloud-based security gateway."
+          },
+          {
+            "text": "We're using different filters to hold emails at the moment (proofpoint, mimecast and spamhero depending on the client) and they are doing a good job, but users still have no email access obviously. If it's still down for us in the morning New Zealand time, we'll start setting up people with temporary mailboxes, but I don't know about maintaining whole separate systems long term, seems expensive and a recipe for issues when outages are usually sub-1 hour."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Launch HN: Brex (YC W17) – Corporate Credit Card for Startups",
+            "points": 183,
+            "url": "https://news.ycombinator.com/item?id=17418813"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:21:19.286Z"
+      }
+    },
+    {
+      "id": "548596cae7",
+      "normUrl": "https://reddit.com/r/msp/comments/1xuz7n2/plot_twist_what_if_microsofts_servers_were",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Plot twist: What if Microsoft’s servers were compromised via the ScreenConnect breach?",
+      "url": "https://www.reddit.com/r/msp/comments/1xuz7n2/plot_twist_what_if_microsofts_servers_were/",
+      "summary": ":)",
+      "deepenKey": "/r/msp/comments/1xuz7n2",
+      "via": null,
+      "publishedAt": "2026-11-13T05:12:04.000Z",
+      "ref": "I32",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1663004ace",
+      "normUrl": "https://reddit.com/r/msp/comments/1xuz5lt/plan_for_tomorrow",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Plan for Tomorrow?",
+      "url": "https://www.reddit.com/r/msp/comments/1xuz5lt/plan_for_tomorrow/",
+      "summary": "With Microsoft potentially being down again in the US tomorrow morning, what is everybody doing in terms of DR? Considering most of the world uses exchange are most of us just telling our clients to hold tight?",
+      "deepenKey": "/r/msp/comments/1xuz5lt",
+      "via": null,
+      "publishedAt": "2026-11-13T05:08:53.000Z",
+      "ref": "I33",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "有具体人群"
+        ],
+        "detail": {
+          "signal": 3,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "With Microsoft potentially being down again in the US tomorrow morning, what is everybody doing in terms of DR? Considering most of the world uses exchange are most of us just telling our clients to hold tight?",
+        "comments": [
+          {
+            "text": "Do what we did here in Australia.......Enjoy the long weekend. But in all honesty we've been advising clients that 90% of the worlds businesses are in the same situation; so even if you could access your email, who's sending you new email today? and vice-versa."
+          },
+          {
+            "text": "It’s been a wonderfully relaxing Friday"
+          },
+          {
+            "text": "apart from a few calls in the AM, yeah"
+          },
+          {
+            "text": "People really need to take a step back and chill the fuck out. Yes global and internet based communication and such is a big reliance for companies but at the end of the day, the lions share all use these services and it’s the downside you get to SaaS solutions. At the end of the day though, when it’s at a Microsoft, Global scale, you just need to say ‘shit happens’ for a day or so and stop the theatrical response. What’s more important is business having proper and decent Business Continuity. Can they still process key business information locally, can they still use mobiles for supplier contact, customers etc. Different story if this scale of issue happened every month. Then sure, move away from MS. - This is not directed at you by the way OP. A mere response is all :)"
+          },
+          {
+            "text": "I just took the day off instead lmao. Gonna day drink in the garage and work on my classic car project."
+          },
+          {
+            "text": "DR occurs when its time to recover. There is nothing to recover. Microsoft have to fix it, and everyone has to action the emails that come in."
+          },
+          {
+            "text": "I see 2 options: migrate email to gsuite wait I'm not sure at what point someone will choose option 1 over option 2"
+          },
+          {
+            "text": "Any clients choosing 1 will no longer be clients."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:18:17.081Z"
+      }
+    },
+    {
+      "id": "e8e774179c",
+      "normUrl": "https://reddit.com/r/msp/comments/1xuy3br/official_statement_regarding_todays_microsoft_365",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "[OFFICIAL STATEMENT] Regarding Today’s Microsoft 365 Infrastructure \"Incident\"",
+      "url": "https://www.reddit.com/r/msp/comments/1xuy3br/official_statement_regarding_todays_microsoft_365/",
+      "summary": null,
+      "deepenKey": "/r/msp/comments/1xuy3br",
+      "via": null,
+      "publishedAt": "2026-11-13T04:11:54.000Z",
+      "ref": "I34",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "0237df509b",
+      "normUrl": "https://reddit.com/r/msp/comments/1xux5vi/m365_backup_options",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "M365 Backup Options?",
+      "url": "https://www.reddit.com/r/msp/comments/1xux5vi/m365_backup_options/",
+      "summary": "With the M365 outage today, what are we doing for cloud to cloud backups of M365 data? Have a few clients I support that are all cloud native with no physical infrastructure and I think now might be a good time to start offering cloud backups of cloud data.",
+      "deepenKey": "/r/msp/comments/1xux5vi",
+      "via": null,
+      "publishedAt": "2026-11-13T03:23:50.000Z",
+      "ref": "I35",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "73ee2fd6c9",
+      "normUrl": "https://reddit.com/r/msp/comments/1xuw764/anyone_using_the_bitdefender_gravityzone_mobile",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Anyone using the BitDefender GravityZone Mobile endpoint app? Feedback requested",
+      "url": "https://www.reddit.com/r/msp/comments/1xuw764/anyone_using_the_bitdefender_gravityzone_mobile/",
+      "summary": "We’re MSP-y. Looking at deploying some narrowly defined org phones with limited apps. Would like a mobile security app, but the BD option feels dated, but, it’s part of our stack, and would fall under MDR I believe. We likely will be deploying UniFi Endpoint for VPN…. If they can ever get there shit together with the fabric level people consolidation. Role nightmwares.",
+      "deepenKey": "/r/msp/comments/1xuw764",
+      "via": null,
+      "publishedAt": "2026-11-13T02:36:36.000Z",
+      "ref": "I36",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "afd1c168ec",
+      "normUrl": "https://reddit.com/r/msp/comments/1xuuzhh/can_we_talk_about_pe_msps",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Can we talk about PE MSPs?",
+      "url": "https://www.reddit.com/r/msp/comments/1xuuzhh/can_we_talk_about_pe_msps/",
+      "summary": "I think the sentiment is negative across the board. My company was sold to PE, and we've had some real problems since that happened. Leadership changed at the same time, so it's hard to tell from my end if they are bad leaders or if they're trapped under PE pressure. Like anything owned by PE, it's a race to the bottom to get the most returned out of the smallest investment. I think my question here is, \" is that really bad?",
+      "deepenKey": "/r/msp/comments/1xuuzhh",
+      "via": null,
+      "publishedAt": "2026-11-13T01:37:48.000Z",
+      "ref": "I37",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "ce5a5bb840",
+      "normUrl": "https://reddit.com/r/msp/comments/1xuuy1k/how_do_you_define_a_project",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "How do you define a project?",
+      "url": "https://www.reddit.com/r/msp/comments/1xuuy1k/how_do_you_define_a_project/",
+      "summary": "I've always found it a little confusing for clients what defines a project. Obviously, in most cases, a project is work that we could anticipate under the managed service agreement. But even that's a little bit vague. I've seen MSPs define projects in various ways. What's your definition of the project? I'm looking to develop our own definition.",
+      "deepenKey": "/r/msp/comments/1xuuy1k",
+      "via": null,
+      "publishedAt": "2026-11-13T01:35:54.000Z",
+      "ref": "I38",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "69bc45c641",
+      "normUrl": "https://reddit.com/r/msp/comments/1xuusaa/you_remember_them",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "You remember them…",
+      "url": "https://www.reddit.com/r/msp/comments/1xuusaa/you_remember_them/",
+      "summary": "Do you remember that one crazy client that you had? That would print out every email and keep them in a file (yes, we really had one a long time ago). Look who’s crazy now! /s",
+      "deepenKey": "/r/msp/comments/1xuusaa",
+      "via": null,
+      "publishedAt": "2026-11-13T01:28:27.000Z",
+      "ref": "I39",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "c1504954a6",
+      "normUrl": "https://reddit.com/r/msp/comments/1xurufn/m365_credits_for_ms_breaking_slas_as_a_csp",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "M365 credits for MS breaking SLAs as a CSP",
+      "url": "https://www.reddit.com/r/msp/comments/1xurufn/m365_credits_for_ms_breaking_slas_as_a_csp/",
+      "summary": "I'm sure everyone is up to speed on the MS chaos that is ongoing. I know individual orgs are able to claim credits for MS breaking SLAs via the admin center, but for orgs that purchase exclusively from CSPs, how can they or the CSP claim these credits and get them applied?",
+      "deepenKey": "/r/msp/comments/1xurufn",
+      "via": null,
+      "publishedAt": "2026-11-12T23:14:46.000Z",
+      "ref": "I40",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4393073ae7",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1xuqu5y/microsoft_owes_you_money_for_todays_outage_they",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "Microsoft owes you money for today's outage. They won't tell you. Here's how to claim it.",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1xuqu5y/microsoft_owes_you_money_for_todays_outage_they/",
+      "summary": "Outlook, Teams, Copilot, SharePoint: down for hours today and still going! Microsoft's SLA allows 44 minutes of downtime per month . Today blew past that before lunch was over. That means a credit: 25% if you were down more than 44 minutes 50% if you were down more than about 7 hours Microsoft won't apply it automatically. You have to ask. How (2 minutes): M365 admin center → Support → New service request → \"SLA credit for EX1550543 / MO1550821 \" (+ TM1550488 if Teams died this morning) Bought through a reseller? Ask them.",
+      "deepenKey": "/r/sysadmin/comments/1xuqu5y",
+      "via": null,
+      "publishedAt": "2026-11-12T22:31:19.000Z",
+      "ref": "I41",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Outlook, Teams, Copilot, SharePoint: down for hours today and still going! Microsoft's SLA allows 44 minutes of downtime per month . Today blew past that before lunch was over. That means a credit: 25% if you were down more than 44 minutes 50% if you were down more than about 7 hours Microsoft won't apply it automatically. You have to ask. How (2 minutes): M365 admin center → Support → New service request → \"SLA credit for EX1550543 / MO1550821 \" (+ TM1550488 if Teams died this morning) Bought through a reseller? Ask them. Do this today: note when it went down, when it came back, and how many users were affected. Every credit nobody claims tells Microsoft outages are free. Claim it. Share this with your IT team.",
+        "comments": [
+          {
+            "text": "\"Do this today: note when it went down, when it came back, and how many users were affected.\" Bold of you to assume that it will come back today."
+          },
+          {
+            "text": "I’m hoping for a crowdstrike level outage here without the 27 hours of recovering servers from the blue screen of death. 😂 Anyone seen their stock price lately, it’s like they never bricked half the world’s infrastructure."
+          },
+          {
+            "text": "Won't impact their stock price at all. If every major customer decided to migrate off M365 today and started working on that at 8am Friday morning, Microsoft wouldn't see a noticeable revenue hit for 3-5 years. Minimum. The trend to Exchange in the Cloud became a snowball rolling down the hill what, 10 years ago? You don't undo 10 years worth of migrations in a year. The hardware resources aren't there, especially nowadays. Blade chassis are up to what six month lead times and double the price they were three years ago? The people resources aren't there to do that much that quickly. And Microsoft would be selling most of the licenses and support contracts to move it back to self-managed OnPrem anyways, because re-architecting and migrating to an open source environment would take the big enterprises even longer to try and pull off."
+          },
+          {
+            "text": "Yeah people keep saying how important is to not have any outage, that it will lead to gigantic losses. Yet crowdstrike had global blue screen of death and stock recovered way too fast."
+          },
+          {
+            "text": "This is why I’m laughing at the comments like I hope people are learning from this that we’re putting too much stuff in the hands of a few companies. Like don’t worry they’re not. This will be a brief dip on the 52 week chart when they gotta pay penalties before it just goes right back up higher than where it was before."
+          },
+          {
+            "text": "There are approximately 1.4 billion Windows PCs installed around the world. https://www.tomshardware.com/software/windows/windows-seemingly-lost-400-million-users-in-the-past-three-years-official-microsoft-statements-show-hints-of-a-shrinking-user-base Crowdstrike temporarily bricked 8.5 million of them. https://en.wikipedia.org/wiki/2024_CrowdStrike-related_IT_outages That's why their stock continues to climb. They make a good product and they had a solution available for that issue before most people in the US were even awake. Most of the people in these forums had their systems back up and running by the end of that weekend. Don't blame Crowdstrike because ONE airline didn't have their shit together (I think it was United, but I might have that wrong)."
+          },
+          {
+            "text": "I'm still waiting. Been down since 12pm EST."
+          },
+          {
+            "text": "\"If you were diagnosed with mesothelioma, stationed at Camp Lejume, or affected by the Office 365 outage of 2026 you may be entitled to compensation..\""
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:22:20.110Z"
+      }
+    },
+    {
+      "id": "5c47fcee87",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1xv5pr6/microsoft_says_it_regrets_todays_outage_confirms",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "Microsoft says it 'regrets' today's outage, confirms it's not linked to any \"cyber attack\"",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1xv5pr6/microsoft_says_it_regrets_todays_outage_confirms/",
+      "summary": "\"We regret that today’s outages caused disruptions for our customers, and we are working to address the issue,\" Charles Lamanna, Microsoft's executive vice president of Copilot, Agents, and Platform, said in a statement: https://www.windowslatest.com/2026/11/13/was-the-microsoft-365-outage-a-hack-microsoft-says-no-it-was-its-own-servers-and-its-copilot-boss-regrets-it/ We're hearing an apology from \"Copilot EVP,\" not Outlook/Teams/MSFT 365 boss, makes me seriously wonder if everything is under Copilot umbrella now",
+      "deepenKey": "/r/sysadmin/comments/1xv5pr6",
+      "via": null,
+      "publishedAt": "2026-11-13T11:43:56.000Z",
+      "ref": "I42",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "有具体人群"
+        ],
+        "detail": {
+          "signal": 3,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "\"We regret that today’s outages caused disruptions for our customers, and we are working to address the issue,\" Charles Lamanna, Microsoft's executive vice president of Copilot, Agents, and Platform, said in a statement: https://www.windowslatest.com/2026/11/13/was-the-microsoft-365-outage-a-hack-microsoft-says-no-it-was-its-own-servers-and-its-copilot-boss-regrets-it/ We're hearing an apology from \"Copilot EVP,\" not Outlook/Teams/MSFT 365 boss, makes me seriously wonder if everything is under Copilot umbrella now",
+        "comments": [
+          {
+            "text": "Place your bets was it: A.) Their AI tools did something destructive and it took them all night to figure out what. B.) A \"crowdstrike\" scenario where someone pushed poorly tested changes to production. C.) They are lying and it was a cyberattack / DDOS of some kind."
+          },
+          {
+            "text": "D.1) AI tools handling DNS."
+          },
+          {
+            "text": "This is a terrifying thought"
+          },
+          {
+            "text": "Idea: a vibecoded DNS resolver that just asks the AI what it thinks the IP of the destination should be."
+          },
+          {
+            "text": "Or BGP. Or an expired SSL certificate."
+          },
+          {
+            "text": "D) They fired many of the people who would be able to quickly, on their own, without ai, track down this issue. Or it is A and because of overuse of AI people can’t troubleshoot the problems they created. They’ll never admit it though."
+          },
+          {
+            "text": "Yup they hired offshore and replaced legacy employees If I got the call as an ex employee I'd ask for $10k an hour with a 4 hour minimum 😜"
+          },
+          {
+            "text": "My guess: A and D. They fired a bunch of people, let the AIs do the work, and when the AIs messed up, they don't have a human to ask what happened. They probably have to go through thousands of agent logs, etc. Plus, agents don't do things that make sense to humans, so it probably isn't that straightforward to figure out what happened."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:08:06.298Z"
+      }
+    },
+    {
+      "id": "ca8b3992f9",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1xuw2tg/microsoft_just_passed_the_mark_for_losing_three",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "Microsoft just passed the mark for losing \"three 9s\" so far on their availability for the entire year",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1xuw2tg/microsoft_just_passed_the_mark_for_losing_three/",
+      "summary": "One of the more known metrics out there for availability has been the 'five 9s', AKA 99.999%. Well, going by when the outage was reported on this subreddit at ~12:45 Eastern Time, now crossing the 9:30 Eastern Time mark just cost them three of them. Here's the downtime per year at each level: Availability - Downtime 99.999% - 5.25 mins 99.99% - 52.5 mins 99.9% - 8.76 hours So they're at the 99.8% now and falling, not even counting any other downtime for the year.",
+      "deepenKey": "/r/sysadmin/comments/1xuw2tg",
+      "via": null,
+      "publishedAt": "2026-11-13T02:30:44.000Z",
+      "ref": "I43",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "元讨论",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "2ca58b4144",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1xux1zw/307am_udt_current_status_weve_monitored_the",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "3:07AM UDT “Current status: We’ve monitored the status of the changes applied to improve serviceability and confirmed that change is not taking as expected. We’re identifying alternate workstreams that can be applied..”",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1xux1zw/307am_udt_current_status_weve_monitored_the/",
+      "summary": "Hahahahha",
+      "deepenKey": "/r/sysadmin/comments/1xux1zw",
+      "via": null,
+      "publishedAt": "2026-11-13T03:18:29.000Z",
+      "ref": "I44",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "f5b0e483ae",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1xv3pbt/so_how_many_of_yall_have_been_asked_to_call",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "So… how many of y’all have been asked to call Microsoft?",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1xv3pbt/so_how_many_of_yall_have_been_asked_to_call/",
+      "summary": "I’ve been asked that question at least 3 or 4 times this morning, despite it literally being front page news, someone obviously thinks all I need to do it put a ticket in or call them to fix the problem. I’m glad they think so highly of me that I can resolve this I shouldn’t have bothered to come in today",
+      "deepenKey": "/r/sysadmin/comments/1xv3pbt",
+      "via": null,
+      "publishedAt": "2026-11-13T09:44:32.000Z",
+      "ref": "I45",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "bd1558e174",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1xus565/microsoft_365_outage_ex1550543_mo1550821",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "Microsoft 365 outage (EX1550543 / MO1550821): Microsoft's status updates so far, in order",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1xus565/microsoft_365_outage_ex1550543_mo1550821/",
+      "summary": "Last updated 20:02 UTC (3:02p ET). I'll add entries as Microsoft posts them. For anyone locked out of the admin center, here is the EX1550543 thread so far, condensed. Times are UTC with ET in parentheses. Full text of every update is on UPenn's public mirror of the service health feed , and the short versions are on @MSFT365Status . 16:17 (11:17a) Incident start. OWA, MAPI, EAS and REST.",
+      "deepenKey": "/r/sysadmin/comments/1xus565",
+      "via": null,
+      "publishedAt": "2026-11-12T23:27:59.000Z",
+      "ref": "I46",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "517962c3b7",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1xuzyou/european_here_we_were_basically_asleep_through",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "European here, we were basically asleep through this but we're coming to the party",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1xuzyou/european_here_we_were_basically_asleep_through/",
+      "summary": "In our timezones it started at 5-6ish PM Thursday, most people didn't notice much. It's now Friday 6:45 AM. Personally I'm in the middle of migrating from on prem to O365... literally, 1/4 of the company already is, we've got multiple domains, it's a holding kind of thing and I'm just a consultant there. The upper echelons domains are the ones that were already migrated, including the new management who wanted to bulldoze a fully on prem infra to migrate it to full cloud, only Azure and O365, only for a personal preference for Microsoft.",
+      "deepenKey": "/r/sysadmin/comments/1xuzyou",
+      "via": null,
+      "publishedAt": "2026-11-13T05:53:52.000Z",
+      "ref": "I47",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "在换掉现有方案"
+        ],
+        "detail": {
+          "signal": 3,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "In our timezones it started at 5-6ish PM Thursday, most people didn't notice much. It's now Friday 6:45 AM. Personally I'm in the middle of migrating from on prem to O365... literally, 1/4 of the company already is, we've got multiple domains, it's a holding kind of thing and I'm just a consultant there. The upper echelons domains are the ones that were already migrated, including the new management who wanted to bulldoze a fully on prem infra to migrate it to full cloud, only Azure and O365, only for a personal preference for Microsoft. They literally said \"everyone else did it for good reasons and Microsoft is the best option\" Oh, the irony... Judging by the scope of the incident even if they did fix it right now this will still take hours to fully resolve. I actually kinda like the fact that this will push the people who wanted to give a single cloud provider everything to rethink a bit the strategic choice there.",
+        "comments": [
+          {
+            "text": "As an Aussie, I'm knocking off for the weekend, handing over to you! Good luck!"
+          },
+          {
+            "text": "I left at 4, straight to the pub."
+          },
+          {
+            "text": "Let's go to the Winchester, have a nice cold pint, and wait for this all to blow over."
+          },
+          {
+            "text": "Lovely https://giphy.com/gifs/QsyPRpG6WVR6SYfBVw"
+          },
+          {
+            "text": "everything i wanted to do today involved sending an email so i ended up disassembling and cleaning my keyboard"
+          },
+          {
+            "text": "“even if they did fix it right now” Welcome friend. A brief update of the last 12ish hours…. They don’t know what caused the issue or how to fix it. They are literally turning shit off and on in hopes it fixes something… anything."
+          },
+          {
+            "text": "To be fair I’ve been there. “It’s worked fine for years, what changed?” Entropy."
+          },
+          {
+            "text": "My manager asked me to inform everyone. By email."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "VC-backed company just killed my EU trademark for a small OSS project",
+            "points": 854,
+            "url": "https://news.ycombinator.com/item?id=44883634"
+          },
+          {
+            "title": "Launch HN: HyLight (YC S23) – Hydrogen airships to inspect energy infrastructure",
+            "points": 192,
+            "url": "https://news.ycombinator.com/item?id=37295149"
+          },
+          {
+            "title": "Ask HN: I realise data science is not for me and feel depressed",
+            "points": 146,
+            "url": "https://news.ycombinator.com/item?id=30513030"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:17:16.302Z"
+      }
+    },
+    {
+      "id": "2e2b97637f",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1xva8nt/no_youre_not_going_to_migrate_off_m365",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "No, you're not going to migrate off M365",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1xva8nt/no_youre_not_going_to_migrate_off_m365/",
+      "summary": "Migrate to what ? There's a reason Microsoft and Google run most businesses in the world. Outages and all, they're ridiculously reliable, and no-one else comes close on features and integration. You can hate the licensing, the never-finished products, the abysmal support. You can pine for the days of yore when we all ran domain controllers on workstations in broom closets. But bleat as you will, the product works and your business runs on it. \"Just self-host.\" Cool. Now you own uptime. Have a read about the French and South Korean governments who have both tried that.",
+      "deepenKey": "/r/sysadmin/comments/1xva8nt",
+      "via": null,
+      "publishedAt": "2026-11-13T15:05:43.000Z",
+      "ref": "I48",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [
+          "要牌照或合规"
+        ],
+        "detail": {
+          "signal": -6,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1e90adca2b",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1xuyzj7/at_this_point_the_post_mortem_is_going_to_be_a",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "At this point, the post mortem is going to be a three season Netflix special",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1xuyzj7/at_this_point_the_post_mortem_is_going_to_be_a/",
+      "summary": "I am so happy to be retired. I will drink a beer for all of you who have to translate this fucking disaster to business speak to your upper management. I hope this derails a lot of AI projects. You can't substitute for long term human experience.",
+      "deepenKey": "/r/sysadmin/comments/1xuyzj7",
+      "via": null,
+      "publishedAt": "2026-11-13T05:00:23.000Z",
+      "ref": "I49",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "a2e1fc80ba",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1xuozob/alright_its_not_funny_anymore_ms",
+      "sourceId": "sysadmin",
+      "source": "r/sysadmin",
+      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "side": "demand",
+      "pool": true,
+      "title": "Alright, its not funny anymore MS",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1xuozob/alright_its_not_funny_anymore_ms/",
+      "summary": "It was cute for a while. Now its getting serious. Our CFO just let me know that she cant access the bank to transfer payroll funds. Guess what, the bank uses email MFA in 2026. I am starting to hope that its gets fixed AT ALL the way their messages sound (but I do appreciate them versus silence). The way they keep saying \"servers\", has me really nervous that there may not be as much redundancy as maybe we all thought.",
+      "deepenKey": "/r/sysadmin/comments/1xuozob",
+      "via": null,
+      "publishedAt": "2026-11-12T21:16:58.000Z",
+      "ref": "I50",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "7ed61e6dd7",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xvkz12/how_do_you_grow_your_social_media_presence",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "How do you grow your social media presence?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xvkz12/how_do_you_grow_your_social_media_presence/",
+      "summary": "We just launched and we are trying to get some traction and notice on X and LinkedIn. So far our best performing post has been a low effort tweet lol",
+      "deepenKey": "/r/microsaas/comments/1xvkz12",
+      "via": null,
+      "publishedAt": "2026-11-13T21:55:34.000Z",
+      "ref": "I51",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "e27589e162",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xvi99s/i_think_my_ai_idea_needs_a_cancellation_test",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I think my AI idea needs a cancellation test before a launch",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xvi99s/i_think_my_ai_idea_needs_a_cancellation_test/",
+      "summary": "I'm wondering if the best validation question is not \"would you buy this?\" Maybe it is: what would make you cancel it after the first month? That feels more honest. Would they cancel because the output is not trusted? Because setup is annoying? Because the workflow is not painful enough? Because the existing spreadsheet is good enough? Because it saves time but not money? Because nobody else on the team cares? For AI micro-SaaS, the cancellation reasons might reveal the real product before the product exists.",
+      "deepenKey": "/r/microsaas/comments/1xvi99s",
+      "via": null,
+      "publishedAt": "2026-11-13T20:07:48.000Z",
+      "ref": "I52",
+      "screen": {
+        "keep": true,
+        "score": 10,
+        "hits": [
+          "在用笨办法凑合"
+        ],
+        "detail": {
+          "signal": 4,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "I'm wondering if the best validation question is not \"would you buy this?\" Maybe it is: what would make you cancel it after the first month? That feels more honest. Would they cancel because the output is not trusted? Because setup is annoying? Because the workflow is not painful enough? Because the existing spreadsheet is good enough? Because it saves time but not money? Because nobody else on the team cares? For AI micro-SaaS, the cancellation reasons might reveal the real product before the product exists. I keep thinking about this around Flatlogic because I can build a clean first version quickly. But a clean first version does not mean it will survive month two. What cancellation reason would scare you enough to stop building?",
+        "comments": [
+          {
+            "text": "You're not wrong in that modeling cancelation reasons pressure-tests the product value against its alternatives. You should still be looking into whether they will convert in the first place and their buying intent as your main validation metric."
+          },
+          {
+            "text": "Fair. Cancellation reasons are probably a second filter, not the main one. First: will they commit or pay? Then: what would make them stop after month one? That order makes more sense."
+          },
+          {
+            "text": "i’d make the “cancel reason” test behavioral: ask the target user to walk through the last time this problem came up, what they used instead, and what the outcome cost them. then offer one small recurring deliverable for a month, even if it’s done manually, and set a clear renewal date at the price you plan to charge. if they come back to the same workaround or ask for the next cycle without a reminder, that’s much stronger than a hypothetical answer. no need to build the full product first."
+          },
+          {
+            "text": "This is probably the cleanest test. A small recurring manual deliverable with a real renewal date would show both sides: whether the problem matters now, and whether they want it again next cycle."
+          },
+          {
+            "text": "I think the biggest risk is people not finding enough value to keep paying, if they don't use it regularly or can't trust the output, they'll cancel pretty quickly."
+          },
+          {
+            "text": "Agreed. For AI micro-SaaS, low usage and low trust are probably fatal. If they don’t open it regularly or they keep redoing the output, cancellation is basically already happening before they click cancel."
+          },
+          {
+            "text": "the scariest one for me would be 'it works but nobody on the team actually opens it'. that one kills a lot of tools quietly. i'd test it by asking 5 people to use a rough version for two weeks and seeing who's still using it in week 2 without being nagged. that tells you more than any would you buy this question"
+          },
+          {
+            "text": "Yeah, “works but nobody opens it” is probably the scariest cancellation reason. I like the week 2 test. If they only use it when reminded, that’s not a product habit — it’s politeness."
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [
+          {
+            "title": "Ask HN: Only person assigned to certain task, and I'm alone and tired",
+            "points": 26,
+            "url": "https://news.ycombinator.com/item?id=32510918"
+          },
+          {
+            "title": "Launch HN: Mirror (YC W17) – turn a selfie into emoji that look like you",
+            "points": 57,
+            "url": "https://news.ycombinator.com/item?id=15915941"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:15:14.860Z"
+      }
+    },
+    {
+      "id": "1681643618",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xvhftd/gym_beginners_what_was_the_hardest_part_of",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Gym beginners, what was the hardest part of learning to use gym machines?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xvhftd/gym_beginners_what_was_the_hardest_part_of/",
+      "summary": "When I first started going to the gym, I honestly had no idea how most of the machines worked. I didn't know their names, which muscle groups they targeted, how to adjust them, or even how to use them properly. And the hardest part? I was genuinely shy about asking anyone. Everyone seemed busy with their own workout routines, and some of the bigger guys looked pretty intimidating to me. I didn't want to interrupt anyone just to ask, \"What does this machine do?\" So, for weeks, I would walk around the gym, try random machines, and figure things out through trial and error.",
+      "deepenKey": "/r/microsaas/comments/1xvhftd",
+      "via": null,
+      "publishedAt": "2026-11-13T19:36:08.000Z",
+      "ref": "I53",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "7d48d8b6ef",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xvh286/we_made_property_research_something_your_ai_agent",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "We made property research something your AI agent can do with you. Useful or gimmick-y?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xvh286/we_made_property_research_something_your_ai_agent/",
+      "summary": "I'm building Bucky. You group properties into lists, research what's buildable, and your AI agent (Claude and others) can read and work from the same lists through our connector. It covers about 700 cities today. I'd love one honest take from people building with AI: does \"your agent researches properties alongside your team\" sound useful, or like a feature looking for a problem?",
+      "deepenKey": "/r/microsaas/comments/1xvh286",
+      "via": null,
+      "publishedAt": "2026-11-13T19:21:45.000Z",
+      "ref": "I54",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8724128b31",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xvfw1e/unpopular_opinion_saas_is_dead",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Unpopular opinion: SaaS is dead",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xvfw1e/unpopular_opinion_saas_is_dead/",
+      "summary": "In the recent weeks I spoke with a few VCs and the message that I could read in between the lines was: SaaS is dead. Yes I am a founder of a SaaS project. They seem to be much more in favour of PaaS or IaaS. I have though that my moat is the fact that we are cracking the distribution channel, sadly they do not perceive this as strong enough of the moat. Has anyone faced similar discussion? Not necessarily with VCs but maybe clients? Do you see this huge shift towards software insourcing? Is this the case for big multinationals or even for SMEs?",
+      "deepenKey": "/r/microsaas/comments/1xvfw1e",
+      "via": null,
+      "publishedAt": "2026-11-13T18:37:46.000Z",
+      "ref": "I55",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "54015ab0b4",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xvfdso/our_billing_is_1400_lines_of_cron_jobs_and_im",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Our billing is 1,400 lines of cron jobs and I’m replacing it this month",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xvfdso/our_billing_is_1400_lines_of_cron_jobs_and_im/",
+      "summary": "Quick context: we’re 6 people building an AI meeting notes tool, and we’ve been billing usage with our own code since launch. It started as a weekend script and it’s now 1,400 lines of cron jobs, a credits table, and a spreadsheet that the finance guy double-checks every month because nobody fully trusts the numbers. This month I’m finally replacing it, and I’m sharing the process here because I’d rather get roasted now than after the migration. What we need is pretty standard for AI products.",
+      "deepenKey": "/r/microsaas/comments/1xvfdso",
+      "via": null,
+      "publishedAt": "2026-11-13T18:18:47.000Z",
+      "ref": "I56",
+      "screen": {
+        "keep": true,
+        "score": 10,
+        "hits": [
+          "在用笨办法凑合"
+        ],
+        "detail": {
+          "signal": 4,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deepError": null,
+      "deep": {
+        "body": "Quick context: we’re 6 people building an AI meeting notes tool, and we’ve been billing usage with our own code since launch. It started as a weekend script and it’s now 1,400 lines of cron jobs, a credits table, and a spreadsheet that the finance guy double-checks every month because nobody fully trusts the numbers. This month I’m finally replacing it, and I’m sharing the process here because I’d rather get roasted now than after the migration. What we need is pretty standard for AI products. Prepaid credits that expire in the right order, limits that actually stop usage when a customer runs out, and one enterprise customer on a custom annual commit. Payments stay on Stripe either way. The shortlist right now is Lago and Flexprice, since both are open source and both keep credits and limits in the same system. Flexprice fits our credit rules a little better on paper, but it’s the newer of the two, and I couldn’t find many people talking about running it at real volume If you’ve run either one in production, what broke first? And how was support when it did? Will probably post an update next week with what we picked and why.",
+        "comments": [
+          {
+            "text": "1,400 lines of cron is terrifying ngl, good luck dude"
+          },
+          {
+            "text": "the thing that breaks first isnt the metering, its the ledger when one account has credits from three places (monthly grant, top up, that enterprise commit). refund something that was partially spent and you have to decide which batch eats the loss, and thats usually the first support ticket. before cutting over, run both systems on the same traffic for one cycle and diff per customer totals against your finance spreadsheet. a month of double writes beats finding the mismatch after the first invoice. is the annual commit a fixed pool they draw down, or seat based?"
+          }
+        ],
+        "source": "reddit",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:16:15.490Z"
+      }
+    },
+    {
+      "id": "ec98c83c32",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xvejyq/how_to_handle_free_tier_abuse_for_your_saas",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "How to handle free tier abuse for your SaaS",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xvejyq/how_to_handle_free_tier_abuse_for_your_saas/",
+      "summary": "As the title suggests I’ve been having an issue recently where I’ve had persons abuse the free tier I have for my SaaS where in one particular instance I had a wave of over 300+ accounts try to deploy the same vpn proxy over a day day period. I thought the free tier was limited enough that persons would maybe pay for a plan but clearly that’s not the case. It’s getting to the point where it’s now costing me more to keep the project running when I haven’t even made a dollar from the project to date. How do you guys usually handle these type of things?",
+      "deepenKey": "/r/microsaas/comments/1xvejyq",
+      "via": null,
+      "publishedAt": "2026-11-13T17:48:35.000Z",
+      "ref": "I57",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "4d0d085e92",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xvdn5f/the_3_closest_competitors_to_my_consumer_micro",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "The 3 closest competitors to my consumer micro SaaS are free. Here's how I'm trying to charge anyway",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xvdn5f/the_3_closest_competitors_to_my_consumer_micro/",
+      "summary": "Numochi is a small subscription web app: paint by numbers with cute illustrations, played alone or with 2 to 4 people on the same picture in real time. I looked at the closest web competitors (checked 13 November): paintbynumberstogether.com: free, no account needed, up to 10 painters, no voice chat koloring.ai's color together: free for up to 3 people for 2 hours, only the host needs an account, paid plans after that ifutureart.com's together mode: up to 10 people, text chat On price alone I lose.",
+      "deepenKey": "/r/microsaas/comments/1xvdn5f",
+      "via": null,
+      "publishedAt": "2026-11-13T17:14:51.000Z",
+      "ref": "I58",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "77dbfcffa3",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xvdlhm/is_micro_saas_still_making_money_when_ai_can_make",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Is micro saas still making money when ai can make full saas fast?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xvdlhm/is_micro_saas_still_making_money_when_ai_can_make/",
+      "summary": "Is micro saas still making money when ai can make full saas fast? Anyone getting success with new Micro SAAS?",
+      "deepenKey": "/r/microsaas/comments/1xvdlhm",
+      "via": null,
+      "publishedAt": "2026-11-13T17:13:11.000Z",
+      "ref": "I59",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "dac0821e20",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xvd5sz/micro_saas_founders_what_is_the_one_support",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Micro SaaS founders: what is the one support question you keep getting, and what did you change to stop it?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xvd5sz/micro_saas_founders_what_is_the_one_support/",
+      "summary": "Every product seems to have that one question that shows up again and again in support. Ours was people asking where the export button was. It was buried in a menu nobody opened. We moved it to the main screen and the question almost disappeared overnight. What is the one question you keep answering, and what did you change in the product or the onboarding to make it go away?",
+      "deepenKey": "/r/microsaas/comments/1xvd5sz",
+      "via": null,
+      "publishedAt": "2026-11-13T16:57:26.000Z",
+      "ref": "I60",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "04ce69cbc7",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xvacy4/why_do_ai_answers_say_paytm_payment_gateway_upi",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Why do AI answers say Paytm Payment Gateway UPI payments are free when its standard plan lists a 1.99% platform fee?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xvacy4/why_do_ai_answers_say_paytm_payment_gateway_upi/",
+      "summary": "Was helping a friend compare payment gateways for his online store. Asked ChatGPT about Paytm UPI charges and kept coming across the 0% MDR claim. But when I checked Paytm Payment Gateway's pricing page, the standard plan clearly mentioned 1.99% platform fees on all transactions + GST. Now I'm confused. If UPI has 0% MDR, does that mean Paytm still charges a separate platform fee? Feels like a pretty important detail to miss when comparing payment gateways. Anyone checked their actual Paytm settlement charges?",
+      "deepenKey": "/r/microsaas/comments/1xvacy4",
+      "via": null,
+      "publishedAt": "2026-11-13T15:10:37.000Z",
+      "ref": "I61",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e0cf73fe80",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xv9bsj/no_one_talks_about_this_feeling",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "No one talks about this feeling",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xv9bsj/no_one_talks_about_this_feeling/",
+      "summary": "No one talks about how it feels to get your first sale, then nothing. You start to wonder was it luck, a competitor, just a random person. It doesn't validate your idea, it just creates more questions. I got my first sale randomly on a product I thought was dead a few days ago, now I do not know what to do lol.",
+      "deepenKey": "/r/microsaas/comments/1xv9bsj",
+      "via": null,
+      "publishedAt": "2026-11-13T14:28:53.000Z",
+      "ref": "I62",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "里程碑分享",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "41b22a6b2a",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xv7j4f/im_a_student_building_a_saas_things_i_got_wrong",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I’m a student building a SaaS. Things I got wrong in the first few months",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xv7j4f/im_a_student_building_a_saas_things_i_got_wrong/",
+      "summary": "Not an expert, just sharing so you can skip some of these. I cared way too much about the tech stack. I spent days choosing frameworks and folder structure. Not one person has ever asked what I built it with. They ask what it does for them. I waited until it was ready to talk to people. It was never going to feel ready. I should have shown it to strangers way earlier when it was embarrassing. I asked friends for feedback. They said “looks great bro.” Friends are nice, nice doesn’t help. Strangers will tell you what’s confusing, sometimes a bit rudely, and that’s what you actually need.",
+      "deepenKey": "/r/microsaas/comments/1xv7j4f",
+      "via": null,
+      "publishedAt": "2026-11-13T13:12:41.000Z",
+      "ref": "I63",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "f06de5f3b5",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xv5k84/ai_calling_app_calls_to_businesses_in_a_1000call",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "ai calling app calls to businesses: in a 1,000-call SF test, vets kept talking 79% of the time and bars about 20%. if you answer the phone at your business, what makes you hang up on an AI caller?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xv5k84/ai_calling_app_calls_to_businesses_in_a_1000call/",
+      "summary": "saw a linkedin post from someone called vlad baskakov (voygr, y combinator w26) about an experiment where an ai called about 1,000 san francisco businesses during opening hours. it said it was an ai right after hello, then asked one normal question for that type of business, like whether a dentist was taking new patients. about 1 in 3 kept talking and most people didn't argue (many hung up). the split by business type was also the interesting part imo, as vets stayed on 79% of the time, dental offices 61%, and bars and dry cleaners around 20%.",
+      "deepenKey": "/r/microsaas/comments/1xv5k84",
+      "via": null,
+      "publishedAt": "2026-11-13T11:35:13.000Z",
+      "ref": "I64",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1589e44d9c",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xv4k0u/would_minimum_odds_make_sense_to_you_on_this",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Would “minimum odds” make sense to you on this screen?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xv4k0u/would_minimum_odds_make_sense_to_you_on_this/",
+      "summary": "I’m building a sports odds tool, and I’m trying to make this comparison easy to read at a glance. Here’s an example from the app: Luxembourg +0 vs Estonia. The screen shows 1.689 minimum odds and 1.925 at Bet365 for the same pick. The first number is the benchmark our tool uses; the second is what the bookmaker was offering when we captured it. If you saw this without the explanation, would you know what “minimum odds” meant? Would “minimum odds for value” be clearer, or would you call it something else?",
+      "deepenKey": "/r/microsaas/comments/1xv4k0u",
+      "via": null,
+      "publishedAt": "2026-11-13T10:37:19.000Z",
+      "ref": "I65",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "ff6de8b0a1",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xv1rm5/almost_reaching_3k_mrr_on_my_saas",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Almost reaching $3k MRR on my SaaS",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xv1rm5/almost_reaching_3k_mrr_on_my_saas/",
+      "summary": "https://preview.redd.it/9i0psrp33c1i1.png?width=800&format=png&auto=webp&s=4f1481ed344199f485f67f05b8598757dedbdd94 Launched in the end of July and 90% of the traffic on my website comes from SEO and it made me almost $14k USD in the past 3 months and I'm targeting to reach $15k MRR by the end of February. Lots of ups and downs in this journey but I learnt more than I ever could in my full time job as a software engineer. Finally resigned from there as well and now full focus and energy goes into my SaaS.",
+      "deepenKey": "/r/microsaas/comments/1xv1rm5",
+      "via": null,
+      "publishedAt": "2026-11-13T07:42:06.000Z",
+      "ref": "I66",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "c550957338",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xv1hqd/built_b2b_app_mostly_ai_when_do_i_actually_need",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "built B2B app mostly AI, when do i actually need SOC 2 compliance for business customers?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xv1hqd/built_b2b_app_mostly_ai_when_do_i_actually_need/",
+      "summary": "I built most of the app with AI tools and it’s working fine. Now that I’m talking to actual businesses, I’m a bit nervous about what they’ll ask on security. What did your first business customers want to see? Just a security questionnaire, or did they want SOC 2 straight away? I have been getting prices from Secureframe and Scytale out of curiosity, but with no paying customers yet it feels early. What would you sort out first?",
+      "deepenKey": "/r/microsaas/comments/1xv1hqd",
+      "via": null,
+      "publishedAt": "2026-11-13T07:24:30.000Z",
+      "ref": "I67",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "5f921612cc",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xv0t08/a_refund_request_got_stuck_in_our_support_inbox",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "A refund request got stuck in our support inbox. How would you handle it?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xv0t08/a_refund_request_got_stuck_in_our_support_inbox/",
+      "summary": "I’m working on a support widget for small SaaS teams. It answers common questions from the team’s help docs and sends requests that need a human to the team’s inbox. Today we got feedback about a refund request. A customer asked for a refund in the widget, and the request made it to the team’s inbox, but it was marked as normal priority. It sat alongside routine questions, and the refund took longer than it should have.",
+      "deepenKey": "/r/microsaas/comments/1xv0t08",
+      "via": null,
+      "publishedAt": "2026-11-13T06:42:54.000Z",
+      "ref": "I68",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "66486c39be",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xv06nl/300_users_and_15_paying_customers_in_60_days_what",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "300 users and 15+ paying customers in 60 days. What worked, and what was a waste of money",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xv06nl/300_users_and_15_paying_customers_in_60_days_what/",
+      "summary": "Solo dev here. I've been building a social media tool for creators (not another post Schedular). Not dropping the name or link because this isn't a promo post, I just want to share what moved the numbers and what burned money. 60 days in: ~300 signups, 15+ paying. Small, but it's real money from strangers. What worked Researched competitor articles instead of outreach tools I didn't pay $99/mo for outreach tools. I wrote a lot of \"X vs Y\" and \"alternatives to X\" articles.",
+      "deepenKey": "/r/microsaas/comments/1xv06nl",
+      "via": null,
+      "publishedAt": "2026-11-13T06:06:11.000Z",
+      "ref": "I69",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "b8ff6845ec",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xv05sw/test_anything_that_can_take_a_real_action_with_a",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Test anything that can take a real action with a fake action first",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xv05sw/test_anything_that_can_take_a_real_action_with_a/",
+      "summary": "I was changing a listener that can start a real call on a smart speaker. Before touching the real device, I ran the new version against a fake call control that only logs what it would do. Two fake open, stop and reopen cycles passed on the actual device. No microphone and no real call were involved in that run. The same test also caught a problem. A normal Russian question about the time triggered a false activation at the default threshold, and recall on the target phrase was also too low. I kept the experimental listener disabled.",
+      "deepenKey": "/r/microsaas/comments/1xv05sw",
+      "via": null,
+      "publishedAt": "2026-11-13T06:04:49.000Z",
+      "ref": "I70",
+      "screen": {
+        "keep": true,
+        "score": -2,
+        "hits": [
+          "要做硬件"
+        ],
+        "detail": {
+          "signal": -8,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "7cddc91f2c",
+      "normUrl": "https://producthunt.com/products/templify",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Templify AI",
+      "url": "https://www.producthunt.com/products/templify",
+      "summary": "Powerful content editor for people who aren’t editors",
+      "publishedAt": "2026-10-26T11:56:03.000Z",
+      "ref": "I71",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Powerful content editor for people who aren’t editors",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:10:51.825Z"
+      }
+    },
+    {
+      "id": "0968566967",
+      "normUrl": "https://producthunt.com/products/trainn",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Trainn MCP",
+      "url": "https://www.producthunt.com/products/trainn",
+      "summary": "Create product videos and courses from any AI chat",
+      "publishedAt": "2026-11-12T05:01:59.000Z",
+      "ref": "I72",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Create product videos and courses from any AI chat",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:11:11.763Z"
+      }
+    },
+    {
+      "id": "8f66ca5997",
+      "normUrl": "https://producthunt.com/products/kairos-18",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Kairos",
+      "url": "https://www.producthunt.com/products/kairos-18",
+      "summary": "Personal analytics engine across health, finances, & social",
+      "publishedAt": "2026-11-07T16:38:24.000Z",
+      "ref": "I73",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Personal analytics engine across health, finances, & social",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:11:31.779Z"
+      }
+    },
+    {
+      "id": "2fd1df16c9",
+      "normUrl": "https://producthunt.com/products/qorqbot",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "qorqbot",
+      "url": "https://www.producthunt.com/products/qorqbot",
+      "summary": "Proactive agent for business work",
+      "publishedAt": "2026-10-18T20:15:41.000Z",
+      "ref": "I74",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Proactive agent for business work",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:11:51.796Z"
+      }
+    },
+    {
+      "id": "8532b24cb8",
+      "normUrl": "https://producthunt.com/products/whoop",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "WHOOP Humans",
+      "url": "https://www.producthunt.com/products/whoop",
+      "summary": "WHOOP's social network built around real health data",
+      "publishedAt": "2026-11-13T01:35:46.000Z",
+      "ref": "I75",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "WHOOP's social network built around real health data",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:12:12.093Z"
+      }
+    },
+    {
+      "id": "ff0b0d6a09",
+      "normUrl": "https://producthunt.com/products/galaxy",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Filament by Galaxy",
+      "url": "https://www.producthunt.com/products/galaxy",
+      "summary": "Move data using your terminal or agent. Fast & open source.",
+      "publishedAt": "2026-10-16T14:05:37.000Z",
+      "ref": "I76",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Move data using your terminal or agent. Fast & open source.",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Show HN: Filament – Fast data movement engine in Go",
+            "points": 31,
+            "url": "https://news.ycombinator.com/item?id=49611112"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:12:32.131Z"
+      }
+    },
+    {
+      "id": "a0308da279",
+      "normUrl": "https://producthunt.com/products/hoverine",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Hoverine",
+      "url": "https://www.producthunt.com/products/hoverine",
+      "summary": "Rive animation templates you can drop into your app",
+      "publishedAt": "2026-11-12T19:17:51.000Z",
+      "ref": "I77",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Rive animation templates you can drop into your app",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:12:51.848Z"
+      }
+    },
+    {
+      "id": "6dd6a10740",
+      "normUrl": "https://producthunt.com/products/pocket-studio-for-supabase",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Pocket Studio for Supabase",
+      "url": "https://www.producthunt.com/products/pocket-studio-for-supabase",
+      "summary": "Supabase dashboard & SQL editor for Android",
+      "publishedAt": "2026-11-13T01:38:33.000Z",
+      "ref": "I78",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Supabase dashboard & SQL editor for Android",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:13:12.083Z"
+      }
+    },
+    {
+      "id": "746e3e28c2",
+      "normUrl": "https://producthunt.com/products/stockrip",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "StockRip",
+      "url": "https://www.producthunt.com/products/stockrip",
+      "summary": "Trading cards, literally digital cards with tokenized stocks",
+      "publishedAt": "2026-11-13T06:46:57.000Z",
+      "ref": "I79",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Trading cards, literally digital cards with tokenized stocks",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:13:31.878Z"
+      }
+    },
+    {
+      "id": "efed2438f3",
+      "normUrl": "https://producthunt.com/products/willo-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Willo",
+      "url": "https://www.producthunt.com/products/willo-2",
+      "summary": "A companion you talk to while you play WoW",
+      "publishedAt": "2026-11-10T07:13:47.000Z",
+      "ref": "I80",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "A companion you talk to while you play WoW",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:13:51.896Z"
+      }
+    },
+    {
+      "id": "1118fe4906",
+      "normUrl": "https://producthunt.com/products/replicate-10",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Replicate",
+      "url": "https://www.producthunt.com/products/replicate-10",
+      "summary": "Turn Webflow/Framer app into a Claude/Codex project for free",
+      "publishedAt": "2026-11-13T02:06:54.000Z",
+      "ref": "I81",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Turn Webflow/Framer app into a Claude/Codex project for free",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:14:11.909Z"
+      }
+    },
+    {
+      "id": "9d6467ebea",
+      "normUrl": "https://producthunt.com/products/paxper",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Paxper",
+      "url": "https://www.producthunt.com/products/paxper",
+      "summary": "Create cloud infrastructure visually and review every change",
+      "publishedAt": "2026-11-12T20:57:17.000Z",
+      "ref": "I82",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Create cloud infrastructure visually and review every change",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:14:31.930Z"
+      }
+    },
+    {
+      "id": "2dac544d71",
+      "normUrl": "https://producthunt.com/products/gatrends",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "GAtrends",
+      "url": "https://www.producthunt.com/products/gatrends",
+      "summary": "Spike alerts for your keywords in Telegram, Claude, ChatGPT",
+      "publishedAt": "2026-11-12T18:54:12.000Z",
+      "ref": "I83",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "9d8205c8a2",
+      "normUrl": "https://producthunt.com/products/gemini-6",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Gemini 4 Hydrogen",
+      "url": "https://www.producthunt.com/products/gemini-6",
+      "summary": "Fast agentic development for coders",
+      "publishedAt": "2026-11-12T18:37:12.000Z",
+      "ref": "I84",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5d10b2d889",
+      "normUrl": "https://producthunt.com/products/burnstate",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Burnstate",
+      "url": "https://www.producthunt.com/products/burnstate",
+      "summary": "Claude Code, Codex & Cursor limits, paced in your menu bar",
+      "publishedAt": "2026-11-10T09:15:58.000Z",
+      "ref": "I85",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "72baa3d353",
+      "normUrl": "https://producthunt.com/products/expo",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Expo Simulators",
+      "url": "https://www.producthunt.com/products/expo",
+      "summary": "Cloud simulators built for agents",
+      "publishedAt": "2026-11-12T18:34:18.000Z",
+      "ref": "I86",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "b2ebc4d853",
+      "normUrl": "https://producthunt.com/products/aven-app-agent",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Aven App Agent",
+      "url": "https://www.producthunt.com/products/aven-app-agent",
+      "summary": "AI that guides users through your app",
+      "publishedAt": "2026-11-11T22:12:11.000Z",
+      "ref": "I87",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "b81e0d1e6b",
+      "normUrl": "https://producthunt.com/products/ganella",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Ganella",
+      "url": "https://www.producthunt.com/products/ganella",
+      "summary": "Your Mac Dock, with live widgets for the apps you use",
+      "publishedAt": "2026-11-11T15:14:00.000Z",
+      "ref": "I88",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "eae91a7c23",
+      "normUrl": "https://producthunt.com/products/de-volt",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "de:volt",
+      "url": "https://www.producthunt.com/products/de-volt",
+      "summary": "A breadboard simulator with real physics, in your browser",
+      "publishedAt": "2026-11-13T06:46:58.000Z",
+      "ref": "I89",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2ade56aeff",
+      "normUrl": "https://news.ycombinator.com/item?id=50487228",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Isometric SF – A pixel-art map of the SF Bay Area",
+      "url": "https://news.ycombinator.com/item?id=50487228",
+      "externalUrl": "https://isometricsf.com/",
+      "summary": "Technical Write-up: https://www.justinchavez.com/blog/isometric-sf-how/ Hi HN! Showcasing this fun project. I took 1300 square miles of the SF Bay Area from Google Photorealistic 3D Tiles and transformed them into a cohesive pixel map. It's really fun to explore and stumble upon various famous landmarks like Apple Park, Palace of Fine Arts, or UC Berkeley. The technicals involve using Nano Banana 2 to train a Qwen-Image-Edit 2511 LoRA which is used to prototype the style and generation methods. For final map I used Qwen to train a Klein 4B LoRA which reproduced the style at 1/4 of the cost.",
+      "deepenKey": "50487228",
+      "via": null,
+      "signal": {
+        "points": 106,
+        "comments": 39
+      },
+      "publishedAt": "2026-11-13T17:58:37Z",
+      "ref": "I90",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Technical Write-up: https://www.justinchavez.com/blog/isometric-sf-how/ Hi HN! Showcasing this fun project. I took 1300 square miles of the SF Bay Area from Google Photorealistic 3D Tiles and transformed them into a cohesive pixel map. It's really fun to explore and stumble upon various famous landmarks like Apple Park, Palace of Fine Arts, or UC Berkeley. The technicals involve using Nano Banana 2 to train a Qwen-Image-Edit 2511 LoRA which is used to prototype the style and generation methods. For final map I used Qwen to train a Klein 4B LoRA which reproduced the style at 1/4 of the cost. More details in the blog post. Let me know what you think! I really enjoyed this process of fine-tuning smaller open source models. If I did the map with Nano Banana 2 it would have cost around 7k USD! Credit for the idea goes to Isometric NYC.",
+        "comments": [
+          {
+            "text": "Impressive! And the aesthetics look great!"
+          },
+          {
+            "text": "This is amazing and is 1:1 global map. Did you use google maps API to build this or UE5?"
+          },
+          {
+            "text": "…not actually pixel art though, no?"
+          },
+          {
+            "text": "I've been seeing a lot of these kinds of projects make the rounds on Twitter lately. Yours is just as good as the best of them, so great job making it more efficient without loss of quality! But... I'm always disappointed when I zoom in and see that it's not actually pixel art, and it's full of the kinds of artifacts that are typical of any AI-generated imagery :("
+          },
+          {
+            "text": "Also see isometric Toronto: https://iso.sloptoronto.ca/#v=3&x=102672&y=64255&z=0.262"
+          },
+          {
+            "text": "How much it cost you paint per km2 after training the model? I did (and publish here) https://www.tinyvalencia.com and got to 0.4$ per km2 after training the model (for 15$ or so)."
+          },
+          {
+            "text": "Hi Justin, great writeup! I really appreciate your human-written documentation because it's nice to read your thought process instead of LLM marketing soundbites. re: orientation. I know it's creator's choice, but for me, it's either north or west towards the ocean. East makes me want to hold shift to rotate. :) Thanks for making and sharing this!"
+          },
+          {
+            "text": "Not bad. I feel like instead of using an image-mode model, it would be better to use a code model that generates the scene. Reason I think this is that the image generators aren't respecting the rules of \"pixel art\". Straight lines and flat planes are straight and flat in pixel art. These images are wavy and irregular."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: Isometric SF – A pixel-art map of the SF Bay Area",
+            "points": 112,
+            "url": "https://news.ycombinator.com/item?id=50487228"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:10:51.710Z"
+      }
+    },
+    {
+      "id": "c4e3f94959",
+      "normUrl": "https://news.ycombinator.com/item?id=50484682",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Langfuse AI Gateway, open source rust gateway to trace every LLM call",
+      "url": "https://news.ycombinator.com/item?id=50484682",
+      "externalUrl": "https://github.com/langfuse/langfuse/tree/main/ai-gateway",
+      "summary": "Hi HN, this is Max, Marc and Clemens, co-founders of Langfuse, the open source tool for agent & observability & evals ( https://github.com/langfuse/langfuse ). It’s been a minute since our last Show HN in August 2023 ( https://news.ycombinator.com/item?id=37310070 ) - we’ve been busy building out and serving our tracing & eval pieces over the past years and have been very lucky to build a successful company and open source project around it. Today, we are happy to show the beta of Langfuse AI Gateway: https://github.com/langfuse/langfuse/tree/main/ai-gateway .",
+      "deepenKey": "50484682",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-13T15:10:20Z",
+      "ref": "I91",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1f46bc7eb3",
+      "normUrl": "https://news.ycombinator.com/item?id=50484579",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Hexalexagons, a daily word game on a hexagonal grid",
+      "url": "https://news.ycombinator.com/item?id=50484579",
+      "externalUrl": "https://hexalexagons.com/",
+      "summary": "Hello HN! I made a daily word game where you find words on a hexagonal grid, without crossing walls. Feedback is very welcome!",
+      "deepenKey": "50484579",
+      "via": null,
+      "signal": {
+        "points": 10,
+        "comments": 6
+      },
+      "publishedAt": "2026-11-13T15:03:13Z",
+      "ref": "I92",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hello HN! I made a daily word game where you find words on a hexagonal grid, without crossing walls. Feedback is very welcome!",
+        "comments": [
+          {
+            "text": "Fun game! Took me a second to latch onto the idea, but once I found the groove I enjoyed it. A couple pretty obscure words, which kept me guessing -- my brain was too in the mindset of other games so there were words I initially dismissed as invalid without trying. Bookmarked!"
+          },
+          {
+            "text": "Beautiful, love the colors and clean execution. Great job."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: Hexalexagons, a daily word game on a hexagonal grid",
+            "points": 11,
+            "url": "https://news.ycombinator.com/item?id=50484579"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:14:32.486Z"
+      }
+    },
+    {
+      "id": "f7cfdfd7bc",
+      "normUrl": "https://github.com/alibaba/open-code-review",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "summary": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "signal": {
+        "language": "Go",
+        "points": 206
+      },
+      "publishedAt": null,
+      "ref": "I93",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Open Code Review – An AI-powered code review CLI tool",
+            "points": 284,
+            "url": "https://news.ycombinator.com/item?id=48406358"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:14:32.740Z"
+      }
+    },
+    {
+      "id": "09a3e479d0",
+      "normUrl": "https://github.com/backnotprop/plannotator",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "backnotprop/plannotator",
+      "url": "https://github.com/backnotprop/plannotator",
+      "summary": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "signal": {
+        "language": "TypeScript",
+        "points": 100
+      },
+      "publishedAt": null,
+      "ref": "I94",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:14:32.946Z"
+      }
+    },
+    {
+      "id": "f53325a926",
+      "normUrl": "https://github.com/louislam/uptime-kuma",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "louislam/uptime-kuma",
+      "url": "https://github.com/louislam/uptime-kuma",
+      "summary": "A fancy self-hosted monitoring tool",
+      "signal": {
+        "language": "JavaScript",
+        "points": 61
+      },
+      "publishedAt": null,
+      "ref": "I95",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "A fancy self-hosted monitoring tool",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "A fancy open-source self-hosted monitoring tool",
+            "points": 59,
+            "url": "https://news.ycombinator.com/item?id=28809501"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:14:33.198Z"
+      }
+    },
+    {
+      "id": "53958cf51f",
+      "normUrl": "https://github.com/block/buzz",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "block/buzz",
+      "url": "https://github.com/block/buzz",
+      "summary": "A hive mind communication platform",
+      "signal": {
+        "language": "Rust",
+        "points": 95
+      },
+      "publishedAt": null,
+      "ref": "I96",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "A hive mind communication platform",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Show HN: Block/buzz: a workspace built for teams of humans and agents",
+            "points": 21,
+            "url": "https://news.ycombinator.com/item?id=48632977"
+          },
+          {
+            "title": "Jack Dorsey launches Buzz to combine team chat, AI agents and Git hosting",
+            "points": 378,
+            "url": "https://news.ycombinator.com/item?id=48995213"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:14:33.414Z"
+      }
+    },
+    {
+      "id": "ec453d1217",
+      "normUrl": "https://github.com/tradermonty/claude-trading-skills",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "tradermonty/claude-trading-skills",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "summary": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "signal": {
+        "language": "Python",
+        "points": 60
+      },
+      "publishedAt": null,
+      "ref": "I97",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:14:33.623Z"
+      }
+    },
+    {
+      "id": "256005002a",
+      "normUrl": "https://github.com/tailscale/tailcat",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "tailscale/tailcat",
+      "url": "https://github.com/tailscale/tailcat",
+      "summary": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
+      "signal": {
+        "language": "Go",
+        "points": 324
+      },
+      "publishedAt": null,
+      "ref": "I98",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Tailcat: Tailscale Without Tailscale, by Tailscale",
+            "points": 73,
+            "url": "https://news.ycombinator.com/item?id=49517420"
+          },
+          {
+            "title": "Tailcat – Like netcat, but over Tailscale’s data plane",
+            "points": 687,
+            "url": "https://news.ycombinator.com/item?id=49452990"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:14:33.845Z"
+      }
+    },
+    {
+      "id": "c57dfd8e10",
+      "normUrl": "https://github.com/Likely7/Veyra-NRVideo",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "Likely7/Veyra-NRVideo",
+      "url": "https://github.com/Likely7/Veyra-NRVideo",
+      "summary": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.",
+      "signal": {
+        "language": "C++",
+        "points": 245
+      },
+      "publishedAt": null,
+      "ref": "I99",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-13T22:14:34.052Z"
+      }
+    },
+    {
+      "id": "a67bb8d2a6",
+      "normUrl": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "ChromeDevTools/chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "summary": "Chrome DevTools for coding agents",
+      "signal": {
+        "language": "TypeScript",
+        "points": 145
+      },
+      "publishedAt": null,
+      "ref": "I100",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Chrome DevTools for coding agents",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "ChromeDevTools/Chrome-devtools-MCP: Chrome DevTools for coding agents",
+            "points": 11,
+            "url": "https://news.ycombinator.com/item?id=45401756"
+          }
+        ],
+        "fetchedAt": "2026-11-13T22:14:34.354Z"
+      }
+    }
+  ],
+  "deepenedAt": "2026-11-13T22:22:20.110Z"
+}

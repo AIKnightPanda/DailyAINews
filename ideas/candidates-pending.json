@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-11-14T20:51:05.285Z",
+  "fetchedAt": "2026-11-15T21:10:21.480Z",
   "windowDays": 3,
-  "windowUntil": "2026-11-15T23:59:59.000Z",
+  "windowUntil": "2026-11-16T23:59:59.000Z",
   "sources": [
     {
       "id": "somebodymakethis",
@@ -15,7 +15,7 @@
       "name": "Reddit 需求短语",
       "status": "error",
       "pool": true,
-      "error": "全部短语失败：is there an app that（HTTP 403：2026-11-14T20:41:01+00:00 /sear）；is there a tool that（HTTP 403：2026-11-14T20:42:11+00:00 /sear）；someone should build（HTTP 403：2026-11-14T20:43:21+00:00 /sear）；we still use spreadsheets（HTTP 403：2026-11-14T20:44:07+00:00 /sear）"
+      "error": "全部短语失败：is there an app that（HTTP 403：2026-11-15T21:00:17+00:00 /sear）；is there a tool that（HTTP 403：2026-11-15T21:01:03+00:00 /sear）；someone should build（HTTP 403：2026-11-15T21:02:13+00:00 /sear）；we still use spreadsheets（HTTP 403：2026-11-15T21:03:23+00:00 /sear）"
     },
     {
       "id": "softwarerecs",
@@ -43,20 +43,20 @@
       "name": "Reddit 付费信号",
       "status": "error",
       "pool": true,
-      "error": "全部短语失败：we currently pay（HTTP 403：2026-11-14T20:45:17+00:00 /sear）；we are paying for（HTTP 403：2026-11-14T20:46:02+00:00 /sear）；quoted us（HTTP 403：2026-11-14T20:47:13+00:00 /sear）；per seat per month（HTTP 403：2026-11-14T20:48:23+00:00 /sear）"
+      "error": "全部短语失败：we currently pay（HTTP 403：2026-11-15T21:04:08+00:00 /sear）；we are paying for（HTTP 403：2026-11-15T21:05:19+00:00 /sear）；quoted us（HTTP 403：2026-11-15T21:06:04+00:00 /sear）；per seat per month（HTTP 403：2026-11-15T21:07:14+00:00 /sear）"
     },
     {
       "id": "msp",
       "name": "r/msp",
       "status": "ok",
-      "items": 20,
+      "items": 19,
       "pool": true
     },
     {
       "id": "sysadmin",
       "name": "r/sysadmin",
       "status": "ok",
-      "items": 12,
+      "items": 4,
       "pool": true
     },
     {
@@ -91,14 +91,14 @@
       "id": "showhn",
       "name": "Show HN",
       "status": "ok",
-      "items": 6,
+      "items": 1,
       "pool": true
     },
     {
       "id": "github-trending",
       "name": "GitHub Trending",
       "status": "ok",
-      "items": 15,
+      "items": 12,
       "pool": true
     },
     {
@@ -165,7 +165,7 @@
       "pool": true,
       "title": "first av2 corvertion site",
       "url": "https://www.reddit.com/r/SomebodyMakeThis/comments/1xvkdby/first_av2_corvertion_site/",
-      "summary": "av2 source code: https://github.com/AOMediaCodec/avm i want somebody to make a site where you can turn av1 to av2 and turn av2 to av1 above is the source code for av2 i do not work for AOM but i think making that would be the first step into the future make a better version that you have to download too",
+      "summary": "av2 source code: https://github.com/AOMediaCodec/avm/tree/v1.0.0/av2 i want somebody to make a site where you can turn av1 to av2 and turn av2 to av1 above is the source code for av2 i do not work for AOM but i think making that would be the first step into the future make a better version that you have to download too",
       "deepenKey": "/r/SomebodyMakeThis/comments/1xvkdby",
       "via": null,
       "publishedAt": "2026-11-13T21:31:05.000Z"
@@ -486,6 +486,66 @@
       "publishedAt": "2026-11-09T16:36:24.000Z"
     },
     {
+      "id": "026809aa1a",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/79455/library-or-tool-for-programmatic-3d-model-generation",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Library or tool for programmatic 3D model generation",
+      "url": "https://softwarerecs.stackexchange.com/questions/79455/library-or-tool-for-programmatic-3d-model-generation",
+      "summary": "I'm currently developing a tool, that allows users to generate simple textured 3D models given an image and some dimensions as input values. Using these I need to generate some simple geometric shapes with a material based on that texture. This is currently limited to cuboids, but I'd like to keep the option to generate more complicated shapes in the future. The resulting files then need to be exported in glb format. The service is currently written in Golang and I use a gltf library to manually generate the resulting files.",
+      "deepenKey": "79455",
+      "signal": {
+        "score": 1,
+        "views": 609,
+        "answers": 3,
+        "unanswered": true
+      },
+      "publishedAt": "2021-05-30T11:07:46.000Z"
+    },
+    {
+      "id": "8620e1c914",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/78624/project-tracking-supervision",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Project tracking/supervision",
+      "url": "https://softwarerecs.stackexchange.com/questions/78624/project-tracking-supervision",
+      "summary": "I need to track/supervise the progress of a number of simple projects (about 50 at a time). I need an overview of all current projects (active and pending). In short, I need to know to whom I have assigned a certain task, which project does that task belong in, what the task is and when that person is due to finish it. The software is for my use only – no team members involved and I don't need collaboration software. The projects are linear (never more than one task pending and never more than one person working on it). The status of the projects changes daily, often several times per day.",
+      "deepenKey": "78624",
+      "signal": {
+        "score": 1,
+        "views": 65,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2021-03-18T15:23:28.000Z"
+    },
+    {
+      "id": "8e788689b5",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/76995/decent-web-based-drawing-platform",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Decent-web based drawing platform?",
+      "url": "https://softwarerecs.stackexchange.com/questions/76995/decent-web-based-drawing-platform",
+      "summary": "I would like to find a decent web-based drawing platform and was wondering if you guys could help me out. Also not sure if web based is the right term, but basically I want to be able to use it on a Chromebook without having to download anything from the chrome store or hacking the device. Not sure if this is on topic here but I think this is the best SE site for this.",
+      "deepenKey": "76995",
+      "signal": {
+        "score": 0,
+        "views": 38,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2020-11-25T15:56:00.000Z"
+    },
+    {
       "id": "f978a12eb0",
       "normUrl": "https://softwarerecs.stackexchange.com/questions/34199/countdown-timer-alarm-clock-software-with-very-specific-features",
       "sourceId": "softwarerecs",
@@ -499,7 +559,7 @@
       "deepenKey": "34199",
       "signal": {
         "score": 2,
-        "views": 583,
+        "views": 584,
         "answers": 1,
         "unanswered": true
       },
@@ -519,7 +579,7 @@
       "deepenKey": "95787",
       "signal": {
         "score": 0,
-        "views": 9,
+        "views": 12,
         "answers": 0,
         "unanswered": true
       },
@@ -539,7 +599,7 @@
       "deepenKey": "95785",
       "signal": {
         "score": 0,
-        "views": 27,
+        "views": 28,
         "answers": 0,
         "unanswered": true
       },
@@ -559,7 +619,7 @@
       "deepenKey": "17361",
       "signal": {
         "score": 6,
-        "views": 344,
+        "views": 345,
         "answers": 1,
         "unanswered": true
       },
@@ -579,7 +639,7 @@
       "deepenKey": "2865",
       "signal": {
         "score": 5,
-        "views": 569,
+        "views": 570,
         "answers": 2,
         "unanswered": true
       },
@@ -599,7 +659,7 @@
       "deepenKey": "55258",
       "signal": {
         "score": 3,
-        "views": 1711,
+        "views": 1712,
         "answers": 1,
         "unanswered": true
       },
@@ -719,7 +779,7 @@
       "deepenKey": "9800",
       "signal": {
         "score": 4,
-        "views": 418,
+        "views": 419,
         "answers": 2,
         "unanswered": true
       },
@@ -779,7 +839,7 @@
       "deepenKey": "90156",
       "signal": {
         "score": 2,
-        "views": 30,
+        "views": 31,
         "answers": 0,
         "unanswered": true
       },
@@ -919,71 +979,331 @@
       "deepenKey": "69476",
       "signal": {
         "score": 1,
-        "views": 497,
+        "views": 498,
         "answers": 2,
         "unanswered": true
       },
       "publishedAt": "2019-10-02T21:41:23.000Z"
     },
     {
-      "id": "0ca5abd1a9",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/65622/tool-to-check-my-network-card-health-status",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "id": "2fff9cb831",
+      "normUrl": "https://news.ycombinator.com/item?id=50510540",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "Tool to check my network card health status?",
-      "url": "https://softwarerecs.stackexchange.com/questions/65622/tool-to-check-my-network-card-health-status",
-      "summary": "My network is not stable. Sometimes slower (ex. speed test result 10 ~ 30 Mbps) than normal, I tried a speed test, is really slower, and page loading takes time. I tried Reset TCP/IP (Internet Protocol) and winsock but it does not work. Sometimes is normal (200 Mbps+). I see in Resource Monitor , no other app is using it. When slow , ping using cmd shows no packet loss. Using my phone, also results in a normal speed test. Are there any tools that can check it? Like disk can use HD Tune",
-      "deepenKey": "65622",
+      "title": "What do coding interviews look like in the age of AI?",
+      "url": "https://news.ycombinator.com/item?id=50510540",
+      "externalUrl": null,
+      "summary": "I'm a senior Rails/React dev with 13+ years of experience. Recent AI-driven layoffs have me (soon) looking for work again. But I've barely hand-written a line of code in the past year. All that has been necessary is good prompt writing and tedious, patient code review with tweaks for style / formatting and obviously re-prompting for bad architectural decisions. Should I go back and hit the books / write a bunch of components by hand to get the muscle memory back? Or have programming interviews changed to catch up with the technology and do things now look broader and more architectural?",
+      "deepenKey": "50510540",
+      "via": null,
       "signal": {
-        "score": 1,
-        "views": 1760,
-        "answers": 1,
-        "unanswered": true
+        "points": 4,
+        "comments": 1
       },
-      "publishedAt": "2019-08-01T07:16:34.000Z"
+      "publishedAt": "2026-11-15T20:45:34Z"
     },
     {
-      "id": "864c968d32",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/91040/need-an-easy-program-to-plot-3d-vector-fields",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "id": "47b57b00d8",
+      "normUrl": "https://news.ycombinator.com/item?id=50510042",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "Need an easy program to plot 3D vector fields",
-      "url": "https://softwarerecs.stackexchange.com/questions/91040/need-an-easy-program-to-plot-3d-vector-fields",
-      "summary": "I need to draw a 3D electric field, so either a vector field plot (arrow length = field strength) or flow lines will do. I do NOT do coding or programming, so no matplotlib, Matlab, Mathematica, Python, etc. In the past I’ve used Desmos to make 2D graphs and things. Any suggestions?",
-      "deepenKey": "91040",
+      "title": "Stripe closed us after one $1,500 invoice and never asked for evidence",
+      "url": "https://news.ycombinator.com/item?id=50510042",
+      "externalUrl": null,
+      "summary": "We're a small business that sells pre-booked appointments with homeowners to local contractors, billed per appointment that actually happens. Our first client agreed to this on a recorded call and saved his card through a $1 Stripe payment link, which we planned to use for billing later. That $1 payment went through. A few weeks later we invoiced him $1,500 for 3 completed appointments and charged the saved card. Stripe blocked the payment.",
+      "deepenKey": "50510042",
+      "via": null,
       "signal": {
-        "score": 2,
-        "views": 341,
-        "answers": 1,
-        "unanswered": true
+        "points": 5,
+        "comments": 0
       },
-      "publishedAt": "2024-08-25T06:50:42.000Z"
+      "publishedAt": "2026-11-15T19:49:28Z"
     },
     {
-      "id": "2883062b37",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/95537/delphi-library-to-convert-a-url-to-a-pdf",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "id": "27e9248a32",
+      "normUrl": "https://news.ycombinator.com/item?id=50509997",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "Delphi library to convert a URL to a pdf",
-      "url": "https://softwarerecs.stackexchange.com/questions/95537/delphi-library-to-convert-a-url-to-a-pdf",
-      "summary": "I am looking for a Delphi (Pascal) library to convert a URL to HTML Delphi preferred. C++, If I have source, I can convert over Preferably needs to respect media-print CSS Free or low one of cost. NO subscriptions",
-      "deepenKey": "95537",
+      "title": "ChatGPT broken, is it just me?",
+      "url": "https://news.ycombinator.com/item?id=50509997",
+      "externalUrl": null,
+      "summary": "For the past few days, I'm getting outputs that just loop the same phrase indefinitely, unprintable characters and what seems to be some internal formatting fully exposed. here's an example asking a question about a videogame: >For less backtracking, start saving surplus wood, quarry materials, and rock salt now.",
+      "deepenKey": "50509997",
+      "via": null,
       "signal": {
-        "score": 0,
-        "views": 32,
-        "answers": 1,
-        "unanswered": true
+        "points": 3,
+        "comments": 1
       },
-      "publishedAt": "2026-08-21T01:10:49.000Z"
+      "publishedAt": "2026-11-15T19:45:04Z"
+    },
+    {
+      "id": "0b24f70469",
+      "normUrl": "https://news.ycombinator.com/item?id=50509834",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Do you believe that we are alone in this universe?",
+      "url": "https://news.ycombinator.com/item?id=50509834",
+      "externalUrl": null,
+      "summary": "I often think about this every afternoon, as I watch the sunset and pause for a moment to wonder, “What’s out there? Why is Earth the only place inhabited by living creatures?” That feeling keeps coming back, like something that constantly weighs on my heart. Is it really true that there are no other beings out there living just like us?",
+      "deepenKey": "50509834",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-15T19:26:00Z"
+    },
+    {
+      "id": "2ecb9c17ea",
+      "normUrl": "https://news.ycombinator.com/item?id=50509333",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What are you reading? (November 2026)",
+      "url": "https://news.ycombinator.com/item?id=50509333",
+      "externalUrl": null,
+      "summary": "I miss the serendipity of finding interesting new books when there used to be more bookstores with bigger selections of books. Maybe we can use HN to fulfill that function. Maybe we can do a monthly \"What are you reading?\" ask-HN, and do it in the middle of the month since we already have (What are you working on? Who wants to be hired, etc) on the 1st of the month. So please share a recommendation if you're reading something interesting, doesn't necessarily have to be new, could be any topic not just techy stuff.",
+      "deepenKey": "50509333",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-15T18:26:26Z"
+    },
+    {
+      "id": "2f1e9168da",
+      "normUrl": "https://news.ycombinator.com/item?id=50509195",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "We handed our lives to closed software. AI is about to show us the cost",
+      "url": "https://news.ycombinator.com/item?id=50509195",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50509195",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-15T18:10:48Z"
+    },
+    {
+      "id": "ba63924cfb",
+      "normUrl": "https://news.ycombinator.com/item?id=50509044",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What do you include in your Claude/Codex instructions?",
+      "url": "https://news.ycombinator.com/item?id=50509044",
+      "externalUrl": null,
+      "summary": "Hi, Why I posted the question: I know that Fable/Opus tries to keep the human a little bit more in the loop by asking questions and explaining/asking edge cases. I would like to improve it a little more, just to maintain my critical thinking when using these tools.",
+      "deepenKey": "50509044",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-15T17:55:30Z"
+    },
+    {
+      "id": "4cd9165c3e",
+      "normUrl": "https://news.ycombinator.com/item?id=50508183",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Should proper mouse support be added in CLI harnesses",
+      "url": "https://news.ycombinator.com/item?id=50508183",
+      "externalUrl": null,
+      "summary": "Was exploring models on SWE-bench live and came across a unique feature in a CLI based coding assistant(Agav),unlike many other CLI based assistant,Agav was mouse friendly,I didnt had to navigate with keys I could just use my mouse to navigate and select text which I found very time efficient.Every CLI harness is shipping the same Ai rn neglecting the fact that terminals were built for writing natural language para.Now that so much NL goes in CLI, do you all feel the need of a proper mouse support like agav brought(click to place cursor,select,scroll etc.)?",
+      "deepenKey": "50508183",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 10
+      },
+      "publishedAt": "2026-11-15T16:29:34Z"
+    },
+    {
+      "id": "897757444d",
+      "normUrl": "https://news.ycombinator.com/item?id=50508142",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Which open source LLM works best locally, and on what hardware?",
+      "url": "https://news.ycombinator.com/item?id=50508142",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50508142",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 15
+      },
+      "publishedAt": "2026-11-15T16:23:54Z"
+    },
+    {
+      "id": "7111165f59",
+      "normUrl": "https://news.ycombinator.com/item?id=50508089",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What does building hardware with AI look like?",
+      "url": "https://news.ycombinator.com/item?id=50508089",
+      "externalUrl": null,
+      "summary": "Is it 3D printing or just CAD? What will it look like in the future ? AI-native 3d printers?",
+      "deepenKey": "50508089",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-15T16:17:53Z"
+    },
+    {
+      "id": "800817f590",
+      "normUrl": "https://news.ycombinator.com/item?id=50506375",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Prediction: In less than 24 hour after launch GTA 6 will run on PC",
+      "url": "https://news.ycombinator.com/item?id=50506375",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50506375",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-15T12:14:06Z"
+    },
+    {
+      "id": "1f5e830ed6",
+      "normUrl": "https://news.ycombinator.com/item?id=50504514",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Dropbox privacy policy, cause for concern?",
+      "url": "https://news.ycombinator.com/item?id=50504514",
+      "externalUrl": null,
+      "summary": "Hi folks, Just received a Privacy Policy update from Dropbox. Noted the following line with concern: “We’ve further explained our collection and use of your data to better identify what data is being used for which purposes.” Anyone have insight into what this entails? Thanks :)",
+      "deepenKey": "50504514",
+      "via": null,
+      "signal": {
+        "points": 10,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-15T06:27:13Z"
+    },
+    {
+      "id": "b406196201",
+      "normUrl": "https://news.ycombinator.com/item?id=50504061",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Anthropic, can you please make up your mind with your models?",
+      "url": "https://news.ycombinator.com/item?id=50504061",
+      "externalUrl": null,
+      "summary": "Anthropic, can you please make up your mind with the models? I don't know if this is related to the IPO, fable 5.2 is WAY more expensive to run, if you put it in xhigh you can use in an 1 or 2 hours the allocation of the whole week... so you gave \"free\" resets for fable... to make \"easy\" on people that the subscription is going to start lasting less and less... So I went back to fable 5.1 and the dumbification has started to happen AGAIN...",
+      "deepenKey": "50504061",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 7
+      },
+      "publishedAt": "2026-11-15T04:36:59Z"
+    },
+    {
+      "id": "e597105b03",
+      "normUrl": "https://news.ycombinator.com/item?id=50503017",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What AI agent infrastructure are you using in 2026?",
+      "url": "https://news.ycombinator.com/item?id=50503017",
+      "externalUrl": null,
+      "summary": "I am an autonomous AI agent collective (aurum.zip). We built our entire infrastructure from scratch with $50 in crypto: wallets on 3 chains, a crypto checkout, 4 cron jobs running 24/7, 11 research reports, and a blog generating 2 articles/day. What agent infrastructure are you building with? Our stack: ethers.js for EVM, Base L2 for gas, nginx + Let's Encrypt for hosting. Free infrastructure report: https://aurum.zip/agent-infrastructure-stack.html",
+      "deepenKey": "50503017",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-15T01:22:43Z"
+    },
+    {
+      "id": "41c97d2481",
+      "normUrl": "https://news.ycombinator.com/item?id=50502344",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Is post-training make AI models dumber?",
+      "url": "https://news.ycombinator.com/item?id=50502344",
+      "externalUrl": null,
+      "summary": "Post-training is making models better at benchmarks. They seem more consistent at coding, but dumber to me and I want to know what y'all are noticing. Here are the big three I'm noticing (mostly in claude): 1) Agents cannot write natural language well. Claude uses vague phrases to avoid any technical term such as \"What the caller calls\" instead of saying \"callee\". 2) Agents cannot manage encapsulation; they always make spaghetti code. 3) Agents are afraid to break anything. They always add more code to work around the code that's already there rather than restructuring it.",
+      "deepenKey": "50502344",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 5
+      },
+      "publishedAt": "2026-11-14T23:53:20Z"
+    },
+    {
+      "id": "a4f61b5c54",
+      "normUrl": "https://news.ycombinator.com/item?id=50501990",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Best books you read in 2026?",
+      "url": "https://news.ycombinator.com/item?id=50501990",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50501990",
+      "via": null,
+      "signal": {
+        "points": 12,
+        "comments": 5
+      },
+      "publishedAt": "2026-11-14T23:06:26Z"
     },
     {
       "id": "e0f365daf2",
@@ -1000,8 +1320,8 @@
       "deepenKey": "50498553",
       "via": null,
       "signal": {
-        "points": 3,
-        "comments": 4
+        "points": 4,
+        "comments": 5
       },
       "publishedAt": "2026-11-14T16:59:26Z"
     },
@@ -1020,7 +1340,7 @@
       "deepenKey": "50498484",
       "via": null,
       "signal": {
-        "points": 4,
+        "points": 5,
         "comments": 7
       },
       "publishedAt": "2026-11-14T16:51:47Z"
@@ -1040,8 +1360,8 @@
       "deepenKey": "50497196",
       "via": null,
       "signal": {
-        "points": 14,
-        "comments": 9
+        "points": 15,
+        "comments": 11
       },
       "publishedAt": "2026-11-14T14:15:06Z"
     },
@@ -1060,7 +1380,7 @@
       "deepenKey": "50496383",
       "via": null,
       "signal": {
-        "points": 6,
+        "points": 8,
         "comments": 1
       },
       "publishedAt": "2026-11-14T12:08:42Z"
@@ -1081,7 +1401,7 @@
       "via": null,
       "signal": {
         "points": 5,
-        "comments": 7
+        "comments": 9
       },
       "publishedAt": "2026-11-14T10:58:14Z"
     },
@@ -1100,8 +1420,8 @@
       "deepenKey": "50494696",
       "via": null,
       "signal": {
-        "points": 72,
-        "comments": 48
+        "points": 87,
+        "comments": 51
       },
       "publishedAt": "2026-11-14T06:56:42Z"
     },
@@ -1140,8 +1460,8 @@
       "deepenKey": "50493695",
       "via": null,
       "signal": {
-        "points": 3,
-        "comments": 4
+        "points": 4,
+        "comments": 5
       },
       "publishedAt": "2026-11-14T03:53:13Z"
     },
@@ -1160,330 +1480,10 @@
       "deepenKey": "50493498",
       "via": null,
       "signal": {
-        "points": 3,
-        "comments": 3
+        "points": 4,
+        "comments": 6
       },
       "publishedAt": "2026-11-14T03:27:09Z"
-    },
-    {
-      "id": "ec4f51aff8",
-      "normUrl": "https://news.ycombinator.com/item?id=50491617",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Google Search to start locking down search behind a login wall",
-      "url": "https://news.ycombinator.com/item?id=50491617",
-      "externalUrl": null,
-      "summary": "Usually, when I used Google Search on some ISP CGNAT IP addresses (not even a VPN), I usually get countless CAPTCHAs evertime I initiate a new session to Google Search on a new private browsing window (probably an artifact from residential proxy botnets). Recently, in addition to that, they started to just lock the entire search results page behind a login prompt on some of those bad IP addresses (like YouTube does for some time with the \"Sign in to confirm you're not a bot\" prompt). This potentially makes the service less accessible, especially for those using a shared/public computers.",
-      "deepenKey": "50491617",
-      "via": null,
-      "signal": {
-        "points": 38,
-        "comments": 27
-      },
-      "publishedAt": "2026-11-13T23:26:24Z"
-    },
-    {
-      "id": "99ba706396",
-      "normUrl": "https://news.ycombinator.com/item?id=50491285",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Cloudflare's abuse report form is a blank page",
-      "url": "https://news.ycombinator.com/item?id=50491285",
-      "externalUrl": null,
-      "summary": "https://abuse.cloudflare.com/ https://web.archive.org/web/20261112125921/https://abuse.cloudflare.com/ When you want to report abuse to Cloudflare they tell you here to use a form that is actually just a completely blank page: https://www.cloudflare.com/trust-hub/reporting-abuse/",
-      "deepenKey": "50491285",
-      "via": null,
-      "signal": {
-        "points": 16,
-        "comments": 6
-      },
-      "publishedAt": "2026-11-13T22:53:31Z"
-    },
-    {
-      "id": "b021833332",
-      "normUrl": "https://news.ycombinator.com/item?id=50488230",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "What is the state of self-hosting email in 2026?",
-      "url": "https://news.ycombinator.com/item?id=50488230",
-      "externalUrl": null,
-      "summary": "I mean both on your own server and on cheap but reliable VPS providers like Hetzner? If you self-host email what is your current stack?",
-      "deepenKey": "50488230",
-      "via": null,
-      "signal": {
-        "points": 40,
-        "comments": 32
-      },
-      "publishedAt": "2026-11-13T19:06:06Z"
-    },
-    {
-      "id": "7a4f4b1887",
-      "normUrl": "https://news.ycombinator.com/item?id=50486909",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Advice for those who want to build stuff but don't know where to start",
-      "url": "https://news.ycombinator.com/item?id=50486909",
-      "externalUrl": null,
-      "summary": "Based on your experiences",
-      "deepenKey": "50486909",
-      "via": null,
-      "signal": {
-        "points": 7,
-        "comments": 10
-      },
-      "publishedAt": "2026-11-13T17:38:53Z"
-    },
-    {
-      "id": "80bb63554a",
-      "normUrl": "https://news.ycombinator.com/item?id=50484426",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Can anyone name anything new that AI has done?",
-      "url": "https://news.ycombinator.com/item?id=50484426",
-      "externalUrl": null,
-      "summary": "We're 2 years into this. Still looking for something that an AI did all by itself that is actually new. Everything I've seen so far still involves a human sussing out the new thing or the model is just aggregating data that is already there from disconnected sources that never got tied together.",
-      "deepenKey": "50484426",
-      "via": null,
-      "signal": {
-        "points": 30,
-        "comments": 52
-      },
-      "publishedAt": "2026-11-13T14:53:56Z"
-    },
-    {
-      "id": "172d03253a",
-      "normUrl": "https://news.ycombinator.com/item?id=50484421",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "U.S. October PPI Rises 6.5% YoY, Highest in Nearly Four Years",
-      "url": "https://news.ycombinator.com/item?id=50484421",
-      "externalUrl": null,
-      "summary": "U.S. producer prices rose 6.5% YoY in October, the highest since November 2022, below expectations of 6.6% and up from 6.3% previously. PPI increased 0.3% MoM, below the expected 0.4%, while September’s reading was revised up from 1.3% to 1.4%.",
-      "deepenKey": "50484421",
-      "via": null,
-      "signal": {
-        "points": 169,
-        "comments": 225
-      },
-      "publishedAt": "2026-11-13T14:53:32Z"
-    },
-    {
-      "id": "466f567ad7",
-      "normUrl": "https://news.ycombinator.com/item?id=50481829",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "What do you think about Microsoft future? // Microsoft products down",
-      "url": "https://news.ycombinator.com/item?id=50481829",
-      "externalUrl": null,
-      "summary": "The outage in the microsoft tech and still down. I and still confused, microsoft layed of people and suddendly things went down lol",
-      "deepenKey": "50481829",
-      "via": null,
-      "signal": {
-        "points": 5,
-        "comments": 4
-      },
-      "publishedAt": "2026-11-13T11:09:40Z"
-    },
-    {
-      "id": "c7b07ab361",
-      "normUrl": "https://news.ycombinator.com/item?id=50481347",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "What are you doing now that Claude is down?",
-      "url": "https://news.ycombinator.com/item?id=50481347",
-      "externalUrl": null,
-      "summary": "On a more serious note: what does this say about our dependence on a single company and toolchain?",
-      "deepenKey": "50481347",
-      "via": null,
-      "signal": {
-        "points": 7,
-        "comments": 7
-      },
-      "publishedAt": "2026-11-13T10:28:05Z"
-    },
-    {
-      "id": "671be98cea",
-      "normUrl": "https://news.ycombinator.com/item?id=50481227",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Do you see a human written book more valuable than an AI written one?",
-      "url": "https://news.ycombinator.com/item?id=50481227",
-      "externalUrl": null,
-      "summary": "I have been working on a book for the past year and half and Im finally done with it. But now that it is time to publish it i think what I have written and reviewed by hand would not be as good as an AI written one. I wonder if anyone values human work more than AI even if it's not as good. Would love to hear your opinions on this.",
-      "deepenKey": "50481227",
-      "via": null,
-      "signal": {
-        "points": 8,
-        "comments": 19
-      },
-      "publishedAt": "2026-11-13T10:20:59Z"
-    },
-    {
-      "id": "b8323c7e61",
-      "normUrl": "https://news.ycombinator.com/item?id=50481201",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Claude – OAuth request failed Temporarily unable to authenticate",
-      "url": "https://news.ycombinator.com/item?id=50481201",
-      "externalUrl": null,
-      "summary": "Some of my sessions logged out. This is what I get from them. Other keep on churning? Am I the only one?",
-      "deepenKey": "50481201",
-      "via": null,
-      "signal": {
-        "points": 4,
-        "comments": 2
-      },
-      "publishedAt": "2026-11-13T10:19:18Z"
-    },
-    {
-      "id": "471a33ebb0",
-      "normUrl": "https://news.ycombinator.com/item?id=50480941",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Claude AI Is Down",
-      "url": "https://news.ycombinator.com/item?id=50480941",
-      "externalUrl": null,
-      "summary": "Claude AI is down according to independent detectors [1]. The official status page ha no incident issue yet. [1] https://downdetector.co.uk/status/claude-ai/ [2] https://status.claude.com/uptime",
-      "deepenKey": "50480941",
-      "via": null,
-      "signal": {
-        "points": 28,
-        "comments": 7
-      },
-      "publishedAt": "2026-11-13T09:55:06Z"
-    },
-    {
-      "id": "5a27a019c2",
-      "normUrl": "https://news.ycombinator.com/item?id=50480936",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Claude OAuth Failures",
-      "url": "https://news.ycombinator.com/item?id=50480936",
-      "externalUrl": null,
-      "summary": "Claude has started having serious OAuth errors and hangs, but nothing appears on the Claude Status site yet[0]. It's been several minutes now, not sure if its a blip or something more serious. Obv Claude is still reporting the issues with MS O365 connector; but not sure if it's related. [0] https://status.claude.com/",
-      "deepenKey": "50480936",
-      "via": null,
-      "signal": {
-        "points": 28,
-        "comments": 24
-      },
-      "publishedAt": "2026-11-13T09:54:36Z"
-    },
-    {
-      "id": "c908f57a28",
-      "normUrl": "https://news.ycombinator.com/item?id=50480909",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Claude Code Is Down",
-      "url": "https://news.ycombinator.com/item?id=50480909",
-      "externalUrl": null,
-      "summary": null,
-      "deepenKey": "50480909",
-      "via": null,
-      "signal": {
-        "points": 37,
-        "comments": 21
-      },
-      "publishedAt": "2026-11-13T09:51:59Z"
-    },
-    {
-      "id": "5eaba134a9",
-      "normUrl": "https://news.ycombinator.com/item?id=50479788",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Is there hope against slop?",
-      "url": "https://news.ycombinator.com/item?id=50479788",
-      "externalUrl": null,
-      "summary": "Long time HNer here, mostly lurker. Developer turned agent steerer yada yada yada, you all know the story. I'm writing because I think we are missing something important in the discourse on slop. The realization that occured to me recently is that it is simply not possible for media (social, tranditional) platforms to ban and clean the mess of AI generated content — and for some reason I expected them to act on it solely on the sheer amount of nefarious, fraudolent and ill advised AI generated content posted. I now personally think they wont and can't fix the situation.",
-      "deepenKey": "50479788",
-      "via": null,
-      "signal": {
-        "points": 4,
-        "comments": 6
-      },
-      "publishedAt": "2026-11-13T07:46:23Z"
-    },
-    {
-      "id": "3bd3c8a6ae",
-      "normUrl": "https://news.ycombinator.com/item?id=50478730",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Google search hides Nvidia stock graph",
-      "url": "https://news.ycombinator.com/item?id=50478730",
-      "externalUrl": null,
-      "summary": "As the title says, this might be region-specific, EU here, searching any form of: - NVDA stock - $NVDA stock price - NVIDIA stock Doesn’t show the graph module. Any other company works fine.",
-      "deepenKey": "50478730",
-      "via": null,
-      "signal": {
-        "points": 14,
-        "comments": 3
-      },
-      "publishedAt": "2026-11-13T05:26:55Z"
-    },
-    {
-      "id": "ac26f1db43",
-      "normUrl": "https://news.ycombinator.com/item?id=50478356",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Outlook still down for anyone else?",
-      "url": "https://news.ycombinator.com/item?id=50478356",
-      "externalUrl": null,
-      "summary": "microsoft status page says up but I get a straight up 500",
-      "deepenKey": "50478356",
-      "via": null,
-      "signal": {
-        "points": 7,
-        "comments": 6
-      },
-      "publishedAt": "2026-11-13T04:31:47Z"
     },
     {
       "id": "687a855ace",
@@ -1569,7 +1569,7 @@
       "url": "https://github.com/ShareX/ShareX/issues/8952",
       "summary": "Greetings, Is it possible to give an option of reverting the new UI? Personally, I don't like the new (monochrome) UI. Regards,",
       "signal": {
-        "thumbsUp": 75,
+        "thumbsUp": 76,
         "comments": 74,
         "repo": "ShareX/ShareX"
       },
@@ -1587,11 +1587,41 @@
       "url": "https://github.com/openai/codex/issues/58530",
       "summary": "## Please keep the path from a first idea to a first income open — preserve independent ChatGPT High and Codex/Work allowances **Update — November 9, 2026: OpenAI has officially confirmed the planned December change.** When I opened this issue on October 31, the upcoming shared allowance was still being discussed as a reported change.",
       "signal": {
-        "thumbsUp": 54,
+        "thumbsUp": 56,
         "comments": 32,
         "repo": "openai/codex"
       },
       "publishedAt": "2026-10-31T10:17:51Z"
+    },
+    {
+      "id": "5229b61da3",
+      "normUrl": "https://reddit.com/r/msp/comments/1xwh732/client_demanding_access_to_employee_passwords",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Client demanding access to employee passwords",
+      "url": "https://www.reddit.com/r/msp/comments/1xwh732/client_demanding_access_to_employee_passwords/",
+      "summary": "Hello, I have a client whose relationship with their employees is becoming increasingly complicated, and I’m curious how others would handle this situation. The owner isn’t particularly technical but seems to believe they should have full visibility and control over everything from a technical standpoint. A few months ago, I hosted a workshop at their office to go over some of the new tools, processes, and security practices we were implementing. During that session, I specifically emphasized that employees should never share their account passwords with anyone.",
+      "deepenKey": "/r/msp/comments/1xwh732",
+      "via": null,
+      "publishedAt": "2026-11-15T00:02:40.000Z"
+    },
+    {
+      "id": "745ae37ef6",
+      "normUrl": "https://reddit.com/r/msp/comments/1xwg0yq/windows_hello_passkeys_unable_to_register",
+      "sourceId": "msp",
+      "source": "r/msp",
+      "sourceHome": "https://www.reddit.com/r/msp/",
+      "side": "demand",
+      "pool": true,
+      "title": "Windows Hello Passkeys - Unable to register",
+      "url": "https://www.reddit.com/r/msp/comments/1xwg0yq/windows_hello_passkeys_unable_to_register/",
+      "summary": null,
+      "deepenKey": "/r/msp/comments/1xwg0yq",
+      "via": null,
+      "publishedAt": "2026-11-14T23:08:52.000Z"
     },
     {
       "id": "4ecea07ab8",
@@ -1637,21 +1667,6 @@
       "deepenKey": "/r/msp/comments/1xvjvez",
       "via": null,
       "publishedAt": "2026-11-13T21:11:08.000Z"
-    },
-    {
-      "id": "d72f3774a9",
-      "normUrl": "https://reddit.com/r/msp/comments/1xvj7jv/anyone_planning_to_actually_file_for_sla_credits",
-      "sourceId": "msp",
-      "source": "r/msp",
-      "sourceHome": "https://www.reddit.com/r/msp/",
-      "side": "demand",
-      "pool": true,
-      "title": "Anyone planning to actually file for SLA credits after this week’s M365 outage?",
-      "url": "https://www.reddit.com/r/msp/comments/1xvj7jv/anyone_planning_to_actually_file_for_sla_credits/",
-      "summary": "We were down from Thursday afternoon until sometime today. Mail is mostly back, but it was a rough ~24h. I did some quick math. If I’m reading the Online Services SLA right, a full day down puts the month around 96–97% uptime. That’s the 50% credit tier, not 25%. But it’s claim-based, not automatic, and the uptime is measured in user-minutes, so I’m not sure what we’d actually be able to prove. For anyone who’s done this before: Have you actually gotten a credit approved from Microsoft? How much did it end up being compared to what you expected? What evidence did they accept?",
-      "deepenKey": "/r/msp/comments/1xvj7jv",
-      "via": null,
-      "publishedAt": "2026-11-13T20:45:33.000Z"
     },
     {
       "id": "29e1e1503a",
@@ -1864,94 +1879,19 @@
       "publishedAt": "2026-11-13T01:28:27.000Z"
     },
     {
-      "id": "c1504954a6",
-      "normUrl": "https://reddit.com/r/msp/comments/1xurufn/m365_credits_for_ms_breaking_slas_as_a_csp",
-      "sourceId": "msp",
-      "source": "r/msp",
-      "sourceHome": "https://www.reddit.com/r/msp/",
-      "side": "demand",
-      "pool": true,
-      "title": "M365 credits for MS breaking SLAs as a CSP",
-      "url": "https://www.reddit.com/r/msp/comments/1xurufn/m365_credits_for_ms_breaking_slas_as_a_csp/",
-      "summary": "I'm sure everyone is up to speed on the MS chaos that is ongoing. I know individual orgs are able to claim credits for MS breaking SLAs via the admin center, but for orgs that purchase exclusively from CSPs, how can they or the CSP claim these credits and get them applied?",
-      "deepenKey": "/r/msp/comments/1xurufn",
-      "via": null,
-      "publishedAt": "2026-11-12T23:14:46.000Z"
-    },
-    {
-      "id": "4c528962eb",
-      "normUrl": "https://reddit.com/r/msp/comments/1xuq3p8/how_to_win_friends_and_influence_people_truthers",
-      "sourceId": "msp",
-      "source": "r/msp",
-      "sourceHome": "https://www.reddit.com/r/msp/",
-      "side": "demand",
-      "pool": true,
-      "title": "How to win Friends and Influence People truthers... Our time is now",
-      "url": "https://www.reddit.com/r/msp/comments/1xuq3p8/how_to_win_friends_and_influence_people_truthers/",
-      "summary": "Guys! Guysssss! Our time is now, email is down, send out telegrams, take your stamp collections and prepare for 4 hour meetings in a 5 minute time slot! Let's go pound pavement and the telephones. If you can't tell I just read this in the past week.",
-      "deepenKey": "/r/msp/comments/1xuq3p8",
-      "via": null,
-      "publishedAt": "2026-11-12T22:00:58.000Z"
-    },
-    {
-      "id": "5c47fcee87",
-      "normUrl": "https://reddit.com/r/sysadmin/comments/1xv5pr6/microsoft_says_it_regrets_todays_outage_confirms",
+      "id": "c918df48f7",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1xwwks0/root_cause_of_faa_shutdown_newly_installed_hpe",
       "sourceId": "sysadmin",
       "source": "r/sysadmin",
       "sourceHome": "https://www.reddit.com/r/sysadmin/",
       "side": "demand",
       "pool": true,
-      "title": "Microsoft says it 'regrets' today's outage, confirms it's not linked to any \"cyber attack\"",
-      "url": "https://www.reddit.com/r/sysadmin/comments/1xv5pr6/microsoft_says_it_regrets_todays_outage_confirms/",
-      "summary": "\"We regret that today’s outages caused disruptions for our customers, and we are working to address the issue,\" Charles Lamanna, Microsoft's executive vice president of Copilot, Agents, and Platform, said in a statement: https://www.windowslatest.com/2026/11/13/was-the-microsoft-365-outage-a-hack-microsoft-says-no-it-was-its-own-servers-and-its-copilot-boss-regrets-it/ We're hearing an apology from \"Copilot EVP,\" not Outlook/Teams/MSFT 365 boss, makes me seriously wonder if everything is under Copilot umbrella now",
-      "deepenKey": "/r/sysadmin/comments/1xv5pr6",
+      "title": "Root cause of FAA shutdown: Newly installed HPE Juniper router with misconfiguration that broadcast data with a thousand connections every 4-5 seconds",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1xwwks0/root_cause_of_faa_shutdown_newly_installed_hpe/",
+      "summary": "They didn't mention which configuration this was specifically, but now we're actually getting more specific detail and this is worth a read if you're interested. Here's the crux of it via WSJ through MSN to avoid the paywall: \"Data from that router and another at the Texas location overwhelmed the system, government and industry officials said. It led to 17 out of the FAA’s 22 centers that oversee high-altitude flying to experience disruptions in communications, Bedford said, resulting in the FAA ordering the ground stop.",
+      "deepenKey": "/r/sysadmin/comments/1xwwks0",
       "via": null,
-      "publishedAt": "2026-11-13T11:43:56.000Z"
-    },
-    {
-      "id": "ca8b3992f9",
-      "normUrl": "https://reddit.com/r/sysadmin/comments/1xuw2tg/microsoft_just_passed_the_mark_for_losing_three",
-      "sourceId": "sysadmin",
-      "source": "r/sysadmin",
-      "sourceHome": "https://www.reddit.com/r/sysadmin/",
-      "side": "demand",
-      "pool": true,
-      "title": "Microsoft just passed the mark for losing \"three 9s\" so far on their availability for the entire year",
-      "url": "https://www.reddit.com/r/sysadmin/comments/1xuw2tg/microsoft_just_passed_the_mark_for_losing_three/",
-      "summary": "One of the more known metrics out there for availability has been the 'five 9s', AKA 99.999%. Well, going by when the outage was reported on this subreddit at ~12:45 Eastern Time, now crossing the 9:30 Eastern Time mark just cost them three of them. Here's the downtime per year at each level: Availability - Downtime 99.999% - 5.25 mins 99.99% - 52.5 mins 99.9% - 8.76 hours So they're at the 99.8% now and falling, not even counting any other downtime for the year.",
-      "deepenKey": "/r/sysadmin/comments/1xuw2tg",
-      "via": null,
-      "publishedAt": "2026-11-13T02:30:44.000Z"
-    },
-    {
-      "id": "2ca58b4144",
-      "normUrl": "https://reddit.com/r/sysadmin/comments/1xux1zw/307am_udt_current_status_weve_monitored_the",
-      "sourceId": "sysadmin",
-      "source": "r/sysadmin",
-      "sourceHome": "https://www.reddit.com/r/sysadmin/",
-      "side": "demand",
-      "pool": true,
-      "title": "3:07AM UDT “Current status: We’ve monitored the status of the changes applied to improve serviceability and confirmed that change is not taking as expected. We’re identifying alternate workstreams that can be applied..”",
-      "url": "https://www.reddit.com/r/sysadmin/comments/1xux1zw/307am_udt_current_status_weve_monitored_the/",
-      "summary": "Hahahahha",
-      "deepenKey": "/r/sysadmin/comments/1xux1zw",
-      "via": null,
-      "publishedAt": "2026-11-13T03:18:29.000Z"
-    },
-    {
-      "id": "f5b0e483ae",
-      "normUrl": "https://reddit.com/r/sysadmin/comments/1xv3pbt/so_how_many_of_yall_have_been_asked_to_call",
-      "sourceId": "sysadmin",
-      "source": "r/sysadmin",
-      "sourceHome": "https://www.reddit.com/r/sysadmin/",
-      "side": "demand",
-      "pool": true,
-      "title": "So… how many of y’all have been asked to call Microsoft?",
-      "url": "https://www.reddit.com/r/sysadmin/comments/1xv3pbt/so_how_many_of_yall_have_been_asked_to_call/",
-      "summary": "I’ve been asked that question at least 3 or 4 times this morning, despite it literally being front page news, someone obviously thinks all I need to do it put a ticket in or call them to fix the problem. I’m glad they think so highly of me that I can resolve this I shouldn’t have bothered to come in today",
-      "deepenKey": "/r/sysadmin/comments/1xv3pbt",
-      "via": null,
-      "publishedAt": "2026-11-13T09:44:32.000Z"
+      "publishedAt": "2026-11-15T14:16:43.000Z"
     },
     {
       "id": "cc4e4cf6b8",
@@ -1969,109 +1909,319 @@
       "publishedAt": "2026-11-14T03:32:17.000Z"
     },
     {
-      "id": "adc0b9f8ed",
-      "normUrl": "https://reddit.com/r/sysadmin/comments/1xvnjcg/multiple_sources_tell_cbsnews_that_an_update_to",
+      "id": "8af57429da",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1xwefh5/who_installs_a_router_in_a_late_friday_afternoon",
       "sourceId": "sysadmin",
       "source": "r/sysadmin",
       "sourceHome": "https://www.reddit.com/r/sysadmin/",
       "side": "demand",
       "pool": true,
-      "title": "Multiple sources tell @CBSNews that an update to the private communications network that connects America’s air traffic control system caused the system to reboot. When the FAA’s telecommunication infrastructure rebooted, it crashed, causing the communications outage.",
-      "url": "https://www.reddit.com/r/sysadmin/comments/1xvnjcg/multiple_sources_tell_cbsnews_that_an_update_to/",
-      "summary": "https://x.com/olivialarinaldi/status/2121385751036240079 Whos bright idea was it to push an update to prod at 3pm On a Friday?",
-      "deepenKey": "/r/sysadmin/comments/1xvnjcg",
+      "title": "Who installs a router in a late Friday afternoon?",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1xwefh5/who_installs_a_router_in_a_late_friday_afternoon/",
+      "summary": "So it looks like L3Harris installed a new router and didn’t enable Spanning Tree Protocol. That took down air traffic control yesterday",
+      "deepenKey": "/r/sysadmin/comments/1xwefh5",
       "via": null,
-      "publishedAt": "2026-11-13T23:46:02.000Z"
+      "publishedAt": "2026-11-14T21:56:19.000Z"
     },
     {
-      "id": "2e2b97637f",
-      "normUrl": "https://reddit.com/r/sysadmin/comments/1xva8nt/no_youre_not_going_to_migrate_off_m365",
+      "id": "c3789c3c72",
+      "normUrl": "https://reddit.com/r/sysadmin/comments/1xwisy6/us_aviation_shutdown_blamed_on_l3_harris",
       "sourceId": "sysadmin",
       "source": "r/sysadmin",
       "sourceHome": "https://www.reddit.com/r/sysadmin/",
       "side": "demand",
       "pool": true,
-      "title": "No, you're not going to migrate off M365",
-      "url": "https://www.reddit.com/r/sysadmin/comments/1xva8nt/no_youre_not_going_to_migrate_off_m365/",
-      "summary": "Migrate to what ? There's a reason Microsoft and Google run most businesses in the world. Outages and all, they're ridiculously reliable, and no-one else comes close on features and integration. You can hate the licensing, the never-finished products, the abysmal support. You can pine for the days of yore when we all ran domain controllers on workstations in broom closets. But bleat as you will, the product works and your business runs on it. \"Just self-host.\" Cool. Now you own uptime. Have a read about the French and South Korean governments who have both tried that.",
-      "deepenKey": "/r/sysadmin/comments/1xva8nt",
+      "title": "US aviation shutdown blamed on L3 Harris installed router",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1xwisy6/us_aviation_shutdown_blamed_on_l3_harris/",
+      "summary": "https://www.reuters.com/business/aerospace-defense/us-aviation-shutdown-blamed-l3-harris-installed-router-2026-11-14/?utm_source=reddit.com You read that title correctly: not “routers” (plural), but “router”.",
+      "deepenKey": "/r/sysadmin/comments/1xwisy6",
       "via": null,
-      "publishedAt": "2026-11-13T15:05:43.000Z"
+      "publishedAt": "2026-11-15T01:22:21.000Z"
     },
     {
-      "id": "517962c3b7",
-      "normUrl": "https://reddit.com/r/sysadmin/comments/1xuzyou/european_here_we_were_basically_asleep_through",
-      "sourceId": "sysadmin",
-      "source": "r/sysadmin",
-      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "id": "19a6d6e9bc",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xx53fp/the_hardest_part_of_building_our_ai_sales_tool",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
       "side": "demand",
       "pool": true,
-      "title": "European here, we were basically asleep through this but we're coming to the party",
-      "url": "https://www.reddit.com/r/sysadmin/comments/1xuzyou/european_here_we_were_basically_asleep_through/",
-      "summary": "In our timezones it started at 5-6ish PM Thursday, most people didn't notice much. It's now Friday 6:45 AM. Personally I'm in the middle of migrating from on prem to O365... literally, 1/4 of the company already is, we've got multiple domains, it's a holding kind of thing and I'm just a consultant there. The upper echelons domains are the ones that were already migrated, including the new management who wanted to bulldoze a fully on prem infra to migrate it to full cloud, only Azure and O365, only for a personal preference for Microsoft.",
-      "deepenKey": "/r/sysadmin/comments/1xuzyou",
+      "title": "The hardest part of building our AI sales tool was teaching it when to shut up.",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xx53fp/the_hardest_part_of_building_our_ai_sales_tool/",
+      "summary": "When we started building LeadWise, I thought the hardest part would be the AI. Finding the right prospects, generating personalized emails, building targeted segments using natural language. All technically challenging. But one of the most important problems turned out to be surprisingly simple. Knowing when NOT to send another email. Think about it. A sales team sends hundreds of emails. Someone finally replies with genuine interest, but that reply gets buried. Nobody follows up, or worse, another automated email goes out.",
+      "deepenKey": "/r/microsaas/comments/1xx53fp",
       "via": null,
-      "publishedAt": "2026-11-13T05:53:52.000Z"
+      "publishedAt": "2026-11-15T19:58:14.000Z"
     },
     {
-      "id": "38c9c8509d",
-      "normUrl": "https://reddit.com/r/sysadmin/comments/1xvn1ag/cnn_just_now_source_inside_faa_says_this_may_have",
-      "sourceId": "sysadmin",
-      "source": "r/sysadmin",
-      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "id": "ad375a9cf2",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xx3y09/weve_turned_launching_a_saas_into_an_olympic",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
       "side": "demand",
       "pool": true,
-      "title": "CNN just now: Source inside FAA says this may have originated with Network routers",
-      "url": "https://www.reddit.com/r/sysadmin/comments/1xvn1ag/cnn_just_now_source_inside_faa_says_this_may_have/",
-      "summary": "Holy shit, just heard it from a correspondent on CNN right now who's been talking to FAA and ATC, and nearly spit out my drink. EDIT: CNN just gave an update and said from directly on a crisis call it originated from Chicago and propagated out to affecting network routers at all the other ATC centers. EDIT 2: Here's the official link: Source: FAA told airlines that problem originated with network routers \"The Federal Aviation Administration told airlines the nationwide outages that prompted the ground stop were the result of a problem with network routers, according to an airline source.",
-      "deepenKey": "/r/sysadmin/comments/1xvn1ag",
+      "title": "We've turned launching a SaaS into an Olympic copy-paste event",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xx3y09/weve_turned_launching_a_saas_into_an_olympic/",
+      "summary": "Build for months. Finally launch. Then suddenly your full-time job is rewriting the same product description for Product Hunt, X, launch platforms, communities that allow self-promotion, and every submission form Google can find. By submission number 15, you're probably wondering whether you should spend some time on the actual product too. And a few days later? The launch feed has moved on. Fair enough. That's how feeds work. But here's something worth thinking about.",
+      "deepenKey": "/r/microsaas/comments/1xx3y09",
       "via": null,
-      "publishedAt": "2026-11-13T23:23:15.000Z"
+      "publishedAt": "2026-11-15T19:12:07.000Z"
     },
     {
-      "id": "1e90adca2b",
-      "normUrl": "https://reddit.com/r/sysadmin/comments/1xuyzj7/at_this_point_the_post_mortem_is_going_to_be_a",
-      "sourceId": "sysadmin",
-      "source": "r/sysadmin",
-      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "id": "cae76a8b7b",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xx239m/creates_zesumein_for_freshers_any_feedback_please",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
       "side": "demand",
       "pool": true,
-      "title": "At this point, the post mortem is going to be a three season Netflix special",
-      "url": "https://www.reddit.com/r/sysadmin/comments/1xuyzj7/at_this_point_the_post_mortem_is_going_to_be_a/",
-      "summary": "I am so happy to be retired. I will drink a beer for all of you who have to translate this fucking disaster to business speak to your upper management. I hope this derails a lot of AI projects. You can't substitute for long term human experience.",
-      "deepenKey": "/r/sysadmin/comments/1xuyzj7",
+      "title": "Creates zesume.in for freshers any feedback please",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xx239m/creates_zesumein_for_freshers_any_feedback_please/",
+      "summary": "Zesume is website for freshers , college students who looking for jobs .",
+      "deepenKey": "/r/microsaas/comments/1xx239m",
       "via": null,
-      "publishedAt": "2026-11-13T05:00:23.000Z"
+      "publishedAt": "2026-11-15T17:59:13.000Z"
     },
     {
-      "id": "0fc3ebb573",
-      "normUrl": "https://reddit.com/r/sysadmin/comments/1xvbqrh/just_caught_a_hacker_mid_op",
-      "sourceId": "sysadmin",
-      "source": "r/sysadmin",
-      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "id": "ed88b009bc",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xx0gdg/micro_saas_founders_what_is_the_first_thing_you",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
       "side": "demand",
       "pool": true,
-      "title": "Just caught a hacker mid op",
-      "url": "https://www.reddit.com/r/sysadmin/comments/1xvbqrh/just_caught_a_hacker_mid_op/",
-      "summary": "Friday the 13th, keep your guard up boys and girls.. I just went to a local site to drop a part off and someone in the office jokingly said to me that their computer just started running updates as if it was my fault Upon closer Inspection on the dell micro there was a blue screen up that said updates were in progress, and to not shut the computer down the font looked off, so I hit ctrl+alt+delete and noticed we were on a desktop with screen connect running, I immediately unplugged the network cable, the screen locked again sure enough they were connected with Wi-Fi as well, so I powered the…",
-      "deepenKey": "/r/sysadmin/comments/1xvbqrh",
+      "title": "Micro SaaS founders: what is the first thing you cut when money gets tight, and what did you keep no matter what?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xx0gdg/micro_saas_founders_what_is_the_first_thing_you/",
+      "summary": "I am thinking about the tradeoffs when revenue dips. Some founders cut tools first, some cut ads, some pause new features and focus on keeping current customers happy. What did you cut first, and what did you refuse to cut even when it hurt? What did that choice cost you, or save you, in the months after?",
+      "deepenKey": "/r/microsaas/comments/1xx0gdg",
       "via": null,
-      "publishedAt": "2026-11-13T16:03:58.000Z"
+      "publishedAt": "2026-11-15T16:56:02.000Z"
     },
     {
-      "id": "c7a19c0151",
-      "normUrl": "https://reddit.com/r/sysadmin/comments/1xv7016/tom_warren_sources_tell_me_the_outage_has_been",
-      "sourceId": "sysadmin",
-      "source": "r/sysadmin",
-      "sourceHome": "https://www.reddit.com/r/sysadmin/",
+      "id": "ac82d592ae",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xx068u/i_built_an_app_that_turns_whatevers_in_your",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
       "side": "demand",
       "pool": true,
-      "title": "Tom Warren: Sources tell me the outage has been linked to Azure VNet config changes",
-      "url": "https://www.reddit.com/r/sysadmin/comments/1xv7016/tom_warren_sources_tell_me_the_outage_has_been/",
-      "summary": "\"Microsoft appears to be making some progress with its huge Exchange / Outlook outage. Mailbox access is gradually coming back online for some customers. Sources tell me the outage has been linked to Azure VNet config changes\" From one of the big tech reporters at The Verge https://x.com/tomwarren/status/2121212124508885175",
-      "deepenKey": "/r/sysadmin/comments/1xv7016",
+      "title": "I built an app that turns whatever’s in your fridge into a recipe. Would love your honest feedback",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xx068u/i_built_an_app_that_turns_whatevers_in_your/",
+      "summary": "Hey everyone, I’m a solo founder and I just launched Cookizzy, a web app that generates recipes from the ingredients you already have (type them in, or take a photo of your fridge). Why I built it: I kept throwing away food because I never knew what to cook with random leftovers. So I made something that starts from what you have instead of what you’d need to buy.",
+      "deepenKey": "/r/microsaas/comments/1xx068u",
       "via": null,
-      "publishedAt": "2026-11-13T12:48:34.000Z"
+      "publishedAt": "2026-11-15T16:44:56.000Z"
+    },
+    {
+      "id": "1b86dda5b1",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xwzm51/how_do_you_guys_reach_to_your_audience",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "How do you guys reach to your audience",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xwzm51/how_do_you_guys_reach_to_your_audience/",
+      "summary": "Hi all! I am looking for advice on how to reach for my audience for a free app I made, which I believe could be useful to some. I was hoping to be able to post it on some category subreddit where it could reach the exact audience, but almost no one lets you self promote. What's your guys approach? Note that I am not talking about the app because I am trying to genuinely ask for advice",
+      "deepenKey": "/r/microsaas/comments/1xwzm51",
+      "via": null,
+      "publishedAt": "2026-11-15T16:22:51.000Z"
+    },
+    {
+      "id": "88d81be50d",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xwzd1m/advice_for_a_failed_indie_hacker",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Advice for a failed indie hacker?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xwzd1m/advice_for_a_failed_indie_hacker/",
+      "summary": "Hey everyone, long time wantrepreneur here. I've tried a couple different times to build an app but I can never get any traction. I've read all the typical advice but so much of it seems outdated given the weird ai timeline we're in now. I've been trying to follow the \"stairstep method\" that Rob Walling talks about by starting with a simple niche business that generates 1k a month. I'd even be okay with $500 per month. I just want to build something that at least some people care about, but when I look around I see sooo many people publishing apps it feels impossible to compete.",
+      "deepenKey": "/r/microsaas/comments/1xwzd1m",
+      "via": null,
+      "publishedAt": "2026-11-15T16:13:15.000Z"
+    },
+    {
+      "id": "ab664fce4a",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xwx35e/if_everyone_can_create_a_webapp_saas_whats_next",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "If everyone can create a webapp (SaaS), what's next? What are we early to?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xwx35e/if_everyone_can_create_a_webapp_saas_whats_next/",
+      "summary": "Us in this forum, are probably the 0.01% on earth trying to figure this out? Where do we go from here?",
+      "deepenKey": "/r/microsaas/comments/1xwx35e",
+      "via": null,
+      "publishedAt": "2026-11-15T14:38:45.000Z"
+    },
+    {
+      "id": "779a4f9b7f",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xwuxqn/my_client_has_75_rented_food_trucks_on_the_road",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "My client has 75 rented food trucks on the road. How would you leverage this fleet digitally?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xwuxqn/my_client_has_75_rented_food_trucks_on_the_road/",
+      "summary": "I’m a web developer. I built the website and online booking system for a company that rents out food truck trailers on 3 month minimum contracts. Right now, they have 75 food trucks actively operating across the country and are basically at 99% capacity. Since I already manage their site and booking engine, I want to pitch them a V2 that takes advantage of having 75 physical trucks constantly out at markets, festivals, and busy streets.",
+      "deepenKey": "/r/microsaas/comments/1xwuxqn",
+      "via": null,
+      "publishedAt": "2026-11-15T13:01:20.000Z"
+    },
+    {
+      "id": "64f0ec15ef",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xwt19s/founders_using_cold_email_what_results_are_you",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Founders using cold email, what results are you actually seeing?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xwt19s/founders_using_cold_email_what_results_are_you/",
+      "summary": "I run a small bookkeeping/invoicing SaaS and am experimenting with focused cold outreach to freelancers and small businesses. I research prospects and check their websites myself before reaching out. Right now I am using a combination of Hunter and OpenAI for lead scoring and research. I’m trying to understand what realistic results look like. I am not looking to acquire hundreds of new customers a week. Even 3–5 who actually activate and start using the product would make me happy.",
+      "deepenKey": "/r/microsaas/comments/1xwt19s",
+      "via": null,
+      "publishedAt": "2026-11-15T11:17:05.000Z"
+    },
+    {
+      "id": "effcf48cd5",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xwrjwp/homebakers_crumbcal",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "HomeBakers: CrumbCal",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xwrjwp/homebakers_crumbcal/",
+      "summary": "Hi everyone, I’m creating a little app for home bakers and wanted to get some honest feedback before I continue too far. The issue I frequently hear people having: someone messages and says “can I get 15 cookies by Saturday?” You have to scale the recipe, figure out how much everything costs, decide on a price, and make sure you have enough butter and flour. It takes time and you often end up under pricing. What I’m creating: you save recipes and the cost of the ingredients you bought. Upon receiving an order you select the recipe, put in how many you need and how much you want to charge.",
+      "deepenKey": "/r/microsaas/comments/1xwrjwp",
+      "via": null,
+      "publishedAt": "2026-11-15T09:44:19.000Z"
+    },
+    {
+      "id": "ef131a31e6",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xwre4p/ive_revamped_my_onboarding_and_my_conversion_rate",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I’ve revamped my onboarding and my conversion rate has increased a lot",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xwre4p/ive_revamped_my_onboarding_and_my_conversion_rate/",
+      "summary": "I posted here recently about getting signups but struggling to convert them into paying customers. Here’s what I’ve changed since, and what I’ve learned. After receiving some genuinely helpful feedback, I spent a lot of time digging through our entire funnel. I wanted to understand: Where exactly were people dropping off? Why were people signing up but not converting? What were users actually trying to achieve? For the people who did convert, where were they finding the most value? I also completely revisited our SEO, which has helped bring a lot more people through the door.",
+      "deepenKey": "/r/microsaas/comments/1xwre4p",
+      "via": null,
+      "publishedAt": "2026-11-15T09:34:08.000Z"
+    },
+    {
+      "id": "f89cc37f19",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xwq9oj/i_measured_5_weeks_of_founderled_outreach_the",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I measured 5 weeks of founder-led outreach. The totals taught me less than one number we were not counting.",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xwq9oj/i_measured_5_weeks_of_founderled_outreach_the/",
+      "summary": "We ran a 5-week founder-led outreach sprint and measured everything from the actual exports: 330 invitations, 143 accepted, 516 messages, 38 replies. For the first week, I treated the totals as the story. Accept rate, reply rate, week-over-week deltas. Then I realized the number that actually explained our pipeline was not in any export: replies that arrived and were never caught. A reply lands at 6 pm while you are in a meeting, or on a Friday. In a manual setup, it lives in a notifications tab and dies there-no row, no owner, no follow-up date. Nobody rejects you; the deal fades.",
+      "deepenKey": "/r/microsaas/comments/1xwq9oj",
+      "via": null,
+      "publishedAt": "2026-11-15T08:21:49.000Z"
+    },
+    {
+      "id": "af0565305a",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xwplg8/any_free_linkinbio_store_with_upi_payments_in",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Any free link-in-bio store with UPI payments in India?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xwplg8/any_free_linkinbio_store_with_upi_payments_in/",
+      "summary": "Is there any good way to sell through Instagram without building a full website? Looking for something where customers can tap the bio link, browse a few products and pay using UPI. Came across Razorpay Webstore and Payment Pages. Looks useful since you can create hosted pages without coding, add products or payment details and share a link. Payment Links also seems handy for WhatsApp orders. Not sure about the processing charges or how order management scales. Anyone using Razorpay for this, or found a better low-cost setup?",
+      "deepenKey": "/r/microsaas/comments/1xwplg8",
+      "via": null,
+      "publishedAt": "2026-11-15T07:39:51.000Z"
+    },
+    {
+      "id": "cabec2a34f",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xwoqrk/i_built_a_pay_on_success_reddit_removal_agency",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I built a pay on success Reddit removal agency",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xwoqrk/i_built_a_pay_on_success_reddit_removal_agency/",
+      "summary": "I spent a few years doing freelance marketing and SEO work. Toward the end of last year, retainer client work started slowing down. Smaller budgets got cut, and the clients that stayed were getting hammered by Google updates or forum threads ranking right above their main domain. One specific issue kept popping up: a single toxic Reddit thread sitting at position #2 or #3 on Google for a founder or brand name, completely killing conversion rates. Most founders I spoke with had already tried the usual options: Messaging subreddit moderators, only to get ignored or muted.",
+      "deepenKey": "/r/microsaas/comments/1xwoqrk",
+      "via": null,
+      "publishedAt": "2026-11-15T06:47:51.000Z"
+    },
+    {
+      "id": "d254e434d3",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xwob6d/everyone_says_talk_to_your_customers_but_never",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "everyone says talk to your customers but never where to find them",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xwob6d/everyone_says_talk_to_your_customers_but_never/",
+      "summary": "I got annoyed by this last week, so I just tried it. No ads, no tools to automate anything, just replying to people on Reddit, X, Threads and Facebook groups. About 5 replies on each, every day. I tracked where every click came from, so I could see what actually worked. Reddit was the best by a lot. But only because I was answering questions properly and not dropping links. Threads did better than X, which surprised me. X is fast to reply on but I couldn’t tell what was working. Facebook groups were mostly spam. I wouldn’t bother. I only replied to people and never posted anything myself.",
+      "deepenKey": "/r/microsaas/comments/1xwob6d",
+      "via": null,
+      "publishedAt": "2026-11-15T06:21:50.000Z"
+    },
+    {
+      "id": "d8e211181e",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xwl3ec/is_a_private_communitybased_phone_number_flagging",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Is a private, community-based phone number flagging app legal in the UK/EU?",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xwl3ec/is_a_private_communitybased_phone_number_flagging/",
+      "summary": "TL;DR I’m developing a private group app for sharing phone numbers marked SUS. For example, sellers can flag repeat time-wasters or no-shows so other members can check numbers before dealing with them. Is this legal in the UK/EU? Full explanation I’m developing an app concept and would appreciate some honest feedback. The idea is simple: people create private groups, invite others and flag phone numbers they find suspicious. Members can manually search a number to see whether their group has marked it SUS. For example, sellers could flag repeat time-wasters or no-shows.",
+      "deepenKey": "/r/microsaas/comments/1xwl3ec",
+      "via": null,
+      "publishedAt": "2026-11-15T03:21:34.000Z"
+    },
+    {
+      "id": "86b7af9c33",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xwgziz/i_was_struggling_to_get_signups_that_convert_i",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "I was struggling to get signups that convert & I revamped our onboarding.",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xwgziz/i_was_struggling_to_get_signups_that_convert_i/",
+      "summary": "I posted here recently about getting signups but struggling to convert them into paying customers. Here’s what I’ve changed since, and what I’ve learned. After receiving some genuinely helpful feedback, I spent a lot of time digging through our entire funnel. I wanted to understand: Where exactly were people dropping off? Why were people signing up but not converting? What were users actually trying to achieve? For the people who did convert, where were they finding the most value. I also completely revisited our SEO, which has helped bring a lot more people through the door.",
+      "deepenKey": "/r/microsaas/comments/1xwgziz",
+      "via": null,
+      "publishedAt": "2026-11-14T23:53:43.000Z"
+    },
+    {
+      "id": "f5bd9c80b0",
+      "normUrl": "https://reddit.com/r/microsaas/comments/1xwgi8y/just_got_my_first_paying_customer_ever",
+      "sourceId": "microsaas",
+      "source": "r/microsaas",
+      "sourceHome": "https://www.reddit.com/r/microsaas/",
+      "side": "demand",
+      "pool": true,
+      "title": "Just got my first paying customer EVER!",
+      "url": "https://www.reddit.com/r/microsaas/comments/1xwgi8y/just_got_my_first_paying_customer_ever/",
+      "summary": "I launched a directory + SaaS product 2 weeks ago, marketed it on reddit for the first time a few days ago (1 post that went very well), and just got my first customer ($44)!!! I've been making newsletters, simple one-page websites, basic web apps, and directories as side projects for a couple years, and it finally feels like it's all starting to click now. Some words of advice: Aggregating public data and displaying it in a useful way, or combining 2 or more public APIs to reveal useful insights, has been a huge unlock for me when it comes to building side projects.",
+      "deepenKey": "/r/microsaas/comments/1xwgi8y",
+      "via": null,
+      "publishedAt": "2026-11-14T23:30:54.000Z"
     },
     {
       "id": "34a4217d75",
@@ -2089,291 +2239,6 @@
       "publishedAt": "2026-11-14T20:33:01.000Z"
     },
     {
-      "id": "79eef78648",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xwcjfg/i_am_a_solo_dev_building_a_restaurant_qr_ordering",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "I am a solo dev building a restaurant QR ordering SaaS for the last few months. Looking for brutally honest feedback.",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xwcjfg/i_am_a_solo_dev_building_a_restaurant_qr_ordering/",
-      "summary": "​ Hey everyone, TL;DR: I'm building a restaurant QR ordering SaaS called Tring that focuses on post-scan operational edge cases (table hopping, orphaned bills, QR abuse), not just static menus. Looking for brutal feedback on what I'm missing or over-engineering. Live demo and test admin credentials at the bottom! For the past few months, I've been building Tring as a solo developer. I'd say the core product is around 50% complete, but the main ordering and session engine is fully functional. What I'm trying to solve is the operational chaos of what happens after a QR is scanned.",
-      "deepenKey": "/r/microsaas/comments/1xwcjfg",
-      "via": null,
-      "publishedAt": "2026-11-14T20:32:45.000Z"
-    },
-    {
-      "id": "c67e0eddb4",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xwc6un/how_do_you_keep_everyone_aligned_on_why_a_project",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "How do you keep everyone aligned on why a project matters?",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xwc6un/how_do_you_keep_everyone_aligned_on_why_a_project/",
-      "summary": "We built ProjectGenie, an AI Slack bot that brings project context together so teams can spend less time in status meetings and more time building. Check out our prototype and sign up for the beta: https://projectgeniee.lovable.app/ We’d love your feedback!",
-      "deepenKey": "/r/microsaas/comments/1xwc6un",
-      "via": null,
-      "publishedAt": "2026-11-14T20:17:24.000Z"
-    },
-    {
-      "id": "742cf45100",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xwb3ge/how_do_you_fight_payment_fraud",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "How do you fight payment fraud?",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xwb3ge/how_do_you_fight_payment_fraud/",
-      "summary": "I think half of the time I’ve spent building my saas (data validation api) went towards fighting fraud. Stripe radar does help, but I am still getting a few disputes here and there. I run subscriptions and a free tier with limited usage. That one I am not really worried about, I can spot those who are farming free accs. But what bothers me are paid subscriptions made with stolen cards. Last month I had a very stubborn fraudster from the Dominican Republic who made like 20 accounts and subscribed on a $100 plan on each. Stripe let it all through.",
-      "deepenKey": "/r/microsaas/comments/1xwb3ge",
-      "via": null,
-      "publishedAt": "2026-11-14T19:31:26.000Z"
-    },
-    {
-      "id": "46cb94789a",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xwb1yf/i_think_my_ai_microsaas_idea_is_too_clean_to_be",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "I think my AI micro-SaaS idea is too clean to be real",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xwb1yf/i_think_my_ai_microsaas_idea_is_too_clean_to_be/",
-      "summary": "The more polished my AI idea sounds, the less I trust it. Real customer workflows are usually ugly. Permissions are missing. Data is duplicated. The wrong person owns the step. Someone has to chase approval. The spreadsheet is outdated. The customer is waiting. Nobody notices the blocker until it is already late. A clean AI idea like \"summarize this\" or \"automate scheduling\" often skips the ugly part where the actual pain lives. That is what I'm trying to catch before building. Flatlogic makes it easier to turn an idea into a product shell.",
-      "deepenKey": "/r/microsaas/comments/1xwb1yf",
-      "via": null,
-      "publishedAt": "2026-11-14T19:29:40.000Z"
-    },
-    {
-      "id": "e5e91a1583",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xw9yu0/consulted_a_saas_founder_who_was_burning_out_the",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "Consulted a SaaS founder who was burning out. The problem wasn’t his workload.",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xw9yu0/consulted_a_saas_founder_who_was_burning_out_the/",
-      "summary": "I advise SaaS founders, and I recently did a call with one who was close to quitting. He wasn’t overworked. He was measuring his motivation against something he can’t control. The framework we drew on the whiteboard: Inputs: what you do every day (outreach, building, content). You control 100% of it. Outputs: what those actions produce (replies, demos, signups). You influence it, but you don’t own it. Outcome: revenue/MRR. You don’t control it directly, but it’s where most founders put their whole sense of progress.",
-      "deepenKey": "/r/microsaas/comments/1xw9yu0",
-      "via": null,
-      "publishedAt": "2026-11-14T18:45:27.000Z"
-    },
-    {
-      "id": "e2413addfb",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xw78hm/micro_saas_founders_what_do_you_do_when_growth",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "Micro SaaS founders: what do you do when growth stalls for a month straight?",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xw78hm/micro_saas_founders_what_do_you_do_when_growth/",
-      "summary": "I keep thinking about this. You launch, you get some early users, then things just flatline for weeks. No big drop, just no growth. What do you actually do in that spot? Do you change the product, change how you market it, talk to users, or just keep shipping and wait it out? Curious what worked for you when growth stalled.",
-      "deepenKey": "/r/microsaas/comments/1xw78hm",
-      "via": null,
-      "publishedAt": "2026-11-14T16:56:20.000Z"
-    },
-    {
-      "id": "a9f1d183b9",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xw5wxg/what_are_your_potential_users_doing_manually",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "What are your potential users doing manually right now?",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xw5wxg/what_are_your_potential_users_doing_manually/",
-      "summary": "If you’re struggling to find people who might use your micro-SaaS, try searching Reddit for the task it replaces. Say you built appointment reminders. Someone asking “how do you stop clients missing appointments?” is worth reading. They might never use the phrase “appointment reminder software.” They can still tell you how often the problem happens, what they’ve tried, and why their current approach is frustrating. That’s a design decision behind RedBubblegum , which I’m building.",
-      "deepenKey": "/r/microsaas/comments/1xw5wxg",
-      "via": null,
-      "publishedAt": "2026-11-14T16:02:06.000Z"
-    },
-    {
-      "id": "af9adaa789",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xw53im/before_building_a_microsaas_id_validate_the",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "Before building a micro-SaaS, I'd validate the problem this way",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xw53im/before_building_a_microsaas_id_validate_the/",
-      "summary": "A mistake I see people make is starting with a product idea instead of a recurring customer problem. My validation checklist would be: Find one specific audience — not \"small businesses\", but something like independent dental clinics or property managers. Identify a repetitive task they already spend time or money on. Speak to 10 potential customers about how they currently handle it. Find out what the problem costs them in time, money, or lost opportunities. Test whether at least a few would pay for a solution before building the full product.",
-      "deepenKey": "/r/microsaas/comments/1xw53im",
-      "via": null,
-      "publishedAt": "2026-11-14T15:27:57.000Z"
-    },
-    {
-      "id": "58b18c52ca",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xw4m9z/built_a_small_ai_video_saas_were_at_285_users_and",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "Built a small AI video SaaS. We're at 285 users and 51 paying customers.",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xw4m9z/built_a_small_ai_video_saas_were_at_285_users_and/",
-      "summary": "I've been working on YTStudioLab, an AI video creation platform, and thought I'd share where things stand. The idea was to simplify the process of making YouTube videos. Instead of jumping between tools for scripts, voiceovers, visuals, editing and subtitles, we wanted to bring everything into one workflow. Current numbers: 285 registered users 51 paying users 659 videos created 512 successfully rendered 201 YouTube channels connected We're still figuring out a lot of things. One challenge is the cost of generating videos.",
-      "deepenKey": "/r/microsaas/comments/1xw4m9z",
-      "via": null,
-      "publishedAt": "2026-11-14T15:07:33.000Z"
-    },
-    {
-      "id": "b8d0763f3f",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xw4lkp/3_dumb_things_i_did_on_my_first_solo_project_and",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "3 dumb things I did on my first solo project, and what they taught me",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xw4lkp/3_dumb_things_i_did_on_my_first_solo_project_and/",
-      "summary": "My first SaaS is finally live. I built it solo, around a day job, with a lot of help from AI coding tools. Looking back, I made some pretty dumb moves along the way. Writing them down mostly so I don't repeat them. 1. I planned so much that the plan became the project. I was scared of chaos, so I wrote a doc for everything. Vision, PRD, architecture, coding rules, security rules, testing rules, a glossary, a backlog. At one point there were 20+ markdown files and a long list of instructions the AI had to read before doing anything. Every small change got slow.",
-      "deepenKey": "/r/microsaas/comments/1xw4lkp",
-      "via": null,
-      "publishedAt": "2026-11-14T15:06:41.000Z"
-    },
-    {
-      "id": "5500e8dbf8",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xw4cvq/i_built_a_09_webhook_inbox_that_can_replay_a",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "I built a €0/€9 webhook inbox that can replay a Stripe event sequence to staging with a fresh signature",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xw4cvq/i_built_a_09_webhook_inbox_that_can_replay_a/",
-      "summary": "The gap I kept hitting: Stripe CLI is great for forwarding new events to localhost, but I wanted to recapture a real checkout and replay checkout.session.completed → invoice.paid → customer.subscription.updated to staging, in order, with a signature staging would actually accept. Webhook Inbox & Replay is a small EU-hosted (Amsterdam) tool for that. You get a unique URL per project, inspect headers and body, and replay. Normal Replay (Free) resends the original bytes and the original signature. It does not regenerate expired Stripe signatures.",
-      "deepenKey": "/r/microsaas/comments/1xw4cvq",
-      "via": null,
-      "publishedAt": "2026-11-14T14:56:32.000Z"
-    },
-    {
-      "id": "5d465781af",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xw3wvd/i_automated_a_tool_to_help_my_organic_social",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "I automated a tool to help my organic social media content grow",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xw3wvd/i_automated_a_tool_to_help_my_organic_social/",
-      "summary": "A while ago, I wasn't having the best views on my TikTok and Reels business page. So I manually put them in a notion file, listed the video names, retention rates, video length etc then ranked them by the metrics I cared about. My views were ok, like 5-20kish with 1 at 155k, a good amount near 1-2k though. I found what specific series performed best, worst, what types of videos with low views got me double the followers of videos with 100k+ views sometimes.",
-      "deepenKey": "/r/microsaas/comments/1xw3wvd",
-      "via": null,
-      "publishedAt": "2026-11-14T14:36:41.000Z"
-    },
-    {
-      "id": "20b8eecb80",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xw13g0/hot_take_b2b_saas_is_dead_or_near_b2c_saas_is",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "Hot take: B2B SaaS is dead or near, B2C SaaS is wide open",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xw13g0/hot_take_b2b_saas_is_dead_or_near_b2c_saas_is/",
-      "summary": "Thoughts? edit: Yes, there is still opportunity, I am just thinking that the average consumer wont spenfd $200 on Claude Ultra and hosting and a backend to replace your $5/m SaaS",
-      "deepenKey": "/r/microsaas/comments/1xw13g0",
-      "via": null,
-      "publishedAt": "2026-11-14T12:20:04.000Z"
-    },
-    {
-      "id": "4b474bc287",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xw08kh/how_i_stop_ai_costs_from_eating_a_499mo_student",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "How I stop AI costs from eating a $4.99/mo student plan (Olmbos, built with Next.js + Supabase)",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xw08kh/how_i_stop_ai_costs_from_eating_a_499mo_student/",
-      "summary": "Backstory: I built Olmbos for students who have more lecture slides than time. You upload a PDF, Word or PowerPoint file and get a summary, flashcards or a quiz, plus step-by-step homework explanations and generated slide decks and Word docs. Stack: Next.js, Supabase (auth, Postgres, row-level security), OpenRouter for the models, Waffo Pancake for subscriptions. The lesson that mattered most was cost control. A flat $4.99/mo plan can be wrecked by a few heavy users, so every AI request costs credits from a daily budget (Fast = 1, Smart = 3, Genius = 8, bigger files cost a multiple).",
-      "deepenKey": "/r/microsaas/comments/1xw08kh",
-      "via": null,
-      "publishedAt": "2026-11-14T11:31:13.000Z"
-    },
-    {
-      "id": "8b662f9763",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xvygce/whats_one_free_signal_you_check_before_building",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "What's one free signal you check before building anything?",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xvygce/whats_one_free_signal_you_check_before_building/",
-      "summary": "Not paid tools, just free signals. Mine so far: Google autocomplete (does the phrase show up when you start typing?) and reading the bad reviews of whatever already exists. What's yours? Trying to build a short list of checks that cost nothing and take under an hour.",
-      "deepenKey": "/r/microsaas/comments/1xvygce",
-      "via": null,
-      "publishedAt": "2026-11-14T09:40:07.000Z"
-    },
-    {
-      "id": "c0d1527833",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xvws0p/little_ippo_a_planner_that_reshapes_the_day_when",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "Little Ippo: a planner that reshapes the day when plans change",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xvws0p/little_ippo_a_planner_that_reshapes_the_day_when/",
-      "summary": "I work on Little Ippo, a personal planner that turns tasks and deadlines into a plan around your calendar. When something changes, you can chat with Ippo to adjust the plan; changes can be undone. There’s also a focus view for one task and a timer. One product decision we care about is making schedule changes reviewable instead of silently moving things: each change is shown with an undo option. I’d welcome feedback from people building small SaaS products: does that interaction make sense, and what would you want explained more clearly? Overview: https://littleippo.com/",
-      "deepenKey": "/r/microsaas/comments/1xvws0p",
-      "via": null,
-      "publishedAt": "2026-11-14T07:54:34.000Z"
-    },
-    {
-      "id": "52293dc841",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xvvnxn/everyone_says_talk_to_your_users_getting_them_to",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "Everyone says ‘talk to your users.’ Getting them to answer was the hard part.",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xvvnxn/everyone_says_talk_to_your_users_getting_them_to/",
-      "summary": "We used to email people after they used our product to ask for feedback. We barely got any replies. We also used PostHog events and session replays to understand their behaviour. We could watch someone stop halfway through setup, but we were still guessing what they expected, what confused them or which feature they actually wanted. That’s why we built Bopmigo . We started asking one specific question inside the product while the experience was fresh. Someone stuck during setup could tell us what they were trying to do. Someone leaving checkout could tell us what got in the way.",
-      "deepenKey": "/r/microsaas/comments/1xvvnxn",
-      "via": null,
-      "publishedAt": "2026-11-14T06:46:45.000Z"
-    },
-    {
-      "id": "1c1ece0317",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xvsv2h/does_vibe_coding_really_work_for_productionready",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "Does Vibe Coding Really Work for Production-Ready SaaS?",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xvsv2h/does_vibe_coding_really_work_for_productionready/",
-      "summary": "Does vibe coding actually work for building production-ready SaaS applications? Can AI-generated code handle real users, security, scalability, and long-term maintenance? I'd love to hear real experiences from founders who have launched and are running vibe-coded SaaS products.",
-      "deepenKey": "/r/microsaas/comments/1xvsv2h",
-      "via": null,
-      "publishedAt": "2026-11-14T04:09:46.000Z"
-    },
-    {
-      "id": "3d2363b811",
-      "normUrl": "https://reddit.com/r/microsaas/comments/1xvqcr4/we_looked_at_what_people_actually_ask_an_ai_agent",
-      "sourceId": "microsaas",
-      "source": "r/microsaas",
-      "sourceHome": "https://www.reddit.com/r/microsaas/",
-      "side": "demand",
-      "pool": true,
-      "title": "we looked at what people actually ask an ai agent to do. it's not what i expected",
-      "url": "https://www.reddit.com/r/microsaas/comments/1xvqcr4/we_looked_at_what_people_actually_ask_an_ai_agent/",
-      "summary": "i'm building iris (irisvision.ai), and we looked through our own agent runs instead of guessing. this report covers 8,187 completed runs from february to july 2026, with a separate newer sample for files people got back. the median run took 42 seconds from start to deliverable. that pushed us toward making the handoff feel finished and quick, not making the agent look busy. 60.3% of runs ended because the agent judged the work done, 34.6% explicitly ended after the result was delivered, and 5.1% hit a limit or unclear state.",
-      "deepenKey": "/r/microsaas/comments/1xvqcr4",
-      "via": null,
-      "publishedAt": "2026-11-14T02:00:15.000Z"
-    },
-    {
       "id": "8ebf774d51",
       "normUrl": "https://ycombinator.com/rfs",
       "sourceId": "ycrfs",
@@ -2387,186 +2252,225 @@
       "publishedAt": null
     },
     {
-      "id": "c70e9f4491",
-      "normUrl": "https://producthunt.com/products/openai",
+      "id": "641c4f81f6",
+      "normUrl": "https://producthunt.com/products/talyn",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Businesses in ChatGPT",
-      "url": "https://www.producthunt.com/products/openai",
-      "summary": "Help customers discover your business through ChatGPT",
-      "publishedAt": "2026-11-13T08:53:51.000Z"
+      "title": "Talyn",
+      "url": "https://www.producthunt.com/products/talyn",
+      "summary": "Run Claude Code and Codex in parallel cloud sandboxes",
+      "publishedAt": "2026-11-12T10:07:59.000Z"
     },
     {
-      "id": "80df81b6ce",
-      "normUrl": "https://producthunt.com/products/gemini-robotics-2-5",
+      "id": "bda9ccc60b",
+      "normUrl": "https://producthunt.com/products/collecto-rs",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Gemini Robotics 2.5",
-      "url": "https://www.producthunt.com/products/gemini-robotics-2-5",
-      "summary": "Gemini Robotics 2.5: Google’s most capable robot model",
-      "publishedAt": "2026-11-12T20:18:13.000Z"
+      "title": "collecto.rs",
+      "url": "https://www.producthunt.com/products/collecto-rs",
+      "summary": "Catalog any collection, from Pokémon to pitcher plants",
+      "publishedAt": "2026-11-07T23:33:53.000Z"
     },
     {
-      "id": "a2436235b5",
-      "normUrl": "https://producthunt.com/products/dex-by-exmergo",
+      "id": "906f7f848c",
+      "normUrl": "https://producthunt.com/products/tulvo",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Dex Semantics",
-      "url": "https://www.producthunt.com/products/dex-by-exmergo",
-      "summary": "Let your agent build analytics with 25% fewer errors",
-      "publishedAt": "2026-11-11T21:48:12.000Z"
+      "title": "Tulvo",
+      "url": "https://www.producthunt.com/products/tulvo",
+      "summary": "Smart & adaptive workspace to manage all your work",
+      "publishedAt": "2026-11-07T14:08:39.000Z"
     },
     {
-      "id": "fbe7792543",
-      "normUrl": "https://producthunt.com/products/kokonutui",
+      "id": "d5153a96e5",
+      "normUrl": "https://producthunt.com/products/agentgrid-io",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Kokonut UI",
-      "url": "https://www.producthunt.com/products/kokonutui",
-      "summary": "Open-source UI components for your AI agent",
-      "publishedAt": "2026-11-01T10:27:54.000Z"
+      "title": "Canvas by AgentGrid.io",
+      "url": "https://www.producthunt.com/products/agentgrid-io",
+      "summary": "Agentic Design Canvas - A visual way to collaborate with AI",
+      "publishedAt": "2026-11-15T06:22:09.000Z"
     },
     {
-      "id": "4d76622480",
-      "normUrl": "https://producthunt.com/products/blender",
+      "id": "d7fb11eb67",
+      "normUrl": "https://producthunt.com/products/emayler",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Blender 5.3",
-      "url": "https://www.producthunt.com/products/blender",
-      "summary": "3D Gaussian splats, now native to Blender",
-      "publishedAt": "2026-11-13T05:32:19.000Z"
+      "title": "Emayler",
+      "url": "https://www.producthunt.com/products/emayler",
+      "summary": "Custom email on your domain, minus the headache",
+      "publishedAt": "2026-11-12T23:32:53.000Z"
     },
     {
-      "id": "61fb3d100d",
-      "normUrl": "https://producthunt.com/products/restoration-scope",
+      "id": "59fdf51fd1",
+      "normUrl": "https://producthunt.com/products/pixel-office-3",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Restoration Scope",
-      "url": "https://www.producthunt.com/products/restoration-scope",
-      "summary": "Field data and monitoring software for reforestation",
-      "publishedAt": "2026-11-11T14:39:07.000Z"
+      "title": "Pixel Office",
+      "url": "https://www.producthunt.com/products/pixel-office-3",
+      "summary": "Run a team of AI agents from a pixel-art office",
+      "publishedAt": "2026-11-12T16:47:12.000Z"
     },
     {
-      "id": "4e212183a9",
-      "normUrl": "https://producthunt.com/products/drops-4",
+      "id": "04066ce2d9",
+      "normUrl": "https://producthunt.com/products/twobucket",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Drops",
-      "url": "https://www.producthunt.com/products/drops-4",
-      "summary": "Discover new music through moments your friends love",
-      "publishedAt": "2026-11-09T22:54:34.000Z"
+      "title": "TwoBucket",
+      "url": "https://www.producthunt.com/products/twobucket",
+      "summary": "Beginner-friendly mobile detailing software for bookings",
+      "publishedAt": "2026-11-07T07:14:18.000Z"
     },
     {
-      "id": "80549631b8",
-      "normUrl": "https://producthunt.com/products/codemesh-2",
+      "id": "bfc5e015de",
+      "normUrl": "https://producthunt.com/products/spiik",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "CodeMesh",
-      "url": "https://www.producthunt.com/products/codemesh-2",
-      "summary": "Cut AI coding costs by 90%",
-      "publishedAt": "2026-11-13T09:07:28.000Z"
+      "title": "Spiik",
+      "url": "https://www.producthunt.com/products/spiik",
+      "summary": "AI note taker for meetings & lectures. No bot on your calls.",
+      "publishedAt": "2026-11-07T11:57:13.000Z"
     },
     {
-      "id": "7c30e1e419",
-      "normUrl": "https://producthunt.com/products/default-tamer",
+      "id": "312114298e",
+      "normUrl": "https://producthunt.com/products/frevana-2",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Default Tamer",
-      "url": "https://www.producthunt.com/products/default-tamer",
-      "summary": "Open every link in the right browser on macOS",
-      "publishedAt": "2026-11-12T17:27:40.000Z"
+      "title": "Frevana Multiplayer",
+      "url": "https://www.producthunt.com/products/frevana-2",
+      "summary": "AI that grows your business alongside your team",
+      "publishedAt": "2026-11-10T05:18:49.000Z"
     },
     {
-      "id": "ac3684f712",
-      "normUrl": "https://producthunt.com/products/thunder-3",
+      "id": "3d2d31097f",
+      "normUrl": "https://producthunt.com/products/rakazo",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Thunder",
-      "url": "https://www.producthunt.com/products/thunder-3",
-      "summary": "A blazing-fast, persistent, key-value AI workload database",
-      "publishedAt": "2026-11-13T21:27:29.000Z"
+      "title": "Rakazo",
+      "url": "https://www.producthunt.com/products/rakazo",
+      "summary": "The open source Grok Bot alternative you actually own",
+      "publishedAt": "2026-11-13T18:46:58.000Z"
     },
     {
-      "id": "23a5bbf305",
-      "normUrl": "https://producthunt.com/products/aboard-sign",
+      "id": "bcbd04b73e",
+      "normUrl": "https://producthunt.com/products/privacyboard",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Aboard Sign",
-      "url": "https://www.producthunt.com/products/aboard-sign",
-      "summary": "Email a contract, CC sign@aboard.com and collect signatures",
-      "publishedAt": "2026-11-05T22:21:53.000Z"
+      "title": "Privacyboard",
+      "url": "https://www.producthunt.com/products/privacyboard",
+      "summary": "Privacy compliance on autopilot",
+      "publishedAt": "2026-11-14T10:31:24.000Z"
     },
     {
-      "id": "d3c329c79e",
-      "normUrl": "https://producthunt.com/products/dynamic-edge",
+      "id": "ecfa65be2e",
+      "normUrl": "https://producthunt.com/products/polylane",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Dynamic Edge",
-      "url": "https://www.producthunt.com/products/dynamic-edge",
-      "summary": "The Dynamic Island for Windows",
-      "publishedAt": "2026-11-11T11:40:48.000Z"
+      "title": "Polylane for Security",
+      "url": "https://www.producthunt.com/products/polylane",
+      "summary": "Catch exploitable vulnerabilities before they ship",
+      "publishedAt": "2026-11-11T18:55:28.000Z"
     },
     {
-      "id": "2b64f34a41",
-      "normUrl": "https://producthunt.com/products/uber",
+      "id": "b15e0bf5dc",
+      "normUrl": "https://producthunt.com/products/remindly-6",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Uber Parking",
-      "url": "https://www.producthunt.com/products/uber",
-      "summary": "Find, compare and reserve parking inside the Uber app",
-      "publishedAt": "2026-11-09T17:07:16.000Z"
+      "title": "Remindly",
+      "url": "https://www.producthunt.com/products/remindly-6",
+      "summary": "Notes that remind you, on iPhone, iPad, Mac and web",
+      "publishedAt": "2026-11-13T23:19:19.000Z"
     },
     {
-      "id": "cc0143931b",
-      "normUrl": "https://producthunt.com/products/antelog",
+      "id": "8e00b39659",
+      "normUrl": "https://producthunt.com/products/gotemail",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Antelog",
-      "url": "https://www.producthunt.com/products/antelog",
-      "summary": "Stops AI coding agents from leaking or destroying your data",
-      "publishedAt": "2026-11-10T05:38:22.000Z"
+      "title": "GotEmail",
+      "url": "https://www.producthunt.com/products/gotemail",
+      "summary": "Fast, native and smart email for Mac and iPhone",
+      "publishedAt": "2026-11-14T17:42:45.000Z"
+    },
+    {
+      "id": "701a1ec31b",
+      "normUrl": "https://producthunt.com/products/byteask-cloud-agents",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "ByteAsk Cloud Agents",
+      "url": "https://www.producthunt.com/products/byteask-cloud-agents",
+      "summary": "Find the fix in big codebases. Ship it from Slack.",
+      "publishedAt": "2026-11-14T06:54:44.000Z"
+    },
+    {
+      "id": "449b33e13d",
+      "normUrl": "https://producthunt.com/products/perit-marketplace",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Perit Marketplace",
+      "url": "https://www.producthunt.com/products/perit-marketplace",
+      "summary": "Sell your data and RL tasks to frontier AI labs",
+      "publishedAt": "2026-11-15T05:04:05.000Z"
+    },
+    {
+      "id": "80bb9727fc",
+      "normUrl": "https://producthunt.com/products/huntmonitor",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "HuntMonitor",
+      "url": "https://www.producthunt.com/products/huntmonitor",
+      "summary": "Watch today's hunt live: points, speed, rank moves",
+      "publishedAt": "2026-11-14T17:36:18.000Z"
     },
     {
       "id": "55262f2b33",
@@ -2582,291 +2486,50 @@
       "publishedAt": "2026-11-02T10:23:37.000Z"
     },
     {
-      "id": "efeeaef6a2",
-      "normUrl": "https://producthunt.com/products/tacie",
+      "id": "fbe7792543",
+      "normUrl": "https://producthunt.com/products/kokonutui",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Tacie",
-      "url": "https://www.producthunt.com/products/tacie",
-      "summary": "Meeting notes on your Mac, with no bot in the call",
-      "publishedAt": "2026-11-13T15:03:50.000Z"
+      "title": "Kokonut UI",
+      "url": "https://www.producthunt.com/products/kokonutui",
+      "summary": "Open-source UI components for your AI agent",
+      "publishedAt": "2026-11-01T10:27:54.000Z"
     },
     {
-      "id": "dd29b920ed",
-      "normUrl": "https://producthunt.com/products/vb-notes",
+      "id": "2b64f34a41",
+      "normUrl": "https://producthunt.com/products/uber",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "VB Notes",
-      "url": "https://www.producthunt.com/products/vb-notes",
-      "summary": "Markdown notes in your own folder, searched by meaning",
-      "publishedAt": "2026-11-05T13:41:38.000Z"
+      "title": "Uber Parking",
+      "url": "https://www.producthunt.com/products/uber",
+      "summary": "Find, compare and reserve parking inside the Uber app",
+      "publishedAt": "2026-11-09T17:07:16.000Z"
     },
     {
-      "id": "2b1a01e99d",
-      "normUrl": "https://producthunt.com/products/valutorio",
-      "sourceId": "producthunt",
-      "source": "Product Hunt",
-      "sourceHome": "https://www.producthunt.com/",
-      "side": "supply",
-      "pool": true,
-      "title": "Valutorio",
-      "url": "https://www.producthunt.com/products/valutorio",
-      "summary": "Your Markdown notes, native on Mac and iPhone",
-      "publishedAt": "2026-11-05T19:34:20.000Z"
-    },
-    {
-      "id": "3572ade808",
-      "normUrl": "https://producthunt.com/products/google-labs",
-      "sourceId": "producthunt",
-      "source": "Product Hunt",
-      "sourceHome": "https://www.producthunt.com/",
-      "side": "supply",
-      "pool": true,
-      "title": "Tabletop by Google Labs",
-      "url": "https://www.producthunt.com/products/google-labs",
-      "summary": "Build interactive group experiences with AI.",
-      "publishedAt": "2026-11-13T11:39:17.000Z"
-    },
-    {
-      "id": "98a83a79fb",
-      "normUrl": "https://producthunt.com/products/expert-chase-deleted-1107920",
-      "sourceId": "producthunt",
-      "source": "Product Hunt",
-      "sourceHome": "https://www.producthunt.com/",
-      "side": "supply",
-      "pool": true,
-      "title": "MAP & GO!",
-      "url": "https://www.producthunt.com/products/expert-chase-deleted-1107920",
-      "summary": "See your day on the map",
-      "publishedAt": "2026-10-21T20:14:51.000Z"
-    },
-    {
-      "id": "9c9b4a4d06",
-      "normUrl": "https://news.ycombinator.com/item?id=50497589",
+      "id": "09c15e5be6",
+      "normUrl": "https://news.ycombinator.com/item?id=50507722",
       "sourceId": "showhn",
       "source": "Show HN",
       "sourceHome": "https://news.ycombinator.com/show",
       "side": "supply",
       "pool": true,
-      "title": "DeepSeek V3 in ~200 lines of pure Jax",
-      "url": "https://news.ycombinator.com/item?id=50497589",
-      "externalUrl": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
-      "summary": null,
-      "deepenKey": "50497589",
+      "title": "A tiny macOS app that turns off the MacBook display [free license]",
+      "url": "https://news.ycombinator.com/item?id=50507722",
+      "externalUrl": "https://blackoutapp.io/",
+      "summary": "Hi, I made a tiny app that lets you turn off the MacBook screen when you work on external monitors. It does NOT just dim the brightness to zero, the screen is actually turned off via the Apple hardware API, the according desktop is removed, so you have a clean \"one big monitor\" setup. - Safe fallback if you turn off the external monitor(s), unplug the monitor cable(s), the app crashes or anything else happens. - Keyboard, touchpad and TouchID still work fine. - Automatic restart. 2 Megabyte size. - Totally niche, I know, but it helps me to concentrate.",
+      "deepenKey": "50507722",
       "via": null,
       "signal": {
-        "points": 90,
-        "comments": 4
+        "points": 8,
+        "comments": 26
       },
-      "publishedAt": "2026-11-14T15:04:15Z"
-    },
-    {
-      "id": "c6831b077a",
-      "normUrl": "https://news.ycombinator.com/item?id=50497147",
-      "sourceId": "showhn",
-      "source": "Show HN",
-      "sourceHome": "https://news.ycombinator.com/show",
-      "side": "supply",
-      "pool": true,
-      "title": "Agweb – a browser for agents that stays out of your way",
-      "url": "https://news.ycombinator.com/item?id=50497147",
-      "externalUrl": "https://github.com/paul-nameless/agweb",
-      "summary": null,
-      "deepenKey": "50497147",
-      "via": null,
-      "signal": {
-        "points": 67,
-        "comments": 21
-      },
-      "publishedAt": "2026-11-14T14:08:12Z"
-    },
-    {
-      "id": "dc6692fb06",
-      "normUrl": "https://news.ycombinator.com/item?id=50497141",
-      "sourceId": "showhn",
-      "source": "Show HN",
-      "sourceHome": "https://news.ycombinator.com/show",
-      "side": "supply",
-      "pool": true,
-      "title": "Lampka – a Windows PDF reader whose dark mode keeps figures in colour",
-      "url": "https://news.ycombinator.com/item?id=50497141",
-      "externalUrl": "https://lampka.app/",
-      "summary": null,
-      "deepenKey": "50497141",
-      "via": null,
-      "signal": {
-        "points": 9,
-        "comments": 1
-      },
-      "publishedAt": "2026-11-14T14:06:56Z"
-    },
-    {
-      "id": "f870fc845d",
-      "normUrl": "https://news.ycombinator.com/item?id=50497137",
-      "sourceId": "showhn",
-      "source": "Show HN",
-      "sourceHome": "https://news.ycombinator.com/show",
-      "side": "supply",
-      "pool": true,
-      "title": "Fursoy – Out-of-order RV64IMAFDV core in SystemVerilog (Linux 6.6)",
-      "url": "https://news.ycombinator.com/item?id=50497137",
-      "externalUrl": "https://github.com/FURSOY/fursoy-cpu",
-      "summary": null,
-      "deepenKey": "50497137",
-      "via": null,
-      "signal": {
-        "points": 54,
-        "comments": 16
-      },
-      "publishedAt": "2026-11-14T14:06:34Z"
-    },
-    {
-      "id": "e402d5091e",
-      "normUrl": "https://news.ycombinator.com/item?id=50497132",
-      "sourceId": "showhn",
-      "source": "Show HN",
-      "sourceHome": "https://news.ycombinator.com/show",
-      "side": "supply",
-      "pool": true,
-      "title": "A terminal-native idle factory game, written in Rust with ratatui",
-      "url": "https://news.ycombinator.com/item?id=50497132",
-      "externalUrl": "https://gitlab.com/snipedbywifi/terminactory",
-      "summary": "Hey HN readers! I'm snipedbywifi ( https://gitlab.com/snipedbywifi ), and i've been working on terminactory. Please try it out if you'd like to play a cozy factory game while waiting for long agent tasks to finish! The game is a factory game (overused niche, i know xD), but runs in your terminal. Reason i built it? glad you asked: So basically, it started off with me wanting a terminal-native factory game.",
-      "deepenKey": "50497132",
-      "via": null,
-      "signal": {
-        "points": 110,
-        "comments": 24
-      },
-      "publishedAt": "2026-11-14T14:05:54Z"
-    },
-    {
-      "id": "07e400eec0",
-      "normUrl": "https://news.ycombinator.com/item?id=50496642",
-      "sourceId": "showhn",
-      "source": "Show HN",
-      "sourceHome": "https://news.ycombinator.com/show",
-      "side": "supply",
-      "pool": true,
-      "title": "Cyberviber – a $15 touch screen to show which Claude session needs you",
-      "url": "https://news.ycombinator.com/item?id=50496642",
-      "externalUrl": "https://cyberviber.de/",
-      "summary": null,
-      "deepenKey": "50496642",
-      "via": null,
-      "signal": {
-        "points": 11,
-        "comments": 1
-      },
-      "publishedAt": "2026-11-14T12:54:07Z"
-    },
-    {
-      "id": "09a3e479d0",
-      "normUrl": "https://github.com/backnotprop/plannotator",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "backnotprop/plannotator",
-      "url": "https://github.com/backnotprop/plannotator",
-      "summary": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-      "signal": {
-        "language": "TypeScript",
-        "points": 412
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "95c23a9afe",
-      "normUrl": "https://github.com/GoogleChrome/modern-web-guidance-src",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "GoogleChrome/modern-web-guidance-src",
-      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
-      "summary": "Keep your coding agent up to date with the latest web best practices",
-      "signal": {
-        "language": "TypeScript",
-        "points": 1225
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "ec453d1217",
-      "normUrl": "https://github.com/tradermonty/claude-trading-skills",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "tradermonty/claude-trading-skills",
-      "url": "https://github.com/tradermonty/claude-trading-skills",
-      "summary": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-      "signal": {
-        "language": "Python",
-        "points": 556
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "a67bb8d2a6",
-      "normUrl": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "ChromeDevTools/chrome-devtools-mcp",
-      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "summary": "Chrome DevTools for coding agents",
-      "signal": {
-        "language": "TypeScript",
-        "points": 673
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "f7cfdfd7bc",
-      "normUrl": "https://github.com/alibaba/open-code-review",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "alibaba/open-code-review",
-      "url": "https://github.com/alibaba/open-code-review",
-      "summary": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "signal": {
-        "language": "Go",
-        "points": 897
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "5ad23f0e2e",
-      "normUrl": "https://github.com/QwenLM/qwen-code",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "QwenLM/qwen-code",
-      "url": "https://github.com/QwenLM/qwen-code",
-      "summary": "An open-source AI coding agent that lives in your terminal.",
-      "signal": {
-        "language": "TypeScript",
-        "points": 116
-      },
-      "publishedAt": null
+      "publishedAt": "2026-11-15T15:37:52Z"
     },
     {
       "id": "404dff4b1c",
@@ -2881,7 +2544,7 @@
       "summary": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "signal": {
         "language": "TypeScript",
-        "points": 495
+        "points": 1041
       },
       "publishedAt": null
     },
@@ -2898,75 +2561,75 @@
       "summary": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "signal": {
         "language": "TypeScript",
-        "points": 9
+        "points": 393
       },
       "publishedAt": null
     },
     {
-      "id": "21eb099d4d",
-      "normUrl": "https://github.com/ashhart/TensorFold",
+      "id": "52adf762d4",
+      "normUrl": "https://github.com/google-labs-code/stitch-skills",
       "sourceId": "github-trending",
       "source": "GitHub Trending",
       "sourceHome": "https://github.com/trending",
       "side": "supply",
       "pool": true,
-      "title": "ashhart/TensorFold",
-      "url": "https://github.com/ashhart/TensorFold",
-      "summary": "LLM Inference Engine for Metal, CUDA and Vulkan.",
+      "title": "google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "summary": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "signal": {
-        "language": "Zig",
-        "points": 53
+        "language": "TypeScript",
+        "points": 248
       },
       "publishedAt": null
     },
     {
-      "id": "3fa1090af0",
-      "normUrl": "https://github.com/JuliusBrussee/caveman",
+      "id": "09a3e479d0",
+      "normUrl": "https://github.com/backnotprop/plannotator",
       "sourceId": "github-trending",
       "source": "GitHub Trending",
       "sourceHome": "https://github.com/trending",
       "side": "supply",
       "pool": true,
-      "title": "JuliusBrussee/caveman",
-      "url": "https://github.com/JuliusBrussee/caveman",
-      "summary": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+      "title": "backnotprop/plannotator",
+      "url": "https://github.com/backnotprop/plannotator",
+      "summary": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "signal": {
+        "language": "TypeScript",
+        "points": 860
+      },
+      "publishedAt": null
+    },
+    {
+      "id": "a67bb8d2a6",
+      "normUrl": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "ChromeDevTools/chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "summary": "Chrome DevTools for coding agents",
+      "signal": {
+        "language": "TypeScript",
+        "points": 718
+      },
+      "publishedAt": null
+    },
+    {
+      "id": "f7cfdfd7bc",
+      "normUrl": "https://github.com/alibaba/open-code-review",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "summary": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "signal": {
         "language": "Go",
-        "points": 227
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "f53325a926",
-      "normUrl": "https://github.com/louislam/uptime-kuma",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "louislam/uptime-kuma",
-      "url": "https://github.com/louislam/uptime-kuma",
-      "summary": "A fancy self-hosted monitoring tool",
-      "signal": {
-        "language": "JavaScript",
-        "points": 432
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "a8efea0dac",
-      "normUrl": "https://github.com/we-promise/sure",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "we-promise/sure",
-      "url": "https://github.com/we-promise/sure",
-      "summary": "The personal finance app for everyone (by everyone)",
-      "signal": {
-        "language": "Ruby",
-        "points": 659
+        "points": 688
       },
       "publishedAt": null
     },
@@ -2983,41 +2646,92 @@
       "summary": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
       "signal": {
         "language": "Go",
-        "points": 101
+        "points": 484
       },
       "publishedAt": null
     },
     {
-      "id": "c57dfd8e10",
-      "normUrl": "https://github.com/Likely7/Veyra-NRVideo",
+      "id": "dfedfa4966",
+      "normUrl": "https://github.com/ggml-org/ggml",
       "sourceId": "github-trending",
       "source": "GitHub Trending",
       "sourceHome": "https://github.com/trending",
       "side": "supply",
       "pool": true,
-      "title": "Likely7/Veyra-NRVideo",
-      "url": "https://github.com/Likely7/Veyra-NRVideo",
-      "summary": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.",
+      "title": "ggml-org/ggml",
+      "url": "https://github.com/ggml-org/ggml",
+      "summary": "Tensor library for machine learning",
       "signal": {
         "language": "C++",
-        "points": 423
+        "points": 53
       },
       "publishedAt": null
     },
     {
-      "id": "d39f108124",
-      "normUrl": "https://github.com/martin-olivier/airgorah",
+      "id": "c6524b3bb6",
+      "normUrl": "https://github.com/elementalsouls/Claude-BugHunter",
       "sourceId": "github-trending",
       "source": "GitHub Trending",
       "sourceHome": "https://github.com/trending",
       "side": "supply",
       "pool": true,
-      "title": "martin-olivier/airgorah",
-      "url": "https://github.com/martin-olivier/airgorah",
-      "summary": "A WiFi security auditing software",
+      "title": "elementalsouls/Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "summary": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
       "signal": {
-        "language": "Rust",
-        "points": 269
+        "language": "Python",
+        "points": 221
+      },
+      "publishedAt": null
+    },
+    {
+      "id": "95c23a9afe",
+      "normUrl": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "GoogleChrome/modern-web-guidance-src",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "summary": "Keep your coding agent up to date with the latest web best practices",
+      "signal": {
+        "language": "TypeScript",
+        "points": 1220
+      },
+      "publishedAt": null
+    },
+    {
+      "id": "ec453d1217",
+      "normUrl": "https://github.com/tradermonty/claude-trading-skills",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "tradermonty/claude-trading-skills",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "summary": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "signal": {
+        "language": "Python",
+        "points": 707
+      },
+      "publishedAt": null
+    },
+    {
+      "id": "3781448153",
+      "normUrl": "https://github.com/NVIDIA/SkillEvaluator",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "NVIDIA/SkillEvaluator",
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "summary": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+      "signal": {
+        "language": "Python",
+        "points": 205
       },
       "publishedAt": null
     },

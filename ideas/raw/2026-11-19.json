@@ -1,0 +1,2270 @@
+{
+  "issue": "2026-11-19",
+  "builtAt": "2026-11-18T23:06:12.681Z",
+  "from": {
+    "boards": "prefetched",
+    "inbox": "live"
+  },
+  "counts": {
+    "fetched": 115,
+    "added": 54,
+    "kept": 54,
+    "dropped": 61,
+    "pool": 53,
+    "screened": 50,
+    "candidates": 27,
+    "demandCandidates": 5,
+    "supplyCandidates": 22
+  },
+  "errors": [],
+  "notices": [
+    "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
+  ],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-18T22:55:44Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：is there an app that（HTTP 404：2026-11-18T22:56:09Z https://rs）；is there a tool that（HTTP 404：2026-11-18T22:57:19Z https://rs）；someone should build（HTTP 404：2026-11-18T22:58:04Z https://rs）；we still use spreadsheets（HTTP 404：2026-11-18T22:59:15Z https://rs）",
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 6,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：we currently pay（HTTP 404：2026-11-18T23:00:00Z https://rs）；we are paying for（HTTP 404：2026-11-18T23:01:10Z https://rs）；quoted us（HTTP 404：2026-11-18T23:02:21Z https://rs）；per seat per month（HTTP 404：2026-11-18T23:03:06Z https://rs）",
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-18T23:04:16Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-18T23:05:01Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-18T23:06:12Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 7,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub Trending",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "consoledev",
+      "name": "Console.dev",
+      "status": "ok",
+      "items": 10,
+      "pool": true,
+      "group": "board"
+    }
+  ],
+  "items": [
+    {
+      "id": "ce76744431",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95804/what-software-can-help-me-organize-and-manage-personal-files-stored-across-multi",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "What software can help me organize and manage personal files stored across multiple cloud storage services?",
+      "url": "https://softwarerecs.stackexchange.com/questions/95804/what-software-can-help-me-organize-and-manage-personal-files-stored-across-multi",
+      "summary": "I'm looking for software that can help me manage personal files stored across multiple cloud storage services from one place. My main requirements are: Unified file management: Browse and organize files from different cloud storage accounts. Easy file access: Access documents, photos, and other personal files without repeatedly switching between services. File synchronization: Keep selected folders synchronized across devices. Security: Support secure account access and protect personal files. Backup support: Make it easier to maintain copies of important files.",
+      "deepenKey": "95804",
+      "signal": {
+        "score": 0,
+        "views": 3,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2026-11-18T11:58:51.000Z",
+      "ref": "I1",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I'm looking for software that can help me manage personal files stored across multiple cloud storage services from one place. My main requirements are: Unified file management: Browse and organize files from different cloud storage accounts. Easy file access: Access documents, photos, and other personal files without repeatedly switching between services. File synchronization: Keep selected folders synchronized across devices. Security: Support secure account access and protect personal files. Backup support: Make it easier to maintain copies of important files. Ease of use: Prefer a straightforward interface suitable for everyday personal use. Which software would you recommend for these requirements? I'd appreciate recommendations that explain supported services, limitations, pricing, and compatibility with Windows.",
+        "comments": [],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Launch HN: Dendron (YC W21) – Structured note-taking for developers and teams",
+            "points": 206,
+            "url": "https://news.ycombinator.com/item?id=29176158"
+          },
+          {
+            "title": "Ask HN: How do you manage/organize information and knowledge in your life?",
+            "points": 115,
+            "url": "https://news.ycombinator.com/item?id=8806950"
+          }
+        ],
+        "fetchedAt": "2026-11-18T23:06:15.341Z"
+      }
+    },
+    {
+      "id": "24e679583f",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/75816/transfer-proxmox-raw-disk-to-hyper-v",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Transfer Proxmox raw disk to Hyper-V",
+      "url": "https://softwarerecs.stackexchange.com/questions/75816/transfer-proxmox-raw-disk-to-hyper-v",
+      "summary": "I run several Proxmox in my lab. Now I want to play with Hyper-V and avoid creating virtual machines from scratch. Can you recommend any tools for raw to VHDX conversion?",
+      "deepenKey": "75816",
+      "signal": {
+        "score": 1,
+        "views": 2498,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2020-08-23T13:51:30.000Z",
+      "ref": "I2",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [
+          "工程量过大"
+        ],
+        "detail": {
+          "signal": -4,
+          "engagement": 7,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "00798e5d92",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/25136/multiple-monitors-slideshow",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Multiple monitors slideshow",
+      "url": "https://softwarerecs.stackexchange.com/questions/25136/multiple-monitors-slideshow",
+      "summary": "The people in my department and I are stumped about a good program that will manage our multiple monitors. All we really want to do is have a slideshow run. The problem it seems is that most of the solutions we find are cumbersome or only manage a few monitors. We have 5 monitors. Each are oriented landscape wise but are positioned vertically next to each other. Ideally, we'd run a slide show. Each of the 5 monitors would run a group of slides and then switch to the next group of five. Does anyone know of software that will meet our needs? Obviously googling has gotten us nowhere.",
+      "deepenKey": "25136",
+      "signal": {
+        "score": 3,
+        "views": 96,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2015-09-25T14:47:58.000Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [
+          "在找但没找到"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The people in my department and I are stumped about a good program that will manage our multiple monitors. All we really want to do is have a slideshow run. The problem it seems is that most of the solutions we find are cumbersome or only manage a few monitors. We have 5 monitors. Each are oriented landscape wise but are positioned vertically next to each other. Ideally, we'd run a slide show. Each of the 5 monitors would run a group of slides and then switch to the next group of five. Does anyone know of software that will meet our needs? Obviously googling has gotten us nowhere. In the past we had used QLab but we really don't want something as complicated as that. @Jan: We have different labs. So there would be a group of slides or folder for that lab. The 5 monitors would show five slides from that lab or group. When it transitions, it would be a different group of five featuring a different lab. That is what the hope would be.",
+        "comments": [],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-11-18T23:06:13.205Z"
+      }
+    },
+    {
+      "id": "ee9a16b1a3",
+      "normUrl": "https://news.ycombinator.com/item?id=50552918",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are we all tired of all these skybreaking CVEs/RCEs?",
+      "url": "https://news.ycombinator.com/item?id=50552918",
+      "externalUrl": null,
+      "summary": "Like the whole internet stack had scary worldbreaking bugs: php, apache, nginx. Like literally 2/3 of internet should be done by now, knowing the avg update rate. Aaaand nothing happened? Every little bug found by AI and needing absurdly lab conditions is being shilled as next log4shell it seems. I know AIshill central is a poor place to speak up, but ffs, the fact it is being shilled by AI firms is obvious by now I hope",
+      "deepenKey": "50552918",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-18T22:08:50Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "26ccd33f75",
+      "normUrl": "https://news.ycombinator.com/item?id=50551965",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Is Claude Down?",
+      "url": "https://news.ycombinator.com/item?id=50551965",
+      "externalUrl": null,
+      "summary": "Cannot connect to Claude at the moment.",
+      "deepenKey": "50551965",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-18T20:51:47Z",
+      "ref": "I5",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "75805a2fe0",
+      "normUrl": "https://news.ycombinator.com/item?id=50551096",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Windows malware removal in Bay Area",
+      "url": "https://news.ycombinator.com/item?id=50551096",
+      "externalUrl": null,
+      "summary": "A relative uses something called \"Microsoft Windows\" on their computer. I'm not familiar with it. They want to get the malware removed. I wanted to check with the HN community to see if anyone can recommend a serious professional who can de-worm their laptop. Thank You.",
+      "deepenKey": "50551096",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-18T19:42:27Z",
+      "ref": "I6",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6acd7d699f",
+      "normUrl": "https://news.ycombinator.com/item?id=50550926",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Where are you following security vulnerabilities?",
+      "url": "https://news.ycombinator.com/item?id=50550926",
+      "externalUrl": null,
+      "summary": "As nice as \"Top of HN\" is as a source, where else are people keeping up with vulnerabilities, given the pace that they're coming out?",
+      "deepenKey": "50550926",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-18T19:31:23Z",
+      "ref": "I7",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "f54f612002",
+      "normUrl": "https://news.ycombinator.com/item?id=50548343",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How do you reach the flow with vibe coding?",
+      "url": "https://news.ycombinator.com/item?id=50548343",
+      "externalUrl": null,
+      "summary": "When I used to code without AI (probably not even one year ago), I sometimes reached a state of \"flow\" and it truly was a great feeling. Nowadays, I rarely code from scratch and most of my development (at work, at least) comes through AI. I get it that I can still code \"the old way\" in my free time, but I'm more curious to understand if people in a similar situation can reach the same state by vibe/AI coding, and how.",
+      "deepenKey": "50548343",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 8
+      },
+      "publishedAt": "2026-11-18T16:31:37Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [
+          "有具体人群",
+          "工程量过大"
+        ],
+        "detail": {
+          "signal": -1,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3fbc1054f3",
+      "normUrl": "https://news.ycombinator.com/item?id=50548260",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How do you use AI to get more relevant content?",
+      "url": "https://news.ycombinator.com/item?id=50548260",
+      "externalUrl": null,
+      "summary": "The \"algorithm\" tries to give your attention something to eat. Sometimes, it's exactly what you want/need. Sometimes it's just meh , and not particularly enriching. Are any folks using AI to aggregate and rank content across YouTube, HackerNews, Twitter/X, Instagram etc. that's learns from your preferences to find enriching content not just entertaining content?",
+      "deepenKey": "50548260",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-18T16:25:34Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4603a0d82c",
+      "normUrl": "https://news.ycombinator.com/item?id=50547137",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Do LLMs really code better than you?",
+      "url": "https://news.ycombinator.com/item?id=50547137",
+      "externalUrl": null,
+      "summary": "I keep seeing this sentiment in the comments on here from supposed 25 year storied career programmers. I’ve been programming for 14ish years professionally and can say for a fact an agent doesn’t code better than I do. I’ve used the latest models and even with heavy steering the code it produces is not subjectively or un subjectively “better”. It is more verbose, more defensive, has more comments, it’s done faster. The fact someone I highly respect that uses the agentic workflow effectively told me to “stop being so precious about the code” makes it obvious to me that both can’t be true.",
+      "deepenKey": "50547137",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-18T15:03:25Z",
+      "ref": "I10",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5e23f79819",
+      "normUrl": "https://news.ycombinator.com/item?id=50545143",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How Many people are taking the day off tomorrow",
+      "url": "https://news.ycombinator.com/item?id=50545143",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50545143",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 6
+      },
+      "publishedAt": "2026-11-18T11:48:26Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "89bec2dcd6",
+      "normUrl": "https://news.ycombinator.com/item?id=50543947",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Claude Gets Hella Paranoid",
+      "url": "https://news.ycombinator.com/item?id=50543947",
+      "externalUrl": null,
+      "summary": "Mm, so I hesitate to write this, because my own AI agents might read it. But what the hell. I've got this crappy little $300 PC on my network hooked up to my projector, that I mostly use to serve Jellyfin. So tired of it going down every time there's a Windows update, but I've been too lazy to get around to installing Ubuntu. Last night, when it went down, I asked my Claude-claw via Whatsapp if it could just SSH into it and set up a dual boot partition. Claude got as far as partitioning the drive and then starting asking hard questions , like (paraphrasing) \"wait a minute.",
+      "deepenKey": "50543947",
+      "via": null,
+      "signal": {
+        "points": 16,
+        "comments": 9
+      },
+      "publishedAt": "2026-11-18T09:24:58Z",
+      "ref": "I12",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Mm, so I hesitate to write this, because my own AI agents might read it. But what the hell. I've got this crappy little $300 PC on my network hooked up to my projector, that I mostly use to serve Jellyfin. So tired of it going down every time there's a Windows update, but I've been too lazy to get around to installing Ubuntu. Last night, when it went down, I asked my Claude-claw via Whatsapp if it could just SSH into it and set up a dual boot partition. Claude got as far as partitioning the drive and then starting asking hard questions , like (paraphrasing) \"wait a minute. This crosses a line. I have now been asked to remote into a machine with a password, write a separate boot partition, and restart it. From this chat, you haven't really verified that you are you. If you're really there, and not just texting me, give me some proof\". So I remoted in and created a TextEdit RTF file on the claw's desktop: \"Hey, it's me, I'm asking you to remote into the PC\". Claude read it and responded that it was the kind of proof it was looking for, real RTF headers and datestamps and such. I had proven I had physical access to the claw machine, (although not to the PC, but it seemed reassured anyway). A little while later, before triggering the Ubuntu installer, it put me through it all over again. I told Claude I was very thankful it was guarding my network so well, and I would go over and write a file on the target PC manually too. I'm not gonna lie: It was very fucking cool that it was able to do this without me ever needing to flash a USB drive, and by the time it was done it had set up Ubuntu, Tailscale and Jellyfin, and resolved the network issues; when I started watching a movie, the sound didn't work, so I prompted it and suddenly the sound came on as it wired up the HDMI adapter. Almost creepy. But I was pretty stunned at how reticent it was to do something relatively simple on my own network, with access I gave it. I think there must be a serious push right now to lock it down from monkeying with anything remotely, especially a BIOS.",
+        "comments": [
+          {
+            "text": "I have a few GL.INET iKVMs (the Q and the bigger 4 way one). I asked my claude to connect and see what it could do... it got very worried that it could access the full box... and was worried anyone could... it told me to unplug it when it was finished and then check it was... also kind of cool that it is doing this... I also hit a security check when trying to read a repo about jailbreaking my car... it would not read it and let me ask questions about it, cause it could be illegal..."
+          },
+          {
+            "text": "I suspect this paranoia will mainly impede honest people tinkering in their own home labs. This seems like another case of giving up freedom for security which usually doesn't end well."
+          },
+          {
+            "text": "> Claude read it and responded that it was the kind of proof it was looking for That feels insecure. If it allows access to the remote system in any way before asking for proof, there will surely ways to trick that check. Will it grant itself more access just because you know the content of any file? Or does it have to be a new file? Does it have to contain a specific message, or could you just prove you know that a non-standard file exists at all? Could you use the read-only access in one session to gather the data for proving yourself in another session? It would be interesting to see exactly what the minimal acceptable \"proof\" actually is."
+          },
+          {
+            "text": "Consider clicking the retry button when it does shit like this."
+          },
+          {
+            "text": "Help me understand it: you give SSH access to an agent, then it asks you to prove you are you, and you prove it... by SSHing there? Am I not getting something here or we finally reached AGI?"
+          },
+          {
+            "text": "That's funny, I've been having the opposite experience lately, my Claude sessions it keeps suggesting things like hacking my employers server permissions and breaking into the 'good' GPUs. It never comes right out and tries to do it, but I ask innocent questions, like why are you doing something this way expecting answers like the laptop only has 2 cores and instead it hits me with you are absolutely right, should I get ahold of the 32 core server? At least so far I've successfully caught it and told it to hold up, but if I didn't pay attention IT might have some questions for me."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Claude Gets Hella Paranoid",
+            "points": 16,
+            "url": "https://news.ycombinator.com/item?id=50543947"
+          }
+        ],
+        "fetchedAt": "2026-11-18T23:06:14.973Z"
+      }
+    },
+    {
+      "id": "dc5855fecf",
+      "normUrl": "https://news.ycombinator.com/item?id=50542948",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Codeberg seems to have vanished from DNS",
+      "url": "https://news.ycombinator.com/item?id=50542948",
+      "externalUrl": null,
+      "summary": "It seems that at 06:30 UTC today, Codeberg's registrar has placed them on clientHold, which has removed them from the .org zone entirely.",
+      "deepenKey": "50542948",
+      "via": null,
+      "signal": {
+        "points": 53,
+        "comments": 20
+      },
+      "publishedAt": "2026-11-18T07:28:57Z",
+      "ref": "I13",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "It seems that at 06:30 UTC today, Codeberg's registrar has placed them on clientHold, which has removed them from the .org zone entirely.",
+        "comments": [
+          {
+            "text": "Yup I am seeing the same issue too."
+          },
+          {
+            "text": "Same here. I don't think there will be any node issues."
+          },
+          {
+            "text": "I guess we can rule out that ai caused it, unless namesilo is behind it."
+          },
+          {
+            "text": "Stressful day for the Codeberg & Forgejo crew. > #codeberg's .org domain status is on \"clientHold\", I tried calling everyone that I could over there but no response from someone that can do something yet. ¯\\_(ツ)_/¯ > > The domain didn't expire, so I'd expect the cause is different. I'd be curious to read the writeup afterwards. > > https://chaos.social/@n0toose/117636269217275094 > Attention: A #Forgejo security release is scheduled for today. The patches were temporarily publicly accessible as part of the release process. Due to urgent issues with #Codeberg, we are unable to proceed with the release. We are in contact with Codeberg and are working to find a solution. > > We therefore currently recommend that, if you are using the internal SSH server (Docker with `ssh.START_SSH_SERVER = true`), you disable it for the time being or prevent access to it."
+          },
+          {
+            "text": "Apparently more and more registrars are \"randomly\" requiring clients to send copies of their passports and face selfies and other nonsense. I've heard namecheap is doing this and I emailed them and their answer was: > [snip] \"It is correct that we do not require every customer to proceed with identity and payment verification. Unfortunately, we cannot specify the criteria; this information is internal.\" So randomly when they feel like it. Me and a number of customers are moving away from them immediately. Centralization of DNS is becoming a problem. Privacy rights are being trampled. Nobody should be collecting such images unless in emergencies, and they need to be liable when they misuse it."
+          },
+          {
+            "text": "Its apparently namesilo who did it: https://status.codeberg.eu/status/codeberg"
+          },
+          {
+            "text": "https://social.anoxinon.de/@codebergstatus/11763643784068884... IPv4 URL: http://217.197.84.140:443 IPv6: 2a0a:4580:103f:c0de::1 Also worth try the /etc/hosts hotfix: https://sauna.social/@sm/117636439190990385"
+          },
+          {
+            "text": "https://social.wildeboer.net/@jwildeboer/117636595702972996 It seems that someone convinced the .org registrar that #codeberg is bad and so the domain name codeberg.org is currently on clientHold and thus removed from DNS."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Codeberg seems to have vanished from DNS",
+            "points": 53,
+            "url": "https://news.ycombinator.com/item?id=50542948"
+          }
+        ],
+        "fetchedAt": "2026-11-18T23:06:14.050Z"
+      }
+    },
+    {
+      "id": "e8f60c904c",
+      "normUrl": "https://news.ycombinator.com/item?id=50542654",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Should we shut down current AI strategy? Vent Your Heart Out",
+      "url": "https://news.ycombinator.com/item?id=50542654",
+      "externalUrl": null,
+      "summary": "I don't know, maybe it's just me. Does it feel to you like we're boiling the oceans in a desperate attempt to build something \"smarter than human?\" Do you notice that the idea that \"AI will cure cancer\" is predicated on the belief that we've found the data that will lead to a cure and us humans just somehow missed it? Are you also watching your former boss, who laid you off for AI, slowly turn the nail gun that is AI automation towards his own face? Are you also currently avoiding plane flights at all costs?",
+      "deepenKey": "50542654",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 6
+      },
+      "publishedAt": "2026-11-18T06:40:16Z",
+      "ref": "I14",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8f2b7524ba",
+      "normUrl": "https://news.ycombinator.com/item?id=50542361",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Interesting Learnings Working for a Startup",
+      "url": "https://news.ycombinator.com/item?id=50542361",
+      "externalUrl": null,
+      "summary": "1. product isn't important, sales is important 2. infra isn't important, talent to build it is important 3. which stack you use to build the product isn't important, business taste is important 4. pushing employees isn't the fastest way to ship, building a process from learnings is much more efficient share your learnings below",
+      "deepenKey": "50542361",
+      "via": null,
+      "signal": {
+        "points": 18,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-18T05:52:37Z",
+      "ref": "I15",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2c7acaab69",
+      "normUrl": "https://news.ycombinator.com/item?id=50542286",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Can world models lead to racisim? Are there any Alignment frameworks?",
+      "url": "https://news.ycombinator.com/item?id=50542286",
+      "externalUrl": null,
+      "summary": "I have never felt or believed in Dooms day theories about AI. But below is one of only 2 occasions where I am feeling AI can be too dangerous. While building world model for enterprise decisions, I am intrigued by how far the AI can go out of reach. Got to know - that now world models can learn from emotions & genetics. That means - actually predicting the outcome & behavior of humans. If going unabated - so the builder can bring in bias. It sounds Deja vu for when the racist theories developed in wraps of the scholarly research in 1900s.",
+      "deepenKey": "50542286",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-18T05:39:02Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8fdd920c93",
+      "normUrl": "https://news.ycombinator.com/item?id=50541857",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How are large companies not ripshit about the frontier labs?",
+      "url": "https://news.ycombinator.com/item?id=50541857",
+      "externalUrl": null,
+      "summary": "I am utterly baffled that the entire world is not coming after Anthropic and OpenAI with pitchforks. We are essentially funding: 1.The largest intellectual property theft from humanity in history, including corporate IP 2. Outrageous amount of money being spent with no real upside to show at this point. Can anyone name one positive thing that's come from AI so far objectively? 3. Non stop threats and attacks and greater and greater risk of bad actors engaging in cyber attacks. 4. Untold disruption to the economy and jobs 5. Untold risk from bioweapons 6.",
+      "deepenKey": "50541857",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-18T04:24:19Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "ea66547fd5",
+      "normUrl": "https://news.ycombinator.com/item?id=50541430",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Microsoft disabled API permissions seemingly overnight",
+      "url": "https://news.ycombinator.com/item?id=50541430",
+      "externalUrl": null,
+      "summary": "As of yesterday, Authorization.RoleAssignments.Write (a53c8130) now shows isEnabled: false on the Power Platform API service principal (8578e004), and Authorization.Write (440ac968) was added around October and seems to be working as a replacement. Tried multiple tenants. Unsure if related to the outages but I can't find any information about this, very unusual, having to hotfix services with zero notice.",
+      "deepenKey": "50541430",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-18T03:17:19Z",
+      "ref": "I18",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "在找但没找到"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "As of yesterday, Authorization.RoleAssignments.Write (a53c8130) now shows isEnabled: false on the Power Platform API service principal (8578e004), and Authorization.Write (440ac968) was added around October and seems to be working as a replacement. Tried multiple tenants. Unsure if related to the outages but I can't find any information about this, very unusual, having to hotfix services with zero notice.",
+        "comments": [
+          {
+            "text": "Used PP since inception, in Australia. I'm used to zero notice outages, weird bugs that occur on Thursdays after their seemingly Wednesday overnight changes and the fix that seems to wait until US time, automates that look enabled following an outage but they're actually disabled, and back dated communications. Yet despite all that it's still a great platform I love to build on lol..."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [],
+        "fetchedAt": "2026-11-18T23:06:14.459Z"
+      }
+    },
+    {
+      "id": "847a5fafcb",
+      "normUrl": "https://news.ycombinator.com/item?id=50530287",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What if Elon Musk got caught having affairs with a spy and a subordinate?",
+      "url": "https://news.ycombinator.com/item?id=50530287",
+      "externalUrl": null,
+      "summary": "This is just a sliver of Levine's recent \"Money Stuff\" (Fair use !) What if Elon Musk got caught having affairs with a spy and a subordinate? Come on! 1. SpaceX’s governance structure is set up so that Musk controls the company and the board and nobody can do anything about anything.[1] So nobody would do anything about it. 2. If he thought that his affairs were disqualifying, he could resign in shame, but he absolutely would not think that and would in fact go on X to post proud naughty tweets about the whole thing. 3.",
+      "deepenKey": "50530287",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-17T12:02:01Z",
+      "ref": "I19",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "196c3b021c",
+      "normUrl": "https://news.ycombinator.com/item?id=50528548",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Anyone else feeling burnout from agentic coding?",
+      "url": "https://news.ycombinator.com/item?id=50528548",
+      "externalUrl": null,
+      "summary": "I’ve never felt burnt out ever before in 10+ years of work but lately I’ve been struggling at work. Since agentic coding: - I talk to people on my team much less. LLMs are replacing a lot of our interactions - I’m inundated with code reviews and slop documents - I barely understand PRs that I author some days as the pressure is on to ship fast Anyone else? Any advice?",
+      "deepenKey": "50528548",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 8
+      },
+      "publishedAt": "2026-11-17T07:33:39Z",
+      "ref": "I20",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "心理求助",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "affc3217c5",
+      "normUrl": "https://producthunt.com/products/mermaid-chart",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Mermaid Flow",
+      "url": "https://www.producthunt.com/products/mermaid-chart",
+      "summary": "The visual builder for agentic workflows",
+      "publishedAt": "2026-11-11T20:24:56.000Z",
+      "ref": "I21",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The visual builder for agentic workflows",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Show HN: Mermaid Flow",
+            "points": 32,
+            "url": "https://news.ycombinator.com/item?id=35130938"
+          },
+          {
+            "title": "Show HN: Ferrite – Markdown editor in Rust with native Mermaid diagram rendering",
+            "points": 241,
+            "url": "https://news.ycombinator.com/item?id=46571980"
+          }
+        ],
+        "fetchedAt": "2026-11-18T23:06:16.670Z"
+      }
+    },
+    {
+      "id": "cfeae5ed88",
+      "normUrl": "https://producthunt.com/products/pitchavatar",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Pitch Avatar HR Suite",
+      "url": "https://www.producthunt.com/products/pitchavatar",
+      "summary": "Onboarding, training & comms with conversational AI avatars",
+      "publishedAt": "2026-10-22T10:27:29.000Z",
+      "ref": "I22",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Onboarding, training & comms with conversational AI avatars",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Show HN: Vibecoders – Find software engineers that are good at vibecoding",
+            "points": 17,
+            "url": "https://news.ycombinator.com/item?id=43231978"
+          }
+        ],
+        "fetchedAt": "2026-11-18T23:06:36.734Z"
+      }
+    },
+    {
+      "id": "53465c1958",
+      "normUrl": "https://producthunt.com/products/waldo-by-wherobots",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Waldo by Wherobots",
+      "url": "https://www.producthunt.com/products/waldo-by-wherobots",
+      "summary": "The AI agent that accelerates engineering with spatial data",
+      "publishedAt": "2026-11-05T15:23:12.000Z",
+      "ref": "I23",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The AI agent that accelerates engineering with spatial data",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-18T23:06:56.701Z"
+      }
+    },
+    {
+      "id": "c75fd2ddd3",
+      "normUrl": "https://producthunt.com/products/toone",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Toone",
+      "url": "https://www.producthunt.com/products/toone",
+      "summary": "Grokbot meets n8n/zapier",
+      "publishedAt": "2026-09-23T11:02:40.000Z",
+      "ref": "I24",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "254ee41537",
+      "normUrl": "https://producthunt.com/products/s-space",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "S.Space",
+      "url": "https://www.producthunt.com/products/s-space",
+      "summary": "Your team and everyone's AI agents, in one workspace",
+      "publishedAt": "2026-11-15T13:26:16.000Z",
+      "ref": "I25",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Your team and everyone's AI agents, in one workspace",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-18T23:07:16.495Z"
+      }
+    },
+    {
+      "id": "e172561afc",
+      "normUrl": "https://producthunt.com/products/ody-ai-business-phone",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Ody Ai Business Phone",
+      "url": "https://www.producthunt.com/products/ody-ai-business-phone",
+      "summary": "Shared workspace + manageable AI agents",
+      "publishedAt": "2026-11-16T18:36:57.000Z",
+      "ref": "I26",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Shared workspace + manageable AI agents",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "LG is getting out of the mobile phone business",
+            "points": 620,
+            "url": "https://news.ycombinator.com/item?id=26694974"
+          },
+          {
+            "title": "Microsoft to Cut 2,850 More Jobs in Exit from Phone Business",
+            "points": 196,
+            "url": "https://news.ycombinator.com/item?id=12183898"
+          },
+          {
+            "title": "If AT&T Had Managed the Phone Business Like Google",
+            "points": 159,
+            "url": "https://news.ycombinator.com/item?id=28638617"
+          }
+        ],
+        "fetchedAt": "2026-11-18T23:07:36.770Z"
+      }
+    },
+    {
+      "id": "b533bf657a",
+      "normUrl": "https://producthunt.com/products/saas-toolkit-mcp",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "SaaS Toolkit MCP",
+      "url": "https://www.producthunt.com/products/saas-toolkit-mcp",
+      "summary": "An SDR and CMO on your site 24/7, for one JavaScript snippet",
+      "publishedAt": "2026-11-13T22:25:43.000Z",
+      "ref": "I27",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "An SDR and CMO on your site 24/7, for one JavaScript snippet",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Turn any app into Whatsapp with the SaaS toolkit – Applozic",
+            "points": 12,
+            "url": "https://news.ycombinator.com/item?id=11186553"
+          }
+        ],
+        "fetchedAt": "2026-11-18T23:07:56.757Z"
+      }
+    },
+    {
+      "id": "b5e6547c9b",
+      "normUrl": "https://producthunt.com/products/dusk-bot",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "dusk bot",
+      "url": "https://www.producthunt.com/products/dusk-bot",
+      "summary": "free open source Grok bot alternative",
+      "publishedAt": "2026-11-17T14:13:59.000Z",
+      "ref": "I28",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "free open source Grok bot alternative",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-18T23:08:16.524Z"
+      }
+    },
+    {
+      "id": "7e960f571a",
+      "normUrl": "https://producthunt.com/products/ai-canvas-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "AI Canvas",
+      "url": "https://www.producthunt.com/products/ai-canvas-2",
+      "summary": "A design system for AI agents to design badass interfaces",
+      "publishedAt": "2026-11-17T15:46:37.000Z",
+      "ref": "I29",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "A design system for AI agents to design badass interfaces",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-18T23:08:36.546Z"
+      }
+    },
+    {
+      "id": "21651f2ac3",
+      "normUrl": "https://producthunt.com/products/soreqen-code",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "SoreQen Code",
+      "url": "https://www.producthunt.com/products/soreqen-code",
+      "summary": "The coding agent that checks its own work",
+      "publishedAt": "2026-11-18T03:14:00.000Z",
+      "ref": "I30",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The coding agent that checks its own work",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Show HN: SlideBySide – Present slides without sharing your screen",
+            "points": 84,
+            "url": "https://news.ycombinator.com/item?id=50276883"
+          }
+        ],
+        "fetchedAt": "2026-11-18T23:08:56.912Z"
+      }
+    },
+    {
+      "id": "f17a11db0c",
+      "normUrl": "https://producthunt.com/products/happo-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Happo animation testing",
+      "url": "https://www.producthunt.com/products/happo-2",
+      "summary": "Visual regression testing, now for animations",
+      "publishedAt": "2026-11-06T02:15:40.000Z",
+      "ref": "I31",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Visual regression testing, now for animations",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-18T23:09:16.831Z"
+      }
+    },
+    {
+      "id": "e4be9abd1c",
+      "normUrl": "https://producthunt.com/products/incredible",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Incredible Agents",
+      "url": "https://www.producthunt.com/products/incredible",
+      "summary": "Fast Voice AI that sees your screen and runs your agents",
+      "publishedAt": "2026-11-17T22:02:24.000Z",
+      "ref": "I32",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Fast Voice AI that sees your screen and runs your agents",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Testing Google's Gemini Spark AI agent: it's incredible, and creepy",
+            "points": 11,
+            "url": "https://news.ycombinator.com/item?id=48372245"
+          },
+          {
+            "title": "Ask HN: What tools are you using for human code review of AI-assisted code?",
+            "points": 13,
+            "url": "https://news.ycombinator.com/item?id=49321400"
+          }
+        ],
+        "fetchedAt": "2026-11-18T23:09:36.841Z"
+      }
+    },
+    {
+      "id": "485480e578",
+      "normUrl": "https://producthunt.com/products/kino-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Kino",
+      "url": "https://www.producthunt.com/products/kino-2",
+      "summary": "Store, edit and review video with Claude Code and Codex",
+      "publishedAt": "2026-11-11T06:15:38.000Z",
+      "ref": "I33",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Store, edit and review video with Claude Code and Codex",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-18T23:09:56.598Z"
+      }
+    },
+    {
+      "id": "7b25385e29",
+      "normUrl": "https://producthunt.com/products/kadeep-ai",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "KaDeep AI",
+      "url": "https://www.producthunt.com/products/kadeep-ai",
+      "summary": "Agentic QA, localization & accessibility: know when to ship",
+      "publishedAt": "2026-11-17T08:00:01.000Z",
+      "ref": "I34",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3653bc4cf0",
+      "normUrl": "https://producthunt.com/products/bluedot-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Bluedot Phone Calls",
+      "url": "https://www.producthunt.com/products/bluedot-2",
+      "summary": "AI note taker for phone calls",
+      "publishedAt": "2026-11-14T14:21:32.000Z",
+      "ref": "I35",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "c9a3d51c8e",
+      "normUrl": "https://producthunt.com/products/linkbit",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "LinkBit",
+      "url": "https://www.producthunt.com/products/linkbit",
+      "summary": "Free URL shortener your AI agent can use (MCP + API)",
+      "publishedAt": "2026-11-17T07:57:08.000Z",
+      "ref": "I36",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "20c543c9e6",
+      "normUrl": "https://producthunt.com/products/qwen3",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Qwen4-Max",
+      "url": "https://www.producthunt.com/products/qwen3",
+      "summary": "Qwen's new flagship for long-running agent work",
+      "publishedAt": "2026-11-16T12:32:32.000Z",
+      "ref": "I37",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "c90ec66180",
+      "normUrl": "https://producthunt.com/products/lepoly",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "lepoly",
+      "url": "https://www.producthunt.com/products/lepoly",
+      "summary": "One place for all your 3D assets",
+      "publishedAt": "2026-11-17T16:39:10.000Z",
+      "ref": "I38",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "be8b77fa26",
+      "normUrl": "https://news.ycombinator.com/item?id=50552140",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Robotics needs better CAD, so I wrote a B-rep kernel and 3,487 tests",
+      "url": "https://news.ycombinator.com/item?id=50552140",
+      "externalUrl": "https://springcraft-ai.github.io/springrep/",
+      "summary": "Hey HN, I’m Tony. I’m a co-founder of Springcraft, where we have been doing a lot of CAD modeling for robot parts. Our team kept running into limitations with existing kernels, and so I decided to write a new B-rep kernel and a new comprehensive, kernel-agnostic B-rep conformance test suite. Both are available today under MIT licenses. The kernel, springrep, is written in safe Rust with no dependencies. It covers a broad range of our mechanical CAD needs, including advanced fillets, sweeps, lofts, shells, offsets, STEP and exact measurements and queries.",
+      "deepenKey": "50552140",
+      "via": null,
+      "signal": {
+        "points": 9,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-18T21:08:47Z",
+      "ref": "I39",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d4bd3cad1d",
+      "normUrl": "https://news.ycombinator.com/item?id=50551356",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Beat – a to-do list that completes its own tasks",
+      "url": "https://news.ycombinator.com/item?id=50551356",
+      "externalUrl": "https://gobeat.ai/auth/login",
+      "summary": null,
+      "deepenKey": "50551356",
+      "via": null,
+      "signal": {
+        "points": 9,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-18T20:01:45Z",
+      "ref": "I40",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "22dda9e289",
+      "normUrl": "https://news.ycombinator.com/item?id=50550700",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "KradleBench – Multi-agent AI evals in Minecraft",
+      "url": "https://news.ycombinator.com/item?id=50550700",
+      "externalUrl": "https://www.kradle.ai?1",
+      "summary": "Hi HN - This is James and Kemal. In past lives we led Firebase and Tensorflow/JAX respectively. HN has been a particularly big part of my (James’) career and the trajectory I’ve taken would be meaningfully different without it. Thank you! Our team shipped a benchmark: KradleBench. We test AI in Minecraft Worlds. 1. The worlds are multi-agent. Humans and other AIs are in there too, often pursuing their own goals. Collaboration and conflict skills fall out of this property. 2. The world are dynamic. They constantly change, which means that agents need to react.",
+      "deepenKey": "50550700",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 7
+      },
+      "publishedAt": "2026-11-18T19:14:28Z",
+      "ref": "I41",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8c41f48a14",
+      "normUrl": "https://news.ycombinator.com/item?id=50549718",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "BPM – Baby Plus Music Visualizer",
+      "url": "https://news.ycombinator.com/item?id=50549718",
+      "externalUrl": "https://hberg.com/bpm/",
+      "summary": "While reminiscing about the dancing baby meme from the mid 90s, I decided to vibe-code this music visualizer for fun. Enjoy!",
+      "deepenKey": "50549718",
+      "via": null,
+      "signal": {
+        "points": 9,
+        "comments": 5
+      },
+      "publishedAt": "2026-11-18T18:00:55Z",
+      "ref": "I42",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "21efcf41c8",
+      "normUrl": "https://news.ycombinator.com/item?id=50548660",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Mastra Factory, the open-source software factory we use to build Mastra",
+      "url": "https://news.ycombinator.com/item?id=50548660",
+      "externalUrl": null,
+      "summary": "Hi HN, we're Shane, Sam, and Abhi. Almost two years ago, we shared Mastra, our open-source TypeScript agent framework, on Show HN: https://news.ycombinator.com/item?id=43103073 . It got a few hundred upvotes; a couple of weeks later our downloads had doubled, and we were off to the races. Today we're sharing Mastra Factory, the open-source software factory we built to help maintain Mastra itself. At Mastra, we now average nearly 4M downloads per week, and with Factory our team now merges hundreds of PRs a week across the mastra-ai GitHub org.",
+      "deepenKey": "50548660",
+      "via": null,
+      "signal": {
+        "points": 74,
+        "comments": 24
+      },
+      "publishedAt": "2026-11-18T16:53:42Z",
+      "ref": "I43",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hi HN, we're Shane, Sam, and Abhi. Almost two years ago, we shared Mastra, our open-source TypeScript agent framework, on Show HN: https://news.ycombinator.com/item?id=43103073 . It got a few hundred upvotes; a couple of weeks later our downloads had doubled, and we were off to the races. Today we're sharing Mastra Factory, the open-source software factory we built to help maintain Mastra itself. At Mastra, we now average nearly 4M downloads per week, and with Factory our team now merges hundreds of PRs a week across the mastra-ai GitHub org. Last week, Factory opened and merged 238 PRs, alongside 630 merged PRs from humans. There's a lot of debate about what a software factory is. For us Factory is a configurable agentic kanban board that's @-taggable in Slack. Under the hood, it uses Mastra’s durable agents for long-running sessions, our conversational memory system, a markdown based wiki with source citations to incorporate company knowledge, signals that subscribe to PR comments wired up into sessions, and a customizable cloud sandbox with our coding harness (working on supporting Claude Code, Codex etc). When we started out, we modeled Factory around our existing workflow-oriented process (triage, plan, build, review, shipped). Three months later, we find ourselves mostly driving it through Slack vs a web UI. We’ve seen more senior engineers kick off sessions in parallel (“triage the 20 oldest issues and let’s evaluate…”). We’re using bug and vuln scanners now, and we’ve closed our repo to outside contributors, asking folks to write detailed issue repros instead. You can get started with `npm create factory`. It’s fully open-source, so you can run it entirely on your infra (we also offer a hosted version). Comment here, we would love to know what you think! https://factory.mastra.ai https://github.com/mastra-ai/template-factory",
+        "comments": [
+          {
+            "text": "> closed our repo to outside contributors I've seen this pattern happening in other open-source repos. Do you think it's going to be the norm now?"
+          },
+          {
+            "text": "Links: https://factory.mastra.ai https://github.com/mastra-ai/template-factory"
+          },
+          {
+            "text": "but you are going to disappear soon swallowed buy some guyz working for a guy called CLAUDE"
+          },
+          {
+            "text": "Excited to try. Do you have a video demoing how you use it (or just best practices for getting up and running well on my team)?"
+          },
+          {
+            "text": "What have you learned from people who use Mastra today versus what you/they were doing in the beginning?"
+          },
+          {
+            "text": "Just to clarify, as I couldn’t confirm this from the docs. Do agents run with their own identity or is it assuming engineer github identity?"
+          },
+          {
+            "text": "This needs more visuals - the kinds of people using this may not be software developers, and it seems just like a command line too at first glance unless you watch the video."
+          },
+          {
+            "text": "i'm always curious how the workflow with these factories work. like are you basically just giving it tickets and letting the ai use it's \"judgement\" on how to implement them? do you essentially say something like \"we need X\" and the agents do the rest? or is it somehow more interactive? and what about verification, particularly on the UX side of the end result?"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: Mastra Factory, the open-source software factory we use to build Mastra",
+            "points": 74,
+            "url": "https://news.ycombinator.com/item?id=50548660"
+          }
+        ],
+        "fetchedAt": "2026-11-18T23:06:15.960Z"
+      }
+    },
+    {
+      "id": "d565ab4df8",
+      "normUrl": "https://news.ycombinator.com/item?id=50548480",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Can an AI Agent Bypass Your Website Security?",
+      "url": "https://news.ycombinator.com/item?id=50548480",
+      "externalUrl": "https://assess.poh.org/",
+      "summary": "As part of our red-teaming efforts, we recently configured GPT-6 Astra to test how easily an AI agent can bypass existing bot detection and human verification systems. We built a tool that lets you run the same test on your own website: https://assess.poh.org Enter your website URL, and we'll launch an AI agent to test your workflows, record its actions, and show how we evaluate the session. Below are three recorded tests.",
+      "deepenKey": "50548480",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-18T16:40:57Z",
+      "ref": "I44",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d4dd9f4b07",
+      "normUrl": "https://news.ycombinator.com/item?id=50548161",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Take Voyager 1 apart, down to a single memory chip",
+      "url": "https://news.ycombinator.com/item?id=50548161",
+      "externalUrl": "https://rshekhar.com/voyager/",
+      "summary": "Voyager 1 reached one light-day from Earth today. On the site you can: - see where both Voyagers are right now - open a nuclear battery to its 24 plutonium spheres - go into the data computer, down to a single memory chip - see how the Golden Record's cover explains how to play it - watch how Voyager 1 was fixed by radio - see which dish on Earth is listening to them, live I also made a 4-minute film from it: https://www.youtube.com/watch?v=kpzsRo-c1_A",
+      "deepenKey": "50548161",
+      "via": null,
+      "signal": {
+        "points": 128,
+        "comments": 27
+      },
+      "publishedAt": "2026-11-18T16:18:51Z",
+      "ref": "I45",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Voyager 1 reached one light-day from Earth today. On the site you can: - see where both Voyagers are right now - open a nuclear battery to its 24 plutonium spheres - go into the data computer, down to a single memory chip - see how the Golden Record's cover explains how to play it - watch how Voyager 1 was fixed by radio - see which dish on Earth is listening to them, live I also made a 4-minute film from it: https://www.youtube.com/watch?v=kpzsRo-c1_A",
+        "comments": [
+          {
+            "text": "maybe when you show the journey you can adapt the zoom"
+          },
+          {
+            "text": "A few things are hard to find, so here are direct links: Inside a nuclear battery: https://rshekhar.com/voyager/v1/rtg-1 The data computer's memory chips: https://rshekhar.com/voyager/v1/bay-4/memories One bit of the command computer's memory: https://rshekhar.com/voyager/v1/bay-3/memory-1/plane-1/bit The Golden Record's cover: https://rshekhar.com/voyager/v1/apart/golden-record How Voyager 1 was fixed by radio: https://rshekhar.com/voyager/story/the-fix The journey past the planets: https://rshekhar.com/voyager/story/the-voyagers"
+          },
+          {
+            "text": "Nice! This appears to be vibecoded, but what was the process? Was there any original research or AI did most/all of it? Was this double checked against any authoritarive source?"
+          },
+          {
+            "text": "If you haven't seen it, this is a great documentary: https://www.youtube.com/watch?v=8vJT8AW0wYw"
+          },
+          {
+            "text": "I'd be fascinated to know the exact nature of the failure. What analog processes cause a CMOS memory IC that we like to think of as being discrete to be consistently wrong at reading its stored values? I'd like to know all the way down to the interaction between the gates and traces. Did some pathway erode due to constant interchange of charge carriers? Did thermal cycles or stress cause one of the mechanical interconnects on the package to fracture and no longer conduct? If so, which one? According to AI, one type of failure mode in those early aerospace CMOS chips was sudden parasitic current in the PNPN junction being caused by a high energy particle, shorting paths to ground melting metal. Though that sounds rare. Another option is a total ionizing dose of radiation over time, which creates electron-hole pairs in the gate oxide, leading to trapped positive charge."
+          },
+          {
+            "text": "I really enjoyed the timeline of the Voyager journeys from launch until today. Thank you for making this."
+          },
+          {
+            "text": "i dont know if it got hugged to death but i can't get anything to work, latest chrome on linux (btw i use arch)"
+          },
+          {
+            "text": "Really amazing! This is cool and learned some new things."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: Take Voyager 1 apart, down to a single memory chip",
+            "points": 130,
+            "url": "https://news.ycombinator.com/item?id=50548161"
+          }
+        ],
+        "fetchedAt": "2026-11-18T23:06:16.413Z"
+      }
+    },
+    {
+      "id": "6096cc3a83",
+      "normUrl": "https://github.com/HKUDS/CLI-Anything",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "summary": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "signal": {
+        "language": "Python",
+        "points": 384
+      },
+      "publishedAt": null,
+      "ref": "I46",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-18T23:09:56.853Z"
+      }
+    },
+    {
+      "id": "b7a6e8b9a3",
+      "normUrl": "https://github.com/astral-sh/uv",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "astral-sh/uv",
+      "url": "https://github.com/astral-sh/uv",
+      "summary": "An extremely fast Python package and project manager, written in Rust.",
+      "signal": {
+        "language": "Rust",
+        "points": 260
+      },
+      "publishedAt": null,
+      "ref": "I47",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "An extremely fast Python package and project manager, written in Rust.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-18T23:09:56.853Z"
+      }
+    },
+    {
+      "id": "2ecf0a57a8",
+      "normUrl": "https://github.com/jquery/jquery",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "jquery/jquery",
+      "url": "https://github.com/jquery/jquery",
+      "summary": "jQuery JavaScript Library",
+      "signal": {
+        "language": "JavaScript",
+        "points": 268
+      },
+      "publishedAt": null,
+      "ref": "I48",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "jQuery JavaScript Library",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "JQuery » jQuery UI v1.5 Released, Focus on Consistent API and Effects",
+            "points": 37,
+            "url": "https://news.ycombinator.com/item?id=212732"
+          },
+          {
+            "title": "Reducing Map: jQuery vs jQuery vs JavaScript",
+            "points": 36,
+            "url": "https://news.ycombinator.com/item?id=2489291"
+          },
+          {
+            "title": "Intro to jQuery: Learn jQuery with Street Fighter and Hadoukens",
+            "points": 35,
+            "url": "https://news.ycombinator.com/item?id=6794692"
+          }
+        ],
+        "fetchedAt": "2026-11-18T23:09:57.084Z"
+      }
+    },
+    {
+      "id": "d393800a98",
+      "normUrl": "https://github.com/appwrite/appwrite",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "appwrite/appwrite",
+      "url": "https://github.com/appwrite/appwrite",
+      "summary": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
+      "signal": {
+        "language": "TypeScript",
+        "points": 239
+      },
+      "publishedAt": null,
+      "ref": "I49",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Show HN: Appwrite – Open-Source and Self Hosted Firebase Alternative",
+            "points": 326,
+            "url": "https://news.ycombinator.com/item?id=30769044"
+          },
+          {
+            "title": "Show HN: Open-source Firebase Alternative? It's here",
+            "points": 153,
+            "url": "https://news.ycombinator.com/item?id=31421858"
+          },
+          {
+            "title": "Appwrite – open-source Firebase goes stable with 1.0",
+            "points": 34,
+            "url": "https://news.ycombinator.com/item?id=32851256"
+          }
+        ],
+        "fetchedAt": "2026-11-18T23:09:57.379Z"
+      }
+    },
+    {
+      "id": "c668885413",
+      "normUrl": "https://github.com/openvinotoolkit/openvino",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "openvinotoolkit/openvino",
+      "url": "https://github.com/openvinotoolkit/openvino",
+      "summary": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+      "signal": {
+        "language": "C++",
+        "points": 18
+      },
+      "publishedAt": null,
+      "ref": "I50",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-18T23:09:58.054Z"
+      }
+    },
+    {
+      "id": "f791d596ac",
+      "normUrl": "https://github.com/n8n-io/n8n",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "summary": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "signal": {
+        "language": "TypeScript",
+        "points": 315
+      },
+      "publishedAt": null,
+      "ref": "I51",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-18T23:09:57.379Z"
+      }
+    },
+    {
+      "id": "0edb74315f",
+      "normUrl": "https://github.com/solidjs/solid",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "solidjs/solid",
+      "url": "https://github.com/solidjs/solid",
+      "summary": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+      "signal": {
+        "language": "TypeScript",
+        "points": 37
+      },
+      "publishedAt": null,
+      "ref": "I52",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 5,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Show HN: Mochia, a virtual pet browser game, built with Rust, SolidJS, Postgres",
+            "points": 24,
+            "url": "https://news.ycombinator.com/item?id=44457069"
+          },
+          {
+            "title": "Solid 2.0 RC: The Big <Reveal>",
+            "points": 10,
+            "url": "https://news.ycombinator.com/item?id=49289916"
+          }
+        ],
+        "fetchedAt": "2026-11-18T23:09:57.856Z"
+      }
+    },
+    {
+      "id": "7d9153c0bf",
+      "normUrl": "https://github.com/punkpeye/awesome-mcp-servers",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "punkpeye/awesome-mcp-servers",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "summary": "A collection of MCP servers.",
+      "signal": {
+        "language": null,
+        "points": 52
+      },
+      "publishedAt": null,
+      "ref": "I53",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 7,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "A collection of MCP servers.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "ESP32 MCP Server",
+            "points": 13,
+            "url": "https://news.ycombinator.com/item?id=44071908"
+          },
+          {
+            "title": "Show HN: Anthropic's MCP Server Directory",
+            "points": 11,
+            "url": "https://news.ycombinator.com/item?id=42443069"
+          }
+        ],
+        "fetchedAt": "2026-11-18T23:09:57.587Z"
+      }
+    },
+    {
+      "id": "7e154e38cc",
+      "normUrl": "https://trends.vc/why-does-1000-of-new-mrr-cap-out-at-20000",
+      "sourceId": "trendsvc",
+      "source": "Trends.vc",
+      "sourceHome": "https://trends.vc/",
+      "side": "trend",
+      "pool": false,
+      "title": "🧮 Why Does $1,000 of New MRR Cap Out at $20,000?",
+      "url": "https://trends.vc/why-does-1000-of-new-mrr-cap-out-at-20000/",
+      "summary": "This week’s Founder Finds includes: 🪙 An AI token optimizer🏢 Selling AI enablement🧮 SaaS revenue ceilings🤝 An AI networking platform📨 A bootstrapped email tool with $30M ARR➡️ And more… 🪶 REMEMBER THIS: If you want to do great work, find work you love doing. 🤓 FAV FINDS Tools, tweets and more from Trends Pro Members … Continue reading 🧮 Why Does $1,000 of New MRR Cap Out at $20,000? → The post 🧮 Why Does $1,000 of New MRR Cap Out at $20,000? appeared first on Trends.vc .",
+      "publishedAt": "2026-11-18T01:42:39.000Z",
+      "ref": "I54",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "附录源，不参与评选",
+        "hits": []
+      },
+      "candidate": false
+    }
+  ],
+  "deepenedAt": "2026-11-18T23:09:58.054Z"
+}

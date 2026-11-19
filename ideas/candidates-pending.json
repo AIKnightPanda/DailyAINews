@@ -1,21 +1,21 @@
 {
-  "fetchedAt": "2026-11-18T23:06:12.286Z",
+  "fetchedAt": "2026-11-19T23:12:22.638Z",
   "windowDays": 3,
-  "windowUntil": "2026-11-19T23:59:59.000Z",
+  "windowUntil": "2026-11-20T23:59:59.000Z",
   "sources": [
     {
       "id": "somebodymakethis",
       "name": "r/SomebodyMakeThis",
       "status": "error",
       "pool": true,
-      "error": "HTTP 404：2026-11-18T22:55:44Z https://rss.reddit.com/ Not Found"
+      "error": "HTTP 404：2026-11-19T23:01:08Z https://rss.reddit.com/ Not Found"
     },
     {
       "id": "reddit-search",
       "name": "Reddit 需求短语",
       "status": "error",
       "pool": true,
-      "error": "全部短语失败：is there an app that（HTTP 404：2026-11-18T22:56:09Z https://rs）；is there a tool that（HTTP 404：2026-11-18T22:57:19Z https://rs）；someone should build（HTTP 404：2026-11-18T22:58:04Z https://rs）；we still use spreadsheets（HTTP 404：2026-11-18T22:59:15Z https://rs）"
+      "error": "全部短语失败：is there an app that（HTTP 404：2026-11-19T23:02:18Z https://rs）；is there a tool that（HTTP 404：2026-11-19T23:03:04Z https://rs）；someone should build（HTTP 404：2026-11-19T23:04:14Z https://rs）；we still use spreadsheets（HTTP 404：2026-11-19T23:05:24Z https://rs）"
     },
     {
       "id": "softwarerecs",
@@ -43,28 +43,28 @@
       "name": "Reddit 付费信号",
       "status": "error",
       "pool": true,
-      "error": "全部短语失败：we currently pay（HTTP 404：2026-11-18T23:00:00Z https://rs）；we are paying for（HTTP 404：2026-11-18T23:01:10Z https://rs）；quoted us（HTTP 404：2026-11-18T23:02:21Z https://rs）；per seat per month（HTTP 404：2026-11-18T23:03:06Z https://rs）"
+      "error": "全部短语失败：we currently pay（HTTP 404：2026-11-19T23:06:10Z https://rs）；we are paying for（HTTP 404：2026-11-19T23:07:20Z https://rs）；quoted us（HTTP 404：2026-11-19T23:08:05Z https://rs）；per seat per month（HTTP 404：2026-11-19T23:09:16Z https://rs）"
     },
     {
       "id": "msp",
       "name": "r/msp",
       "status": "error",
       "pool": true,
-      "error": "HTTP 404：2026-11-18T23:04:16Z https://rss.reddit.com/ Not Found"
+      "error": "HTTP 404：2026-11-19T23:10:01Z https://rss.reddit.com/ Not Found"
     },
     {
       "id": "sysadmin",
       "name": "r/sysadmin",
       "status": "error",
       "pool": true,
-      "error": "HTTP 404：2026-11-18T23:05:01Z https://rss.reddit.com/ Not Found"
+      "error": "HTTP 404：2026-11-19T23:11:12Z https://rss.reddit.com/ Not Found"
     },
     {
       "id": "microsaas",
       "name": "r/microsaas",
       "status": "error",
       "pool": true,
-      "error": "HTTP 404：2026-11-18T23:06:12Z https://rss.reddit.com/ Not Found"
+      "error": "HTTP 404：2026-11-19T23:12:22Z https://rss.reddit.com/ Not Found"
     },
     {
       "id": "ycrfs",
@@ -77,7 +77,7 @@
       "id": "trendsvc",
       "name": "Trends.vc",
       "status": "ok",
-      "items": 1,
+      "items": 2,
       "pool": false
     },
     {
@@ -91,25 +91,165 @@
       "id": "showhn",
       "name": "Show HN",
       "status": "ok",
-      "items": 7,
+      "items": 3,
       "pool": true
     },
     {
       "id": "github-trending",
       "name": "GitHub Trending",
       "status": "ok",
-      "items": 20,
+      "items": 16,
       "pool": true
     },
     {
       "id": "consoledev",
       "name": "Console.dev",
       "status": "ok",
-      "items": 10,
+      "items": 9,
       "pool": true
     }
   ],
   "items": [
+    {
+      "id": "af7b26eecc",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/88369/prioritise-categorise-and-share-to-do-list",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Prioritise, categorise and share To Do list",
+      "url": "https://softwarerecs.stackexchange.com/questions/88369/prioritise-categorise-and-share-to-do-list",
+      "summary": "I'm looking for a way of creating a To Do list. There are 4 of us in my team and each person will have a list of tasks. I want to set a priority and category to each task and have each assigned to one of us. I'd like to be able to see all tasks in a single list and also be able to filter them by team member, priority and category. Ideally, I'd like to be able to add notes in an individual task. I could do it in Excel but wondered if there is any software that does it out of the box. Also, I work for the health service and paid software won't be an option unfortunately. Thanks.",
+      "deepenKey": "88369",
+      "signal": {
+        "score": 1,
+        "views": 85,
+        "answers": 2,
+        "unanswered": true
+      },
+      "publishedAt": "2023-11-16T19:46:19.000Z"
+    },
+    {
+      "id": "aeb52ceab1",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/91274/open-source-google-keep-alternatives",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Open-source Google Keep alternatives?",
+      "url": "https://softwarerecs.stackexchange.com/questions/91274/open-source-google-keep-alternatives",
+      "summary": "Is there any comparable alternative to Google's Keep? Features I require: notes must support including images (via copy and paste) and other files (PDFs) and treat them as attachments/image gallery, not necessarily inline (because there may be many images/large images) notes, images and PDFs must be indexed/searchable (via OCR (ie easyocr)) I wrote a note taking app with integrated live search ( https://github.com/jjYBdx4IL/ajax-solnotes ), but abandoned it because Google Keep does perfect OCR on images, which I can just copy and paste into notes there.",
+      "deepenKey": "91274",
+      "signal": {
+        "score": 3,
+        "views": 481,
+        "answers": 2,
+        "unanswered": true
+      },
+      "publishedAt": "2024-10-06T13:02:19.000Z"
+    },
+    {
+      "id": "ceba9834ca",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/87165/gui-for-editing-multiple-json-files",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "GUI for editing multiple JSON files",
+      "url": "https://softwarerecs.stackexchange.com/questions/87165/gui-for-editing-multiple-json-files",
+      "summary": "I am looking to edit JSON files in bulk / batch. I know I can do this programmatically, or do find/replaces across files, but I am hoping to find a friendlier GUI that allows me to do things across a selection of files like: editing a certain key: adding a key nice to have: seeing stats of the value of a specific key to quickly spot typo's Is there something available like this for any OS, or as a webapp?",
+      "deepenKey": "87165",
+      "signal": {
+        "score": 1,
+        "views": 3035,
+        "answers": 2,
+        "unanswered": true
+      },
+      "publishedAt": "2023-05-29T14:30:18.000Z"
+    },
+    {
+      "id": "b3f03e2f59",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/52291/meal-planning-app-with-grocery-list-and-custom-meal-types",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Meal planning app with grocery list and custom meal types",
+      "url": "https://softwarerecs.stackexchange.com/questions/52291/meal-planning-app-with-grocery-list-and-custom-meal-types",
+      "summary": "I am looking for a meal planner application Features: adding my own recipies defining meals for each week day, e.g., tom yam soup on Friday lunch generating grocery list from the ingredients defined meals defining meal types: breakfast, second breakfast, lunch, etc. Target platform : Windows or online Paid versions : I am fine if the application is not free. What would you recommend? I have found Paprika , but version for Windows does not offer defining meal types.",
+      "deepenKey": "52291",
+      "signal": {
+        "score": 3,
+        "views": 54,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2018-09-21T00:52:40.000Z"
+    },
+    {
+      "id": "54a20e35ec",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95817/lookin-for-the-best-battery-app",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Lookin for the Best Battery App",
+      "url": "https://softwarerecs.stackexchange.com/questions/95817/lookin-for-the-best-battery-app",
+      "summary": "Mainly to alert me when my battery is critically low",
+      "deepenKey": "95817",
+      "signal": {
+        "score": 0,
+        "views": 3,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2026-11-19T21:23:54.000Z"
+    },
+    {
+      "id": "7b1fe3aafe",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/53313/free-software-to-record-webcam-on-windows-that-will-keep-recording-in-background",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Free software to record webcam on Windows that will keep recording in background and even if the computer in locked",
+      "url": "https://softwarerecs.stackexchange.com/questions/53313/free-software-to-record-webcam-on-windows-that-will-keep-recording-in-background",
+      "summary": "Please recommend me a free software that can record video from webcam on a Windows computer. I have tried ScreenToGif to record from webcam but it requires the program to be in foreground. If it is minimized or you open another window or lock the computer, it won't record the webcam. So my requirement is a program what will keep recording in background (i.e. with other windows or programs in forefront, e.g. a browser) and even if the computer in locked.",
+      "deepenKey": "53313",
+      "signal": {
+        "score": 2,
+        "views": 448,
+        "answers": 3,
+        "unanswered": true
+      },
+      "publishedAt": "2018-11-22T20:44:57.000Z"
+    },
+    {
+      "id": "fc0ea8ed20",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95812/how-to-transfer-photos-from-icloud-photos-to-google-drive",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "How to Transfer Photos from iCloud Photos to Google Drive",
+      "url": "https://softwarerecs.stackexchange.com/questions/95812/how-to-transfer-photos-from-icloud-photos-to-google-drive",
+      "summary": "I'm looking for a convenient way to transfer photos from iCloud Photos to Google Drive. I have photos stored in my Apple account and want to move a copy of them to Google Drive so I can access and manage them more easily across different devices. I've been exploring different options, including downloading photos from iCloud and uploading them manually, but that can become time-consuming when dealing with a large photo library. I also came across All Cloud Hub , a multi-cloud management platform available as a web app and mobile apps for iOS and Android.",
+      "deepenKey": "95812",
+      "signal": {
+        "score": 0,
+        "views": 13,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2026-11-19T11:06:06.000Z"
+    },
     {
       "id": "ce76744431",
       "normUrl": "https://softwarerecs.stackexchange.com/questions/95804/what-software-can-help-me-organize-and-manage-personal-files-stored-across-multi",
@@ -124,11 +264,51 @@
       "deepenKey": "95804",
       "signal": {
         "score": 0,
-        "views": 3,
+        "views": 14,
         "answers": 0,
         "unanswered": true
       },
       "publishedAt": "2026-11-18T11:58:51.000Z"
+    },
+    {
+      "id": "cca25b10d2",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/82383/does-anyone-know-of-a-swiftui-compiler",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Does anyone know of a SwiftUI compiler?",
+      "url": "https://softwarerecs.stackexchange.com/questions/82383/does-anyone-know-of-a-swiftui-compiler",
+      "summary": "I do not want something big to download, like Xcode, but I want an online SwiftUI compiler that I can open from my browser.",
+      "deepenKey": "82383",
+      "signal": {
+        "score": 2,
+        "views": 2412,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2022-03-03T13:59:13.000Z"
+    },
+    {
+      "id": "82d95a3995",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95347/apache-nginx-log-file-analysis-tool-that-allows-drilling-down-to-individual-urls",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Apache/Nginx log file analysis tool that allows drilling down to individual URLs with web UI",
+      "url": "https://softwarerecs.stackexchange.com/questions/95347/apache-nginx-log-file-analysis-tool-that-allows-drilling-down-to-individual-urls",
+      "summary": "I'm aware of things like AWStats and GoAccess, but neither of them really provide quite what I'm looking for in a logfile analysis tool. Basically, it seems to me that it should be relatively simple to regularly parse access logfiles, stick them in a SQLite database, and allow a web interface to be pretty flexible based on being able to query that DB. For instance, if I have a panel showing a list of different URLs retrieved by number of hits, I may want to click on one and drill down to see a graph over time of just that URL.",
+      "deepenKey": "95347",
+      "signal": {
+        "score": 0,
+        "views": 17,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2026-04-26T19:12:06.000Z"
     },
     {
       "id": "24e679583f",
@@ -144,7 +324,7 @@
       "deepenKey": "75816",
       "signal": {
         "score": 1,
-        "views": 2498,
+        "views": 2499,
         "answers": 1,
         "unanswered": true
       },
@@ -164,7 +344,7 @@
       "deepenKey": "95787",
       "signal": {
         "score": 0,
-        "views": 25,
+        "views": 34,
         "answers": 0,
         "unanswered": true
       },
@@ -184,7 +364,7 @@
       "deepenKey": "25136",
       "signal": {
         "score": 3,
-        "views": 96,
+        "views": 97,
         "answers": 0,
         "unanswered": true
       },
@@ -204,7 +384,7 @@
       "deepenKey": "52679",
       "signal": {
         "score": 3,
-        "views": 467,
+        "views": 468,
         "answers": 1,
         "unanswered": true
       },
@@ -264,7 +444,7 @@
       "deepenKey": "95777",
       "signal": {
         "score": 1,
-        "views": 44,
+        "views": 46,
         "answers": 0,
         "unanswered": true
       },
@@ -284,7 +464,7 @@
       "deepenKey": "77058",
       "signal": {
         "score": 0,
-        "views": 34,
+        "views": 36,
         "answers": 1,
         "unanswered": true
       },
@@ -304,7 +484,7 @@
       "deepenKey": "95778",
       "signal": {
         "score": 0,
-        "views": 20,
+        "views": 24,
         "answers": 2,
         "unanswered": true
       },
@@ -344,7 +524,7 @@
       "deepenKey": "79455",
       "signal": {
         "score": 1,
-        "views": 615,
+        "views": 617,
         "answers": 3,
         "unanswered": true
       },
@@ -364,7 +544,7 @@
       "deepenKey": "78624",
       "signal": {
         "score": 1,
-        "views": 68,
+        "views": 69,
         "answers": 0,
         "unanswered": true
       },
@@ -404,7 +584,7 @@
       "deepenKey": "34199",
       "signal": {
         "score": 2,
-        "views": 587,
+        "views": 588,
         "answers": 1,
         "unanswered": true
       },
@@ -424,191 +604,331 @@
       "deepenKey": "95785",
       "signal": {
         "score": 0,
-        "views": 31,
+        "views": 35,
         "answers": 0,
         "unanswered": true
       },
       "publishedAt": "2026-11-12T09:33:02.000Z"
     },
     {
-      "id": "35884fafef",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/17361/chrome-extension-to-show-page-size-in-the-title-bar",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "id": "737809b56c",
+      "normUrl": "https://news.ycombinator.com/item?id=50566487",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "Chrome extension to show page size in the title bar",
-      "url": "https://softwarerecs.stackexchange.com/questions/17361/chrome-extension-to-show-page-size-in-the-title-bar",
-      "summary": "I'd like to get familiar with how large 'average' webpages are, but I don't want to dig for the information. Must: Run on Chrome latest (64-bit) on OS X 10.10 Tell me, at page load, how much data was downloaded to render the page Be easily accessible, I.e. not have to open the dev tools to get to it. Display sizes in human-friendly format - 980 kB , not 980709 bytes Should: Include data downloaded after page load, but I'm not as concerned about that. Ideally live in the title bar, to the right of the url bar.",
-      "deepenKey": "17361",
+      "title": "Anthropic should give stock to Stack Overflow (and OpenAI too)",
+      "url": "https://news.ycombinator.com/item?id=50566487",
+      "externalUrl": null,
+      "summary": "Anthropic and OpenAI should give Stack Overflow a percentage of their company. They used all of Stack Overflow's data to train their AI models at the beginning of LLMs without paying for it because it was publicly available online. ChatGPT and Claude would not exist today without the 24 million coding questions and 36 million answers with code examples included, all created by real humans who took the time to write the questions and answers. Stack Overflow deserves to be rewarded for making Anthropic and OpenAI such a success.",
+      "deepenKey": "50566487",
+      "via": null,
       "signal": {
-        "score": 6,
-        "views": 347,
-        "answers": 1,
-        "unanswered": true
+        "points": 4,
+        "comments": 2
       },
-      "publishedAt": "2015-02-20T15:11:00.000Z"
+      "publishedAt": "2026-11-19T21:15:17Z"
     },
     {
-      "id": "03215ac7bc",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/2865/alternative-to-google-calendar-embedding-with-permissions-restrictions-and-pri",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "id": "6a357411b4",
+      "normUrl": "https://news.ycombinator.com/item?id=50565484",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "Alternative to Google Calendar embedding with permissions, restrictions, and privacy options",
-      "url": "https://softwarerecs.stackexchange.com/questions/2865/alternative-to-google-calendar-embedding-with-permissions-restrictions-and-pri",
-      "summary": "I have a Google calendar account and wanted to embed the calendar onto my webpage. I have secured the webpage so that only authorized users can see it however, I discovered that Google make calendars searchable therefore even by hiding my calendar this won't help unauthorized users looking for my calendar without permission. There is the option to make the calendar private however this option won't help authorized users to know where I am/what I am doing. Is there a way in which I can embed a Google calendar securely onto a specific webpage?",
-      "deepenKey": "2865",
+      "title": "Where do you see Software in 5 years?",
+      "url": "https://news.ycombinator.com/item?id=50565484",
+      "externalUrl": null,
+      "summary": "I wanted to hear some good opinions on all things AI and how they transform the Software industry. I'm anxious about the future and lack the foresight to form any opinion on what to do next. For context, I'm a L4 SWE that has more or less say 5-10 yrs of exp. I've enjoyed my work throughout my career, AI makes me ship more, much more than I could do 3 years ago. I feel I use it well and it translates into really good software. That said, what do you think happens in years to come with the Software industry in general? Do you think we'll go through a massive erosion of jobs?",
+      "deepenKey": "50565484",
+      "via": null,
       "signal": {
-        "score": 5,
-        "views": 574,
-        "answers": 2,
-        "unanswered": true
+        "points": 9,
+        "comments": 9
       },
-      "publishedAt": "2014-03-31T19:07:39.000Z"
+      "publishedAt": "2026-11-19T20:01:18Z"
     },
     {
-      "id": "a5a4f11618",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/55258/video-call-app-with-60fps-support",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "id": "096a8fe7c4",
+      "normUrl": "https://news.ycombinator.com/item?id=50564979",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "Video call app with 60FPS support",
-      "url": "https://softwarerecs.stackexchange.com/questions/55258/video-call-app-with-60fps-support",
-      "summary": "I am looking for a video call app which supports 60FPS. It's not necessary, but would be nice, if it comes with cross-platform client support. There may not be a direct comparison, but with the advent and abundance of 60FPS videos, I am wondering if there's a video call app which supports 60FPS in real time. Internet bandwidth and latency is not a constraint.",
-      "deepenKey": "55258",
+      "title": "Who Is Hiring? (November 2026 – We Give a Shit Edition)",
+      "url": "https://news.ycombinator.com/item?id=50564979",
+      "externalUrl": null,
+      "summary": "This is a bit of a tongue-in-cheek. Since reading the \"We need smart people who give a shit\" story (https://news.ycombinator.com/item?id=50554045), and the comments underneath it, I realise that there is a good deal of engineers who are disgruntled by how AI is incompatible with smart people who give a shit, how it is turning us into meat proxies and Letzter Mensch.",
+      "deepenKey": "50564979",
+      "via": null,
       "signal": {
-        "score": 3,
-        "views": 1712,
-        "answers": 1,
-        "unanswered": true
+        "points": 6,
+        "comments": 1
       },
-      "publishedAt": "2019-01-24T09:04:18.000Z"
+      "publishedAt": "2026-11-19T19:26:56Z"
     },
     {
-      "id": "109d07c438",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/95776/looking-for-specfic-3d-model-manipulation-software-with-not-yet-released-kicksta",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "id": "2a92e8f73f",
+      "normUrl": "https://news.ycombinator.com/item?id=50562528",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "Looking for specfic 3D model manipulation software with not-yet-released Kickstarter campaign",
-      "url": "https://softwarerecs.stackexchange.com/questions/95776/looking-for-specfic-3d-model-manipulation-software-with-not-yet-released-kicksta",
-      "summary": "I've been lucky in a number of Kickstarter campaigns, especially the software stuff and the model creator stuff. Recently, but long enough ago that I've lost that segment of my memory, I was presented with a Kickstarter notification that a new campaign was to be expected. This was for a modeling program that allows one to designate locations on a 3D model. Those locations would then be \"adjustable\" in a full three axis manner and the software would meld the movements in a smooth manner. One of the examples used was a model of a warrior-looking character.",
-      "deepenKey": "95776",
+      "title": "Anthropic (ANT) stock lists at nearly $2T valuation",
+      "url": "https://news.ycombinator.com/item?id=50562528",
+      "externalUrl": null,
+      "summary": "Anthropic (ANT) stock listed at nearly $2 Trillion valuation. It is the biggest IPO ever!",
+      "deepenKey": "50562528",
+      "via": null,
       "signal": {
-        "score": 0,
-        "views": 25,
-        "answers": 0,
-        "unanswered": true
+        "points": 39,
+        "comments": 11
       },
-      "publishedAt": "2026-11-08T22:44:03.000Z"
+      "publishedAt": "2026-11-19T16:47:32Z"
     },
     {
-      "id": "b88a4d8d35",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/64807/which-mesh-processing-library-for-python-to-chose",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "id": "ba269c0e99",
+      "normUrl": "https://news.ycombinator.com/item?id=50561571",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "Which mesh processing library for python to chose",
-      "url": "https://softwarerecs.stackexchange.com/questions/64807/which-mesh-processing-library-for-python-to-chose",
-      "summary": "for a project I'm writing I need a library for python to process \".off\" files (3d models mesh files), so I would be able to visualize them and save an image of several views of the model . (the visualization is for that purpose, I just didn't find a lib with such option) I found the following libraries, and they seem fine but I'm not sure what to chose: PyMesh OpenMesh TriMesh Open3d Can you recommend on another library or which of the ones here is preferred?",
-      "deepenKey": "64807",
+      "title": "GitLab 19.6.0 is out and still vulnerable to Ruby2Shell and NGINX2Root",
+      "url": "https://news.ycombinator.com/item?id=50561571",
+      "externalUrl": null,
+      "summary": "What's going on at GitLab? They released their usual monthly release 19.6.0 to their package repos (https://packages.gitlab.com/gitlab/gitlab-ee/ubuntu/jammy/pool/main/g/gitlab-ee/) but did not announce it at all as of 3.5h after release (https://docs.gitlab.com/releases/all-releases.xml, https://docs.gitlab.com/releases/19/gitlab-19-6-released/). But more annoyingly, this release does not address ruby2shell or nginx2root, nor do patches for their older releases exist yet and there's no communication on any of this (that I can find).",
+      "deepenKey": "50561571",
+      "via": null,
       "signal": {
-        "score": 5,
-        "views": 4402,
-        "answers": 1,
-        "unanswered": true
+        "points": 22,
+        "comments": 6
       },
-      "publishedAt": "2019-07-17T14:50:08.000Z"
+      "publishedAt": "2026-11-19T15:42:26Z"
     },
     {
-      "id": "2298cc62a5",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/26780/software-for-managing-blog-on-blogger",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "id": "b6640a23e8",
+      "normUrl": "https://news.ycombinator.com/item?id=50560946",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "Software for managing blog on Blogger",
-      "url": "https://softwarerecs.stackexchange.com/questions/26780/software-for-managing-blog-on-blogger",
-      "summary": "I need an application for managing my blog on Blogger . Ideally the software should have the following features/characteristics: Supports Blogger platform. Text editor that supports Markdown and LaTeX if possible. Markdown preview is optional but highly appreciated. The software should be able to work offline and lets you save offline drafts. Drafts should be available to be sent by email or to be exported as a .txt or .md document format. Available for Windows and Linux . (Linux only is fine too.) Available for tablet (either iOS or Android is fine).",
-      "deepenKey": "26780",
+      "title": "Does Liquidity Drive the Stock Market? We Tested 22 Years of Fed Data",
+      "url": "https://news.ycombinator.com/item?id=50560946",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50560946",
+      "via": null,
       "signal": {
-        "score": 1,
-        "views": 45,
-        "answers": 0,
-        "unanswered": true
+        "points": 3,
+        "comments": 0
       },
-      "publishedAt": "2015-11-27T19:46:35.000Z"
+      "publishedAt": "2026-11-19T14:56:23Z"
     },
     {
-      "id": "84684df673",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/9800/bookmarking-service-with-webpage-screenshot",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "id": "36426bb45d",
+      "normUrl": "https://news.ycombinator.com/item?id=50560915",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "Bookmarking service with webpage screenshot",
-      "url": "https://softwarerecs.stackexchange.com/questions/9800/bookmarking-service-with-webpage-screenshot",
-      "summary": "I’m looking for a bookmarking service similar to Pinboard , but with screenshots of the webpages. Key factors I’m looking for: Clean/simple UI Transparent and reliable founders/dev Reasonably priced (not above $5/month) Maintained Thumbnail or larger screenshot of bookmarked URL I have checked the following services, but they don't comply with the above: Delicious Diigo Gimmebar Google Bookmarks Historio.us Kippt LinkBoard Miitla Mr. Wong Pearltrees StashMarks Zootool",
-      "deepenKey": "9800",
+      "title": "When was the last time you thought \"that's bad API design\"?",
+      "url": "https://news.ycombinator.com/item?id=50560915",
+      "externalUrl": null,
+      "summary": "I used to be irrationally impressed when I saw good API design and docs. Now I can't remember the last time I sat down and spent meaningful time reading docs for a platform. I've just gotten in the habit of pointing Claude at them or using a service like Context7 for the past year or so. As a consumer, I've realized that I'm not even sure which services I use that have good or badly designed APIs. If you maintain an API, have you changed how you write docs now that the main reader is probably an LLM?",
+      "deepenKey": "50560915",
+      "via": null,
       "signal": {
-        "score": 4,
-        "views": 419,
-        "answers": 2,
-        "unanswered": true
+        "points": 4,
+        "comments": 1
       },
-      "publishedAt": "2014-07-14T14:33:39.000Z"
+      "publishedAt": "2026-11-19T14:53:34Z"
     },
     {
-      "id": "2a9db41717",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/20815/email-an-sms-or-sms-thread",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "id": "3d2c82cbbd",
+      "normUrl": "https://news.ycombinator.com/item?id=50560575",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "Email an SMS or SMS thread",
-      "url": "https://softwarerecs.stackexchange.com/questions/20815/email-an-sms-or-sms-thread",
-      "summary": "I am looking for a free Android application that allows me to email a given SMS or SMS thread with my Gmail account. The email should be easily readable by a human (i.e. not wordy XML). Email My Texts fits the requirements but isn't free.",
-      "deepenKey": "20815",
+      "title": "Rant: Gemini 4 does not make any sense",
+      "url": "https://news.ycombinator.com/item?id=50560575",
+      "externalUrl": null,
+      "summary": "On November 18th, Google released another model, this one called Neon. Making it the fourth model in just 2 months. OpenAI makes sense: Luna-Terra-Sol-Astra. Moon is smaller than earth, earth is smaller than sun and I can forgive them for not knowing that sun is also a star. Anthropic is even better: Haiku-Sonnet-Opus-Mythos/Fable. Haiku is an extremely short poem, Sonnet is a bit longer, Opus is very long and Mythos is extremely long. Ok, Fable does not exactly really fit in there, but they came up with it after they only had the three models, so we had time to adjust.",
+      "deepenKey": "50560575",
+      "via": null,
       "signal": {
-        "score": 2,
-        "views": 44,
-        "answers": 0,
-        "unanswered": true
+        "points": 6,
+        "comments": 7
       },
-      "publishedAt": "2015-07-01T22:09:59.000Z"
+      "publishedAt": "2026-11-19T14:28:11Z"
     },
     {
-      "id": "ed5ae52b9b",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/80985/request-data-from-rest-api-in-json-format-in-c",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "id": "e1b839470c",
+      "normUrl": "https://news.ycombinator.com/item?id=50560324",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "Request data from REST API in JSON format in C++",
-      "url": "https://softwarerecs.stackexchange.com/questions/80985/request-data-from-rest-api-in-json-format-in-c",
-      "summary": "I have one application were I need to request data from REST API in Json format and send Json Data to Cloud using REST API in C++. I googled but I find very few resources As I am new to C++ coding From where should I start , How to use dummy database to call the JSon message through Rest API",
-      "deepenKey": "80985",
+      "title": "Why is China treated as threat-actor but not India?",
+      "url": "https://news.ycombinator.com/item?id=50560324",
+      "externalUrl": null,
+      "summary": "Why do people balk at someone saying that the actions of India/Indians are a negative vector for technology but you can unblinkingly say China/Chinese in the same breath and they will agree? Doublethink/it's 1984/people are gullible cretins are not acceptable answers.",
+      "deepenKey": "50560324",
+      "via": null,
       "signal": {
-        "score": 0,
-        "views": 1639,
-        "answers": 1,
-        "unanswered": true
+        "points": 8,
+        "comments": 15
       },
-      "publishedAt": "2021-10-20T06:43:31.000Z"
+      "publishedAt": "2026-11-19T14:09:04Z"
+    },
+    {
+      "id": "14a1d49349",
+      "normUrl": "https://news.ycombinator.com/item?id=50558285",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How do you manage the curse of rabbit hole?",
+      "url": "https://news.ycombinator.com/item?id=50558285",
+      "externalUrl": null,
+      "summary": "I know that I can ask llm however, asking to real people still the best way to get an insight, Prolog: sometimes I do wonder , the best technical decision, best executive CEO as steve blank called, I notice they usually don't have that much information, while I struggle with so much information (I do love learning as that a curse) causing analysis paralyzed, what kind of method or strategy do you have be it technical or intuition based ? Thank you for discussion.",
+      "deepenKey": "50558285",
+      "via": null,
+      "signal": {
+        "points": 9,
+        "comments": 7
+      },
+      "publishedAt": "2026-11-19T10:21:56Z"
+    },
+    {
+      "id": "cd796f9a3c",
+      "normUrl": "https://news.ycombinator.com/item?id=50556046",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Every one of my \"show\" posts is removed immediately",
+      "url": "https://news.ycombinator.com/item?id=50556046",
+      "externalUrl": null,
+      "summary": "anyone else experience this? i think, wow i’ve got this neat project im working on that this community might actually find interesting. spend time writing the post only to get it immediately removed seconds later. kind of makes me just generally not want to post projects here.",
+      "deepenKey": "50556046",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 12
+      },
+      "publishedAt": "2026-11-19T04:20:28Z"
+    },
+    {
+      "id": "5f16696a85",
+      "normUrl": "https://news.ycombinator.com/item?id=50555002",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Tips for transitioning from web development to embedded/firmware?",
+      "url": "https://news.ycombinator.com/item?id=50555002",
+      "externalUrl": null,
+      "summary": "I started my career 15+ years ago doing native development (c, c++, etc), but the last decade I've been doing fullstack web applications. I'd like to transition closer to my roots with a job doing primarily c, c++ or rust. The natural place seems to be in embedded development or firmware work. How feasible is the transition this late in the game? Any advice?",
+      "deepenKey": "50555002",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 5
+      },
+      "publishedAt": "2026-11-19T01:37:45Z"
+    },
+    {
+      "id": "fd505faa8c",
+      "normUrl": "https://news.ycombinator.com/item?id=50554756",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "/tmp is hogging your RAM on Ubuntu 26",
+      "url": "https://news.ycombinator.com/item?id=50554756",
+      "externalUrl": null,
+      "summary": "As a Ubuntu user, it was just brought to my attention that /tmp is now mounted on tmpfs (aka your RAM). Coding agents, like Claude Code, use /tmp as a scratchpad for files, model weights, etc. Therefore, if you have RAM constraints, consider setting CLAUDE_CODE_TMPDIR to e.g. ~/.claude/tmp",
+      "deepenKey": "50554756",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-19T01:13:06Z"
+    },
+    {
+      "id": "455bd71a33",
+      "normUrl": "https://news.ycombinator.com/item?id=50554686",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "When does your app need its own UI vs. using it via MCP?",
+      "url": "https://news.ycombinator.com/item?id=50554686",
+      "externalUrl": null,
+      "summary": "I'd love to hear HN user's views on when they think an app their building needs a UI vs just supplies data via MCP to Claude/ChatGPT. If Claude/ChatGPT is where the bulk of work is done in the future (perhaps analogous to a general purpose computer) then how should app developers build in this world?",
+      "deepenKey": "50554686",
+      "via": null,
+      "signal": {
+        "points": 7,
+        "comments": 7
+      },
+      "publishedAt": "2026-11-19T01:04:20Z"
+    },
+    {
+      "id": "bdd984b806",
+      "normUrl": "https://news.ycombinator.com/item?id=50554381",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Cheapest CPU Vms",
+      "url": "https://news.ycombinator.com/item?id=50554381",
+      "externalUrl": null,
+      "summary": "hetzner seems to be out of stock for cheapest plans for a few weeks/months now.. any alternatives that are as cheap or cheaper?",
+      "deepenKey": "50554381",
+      "via": null,
+      "signal": {
+        "points": 13,
+        "comments": 8
+      },
+      "publishedAt": "2026-11-19T00:30:18Z"
+    },
+    {
+      "id": "c6a0ce74ff",
+      "normUrl": "https://news.ycombinator.com/item?id=50553802",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "I open-sourced an AI loop for RISC-V CPU design months prior to OpenAI",
+      "url": "https://news.ycombinator.com/item?id=50553802",
+      "externalUrl": null,
+      "summary": "Back in April, I built auto-arch-tournament (https://github.com/FeSens/auto-arch-tournament) to explore a question I’m still curious about: how well can different AI models improve a RISC-V CPU? I’ve been tracking the results on HWEBench(https://hwebench.com/v2). It’s fun to see OpenAI exploring a similar question in today’s chip design post(https://openai.com/index/advancing-chip-design-with-our-models/). If you’d like to try an experiment yourself, you can run the research loop from the repo.",
+      "deepenKey": "50553802",
+      "via": null,
+      "signal": {
+        "points": 9,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-18T23:26:30Z"
     },
     {
       "id": "ee9a16b1a3",
@@ -625,8 +945,8 @@
       "deepenKey": "50552918",
       "via": null,
       "signal": {
-        "points": 4,
-        "comments": 2
+        "points": 11,
+        "comments": 7
       },
       "publishedAt": "2026-11-18T22:08:50Z"
     },
@@ -651,6 +971,26 @@
       "publishedAt": "2026-11-18T20:51:47Z"
     },
     {
+      "id": "0642ef1f50",
+      "normUrl": "https://news.ycombinator.com/item?id=50551501",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Developing Browser Extensions",
+      "url": "https://news.ycombinator.com/item?id=50551501",
+      "externalUrl": null,
+      "summary": "What's the best way to gain users when creating a new browser app? I'm not good at marketing. YET!",
+      "deepenKey": "50551501",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-18T20:12:01Z"
+    },
+    {
       "id": "75805a2fe0",
       "normUrl": "https://news.ycombinator.com/item?id=50551096",
       "sourceId": "hn-ask",
@@ -666,7 +1006,7 @@
       "via": null,
       "signal": {
         "points": 3,
-        "comments": 2
+        "comments": 3
       },
       "publishedAt": "2026-11-18T19:42:27Z"
     },
@@ -686,9 +1026,29 @@
       "via": null,
       "signal": {
         "points": 3,
-        "comments": 1
+        "comments": 2
       },
       "publishedAt": "2026-11-18T19:31:23Z"
+    },
+    {
+      "id": "6a93373459",
+      "normUrl": "https://news.ycombinator.com/item?id=50549762",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are your non-technical colleagues vibecoding? How are the apps hosted?",
+      "url": "https://news.ycombinator.com/item?id=50549762",
+      "externalUrl": null,
+      "summary": "I'm at a data analytics legal tech company, our clients are law firms. I've noticed in the last few months our clients, lawyers and paralegals, have been vibecoding up a storm with codex/cowork (their marketing is working xD). We had one customer create a dashboard of aggregated client data and expose it publically via Vercel. Luckily no one out of the firm accessed it and we helped them take it down, but it's scary. I'm curious if other people are seeing this at their companies/communities, and how these internal apps are being hosted.",
+      "deepenKey": "50549762",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-18T18:04:27Z"
     },
     {
       "id": "f54f612002",
@@ -705,8 +1065,8 @@
       "deepenKey": "50548343",
       "via": null,
       "signal": {
-        "points": 4,
-        "comments": 8
+        "points": 5,
+        "comments": 11
       },
       "publishedAt": "2026-11-18T16:31:37Z"
     },
@@ -725,8 +1085,8 @@
       "deepenKey": "50548260",
       "via": null,
       "signal": {
-        "points": 3,
-        "comments": 3
+        "points": 4,
+        "comments": 5
       },
       "publishedAt": "2026-11-18T16:25:34Z"
     },
@@ -751,366 +1111,6 @@
       "publishedAt": "2026-11-18T15:03:25Z"
     },
     {
-      "id": "5e23f79819",
-      "normUrl": "https://news.ycombinator.com/item?id=50545143",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "How Many people are taking the day off tomorrow",
-      "url": "https://news.ycombinator.com/item?id=50545143",
-      "externalUrl": null,
-      "summary": null,
-      "deepenKey": "50545143",
-      "via": null,
-      "signal": {
-        "points": 6,
-        "comments": 6
-      },
-      "publishedAt": "2026-11-18T11:48:26Z"
-    },
-    {
-      "id": "89bec2dcd6",
-      "normUrl": "https://news.ycombinator.com/item?id=50543947",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Claude Gets Hella Paranoid",
-      "url": "https://news.ycombinator.com/item?id=50543947",
-      "externalUrl": null,
-      "summary": "Mm, so I hesitate to write this, because my own AI agents might read it. But what the hell. I've got this crappy little $300 PC on my network hooked up to my projector, that I mostly use to serve Jellyfin. So tired of it going down every time there's a Windows update, but I've been too lazy to get around to installing Ubuntu. Last night, when it went down, I asked my Claude-claw via Whatsapp if it could just SSH into it and set up a dual boot partition. Claude got as far as partitioning the drive and then starting asking hard questions , like (paraphrasing) \"wait a minute.",
-      "deepenKey": "50543947",
-      "via": null,
-      "signal": {
-        "points": 16,
-        "comments": 9
-      },
-      "publishedAt": "2026-11-18T09:24:58Z"
-    },
-    {
-      "id": "dc5855fecf",
-      "normUrl": "https://news.ycombinator.com/item?id=50542948",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Codeberg seems to have vanished from DNS",
-      "url": "https://news.ycombinator.com/item?id=50542948",
-      "externalUrl": null,
-      "summary": "It seems that at 06:30 UTC today, Codeberg's registrar has placed them on clientHold, which has removed them from the .org zone entirely.",
-      "deepenKey": "50542948",
-      "via": null,
-      "signal": {
-        "points": 53,
-        "comments": 20
-      },
-      "publishedAt": "2026-11-18T07:28:57Z"
-    },
-    {
-      "id": "e8f60c904c",
-      "normUrl": "https://news.ycombinator.com/item?id=50542654",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Should we shut down current AI strategy? Vent Your Heart Out",
-      "url": "https://news.ycombinator.com/item?id=50542654",
-      "externalUrl": null,
-      "summary": "I don't know, maybe it's just me. Does it feel to you like we're boiling the oceans in a desperate attempt to build something \"smarter than human?\" Do you notice that the idea that \"AI will cure cancer\" is predicated on the belief that we've found the data that will lead to a cure and us humans just somehow missed it? Are you also watching your former boss, who laid you off for AI, slowly turn the nail gun that is AI automation towards his own face? Are you also currently avoiding plane flights at all costs?",
-      "deepenKey": "50542654",
-      "via": null,
-      "signal": {
-        "points": 4,
-        "comments": 6
-      },
-      "publishedAt": "2026-11-18T06:40:16Z"
-    },
-    {
-      "id": "8f2b7524ba",
-      "normUrl": "https://news.ycombinator.com/item?id=50542361",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Interesting Learnings Working for a Startup",
-      "url": "https://news.ycombinator.com/item?id=50542361",
-      "externalUrl": null,
-      "summary": "1. product isn't important, sales is important 2. infra isn't important, talent to build it is important 3. which stack you use to build the product isn't important, business taste is important 4. pushing employees isn't the fastest way to ship, building a process from learnings is much more efficient share your learnings below",
-      "deepenKey": "50542361",
-      "via": null,
-      "signal": {
-        "points": 18,
-        "comments": 3
-      },
-      "publishedAt": "2026-11-18T05:52:37Z"
-    },
-    {
-      "id": "2c7acaab69",
-      "normUrl": "https://news.ycombinator.com/item?id=50542286",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Can world models lead to racisim? Are there any Alignment frameworks?",
-      "url": "https://news.ycombinator.com/item?id=50542286",
-      "externalUrl": null,
-      "summary": "I have never felt or believed in Dooms day theories about AI. But below is one of only 2 occasions where I am feeling AI can be too dangerous. While building world model for enterprise decisions, I am intrigued by how far the AI can go out of reach. Got to know - that now world models can learn from emotions & genetics. That means - actually predicting the outcome & behavior of humans. If going unabated - so the builder can bring in bias. It sounds Deja vu for when the racist theories developed in wraps of the scholarly research in 1900s.",
-      "deepenKey": "50542286",
-      "via": null,
-      "signal": {
-        "points": 5,
-        "comments": 0
-      },
-      "publishedAt": "2026-11-18T05:39:02Z"
-    },
-    {
-      "id": "8fdd920c93",
-      "normUrl": "https://news.ycombinator.com/item?id=50541857",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "How are large companies not ripshit about the frontier labs?",
-      "url": "https://news.ycombinator.com/item?id=50541857",
-      "externalUrl": null,
-      "summary": "I am utterly baffled that the entire world is not coming after Anthropic and OpenAI with pitchforks. We are essentially funding: 1.The largest intellectual property theft from humanity in history, including corporate IP 2. Outrageous amount of money being spent with no real upside to show at this point. Can anyone name one positive thing that's come from AI so far objectively? 3. Non stop threats and attacks and greater and greater risk of bad actors engaging in cyber attacks. 4. Untold disruption to the economy and jobs 5. Untold risk from bioweapons 6.",
-      "deepenKey": "50541857",
-      "via": null,
-      "signal": {
-        "points": 6,
-        "comments": 2
-      },
-      "publishedAt": "2026-11-18T04:24:19Z"
-    },
-    {
-      "id": "ea66547fd5",
-      "normUrl": "https://news.ycombinator.com/item?id=50541430",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Microsoft disabled API permissions seemingly overnight",
-      "url": "https://news.ycombinator.com/item?id=50541430",
-      "externalUrl": null,
-      "summary": "As of yesterday, Authorization.RoleAssignments.Write (a53c8130) now shows isEnabled: false on the Power Platform API service principal (8578e004), and Authorization.Write (440ac968) was added around October and seems to be working as a replacement. Tried multiple tenants. Unsure if related to the outages but I can't find any information about this, very unusual, having to hotfix services with zero notice.",
-      "deepenKey": "50541430",
-      "via": null,
-      "signal": {
-        "points": 4,
-        "comments": 1
-      },
-      "publishedAt": "2026-11-18T03:17:19Z"
-    },
-    {
-      "id": "7295df7d21",
-      "normUrl": "https://news.ycombinator.com/item?id=50538449",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Aren't the current cyber attacks suspicious?",
-      "url": "https://news.ycombinator.com/item?id=50538449",
-      "externalUrl": null,
-      "summary": "Just looking at history and having some bayesian mindset the fact that: FAA,NSA,MSFT,APPLE,EQUINOR all got hacked in a week. Isn't it obvious that some nation state or activist/terrorist group has gotten hold of an AI hacking tool/Agent that can wreak havoc? It's not business as usual anymore, it's an agentic cyber war that has started isn't it? * Edit: about bayesian, I wrote two comments below explaining the logic. I didn't even think about the next bayesian update meaning that there is a trilateral superpower meeting for the first time.",
-      "deepenKey": "50538449",
-      "via": null,
-      "signal": {
-        "points": 17,
-        "comments": 17
-      },
-      "publishedAt": "2026-11-17T21:28:57Z"
-    },
-    {
-      "id": "976b2b376e",
-      "normUrl": "https://news.ycombinator.com/item?id=50538080",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "How realistic is an LLM-powered worm that spreads from PC to PC?",
-      "url": "https://news.ycombinator.com/item?id=50538080",
-      "externalUrl": null,
-      "summary": null,
-      "deepenKey": "50538080",
-      "via": null,
-      "signal": {
-        "points": 3,
-        "comments": 3
-      },
-      "publishedAt": "2026-11-17T20:57:40Z"
-    },
-    {
-      "id": "abdc854aec",
-      "normUrl": "https://news.ycombinator.com/item?id=50538010",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Possible theory of why things are breaking",
-      "url": "https://news.ycombinator.com/item?id=50538010",
-      "externalUrl": null,
-      "summary": "I think php2shell really sent shivers down people's spines, and now everyone behind the scenes has been rushing to update everything, even things that aren't necessarily related. I know many of us have done exactly that ever since the php2shell thread came out. I also think this sudden wave of updates could lead to misconfigurations and unexpected edge cases, creating small domino effects, especially on legacy platforms that had been left untouched for a long time. What do you all think?",
-      "deepenKey": "50538010",
-      "via": null,
-      "signal": {
-        "points": 12,
-        "comments": 5
-      },
-      "publishedAt": "2026-11-17T20:52:11Z"
-    },
-    {
-      "id": "48b57db607",
-      "normUrl": "https://news.ycombinator.com/item?id=50537272",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Anyone else blurting?",
-      "url": "https://news.ycombinator.com/item?id=50537272",
-      "externalUrl": null,
-      "summary": "Like most, I was stoked on LLMs when they became available. Particularly on the earlier free tiers where the slightly questionable answers were offset by generous tokens. Now, I'm finding that having to use this tech is becoming much less fun. The constant corrections, the constant prompting for greater brevity, the grating certainty and sycophancy. Others probably are forgiving considering the net benefit. But for me it honestly now feels like a chore, which is reflected in how my frustration is now appearing in how I communicate to it now.",
-      "deepenKey": "50537272",
-      "via": null,
-      "signal": {
-        "points": 8,
-        "comments": 9
-      },
-      "publishedAt": "2026-11-17T20:00:29Z"
-    },
-    {
-      "id": "33c0147c1c",
-      "normUrl": "https://news.ycombinator.com/item?id=50537206",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Are We in a Cyberwar?",
-      "url": "https://news.ycombinator.com/item?id=50537206",
-      "externalUrl": null,
-      "summary": "With all of these sites and services going down. are we in the midst of a cyber war?",
-      "deepenKey": "50537206",
-      "via": null,
-      "signal": {
-        "points": 14,
-        "comments": 21
-      },
-      "publishedAt": "2026-11-17T19:55:41Z"
-    },
-    {
-      "id": "5ffe04e355",
-      "normUrl": "https://news.ycombinator.com/item?id=50536334",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "AI is shortening the time from PHP flaw disclosure to working exploit, Microsoft",
-      "url": "https://news.ycombinator.com/item?id=50536334",
-      "externalUrl": null,
-      "summary": null,
-      "deepenKey": "50536334",
-      "via": null,
-      "signal": {
-        "points": 3,
-        "comments": 0
-      },
-      "publishedAt": "2026-11-17T18:52:48Z"
-    },
-    {
-      "id": "847a5fafcb",
-      "normUrl": "https://news.ycombinator.com/item?id=50530287",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "What if Elon Musk got caught having affairs with a spy and a subordinate?",
-      "url": "https://news.ycombinator.com/item?id=50530287",
-      "externalUrl": null,
-      "summary": "This is just a sliver of Levine's recent \"Money Stuff\" (Fair use !) What if Elon Musk got caught having affairs with a spy and a subordinate? Come on! 1. SpaceX’s governance structure is set up so that Musk controls the company and the board and nobody can do anything about anything.[1] So nobody would do anything about it. 2. If he thought that his affairs were disqualifying, he could resign in shame, but he absolutely would not think that and would in fact go on X to post proud naughty tweets about the whole thing. 3.",
-      "deepenKey": "50530287",
-      "via": null,
-      "signal": {
-        "points": 3,
-        "comments": 0
-      },
-      "publishedAt": "2026-11-17T12:02:01Z"
-    },
-    {
-      "id": "e36502b53d",
-      "normUrl": "https://news.ycombinator.com/item?id=50528871",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Syncthing",
-      "url": "https://news.ycombinator.com/item?id=50528871",
-      "externalUrl": null,
-      "summary": "Syncthing on Android. Since the original developers pulled out of Android I've been using a fork named Syncthing-fork maintained by who knows, on F-Droid. Now I just learned that has been pulled from F-Droid. What are people on HN doing to run Syncthing on Android? Honestly Syncthing has been one of the lowest effort apps that I used. I've set it up on all my devices and the thing keeps working through device churn, sort of an \"distributed setup of Theseus\". So what do people do now?",
-      "deepenKey": "50528871",
-      "via": null,
-      "signal": {
-        "points": 7,
-        "comments": 6
-      },
-      "publishedAt": "2026-11-17T08:27:36Z"
-    },
-    {
-      "id": "bb939b37b2",
-      "normUrl": "https://news.ycombinator.com/item?id=50528707",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "What was your weirdest or funniest job rejection?",
-      "url": "https://news.ycombinator.com/item?id=50528707",
-      "externalUrl": null,
-      "summary": "I will start with mine. After the \"Product Interview\", where we spent 80% of the time discussing a feature from the user’s perspective, I got this feedback: > While your extensive experience with Go, database migrations, and reliability engineering stood out, as well as your strong problem-solving skills in coding exercises, we felt there were gaps in areas critical to this role, such as AI fluency and a deeper focus on production-quality considerations like testing and logging. These areas were key factors in our decision not to move forward. Which I find very funny. What was yours?",
-      "deepenKey": "50528707",
-      "via": null,
-      "signal": {
-        "points": 10,
-        "comments": 18
-      },
-      "publishedAt": "2026-11-17T08:01:48Z"
-    },
-    {
-      "id": "196c3b021c",
-      "normUrl": "https://news.ycombinator.com/item?id=50528548",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Anyone else feeling burnout from agentic coding?",
-      "url": "https://news.ycombinator.com/item?id=50528548",
-      "externalUrl": null,
-      "summary": "I’ve never felt burnt out ever before in 10+ years of work but lately I’ve been struggling at work. Since agentic coding: - I talk to people on my team much less. LLMs are replacing a lot of our interactions - I’m inundated with code reviews and slop documents - I barely understand PRs that I author some days as the pressure is on to ship fast Anyone else? Any advice?",
-      "deepenKey": "50528548",
-      "via": null,
-      "signal": {
-        "points": 6,
-        "comments": 8
-      },
-      "publishedAt": "2026-11-17T07:33:39Z"
-    },
-    {
       "id": "687a855ace",
       "normUrl": "https://github.com/NuvioMedia/NuvioTV/issues/4141",
       "sourceId": "gh-requests",
@@ -1122,7 +1122,7 @@
       "url": "https://github.com/NuvioMedia/NuvioTV/issues/4141",
       "summary": "### Area (tag) Playback ### Problem statement I want to be able to see the actual playback resolution, HDR format, audio format, and currently playing audio language directly beside the movie title on the playback screen. Currently, users need to open audio settings to check the active audio track and its format.",
       "signal": {
-        "thumbsUp": 345,
+        "thumbsUp": 347,
         "comments": 19,
         "repo": "NuvioMedia/NuvioTV"
       },
@@ -1140,7 +1140,7 @@
       "url": "https://github.com/anthropics/claude-code/issues/102264",
       "summary": "### Preflight Checklist - [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet - [x] This is a single feature request (not multiple features) ### Problem Statement After the latest Desktop update (Windows, Code tab), the stats panel that used to show on the new session screen is gone: Overview/Models tabs, Sessions, Messages, Total tokens, Active days, Peak hour, Favorite model, the activity heatmap and the All/30d/7d filters.",
       "signal": {
-        "thumbsUp": 102,
+        "thumbsUp": 103,
         "comments": 3,
         "repo": "anthropics/claude-code"
       },
@@ -1194,7 +1194,7 @@
       "url": "https://github.com/ShareX/ShareX/issues/8952",
       "summary": "Greetings, Is it possible to give an option of reverting the new UI? Personally, I don't like the new (monochrome) UI. Regards,",
       "signal": {
-        "thumbsUp": 77,
+        "thumbsUp": 78,
         "comments": 85,
         "repo": "ShareX/ShareX"
       },
@@ -1213,7 +1213,7 @@
       "summary": "## Please keep the path from a first idea to a first income open — preserve independent ChatGPT High and Codex/Work allowances **Update — November 9, 2026: OpenAI has officially confirmed the planned December change.** When I opened this issue on October 31, the upcoming shared allowance was still being discussed as a reported change.",
       "signal": {
         "thumbsUp": 57,
-        "comments": 33,
+        "comments": 34,
         "repo": "openai/codex"
       },
       "publishedAt": "2026-10-31T10:17:51Z"
@@ -1232,6 +1232,19 @@
       "publishedAt": null
     },
     {
+      "id": "1e33e5b455",
+      "normUrl": "https://trends.vc/goal-based-ai-agents-cloud-bill-cuts-1-metric-startups-runaway-ad-spend",
+      "sourceId": "trendsvc",
+      "source": "Trends.vc",
+      "sourceHome": "https://trends.vc/",
+      "side": "trend",
+      "pool": false,
+      "title": "Goal-Based AI Agents: Cloud Bill Cuts, 1-Metric Startups, Runaway Ad Spend",
+      "url": "https://trends.vc/goal-based-ai-agents-cloud-bill-cuts-1-metric-startups-runaway-ad-spend/",
+      "summary": "“The danger of AI is not that it’s going to rebel against us, it’s that it’s going to do exactly what we ask it to do.” – Janelle Shane Get Full Access to Trends Pro ❓ What You’ll Learn 💎 Why It Matters Companies can hand an AI agent a business number and let it … Continue reading Goal-Based AI Agents: Cloud Bill Cuts, 1-Metric Startups, Runaway Ad Spend → The post Goal-Based AI Agents: Cloud Bill Cuts, 1-Metric Startups, Runaway Ad Spend appeared first on Trends.vc .",
+      "publishedAt": "2026-11-19T02:20:02.000Z"
+    },
+    {
       "id": "7e154e38cc",
       "normUrl": "https://trends.vc/why-does-1000-of-new-mrr-cap-out-at-20000",
       "sourceId": "trendsvc",
@@ -1245,404 +1258,324 @@
       "publishedAt": "2026-11-18T01:42:39.000Z"
     },
     {
-      "id": "affc3217c5",
-      "normUrl": "https://producthunt.com/products/mermaid-chart",
+      "id": "da0c945328",
+      "normUrl": "https://producthunt.com/products/heygen",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Mermaid Flow",
-      "url": "https://www.producthunt.com/products/mermaid-chart",
-      "summary": "The visual builder for agentic workflows",
-      "publishedAt": "2026-11-11T20:24:56.000Z"
+      "title": "HeyGen Avatar 6",
+      "url": "https://www.producthunt.com/products/heygen",
+      "summary": "AI Avatar Model That Looks Like You",
+      "publishedAt": "2026-11-18T12:03:30.000Z"
     },
     {
-      "id": "cfeae5ed88",
-      "normUrl": "https://producthunt.com/products/pitchavatar",
+      "id": "d593589c43",
+      "normUrl": "https://producthunt.com/products/cleared-quit-nicotine",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Pitch Avatar HR Suite",
-      "url": "https://www.producthunt.com/products/pitchavatar",
-      "summary": "Onboarding, training & comms with conversational AI avatars",
-      "publishedAt": "2026-10-22T10:27:29.000Z"
+      "title": "Cleared",
+      "url": "https://www.producthunt.com/products/cleared-quit-nicotine",
+      "summary": "Your personal plan to give up vapes, pouches and cigarettes",
+      "publishedAt": "2026-11-18T15:27:40.000Z"
     },
     {
-      "id": "53465c1958",
-      "normUrl": "https://producthunt.com/products/waldo-by-wherobots",
+      "id": "b41d4305ea",
+      "normUrl": "https://producthunt.com/products/teaflask",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Waldo by Wherobots",
-      "url": "https://www.producthunt.com/products/waldo-by-wherobots",
-      "summary": "The AI agent that accelerates engineering with spatial data",
-      "publishedAt": "2026-11-05T15:23:12.000Z"
+      "title": "Teaflask",
+      "url": "https://www.producthunt.com/products/teaflask",
+      "summary": "Self-improving AI copilot for your app. No backend changes.",
+      "publishedAt": "2026-11-09T16:27:48.000Z"
     },
     {
-      "id": "c75fd2ddd3",
-      "normUrl": "https://producthunt.com/products/toone",
+      "id": "03ababdeb0",
+      "normUrl": "https://producthunt.com/products/tooljet",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Toone",
-      "url": "https://www.producthunt.com/products/toone",
-      "summary": "Grokbot meets n8n/zapier",
-      "publishedAt": "2026-09-23T11:02:40.000Z"
+      "title": "ToolJet",
+      "url": "https://www.producthunt.com/products/tooljet",
+      "summary": "Vibe-coded business apps that pass the security review",
+      "publishedAt": "2026-11-19T03:07:11.000Z"
     },
     {
-      "id": "254ee41537",
-      "normUrl": "https://producthunt.com/products/s-space",
+      "id": "29abd65ced",
+      "normUrl": "https://producthunt.com/products/upsolve-ai",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "S.Space",
-      "url": "https://www.producthunt.com/products/s-space",
-      "summary": "Your team and everyone's AI agents, in one workspace",
-      "publishedAt": "2026-11-15T13:26:16.000Z"
+      "title": "Upsolve MCP Connections",
+      "url": "https://www.producthunt.com/products/upsolve-ai",
+      "summary": "Plug Notion, Linear and more into your data agent",
+      "publishedAt": "2026-11-18T21:56:08.000Z"
     },
     {
-      "id": "e172561afc",
-      "normUrl": "https://producthunt.com/products/ody-ai-business-phone",
+      "id": "fe43197fe4",
+      "normUrl": "https://producthunt.com/products/noteshell",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Ody Ai Business Phone",
-      "url": "https://www.producthunt.com/products/ody-ai-business-phone",
-      "summary": "Shared workspace + manageable AI agents",
-      "publishedAt": "2026-11-16T18:36:57.000Z"
+      "title": "Noteshell",
+      "url": "https://www.producthunt.com/products/noteshell",
+      "summary": "AI teammates that build and run your workspace",
+      "publishedAt": "2026-11-18T15:28:16.000Z"
     },
     {
-      "id": "1af30a1d76",
-      "normUrl": "https://producthunt.com/products/hunyuan-a13b",
+      "id": "e7012441e7",
+      "normUrl": "https://producthunt.com/products/meilisearch-cloud",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Tencent Hy4 flash",
-      "url": "https://www.producthunt.com/products/hunyuan-a13b",
-      "summary": "Fast, low-cost model from $0.07/M input",
-      "publishedAt": "2026-11-16T06:53:29.000Z"
+      "title": "Meilisearch Searchandising",
+      "url": "https://www.producthunt.com/products/meilisearch-cloud",
+      "summary": "Pin, boost, hide and personalize search results",
+      "publishedAt": "2026-11-05T13:25:09.000Z"
     },
     {
-      "id": "b533bf657a",
-      "normUrl": "https://producthunt.com/products/saas-toolkit-mcp",
+      "id": "a7f93bc5eb",
+      "normUrl": "https://producthunt.com/products/nuko",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "SaaS Toolkit MCP",
-      "url": "https://www.producthunt.com/products/saas-toolkit-mcp",
-      "summary": "An SDR and CMO on your site 24/7, for one JavaScript snippet",
-      "publishedAt": "2026-11-13T22:25:43.000Z"
+      "title": "Nuko",
+      "url": "https://www.producthunt.com/products/nuko",
+      "summary": "Motion design in your browser",
+      "publishedAt": "2026-11-19T03:34:35.000Z"
     },
     {
-      "id": "b5e6547c9b",
-      "normUrl": "https://producthunt.com/products/dusk-bot",
+      "id": "5849db5c21",
+      "normUrl": "https://producthunt.com/products/context-dev",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "dusk bot",
-      "url": "https://www.producthunt.com/products/dusk-bot",
-      "summary": "free open source Grok bot alternative",
-      "publishedAt": "2026-11-17T14:13:59.000Z"
+      "title": "Enrichable by Context.dev",
+      "url": "https://www.producthunt.com/products/context-dev",
+      "summary": "Open-source AI spreadsheet for data enrichment",
+      "publishedAt": "2026-11-18T11:43:41.000Z"
     },
     {
-      "id": "7e960f571a",
-      "normUrl": "https://producthunt.com/products/ai-canvas-2",
+      "id": "700421e023",
+      "normUrl": "https://producthunt.com/products/stripo-email",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "AI Canvas",
-      "url": "https://www.producthunt.com/products/ai-canvas-2",
-      "summary": "A design system for AI agents to design badass interfaces",
-      "publishedAt": "2026-11-17T15:46:37.000Z"
+      "title": "Stripo Email Widgets",
+      "url": "https://www.producthunt.com/products/stripo-email",
+      "summary": "Put a game, quiz or survey in your next email. No coding",
+      "publishedAt": "2026-11-11T08:31:59.000Z"
     },
     {
-      "id": "21651f2ac3",
-      "normUrl": "https://producthunt.com/products/soreqen-code",
+      "id": "f525b4bba7",
+      "normUrl": "https://producthunt.com/products/verse-engine-by-ctruh",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "SoreQen Code",
-      "url": "https://www.producthunt.com/products/soreqen-code",
-      "summary": "The coding agent that checks its own work",
-      "publishedAt": "2026-11-18T03:14:00.000Z"
+      "title": "Verse Engine by Ctruh",
+      "url": "https://www.producthunt.com/products/verse-engine-by-ctruh",
+      "summary": "Blender, Unity or Unreal to a live 3D link in one click",
+      "publishedAt": "2026-11-17T14:44:33.000Z"
     },
     {
-      "id": "c70e9f4491",
-      "normUrl": "https://producthunt.com/products/openai",
+      "id": "9f4dfd9aef",
+      "normUrl": "https://producthunt.com/products/codedesign",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "GPT-6.2 Astra and Sol",
-      "url": "https://www.producthunt.com/products/openai",
-      "summary": "Two new OpenAI models: frontier Astra and efficient Sol",
-      "publishedAt": "2026-11-17T18:06:04.000Z"
+      "title": "CodeDesign v3",
+      "url": "https://www.producthunt.com/products/codedesign",
+      "summary": "Run your website and business apps from ChatGPT or Claude",
+      "publishedAt": "2026-11-17T05:24:17.000Z"
     },
     {
-      "id": "f17a11db0c",
-      "normUrl": "https://producthunt.com/products/happo-2",
+      "id": "1e3880b2b8",
+      "normUrl": "https://producthunt.com/products/tecla-3",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Happo animation testing",
-      "url": "https://www.producthunt.com/products/happo-2",
-      "summary": "Visual regression testing, now for animations",
-      "publishedAt": "2026-11-06T02:15:40.000Z"
+      "title": "Tecla",
+      "url": "https://www.producthunt.com/products/tecla-3",
+      "summary": "A proactive AI agent whose interface is a TODO list",
+      "publishedAt": "2026-11-19T03:05:34.000Z"
     },
     {
-      "id": "e4be9abd1c",
-      "normUrl": "https://producthunt.com/products/incredible",
+      "id": "a4108ea87e",
+      "normUrl": "https://producthunt.com/products/ableten-source-library",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Incredible Agents",
-      "url": "https://www.producthunt.com/products/incredible",
-      "summary": "Fast Voice AI that sees your screen and runs your agents",
-      "publishedAt": "2026-11-17T22:02:24.000Z"
+      "title": "Ableten Hybrid AI Travel Planner",
+      "url": "https://www.producthunt.com/products/ableten-source-library",
+      "summary": "Get your group on the same map.",
+      "publishedAt": "2026-08-19T06:21:46.000Z"
     },
     {
-      "id": "485480e578",
-      "normUrl": "https://producthunt.com/products/kino-2",
+      "id": "9e56906413",
+      "normUrl": "https://producthunt.com/products/netlify",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Kino",
-      "url": "https://www.producthunt.com/products/kino-2",
-      "summary": "Store, edit and review video with Claude Code and Codex",
-      "publishedAt": "2026-11-11T06:15:38.000Z"
+      "title": "Netlify Server",
+      "url": "https://www.producthunt.com/products/netlify",
+      "summary": "Run WebSockets, multiplayer apps, and long-running agents",
+      "publishedAt": "2026-11-10T20:15:49.000Z"
     },
     {
-      "id": "7b25385e29",
-      "normUrl": "https://producthunt.com/products/kadeep-ai",
+      "id": "680e092c48",
+      "normUrl": "https://producthunt.com/products/spellar",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "KaDeep AI",
-      "url": "https://www.producthunt.com/products/kadeep-ai",
-      "summary": "Agentic QA, localization & accessibility: know when to ship",
-      "publishedAt": "2026-11-17T08:00:01.000Z"
+      "title": "Spellar for Chrome",
+      "url": "https://www.producthunt.com/products/spellar",
+      "summary": "Free, no-bot meeting notes with memory, now in your browser",
+      "publishedAt": "2026-11-16T12:57:22.000Z"
     },
     {
-      "id": "3653bc4cf0",
-      "normUrl": "https://producthunt.com/products/bluedot-2",
+      "id": "93e70d3b0d",
+      "normUrl": "https://producthunt.com/products/tabstack",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Bluedot Phone Calls",
-      "url": "https://www.producthunt.com/products/bluedot-2",
-      "summary": "AI note taker for phone calls",
-      "publishedAt": "2026-11-14T14:21:32.000Z"
+      "title": "Tabstack by Mozilla",
+      "url": "https://www.producthunt.com/products/tabstack",
+      "summary": "Give your model the web without giving up your privacy",
+      "publishedAt": "2026-11-16T21:57:39.000Z"
     },
     {
-      "id": "c9a3d51c8e",
-      "normUrl": "https://producthunt.com/products/linkbit",
+      "id": "78d91bf6c8",
+      "normUrl": "https://producthunt.com/products/ofintech-desk",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "LinkBit",
-      "url": "https://www.producthunt.com/products/linkbit",
-      "summary": "Free URL shortener your AI agent can use (MCP + API)",
-      "publishedAt": "2026-11-17T07:57:08.000Z"
+      "title": "OfinTech Desk",
+      "url": "https://www.producthunt.com/products/ofintech-desk",
+      "summary": "Finance AI where every figure traces to its source",
+      "publishedAt": "2026-11-17T03:25:07.000Z"
     },
     {
-      "id": "20c543c9e6",
-      "normUrl": "https://producthunt.com/products/qwen3",
+      "id": "d9805f4c38",
+      "normUrl": "https://producthunt.com/products/every-signal",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Qwen4-Max",
-      "url": "https://www.producthunt.com/products/qwen3",
-      "summary": "Qwen's new flagship for long-running agent work",
-      "publishedAt": "2026-11-16T12:32:32.000Z"
+      "title": "Every Signal",
+      "url": "https://www.producthunt.com/products/every-signal",
+      "summary": "Diligence on any company in an hour, every number sourced",
+      "publishedAt": "2026-11-14T17:43:52.000Z"
     },
     {
-      "id": "c90ec66180",
-      "normUrl": "https://producthunt.com/products/lepoly",
+      "id": "dd4632e8c8",
+      "normUrl": "https://producthunt.com/products/source-public-beta",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "lepoly",
-      "url": "https://www.producthunt.com/products/lepoly",
-      "summary": "One place for all your 3D assets",
-      "publishedAt": "2026-11-17T16:39:10.000Z"
+      "title": "Source",
+      "url": "https://www.producthunt.com/products/source-public-beta",
+      "summary": "The attribution data layer for your agents to drive pipeline",
+      "publishedAt": "2026-11-16T17:34:12.000Z"
     },
     {
-      "id": "be8b77fa26",
-      "normUrl": "https://news.ycombinator.com/item?id=50552140",
+      "id": "996dcff929",
+      "normUrl": "https://news.ycombinator.com/item?id=50565099",
       "sourceId": "showhn",
       "source": "Show HN",
       "sourceHome": "https://news.ycombinator.com/show",
       "side": "supply",
       "pool": true,
-      "title": "Robotics needs better CAD, so I wrote a B-rep kernel and 3,487 tests",
-      "url": "https://news.ycombinator.com/item?id=50552140",
-      "externalUrl": "https://springcraft-ai.github.io/springrep/",
-      "summary": "Hey HN, I’m Tony. I’m a co-founder of Springcraft, where we have been doing a lot of CAD modeling for robot parts. Our team kept running into limitations with existing kernels, and so I decided to write a new B-rep kernel and a new comprehensive, kernel-agnostic B-rep conformance test suite. Both are available today under MIT licenses. The kernel, springrep, is written in safe Rust with no dependencies. It covers a broad range of our mechanical CAD needs, including advanced fillets, sweeps, lofts, shells, offsets, STEP and exact measurements and queries.",
-      "deepenKey": "50552140",
+      "title": "IT Thinks – Build a GPU from a Single NAND Gate",
+      "url": "https://news.ycombinator.com/item?id=50565099",
+      "externalUrl": "https://store.steampowered.com/app/5196330/IT_THINKS_Build_Your_Own_GPU/",
+      "summary": "Hi HN, I built a hardware puzzle game, you start with one NAND gate and every chip you finish becomes a part of next one. basic gates, adders, decoders, latches and finally GPU. last one are a chip that recognises handwritten digits. I am happy to discuss how we can create better levels to for those concepts. you can try demo/full game on Steam",
+      "deepenKey": "50565099",
       "via": null,
       "signal": {
-        "points": 9,
-        "comments": 1
+        "points": 10,
+        "comments": 0
       },
-      "publishedAt": "2026-11-18T21:08:47Z"
+      "publishedAt": "2026-11-19T19:35:03Z"
     },
     {
-      "id": "d4bd3cad1d",
-      "normUrl": "https://news.ycombinator.com/item?id=50551356",
+      "id": "de5a0bccea",
+      "normUrl": "https://news.ycombinator.com/item?id=50562541",
       "sourceId": "showhn",
       "source": "Show HN",
       "sourceHome": "https://news.ycombinator.com/show",
       "side": "supply",
       "pool": true,
-      "title": "Beat – a to-do list that completes its own tasks",
-      "url": "https://news.ycombinator.com/item?id=50551356",
-      "externalUrl": "https://gobeat.ai/auth/login",
+      "title": "Maglev – OpenRouter for Agent Tools",
+      "url": "https://news.ycombinator.com/item?id=50562541",
+      "externalUrl": "https://maglev.sh/",
       "summary": null,
-      "deepenKey": "50551356",
+      "deepenKey": "50562541",
       "via": null,
       "signal": {
         "points": 9,
-        "comments": 2
-      },
-      "publishedAt": "2026-11-18T20:01:45Z"
-    },
-    {
-      "id": "22dda9e289",
-      "normUrl": "https://news.ycombinator.com/item?id=50550700",
-      "sourceId": "showhn",
-      "source": "Show HN",
-      "sourceHome": "https://news.ycombinator.com/show",
-      "side": "supply",
-      "pool": true,
-      "title": "KradleBench – Multi-agent AI evals in Minecraft",
-      "url": "https://news.ycombinator.com/item?id=50550700",
-      "externalUrl": "https://www.kradle.ai?1",
-      "summary": "Hi HN - This is James and Kemal. In past lives we led Firebase and Tensorflow/JAX respectively. HN has been a particularly big part of my (James’) career and the trajectory I’ve taken would be meaningfully different without it. Thank you! Our team shipped a benchmark: KradleBench. We test AI in Minecraft Worlds. 1. The worlds are multi-agent. Humans and other AIs are in there too, often pursuing their own goals. Collaboration and conflict skills fall out of this property. 2. The world are dynamic. They constantly change, which means that agents need to react.",
-      "deepenKey": "50550700",
-      "via": null,
-      "signal": {
-        "points": 8,
-        "comments": 7
-      },
-      "publishedAt": "2026-11-18T19:14:28Z"
-    },
-    {
-      "id": "8c41f48a14",
-      "normUrl": "https://news.ycombinator.com/item?id=50549718",
-      "sourceId": "showhn",
-      "source": "Show HN",
-      "sourceHome": "https://news.ycombinator.com/show",
-      "side": "supply",
-      "pool": true,
-      "title": "BPM – Baby Plus Music Visualizer",
-      "url": "https://news.ycombinator.com/item?id=50549718",
-      "externalUrl": "https://hberg.com/bpm/",
-      "summary": "While reminiscing about the dancing baby meme from the mid 90s, I decided to vibe-code this music visualizer for fun. Enjoy!",
-      "deepenKey": "50549718",
-      "via": null,
-      "signal": {
-        "points": 9,
-        "comments": 5
-      },
-      "publishedAt": "2026-11-18T18:00:55Z"
-    },
-    {
-      "id": "21efcf41c8",
-      "normUrl": "https://news.ycombinator.com/item?id=50548660",
-      "sourceId": "showhn",
-      "source": "Show HN",
-      "sourceHome": "https://news.ycombinator.com/show",
-      "side": "supply",
-      "pool": true,
-      "title": "Mastra Factory, the open-source software factory we use to build Mastra",
-      "url": "https://news.ycombinator.com/item?id=50548660",
-      "externalUrl": null,
-      "summary": "Hi HN, we're Shane, Sam, and Abhi. Almost two years ago, we shared Mastra, our open-source TypeScript agent framework, on Show HN: https://news.ycombinator.com/item?id=43103073 . It got a few hundred upvotes; a couple of weeks later our downloads had doubled, and we were off to the races. Today we're sharing Mastra Factory, the open-source software factory we built to help maintain Mastra itself. At Mastra, we now average nearly 4M downloads per week, and with Factory our team now merges hundreds of PRs a week across the mastra-ai GitHub org.",
-      "deepenKey": "50548660",
-      "via": null,
-      "signal": {
-        "points": 74,
-        "comments": 24
-      },
-      "publishedAt": "2026-11-18T16:53:42Z"
-    },
-    {
-      "id": "d565ab4df8",
-      "normUrl": "https://news.ycombinator.com/item?id=50548480",
-      "sourceId": "showhn",
-      "source": "Show HN",
-      "sourceHome": "https://news.ycombinator.com/show",
-      "side": "supply",
-      "pool": true,
-      "title": "Can an AI Agent Bypass Your Website Security?",
-      "url": "https://news.ycombinator.com/item?id=50548480",
-      "externalUrl": "https://assess.poh.org/",
-      "summary": "As part of our red-teaming efforts, we recently configured GPT-6 Astra to test how easily an AI agent can bypass existing bot detection and human verification systems. We built a tool that lets you run the same test on your own website: https://assess.poh.org Enter your website URL, and we'll launch an AI agent to test your workflows, record its actions, and show how we evaluate the session. Below are three recorded tests.",
-      "deepenKey": "50548480",
-      "via": null,
-      "signal": {
-        "points": 8,
         "comments": 1
       },
-      "publishedAt": "2026-11-18T16:40:57Z"
+      "publishedAt": "2026-11-19T16:48:22Z"
     },
     {
-      "id": "d4dd9f4b07",
-      "normUrl": "https://news.ycombinator.com/item?id=50548161",
+      "id": "299091838d",
+      "normUrl": "https://news.ycombinator.com/item?id=50562508",
       "sourceId": "showhn",
       "source": "Show HN",
       "sourceHome": "https://news.ycombinator.com/show",
       "side": "supply",
       "pool": true,
-      "title": "Take Voyager 1 apart, down to a single memory chip",
-      "url": "https://news.ycombinator.com/item?id=50548161",
-      "externalUrl": "https://rshekhar.com/voyager/",
-      "summary": "Voyager 1 reached one light-day from Earth today. On the site you can: - see where both Voyagers are right now - open a nuclear battery to its 24 plutonium spheres - go into the data computer, down to a single memory chip - see how the Golden Record's cover explains how to play it - watch how Voyager 1 was fixed by radio - see which dish on Earth is listening to them, live I also made a 4-minute film from it: https://www.youtube.com/watch?v=kpzsRo-c1_A",
-      "deepenKey": "50548161",
+      "title": "AgentMall – Let your AI agent buy groceries",
+      "url": "https://news.ycombinator.com/item?id=50562508",
+      "externalUrl": "https://getagentmall.com",
+      "summary": "Hey HN, we’re Nel and Kosi. We noticed personal agents like Instinct, Muse were terrible at buying stuff. Most of the time the checkout would fail. So we built reliable automations for agents to checkout at 9 leading grocery merchants. We grapple with anti bot, logins, OTP codes, and changing checkout structures. Loved revisiting this stuff given our backgrounds sneaker-botting and building computer use models. Honestly full circle haha.",
+      "deepenKey": "50562508",
       "via": null,
       "signal": {
-        "points": 128,
-        "comments": 27
+        "points": 17,
+        "comments": 4
       },
-      "publishedAt": "2026-11-18T16:18:51Z"
+      "publishedAt": "2026-11-19T16:46:14Z"
     },
     {
       "id": "c6524b3bb6",
@@ -1657,228 +1590,7 @@
       "summary": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
       "signal": {
         "language": "Python",
-        "points": 2322
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "1fb256ce62",
-      "normUrl": "https://github.com/cursor/plugins",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "cursor/plugins",
-      "url": "https://github.com/cursor/plugins",
-      "summary": "Cursor plugin specification and official plugins",
-      "signal": {
-        "language": "TypeScript",
-        "points": 315
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "6096cc3a83",
-      "normUrl": "https://github.com/HKUDS/CLI-Anything",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "HKUDS/CLI-Anything",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "summary": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "signal": {
-        "language": "Python",
-        "points": 384
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "01e478ba12",
-      "normUrl": "https://github.com/mvanhorn/last30days-skill",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "mvanhorn/last30days-skill",
-      "url": "https://github.com/mvanhorn/last30days-skill",
-      "summary": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "signal": {
-        "language": "Python",
-        "points": 1062
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "1004f5b1d0",
-      "normUrl": "https://github.com/getarcaneapp/arcane",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "getarcaneapp/arcane",
-      "url": "https://github.com/getarcaneapp/arcane",
-      "summary": "Modern Docker Management, Designed for Everyone",
-      "signal": {
-        "language": "Go",
-        "points": 547
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "3781448153",
-      "normUrl": "https://github.com/NVIDIA/SkillEvaluator",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "NVIDIA/SkillEvaluator",
-      "url": "https://github.com/NVIDIA/SkillEvaluator",
-      "summary": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
-      "signal": {
-        "language": "Python",
-        "points": 323
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "f386aaa207",
-      "normUrl": "https://github.com/nvm-sh/nvm",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "nvm-sh/nvm",
-      "url": "https://github.com/nvm-sh/nvm",
-      "summary": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
-      "signal": {
-        "language": "Shell",
-        "points": 111
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "b7a6e8b9a3",
-      "normUrl": "https://github.com/astral-sh/uv",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "astral-sh/uv",
-      "url": "https://github.com/astral-sh/uv",
-      "summary": "An extremely fast Python package and project manager, written in Rust.",
-      "signal": {
-        "language": "Rust",
-        "points": 260
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "14832d8209",
-      "normUrl": "https://github.com/google-research/paper-orchestra",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "google-research/paper-orchestra",
-      "url": "https://github.com/google-research/paper-orchestra",
-      "summary": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
-      "signal": {
-        "language": "Python",
-        "points": 1529
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "52adf762d4",
-      "normUrl": "https://github.com/google-labs-code/stitch-skills",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "google-labs-code/stitch-skills",
-      "url": "https://github.com/google-labs-code/stitch-skills",
-      "summary": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-      "signal": {
-        "language": "TypeScript",
-        "points": 369
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "ca4a8dd162",
-      "normUrl": "https://github.com/sveltejs/svelte",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "sveltejs/svelte",
-      "url": "https://github.com/sveltejs/svelte",
-      "summary": "web development for the rest of us",
-      "signal": {
-        "language": "JavaScript",
-        "points": 694
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "2ecf0a57a8",
-      "normUrl": "https://github.com/jquery/jquery",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "jquery/jquery",
-      "url": "https://github.com/jquery/jquery",
-      "summary": "jQuery JavaScript Library",
-      "signal": {
-        "language": "JavaScript",
-        "points": 268
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "d393800a98",
-      "normUrl": "https://github.com/appwrite/appwrite",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "appwrite/appwrite",
-      "url": "https://github.com/appwrite/appwrite",
-      "summary": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
-      "signal": {
-        "language": "TypeScript",
-        "points": 239
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "c668885413",
-      "normUrl": "https://github.com/openvinotoolkit/openvino",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "openvinotoolkit/openvino",
-      "url": "https://github.com/openvinotoolkit/openvino",
-      "summary": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
-      "signal": {
-        "language": "C++",
-        "points": 18
+        "points": 1353
       },
       "publishedAt": null
     },
@@ -1895,224 +1607,364 @@
       "summary": "An agentic skills framework & software development methodology that works.",
       "signal": {
         "language": "Shell",
-        "points": 823
+        "points": 2029
       },
       "publishedAt": null
     },
     {
-      "id": "3429c7218e",
-      "normUrl": "https://github.com/affaan-m/ECC",
+      "id": "6096cc3a83",
+      "normUrl": "https://github.com/HKUDS/CLI-Anything",
       "sourceId": "github-trending",
       "source": "GitHub Trending",
       "sourceHome": "https://github.com/trending",
       "side": "supply",
       "pool": true,
-      "title": "affaan-m/ECC",
-      "url": "https://github.com/affaan-m/ECC",
-      "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "title": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "summary": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "signal": {
-        "language": "JavaScript",
-        "points": 1109
+        "language": "Python",
+        "points": 899
       },
       "publishedAt": null
     },
     {
-      "id": "1c8f472767",
-      "normUrl": "https://github.com/DeanChensj/jiangshan-map",
+      "id": "1555ed6bcb",
+      "normUrl": "https://github.com/jingyaogong/minimind",
       "sourceId": "github-trending",
       "source": "GitHub Trending",
       "sourceHome": "https://github.com/trending",
       "side": "supply",
       "pool": true,
-      "title": "DeanChensj/jiangshan-map",
-      "url": "https://github.com/DeanChensj/jiangshan-map",
-      "summary": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
+      "title": "jingyaogong/minimind",
+      "url": "https://github.com/jingyaogong/minimind",
+      "summary": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
       "signal": {
-        "language": "JavaScript",
-        "points": 280
+        "language": "Python",
+        "points": 301
       },
       "publishedAt": null
     },
     {
-      "id": "f791d596ac",
-      "normUrl": "https://github.com/n8n-io/n8n",
+      "id": "1fb256ce62",
+      "normUrl": "https://github.com/cursor/plugins",
       "sourceId": "github-trending",
       "source": "GitHub Trending",
       "sourceHome": "https://github.com/trending",
       "side": "supply",
       "pool": true,
-      "title": "n8n-io/n8n",
-      "url": "https://github.com/n8n-io/n8n",
-      "summary": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-      "signal": {
-        "language": "TypeScript",
-        "points": 315
-      },
-      "publishedAt": null
-    },
-    {
-      "id": "0edb74315f",
-      "normUrl": "https://github.com/solidjs/solid",
-      "sourceId": "github-trending",
-      "source": "GitHub Trending",
-      "sourceHome": "https://github.com/trending",
-      "side": "supply",
-      "pool": true,
-      "title": "solidjs/solid",
-      "url": "https://github.com/solidjs/solid",
-      "summary": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+      "title": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "summary": "Cursor plugin specification and official plugins",
       "signal": {
         "language": "TypeScript",
-        "points": 37
+        "points": 383
       },
       "publishedAt": null
     },
     {
-      "id": "7d9153c0bf",
-      "normUrl": "https://github.com/punkpeye/awesome-mcp-servers",
+      "id": "2c7b311170",
+      "normUrl": "https://github.com/firecrawl/firecrawl",
       "sourceId": "github-trending",
       "source": "GitHub Trending",
       "sourceHome": "https://github.com/trending",
       "side": "supply",
       "pool": true,
-      "title": "punkpeye/awesome-mcp-servers",
-      "url": "https://github.com/punkpeye/awesome-mcp-servers",
-      "summary": "A collection of MCP servers.",
+      "title": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "summary": "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.",
       "signal": {
-        "language": null,
-        "points": 52
+        "language": "TypeScript",
+        "points": 795
       },
       "publishedAt": null
     },
     {
-      "id": "22516449d7",
-      "normUrl": "https://console.dev/out/warpbuild/tZ-pHgiPVgt5",
+      "id": "de50248ee7",
+      "normUrl": "https://github.com/nginx/nginx",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "nginx/nginx",
+      "url": "https://github.com/nginx/nginx",
+      "summary": "The official NGINX Open Source repository.",
+      "signal": {
+        "language": "C",
+        "points": 66
+      },
+      "publishedAt": null
+    },
+    {
+      "id": "c668885413",
+      "normUrl": "https://github.com/openvinotoolkit/openvino",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "openvinotoolkit/openvino",
+      "url": "https://github.com/openvinotoolkit/openvino",
+      "summary": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+      "signal": {
+        "language": "C++",
+        "points": 246
+      },
+      "publishedAt": null
+    },
+    {
+      "id": "14f321c495",
+      "normUrl": "https://github.com/cathrynlavery/diagram-design",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "summary": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "signal": {
+        "language": "HTML",
+        "points": 402
+      },
+      "publishedAt": null
+    },
+    {
+      "id": "01e478ba12",
+      "normUrl": "https://github.com/mvanhorn/last30days-skill",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "summary": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "signal": {
+        "language": "Python",
+        "points": 952
+      },
+      "publishedAt": null
+    },
+    {
+      "id": "52adf762d4",
+      "normUrl": "https://github.com/google-labs-code/stitch-skills",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "summary": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "signal": {
+        "language": "TypeScript",
+        "points": 303
+      },
+      "publishedAt": null
+    },
+    {
+      "id": "d664b5a459",
+      "normUrl": "https://github.com/mjmirza/app-store-compliance",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "mjmirza/app-store-compliance",
+      "url": "https://github.com/mjmirza/app-store-compliance",
+      "summary": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+      "signal": {
+        "language": "Shell",
+        "points": 542
+      },
+      "publishedAt": null
+    },
+    {
+      "id": "a9bca652f0",
+      "normUrl": "https://github.com/Tracer-Cloud/opensre",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "Tracer-Cloud/opensre",
+      "url": "https://github.com/Tracer-Cloud/opensre",
+      "summary": "The open-source agent for CI/CD reliability.",
+      "signal": {
+        "language": "Python",
+        "points": 25
+      },
+      "publishedAt": null
+    },
+    {
+      "id": "fd97a6d57c",
+      "normUrl": "https://github.com/toeverything/AFFiNE",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "toeverything/AFFiNE",
+      "url": "https://github.com/toeverything/AFFiNE",
+      "summary": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
+      "signal": {
+        "language": "TypeScript",
+        "points": 170
+      },
+      "publishedAt": null
+    },
+    {
+      "id": "c4d9d23166",
+      "normUrl": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "XiaoYouChR/Ghost-Downloader-3",
+      "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "summary": "The only downloader you need. 下载器的集大成者。",
+      "signal": {
+        "language": "Python",
+        "points": 449
+      },
+      "publishedAt": null
+    },
+    {
+      "id": "f991dd82d5",
+      "normUrl": "https://github.com/zhouxiaoka/autoclip",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "zhouxiaoka/autoclip",
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "summary": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+      "signal": {
+        "language": "Python",
+        "points": 110
+      },
+      "publishedAt": null
+    },
+    {
+      "id": "8e0f91a025",
+      "normUrl": "https://console.dev/out/warpbuild/CsxrVzX9NRYl",
       "sourceId": "consoledev",
       "source": "Console.dev",
       "sourceHome": "https://console.dev/",
       "side": "supply",
       "pool": true,
       "title": "Sponsor: WarpBuild",
-      "url": "https://console.dev/out/warpbuild/tZ-pHgiPVgt5",
-      "summary": "WarpBuild - Linux, macOS and Windows on x86-64 and ARM64. Unlimited macOS concurrency. Get $50 in free credits. Visit WarpBuild",
-      "publishedAt": "2026-11-12T08:00:00.000Z"
+      "url": "https://console.dev/out/warpbuild/CsxrVzX9NRYl",
+      "summary": "WarpBuild - Braintrust, Raycast and Jane Street run CI on WarpBuild. Get started with $50 in free credits. Visit WarpBuild",
+      "publishedAt": "2026-11-19T08:00:00.000Z"
     },
     {
-      "id": "6ca16f3747",
-      "normUrl": "https://console.dev/out/textjs/a0TpwEW4-W7J",
+      "id": "fde8f2b639",
+      "normUrl": "https://console.dev/out/kiri/uc4rDkQzyP8_",
       "sourceId": "consoledev",
       "source": "Console.dev",
       "sourceHome": "https://console.dev/",
       "side": "supply",
       "pool": true,
-      "title": "Tool: TextJS",
-      "url": "https://console.dev/out/textjs/a0TpwEW4-W7J",
-      "summary": "Full-stack console apps. What we like: Uses the browser console to render full applications. Supports React 19 and Flexbox (using Wasm). Flexibility over styling, routing, data handlers, tables, charts. Custom inputs and key mapping. Can also render to a terminal. What we dislike: Whilst this is fun, the project doesn’t really explain why you’d want to do this!",
-      "publishedAt": "2026-11-12T08:00:00.000Z"
+      "title": "Tool: Kiri",
+      "url": "https://console.dev/out/kiri/uc4rDkQzyP8_",
+      "summary": "Docker Desktop alternative. What we like: Single, Docker-compatible daemon (CLI, Compose, buildx). Performance optimized with a small memory footprint. Includes networks, volumes, k8s. Dev tools like auto-HTTPs endpoints with publicly sharable URLs. Supports macOS, Windows, Linux. What we dislike: Non-native UI, unlike something like Orbstack (which is macOS only). “Machines” are containers with filesystem access, not true VMs.",
+      "publishedAt": "2026-11-19T08:00:00.000Z"
     },
     {
-      "id": "6ed941247c",
-      "normUrl": "https://console.dev/out/aws-emulator/3euq858ma5cG",
+      "id": "515a7f9bf2",
+      "normUrl": "https://console.dev/out/jiff/1a1tcUnCcRHL",
       "sourceId": "consoledev",
       "source": "Console.dev",
       "sourceHome": "https://console.dev/",
       "side": "supply",
       "pool": true,
-      "title": "Tool: AWS Emulator",
-      "url": "https://console.dev/out/aws-emulator/3euq858ma5cG",
-      "summary": "Official AWS API Emulator. What we like: Local, single (Rust) binary that emulates AWS APIs. Can easily point the CLI and SDKs at it. Supports being embedded for isolated test instances. Includes agent skills and can run as a server. What we dislike: Doesn’t have full fidelity with all AWS APIs and it’s not easy to find out, but you can ask your AI agent to check for you.",
-      "publishedAt": "2026-11-12T08:00:00.000Z"
+      "title": "Tool: Jiff",
+      "url": "https://console.dev/out/jiff/1a1tcUnCcRHL",
+      "summary": "Datetime library for Rust. What we like: Understands timezones natively and handles daylight sayings. Built-in handling of common date operations like durations, differences, calculations, geo regions. Uses Rust-native formatting and display options, including friendly formats. What we dislike: Shows you how complex dates and times actually are, but that probably means fewer bugs!",
+      "publishedAt": "2026-11-19T08:00:00.000Z"
     },
     {
-      "id": "473afdfb01",
-      "normUrl": "https://console.dev/out/devvm/M-dkPb8wh4i6",
+      "id": "5e7cb55f63",
+      "normUrl": "https://console.dev/out/webkit/p_fUU4oT8ut1",
       "sourceId": "consoledev",
       "source": "Console.dev",
       "sourceHome": "https://console.dev/",
       "side": "supply",
       "pool": true,
-      "title": "Beta: DevVM",
-      "url": "https://console.dev/out/devvm/M-dkPb8wh4i6",
-      "summary": "VMs per project.",
-      "publishedAt": "2026-11-12T08:00:00.000Z"
+      "title": "Beta: SpatialCSS",
+      "url": "https://console.dev/out/webkit/p_fUU4oT8ut1",
+      "summary": "WebKit spatial CSS API.",
+      "publishedAt": "2026-11-19T08:00:00.000Z"
     },
     {
-      "id": "d93dd3b402",
-      "normUrl": "https://console.dev/out/github/uitmFtWpM6qj",
+      "id": "85f7e7e3bf",
+      "normUrl": "https://console.dev/out/jolt-lang/dsGfBa8Q0lrr",
       "sourceId": "consoledev",
       "source": "Console.dev",
       "sourceHome": "https://console.dev/",
       "side": "supply",
       "pool": true,
-      "title": "Beta: DBDelve",
-      "url": "https://console.dev/out/github/uitmFtWpM6qj",
-      "summary": "Database GUI client.",
-      "publishedAt": "2026-11-12T08:00:00.000Z"
+      "title": "Beta: Jolt",
+      "url": "https://console.dev/out/jolt-lang/dsGfBa8Q0lrr",
+      "summary": "Clojure that speaks C.",
+      "publishedAt": "2026-11-19T08:00:00.000Z"
     },
     {
-      "id": "a3a207c2dd",
-      "normUrl": "https://console.dev/out/github/VsUg-u66gdYP",
+      "id": "f8c38b0d72",
+      "normUrl": "https://console.dev/out/ui-sdk/rocB8fu4nw7D",
       "sourceId": "consoledev",
       "source": "Console.dev",
       "sourceHome": "https://console.dev/",
       "side": "supply",
       "pool": true,
-      "title": "Beta: Exact",
-      "url": "https://console.dev/out/github/VsUg-u66gdYP",
-      "summary": "Multi-platform GUI framework.",
-      "publishedAt": "2026-11-12T08:00:00.000Z"
+      "title": "Beta: UI SDK",
+      "url": "https://console.dev/out/ui-sdk/rocB8fu4nw7D",
+      "summary": "TypeScript library of UI behaviors.",
+      "publishedAt": "2026-11-19T08:00:00.000Z"
     },
     {
-      "id": "2284224484",
-      "normUrl": "https://console.dev/out/v3-parceljs/Rc6PVzmOea_r",
+      "id": "fb2363bd60",
+      "normUrl": "https://console.dev/out/pgjumbo/h-oKrXtqL800",
       "sourceId": "consoledev",
       "source": "Console.dev",
       "sourceHome": "https://console.dev/",
       "side": "supply",
       "pool": true,
-      "title": "Beta: Parcel v3",
-      "url": "https://console.dev/out/v3-parceljs/Rc6PVzmOea_r",
-      "summary": "JS build tool.",
-      "publishedAt": "2026-11-12T08:00:00.000Z"
+      "title": "Beta: pgjumbo",
+      "url": "https://console.dev/out/pgjumbo/h-oKrXtqL800",
+      "summary": "Postgres desktop client.",
+      "publishedAt": "2026-11-19T08:00:00.000Z"
     },
     {
-      "id": "666e030c3a",
-      "normUrl": "https://console.dev/out/github/3J1nnadMJMf7",
+      "id": "a416fa89a6",
+      "normUrl": "https://console.dev/out/makepad-github/LRy21WeGx1NL",
       "sourceId": "consoledev",
       "source": "Console.dev",
       "sourceHome": "https://console.dev/",
       "side": "supply",
       "pool": true,
-      "title": "Beta: pitot",
-      "url": "https://console.dev/out/github/3J1nnadMJMf7",
-      "summary": "Single binary observability stack.",
-      "publishedAt": "2026-11-12T08:00:00.000Z"
+      "title": "Beta: Relax",
+      "url": "https://console.dev/out/makepad-github/LRy21WeGx1NL",
+      "summary": "Rust JIT compiler.",
+      "publishedAt": "2026-11-19T08:00:00.000Z"
     },
     {
-      "id": "7582cc361a",
-      "normUrl": "https://console.dev/out/arca/BVBJquKxVE2j",
+      "id": "6f780a7ff2",
+      "normUrl": "https://console.dev/out/coresignal/uATIFjkypual",
       "sourceId": "consoledev",
       "source": "Console.dev",
       "sourceHome": "https://console.dev/",
       "side": "supply",
       "pool": true,
-      "title": "Sponsor: ARCA",
-      "url": "https://console.dev/out/arca/BVBJquKxVE2j",
-      "summary": "Get paid for your AI coding Visit ARCA",
-      "publishedAt": "2026-11-12T08:00:00.000Z"
-    },
-    {
-      "id": "77887ede15",
-      "normUrl": "https://console.dev/out/fandf/z1LYQfGkBXYG",
-      "sourceId": "consoledev",
-      "source": "Console.dev",
-      "sourceHome": "https://console.dev/",
-      "side": "supply",
-      "pool": true,
-      "title": "Sponsor: Token Custodian",
-      "url": "https://console.dev/out/fandf/z1LYQfGkBXYG",
-      "summary": "AI, governed Visit Token Custodian",
-      "publishedAt": "2026-11-12T08:00:00.000Z"
+      "title": "Sponsor: Coresignal",
+      "url": "https://console.dev/out/coresignal/uATIFjkypual",
+      "summary": "Agentic B2B search for builders Visit Coresignal",
+      "publishedAt": "2026-11-19T08:00:00.000Z"
     }
   ]
 }

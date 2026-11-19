@@ -1,0 +1,2589 @@
+{
+  "issue": "2026-11-20",
+  "builtAt": "2026-11-19T23:12:23.158Z",
+  "from": {
+    "boards": "prefetched",
+    "inbox": "live"
+  },
+  "counts": {
+    "fetched": 107,
+    "added": 66,
+    "kept": 66,
+    "dropped": 41,
+    "pool": 65,
+    "screened": 58,
+    "candidates": 30,
+    "demandCandidates": 8,
+    "supplyCandidates": 22
+  },
+  "errors": [],
+  "notices": [
+    "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
+  ],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-19T23:01:08Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：is there an app that（HTTP 404：2026-11-19T23:02:18Z https://rs）；is there a tool that（HTTP 404：2026-11-19T23:03:04Z https://rs）；someone should build（HTTP 404：2026-11-19T23:04:14Z https://rs）；we still use spreadsheets（HTTP 404：2026-11-19T23:05:24Z https://rs）",
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 6,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：we currently pay（HTTP 404：2026-11-19T23:06:10Z https://rs）；we are paying for（HTTP 404：2026-11-19T23:07:20Z https://rs）；quoted us（HTTP 404：2026-11-19T23:08:05Z https://rs）；per seat per month（HTTP 404：2026-11-19T23:09:16Z https://rs）",
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-19T23:10:01Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-19T23:11:12Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-19T23:12:22Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 2,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 3,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub Trending",
+      "status": "ok",
+      "items": 16,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "consoledev",
+      "name": "Console.dev",
+      "status": "ok",
+      "items": 9,
+      "pool": true,
+      "group": "board"
+    }
+  ],
+  "items": [
+    {
+      "id": "af7b26eecc",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/88369/prioritise-categorise-and-share-to-do-list",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Prioritise, categorise and share To Do list",
+      "url": "https://softwarerecs.stackexchange.com/questions/88369/prioritise-categorise-and-share-to-do-list",
+      "summary": "I'm looking for a way of creating a To Do list. There are 4 of us in my team and each person will have a list of tasks. I want to set a priority and category to each task and have each assigned to one of us. I'd like to be able to see all tasks in a single list and also be able to filter them by team member, priority and category. Ideally, I'd like to be able to add notes in an individual task. I could do it in Excel but wondered if there is any software that does it out of the box. Also, I work for the health service and paid software won't be an option unfortunately. Thanks.",
+      "deepenKey": "88369",
+      "signal": {
+        "score": 1,
+        "views": 85,
+        "answers": 2,
+        "unanswered": true
+      },
+      "publishedAt": "2023-11-16T19:46:19.000Z",
+      "ref": "I1",
+      "screen": {
+        "keep": true,
+        "score": 10,
+        "hits": [
+          "在用笨办法凑合"
+        ],
+        "detail": {
+          "signal": 4,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I'm looking for a way of creating a To Do list. There are 4 of us in my team and each person will have a list of tasks. I want to set a priority and category to each task and have each assigned to one of us. I'd like to be able to see all tasks in a single list and also be able to filter them by team member, priority and category. Ideally, I'd like to be able to add notes in an individual task. I could do it in Excel but wondered if there is any software that does it out of the box. Also, I work for the health service and paid software won't be an option unfortunately. Thanks.",
+        "comments": [
+          {
+            "text": "Maybe this points you in good direction: Kanban is a visual workflow management method that optimizes processes by displaying tasks on a board. This helps teams track work progress efficiently, typically using columns like \"Todo,\" \"In Progress,\" \"Done,\" and \"QA\". But you could also do this with a single column layout where you only have a \"Todo\" column. Online Kanban tools offer features such as assignments, labels, notes, and comments. So finding a Kanban tool with your requirements should not be to hard. Finding a free HIPAA-Compliant Kanban board might be challenging, but there are open-source options available for self-hosting.",
+            "score": 0
+          },
+          {
+            "text": "If your organisation is on Microsoft 365 (most NHS and other health-service organisations are, via NHSmail), Microsoft Planner does all of this at no extra cost: One plan for the team , with each of the four of you added as members. Category: use buckets (columns) or labels for the categories. Priority: every task has a priority field (Urgent / Important / Medium / Low). Assigned to: each task can be assigned to one or more people. Notes: each task has a notes field, a checklist and comments. Single list + filters: the Grid view shows every task in one list, and the Filter button narrows it by assignee, priority, label or due date. Group by \"Assigned to\" gives each person's list. It also appears inside Teams (add Planner as a tab in your team's channel), so nobody needs another login.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:12:24.439Z"
+      }
+    },
+    {
+      "id": "aeb52ceab1",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/91274/open-source-google-keep-alternatives",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Open-source Google Keep alternatives?",
+      "url": "https://softwarerecs.stackexchange.com/questions/91274/open-source-google-keep-alternatives",
+      "summary": "Is there any comparable alternative to Google's Keep? Features I require: notes must support including images (via copy and paste) and other files (PDFs) and treat them as attachments/image gallery, not necessarily inline (because there may be many images/large images) notes, images and PDFs must be indexed/searchable (via OCR (ie easyocr)) I wrote a note taking app with integrated live search ( https://github.com/jjYBdx4IL/ajax-solnotes ), but abandoned it because Google Keep does perfect OCR on images, which I can just copy and paste into notes there.",
+      "deepenKey": "91274",
+      "signal": {
+        "score": 3,
+        "views": 481,
+        "answers": 2,
+        "unanswered": true
+      },
+      "publishedAt": "2024-10-06T13:02:19.000Z",
+      "ref": "I2",
+      "screen": {
+        "keep": true,
+        "score": 15,
+        "hits": [
+          "在用笨办法凑合",
+          "在换掉现有方案"
+        ],
+        "detail": {
+          "signal": 7,
+          "engagement": 5,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Is there any comparable alternative to Google's Keep? Features I require: notes must support including images (via copy and paste) and other files (PDFs) and treat them as attachments/image gallery, not necessarily inline (because there may be many images/large images) notes, images and PDFs must be indexed/searchable (via OCR (ie easyocr)) I wrote a note taking app with integrated live search ( https://github.com/jjYBdx4IL/ajax-solnotes ), but abandoned it because Google Keep does perfect OCR on images, which I can just copy and paste into notes there. I also don't really want to create a new fancy UI from scratch. So what would you recommend to achieve the goal? Is there a universal UI framework that let's me build that without re-inventing the UI wheel? Or is there a complete and free solution already existing that I simply overlooked?",
+        "comments": [
+          {
+            "text": "Check out Obsidian . It is available for PC (Windows, Linux, Mac) and mobile platforms (Android, iOS). All files are stored locally in Markdown format. It has many plugins that extend its capabilities, including OCR .",
+            "score": 0
+          },
+          {
+            "text": "Joplin is the closest open-source fit for your two requirements: Attachments: you can paste images straight into a note and attach PDFs and other files; they are stored as resources of the note rather than having to be inline. OCR search: since Joplin 3.0 the desktop app can run OCR (Tesseract) on image and PDF attachments, and the recognised text is included in search. It is off by default; switch it on in the settings. It is free (AGPL), has apps for Windows, macOS, Linux, Android and iOS, and you pick the sync target (Nextcloud, WebDAV, Dropbox, OneDrive, or a self-hosted Joplin Server), so nothing has to leave your own infrastructure. One caveat: OCR runs in the desktop app, so images pasted on the phone become searchable once a desktop client has synced and processed them.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Ask HN: What tech stack would you use to build an open-source Google Keep clone?",
+            "points": 190,
+            "url": "https://news.ycombinator.com/item?id=19070438"
+          },
+          {
+            "title": "Google Keeps Making Smartphones Worse",
+            "points": 25,
+            "url": "https://news.ycombinator.com/item?id=44658772"
+          },
+          {
+            "title": "Google Keeps Making Smartphones Worse",
+            "points": 18,
+            "url": "https://news.ycombinator.com/item?id=44586244"
+          }
+        ],
+        "fetchedAt": "2026-11-19T23:12:23.797Z"
+      }
+    },
+    {
+      "id": "ceba9834ca",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/87165/gui-for-editing-multiple-json-files",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "GUI for editing multiple JSON files",
+      "url": "https://softwarerecs.stackexchange.com/questions/87165/gui-for-editing-multiple-json-files",
+      "summary": "I am looking to edit JSON files in bulk / batch. I know I can do this programmatically, or do find/replaces across files, but I am hoping to find a friendlier GUI that allows me to do things across a selection of files like: editing a certain key: adding a key nice to have: seeing stats of the value of a specific key to quickly spot typo's Is there something available like this for any OS, or as a webapp?",
+      "deepenKey": "87165",
+      "signal": {
+        "score": 1,
+        "views": 3035,
+        "answers": 2,
+        "unanswered": true
+      },
+      "publishedAt": "2023-05-29T14:30:18.000Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": 10,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 7,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I am looking to edit JSON files in bulk / batch. I know I can do this programmatically, or do find/replaces across files, but I am hoping to find a friendlier GUI that allows me to do things across a selection of files like: editing a certain key: adding a key nice to have: seeing stats of the value of a specific key to quickly spot typo's Is there something available like this for any OS, or as a webapp? To clarify what I mean, I have included two example json files below: File 1: { \"title\": \"Some title\", \"categories\": [ \"Category 1\", \"Category 2\" ], \"specs\": [ \"Up\", \"Down\", \"Left\", 43 ], \"price: { \"type\": \"Upper\", \"amount\": 5, }, \"delivery: { \"type\": \"Pickup\", \"amount\": 1, }, } File 2: { \"title\": \"Some other title\", \"categories\": [ \"Category 1\", \"Catergoy 6\" ], \"specs\": [ \"Up\", 42 ], \"price: { \"type\": \"Upper\", \"amount\": 6, }, \"delivery: { \"type\": \"Address\", \"amount\": 2, }, \"status\": sold } I am looking for GUI software that would allow me to e.g.: edit the price.amount key and set it to 10 for all selected files add a key status to all files, choosing whether or not I want to overwrite any existing keys show all values for the key category , such that I can quickly see that there are 3 distinct values of which one has a typo ( Categroy 6 ).",
+        "comments": [
+          {
+            "text": "Various text editors allow you to open several files at once and do find and replace over several. I use Notepad++. Your question is a little vague. Any software that would allow more then find and replace would be so complex to use that you might as well write a script for it. Batch replace with Notepad++ is explained in this SO answer .",
+            "score": 0
+          },
+          {
+            "text": "Check out Kate (from KDE). The application is cross-platform and very functional. But for mass editing of JSON values, it is probably better to write a simple Python script.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Show HN: Jless, a command-line JSON viewer",
+            "points": 344,
+            "url": "https://news.ycombinator.com/item?id=30273940"
+          }
+        ],
+        "fetchedAt": "2026-11-19T23:12:24.764Z"
+      }
+    },
+    {
+      "id": "b3f03e2f59",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/52291/meal-planning-app-with-grocery-list-and-custom-meal-types",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Meal planning app with grocery list and custom meal types",
+      "url": "https://softwarerecs.stackexchange.com/questions/52291/meal-planning-app-with-grocery-list-and-custom-meal-types",
+      "summary": "I am looking for a meal planner application Features: adding my own recipies defining meals for each week day, e.g., tom yam soup on Friday lunch generating grocery list from the ingredients defined meals defining meal types: breakfast, second breakfast, lunch, etc. Target platform : Windows or online Paid versions : I am fine if the application is not free. What would you recommend? I have found Paprika , but version for Windows does not offer defining meal types.",
+      "deepenKey": "52291",
+      "signal": {
+        "score": 3,
+        "views": 54,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2018-09-21T00:52:40.000Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "54a20e35ec",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95817/lookin-for-the-best-battery-app",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Lookin for the Best Battery App",
+      "url": "https://softwarerecs.stackexchange.com/questions/95817/lookin-for-the-best-battery-app",
+      "summary": "Mainly to alert me when my battery is critically low",
+      "deepenKey": "95817",
+      "signal": {
+        "score": 0,
+        "views": 3,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2026-11-19T21:23:54.000Z",
+      "ref": "I5",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "7b1fe3aafe",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/53313/free-software-to-record-webcam-on-windows-that-will-keep-recording-in-background",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Free software to record webcam on Windows that will keep recording in background and even if the computer in locked",
+      "url": "https://softwarerecs.stackexchange.com/questions/53313/free-software-to-record-webcam-on-windows-that-will-keep-recording-in-background",
+      "summary": "Please recommend me a free software that can record video from webcam on a Windows computer. I have tried ScreenToGif to record from webcam but it requires the program to be in foreground. If it is minimized or you open another window or lock the computer, it won't record the webcam. So my requirement is a program what will keep recording in background (i.e. with other windows or programs in forefront, e.g. a browser) and even if the computer in locked.",
+      "deepenKey": "53313",
+      "signal": {
+        "score": 2,
+        "views": 448,
+        "answers": 3,
+        "unanswered": true
+      },
+      "publishedAt": "2018-11-22T20:44:57.000Z",
+      "ref": "I6",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Please recommend me a free software that can record video from webcam on a Windows computer. I have tried ScreenToGif to record from webcam but it requires the program to be in foreground. If it is minimized or you open another window or lock the computer, it won't record the webcam. So my requirement is a program what will keep recording in background (i.e. with other windows or programs in forefront, e.g. a browser) and even if the computer in locked.",
+        "comments": [
+          {
+            "text": "I would look at VLC and its command line options and usages. I know I can do what you are asking for using it on a Linux system, and capturing at a very very low frame rate.",
+            "score": 0
+          },
+          {
+            "text": "ffmpeg will do this, scriptable, etc. You need to get the windows port, but syntax is relatively the same. https://ffmpeg.org/download.html https://trac.ffmpeg.org/wiki/Capture/Webcam",
+            "score": 0
+          },
+          {
+            "text": "I use screenrec . You can use the free version. You don't even have to create an account. It will also do screenshots.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:12:25.555Z"
+      }
+    },
+    {
+      "id": "fc0ea8ed20",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95812/how-to-transfer-photos-from-icloud-photos-to-google-drive",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "How to Transfer Photos from iCloud Photos to Google Drive",
+      "url": "https://softwarerecs.stackexchange.com/questions/95812/how-to-transfer-photos-from-icloud-photos-to-google-drive",
+      "summary": "I'm looking for a convenient way to transfer photos from iCloud Photos to Google Drive. I have photos stored in my Apple account and want to move a copy of them to Google Drive so I can access and manage them more easily across different devices. I've been exploring different options, including downloading photos from iCloud and uploading them manually, but that can become time-consuming when dealing with a large photo library. I also came across All Cloud Hub , a multi-cloud management platform available as a web app and mobile apps for iOS and Android.",
+      "deepenKey": "95812",
+      "signal": {
+        "score": 0,
+        "views": 13,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2026-11-19T11:06:06.000Z",
+      "ref": "I7",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [
+          "在用笨办法凑合",
+          "要的是库不是产品"
+        ],
+        "detail": {
+          "signal": -1,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "cca25b10d2",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/82383/does-anyone-know-of-a-swiftui-compiler",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Does anyone know of a SwiftUI compiler?",
+      "url": "https://softwarerecs.stackexchange.com/questions/82383/does-anyone-know-of-a-swiftui-compiler",
+      "summary": "I do not want something big to download, like Xcode, but I want an online SwiftUI compiler that I can open from my browser.",
+      "deepenKey": "82383",
+      "signal": {
+        "score": 2,
+        "views": 2412,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2022-03-03T13:59:13.000Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": 13,
+        "hits": [
+          "在找但没找到"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 7,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I do not want something big to download, like Xcode, but I want an online SwiftUI compiler that I can open from my browser.",
+        "comments": [
+          {
+            "text": "I'm not sure if there is a website; AFAIK, SwiftUI is (unlike Swift itself) not open source, so if Apple doesn't provide a website for it, there is likely to be none. According to this blog post , it is possible to run a SwiftUI app directly from the command line, with only the Xcode Command Line Tools (installable with the command xcode-select –install ), not the full package. That might help?",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Launch HN: Bitrig (YC S25) – Build Swift apps on your iPhone",
+            "points": 188,
+            "url": "https://news.ycombinator.com/item?id=45041185"
+          }
+        ],
+        "fetchedAt": "2026-11-19T23:12:24.165Z"
+      }
+    },
+    {
+      "id": "82d95a3995",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95347/apache-nginx-log-file-analysis-tool-that-allows-drilling-down-to-individual-urls",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Apache/Nginx log file analysis tool that allows drilling down to individual URLs with web UI",
+      "url": "https://softwarerecs.stackexchange.com/questions/95347/apache-nginx-log-file-analysis-tool-that-allows-drilling-down-to-individual-urls",
+      "summary": "I'm aware of things like AWStats and GoAccess, but neither of them really provide quite what I'm looking for in a logfile analysis tool. Basically, it seems to me that it should be relatively simple to regularly parse access logfiles, stick them in a SQLite database, and allow a web interface to be pretty flexible based on being able to query that DB. For instance, if I have a panel showing a list of different URLs retrieved by number of hits, I may want to click on one and drill down to see a graph over time of just that URL.",
+      "deepenKey": "95347",
+      "signal": {
+        "score": 0,
+        "views": 17,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2026-04-26T19:12:06.000Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "737809b56c",
+      "normUrl": "https://news.ycombinator.com/item?id=50566487",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Anthropic should give stock to Stack Overflow (and OpenAI too)",
+      "url": "https://news.ycombinator.com/item?id=50566487",
+      "externalUrl": null,
+      "summary": "Anthropic and OpenAI should give Stack Overflow a percentage of their company. They used all of Stack Overflow's data to train their AI models at the beginning of LLMs without paying for it because it was publicly available online. ChatGPT and Claude would not exist today without the 24 million coding questions and 36 million answers with code examples included, all created by real humans who took the time to write the questions and answers. Stack Overflow deserves to be rewarded for making Anthropic and OpenAI such a success.",
+      "deepenKey": "50566487",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-19T21:15:17Z",
+      "ref": "I10",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6a357411b4",
+      "normUrl": "https://news.ycombinator.com/item?id=50565484",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Where do you see Software in 5 years?",
+      "url": "https://news.ycombinator.com/item?id=50565484",
+      "externalUrl": null,
+      "summary": "I wanted to hear some good opinions on all things AI and how they transform the Software industry. I'm anxious about the future and lack the foresight to form any opinion on what to do next. For context, I'm a L4 SWE that has more or less say 5-10 yrs of exp. I've enjoyed my work throughout my career, AI makes me ship more, much more than I could do 3 years ago. I feel I use it well and it translates into really good software. That said, what do you think happens in years to come with the Software industry in general? Do you think we'll go through a massive erosion of jobs?",
+      "deepenKey": "50565484",
+      "via": null,
+      "signal": {
+        "points": 9,
+        "comments": 9
+      },
+      "publishedAt": "2026-11-19T20:01:18Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I wanted to hear some good opinions on all things AI and how they transform the Software industry. I'm anxious about the future and lack the foresight to form any opinion on what to do next. For context, I'm a L4 SWE that has more or less say 5-10 yrs of exp. I've enjoyed my work throughout my career, AI makes me ship more, much more than I could do 3 years ago. I feel I use it well and it translates into really good software. That said, what do you think happens in years to come with the Software industry in general? Do you think we'll go through a massive erosion of jobs? What's your perspective on that? I'm asking because I honestly don't know what to do: I can try to always keep up to date with newest technologies, best practices, but I'm only me; if the demand for SWEs and jobs falls to the floor, I'm not sure I'll always get a place at the table (i.e. land a job) and I'm wondering whether I should try to do something else in some other industry. It feels weird to be in a good position in life and still constantly worry about it getting worse.",
+        "comments": [
+          {
+            "text": "where do you see it in 5 years? if you're anxious about job security, standing out in your career is generally not specific to the industry you are in."
+          },
+          {
+            "text": "In 5 years time software will exist in 3 silos. It's really not any different today, except the talent will continue to diverge. Silo 1 - This will be employers strongly forcing AI for most task completion. This will be most large corporate employers and most start ups. There will be little to no working knowledge of the internals of large applications and these employers will bleed money on outside consultants to occasionally provide manual maintenance and security hot fixes. Everything will continue to look good from the outside, but really its a messy house of cards. Silo 2 - This will be institutional shops of skilled experts. Game companies that own internally developed rendering engines, kernel developers, independent open source, and systems architects come to mind. These will be people that might occasionally dabble in AI for various things, but they manually modify their code."
+          },
+          {
+            "text": "In 5 years I don't see myself using any software that I didn't design and build myself. I'm already ~30-40% there, 100% is not yet feasible but in 5 years time (maybe less) it will happen."
+          },
+          {
+            "text": "Software as we know it will be gone in 5 years. AI will have replaced all our existing software, using new languages, new AI created frameworks completely foreign to our current approaches and installed base of systems and application software. In 5 years We will have far passed the ability and need to review code. We will have phenomenal AI reviews to do that. Existing tools, systems, frameworks and such just won't matter, would just slow down AI. Replacing complete vertical system silos will be done in a single, crazy step, efficient to run, secured by an awesome security AI. I recently retired after working in software development from 1975 to 2025 encompassing punch cards to AI."
+          },
+          {
+            "text": "To me it never changed, I like coding because for the sake of it and i like learning, AI came and i adapted, i didn't expect it to grow this fast and change software landscape this much. But i was there when gpt2 and 3 came out i even had early access and I learned how it worked and I can say one thing companies still need software engineers as long as LLMs themselves exists, this isn't end all and be all they are trying to force this idea into existence AI by this time should have already replaced all coders but it isn't because giant corporations are trying to force scaling instead of finding a way to make them more intelligent in a meaningful way."
+          },
+          {
+            "text": "Everyone wants a crystal ball on where this will end up. Reality is none of us have any idea - there's a risk to any decision you make. I can make a decent sounding argument for any side. The onramp for coding becoming easier means non-tech people finally have a cheaper way to try out business ideas for domains they're experts in. Many of those will succeed and will need to hire developers, massively increasing the demand. Coding becoming easier means many more people will jump in, reducing wages rapidly. While there might be some work available, it'll mostly be low paid. Now that one person can do the job of 5, 4/5 will be laid off and we'll all struggle to get work. Now that one person can do the job of 5, AND there will be an increased demand for more developers from more businesses popping up, we'll be paid a hell of a lot more for the value we can generate."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:12:26.261Z"
+      }
+    },
+    {
+      "id": "096a8fe7c4",
+      "normUrl": "https://news.ycombinator.com/item?id=50564979",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Who Is Hiring? (November 2026 – We Give a Shit Edition)",
+      "url": "https://news.ycombinator.com/item?id=50564979",
+      "externalUrl": null,
+      "summary": "This is a bit of a tongue-in-cheek. Since reading the \"We need smart people who give a shit\" story (https://news.ycombinator.com/item?id=50554045), and the comments underneath it, I realise that there is a good deal of engineers who are disgruntled by how AI is incompatible with smart people who give a shit, how it is turning us into meat proxies and Letzter Mensch.",
+      "deepenKey": "50564979",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-19T19:26:56Z",
+      "ref": "I12",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "招聘找人",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "2a92e8f73f",
+      "normUrl": "https://news.ycombinator.com/item?id=50562528",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Anthropic (ANT) stock lists at nearly $2T valuation",
+      "url": "https://news.ycombinator.com/item?id=50562528",
+      "externalUrl": null,
+      "summary": "Anthropic (ANT) stock listed at nearly $2 Trillion valuation. It is the biggest IPO ever!",
+      "deepenKey": "50562528",
+      "via": null,
+      "signal": {
+        "points": 39,
+        "comments": 11
+      },
+      "publishedAt": "2026-11-19T16:47:32Z",
+      "ref": "I13",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "ba269c0e99",
+      "normUrl": "https://news.ycombinator.com/item?id=50561571",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "GitLab 19.6.0 is out and still vulnerable to Ruby2Shell and NGINX2Root",
+      "url": "https://news.ycombinator.com/item?id=50561571",
+      "externalUrl": null,
+      "summary": "What's going on at GitLab? They released their usual monthly release 19.6.0 to their package repos (https://packages.gitlab.com/gitlab/gitlab-ee/ubuntu/jammy/pool/main/g/gitlab-ee/) but did not announce it at all as of 3.5h after release (https://docs.gitlab.com/releases/all-releases.xml, https://docs.gitlab.com/releases/19/gitlab-19-6-released/). But more annoyingly, this release does not address ruby2shell or nginx2root, nor do patches for their older releases exist yet and there's no communication on any of this (that I can find).",
+      "deepenKey": "50561571",
+      "via": null,
+      "signal": {
+        "points": 22,
+        "comments": 6
+      },
+      "publishedAt": "2026-11-19T15:42:26Z",
+      "ref": "I14",
+      "screen": {
+        "keep": true,
+        "score": 8,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 5,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "What's going on at GitLab? They released their usual monthly release 19.6.0 to their package repos (https://packages.gitlab.com/gitlab/gitlab-ee/ubuntu/jammy/pool/main/g/gitlab-ee/) but did not announce it at all as of 3.5h after release (https://docs.gitlab.com/releases/all-releases.xml, https://docs.gitlab.com/releases/19/gitlab-19-6-released/). But more annoyingly, this release does not address ruby2shell or nginx2root, nor do patches for their older releases exist yet and there's no communication on any of this (that I can find). root@gitlab:~# cat /opt/gitlab/embedded/service/gitlab-rails/VERSION 19.6.0-ee root@gitlab:~# /opt/gitlab/embedded/sbin/nginx -version nginx version: nginx/1.31.7 root@gitlab:~# /opt/gitlab/embedded/bin/ruby --version ruby 3.3.13 (2026-10-23 revision af48f08f21) [x86_64-linux] root@gitlab:~# lsb_release -a No LSB modules are available. Distributor ID: Ubuntu Description: Ubuntu 22.04.5 LTS Release: 22.04 Codename: jammy Multiple MRs were created in their repos 14-15 hours ago, no urgency visible. Heres 2 I found: https://gitlab.com/gitlab-org/omnibus-gitlab/-/merge_requests/10138 https://gitlab.com/gitlab-org/omnibus-gitlab/-/merge_requests/10139",
+        "comments": [
+          {
+            "text": "\"Application security: Taking days when minutes matter\" --Software mantra for 2026."
+          },
+          {
+            "text": "too many 2shell these days"
+          },
+          {
+            "text": "is this only for self hosted?"
+          },
+          {
+            "text": "The pre-release info on 19.6.0 says that it addresses nginx2shell: https://docs.gitlab.com/update/versions/gitlab_19_changes/#n... There is also a workaround to disable http2 from NGINX and make that part safe. I'm leaving HTTP2 disabled for the forseeable future. - edit /etc/gitlab/gitlab.rb - add lines: gitlab_rails['nginx']['http2_enabled'] = false nginx['http2_enabled'] = false - save and run: gitlab-ctl reconfigure - finally run: gitlab-ctl restart nginx There is no workaorund for Ruby2Shell though :( As it was just dropped last night, well after they would have started testing etc for 19.6.0, it's no surprise it's not in there. Also, since they konw 19.6.0 has Ruby2Shell in it, it's not much surprise they haven't been promoting it, or that they are scrambling. GitLab is such a huge beast that it can't be quick to get changes made and run through tests for everything."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "GitLab 19.6.0 is out and still vulnerable to Ruby2Shell and NGINX2Root",
+            "points": 22,
+            "url": "https://news.ycombinator.com/item?id=50561571"
+          }
+        ],
+        "fetchedAt": "2026-11-19T23:12:25.262Z"
+      }
+    },
+    {
+      "id": "b6640a23e8",
+      "normUrl": "https://news.ycombinator.com/item?id=50560946",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Does Liquidity Drive the Stock Market? We Tested 22 Years of Fed Data",
+      "url": "https://news.ycombinator.com/item?id=50560946",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50560946",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-19T14:56:23Z",
+      "ref": "I15",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "36426bb45d",
+      "normUrl": "https://news.ycombinator.com/item?id=50560915",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "When was the last time you thought \"that's bad API design\"?",
+      "url": "https://news.ycombinator.com/item?id=50560915",
+      "externalUrl": null,
+      "summary": "I used to be irrationally impressed when I saw good API design and docs. Now I can't remember the last time I sat down and spent meaningful time reading docs for a platform. I've just gotten in the habit of pointing Claude at them or using a service like Context7 for the past year or so. As a consumer, I've realized that I'm not even sure which services I use that have good or badly designed APIs. If you maintain an API, have you changed how you write docs now that the main reader is probably an LLM?",
+      "deepenKey": "50560915",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-19T14:53:34Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3d2c82cbbd",
+      "normUrl": "https://news.ycombinator.com/item?id=50560575",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Rant: Gemini 4 does not make any sense",
+      "url": "https://news.ycombinator.com/item?id=50560575",
+      "externalUrl": null,
+      "summary": "On November 18th, Google released another model, this one called Neon. Making it the fourth model in just 2 months. OpenAI makes sense: Luna-Terra-Sol-Astra. Moon is smaller than earth, earth is smaller than sun and I can forgive them for not knowing that sun is also a star. Anthropic is even better: Haiku-Sonnet-Opus-Mythos/Fable. Haiku is an extremely short poem, Sonnet is a bit longer, Opus is very long and Mythos is extremely long. Ok, Fable does not exactly really fit in there, but they came up with it after they only had the three models, so we had time to adjust.",
+      "deepenKey": "50560575",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 7
+      },
+      "publishedAt": "2026-11-19T14:28:11Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e1b839470c",
+      "normUrl": "https://news.ycombinator.com/item?id=50560324",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Why is China treated as threat-actor but not India?",
+      "url": "https://news.ycombinator.com/item?id=50560324",
+      "externalUrl": null,
+      "summary": "Why do people balk at someone saying that the actions of India/Indians are a negative vector for technology but you can unblinkingly say China/Chinese in the same breath and they will agree? Doublethink/it's 1984/people are gullible cretins are not acceptable answers.",
+      "deepenKey": "50560324",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 15
+      },
+      "publishedAt": "2026-11-19T14:09:04Z",
+      "ref": "I18",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "14a1d49349",
+      "normUrl": "https://news.ycombinator.com/item?id=50558285",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How do you manage the curse of rabbit hole?",
+      "url": "https://news.ycombinator.com/item?id=50558285",
+      "externalUrl": null,
+      "summary": "I know that I can ask llm however, asking to real people still the best way to get an insight, Prolog: sometimes I do wonder , the best technical decision, best executive CEO as steve blank called, I notice they usually don't have that much information, while I struggle with so much information (I do love learning as that a curse) causing analysis paralyzed, what kind of method or strategy do you have be it technical or intuition based ? Thank you for discussion.",
+      "deepenKey": "50558285",
+      "via": null,
+      "signal": {
+        "points": 9,
+        "comments": 7
+      },
+      "publishedAt": "2026-11-19T10:21:56Z",
+      "ref": "I19",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "cd796f9a3c",
+      "normUrl": "https://news.ycombinator.com/item?id=50556046",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Every one of my \"show\" posts is removed immediately",
+      "url": "https://news.ycombinator.com/item?id=50556046",
+      "externalUrl": null,
+      "summary": "anyone else experience this? i think, wow i’ve got this neat project im working on that this community might actually find interesting. spend time writing the post only to get it immediately removed seconds later. kind of makes me just generally not want to post projects here.",
+      "deepenKey": "50556046",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 12
+      },
+      "publishedAt": "2026-11-19T04:20:28Z",
+      "ref": "I20",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5f16696a85",
+      "normUrl": "https://news.ycombinator.com/item?id=50555002",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Tips for transitioning from web development to embedded/firmware?",
+      "url": "https://news.ycombinator.com/item?id=50555002",
+      "externalUrl": null,
+      "summary": "I started my career 15+ years ago doing native development (c, c++, etc), but the last decade I've been doing fullstack web applications. I'd like to transition closer to my roots with a job doing primarily c, c++ or rust. The natural place seems to be in embedded development or firmware work. How feasible is the transition this late in the game? Any advice?",
+      "deepenKey": "50555002",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 5
+      },
+      "publishedAt": "2026-11-19T01:37:45Z",
+      "ref": "I21",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "fd505faa8c",
+      "normUrl": "https://news.ycombinator.com/item?id=50554756",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "/tmp is hogging your RAM on Ubuntu 26",
+      "url": "https://news.ycombinator.com/item?id=50554756",
+      "externalUrl": null,
+      "summary": "As a Ubuntu user, it was just brought to my attention that /tmp is now mounted on tmpfs (aka your RAM). Coding agents, like Claude Code, use /tmp as a scratchpad for files, model weights, etc. Therefore, if you have RAM constraints, consider setting CLAUDE_CODE_TMPDIR to e.g. ~/.claude/tmp",
+      "deepenKey": "50554756",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-19T01:13:06Z",
+      "ref": "I22",
+      "screen": {
+        "keep": true,
+        "score": 3,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "455bd71a33",
+      "normUrl": "https://news.ycombinator.com/item?id=50554686",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "When does your app need its own UI vs. using it via MCP?",
+      "url": "https://news.ycombinator.com/item?id=50554686",
+      "externalUrl": null,
+      "summary": "I'd love to hear HN user's views on when they think an app their building needs a UI vs just supplies data via MCP to Claude/ChatGPT. If Claude/ChatGPT is where the bulk of work is done in the future (perhaps analogous to a general purpose computer) then how should app developers build in this world?",
+      "deepenKey": "50554686",
+      "via": null,
+      "signal": {
+        "points": 7,
+        "comments": 7
+      },
+      "publishedAt": "2026-11-19T01:04:20Z",
+      "ref": "I23",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "bdd984b806",
+      "normUrl": "https://news.ycombinator.com/item?id=50554381",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Cheapest CPU Vms",
+      "url": "https://news.ycombinator.com/item?id=50554381",
+      "externalUrl": null,
+      "summary": "hetzner seems to be out of stock for cheapest plans for a few weeks/months now.. any alternatives that are as cheap or cheaper?",
+      "deepenKey": "50554381",
+      "via": null,
+      "signal": {
+        "points": 13,
+        "comments": 8
+      },
+      "publishedAt": "2026-11-19T00:30:18Z",
+      "ref": "I24",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "c6a0ce74ff",
+      "normUrl": "https://news.ycombinator.com/item?id=50553802",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "I open-sourced an AI loop for RISC-V CPU design months prior to OpenAI",
+      "url": "https://news.ycombinator.com/item?id=50553802",
+      "externalUrl": null,
+      "summary": "Back in April, I built auto-arch-tournament (https://github.com/FeSens/auto-arch-tournament) to explore a question I’m still curious about: how well can different AI models improve a RISC-V CPU? I’ve been tracking the results on HWEBench(https://hwebench.com/v2). It’s fun to see OpenAI exploring a similar question in today’s chip design post(https://openai.com/index/advancing-chip-design-with-our-models/). If you’d like to try an experiment yourself, you can run the research loop from the repo.",
+      "deepenKey": "50553802",
+      "via": null,
+      "signal": {
+        "points": 9,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-18T23:26:30Z",
+      "ref": "I25",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "0642ef1f50",
+      "normUrl": "https://news.ycombinator.com/item?id=50551501",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Developing Browser Extensions",
+      "url": "https://news.ycombinator.com/item?id=50551501",
+      "externalUrl": null,
+      "summary": "What's the best way to gain users when creating a new browser app? I'm not good at marketing. YET!",
+      "deepenKey": "50551501",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-18T20:12:01Z",
+      "ref": "I26",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6a93373459",
+      "normUrl": "https://news.ycombinator.com/item?id=50549762",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are your non-technical colleagues vibecoding? How are the apps hosted?",
+      "url": "https://news.ycombinator.com/item?id=50549762",
+      "externalUrl": null,
+      "summary": "I'm at a data analytics legal tech company, our clients are law firms. I've noticed in the last few months our clients, lawyers and paralegals, have been vibecoding up a storm with codex/cowork (their marketing is working xD). We had one customer create a dashboard of aggregated client data and expose it publically via Vercel. Luckily no one out of the firm accessed it and we helped them take it down, but it's scary. I'm curious if other people are seeing this at their companies/communities, and how these internal apps are being hosted.",
+      "deepenKey": "50549762",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-18T18:04:27Z",
+      "ref": "I27",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "有具体人群"
+        ],
+        "detail": {
+          "signal": 3,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I'm at a data analytics legal tech company, our clients are law firms. I've noticed in the last few months our clients, lawyers and paralegals, have been vibecoding up a storm with codex/cowork (their marketing is working xD). We had one customer create a dashboard of aggregated client data and expose it publically via Vercel. Luckily no one out of the firm accessed it and we helped them take it down, but it's scary. I'm curious if other people are seeing this at their companies/communities, and how these internal apps are being hosted.",
+        "comments": [
+          {
+            "text": "GPT offers GPT sites for hosting. Not sure how secure it is. It feels like Google Workspace."
+          },
+          {
+            "text": "These vibe-coded apps built by non-tech people are getting dangerous. I used to provide development services, but now I have shifted to providing code reviews, app security analysis, and AI app hardening."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:12:25.881Z"
+      }
+    },
+    {
+      "id": "da0c945328",
+      "normUrl": "https://producthunt.com/products/heygen",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "HeyGen Avatar 6",
+      "url": "https://www.producthunt.com/products/heygen",
+      "summary": "AI Avatar Model That Looks Like You",
+      "publishedAt": "2026-11-18T12:03:30.000Z",
+      "ref": "I28",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "AI Avatar Model That Looks Like You",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:12:26.599Z"
+      }
+    },
+    {
+      "id": "d593589c43",
+      "normUrl": "https://producthunt.com/products/cleared-quit-nicotine",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Cleared",
+      "url": "https://www.producthunt.com/products/cleared-quit-nicotine",
+      "summary": "Your personal plan to give up vapes, pouches and cigarettes",
+      "publishedAt": "2026-11-18T15:27:40.000Z",
+      "ref": "I29",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Your personal plan to give up vapes, pouches and cigarettes",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:12:46.355Z"
+      }
+    },
+    {
+      "id": "b41d4305ea",
+      "normUrl": "https://producthunt.com/products/teaflask",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Teaflask",
+      "url": "https://www.producthunt.com/products/teaflask",
+      "summary": "Self-improving AI copilot for your app. No backend changes.",
+      "publishedAt": "2026-11-09T16:27:48.000Z",
+      "ref": "I30",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Self-improving AI copilot for your app. No backend changes.",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:13:06.366Z"
+      }
+    },
+    {
+      "id": "03ababdeb0",
+      "normUrl": "https://producthunt.com/products/tooljet",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "ToolJet",
+      "url": "https://www.producthunt.com/products/tooljet",
+      "summary": "Vibe-coded business apps that pass the security review",
+      "publishedAt": "2026-11-19T03:07:11.000Z",
+      "ref": "I31",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Vibe-coded business apps that pass the security review",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:13:26.390Z"
+      }
+    },
+    {
+      "id": "29abd65ced",
+      "normUrl": "https://producthunt.com/products/upsolve-ai",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Upsolve MCP Connections",
+      "url": "https://www.producthunt.com/products/upsolve-ai",
+      "summary": "Plug Notion, Linear and more into your data agent",
+      "publishedAt": "2026-11-18T21:56:08.000Z",
+      "ref": "I32",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Plug Notion, Linear and more into your data agent",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Launch HN: Pinch (YC W25) – Video conferencing with immersive translation",
+            "points": 72,
+            "url": "https://news.ycombinator.com/item?id=42935355"
+          },
+          {
+            "title": "Show HN: JavaScript web apps with WASM layout and GPU rendering in 280 KB",
+            "points": 46,
+            "url": "https://news.ycombinator.com/item?id=50401844"
+          }
+        ],
+        "fetchedAt": "2026-11-19T23:13:46.705Z"
+      }
+    },
+    {
+      "id": "fe43197fe4",
+      "normUrl": "https://producthunt.com/products/noteshell",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Noteshell",
+      "url": "https://www.producthunt.com/products/noteshell",
+      "summary": "AI teammates that build and run your workspace",
+      "publishedAt": "2026-11-18T15:28:16.000Z",
+      "ref": "I33",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "AI teammates that build and run your workspace",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:14:06.392Z"
+      }
+    },
+    {
+      "id": "e7012441e7",
+      "normUrl": "https://producthunt.com/products/meilisearch-cloud",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Meilisearch Searchandising",
+      "url": "https://www.producthunt.com/products/meilisearch-cloud",
+      "summary": "Pin, boost, hide and personalize search results",
+      "publishedAt": "2026-11-05T13:25:09.000Z",
+      "ref": "I34",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Pin, boost, hide and personalize search results",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:14:26.705Z"
+      }
+    },
+    {
+      "id": "a7f93bc5eb",
+      "normUrl": "https://producthunt.com/products/nuko",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Nuko",
+      "url": "https://www.producthunt.com/products/nuko",
+      "summary": "Motion design in your browser",
+      "publishedAt": "2026-11-19T03:34:35.000Z",
+      "ref": "I35",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Motion design in your browser",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:14:46.428Z"
+      }
+    },
+    {
+      "id": "700421e023",
+      "normUrl": "https://producthunt.com/products/stripo-email",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Stripo Email Widgets",
+      "url": "https://www.producthunt.com/products/stripo-email",
+      "summary": "Put a game, quiz or survey in your next email. No coding",
+      "publishedAt": "2026-11-11T08:31:59.000Z",
+      "ref": "I36",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Put a game, quiz or survey in your next email. No coding",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Launch HN: Rownd (YC W22) – Add authentication and accounts to any website",
+            "points": 109,
+            "url": "https://news.ycombinator.com/item?id=30615352"
+          }
+        ],
+        "fetchedAt": "2026-11-19T23:15:07.148Z"
+      }
+    },
+    {
+      "id": "f525b4bba7",
+      "normUrl": "https://producthunt.com/products/verse-engine-by-ctruh",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Verse Engine by Ctruh",
+      "url": "https://www.producthunt.com/products/verse-engine-by-ctruh",
+      "summary": "Blender, Unity or Unreal to a live 3D link in one click",
+      "publishedAt": "2026-11-17T14:44:33.000Z",
+      "ref": "I37",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Blender, Unity or Unreal to a live 3D link in one click",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:15:26.749Z"
+      }
+    },
+    {
+      "id": "9f4dfd9aef",
+      "normUrl": "https://producthunt.com/products/codedesign",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "CodeDesign v3",
+      "url": "https://www.producthunt.com/products/codedesign",
+      "summary": "Run your website and business apps from ChatGPT or Claude",
+      "publishedAt": "2026-11-17T05:24:17.000Z",
+      "ref": "I38",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Run your website and business apps from ChatGPT or Claude",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:15:46.455Z"
+      }
+    },
+    {
+      "id": "1e3880b2b8",
+      "normUrl": "https://producthunt.com/products/tecla-3",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Tecla",
+      "url": "https://www.producthunt.com/products/tecla-3",
+      "summary": "A proactive AI agent whose interface is a TODO list",
+      "publishedAt": "2026-11-19T03:05:34.000Z",
+      "ref": "I39",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "A proactive AI agent whose interface is a TODO list",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:16:06.462Z"
+      }
+    },
+    {
+      "id": "a4108ea87e",
+      "normUrl": "https://producthunt.com/products/ableten-source-library",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Ableten Hybrid AI Travel Planner",
+      "url": "https://www.producthunt.com/products/ableten-source-library",
+      "summary": "Get your group on the same map.",
+      "publishedAt": "2026-08-19T06:21:46.000Z",
+      "ref": "I40",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "9e56906413",
+      "normUrl": "https://producthunt.com/products/netlify",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Netlify Server",
+      "url": "https://www.producthunt.com/products/netlify",
+      "summary": "Run WebSockets, multiplayer apps, and long-running agents",
+      "publishedAt": "2026-11-10T20:15:49.000Z",
+      "ref": "I41",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "680e092c48",
+      "normUrl": "https://producthunt.com/products/spellar",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Spellar for Chrome",
+      "url": "https://www.producthunt.com/products/spellar",
+      "summary": "Free, no-bot meeting notes with memory, now in your browser",
+      "publishedAt": "2026-11-16T12:57:22.000Z",
+      "ref": "I42",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "93e70d3b0d",
+      "normUrl": "https://producthunt.com/products/tabstack",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Tabstack by Mozilla",
+      "url": "https://www.producthunt.com/products/tabstack",
+      "summary": "Give your model the web without giving up your privacy",
+      "publishedAt": "2026-11-16T21:57:39.000Z",
+      "ref": "I43",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "78d91bf6c8",
+      "normUrl": "https://producthunt.com/products/ofintech-desk",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "OfinTech Desk",
+      "url": "https://www.producthunt.com/products/ofintech-desk",
+      "summary": "Finance AI where every figure traces to its source",
+      "publishedAt": "2026-11-17T03:25:07.000Z",
+      "ref": "I44",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d9805f4c38",
+      "normUrl": "https://producthunt.com/products/every-signal",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Every Signal",
+      "url": "https://www.producthunt.com/products/every-signal",
+      "summary": "Diligence on any company in an hour, every number sourced",
+      "publishedAt": "2026-11-14T17:43:52.000Z",
+      "ref": "I45",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "dd4632e8c8",
+      "normUrl": "https://producthunt.com/products/source-public-beta",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Source",
+      "url": "https://www.producthunt.com/products/source-public-beta",
+      "summary": "The attribution data layer for your agents to drive pipeline",
+      "publishedAt": "2026-11-16T17:34:12.000Z",
+      "ref": "I46",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "996dcff929",
+      "normUrl": "https://news.ycombinator.com/item?id=50565099",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "IT Thinks – Build a GPU from a Single NAND Gate",
+      "url": "https://news.ycombinator.com/item?id=50565099",
+      "externalUrl": "https://store.steampowered.com/app/5196330/IT_THINKS_Build_Your_Own_GPU/",
+      "summary": "Hi HN, I built a hardware puzzle game, you start with one NAND gate and every chip you finish becomes a part of next one. basic gates, adders, decoders, latches and finally GPU. last one are a chip that recognises handwritten digits. I am happy to discuss how we can create better levels to for those concepts. you can try demo/full game on Steam",
+      "deepenKey": "50565099",
+      "via": null,
+      "signal": {
+        "points": 10,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-19T19:35:03Z",
+      "ref": "I47",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "de5a0bccea",
+      "normUrl": "https://news.ycombinator.com/item?id=50562541",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Maglev – OpenRouter for Agent Tools",
+      "url": "https://news.ycombinator.com/item?id=50562541",
+      "externalUrl": "https://maglev.sh/",
+      "summary": null,
+      "deepenKey": "50562541",
+      "via": null,
+      "signal": {
+        "points": 9,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-19T16:48:22Z",
+      "ref": "I48",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "299091838d",
+      "normUrl": "https://news.ycombinator.com/item?id=50562508",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "AgentMall – Let your AI agent buy groceries",
+      "url": "https://news.ycombinator.com/item?id=50562508",
+      "externalUrl": "https://getagentmall.com",
+      "summary": "Hey HN, we’re Nel and Kosi. We noticed personal agents like Instinct, Muse were terrible at buying stuff. Most of the time the checkout would fail. So we built reliable automations for agents to checkout at 9 leading grocery merchants. We grapple with anti bot, logins, OTP codes, and changing checkout structures. Loved revisiting this stuff given our backgrounds sneaker-botting and building computer use models. Honestly full circle haha.",
+      "deepenKey": "50562508",
+      "via": null,
+      "signal": {
+        "points": 17,
+        "comments": 4
+      },
+      "publishedAt": "2026-11-19T16:46:14Z",
+      "ref": "I49",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hey HN, we’re Nel and Kosi. We noticed personal agents like Instinct, Muse were terrible at buying stuff. Most of the time the checkout would fail. So we built reliable automations for agents to checkout at 9 leading grocery merchants. We grapple with anti bot, logins, OTP codes, and changing checkout structures. Loved revisiting this stuff given our backgrounds sneaker-botting and building computer use models. Honestly full circle haha. It currently works on these sites with ~70% checkout success rate: - Walmart - Albertsons - Ocado - Wegmans - FreshDirect - Best Buy - Instacart Our goal is to hill climb to 90%+ across each. Test keys are free and run the real flow without placing an order. New accounts get 10 free completed orders. https://docs.getagentmall.com/quickstart",
+        "comments": [
+          {
+            "text": "how is this different to browserbase or kernel??"
+          },
+          {
+            "text": "I would love for an agent to do my grocery shopping for me, but then I have to give it access to my bank card. No way."
+          },
+          {
+            "text": "Are you planning to run it on airline sites? They change things very regularly and have anti-scraping."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: AgentMall – Let your AI agent buy groceries",
+            "points": 17,
+            "url": "https://news.ycombinator.com/item?id=50562508"
+          }
+        ],
+        "fetchedAt": "2026-11-19T23:16:07.442Z"
+      }
+    },
+    {
+      "id": "2c7b311170",
+      "normUrl": "https://github.com/firecrawl/firecrawl",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "summary": "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.",
+      "signal": {
+        "language": "TypeScript",
+        "points": 795
+      },
+      "publishedAt": null,
+      "ref": "I50",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Show HN: Llms.txt Generator – Turn websites into a text file to feed to any LLM",
+            "points": 28,
+            "url": "https://news.ycombinator.com/item?id=42207756"
+          }
+        ],
+        "fetchedAt": "2026-11-19T23:16:07.686Z"
+      }
+    },
+    {
+      "id": "de50248ee7",
+      "normUrl": "https://github.com/nginx/nginx",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "nginx/nginx",
+      "url": "https://github.com/nginx/nginx",
+      "summary": "The official NGINX Open Source repository.",
+      "signal": {
+        "language": "C",
+        "points": 66
+      },
+      "publishedAt": null,
+      "ref": "I51",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The official NGINX Open Source repository.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Show HN: Bunkerized-Nginx – Nginx Docker image secure by default",
+            "points": 221,
+            "url": "https://news.ycombinator.com/item?id=24842306"
+          },
+          {
+            "title": "Introducing Full Emoji Support in NGINX and NGINX Plus Configuration",
+            "points": 58,
+            "url": "https://news.ycombinator.com/item?id=11405542"
+          },
+          {
+            "title": "Nginxmgr — Nginx upstream pool manager",
+            "points": 13,
+            "url": "https://news.ycombinator.com/item?id=896056"
+          }
+        ],
+        "fetchedAt": "2026-11-19T23:16:07.895Z"
+      }
+    },
+    {
+      "id": "14f321c495",
+      "normUrl": "https://github.com/cathrynlavery/diagram-design",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "summary": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "signal": {
+        "language": "HTML",
+        "points": 402
+      },
+      "publishedAt": null,
+      "ref": "I52",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:16:08.268Z"
+      }
+    },
+    {
+      "id": "d664b5a459",
+      "normUrl": "https://github.com/mjmirza/app-store-compliance",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "mjmirza/app-store-compliance",
+      "url": "https://github.com/mjmirza/app-store-compliance",
+      "summary": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+      "signal": {
+        "language": "Shell",
+        "points": 542
+      },
+      "publishedAt": null,
+      "ref": "I53",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:16:08.465Z"
+      }
+    },
+    {
+      "id": "a9bca652f0",
+      "normUrl": "https://github.com/Tracer-Cloud/opensre",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "Tracer-Cloud/opensre",
+      "url": "https://github.com/Tracer-Cloud/opensre",
+      "summary": "The open-source agent for CI/CD reliability.",
+      "signal": {
+        "language": "Python",
+        "points": 25
+      },
+      "publishedAt": null,
+      "ref": "I54",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The open-source agent for CI/CD reliability.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Show HN: Oodle – Unified Debugging with OpenSearch and Grafana",
+            "points": 11,
+            "url": "https://news.ycombinator.com/item?id=45812312"
+          },
+          {
+            "title": "Show HN: We built a ClickHouse-based logging service",
+            "points": 192,
+            "url": "https://news.ycombinator.com/item?id=35643255"
+          },
+          {
+            "title": "Show HN: LogClaw – Open-source AI SRE that auto-creates tickets from logs",
+            "points": 19,
+            "url": "https://news.ycombinator.com/item?id=47353981"
+          }
+        ],
+        "fetchedAt": "2026-11-19T23:16:09.492Z"
+      }
+    },
+    {
+      "id": "fd97a6d57c",
+      "normUrl": "https://github.com/toeverything/AFFiNE",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "toeverything/AFFiNE",
+      "url": "https://github.com/toeverything/AFFiNE",
+      "summary": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
+      "signal": {
+        "language": "TypeScript",
+        "points": 170
+      },
+      "publishedAt": null,
+      "ref": "I55",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "The closest open-source alternatives to Notion and Miro",
+            "points": 27,
+            "url": "https://news.ycombinator.com/item?id=42134938"
+          },
+          {
+            "title": "AFFiNE is a next-gen knowledge base",
+            "points": 12,
+            "url": "https://news.ycombinator.com/item?id=42542466"
+          }
+        ],
+        "fetchedAt": "2026-11-19T23:16:08.692Z"
+      }
+    },
+    {
+      "id": "c4d9d23166",
+      "normUrl": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "XiaoYouChR/Ghost-Downloader-3",
+      "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "summary": "The only downloader you need. 下载器的集大成者。",
+      "signal": {
+        "language": "Python",
+        "points": 449
+      },
+      "publishedAt": null,
+      "ref": "I56",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The only downloader you need. 下载器的集大成者。",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:16:08.886Z"
+      }
+    },
+    {
+      "id": "f991dd82d5",
+      "normUrl": "https://github.com/zhouxiaoka/autoclip",
+      "sourceId": "github-trending",
+      "source": "GitHub Trending",
+      "sourceHome": "https://github.com/trending",
+      "side": "supply",
+      "pool": true,
+      "title": "zhouxiaoka/autoclip",
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "summary": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+      "signal": {
+        "language": "Python",
+        "points": 110
+      },
+      "publishedAt": null,
+      "ref": "I57",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:16:09.135Z"
+      }
+    },
+    {
+      "id": "fde8f2b639",
+      "normUrl": "https://console.dev/out/kiri/uc4rDkQzyP8_",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Tool: Kiri",
+      "url": "https://console.dev/out/kiri/uc4rDkQzyP8_",
+      "summary": "Docker Desktop alternative. What we like: Single, Docker-compatible daemon (CLI, Compose, buildx). Performance optimized with a small memory footprint. Includes networks, volumes, k8s. Dev tools like auto-HTTPs endpoints with publicly sharable URLs. Supports macOS, Windows, Linux. What we dislike: Non-native UI, unlike something like Orbstack (which is macOS only). “Machines” are containers with filesystem access, not true VMs.",
+      "publishedAt": "2026-11-19T08:00:00.000Z",
+      "ref": "I58",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Docker Desktop alternative. What we like: Single, Docker-compatible daemon (CLI, Compose, buildx). Performance optimized with a small memory footprint. Includes networks, volumes, k8s. Dev tools like auto-HTTPs endpoints with publicly sharable URLs. Supports macOS, Windows, Linux. What we dislike: Non-native UI, unlike something like Orbstack (which is macOS only). “Machines” are containers with filesystem access, not true VMs.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-19T23:16:07.442Z"
+      }
+    },
+    {
+      "id": "515a7f9bf2",
+      "normUrl": "https://console.dev/out/jiff/1a1tcUnCcRHL",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Tool: Jiff",
+      "url": "https://console.dev/out/jiff/1a1tcUnCcRHL",
+      "summary": "Datetime library for Rust. What we like: Understands timezones natively and handles daylight sayings. Built-in handling of common date operations like durations, differences, calculations, geo regions. Uses Rust-native formatting and display options, including friendly formats. What we dislike: Shows you how complex dates and times actually are, but that probably means fewer bugs!",
+      "publishedAt": "2026-11-19T08:00:00.000Z",
+      "ref": "I59",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5e7cb55f63",
+      "normUrl": "https://console.dev/out/webkit/p_fUU4oT8ut1",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Beta: SpatialCSS",
+      "url": "https://console.dev/out/webkit/p_fUU4oT8ut1",
+      "summary": "WebKit spatial CSS API.",
+      "publishedAt": "2026-11-19T08:00:00.000Z",
+      "ref": "I60",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "85f7e7e3bf",
+      "normUrl": "https://console.dev/out/jolt-lang/dsGfBa8Q0lrr",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Beta: Jolt",
+      "url": "https://console.dev/out/jolt-lang/dsGfBa8Q0lrr",
+      "summary": "Clojure that speaks C.",
+      "publishedAt": "2026-11-19T08:00:00.000Z",
+      "ref": "I61",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "f8c38b0d72",
+      "normUrl": "https://console.dev/out/ui-sdk/rocB8fu4nw7D",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Beta: UI SDK",
+      "url": "https://console.dev/out/ui-sdk/rocB8fu4nw7D",
+      "summary": "TypeScript library of UI behaviors.",
+      "publishedAt": "2026-11-19T08:00:00.000Z",
+      "ref": "I62",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "fb2363bd60",
+      "normUrl": "https://console.dev/out/pgjumbo/h-oKrXtqL800",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Beta: pgjumbo",
+      "url": "https://console.dev/out/pgjumbo/h-oKrXtqL800",
+      "summary": "Postgres desktop client.",
+      "publishedAt": "2026-11-19T08:00:00.000Z",
+      "ref": "I63",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "a416fa89a6",
+      "normUrl": "https://console.dev/out/makepad-github/LRy21WeGx1NL",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Beta: Relax",
+      "url": "https://console.dev/out/makepad-github/LRy21WeGx1NL",
+      "summary": "Rust JIT compiler.",
+      "publishedAt": "2026-11-19T08:00:00.000Z",
+      "ref": "I64",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "6f780a7ff2",
+      "normUrl": "https://console.dev/out/coresignal/uATIFjkypual",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Sponsor: Coresignal",
+      "url": "https://console.dev/out/coresignal/uATIFjkypual",
+      "summary": "Agentic B2B search for builders Visit Coresignal",
+      "publishedAt": "2026-11-19T08:00:00.000Z",
+      "ref": "I65",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1e33e5b455",
+      "normUrl": "https://trends.vc/goal-based-ai-agents-cloud-bill-cuts-1-metric-startups-runaway-ad-spend",
+      "sourceId": "trendsvc",
+      "source": "Trends.vc",
+      "sourceHome": "https://trends.vc/",
+      "side": "trend",
+      "pool": false,
+      "title": "Goal-Based AI Agents: Cloud Bill Cuts, 1-Metric Startups, Runaway Ad Spend",
+      "url": "https://trends.vc/goal-based-ai-agents-cloud-bill-cuts-1-metric-startups-runaway-ad-spend/",
+      "summary": "“The danger of AI is not that it’s going to rebel against us, it’s that it’s going to do exactly what we ask it to do.” – Janelle Shane Get Full Access to Trends Pro ❓ What You’ll Learn 💎 Why It Matters Companies can hand an AI agent a business number and let it … Continue reading Goal-Based AI Agents: Cloud Bill Cuts, 1-Metric Startups, Runaway Ad Spend → The post Goal-Based AI Agents: Cloud Bill Cuts, 1-Metric Startups, Runaway Ad Spend appeared first on Trends.vc .",
+      "publishedAt": "2026-11-19T02:20:02.000Z",
+      "ref": "I66",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "附录源，不参与评选",
+        "hits": []
+      },
+      "candidate": false
+    }
+  ],
+  "deepenedAt": "2026-11-19T23:16:09.492Z"
+}

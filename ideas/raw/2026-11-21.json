@@ -1,0 +1,1403 @@
+{
+  "issue": "2026-11-21",
+  "builtAt": "2026-11-20T22:49:04.508Z",
+  "from": {
+    "boards": "prefetched",
+    "inbox": "live"
+  },
+  "counts": {
+    "fetched": 104,
+    "added": 35,
+    "kept": 35,
+    "dropped": 69,
+    "pool": 35,
+    "screened": 34,
+    "candidates": 17,
+    "demandCandidates": 4,
+    "supplyCandidates": 13
+  },
+  "errors": [],
+  "notices": [
+    "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
+  ],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-20T22:38:36Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：is there an app that（HTTP 404：2026-11-20T22:39:01Z https://rs）；is there a tool that（HTTP 404：2026-11-20T22:40:11Z https://rs）；someone should build（HTTP 404：2026-11-20T22:41:22Z https://rs）；we still use spreadsheets（HTTP 404：2026-11-20T22:42:07Z https://rs）",
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 6,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：we currently pay（HTTP 404：2026-11-20T22:43:17Z https://rs）；we are paying for（HTTP 404：2026-11-20T22:44:02Z https://rs）；quoted us（HTTP 404：2026-11-20T22:45:13Z https://rs）；per seat per month（HTTP 404：2026-11-20T22:46:23Z https://rs）",
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-20T22:47:08Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-20T22:48:18Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-20T22:49:04Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 1,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub Trending",
+      "status": "ok",
+      "items": 16,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "consoledev",
+      "name": "Console.dev",
+      "status": "ok",
+      "items": 9,
+      "pool": true,
+      "group": "board"
+    }
+  ],
+  "items": [
+    {
+      "id": "e82a6ee57a",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/34907/java-library-for-parsing-javadoc-comments",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Java library for parsing Javadoc comments",
+      "url": "https://softwarerecs.stackexchange.com/questions/34907/java-library-for-parsing-javadoc-comments",
+      "summary": "I would like to be able to programmatically convert Javadoc comments (such as those in the generated code of LWJGL ) to other formats (such as Markdown ). This would allow me to do things like automatically generating an idiomatic Clojure wrapper for LWJGL with human-readable docstrings. I can pick the Javadoc comments out of a source file using JavaParser , but that's where I get stuck.",
+      "deepenKey": "34907",
+      "signal": {
+        "score": 5,
+        "views": 1931,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2016-07-17T01:58:07.000Z",
+      "ref": "I1",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [
+          "要的是库不是产品"
+        ],
+        "detail": {
+          "signal": -5,
+          "engagement": 7,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "bd20feb2fa",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/79699/do-you-know-a-free-program-that-keeps-track-of-available-software-updates",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Do you know a free program that keeps track of available software updates?",
+      "url": "https://softwarerecs.stackexchange.com/questions/79699/do-you-know-a-free-program-that-keeps-track-of-available-software-updates",
+      "summary": "I need to keep track of several software applications on my computer in a local network. All my software updates are available within this (offline) network and I am looking for a tool, that keeps track of possible updates. The optimal way would be: The program checks every night for updates within local network and (if the corresponding program is not running), it installs those update. One important addition: I need to keep track of my own programs.",
+      "deepenKey": "79699",
+      "signal": {
+        "score": 1,
+        "views": 27,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2021-06-23T16:19:40.000Z",
+      "ref": "I2",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [
+          "在找但没找到"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I need to keep track of several software applications on my computer in a local network. All my software updates are available within this (offline) network and I am looking for a tool, that keeps track of possible updates. The optimal way would be: The program checks every night for updates within local network and (if the corresponding program is not running), it installs those update. One important addition: I need to keep track of my own programs. So I am looking for a tool that can handle any program (of course i would need to fit the settings...) I found dozens of similar software, but most of them are expensive or need internet connection or only supports a fixed list of software. I would be so happy if anyone could help me. Thank you!",
+        "comments": [],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Is it worth starting \"from scratch\" in web dev? Straight Python, or Django?",
+            "points": 24,
+            "url": "https://news.ycombinator.com/item?id=257958"
+          },
+          {
+            "title": "Ask HN: How do I get in touch with US/EU developers? (attempting to network)",
+            "points": 20,
+            "url": "https://news.ycombinator.com/item?id=29971171"
+          }
+        ],
+        "fetchedAt": "2026-11-20T22:49:05.146Z"
+      }
+    },
+    {
+      "id": "e2f430344c",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/76319/firewall-app-for-macos-that-i-can-quit",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Firewall app for MacOS that I can quit",
+      "url": "https://softwarerecs.stackexchange.com/questions/76319/firewall-app-for-macos-that-i-can-quit",
+      "summary": "I know there is a few firewall solutions for Mac, I use one - \"Little Snitch\" and while it's great, it does not satisfy one of my requirements. My use case is as follows: I'm offline, maybe even in airplane mode, no network connectivity whatsoever and I'm running Mac on battery and just want to maximize its run time. I would like to quit as many apps as possible. Little Snitch would not let me quit/exit the app when/if I do not need it at the time. The only solution to unload it from memory is to uninstall the app.",
+      "deepenKey": "76319",
+      "signal": {
+        "score": 1,
+        "views": 31,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2020-10-04T09:40:27.000Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I know there is a few firewall solutions for Mac, I use one - \"Little Snitch\" and while it's great, it does not satisfy one of my requirements. My use case is as follows: I'm offline, maybe even in airplane mode, no network connectivity whatsoever and I'm running Mac on battery and just want to maximize its run time. I would like to quit as many apps as possible. Little Snitch would not let me quit/exit the app when/if I do not need it at the time. The only solution to unload it from memory is to uninstall the app. Are there any firewall apps for MacOS that I can quit/exit when/if I no longer need it in memory?",
+        "comments": [],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-11-20T22:49:06.389Z"
+      }
+    },
+    {
+      "id": "e0235485ad",
+      "normUrl": "https://news.ycombinator.com/item?id=50582890",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Do you feel developers are more \"grumpy\" these days?",
+      "url": "https://news.ycombinator.com/item?id=50582890",
+      "externalUrl": null,
+      "summary": "I genuinely am questioning whether this is my perception or it's real. The whole AI coding and threats and opportunities in our industry, makes me think that I might be right, but then again that could be my bias. I wanted to see how everybody else thinks about this. Do you also feel that when you're in a developer-focused subreddit, X communities, or other places, and even on Hacker News, the developers there are harsher in their responses, less friendly, more polarized, and, I would generalize it, grumpier?",
+      "deepenKey": "50582890",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-20T22:00:11Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "b191148c2b",
+      "normUrl": "https://news.ycombinator.com/item?id=50582662",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What's stopping us from putting agents in general purpose robots?",
+      "url": "https://news.ycombinator.com/item?id=50582662",
+      "externalUrl": null,
+      "summary": "After using Claude a bunch in the last few months I can't stop thinking the obvious next logical step is to put an agent in a physical robot For example imagine asking \"can you go into the other room, find object X, and bring it to me\" It seems to me the intelligence/reasoning ability is more than enough to do simple tasks And giving models images they seem to be able to recognize objects well to understand what they are looking at But its not clear to me what is holding this product area back.",
+      "deepenKey": "50582662",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-20T21:44:46Z",
+      "ref": "I5",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "97ba4ccf6d",
+      "normUrl": "https://news.ycombinator.com/item?id=50577613",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "I'm Peter Roberts, immigration attorney who does work for YC and startups. AMA",
+      "url": "https://news.ycombinator.com/item?id=50577613",
+      "externalUrl": null,
+      "summary": "I'll be here for the rest of the day. As usual, there are countless possible topics and I'll be guided by whatever you're concerned with. Please remember that I can't provide legal advice on specific cases for obvious liability reasons because I won't have access to all the facts. Please stick to a factual discussion in your questions and comments and I'll try to do the same in my answers! Previous threads we've done: https://news.ycombinator.com/submitted?id=proberts .",
+      "deepenKey": "50577613",
+      "via": null,
+      "signal": {
+        "points": 89,
+        "comments": 119
+      },
+      "publishedAt": "2026-11-20T16:45:25Z",
+      "ref": "I6",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I'll be here for the rest of the day. As usual, there are countless possible topics and I'll be guided by whatever you're concerned with. Please remember that I can't provide legal advice on specific cases for obvious liability reasons because I won't have access to all the facts. Please stick to a factual discussion in your questions and comments and I'll try to do the same in my answers! Previous threads we've done: https://news.ycombinator.com/submitted?id=proberts .",
+        "comments": [
+          {
+            "text": "How do you feel about your personal job security at the moment? Is immigration for US-based startups even basically still a thing these days?"
+          },
+          {
+            "text": "Thanks for this! Brazilian with no degree but 15+ yrs in tech. What would be my best shot? Would love Europe as well!"
+          },
+          {
+            "text": "Not a question but just a comment for the readers: years ago my prospective employer (a yc company) called Peter the day before the H-1B lottery cutoff, and he got my lottery petition filed within 24 hours. I wouldn't be here without him. Thanks again, Peter!"
+          },
+          {
+            "text": "Hey Peter, has the O1 denial or approval rate changed? The case has someone with losing their ESTA due to pictures of pot... So question any changes in approval rates for O1s with or without a misdemeanor?"
+          },
+          {
+            "text": "Curious what the macro view of immigration looks like since all of the changes? Is there more demand for O1? are they issuing more O1? Are people paying the 100K for the H1B? Are potential immigrants less interested in immigrating to the united states? Just curious what you are seeing that normal people wouldn't."
+          },
+          {
+            "text": "As a person who want to move from germany to the US to found. What do i have to consider?"
+          },
+          {
+            "text": "Hi Peter, the N400 processing times have significantly slowed down in 2026 (particularly at San Francisco and San Jose offices). A lot of cases have been pending for 1-2 years with no response. Is there anything you can share on this topic? Any hope of kicking the processing into a higher gear? Thank you!"
+          },
+          {
+            "text": "What has been the worst/most heartbreaking case you have seen due to the 2nd Trump admin?"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "I'm Peter Roberts, immigration attorney, who does work for YC and startups. AMA",
+            "points": 370,
+            "url": "https://news.ycombinator.com/item?id=42770125"
+          },
+          {
+            "title": "I'm Peter Roberts, immigration attorney who does work for YC and startups. AMA",
+            "points": 352,
+            "url": "https://news.ycombinator.com/item?id=11972135"
+          },
+          {
+            "title": "I'm Peter Roberts, immigration attorney who does work for YC and startups. AMA",
+            "points": 338,
+            "url": "https://news.ycombinator.com/item?id=36908574"
+          }
+        ],
+        "fetchedAt": "2026-11-20T22:49:05.857Z"
+      }
+    },
+    {
+      "id": "fff2785ad2",
+      "normUrl": "https://news.ycombinator.com/item?id=50575992",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How does one build an LLM router with a labelled set of 100 tasks?",
+      "url": "https://news.ycombinator.com/item?id=50575992",
+      "externalUrl": null,
+      "summary": "I already spent the time building rubrics for a set of ~100 tasks on various criterias (accuracy, thoroughness communication style ). Then ran these on a few models and now have a labelled-set where I know for each task which is the cheapest/fastest model that gets a minimum threshold ( say 80 ). How does one go on to build a router based on this ? There appears to be no good literature / open source projects on this. I tried a bunch of approaches with the help of claude: - trying to use Jev via a serious of probe Yes/No questions ( does task contain x, does the world have y ...etc ).",
+      "deepenKey": "50575992",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-20T15:23:21Z",
+      "ref": "I7",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "807ef580e4",
+      "normUrl": "https://news.ycombinator.com/item?id=50573839",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Any actual balanced reviews of GTA 6?",
+      "url": "https://news.ycombinator.com/item?id=50573839",
+      "externalUrl": null,
+      "summary": "Any links would be appreciated",
+      "deepenKey": "50573839",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 11
+      },
+      "publishedAt": "2026-11-20T12:36:49Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": 1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e715d1aed2",
+      "normUrl": "https://news.ycombinator.com/item?id=50572862",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Block Anything on YouTube",
+      "url": "https://news.ycombinator.com/item?id=50572862",
+      "externalUrl": null,
+      "summary": "I've built FilterTube.in which lets you control your entier feed including a Whitelist mode. It all started with my own ADHD need to block content on YT and I came across to a support thread - https://support.google.com/youtubekids/thread/54509605/how-to-block-videos-by-keyword-or-tag?hl=en Where lot of parents were asking for same thing but for YT Kids. One parent asked me if I can do something as his child is kept crying for 3 days. Later Google/YouTube mods not only deleted my and other parents comments they also locked entier thread so no one can question them.",
+      "deepenKey": "50572862",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-20T10:46:40Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e72226511a",
+      "normUrl": "https://news.ycombinator.com/item?id=50572342",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Did books that went viral on HN publish their manuscript?",
+      "url": "https://news.ycombinator.com/item?id=50572342",
+      "externalUrl": null,
+      "summary": "I'm working on a book that I think is right up HN's alley, but idk if I should publish it in excerpts on Substack like I'm currently doing or just publish the entire manuscript (or rather what I have now) at once.",
+      "deepenKey": "50572342",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-20T09:41:16Z",
+      "ref": "I10",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "28f97f53cb",
+      "normUrl": "https://news.ycombinator.com/item?id=50568364",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are you SEO-ing (LLMO?) your job postings?",
+      "url": "https://news.ycombinator.com/item?id=50568364",
+      "externalUrl": null,
+      "summary": "I run claude opportunistically looking at positions. It's finding forms of prompt injection on some job postings. Is this a generic thing now?",
+      "deepenKey": "50568364",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-20T00:02:59Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "64b129f7d1",
+      "normUrl": "https://news.ycombinator.com/item?id=50565386",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Why no AI-led memory vulns in Python?",
+      "url": "https://news.ycombinator.com/item?id=50565386",
+      "externalUrl": null,
+      "summary": "Python usually means CPython, which means C. Most AI-led vulnerabilities lately have been memory mismanagement - what is keeping Python isolated if it is written in C?",
+      "deepenKey": "50565386",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-19T19:54:37Z",
+      "ref": "I12",
+      "screen": {
+        "keep": true,
+        "score": 3,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "70ceff5c5d",
+      "normUrl": "https://news.ycombinator.com/item?id=50564890",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "The End of Continuous Rework",
+      "url": "https://news.ycombinator.com/item?id=50564890",
+      "externalUrl": null,
+      "summary": "I built a free and open source tool your AI agents can use to reduce the rework we often have to do with AI: https://decapodlabs.github.io/tecr",
+      "deepenKey": "50564890",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-19T19:20:41Z",
+      "ref": "I13",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "自推",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "df855c6d75",
+      "normUrl": "https://github.com/anthropics/claude-code/issues/102264",
+      "sourceId": "gh-requests",
+      "source": "GitHub 高赞功能请求",
+      "sourceHome": "https://github.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "[FEATURE] Bring back the usage stats panel on the Desktop new session screen",
+      "url": "https://github.com/anthropics/claude-code/issues/102264",
+      "summary": "### Preflight Checklist - [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet - [x] This is a single feature request (not multiple features) ### Problem Statement After the latest Desktop update (Windows, Code tab), the stats panel that used to show on the new session screen is gone: Overview/Models tabs, Sessions, Messages, Total tokens, Active days, Peak hour, Favorite model, the activity heatmap and the All/30d/7d filters.",
+      "signal": {
+        "thumbsUp": 103,
+        "comments": 3,
+        "repo": "anthropics/claude-code"
+      },
+      "publishedAt": "2026-10-15T03:30:00Z",
+      "ref": "I14",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "### Preflight Checklist - [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet - [x] This is a single feature request (not multiple features) ### Problem Statement After the latest Desktop update (Windows, Code tab), the stats panel that used to show on the new session screen is gone: Overview/Models tabs, Sessions, Messages, Total tokens, Active days, Peak hour, Favorite model, the activity heatmap and the All/30d/7d filters.",
+        "comments": [],
+        "source": "none",
+        "priorArt": [
+          {
+            "title": "Show HN: Arctype, a cross-platform database GUI for developers and teams",
+            "points": 200,
+            "url": "https://news.ycombinator.com/item?id=31508850"
+          },
+          {
+            "title": "Launch HN: Vellum (YC W23) – Dev Platform for LLM Apps",
+            "points": 136,
+            "url": "https://news.ycombinator.com/item?id=35042836"
+          }
+        ],
+        "fetchedAt": "2026-11-20T22:49:06.109Z"
+      }
+    },
+    {
+      "id": "cb12aba027",
+      "normUrl": "https://producthunt.com/products/tinytldr",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "tinytldr",
+      "url": "https://www.producthunt.com/products/tinytldr",
+      "summary": "Templates for your agents",
+      "publishedAt": "2026-11-11T07:15:57.000Z",
+      "ref": "I15",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Templates for your agents",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-20T22:49:06.906Z"
+      }
+    },
+    {
+      "id": "475c42046e",
+      "normUrl": "https://producthunt.com/products/pickfit",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "pickfit",
+      "url": "https://www.producthunt.com/products/pickfit",
+      "summary": "Every tool tested in a sandbox before it's recommended",
+      "publishedAt": "2026-11-18T05:38:56.000Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Every tool tested in a sandbox before it's recommended",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-20T22:49:26.877Z"
+      }
+    },
+    {
+      "id": "cd42c8a448",
+      "normUrl": "https://producthunt.com/products/cup-of-sugar-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Cup of Sugar",
+      "url": "https://www.producthunt.com/products/cup-of-sugar-2",
+      "summary": "Share a dream, let Cubby break it into small steps.",
+      "publishedAt": "2026-11-15T09:17:50.000Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Share a dream, let Cubby break it into small steps.",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-20T22:49:46.894Z"
+      }
+    },
+    {
+      "id": "50f6e292ce",
+      "normUrl": "https://producthunt.com/products/deep-waste",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "DWaste",
+      "url": "https://www.producthunt.com/products/deep-waste",
+      "summary": "Eliminate recycling contamination with low-power Edge AI",
+      "publishedAt": "2026-11-18T11:42:26.000Z",
+      "ref": "I18",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Eliminate recycling contamination with low-power Edge AI",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-20T22:50:06.903Z"
+      }
+    },
+    {
+      "id": "1d951cd5fe",
+      "normUrl": "https://producthunt.com/products/tensorviz",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "tensorViz",
+      "url": "https://www.producthunt.com/products/tensorviz",
+      "summary": "Let your coding agent see inside your PyTorch model",
+      "publishedAt": "2026-11-12T21:35:14.000Z",
+      "ref": "I19",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Let your coding agent see inside your PyTorch model",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-20T22:50:26.913Z"
+      }
+    },
+    {
+      "id": "719567ed6a",
+      "normUrl": "https://producthunt.com/products/zethos",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Zethos",
+      "url": "https://www.producthunt.com/products/zethos",
+      "summary": "The ledger you and your AI work from",
+      "publishedAt": "2026-11-19T00:53:37.000Z",
+      "ref": "I20",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The ledger you and your AI work from",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-20T22:50:46.932Z"
+      }
+    },
+    {
+      "id": "e4f7357bc5",
+      "normUrl": "https://producthunt.com/products/dozy",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Dozy",
+      "url": "https://www.producthunt.com/products/dozy",
+      "summary": "Turns your sleep data into one thing to do today",
+      "publishedAt": "2026-11-19T21:18:14.000Z",
+      "ref": "I21",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Turns your sleep data into one thing to do today",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-20T22:51:06.952Z"
+      }
+    },
+    {
+      "id": "7cca2eab6f",
+      "normUrl": "https://producthunt.com/products/undoguard",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "UndoGuard",
+      "url": "https://www.producthunt.com/products/undoguard",
+      "summary": "The Ctrl+Z button for autonomous AI agents",
+      "publishedAt": "2026-11-19T19:15:42.000Z",
+      "ref": "I22",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The Ctrl+Z button for autonomous AI agents",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-20T22:51:26.965Z"
+      }
+    },
+    {
+      "id": "42413e6976",
+      "normUrl": "https://producthunt.com/products/netsieve",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "NetSieve",
+      "url": "https://www.producthunt.com/products/netsieve",
+      "summary": "Block ads, trackers and scam sites in every app on your Mac",
+      "publishedAt": "2026-11-19T15:32:15.000Z",
+      "ref": "I23",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Block ads, trackers and scam sites in every app on your Mac",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-20T22:51:46.970Z"
+      }
+    },
+    {
+      "id": "5395837bcb",
+      "normUrl": "https://producthunt.com/products/rox-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Rox",
+      "url": "https://www.producthunt.com/products/rox-2",
+      "summary": "Your AI companion for living with chronic illness",
+      "publishedAt": "2026-11-19T12:00:00.000Z",
+      "ref": "I24",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Your AI companion for living with chronic illness",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-20T22:52:06.984Z"
+      }
+    },
+    {
+      "id": "3a1f3c489b",
+      "normUrl": "https://producthunt.com/products/storiara",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Storiara",
+      "url": "https://www.producthunt.com/products/storiara",
+      "summary": "AI producers that find real savings in your film budget",
+      "publishedAt": "2026-11-17T20:02:24.000Z",
+      "ref": "I25",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "AI producers that find real savings in your film budget",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-20T22:52:27.015Z"
+      }
+    },
+    {
+      "id": "ff474f2c9f",
+      "normUrl": "https://producthunt.com/products/saparo",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Saparo",
+      "url": "https://www.producthunt.com/products/saparo",
+      "summary": "Muse for shopping with deals stacks",
+      "publishedAt": "2026-11-19T08:29:12.000Z",
+      "ref": "I26",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Muse for shopping with deals stacks",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-20T22:52:47.033Z"
+      }
+    },
+    {
+      "id": "53add42a19",
+      "normUrl": "https://producthunt.com/products/aiteam-space",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "aiteam.space",
+      "url": "https://www.producthunt.com/products/aiteam-space",
+      "summary": "An AI team where every agent has its own computer",
+      "publishedAt": "2026-11-10T22:14:37.000Z",
+      "ref": "I27",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3ea8aacdc6",
+      "normUrl": "https://producthunt.com/products/samiksa",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Samiksa",
+      "url": "https://www.producthunt.com/products/samiksa",
+      "summary": "Understand research, test it yourself, publish your own",
+      "publishedAt": "2026-11-20T04:22:09.000Z",
+      "ref": "I28",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3b295d6750",
+      "normUrl": "https://producthunt.com/products/fack-d",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Fack’d",
+      "url": "https://www.producthunt.com/products/fack-d",
+      "summary": "Fact checks right on YouTube as it plays, with sources",
+      "publishedAt": "2026-11-20T02:06:25.000Z",
+      "ref": "I29",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "0bf711b2d9",
+      "normUrl": "https://producthunt.com/products/same-moon",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Same Moon",
+      "url": "https://www.producthunt.com/products/same-moon",
+      "summary": "Free bedtime stories for children who had to leave home",
+      "publishedAt": "2026-11-16T11:04:38.000Z",
+      "ref": "I30",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "04d08a04cf",
+      "normUrl": "https://producthunt.com/products/scam-link-check",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Scam Link Check",
+      "url": "https://www.producthunt.com/products/scam-link-check",
+      "summary": "Paste a suspicious text or link, get a plain-English verdict",
+      "publishedAt": "2026-11-13T13:32:14.000Z",
+      "ref": "I31",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "78404a7da5",
+      "normUrl": "https://producthunt.com/products/mailpipe-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Mailpipe",
+      "url": "https://www.producthunt.com/products/mailpipe-2",
+      "summary": "Draft Apple Mail replies with your local AI agent CLI",
+      "publishedAt": "2026-11-20T04:13:55.000Z",
+      "ref": "I32",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "c86ed47fde",
+      "normUrl": "https://producthunt.com/products/memanto-by-moorcheh",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Memanto Cloud",
+      "url": "https://www.producthunt.com/products/memanto-by-moorcheh",
+      "summary": "A companion memory for agents to improve as you work",
+      "publishedAt": "2026-11-10T18:16:20.000Z",
+      "ref": "I33",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "df4ed3a271",
+      "normUrl": "https://producthunt.com/products/tripps",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "tripps",
+      "url": "https://www.producthunt.com/products/tripps",
+      "summary": "Plan a group trip with one link, no account needed",
+      "publishedAt": "2026-11-17T19:25:40.000Z",
+      "ref": "I34",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1f4577d836",
+      "normUrl": "https://news.ycombinator.com/item?id=50581403",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "OpenComputer – an open source alternative to Devin",
+      "url": "https://news.ycombinator.com/item?id=50581403",
+      "externalUrl": "https://github.com/diggerhq/opencomputer",
+      "summary": "Hi HN! Utpal here, I'm one of the founders of OpenComputer. OpenComputer is an open source cloud coding agent for teams that can run in your own cloud account (AWS, GCP, Azure). We run the agent harness and the sandbox on the same durable VM (architecture in the docs [1]). First commit lands in 24s; the alternatives we benchmarked took 53-72s (benchmarks below [2]). Two other choices: - One VM per team, scalable horizontally. Sessions are isolated in git worktrees. - Session files are backed up to a repo after every turn, so any session can resume on another VM.",
+      "deepenKey": "50581403",
+      "via": null,
+      "signal": {
+        "points": 32,
+        "comments": 12
+      },
+      "publishedAt": "2026-11-20T20:19:56Z",
+      "ref": "I35",
+      "screen": {
+        "keep": true,
+        "score": 10,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 6,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hi HN! Utpal here, I'm one of the founders of OpenComputer. OpenComputer is an open source cloud coding agent for teams that can run in your own cloud account (AWS, GCP, Azure). We run the agent harness and the sandbox on the same durable VM (architecture in the docs [1]). First commit lands in 24s; the alternatives we benchmarked took 53-72s (benchmarks below [2]). Two other choices: - One VM per team, scalable horizontally. Sessions are isolated in git worktrees. - Session files are backed up to a repo after every turn, so any session can resume on another VM. We noticed that past ~640 session-hours a month, one always-on 4 vCPU VM is cheaper than per-session E2B sandboxes, for example. So at scale, this setup would not only be faster than current SOTA coding agents, but also more cost-efficient. Feel free to try via cloud for free [4] or self host. We would love any and all feedback, and happy to answer any questions! Full demo below [3]. [1]: https://docs.opencomputer.dev/getting-started/architecture [2]: https://opencomputer.dev/blog/cloud-agents-as-fast-as-local/ [3]: https://x.com/IgorZIJ/status/2121309785882591711 [4]: https://app.opencomputer.dev",
+        "comments": [
+          {
+            "text": "New product name please, your current name tells us nothing and is already taken. But I am still going to try it :)"
+          },
+          {
+            "text": "Open source is amazing! Any insights how you've made something so cheap and fast? Are the margins charged by Devin really this insane?"
+          },
+          {
+            "text": "Don't have Slack, will it work with Discord ?"
+          },
+          {
+            "text": "is the whole thign open source? like can i spin it up in my own infra or just the harnesss code?"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: OpenComputer – an open source alternative to Devin",
+            "points": 34,
+            "url": "https://news.ycombinator.com/item?id=50581403"
+          }
+        ],
+        "fetchedAt": "2026-11-20T22:49:06.816Z"
+      }
+    }
+  ],
+  "deepenedAt": "2026-11-20T22:52:47.033Z"
+}

@@ -1,21 +1,21 @@
 {
-  "fetchedAt": "2026-11-19T23:12:22.638Z",
+  "fetchedAt": "2026-11-20T22:49:04.065Z",
   "windowDays": 3,
-  "windowUntil": "2026-11-20T23:59:59.000Z",
+  "windowUntil": "2026-11-21T23:59:59.000Z",
   "sources": [
     {
       "id": "somebodymakethis",
       "name": "r/SomebodyMakeThis",
       "status": "error",
       "pool": true,
-      "error": "HTTP 404：2026-11-19T23:01:08Z https://rss.reddit.com/ Not Found"
+      "error": "HTTP 404：2026-11-20T22:38:36Z https://rss.reddit.com/ Not Found"
     },
     {
       "id": "reddit-search",
       "name": "Reddit 需求短语",
       "status": "error",
       "pool": true,
-      "error": "全部短语失败：is there an app that（HTTP 404：2026-11-19T23:02:18Z https://rs）；is there a tool that（HTTP 404：2026-11-19T23:03:04Z https://rs）；someone should build（HTTP 404：2026-11-19T23:04:14Z https://rs）；we still use spreadsheets（HTTP 404：2026-11-19T23:05:24Z https://rs）"
+      "error": "全部短语失败：is there an app that（HTTP 404：2026-11-20T22:39:01Z https://rs）；is there a tool that（HTTP 404：2026-11-20T22:40:11Z https://rs）；someone should build（HTTP 404：2026-11-20T22:41:22Z https://rs）；we still use spreadsheets（HTTP 404：2026-11-20T22:42:07Z https://rs）"
     },
     {
       "id": "softwarerecs",
@@ -43,28 +43,28 @@
       "name": "Reddit 付费信号",
       "status": "error",
       "pool": true,
-      "error": "全部短语失败：we currently pay（HTTP 404：2026-11-19T23:06:10Z https://rs）；we are paying for（HTTP 404：2026-11-19T23:07:20Z https://rs）；quoted us（HTTP 404：2026-11-19T23:08:05Z https://rs）；per seat per month（HTTP 404：2026-11-19T23:09:16Z https://rs）"
+      "error": "全部短语失败：we currently pay（HTTP 404：2026-11-20T22:43:17Z https://rs）；we are paying for（HTTP 404：2026-11-20T22:44:02Z https://rs）；quoted us（HTTP 404：2026-11-20T22:45:13Z https://rs）；per seat per month（HTTP 404：2026-11-20T22:46:23Z https://rs）"
     },
     {
       "id": "msp",
       "name": "r/msp",
       "status": "error",
       "pool": true,
-      "error": "HTTP 404：2026-11-19T23:10:01Z https://rss.reddit.com/ Not Found"
+      "error": "HTTP 404：2026-11-20T22:47:08Z https://rss.reddit.com/ Not Found"
     },
     {
       "id": "sysadmin",
       "name": "r/sysadmin",
       "status": "error",
       "pool": true,
-      "error": "HTTP 404：2026-11-19T23:11:12Z https://rss.reddit.com/ Not Found"
+      "error": "HTTP 404：2026-11-20T22:48:18Z https://rss.reddit.com/ Not Found"
     },
     {
       "id": "microsaas",
       "name": "r/microsaas",
       "status": "error",
       "pool": true,
-      "error": "HTTP 404：2026-11-19T23:12:22Z https://rss.reddit.com/ Not Found"
+      "error": "HTTP 404：2026-11-20T22:49:04Z https://rss.reddit.com/ Not Found"
     },
     {
       "id": "ycrfs",
@@ -77,7 +77,7 @@
       "id": "trendsvc",
       "name": "Trends.vc",
       "status": "ok",
-      "items": 2,
+      "items": 1,
       "pool": false
     },
     {
@@ -91,7 +91,7 @@
       "id": "showhn",
       "name": "Show HN",
       "status": "ok",
-      "items": 3,
+      "items": 1,
       "pool": true
     },
     {
@@ -111,6 +111,126 @@
   ],
   "items": [
     {
+      "id": "55b3408481",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95787/what-software-can-help-manage-large-volumes-of-data-for-long-term-archiving",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "What software can help manage large volumes of data for long-term archiving?",
+      "url": "https://softwarerecs.stackexchange.com/questions/95787/what-software-can-help-manage-large-volumes-of-data-for-long-term-archiving",
+      "summary": "I'm researching ways to manage large volumes of historical business data while keeping storage organized, secure, and accessible when needed. I'm interested in data archiving software that can help with long-term retention without requiring all archived information to remain on expensive, high-performance storage. My main requirements are: Scalability: The solution should accommodate growing volumes of files and records. Retention management: It should support configurable retention policies.",
+      "deepenKey": "95787",
+      "signal": {
+        "score": 0,
+        "views": 41,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2026-11-13T12:49:46.000Z"
+    },
+    {
+      "id": "fc0ea8ed20",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95812/how-to-transfer-photos-from-icloud-photos-to-google-drive",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "How to Transfer Photos from iCloud Photos to Google Drive",
+      "url": "https://softwarerecs.stackexchange.com/questions/95812/how-to-transfer-photos-from-icloud-photos-to-google-drive",
+      "summary": "I'm looking for a convenient way to transfer photos from iCloud Photos to Google Drive. I have photos stored in my Apple account and want to move a copy of them to Google Drive so I can access and manage them more easily across different devices. I've been exploring different options, including downloading photos from iCloud and uploading them manually, but that can become time-consuming when dealing with a large photo library. I also came across All Cloud Hub , a multi-cloud management platform available as a web app and mobile apps for iOS and Android.",
+      "deepenKey": "95812",
+      "signal": {
+        "score": 0,
+        "views": 16,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2026-11-19T11:06:06.000Z"
+    },
+    {
+      "id": "e82a6ee57a",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/34907/java-library-for-parsing-javadoc-comments",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Java library for parsing Javadoc comments",
+      "url": "https://softwarerecs.stackexchange.com/questions/34907/java-library-for-parsing-javadoc-comments",
+      "summary": "I would like to be able to programmatically convert Javadoc comments (such as those in the generated code of LWJGL ) to other formats (such as Markdown ). This would allow me to do things like automatically generating an idiomatic Clojure wrapper for LWJGL with human-readable docstrings. I can pick the Javadoc comments out of a source file using JavaParser , but that's where I get stuck.",
+      "deepenKey": "34907",
+      "signal": {
+        "score": 5,
+        "views": 1931,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2016-07-17T01:58:07.000Z"
+    },
+    {
+      "id": "bd20feb2fa",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/79699/do-you-know-a-free-program-that-keeps-track-of-available-software-updates",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Do you know a free program that keeps track of available software updates?",
+      "url": "https://softwarerecs.stackexchange.com/questions/79699/do-you-know-a-free-program-that-keeps-track-of-available-software-updates",
+      "summary": "I need to keep track of several software applications on my computer in a local network. All my software updates are available within this (offline) network and I am looking for a tool, that keeps track of possible updates. The optimal way would be: The program checks every night for updates within local network and (if the corresponding program is not running), it installs those update. One important addition: I need to keep track of my own programs.",
+      "deepenKey": "79699",
+      "signal": {
+        "score": 1,
+        "views": 27,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2021-06-23T16:19:40.000Z"
+    },
+    {
+      "id": "e2f430344c",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/76319/firewall-app-for-macos-that-i-can-quit",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Firewall app for MacOS that I can quit",
+      "url": "https://softwarerecs.stackexchange.com/questions/76319/firewall-app-for-macos-that-i-can-quit",
+      "summary": "I know there is a few firewall solutions for Mac, I use one - \"Little Snitch\" and while it's great, it does not satisfy one of my requirements. My use case is as follows: I'm offline, maybe even in airplane mode, no network connectivity whatsoever and I'm running Mac on battery and just want to maximize its run time. I would like to quit as many apps as possible. Little Snitch would not let me quit/exit the app when/if I do not need it at the time. The only solution to unload it from memory is to uninstall the app.",
+      "deepenKey": "76319",
+      "signal": {
+        "score": 1,
+        "views": 31,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2020-10-04T09:40:27.000Z"
+    },
+    {
+      "id": "ce76744431",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95804/what-software-can-help-me-organize-and-manage-personal-files-stored-across-multi",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "What software can help me organize and manage personal files stored across multiple cloud storage services?",
+      "url": "https://softwarerecs.stackexchange.com/questions/95804/what-software-can-help-me-organize-and-manage-personal-files-stored-across-multi",
+      "summary": "I'm looking for software that can help me manage personal files stored across multiple cloud storage services from one place. My main requirements are: Unified file management: Browse and organize files from different cloud storage accounts. Easy file access: Access documents, photos, and other personal files without repeatedly switching between services. File synchronization: Keep selected folders synchronized across devices. Security: Support secure account access and protect personal files. Backup support: Make it easier to maintain copies of important files.",
+      "deepenKey": "95804",
+      "signal": {
+        "score": 0,
+        "views": 19,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2026-11-18T11:58:51.000Z"
+    },
+    {
       "id": "af7b26eecc",
       "normUrl": "https://softwarerecs.stackexchange.com/questions/88369/prioritise-categorise-and-share-to-do-list",
       "sourceId": "softwarerecs",
@@ -124,7 +244,7 @@
       "deepenKey": "88369",
       "signal": {
         "score": 1,
-        "views": 85,
+        "views": 88,
         "answers": 2,
         "unanswered": true
       },
@@ -144,7 +264,7 @@
       "deepenKey": "91274",
       "signal": {
         "score": 3,
-        "views": 481,
+        "views": 488,
         "answers": 2,
         "unanswered": true
       },
@@ -164,7 +284,7 @@
       "deepenKey": "87165",
       "signal": {
         "score": 1,
-        "views": 3035,
+        "views": 3037,
         "answers": 2,
         "unanswered": true
       },
@@ -184,31 +304,11 @@
       "deepenKey": "52291",
       "signal": {
         "score": 3,
-        "views": 54,
+        "views": 56,
         "answers": 1,
         "unanswered": true
       },
       "publishedAt": "2018-09-21T00:52:40.000Z"
-    },
-    {
-      "id": "54a20e35ec",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/95817/lookin-for-the-best-battery-app",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
-      "side": "demand",
-      "pool": true,
-      "title": "Lookin for the Best Battery App",
-      "url": "https://softwarerecs.stackexchange.com/questions/95817/lookin-for-the-best-battery-app",
-      "summary": "Mainly to alert me when my battery is critically low",
-      "deepenKey": "95817",
-      "signal": {
-        "score": 0,
-        "views": 3,
-        "answers": 0,
-        "unanswered": true
-      },
-      "publishedAt": "2026-11-19T21:23:54.000Z"
     },
     {
       "id": "7b1fe3aafe",
@@ -224,51 +324,11 @@
       "deepenKey": "53313",
       "signal": {
         "score": 2,
-        "views": 448,
+        "views": 449,
         "answers": 3,
         "unanswered": true
       },
       "publishedAt": "2018-11-22T20:44:57.000Z"
-    },
-    {
-      "id": "fc0ea8ed20",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/95812/how-to-transfer-photos-from-icloud-photos-to-google-drive",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
-      "side": "demand",
-      "pool": true,
-      "title": "How to Transfer Photos from iCloud Photos to Google Drive",
-      "url": "https://softwarerecs.stackexchange.com/questions/95812/how-to-transfer-photos-from-icloud-photos-to-google-drive",
-      "summary": "I'm looking for a convenient way to transfer photos from iCloud Photos to Google Drive. I have photos stored in my Apple account and want to move a copy of them to Google Drive so I can access and manage them more easily across different devices. I've been exploring different options, including downloading photos from iCloud and uploading them manually, but that can become time-consuming when dealing with a large photo library. I also came across All Cloud Hub , a multi-cloud management platform available as a web app and mobile apps for iOS and Android.",
-      "deepenKey": "95812",
-      "signal": {
-        "score": 0,
-        "views": 13,
-        "answers": 0,
-        "unanswered": true
-      },
-      "publishedAt": "2026-11-19T11:06:06.000Z"
-    },
-    {
-      "id": "ce76744431",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/95804/what-software-can-help-me-organize-and-manage-personal-files-stored-across-multi",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
-      "side": "demand",
-      "pool": true,
-      "title": "What software can help me organize and manage personal files stored across multiple cloud storage services?",
-      "url": "https://softwarerecs.stackexchange.com/questions/95804/what-software-can-help-me-organize-and-manage-personal-files-stored-across-multi",
-      "summary": "I'm looking for software that can help me manage personal files stored across multiple cloud storage services from one place. My main requirements are: Unified file management: Browse and organize files from different cloud storage accounts. Easy file access: Access documents, photos, and other personal files without repeatedly switching between services. File synchronization: Keep selected folders synchronized across devices. Security: Support secure account access and protect personal files. Backup support: Make it easier to maintain copies of important files.",
-      "deepenKey": "95804",
-      "signal": {
-        "score": 0,
-        "views": 14,
-        "answers": 0,
-        "unanswered": true
-      },
-      "publishedAt": "2026-11-18T11:58:51.000Z"
     },
     {
       "id": "cca25b10d2",
@@ -284,7 +344,7 @@
       "deepenKey": "82383",
       "signal": {
         "score": 2,
-        "views": 2412,
+        "views": 2413,
         "answers": 1,
         "unanswered": true
       },
@@ -304,7 +364,7 @@
       "deepenKey": "95347",
       "signal": {
         "score": 0,
-        "views": 17,
+        "views": 19,
         "answers": 1,
         "unanswered": true
       },
@@ -324,31 +384,11 @@
       "deepenKey": "75816",
       "signal": {
         "score": 1,
-        "views": 2499,
+        "views": 2500,
         "answers": 1,
         "unanswered": true
       },
       "publishedAt": "2020-08-23T13:51:30.000Z"
-    },
-    {
-      "id": "55b3408481",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/95787/what-software-can-help-manage-large-volumes-of-data-for-long-term-archiving",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
-      "side": "demand",
-      "pool": true,
-      "title": "What software can help manage large volumes of data for long-term archiving?",
-      "url": "https://softwarerecs.stackexchange.com/questions/95787/what-software-can-help-manage-large-volumes-of-data-for-long-term-archiving",
-      "summary": "I'm researching ways to manage large volumes of historical business data while keeping storage organized, secure, and accessible when needed. I'm interested in data archiving software that can help with long-term retention without requiring all archived information to remain on expensive, high-performance storage. My main requirements are: Scalability: The solution should accommodate growing volumes of files and records. Retention management: It should support configurable retention policies.",
-      "deepenKey": "95787",
-      "signal": {
-        "score": 0,
-        "views": 34,
-        "answers": 0,
-        "unanswered": true
-      },
-      "publishedAt": "2026-11-13T12:49:46.000Z"
     },
     {
       "id": "00798e5d92",
@@ -364,7 +404,7 @@
       "deepenKey": "25136",
       "signal": {
         "score": 3,
-        "views": 97,
+        "views": 98,
         "answers": 0,
         "unanswered": true
       },
@@ -424,7 +464,7 @@
       "deepenKey": "88688",
       "signal": {
         "score": 1,
-        "views": 567,
+        "views": 568,
         "answers": 2,
         "unanswered": true
       },
@@ -444,7 +484,7 @@
       "deepenKey": "95777",
       "signal": {
         "score": 1,
-        "views": 46,
+        "views": 47,
         "answers": 0,
         "unanswered": true
       },
@@ -484,7 +524,7 @@
       "deepenKey": "95778",
       "signal": {
         "score": 0,
-        "views": 24,
+        "views": 26,
         "answers": 2,
         "unanswered": true
       },
@@ -504,7 +544,7 @@
       "deepenKey": "13306",
       "signal": {
         "score": 6,
-        "views": 519,
+        "views": 521,
         "answers": 1,
         "unanswered": true
       },
@@ -571,44 +611,164 @@
       "publishedAt": "2020-11-25T15:56:00.000Z"
     },
     {
-      "id": "f978a12eb0",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/34199/countdown-timer-alarm-clock-software-with-very-specific-features",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "id": "e0235485ad",
+      "normUrl": "https://news.ycombinator.com/item?id=50582890",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "Countdown, Timer & Alarm Clock software with very specific features",
-      "url": "https://softwarerecs.stackexchange.com/questions/34199/countdown-timer-alarm-clock-software-with-very-specific-features",
-      "summary": "Looking for the following features, or help creating them myself, in an as small an amount of separate programs as possible. OS : Windows 10. Android would also be interesting, but strictly optional, or, (undesirably and as last resort): as an alternative. Desired features: (Not in order of priority, that comes later) Main: Alarm Clock : Multiple alarms Repeat function (Daily, Weekly, Weekdays, Thursdays etc.) Countdown : You set either a a) period (say 4hrs), or b) deadline (clock time AND/OR date) <-- Can be an extension of the \"Alarm\" feature.",
-      "deepenKey": "34199",
+      "title": "Do you feel developers are more \"grumpy\" these days?",
+      "url": "https://news.ycombinator.com/item?id=50582890",
+      "externalUrl": null,
+      "summary": "I genuinely am questioning whether this is my perception or it's real. The whole AI coding and threats and opportunities in our industry, makes me think that I might be right, but then again that could be my bias. I wanted to see how everybody else thinks about this. Do you also feel that when you're in a developer-focused subreddit, X communities, or other places, and even on Hacker News, the developers there are harsher in their responses, less friendly, more polarized, and, I would generalize it, grumpier?",
+      "deepenKey": "50582890",
+      "via": null,
       "signal": {
-        "score": 2,
-        "views": 588,
-        "answers": 1,
-        "unanswered": true
+        "points": 3,
+        "comments": 2
       },
-      "publishedAt": "2016-06-27T04:12:48.000Z"
+      "publishedAt": "2026-11-20T22:00:11Z"
     },
     {
-      "id": "54fc984cf0",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/95785/how-to-set-up-an-isolated-environment-for-c-development-session-with-the-abil",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "id": "b191148c2b",
+      "normUrl": "https://news.ycombinator.com/item?id=50582662",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "How to set up an isolated environment for C++ development session, with the ability to run scripts?",
-      "url": "https://softwarerecs.stackexchange.com/questions/95785/how-to-set-up-an-isolated-environment-for-c-development-session-with-the-abil",
-      "summary": "Let me start with a question. And really, the question here is more about who does it and how. Personally, here's why I need this: I want to set up an isolated environment for the session I need, with the ability to run scripts. The latter is important here. That is, in addition to just setting up the environment, I want to be able to call some batch file that in turn also further configures the environment. First I want to note that I haven't lost my mind and made up a problem for myself — this is, in my view, a real problem.",
-      "deepenKey": "95785",
+      "title": "What's stopping us from putting agents in general purpose robots?",
+      "url": "https://news.ycombinator.com/item?id=50582662",
+      "externalUrl": null,
+      "summary": "After using Claude a bunch in the last few months I can't stop thinking the obvious next logical step is to put an agent in a physical robot For example imagine asking \"can you go into the other room, find object X, and bring it to me\" It seems to me the intelligence/reasoning ability is more than enough to do simple tasks And giving models images they seem to be able to recognize objects well to understand what they are looking at But its not clear to me what is holding this product area back.",
+      "deepenKey": "50582662",
+      "via": null,
       "signal": {
-        "score": 0,
-        "views": 35,
-        "answers": 0,
-        "unanswered": true
+        "points": 5,
+        "comments": 1
       },
-      "publishedAt": "2026-11-12T09:33:02.000Z"
+      "publishedAt": "2026-11-20T21:44:46Z"
+    },
+    {
+      "id": "97ba4ccf6d",
+      "normUrl": "https://news.ycombinator.com/item?id=50577613",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "I'm Peter Roberts, immigration attorney who does work for YC and startups. AMA",
+      "url": "https://news.ycombinator.com/item?id=50577613",
+      "externalUrl": null,
+      "summary": "I'll be here for the rest of the day. As usual, there are countless possible topics and I'll be guided by whatever you're concerned with. Please remember that I can't provide legal advice on specific cases for obvious liability reasons because I won't have access to all the facts. Please stick to a factual discussion in your questions and comments and I'll try to do the same in my answers! Previous threads we've done: https://news.ycombinator.com/submitted?id=proberts .",
+      "deepenKey": "50577613",
+      "via": null,
+      "signal": {
+        "points": 89,
+        "comments": 119
+      },
+      "publishedAt": "2026-11-20T16:45:25Z"
+    },
+    {
+      "id": "fff2785ad2",
+      "normUrl": "https://news.ycombinator.com/item?id=50575992",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How does one build an LLM router with a labelled set of 100 tasks?",
+      "url": "https://news.ycombinator.com/item?id=50575992",
+      "externalUrl": null,
+      "summary": "I already spent the time building rubrics for a set of ~100 tasks on various criterias (accuracy, thoroughness communication style ). Then ran these on a few models and now have a labelled-set where I know for each task which is the cheapest/fastest model that gets a minimum threshold ( say 80 ). How does one go on to build a router based on this ? There appears to be no good literature / open source projects on this. I tried a bunch of approaches with the help of claude: - trying to use Jev via a serious of probe Yes/No questions ( does task contain x, does the world have y ...etc ).",
+      "deepenKey": "50575992",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-20T15:23:21Z"
+    },
+    {
+      "id": "807ef580e4",
+      "normUrl": "https://news.ycombinator.com/item?id=50573839",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Any actual balanced reviews of GTA 6?",
+      "url": "https://news.ycombinator.com/item?id=50573839",
+      "externalUrl": null,
+      "summary": "Any links would be appreciated",
+      "deepenKey": "50573839",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 11
+      },
+      "publishedAt": "2026-11-20T12:36:49Z"
+    },
+    {
+      "id": "e715d1aed2",
+      "normUrl": "https://news.ycombinator.com/item?id=50572862",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Block Anything on YouTube",
+      "url": "https://news.ycombinator.com/item?id=50572862",
+      "externalUrl": null,
+      "summary": "I've built FilterTube.in which lets you control your entier feed including a Whitelist mode. It all started with my own ADHD need to block content on YT and I came across to a support thread - https://support.google.com/youtubekids/thread/54509605/how-to-block-videos-by-keyword-or-tag?hl=en Where lot of parents were asking for same thing but for YT Kids. One parent asked me if I can do something as his child is kept crying for 3 days. Later Google/YouTube mods not only deleted my and other parents comments they also locked entier thread so no one can question them.",
+      "deepenKey": "50572862",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-20T10:46:40Z"
+    },
+    {
+      "id": "e72226511a",
+      "normUrl": "https://news.ycombinator.com/item?id=50572342",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Did books that went viral on HN publish their manuscript?",
+      "url": "https://news.ycombinator.com/item?id=50572342",
+      "externalUrl": null,
+      "summary": "I'm working on a book that I think is right up HN's alley, but idk if I should publish it in excerpts on Substack like I'm currently doing or just publish the entire manuscript (or rather what I have now) at once.",
+      "deepenKey": "50572342",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-20T09:41:16Z"
+    },
+    {
+      "id": "28f97f53cb",
+      "normUrl": "https://news.ycombinator.com/item?id=50568364",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are you SEO-ing (LLMO?) your job postings?",
+      "url": "https://news.ycombinator.com/item?id=50568364",
+      "externalUrl": null,
+      "summary": "I run claude opportunistically looking at positions. It's finding forms of prompt injection on some job postings. Is this a generic thing now?",
+      "deepenKey": "50568364",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-20T00:02:59Z"
     },
     {
       "id": "737809b56c",
@@ -625,8 +785,8 @@
       "deepenKey": "50566487",
       "via": null,
       "signal": {
-        "points": 4,
-        "comments": 2
+        "points": 12,
+        "comments": 5
       },
       "publishedAt": "2026-11-19T21:15:17Z"
     },
@@ -645,10 +805,30 @@
       "deepenKey": "50565484",
       "via": null,
       "signal": {
-        "points": 9,
-        "comments": 9
+        "points": 18,
+        "comments": 25
       },
       "publishedAt": "2026-11-19T20:01:18Z"
+    },
+    {
+      "id": "64b129f7d1",
+      "normUrl": "https://news.ycombinator.com/item?id=50565386",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Why no AI-led memory vulns in Python?",
+      "url": "https://news.ycombinator.com/item?id=50565386",
+      "externalUrl": null,
+      "summary": "Python usually means CPython, which means C. Most AI-led vulnerabilities lately have been memory mismanagement - what is keeping Python isolated if it is written in C?",
+      "deepenKey": "50565386",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-19T19:54:37Z"
     },
     {
       "id": "096a8fe7c4",
@@ -671,6 +851,26 @@
       "publishedAt": "2026-11-19T19:26:56Z"
     },
     {
+      "id": "70ceff5c5d",
+      "normUrl": "https://news.ycombinator.com/item?id=50564890",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "The End of Continuous Rework",
+      "url": "https://news.ycombinator.com/item?id=50564890",
+      "externalUrl": null,
+      "summary": "I built a free and open source tool your AI agents can use to reduce the rework we often have to do with AI: https://decapodlabs.github.io/tecr",
+      "deepenKey": "50564890",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-19T19:20:41Z"
+    },
+    {
       "id": "2a92e8f73f",
       "normUrl": "https://news.ycombinator.com/item?id=50562528",
       "sourceId": "hn-ask",
@@ -686,7 +886,7 @@
       "via": null,
       "signal": {
         "points": 39,
-        "comments": 11
+        "comments": 14
       },
       "publishedAt": "2026-11-19T16:47:32Z"
     },
@@ -705,8 +905,8 @@
       "deepenKey": "50561571",
       "via": null,
       "signal": {
-        "points": 22,
-        "comments": 6
+        "points": 27,
+        "comments": 7
       },
       "publishedAt": "2026-11-19T15:42:26Z"
     },
@@ -745,8 +945,8 @@
       "deepenKey": "50560915",
       "via": null,
       "signal": {
-        "points": 4,
-        "comments": 1
+        "points": 5,
+        "comments": 3
       },
       "publishedAt": "2026-11-19T14:53:34Z"
     },
@@ -766,7 +966,7 @@
       "via": null,
       "signal": {
         "points": 6,
-        "comments": 7
+        "comments": 8
       },
       "publishedAt": "2026-11-19T14:28:11Z"
     },
@@ -805,7 +1005,7 @@
       "deepenKey": "50558285",
       "via": null,
       "signal": {
-        "points": 9,
+        "points": 10,
         "comments": 7
       },
       "publishedAt": "2026-11-19T10:21:56Z"
@@ -826,7 +1026,7 @@
       "via": null,
       "signal": {
         "points": 3,
-        "comments": 12
+        "comments": 13
       },
       "publishedAt": "2026-11-19T04:20:28Z"
     },
@@ -845,7 +1045,7 @@
       "deepenKey": "50555002",
       "via": null,
       "signal": {
-        "points": 5,
+        "points": 6,
         "comments": 5
       },
       "publishedAt": "2026-11-19T01:37:45Z"
@@ -865,8 +1065,8 @@
       "deepenKey": "50554756",
       "via": null,
       "signal": {
-        "points": 8,
-        "comments": 2
+        "points": 10,
+        "comments": 4
       },
       "publishedAt": "2026-11-19T01:13:06Z"
     },
@@ -885,7 +1085,7 @@
       "deepenKey": "50554686",
       "via": null,
       "signal": {
-        "points": 7,
+        "points": 11,
         "comments": 7
       },
       "publishedAt": "2026-11-19T01:04:20Z"
@@ -906,209 +1106,9 @@
       "via": null,
       "signal": {
         "points": 13,
-        "comments": 8
+        "comments": 9
       },
       "publishedAt": "2026-11-19T00:30:18Z"
-    },
-    {
-      "id": "c6a0ce74ff",
-      "normUrl": "https://news.ycombinator.com/item?id=50553802",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "I open-sourced an AI loop for RISC-V CPU design months prior to OpenAI",
-      "url": "https://news.ycombinator.com/item?id=50553802",
-      "externalUrl": null,
-      "summary": "Back in April, I built auto-arch-tournament (https://github.com/FeSens/auto-arch-tournament) to explore a question I’m still curious about: how well can different AI models improve a RISC-V CPU? I’ve been tracking the results on HWEBench(https://hwebench.com/v2). It’s fun to see OpenAI exploring a similar question in today’s chip design post(https://openai.com/index/advancing-chip-design-with-our-models/). If you’d like to try an experiment yourself, you can run the research loop from the repo.",
-      "deepenKey": "50553802",
-      "via": null,
-      "signal": {
-        "points": 9,
-        "comments": 1
-      },
-      "publishedAt": "2026-11-18T23:26:30Z"
-    },
-    {
-      "id": "ee9a16b1a3",
-      "normUrl": "https://news.ycombinator.com/item?id=50552918",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Are we all tired of all these skybreaking CVEs/RCEs?",
-      "url": "https://news.ycombinator.com/item?id=50552918",
-      "externalUrl": null,
-      "summary": "Like the whole internet stack had scary worldbreaking bugs: php, apache, nginx. Like literally 2/3 of internet should be done by now, knowing the avg update rate. Aaaand nothing happened? Every little bug found by AI and needing absurdly lab conditions is being shilled as next log4shell it seems. I know AIshill central is a poor place to speak up, but ffs, the fact it is being shilled by AI firms is obvious by now I hope",
-      "deepenKey": "50552918",
-      "via": null,
-      "signal": {
-        "points": 11,
-        "comments": 7
-      },
-      "publishedAt": "2026-11-18T22:08:50Z"
-    },
-    {
-      "id": "26ccd33f75",
-      "normUrl": "https://news.ycombinator.com/item?id=50551965",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Is Claude Down?",
-      "url": "https://news.ycombinator.com/item?id=50551965",
-      "externalUrl": null,
-      "summary": "Cannot connect to Claude at the moment.",
-      "deepenKey": "50551965",
-      "via": null,
-      "signal": {
-        "points": 3,
-        "comments": 1
-      },
-      "publishedAt": "2026-11-18T20:51:47Z"
-    },
-    {
-      "id": "0642ef1f50",
-      "normUrl": "https://news.ycombinator.com/item?id=50551501",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Developing Browser Extensions",
-      "url": "https://news.ycombinator.com/item?id=50551501",
-      "externalUrl": null,
-      "summary": "What's the best way to gain users when creating a new browser app? I'm not good at marketing. YET!",
-      "deepenKey": "50551501",
-      "via": null,
-      "signal": {
-        "points": 3,
-        "comments": 3
-      },
-      "publishedAt": "2026-11-18T20:12:01Z"
-    },
-    {
-      "id": "75805a2fe0",
-      "normUrl": "https://news.ycombinator.com/item?id=50551096",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Windows malware removal in Bay Area",
-      "url": "https://news.ycombinator.com/item?id=50551096",
-      "externalUrl": null,
-      "summary": "A relative uses something called \"Microsoft Windows\" on their computer. I'm not familiar with it. They want to get the malware removed. I wanted to check with the HN community to see if anyone can recommend a serious professional who can de-worm their laptop. Thank You.",
-      "deepenKey": "50551096",
-      "via": null,
-      "signal": {
-        "points": 3,
-        "comments": 3
-      },
-      "publishedAt": "2026-11-18T19:42:27Z"
-    },
-    {
-      "id": "6acd7d699f",
-      "normUrl": "https://news.ycombinator.com/item?id=50550926",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Where are you following security vulnerabilities?",
-      "url": "https://news.ycombinator.com/item?id=50550926",
-      "externalUrl": null,
-      "summary": "As nice as \"Top of HN\" is as a source, where else are people keeping up with vulnerabilities, given the pace that they're coming out?",
-      "deepenKey": "50550926",
-      "via": null,
-      "signal": {
-        "points": 3,
-        "comments": 2
-      },
-      "publishedAt": "2026-11-18T19:31:23Z"
-    },
-    {
-      "id": "6a93373459",
-      "normUrl": "https://news.ycombinator.com/item?id=50549762",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Are your non-technical colleagues vibecoding? How are the apps hosted?",
-      "url": "https://news.ycombinator.com/item?id=50549762",
-      "externalUrl": null,
-      "summary": "I'm at a data analytics legal tech company, our clients are law firms. I've noticed in the last few months our clients, lawyers and paralegals, have been vibecoding up a storm with codex/cowork (their marketing is working xD). We had one customer create a dashboard of aggregated client data and expose it publically via Vercel. Luckily no one out of the firm accessed it and we helped them take it down, but it's scary. I'm curious if other people are seeing this at their companies/communities, and how these internal apps are being hosted.",
-      "deepenKey": "50549762",
-      "via": null,
-      "signal": {
-        "points": 3,
-        "comments": 2
-      },
-      "publishedAt": "2026-11-18T18:04:27Z"
-    },
-    {
-      "id": "f54f612002",
-      "normUrl": "https://news.ycombinator.com/item?id=50548343",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "How do you reach the flow with vibe coding?",
-      "url": "https://news.ycombinator.com/item?id=50548343",
-      "externalUrl": null,
-      "summary": "When I used to code without AI (probably not even one year ago), I sometimes reached a state of \"flow\" and it truly was a great feeling. Nowadays, I rarely code from scratch and most of my development (at work, at least) comes through AI. I get it that I can still code \"the old way\" in my free time, but I'm more curious to understand if people in a similar situation can reach the same state by vibe/AI coding, and how.",
-      "deepenKey": "50548343",
-      "via": null,
-      "signal": {
-        "points": 5,
-        "comments": 11
-      },
-      "publishedAt": "2026-11-18T16:31:37Z"
-    },
-    {
-      "id": "3fbc1054f3",
-      "normUrl": "https://news.ycombinator.com/item?id=50548260",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "How do you use AI to get more relevant content?",
-      "url": "https://news.ycombinator.com/item?id=50548260",
-      "externalUrl": null,
-      "summary": "The \"algorithm\" tries to give your attention something to eat. Sometimes, it's exactly what you want/need. Sometimes it's just meh , and not particularly enriching. Are any folks using AI to aggregate and rank content across YouTube, HackerNews, Twitter/X, Instagram etc. that's learns from your preferences to find enriching content not just entertaining content?",
-      "deepenKey": "50548260",
-      "via": null,
-      "signal": {
-        "points": 4,
-        "comments": 5
-      },
-      "publishedAt": "2026-11-18T16:25:34Z"
-    },
-    {
-      "id": "4603a0d82c",
-      "normUrl": "https://news.ycombinator.com/item?id=50547137",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Do LLMs really code better than you?",
-      "url": "https://news.ycombinator.com/item?id=50547137",
-      "externalUrl": null,
-      "summary": "I keep seeing this sentiment in the comments on here from supposed 25 year storied career programmers. I’ve been programming for 14ish years professionally and can say for a fact an agent doesn’t code better than I do. I’ve used the latest models and even with heavy steering the code it produces is not subjectively or un subjectively “better”. It is more verbose, more defensive, has more comments, it’s done faster. The fact someone I highly respect that uses the agentic workflow effectively told me to “stop being so precious about the code” makes it obvious to me that both can’t be true.",
-      "deepenKey": "50547137",
-      "via": null,
-      "signal": {
-        "points": 3,
-        "comments": 1
-      },
-      "publishedAt": "2026-11-18T15:03:25Z"
     },
     {
       "id": "687a855ace",
@@ -1212,7 +1212,7 @@
       "url": "https://github.com/openai/codex/issues/58530",
       "summary": "## Please keep the path from a first idea to a first income open — preserve independent ChatGPT High and Codex/Work allowances **Update — November 9, 2026: OpenAI has officially confirmed the planned December change.** When I opened this issue on October 31, the upcoming shared allowance was still being discussed as a reported change.",
       "signal": {
-        "thumbsUp": 57,
+        "thumbsUp": 58,
         "comments": 34,
         "repo": "openai/codex"
       },
@@ -1245,337 +1245,284 @@
       "publishedAt": "2026-11-19T02:20:02.000Z"
     },
     {
-      "id": "7e154e38cc",
-      "normUrl": "https://trends.vc/why-does-1000-of-new-mrr-cap-out-at-20000",
-      "sourceId": "trendsvc",
-      "source": "Trends.vc",
-      "sourceHome": "https://trends.vc/",
-      "side": "trend",
-      "pool": false,
-      "title": "🧮 Why Does $1,000 of New MRR Cap Out at $20,000?",
-      "url": "https://trends.vc/why-does-1000-of-new-mrr-cap-out-at-20000/",
-      "summary": "This week’s Founder Finds includes: 🪙 An AI token optimizer🏢 Selling AI enablement🧮 SaaS revenue ceilings🤝 An AI networking platform📨 A bootstrapped email tool with $30M ARR➡️ And more… 🪶 REMEMBER THIS: If you want to do great work, find work you love doing. 🤓 FAV FINDS Tools, tweets and more from Trends Pro Members … Continue reading 🧮 Why Does $1,000 of New MRR Cap Out at $20,000? → The post 🧮 Why Does $1,000 of New MRR Cap Out at $20,000? appeared first on Trends.vc .",
-      "publishedAt": "2026-11-18T01:42:39.000Z"
-    },
-    {
-      "id": "da0c945328",
-      "normUrl": "https://producthunt.com/products/heygen",
+      "id": "cb12aba027",
+      "normUrl": "https://producthunt.com/products/tinytldr",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "HeyGen Avatar 6",
-      "url": "https://www.producthunt.com/products/heygen",
-      "summary": "AI Avatar Model That Looks Like You",
-      "publishedAt": "2026-11-18T12:03:30.000Z"
+      "title": "tinytldr",
+      "url": "https://www.producthunt.com/products/tinytldr",
+      "summary": "Templates for your agents",
+      "publishedAt": "2026-11-11T07:15:57.000Z"
     },
     {
-      "id": "d593589c43",
-      "normUrl": "https://producthunt.com/products/cleared-quit-nicotine",
+      "id": "475c42046e",
+      "normUrl": "https://producthunt.com/products/pickfit",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Cleared",
-      "url": "https://www.producthunt.com/products/cleared-quit-nicotine",
-      "summary": "Your personal plan to give up vapes, pouches and cigarettes",
-      "publishedAt": "2026-11-18T15:27:40.000Z"
+      "title": "pickfit",
+      "url": "https://www.producthunt.com/products/pickfit",
+      "summary": "Every tool tested in a sandbox before it's recommended",
+      "publishedAt": "2026-11-18T05:38:56.000Z"
     },
     {
-      "id": "b41d4305ea",
-      "normUrl": "https://producthunt.com/products/teaflask",
+      "id": "cd42c8a448",
+      "normUrl": "https://producthunt.com/products/cup-of-sugar-2",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Teaflask",
-      "url": "https://www.producthunt.com/products/teaflask",
-      "summary": "Self-improving AI copilot for your app. No backend changes.",
-      "publishedAt": "2026-11-09T16:27:48.000Z"
+      "title": "Cup of Sugar",
+      "url": "https://www.producthunt.com/products/cup-of-sugar-2",
+      "summary": "Share a dream, let Cubby break it into small steps.",
+      "publishedAt": "2026-11-15T09:17:50.000Z"
     },
     {
-      "id": "03ababdeb0",
-      "normUrl": "https://producthunt.com/products/tooljet",
+      "id": "50f6e292ce",
+      "normUrl": "https://producthunt.com/products/deep-waste",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "ToolJet",
-      "url": "https://www.producthunt.com/products/tooljet",
-      "summary": "Vibe-coded business apps that pass the security review",
-      "publishedAt": "2026-11-19T03:07:11.000Z"
+      "title": "DWaste",
+      "url": "https://www.producthunt.com/products/deep-waste",
+      "summary": "Eliminate recycling contamination with low-power Edge AI",
+      "publishedAt": "2026-11-18T11:42:26.000Z"
     },
     {
-      "id": "29abd65ced",
-      "normUrl": "https://producthunt.com/products/upsolve-ai",
+      "id": "1d951cd5fe",
+      "normUrl": "https://producthunt.com/products/tensorviz",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Upsolve MCP Connections",
-      "url": "https://www.producthunt.com/products/upsolve-ai",
-      "summary": "Plug Notion, Linear and more into your data agent",
-      "publishedAt": "2026-11-18T21:56:08.000Z"
+      "title": "tensorViz",
+      "url": "https://www.producthunt.com/products/tensorviz",
+      "summary": "Let your coding agent see inside your PyTorch model",
+      "publishedAt": "2026-11-12T21:35:14.000Z"
     },
     {
-      "id": "fe43197fe4",
-      "normUrl": "https://producthunt.com/products/noteshell",
+      "id": "719567ed6a",
+      "normUrl": "https://producthunt.com/products/zethos",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Noteshell",
-      "url": "https://www.producthunt.com/products/noteshell",
-      "summary": "AI teammates that build and run your workspace",
-      "publishedAt": "2026-11-18T15:28:16.000Z"
+      "title": "Zethos",
+      "url": "https://www.producthunt.com/products/zethos",
+      "summary": "The ledger you and your AI work from",
+      "publishedAt": "2026-11-19T00:53:37.000Z"
     },
     {
-      "id": "e7012441e7",
-      "normUrl": "https://producthunt.com/products/meilisearch-cloud",
+      "id": "e4f7357bc5",
+      "normUrl": "https://producthunt.com/products/dozy",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Meilisearch Searchandising",
-      "url": "https://www.producthunt.com/products/meilisearch-cloud",
-      "summary": "Pin, boost, hide and personalize search results",
-      "publishedAt": "2026-11-05T13:25:09.000Z"
+      "title": "Dozy",
+      "url": "https://www.producthunt.com/products/dozy",
+      "summary": "Turns your sleep data into one thing to do today",
+      "publishedAt": "2026-11-19T21:18:14.000Z"
     },
     {
-      "id": "a7f93bc5eb",
-      "normUrl": "https://producthunt.com/products/nuko",
+      "id": "7cca2eab6f",
+      "normUrl": "https://producthunt.com/products/undoguard",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Nuko",
-      "url": "https://www.producthunt.com/products/nuko",
-      "summary": "Motion design in your browser",
-      "publishedAt": "2026-11-19T03:34:35.000Z"
+      "title": "UndoGuard",
+      "url": "https://www.producthunt.com/products/undoguard",
+      "summary": "The Ctrl+Z button for autonomous AI agents",
+      "publishedAt": "2026-11-19T19:15:42.000Z"
     },
     {
-      "id": "5849db5c21",
-      "normUrl": "https://producthunt.com/products/context-dev",
+      "id": "42413e6976",
+      "normUrl": "https://producthunt.com/products/netsieve",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Enrichable by Context.dev",
-      "url": "https://www.producthunt.com/products/context-dev",
-      "summary": "Open-source AI spreadsheet for data enrichment",
-      "publishedAt": "2026-11-18T11:43:41.000Z"
+      "title": "NetSieve",
+      "url": "https://www.producthunt.com/products/netsieve",
+      "summary": "Block ads, trackers and scam sites in every app on your Mac",
+      "publishedAt": "2026-11-19T15:32:15.000Z"
     },
     {
-      "id": "700421e023",
-      "normUrl": "https://producthunt.com/products/stripo-email",
+      "id": "5395837bcb",
+      "normUrl": "https://producthunt.com/products/rox-2",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Stripo Email Widgets",
-      "url": "https://www.producthunt.com/products/stripo-email",
-      "summary": "Put a game, quiz or survey in your next email. No coding",
-      "publishedAt": "2026-11-11T08:31:59.000Z"
+      "title": "Rox",
+      "url": "https://www.producthunt.com/products/rox-2",
+      "summary": "Your AI companion for living with chronic illness",
+      "publishedAt": "2026-11-19T12:00:00.000Z"
     },
     {
-      "id": "f525b4bba7",
-      "normUrl": "https://producthunt.com/products/verse-engine-by-ctruh",
+      "id": "3a1f3c489b",
+      "normUrl": "https://producthunt.com/products/storiara",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Verse Engine by Ctruh",
-      "url": "https://www.producthunt.com/products/verse-engine-by-ctruh",
-      "summary": "Blender, Unity or Unreal to a live 3D link in one click",
-      "publishedAt": "2026-11-17T14:44:33.000Z"
+      "title": "Storiara",
+      "url": "https://www.producthunt.com/products/storiara",
+      "summary": "AI producers that find real savings in your film budget",
+      "publishedAt": "2026-11-17T20:02:24.000Z"
     },
     {
-      "id": "9f4dfd9aef",
-      "normUrl": "https://producthunt.com/products/codedesign",
+      "id": "ff474f2c9f",
+      "normUrl": "https://producthunt.com/products/saparo",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "CodeDesign v3",
-      "url": "https://www.producthunt.com/products/codedesign",
-      "summary": "Run your website and business apps from ChatGPT or Claude",
-      "publishedAt": "2026-11-17T05:24:17.000Z"
+      "title": "Saparo",
+      "url": "https://www.producthunt.com/products/saparo",
+      "summary": "Muse for shopping with deals stacks",
+      "publishedAt": "2026-11-19T08:29:12.000Z"
     },
     {
-      "id": "1e3880b2b8",
-      "normUrl": "https://producthunt.com/products/tecla-3",
+      "id": "53add42a19",
+      "normUrl": "https://producthunt.com/products/aiteam-space",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Tecla",
-      "url": "https://www.producthunt.com/products/tecla-3",
-      "summary": "A proactive AI agent whose interface is a TODO list",
-      "publishedAt": "2026-11-19T03:05:34.000Z"
+      "title": "aiteam.space",
+      "url": "https://www.producthunt.com/products/aiteam-space",
+      "summary": "An AI team where every agent has its own computer",
+      "publishedAt": "2026-11-10T22:14:37.000Z"
     },
     {
-      "id": "a4108ea87e",
-      "normUrl": "https://producthunt.com/products/ableten-source-library",
+      "id": "3ea8aacdc6",
+      "normUrl": "https://producthunt.com/products/samiksa",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Ableten Hybrid AI Travel Planner",
-      "url": "https://www.producthunt.com/products/ableten-source-library",
-      "summary": "Get your group on the same map.",
-      "publishedAt": "2026-08-19T06:21:46.000Z"
+      "title": "Samiksa",
+      "url": "https://www.producthunt.com/products/samiksa",
+      "summary": "Understand research, test it yourself, publish your own",
+      "publishedAt": "2026-11-20T04:22:09.000Z"
     },
     {
-      "id": "9e56906413",
-      "normUrl": "https://producthunt.com/products/netlify",
+      "id": "3b295d6750",
+      "normUrl": "https://producthunt.com/products/fack-d",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Netlify Server",
-      "url": "https://www.producthunt.com/products/netlify",
-      "summary": "Run WebSockets, multiplayer apps, and long-running agents",
-      "publishedAt": "2026-11-10T20:15:49.000Z"
+      "title": "Fack’d",
+      "url": "https://www.producthunt.com/products/fack-d",
+      "summary": "Fact checks right on YouTube as it plays, with sources",
+      "publishedAt": "2026-11-20T02:06:25.000Z"
     },
     {
-      "id": "680e092c48",
-      "normUrl": "https://producthunt.com/products/spellar",
+      "id": "0bf711b2d9",
+      "normUrl": "https://producthunt.com/products/same-moon",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Spellar for Chrome",
-      "url": "https://www.producthunt.com/products/spellar",
-      "summary": "Free, no-bot meeting notes with memory, now in your browser",
-      "publishedAt": "2026-11-16T12:57:22.000Z"
+      "title": "Same Moon",
+      "url": "https://www.producthunt.com/products/same-moon",
+      "summary": "Free bedtime stories for children who had to leave home",
+      "publishedAt": "2026-11-16T11:04:38.000Z"
     },
     {
-      "id": "93e70d3b0d",
-      "normUrl": "https://producthunt.com/products/tabstack",
+      "id": "04d08a04cf",
+      "normUrl": "https://producthunt.com/products/scam-link-check",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Tabstack by Mozilla",
-      "url": "https://www.producthunt.com/products/tabstack",
-      "summary": "Give your model the web without giving up your privacy",
-      "publishedAt": "2026-11-16T21:57:39.000Z"
+      "title": "Scam Link Check",
+      "url": "https://www.producthunt.com/products/scam-link-check",
+      "summary": "Paste a suspicious text or link, get a plain-English verdict",
+      "publishedAt": "2026-11-13T13:32:14.000Z"
     },
     {
-      "id": "78d91bf6c8",
-      "normUrl": "https://producthunt.com/products/ofintech-desk",
+      "id": "78404a7da5",
+      "normUrl": "https://producthunt.com/products/mailpipe-2",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "OfinTech Desk",
-      "url": "https://www.producthunt.com/products/ofintech-desk",
-      "summary": "Finance AI where every figure traces to its source",
-      "publishedAt": "2026-11-17T03:25:07.000Z"
+      "title": "Mailpipe",
+      "url": "https://www.producthunt.com/products/mailpipe-2",
+      "summary": "Draft Apple Mail replies with your local AI agent CLI",
+      "publishedAt": "2026-11-20T04:13:55.000Z"
     },
     {
-      "id": "d9805f4c38",
-      "normUrl": "https://producthunt.com/products/every-signal",
+      "id": "c86ed47fde",
+      "normUrl": "https://producthunt.com/products/memanto-by-moorcheh",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Every Signal",
-      "url": "https://www.producthunt.com/products/every-signal",
-      "summary": "Diligence on any company in an hour, every number sourced",
-      "publishedAt": "2026-11-14T17:43:52.000Z"
+      "title": "Memanto Cloud",
+      "url": "https://www.producthunt.com/products/memanto-by-moorcheh",
+      "summary": "A companion memory for agents to improve as you work",
+      "publishedAt": "2026-11-10T18:16:20.000Z"
     },
     {
-      "id": "dd4632e8c8",
-      "normUrl": "https://producthunt.com/products/source-public-beta",
+      "id": "df4ed3a271",
+      "normUrl": "https://producthunt.com/products/tripps",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Source",
-      "url": "https://www.producthunt.com/products/source-public-beta",
-      "summary": "The attribution data layer for your agents to drive pipeline",
-      "publishedAt": "2026-11-16T17:34:12.000Z"
+      "title": "tripps",
+      "url": "https://www.producthunt.com/products/tripps",
+      "summary": "Plan a group trip with one link, no account needed",
+      "publishedAt": "2026-11-17T19:25:40.000Z"
     },
     {
-      "id": "996dcff929",
-      "normUrl": "https://news.ycombinator.com/item?id=50565099",
+      "id": "1f4577d836",
+      "normUrl": "https://news.ycombinator.com/item?id=50581403",
       "sourceId": "showhn",
       "source": "Show HN",
       "sourceHome": "https://news.ycombinator.com/show",
       "side": "supply",
       "pool": true,
-      "title": "IT Thinks – Build a GPU from a Single NAND Gate",
-      "url": "https://news.ycombinator.com/item?id=50565099",
-      "externalUrl": "https://store.steampowered.com/app/5196330/IT_THINKS_Build_Your_Own_GPU/",
-      "summary": "Hi HN, I built a hardware puzzle game, you start with one NAND gate and every chip you finish becomes a part of next one. basic gates, adders, decoders, latches and finally GPU. last one are a chip that recognises handwritten digits. I am happy to discuss how we can create better levels to for those concepts. you can try demo/full game on Steam",
-      "deepenKey": "50565099",
+      "title": "OpenComputer – an open source alternative to Devin",
+      "url": "https://news.ycombinator.com/item?id=50581403",
+      "externalUrl": "https://github.com/diggerhq/opencomputer",
+      "summary": "Hi HN! Utpal here, I'm one of the founders of OpenComputer. OpenComputer is an open source cloud coding agent for teams that can run in your own cloud account (AWS, GCP, Azure). We run the agent harness and the sandbox on the same durable VM (architecture in the docs [1]). First commit lands in 24s; the alternatives we benchmarked took 53-72s (benchmarks below [2]). Two other choices: - One VM per team, scalable horizontally. Sessions are isolated in git worktrees. - Session files are backed up to a repo after every turn, so any session can resume on another VM.",
+      "deepenKey": "50581403",
       "via": null,
       "signal": {
-        "points": 10,
-        "comments": 0
+        "points": 32,
+        "comments": 12
       },
-      "publishedAt": "2026-11-19T19:35:03Z"
-    },
-    {
-      "id": "de5a0bccea",
-      "normUrl": "https://news.ycombinator.com/item?id=50562541",
-      "sourceId": "showhn",
-      "source": "Show HN",
-      "sourceHome": "https://news.ycombinator.com/show",
-      "side": "supply",
-      "pool": true,
-      "title": "Maglev – OpenRouter for Agent Tools",
-      "url": "https://news.ycombinator.com/item?id=50562541",
-      "externalUrl": "https://maglev.sh/",
-      "summary": null,
-      "deepenKey": "50562541",
-      "via": null,
-      "signal": {
-        "points": 9,
-        "comments": 1
-      },
-      "publishedAt": "2026-11-19T16:48:22Z"
-    },
-    {
-      "id": "299091838d",
-      "normUrl": "https://news.ycombinator.com/item?id=50562508",
-      "sourceId": "showhn",
-      "source": "Show HN",
-      "sourceHome": "https://news.ycombinator.com/show",
-      "side": "supply",
-      "pool": true,
-      "title": "AgentMall – Let your AI agent buy groceries",
-      "url": "https://news.ycombinator.com/item?id=50562508",
-      "externalUrl": "https://getagentmall.com",
-      "summary": "Hey HN, we’re Nel and Kosi. We noticed personal agents like Instinct, Muse were terrible at buying stuff. Most of the time the checkout would fail. So we built reliable automations for agents to checkout at 9 leading grocery merchants. We grapple with anti bot, logins, OTP codes, and changing checkout structures. Loved revisiting this stuff given our backgrounds sneaker-botting and building computer use models. Honestly full circle haha.",
-      "deepenKey": "50562508",
-      "via": null,
-      "signal": {
-        "points": 17,
-        "comments": 4
-      },
-      "publishedAt": "2026-11-19T16:46:14Z"
+      "publishedAt": "2026-11-20T20:19:56Z"
     },
     {
       "id": "c6524b3bb6",
@@ -1590,7 +1537,7 @@
       "summary": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
       "signal": {
         "language": "Python",
-        "points": 1353
+        "points": 1660
       },
       "publishedAt": null
     },
@@ -1607,7 +1554,7 @@
       "summary": "An agentic skills framework & software development methodology that works.",
       "signal": {
         "language": "Shell",
-        "points": 2029
+        "points": 888
       },
       "publishedAt": null
     },
@@ -1624,7 +1571,7 @@
       "summary": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "signal": {
         "language": "Python",
-        "points": 899
+        "points": 774
       },
       "publishedAt": null
     },
@@ -1641,7 +1588,7 @@
       "summary": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
       "signal": {
         "language": "Python",
-        "points": 301
+        "points": 841
       },
       "publishedAt": null
     },
@@ -1658,7 +1605,7 @@
       "summary": "Cursor plugin specification and official plugins",
       "signal": {
         "language": "TypeScript",
-        "points": 383
+        "points": 292
       },
       "publishedAt": null
     },
@@ -1672,10 +1619,10 @@
       "pool": true,
       "title": "firecrawl/firecrawl",
       "url": "https://github.com/firecrawl/firecrawl",
-      "summary": "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.",
+      "summary": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
       "signal": {
         "language": "TypeScript",
-        "points": 795
+        "points": 1226
       },
       "publishedAt": null
     },
@@ -1692,7 +1639,7 @@
       "summary": "The official NGINX Open Source repository.",
       "signal": {
         "language": "C",
-        "points": 66
+        "points": 246
       },
       "publishedAt": null
     },
@@ -1709,7 +1656,7 @@
       "summary": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
       "signal": {
         "language": "C++",
-        "points": 246
+        "points": 219
       },
       "publishedAt": null
     },
@@ -1726,7 +1673,7 @@
       "summary": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "signal": {
         "language": "HTML",
-        "points": 402
+        "points": 634
       },
       "publishedAt": null
     },
@@ -1743,7 +1690,7 @@
       "summary": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "signal": {
         "language": "Python",
-        "points": 952
+        "points": 685
       },
       "publishedAt": null
     },
@@ -1760,7 +1707,7 @@
       "summary": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "signal": {
         "language": "TypeScript",
-        "points": 303
+        "points": 315
       },
       "publishedAt": null
     },
@@ -1777,7 +1724,7 @@
       "summary": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
       "signal": {
         "language": "Shell",
-        "points": 542
+        "points": 874
       },
       "publishedAt": null
     },
@@ -1794,7 +1741,7 @@
       "summary": "The open-source agent for CI/CD reliability.",
       "signal": {
         "language": "Python",
-        "points": 25
+        "points": 465
       },
       "publishedAt": null
     },
@@ -1811,7 +1758,7 @@
       "summary": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
       "signal": {
         "language": "TypeScript",
-        "points": 170
+        "points": 686
       },
       "publishedAt": null
     },
@@ -1828,7 +1775,7 @@
       "summary": "The only downloader you need. 下载器的集大成者。",
       "signal": {
         "language": "Python",
-        "points": 449
+        "points": 1082
       },
       "publishedAt": null
     },
@@ -1845,7 +1792,7 @@
       "summary": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
       "signal": {
         "language": "Python",
-        "points": 110
+        "points": 983
       },
       "publishedAt": null
     },

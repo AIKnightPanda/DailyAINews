@@ -1,0 +1,1629 @@
+{
+  "issue": "2026-11-22",
+  "builtAt": "2026-11-21T21:47:19.510Z",
+  "from": {
+    "boards": "prefetched",
+    "inbox": "live"
+  },
+  "counts": {
+    "fetched": 105,
+    "added": 41,
+    "kept": 41,
+    "dropped": 64,
+    "pool": 41,
+    "screened": 36,
+    "candidates": 16,
+    "demandCandidates": 3,
+    "supplyCandidates": 13
+  },
+  "errors": [],
+  "notices": [
+    "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
+  ],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-21T21:36:52Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：is there an app that（HTTP 404：2026-11-21T21:37:17Z https://rs）；is there a tool that（HTTP 404：2026-11-21T21:38:02Z https://rs）；someone should build（HTTP 404：2026-11-21T21:39:13Z https://rs）；we still use spreadsheets（HTTP 404：2026-11-21T21:40:23Z https://rs）",
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 6,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：we currently pay（HTTP 404：2026-11-21T21:41:08Z https://rs）；we are paying for（HTTP 404：2026-11-21T21:42:18Z https://rs）；quoted us（HTTP 404：2026-11-21T21:43:03Z https://rs）；per seat per month（HTTP 404：2026-11-21T21:44:13Z https://rs）",
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-21T21:45:23Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-21T21:46:08Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-21T21:47:19Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 0,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 3,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub Trending",
+      "status": "ok",
+      "items": 16,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "consoledev",
+      "name": "Console.dev",
+      "status": "ok",
+      "items": 9,
+      "pool": true,
+      "group": "board"
+    }
+  ],
+  "items": [
+    {
+      "id": "82e8c0c4fc",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/78601/what-is-the-best-fitness-app-for-logging-calorie-intake-log-exercise-details-c",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "What is the best fitness app for logging calorie intake, log exercise details, create weekly workout plans?",
+      "url": "https://softwarerecs.stackexchange.com/questions/78601/what-is-the-best-fitness-app-for-logging-calorie-intake-log-exercise-details-c",
+      "summary": "I'm looking for an android app that has below features: Calorie Counter(including macros) Log body size and weight measurements Create weekly/monthly workout plan day by day to ease remembering the exercises on the gym. I'm not an expert so most of the time I need to go to Youtube and check how was that exercise done. Track and log exercise details like repetition number, how much did I lift and how much did I struggle I tried most of the famous fitness apps but most of them are focusing on either diet or workout. I couldn't find one to track all of them in one app.",
+      "deepenKey": "78601",
+      "signal": {
+        "score": 1,
+        "views": 167,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2021-03-17T09:10:33.000Z",
+      "ref": "I1",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "口味投票",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "a880fa302e",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/93592/does-an-efi-subshell-that-produces-a-videographic-replay-of-all-entered-command",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Does an EFI subshell, that produces a videographic replay of all entered commands, and their output, exist?",
+      "url": "https://softwarerecs.stackexchange.com/questions/93592/does-an-efi-subshell-that-produces-a-videographic-replay-of-all-entered-command",
+      "summary": "I want to be able to capture a screencast of an EFI shell without purchasing hardware, like a (DP or HDMI) capture device. This is already possible outside such a shell, as github.com/charmbracelet/vhs ASCIINemia demonstrates. The sole alternative is creating something like what superuser.com/q/520086 explains. However, that's even less feasible in such a basic shell, and I want it as a video.",
+      "deepenKey": "93592",
+      "signal": {
+        "score": 0,
+        "views": 40,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2025-08-09T20:28:20.000Z",
+      "ref": "I2",
+      "screen": {
+        "keep": true,
+        "score": -2,
+        "hits": [
+          "要做硬件"
+        ],
+        "detail": {
+          "signal": -8,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3db8abd230",
+      "normUrl": "https://news.ycombinator.com/item?id=50592288",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Advice on switching careers within software dev?",
+      "url": "https://news.ycombinator.com/item?id=50592288",
+      "externalUrl": null,
+      "summary": "Those who completely switched from one niche (topic? type? not sure what is the right word to use here) to another, but within software dev (including product dev, product management) - how did you do it? Any advice? For example - if a web developer wants to move to data analysis, web dev to product management etc - how? I do not have any contacts, so that advice is not useful to me. Anything else? How did you convince prospective employers that you can do the job, even though you don't currently have real world work experience to show?",
+      "deepenKey": "50592288",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-21T18:48:13Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "f0b9c802a1",
+      "normUrl": "https://news.ycombinator.com/item?id=50592047",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What have you built for your wife?",
+      "url": "https://news.ycombinator.com/item?id=50592047",
+      "externalUrl": null,
+      "summary": "Recently, after spending too much time building fun tools and sites for myself with Claude, I decided to help my wife build something for her business. We ended up building a newsletter for fans and collectors of Japanese watches, with a specific focus on independent watchmakers rather than the big brands: https://risinghour.club/ I feel stupid for not having done so earlier, and I am currently loving working with her on evenings and weekends to grow her business. What have you built for your wife or partner after selfishly building for yourself only?",
+      "deepenKey": "50592047",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-21T18:24:56Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e0b26ceca1",
+      "normUrl": "https://news.ycombinator.com/item?id=50591728",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Have you changed your job due to AI?",
+      "url": "https://news.ycombinator.com/item?id=50591728",
+      "externalUrl": null,
+      "summary": "Have you been working as a developer, software engineer and quit because of AI and now you are working in a different field like plumbing? What are your experiences so far - do you regret the decision?",
+      "deepenKey": "50591728",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-21T17:49:38Z",
+      "ref": "I5",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "af111a3f0a",
+      "normUrl": "https://news.ycombinator.com/item?id=50591694",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "OpenRouter – \"Requests you sent to MiniMax models may have been read\"",
+      "url": "https://news.ycombinator.com/item?id=50591694",
+      "externalUrl": null,
+      "summary": "Got this email from OpenRouter today: A security researcher placed unique test URLs in prompts sent to MiniMax models from July to October 2026. A third party accessed those URLs 40 to 130 hours after the requests were sent, whether MiniMax served a request directly or another provider forwarded it to MiniMax. With one exception, the same tests on other models at those providers were not accessed, and none of the AWS test keys were used. Your account sent 21 requests to MiniMax models through MiniMax, Novita, StreamLake and AtlasCloud, from June 22 at 03:02 to July 3 at 23:28 UTC.",
+      "deepenKey": "50591694",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-21T17:46:51Z",
+      "ref": "I6",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "f56b1fe212",
+      "normUrl": "https://news.ycombinator.com/item?id=50591465",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "My founders journey of 9 years at Browserless",
+      "url": "https://news.ycombinator.com/item?id=50591465",
+      "externalUrl": null,
+      "summary": "I wanted to do something different for the 9 year anniversary of browserless.io's inception. Typically, these posts involve the usual slew of items like finding your first customers, how long it took, etc. This time around I wrote a lot about my own experience and emotional journey. Nine years is a lot to try and cover in medium that caters to short attention spans, so hopefully you can make it through! I'm always open to talking about the journey regardless of where you might be at, or if you've yet to embark. Please let me know joel at browserless dot io.",
+      "deepenKey": "50591465",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-21T17:26:45Z",
+      "ref": "I7",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "心理求助",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "dc58452d65",
+      "normUrl": "https://news.ycombinator.com/item?id=50591050",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Does anybody read their emails anymore?",
+      "url": "https://news.ycombinator.com/item?id=50591050",
+      "externalUrl": null,
+      "summary": "My inbox is essentially mostly spam and sometimes relevant external messages. but I just have claude give a daily summary. Anybody else believe in the death of email? Or have an opinion on how it evolves?",
+      "deepenKey": "50591050",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 6
+      },
+      "publishedAt": "2026-11-21T16:48:50Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": 3,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2e9a1da104",
+      "normUrl": "https://news.ycombinator.com/item?id=50589077",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Does C/C++/Rust/Zig have agent framework?",
+      "url": "https://news.ycombinator.com/item?id=50589077",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50589077",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-21T13:35:25Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6decd4b11b",
+      "normUrl": "https://news.ycombinator.com/item?id=50587796",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What is your current hardware set up?",
+      "url": "https://news.ycombinator.com/item?id=50587796",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50587796",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 4
+      },
+      "publishedAt": "2026-11-21T10:23:34Z",
+      "ref": "I10",
+      "screen": {
+        "keep": true,
+        "score": -9,
+        "hits": [
+          "要做硬件"
+        ],
+        "detail": {
+          "signal": -8,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d22bc87959",
+      "normUrl": "https://news.ycombinator.com/item?id=50586653",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Rust, Zig, or C?",
+      "url": "https://news.ycombinator.com/item?id=50586653",
+      "externalUrl": null,
+      "summary": "really not a loaded question. personally i prefer to write in c or zig. what about you?",
+      "deepenKey": "50586653",
+      "via": null,
+      "signal": {
+        "points": 9,
+        "comments": 16
+      },
+      "publishedAt": "2026-11-21T06:44:40Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8eb7dccf6e",
+      "normUrl": "https://news.ycombinator.com/item?id=50585962",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "OpenRouter prompts to Minimax may have been read",
+      "url": "https://news.ycombinator.com/item?id=50585962",
+      "externalUrl": null,
+      "summary": "I received the following email from OpenRouter and it appears authentic. There is no public page or blog post. -- Title: Requests you sent to MiniMax models may have been read Hi there, A security researcher placed unique test URLs in prompts sent to MiniMax models from July to October 2026. A third party accessed those URLs 40 to 130 hours after the requests were sent, whether MiniMax served a request directly or another provider forwarded it to MiniMax. With one exception, the same tests on other models at those providers were not accessed, and none of the AWS test keys were used.",
+      "deepenKey": "50585962",
+      "via": null,
+      "signal": {
+        "points": 36,
+        "comments": 5
+      },
+      "publishedAt": "2026-11-21T04:31:38Z",
+      "ref": "I12",
+      "screen": {
+        "keep": true,
+        "score": 10,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 7,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I received the following email from OpenRouter and it appears authentic. There is no public page or blog post. -- Title: Requests you sent to MiniMax models may have been read Hi there, A security researcher placed unique test URLs in prompts sent to MiniMax models from July to October 2026. A third party accessed those URLs 40 to 130 hours after the requests were sent, whether MiniMax served a request directly or another provider forwarded it to MiniMax. With one exception, the same tests on other models at those providers were not accessed, and none of the AWS test keys were used. Your account sent [redacted] requests to MiniMax models through MiniMax and Novita, from [redacted] to [redacted] UTC. AtlasCloud, Novita and StreamLake have told us they forwarded OpenRouter requests for MiniMax models to MiniMax. Based on what the researcher and these providers have reported, the issue sits with MiniMax and the providers that forwarded to it, not with OpenRouter. We are passing on what they have told us. MiniMax told StreamLake that content moderation was enabled on its endpoints before October 22 and that it has since enabled Zero Data Retention. We have asked MiniMax for its own account and have not received one. This means a third party may have read the prompts and outputs of these requests. While we investigate, we have removed the Zero Data Retention label from these MiniMax-model endpoints.",
+        "comments": [
+          {
+            "text": "I have received the same email. (and for posterity, I have no affiliation with MiniMax)"
+          },
+          {
+            "text": "Related? https://news.ycombinator.com/item?id=50582794"
+          },
+          {
+            "text": "See https://www.dragos.com/blog/ai-supply-chain-security-canary-... for more info. A TEE provider was also affected: https://phala.com/posts/phala-november-preliminary-incident-..."
+          },
+          {
+            "text": "Yep, I'm also affected. Yipee. Luckily, AI is just fun, not work."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Tell HN: OpenRouter prompts to Minimax may have been read",
+            "points": 37,
+            "url": "https://news.ycombinator.com/item?id=50585962"
+          }
+        ],
+        "fetchedAt": "2026-11-21T21:47:20.994Z"
+      }
+    },
+    {
+      "id": "bfa6fe38fc",
+      "normUrl": "https://news.ycombinator.com/item?id=50585530",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How do we get 1 TW a year of orbital compute by 2035?",
+      "url": "https://news.ycombinator.com/item?id=50585530",
+      "externalUrl": null,
+      "summary": "- 50k Starship V4 launches a year, each carrying 200 t (20 MW of compute). That’s 137 a day, one every 2 minutes in two windows of roughly 5–7am and 5–7pm local. As Earth spins, the launch site passes under that target orbit twice a day, at local dawn and local dusk. Globally we’re at about 1 launch a day right now. - The always-sunlit orbit needs launches heading north or south over open water. On US coasts only south works, and packing every usable spot with Starship pads gets us to just 25–30 launches a day. We need 5× that. - So we will go out to sea, 300 km off central California.",
+      "deepenKey": "50585530",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 5
+      },
+      "publishedAt": "2026-11-21T03:11:47Z",
+      "ref": "I13",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "bc037608d3",
+      "normUrl": "https://news.ycombinator.com/item?id=50585039",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Portkey Security Incident",
+      "url": "https://news.ycombinator.com/item?id=50585039",
+      "externalUrl": null,
+      "summary": "From: Portkey Product Security Date: Friday, November 20, 2026 Subject: IMPORTANT NOTICE: Security Incident Affecting Portkey AI Gateway Dear Customer, We are contacting you regarding a security incident involving Portkey AI Gateway. In this incident, an unauthorized third party compromised a Portkey AI Gateway API key and gained access to customer data in our environment. As soon as we detected the event, we took steps to remedy the compromise and secure our systems. We also engaged our Unit 42 security team to conduct a comprehensive investigation.",
+      "deepenKey": "50585039",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-21T01:52:04Z",
+      "ref": "I14",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "71d67e7404",
+      "normUrl": "https://news.ycombinator.com/item?id=50584813",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What are people doing to improve the security of your organization?",
+      "url": "https://news.ycombinator.com/item?id=50584813",
+      "externalUrl": null,
+      "summary": "TLDR: trying to improve our security posture, would love to learn what people are doing. And best practices, tools to onboard. Hi HN, over the last few weeks, I have tried to improve the security of every single corner of our company. For context, I am a solo founder, with a SaaSish product, thats used by closed to 100 customers. Who rely on uptime guarantees. I work with a few contractors. So the last few weeks, were dedicated to improving the security posture of our infra and internal systems. I signed up to a bunch of famous security checking services.",
+      "deepenKey": "50584813",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-21T01:22:13Z",
+      "ref": "I15",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "35f854dd76",
+      "normUrl": "https://news.ycombinator.com/item?id=50583761",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "I have been unemployed for 2y. 15 years of experience, US. What to do?",
+      "url": "https://news.ycombinator.com/item?id=50583761",
+      "externalUrl": null,
+      "summary": "I'm Senior software engineer in the US (DMV area), with 15y of experience. Worked for Fortune 50+ company and bunch of mid-size companies. Been unemployed for 2y and can't find a job, within those 2 years, I pretty much spent my savings that I've saved through years, maybe have 4-5 months left to support my household. Currently, I tutor math and probably about to start working as manager in pizzaria. In Jan 2025, I quit from a mid-size insurance tech company(1000+) after working there for almost 4y, because I was tipped off the they were about to start layoffs and they did.",
+      "deepenKey": "50583761",
+      "via": null,
+      "signal": {
+        "points": 546,
+        "comments": 609
+      },
+      "publishedAt": "2026-11-20T23:18:32Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": 16,
+        "hits": [
+          "在找但没找到"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 8,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I'm Senior software engineer in the US (DMV area), with 15y of experience. Worked for Fortune 50+ company and bunch of mid-size companies. Been unemployed for 2y and can't find a job, within those 2 years, I pretty much spent my savings that I've saved through years, maybe have 4-5 months left to support my household. Currently, I tutor math and probably about to start working as manager in pizzaria. In Jan 2025, I quit from a mid-size insurance tech company(1000+) after working there for almost 4y, because I was tipped off the they were about to start layoffs and they did. Well, since then I have zero luck finding any job in SWE. At this point, I have massive gap in my resume that I can't explain to recruiters, I can still code (C#/.NET/AWS) and learned the AI, but who cares if date of my last employment is Jan2025. What should I do ? If you have an alternative path (something completely different from SWE or SWE adjacent) that pays \"well\", I would like to hear.",
+        "comments": [
+          {
+            "text": "my last few positions were from people messaging one mailing list i was on or another, asking if anyone wants to join their team keep checking that junk folder :)"
+          },
+          {
+            "text": "when ur done looking for a job from corporations ur welcome to help eliminate them @gradienterp.cloud"
+          },
+          {
+            "text": "3y/25yoe for me so clearly I have no advice to give, just want to say that it's not you, it's a terrible state of affair out there right now."
+          },
+          {
+            "text": "About the gap, can't you just say you got laid off? Is that really a problem? Everyone's getting laid off now."
+          },
+          {
+            "text": "What should you do? Lie. I’ve been on both sides of the job search in the past couple years. Like you, absolutely no luck with cold applications. On the hiring side, opening a position got me a thousand of applications per day, all ChatGPT’d resumes from monkeys who likely couldn’t engineer their way out of a wet paper bag (beyond just grossly lying about experience, there’s also actual remote work fraud, either from the “overemployed” crowd if not outright scams or North Koreans). Unfortunately, in all that mess I’m sure there were really good legitimate candidates but there is no way for me to tell without talking to them, which was impossible considering the sheer scale of the spam onslaught. My advice is twofold."
+          },
+          {
+            "text": "Consider working in other countries? any job in a tech or any company is good for you at this moment. You can move to development afterward. Also consider moving to other cities to find work."
+          },
+          {
+            "text": "Jan 2025 - Present -- Independent consultant"
+          },
+          {
+            "text": "> In Jan 2025, I quit from a mid-size insurance tech company(1000+) after working there for almost 4y, because I was tipped off the they were about to start layoffs and they did. Well, since then I have zero luck finding any job in SWE. Just curious, was there a severance package? Why was it a good idea to quit without lining up another job first? I am not being critical, just want to understand your thought process. I don't think a resume gap matters... I've got gaps on mine. I can explain them if asked."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "What to do with no work history for 4 years?",
+            "points": 20,
+            "url": "https://news.ycombinator.com/item?id=31507439"
+          },
+          {
+            "title": "Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?",
+            "points": 549,
+            "url": "https://news.ycombinator.com/item?id=50583761"
+          },
+          {
+            "title": "Ask HN: Software Engineer looking for work – Any suggestions?",
+            "points": 11,
+            "url": "https://news.ycombinator.com/item?id=10309104"
+          }
+        ],
+        "fetchedAt": "2026-11-21T21:47:20.452Z"
+      }
+    },
+    {
+      "id": "f7194094b9",
+      "normUrl": "https://news.ycombinator.com/item?id=50583294",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Should Uber Ratings Decay over Time?",
+      "url": "https://news.ycombinator.com/item?id=50583294",
+      "externalUrl": null,
+      "summary": "I’ve been thinking about how platforms like Uber calculate reputation scores, and I believe there’s a fundamental flaw in how historical ratings are treated. Uber calculates passenger ratings using the last 500 rated trips, regardless of when those trips occurred. In my case, I have 455 ratings, 426 of which are five stars (93.6%). My overall rating is 4.86. What bothers me isn’t the score itself, but the underlying methodology. A negative rating from five years ago can carry exactly the same weight as one received yesterday.",
+      "deepenKey": "50583294",
+      "via": null,
+      "signal": {
+        "points": 10,
+        "comments": 5
+      },
+      "publishedAt": "2026-11-20T22:32:52Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3b027aa64d",
+      "normUrl": "https://news.ycombinator.com/item?id=50583252",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "This Industrial Revolution Belongs to the Builders",
+      "url": "https://news.ycombinator.com/item?id=50583252",
+      "externalUrl": null,
+      "summary": "You've heard AI = Labor. Therefore Labor -> 0. Some people think this means that only asset owners, people with lots of capital, will come out ahead. They're wrong. Because as a builder/founder, you create value. Capital must capture some of this value to have a return. The reason founders primarily need capital is to pay for labor (either employees or supplier overhead). So this means that Capital ~= Labor.",
+      "deepenKey": "50583252",
+      "via": null,
+      "signal": {
+        "points": 10,
+        "comments": 18
+      },
+      "publishedAt": "2026-11-20T22:28:56Z",
+      "ref": "I18",
+      "screen": {
+        "keep": true,
+        "score": 8,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 5,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "You've heard AI = Labor. Therefore Labor -> 0. Some people think this means that only asset owners, people with lots of capital, will come out ahead. They're wrong. Because as a builder/founder, you create value. Capital must capture some of this value to have a return. The reason founders primarily need capital is to pay for labor (either employees or supplier overhead). So this means that Capital ~= Labor. But that's a problem for the \"owners of capital will own everything\" narrative, because now we have: AI = Labor = Capital -> 0 In practice this will happen slowly as builders need less and less capital to build, capital will increasingly struggle to capture value created by builders. Counterintuitively this means valuations will climb dramatically reflecting capital paying more and more to capture less and less value from builders. As disruption accelerates, volatility increases while broader market wide returns start to stagnate. The net will be a wholesale wealth and power transfer from capital holders to builders/founders, on the magnitude of what happened between the aristocracy and the capitalist class in the earlier industrial revolutions. It's already started, companies are raising later and at higher valuations. Most people accept that if superintelligence were created, capital would be useless, but what they often don't realize is that a class of builders armed with AI is already creating a distributed superintelligence that will have the same effect. Interested if anyone else shares this perspective.",
+        "comments": [
+          {
+            "text": "I think the people who benefit: 1. Big Capital who controls the infrastructure of AI, electricity, etc. And the people they hire to maintain them. 2. Elite builders (programmers) who can leverage AI and build products everyone needs. They are more like rock stars. 3. Deep state people who control military and intelligence, because violence always gets its share. 4. Auxiliary interest groups like some politicians, some other big capitals, etc. Everyone else gets screwed. Oh, someone might be lucky enough to be the Mafia of the underworld, because there gotta be someone who maintains law and order."
+          },
+          {
+            "text": "> Because as a builder/founder, you create value. Through labor. It seems like you're saying that builders/founders are a special kind of labor that AI cannot replace. Why do you think you're so special?"
+          },
+          {
+            "text": "I think it’s more like marketers will own the future. If the cost of building stuff gets closer and closer to zero, then the valuable skill is getting attention. In a crowded market, the objective is to stand out."
+          },
+          {
+            "text": "builders are getting commoditized, anyone can build. this era belongs to those who champion distribution"
+          },
+          {
+            "text": "This isn't a place for hosting your blog posts. Instead why not put this on an external site, expand on it a bit, and submit a link? Thats how HN works."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "This Industrial Revolution Belongs to the Builders",
+            "points": 10,
+            "url": "https://news.ycombinator.com/item?id=50583252"
+          }
+        ],
+        "fetchedAt": "2026-11-21T21:47:21.578Z"
+      }
+    },
+    {
+      "id": "2282156f3c",
+      "normUrl": "https://news.ycombinator.com/item?id=50581873",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Second Brain and Agent Maintenance Thoughts on AI Usage?",
+      "url": "https://news.ycombinator.com/item?id=50581873",
+      "externalUrl": null,
+      "summary": "I have been seeing tons of stuff about people developing 'second brains' as a data vault for their AI usage on X. I fully understand the ideology, in terms of storing data, reducing context, having a single pane to work off of, etc. The part I struggle with, is that as an employee, I feel like every time I create a workflow, recurring data-pull, etc., it feels as if I am creating an app that I have to maintain myself.",
+      "deepenKey": "50581873",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-20T20:51:15Z",
+      "ref": "I19",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "93e9e339a1",
+      "normUrl": "https://producthunt.com/products/doddle-3",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Doddle",
+      "url": "https://www.producthunt.com/products/doddle-3",
+      "summary": "Draw on what your videos for 3D effects",
+      "publishedAt": "2026-11-19T03:30:17.000Z",
+      "ref": "I20",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Draw on what your videos for 3D effects",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-21T21:47:21.638Z"
+      }
+    },
+    {
+      "id": "677142105d",
+      "normUrl": "https://producthunt.com/products/alter-contacts-ai-client-relationships",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "AlterContacts",
+      "url": "https://www.producthunt.com/products/alter-contacts-ai-client-relationships",
+      "summary": "AI client relationship assistant that thinks and does ahead",
+      "publishedAt": "2026-11-17T10:25:12.000Z",
+      "ref": "I21",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "AI client relationship assistant that thinks and does ahead",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-21T21:47:41.612Z"
+      }
+    },
+    {
+      "id": "32cc0b2f43",
+      "normUrl": "https://producthunt.com/products/glassmail",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Glassmail",
+      "url": "https://www.producthunt.com/products/glassmail",
+      "summary": "A fast Mac email app with AI that never leaves your Mac",
+      "publishedAt": "2026-11-14T15:57:43.000Z",
+      "ref": "I22",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "A fast Mac email app with AI that never leaves your Mac",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-21T21:48:01.626Z"
+      }
+    },
+    {
+      "id": "5bf8a9b5a0",
+      "normUrl": "https://producthunt.com/products/backspin",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Backspin",
+      "url": "https://www.producthunt.com/products/backspin",
+      "summary": "Learn to DJ in your browser, on real vinyl decks",
+      "publishedAt": "2026-11-19T02:52:10.000Z",
+      "ref": "I23",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Learn to DJ in your browser, on real vinyl decks",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-21T21:48:21.644Z"
+      }
+    },
+    {
+      "id": "bca1fb31c7",
+      "normUrl": "https://producthunt.com/products/stitch-loop",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Stitch Loop",
+      "url": "https://www.producthunt.com/products/stitch-loop",
+      "summary": "Google’s AI agent that ships fixes and watches the metric",
+      "publishedAt": "2026-11-20T19:38:38.000Z",
+      "ref": "I24",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Google’s AI agent that ships fixes and watches the metric",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Show HN: Hypertune – Visual, functional, statically-typed configuration language",
+            "points": 49,
+            "url": "https://news.ycombinator.com/item?id=35816457"
+          }
+        ],
+        "fetchedAt": "2026-11-21T21:48:41.912Z"
+      }
+    },
+    {
+      "id": "274942adde",
+      "normUrl": "https://producthunt.com/products/hollr-3",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Hollr",
+      "url": "https://www.producthunt.com/products/hollr-3",
+      "summary": "Push-to-talk for your family, on iPhone and Apple Watch",
+      "publishedAt": "2026-11-17T12:22:18.000Z",
+      "ref": "I25",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Push-to-talk for your family, on iPhone and Apple Watch",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-21T21:49:01.663Z"
+      }
+    },
+    {
+      "id": "44110c0416",
+      "normUrl": "https://producthunt.com/products/gitroots",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "gitroots",
+      "url": "https://www.producthunt.com/products/gitroots",
+      "summary": "Path-level GitHub access for developers and AI agents",
+      "publishedAt": "2026-11-20T13:22:16.000Z",
+      "ref": "I26",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Path-level GitHub access for developers and AI agents",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-21T21:49:21.668Z"
+      }
+    },
+    {
+      "id": "005e2875d6",
+      "normUrl": "https://producthunt.com/products/supermailbox",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "SuperMailbox",
+      "url": "https://www.producthunt.com/products/supermailbox",
+      "summary": "Your email in one inbox, ready for AI",
+      "publishedAt": "2026-11-14T11:45:31.000Z",
+      "ref": "I27",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Your email in one inbox, ready for AI",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-21T21:49:41.685Z"
+      }
+    },
+    {
+      "id": "3ba01ef62f",
+      "normUrl": "https://producthunt.com/products/loudflow",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "LoudFlow",
+      "url": "https://www.producthunt.com/products/loudflow",
+      "summary": "We taught text to speech to think",
+      "publishedAt": "2026-11-06T20:01:47.000Z",
+      "ref": "I28",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "We taught text to speech to think",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-21T21:50:01.703Z"
+      }
+    },
+    {
+      "id": "dafa31071f",
+      "normUrl": "https://producthunt.com/products/smorza",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Smorza",
+      "url": "https://www.producthunt.com/products/smorza",
+      "summary": "Every Mac app gets its own volume and output",
+      "publishedAt": "2026-11-20T19:28:10.000Z",
+      "ref": "I29",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Every Mac app gets its own volume and output",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-21T21:50:21.702Z"
+      }
+    },
+    {
+      "id": "f21e7579de",
+      "normUrl": "https://producthunt.com/products/publicit",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Publicit",
+      "url": "https://www.producthunt.com/products/publicit",
+      "summary": "Omnichannel ad infrastructure for marketers and AI agents",
+      "publishedAt": "2026-11-18T15:19:01.000Z",
+      "ref": "I30",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Omnichannel ad infrastructure for marketers and AI agents",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-21T21:50:41.709Z"
+      }
+    },
+    {
+      "id": "2935b44203",
+      "normUrl": "https://producthunt.com/products/shipyard",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Shipyard",
+      "url": "https://www.producthunt.com/products/shipyard",
+      "summary": "MCP for Claude, Cursor and Codex to Automate Integrations",
+      "publishedAt": "2026-11-16T18:21:35.000Z",
+      "ref": "I31",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "MCP for Claude, Cursor and Codex to Automate Integrations",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-21T21:51:01.715Z"
+      }
+    },
+    {
+      "id": "a1b4a7c513",
+      "normUrl": "https://producthunt.com/products/beat-watcher",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Beat Watcher",
+      "url": "https://www.producthunt.com/products/beat-watcher",
+      "summary": "Fast Apple Watch heart rate alerts you can share with family",
+      "publishedAt": "2026-11-15T02:56:43.000Z",
+      "ref": "I32",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "293b5eeade",
+      "normUrl": "https://producthunt.com/products/openvorld",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "OpenVorld",
+      "url": "https://www.producthunt.com/products/openvorld",
+      "summary": "Give your AI agents a home you can see",
+      "publishedAt": "2026-11-16T19:15:46.000Z",
+      "ref": "I33",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1550153fa6",
+      "normUrl": "https://producthunt.com/products/codemany",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Codemany",
+      "url": "https://www.producthunt.com/products/codemany",
+      "summary": "Run GitHub Actions 3x faster",
+      "publishedAt": "2026-11-14T20:12:52.000Z",
+      "ref": "I34",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "f4bdbd4bb0",
+      "normUrl": "https://producthunt.com/products/ai-context-flow",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "AI Context Flow MCP",
+      "url": "https://www.producthunt.com/products/ai-context-flow",
+      "summary": "Memory you control, synced to every agent, tool and team",
+      "publishedAt": "2026-11-09T14:46:21.000Z",
+      "ref": "I35",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "c59922746e",
+      "normUrl": "https://producthunt.com/products/anyprofile",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "AnyProfile",
+      "url": "https://www.producthunt.com/products/anyprofile",
+      "summary": "Free open-source antidetect browser for Mac & Windows",
+      "publishedAt": "2026-11-14T14:46:05.000Z",
+      "ref": "I36",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "07d107b5de",
+      "normUrl": "https://producthunt.com/products/prompt-puncher",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Prompt Puncher",
+      "url": "https://www.producthunt.com/products/prompt-puncher",
+      "summary": "The AI CEO Fighting Game",
+      "publishedAt": "2026-11-17T18:29:56.000Z",
+      "ref": "I37",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "1f0783e1de",
+      "normUrl": "https://producthunt.com/products/waitfeed-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "WaitFeed",
+      "url": "https://www.producthunt.com/products/waitfeed-2",
+      "summary": "Tech feed inside agent wait time",
+      "publishedAt": "2026-11-20T20:01:06.000Z",
+      "ref": "I38",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "66287a7ce5",
+      "normUrl": "https://news.ycombinator.com/item?id=50590279",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Zero C# – C# without a runtime or GC",
+      "url": "https://news.ycombinator.com/item?id=50590279",
+      "externalUrl": "https://onurgumus.github.io/zero-csharp/index.html",
+      "summary": null,
+      "deepenKey": "50590279",
+      "via": null,
+      "signal": {
+        "points": 100,
+        "comments": 73
+      },
+      "publishedAt": "2026-11-21T15:39:09Z",
+      "ref": "I39",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "b810219e90",
+      "normUrl": "https://news.ycombinator.com/item?id=50589235",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "agent-mcts – Monte Carlo tree search on top of Claude Code",
+      "url": "https://news.ycombinator.com/item?id=50589235",
+      "externalUrl": "https://github.com/natsu0529/agent-mcts",
+      "summary": null,
+      "deepenKey": "50589235",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-21T13:53:08Z",
+      "ref": "I40",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "18ec32ff1e",
+      "normUrl": "https://news.ycombinator.com/item?id=50589184",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "I made a PS1 style racing game",
+      "url": "https://news.ycombinator.com/item?id=50589184",
+      "externalUrl": "https://outpostracer.com",
+      "summary": "Hey folks, was bored with work this week so with the help of chatgpt I built a ps1 style retro racing game. Let me know what you think!",
+      "deepenKey": "50589184",
+      "via": null,
+      "signal": {
+        "points": 17,
+        "comments": 7
+      },
+      "publishedAt": "2026-11-21T13:47:45Z",
+      "ref": "I41",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hey folks, was bored with work this week so with the help of chatgpt I built a ps1 style retro racing game. Let me know what you think!",
+        "comments": [
+          {
+            "text": "I like the look! The leaves on the road and the trees that fall when you hit it with your car are a nice touch."
+          },
+          {
+            "text": "I somehow managed to get my car completely stuck. Please add the ability to \"Restart\" my car to the last checkpoint. Otherwise good job on the visuals but the UI is rendered at a very high resolution which is a bit discordant with the rest of the crunchy pixel art style"
+          },
+          {
+            "text": "Very slow to load in on mobile, but then runs okay once it loads in. Surprisingly decent touchscreen controls also. Is this vibecoded? Is it free (as in freedom) software? How long have you been working on it?"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: I made a PS1 style racing game",
+            "points": 17,
+            "url": "https://news.ycombinator.com/item?id=50589184"
+          },
+          {
+            "title": "Ask HN: How much transparency for an online reputation system?",
+            "points": 14,
+            "url": "https://news.ycombinator.com/item?id=468139"
+          }
+        ],
+        "fetchedAt": "2026-11-21T21:51:02.382Z"
+      }
+    }
+  ],
+  "deepenedAt": "2026-11-21T21:51:02.382Z"
+}

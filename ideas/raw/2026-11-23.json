@@ -1,0 +1,1373 @@
+{
+  "issue": "2026-11-23",
+  "builtAt": "2026-11-22T21:54:18.165Z",
+  "from": {
+    "boards": "prefetched",
+    "inbox": "live"
+  },
+  "counts": {
+    "fetched": 102,
+    "added": 35,
+    "kept": 35,
+    "dropped": 67,
+    "pool": 35,
+    "screened": 34,
+    "candidates": 14,
+    "demandCandidates": 2,
+    "supplyCandidates": 12
+  },
+  "errors": [],
+  "notices": [
+    "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
+  ],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-22T21:43:31Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：is there an app that（HTTP 404：2026-11-22T21:44:16Z https://rs）；is there a tool that（HTTP 404：2026-11-22T21:45:01Z https://rs）；someone should build（HTTP 404：2026-11-22T21:46:12Z https://rs）；we still use spreadsheets（HTTP 404：2026-11-22T21:47:22Z https://rs）",
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 24,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 6,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：we currently pay（HTTP 404：2026-11-22T21:48:07Z https://rs）；we are paying for（HTTP 404：2026-11-22T21:49:17Z https://rs）；quoted us（HTTP 404：2026-11-22T21:50:02Z https://rs）；per seat per month（HTTP 404：2026-11-22T21:51:12Z https://rs）",
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-22T21:52:22Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-22T21:53:07Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-22T21:54:17Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 0,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 1,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub Trending",
+      "status": "ok",
+      "items": 16,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "consoledev",
+      "name": "Console.dev",
+      "status": "ok",
+      "items": 9,
+      "pool": true,
+      "group": "board"
+    }
+  ],
+  "items": [
+    {
+      "id": "1f4e2e2864",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/78109/video-processing-library-in-dotnet-core-desktop-application",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Video Processing Library in dotnet core Desktop Application",
+      "url": "https://softwarerecs.stackexchange.com/questions/78109/video-processing-library-in-dotnet-core-desktop-application",
+      "summary": "is there any library in dotnet core which can help me in displaying the Live IP camera in my WPF Desktop Application. Furthermore, i also want to save the file in video format which is displayed in the Desktop Application. Library should be cross-platform. Technology: Avalonia UI (WPF) Dotnet core 3.1",
+      "deepenKey": "78109",
+      "signal": {
+        "score": 0,
+        "views": 498,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2021-02-08T11:26:55.000Z",
+      "ref": "I1",
+      "screen": {
+        "keep": true,
+        "score": 3,
+        "hits": [
+          "要的是库不是产品"
+        ],
+        "detail": {
+          "signal": -5,
+          "engagement": 5,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "7aa57d6614",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95828/what-small-technical-task-do-you-find-yourself-doing-repeatedly-and-which-tool",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "What small technical task do you find yourself doing repeatedly, and which tool saves you the most time?",
+      "url": "https://softwarerecs.stackexchange.com/questions/95828/what-small-technical-task-do-you-find-yourself-doing-repeatedly-and-which-tool",
+      "summary": "You know how it goes: you’re working on something, then you need to format a JSON response, decode a JWT, test a regex, check a DNS record, generate an Nginx config, or resize an image. None of these tasks is hard. But they break your concentration. You open a new tab, search for a tool, maybe write a quick script, and then try to get back to what you were doing. DevUtilityKits —a collection of 150+ free online tools for the small technical jobs that come up during web development, debugging, SEO, and DevOps work.",
+      "deepenKey": "95828",
+      "signal": {
+        "score": -1,
+        "views": 7,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2026-11-21T23:16:56.000Z",
+      "ref": "I2",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false,
+      "deepError": "HTTP 400"
+    },
+    {
+      "id": "6fd9f00d37",
+      "normUrl": "https://news.ycombinator.com/item?id=50602740",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are startups today worth it even in a best case scenario?",
+      "url": "https://news.ycombinator.com/item?id=50602740",
+      "externalUrl": null,
+      "summary": "I'm gonna open this with the disclaimer that this is purely a financial and risk comparison post. No one is complaining that we are poorly compensated. It is good to discuss compensation so we can make informed and educated decisions when deciding how to commit the next few years of our lives. A close friend of mine joined an AI startup (being intentionally vague) around 1.5 years ago and despite the company doing extremely well on valuation, I'm surprised at how he's not really better off than just working at a large tech company.",
+      "deepenKey": "50602740",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-22T18:57:26Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "a6f369ada2",
+      "normUrl": "https://news.ycombinator.com/item?id=50602128",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Will Solving a legendary math problem with AI be a candidate for a Fields Medal?",
+      "url": "https://news.ycombinator.com/item?id=50602128",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50602128",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 5
+      },
+      "publishedAt": "2026-11-22T17:59:16Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e55492b43d",
+      "normUrl": "https://news.ycombinator.com/item?id=50601879",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "State of the Captcha",
+      "url": "https://news.ycombinator.com/item?id=50601879",
+      "externalUrl": null,
+      "summary": "Are captchas still useful? If you are using Captchas to protect resources from automated abuse or you have experience with solving captchas using automation, what are your experiences? Are there still any captchas that humans can solve but AI struggles with or that are at least expensive to solve? What about accessible captchas for visually impaired users? Generally the industry seems to move to proof of work and fingerprinting and behavioral analysis. Is anyone successful with running their own traditional captchas for their purpose? Any insights are appreciated.",
+      "deepenKey": "50601879",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-22T17:38:22Z",
+      "ref": "I5",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "aa1a0faf00",
+      "normUrl": "https://news.ycombinator.com/item?id=50601623",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Why do these LLM models seem to improve like clockwork over time?",
+      "url": "https://news.ycombinator.com/item?id=50601623",
+      "externalUrl": null,
+      "summary": "It seems like these AI labs are able to guarantee more advanced models over time. How are they able to do this? Are they continually finding better architectures and learning algorithms or maybe even better data? Or are they simply making the models bigger?",
+      "deepenKey": "50601623",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-22T17:14:00Z",
+      "ref": "I6",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2653cf2f96",
+      "normUrl": "https://news.ycombinator.com/item?id=50600771",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are the trades a safe career transition?",
+      "url": "https://news.ycombinator.com/item?id=50600771",
+      "externalUrl": null,
+      "summary": "I am a software guy. Engineering degree but not PEng. Im thinking of jumping ship because i dont see much of a future in the career. Ai has me a little discouraged I need a few decades of at least mild security to get to retirement... Are the trades safe? Im worried about homeowners and companies ending up with robots that do all those tasks. Not next year obviously, but it could happen before the career change fully pays off And if not the trades, then what is a better bet?",
+      "deepenKey": "50600771",
+      "via": null,
+      "signal": {
+        "points": 35,
+        "comments": 66
+      },
+      "publishedAt": "2026-11-22T15:52:33Z",
+      "ref": "I7",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I am a software guy. Engineering degree but not PEng. Im thinking of jumping ship because i dont see much of a future in the career. Ai has me a little discouraged I need a few decades of at least mild security to get to retirement... Are the trades safe? Im worried about homeowners and companies ending up with robots that do all those tasks. Not next year obviously, but it could happen before the career change fully pays off And if not the trades, then what is a better bet?",
+        "comments": [
+          {
+            "text": "I guess safe is a relative term. I've met a lot more 9 fingered mechanics than software developers. >jumping ship that sure seems unwise to throw away a position in a time of pre-supposed insecurity."
+          },
+          {
+            "text": "The only careers where you can have certainty about what will happen to your job after the robots are better than you are chess grandmaster and marathon runner."
+          },
+          {
+            "text": "They're making pretty good progress on hands[1,2], I don't have a good sense of how quickly these things will become cheap enough to become ubiquitous, I'd imagine > 5 years but Plummer is probably the safest of the trades if I had to guess. That said, I'd encourage you to think more about other things humans are likely to always want/need - see if any of the other options are interesting to you? For example, lots of people are and will continue to be lonely, having a bar to sit at with someone friendly/interesting is a tool we use for this (I wrote a blog post about this idea: https://b.h4x.zip/finale/ ) - but there are also things like undertakers, kids activities centers/camp councilor, etc. Not all of these things will be equally financially rewarding, but maybe you're able to think about rewarding in other ways."
+          },
+          {
+            "text": "I'd wait a bit before jumping ships, the future is always different from what people think it will be. If you are really worried, you can get some training in a different job right now and keep it as a plan B."
+          },
+          {
+            "text": "AI is definitely changing things a lot in the field, but don't discount the massive change in how cheap money was during ZIRP and how expensive it became after ZIRP finally ended. This was coincidentally around the same time the layoffs in big tech started, which was before AI really had any meaningful impact. When money is cheap it is a lot easier for companies to hire, and when money suddenly stops being cheap it is a lot harder. In particular, large discontinuities in economic conditions, which we just experienced recently post-covid, always produce downturns in affected industries (which is distinct from the first order aspect of how expensive money is). So I think even ignoring AI we could expect several years of down-ness and reorganization followed by a recovery. I don't think we can even tell this point if AI will reduce demand for developers."
+          },
+          {
+            "text": "Check the trades subreddits (hvac, plumbing, electric) - lots of people not being able to find jobs or get into apprenticeships. Words like \"oversaturated\". My feeling is that we're 5-10 years too late but it might vary by region."
+          },
+          {
+            "text": "I'm starting a new business called handjobs for billionaires. Gotta get with the K-shaped economy. We all just create luxury products for the ruling class now. Bend the knee or be left behind."
+          },
+          {
+            "text": "Trades are boom bust even more so than software engineering. There is a shortage, people run to the field, but by the time they are trained up (end of apprenticeship) there is probably a bust because there are too many people in them. You need to be prepared to sweat out at least one bust at the beginning of your career, and stay in it so you can reap a boom or two. It’s definitely an exciting time to be in robotics, though it looks like the Chinese are pushing more aggressively into it thsn western developed nations. AI is also a huge risk to the trades (the joke about the plumber just needing to know hit im a call means those quick calls are at risk because that knowledge is easy to get with a chat bot)."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Ask HN: Are the trades a safe career transition?",
+            "points": 35,
+            "url": "https://news.ycombinator.com/item?id=50600771"
+          }
+        ],
+        "fetchedAt": "2026-11-22T21:54:18.869Z"
+      }
+    },
+    {
+      "id": "871c8a63c8",
+      "normUrl": "https://news.ycombinator.com/item?id=50598355",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Where the company's employees launch the tools that Claude created",
+      "url": "https://news.ycombinator.com/item?id=50598355",
+      "externalUrl": null,
+      "summary": "Hi everyone, Here is a situation: In a typical company these days, many employees are creating tools using AI (Claude & Cursor) to help with their work. They run these tools on their own computers, which no one else can use or on a builder platform with a public URL and either no login or a hand-rolled one the agent wrote. Question: Where do they run this? Who can see it? What happens if an employee leaves the company?",
+      "deepenKey": "50598355",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-22T10:47:34Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d7a82540f8",
+      "normUrl": "https://news.ycombinator.com/item?id=50597235",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Is prompt tuning still a thing today? Anybody still using the likes of DSPy?",
+      "url": "https://news.ycombinator.com/item?id=50597235",
+      "externalUrl": null,
+      "summary": "Just a random thought that came up when I was discussing AI engineering challenges with some folks. Prompt engineering/tuning was definitely \"a thing\" during the ChatGPT-3.5 era. There were all sorts of fancy rule of thumb people were advocating, as well as formal approaches like GEPA that were then incorporated into frameworks like DSPy which were also briefly popular. Having said that, it's been a while since I've come across conversations on this topic, which means it's either dead or it's already working well in production.",
+      "deepenKey": "50597235",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-22T07:49:05Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e8bbb067f2",
+      "normUrl": "https://news.ycombinator.com/item?id=50597005",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Is Anthropic being public better or worse for your org?",
+      "url": "https://news.ycombinator.com/item?id=50597005",
+      "externalUrl": null,
+      "summary": "Now that Anthropic has a \"fiduciary duty to maximize shareholder value\"*, have you or your org started thinking about what that means medium to long term? For example, if you are using their models in production or production-adjacent systems, how do price changes impact your business? * I know they have a complicated governing system, but at the end of the day they have different pressures now than when they were private.",
+      "deepenKey": "50597005",
+      "via": null,
+      "signal": {
+        "points": 7,
+        "comments": 8
+      },
+      "publishedAt": "2026-11-22T06:59:40Z",
+      "ref": "I10",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Now that Anthropic has a \"fiduciary duty to maximize shareholder value\"*, have you or your org started thinking about what that means medium to long term? For example, if you are using their models in production or production-adjacent systems, how do price changes impact your business? * I know they have a complicated governing system, but at the end of the day they have different pressures now than when they were private.",
+        "comments": [
+          {
+            "text": "I suspect they'll miss earnings, panic, raise costs and that will be worse for our org cost wise, but likely better in the long term if it results in less reliance."
+          },
+          {
+            "text": "I fully expect when push comes to shove, they will start to prioritize profit above all else. Realistically the current state is that everyone's claude usage is very likely being heavily subsidized in order to juice growth."
+          },
+          {
+            "text": "Well at some point they will try and start to ramp up prices, so long-term it might be detrimental. In general I think the reasoning of these companies is that a single developer costs 10,000-20,000 USD per month so if they can be 3-4x more productive then basically companies should be able to pay around 10,000-20,000 USD for tokens for one employee. Today that sounds insane though, so not sure if we will ever get there. And of course that only works if running equally powerful development models on your own hardware is constrained, foreign providers are banned and domestic providers collude on price. Expect them to work more agressively towards all three things happening. Alternatively they will work on expanding the scope of use for these models, you can already see that with ChatGPT that e.g. markets to small shop owners, house wives etc."
+          },
+          {
+            "text": "I think it is both as they claim that their AI will cure cancer"
+          },
+          {
+            "text": "I expect them to slowly cannibalize other softwares and create an ecosystem which will enable them to sell a M365 style service. So, if a company doesn't have a good enough hook, they might be in threat. But Anthropic's growth obligations are unrealistic for the debt they have"
+          },
+          {
+            "text": "> Now that Anthropic has a \"fiduciary duty to maximize shareholder value\" They don't. There may be shareholder expectations along those lines, and investors will make choices accordingly, but there is no fiduciary duty to do so."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [],
+        "fetchedAt": "2026-11-22T21:54:19.280Z"
+      }
+    },
+    {
+      "id": "c8f24844a3",
+      "normUrl": "https://news.ycombinator.com/item?id=50596564",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What made you pivot your interest to the field of AI?",
+      "url": "https://news.ycombinator.com/item?id=50596564",
+      "externalUrl": null,
+      "summary": "If you work in the field of AI, machine learning what made you do so? What sparked your interest and which skills and resources helped you along the way?",
+      "deepenKey": "50596564",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 4
+      },
+      "publishedAt": "2026-11-22T05:20:06Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": 3,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2972daff4c",
+      "normUrl": "https://news.ycombinator.com/item?id=50594639",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How many of you have replaced your everyday apps with something custom?",
+      "url": "https://news.ycombinator.com/item?id=50594639",
+      "externalUrl": null,
+      "summary": "This question isn't specific to vibe-coded apps, I was just curious how many people are using bespoke everyday software, for things like a file explorer, terminal, maybe mail client, text editor etc. Down the line I had planned on writing my own terminal, text editor and file explorer, but had too many other high priority projects and hadn't gotten around to it yet, and probably wouldn't for another year.",
+      "deepenKey": "50594639",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 6
+      },
+      "publishedAt": "2026-11-21T23:22:29Z",
+      "ref": "I12",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "f2b230a9e9",
+      "normUrl": "https://news.ycombinator.com/item?id=50589377",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Best books you've read this year (2026)?",
+      "url": "https://news.ycombinator.com/item?id=50589377",
+      "externalUrl": null,
+      "summary": "The year is nearing its end. Whatever you have read in the past months, which ones stood out and why?",
+      "deepenKey": "50589377",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-21T14:11:11Z",
+      "ref": "I13",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "693fe41f8e",
+      "normUrl": "https://github.com/openai/openai-agents-python/issues/6071",
+      "sourceId": "gh-requests",
+      "source": "GitHub 高赞功能请求",
+      "sourceHome": "https://github.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Add Apache Airflow to the durable execution integrations docs",
+      "url": "https://github.com/openai/openai-agents-python/issues/6071",
+      "summary": "### Please read this first - **Have you read the docs?** [Agents SDK docs](https://openai.github.io/openai-agents-python/) - Yes, including [Durable execution integrations and human-in-the-loop](https://openai.github.io/openai-agents-python/running_agents/#durable-execution-integrations-and-human-in-the-loop). - **Have you searched for related issues?** Others may have had similar requests - Yes. The closest is #1711, which led to the DBOS entry in that section.",
+      "signal": {
+        "thumbsUp": 18,
+        "comments": 1,
+        "repo": "openai/openai-agents-python"
+      },
+      "publishedAt": "2026-11-18T04:13:50Z",
+      "ref": "I14",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [
+          "要的是库不是产品"
+        ],
+        "detail": {
+          "signal": -5,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "00d9a00720",
+      "normUrl": "https://producthunt.com/products/oovi",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "oovi",
+      "url": "https://www.producthunt.com/products/oovi",
+      "summary": "Your own team of AI on your desktop",
+      "publishedAt": "2026-11-21T20:02:03.000Z",
+      "ref": "I15",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Your own team of AI on your desktop",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-22T21:54:19.304Z"
+      }
+    },
+    {
+      "id": "eb2cb42093",
+      "normUrl": "https://producthunt.com/products/leapdeck",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Leapdeck",
+      "url": "https://www.producthunt.com/products/leapdeck",
+      "summary": "Leap to any Mac Space from a key or your iPhone",
+      "publishedAt": "2026-11-16T13:09:26.000Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Leap to any Mac Space from a key or your iPhone",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-22T21:54:39.316Z"
+      }
+    },
+    {
+      "id": "eca927a580",
+      "normUrl": "https://producthunt.com/products/teaserkit",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "TeaserKit",
+      "url": "https://www.producthunt.com/products/teaserkit",
+      "summary": "your coding agent directs your launch video",
+      "publishedAt": "2026-11-19T15:08:42.000Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "your coding agent directs your launch video",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-22T21:54:59.333Z"
+      }
+    },
+    {
+      "id": "34680b6979",
+      "normUrl": "https://producthunt.com/products/webless",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Webless Agents",
+      "url": "https://www.producthunt.com/products/webless",
+      "summary": "Agents you want to put in front of customers",
+      "publishedAt": "2026-11-07T02:49:47.000Z",
+      "ref": "I18",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Agents you want to put in front of customers",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Launch HN: Mireye (YC S26) – Infrastructure for Physical World AI Agents",
+            "points": 28,
+            "url": "https://news.ycombinator.com/item?id=49552616"
+          },
+          {
+            "title": "Show HN: Exa (YC S21) – embeddings search agent with >20x recall than Google",
+            "points": 28,
+            "url": "https://news.ycombinator.com/item?id=43175781"
+          }
+        ],
+        "fetchedAt": "2026-11-22T21:55:19.608Z"
+      }
+    },
+    {
+      "id": "ea54a4a451",
+      "normUrl": "https://producthunt.com/products/denotch",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "DeNotch",
+      "url": "https://www.producthunt.com/products/denotch",
+      "summary": "Hide the MacBook notch and tame your menu bar",
+      "publishedAt": "2026-11-19T07:57:34.000Z",
+      "ref": "I19",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hide the MacBook notch and tame your menu bar",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-22T21:55:39.371Z"
+      }
+    },
+    {
+      "id": "0f3b195a0d",
+      "normUrl": "https://producthunt.com/products/yoroll",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Yoroll",
+      "url": "https://www.producthunt.com/products/yoroll",
+      "summary": "Build playable stories without a game engine",
+      "publishedAt": "2026-11-06T03:24:04.000Z",
+      "ref": "I20",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Build playable stories without a game engine",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-22T21:55:59.388Z"
+      }
+    },
+    {
+      "id": "17758d3556",
+      "normUrl": "https://producthunt.com/products/pushback-flight-tracker",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Pushback",
+      "url": "https://www.producthunt.com/products/pushback-flight-tracker",
+      "summary": "The flight tracker that knows which lounge you can use",
+      "publishedAt": "2026-11-19T23:48:07.000Z",
+      "ref": "I21",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The flight tracker that knows which lounge you can use",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-22T21:56:19.405Z"
+      }
+    },
+    {
+      "id": "56cd024c58",
+      "normUrl": "https://producthunt.com/products/copy-haste",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Copy Haste",
+      "url": "https://www.producthunt.com/products/copy-haste",
+      "summary": "Your clipboard, sorted into Text, Code, Links, Media & more",
+      "publishedAt": "2026-11-15T17:16:10.000Z",
+      "ref": "I22",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Your clipboard, sorted into Text, Code, Links, Media & more",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Escape analysis hates copy elision (2021)",
+            "points": 122,
+            "url": "https://news.ycombinator.com/item?id=37881699"
+          }
+        ],
+        "fetchedAt": "2026-11-22T21:56:39.677Z"
+      }
+    },
+    {
+      "id": "800b24c16c",
+      "normUrl": "https://producthunt.com/products/meshlive",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "MeshLive",
+      "url": "https://www.producthunt.com/products/meshlive",
+      "summary": "Offline video calls and livestreams over Bluetooth mesh",
+      "publishedAt": "2026-11-17T13:49:46.000Z",
+      "ref": "I23",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Offline video calls and livestreams over Bluetooth mesh",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-22T21:56:59.452Z"
+      }
+    },
+    {
+      "id": "0e0f75754c",
+      "normUrl": "https://producthunt.com/products/creavit-studio",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Creavit Studio 4.0",
+      "url": "https://www.producthunt.com/products/creavit-studio",
+      "summary": "Screen recording, iPhone camera and cinematic demos for Mac",
+      "publishedAt": "2026-11-20T21:11:32.000Z",
+      "ref": "I24",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Screen recording, iPhone camera and cinematic demos for Mac",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-22T21:57:19.652Z"
+      }
+    },
+    {
+      "id": "ee41264e80",
+      "normUrl": "https://producthunt.com/products/daymaker",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Daymaker",
+      "url": "https://www.producthunt.com/products/daymaker",
+      "summary": "Gifts so personal, your prospects take the meeting.",
+      "publishedAt": "2026-10-19T18:41:04.000Z",
+      "ref": "I25",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Gifts so personal, your prospects take the meeting.",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-22T21:57:39.474Z"
+      }
+    },
+    {
+      "id": "57ff15d71e",
+      "normUrl": "https://producthunt.com/products/mockreel",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Mockreel",
+      "url": "https://www.producthunt.com/products/mockreel",
+      "summary": "your screen recording, but in a 3D phone. free, no signup",
+      "publishedAt": "2026-11-20T02:04:14.000Z",
+      "ref": "I26",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "your screen recording, but in a 3D phone. free, no signup",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-22T21:57:59.480Z"
+      }
+    },
+    {
+      "id": "fd15199537",
+      "normUrl": "https://producthunt.com/products/ulika",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Ulika",
+      "url": "https://www.producthunt.com/products/ulika",
+      "summary": "Visual editor for sites built with Claude, Cursor, or Codex",
+      "publishedAt": "2026-11-17T19:23:36.000Z",
+      "ref": "I27",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "36aac78634",
+      "normUrl": "https://producthunt.com/products/slotify-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Slotify",
+      "url": "https://www.producthunt.com/products/slotify-2",
+      "summary": "Schedule game nights without leaving Discord",
+      "publishedAt": "2026-11-09T13:55:35.000Z",
+      "ref": "I28",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "226b30a8c6",
+      "normUrl": "https://producthunt.com/products/resurf-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Resurf",
+      "url": "https://www.producthunt.com/products/resurf-2",
+      "summary": "Personal Knowledge Base & Bookmark Manager for Mac",
+      "publishedAt": "2026-11-21T16:21:36.000Z",
+      "ref": "I29",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2777deccf2",
+      "normUrl": "https://producthunt.com/products/wispim-online-teleprompter",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Wispim",
+      "url": "https://www.producthunt.com/products/wispim-online-teleprompter",
+      "summary": "The teleprompter that follows your voice",
+      "publishedAt": "2026-11-05T16:46:59.000Z",
+      "ref": "I30",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "82beb5f3bd",
+      "normUrl": "https://producthunt.com/products/raccoon-kids",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Raccoon Kids",
+      "url": "https://www.producthunt.com/products/raccoon-kids",
+      "summary": "Gamify Chores for Kids: no more nagging, just a cute raccoon",
+      "publishedAt": "2026-11-19T10:33:05.000Z",
+      "ref": "I31",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "17d5c9e261",
+      "normUrl": "https://producthunt.com/products/omi-cli",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Omi CLI",
+      "url": "https://www.producthunt.com/products/omi-cli",
+      "summary": "AI coding agents that work while you're away.",
+      "publishedAt": "2026-11-21T08:05:31.000Z",
+      "ref": "I32",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2968d7a384",
+      "normUrl": "https://producthunt.com/products/squint",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Squint",
+      "url": "https://www.producthunt.com/products/squint",
+      "summary": "Explains whatever you're looking at, now on Mac",
+      "publishedAt": "2026-11-10T21:43:34.000Z",
+      "ref": "I33",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4f6182b45b",
+      "normUrl": "https://producthunt.com/products/rankhog",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Rankhog",
+      "url": "https://www.producthunt.com/products/rankhog",
+      "summary": "Get customers from Reddit on autopilot",
+      "publishedAt": "2026-11-19T12:43:48.000Z",
+      "ref": "I34",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "998077af15",
+      "normUrl": "https://news.ycombinator.com/item?id=50599762",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "I built a game where you are an LLM's subagent",
+      "url": "https://news.ycombinator.com/item?id=50599762",
+      "externalUrl": "https://github.com/gulivan/worker755",
+      "summary": null,
+      "deepenKey": "50599762",
+      "via": null,
+      "signal": {
+        "points": 238,
+        "comments": 56
+      },
+      "publishedAt": "2026-11-22T13:56:58Z",
+      "ref": "I35",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    }
+  ],
+  "deepenedAt": "2026-11-22T21:57:59.480Z"
+}

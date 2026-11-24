@@ -1,59 +1,151 @@
 {
-  "fetchedAt": "2026-11-22T21:57:50.423Z",
+  "fetchedAt": "2026-11-24T02:59:43.011Z",
   "windowDays": 3,
-  "windowUntil": "2026-11-22T23:59:59.000Z",
+  "windowUntil": "2026-11-24T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
       "name": "AINews",
       "status": "ok",
-      "issues": 1,
+      "issues": 0,
       "items": 0
     },
     {
       "id": "importai",
       "name": "Import AI",
       "status": "ok",
-      "issues": 0,
-      "items": 0
+      "issues": 1,
+      "items": 4
     },
     {
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
       "issues": 4,
-      "items": 1
+      "items": 3
     },
     {
       "id": "deepmind",
       "name": "Google DeepMind",
       "status": "ok",
-      "issues": 0,
-      "items": 0
+      "issues": 1,
+      "items": 1
     },
     {
       "id": "rundown",
       "name": "The Rundown AI",
       "status": "ok",
-      "issues": 2,
-      "items": 0
+      "issues": 1,
+      "items": 1
     },
     {
       "id": "aivalley",
       "name": "AI Valley",
       "status": "ok",
-      "issues": 0,
+      "issues": 1,
       "items": 0
     }
   ],
   "items": [
     {
+      "source": "Import AI",
+      "sourceHome": "https://jack-clark.net/",
+      "section": null,
+      "title": "Import AI 482: Huawei kernel benchmarks; airborne drone detection; and a national lab’s AI science benchmark",
+      "url": "https://jack-clark.net/2026/11/23/import-ai-482-huawei-kernel-benchmarks-airborne-drone-detection-and-a-national-labs-ai-science-benchmark/",
+      "summary": null,
+      "publishedAt": "2026-11-23T14:11:17.000Z",
+      "isIssue": true
+    },
+    {
+      "source": "Import AI",
+      "sourceHome": "https://jack-clark.net/",
+      "section": "Import AI 482: Huawei kernel benchmarks; airborne drone detection; and a national lab’s AI science benchmark",
+      "title": "AscendGYM: A Cost-Aware Kernel Optimization Benchmark for Real-World Workloads on Ascend NPUs (arXiv)",
+      "url": "https://arxiv.org/abs/2611.17621",
+      "links": [
+        {
+          "url": "https://github.com/SLAI-AITP/AscendGYM",
+          "text": "AscendGYM (GitHub)"
+        }
+      ],
+      "summary": "ingredients for Chinese RSI: For AI systems to be able to build themselves, they need to be able to develop and improve the software that is used for their own training and inference.",
+      "publishedAt": "2026-11-23T14:11:17.000Z"
+    },
+    {
+      "source": "Import AI",
+      "sourceHome": "https://jack-clark.net/",
+      "section": "Import AI 482: Huawei kernel benchmarks; airborne drone detection; and a national lab’s AI science benchmark",
+      "title": "SciResearch-Eval: Evaluating Scientific Judgment in Autonomous Experimental Agents (arXiv)",
+      "url": "https://arxiv.org/abs/2611.21541",
+      "links": [
+        {
+          "url": "https://btwestyo.github.io/sciresearch-eval/",
+          "text": "here (official site)"
+        }
+      ],
+      "summary": "real scientists are careful, and so are powerful models: Papers like this are further indications that we’re entering an era of AI-driven science. Though many of today’s models can assist in scientific experiments, as this paper shows only a couple of the powerful models at the frontier are able to operate with such ap…",
+      "publishedAt": "2026-11-23T14:11:17.000Z"
+    },
+    {
+      "source": "Import AI",
+      "sourceHome": "https://jack-clark.net/",
+      "section": "Import AI 482: Huawei kernel benchmarks; airborne drone detection; and a national lab’s AI science benchmark",
+      "title": "A2A-UAV: A Multimodal Air-to-Air Dataset for UAV Detection and Identification (arXiv)",
+      "url": "https://arxiv.org/abs/2611.21311",
+      "links": [
+        {
+          "url": "https://drive.google.com/file/d/1oCtjoF5vfH3MsPDNQEOQ84MvRywHSUso/view",
+          "text": "from Google Drive here (Google Drive)"
+        },
+        {
+          "url": "https://pan.baidu.com/s/1_P6F3z18gCyuDagdedcM2Q?pwd=A2AD",
+          "text": "Baidu Netdisk with the extraction code A2AD (direct link, Baidu Netdisk)"
+        }
+      ],
+      "summary": "fuel for the physical world: Datasets like this are the ingredients for making it easier for AI systems to operate robots and drones in the physical world. They also have potential dual use impacts, though my suspicion is that datasets like this are pretty irrelevant to militaries relative to the kinds of datasets that…",
+      "publishedAt": "2026-11-23T14:11:17.000Z"
+    },
+    {
       "source": "OpenAI",
       "sourceHome": "https://openai.com/news/",
-      "title": "Perplexity and Intelligence",
-      "url": "https://openai.com/index/perplexity-and-intelligence",
-      "summary": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
-      "publishedAt": "2026-11-22T00:00:00.000Z"
+      "title": "OpenAI and Cisco introduce Shirudo",
+      "url": "https://openai.com/index/introducing-shirudo",
+      "summary": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
+      "publishedAt": "2026-11-23T21:20:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Connected intelligence for in-house legal",
+      "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+      "summary": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside co",
+      "publishedAt": "2026-11-23T08:00:00.000Z"
+    },
+    {
+      "source": "OpenAI",
+      "sourceHome": "https://openai.com/news/",
+      "title": "Richpanel helps companies automate 50% of support in 30 days",
+      "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+      "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
+      "publishedAt": "2026-11-23T08:00:00.000Z"
+    },
+    {
+      "source": "Google DeepMind",
+      "sourceHome": "https://deepmind.google/blog/",
+      "title": "Finding faster quantum algorithms with agents and formal verification",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "summary": "How using agent teams and formal verification can improve quantum algorithms for modelling fusion energy, chemistry and enzymes.",
+      "publishedAt": "2026-11-23T16:59:40.000Z",
+      "enriched": true
+    },
+    {
+      "source": "The Rundown AI",
+      "sourceHome": "https://www.therundown.ai/",
+      "title": "Claude helps solve math's biggest open problem",
+      "url": "https://www.therundown.ai/articles/claude-helps-solve-math-s-biggest-open-problem",
+      "summary": "PLUS: Test Gemini 4 Neon on finding billing errors",
+      "publishedAt": "2026-11-23T11:00:00.000Z"
     }
   ]
 }

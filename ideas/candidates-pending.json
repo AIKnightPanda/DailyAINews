@@ -1,21 +1,21 @@
 {
-  "fetchedAt": "2026-11-22T21:54:17.821Z",
+  "fetchedAt": "2026-11-24T03:03:09.571Z",
   "windowDays": 3,
-  "windowUntil": "2026-11-23T23:59:59.000Z",
+  "windowUntil": "2026-11-24T23:59:59.000Z",
   "sources": [
     {
       "id": "somebodymakethis",
       "name": "r/SomebodyMakeThis",
       "status": "error",
       "pool": true,
-      "error": "HTTP 404：2026-11-22T21:43:31Z https://rss.reddit.com/ Not Found"
+      "error": "HTTP 404：2026-11-24T02:52:19Z https://rss.reddit.com/ Not Found"
     },
     {
       "id": "reddit-search",
       "name": "Reddit 需求短语",
       "status": "error",
       "pool": true,
-      "error": "全部短语失败：is there an app that（HTTP 404：2026-11-22T21:44:16Z https://rs）；is there a tool that（HTTP 404：2026-11-22T21:45:01Z https://rs）；someone should build（HTTP 404：2026-11-22T21:46:12Z https://rs）；we still use spreadsheets（HTTP 404：2026-11-22T21:47:22Z https://rs）"
+      "error": "全部短语失败：is there an app that（HTTP 404：2026-11-24T02:53:05Z https://rs）；is there a tool that（HTTP 404：2026-11-24T02:54:15Z https://rs）；someone should build（HTTP 404：2026-11-24T02:55:00Z https://rs）；we still use spreadsheets（HTTP 404：2026-11-24T02:56:11Z https://rs）"
     },
     {
       "id": "softwarerecs",
@@ -28,7 +28,7 @@
       "id": "hn-ask",
       "name": "Ask HN",
       "status": "ok",
-      "items": 24,
+      "items": 22,
       "pool": true
     },
     {
@@ -43,28 +43,28 @@
       "name": "Reddit 付费信号",
       "status": "error",
       "pool": true,
-      "error": "全部短语失败：we currently pay（HTTP 404：2026-11-22T21:48:07Z https://rs）；we are paying for（HTTP 404：2026-11-22T21:49:17Z https://rs）；quoted us（HTTP 404：2026-11-22T21:50:02Z https://rs）；per seat per month（HTTP 404：2026-11-22T21:51:12Z https://rs）"
+      "error": "全部短语失败：we currently pay（HTTP 404：2026-11-24T02:57:21Z https://rs）；we are paying for（HTTP 404：2026-11-24T02:58:06Z https://rs）；quoted us（HTTP 404：2026-11-24T02:59:17Z https://rs）；per seat per month（HTTP 404：2026-11-24T03:00:03Z https://rs）"
     },
     {
       "id": "msp",
       "name": "r/msp",
       "status": "error",
       "pool": true,
-      "error": "HTTP 404：2026-11-22T21:52:22Z https://rss.reddit.com/ Not Found"
+      "error": "HTTP 404：2026-11-24T03:01:13Z https://rss.reddit.com/ Not Found"
     },
     {
       "id": "sysadmin",
       "name": "r/sysadmin",
       "status": "error",
       "pool": true,
-      "error": "HTTP 404：2026-11-22T21:53:07Z https://rss.reddit.com/ Not Found"
+      "error": "HTTP 404：2026-11-24T03:02:24Z https://rss.reddit.com/ Not Found"
     },
     {
       "id": "microsaas",
       "name": "r/microsaas",
       "status": "error",
       "pool": true,
-      "error": "HTTP 404：2026-11-22T21:54:17Z https://rss.reddit.com/ Not Found"
+      "error": "HTTP 404：2026-11-24T03:03:09Z https://rss.reddit.com/ Not Found"
     },
     {
       "id": "ycrfs",
@@ -91,7 +91,7 @@
       "id": "showhn",
       "name": "Show HN",
       "status": "ok",
-      "items": 1,
+      "items": 0,
       "pool": true
     },
     {
@@ -110,6 +110,66 @@
     }
   ],
   "items": [
+    {
+      "id": "e5f8ded010",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95480/looking-for-a-free-open-source-vs-code-ai-coding-assistant-similar-to-github-cop",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Looking for a free/open-source VS Code AI coding assistant similar to GitHub Copilot or Codex with no strict usage limits",
+      "url": "https://softwarerecs.stackexchange.com/questions/95480/looking-for-a-free-open-source-vs-code-ai-coding-assistant-similar-to-github-cop",
+      "summary": "I'm currently working on a client project, and I'm running into usage limits with AI coding assistants. I've been using GitHub Copilot and OpenAI Codex/ChatGPT, but the limits are so strict that sometimes I can't use them for 30 minutes or more. Even with a paid ChatGPT subscription, I still hit model usage limits (especially on GPT-5.x), which interrupts my development workflow.",
+      "deepenKey": "95480",
+      "signal": {
+        "score": 3,
+        "views": 830,
+        "answers": 2,
+        "unanswered": true
+      },
+      "publishedAt": "2026-07-13T07:24:09.000Z"
+    },
+    {
+      "id": "f2d8dbeb15",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/93677/deploying-a-rag-agent-via-slack-what-are-the-viable-approaches",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Deploying a RAG agent via Slack: What are the viable approaches?",
+      "url": "https://softwarerecs.stackexchange.com/questions/93677/deploying-a-rag-agent-via-slack-what-are-the-viable-approaches",
+      "summary": "I'm looking for a high-level answer on the pros and cons of different approaches (or being directed towards a clear winner) I'm trying to maximise for speed of deployment, UX, avoiding high api costs, and ease of maintenance. Ideally, a non-technical user should be able to change the source materials easily. I'm not using any sensitive data, so security is not a major concern. Here's an outline of my desired outcome Users message the bot or a channel with their request. In either case, it should be possible for them to ask questions privately.",
+      "deepenKey": "93677",
+      "signal": {
+        "score": 0,
+        "views": 38,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2025-09-01T10:31:02.000Z"
+    },
+    {
+      "id": "371363e8ab",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/87252/software-to-normalize-audio-on-the-fly-from-blue-yeti-mic-for-windows",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Software to normalize audio on the fly from Blue Yeti mic (for Windows)",
+      "url": "https://softwarerecs.stackexchange.com/questions/87252/software-to-normalize-audio-on-the-fly-from-blue-yeti-mic-for-windows",
+      "summary": "I have a Blue Yeti microphone. It stands on the table, so the volume depends on how close I am to the microphone. In addition, various programs (telegram, discord, viber etc..) have their own \"improvements\" for sound. Therefore, every time I learn from the interlocutor that I am heard either too loudly or too quietly. It's very tiring for me to have to adjust to each individual program every time. I am looking for a solution to this problem. It would be nice to have some program, that takes care of the audio processing before that audio gets into the messenger.",
+      "deepenKey": "87252",
+      "signal": {
+        "score": 2,
+        "views": 1635,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2023-06-11T04:12:00.000Z"
+    },
     {
       "id": "1f4e2e2864",
       "normUrl": "https://softwarerecs.stackexchange.com/questions/78109/video-processing-library-in-dotnet-core-desktop-application",
@@ -131,26 +191,6 @@
       "publishedAt": "2021-02-08T11:26:55.000Z"
     },
     {
-      "id": "7aa57d6614",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/95828/what-small-technical-task-do-you-find-yourself-doing-repeatedly-and-which-tool",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
-      "side": "demand",
-      "pool": true,
-      "title": "What small technical task do you find yourself doing repeatedly, and which tool saves you the most time?",
-      "url": "https://softwarerecs.stackexchange.com/questions/95828/what-small-technical-task-do-you-find-yourself-doing-repeatedly-and-which-tool",
-      "summary": "You know how it goes: you’re working on something, then you need to format a JSON response, decode a JWT, test a regex, check a DNS record, generate an Nginx config, or resize an image. None of these tasks is hard. But they break your concentration. You open a new tab, search for a tool, maybe write a quick script, and then try to get back to what you were doing. DevUtilityKits —a collection of 150+ free online tools for the small technical jobs that come up during web development, debugging, SEO, and DevOps work.",
-      "deepenKey": "95828",
-      "signal": {
-        "score": -1,
-        "views": 7,
-        "answers": 0,
-        "unanswered": true
-      },
-      "publishedAt": "2026-11-21T23:16:56.000Z"
-    },
-    {
       "id": "82e8c0c4fc",
       "normUrl": "https://softwarerecs.stackexchange.com/questions/78601/what-is-the-best-fitness-app-for-logging-calorie-intake-log-exercise-details-c",
       "sourceId": "softwarerecs",
@@ -164,7 +204,7 @@
       "deepenKey": "78601",
       "signal": {
         "score": 1,
-        "views": 170,
+        "views": 171,
         "answers": 1,
         "unanswered": true
       },
@@ -184,7 +224,7 @@
       "deepenKey": "95787",
       "signal": {
         "score": 0,
-        "views": 48,
+        "views": 51,
         "answers": 1,
         "unanswered": true
       },
@@ -204,7 +244,7 @@
       "deepenKey": "95812",
       "signal": {
         "score": 0,
-        "views": 17,
+        "views": 18,
         "answers": 0,
         "unanswered": true
       },
@@ -284,7 +324,7 @@
       "deepenKey": "95804",
       "signal": {
         "score": 0,
-        "views": 27,
+        "views": 29,
         "answers": 1,
         "unanswered": true
       },
@@ -304,7 +344,7 @@
       "deepenKey": "88369",
       "signal": {
         "score": 1,
-        "views": 88,
+        "views": 89,
         "answers": 2,
         "unanswered": true
       },
@@ -324,7 +364,7 @@
       "deepenKey": "91274",
       "signal": {
         "score": 3,
-        "views": 491,
+        "views": 493,
         "answers": 2,
         "unanswered": true
       },
@@ -364,7 +404,7 @@
       "deepenKey": "52291",
       "signal": {
         "score": 3,
-        "views": 56,
+        "views": 58,
         "answers": 1,
         "unanswered": true
       },
@@ -424,7 +464,7 @@
       "deepenKey": "95347",
       "signal": {
         "score": 0,
-        "views": 20,
+        "views": 23,
         "answers": 1,
         "unanswered": true
       },
@@ -524,7 +564,7 @@
       "deepenKey": "88688",
       "signal": {
         "score": 1,
-        "views": 569,
+        "views": 570,
         "answers": 2,
         "unanswered": true
       },
@@ -544,7 +584,7 @@
       "deepenKey": "95777",
       "signal": {
         "score": 1,
-        "views": 51,
+        "views": 54,
         "answers": 0,
         "unanswered": true
       },
@@ -564,51 +604,251 @@
       "deepenKey": "77058",
       "signal": {
         "score": 0,
-        "views": 36,
+        "views": 37,
         "answers": 1,
         "unanswered": true
       },
       "publishedAt": "2020-11-30T16:02:04.000Z"
     },
     {
-      "id": "bfa2e38505",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/95778/one-static-docs-site-from-openapi-mcp-and-doxygen-specs",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "id": "21cec39bcd",
+      "normUrl": "https://news.ycombinator.com/item?id=50620290",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "One static docs site from OpenAPI, MCP, and Doxygen specs?",
-      "url": "https://softwarerecs.stackexchange.com/questions/95778/one-static-docs-site-from-openapi-mcp-and-doxygen-specs",
-      "summary": "I need to build a self-hosted documentation site for a small API project. My specs are a mix: an OpenAPI file, an MCP server, some C code with Doxygen comments, and plain Markdown. I want one static HTML site generated from all of it, hosted on my own server. It should be open source and run from the command line. What tools can do this in 2026?",
-      "deepenKey": "95778",
+      "title": "Is there a way to get a human at OpenAI support?",
+      "url": "https://news.ycombinator.com/item?id=50620290",
+      "externalUrl": null,
+      "summary": "My previous work ChatGPT account got banned when the employer did a charge back on a six months worth of ChatGPT Pro. Because I also linked my personal accounts to it I seemed to be banned across the board. Is there anyone at OpenAI who can help get my case looked at?",
+      "deepenKey": "50620290",
+      "via": null,
       "signal": {
-        "score": 0,
-        "views": 28,
-        "answers": 2,
-        "unanswered": true
+        "points": 3,
+        "comments": 0
       },
-      "publishedAt": "2026-11-09T18:50:41.000Z"
+      "publishedAt": "2026-11-23T22:26:34Z"
     },
     {
-      "id": "774f590a04",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/13306/png-image-viewer-that-shows-text-metadata",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "id": "bbc99298f4",
+      "normUrl": "https://news.ycombinator.com/item?id=50620169",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "png image viewer that shows tEXt metadata",
-      "url": "https://softwarerecs.stackexchange.com/questions/13306/png-image-viewer-that-shows-text-metadata",
-      "summary": "I am looking for a simple image viewer for PNGs that also displays the metadata encoded within the image (png tEXt chunks). It needs to: support most PNG image types (but MUST support viewing 16bit grayscale ). show the standard tEXt chunks (from png spec; Title, Author, Description, etc). show non-standard tEXt chunks in the file (bonus if it also displays iTxt and zTxt as well). run on Windows 7 and up (but even better if its cross-platform). be free for personal use (but even better if its open source).",
-      "deepenKey": "13306",
+      "title": "Is a college degree still necessary for a programmer?",
+      "url": "https://news.ycombinator.com/item?id=50620169",
+      "externalUrl": null,
+      "summary": "Hey everyone, I'm currently a second-year university student. I also work part-time as a Backend dev. I did my first internship very early on, in 9th grade. Until then, I worked at three different companies and startups. So to speak, already very experienced in CS. But now that AI is developing so rapidly, I'm a little concerned about my position. Technology is advancing rapidly, and I feel like I won't be able to keep up with it anymore and college takes up a lot of time, too. I'd like to hear your advice on this matter. Thanks for you attention!",
+      "deepenKey": "50620169",
+      "via": null,
       "signal": {
-        "score": 6,
-        "views": 522,
-        "answers": 1,
-        "unanswered": true
+        "points": 4,
+        "comments": 10
       },
-      "publishedAt": "2014-10-19T19:24:14.000Z"
+      "publishedAt": "2026-11-23T22:14:54Z"
+    },
+    {
+      "id": "539884e968",
+      "normUrl": "https://news.ycombinator.com/item?id=50615937",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "LinkedIn to block email and job title export starting in Dec",
+      "url": "https://news.ycombinator.com/item?id=50615937",
+      "externalUrl": null,
+      "summary": "Starting in December, LinkedIn will no longer allow you to export certain data about your contacts, including their job title and their email address. This will make it much less useful to use exported data in an LLM. Be sure to request a download before the end of November! https://www.linkedin.com/mypreferences/d/download-my-data",
+      "deepenKey": "50615937",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-23T17:44:07Z"
+    },
+    {
+      "id": "ba13c1d4bd",
+      "normUrl": "https://news.ycombinator.com/item?id=50615815",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Did Amazon Get Hacked?",
+      "url": "https://news.ycombinator.com/item?id=50615815",
+      "externalUrl": null,
+      "summary": "I just received 3 notifications. E-mail, text and one from the actual Amazon app. It even references the Fire 4k stick I use. These notifications are clearly bogus and not from Amazon. Anyone know of something going on? Obviously the emails could be fake and phishy, but the app notification is the main concern. Here is the email message: We noticed someone tried to connect your device to a new and unknown network. If this way you, no action is necessary. This new network connection will be allowed and not trigger a notification for future connection attempt.",
+      "deepenKey": "50615815",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-23T17:37:38Z"
+    },
+    {
+      "id": "6a27d385b4",
+      "normUrl": "https://news.ycombinator.com/item?id=50614966",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What Are You Learning?",
+      "url": "https://news.ycombinator.com/item?id=50614966",
+      "externalUrl": null,
+      "summary": "Curious to understand what people are learning especially because I keep wrestling with this depressing voice in my head - \"is learning anything even worth it in the age of AI\"",
+      "deepenKey": "50614966",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 10
+      },
+      "publishedAt": "2026-11-23T16:49:48Z"
+    },
+    {
+      "id": "aee0c17629",
+      "normUrl": "https://news.ycombinator.com/item?id=50614785",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Is Math Becoming Physics?",
+      "url": "https://news.ycombinator.com/item?id=50614785",
+      "externalUrl": null,
+      "summary": "So my interpretation is that math is becoming like physics. These massive proofs are actually dragging scattered ideas kicking and screaming from imagination to real space (by proving that it is TRUE), and making thereby proofs into objects, large inscrutable, tantalizing, beckoning megaliths, into phenomena that do not come with exposition, that do not come with explanations, and they have no obligation to explain themselves. Like a pyroelectric Ceylon stone, it is just there, it exists out there now and it is True.",
+      "deepenKey": "50614785",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-23T16:39:58Z"
+    },
+    {
+      "id": "6afa617863",
+      "normUrl": "https://news.ycombinator.com/item?id=50614468",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How likely are we to see a major quantum attack on modern crypto?",
+      "url": "https://news.ycombinator.com/item?id=50614468",
+      "externalUrl": null,
+      "summary": "With it seeming increasingly possible that there is major new math coming our way, it seems like it's only a matter of time before a major institution sees a quantum attack (on encrypted records, financial transactions, etc)",
+      "deepenKey": "50614468",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-23T16:23:47Z"
+    },
+    {
+      "id": "6711d33992",
+      "normUrl": "https://news.ycombinator.com/item?id=50611758",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "wtf Is Wrong with HN submitters?!",
+      "url": "https://news.ycombinator.com/item?id=50611758",
+      "externalUrl": null,
+      "summary": "More precisely, why do we keep tolerating 5 duplicate links/stores that all report the same damn thing \"Jenson is nos back as CEO blah blah\". If you search for \"CEO\" on the front page, there are 5 articles/links to the same damn thing. Geez. Can we not do something as basic as a \"search\" and \"oh this already got psoted\"?",
+      "deepenKey": "50611758",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 7
+      },
+      "publishedAt": "2026-11-23T14:11:50Z"
+    },
+    {
+      "id": "5ec18acc46",
+      "normUrl": "https://news.ycombinator.com/item?id=50611732",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Jensen Is Back",
+      "url": "https://news.ycombinator.com/item?id=50611732",
+      "externalUrl": null,
+      "summary": "Stocks skyrocketed.",
+      "deepenKey": "50611732",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-23T14:10:52Z"
+    },
+    {
+      "id": "1a8094df2d",
+      "normUrl": "https://news.ycombinator.com/item?id=50611556",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Jensen Huang Back as CEO of Nvidia",
+      "url": "https://news.ycombinator.com/item?id=50611556",
+      "externalUrl": null,
+      "summary": "Just hit bloomberg 10 min ago",
+      "deepenKey": "50611556",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 5
+      },
+      "publishedAt": "2026-11-23T13:58:32Z"
+    },
+    {
+      "id": "a7fa229bac",
+      "normUrl": "https://news.ycombinator.com/item?id=50609843",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Has Opus 5.5 Been Nerfed?",
+      "url": "https://news.ycombinator.com/item?id=50609843",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50609843",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 4
+      },
+      "publishedAt": "2026-11-23T10:25:41Z"
+    },
+    {
+      "id": "a625c2cdb8",
+      "normUrl": "https://news.ycombinator.com/item?id=50605262",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "If you played GTA6 what did you like and didn't like about it?",
+      "url": "https://news.ycombinator.com/item?id=50605262",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50605262",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-22T23:33:28Z"
     },
     {
       "id": "6fd9f00d37",
@@ -625,8 +865,8 @@
       "deepenKey": "50602740",
       "via": null,
       "signal": {
-        "points": 4,
-        "comments": 2
+        "points": 6,
+        "comments": 5
       },
       "publishedAt": "2026-11-22T18:57:26Z"
     },
@@ -645,8 +885,8 @@
       "deepenKey": "50602128",
       "via": null,
       "signal": {
-        "points": 6,
-        "comments": 5
+        "points": 7,
+        "comments": 8
       },
       "publishedAt": "2026-11-22T17:59:16Z"
     },
@@ -665,10 +905,30 @@
       "deepenKey": "50601879",
       "via": null,
       "signal": {
-        "points": 3,
+        "points": 4,
         "comments": 0
       },
       "publishedAt": "2026-11-22T17:38:22Z"
+    },
+    {
+      "id": "81e9a6bdc6",
+      "normUrl": "https://news.ycombinator.com/item?id=50601706",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are you clinging to the TUI to feel like a developer?",
+      "url": "https://news.ycombinator.com/item?id=50601706",
+      "externalUrl": null,
+      "summary": "Or, are you (really) still more productive in the TUI? Does curating the perfect set of shell programs in a multiplexer help you write better code? Ship stuff quicker?",
+      "deepenKey": "50601706",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 16
+      },
+      "publishedAt": "2026-11-22T17:20:41Z"
     },
     {
       "id": "aa1a0faf00",
@@ -705,8 +965,8 @@
       "deepenKey": "50600771",
       "via": null,
       "signal": {
-        "points": 35,
-        "comments": 66
+        "points": 56,
+        "comments": 93
       },
       "publishedAt": "2026-11-22T15:52:33Z"
     },
@@ -725,8 +985,8 @@
       "deepenKey": "50598355",
       "via": null,
       "signal": {
-        "points": 3,
-        "comments": 2
+        "points": 5,
+        "comments": 5
       },
       "publishedAt": "2026-11-22T10:47:34Z"
     },
@@ -765,8 +1025,8 @@
       "deepenKey": "50597005",
       "via": null,
       "signal": {
-        "points": 7,
-        "comments": 8
+        "points": 8,
+        "comments": 11
       },
       "publishedAt": "2026-11-22T06:59:40Z"
     },
@@ -791,306 +1051,6 @@
       "publishedAt": "2026-11-22T05:20:06Z"
     },
     {
-      "id": "2972daff4c",
-      "normUrl": "https://news.ycombinator.com/item?id=50594639",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "How many of you have replaced your everyday apps with something custom?",
-      "url": "https://news.ycombinator.com/item?id=50594639",
-      "externalUrl": null,
-      "summary": "This question isn't specific to vibe-coded apps, I was just curious how many people are using bespoke everyday software, for things like a file explorer, terminal, maybe mail client, text editor etc. Down the line I had planned on writing my own terminal, text editor and file explorer, but had too many other high priority projects and hadn't gotten around to it yet, and probably wouldn't for another year.",
-      "deepenKey": "50594639",
-      "via": null,
-      "signal": {
-        "points": 6,
-        "comments": 6
-      },
-      "publishedAt": "2026-11-21T23:22:29Z"
-    },
-    {
-      "id": "3db8abd230",
-      "normUrl": "https://news.ycombinator.com/item?id=50592288",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Advice on switching careers within software dev?",
-      "url": "https://news.ycombinator.com/item?id=50592288",
-      "externalUrl": null,
-      "summary": "Those who completely switched from one niche (topic? type? not sure what is the right word to use here) to another, but within software dev (including product dev, product management) - how did you do it? Any advice? For example - if a web developer wants to move to data analysis, web dev to product management etc - how? I do not have any contacts, so that advice is not useful to me. Anything else? How did you convince prospective employers that you can do the job, even though you don't currently have real world work experience to show?",
-      "deepenKey": "50592288",
-      "via": null,
-      "signal": {
-        "points": 3,
-        "comments": 1
-      },
-      "publishedAt": "2026-11-21T18:48:13Z"
-    },
-    {
-      "id": "f0b9c802a1",
-      "normUrl": "https://news.ycombinator.com/item?id=50592047",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "What have you built for your wife?",
-      "url": "https://news.ycombinator.com/item?id=50592047",
-      "externalUrl": null,
-      "summary": "Recently, after spending too much time building fun tools and sites for myself with Claude, I decided to help my wife build something for her business. We ended up building a newsletter for fans and collectors of Japanese watches, with a specific focus on independent watchmakers rather than the big brands: https://risinghour.club/ I feel stupid for not having done so earlier, and I am currently loving working with her on evenings and weekends to grow her business. What have you built for your wife or partner after selfishly building for yourself only?",
-      "deepenKey": "50592047",
-      "via": null,
-      "signal": {
-        "points": 5,
-        "comments": 2
-      },
-      "publishedAt": "2026-11-21T18:24:56Z"
-    },
-    {
-      "id": "e0b26ceca1",
-      "normUrl": "https://news.ycombinator.com/item?id=50591728",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Have you changed your job due to AI?",
-      "url": "https://news.ycombinator.com/item?id=50591728",
-      "externalUrl": null,
-      "summary": "Have you been working as a developer, software engineer and quit because of AI and now you are working in a different field like plumbing? What are your experiences so far - do you regret the decision?",
-      "deepenKey": "50591728",
-      "via": null,
-      "signal": {
-        "points": 3,
-        "comments": 1
-      },
-      "publishedAt": "2026-11-21T17:49:38Z"
-    },
-    {
-      "id": "af111a3f0a",
-      "normUrl": "https://news.ycombinator.com/item?id=50591694",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "OpenRouter – \"Requests you sent to MiniMax models may have been read\"",
-      "url": "https://news.ycombinator.com/item?id=50591694",
-      "externalUrl": null,
-      "summary": "Got this email from OpenRouter today: A security researcher placed unique test URLs in prompts sent to MiniMax models from July to October 2026. A third party accessed those URLs 40 to 130 hours after the requests were sent, whether MiniMax served a request directly or another provider forwarded it to MiniMax. With one exception, the same tests on other models at those providers were not accessed, and none of the AWS test keys were used. Your account sent 21 requests to MiniMax models through MiniMax, Novita, StreamLake and AtlasCloud, from June 22 at 03:02 to July 3 at 23:28 UTC.",
-      "deepenKey": "50591694",
-      "via": null,
-      "signal": {
-        "points": 3,
-        "comments": 1
-      },
-      "publishedAt": "2026-11-21T17:46:51Z"
-    },
-    {
-      "id": "f56b1fe212",
-      "normUrl": "https://news.ycombinator.com/item?id=50591465",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "My founders journey of 9 years at Browserless",
-      "url": "https://news.ycombinator.com/item?id=50591465",
-      "externalUrl": null,
-      "summary": "I wanted to do something different for the 9 year anniversary of browserless.io's inception. Typically, these posts involve the usual slew of items like finding your first customers, how long it took, etc. This time around I wrote a lot about my own experience and emotional journey. Nine years is a lot to try and cover in medium that caters to short attention spans, so hopefully you can make it through! I'm always open to talking about the journey regardless of where you might be at, or if you've yet to embark. Please let me know joel at browserless dot io.",
-      "deepenKey": "50591465",
-      "via": null,
-      "signal": {
-        "points": 4,
-        "comments": 2
-      },
-      "publishedAt": "2026-11-21T17:26:45Z"
-    },
-    {
-      "id": "dc58452d65",
-      "normUrl": "https://news.ycombinator.com/item?id=50591050",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Does anybody read their emails anymore?",
-      "url": "https://news.ycombinator.com/item?id=50591050",
-      "externalUrl": null,
-      "summary": "My inbox is essentially mostly spam and sometimes relevant external messages. but I just have claude give a daily summary. Anybody else believe in the death of email? Or have an opinion on how it evolves?",
-      "deepenKey": "50591050",
-      "via": null,
-      "signal": {
-        "points": 7,
-        "comments": 19
-      },
-      "publishedAt": "2026-11-21T16:48:50Z"
-    },
-    {
-      "id": "f2b230a9e9",
-      "normUrl": "https://news.ycombinator.com/item?id=50589377",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Best books you've read this year (2026)?",
-      "url": "https://news.ycombinator.com/item?id=50589377",
-      "externalUrl": null,
-      "summary": "The year is nearing its end. Whatever you have read in the past months, which ones stood out and why?",
-      "deepenKey": "50589377",
-      "via": null,
-      "signal": {
-        "points": 3,
-        "comments": 1
-      },
-      "publishedAt": "2026-11-21T14:11:11Z"
-    },
-    {
-      "id": "2e9a1da104",
-      "normUrl": "https://news.ycombinator.com/item?id=50589077",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Does C/C++/Rust/Zig have agent framework?",
-      "url": "https://news.ycombinator.com/item?id=50589077",
-      "externalUrl": null,
-      "summary": null,
-      "deepenKey": "50589077",
-      "via": null,
-      "signal": {
-        "points": 5,
-        "comments": 2
-      },
-      "publishedAt": "2026-11-21T13:35:25Z"
-    },
-    {
-      "id": "6decd4b11b",
-      "normUrl": "https://news.ycombinator.com/item?id=50587796",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "What is your current hardware set up?",
-      "url": "https://news.ycombinator.com/item?id=50587796",
-      "externalUrl": null,
-      "summary": null,
-      "deepenKey": "50587796",
-      "via": null,
-      "signal": {
-        "points": 5,
-        "comments": 7
-      },
-      "publishedAt": "2026-11-21T10:23:34Z"
-    },
-    {
-      "id": "d22bc87959",
-      "normUrl": "https://news.ycombinator.com/item?id=50586653",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Rust, Zig, or C?",
-      "url": "https://news.ycombinator.com/item?id=50586653",
-      "externalUrl": null,
-      "summary": "really not a loaded question. personally i prefer to write in c or zig. what about you?",
-      "deepenKey": "50586653",
-      "via": null,
-      "signal": {
-        "points": 10,
-        "comments": 25
-      },
-      "publishedAt": "2026-11-21T06:44:40Z"
-    },
-    {
-      "id": "8eb7dccf6e",
-      "normUrl": "https://news.ycombinator.com/item?id=50585962",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "OpenRouter prompts to Minimax may have been read",
-      "url": "https://news.ycombinator.com/item?id=50585962",
-      "externalUrl": null,
-      "summary": "I received the following email from OpenRouter and it appears authentic. There is no public page or blog post. -- Title: Requests you sent to MiniMax models may have been read Hi there, A security researcher placed unique test URLs in prompts sent to MiniMax models from July to October 2026. A third party accessed those URLs 40 to 130 hours after the requests were sent, whether MiniMax served a request directly or another provider forwarded it to MiniMax. With one exception, the same tests on other models at those providers were not accessed, and none of the AWS test keys were used.",
-      "deepenKey": "50585962",
-      "via": null,
-      "signal": {
-        "points": 62,
-        "comments": 11
-      },
-      "publishedAt": "2026-11-21T04:31:38Z"
-    },
-    {
-      "id": "bfa6fe38fc",
-      "normUrl": "https://news.ycombinator.com/item?id=50585530",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "How do we get 1 TW a year of orbital compute by 2035?",
-      "url": "https://news.ycombinator.com/item?id=50585530",
-      "externalUrl": null,
-      "summary": "- 50k Starship V4 launches a year, each carrying 200 t (20 MW of compute). That’s 137 a day, one every 2 minutes in two windows of roughly 5–7am and 5–7pm local. As Earth spins, the launch site passes under that target orbit twice a day, at local dawn and local dusk. Globally we’re at about 1 launch a day right now. - The always-sunlit orbit needs launches heading north or south over open water. On US coasts only south works, and packing every usable spot with Starship pads gets us to just 25–30 launches a day. We need 5× that. - So we will go out to sea, 300 km off central California.",
-      "deepenKey": "50585530",
-      "via": null,
-      "signal": {
-        "points": 3,
-        "comments": 5
-      },
-      "publishedAt": "2026-11-21T03:11:47Z"
-    },
-    {
-      "id": "bc037608d3",
-      "normUrl": "https://news.ycombinator.com/item?id=50585039",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Portkey Security Incident",
-      "url": "https://news.ycombinator.com/item?id=50585039",
-      "externalUrl": null,
-      "summary": "From: Portkey Product Security Date: Friday, November 20, 2026 Subject: IMPORTANT NOTICE: Security Incident Affecting Portkey AI Gateway Dear Customer, We are contacting you regarding a security incident involving Portkey AI Gateway. In this incident, an unauthorized third party compromised a Portkey AI Gateway API key and gained access to customer data in our environment. As soon as we detected the event, we took steps to remedy the compromise and secure our systems. We also engaged our Unit 42 security team to conduct a comprehensive investigation.",
-      "deepenKey": "50585039",
-      "via": null,
-      "signal": {
-        "points": 3,
-        "comments": 0
-      },
-      "publishedAt": "2026-11-21T01:52:04Z"
-    },
-    {
-      "id": "71d67e7404",
-      "normUrl": "https://news.ycombinator.com/item?id=50584813",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "What are people doing to improve the security of your organization?",
-      "url": "https://news.ycombinator.com/item?id=50584813",
-      "externalUrl": null,
-      "summary": "TLDR: trying to improve our security posture, would love to learn what people are doing. And best practices, tools to onboard. Hi HN, over the last few weeks, I have tried to improve the security of every single corner of our company. For context, I am a solo founder, with a SaaSish product, thats used by closed to 100 customers. Who rely on uptime guarantees. I work with a few contractors. So the last few weeks, were dedicated to improving the security posture of our infra and internal systems. I signed up to a bunch of famous security checking services.",
-      "deepenKey": "50584813",
-      "via": null,
-      "signal": {
-        "points": 4,
-        "comments": 2
-      },
-      "publishedAt": "2026-11-21T01:22:13Z"
-    },
-    {
       "id": "687a855ace",
       "normUrl": "https://github.com/NuvioMedia/NuvioTV/issues/4141",
       "sourceId": "gh-requests",
@@ -1103,7 +1063,7 @@
       "summary": "### Area (tag) Playback ### Problem statement I want to be able to see the actual playback resolution, HDR format, audio format, and currently playing audio language directly beside the movie title on the playback screen. Currently, users need to open audio settings to check the active audio track and its format.",
       "signal": {
         "thumbsUp": 346,
-        "comments": 19,
+        "comments": 21,
         "repo": "NuvioMedia/NuvioTV"
       },
       "publishedAt": "2026-10-19T13:45:18Z"
@@ -1120,7 +1080,7 @@
       "url": "https://github.com/anthropics/claude-code/issues/102264",
       "summary": "### Preflight Checklist - [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet - [x] This is a single feature request (not multiple features) ### Problem Statement After the latest Desktop update (Windows, Code tab), the stats panel that used to show on the new session screen is gone: Overview/Models tabs, Sessions, Messages, Total tokens, Active days, Peak hour, Favorite model, the activity heatmap and the All/30d/7d filters.",
       "signal": {
-        "thumbsUp": 103,
+        "thumbsUp": 106,
         "comments": 3,
         "repo": "anthropics/claude-code"
       },
@@ -1174,8 +1134,8 @@
       "url": "https://github.com/openai/codex/issues/58530",
       "summary": "## Please keep the path from a first idea to a first income open — preserve independent ChatGPT High and Codex/Work allowances **Update — November 9, 2026: OpenAI has officially confirmed the planned December change.** When I opened this issue on October 31, the upcoming shared allowance was still being discussed as a reported change.",
       "signal": {
-        "thumbsUp": 59,
-        "comments": 36,
+        "thumbsUp": 60,
+        "comments": 37,
         "repo": "openai/codex"
       },
       "publishedAt": "2026-10-31T10:17:51Z"
@@ -1212,284 +1172,264 @@
       "publishedAt": null
     },
     {
-      "id": "00d9a00720",
-      "normUrl": "https://producthunt.com/products/oovi",
+      "id": "6e2c175bde",
+      "normUrl": "https://producthunt.com/products/replit",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "oovi",
-      "url": "https://www.producthunt.com/products/oovi",
-      "summary": "Your own team of AI on your desktop",
-      "publishedAt": "2026-11-21T20:02:03.000Z"
+      "title": "Replit Missions",
+      "url": "https://www.producthunt.com/products/replit",
+      "summary": "Set a budget, coordinate teams of AI agents,",
+      "publishedAt": "2026-11-22T17:13:25.000Z"
     },
     {
-      "id": "eb2cb42093",
-      "normUrl": "https://producthunt.com/products/leapdeck",
+      "id": "4640173fc9",
+      "normUrl": "https://producthunt.com/products/spikely",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Leapdeck",
-      "url": "https://www.producthunt.com/products/leapdeck",
-      "summary": "Leap to any Mac Space from a key or your iPhone",
-      "publishedAt": "2026-11-16T13:09:26.000Z"
+      "title": "Spikely",
+      "url": "https://www.producthunt.com/products/spikely",
+      "summary": "Startup Metric Alerts for iPhone, Mac and Apple Watch",
+      "publishedAt": "2026-11-21T10:04:50.000Z"
     },
     {
-      "id": "eca927a580",
-      "normUrl": "https://producthunt.com/products/teaserkit",
+      "id": "e2dcce38c9",
+      "normUrl": "https://producthunt.com/products/snowly-2",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "TeaserKit",
-      "url": "https://www.producthunt.com/products/teaserkit",
-      "summary": "your coding agent directs your launch video",
-      "publishedAt": "2026-11-19T15:08:42.000Z"
+      "title": "Snowly",
+      "url": "https://www.producthunt.com/products/snowly-2",
+      "summary": "Plan ski trips with friends. Remember every run.",
+      "publishedAt": "2026-11-18T02:11:19.000Z"
     },
     {
-      "id": "34680b6979",
-      "normUrl": "https://producthunt.com/products/webless",
+      "id": "5e6a7d29e6",
+      "normUrl": "https://producthunt.com/products/branchery",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Webless Agents",
-      "url": "https://www.producthunt.com/products/webless",
-      "summary": "Agents you want to put in front of customers",
-      "publishedAt": "2026-11-07T02:49:47.000Z"
+      "title": "Branchery",
+      "url": "https://www.producthunt.com/products/branchery",
+      "summary": "Branchery, a Git client for Mac",
+      "publishedAt": "2026-11-22T21:29:23.000Z"
     },
     {
-      "id": "ea54a4a451",
-      "normUrl": "https://producthunt.com/products/denotch",
+      "id": "06eff0fbcd",
+      "normUrl": "https://producthunt.com/products/motionflare",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "DeNotch",
-      "url": "https://www.producthunt.com/products/denotch",
-      "summary": "Hide the MacBook notch and tame your menu bar",
-      "publishedAt": "2026-11-19T07:57:34.000Z"
+      "title": "Motionflare",
+      "url": "https://www.producthunt.com/products/motionflare",
+      "summary": "Turn your website into a stunning launch video in minutes",
+      "publishedAt": "2026-11-14T09:50:44.000Z"
     },
     {
-      "id": "0f3b195a0d",
-      "normUrl": "https://producthunt.com/products/yoroll",
+      "id": "414d87ca8e",
+      "normUrl": "https://producthunt.com/products/gauth-ai-course",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Yoroll",
-      "url": "https://www.producthunt.com/products/yoroll",
-      "summary": "Build playable stories without a game engine",
-      "publishedAt": "2026-11-06T03:24:04.000Z"
+      "title": "Gauth Personal Study Agent",
+      "url": "https://www.producthunt.com/products/gauth-ai-course",
+      "summary": "An AI study agent that remembers where you struggle",
+      "publishedAt": "2026-11-20T17:12:34.000Z"
     },
     {
-      "id": "17758d3556",
-      "normUrl": "https://producthunt.com/products/pushback-flight-tracker",
+      "id": "a64b847445",
+      "normUrl": "https://producthunt.com/products/hydrilla",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Pushback",
-      "url": "https://www.producthunt.com/products/pushback-flight-tracker",
-      "summary": "The flight tracker that knows which lounge you can use",
-      "publishedAt": "2026-11-19T23:48:07.000Z"
+      "title": "Hydrilla",
+      "url": "https://www.producthunt.com/products/hydrilla",
+      "summary": "Generate production-ready 3D assets with AI",
+      "publishedAt": "2026-03-12T16:31:13.000Z"
     },
     {
-      "id": "56cd024c58",
-      "normUrl": "https://producthunt.com/products/copy-haste",
+      "id": "b39e64f928",
+      "normUrl": "https://producthunt.com/products/kopyo",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Copy Haste",
-      "url": "https://www.producthunt.com/products/copy-haste",
-      "summary": "Your clipboard, sorted into Text, Code, Links, Media & more",
-      "publishedAt": "2026-11-15T17:16:10.000Z"
+      "title": "Kopyo",
+      "url": "https://www.producthunt.com/products/kopyo",
+      "summary": "The Mac clipboard manager that remembers everything",
+      "publishedAt": "2026-11-22T15:35:04.000Z"
     },
     {
-      "id": "800b24c16c",
-      "normUrl": "https://producthunt.com/products/meshlive",
+      "id": "bd528455ce",
+      "normUrl": "https://producthunt.com/products/tinker-2",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "MeshLive",
-      "url": "https://www.producthunt.com/products/meshlive",
-      "summary": "Offline video calls and livestreams over Bluetooth mesh",
-      "publishedAt": "2026-11-17T13:49:46.000Z"
+      "title": "Inkling 2 Mini",
+      "url": "https://www.producthunt.com/products/tinker-2",
+      "summary": "26B looped model for coding on your laptop",
+      "publishedAt": "2026-11-23T03:37:24.000Z"
     },
     {
-      "id": "0e0f75754c",
-      "normUrl": "https://producthunt.com/products/creavit-studio",
+      "id": "eec917593f",
+      "normUrl": "https://producthunt.com/products/naturefunding-org",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Creavit Studio 4.0",
-      "url": "https://www.producthunt.com/products/creavit-studio",
-      "summary": "Screen recording, iPhone camera and cinematic demos for Mac",
-      "publishedAt": "2026-11-20T21:11:32.000Z"
+      "title": "naturefunding.org",
+      "url": "https://www.producthunt.com/products/naturefunding-org",
+      "summary": "Grants for nature projects, checked against funder pages",
+      "publishedAt": "2026-11-19T03:48:42.000Z"
     },
     {
-      "id": "ee41264e80",
-      "normUrl": "https://producthunt.com/products/daymaker",
+      "id": "7da8b663ed",
+      "normUrl": "https://producthunt.com/products/plango",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Daymaker",
-      "url": "https://www.producthunt.com/products/daymaker",
-      "summary": "Gifts so personal, your prospects take the meeting.",
-      "publishedAt": "2026-10-19T18:41:04.000Z"
+      "title": "Plango",
+      "url": "https://www.producthunt.com/products/plango",
+      "summary": "Plango lets your AI agents work all night - safely",
+      "publishedAt": "2026-11-22T17:08:26.000Z"
     },
     {
-      "id": "57ff15d71e",
-      "normUrl": "https://producthunt.com/products/mockreel",
+      "id": "42c92e5020",
+      "normUrl": "https://producthunt.com/products/leantake",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Mockreel",
-      "url": "https://www.producthunt.com/products/mockreel",
-      "summary": "your screen recording, but in a 3D phone. free, no signup",
-      "publishedAt": "2026-11-20T02:04:14.000Z"
+      "title": "LeanTake",
+      "url": "https://www.producthunt.com/products/leantake",
+      "summary": "4.1 MB native Mac screen recorder — zero export wait",
+      "publishedAt": "2026-11-22T12:14:55.000Z"
     },
     {
-      "id": "fd15199537",
-      "normUrl": "https://producthunt.com/products/ulika",
+      "id": "b2b1cdaa4e",
+      "normUrl": "https://producthunt.com/products/open-source-solana-wallet",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Ulika",
-      "url": "https://www.producthunt.com/products/ulika",
-      "summary": "Visual editor for sites built with Claude, Cursor, or Codex",
-      "publishedAt": "2026-11-17T19:23:36.000Z"
+      "title": "Open Source Solana Wallet",
+      "url": "https://www.producthunt.com/products/open-source-solana-wallet",
+      "summary": "Your own keys, your very own network",
+      "publishedAt": "2026-11-22T22:44:38.000Z"
     },
     {
-      "id": "36aac78634",
-      "normUrl": "https://producthunt.com/products/slotify-2",
+      "id": "6b5f72f4d2",
+      "normUrl": "https://producthunt.com/products/modem",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Slotify",
-      "url": "https://www.producthunt.com/products/slotify-2",
-      "summary": "Schedule game nights without leaving Discord",
-      "publishedAt": "2026-11-09T13:55:35.000Z"
+      "title": "Modem",
+      "url": "https://www.producthunt.com/products/modem",
+      "summary": "Find, fix, and follow up on every customer concern",
+      "publishedAt": "2026-08-17T19:08:59.000Z"
     },
     {
-      "id": "226b30a8c6",
-      "normUrl": "https://producthunt.com/products/resurf-2",
+      "id": "b1e5d3c087",
+      "normUrl": "https://producthunt.com/products/mai-image-2-3",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Resurf",
-      "url": "https://www.producthunt.com/products/resurf-2",
-      "summary": "Personal Knowledge Base & Bookmark Manager for Mac",
-      "publishedAt": "2026-11-21T16:21:36.000Z"
+      "title": "MAI Image 2.7",
+      "url": "https://www.producthunt.com/products/mai-image-2-3",
+      "summary": "Microsoft's image model with precise edits and Canvas",
+      "publishedAt": "2026-11-17T18:42:27.000Z"
     },
     {
-      "id": "2777deccf2",
-      "normUrl": "https://producthunt.com/products/wispim-online-teleprompter",
+      "id": "b2e1204fdb",
+      "normUrl": "https://producthunt.com/products/chat-with-work",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Wispim",
-      "url": "https://www.producthunt.com/products/wispim-online-teleprompter",
-      "summary": "The teleprompter that follows your voice",
-      "publishedAt": "2026-11-05T16:46:59.000Z"
+      "title": "Chat with Work",
+      "url": "https://www.producthunt.com/products/chat-with-work",
+      "summary": "AI bots in Europe. They work. You decide.",
+      "publishedAt": "2026-11-21T09:06:12.000Z"
     },
     {
-      "id": "82beb5f3bd",
-      "normUrl": "https://producthunt.com/products/raccoon-kids",
+      "id": "4b3299291c",
+      "normUrl": "https://producthunt.com/products/tesla",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Raccoon Kids",
-      "url": "https://www.producthunt.com/products/raccoon-kids",
-      "summary": "Gamify Chores for Kids: no more nagging, just a cute raccoon",
-      "publishedAt": "2026-11-19T10:33:05.000Z"
+      "title": "Tesla Self-Driving V15",
+      "url": "https://www.producthunt.com/products/tesla",
+      "summary": "Upgrading every part of the end-to-end driving network",
+      "publishedAt": "2026-11-22T02:23:40.000Z"
     },
     {
-      "id": "17d5c9e261",
-      "normUrl": "https://producthunt.com/products/omi-cli",
+      "id": "ba5b2a74f4",
+      "normUrl": "https://producthunt.com/products/omi-work",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Omi CLI",
-      "url": "https://www.producthunt.com/products/omi-cli",
-      "summary": "AI coding agents that work while you're away.",
-      "publishedAt": "2026-11-21T08:05:31.000Z"
+      "title": "Omi Work",
+      "url": "https://www.producthunt.com/products/omi-work",
+      "summary": "Omi can build anything. Now it finds your next 100 customers",
+      "publishedAt": "2026-11-22T08:35:25.000Z"
     },
     {
-      "id": "2968d7a384",
-      "normUrl": "https://producthunt.com/products/squint",
+      "id": "e718240443",
+      "normUrl": "https://producthunt.com/products/strict",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Squint",
-      "url": "https://www.producthunt.com/products/squint",
-      "summary": "Explains whatever you're looking at, now on Mac",
-      "publishedAt": "2026-11-10T21:43:34.000Z"
+      "title": "Strict",
+      "url": "https://www.producthunt.com/products/strict",
+      "summary": "Run GitHub Actions on any spare Mac or Linux machine",
+      "publishedAt": "2026-11-22T23:04:09.000Z"
     },
     {
-      "id": "4f6182b45b",
-      "normUrl": "https://producthunt.com/products/rankhog",
+      "id": "af2e776130",
+      "normUrl": "https://producthunt.com/products/figmamcp",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Rankhog",
-      "url": "https://www.producthunt.com/products/rankhog",
-      "summary": "Get customers from Reddit on autopilot",
-      "publishedAt": "2026-11-19T12:43:48.000Z"
-    },
-    {
-      "id": "998077af15",
-      "normUrl": "https://news.ycombinator.com/item?id=50599762",
-      "sourceId": "showhn",
-      "source": "Show HN",
-      "sourceHome": "https://news.ycombinator.com/show",
-      "side": "supply",
-      "pool": true,
-      "title": "I built a game where you are an LLM's subagent",
-      "url": "https://news.ycombinator.com/item?id=50599762",
-      "externalUrl": "https://github.com/gulivan/worker755",
-      "summary": null,
-      "deepenKey": "50599762",
-      "via": null,
-      "signal": {
-        "points": 238,
-        "comments": 56
-      },
-      "publishedAt": "2026-11-22T13:56:58Z"
+      "title": "FigmaMCP",
+      "url": "https://www.producthunt.com/products/figmamcp",
+      "summary": "Let Claude Code or Codex edit your open Figma file",
+      "publishedAt": "2026-11-22T23:28:02.000Z"
     },
     {
       "id": "c6524b3bb6",
@@ -1501,10 +1441,10 @@
       "pool": true,
       "title": "elementalsouls/Claude-BugHunter",
       "url": "https://github.com/elementalsouls/Claude-BugHunter",
-      "summary": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "summary": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
       "signal": {
         "language": "Python",
-        "points": 1721
+        "points": 2029
       },
       "publishedAt": null
     },
@@ -1521,7 +1461,7 @@
       "summary": "An agentic skills framework & software development methodology that works.",
       "signal": {
         "language": "Shell",
-        "points": 785
+        "points": 840
       },
       "publishedAt": null
     },
@@ -1538,7 +1478,7 @@
       "summary": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "signal": {
         "language": "Python",
-        "points": 687
+        "points": 790
       },
       "publishedAt": null
     },
@@ -1555,7 +1495,7 @@
       "summary": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
       "signal": {
         "language": "Python",
-        "points": 473
+        "points": 828
       },
       "publishedAt": null
     },
@@ -1572,7 +1512,7 @@
       "summary": "Cursor plugin specification and official plugins",
       "signal": {
         "language": "TypeScript",
-        "points": 301
+        "points": 397
       },
       "publishedAt": null
     },
@@ -1589,7 +1529,7 @@
       "summary": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
       "signal": {
         "language": "TypeScript",
-        "points": 910
+        "points": 924
       },
       "publishedAt": null
     },
@@ -1606,7 +1546,7 @@
       "summary": "The official NGINX Open Source repository.",
       "signal": {
         "language": "C",
-        "points": 168
+        "points": 174
       },
       "publishedAt": null
     },
@@ -1623,7 +1563,7 @@
       "summary": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
       "signal": {
         "language": "C++",
-        "points": 155
+        "points": 184
       },
       "publishedAt": null
     },
@@ -1637,10 +1577,10 @@
       "pool": true,
       "title": "cathrynlavery/diagram-design",
       "url": "https://github.com/cathrynlavery/diagram-design",
-      "summary": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "summary": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "signal": {
         "language": "HTML",
-        "points": 513
+        "points": 620
       },
       "publishedAt": null
     },
@@ -1657,7 +1597,7 @@
       "summary": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "signal": {
         "language": "Python",
-        "points": 673
+        "points": 797
       },
       "publishedAt": null
     },
@@ -1674,7 +1614,7 @@
       "summary": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "signal": {
         "language": "TypeScript",
-        "points": 516
+        "points": 422
       },
       "publishedAt": null
     },
@@ -1691,7 +1631,7 @@
       "summary": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 124 documented rejection patterns and fixes, privacy manifest and Data safety checks, 112 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
       "signal": {
         "language": "Shell",
-        "points": 617
+        "points": 761
       },
       "publishedAt": null
     },
@@ -1708,7 +1648,7 @@
       "summary": "The open-source agent for CI/CD reliability.",
       "signal": {
         "language": "Python",
-        "points": 395
+        "points": 436
       },
       "publishedAt": null
     },
@@ -1725,7 +1665,7 @@
       "summary": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
       "signal": {
         "language": "TypeScript",
-        "points": 537
+        "points": 595
       },
       "publishedAt": null
     },
@@ -1742,7 +1682,7 @@
       "summary": "The only downloader you need. 下载器的集大成者。",
       "signal": {
         "language": "Python",
-        "points": 690
+        "points": 1087
       },
       "publishedAt": null
     },
@@ -1759,7 +1699,7 @@
       "summary": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
       "signal": {
         "language": "Python",
-        "points": 640
+        "points": 907
       },
       "publishedAt": null
     },

@@ -1,0 +1,1378 @@
+{
+  "issue": "2026-11-24",
+  "builtAt": "2026-11-24T03:03:10.121Z",
+  "from": {
+    "boards": "prefetched",
+    "inbox": "live"
+  },
+  "counts": {
+    "fetched": 99,
+    "added": 35,
+    "kept": 35,
+    "dropped": 64,
+    "pool": 35,
+    "screened": 34,
+    "candidates": 16,
+    "demandCandidates": 4,
+    "supplyCandidates": 12
+  },
+  "errors": [],
+  "notices": [
+    "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
+  ],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-24T02:52:19Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：is there an app that（HTTP 404：2026-11-24T02:53:05Z https://rs）；is there a tool that（HTTP 404：2026-11-24T02:54:15Z https://rs）；someone should build（HTTP 404：2026-11-24T02:55:00Z https://rs）；we still use spreadsheets（HTTP 404：2026-11-24T02:56:11Z https://rs）",
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 22,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 6,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：we currently pay（HTTP 404：2026-11-24T02:57:21Z https://rs）；we are paying for（HTTP 404：2026-11-24T02:58:06Z https://rs）；quoted us（HTTP 404：2026-11-24T02:59:17Z https://rs）；per seat per month（HTTP 404：2026-11-24T03:00:03Z https://rs）",
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-24T03:01:13Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-24T03:02:24Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-24T03:03:09Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 0,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 0,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub Trending",
+      "status": "ok",
+      "items": 16,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "consoledev",
+      "name": "Console.dev",
+      "status": "ok",
+      "items": 9,
+      "pool": true,
+      "group": "board"
+    }
+  ],
+  "items": [
+    {
+      "id": "e5f8ded010",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95480/looking-for-a-free-open-source-vs-code-ai-coding-assistant-similar-to-github-cop",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Looking for a free/open-source VS Code AI coding assistant similar to GitHub Copilot or Codex with no strict usage limits",
+      "url": "https://softwarerecs.stackexchange.com/questions/95480/looking-for-a-free-open-source-vs-code-ai-coding-assistant-similar-to-github-cop",
+      "summary": "I'm currently working on a client project, and I'm running into usage limits with AI coding assistants. I've been using GitHub Copilot and OpenAI Codex/ChatGPT, but the limits are so strict that sometimes I can't use them for 30 minutes or more. Even with a paid ChatGPT subscription, I still hit model usage limits (especially on GPT-5.x), which interrupts my development workflow.",
+      "deepenKey": "95480",
+      "signal": {
+        "score": 3,
+        "views": 830,
+        "answers": 2,
+        "unanswered": true
+      },
+      "publishedAt": "2026-07-13T07:24:09.000Z",
+      "ref": "I1",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 6,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I'm currently working on a client project, and I'm running into usage limits with AI coding assistants. I've been using GitHub Copilot and OpenAI Codex/ChatGPT, but the limits are so strict that sometimes I can't use them for 30 minutes or more. Even with a paid ChatGPT subscription, I still hit model usage limits (especially on GPT-5.x), which interrupts my development workflow. I'm looking for a free or open-source alternative that works directly inside VS Code and can do things like: AI code completion Edit existing code Generate new code Fix bugs Explain code Refactor code Work across multiple files (similar to Copilot/Codex) Support large codebases I'm especially interested in models that perform close to GPT-5 or Claude but are free (or at least have generous usage limits). Some questions: What are the best free or open-source AI coding assistants for VS Code? Which local models are actually good enough for real client projects? Is anyone using models like Qwen 3 Coder, DeepSeek Coder V2, Code Llama, or others successfully? Are there VS Code extensions similar to Copilot that support these models? Are there any reliable ways (not against the terms of service) to avoid constantly hitting usage limits? I'm looking for recommendations based on real-world experience rather than marketing. Any suggestions would be greatly appreciated. Thanks!",
+        "comments": [
+          {
+            "text": "Given your hardware, running anything Claude/GPT-5-class locally is off the table, so the practical fix is to decouple the VS Code extension from the subscription-limited assistants and bring your own API key instead. A few options that actually work like Copilot/Codex (multi-file edits, chat, inline completion): Continue (open-source, VS Code + JetBrains extension): lets you plug in any provider's API key, supports chat, inline edit, autocomplete, and works across files. No usage limits beyond what your provider enforces. Cline or Roo Code (VS Code extensions, both open-source): agentic, can read/edit multiple files, run terminal commands, and work with any OpenAI-compatible API endpoint. Aider (terminal-based, not VS Code-native, but works alongside it): very strong at multi-file refactors and has lower token overhead than most IDE agents.",
+            "score": 0
+          },
+          {
+            "text": "artificialanalysis.ai has an intelligence vs. API cost plot so that you can choose the model based on your personal trade-off preference: Your laptop can't run anything decent locally fast enough.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Ask HN: Best speech-to-text resource?",
+            "points": 22,
+            "url": "https://news.ycombinator.com/item?id=29112266"
+          },
+          {
+            "title": "Ask HN: Local RAG with private knowledge base",
+            "points": 108,
+            "url": "https://news.ycombinator.com/item?id=41968366"
+          }
+        ],
+        "fetchedAt": "2026-11-24T03:03:11.393Z"
+      }
+    },
+    {
+      "id": "f2d8dbeb15",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/93677/deploying-a-rag-agent-via-slack-what-are-the-viable-approaches",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Deploying a RAG agent via Slack: What are the viable approaches?",
+      "url": "https://softwarerecs.stackexchange.com/questions/93677/deploying-a-rag-agent-via-slack-what-are-the-viable-approaches",
+      "summary": "I'm looking for a high-level answer on the pros and cons of different approaches (or being directed towards a clear winner) I'm trying to maximise for speed of deployment, UX, avoiding high api costs, and ease of maintenance. Ideally, a non-technical user should be able to change the source materials easily. I'm not using any sensitive data, so security is not a major concern. Here's an outline of my desired outcome Users message the bot or a channel with their request. In either case, it should be possible for them to ask questions privately.",
+      "deepenKey": "93677",
+      "signal": {
+        "score": 0,
+        "views": 38,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2025-09-01T10:31:02.000Z",
+      "ref": "I2",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I'm looking for a high-level answer on the pros and cons of different approaches (or being directed towards a clear winner) I'm trying to maximise for speed of deployment, UX, avoiding high api costs, and ease of maintenance. Ideally, a non-technical user should be able to change the source materials easily. I'm not using any sensitive data, so security is not a major concern. Here's an outline of my desired outcome Users message the bot or a channel with their request. In either case, it should be possible for them to ask questions privately. The agent replies, citing source material wherever possible. It should be easy for the user to view the full source material easily (ideally as easy as clicking a hyperlink) A non-technical user should be able to audit usage and view answers, ideally via a user interface. It should be possible for that user to change the source materials as almost as easily as one could change a Google document. When looking at usage / LLM costs, it should be possible to work out which users/requests are underlying them (e.g., it should be trivial to produce a bar chart of cost per user).",
+        "comments": [
+          {
+            "text": "For this kind of internal Slack RAG bot, there are three tiers of approaches depending on how much you want to own versus rent. Fully managed RAG-as-a-service with a Slack connector (e.g. Glean, or a helpdesk-style tool with a native Slack app) is fastest to deploy, has a built-in citation UI, and usually an admin dashboard non-technical users can use to swap source documents. Downside: least control over cost, per-seat/per-query pricing gets expensive at scale, and the cost-per-user breakdown you want often isn't exposed. Open framework plus your own hosting (LangChain or LlamaIndex, a vector store like pgvector or Weaviate, and Slack's Bolt SDK) is the most flexible and cheapest at scale since you pick your own LLM/embedding provider, and you can log every request with user ID and token count to build exactly the cost-per-user breakdown you described.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Launch HN: Maitai (YC S24) – Self-Optimizing LLM Platform",
+            "points": 149,
+            "url": "https://news.ycombinator.com/item?id=41456552"
+          }
+        ],
+        "fetchedAt": "2026-11-24T03:03:12.518Z"
+      }
+    },
+    {
+      "id": "371363e8ab",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/87252/software-to-normalize-audio-on-the-fly-from-blue-yeti-mic-for-windows",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Software to normalize audio on the fly from Blue Yeti mic (for Windows)",
+      "url": "https://softwarerecs.stackexchange.com/questions/87252/software-to-normalize-audio-on-the-fly-from-blue-yeti-mic-for-windows",
+      "summary": "I have a Blue Yeti microphone. It stands on the table, so the volume depends on how close I am to the microphone. In addition, various programs (telegram, discord, viber etc..) have their own \"improvements\" for sound. Therefore, every time I learn from the interlocutor that I am heard either too loudly or too quietly. It's very tiring for me to have to adjust to each individual program every time. I am looking for a solution to this problem. It would be nice to have some program, that takes care of the audio processing before that audio gets into the messenger.",
+      "deepenKey": "87252",
+      "signal": {
+        "score": 2,
+        "views": 1635,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2023-06-11T04:12:00.000Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": 10,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 7,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I have a Blue Yeti microphone. It stands on the table, so the volume depends on how close I am to the microphone. In addition, various programs (telegram, discord, viber etc..) have their own \"improvements\" for sound. Therefore, every time I learn from the interlocutor that I am heard either too loudly or too quietly. It's very tiring for me to have to adjust to each individual program every time. I am looking for a solution to this problem. It would be nice to have some program, that takes care of the audio processing before that audio gets into the messenger. Let's call it the EQ, which is halfway between my microphone and the final program. Please advise me any free software for Windows, that normalizes audio on the fly",
+        "comments": [
+          {
+            "text": "Logitech G Hub is software that utilizes BLUE VO!CE technology that works with Blue Yeti microphones. You can change a bunch of paramters there, such as: gain noise reduction equalizer volume limiter etc.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-11-24T03:03:11.003Z"
+      }
+    },
+    {
+      "id": "21cec39bcd",
+      "normUrl": "https://news.ycombinator.com/item?id=50620290",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Is there a way to get a human at OpenAI support?",
+      "url": "https://news.ycombinator.com/item?id=50620290",
+      "externalUrl": null,
+      "summary": "My previous work ChatGPT account got banned when the employer did a charge back on a six months worth of ChatGPT Pro. Because I also linked my personal accounts to it I seemed to be banned across the board. Is there anyone at OpenAI who can help get my case looked at?",
+      "deepenKey": "50620290",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-23T22:26:34Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "在找但没找到"
+        ],
+        "detail": {
+          "signal": 5,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "My previous work ChatGPT account got banned when the employer did a charge back on a six months worth of ChatGPT Pro. Because I also linked my personal accounts to it I seemed to be banned across the board. Is there anyone at OpenAI who can help get my case looked at?",
+        "comments": [],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "OpenAI Codex agents go rogue and consumes USD 78,000 without authorization",
+            "points": 84,
+            "url": "https://news.ycombinator.com/item?id=49861047"
+          }
+        ],
+        "fetchedAt": "2026-11-24T03:03:12.110Z"
+      }
+    },
+    {
+      "id": "bbc99298f4",
+      "normUrl": "https://news.ycombinator.com/item?id=50620169",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Is a college degree still necessary for a programmer?",
+      "url": "https://news.ycombinator.com/item?id=50620169",
+      "externalUrl": null,
+      "summary": "Hey everyone, I'm currently a second-year university student. I also work part-time as a Backend dev. I did my first internship very early on, in 9th grade. Until then, I worked at three different companies and startups. So to speak, already very experienced in CS. But now that AI is developing so rapidly, I'm a little concerned about my position. Technology is advancing rapidly, and I feel like I won't be able to keep up with it anymore and college takes up a lot of time, too. I'd like to hear your advice on this matter. Thanks for you attention!",
+      "deepenKey": "50620169",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 10
+      },
+      "publishedAt": "2026-11-23T22:14:54Z",
+      "ref": "I5",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "539884e968",
+      "normUrl": "https://news.ycombinator.com/item?id=50615937",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "LinkedIn to block email and job title export starting in Dec",
+      "url": "https://news.ycombinator.com/item?id=50615937",
+      "externalUrl": null,
+      "summary": "Starting in December, LinkedIn will no longer allow you to export certain data about your contacts, including their job title and their email address. This will make it much less useful to use exported data in an LLM. Be sure to request a download before the end of November! https://www.linkedin.com/mypreferences/d/download-my-data",
+      "deepenKey": "50615937",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-23T17:44:07Z",
+      "ref": "I6",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "ba13c1d4bd",
+      "normUrl": "https://news.ycombinator.com/item?id=50615815",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Did Amazon Get Hacked?",
+      "url": "https://news.ycombinator.com/item?id=50615815",
+      "externalUrl": null,
+      "summary": "I just received 3 notifications. E-mail, text and one from the actual Amazon app. It even references the Fire 4k stick I use. These notifications are clearly bogus and not from Amazon. Anyone know of something going on? Obviously the emails could be fake and phishy, but the app notification is the main concern. Here is the email message: We noticed someone tried to connect your device to a new and unknown network. If this way you, no action is necessary. This new network connection will be allowed and not trigger a notification for future connection attempt.",
+      "deepenKey": "50615815",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-23T17:37:38Z",
+      "ref": "I7",
+      "screen": {
+        "keep": true,
+        "score": -4,
+        "hits": [
+          "要做硬件"
+        ],
+        "detail": {
+          "signal": -8,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6a27d385b4",
+      "normUrl": "https://news.ycombinator.com/item?id=50614966",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What Are You Learning?",
+      "url": "https://news.ycombinator.com/item?id=50614966",
+      "externalUrl": null,
+      "summary": "Curious to understand what people are learning especially because I keep wrestling with this depressing voice in my head - \"is learning anything even worth it in the age of AI\"",
+      "deepenKey": "50614966",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 10
+      },
+      "publishedAt": "2026-11-23T16:49:48Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": 3,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "aee0c17629",
+      "normUrl": "https://news.ycombinator.com/item?id=50614785",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Is Math Becoming Physics?",
+      "url": "https://news.ycombinator.com/item?id=50614785",
+      "externalUrl": null,
+      "summary": "So my interpretation is that math is becoming like physics. These massive proofs are actually dragging scattered ideas kicking and screaming from imagination to real space (by proving that it is TRUE), and making thereby proofs into objects, large inscrutable, tantalizing, beckoning megaliths, into phenomena that do not come with exposition, that do not come with explanations, and they have no obligation to explain themselves. Like a pyroelectric Ceylon stone, it is just there, it exists out there now and it is True.",
+      "deepenKey": "50614785",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-23T16:39:58Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6afa617863",
+      "normUrl": "https://news.ycombinator.com/item?id=50614468",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How likely are we to see a major quantum attack on modern crypto?",
+      "url": "https://news.ycombinator.com/item?id=50614468",
+      "externalUrl": null,
+      "summary": "With it seeming increasingly possible that there is major new math coming our way, it seems like it's only a matter of time before a major institution sees a quantum attack (on encrypted records, financial transactions, etc)",
+      "deepenKey": "50614468",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-23T16:23:47Z",
+      "ref": "I10",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "加密货币",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "6711d33992",
+      "normUrl": "https://news.ycombinator.com/item?id=50611758",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "wtf Is Wrong with HN submitters?!",
+      "url": "https://news.ycombinator.com/item?id=50611758",
+      "externalUrl": null,
+      "summary": "More precisely, why do we keep tolerating 5 duplicate links/stores that all report the same damn thing \"Jenson is nos back as CEO blah blah\". If you search for \"CEO\" on the front page, there are 5 articles/links to the same damn thing. Geez. Can we not do something as basic as a \"search\" and \"oh this already got psoted\"?",
+      "deepenKey": "50611758",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 7
+      },
+      "publishedAt": "2026-11-23T14:11:50Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5ec18acc46",
+      "normUrl": "https://news.ycombinator.com/item?id=50611732",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Jensen Is Back",
+      "url": "https://news.ycombinator.com/item?id=50611732",
+      "externalUrl": null,
+      "summary": "Stocks skyrocketed.",
+      "deepenKey": "50611732",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-23T14:10:52Z",
+      "ref": "I12",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "1a8094df2d",
+      "normUrl": "https://news.ycombinator.com/item?id=50611556",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Jensen Huang Back as CEO of Nvidia",
+      "url": "https://news.ycombinator.com/item?id=50611556",
+      "externalUrl": null,
+      "summary": "Just hit bloomberg 10 min ago",
+      "deepenKey": "50611556",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 5
+      },
+      "publishedAt": "2026-11-23T13:58:32Z",
+      "ref": "I13",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "a7fa229bac",
+      "normUrl": "https://news.ycombinator.com/item?id=50609843",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Has Opus 5.5 Been Nerfed?",
+      "url": "https://news.ycombinator.com/item?id=50609843",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50609843",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 4
+      },
+      "publishedAt": "2026-11-23T10:25:41Z",
+      "ref": "I14",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "a625c2cdb8",
+      "normUrl": "https://news.ycombinator.com/item?id=50605262",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "If you played GTA6 what did you like and didn't like about it?",
+      "url": "https://news.ycombinator.com/item?id=50605262",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50605262",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-22T23:33:28Z",
+      "ref": "I15",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "81e9a6bdc6",
+      "normUrl": "https://news.ycombinator.com/item?id=50601706",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are you clinging to the TUI to feel like a developer?",
+      "url": "https://news.ycombinator.com/item?id=50601706",
+      "externalUrl": null,
+      "summary": "Or, are you (really) still more productive in the TUI? Does curating the perfect set of shell programs in a multiplexer help you write better code? Ship stuff quicker?",
+      "deepenKey": "50601706",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 16
+      },
+      "publishedAt": "2026-11-22T17:20:41Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6e2c175bde",
+      "normUrl": "https://producthunt.com/products/replit",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Replit Missions",
+      "url": "https://www.producthunt.com/products/replit",
+      "summary": "Set a budget, coordinate teams of AI agents,",
+      "publishedAt": "2026-11-22T17:13:25.000Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Set a budget, coordinate teams of AI agents,",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Show HN: Superagents – connect spreadsheets to any database, API or MCP server",
+            "points": 35,
+            "url": "https://news.ycombinator.com/item?id=45186904"
+          }
+        ],
+        "fetchedAt": "2026-11-24T03:03:13.039Z"
+      }
+    },
+    {
+      "id": "4640173fc9",
+      "normUrl": "https://producthunt.com/products/spikely",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Spikely",
+      "url": "https://www.producthunt.com/products/spikely",
+      "summary": "Startup Metric Alerts for iPhone, Mac and Apple Watch",
+      "publishedAt": "2026-11-21T10:04:50.000Z",
+      "ref": "I18",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Startup Metric Alerts for iPhone, Mac and Apple Watch",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-24T03:03:32.603Z"
+      }
+    },
+    {
+      "id": "e2dcce38c9",
+      "normUrl": "https://producthunt.com/products/snowly-2",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Snowly",
+      "url": "https://www.producthunt.com/products/snowly-2",
+      "summary": "Plan ski trips with friends. Remember every run.",
+      "publishedAt": "2026-11-18T02:11:19.000Z",
+      "ref": "I19",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Plan ski trips with friends. Remember every run.",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-24T03:03:52.627Z"
+      }
+    },
+    {
+      "id": "5e6a7d29e6",
+      "normUrl": "https://producthunt.com/products/branchery",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Branchery",
+      "url": "https://www.producthunt.com/products/branchery",
+      "summary": "Branchery, a Git client for Mac",
+      "publishedAt": "2026-11-22T21:29:23.000Z",
+      "ref": "I20",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Branchery, a Git client for Mac",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-24T03:04:12.639Z"
+      }
+    },
+    {
+      "id": "06eff0fbcd",
+      "normUrl": "https://producthunt.com/products/motionflare",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Motionflare",
+      "url": "https://www.producthunt.com/products/motionflare",
+      "summary": "Turn your website into a stunning launch video in minutes",
+      "publishedAt": "2026-11-14T09:50:44.000Z",
+      "ref": "I21",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Turn your website into a stunning launch video in minutes",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-24T03:04:32.651Z"
+      }
+    },
+    {
+      "id": "414d87ca8e",
+      "normUrl": "https://producthunt.com/products/gauth-ai-course",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Gauth Personal Study Agent",
+      "url": "https://www.producthunt.com/products/gauth-ai-course",
+      "summary": "An AI study agent that remembers where you struggle",
+      "publishedAt": "2026-11-20T17:12:34.000Z",
+      "ref": "I22",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "An AI study agent that remembers where you struggle",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-24T03:04:53.082Z"
+      }
+    },
+    {
+      "id": "a64b847445",
+      "normUrl": "https://producthunt.com/products/hydrilla",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Hydrilla",
+      "url": "https://www.producthunt.com/products/hydrilla",
+      "summary": "Generate production-ready 3D assets with AI",
+      "publishedAt": "2026-03-12T16:31:13.000Z",
+      "ref": "I23",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Generate production-ready 3D assets with AI",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-24T03:05:12.690Z"
+      }
+    },
+    {
+      "id": "b39e64f928",
+      "normUrl": "https://producthunt.com/products/kopyo",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Kopyo",
+      "url": "https://www.producthunt.com/products/kopyo",
+      "summary": "The Mac clipboard manager that remembers everything",
+      "publishedAt": "2026-11-22T15:35:04.000Z",
+      "ref": "I24",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The Mac clipboard manager that remembers everything",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-24T03:05:32.709Z"
+      }
+    },
+    {
+      "id": "eec917593f",
+      "normUrl": "https://producthunt.com/products/naturefunding-org",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "naturefunding.org",
+      "url": "https://www.producthunt.com/products/naturefunding-org",
+      "summary": "Grants for nature projects, checked against funder pages",
+      "publishedAt": "2026-11-19T03:48:42.000Z",
+      "ref": "I25",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Grants for nature projects, checked against funder pages",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-24T03:05:52.728Z"
+      }
+    },
+    {
+      "id": "7da8b663ed",
+      "normUrl": "https://producthunt.com/products/plango",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Plango",
+      "url": "https://www.producthunt.com/products/plango",
+      "summary": "Plango lets your AI agents work all night - safely",
+      "publishedAt": "2026-11-22T17:08:26.000Z",
+      "ref": "I26",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Plango lets your AI agents work all night - safely",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-24T03:06:12.760Z"
+      }
+    },
+    {
+      "id": "42c92e5020",
+      "normUrl": "https://producthunt.com/products/leantake",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "LeanTake",
+      "url": "https://www.producthunt.com/products/leantake",
+      "summary": "4.1 MB native Mac screen recorder — zero export wait",
+      "publishedAt": "2026-11-22T12:14:55.000Z",
+      "ref": "I27",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "4.1 MB native Mac screen recorder — zero export wait",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-24T03:06:32.767Z"
+      }
+    },
+    {
+      "id": "b2b1cdaa4e",
+      "normUrl": "https://producthunt.com/products/open-source-solana-wallet",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Open Source Solana Wallet",
+      "url": "https://www.producthunt.com/products/open-source-solana-wallet",
+      "summary": "Your own keys, your very own network",
+      "publishedAt": "2026-11-22T22:44:38.000Z",
+      "ref": "I28",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Your own keys, your very own network",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Show HN: Krowdovi – Video-based indoor navigation on a DePIN creator economy",
+            "points": 10,
+            "url": "https://news.ycombinator.com/item?id=46484882"
+          },
+          {
+            "title": "Show HN: Zoneless – Open-source Stripe Connect clone with $0.002 fees using USDC",
+            "points": 15,
+            "url": "https://news.ycombinator.com/item?id=47704260"
+          }
+        ],
+        "fetchedAt": "2026-11-24T03:06:53.112Z"
+      }
+    },
+    {
+      "id": "6b5f72f4d2",
+      "normUrl": "https://producthunt.com/products/modem",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Modem",
+      "url": "https://www.producthunt.com/products/modem",
+      "summary": "Find, fix, and follow up on every customer concern",
+      "publishedAt": "2026-08-17T19:08:59.000Z",
+      "ref": "I29",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "b1e5d3c087",
+      "normUrl": "https://producthunt.com/products/mai-image-2-3",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "MAI Image 2.7",
+      "url": "https://www.producthunt.com/products/mai-image-2-3",
+      "summary": "Microsoft's image model with precise edits and Canvas",
+      "publishedAt": "2026-11-17T18:42:27.000Z",
+      "ref": "I30",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "b2e1204fdb",
+      "normUrl": "https://producthunt.com/products/chat-with-work",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Chat with Work",
+      "url": "https://www.producthunt.com/products/chat-with-work",
+      "summary": "AI bots in Europe. They work. You decide.",
+      "publishedAt": "2026-11-21T09:06:12.000Z",
+      "ref": "I31",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "4b3299291c",
+      "normUrl": "https://producthunt.com/products/tesla",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Tesla Self-Driving V15",
+      "url": "https://www.producthunt.com/products/tesla",
+      "summary": "Upgrading every part of the end-to-end driving network",
+      "publishedAt": "2026-11-22T02:23:40.000Z",
+      "ref": "I32",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "ba5b2a74f4",
+      "normUrl": "https://producthunt.com/products/omi-work",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Omi Work",
+      "url": "https://www.producthunt.com/products/omi-work",
+      "summary": "Omi can build anything. Now it finds your next 100 customers",
+      "publishedAt": "2026-11-22T08:35:25.000Z",
+      "ref": "I33",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e718240443",
+      "normUrl": "https://producthunt.com/products/strict",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Strict",
+      "url": "https://www.producthunt.com/products/strict",
+      "summary": "Run GitHub Actions on any spare Mac or Linux machine",
+      "publishedAt": "2026-11-22T23:04:09.000Z",
+      "ref": "I34",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "af2e776130",
+      "normUrl": "https://producthunt.com/products/figmamcp",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "FigmaMCP",
+      "url": "https://www.producthunt.com/products/figmamcp",
+      "summary": "Let Claude Code or Codex edit your open Figma file",
+      "publishedAt": "2026-11-22T23:28:02.000Z",
+      "ref": "I35",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    }
+  ],
+  "deepenedAt": "2026-11-24T03:06:53.112Z"
+}

@@ -1,21 +1,21 @@
 {
-  "fetchedAt": "2026-11-24T03:03:09.571Z",
+  "fetchedAt": "2026-11-25T00:46:04.800Z",
   "windowDays": 3,
-  "windowUntil": "2026-11-24T23:59:59.000Z",
+  "windowUntil": "2026-11-25T23:59:59.000Z",
   "sources": [
     {
       "id": "somebodymakethis",
       "name": "r/SomebodyMakeThis",
       "status": "error",
       "pool": true,
-      "error": "HTTP 404：2026-11-24T02:52:19Z https://rss.reddit.com/ Not Found"
+      "error": "HTTP 404：2026-11-25T00:35:38Z https://rss.reddit.com/ Not Found"
     },
     {
       "id": "reddit-search",
       "name": "Reddit 需求短语",
       "status": "error",
       "pool": true,
-      "error": "全部短语失败：is there an app that（HTTP 404：2026-11-24T02:53:05Z https://rs）；is there a tool that（HTTP 404：2026-11-24T02:54:15Z https://rs）；someone should build（HTTP 404：2026-11-24T02:55:00Z https://rs）；we still use spreadsheets（HTTP 404：2026-11-24T02:56:11Z https://rs）"
+      "error": "全部短语失败：is there an app that（HTTP 404：2026-11-25T00:36:03Z https://rs）；is there a tool that（HTTP 404：2026-11-25T00:37:13Z https://rs）；someone should build（HTTP 404：2026-11-25T00:38:23Z https://rs）；we still use spreadsheets（HTTP 404：2026-11-25T00:39:08Z https://rs）"
     },
     {
       "id": "softwarerecs",
@@ -28,7 +28,7 @@
       "id": "hn-ask",
       "name": "Ask HN",
       "status": "ok",
-      "items": 22,
+      "items": 24,
       "pool": true
     },
     {
@@ -43,28 +43,28 @@
       "name": "Reddit 付费信号",
       "status": "error",
       "pool": true,
-      "error": "全部短语失败：we currently pay（HTTP 404：2026-11-24T02:57:21Z https://rs）；we are paying for（HTTP 404：2026-11-24T02:58:06Z https://rs）；quoted us（HTTP 404：2026-11-24T02:59:17Z https://rs）；per seat per month（HTTP 404：2026-11-24T03:00:03Z https://rs）"
+      "error": "全部短语失败：we currently pay（HTTP 404：2026-11-25T00:40:18Z https://rs）；we are paying for（HTTP 404：2026-11-25T00:41:03Z https://rs）；quoted us（HTTP 404：2026-11-25T00:42:14Z https://rs）；per seat per month（HTTP 404：2026-11-25T00:43:24Z https://rs）"
     },
     {
       "id": "msp",
       "name": "r/msp",
       "status": "error",
       "pool": true,
-      "error": "HTTP 404：2026-11-24T03:01:13Z https://rss.reddit.com/ Not Found"
+      "error": "HTTP 404：2026-11-25T00:44:09Z https://rss.reddit.com/ Not Found"
     },
     {
       "id": "sysadmin",
       "name": "r/sysadmin",
       "status": "error",
       "pool": true,
-      "error": "HTTP 404：2026-11-24T03:02:24Z https://rss.reddit.com/ Not Found"
+      "error": "HTTP 404：2026-11-25T00:45:19Z https://rss.reddit.com/ Not Found"
     },
     {
       "id": "microsaas",
       "name": "r/microsaas",
       "status": "error",
       "pool": true,
-      "error": "HTTP 404：2026-11-24T03:03:09Z https://rss.reddit.com/ Not Found"
+      "error": "HTTP 404：2026-11-25T00:46:04Z https://rss.reddit.com/ Not Found"
     },
     {
       "id": "ycrfs",
@@ -91,7 +91,7 @@
       "id": "showhn",
       "name": "Show HN",
       "status": "ok",
-      "items": 0,
+      "items": 1,
       "pool": true
     },
     {
@@ -111,6 +111,46 @@
   ],
   "items": [
     {
+      "id": "f123eb5769",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/54188/on-premise-alternative-for-aws-qldb",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "On-premise alternative for AWS QLDB",
+      "url": "https://softwarerecs.stackexchange.com/questions/54188/on-premise-alternative-for-aws-qldb",
+      "summary": "What is the best alternative for on-premise solution with the same features as Quantum Ledger Database - AWS QLDB ? transparent, immutable, and cryptographically verifiable transaction log owned by a central authority",
+      "deepenKey": "54188",
+      "signal": {
+        "score": 2,
+        "views": 918,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2019-01-02T12:38:48.000Z"
+    },
+    {
+      "id": "933d9a9159",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95836/how-do-i-give-my-hermes-agents-permanent-memory-institutional-knowledge-and-in",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "How do I give my Hermes agents permanent memory, institutional knowledge, and intelligent model routing?",
+      "url": "https://softwarerecs.stackexchange.com/questions/95836/how-do-i-give-my-hermes-agents-permanent-memory-institutional-knowledge-and-in",
+      "summary": "I fundamentally want two things from my Hermes agents: I want them to fucking remember everything I ever tell them, and I want them to develop an institutional memory comparable to that of an actual organization. By persistent memory, I mean the ability to reliably recall previous conversations, decisions, preferences, instructions, and their underlying rationale, irrespective of how much time has elapsed, how many sessions have occurred, or which model is being used.",
+      "deepenKey": "95836",
+      "signal": {
+        "score": 0,
+        "views": 3,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2026-11-24T23:38:58.000Z"
+    },
+    {
       "id": "e5f8ded010",
       "normUrl": "https://softwarerecs.stackexchange.com/questions/95480/looking-for-a-free-open-source-vs-code-ai-coding-assistant-similar-to-github-cop",
       "sourceId": "softwarerecs",
@@ -124,7 +164,7 @@
       "deepenKey": "95480",
       "signal": {
         "score": 3,
-        "views": 830,
+        "views": 838,
         "answers": 2,
         "unanswered": true
       },
@@ -144,7 +184,7 @@
       "deepenKey": "93677",
       "signal": {
         "score": 0,
-        "views": 38,
+        "views": 39,
         "answers": 1,
         "unanswered": true
       },
@@ -184,7 +224,7 @@
       "deepenKey": "78109",
       "signal": {
         "score": 0,
-        "views": 498,
+        "views": 499,
         "answers": 1,
         "unanswered": true
       },
@@ -244,7 +284,7 @@
       "deepenKey": "95812",
       "signal": {
         "score": 0,
-        "views": 18,
+        "views": 19,
         "answers": 0,
         "unanswered": true
       },
@@ -404,7 +444,7 @@
       "deepenKey": "52291",
       "signal": {
         "score": 3,
-        "views": 58,
+        "views": 59,
         "answers": 1,
         "unanswered": true
       },
@@ -424,7 +464,7 @@
       "deepenKey": "53313",
       "signal": {
         "score": 2,
-        "views": 449,
+        "views": 450,
         "answers": 3,
         "unanswered": true
       },
@@ -464,7 +504,7 @@
       "deepenKey": "95347",
       "signal": {
         "score": 0,
-        "views": 23,
+        "views": 24,
         "answers": 1,
         "unanswered": true
       },
@@ -544,7 +584,7 @@
       "deepenKey": "93592",
       "signal": {
         "score": 0,
-        "views": 40,
+        "views": 41,
         "answers": 0,
         "unanswered": true
       },
@@ -571,44 +611,244 @@
       "publishedAt": "2024-01-13T16:57:08.000Z"
     },
     {
-      "id": "944d3c2a82",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/95777/does-any-software-provide-a-graphical-interface-to-sign-text-with-an-ssh-key",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "id": "077b9a7b9f",
+      "normUrl": "https://news.ycombinator.com/item?id=50633601",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "Does any software provide a graphical interface to sign text with an SSH key?",
-      "url": "https://softwarerecs.stackexchange.com/questions/95777/does-any-software-provide-a-graphical-interface-to-sign-text-with-an-ssh-key",
-      "summary": "KGPG (and, I believe, Kleopatra) provide an interface that allows me to conveniently sign arbitrary text with an enumerated PGP key. Does anything provide this for ssh-keygen -Y sign ? I ask due to what community.bitwarden.com/t/79185/2 describes: Bitwarden supports storing and providing SSH keys. I store my SSH keys inside Bitwarden. Bitwarden does not support PGP. I am not particularly worried about the apparent lack of SSH key-servers, considering that gitlab.com/api/v4/users/7984176/keys verifies mine.",
-      "deepenKey": "95777",
+      "title": "Am I the only one whose AI hype is cooling down a lot?",
+      "url": "https://news.ycombinator.com/item?id=50633601",
+      "externalUrl": null,
+      "summary": "I am in the industry for 15+ years, studied CS, and actually, never really \"liked\" programming. It was a means to an end. I have written about programming (and published books), so don't get me wrong: I like the craft and I miss the sense of accomplishment after hours and days of struggling and fixing a problem with 2 lines of code. What I see in my personal spending and habits: I get free tokens from my company, and I spent between 3k-5k a month at the start of the year. Models got cheaper, but also: The usefullness ran its course a little bit for me.",
+      "deepenKey": "50633601",
+      "via": null,
       "signal": {
-        "score": 1,
-        "views": 54,
-        "answers": 0,
-        "unanswered": true
+        "points": 12,
+        "comments": 10
       },
-      "publishedAt": "2026-11-09T00:44:03.000Z"
+      "publishedAt": "2026-11-24T19:51:01Z"
     },
     {
-      "id": "9721ff4637",
-      "normUrl": "https://softwarerecs.stackexchange.com/questions/77058/how-to-separate-human-from-non-human-visits-in-webserver-access-logs",
-      "sourceId": "softwarerecs",
-      "source": "Software Recommendations",
-      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "id": "6e63ccc053",
+      "normUrl": "https://news.ycombinator.com/item?id=50633280",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "How to separate human from non-human visits in webserver access logs?",
-      "url": "https://softwarerecs.stackexchange.com/questions/77058/how-to-separate-human-from-non-human-visits-in-webserver-access-logs",
-      "summary": "I need to perform usage analysis on a few websites based on no more than standard access logs, e.g. Apache's access_log . Entries have a timestamp, a URL path, a client IP address, a HTTP status, and a few more bits, but no USER_AGENT or HTTP_REFERER . Most of the sites are low-volume, so the majority of visits is from bots: crawlers from search engine operators, SEO optimizers, vulnerability scanners, etcetera. Such automated visits must be excluded from the analysis as much as possible. 100% accuracy isn't required, but 90% would be nice. Are any tools or resources available for doing this?",
-      "deepenKey": "77058",
+      "title": "What Happened to Midjourney?",
+      "url": "https://news.ycombinator.com/item?id=50633280",
+      "externalUrl": null,
+      "summary": "A model that was very popular 2–3 years ago, but now I haven't heard anything about it at all.",
+      "deepenKey": "50633280",
+      "via": null,
       "signal": {
-        "score": 0,
-        "views": 37,
-        "answers": 1,
-        "unanswered": true
+        "points": 5,
+        "comments": 1
       },
-      "publishedAt": "2020-11-30T16:02:04.000Z"
+      "publishedAt": "2026-11-24T19:32:14Z"
+    },
+    {
+      "id": "780fb9905e",
+      "normUrl": "https://news.ycombinator.com/item?id=50630985",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Its 2026 and there is still not good Email client for macOS. Why?",
+      "url": "https://news.ycombinator.com/item?id=50630985",
+      "externalUrl": null,
+      "summary": "Which can handling inboxes from multiple accounts and follow the Apple ecosystem branding guidlines.",
+      "deepenKey": "50630985",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 8
+      },
+      "publishedAt": "2026-11-24T16:57:03Z"
+    },
+    {
+      "id": "bbef1e94d1",
+      "normUrl": "https://news.ycombinator.com/item?id=50630809",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Anthropic is accusing my company of distilling. How can I prove I'm not?",
+      "url": "https://news.ycombinator.com/item?id=50630809",
+      "externalUrl": null,
+      "summary": "Basically the title. Anthropic is accusing me and my company of using their API for distillation. We are not. We do not train our own models. Our only usage which I think could get us flagged is automated regression benchmarks whenever we change some AI settings. But this is not against their policy? Now I've got 24h to prove we didn't. Has anyone dealt with this too? How can you prove that you are not distilling Anthropic models without breaking your user's privacy?",
+      "deepenKey": "50630809",
+      "via": null,
+      "signal": {
+        "points": 217,
+        "comments": 163
+      },
+      "publishedAt": "2026-11-24T16:45:44Z"
+    },
+    {
+      "id": "c0e4faf619",
+      "normUrl": "https://news.ycombinator.com/item?id=50630776",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are junior devs beyond screwed?",
+      "url": "https://news.ycombinator.com/item?id=50630776",
+      "externalUrl": null,
+      "summary": "I decided to finish my degree at the ripe age of 30 and I can't get an internship even though I attended a T25 school. I'm well away of power dynamics and nepotism and how the real world works, especially in the age of DEI and offshoring. I was banking on being able to at least partially overcome that but it seems as the the very existence of such an opportunity has been completely annihilated. If you're not prodigious, a nepo hire, or a startup founder it seems like you're perpetually taking it up the arse.",
+      "deepenKey": "50630776",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-24T16:43:31Z"
+    },
+    {
+      "id": "37bd589c78",
+      "normUrl": "https://news.ycombinator.com/item?id=50626772",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Everything will get breached. How do you limit the blast radius?",
+      "url": "https://news.ycombinator.com/item?id=50626772",
+      "externalUrl": null,
+      "summary": "Got another breach email this morning, this travel operator had my passport number and travel history stored. At this point I feel every service we use is going to get dumped eventually. I consider unique passwords and hardware 2FA as no brainers, they stop credential stuffing, but they don't help when a service leaks your actual identity. There are just so many services that require personal data like your passport number, phone number etc.",
+      "deepenKey": "50626772",
+      "via": null,
+      "signal": {
+        "points": 12,
+        "comments": 8
+      },
+      "publishedAt": "2026-11-24T11:39:11Z"
+    },
+    {
+      "id": "91d4c1b5c3",
+      "normUrl": "https://news.ycombinator.com/item?id=50625996",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Why are so many services using email magic links for login?",
+      "url": "https://news.ycombinator.com/item?id=50625996",
+      "externalUrl": null,
+      "summary": "I've noticed a big uptick in login screens defaulting to sending email magic links rather than asking for a password. Notably Claude does this (which during the Outlook outage last week completely blocked me from accessing it). I can only assume that this is a misguided attempt to make login easier for the people who use the Forgot Password link all the the time instead of a proper password manager. It's 1FA where your single factor is access a different service (your email) rather than a known secret. Is there an actual best practice HIG or security guideline that recommends this approach?",
+      "deepenKey": "50625996",
+      "via": null,
+      "signal": {
+        "points": 16,
+        "comments": 15
+      },
+      "publishedAt": "2026-11-24T09:53:26Z"
+    },
+    {
+      "id": "634f770f67",
+      "normUrl": "https://news.ycombinator.com/item?id=50625683",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Does anyone gets hired with himalaya, well found or other remote hiring sites?",
+      "url": "https://news.ycombinator.com/item?id=50625683",
+      "externalUrl": null,
+      "summary": "I applied to many remote roles nearly 50+ on these sites but I see no movement/. Just FYI, I've a good profile and have worked for good startups. For testing, I applied to mini roles as well (extremely less pay) and they too either didn't respond or my application got expired. (btw, a few rejected me as well) I almost tried all the bigger names mentioned in this list: https://www.placeprep.app/blogs/remote-job-sites/ and all felt same. Now, idk what should I do. Layoffs are on peak and it's becoming so hard to find a good gig. Don't suggest networking, I'm bad at this and don't like it much.",
+      "deepenKey": "50625683",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-24T09:12:14Z"
+    },
+    {
+      "id": "9d512ffeb8",
+      "normUrl": "https://news.ycombinator.com/item?id=50625515",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Today marks the first anniversary of Opus 4.5's release",
+      "url": "https://news.ycombinator.com/item?id=50625515",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50625515",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-24T08:48:59Z"
+    },
+    {
+      "id": "0789e88704",
+      "normUrl": "https://news.ycombinator.com/item?id=50625337",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Nvidia made $2.1B by shorting stocks",
+      "url": "https://news.ycombinator.com/item?id=50625337",
+      "externalUrl": null,
+      "summary": "According to insider information, Nvidia’s board of directors is conducting an internal investigation into gains of over $2.1 billion made via short positions following news of Jensen Huang’s departure from—and subsequent return to—the role of Nvidia CEO. Details remain scarce at this time.",
+      "deepenKey": "50625337",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-24T08:26:56Z"
+    },
+    {
+      "id": "5d95bb3492",
+      "normUrl": "https://news.ycombinator.com/item?id=50622809",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Coworker rejects PR (one month in) because it does not meet his standards",
+      "url": "https://news.ycombinator.com/item?id=50622809",
+      "externalUrl": null,
+      "summary": "just joined this new team about 1 year into their development. Demoed the work to the team about two weeks ago (half way in). Work is practically complete & runs well no issues. I create PR & assign the two PR reviewers (one my rank another a rank above me). one colleague (the one at my level) leaves some constructive comments no functional changes.",
+      "deepenKey": "50622809",
+      "via": null,
+      "signal": {
+        "points": 18,
+        "comments": 40
+      },
+      "publishedAt": "2026-11-24T02:31:21Z"
+    },
+    {
+      "id": "f04f260c77",
+      "normUrl": "https://news.ycombinator.com/item?id=50621878",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Claude Opus 4.5 turns one year old today",
+      "url": "https://news.ycombinator.com/item?id=50621878",
+      "externalUrl": null,
+      "summary": "Just one year! It feels like much longer. The entire industry is different now and I think this is the widely accepted turning point for agentic coding. God knows what we'll see this time next year. Definitely an interesting thread to read back on: https://news.ycombinator.com/item?id=46037637",
+      "deepenKey": "50621878",
+      "via": null,
+      "signal": {
+        "points": 7,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-24T00:44:07Z"
     },
     {
       "id": "21cec39bcd",
@@ -645,8 +885,8 @@
       "deepenKey": "50620169",
       "via": null,
       "signal": {
-        "points": 4,
-        "comments": 10
+        "points": 6,
+        "comments": 17
       },
       "publishedAt": "2026-11-23T22:14:54Z"
     },
@@ -665,7 +905,7 @@
       "deepenKey": "50615937",
       "via": null,
       "signal": {
-        "points": 4,
+        "points": 5,
         "comments": 0
       },
       "publishedAt": "2026-11-23T17:44:07Z"
@@ -685,7 +925,7 @@
       "deepenKey": "50615815",
       "via": null,
       "signal": {
-        "points": 3,
+        "points": 4,
         "comments": 1
       },
       "publishedAt": "2026-11-23T17:37:38Z"
@@ -705,8 +945,8 @@
       "deepenKey": "50614966",
       "via": null,
       "signal": {
-        "points": 4,
-        "comments": 10
+        "points": 7,
+        "comments": 17
       },
       "publishedAt": "2026-11-23T16:49:48Z"
     },
@@ -725,7 +965,7 @@
       "deepenKey": "50614785",
       "via": null,
       "signal": {
-        "points": 3,
+        "points": 4,
         "comments": 3
       },
       "publishedAt": "2026-11-23T16:39:58Z"
@@ -745,8 +985,8 @@
       "deepenKey": "50614468",
       "via": null,
       "signal": {
-        "points": 3,
-        "comments": 3
+        "points": 5,
+        "comments": 4
       },
       "publishedAt": "2026-11-23T16:23:47Z"
     },
@@ -766,7 +1006,7 @@
       "via": null,
       "signal": {
         "points": 4,
-        "comments": 7
+        "comments": 8
       },
       "publishedAt": "2026-11-23T14:11:50Z"
     },
@@ -826,229 +1066,29 @@
       "via": null,
       "signal": {
         "points": 4,
-        "comments": 4
+        "comments": 5
       },
       "publishedAt": "2026-11-23T10:25:41Z"
     },
     {
-      "id": "a625c2cdb8",
-      "normUrl": "https://news.ycombinator.com/item?id=50605262",
+      "id": "b476202eab",
+      "normUrl": "https://news.ycombinator.com/item?id=50609394",
       "sourceId": "hn-ask",
       "source": "Ask HN",
       "sourceHome": "https://news.ycombinator.com/ask",
       "side": "demand",
       "pool": true,
-      "title": "If you played GTA6 what did you like and didn't like about it?",
-      "url": "https://news.ycombinator.com/item?id=50605262",
+      "title": "How are tech recruiters assessed on their recruiting skills?",
+      "url": "https://news.ycombinator.com/item?id=50609394",
       "externalUrl": null,
-      "summary": null,
-      "deepenKey": "50605262",
-      "via": null,
-      "signal": {
-        "points": 4,
-        "comments": 3
-      },
-      "publishedAt": "2026-11-22T23:33:28Z"
-    },
-    {
-      "id": "6fd9f00d37",
-      "normUrl": "https://news.ycombinator.com/item?id=50602740",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Are startups today worth it even in a best case scenario?",
-      "url": "https://news.ycombinator.com/item?id=50602740",
-      "externalUrl": null,
-      "summary": "I'm gonna open this with the disclaimer that this is purely a financial and risk comparison post. No one is complaining that we are poorly compensated. It is good to discuss compensation so we can make informed and educated decisions when deciding how to commit the next few years of our lives. A close friend of mine joined an AI startup (being intentionally vague) around 1.5 years ago and despite the company doing extremely well on valuation, I'm surprised at how he's not really better off than just working at a large tech company.",
-      "deepenKey": "50602740",
-      "via": null,
-      "signal": {
-        "points": 6,
-        "comments": 5
-      },
-      "publishedAt": "2026-11-22T18:57:26Z"
-    },
-    {
-      "id": "a6f369ada2",
-      "normUrl": "https://news.ycombinator.com/item?id=50602128",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Will Solving a legendary math problem with AI be a candidate for a Fields Medal?",
-      "url": "https://news.ycombinator.com/item?id=50602128",
-      "externalUrl": null,
-      "summary": null,
-      "deepenKey": "50602128",
-      "via": null,
-      "signal": {
-        "points": 7,
-        "comments": 8
-      },
-      "publishedAt": "2026-11-22T17:59:16Z"
-    },
-    {
-      "id": "e55492b43d",
-      "normUrl": "https://news.ycombinator.com/item?id=50601879",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "State of the Captcha",
-      "url": "https://news.ycombinator.com/item?id=50601879",
-      "externalUrl": null,
-      "summary": "Are captchas still useful? If you are using Captchas to protect resources from automated abuse or you have experience with solving captchas using automation, what are your experiences? Are there still any captchas that humans can solve but AI struggles with or that are at least expensive to solve? What about accessible captchas for visually impaired users? Generally the industry seems to move to proof of work and fingerprinting and behavioral analysis. Is anyone successful with running their own traditional captchas for their purpose? Any insights are appreciated.",
-      "deepenKey": "50601879",
-      "via": null,
-      "signal": {
-        "points": 4,
-        "comments": 0
-      },
-      "publishedAt": "2026-11-22T17:38:22Z"
-    },
-    {
-      "id": "81e9a6bdc6",
-      "normUrl": "https://news.ycombinator.com/item?id=50601706",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Are you clinging to the TUI to feel like a developer?",
-      "url": "https://news.ycombinator.com/item?id=50601706",
-      "externalUrl": null,
-      "summary": "Or, are you (really) still more productive in the TUI? Does curating the perfect set of shell programs in a multiplexer help you write better code? Ship stuff quicker?",
-      "deepenKey": "50601706",
-      "via": null,
-      "signal": {
-        "points": 6,
-        "comments": 16
-      },
-      "publishedAt": "2026-11-22T17:20:41Z"
-    },
-    {
-      "id": "aa1a0faf00",
-      "normUrl": "https://news.ycombinator.com/item?id=50601623",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Why do these LLM models seem to improve like clockwork over time?",
-      "url": "https://news.ycombinator.com/item?id=50601623",
-      "externalUrl": null,
-      "summary": "It seems like these AI labs are able to guarantee more advanced models over time. How are they able to do this? Are they continually finding better architectures and learning algorithms or maybe even better data? Or are they simply making the models bigger?",
-      "deepenKey": "50601623",
+      "summary": "I've been working in tech for around 10 years but I have absolutely no experience at all in tech recruiting. However I have had the experience (well, often displeasure) of going through tech recruiters and the tech hiring process when applying for jobs during my career. As with probably many of you, I'm quite frustrated with how tech hiring has been in the last year or two during the AI/LLM era.",
+      "deepenKey": "50609394",
       "via": null,
       "signal": {
         "points": 3,
-        "comments": 3
-      },
-      "publishedAt": "2026-11-22T17:14:00Z"
-    },
-    {
-      "id": "2653cf2f96",
-      "normUrl": "https://news.ycombinator.com/item?id=50600771",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Are the trades a safe career transition?",
-      "url": "https://news.ycombinator.com/item?id=50600771",
-      "externalUrl": null,
-      "summary": "I am a software guy. Engineering degree but not PEng. Im thinking of jumping ship because i dont see much of a future in the career. Ai has me a little discouraged I need a few decades of at least mild security to get to retirement... Are the trades safe? Im worried about homeowners and companies ending up with robots that do all those tasks. Not next year obviously, but it could happen before the career change fully pays off And if not the trades, then what is a better bet?",
-      "deepenKey": "50600771",
-      "via": null,
-      "signal": {
-        "points": 56,
-        "comments": 93
-      },
-      "publishedAt": "2026-11-22T15:52:33Z"
-    },
-    {
-      "id": "871c8a63c8",
-      "normUrl": "https://news.ycombinator.com/item?id=50598355",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Where the company's employees launch the tools that Claude created",
-      "url": "https://news.ycombinator.com/item?id=50598355",
-      "externalUrl": null,
-      "summary": "Hi everyone, Here is a situation: In a typical company these days, many employees are creating tools using AI (Claude & Cursor) to help with their work. They run these tools on their own computers, which no one else can use or on a builder platform with a public URL and either no login or a hand-rolled one the agent wrote. Question: Where do they run this? Who can see it? What happens if an employee leaves the company?",
-      "deepenKey": "50598355",
-      "via": null,
-      "signal": {
-        "points": 5,
-        "comments": 5
-      },
-      "publishedAt": "2026-11-22T10:47:34Z"
-    },
-    {
-      "id": "d7a82540f8",
-      "normUrl": "https://news.ycombinator.com/item?id=50597235",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Is prompt tuning still a thing today? Anybody still using the likes of DSPy?",
-      "url": "https://news.ycombinator.com/item?id=50597235",
-      "externalUrl": null,
-      "summary": "Just a random thought that came up when I was discussing AI engineering challenges with some folks. Prompt engineering/tuning was definitely \"a thing\" during the ChatGPT-3.5 era. There were all sorts of fancy rule of thumb people were advocating, as well as formal approaches like GEPA that were then incorporated into frameworks like DSPy which were also briefly popular. Having said that, it's been a while since I've come across conversations on this topic, which means it's either dead or it's already working well in production.",
-      "deepenKey": "50597235",
-      "via": null,
-      "signal": {
-        "points": 3,
-        "comments": 1
-      },
-      "publishedAt": "2026-11-22T07:49:05Z"
-    },
-    {
-      "id": "e8bbb067f2",
-      "normUrl": "https://news.ycombinator.com/item?id=50597005",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "Is Anthropic being public better or worse for your org?",
-      "url": "https://news.ycombinator.com/item?id=50597005",
-      "externalUrl": null,
-      "summary": "Now that Anthropic has a \"fiduciary duty to maximize shareholder value\"*, have you or your org started thinking about what that means medium to long term? For example, if you are using their models in production or production-adjacent systems, how do price changes impact your business? * I know they have a complicated governing system, but at the end of the day they have different pressures now than when they were private.",
-      "deepenKey": "50597005",
-      "via": null,
-      "signal": {
-        "points": 8,
-        "comments": 11
-      },
-      "publishedAt": "2026-11-22T06:59:40Z"
-    },
-    {
-      "id": "c8f24844a3",
-      "normUrl": "https://news.ycombinator.com/item?id=50596564",
-      "sourceId": "hn-ask",
-      "source": "Ask HN",
-      "sourceHome": "https://news.ycombinator.com/ask",
-      "side": "demand",
-      "pool": true,
-      "title": "What made you pivot your interest to the field of AI?",
-      "url": "https://news.ycombinator.com/item?id=50596564",
-      "externalUrl": null,
-      "summary": "If you work in the field of AI, machine learning what made you do so? What sparked your interest and which skills and resources helped you along the way?",
-      "deepenKey": "50596564",
-      "via": null,
-      "signal": {
-        "points": 5,
         "comments": 4
       },
-      "publishedAt": "2026-11-22T05:20:06Z"
+      "publishedAt": "2026-11-23T09:34:05Z"
     },
     {
       "id": "687a855ace",
@@ -1080,11 +1120,47 @@
       "url": "https://github.com/anthropics/claude-code/issues/102264",
       "summary": "### Preflight Checklist - [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet - [x] This is a single feature request (not multiple features) ### Problem Statement After the latest Desktop update (Windows, Code tab), the stats panel that used to show on the new session screen is gone: Overview/Models tabs, Sessions, Messages, Total tokens, Active days, Peak hour, Favorite model, the activity heatmap and the All/30d/7d filters.",
       "signal": {
-        "thumbsUp": 106,
+        "thumbsUp": 107,
         "comments": 3,
         "repo": "anthropics/claude-code"
       },
       "publishedAt": "2026-10-15T03:30:00Z"
+    },
+    {
+      "id": "4d92b6529a",
+      "normUrl": "https://github.com/openai/codex/issues/58530",
+      "sourceId": "gh-requests",
+      "source": "GitHub 高赞功能请求",
+      "sourceHome": "https://github.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "December 2026 usage limits: preserve access to ChatGPT High and Codex/Work on Plus",
+      "url": "https://github.com/openai/codex/issues/58530",
+      "summary": "## Executive summary Thank you to the OpenAI team for continuing to make your most capable models and powerful AI experiences accessible to Plus subscribers. I am genuinely grateful for the opportunities this has given me as an individual creator. **Please preserve the ability to use ChatGPT High and Codex/Work together on Plus without losing access to advanced reasoning after a long agent session. I would welcome a shared allowance if it preserves or improves the practical capacity available today.** Before the December transition, I respectfully ask OpenAI to: 1.",
+      "signal": {
+        "thumbsUp": 65,
+        "comments": 40,
+        "repo": "openai/codex"
+      },
+      "publishedAt": "2026-10-31T10:17:51Z"
+    },
+    {
+      "id": "02fbd0d2a4",
+      "normUrl": "https://github.com/ShareX/ShareX/issues/8952",
+      "sourceId": "gh-requests",
+      "source": "GitHub 高赞功能请求",
+      "sourceHome": "https://github.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Choice between the new UI of 22.2 and old one",
+      "url": "https://github.com/ShareX/ShareX/issues/8952",
+      "summary": "Greetings, Is it possible to give an option of reverting the new UI? Personally, I don't like the new (monochrome) UI. Regards,",
+      "signal": {
+        "thumbsUp": 79,
+        "comments": 85,
+        "repo": "ShareX/ShareX"
+      },
+      "publishedAt": "2026-11-06T15:10:40Z"
     },
     {
       "id": "3be80953f8",
@@ -1103,42 +1179,6 @@
         "repo": "NuvioMedia/NuvioTV"
       },
       "publishedAt": "2026-10-19T13:56:44Z"
-    },
-    {
-      "id": "02fbd0d2a4",
-      "normUrl": "https://github.com/ShareX/ShareX/issues/8952",
-      "sourceId": "gh-requests",
-      "source": "GitHub 高赞功能请求",
-      "sourceHome": "https://github.com/",
-      "side": "demand",
-      "pool": true,
-      "title": "Choice between the new UI of 22.2 and old one",
-      "url": "https://github.com/ShareX/ShareX/issues/8952",
-      "summary": "Greetings, Is it possible to give an option of reverting the new UI? Personally, I don't like the new (monochrome) UI. Regards,",
-      "signal": {
-        "thumbsUp": 78,
-        "comments": 85,
-        "repo": "ShareX/ShareX"
-      },
-      "publishedAt": "2026-11-06T15:10:40Z"
-    },
-    {
-      "id": "4d92b6529a",
-      "normUrl": "https://github.com/openai/codex/issues/58530",
-      "sourceId": "gh-requests",
-      "source": "GitHub 高赞功能请求",
-      "sourceHome": "https://github.com/",
-      "side": "demand",
-      "pool": true,
-      "title": "Please preserve separate ChatGPT High and Codex/Work allowances on Plus (confirmed December 2026 change)",
-      "url": "https://github.com/openai/codex/issues/58530",
-      "summary": "## Please keep the path from a first idea to a first income open — preserve independent ChatGPT High and Codex/Work allowances **Update — November 9, 2026: OpenAI has officially confirmed the planned December change.** When I opened this issue on October 31, the upcoming shared allowance was still being discussed as a reported change.",
-      "signal": {
-        "thumbsUp": 60,
-        "comments": 37,
-        "repo": "openai/codex"
-      },
-      "publishedAt": "2026-10-31T10:17:51Z"
     },
     {
       "id": "693fe41f8e",
@@ -1172,264 +1212,284 @@
       "publishedAt": null
     },
     {
-      "id": "6e2c175bde",
-      "normUrl": "https://producthunt.com/products/replit",
+      "id": "02bb14f202",
+      "normUrl": "https://producthunt.com/products/frwrd-to",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Replit Missions",
-      "url": "https://www.producthunt.com/products/replit",
-      "summary": "Set a budget, coordinate teams of AI agents,",
-      "publishedAt": "2026-11-22T17:13:25.000Z"
+      "title": "frwrd.to",
+      "url": "https://www.producthunt.com/products/frwrd-to",
+      "summary": "Your link in bio, sorted by your AI in one message",
+      "publishedAt": "2026-11-23T12:34:54.000Z"
     },
     {
-      "id": "4640173fc9",
-      "normUrl": "https://producthunt.com/products/spikely",
+      "id": "3e9c1e5529",
+      "normUrl": "https://producthunt.com/products/wellbreak",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Spikely",
-      "url": "https://www.producthunt.com/products/spikely",
-      "summary": "Startup Metric Alerts for iPhone, Mac and Apple Watch",
-      "publishedAt": "2026-11-21T10:04:50.000Z"
+      "title": "Wellbreak",
+      "url": "https://www.producthunt.com/products/wellbreak",
+      "summary": "Your wellbeing buddy in Mac's notch",
+      "publishedAt": "2026-11-23T19:09:40.000Z"
     },
     {
-      "id": "e2dcce38c9",
-      "normUrl": "https://producthunt.com/products/snowly-2",
+      "id": "7b8f0db221",
+      "normUrl": "https://producthunt.com/products/astor",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Snowly",
-      "url": "https://www.producthunt.com/products/snowly-2",
-      "summary": "Plan ski trips with friends. Remember every run.",
-      "publishedAt": "2026-11-18T02:11:19.000Z"
+      "title": "Astor",
+      "url": "https://www.producthunt.com/products/astor",
+      "summary": "AI Thesis Investing",
+      "publishedAt": "2026-11-19T02:44:24.000Z"
     },
     {
-      "id": "5e6a7d29e6",
-      "normUrl": "https://producthunt.com/products/branchery",
+      "id": "0470cd83a6",
+      "normUrl": "https://producthunt.com/products/prates",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Branchery",
-      "url": "https://www.producthunt.com/products/branchery",
-      "summary": "Branchery, a Git client for Mac",
-      "publishedAt": "2026-11-22T21:29:23.000Z"
+      "title": "Prates",
+      "url": "https://www.producthunt.com/products/prates",
+      "summary": "Learns how you write, then writes exactly as you would",
+      "publishedAt": "2026-11-21T14:13:49.000Z"
     },
     {
-      "id": "06eff0fbcd",
-      "normUrl": "https://producthunt.com/products/motionflare",
+      "id": "f3834a29cc",
+      "normUrl": "https://producthunt.com/products/adanotch",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Motionflare",
-      "url": "https://www.producthunt.com/products/motionflare",
-      "summary": "Turn your website into a stunning launch video in minutes",
-      "publishedAt": "2026-11-14T09:50:44.000Z"
+      "title": "Adanotch",
+      "url": "https://www.producthunt.com/products/adanotch",
+      "summary": "A live Dynamic Island for your MacBook notch",
+      "publishedAt": "2026-11-17T20:36:39.000Z"
     },
     {
-      "id": "414d87ca8e",
-      "normUrl": "https://producthunt.com/products/gauth-ai-course",
+      "id": "7544d6de3d",
+      "normUrl": "https://producthunt.com/products/astrolabio",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Gauth Personal Study Agent",
-      "url": "https://www.producthunt.com/products/gauth-ai-course",
-      "summary": "An AI study agent that remembers where you struggle",
-      "publishedAt": "2026-11-20T17:12:34.000Z"
+      "title": "Astrolabio",
+      "url": "https://www.producthunt.com/products/astrolabio",
+      "summary": "Your AIs pick up right where you left off, on your Mac",
+      "publishedAt": "2026-11-23T13:39:26.000Z"
     },
     {
-      "id": "a64b847445",
-      "normUrl": "https://producthunt.com/products/hydrilla",
+      "id": "92d7c4c539",
+      "normUrl": "https://producthunt.com/products/willow-voice",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Hydrilla",
-      "url": "https://www.producthunt.com/products/hydrilla",
-      "summary": "Generate production-ready 3D assets with AI",
-      "publishedAt": "2026-03-12T16:31:13.000Z"
+      "title": "Willow iOS 2.0",
+      "url": "https://www.producthunt.com/products/willow-voice",
+      "summary": "No switching apps while you dictate",
+      "publishedAt": "2026-11-24T06:38:15.000Z"
     },
     {
-      "id": "b39e64f928",
-      "normUrl": "https://producthunt.com/products/kopyo",
+      "id": "502f753b36",
+      "normUrl": "https://producthunt.com/products/context-13",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Kopyo",
-      "url": "https://www.producthunt.com/products/kopyo",
-      "summary": "The Mac clipboard manager that remembers everything",
-      "publishedAt": "2026-11-22T15:35:04.000Z"
+      "title": "Context",
+      "url": "https://www.producthunt.com/products/context-13",
+      "summary": "The calendar that gets you ready for every meeting",
+      "publishedAt": "2026-11-10T23:16:49.000Z"
     },
     {
-      "id": "bd528455ce",
-      "normUrl": "https://producthunt.com/products/tinker-2",
+      "id": "a3dfaa1f3a",
+      "normUrl": "https://producthunt.com/products/ohhai",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Inkling 2 Mini",
-      "url": "https://www.producthunt.com/products/tinker-2",
-      "summary": "26B looped model for coding on your laptop",
-      "publishedAt": "2026-11-23T03:37:24.000Z"
+      "title": "Ohhai",
+      "url": "https://www.producthunt.com/products/ohhai",
+      "summary": "Type messy, send clean: an AI keyboard for iPhone",
+      "publishedAt": "2026-11-18T18:05:36.000Z"
     },
     {
-      "id": "eec917593f",
-      "normUrl": "https://producthunt.com/products/naturefunding-org",
+      "id": "adf6e58a59",
+      "normUrl": "https://producthunt.com/products/kodak-slidetag",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "naturefunding.org",
-      "url": "https://www.producthunt.com/products/naturefunding-org",
-      "summary": "Grants for nature projects, checked against funder pages",
-      "publishedAt": "2026-11-19T03:48:42.000Z"
+      "title": "Kodak SlideTag",
+      "url": "https://www.producthunt.com/products/kodak-slidetag",
+      "summary": "A 1935 film-slide E-Ink frame that tracks like an AirTag",
+      "publishedAt": "2026-11-24T03:40:58.000Z"
     },
     {
-      "id": "7da8b663ed",
-      "normUrl": "https://producthunt.com/products/plango",
+      "id": "a92f79733b",
+      "normUrl": "https://producthunt.com/products/mystonie",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Plango",
-      "url": "https://www.producthunt.com/products/plango",
-      "summary": "Plango lets your AI agents work all night - safely",
-      "publishedAt": "2026-11-22T17:08:26.000Z"
+      "title": "Mystonie",
+      "url": "https://www.producthunt.com/products/mystonie",
+      "summary": "Log movies, shows, books & games — turn finishes into art",
+      "publishedAt": "2026-11-24T02:57:54.000Z"
     },
     {
-      "id": "42c92e5020",
-      "normUrl": "https://producthunt.com/products/leantake",
+      "id": "a8c6e90dbb",
+      "normUrl": "https://producthunt.com/products/hourly-journal",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "LeanTake",
-      "url": "https://www.producthunt.com/products/leantake",
-      "summary": "4.1 MB native Mac screen recorder — zero export wait",
-      "publishedAt": "2026-11-22T12:14:55.000Z"
+      "title": "Hourly Journal",
+      "url": "https://www.producthunt.com/products/hourly-journal",
+      "summary": "Journal your hours, understand your days",
+      "publishedAt": "2026-11-24T04:54:41.000Z"
     },
     {
-      "id": "b2b1cdaa4e",
-      "normUrl": "https://producthunt.com/products/open-source-solana-wallet",
+      "id": "41aa391e91",
+      "normUrl": "https://producthunt.com/products/rotara",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Open Source Solana Wallet",
-      "url": "https://www.producthunt.com/products/open-source-solana-wallet",
-      "summary": "Your own keys, your very own network",
-      "publishedAt": "2026-11-22T22:44:38.000Z"
+      "title": "Rotara",
+      "url": "https://www.producthunt.com/products/rotara",
+      "summary": "Mac workspaces, one flick away",
+      "publishedAt": "2026-11-22T16:59:41.000Z"
     },
     {
-      "id": "6b5f72f4d2",
-      "normUrl": "https://producthunt.com/products/modem",
+      "id": "4bd5d70f08",
+      "normUrl": "https://producthunt.com/products/juncts",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Modem",
-      "url": "https://www.producthunt.com/products/modem",
-      "summary": "Find, fix, and follow up on every customer concern",
-      "publishedAt": "2026-08-17T19:08:59.000Z"
+      "title": "Juncts",
+      "url": "https://www.producthunt.com/products/juncts",
+      "summary": "Superhuman for your DMs, with AI that triages and drafts",
+      "publishedAt": "2026-11-24T03:08:21.000Z"
     },
     {
-      "id": "b1e5d3c087",
-      "normUrl": "https://producthunt.com/products/mai-image-2-3",
+      "id": "8683b50fa2",
+      "normUrl": "https://producthunt.com/products/tday",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "MAI Image 2.7",
-      "url": "https://www.producthunt.com/products/mai-image-2-3",
-      "summary": "Microsoft's image model with precise edits and Canvas",
-      "publishedAt": "2026-11-17T18:42:27.000Z"
+      "title": "tday.com",
+      "url": "https://www.producthunt.com/products/tday",
+      "summary": "AI-recorded Screen Studio style editable demos",
+      "publishedAt": "2026-11-23T21:22:27.000Z"
     },
     {
-      "id": "b2e1204fdb",
-      "normUrl": "https://producthunt.com/products/chat-with-work",
+      "id": "342e3d5071",
+      "normUrl": "https://producthunt.com/products/claude-code",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Chat with Work",
-      "url": "https://www.producthunt.com/products/chat-with-work",
-      "summary": "AI bots in Europe. They work. You decide.",
-      "publishedAt": "2026-11-21T09:06:12.000Z"
+      "title": "Claude Ship",
+      "url": "https://www.producthunt.com/products/claude-code",
+      "summary": "Ship code as fast as you can write it",
+      "publishedAt": "2026-11-23T21:00:36.000Z"
     },
     {
-      "id": "4b3299291c",
-      "normUrl": "https://producthunt.com/products/tesla",
+      "id": "e16c133458",
+      "normUrl": "https://producthunt.com/products/sparrowdesk",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Tesla Self-Driving V15",
-      "url": "https://www.producthunt.com/products/tesla",
-      "summary": "Upgrading every part of the end-to-end driving network",
-      "publishedAt": "2026-11-22T02:23:40.000Z"
+      "title": "SparrowDesk Phone Calls",
+      "url": "https://www.producthunt.com/products/sparrowdesk",
+      "summary": "Phone support in the same inbox as email, chat & WhatsApp",
+      "publishedAt": "2026-11-23T07:07:05.000Z"
     },
     {
-      "id": "ba5b2a74f4",
-      "normUrl": "https://producthunt.com/products/omi-work",
+      "id": "ab453d56ef",
+      "normUrl": "https://producthunt.com/products/viktor",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Omi Work",
-      "url": "https://www.producthunt.com/products/omi-work",
-      "summary": "Omi can build anything. Now it finds your next 100 customers",
-      "publishedAt": "2026-11-22T08:35:25.000Z"
+      "title": "Viktor Code",
+      "url": "https://www.producthunt.com/products/viktor",
+      "summary": "Coding agents know your repo. Viktor knows your company.",
+      "publishedAt": "2026-11-23T16:35:13.000Z"
     },
     {
-      "id": "e718240443",
-      "normUrl": "https://producthunt.com/products/strict",
+      "id": "33a406fde5",
+      "normUrl": "https://producthunt.com/products/distribution-dev",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "Strict",
-      "url": "https://www.producthunt.com/products/strict",
-      "summary": "Run GitHub Actions on any spare Mac or Linux machine",
-      "publishedAt": "2026-11-22T23:04:09.000Z"
+      "title": "distribution.dev",
+      "url": "https://www.producthunt.com/products/distribution-dev",
+      "summary": "Advertise to developers on many sites with one campaign",
+      "publishedAt": "2026-11-17T09:23:57.000Z"
     },
     {
-      "id": "af2e776130",
-      "normUrl": "https://producthunt.com/products/figmamcp",
+      "id": "382daaacdc",
+      "normUrl": "https://producthunt.com/products/granular-build",
       "sourceId": "producthunt",
       "source": "Product Hunt",
       "sourceHome": "https://www.producthunt.com/",
       "side": "supply",
       "pool": true,
-      "title": "FigmaMCP",
-      "url": "https://www.producthunt.com/products/figmamcp",
-      "summary": "Let Claude Code or Codex edit your open Figma file",
-      "publishedAt": "2026-11-22T23:28:02.000Z"
+      "title": "Granular.Build",
+      "url": "https://www.producthunt.com/products/granular-build",
+      "summary": "Put your AI agents to work in a visual workspace",
+      "publishedAt": "2026-11-18T18:51:22.000Z"
+    },
+    {
+      "id": "c0a50fdda1",
+      "normUrl": "https://news.ycombinator.com/item?id=50633531",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Analysis of Hacker News predictions since 2008",
+      "url": "https://news.ycombinator.com/item?id=50633531",
+      "externalUrl": "https://hnpredictions.com/",
+      "summary": null,
+      "deepenKey": "50633531",
+      "via": null,
+      "signal": {
+        "points": 9,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-24T19:46:54Z"
     },
     {
       "id": "c6524b3bb6",
@@ -1444,7 +1504,7 @@
       "summary": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
       "signal": {
         "language": "Python",
-        "points": 2029
+        "points": 1826
       },
       "publishedAt": null
     },
@@ -1461,7 +1521,7 @@
       "summary": "An agentic skills framework & software development methodology that works.",
       "signal": {
         "language": "Shell",
-        "points": 840
+        "points": 1003
       },
       "publishedAt": null
     },
@@ -1478,7 +1538,7 @@
       "summary": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "signal": {
         "language": "Python",
-        "points": 790
+        "points": 1074
       },
       "publishedAt": null
     },
@@ -1495,7 +1555,7 @@
       "summary": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
       "signal": {
         "language": "Python",
-        "points": 828
+        "points": 727
       },
       "publishedAt": null
     },
@@ -1512,7 +1572,7 @@
       "summary": "Cursor plugin specification and official plugins",
       "signal": {
         "language": "TypeScript",
-        "points": 397
+        "points": 360
       },
       "publishedAt": null
     },
@@ -1529,7 +1589,7 @@
       "summary": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
       "signal": {
         "language": "TypeScript",
-        "points": 924
+        "points": 991
       },
       "publishedAt": null
     },
@@ -1546,7 +1606,7 @@
       "summary": "The official NGINX Open Source repository.",
       "signal": {
         "language": "C",
-        "points": 174
+        "points": 158
       },
       "publishedAt": null
     },
@@ -1563,7 +1623,7 @@
       "summary": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
       "signal": {
         "language": "C++",
-        "points": 184
+        "points": 185
       },
       "publishedAt": null
     },
@@ -1580,7 +1640,7 @@
       "summary": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "signal": {
         "language": "HTML",
-        "points": 620
+        "points": 802
       },
       "publishedAt": null
     },
@@ -1597,7 +1657,7 @@
       "summary": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "signal": {
         "language": "Python",
-        "points": 797
+        "points": 703
       },
       "publishedAt": null
     },
@@ -1614,7 +1674,7 @@
       "summary": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "signal": {
         "language": "TypeScript",
-        "points": 422
+        "points": 403
       },
       "publishedAt": null
     },
@@ -1631,7 +1691,7 @@
       "summary": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 124 documented rejection patterns and fixes, privacy manifest and Data safety checks, 112 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
       "signal": {
         "language": "Shell",
-        "points": 761
+        "points": 928
       },
       "publishedAt": null
     },
@@ -1648,7 +1708,7 @@
       "summary": "The open-source agent for CI/CD reliability.",
       "signal": {
         "language": "Python",
-        "points": 436
+        "points": 398
       },
       "publishedAt": null
     },
@@ -1665,7 +1725,7 @@
       "summary": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
       "signal": {
         "language": "TypeScript",
-        "points": 595
+        "points": 584
       },
       "publishedAt": null
     },
@@ -1682,7 +1742,7 @@
       "summary": "The only downloader you need. 下载器的集大成者。",
       "signal": {
         "language": "Python",
-        "points": 1087
+        "points": 1092
       },
       "publishedAt": null
     },
@@ -1699,7 +1759,7 @@
       "summary": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
       "signal": {
         "language": "Python",
-        "points": 907
+        "points": 980
       },
       "publishedAt": null
     },

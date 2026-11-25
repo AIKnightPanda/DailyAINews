@@ -1,0 +1,1498 @@
+{
+  "issue": "2026-11-25",
+  "builtAt": "2026-11-25T00:46:05.196Z",
+  "from": {
+    "boards": "prefetched",
+    "inbox": "live"
+  },
+  "counts": {
+    "fetched": 102,
+    "added": 37,
+    "kept": 37,
+    "dropped": 65,
+    "pool": 37,
+    "screened": 33,
+    "candidates": 18,
+    "demandCandidates": 5,
+    "supplyCandidates": 13
+  },
+  "errors": [],
+  "notices": [
+    "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
+  ],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-25T00:35:38Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：is there an app that（HTTP 404：2026-11-25T00:36:03Z https://rs）；is there a tool that（HTTP 404：2026-11-25T00:37:13Z https://rs）；someone should build（HTTP 404：2026-11-25T00:38:23Z https://rs）；we still use spreadsheets（HTTP 404：2026-11-25T00:39:08Z https://rs）",
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 24,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 6,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：we currently pay（HTTP 404：2026-11-25T00:40:18Z https://rs）；we are paying for（HTTP 404：2026-11-25T00:41:03Z https://rs）；quoted us（HTTP 404：2026-11-25T00:42:14Z https://rs）；per seat per month（HTTP 404：2026-11-25T00:43:24Z https://rs）",
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-25T00:44:09Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-25T00:45:19Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-25T00:46:04Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 0,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 1,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub Trending",
+      "status": "ok",
+      "items": 16,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "consoledev",
+      "name": "Console.dev",
+      "status": "ok",
+      "items": 9,
+      "pool": true,
+      "group": "board"
+    }
+  ],
+  "items": [
+    {
+      "id": "f123eb5769",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/54188/on-premise-alternative-for-aws-qldb",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "On-premise alternative for AWS QLDB",
+      "url": "https://softwarerecs.stackexchange.com/questions/54188/on-premise-alternative-for-aws-qldb",
+      "summary": "What is the best alternative for on-premise solution with the same features as Quantum Ledger Database - AWS QLDB ? transparent, immutable, and cryptographically verifiable transaction log owned by a central authority",
+      "deepenKey": "54188",
+      "signal": {
+        "score": 2,
+        "views": 918,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2019-01-02T12:38:48.000Z",
+      "ref": "I1",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 6,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "What is the best alternative for on-premise solution with the same features as Quantum Ledger Database - AWS QLDB ? transparent, immutable, and cryptographically verifiable transaction log owned by a central authority",
+        "comments": [
+          {
+            "text": "Yes, Oracle Database 19c with 19.10 release update supports native blockchain tables on-premises (as well as in the cloud). For details on the features listed and much more, see Oracle's blog post for more details.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-11-25T00:46:07.698Z"
+      }
+    },
+    {
+      "id": "933d9a9159",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95836/how-do-i-give-my-hermes-agents-permanent-memory-institutional-knowledge-and-in",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "How do I give my Hermes agents permanent memory, institutional knowledge, and intelligent model routing?",
+      "url": "https://softwarerecs.stackexchange.com/questions/95836/how-do-i-give-my-hermes-agents-permanent-memory-institutional-knowledge-and-in",
+      "summary": "I fundamentally want two things from my Hermes agents: I want them to fucking remember everything I ever tell them, and I want them to develop an institutional memory comparable to that of an actual organization. By persistent memory, I mean the ability to reliably recall previous conversations, decisions, preferences, instructions, and their underlying rationale, irrespective of how much time has elapsed, how many sessions have occurred, or which model is being used.",
+      "deepenKey": "95836",
+      "signal": {
+        "score": 0,
+        "views": 3,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2026-11-24T23:38:58.000Z",
+      "ref": "I2",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I fundamentally want two things from my Hermes agents: I want them to fucking remember everything I ever tell them, and I want them to develop an institutional memory comparable to that of an actual organization. By persistent memory, I mean the ability to reliably recall previous conversations, decisions, preferences, instructions, and their underlying rationale, irrespective of how much time has elapsed, how many sessions have occurred, or which model is being used. If I explain why we abandoned a particular strategy six months ago, I want the agent to recall that discussion when the strategy resurfaces without my having to remind it. I don't expect everything to reside in the context window, but I do expect agents to know when and how to consult their own history. Institutional memory is somewhat different. I want knowledge accumulated by individual agents to outlive their respective sessions and become part of the organization's collective intelligence. For example, if one agent spends a week researching a methodology and discovers a fundamental flaw, another agent should be able to benefit from that discovery without repeating the research. Likewise, a newly appointed agent should be able to acquaint itself with the organization's history, established procedures, previous failures, and the rationale behind executive decisions. Presently, I'm running Hermes on AWS Lightsail, with individual agents operating in separate Docker containers. Each has its own persistent SQLite conversation database with automatic pruning disabled, native Hermes memory, and encrypted S3 backups every four hours. They also have access to a shared S3 organizational knowledge repository, to which they contribute curated institutional knowledge through Hermes skills and scheduled reviews. My concern is less about whether the information is stored and more about whether the agents will reliably and autonomously retrieve and apply it when pertinent. A filing cabinet full of documents is not necessarily an institutional memory. Separately, I'd like automatic model selection.",
+        "comments": [],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-11-25T00:46:07.980Z"
+      }
+    },
+    {
+      "id": "077b9a7b9f",
+      "normUrl": "https://news.ycombinator.com/item?id=50633601",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Am I the only one whose AI hype is cooling down a lot?",
+      "url": "https://news.ycombinator.com/item?id=50633601",
+      "externalUrl": null,
+      "summary": "I am in the industry for 15+ years, studied CS, and actually, never really \"liked\" programming. It was a means to an end. I have written about programming (and published books), so don't get me wrong: I like the craft and I miss the sense of accomplishment after hours and days of struggling and fixing a problem with 2 lines of code. What I see in my personal spending and habits: I get free tokens from my company, and I spent between 3k-5k a month at the start of the year. Models got cheaper, but also: The usefullness ran its course a little bit for me.",
+      "deepenKey": "50633601",
+      "via": null,
+      "signal": {
+        "points": 12,
+        "comments": 10
+      },
+      "publishedAt": "2026-11-24T19:51:01Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6e63ccc053",
+      "normUrl": "https://news.ycombinator.com/item?id=50633280",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What Happened to Midjourney?",
+      "url": "https://news.ycombinator.com/item?id=50633280",
+      "externalUrl": null,
+      "summary": "A model that was very popular 2–3 years ago, but now I haven't heard anything about it at all.",
+      "deepenKey": "50633280",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-24T19:32:14Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "780fb9905e",
+      "normUrl": "https://news.ycombinator.com/item?id=50630985",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Its 2026 and there is still not good Email client for macOS. Why?",
+      "url": "https://news.ycombinator.com/item?id=50630985",
+      "externalUrl": null,
+      "summary": "Which can handling inboxes from multiple accounts and follow the Apple ecosystem branding guidlines.",
+      "deepenKey": "50630985",
+      "via": null,
+      "signal": {
+        "points": 6,
+        "comments": 8
+      },
+      "publishedAt": "2026-11-24T16:57:03Z",
+      "ref": "I5",
+      "screen": {
+        "keep": true,
+        "score": 0,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "bbef1e94d1",
+      "normUrl": "https://news.ycombinator.com/item?id=50630809",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Anthropic is accusing my company of distilling. How can I prove I'm not?",
+      "url": "https://news.ycombinator.com/item?id=50630809",
+      "externalUrl": null,
+      "summary": "Basically the title. Anthropic is accusing me and my company of using their API for distillation. We are not. We do not train our own models. Our only usage which I think could get us flagged is automated regression benchmarks whenever we change some AI settings. But this is not against their policy? Now I've got 24h to prove we didn't. Has anyone dealt with this too? How can you prove that you are not distilling Anthropic models without breaking your user's privacy?",
+      "deepenKey": "50630809",
+      "via": null,
+      "signal": {
+        "points": 217,
+        "comments": 163
+      },
+      "publishedAt": "2026-11-24T16:45:44Z",
+      "ref": "I6",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Basically the title. Anthropic is accusing me and my company of using their API for distillation. We are not. We do not train our own models. Our only usage which I think could get us flagged is automated regression benchmarks whenever we change some AI settings. But this is not against their policy? Now I've got 24h to prove we didn't. Has anyone dealt with this too? How can you prove that you are not distilling Anthropic models without breaking your user's privacy?",
+        "comments": [
+          {
+            "text": "All I can think of, off the bat, is to show them your testing harness, especially if it's in git, then you have receipts for how long it's been alive."
+          },
+          {
+            "text": "It's a stupid accusation to begin with. How could they ever know? They're just afraid of distillation, so they accuse people left and right. If you do not enjoy that, I suggest you take your business elsewhere."
+          },
+          {
+            "text": "Probably a better question for a corporate attorney than hacker news. Good luck"
+          },
+          {
+            "text": "You don't need Anthropic. Just use another provider."
+          },
+          {
+            "text": "That's got to suck. You're sure you haven't lost your API keys in some way, right? I've never had to deal with this but that would be my first thought. That someone stole my keys from somewhere and they're actually running distillation."
+          },
+          {
+            "text": "Another tech company that invites you to embed their solutions in every part of your business and life and then randomly, arbitrarily and without advance warning, locks you out. Bad for business, all the way around."
+          },
+          {
+            "text": "Doesn't matter what you did, didn't do, or can prove, what matters is what Anthropic decides."
+          },
+          {
+            "text": "Whatever you submit in 24h, submit the same evidence to Claude and ask it to tell you if it's sufficient evidence to make distilling seem unlikely. Because you know Anthropic is just going to be using Claude as well. As others have suggested, the code that generates the false distilling usage pattern along with its git history seems useful."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+            "points": 218,
+            "url": "https://news.ycombinator.com/item?id=50630809"
+          }
+        ],
+        "fetchedAt": "2026-11-25T00:46:06.299Z"
+      }
+    },
+    {
+      "id": "c0e4faf619",
+      "normUrl": "https://news.ycombinator.com/item?id=50630776",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Are junior devs beyond screwed?",
+      "url": "https://news.ycombinator.com/item?id=50630776",
+      "externalUrl": null,
+      "summary": "I decided to finish my degree at the ripe age of 30 and I can't get an internship even though I attended a T25 school. I'm well away of power dynamics and nepotism and how the real world works, especially in the age of DEI and offshoring. I was banking on being able to at least partially overcome that but it seems as the the very existence of such an opportunity has been completely annihilated. If you're not prodigious, a nepo hire, or a startup founder it seems like you're perpetually taking it up the arse.",
+      "deepenKey": "50630776",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-24T16:43:31Z",
+      "ref": "I7",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "37bd589c78",
+      "normUrl": "https://news.ycombinator.com/item?id=50626772",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Everything will get breached. How do you limit the blast radius?",
+      "url": "https://news.ycombinator.com/item?id=50626772",
+      "externalUrl": null,
+      "summary": "Got another breach email this morning, this travel operator had my passport number and travel history stored. At this point I feel every service we use is going to get dumped eventually. I consider unique passwords and hardware 2FA as no brainers, they stop credential stuffing, but they don't help when a service leaks your actual identity. There are just so many services that require personal data like your passport number, phone number etc.",
+      "deepenKey": "50626772",
+      "via": null,
+      "signal": {
+        "points": 12,
+        "comments": 8
+      },
+      "publishedAt": "2026-11-24T11:39:11Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": -2,
+        "hits": [
+          "要做硬件"
+        ],
+        "detail": {
+          "signal": -8,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "91d4c1b5c3",
+      "normUrl": "https://news.ycombinator.com/item?id=50625996",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Why are so many services using email magic links for login?",
+      "url": "https://news.ycombinator.com/item?id=50625996",
+      "externalUrl": null,
+      "summary": "I've noticed a big uptick in login screens defaulting to sending email magic links rather than asking for a password. Notably Claude does this (which during the Outlook outage last week completely blocked me from accessing it). I can only assume that this is a misguided attempt to make login easier for the people who use the Forgot Password link all the the time instead of a proper password manager. It's 1FA where your single factor is access a different service (your email) rather than a known secret. Is there an actual best practice HIG or security guideline that recommends this approach?",
+      "deepenKey": "50625996",
+      "via": null,
+      "signal": {
+        "points": 16,
+        "comments": 15
+      },
+      "publishedAt": "2026-11-24T09:53:26Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": 8,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 5,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I've noticed a big uptick in login screens defaulting to sending email magic links rather than asking for a password. Notably Claude does this (which during the Outlook outage last week completely blocked me from accessing it). I can only assume that this is a misguided attempt to make login easier for the people who use the Forgot Password link all the the time instead of a proper password manager. It's 1FA where your single factor is access a different service (your email) rather than a known secret. Is there an actual best practice HIG or security guideline that recommends this approach? To my mind, it's both less secure and less convenient. I'm wondering if it's an anti pattern where someone (or an LLM) has copied a service which does this, and that creates a feedback loop where more orgs jump on the bandwagon.",
+        "comments": [
+          {
+            "text": "its all cool and easy until your email provider (Outlook the othe day) goes down and you can't login anywhere"
+          },
+          {
+            "text": "I think it's pretty obvious. Between passkeys and this, companies do not want to be responsible or liable for storing your password. They also don't want to pay for support people to help you get into your account if you get locked out. The future is bleak."
+          },
+          {
+            "text": "Think about the terrible PR a company gets when there’s a security breach and passwords get stolen. Better to step out of it entirely by never even keeping your customers’ passwords."
+          },
+          {
+            "text": "Isn't e-mail also very leaky? I get not wanting to store passwords, but why not use respected cybersecurity parties for that (buy off some of the liability), and honestly leaking one password shouldn't be such a big problem, it's not your fault if users don't use a password manager."
+          },
+          {
+            "text": "I can imagine 3 reasons: - people do have password overload and prefer this, security pros and cons notwithstanding - the service you're using doesn't have to look after your password i.e. no threat model for them to deal with - if your email account gets compromised, that's a \"you and your email provider\" problem, not one for the service you're trying to access"
+          },
+          {
+            "text": "It serves more than one purpose. First, the service confirms on every login that you still control the email address, and if you lose access to your mail, you have a bunch of other problems anyway. Second, passwords are inherently weak, and you often don't know when one was breached. Yes, email can be intercepted or rerouted too, but that's less likely these days than a password leak. And once you've created an account, which is probably the main point of a magic link, you should set up 2FA, and that should replace the magic link from then on."
+          },
+          {
+            "text": "It has many benefits https://sakurity.com/blog/2015/04/10/email_password_manager.... No need to make an account as one time password sent to email is the same thing."
+          },
+          {
+            "text": "I'm curious what would be appropriate choice to send magic links if mail is unavailable? That seems like an issue worth solving. I would not call this a Claude or AI thing. I build my own software and I really love them. I use them for onboarding, and visitor entry, anywhere I want something very low friction. Post onboarding, better authentication is required. I don't think there is a future in passwords."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Why are so many services using email magic links for login?",
+            "points": 16,
+            "url": "https://news.ycombinator.com/item?id=50625996"
+          },
+          {
+            "title": "Ask HN: How to Recover Gmail Account",
+            "points": 22,
+            "url": "https://news.ycombinator.com/item?id=33850676"
+          }
+        ],
+        "fetchedAt": "2026-11-25T00:46:07.302Z"
+      }
+    },
+    {
+      "id": "634f770f67",
+      "normUrl": "https://news.ycombinator.com/item?id=50625683",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Does anyone gets hired with himalaya, well found or other remote hiring sites?",
+      "url": "https://news.ycombinator.com/item?id=50625683",
+      "externalUrl": null,
+      "summary": "I applied to many remote roles nearly 50+ on these sites but I see no movement/. Just FYI, I've a good profile and have worked for good startups. For testing, I applied to mini roles as well (extremely less pay) and they too either didn't respond or my application got expired. (btw, a few rejected me as well) I almost tried all the bigger names mentioned in this list: https://www.placeprep.app/blogs/remote-job-sites/ and all felt same. Now, idk what should I do. Layoffs are on peak and it's becoming so hard to find a good gig. Don't suggest networking, I'm bad at this and don't like it much.",
+      "deepenKey": "50625683",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-24T09:12:14Z",
+      "ref": "I10",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "招聘找人",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "9d512ffeb8",
+      "normUrl": "https://news.ycombinator.com/item?id=50625515",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Today marks the first anniversary of Opus 4.5's release",
+      "url": "https://news.ycombinator.com/item?id=50625515",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50625515",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-24T08:48:59Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "0789e88704",
+      "normUrl": "https://news.ycombinator.com/item?id=50625337",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Nvidia made $2.1B by shorting stocks",
+      "url": "https://news.ycombinator.com/item?id=50625337",
+      "externalUrl": null,
+      "summary": "According to insider information, Nvidia’s board of directors is conducting an internal investigation into gains of over $2.1 billion made via short positions following news of Jensen Huang’s departure from—and subsequent return to—the role of Nvidia CEO. Details remain scarce at this time.",
+      "deepenKey": "50625337",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-24T08:26:56Z",
+      "ref": "I12",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "5d95bb3492",
+      "normUrl": "https://news.ycombinator.com/item?id=50622809",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Coworker rejects PR (one month in) because it does not meet his standards",
+      "url": "https://news.ycombinator.com/item?id=50622809",
+      "externalUrl": null,
+      "summary": "just joined this new team about 1 year into their development. Demoed the work to the team about two weeks ago (half way in). Work is practically complete & runs well no issues. I create PR & assign the two PR reviewers (one my rank another a rank above me). one colleague (the one at my level) leaves some constructive comments no functional changes.",
+      "deepenKey": "50622809",
+      "via": null,
+      "signal": {
+        "points": 18,
+        "comments": 40
+      },
+      "publishedAt": "2026-11-24T02:31:21Z",
+      "ref": "I13",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "just joined this new team about 1 year into their development. Demoed the work to the team about two weeks ago (half way in). Work is practically complete & runs well no issues. I create PR & assign the two PR reviewers (one my rank another a rank above me). one colleague (the one at my level) leaves some constructive comments no functional changes. The other colleague (one rank above me) says something equivalent to \"does not meet our standards\" \"do not do x pattern since we have used y (which has a huge limitation)\" to use Y pattern I would basically need to change most of the logic and it would be about 70% waste. I demoed my code with this pattern two weeks ago and there were no issues/comments from the team. The code is concise and easy to read. I had a call with the colleague and explained the code and why I used it, and showed him some other parts of the codebase where this pattern should be used, his only defense was that \"it does not meet our standards because it uses X rather than y pattern, since we used y pattern in the past, we should only use y pattern\" while x pattern is very similar only removing the limitation that was causing the code to be difficult to maintain etc. This \"standard requirement\" is written nowhere as a hard requirement and the codebase is barely one year old, with only one of the codebase founders still on the team.... I'm going to have a chat with the manager tomorrow morning.",
+        "comments": [
+          {
+            "text": "His standards. That's different from our standards. If he's claiming our standards, the response is, show me the standard. Where is that written down? If he's saying it doesn't meet his standards, and he's rejecting a PR for that reason... yeah, that's probably time to talk to the manager. That sounds pretty ridiculous."
+          },
+          {
+            "text": "It’s a blocker just like any other. Tell your manager why it isn’t finished."
+          },
+          {
+            "text": "Playing devil's advocate a little...a year in, I assume you would know that whatever your proposed schema was, that it was substantially different than the existing code. Even if it was better. I do get the frustration, but I also see both sides. Where it might be better to do it the wrong, but existing way, for a PR which did not have a stated purpose of starting to move to a better way."
+          },
+          {
+            "text": "As a manager, I have a rule for people joining my team. You can’t make big changes in your first few months. This doesn’t mean our code base is amazing or that you are wrong… it’s simply that you have to really learn the business and the code base before you really understand what the priorities are. I tell people to write down things that they don’t like and then a few months in, we can circle back and decide if they are worth changing. It’s easy to have a myopic viewpoint when you don’t fully understand how things fit together or what the business priorities are. Now, I am not doubting that you have come up with a better pattern. But there is merit in having consistency within a code base. Sometimes doing things the same way across modules is easier to maintain, even if it is suboptimal. If you are new to a codebase, my advice is to stick to the current conventions."
+          },
+          {
+            "text": "If you can’t fit in after a year (regardless of whose fault), why stay?"
+          },
+          {
+            "text": "Exactly how much does it matter if you rewrite the code his way? Focus on what's important in your life. This X vs Y shit probably isn't."
+          },
+          {
+            "text": "I read your other thread about AI mis/use at your company. Prompt AI on separate threads that makes a brief summary that shows that the old method is inferior - not scalable, unmaintainable, not fit for production, a security risk, a poor pattern. And your implementation - vastly superior. If your manager is one who can not argue with AI, he will either capitulate or expose his bias towards the other coworker. When some employees use terms like \"does not meet our standards\" or \"is against our Architecture principles\" but can not really explain why, they are coming with cheap shots to slow you down, setup you up for failure or get a reaction out of you. Trying to explain it to them or to a superior does not work, that is why they play this game in the first place."
+          },
+          {
+            "text": "I don't tolerate these kinds of people. No organisation is perfect, things are done in a particular way for a particular reason, and its never perfect from an engineering perspective. Engineering is ultimately about balancing constraints which could be time, resources, money, shifting priorities, or technicals. Wait 3 months, get the vibe of the company, and then try to change some things. An organization is about people management at the end of the day, and a cohesive team is more important than a perfectionist."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Coworker rejects PR (one month in) because it does not meet his standards",
+            "points": 18,
+            "url": "https://news.ycombinator.com/item?id=50622809"
+          },
+          {
+            "title": "It’s Hard to Find a Job Right Now",
+            "points": 11,
+            "url": "https://news.ycombinator.com/item?id=37791466"
+          }
+        ],
+        "fetchedAt": "2026-11-25T00:46:06.950Z"
+      }
+    },
+    {
+      "id": "f04f260c77",
+      "normUrl": "https://news.ycombinator.com/item?id=50621878",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Claude Opus 4.5 turns one year old today",
+      "url": "https://news.ycombinator.com/item?id=50621878",
+      "externalUrl": null,
+      "summary": "Just one year! It feels like much longer. The entire industry is different now and I think this is the widely accepted turning point for agentic coding. God knows what we'll see this time next year. Definitely an interesting thread to read back on: https://news.ycombinator.com/item?id=46037637",
+      "deepenKey": "50621878",
+      "via": null,
+      "signal": {
+        "points": 7,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-24T00:44:07Z",
+      "ref": "I14",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "b476202eab",
+      "normUrl": "https://news.ycombinator.com/item?id=50609394",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How are tech recruiters assessed on their recruiting skills?",
+      "url": "https://news.ycombinator.com/item?id=50609394",
+      "externalUrl": null,
+      "summary": "I've been working in tech for around 10 years but I have absolutely no experience at all in tech recruiting. However I have had the experience (well, often displeasure) of going through tech recruiters and the tech hiring process when applying for jobs during my career. As with probably many of you, I'm quite frustrated with how tech hiring has been in the last year or two during the AI/LLM era.",
+      "deepenKey": "50609394",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 4
+      },
+      "publishedAt": "2026-11-23T09:34:05Z",
+      "ref": "I15",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "招聘找人",
+        "hits": []
+      },
+      "candidate": false
+    },
+    {
+      "id": "02bb14f202",
+      "normUrl": "https://producthunt.com/products/frwrd-to",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "frwrd.to",
+      "url": "https://www.producthunt.com/products/frwrd-to",
+      "summary": "Your link in bio, sorted by your AI in one message",
+      "publishedAt": "2026-11-23T12:34:54.000Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Your link in bio, sorted by your AI in one message",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-25T00:46:08.047Z"
+      }
+    },
+    {
+      "id": "3e9c1e5529",
+      "normUrl": "https://producthunt.com/products/wellbreak",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Wellbreak",
+      "url": "https://www.producthunt.com/products/wellbreak",
+      "summary": "Your wellbeing buddy in Mac's notch",
+      "publishedAt": "2026-11-23T19:09:40.000Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Your wellbeing buddy in Mac's notch",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-25T00:46:28.025Z"
+      }
+    },
+    {
+      "id": "7b8f0db221",
+      "normUrl": "https://producthunt.com/products/astor",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Astor",
+      "url": "https://www.producthunt.com/products/astor",
+      "summary": "AI Thesis Investing",
+      "publishedAt": "2026-11-19T02:44:24.000Z",
+      "ref": "I18",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "0470cd83a6",
+      "normUrl": "https://producthunt.com/products/prates",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Prates",
+      "url": "https://www.producthunt.com/products/prates",
+      "summary": "Learns how you write, then writes exactly as you would",
+      "publishedAt": "2026-11-21T14:13:49.000Z",
+      "ref": "I19",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Learns how you write, then writes exactly as you would",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-25T00:46:48.031Z"
+      }
+    },
+    {
+      "id": "f3834a29cc",
+      "normUrl": "https://producthunt.com/products/adanotch",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Adanotch",
+      "url": "https://www.producthunt.com/products/adanotch",
+      "summary": "A live Dynamic Island for your MacBook notch",
+      "publishedAt": "2026-11-17T20:36:39.000Z",
+      "ref": "I20",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "A live Dynamic Island for your MacBook notch",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-25T00:47:08.063Z"
+      }
+    },
+    {
+      "id": "7544d6de3d",
+      "normUrl": "https://producthunt.com/products/astrolabio",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Astrolabio",
+      "url": "https://www.producthunt.com/products/astrolabio",
+      "summary": "Your AIs pick up right where you left off, on your Mac",
+      "publishedAt": "2026-11-23T13:39:26.000Z",
+      "ref": "I21",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Your AIs pick up right where you left off, on your Mac",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-25T00:47:28.067Z"
+      }
+    },
+    {
+      "id": "92d7c4c539",
+      "normUrl": "https://producthunt.com/products/willow-voice",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Willow iOS 2.0",
+      "url": "https://www.producthunt.com/products/willow-voice",
+      "summary": "No switching apps while you dictate",
+      "publishedAt": "2026-11-24T06:38:15.000Z",
+      "ref": "I22",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "No switching apps while you dictate",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-25T00:47:48.092Z"
+      }
+    },
+    {
+      "id": "502f753b36",
+      "normUrl": "https://producthunt.com/products/context-13",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Context",
+      "url": "https://www.producthunt.com/products/context-13",
+      "summary": "The calendar that gets you ready for every meeting",
+      "publishedAt": "2026-11-10T23:16:49.000Z",
+      "ref": "I23",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The calendar that gets you ready for every meeting",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-25T00:48:08.111Z"
+      }
+    },
+    {
+      "id": "a3dfaa1f3a",
+      "normUrl": "https://producthunt.com/products/ohhai",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Ohhai",
+      "url": "https://www.producthunt.com/products/ohhai",
+      "summary": "Type messy, send clean: an AI keyboard for iPhone",
+      "publishedAt": "2026-11-18T18:05:36.000Z",
+      "ref": "I24",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Type messy, send clean: an AI keyboard for iPhone",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-25T00:48:28.125Z"
+      }
+    },
+    {
+      "id": "adf6e58a59",
+      "normUrl": "https://producthunt.com/products/kodak-slidetag",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Kodak SlideTag",
+      "url": "https://www.producthunt.com/products/kodak-slidetag",
+      "summary": "A 1935 film-slide E-Ink frame that tracks like an AirTag",
+      "publishedAt": "2026-11-24T03:40:58.000Z",
+      "ref": "I25",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "A 1935 film-slide E-Ink frame that tracks like an AirTag",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-25T00:48:48.435Z"
+      }
+    },
+    {
+      "id": "a92f79733b",
+      "normUrl": "https://producthunt.com/products/mystonie",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Mystonie",
+      "url": "https://www.producthunt.com/products/mystonie",
+      "summary": "Log movies, shows, books & games — turn finishes into art",
+      "publishedAt": "2026-11-24T02:57:54.000Z",
+      "ref": "I26",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Log movies, shows, books & games — turn finishes into art",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-25T00:49:08.147Z"
+      }
+    },
+    {
+      "id": "a8c6e90dbb",
+      "normUrl": "https://producthunt.com/products/hourly-journal",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Hourly Journal",
+      "url": "https://www.producthunt.com/products/hourly-journal",
+      "summary": "Journal your hours, understand your days",
+      "publishedAt": "2026-11-24T04:54:41.000Z",
+      "ref": "I27",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Journal your hours, understand your days",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Hourly 4-second sprints prevent impairment of postprandial fat metabolism",
+            "points": 168,
+            "url": "https://news.ycombinator.com/item?id=23021795"
+          }
+        ],
+        "fetchedAt": "2026-11-25T00:49:28.439Z"
+      }
+    },
+    {
+      "id": "41aa391e91",
+      "normUrl": "https://producthunt.com/products/rotara",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Rotara",
+      "url": "https://www.producthunt.com/products/rotara",
+      "summary": "Mac workspaces, one flick away",
+      "publishedAt": "2026-11-22T16:59:41.000Z",
+      "ref": "I28",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Mac workspaces, one flick away",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-25T00:49:48.175Z"
+      }
+    },
+    {
+      "id": "4bd5d70f08",
+      "normUrl": "https://producthunt.com/products/juncts",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Juncts",
+      "url": "https://www.producthunt.com/products/juncts",
+      "summary": "Superhuman for your DMs, with AI that triages and drafts",
+      "publishedAt": "2026-11-24T03:08:21.000Z",
+      "ref": "I29",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8683b50fa2",
+      "normUrl": "https://producthunt.com/products/tday",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "tday.com",
+      "url": "https://www.producthunt.com/products/tday",
+      "summary": "AI-recorded Screen Studio style editable demos",
+      "publishedAt": "2026-11-23T21:22:27.000Z",
+      "ref": "I30",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "342e3d5071",
+      "normUrl": "https://producthunt.com/products/claude-code",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Claude Ship",
+      "url": "https://www.producthunt.com/products/claude-code",
+      "summary": "Ship code as fast as you can write it",
+      "publishedAt": "2026-11-23T21:00:36.000Z",
+      "ref": "I31",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e16c133458",
+      "normUrl": "https://producthunt.com/products/sparrowdesk",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "SparrowDesk Phone Calls",
+      "url": "https://www.producthunt.com/products/sparrowdesk",
+      "summary": "Phone support in the same inbox as email, chat & WhatsApp",
+      "publishedAt": "2026-11-23T07:07:05.000Z",
+      "ref": "I32",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "ab453d56ef",
+      "normUrl": "https://producthunt.com/products/viktor",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Viktor Code",
+      "url": "https://www.producthunt.com/products/viktor",
+      "summary": "Coding agents know your repo. Viktor knows your company.",
+      "publishedAt": "2026-11-23T16:35:13.000Z",
+      "ref": "I33",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "33a406fde5",
+      "normUrl": "https://producthunt.com/products/distribution-dev",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "distribution.dev",
+      "url": "https://www.producthunt.com/products/distribution-dev",
+      "summary": "Advertise to developers on many sites with one campaign",
+      "publishedAt": "2026-11-17T09:23:57.000Z",
+      "ref": "I34",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "382daaacdc",
+      "normUrl": "https://producthunt.com/products/granular-build",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Granular.Build",
+      "url": "https://www.producthunt.com/products/granular-build",
+      "summary": "Put your AI agents to work in a visual workspace",
+      "publishedAt": "2026-11-18T18:51:22.000Z",
+      "ref": "I35",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "c0a50fdda1",
+      "normUrl": "https://news.ycombinator.com/item?id=50633531",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Analysis of Hacker News predictions since 2008",
+      "url": "https://news.ycombinator.com/item?id=50633531",
+      "externalUrl": "https://hnpredictions.com/",
+      "summary": null,
+      "deepenKey": "50633531",
+      "via": null,
+      "signal": {
+        "points": 9,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-24T19:46:54Z",
+      "ref": "I36",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "8e0f91a025",
+      "normUrl": "https://console.dev/out/warpbuild/CsxrVzX9NRYl",
+      "sourceId": "consoledev",
+      "source": "Console.dev",
+      "sourceHome": "https://console.dev/",
+      "side": "supply",
+      "pool": true,
+      "title": "Sponsor: WarpBuild",
+      "url": "https://console.dev/out/warpbuild/CsxrVzX9NRYl",
+      "summary": "WarpBuild - Braintrust, Raycast and Jane Street run CI on WarpBuild. Get started with $50 in free credits. Visit WarpBuild",
+      "publishedAt": "2026-11-19T08:00:00.000Z",
+      "ref": "I37",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "WarpBuild - Braintrust, Raycast and Jane Street run CI on WarpBuild. Get started with $50 in free credits. Visit WarpBuild",
+        "comments": [],
+        "source": "none",
+        "priorArt": [],
+        "fetchedAt": "2026-11-25T00:49:48.439Z"
+      }
+    }
+  ],
+  "deepenedAt": "2026-11-25T00:49:48.439Z"
+}

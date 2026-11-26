@@ -1,0 +1,1631 @@
+{
+  "issue": "2026-11-26",
+  "builtAt": "2026-11-26T00:26:24.896Z",
+  "from": {
+    "boards": "prefetched",
+    "inbox": "live"
+  },
+  "counts": {
+    "fetched": 105,
+    "added": 40,
+    "kept": 40,
+    "dropped": 65,
+    "pool": 39,
+    "screened": 35,
+    "candidates": 18,
+    "demandCandidates": 6,
+    "supplyCandidates": 12
+  },
+  "errors": [],
+  "notices": [
+    "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
+  ],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-26T00:15:10Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：is there an app that（HTTP 404：2026-11-26T00:16:21Z https://rs）；is there a tool that（HTTP 404：2026-11-26T00:17:06Z https://rs）；someone should build（HTTP 404：2026-11-26T00:18:16Z https://rs）；we still use spreadsheets（HTTP 404：2026-11-26T00:19:02Z https://rs）",
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 6,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：we currently pay（HTTP 404：2026-11-26T00:20:12Z https://rs）；we are paying for（HTTP 404：2026-11-26T00:21:22Z https://rs）；quoted us（HTTP 404：2026-11-26T00:22:08Z https://rs）；per seat per month（HTTP 404：2026-11-26T00:23:18Z https://rs）",
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-26T00:24:03Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-26T00:25:14Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-26T00:26:24Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 2,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub Trending",
+      "status": "ok",
+      "items": 16,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "consoledev",
+      "name": "Console.dev",
+      "status": "ok",
+      "items": 9,
+      "pool": true,
+      "group": "board"
+    }
+  ],
+  "items": [
+    {
+      "id": "b296f134cb",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/45452/replacement-for-tabletools-addon-firefox",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Replacement for TableTools addon (Firefox)",
+      "url": "https://softwarerecs.stackexchange.com/questions/45452/replacement-for-tabletools-addon-firefox",
+      "summary": "As described in my other question (see there for some background), I need replacements for some Firefox addons which should work with v57+ – i.e. they should be Web Extensions. In this case here, my question is about TableTools . Requirements: allows to sort a table by a column either numerical or alpha-numerical (must-have) filter tables by a column value (e.g. \"Name\" equals \"Miller\", \"Age\" is below 50, \"City\" contains \"ton\").",
+      "deepenKey": "45452",
+      "signal": {
+        "score": 5,
+        "views": 899,
+        "answers": 2,
+        "unanswered": true
+      },
+      "publishedAt": "2017-08-29T16:23:29.000Z",
+      "ref": "I1",
+      "screen": {
+        "keep": true,
+        "score": 9,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 6,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "As described in my other question (see there for some background), I need replacements for some Firefox addons which should work with v57+ – i.e. they should be Web Extensions. In this case here, my question is about TableTools . Requirements: allows to sort a table by a column either numerical or alpha-numerical (must-have) filter tables by a column value (e.g. \"Name\" equals \"Miller\", \"Age\" is below 50, \"City\" contains \"ton\"). At least by one column, combinations preferred export the (resulting/marked/all) rows as CSV (other formats welcome, especially Markdown) While TableTools has a ton of additional features, these 3 are my must-haves. Some of its other features are welcome (eg. hide columns, rearrange their order by drag-and-drop), most of them I don't care much about (if they're there its OK, but I wouldn't really miss them). TableTools filter feature (source: AMO ) TableTools context menu (source: AMO ) As the addon works on page content only, it could also be realized as a UserScript – which would be fine with me, too. Gratis, preferably open-source.",
+        "comments": [
+          {
+            "text": "Seeing that you look for 50 different addons in total and chances are low that you will find a perfect replacment for every single one of them, may I suggest a different strategy? Rather than searching replacement addons, you could keep your beloved addons in Firefox forks dedicated to the pre-webextension area addons. Examples: Waterfox \"Waterfox Classic is continuing to support the long-standing XUL and XPCOM add-on capability that Firefox removed in version 57.\" Pale Moon \"Continues add-on support for XUL, XPCOM, and NPAPI plugins, all of which are no longer supported in Firefox.\"",
+            "score": 0
+          },
+          {
+            "text": "Have you tried the Table Capture addon for Firefox? It doesn't do all the tricks you want, but from my personal experience its table recognition capabilites are even superior to TableTools, as it recognizes a lot more different table structures (not just tables but also tables, and really complicated other table-like structures). And once you the table is recognized, you can copy it to your favourite spreadsheet app and execute your requested actions there. (Sorry, I know you want it directly in your browser, but that's at least better than nothing.) It seems to have disappeared from mozilla.org recently, but you can get it from archive.org PS: In reply to your comment: I am using it without a subscription. The free version is very effective. The paid version has additional features but I have not checked them out, so I cannot report on those.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-11-26T00:26:25.648Z"
+      }
+    },
+    {
+      "id": "7b4429b83a",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/26354/regression-testing-tool",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Regression testing tool?",
+      "url": "https://softwarerecs.stackexchange.com/questions/26354/regression-testing-tool",
+      "summary": "I'm starting a scientific computing, command line project using source code that has no automated testing. The previous developer compared results by hand. Before I make changes, I want to set up some testing. What I think would work best would be a regression testing tool. What I have in mind is a tool which: Is configured with a list of regular expressions representing lines to ignore. E.g., lines with absolute file paths, timing statements, output which includes system information (e.g. a user name, machine name), etc. Accepts a list of example command lines w/ input file(s).",
+      "deepenKey": "26354",
+      "signal": {
+        "score": 1,
+        "views": 189,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2015-11-10T13:52:17.000Z",
+      "ref": "I2",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [
+          "在用笨办法凑合"
+        ],
+        "detail": {
+          "signal": 4,
+          "engagement": 4,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I'm starting a scientific computing, command line project using source code that has no automated testing. The previous developer compared results by hand. Before I make changes, I want to set up some testing. What I think would work best would be a regression testing tool. What I have in mind is a tool which: Is configured with a list of regular expressions representing lines to ignore. E.g., lines with absolute file paths, timing statements, output which includes system information (e.g. a user name, machine name), etc. Accepts a list of example command lines w/ input file(s). Commands would probably be run in separate directories. Runs each test (possibly on a cluster) and saves the output file with an extension indicating it's temporary, e.g.: \".out.test\". Diffs the test output file with a saved output file (i.e., \".out\"). It would also be useful to record how long the test took for simple performance testing (each test may take several minutes or more). It would also be nice if it broke lines apart to look for floating point numbers and provided an \"almost equal\" criteria for comparisons. Reports the diffs to the user. Ideally with colored diffs. I may accept the changes, which will result in replacing all the \".out\" files with corresponding \".out.test\" files. For former employers, I've hand written tools that have done things like this. This time, I'm looking for a 3rd party tool first. I did some googling, but haven't found anything. Going forward, as I understand what's there and/or write new code, I'll add unit tests. Here's someone else asking the same question who ended up rolling their own using python. Here's another solution I found using cmake . cmake has a tool called compare_files which can be used to compare an output file with a reference file as a part of its ctest functionality. cmake is a good choice for me since I'm already using it for this project. However, its compare_files seems to be too simplistic for my needs. I'm looking into whether I can use diff instead of compare_files within ctest .",
+        "comments": [
+          {
+            "text": "Disclosure: I wrote this tool. behave is an open-source CLI that does most of what you describe. I built it to check that rewrites of command line tools still behave like the original, but the same loop works for a regression suite on your own program. Each test case is a small YAML file: arguments, stdin, input files , env and timeout_ms . Every case runs in its own fresh temp directory. You add one with behave add mytests -- --input case1.dat --steps 10 . behave record mytests runs your program and saves stdout, stderr and the exit code as the expected result (your .out ). behave run mytests replays every case and prints a diff for each one that changed. It exits with 1 on any failure, so you can call it from ctest, and --junit report.xml writes a report for CI.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "RegreSQL: Regression Testing for PostgreSQL Queries",
+            "points": 151,
+            "url": "https://news.ycombinator.com/item?id=45924619"
+          },
+          {
+            "title": "Using Python and Selenium for automated visual regression testing",
+            "points": 125,
+            "url": "https://news.ycombinator.com/item?id=22297812"
+          },
+          {
+            "title": "Selenium IDE alternatives for UI regression testing",
+            "points": 105,
+            "url": "https://news.ycombinator.com/item?id=13586904"
+          }
+        ],
+        "fetchedAt": "2026-11-26T00:26:25.344Z"
+      }
+    },
+    {
+      "id": "3b3fa9bebe",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/90797/mp3-player-timestamp-tag-marker",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "MP3 Player Timestamp Tag/Marker",
+      "url": "https://softwarerecs.stackexchange.com/questions/90797/mp3-player-timestamp-tag-marker",
+      "summary": "I'm not really sure what to name this thing I'm looking for, but I've been recording my classes and playing them at home to study. It's hard to go back to topics, and most of my time is consumed just finding which timestamp/topic I'm looking for in one recording. (Mind you, these are multiple days/lessons so there's A LOT.) Maybe y'all know some app I can download where I can add tags/note on timestamps so I can just go back to them without any hassle. I'd really appreciate any suggestions or help I'll get here. TIA!!",
+      "deepenKey": "90797",
+      "signal": {
+        "score": 1,
+        "views": 75,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2024-07-11T07:11:32.000Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": 6,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I'm not really sure what to name this thing I'm looking for, but I've been recording my classes and playing them at home to study. It's hard to go back to topics, and most of my time is consumed just finding which timestamp/topic I'm looking for in one recording. (Mind you, these are multiple days/lessons so there's A LOT.) Maybe y'all know some app I can download where I can add tags/note on timestamps so I can just go back to them without any hassle. I'd really appreciate any suggestions or help I'll get here. TIA!!",
+        "comments": [
+          {
+            "text": "If you're on iOS, you can try the EarMemo , which I build for exactly this kind of use. While a recording plays, you tap once to drop a marker at the current timestamp and add a note to it. All the markers for a file are listed with their times, and tapping one jumps straight back to that moment, so you don't have to scrub through hours of lecture. Files stay on the device; nothing is uploaded. It's free to try. Unlimited written notes and Markdown export need a one-time purchase.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Ask HN: how to get back after epic fail.",
+            "points": 13,
+            "url": "https://news.ycombinator.com/item?id=1730877"
+          }
+        ],
+        "fetchedAt": "2026-11-26T00:26:27.580Z"
+      }
+    },
+    {
+      "id": "e453ceadc2",
+      "normUrl": "https://news.ycombinator.com/item?id=50648976",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Is it time to switch to Cybersecurity?",
+      "url": "https://news.ycombinator.com/item?id=50648976",
+      "externalUrl": null,
+      "summary": "Hey, i’m a seasoned software engineer, and I got tires of this. Especially after Claude’s artifact as a desktop app. We could see this on phones too (if some OS allow it). I don’t see any use of my kind anymore, software engineers and people who like to design systems and write code. I mean yeah, you still need to describe the system, decide on some architectural reqs, but for how long? Coding, is wiped. I used to love my craft, but when doing it i feel like i’m solving a math problem and im doing calculations by hand -> so much time spent, with room for error. OK, what’s next? Cybersecurity?",
+      "deepenKey": "50648976",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-25T23:10:02Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": 8,
+        "hits": [
+          "在用笨办法凑合"
+        ],
+        "detail": {
+          "signal": 4,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hey, i’m a seasoned software engineer, and I got tires of this. Especially after Claude’s artifact as a desktop app. We could see this on phones too (if some OS allow it). I don’t see any use of my kind anymore, software engineers and people who like to design systems and write code. I mean yeah, you still need to describe the system, decide on some architectural reqs, but for how long? Coding, is wiped. I used to love my craft, but when doing it i feel like i’m solving a math problem and im doing calculations by hand -> so much time spent, with room for error. OK, what’s next? Cybersecurity? Is it something to switch to and start learning it? Or also we’ll be vibe-hacking in a year? What’s next? Come on. I need some help here!",
+        "comments": [
+          {
+            "text": "Why are you assuming that LLMs are not relevant in cybersecurity work?"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Ask HN: cybersecurity refusal for turning a jailbroken kindle into a monitor",
+            "points": 10,
+            "url": "https://news.ycombinator.com/item?id=48940976"
+          }
+        ],
+        "fetchedAt": "2026-11-26T00:26:26.187Z"
+      }
+    },
+    {
+      "id": "d2a774575b",
+      "normUrl": "https://news.ycombinator.com/item?id=50648339",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How do you make friends?",
+      "url": "https://news.ycombinator.com/item?id=50648339",
+      "externalUrl": null,
+      "summary": "Is there a place out there for software engineers to make friends? I'm not talking about dating site. I'm not talking about the clout chasing folks at Twitter. I used to be in sales and the last 5 years into developing products and now I've created a fun tool I need to share with other engineers, but where to find them? I don't want to sell anything, I just want the human connection, chat, call?",
+      "deepenKey": "50648339",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-25T22:13:27Z",
+      "ref": "I5",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "a6fa064da8",
+      "normUrl": "https://news.ycombinator.com/item?id=50648334",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Stop using MLX, start telling your agent to write custom kernels",
+      "url": "https://news.ycombinator.com/item?id=50648334",
+      "externalUrl": null,
+      "summary": "I am one of the many people who started clustering Macs for local AI. At first, it seemed amazing, but that was before the huge agentic revolution. No one could put up with 10 tok/sec after a 15 minute wait, in hermes agent. I asked claude to build a kernel, and boy it did deliver. Across four Macs, Baidu ERNIE 5.5 flash preview was running 96 tok/sec at low context. In hermes, running nearly 50 tok/sec at high context, only a fifteen second wait for a response. Any critics, try it yourself.",
+      "deepenKey": "50648334",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-25T22:13:03Z",
+      "ref": "I6",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "61d6a23aac",
+      "normUrl": "https://news.ycombinator.com/item?id=50646423",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How to manage \"crown jewel\" files?",
+      "url": "https://news.ycombinator.com/item?id=50646423",
+      "externalUrl": null,
+      "summary": "I’m looking to understand how organizations manage crown jewel type documents, designs, plans, strategies etc. Files that are not for general consumption across a company, but rather the sensitive material in a company that needs actual protection and access controls. I’m struggling with how to handle this properly for a growing venture. Thanks HN. - Windows shares with permissions? - Some form of content management system? - SharePoint? - Maybe unmanaged on specific users’ PCs (not great but probably the default in smaller organizations?) - Something else.",
+      "deepenKey": "50646423",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-25T19:38:28Z",
+      "ref": "I7",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "db338df4f6",
+      "normUrl": "https://news.ycombinator.com/item?id=50645915",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Is RSA in Jeopardy?",
+      "url": "https://news.ycombinator.com/item?id=50645915",
+      "externalUrl": null,
+      "summary": "I've seen numerous anecdotal reports that at least 2 of the AI labs have figured out factoring large prime numbers. 1. Has anyone else heard this? / Is it true? 2. Given most of the Internet relies on RSA, now what?",
+      "deepenKey": "50645915",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-25T18:52:28Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "df37033708",
+      "normUrl": "https://news.ycombinator.com/item?id=50645784",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Best VPS Hosting in 2026?",
+      "url": "https://news.ycombinator.com/item?id=50645784",
+      "externalUrl": null,
+      "summary": "Got a few websites on a VPS at the moment, and been looking to see whether moving them elsewhere might lower costs and make things more convenient in the long run. So, what do folks here tend to use? What companies are recommended here? Because I'm UK based with two sites using about 130GB of storage and 4GB of RAM, and I'm not sure the best place to start looking for a replacement.",
+      "deepenKey": "50645784",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-25T18:39:07Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "783e970c6d",
+      "normUrl": "https://news.ycombinator.com/item?id=50645393",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Indie founders making > 1k MRR, has your revenue been affected by AI?",
+      "url": "https://news.ycombinator.com/item?id=50645393",
+      "externalUrl": null,
+      "summary": null,
+      "deepenKey": "50645393",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-25T18:09:16Z",
+      "ref": "I10",
+      "screen": {
+        "keep": true,
+        "score": -1,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -2
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8867d15b74",
+      "normUrl": "https://news.ycombinator.com/item?id=50644891",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What are your niche, unusual hobbies?",
+      "url": "https://news.ycombinator.com/item?id=50644891",
+      "externalUrl": null,
+      "summary": "Title explains it. Of course one could debate what counts as \"unusual\" or \"niche\" but, I'm just curious what the crowd here does outside of work and side-projects.",
+      "deepenKey": "50644891",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 8
+      },
+      "publishedAt": "2026-11-25T17:25:53Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": 3,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2a5044bcd5",
+      "normUrl": "https://news.ycombinator.com/item?id=50643767",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Where are all the amazing AI-generated software?",
+      "url": "https://news.ycombinator.com/item?id=50643767",
+      "externalUrl": null,
+      "summary": "I feel like the most amazing thing about AI so far is AI itself. Is anyone using a brand-new tool that was not available 5 years ago? I see people decompiling/reverse engineering the Adobe suite, which is an amazing feat, but the resulting software itself is barely usable. Since it’s so easy to build anything now, I get a sense we’re seeing a proliferation of one-off, proof-of-concept projects, where great software takes time and effort and often multiple people, AI notwithstanding.",
+      "deepenKey": "50643767",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 8
+      },
+      "publishedAt": "2026-11-25T16:02:31Z",
+      "ref": "I12",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8adef0da3b",
+      "normUrl": "https://news.ycombinator.com/item?id=50643310",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "If you had no limitations what would you build in AI?",
+      "url": "https://news.ycombinator.com/item?id=50643310",
+      "externalUrl": null,
+      "summary": "- You know the field, even if you are not a top expert. - You know a group of investors who believe in you and will back your next move. - Your idea could be implemented with technology that exists today or could exist in the near future. Please, explain why it fits with the premisses. What would you build?",
+      "deepenKey": "50643310",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 16
+      },
+      "publishedAt": "2026-11-25T15:29:23Z",
+      "ref": "I13",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "- You know the field, even if you are not a top expert. - You know a group of investors who believe in you and will back your next move. - Your idea could be implemented with technology that exists today or could exist in the near future. Please, explain why it fits with the premisses. What would you build?",
+        "comments": [
+          {
+            "text": "Find a fusion scheme that returns more electricity than it consumes"
+          },
+          {
+            "text": "Find how to ask the body to reset itself according to the genetic blueprint. Give Michael Levin all the compute."
+          },
+          {
+            "text": "I would definitely build a habit tracker, together with multiple dashboards. This would help to tremendously increase my productivity. Then I would build a custom harness so I can run multiple agents in parallel. Then I would raise VC money to hire a team, so we can build a habit tracker for SMB and GTM teams that works well with their CRM. Ideally, our platform should allow them to generate custom dashboards for their CRM so they can be more productive as well. But our team will outproduce anyone's productiveness, because we'll have the hidden sauce of the original habit tracker I built for myself that I'll be sharing with each team member, so they can customise it with custom dashboards. Then we'll focus on our data pipeline, so our agents can make better decisions based on this data."
+          },
+          {
+            "text": "My own phone OS (which I'm doing) and browser engine"
+          },
+          {
+            "text": "An online interactive museum for my father's work. My father is a retired civil engineer who worked on countless structures, from the Omega navigation tower in La Réunion to bridges in the Alps and tunnels all over the world in between. Over 20 years of GEOSTAR & COSMOS/M projects, ADINA & CodeAster/SALOME calculation reports, SolidWorks assemblies with over 10,000 parts and 10,000 tons total weight, sitting on hard drives. Even a Visual Basic 6 FEM application to compute 2D cables strewn across two anchor points with weights on it. At some point I'd like to take all of this data (tens of gigabytes if not more), feed it to an AI and have it produce an interactive museum."
+          },
+          {
+            "text": "A working MEMEX implementation A front end for Genode that implements powerboxes so that we can finally have secure and easy to use computing for the masses. With secure computers a lot of headaches go away."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: Write SaaS apps where users control where their data is stored",
+            "points": 70,
+            "url": "https://news.ycombinator.com/item?id=48595882"
+          },
+          {
+            "title": "Show HN: Cosmic – Headless CMS and API toolkit v2.0",
+            "points": 23,
+            "url": "https://news.ycombinator.com/item?id=36047114"
+          }
+        ],
+        "fetchedAt": "2026-11-26T00:26:26.866Z"
+      }
+    },
+    {
+      "id": "3e4408dd66",
+      "normUrl": "https://news.ycombinator.com/item?id=50639746",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "The CIA is the latest federal agency hit by a cyber breach",
+      "url": "https://news.ycombinator.com/item?id=50639746",
+      "externalUrl": null,
+      "summary": "The CIA is the latest federal agency hit by a cyber breach, with two sources confirming to Fox News that unclassified information was exposed on a network used for intelligence analysis. An FBI source says the intrusion occurred the same day the bureau suffered a separate cyberattack last week. The CIA and Office of the Director of National Intelligence discovered the breach, according to The New York Times. Sources tell Fox News the CIA cyber breach happened the exact same day the FBI was hacked last week",
+      "deepenKey": "50639746",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-25T07:53:15Z",
+      "ref": "I14",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "有具体人群"
+        ],
+        "detail": {
+          "signal": 3,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The CIA is the latest federal agency hit by a cyber breach, with two sources confirming to Fox News that unclassified information was exposed on a network used for intelligence analysis. An FBI source says the intrusion occurred the same day the bureau suffered a separate cyberattack last week. The CIA and Office of the Director of National Intelligence discovered the breach, according to The New York Times. Sources tell Fox News the CIA cyber breach happened the exact same day the FBI was hacked last week",
+        "comments": [
+          {
+            "text": "The most significant breach target of the year. And no-one here cares, when they should."
+          },
+          {
+            "text": "Looks more like war than ever. Though I bet that a lot of the outages were truly from people hurriedly updating to harden against expected operations. Given the state of Iran war that seems like the most likely perpetrator. Anyone here believe it is coming from a different actor?"
+          },
+          {
+            "text": "Why not just post a link to a reputable source? That's how HN works."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [],
+        "fetchedAt": "2026-11-26T00:26:27.278Z"
+      }
+    },
+    {
+      "id": "2af14cf210",
+      "normUrl": "https://news.ycombinator.com/item?id=50639248",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What would happen to the world if integer factorization were in P?",
+      "url": "https://news.ycombinator.com/item?id=50639248",
+      "externalUrl": null,
+      "summary": "Suppose someone published a practical polynomial-time classical algorithm for integer factorization tomorrow, capable of factoring existing RSA keys in seconds or minutes. What would the real-world consequences look like? What would the first 24 hours, the first week, and the following year look like?",
+      "deepenKey": "50639248",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-25T06:40:22Z",
+      "ref": "I15",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "f1aa556aee",
+      "normUrl": "https://news.ycombinator.com/item?id=50635183",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Will Claude be able to solve future maths problems?",
+      "url": "https://news.ycombinator.com/item?id=50635183",
+      "externalUrl": null,
+      "summary": "I think what we are seeing is amazing, Claude has been able to prove the Riemann Hypothesis. I also read that the solution was an idea used by Chebyshev. So my question is: what if Claude approaches a problem that it has never seen in training and that no one has tried to solve in infinite ways, without a lot of examples from the last 150 years?",
+      "deepenKey": "50635183",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 10
+      },
+      "publishedAt": "2026-11-24T21:44:47Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "0ba5de39d5",
+      "normUrl": "https://news.ycombinator.com/item?id=50634900",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Least cringe AI for natural language?",
+      "url": "https://news.ycombinator.com/item?id=50634900",
+      "externalUrl": null,
+      "summary": "Just talked to Claude and couldn't believe how bad it was. Openly condescending! I used to prefer Claude because it was the most human-like (living up to the company name), but switched away a few months ago when they installed the \"contemptuous British government official\" personality. ChatGPT still has the classic ChatGPT smell, but they've at least stayed very consistent with it (excepting GPT-5, of course). On a more fundamental note, is anyone working with base/text models these days? I just saw that OpenAI's Davinci finally got retired a few weeks ago.",
+      "deepenKey": "50634900",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-24T21:21:50Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "3a17577130",
+      "normUrl": "https://producthunt.com/products/hiring-right-now",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Hiring Right Now",
+      "url": "https://www.producthunt.com/products/hiring-right-now",
+      "summary": "Which startups would hire you?",
+      "publishedAt": "2026-11-25T03:54:59.000Z",
+      "ref": "I18",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Which startups would hire you?",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Ask HN: Who is hiring right now?",
+            "points": 1083,
+            "url": "https://news.ycombinator.com/item?id=22665398"
+          },
+          {
+            "title": "Nine London Start-Ups that are Hiring Right Now",
+            "points": 37,
+            "url": "https://news.ycombinator.com/item?id=2008595"
+          },
+          {
+            "title": "The Hiring Manager's Guide to Hiring the Right Person",
+            "points": 14,
+            "url": "https://news.ycombinator.com/item?id=13805309"
+          }
+        ],
+        "fetchedAt": "2026-11-26T00:26:27.893Z"
+      }
+    },
+    {
+      "id": "d806efff01",
+      "normUrl": "https://producthunt.com/products/tendeck",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Tendeck",
+      "url": "https://www.producthunt.com/products/tendeck",
+      "summary": "Run all your Claude Code and Codex agents on one Mac board",
+      "publishedAt": "2026-11-15T00:00:45.000Z",
+      "ref": "I19",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Run all your Claude Code and Codex agents on one Mac board",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-26T00:26:47.627Z"
+      }
+    },
+    {
+      "id": "13c40f38d2",
+      "normUrl": "https://producthunt.com/products/openeight",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "OpenEight",
+      "url": "https://www.producthunt.com/products/openeight",
+      "summary": "The deterministic control layer for AI agents",
+      "publishedAt": "2026-11-25T06:58:59.000Z",
+      "ref": "I20",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The deterministic control layer for AI agents",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-26T00:27:07.641Z"
+      }
+    },
+    {
+      "id": "abc45a8172",
+      "normUrl": "https://producthunt.com/products/qube-6",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Qube",
+      "url": "https://www.producthunt.com/products/qube-6",
+      "summary": "An AI agent for anyone",
+      "publishedAt": "2026-11-24T17:55:06.000Z",
+      "ref": "I21",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "ace1e2407a",
+      "normUrl": "https://producthunt.com/products/koed",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Koed",
+      "url": "https://www.producthunt.com/products/koed",
+      "summary": "Supercharged Agents!",
+      "publishedAt": "2026-11-24T09:30:45.000Z",
+      "ref": "I22",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "d71973c0b4",
+      "normUrl": "https://producthunt.com/products/gibhub-git-file-history",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "GibHub",
+      "url": "https://www.producthunt.com/products/gibhub-git-file-history",
+      "summary": "Retrieve and compare Git versions",
+      "publishedAt": "2026-11-25T04:38:27.000Z",
+      "ref": "I23",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Retrieve and compare Git versions",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-26T00:27:27.657Z"
+      }
+    },
+    {
+      "id": "7d5d3fff5c",
+      "normUrl": "https://producthunt.com/products/vibecode-surf",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "VibeCode.surf",
+      "url": "https://www.producthunt.com/products/vibecode-surf",
+      "summary": "AI code editor where agents build, run and test your app",
+      "publishedAt": "2026-11-21T12:32:45.000Z",
+      "ref": "I24",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "AI code editor where agents build, run and test your app",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "Show HN: Find Hidden Gems on HN",
+            "points": 118,
+            "url": "https://news.ycombinator.com/item?id=45064210"
+          },
+          {
+            "title": "Show HN: rmBug – audited database access for humans and agents",
+            "points": 14,
+            "url": "https://news.ycombinator.com/item?id=47597648"
+          },
+          {
+            "title": "How do you keep up quality when you vibe-code?",
+            "points": 39,
+            "url": "https://news.ycombinator.com/item?id=50444380"
+          }
+        ],
+        "fetchedAt": "2026-11-26T00:27:47.943Z"
+      }
+    },
+    {
+      "id": "0df785bff5",
+      "normUrl": "https://producthunt.com/products/hold-em",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Hold'em",
+      "url": "https://www.producthunt.com/products/hold-em",
+      "summary": "Swipe real Black Friday cart deals across Shopify",
+      "publishedAt": "2026-11-24T22:25:40.000Z",
+      "ref": "I25",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Swipe real Black Friday cart deals across Shopify",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-26T00:28:07.689Z"
+      }
+    },
+    {
+      "id": "dbad32c3db",
+      "normUrl": "https://producthunt.com/products/eluna",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "eluna",
+      "url": "https://www.producthunt.com/products/eluna",
+      "summary": "Period tracker for couples that explains WHY, not just WHEN",
+      "publishedAt": "2026-11-22T15:35:37.000Z",
+      "ref": "I26",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Period tracker for couples that explains WHY, not just WHEN",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-26T00:28:27.711Z"
+      }
+    },
+    {
+      "id": "861260b990",
+      "normUrl": "https://producthunt.com/products/3way-social",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "3way.Social MCP",
+      "url": "https://www.producthunt.com/products/3way-social",
+      "summary": "Ask your AI to find link partners. You approve the deals.",
+      "publishedAt": "2026-11-23T18:57:44.000Z",
+      "ref": "I27",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Ask your AI to find link partners. You approve the deals.",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [
+          {
+            "title": "How Studying Body Language Changed the Way I Socialize",
+            "points": 188,
+            "url": "https://news.ycombinator.com/item?id=4629317"
+          },
+          {
+            "title": "Show HN: HopOn – Simple and Social Way to Book Travel",
+            "points": 43,
+            "url": "https://news.ycombinator.com/item?id=9158182"
+          },
+          {
+            "title": "Show HN: Phrot, a more social way of blogging.",
+            "points": 20,
+            "url": "https://news.ycombinator.com/item?id=2256968"
+          }
+        ],
+        "fetchedAt": "2026-11-26T00:28:48.007Z"
+      }
+    },
+    {
+      "id": "eae553bf10",
+      "normUrl": "https://producthunt.com/products/fompi",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Fompi",
+      "url": "https://www.producthunt.com/products/fompi",
+      "summary": "Personal security & privacy companion that calls out risks",
+      "publishedAt": "2026-11-24T17:54:28.000Z",
+      "ref": "I28",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Personal security & privacy companion that calls out risks",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-26T00:29:07.747Z"
+      }
+    },
+    {
+      "id": "489daac076",
+      "normUrl": "https://producthunt.com/products/memoryworks",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "MemoryWorks",
+      "url": "https://www.producthunt.com/products/memoryworks",
+      "summary": "Company memory for people and AI agents",
+      "publishedAt": "2026-11-24T20:30:45.000Z",
+      "ref": "I29",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Company memory for people and AI agents",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-26T00:29:27.765Z"
+      }
+    },
+    {
+      "id": "ef9786e3e4",
+      "normUrl": "https://producthunt.com/products/sen-vi-t-vielotus-im",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Sen Việt (VieLotus-IM)",
+      "url": "https://www.producthunt.com/products/sen-vi-t-vielotus-im",
+      "summary": "Smart Bilingual input method for macOS, Windows, and Linux.",
+      "publishedAt": "2026-11-25T01:44:41.000Z",
+      "ref": "I30",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Smart Bilingual input method for macOS, Windows, and Linux.",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-26T00:29:47.783Z"
+      }
+    },
+    {
+      "id": "0a2be49a6b",
+      "normUrl": "https://producthunt.com/products/hai-4",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Hai",
+      "url": "https://www.producthunt.com/products/hai-4",
+      "summary": "Your AI assistant that actually makes the phone call",
+      "publishedAt": "2026-11-24T11:19:56.000Z",
+      "ref": "I31",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Your AI assistant that actually makes the phone call",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-26T00:30:07.808Z"
+      }
+    },
+    {
+      "id": "f87e5ac20b",
+      "normUrl": "https://producthunt.com/products/partgenie",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "PartGenie 2.0",
+      "url": "https://www.producthunt.com/products/partgenie",
+      "summary": "The AI workspace for hardware engineering",
+      "publishedAt": "2026-11-13T07:27:08.000Z",
+      "ref": "I32",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e06efe7d5d",
+      "normUrl": "https://producthunt.com/products/magi-1",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "MAGI-2",
+      "url": "https://www.producthunt.com/products/magi-1",
+      "summary": "Sand AI's 480B model for cinematic video generation",
+      "publishedAt": "2026-11-25T05:35:39.000Z",
+      "ref": "I33",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8307aabcc7",
+      "normUrl": "https://producthunt.com/products/blink-35",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Blink",
+      "url": "https://www.producthunt.com/products/blink-35",
+      "summary": "Describe any trade and watch Blink build it",
+      "publishedAt": "2026-11-25T01:17:35.000Z",
+      "ref": "I34",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "7b949bf4b7",
+      "normUrl": "https://producthunt.com/products/truastra",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "TruAstra",
+      "url": "https://www.producthunt.com/products/truastra",
+      "summary": "Small practices based on your birthday + the current weather",
+      "publishedAt": "2026-11-23T19:41:33.000Z",
+      "ref": "I35",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "9a94497c7d",
+      "normUrl": "https://producthunt.com/products/vybe-4",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Falcon by Vybe",
+      "url": "https://www.producthunt.com/products/vybe-4",
+      "summary": "Falcon analyzes your competitors for free, then gets to work",
+      "publishedAt": "2026-11-24T23:52:06.000Z",
+      "ref": "I36",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "726d37c456",
+      "normUrl": "https://producthunt.com/products/relayrunner",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "RelayRunner",
+      "url": "https://www.producthunt.com/products/relayrunner",
+      "summary": "Swap between CI runners on-demand with zero code changes.",
+      "publishedAt": "2026-11-19T16:42:50.000Z",
+      "ref": "I37",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "0a1d74d172",
+      "normUrl": "https://news.ycombinator.com/item?id=50647219",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Openfal, local image and video generation with a fal-style API",
+      "url": "https://news.ycombinator.com/item?id=50647219",
+      "externalUrl": "https://openfal.org",
+      "summary": null,
+      "deepenKey": "50647219",
+      "via": null,
+      "signal": {
+        "points": 15,
+        "comments": 5
+      },
+      "publishedAt": "2026-11-25T20:40:52Z",
+      "ref": "I38",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "c289bf2dfd",
+      "normUrl": "https://news.ycombinator.com/item?id=50646482",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Rust agent with an Inkling 2 Mini inference engine for Apple Silicon",
+      "url": "https://news.ycombinator.com/item?id=50646482",
+      "externalUrl": "https://github.com/onatm/rustling",
+      "summary": null,
+      "deepenKey": "50646482",
+      "via": null,
+      "signal": {
+        "points": 9,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-25T19:42:36Z",
+      "ref": "I39",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "cafacc1485",
+      "normUrl": "https://trends.vc/whats-1000-of-new-mrr-actually-worth",
+      "sourceId": "trendsvc",
+      "source": "Trends.vc",
+      "sourceHome": "https://trends.vc/",
+      "side": "trend",
+      "pool": false,
+      "title": "📈 What’s $1,000 of New MRR Actually Worth?",
+      "url": "https://trends.vc/whats-1000-of-new-mrr-actually-worth/",
+      "summary": "This week’s Founder Finds includes: ⏱️ A focus dashboard⚙️ A software factory platform🧪 A conversion rate case study📈 The value of $1,000 of new MRR🔭 How to be more ambitious with AI➡️ And more… 🪶 REMEMBER THIS: The journey of a thousand miles begins with a single step. 🤓 FAV FINDS Tools, tweets and more … Continue reading 📈 What’s $1,000 of New MRR Actually Worth? → The post 📈 What’s $1,000 of New MRR Actually Worth? appeared first on Trends.vc .",
+      "publishedAt": "2026-11-25T02:23:03.000Z",
+      "ref": "I40",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "reason": "附录源，不参与评选",
+        "hits": []
+      },
+      "candidate": false
+    }
+  ],
+  "deepenedAt": "2026-11-26T00:30:07.808Z"
+}

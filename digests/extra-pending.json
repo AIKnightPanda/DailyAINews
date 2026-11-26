@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-11-25T00:59:48.581Z",
+  "fetchedAt": "2026-11-26T00:36:39.923Z",
   "windowDays": 3,
-  "windowUntil": "2026-11-25T23:59:59.000Z",
+  "windowUntil": "2026-11-26T23:59:59.000Z",
   "sources": [
     {
       "id": "ainews",
@@ -14,22 +14,22 @@
       "id": "importai",
       "name": "Import AI",
       "status": "ok",
-      "issues": 1,
+      "issues": 0,
       "items": 0
     },
     {
       "id": "openai",
       "name": "OpenAI",
       "status": "ok",
-      "issues": 8,
-      "items": 5
+      "issues": 5,
+      "items": 0
     },
     {
       "id": "deepmind",
       "name": "Google DeepMind",
       "status": "ok",
       "issues": 1,
-      "items": 0
+      "items": 1
     },
     {
       "id": "rundown",
@@ -42,66 +42,35 @@
       "id": "aivalley",
       "name": "AI Valley",
       "status": "ok",
-      "issues": 2,
+      "issues": 1,
       "items": 0
     }
   ],
   "items": [
     {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
-      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
-      "summary": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
-      "publishedAt": "2026-11-24T13:00:00.000Z"
-    },
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "Searching for distant planets with Astra",
-      "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
-      "summary": "See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes.",
-      "publishedAt": "2026-11-24T11:00:00.000Z"
-    },
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "How Intentful uses dots to make more time for growth",
-      "url": "https://openai.com/business/customer-stories/intentful-dots",
-      "summary": "Marina Petrova’s dot Aria helps research websites and build proposals, while proactively flagging messages and resolving issues.",
-      "publishedAt": "2026-11-24T00:00:00.000Z"
-    },
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "How iFood scales coding agents across 15,000 repositories",
-      "url": "https://openai.com/business/customer-stories/ifood",
-      "summary": null,
-      "publishedAt": "2026-11-24T00:00:00.000Z"
-    },
-    {
-      "source": "OpenAI",
-      "sourceHome": "https://openai.com/news/",
-      "title": "Clay helps sales teams win with Codex and ChatGPT",
-      "url": "https://openai.com/business/customer-stories/clay-plugins-openai",
-      "summary": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning.",
-      "publishedAt": "2026-11-24T00:00:00.000Z"
+      "source": "Google DeepMind",
+      "sourceHome": "https://deepmind.google/blog/",
+      "title": "From spectrum to structure: Identifying molecules with Mass Spec Skills for Google Antigravity",
+      "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+      "summary": "Mass Spec Skills for Google Antigravity pairs Gemini’s chemical reasoning with established mass spectrometry tools to interpret tandem mass spectra at scale.",
+      "publishedAt": "2026-11-24T13:07:53.000Z",
+      "enriched": true
     },
     {
       "source": "The Rundown AI",
       "sourceHome": "https://www.therundown.ai/",
-      "title": "Jensen Huang returns to Nvidia",
-      "url": "https://www.therundown.ai/articles/jensen-huang-returns-to-nvidia",
-      "summary": "PLUS: Go beyond the browser with the Claude desktop app",
-      "publishedAt": "2026-11-24T11:00:00.000Z"
+      "title": "Three xAI founders want AI to predict the future",
+      "url": "https://www.therundown.ai/articles/three-xai-founders-want-ai-to-predict-the-future",
+      "summary": "PLUS: How to put Microsoft Copilot to work",
+      "publishedAt": "2026-11-25T11:00:00.000Z"
     },
     {
       "source": "The Rundown AI",
       "sourceHome": "https://www.therundown.ai/",
-      "title": "Nvidia’s robot king returns",
-      "url": "https://www.therundown.ai/articles/nvidia-robot-king-returns",
-      "summary": "PLUS: China's newest humanoid hits $1.6B",
-      "publishedAt": "2026-11-23T15:30:00.000Z"
+      "title": "Cybersecurity gets a $44B merger",
+      "url": "https://www.therundown.ai/articles/cybersecurity-gets-a-44b-merger",
+      "summary": "PLUS: Nothing to launch its AI mystery product",
+      "publishedAt": "2026-11-24T15:30:00.000Z"
     }
   ]
 }

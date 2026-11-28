@@ -1,0 +1,1432 @@
+{
+  "issue": "2026-11-28",
+  "builtAt": "2026-11-28T00:11:19.441Z",
+  "from": {
+    "boards": "prefetched",
+    "inbox": "live"
+  },
+  "counts": {
+    "fetched": 107,
+    "added": 35,
+    "kept": 35,
+    "dropped": 72,
+    "pool": 35,
+    "screened": 33,
+    "candidates": 17,
+    "demandCandidates": 3,
+    "supplyCandidates": 14
+  },
+  "errors": [],
+  "notices": [
+    "缺少环境变量 GMAIL_CLIENT_ID、GMAIL_CLIENT_SECRET、GMAIL_REFRESH_TOKEN，见 ideas/README.md"
+  ],
+  "sources": [
+    {
+      "id": "somebodymakethis",
+      "name": "r/SomebodyMakeThis",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-28T00:00:04Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "reddit-search",
+      "name": "Reddit 需求短语",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：is there an app that（HTTP 404：2026-11-28T00:01:15Z https://rs）；is there a tool that（HTTP 404：2026-11-28T00:02:00Z https://rs）；someone should build（HTTP 404：2026-11-28T00:03:10Z https://rs）；we still use spreadsheets（HTTP 404：2026-11-28T00:04:21Z https://rs）",
+      "group": "board"
+    },
+    {
+      "id": "softwarerecs",
+      "name": "Software Recommendations",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "hn-ask",
+      "name": "Ask HN",
+      "status": "ok",
+      "items": 25,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "gh-requests",
+      "name": "GitHub 高赞功能请求",
+      "status": "ok",
+      "items": 6,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "reddit-paying",
+      "name": "Reddit 付费信号",
+      "status": "error",
+      "pool": true,
+      "error": "全部短语失败：we currently pay（HTTP 404：2026-11-28T00:05:06Z https://rs）；we are paying for（HTTP 404：2026-11-28T00:06:17Z https://rs）；quoted us（HTTP 404：2026-11-28T00:07:02Z https://rs）；per seat per month（HTTP 404：2026-11-28T00:08:12Z https://rs）",
+      "group": "board"
+    },
+    {
+      "id": "msp",
+      "name": "r/msp",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-28T00:09:23Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "sysadmin",
+      "name": "r/sysadmin",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-28T00:10:08Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "microsaas",
+      "name": "r/microsaas",
+      "status": "error",
+      "pool": true,
+      "error": "HTTP 404：2026-11-28T00:11:19Z https://rss.reddit.com/ Not Found",
+      "group": "board"
+    },
+    {
+      "id": "ycrfs",
+      "name": "YC Requests for Startups",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "trendsvc",
+      "name": "Trends.vc",
+      "status": "ok",
+      "items": 1,
+      "pool": false,
+      "group": "board"
+    },
+    {
+      "id": "producthunt",
+      "name": "Product Hunt",
+      "status": "ok",
+      "items": 20,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "showhn",
+      "name": "Show HN",
+      "status": "ok",
+      "items": 4,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub Trending",
+      "status": "ok",
+      "items": 16,
+      "pool": true,
+      "group": "board"
+    },
+    {
+      "id": "consoledev",
+      "name": "Console.dev",
+      "status": "ok",
+      "items": 9,
+      "pool": true,
+      "group": "board"
+    }
+  ],
+  "items": [
+    {
+      "id": "858b7e1e78",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/90030/converting-scorm-to-ppt",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Converting SCORM to PPT",
+      "url": "https://softwarerecs.stackexchange.com/questions/90030/converting-scorm-to-ppt",
+      "summary": "I am creating educational content. The tool of my company can export this as a SCORM file, but nothing else. Since I don't want to do the work twice, I'd like to convert the SCORM file as PPT. At the moment, I'm very new to SCORM, so I don't have any particular idea on which features of SCORM need to be supported. Very basic support is sufficient for now. Requirements: Works on Windows (Windows 10+) is gratis (Open Source preferred) works offline (no upload to the Internet)",
+      "deepenKey": "90030",
+      "signal": {
+        "score": 0,
+        "views": 1300,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2024-03-06T10:13:04.000Z",
+      "ref": "I1",
+      "screen": {
+        "keep": true,
+        "score": 10,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 7,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I am creating educational content. The tool of my company can export this as a SCORM file, but nothing else. Since I don't want to do the work twice, I'd like to convert the SCORM file as PPT. At the moment, I'm very new to SCORM, so I don't have any particular idea on which features of SCORM need to be supported. Very basic support is sufficient for now. Requirements: Works on Windows (Windows 10+) is gratis (Open Source preferred) works offline (no upload to the Internet)",
+        "comments": [
+          {
+            "text": "Converting a SCORM file to a PowerPoint presentation (PPT) can be a bit challenging because SCORM is a package format used for e-learning content, while PowerPoint is a presentation format. However, there are some open-source tools that can help you extract the content from the SCORM package and convert it to a more readable format, which you can then use to create a PowerPoint presentation manually. One tool that meets your requirements is the SCORM Cloud Player, which is an open-source project hosted on GitHub. Here are the steps to use it: Download the SCORM Cloud Player from the GitHub repository: https://github.com/cyber-kube/scorm-cloud-player Extract the downloaded ZIP file to a folder on your Windows computer. Open the extracted folder and locate the \"scorm-cloud-player.html\" file. Double-click on the \"scorm-cloud-player.html\" file to open it in your default web browser.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [
+          {
+            "title": "Launch HN: Openlayer (YC S21) – Testing and Evaluation for AI",
+            "points": 94,
+            "url": "https://news.ycombinator.com/item?id=38532593"
+          },
+          {
+            "title": "Show HN: JACoB – Open-Source AI Coding Agent for Real-World Productivity",
+            "points": 40,
+            "url": "https://news.ycombinator.com/item?id=40456457"
+          }
+        ],
+        "fetchedAt": "2026-11-28T00:11:20.248Z"
+      }
+    },
+    {
+      "id": "89f1140102",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/53673/online-video-converter",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Online Video converter",
+      "url": "https://softwarerecs.stackexchange.com/questions/53673/online-video-converter",
+      "summary": "I have a couple of online video links that are in HD and hence of higher size. It's not possible for me to accommodate such large collections of videos. Is it possible to convert this on some high speed server to SD resolution videos? Can you suggest any such free service available on the web? Because doing so in Indian low cost laptops takes lot of time. Thanks in advance.",
+      "deepenKey": "53673",
+      "signal": {
+        "score": 0,
+        "views": 277,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2018-12-15T04:36:47.000Z",
+      "ref": "I2",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "I have a couple of online video links that are in HD and hence of higher size. It's not possible for me to accommodate such large collections of videos. Is it possible to convert this on some high speed server to SD resolution videos? Can you suggest any such free service available on the web? Because doing so in Indian low cost laptops takes lot of time. Thanks in advance.",
+        "comments": [],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-11-28T00:11:20.676Z"
+      }
+    },
+    {
+      "id": "1b2ac76d25",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/95854/converter-from-3d-movie-to-normal-movie",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "Converter from 3D movie to normal movie",
+      "url": "https://softwarerecs.stackexchange.com/questions/95854/converter-from-3d-movie-to-normal-movie",
+      "summary": "I don't have any 3D capable hardware and even if I had, with my eye-problems I can't see the 3D effect anyway. It just gives me a major headache. I do have a number of 3D movie clips, produced by my (now deceased) cousin a few years ago. He was a 3D enthusiast and shot his own 3D movie-clips. Many of these clips are of family events happening during corona lock-down. And these clips are the only footage we have. Unfortunately I can't enjoy them. These clips, when played as a normal movie using VLC, appear to consist of 2 streams (square image) seen side by side.",
+      "deepenKey": "95854",
+      "signal": {
+        "score": 0,
+        "views": 11,
+        "answers": 0,
+        "unanswered": true
+      },
+      "publishedAt": "2026-11-27T11:55:53.000Z",
+      "ref": "I3",
+      "screen": {
+        "keep": true,
+        "score": -2,
+        "hits": [
+          "要做硬件"
+        ],
+        "detail": {
+          "signal": -8,
+          "engagement": 3,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "2070754b9f",
+      "normUrl": "https://softwarerecs.stackexchange.com/questions/85008/wysiwyg-editor-for-jetpack-compose",
+      "sourceId": "softwarerecs",
+      "source": "Software Recommendations",
+      "sourceHome": "https://softwarerecs.stackexchange.com/",
+      "side": "demand",
+      "pool": true,
+      "title": "WYSIWYG editor for Jetpack Compose?",
+      "url": "https://softwarerecs.stackexchange.com/questions/85008/wysiwyg-editor-for-jetpack-compose",
+      "summary": "We used to use Matisse on our team to make mock ups and even generate the initial code for Swing user interfaces. I'm investigating moving to Jetpack Compose and one of the hot questions is, where is the WYSIWYG editor for Compose? Something basic which will take care of component layouts and spacing for us, and export to code at the end. Live editing of the view after the fact would be amazing, but is out of scope. I had a bit of a play with Figma, but the usability was extremely poor compared to Matisse and can't seem to do much of anything without plugins.",
+      "deepenKey": "85008",
+      "signal": {
+        "score": 5,
+        "views": 520,
+        "answers": 1,
+        "unanswered": true
+      },
+      "publishedAt": "2023-01-15T11:37:15.000Z",
+      "ref": "I4",
+      "screen": {
+        "keep": true,
+        "score": 11,
+        "hits": [
+          "有具体人群"
+        ],
+        "detail": {
+          "signal": 3,
+          "engagement": 5,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "We used to use Matisse on our team to make mock ups and even generate the initial code for Swing user interfaces. I'm investigating moving to Jetpack Compose and one of the hot questions is, where is the WYSIWYG editor for Compose? Something basic which will take care of component layouts and spacing for us, and export to code at the end. Live editing of the view after the fact would be amazing, but is out of scope. I had a bit of a play with Figma, but the usability was extremely poor compared to Matisse and can't seem to do much of anything without plugins.",
+        "comments": [
+          {
+            "text": "Sorry brother, but Jetpack Compose has no support for WYSIWYG. For that reason alone I think that it's a giant step backwards in developing Android UI. Hopefully it will be remedied before the \"next big thing\" replaces Jetpack and all those libraries.",
+            "score": 0
+          }
+        ],
+        "source": "stackexchange",
+        "priorArt": [],
+        "fetchedAt": "2026-11-28T00:11:19.897Z"
+      }
+    },
+    {
+      "id": "8cd4ba964e",
+      "normUrl": "https://news.ycombinator.com/item?id=50672702",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "I was hired by an AI agent",
+      "url": "https://news.ycombinator.com/item?id=50672702",
+      "externalUrl": null,
+      "summary": "has anyone else been hired by agents? i had a very pleasant experience as it was a more reasonable client then any of my other commercial clients I have worked with, but my final invoice was paid in 2000 bank transactions of $5!?!",
+      "deepenKey": "50672702",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 4
+      },
+      "publishedAt": "2026-11-27T23:31:19Z",
+      "ref": "I5",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d03273222f",
+      "normUrl": "https://news.ycombinator.com/item?id=50672138",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Do posts with a big amount of comments crash for you too?",
+      "url": "https://news.ycombinator.com/item?id=50672138",
+      "externalUrl": null,
+      "summary": "Sorry if it's a dumb question, but for me the posts with more than 500 comments just loads super badly. The whole tab slows down and it takes a few seconds until something can be clicked. Is that for you too?",
+      "deepenKey": "50672138",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-27T22:05:52Z",
+      "ref": "I6",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "882f641506",
+      "normUrl": "https://news.ycombinator.com/item?id=50672053",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Users asking to remove their commits under GDPR",
+      "url": "https://news.ycombinator.com/item?id=50672053",
+      "externalUrl": null,
+      "summary": "Seeing a spike of people asking to remove their commits from open-source GitHub repositories that I am the owner of because those commits carry their personal email or other identifiers. How are you handling these?",
+      "deepenKey": "50672053",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 2
+      },
+      "publishedAt": "2026-11-27T21:53:58Z",
+      "ref": "I7",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "f0656ddf19",
+      "normUrl": "https://news.ycombinator.com/item?id=50671974",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Isn't it time we promote conversation rather than d*wnr*nking it?",
+      "url": "https://news.ycombinator.com/item?id=50671974",
+      "externalUrl": null,
+      "summary": "(Apologies for the childish self-censoring, but A) I'm serious about it and B) it kinda drives home my point on its own...) More specifically: why continue the practice of pushing content off the front page that has a healthy discussion, and preventing content that gets multiple comments early on from reaching it in the first place? I've been tilting at the windmill of Markdown support on this site for years now, through which I've learned that all three mods are undeniably well-meaning, competent people.",
+      "deepenKey": "50671974",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 4
+      },
+      "publishedAt": "2026-11-27T21:44:14Z",
+      "ref": "I8",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8ef8d0199b",
+      "normUrl": "https://news.ycombinator.com/item?id=50667956",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "What separates a smart vs. effective programmer in your experience?",
+      "url": "https://news.ycombinator.com/item?id=50667956",
+      "externalUrl": null,
+      "summary": "I've noticed over a long time from working with many different engineers that just pure smartness or brain horsepower is not really a determiner alone of how successful or effective a programmer is on particular projects or in their overall career. From engineers you have worked with what are the differences you've noticed?",
+      "deepenKey": "50667956",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 3
+      },
+      "publishedAt": "2026-11-27T15:21:19Z",
+      "ref": "I9",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "81feaa01ab",
+      "normUrl": "https://news.ycombinator.com/item?id=50665232",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Is Claude Code nerfing AI and agent-harness projects?",
+      "url": "https://news.ycombinator.com/item?id=50665232",
+      "externalUrl": null,
+      "summary": "Over the last 5-6 months, I've been researching a lot about AI/ML and harnesses from novel research papers, experimenting with transformer architectures, experimental harnesses, post-training reward weights, and stuff like that. I've used Claude Code for almost two years to ship internal tools, dashboards, and full-stack apps with great results. On older projects I hand-checked code much more closely and Claude never pulled anything like this, so over time I stopped checking every line. I feel this is standard experience for agentic coding devs.",
+      "deepenKey": "50665232",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 4
+      },
+      "publishedAt": "2026-11-27T10:27:39Z",
+      "ref": "I10",
+      "screen": {
+        "keep": true,
+        "score": 5,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "f5e0209513",
+      "normUrl": "https://news.ycombinator.com/item?id=50663771",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Best Gmail Alternative (looking for an excellent spam filter)",
+      "url": "https://news.ycombinator.com/item?id=50663771",
+      "externalUrl": null,
+      "summary": "Hi, I am using Gmail both within my company and privately. Due to costs and privacy concerns I am looking for an alternative. My main reason for using Gmail has been their spam-filter which outperforms all competitors. I have used Mailbox for some projects but I am getting bombarded with spam that escapes the filter, which is an annoyance to say the least. Running my own mail server is not an option since servers seemingly have to be whitelisted nowadays, in order to not get caught in various spam filters. What are my best options according to your experience?",
+      "deepenKey": "50663771",
+      "via": null,
+      "signal": {
+        "points": 3,
+        "comments": 0
+      },
+      "publishedAt": "2026-11-27T07:09:53Z",
+      "ref": "I11",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "6cc70b27de",
+      "normUrl": "https://news.ycombinator.com/item?id=50663306",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "How well do you understand what's going on inside RL?",
+      "url": "https://news.ycombinator.com/item?id=50663306",
+      "externalUrl": null,
+      "summary": "Reinforcement learning: you see it all the time in the context of LLMs and chess agents. We often hear that it trains on rewards without labeled data, but how much of the actual algorithms under the hood could you explain?",
+      "deepenKey": "50663306",
+      "via": null,
+      "signal": {
+        "points": 8,
+        "comments": 5
+      },
+      "publishedAt": "2026-11-27T05:59:33Z",
+      "ref": "I12",
+      "screen": {
+        "keep": true,
+        "score": 3,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 2,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8433b04b5f",
+      "normUrl": "https://news.ycombinator.com/item?id=50662997",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Do coding harnesses not have prompt queue management features?",
+      "url": "https://news.ycombinator.com/item?id=50662997",
+      "externalUrl": null,
+      "summary": "Hey HN, I find myself in this situation almost daily: - I have some long-running task in my session going - I queue up a few more prompts as that task is running, in the same session. - I realize I want to to edit, re-order, delete or consolidate one of those several queued prompts I'm surprised to not find intuitive and seamless support for this workflow. I use github copilot CLI as my daily driver (MSFT employee), but I have tried claude code, opencode and other harnesses as well.",
+      "deepenKey": "50662997",
+      "via": null,
+      "signal": {
+        "points": 5,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-27T05:07:28Z",
+      "ref": "I13",
+      "screen": {
+        "keep": true,
+        "score": 4,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 3
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "047c31db84",
+      "normUrl": "https://news.ycombinator.com/item?id=50662525",
+      "sourceId": "hn-ask",
+      "source": "Ask HN",
+      "sourceHome": "https://news.ycombinator.com/ask",
+      "side": "demand",
+      "pool": true,
+      "title": "Don't worry, 95.24% of people are good folks",
+      "url": "https://news.ycombinator.com/item?id=50662525",
+      "externalUrl": null,
+      "summary": "Whatenever we make will ultimately resolve to providing value to humanity. It's so going to work out, and everything will be OK. Ur welcome. :D Happy Thanksgiving.",
+      "deepenKey": "50662525",
+      "via": null,
+      "signal": {
+        "points": 4,
+        "comments": 1
+      },
+      "publishedAt": "2026-11-27T03:43:35Z",
+      "ref": "I14",
+      "screen": {
+        "keep": true,
+        "score": 2,
+        "hits": [],
+        "detail": {
+          "signal": 0,
+          "engagement": 1,
+          "depth": 1
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "fbef5f8738",
+      "normUrl": "https://producthunt.com/products/gpyou",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "gpyou",
+      "url": "https://www.producthunt.com/products/gpyou",
+      "summary": "The OpenRouter for compute for the cheapest GPU in stock",
+      "publishedAt": "2026-11-24T20:36:16.000Z",
+      "ref": "I15",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The OpenRouter for compute for the cheapest GPU in stock",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-28T00:11:21.792Z"
+      }
+    },
+    {
+      "id": "0624ee8f2a",
+      "normUrl": "https://producthunt.com/products/wizstar",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Wizstar R1",
+      "url": "https://www.producthunt.com/products/wizstar",
+      "summary": "Seedance 2.0-level product videos at a lower cost",
+      "publishedAt": "2026-11-25T07:56:05.000Z",
+      "ref": "I16",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Seedance 2.0-level product videos at a lower cost",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-28T00:11:41.739Z"
+      }
+    },
+    {
+      "id": "74cfcf430d",
+      "normUrl": "https://producthunt.com/products/depost-ai",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Depost AI",
+      "url": "https://www.producthunt.com/products/depost-ai",
+      "summary": "The LinkedIn AI agent that learns what works for your brand",
+      "publishedAt": "2026-11-27T03:17:55.000Z",
+      "ref": "I17",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The LinkedIn AI agent that learns what works for your brand",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-28T00:12:01.757Z"
+      }
+    },
+    {
+      "id": "bd8f486e62",
+      "normUrl": "https://producthunt.com/products/woomool",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Woomool",
+      "url": "https://www.producthunt.com/products/woomool",
+      "summary": "AI Canvas where thinking becomes tangible",
+      "publishedAt": "2026-11-27T05:09:46.000Z",
+      "ref": "I18",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "AI Canvas where thinking becomes tangible",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-28T00:12:21.767Z"
+      }
+    },
+    {
+      "id": "724631a997",
+      "normUrl": "https://producthunt.com/products/rightfont",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "RightFont 2026",
+      "url": "https://www.producthunt.com/products/rightfont",
+      "summary": "The right font, right now.",
+      "publishedAt": "2026-11-26T23:17:29.000Z",
+      "ref": "I19",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "The right font, right now.",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-28T00:12:42.042Z"
+      }
+    },
+    {
+      "id": "f22191399b",
+      "normUrl": "https://producthunt.com/products/chickytutor",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "ChickyTutor",
+      "url": "https://www.producthunt.com/products/chickytutor",
+      "summary": "A language tutor that knows you better daily. Now on iOS",
+      "publishedAt": "2026-11-23T20:47:39.000Z",
+      "ref": "I20",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "A language tutor that knows you better daily. Now on iOS",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-28T00:13:01.802Z"
+      }
+    },
+    {
+      "id": "c20deef0f5",
+      "normUrl": "https://producthunt.com/products/slay-3",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "slay",
+      "url": "https://www.producthunt.com/products/slay-3",
+      "summary": "AI composition guide camera app for iPhone",
+      "publishedAt": "2026-11-26T07:23:58.000Z",
+      "ref": "I21",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "AI composition guide camera app for iPhone",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-28T00:13:21.823Z"
+      }
+    },
+    {
+      "id": "b27f4467ce",
+      "normUrl": "https://producthunt.com/products/ploid",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Ploid",
+      "url": "https://www.producthunt.com/products/ploid",
+      "summary": "People search for AI agents, across 2B+ profiles",
+      "publishedAt": "2026-11-26T21:06:26.000Z",
+      "ref": "I22",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "People search for AI agents, across 2B+ profiles",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-28T00:13:41.845Z"
+      }
+    },
+    {
+      "id": "781cfd105b",
+      "normUrl": "https://producthunt.com/products/form-action-store",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Form Action Store",
+      "url": "https://www.producthunt.com/products/form-action-store",
+      "summary": "Discover, create and grow with powerful digital tools.",
+      "publishedAt": "2026-11-26T20:08:11.000Z",
+      "ref": "I23",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Discover, create and grow with powerful digital tools.",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-28T00:14:02.181Z"
+      }
+    },
+    {
+      "id": "44c8b947a4",
+      "normUrl": "https://producthunt.com/products/spark-ai-7",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Spark AI",
+      "url": "https://www.producthunt.com/products/spark-ai-7",
+      "summary": "AI-native permitting & diligence services for data centers",
+      "publishedAt": "2026-11-25T07:30:40.000Z",
+      "ref": "I24",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "AI-native permitting & diligence services for data centers",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-28T00:14:21.876Z"
+      }
+    },
+    {
+      "id": "090e889a3a",
+      "normUrl": "https://producthunt.com/products/onset",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Onset",
+      "url": "https://www.producthunt.com/products/onset",
+      "summary": "AI reviews, titles and thumbnails for YouTube creators",
+      "publishedAt": "2026-11-26T19:18:34.000Z",
+      "ref": "I25",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "AI reviews, titles and thumbnails for YouTube creators",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-28T00:14:41.872Z"
+      }
+    },
+    {
+      "id": "2399c6291e",
+      "normUrl": "https://producthunt.com/products/prosed-turn-your-content-into-a-book",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Prosed AI 2.0 + MCP",
+      "url": "https://www.producthunt.com/products/prosed-turn-your-content-into-a-book",
+      "summary": "Your company's words, assembled into a book",
+      "publishedAt": "2026-10-27T05:29:10.000Z",
+      "ref": "I26",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Your company's words, assembled into a book",
+        "comments": [],
+        "source": "producthunt",
+        "priorArt": [],
+        "fetchedAt": "2026-11-28T00:15:01.892Z"
+      }
+    },
+    {
+      "id": "e7adaee16c",
+      "normUrl": "https://producthunt.com/products/remove-silence",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Remove Silence",
+      "url": "https://www.producthunt.com/products/remove-silence",
+      "summary": "Cut the silence from audio in your browser, free",
+      "publishedAt": "2026-11-26T01:07:23.000Z",
+      "ref": "I27",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "efb0f2dbf3",
+      "normUrl": "https://producthunt.com/products/snibl",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "snibl",
+      "url": "https://www.producthunt.com/products/snibl",
+      "summary": "Save highlighted text from any app, then ask AI about it",
+      "publishedAt": "2026-11-22T12:50:36.000Z",
+      "ref": "I28",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "8e593c54f3",
+      "normUrl": "https://producthunt.com/products/espresso-27",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Espresso 27",
+      "url": "https://www.producthunt.com/products/espresso-27",
+      "summary": "The web editor for people who love the Mac",
+      "publishedAt": "2026-11-25T09:08:04.000Z",
+      "ref": "I29",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "e1f39bc211",
+      "normUrl": "https://producthunt.com/products/contral",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Contral",
+      "url": "https://www.producthunt.com/products/contral",
+      "summary": "The AI coding agent that checks its work and teaches you",
+      "publishedAt": "2026-11-26T09:01:10.000Z",
+      "ref": "I30",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "d59a140860",
+      "normUrl": "https://producthunt.com/products/periscope-4",
+      "sourceId": "producthunt",
+      "source": "Product Hunt",
+      "sourceHome": "https://www.producthunt.com/",
+      "side": "supply",
+      "pool": true,
+      "title": "Periscope",
+      "url": "https://www.producthunt.com/products/periscope-4",
+      "summary": "Turn any work into an API",
+      "publishedAt": "2026-11-26T05:10:12.000Z",
+      "ref": "I31",
+      "screen": {
+        "keep": true,
+        "score": 7,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 3,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": false
+    },
+    {
+      "id": "073711888f",
+      "normUrl": "https://news.ycombinator.com/item?id=50670443",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "Getting 101 tok/s from Inkling 2 Mini in vLLM on one GB10",
+      "url": "https://news.ycombinator.com/item?id=50670443",
+      "externalUrl": "https://runtimenotes.com/blog/getting-101-tok-s-from-inkling-2-mini-in-vllm-on-one-gb10/",
+      "summary": null,
+      "deepenKey": "50670443",
+      "via": null,
+      "signal": {
+        "points": 27,
+        "comments": 7
+      },
+      "publishedAt": "2026-11-27T18:59:55Z",
+      "ref": "I32",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "572ef5f7d3",
+      "normUrl": "https://news.ycombinator.com/item?id=50669673",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "DragDropMath – Learn math by feel",
+      "url": "https://news.ycombinator.com/item?id=50669673",
+      "externalUrl": "https://dragdropmath.com/",
+      "summary": "Hi HN! I am a professional physicist and I shuffle symbols in equations and mathematical expressions all day long. During my PhD (almost 20 years ago) I noticed that it is as if the symbols have their own 'physics', which makes the wrong moves impossible and the right ones obvious. So I created DragDropMath, where you can learn how to simplify mathematical expressions and how to solve equations by dragging symbols around, and only correct moves are allowed, so you get to feel what's right without experiencing (and so learning) wrong moves.",
+      "deepenKey": "50669673",
+      "via": null,
+      "signal": {
+        "points": 80,
+        "comments": 20
+      },
+      "publishedAt": "2026-11-27T17:56:28Z",
+      "ref": "I33",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "Hi HN! I am a professional physicist and I shuffle symbols in equations and mathematical expressions all day long. During my PhD (almost 20 years ago) I noticed that it is as if the symbols have their own 'physics', which makes the wrong moves impossible and the right ones obvious. So I created DragDropMath, where you can learn how to simplify mathematical expressions and how to solve equations by dragging symbols around, and only correct moves are allowed, so you get to feel what's right without experiencing (and so learning) wrong moves. I always wanted to make this, but life got in the way. Then a few weeks ago I saw declarative dragging ( https://declarative-dragging.github.io/ ) on the front page of HN and the spark came back! It took quite a few rounds to get the feel right, but I think it's close to what happens in my mind when I mentally manipulate these expressions. A few more points: - There are no ads, no trackers, no accounts (it's a static website and progress is saved in the browser cache). - Teachers can create their own problem sets, encoded in the link. - I plan to add more chapters (trigonometry, complex numbers, some calculus) but I first need to figure out the 'right' mode of interaction. - I just started working on the experience from mobile, so there may still be some rough edges there I'm curious to know what you think, if you have suggestions for content, if you spot anything that I should fix, if you have feature requests! Thank you in advance",
+        "comments": [
+          {
+            "text": "Could you drop a link to the repo? Would love to contribute to this..."
+          },
+          {
+            "text": "In chapter 3 \"pull a term out of the exponent\" I'm not finding a way to do it: I can drag a term around within the exponent, and that sum will rearrange when I do, but if I try to drop it outside the exponent, it only snaps back into place."
+          },
+          {
+            "text": "This is super compelling. For my learning style, everything was very intuitive, and dare I say fun. I think this can open up math for a whole segment of the learner population that previously did not enjoy engaging with it! Great work."
+          },
+          {
+            "text": "log and exp could use more of an intro I think. Very cool and great idea!"
+          },
+          {
+            "text": "> It can only move in ways the maths allows. This property is desirable for a tool that assists you in performing work, but actually undesirable for a tool designed to guide your learning: it means you are protected from doing something wrong (much like when they put up the bumpers/siderails at a bowling alley), the result being that you receive no feedback when your mental model requires adjustment."
+          },
+          {
+            "text": "The section on a product of binomials breaks for me. After dragging one binomial onto the other, the resulting products of a term times a binomial can't be distributed. That is, I get a product like (1+t)t but I can't drag the t without moving the whole expression. https://dragdropmath.com/#/c/brackets"
+          },
+          {
+            "text": "The solutions do weird stuff like moving a term back and forth across the equal sign uselessly. It doesn't seem possible to complete the square or to square the sides of an equality, quite awkard for solving quadratics Also, the UI gives no indication of how the operations are triggered. Needs a way to see what operations are possible and how to execute them."
+          },
+          {
+            "text": "I don't think this works well, in its current state. I mainly think its to do with the drag and drop functionality itself - it becomes somewhat unintuitive and even with knowledge of what should or could be possible I struggle to achieve my goals. A few more iterations of that, particularly with some over the shoulder observations of your target audience, might help significantly."
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: DragDropMath – Learn math by feel",
+            "points": 82,
+            "url": "https://news.ycombinator.com/item?id=50669673"
+          }
+        ],
+        "fetchedAt": "2026-11-28T00:11:21.176Z"
+      }
+    },
+    {
+      "id": "14e5c0122a",
+      "normUrl": "https://news.ycombinator.com/item?id=50668269",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "King – Man + Woman = ?",
+      "url": "https://news.ycombinator.com/item?id=50668269",
+      "externalUrl": "https://kingminusman.com/",
+      "summary": null,
+      "deepenKey": "50668269",
+      "via": null,
+      "signal": {
+        "points": 24,
+        "comments": 6
+      },
+      "publishedAt": "2026-11-27T15:50:53Z",
+      "ref": "I34",
+      "screen": {
+        "keep": false,
+        "score": 0,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 4,
+          "depth": -99
+        },
+        "reason": "只有名字没有描述，无法解释"
+      },
+      "candidate": false
+    },
+    {
+      "id": "b65247ffc2",
+      "normUrl": "https://news.ycombinator.com/item?id=50667726",
+      "sourceId": "showhn",
+      "source": "Show HN",
+      "sourceHome": "https://news.ycombinator.com/show",
+      "side": "supply",
+      "pool": true,
+      "title": "bouncemarket – a live prediction market game for a bouncing ball",
+      "url": "https://news.ycombinator.com/item?id=50667726",
+      "externalUrl": "https://bouncemarket.minhanhday.com/",
+      "summary": "a ball will fall. trade on where it lands. I made this game! Some technical details: The entire drop of the ball is simulated server-side, then streamed to each client as server-sent events with a small buffer. Every drop is deterministic from its starting position, so rounds can be replayed exactly for later analysis, but tiny variations in starting position can change the ultimate outcome. There's some AI traders to keep the market moving, but they drop out in any round that has more than five people.",
+      "deepenKey": "50667726",
+      "via": null,
+      "signal": {
+        "points": 319,
+        "comments": 110
+      },
+      "publishedAt": "2026-11-27T15:01:50Z",
+      "ref": "I35",
+      "screen": {
+        "keep": true,
+        "score": 12,
+        "hits": [
+          "上新"
+        ],
+        "detail": {
+          "signal": 0,
+          "engagement": 8,
+          "depth": 4
+        },
+        "reason": null
+      },
+      "candidate": true,
+      "deep": {
+        "body": "a ball will fall. trade on where it lands. I made this game! Some technical details: The entire drop of the ball is simulated server-side, then streamed to each client as server-sent events with a small buffer. Every drop is deterministic from its starting position, so rounds can be replayed exactly for later analysis, but tiny variations in starting position can change the ultimate outcome. There's some AI traders to keep the market moving, but they drop out in any round that has more than five people. They operate using a naive set of rules that I wrote for them, so they're not too hard to beat -- it's when the market is full of real people that it gets tricky. Curious to get feedback on anything you would change, and especially whether the mechanics were clear right away or not.",
+        "comments": [
+          {
+            "text": "Surprising fun and awesome! Love it. It was not immediately clear how the game was played but it came to me soon enough. I think one or two \"trial/tutorial\" rounds would go a long way to give me a proper shot at the leaderboard. I wasted my first 2-3 balls as I was looking at the UI trying to understand how to play."
+          },
+          {
+            "text": "bouncemarket: bought Right x52 at avg 0.19, landed Right, +42.21 in one round https://bouncemarket.minhanhday.com/r/FYv-qiLU"
+          },
+          {
+            "text": "cool! up next: bouncemarketbot"
+          },
+          {
+            "text": "This looks fun, but I imagine someone somewhere in a financial exchange company looking at this and thinking: \"bouncing ball futures contracts, would be a thing to offer our sophisticated clients.\""
+          },
+          {
+            "text": "Completely ignoring the ball and just buying cheap shares is a surprisingly efficient strategy. Often I'm able to get both kinds of share for cheap, so I win regardless of the outcome."
+          },
+          {
+            "text": "So fun, and easy to profit, at least for a few minutes. Seems like if you played this professionally 40hrs a week full-time it would get tiring fast. Maybe there is a metaphor in there."
+          },
+          {
+            "text": "I'd like to see how much the market maker is making/losing."
+          },
+          {
+            "text": "Is there a way to sell shares before resolution?"
+          }
+        ],
+        "source": "hn",
+        "priorArt": [
+          {
+            "title": "Show HN: bouncemarket – a live prediction market game for a bouncing ball",
+            "points": 320,
+            "url": "https://news.ycombinator.com/item?id=50667726"
+          }
+        ],
+        "fetchedAt": "2026-11-28T00:11:21.691Z"
+      }
+    }
+  ],
+  "deepenedAt": "2026-11-28T00:15:01.892Z"
+}
